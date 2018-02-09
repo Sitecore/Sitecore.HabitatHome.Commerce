@@ -21,10 +21,10 @@ settings.user.ps1
 *.log
 *.zip
 *.user.config
-
+/install/Deploy-*
 /install/assets/Commerce
 /install/assets/Downloads
-configuration-xp0.json
+configuration-x*0.json
 /install/deploy/*
 /install/LocalRepo
 

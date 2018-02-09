@@ -1,39 +1,42 @@
 Param(
-    [string] $ConfigurationFile = "configuration-xp0.json"
+    [string] $ConfigurationFile = "configuration-xc0.json",
+    [string] $XPConfigurationFile = "C:\projects\sitecore.habitat\install\configuration-xp0.json"
 )
 
 Write-Host "Setting Defaults and creating $ConfigurationFile"
 
 $json = Get-Content -Raw .\install-settings.json -Encoding Ascii |  ConvertFrom-Json
+$assetsPath = Join-Path "$PWD" "assets"
+[System.Reflection.Assembly]::LoadFile($(Join-Path $assetsPath "Newtonsoft.Json.dll"))
+[System.Reflection.Assembly]::LoadFile($(Join-Path $assetsPath "JsonMerge.dll"))
 
+$json = [JsonMerge.JsonMerge]::MergeJson($XPConfigurationFile, "C:\projects\sitecore.habitat.commerce\install\install-settings.json") | ConvertFrom-Json
+Write-Host $json
 # Assets and prerequisites
 
 $assets = $json.assets
 $assets.root = "$PSScriptRoot\assets"
-$assets.psRepository = "https://sitecore.myget.org/F/sc-powershell/api/v2/"
-$assets.psRepositoryName = "SitecoreGallery"
-$assets.licenseFilePath = Join-Path $assets.root "license.xml"
-$assets.sitecoreVersion = "9.0.0 rev. 171002"
-$assets.installerVersion = "1.0.2"
-$assets.certificatesPath = Join-Path $assets.root "Certificates"
-$assets.jreRequiredVersion = "1.8"
-$assets.dotnetMinimumVersionValue = "394802"
-$assets.dotnetMinimumVersion = "4.6.2"
-$assets.installPackagePath = Join-Path $assets.root "installpackage.aspx"
 $assets.downloadFolder = Join-Path $assets.root "Downloads"
 
 #Commerce
-$assets.commerce.packageLocation = "http://nuget1ca2/nuget/Commerce/"
-$assets.commerce.packageName = "Sitecore.Commerce.ReleasePackage.Content"
-$assets.commerce.packageVersion = "2.0.149"
+$assets.commerce.nugetPackageLocation = "http://nuget1ca2/nuget/Commerce/"
+$assets.commerce.nugetPackageName = "Sitecore.Commerce.ReleasePackage.Content"
+$assets.commerce.nugetPackageVersion = "2.0.149"
+$assets.commerce.packageUrl = "https://v9assets.blob.core.windows.net/v9-onprem-assets/Sitecore.Commerce.2018.01-2.0.254.zip?sv=2017-04-17&ss=bfqt&srt=sco&sp=rwdlacup&se=2027-11-09T20%3A11%3A50Z&st=2017-11-09T12%3A11%3A50Z&spr=https&sig=naspk%2BQflDLjyuC6gfXw4OZKvhhxzTlTvDctfw%2FByj8%3D"
 $assets.commerce.installationFolder = Join-Path $assets.root "Commerce"
+
+#Commerce Files to Extract
+$sifCommerceVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "SIF.Sitecore.Commerce"} 
+$sifCommerceVersion.version = "1.0.1748"
+$commerceEngineVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.Commerce.Engine"} 
+$commerceEngineVersion.version = "2.0.1922"
+$bizFxVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.BizFX"} 
+$bizFxVersion.version = "1.0.572"
+
 # Settings
 
 # Site Settings
 $site = $json.settings.site
-$site.prefix = "sxa"
-$site.suffix = "dev.local"
-$site.webroot = "C:\inetpub\wwwroot"
 $site.hostName = $site.prefix + "." + $site.suffix
 $site.storefrontPrefix = "retail"
 $site.storefrontHostName = $site.storefrontPrefix + "." + $site.suffix
@@ -43,7 +46,7 @@ $sql = $json.settings.sql
 $sql.server = "."
 $sql.adminUser = "sa"
 $sql.adminPassword = "12345"
-$sql.minimumVersion="13.0.4001"
+$sql.minimumVersion = "13.0.4001"
 
 # XConnect Parameters
 $xConnect = $json.settings.xConnect
@@ -65,7 +68,7 @@ $sitecore = $json.settings.sitecore
 $sitecore.solrConfigurationPath = Join-Path $assets.root "sitecore-solr.json"
 $sitecore.configurationPath = Join-Path $assets.root "sitecore-xp0.json"
 $sitecore.sslConfigurationPath = "$PSScriptRoot\certificates\sitecore-ssl.json"
-$sitecore.packagePath = Join-Path $assets.root $("Sitecore " + $assets.sitecoreVersion +" (OnPrem)_single.scwdp.zip")
+$sitecore.packagePath = Join-Path $assets.root $("Sitecore " + $assets.sitecoreVersion + " (OnPrem)_single.scwdp.zip")
 $sitecore.siteName = [string]::Join(".", @($site.prefix, $site.suffix))
 $sitecore.siteRoot = Join-Path $site.webRoot -ChildPath $sitecore.siteName
 
@@ -74,13 +77,5 @@ $solr = $json.settings.solr
 $solr.url = "https://localhost:8983/solr"
 $solr.root = "c:\solr\solr-6.6.2"
 $solr.serviceName = "Solr-6.6.2"
-$modules = $json.modules
 
-$spe = $modules | Where { $_.id -eq "spe"}
-$spe.packagePath = Join-Path $assets.root "packages\Sitecore PowerShell Extensions-4.7 for Sitecore 8.zip"
-$spe.install = $true
-$sxa = $modules | Where { $_.id -eq "sxa"}
-$sxa.packagePath = Join-Path $assets.root "packages\Sitecore Experience Accelerator 1.5 rev. 171010 for 9.0.zip"
-$sxa.install = $true
-
-Set-Content $ConfigurationFile  (ConvertTo-Json -InputObject $json -Depth 3 )
+Set-Content $ConfigurationFile  (ConvertTo-Json -InputObject $json -Depth 4 )
