@@ -21,7 +21,7 @@ settings.user.ps1
 *.log
 *.zip
 *.user.config
-
+/install/Deploy-*
 /install/assets/Commerce
 /install/assets/Downloads
 configuration-x*0.json
