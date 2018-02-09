@@ -15,6 +15,10 @@ SharedFields:
   Hint: Cacheable
   Type: Checkbox
   Value: 1
+- ID: "6c0c64a9-b969-44e9-9eb8-47bc54ec77c6"
+  Hint: VaryByUrlPath
+  Type: Checkbox
+  Value: 1
 - ID: "94069f66-609c-48b0-8281-521c30fb269d"
   Hint: Open Properties after Add
   Value: 
@@ -23,10 +27,10 @@ SharedFields:
   Value: 200
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Render
+  Value: SubcategoryNavigation
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Habitat.Home.Website.Controllers.EmptyContentController,Sitecore.Habitat.Home.Website
+  Value: Sitecore.Commerce.XA.Feature.CategoryNavigation.Controllers.CategoryNavigationController, Sitecore.Commerce.XA.Feature.CategoryNavigation
 Languages:
 - Language: en
   Fields:

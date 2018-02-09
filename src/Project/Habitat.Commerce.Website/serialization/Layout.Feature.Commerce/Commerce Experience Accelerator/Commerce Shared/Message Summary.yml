@@ -13,10 +13,10 @@ SharedFields:
   Value: "{FF75632A-03ED-4D31-B42A-1EEE45E5147F}"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Render
+  Value: Load
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Habitat.Home.Website.Controllers.EmptyContentController,Sitecore.Habitat.Home.Website
+  Value: Sitecore.Commerce.XA.Feature.MessageSummary.Controllers.MessageSummaryController, Sitecore.Commerce.XA.Feature.MessageSummary
 Languages:
 - Language: en
   Fields:

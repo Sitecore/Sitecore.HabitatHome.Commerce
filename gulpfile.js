@@ -19,9 +19,7 @@ module.exports.config = config;
 gulp.task("default",
     function (callback) {
         config.runCleanBuilds = true;
-        return runSequence(
-            "Copy-Sitecore-License",
-            "Copy-Sitecore-Lib",
+        return runSequence(          
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
@@ -37,7 +35,7 @@ gulp.task("tds",
             "Nuget-Restore-TDS",   
             "Apply-Xml-Transform",  
             "Publish-Transforms",
-            "TDS-Build"
+            "TDS-Build",
             callback);
     });
 

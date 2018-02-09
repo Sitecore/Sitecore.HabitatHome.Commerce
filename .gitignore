@@ -8,6 +8,9 @@ packages/
 artifacts/
 build/assets/**/*
 *.user
+*.user.config
+*.user.js
+*.user.targets
 *.cache
 *.suo
 *.userprefs
@@ -20,7 +23,6 @@ vars.user.cmd
 settings.user.ps1
 *.log
 *.zip
-*.user.config
 /install/Deploy-*
 /install/assets/Commerce
 /install/assets/Downloads
@@ -30,6 +32,7 @@ configuration-x*0.json
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user
+*.config.user
 IconCache/
 T4RenderCache/
 BuiltFiles_*.txt
