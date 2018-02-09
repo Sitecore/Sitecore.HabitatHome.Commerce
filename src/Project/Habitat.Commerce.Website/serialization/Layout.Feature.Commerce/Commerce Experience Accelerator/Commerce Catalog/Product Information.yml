@@ -18,6 +18,10 @@ SharedFields:
   Hint: Cacheable
   Type: Checkbox
   Value: 1
+- ID: "6c0c64a9-b969-44e9-9eb8-47bc54ec77c6"
+  Hint: VaryByUrlPath
+  Type: Checkbox
+  Value: 1
 - ID: "8d9232b0-613f-440b-a2fa-dcdd80fbd33e"
   Hint: VaryByLogin
   Type: Checkbox
@@ -25,15 +29,19 @@ SharedFields:
 - ID: "94069f66-609c-48b0-8281-521c30fb269d"
   Hint: Open Properties after Add
   Value: 
+- ID: "abb0f612-25e3-413c-8fe2-c1ac4c3d6f5e"
+  Hint: VaryByCurrency
+  Type: Checkbox
+  Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:./ancestor::*[@@templatename='Site']/Data/Commerce/Catalog"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Render
+  Value: ProductInformation
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Habitat.Home.Website.Controllers.EmptyContentController,Sitecore.Habitat.Home.Website
+  Value: Sitecore.Commerce.XA.Feature.Catalog.Controllers.CatalogController, Sitecore.Commerce.XA.Feature.Catalog
 Languages:
 - Language: en
   Fields:

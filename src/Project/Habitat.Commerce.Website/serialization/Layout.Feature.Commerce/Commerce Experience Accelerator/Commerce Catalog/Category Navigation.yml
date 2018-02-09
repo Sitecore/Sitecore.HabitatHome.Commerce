@@ -20,10 +20,10 @@ SharedFields:
   Value: 
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Render
+  Value: Load
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Habitat.Home.Website.Controllers.EmptyContentController,Sitecore.Habitat.Home.Website
+  Value: Sitecore.Commerce.XA.Feature.CategoryNavigation.Controllers.CategoryNavigationController, Sitecore.Commerce.XA.Feature.CategoryNavigation
 - ID: "f3e7e552-d7c8-469b-a150-69e4e14ab35c"
   Hint: ClearOnIndexUpdate
   Type: Checkbox
