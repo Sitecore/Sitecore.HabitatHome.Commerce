@@ -1,82 +1,42 @@
 {
     "assets": {
         "root": "@@assets.root@@",
-        "psRepository": "@@assets.psRepository@@",
-        "psRepositoryName": "@@assets.psRepositoryName@@",
-        "licenseFilePath": "@@assets.licenseFilePath@@",
-        "certificatesPath": "@@assets.certificatePath@@",
-        "sitecoreVersion": "@@assets.sitecoreVersion@@",
-        "installerVersion": "@@assets.installerVersion@@",
-        "jreRequiredVersion":"@@assets.jreRequiredVersion@@",
-        "dotnetMinimumVersion":"@@assets.netMinimumVersion@@",
-        "dotnetMinimumVersionValue":"@@assets.netMinimumVersionValue@@",
-        "installPackagePath":"@@assets.installPackagePath@@",
-        "downloadFolder":"@@assets.downloadFolder@@",
-        "commerce":{
-            "packageLocation":"@@assets.commmerce.packageLocation@@",
-            "packageVersion":"@@assets.commerce.packageVersion@@",
-            "packageName":"@@assets.commerce.packageName@@",
-            "installationFolder":"@@assets.commerce.installationFolder@@"
+        "downloadFolder": "@@assets.downloadFolder@@",
+        "commerce": {
+            "nugetPackageLocation": "@@assets.commerce.nugetPackageLocation@@",
+            "nugetPackageVersion": "@@assets.commerce.nugetPackageVersion@@",
+            "nugetPackageName": "@@assets.commerce.nugetPackageName@@",
+            "packageUrl": "@@assets.commerce.packageUrl@@",
+            "installationFolder": "@@assets.commerce.installationFolder@@",
+            "filesToExtract": [{
+                    "name": "SIF.Sitecore.Commerce",
+                    "version": "@@SIF.Sitecore.Commerce.version@@"
+                },
+                {
+                    "name": "Sitecore.Commerce.Engine",
+                    "version": "@@Sitecore.Commerce.Engine.version@@"
+                },
+                {
+                    "name": "Sitecore.BizFX",
+                    "version": "@@Sitecore.BizFX.version@@"
+                }
+            ]
         }
     },
     "settings": {
         "site": {
-            "prefix": "@@site.prefix@@",
-            "suffix": "@@site.suffix@@",
-            "webRoot": "@@site.webRoot@@",
-            "hostName": "@@site.hostName@@",
-            "storefrontHostName":"@@site.storefrontHostName@@",
-            "storefrontPrefix":"@@site.storefrontPrefix@@"
+            "storefrontHostName": "@@site.storefrontHostName@@",
+            "storefrontPrefix": "@@site.storefrontPrefix@@"
         },
-        
+
         "sql": {
             "server": "@@sql.server@@",
             "adminUser": "@@sql.adminUser@@",
-            "adminPassword": "@@sql.adminPassword@@",
-            "minimumVersion":"@@sql.minimumVersion@@"
-
-        },
-        "xConnect": {
-            "configurationPath": "@@xConnect.configurationPath@@",
-            "certificateConfigurationPath": "@@xConnect.certificateConfigurationPath@@",
-            "solrConfigurationPath": "@@xConnect.solrConfigurationPath@@",
-            "packagePath": "@@xConnect.packagePath@@",
-            "siteName": "@@xConnect.siteName@@",
-            "certificateName": "@@xConnect.certificate@@",
-            "siteRoot": "@@xConnect.siteRoot@@",
-            "sqlCollectionUser": "@@xConnect.sqlCollectionUser@@",
-            "sqlCollectionPassword": "@@xConnect.sqlConnectionPassword@@"
-        },
-        "sitecore": {
-            "solrConfigurationPath": "@@sitecore.solrConfigurationPath@@",
-            "configurationPath": "@@sitecore.configurationPath@@",
-            "sslConfigurationPath": "@@sitecore.sslConfigurationPath@@",
-            "packagePath": "@@sitecore.packagePath@@",
-            "siteName": "@@sitecore.siteName@@",
-            "siteRoot": "@@sitecore.siteRoot@@"
-
-        },
-        "solr": {
-            "url": "@@solr.url@@",
-            "root": "@@solr.root@@",
-            "serviceName": "@@solr.serviceName@@"
+            "adminPassword": "@@sql.adminPassword@@"
 
         }
-    },
-    "modules":[
-        {
-            "id":"spe",
-            "name":"Sitecore PowerShell Extensions",
-            "packagePath":"@@modules.spePackagePath@@",
-            "install":"@@modules.speInstall@@"
-        },
-        {
-            "id":"sxa",
-            "name":"Sitecore Experience Accelerator",
-            "packagePath":"@@modules.sxaPackagePath@@",
-            "install":"@@modules.sxaInstall@@"
-        }
-    ]
+    }
+
 
 
 
