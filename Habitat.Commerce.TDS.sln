@@ -5,8 +5,10 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{38E46594-2B99-43FF-9E92-9A11B45168D8}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		gulp-config.js = gulp-config.js
 		gulpfile.js = gulpfile.js
+		publishsettings.targets = publishsettings.targets
 		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
 EndProject
