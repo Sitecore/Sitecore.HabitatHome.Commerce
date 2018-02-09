@@ -1,5 +1,5 @@
 Param(
-    [string] $ConfigurationFile = "configuration-xp0.json"
+    [string] $ConfigurationFile = ".\configuration-xc0.json"
 )
 
 #####################################################
@@ -8,18 +8,22 @@ Param(
 # 
 #####################################################
 $ErrorActionPreference = 'Stop'
-Set-Location $PSScriptRoot
+#Set-Location $PSScriptRoot
 
 if (!(Test-Path $ConfigurationFile)) {
-    Write-Host "Configuration file '$($ConfigurationFile)' not found." -ForegroundColor Red
+    Write-Host "Configuration file '$($ConfigurationFile)' or '$($XPConfigurationFile)' not found." -ForegroundColor Red
     Write-Host  "Please use 'set-installation...ps1' files to generate a configuration file." -ForegroundColor Red
     Exit 1
 }
-$config = Get-Content -Raw $ConfigurationFile |  ConvertFrom-Json
+
+$config = Get-Content -Raw $ConfigurationFile -Encoding Ascii |  ConvertFrom-Json
+
 if (!$config) {
     throw "Error trying to load configuration!"
 }
+write-host $config.settings.site.
 $site = $config.settings.site
+$commerceAssets = $config.assets.commerce
 $sql = $config.settings.sql
 $xConnect = $config.settings.xConnect
 $sitecore = $config.settings.sitecore
@@ -46,46 +50,51 @@ function Install-Prerequisites {
         throw "Invalid SQL version. Expected SQL 2016 SP1 ($($sql.minimumVersion)) or above."
     }
 
+   
     #Verify Java version
     
     $minVersion = New-Object System.Version($assets.jreRequiredVersion)
     $foundVersion = $FALSE
-    $jrePath = "HKLM:\SOFTWARE\JavaSoft\Java Runtime Environment"
-    $jdkPath = "HKLM:\SOFTWARE\JavaSoft\Java Development Kit"
-    if (Test-Path $jrePath) {
-        $path = $jrePath
+   
+    
+    function getJavaVersions() {
+        $versions = '', 'Wow6432Node\' |
+            ForEach-Object {Get-ItemProperty -Path HKLM:\SOFTWARE\$($_)Microsoft\Windows\CurrentVersion\Uninstall\* |
+                Where-Object {($_.DisplayName -like '*Java *') -and (-not $_.SystemComponent)} |
+                Select-Object DisplayName, DisplayVersion, @{n = 'Architecture'; e = {If ($_.PSParentPath -like '*Wow6432Node*') {'x86'} Else {'x64'}}}}
+        return $versions
     }
-    elseif (Test-Path $jdkPath) {
-        $path = $jdkPath
-    }
-    else {
-        throw "Cannot find Java Runtime Environment or Java Development Kit on this machine."
-    }
-	
-    $javaVersionStrings = Get-ChildItem $path | ForEach-Object { $parts = $_.Name.Split("\"); $parts[$parts.Count - 1] } 
-    foreach ($versionString in $javaVersionStrings) {
-        try {
-            $version = New-Object System.Version($versionString)
-        }
-        catch {
-            continue
+    function checkJavaversion($toVersion) {
+        $versions_ = getJavaVersions
+        foreach ($version_ in $versions_) {
+            try {
+                $version = New-Object System.Version($version_.DisplayVersion)
+                
+            }
+            catch {
+                continue
+            }
+
+            if ($version.CompareTo($toVersion) -ge 0) {
+                return $TRUE
+            }
         }
 
-        if ($version.CompareTo($minVersion) -ge 0) {
-            $foundVersion = $TRUE
-        }
+        return $false
+
     }
+    
+    $foundVersion = checkJavaversion($minversion)
+    
     if (-not $foundVersion) {
         throw "Invalid Java version. Expected $minVersion or above."
     }
-
     # Verify Web Deploy
     $webDeployPath = ([IO.Path]::Combine($env:ProgramFiles, 'iis', 'Microsoft Web Deploy V3', 'msdeploy.exe'))
     if (!(Test-Path $webDeployPath)) {
         throw "Could not find WebDeploy in $webDeployPath"
     }   
 
-    # Verify DAC Fx
     # Verify Microsoft.SqlServer.TransactSql.ScriptDom.dll
     try {
         $assembly = [reflection.assembly]::LoadWithPartialName("Microsoft.SqlServer.TransactSql.ScriptDom")
@@ -97,14 +106,7 @@ function Install-Prerequisites {
         throw "Could load the Microsoft.SqlServer.TransactSql.ScriptDom assembly. Please make sure it is installed and registered in the GAC"
     }
     
-    #Add ApplicationPoolIdentity to performance log users to avoid Sitecore log errors (https://kb.sitecore.net/articles/404548)
-    if (!(Get-LocalGroupMember "Performance Log Users" "IIS APPPOOL\DefaultAppPool")) {
-        Add-LocalGroupMember "Performance Log Users" "IIS APPPOOL\DefaultAppPool"    
-    }
-    if (!(Get-LocalGroupMember "Performance Monitor Users" "IIS APPPOOL\DefaultAppPool")) {
-        Add-LocalGroupMember "Performance Monitor Users" "IIS APPPOOL\DefaultAppPool"
-    }
-    
+      
     # Verify Solr
     Write-Host "Verifying Solr connection" -ForegroundColor Green
     if (-not $solr.url.ToLower().StartsWith("https")) {
@@ -144,7 +146,7 @@ function Install-Prerequisites {
     }
 }
 
-function Install-Assets {
+function Install-RequiredInstallationAssets {
     #Register Assets PowerShell Repository
     if ((Get-PSRepository | Where-Object {$_.Name -eq $assets.psRepositoryName}).count -eq 0) {
         Register-PSRepository -Name $AssetsPSRepositoryName -SourceLocation $assets.psRepository -InstallationPolicy Trusted
@@ -166,214 +168,24 @@ function Install-Assets {
         throw "$($assets.root) not found"
     }
 
-
-    # Download specified version of Commerce NuGet package if it hasn't been downloaded already
-    $commerceFullPackageName = $assets.commerce.packageName + "." + $assets.commerce.packageVersion
-    $packageFolder = Join-Path $assets.downloadFolder $commerceFullPackageName 
-
-    if (!(Test-Path $(Join-Path $assets.downloadFolder $commerceFullPackageName))) {
-        Write-Host "$($assets.commerce.packageName) version $($assets.commerce.packageVersion) not found. Downloading to $($assets.downloadFolder)" -ForegroundColor Yellow
-        nuget install $assets.commerce.packageName -Version $assets.commerce.packageVersion -Source $assets.commerce.packageLocation -OutputDirectory $assets.downloadFolder
-            
-        Set-Location "$packageFolder"
-        Get-Item "$commerceFullPackageName.nupkg" | Rename-Item -NewName {[System.IO.Path]::ChangeExtension($_.Name, ".zip")} -Force | Expand-Archive 
-        
-    }
-
-    if (!(Test-Path $assets.commerce.installationFolder)) {
-
-        Get-ChildItem "$($packageFolder)\content" -Filter "Sitecore.Commerce*-$($assets.commerce.packageVersion).zip" | Expand-Archive -DestinationPath $assets.commerce.installationFolder -Force
-    }
+}
+function Install-CommerceAssets {
     Set-Location $PSScriptRoot
+    . .\get-latest-commerce.ps1 -DownloadFolder $assets.downloadFolder -CommerceAssetFolder $assets.commerce.installationFolder -CommercePackageUrl $assets.commerce.packageUrl
 
-    Get-ChildItem $assets.commerce.installationFolder -Filter *.zip | ForEach-Object { Expand-Archive $_.FullName -DestinationPath $(Join-Path $assets.commerce.installationFolder $_.BaseName) -Force }
-
-    <#
-    #Verify license file
-    if (!(Test-Path $assets.licenseFilePath)) {
-        throw "License file $($assets.licenseFilePath) not found"
+    # This is where we expand the archives:
+    $packagesToExtract = $assets.commerce.filesToExtract
+    set-alias sz "$env:ProgramFiles\7-zip\7z.exe"
+    foreach ($package in $packagesToExtract) {
+        $extract = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version + ".zip")
+        $output = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version)
+        sz x -o"$($output)" $extract -r -y -aoa
     }
     
-    #Verify Sitecore package
-    if (!(Test-Path $sitecore.packagePath)) {
-        throw "Sitecore package $($sitecore.packagePath) not found"
-    }
-    
-    #Verify xConnect package
-    if (!(Test-Path $xConnect.packagePath)) {
-        throw "XConnect package $($xConnect.packagePath) not found"
-    }
-    #>
+
+    #Get-ChildItem $assets.commerce.installationFolder -Filter *.zip | ForEach-Object { Expand-Archive $_.FullName -DestinationPath $(Join-Path $assets.commerce.installationFolder $_.BaseName) -Force }
 }
-
-<#
-function Install-XConnect {
-    #Install xConnect Solr
-    try {
-        Install-SitecoreConfiguration $xConnect.solrConfigurationPath `
-            -SolrUrl $solr.url `
-            -SolrRoot $solr.root `
-            -SolrService $solr.serviceName `
-            -CorePrefix $site.prefix
-    }
-    catch {
-        write-host "XConnect SOLR Failed" -ForegroundColor Red
-        throw
-    }
-
-    #Generate xConnect client certificate
-    try {
-        Install-SitecoreConfiguration $xConnect.certificateConfigurationPath `
-            -CertificateName $xConnect.certificateName `
-            -CertPath $assets.certificatesPath
-    }
-    catch {
-        write-host "XConnect Certificate Creation Failed" -ForegroundColor Red
-        throw
-    }
-
-    #Install xConnect
-    try {
-        Install-SitecoreConfiguration $xConnect.ConfigurationPath `
-            -Package $xConnect.PackagePath `
-            -LicenseFile $assets.licenseFilePath `
-            -SiteName $xConnect.siteName `
-            -XConnectCert $xConnect.certificateName `
-            -SqlDbPrefix $site.prefix `
-            -SolrCorePrefix $site.prefix `
-            -SqlAdminUser $sql.adminUser `
-            -SqlAdminPassword $sql.adminPassword `
-            -SqlServer $sql.server `
-            -SqlCollectionUser $xConnect.sqlCollectionUser `
-            -SqlCollectionPassword $xConnect.sqlCollectionPassword `
-            -SolrUrl $solr.url
-    }
-    catch {
-        write-host "XConnect Setup Failed" -ForegroundColor Red
-        throw
-    }
-                             
-
-    #Set rights on the xDB connection database
-    Write-Host "Setting Collection User rights" -ForegroundColor Green
-    try {
-        $sqlVariables = "DatabasePrefix = $($site.prefix)", "UserName = $($xConnect.sqlCollectionUser)", "Password = $($xConnect.sqlCollectionPassword)"
-        Invoke-Sqlcmd -ServerInstance $sql.server `
-            -Username $sql.adminUser `
-            -Password $sql.adminPassword `
-            -InputFile "$PSScriptRoot\database\collectionusergrant.sql" `
-            -Variable $sqlVariables
-    }
-    catch {
-        write-host "Set Collection User rights failed" -ForegroundColor Red
-        throw
-    }
-}
-
-function Install-Sitecore {
-
-    try {
-        #Install Sitecore Solr
-        Install-SitecoreConfiguration $sitecore.solrConfigurationPath `
-            -SolrUrl $solr.url `
-            -SolrRoot $solr.root `
-            -SolrService $solr.serviceName `
-            -CorePrefix $site.prefix
-    }
-    catch {
-        write-host "Sitecore SOLR Failed" -ForegroundColor Red
-        throw
-    }
-
-    try {
-        #Install Sitecore
-        Install-SitecoreConfiguration $sitecore.configurationPath `
-            -Package $sitecore.packagePath `
-            -LicenseFile $assets.licenseFilePath `
-            -SiteName $sitecore.siteName `
-            -XConnectCert $xConnect.certificateName `
-            -SqlDbPrefix $site.prefix `
-            -SolrCorePrefix $site.prefix `
-            -SqlAdminUser $sql.adminUser `
-            -SqlAdminPassword $sql.adminPassword `
-            -SqlServer $sql.server `
-            -SolrUrl $solr.url `
-            -XConnectCollectionService "https://$($xConnect.siteName)" `
-            -XConnectReferenceDataService "https://$($xConnect.siteName)" `
-            -MarketingAutomationOperationsService "https://$($xConnect.siteName)" `
-            -MarketingAutomationReportingService "https://$($xConnect.siteName)"
-    }
-    catch {
-        write-host "Sitecore Setup Failed" -ForegroundColor Red
-        throw
-    }
-
-    try {
-        #Set web certificate on Sitecore site
-        Install-SitecoreConfiguration $sitecore.sslConfigurationPath `
-            -SiteName $sitecore.siteName
-    }
-    catch {
-        write-host "Sitecore SSL Binding Failed" -ForegroundColor Red
-        throw
-    }
-}
-function Copy-Tools {
-    if (!(Test-Path $assets.installPackagePath)) {
-        throw "$($assets.installPackagePath) not found"
-    }
-
-    try {
-        Write-Host "Copying tools to webroot" -ForegroundColor Green
-        Copy-Item $assets.installPackagePath -Destination $sitecore.siteRoot -Force
-    }
-    catch {
-        write-host "Failed to copy InstallPackage.aspx to web root" -ForegroundColor Red
-    }
-}
-function Copy-Package ($packagePath, $destination) {
-    if (!(Test-Path $packagePath)) {
-        throw "Package not found"
-    }
-    # Check destination
-    if (! (Test-Path $destination)) { New-Item $destination -Type Directory }
-
-    Write-Host $packageName
-    Copy-Item $packagePath   $destination  -Verbose -Force
-         
-    
-}
-function Install-OptionalModules {
-    #Copy InstallPackage.aspx to webroot
-    
-    $packageDestination = Join-Path $sitecore.siteRoot "\temp\Packages"
-    foreach ($module in $modules | where {$_.install -eq $true}) {
-        Write-Host "Copying $($module.name) to the $packageDestination"
-        Copy-Package -packagePath $module.packagePath -destination "$packageDestination"
-        $packageFileName = Split-Path $module.packagePath -Leaf
-
-        $packageInstallerUrl = "https://$($sitecore.siteName)/InstallPackage.aspx?package=/temp/Packages/"
-        $url = $packageInstallerUrl + $packageFileName 
-        $request = [system.net.WebRequest]::Create($url)
-        $request.Timeout = 2400000
-        Write-Host $url
-        Write-Host "Installing Package : $($module.name)" -ForegroundColor Green
-        $request.GetResponse()  
-    }
-}
-
-#>
 Install-Prerequisites
-Install-Assets
-#Install-XConnect
-#Install-Sitecore
-#Copy-Tools
-#Install-OptionalModules
-
-# TODO: 
-# Run optimization scripts
-# Deploy-Habitat
-# Deploy marketing definitions
-# Rebuild indexes
-# Rebuild links database
-# Test-Setup
+Install-RequiredInstallationAssets
+Install-CommerceAssets
+#Stop-XConnect
