@@ -78,6 +78,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Project\Habitat.Commerce.Website.Serialization.config" />
+    <Content Include="App_Config\Include\Project\z.Habitat.Commerce.Website.DevSettings.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -21,6 +21,9 @@
     <AssemblyStatus>Include</AssemblyStatus>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <SourceWebVirtualPath>/Sitecore.Habitat.Commerce.Website.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{b3375668-929c-496b-99ba-dd011b7c6fd2}|src\Project\Habitat.Commerce.Website\code\Sitecore.Habitat.Commerce.Website.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -282,6 +285,12 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\code\Sitecore.Habitat.Commerce.Website.csproj">
+      <Project>{b3375668-929c-496b-99ba-dd011b7c6fd2}</Project>
+      <Name>Sitecore.Habitat.Commerce.Website</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.Commerce.%2a" />
