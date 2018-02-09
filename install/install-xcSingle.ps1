@@ -11,7 +11,7 @@ $ErrorActionPreference = 'Stop'
 #Set-Location $PSScriptRoot
 
 if (!(Test-Path $ConfigurationFile)) {
-    Write-Host "Configuration file '$($ConfigurationFile)' or '$($XPConfigurationFile)' not found." -ForegroundColor Red
+    Write-Host "Configuration file '$($ConfigurationFile)' not found." -ForegroundColor Red
     Write-Host  "Please use 'set-installation...ps1' files to generate a configuration file." -ForegroundColor Red
     Exit 1
 }
@@ -21,7 +21,7 @@ $config = Get-Content -Raw $ConfigurationFile -Encoding Ascii |  ConvertFrom-Jso
 if (!$config) {
     throw "Error trying to load configuration!"
 }
-write-host $config.settings.site.
+
 $site = $config.settings.site
 $commerceAssets = $config.assets.commerce
 $sql = $config.settings.sql
@@ -175,15 +175,17 @@ function Install-CommerceAssets {
 
     # This is where we expand the archives:
     $packagesToExtract = $assets.commerce.filesToExtract
+
+    
     set-alias sz "$env:ProgramFiles\7-zip\7z.exe"
+    
     foreach ($package in $packagesToExtract) {
+    
         $extract = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version + ".zip")
         $output = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version)
         sz x -o"$($output)" $extract -r -y -aoa
-    }
     
-
-    #Get-ChildItem $assets.commerce.installationFolder -Filter *.zip | ForEach-Object { Expand-Archive $_.FullName -DestinationPath $(Join-Path $assets.commerce.installationFolder $_.BaseName) -Force }
+    }
 }
 Install-Prerequisites
 Install-RequiredInstallationAssets
