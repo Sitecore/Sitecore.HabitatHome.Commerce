@@ -80,6 +80,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Project\Habitat.Commerce.Website.Serialization.config" />
     <Content Include="App_Config\Include\Project\z.Habitat.Commerce.Website.DevSettings.config" />
+    <Content Include="sitecore.habitatcommerce.version.txt" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
