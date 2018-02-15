@@ -1,0 +1,24 @@
+.home-page {
+    #content.container{
+        width: 100%;
+    }
+    #header {
+        .row {
+            &:nth-child(1) {
+                .row-splitter {
+                    &>div {
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .container.container-clean-background{
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+}

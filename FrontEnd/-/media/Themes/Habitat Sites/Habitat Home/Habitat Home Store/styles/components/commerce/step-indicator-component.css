@@ -1,0 +1,229 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-stepindicator-component {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cxa-stepindicator-component .component-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.cxa-stepindicator-component .component-content > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.cxa-stepindicator-component .component-content > * {
+  margin: 0;
+}
+
+.cxa-stepindicator-component .component-content > div {
+  width: 80%;
+}
+
+.cxa-stepindicator-component .steps {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.cxa-stepindicator-component .steps > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.cxa-stepindicator-component .steps > * {
+  margin: 0;
+}
+
+.cxa-stepindicator-component .steps li {
+  -ms-flex-preferred-size: 120px;
+  flex-basis: 120px;
+  cursor: default;
+}
+
+.cxa-stepindicator-component .steps li a {
+  cursor: default;
+}
+
+.cxa-stepindicator-component {
+  margin-top: 30px;
+}
+
+.cxa-stepindicator-component .steps li {
+  border: 2px solid #868b93;
+  background: #fff;
+  color: #707680 !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  width: 32px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 100px;
+  z-index: 3;
+}
+
+.cxa-stepindicator-component .steps li:active, .cxa-stepindicator-component .steps li:hover {
+  background: #81868e !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-stepindicator-component .steps li:active {
+  background: #767c84 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-stepindicator-component .steps li:disabled, .cxa-stepindicator-component .steps li.disabled, .cxa-stepindicator-component .steps li[disabled],
+fieldset[disabled] .cxa-stepindicator-component .steps li {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-stepindicator-component .steps li:hover {
+  color: #fff;
+  background-color: #b9bcc1;
+}
+
+.cxa-stepindicator-component .steps li:active {
+  color: #fff;
+  background-color: #6b717b;
+}
+
+.cxa-stepindicator-component .steps li:hover a {
+  color: #fff;
+}
+
+.cxa-stepindicator-component .steps li.active {
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  width: 32px;
+  padding-top: 5px;
+  border-radius: 100px;
+}
+
+.cxa-stepindicator-component .steps li.active:active, .cxa-stepindicator-component .steps li.active:hover {
+  background: #0d8896 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-stepindicator-component .steps li.active:active {
+  background: #0c7783 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-stepindicator-component .steps li.active:disabled, .cxa-stepindicator-component .steps li.active.disabled, .cxa-stepindicator-component .steps li.active[disabled],
+fieldset[disabled] .cxa-stepindicator-component .steps li.active {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-stepindicator-component .steps li.active:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.cxa-stepindicator-component .steps li.active:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.cxa-stepindicator-component .steps li.active a {
+  color: #0e909f;
+}
+
+.cxa-stepindicator-component .steps li.active:hover a {
+  color: #fff;
+}
+
+.cxa-stepindicator-component .steps:last-child li:last-child {
+  margin-right: 0;
+}
+
+.cxa-stepindicator-component .steps:before {
+  content: "";
+  background: #c9cccf;
+  height: 2px;
+  position: absolute;
+  z-index: 2;
+  width: 70%;
+}
+
+.component.column-splitter .cxa-stepindicator-component .steps:before {
+  max-width: 65%;
+}

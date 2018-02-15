@@ -1,0 +1,32 @@
+$light: #fff;
+$dark: #000;
+
+$primary-color: #0e909f;
+$primary-hover-color: #0a6f7b;
+$primary-active-color: #064b53;
+$secondary-color: #868b93;
+$secondary-hover-color: #b9bcc1;
+$secondary-active-color: #6b717b;
+
+$success-color: #6ea244;
+$error-color: #dc291e;
+$error-second-color: #DE5248;
+$warning-color: #E5A84F;
+$info-color: #2F89CE;
+
+$primary-background-color : $light !default;
+$secondary-background-color: #f0f0f0;
+$footer-background-color :#fff;
+$header-background-color :#fff;
+$primary-text-color: #6b717b;
+$secondary-text-color: #747a83;
+$teriary-text-color: #707680;
+$heading-color: #383c41;
+$primary-link-color: #0088cc;
+
+$border-color: $secondary-hover-color;
+$active-border-color: $primary-color;
+$cursor-disabled : not-allowed;
+
+$validation-error-color:#ca241c;
+

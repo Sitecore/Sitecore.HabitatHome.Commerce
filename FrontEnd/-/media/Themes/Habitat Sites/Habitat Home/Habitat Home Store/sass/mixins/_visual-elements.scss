@@ -1,0 +1,283 @@
+@mixin control() {
+    height: $control-normal-height;
+    border-radius: $border-radius;
+    background-color: $light;
+    color: $secondary-text-color;
+    border: solid 1px $border-color;
+    background-image: none;
+    box-shadow: none !important;
+    text-align: left;
+}
+
+@mixin input() {
+    @include control();
+    @include transition();
+    &:hover {
+        border-color: darken($border-color, 0.50);
+        @include transition();
+    }
+    &:active,
+    &:focus {
+        border-color: $active-border-color;
+        @include transition();
+    }
+    &:disabled,
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        background-color: $secondary-background-color;
+    }
+}
+
+@mixin button($bg, $color, $borderColor) {
+    border: 2px solid $borderColor;
+    font-size: $font-size-base !important;
+    font-weight: 400;
+    height: $control-normal-height;
+    text-align: center !important;
+    background: $bg;
+    color: $color !important;
+    text-shadow: none;
+    box-shadow: none;
+    padding: $padding*0.4 $padding*2.5 $padding*0.4 $padding*2.5;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    &:active,
+    &:hover {
+        background: darken($bg, 2) !important;
+        color: lighten($color, 2);
+        @include transition();
+    }
+    &:active {
+        background: darken($bg, 6) !important;
+        color: lighten($color, 2);
+        @include transition();
+    }
+    &:disabled,
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: $cursor-disabled;
+        opacity: 0.4;
+    }
+}
+
+@mixin button-border($bg, $color, $borderColor) {
+    border: 2px solid $borderColor;
+    background: $bg;
+    color: $color;
+    font-size: $font-size-base;
+    font-weight: 600;
+    height: $control-normal-height;
+    text-align: center;
+    text-shadow: none;
+    box-shadow: none;
+    display: inline-block;
+    padding: $padding*0.4 $padding*2.5 $padding*0.4 $padding*2.5;
+    border-radius: $border-radius;
+    &:active,
+    &:hover {
+        background: darken($borderColor, 2);
+        color: $bg;
+        @include transition();
+        text-decoration: none;
+    }
+    &:active {
+        background: darken($borderColor, 6);
+        color: $bg;
+        @include transition();
+        text-decoration: none;
+    }
+    &:disabled,
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: $cursor-disabled;
+        opacity: 0.4;
+    }
+}
+
+@mixin primary-button-filled() {
+    @include button($primary-color, $light, $primary-color);
+    &:hover {
+        color: $light;
+        background-color: $primary-hover-color;
+    }
+    &:active {
+        color: $light;
+        background-color: $primary-active-color;
+    }
+}
+
+@mixin primary-button-line() {
+    @include button-border($light, $primary-color, $primary-color);
+    &:hover {
+        color: $light;
+        background-color: $primary-hover-color;
+    }
+    &:active {
+        color: $light;
+        background-color: $primary-active-color;
+    }
+}
+
+@mixin secondary-button-filled() {
+    @include button($secondary-color, $light, $secondary-color);
+    &:hover {
+        color: $light;
+        background-color: $secondary-hover-color;
+    }
+    &:active {
+        color: $light;
+        background-color: $secondary-active-color;
+    }
+}
+
+@mixin secondary-button-line() {
+    @include button-border($light, $teriary-text-color, $secondary-color);
+    &:hover {
+        color: $light;
+        background-color: $secondary-hover-color;
+    }
+    &:active {
+        color: $light;
+        background-color: $secondary-active-color;
+    }
+}
+
+@mixin error-button-filled() {
+    @include button($error-color, $light, $error-color);
+    &:hover {
+        color: $light;
+        background-color: lighten($error-color, 0.25);
+    }
+    &:active {
+        color: $light;
+        background-color: darken($error-color, 0.25);
+    }
+}
+
+@mixin error-button-line() {
+    @include button-border($light, $error-color, $error-color);
+    &:hover {
+        color: $light;
+        background-color: lighten($error-color, 0.25);
+    }
+    &:active {
+        color: $light;
+        background-color: darken($error-color, 0.25);
+    }
+}
+
+@mixin label() {
+    color: $primary-text-color;
+    font-weight: 600;
+}
+
+@mixin highlighted-text() {
+    font-size: $font-size-large;
+    font-weight: bold;
+    color: $heading-color;
+}
+
+@mixin link() {
+    color: $primary-link-color;
+    font-size: $font-size-base;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+@mixin text-input() {
+    @include input();
+    padding: $padding/2 $padding;
+    line-height: 1.42857143;
+}
+
+@mixin dropdown-list() {
+    @include input();
+    -webkit-appearance: menulist;
+    padding: 0 8px;
+}
+
+@mixin checkbox() {
+    -webkit-appearance: none;
+    @include input();
+    display: inline-block;
+    width: $control-normal-height;
+    max-width: $control-normal-height;
+    min-width: $control-normal-height;
+    text-align: center;
+    &:active,
+    &:checked,
+    &:checked:active {
+        font-weight: 400;
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+    &:checked:after {
+        content: '\2714';
+        font-size: $font-size-large;
+        color: $primary-color;
+        border-color: $primary-color;
+        padding-top: 3px;
+        display: inline-block;
+    }
+}
+
+@mixin radio-button() {
+    -webkit-appearance: none;
+    @include input();
+    display: inline-block;
+    width: $control-normal-height;
+    text-align: center;
+    margin-right: 7px;
+    padding: 5px;
+    border-radius: 50px;
+    &:active,
+    &:checked,
+    &:checked:active {
+        font-weight: 400;
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+    &:checked:after {
+        content: ' ';
+        font-size: $font-size-large;
+        color: $primary-color;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        width: $font-size-base;
+        height: $font-size-base;
+        border-radius: 50px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@mixin main-title() {
+    font-size: $font-size-h2;
+    font-family: $header-font-family;
+    color: $heading-color;
+    font-weight: normal;
+    span {
+        font-size: $font-size-h2;
+        font-family: $header-font-family;
+        color: $heading-color;
+        font-weight: normal;
+    }
+}
+
+@mixin secondary-title() {
+    font-size: $font-size-large;
+    font-family: $font-family;
+    color: $heading-color;
+    font-weight: 600;
+    span {
+        font-size: $font-size-large;
+        font-family: $header-font-family;
+        color: $heading-color;
+        font-weight: 600;
+    }
+}

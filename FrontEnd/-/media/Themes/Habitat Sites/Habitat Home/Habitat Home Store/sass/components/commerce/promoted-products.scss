@@ -1,0 +1,64 @@
+@import '../../index';
+@import './product-list-component';
+.component.cxa-promoted-products-component {
+    @extend .component.cxa-productlist-component;
+    .product-list{
+        .title{
+            font-size: $font-size-xlarge;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .load-more-btn{
+            border: 2px solid $promoted-color;
+            color: $promoted-color;
+            &:active, &:hover{
+                color: $light;
+                background: $promoted-color;
+            }
+        }
+        &>ul{
+            >li{
+                .product-summary{
+                    .product-info{
+                        .product-category {
+                            a {
+                                border-color: $promoted-color !important;
+                                &:active,
+                                &:hover,
+                                &:focus {
+                                    background-color: $promoted-color !important;
+                                    color: $light;
+                                }
+                                &:active *,
+                                &:hover *,
+                                &:focus * {
+                                    color: $light !important;
+                                }
+                                span{
+                                    color: $promoted-color !important;
+
+                                    &:active,
+                                    &:hover,
+                                    &:focus {
+                                        text-decoration: none;
+                                        color: $light !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .current-price {
+        background-color: $promoted-color !important;
+    }
+    .product-category {
+        &.on-sale {
+            a {
+                color: $promoted-color;
+            }
+        }
+    }
+}

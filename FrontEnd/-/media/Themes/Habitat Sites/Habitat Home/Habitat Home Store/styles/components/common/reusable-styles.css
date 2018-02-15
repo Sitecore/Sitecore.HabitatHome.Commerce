@@ -1,0 +1,345 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.container-rounded {
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .container-rounded {
+    margin-top: 0;
+  }
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.sidebar-and-main-splitter .component.column-splitter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-bottom: 30px;
+}
+
+.sidebar-and-main-splitter .component.column-splitter > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.sidebar-and-main-splitter .component.column-splitter > * {
+  margin: 0;
+}
+
+.sidebar-and-main-splitter .component.column-splitter > div:first-child {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+}
+
+.sidebar-and-main-splitter .component.column-splitter > div:last-child {
+  -ms-flex-preferred-size: 63%;
+  flex-basis: 63%;
+}
+
+.box-shadow img {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.primary-button-line a, .primary-button-line button {
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+}
+
+.primary-button-line a:active, .primary-button-line a:hover, .primary-button-line button:active, .primary-button-line button:hover {
+  background: #0d8896 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.primary-button-line a:active, .primary-button-line button:active {
+  background: #0c7783 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.primary-button-line a:disabled, .primary-button-line a.disabled, .primary-button-line a[disabled],
+fieldset[disabled] .primary-button-line a, .primary-button-line button:disabled, .primary-button-line button.disabled, .primary-button-line button[disabled],
+fieldset[disabled] .primary-button-line button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.primary-button-line a:hover, .primary-button-line button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.primary-button-line a:active, .primary-button-line button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.primary-button-filled a, .primary-button-filled button {
+  border: 2px solid #0e909f;
+  font-size: 14px !important;
+  font-weight: 400;
+  height: 34px;
+  text-align: center !important;
+  background: #0e909f;
+  color: #fff !important;
+  text-shadow: none;
+  box-shadow: none;
+  padding: 4px 25px 4px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.primary-button-filled a:active, .primary-button-filled a:hover, .primary-button-filled button:active, .primary-button-filled button:hover {
+  background: #0d8896 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.primary-button-filled a:active, .primary-button-filled button:active {
+  background: #0c7783 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.primary-button-filled a:disabled, .primary-button-filled a.disabled, .primary-button-filled a[disabled],
+fieldset[disabled] .primary-button-filled a, .primary-button-filled button:disabled, .primary-button-filled button.disabled, .primary-button-filled button[disabled],
+fieldset[disabled] .primary-button-filled button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.primary-button-filled a:hover, .primary-button-filled button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.primary-button-filled a:active, .primary-button-filled button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.secondary-button-line a, .secondary-button-line button {
+  border: 2px solid #868b93;
+  background: #fff;
+  color: #707680 !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  color: #707680 !important;
+}
+
+.secondary-button-line a:active, .secondary-button-line a:hover, .secondary-button-line button:active, .secondary-button-line button:hover {
+  background: #81868e !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.secondary-button-line a:active, .secondary-button-line button:active {
+  background: #767c84 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.secondary-button-line a:disabled, .secondary-button-line a.disabled, .secondary-button-line a[disabled],
+fieldset[disabled] .secondary-button-line a, .secondary-button-line button:disabled, .secondary-button-line button.disabled, .secondary-button-line button[disabled],
+fieldset[disabled] .secondary-button-line button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.secondary-button-line a:hover, .secondary-button-line button:hover {
+  color: #fff;
+  background-color: #b9bcc1;
+}
+
+.secondary-button-line a:active, .secondary-button-line button:active {
+  color: #fff;
+  background-color: #6b717b;
+}
+
+.secondary-button-line a:hover, .secondary-button-line a:active, .secondary-button-line button:hover, .secondary-button-line button:active {
+  color: #fff !important;
+}
+
+.secondary-button-filled a, .secondary-button-filled button {
+  border: 2px solid #868b93;
+  font-size: 14px !important;
+  font-weight: 400;
+  height: 34px;
+  text-align: center !important;
+  background: #868b93;
+  color: #fff !important;
+  text-shadow: none;
+  box-shadow: none;
+  padding: 4px 25px 4px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.secondary-button-filled a:active, .secondary-button-filled a:hover, .secondary-button-filled button:active, .secondary-button-filled button:hover {
+  background: #81868e !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.secondary-button-filled a:active, .secondary-button-filled button:active {
+  background: #767c84 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.secondary-button-filled a:disabled, .secondary-button-filled a.disabled, .secondary-button-filled a[disabled],
+fieldset[disabled] .secondary-button-filled a, .secondary-button-filled button:disabled, .secondary-button-filled button.disabled, .secondary-button-filled button[disabled],
+fieldset[disabled] .secondary-button-filled button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.secondary-button-filled a:hover, .secondary-button-filled button:hover {
+  color: #fff;
+  background-color: #b9bcc1;
+}
+
+.secondary-button-filled a:active, .secondary-button-filled button:active {
+  color: #fff;
+  background-color: #6b717b;
+}
+
+.main-title .component-content {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: normal;
+}
+
+.main-title .component-content span {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: normal;
+}
+
+.main-title .component-content span {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: normal;
+}
+
+.main-title .component-content span span {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: normal;
+}
+
+.secondary-title .component-content {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: 600;
+}
+
+.secondary-title .component-content span {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: 600;
+}
+
+.secondary-title .component-content span {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: 600;
+}
+
+.secondary-title .component-content span span {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #383c41;
+  font-weight: 600;
+}
+
+.large-height a, .large-height button {
+  min-height: 42px;
+  height: 42px;
+  padding: 8px 25px 8px 25px;
+}
+
+main .no-border {
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}

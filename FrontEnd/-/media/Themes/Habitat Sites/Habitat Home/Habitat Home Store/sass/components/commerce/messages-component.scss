@@ -1,0 +1,82 @@
+@import '../../index';
+
+@mixin messageIcon() {
+    font-family: FontAwesome;
+    color: $light;
+    height: 100%;
+    font-size: 19px;
+}
+
+@mixin message($color, $icon) {
+    color: $light;
+    font-weight: bold;
+    cursor: pointer;
+    background: $color;
+    table {
+        background: none;
+    }
+    p {
+        color: $light;
+    }
+    border: 1px solid darken($color, 5);
+    &:before {
+        @include messageIcon();
+        @include sc-icon($icon);
+        font-size: 14px;
+        margin: 9px 14px;
+        position: absolute;
+    }
+}
+
+@mixin message-section-layout() {
+    table {
+        margin: 0;
+        display: grid;
+        tr {
+            margin-bottom: 3px;
+            @include transition();
+            margin: 4px 0;
+            display: block;
+            p {
+                margin-left: 32px;
+            }
+            table {
+                margin: 0;
+            }
+            td {
+                padding: $padding;
+            }
+        }
+    }
+}
+
+.cxa-messagesummary-component {
+    margin-top: 0;
+    .info-message-section {
+        @include message-section-layout();
+        table {
+            background: none;
+            tr {
+                @include message($info-color, $scxa-info-copy);
+            }
+        }
+    }
+    .warning-message-section {
+        @include message-section-layout();
+        table {
+            background: none;
+            tr {
+                @include message($warning-color, $scxa-warning);
+            }
+        }
+    }
+    .error-message-section {
+        @include message-section-layout();
+        table {
+            background: none;
+            tr {
+                @include message($error-second-color, $scxa-error);
+            }
+        }
+    }
+}

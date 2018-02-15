@@ -1,0 +1,1035 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-addresseditor-component a,
+.cxa-addresseditor-component button {
+  min-height: 42px;
+}
+
+.cxa-addresseditor-component a {
+  padding-top: 8px;
+}
+
+.cxa-addresseditor-component .address-edit-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.cxa-addresseditor-component .address-edit-section > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-edit-section > * {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-edit-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cxa-addresseditor-component .address-edit-section > * {
+    width: 89.4%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.cxa-addresseditor-component .address-edit-section > * {
+  -ms-flex-preferred-size: 29.8%;
+  flex-basis: 29.8%;
+}
+
+.cxa-addresseditor-component .address-edit-section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.cxa-addresseditor-component .address-edit-section > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-edit-section > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.cxa-addresseditor-component .address-edit-section > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.cxa-addresseditor-component .address-edit-section > div input[type="text"] {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-edit-section > div input[type="password"] {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-edit-section > div select {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: false;
+  -ms-flex-align: false;
+  align-items: false;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > * {
+  -ms-flex-item-align: false;
+  -ms-grid-row-align: false;
+  align-self: false;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > *:not(:first-child) {
+  margin-left: 0;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > div {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-edit-section .set-primary > div > * {
+  margin: 0;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='text'] {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 10px;
+  line-height: 1.42857143;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='text']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='text']:active, .cxa-addresseditor-component .address-edit-section input[type='text']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='text']:disabled, .cxa-addresseditor-component .address-edit-section input[type='text'].disabled, .cxa-addresseditor-component .address-edit-section input[type='text'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-edit-section input[type='text'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='password'] {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 10px;
+  line-height: 1.42857143;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='password']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='password']:active, .cxa-addresseditor-component .address-edit-section input[type='password']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='password']:disabled, .cxa-addresseditor-component .address-edit-section input[type='password'].disabled, .cxa-addresseditor-component .address-edit-section input[type='password'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-edit-section input[type='password'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio'] {
+  -webkit-appearance: none;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 34px;
+  text-align: center;
+  margin-right: 7px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio']:active, .cxa-addresseditor-component .address-edit-section input[type='radio']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio']:disabled, .cxa-addresseditor-component .address-edit-section input[type='radio'].disabled, .cxa-addresseditor-component .address-edit-section input[type='radio'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-edit-section input[type='radio'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio']:active, .cxa-addresseditor-component .address-edit-section input[type='radio']:checked, .cxa-addresseditor-component .address-edit-section input[type='radio']:checked:active {
+  font-weight: 400;
+  color: #0e909f;
+  border-color: #0e909f;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='radio']:checked:after {
+  content: ' ';
+  font-size: 18px;
+  color: #0e909f;
+  background-color: #0e909f;
+  border-color: #0e909f;
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox'] {
+  -webkit-appearance: none;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 34px;
+  max-width: 34px;
+  min-width: 34px;
+  text-align: center;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox']:active, .cxa-addresseditor-component .address-edit-section input[type='checkbox']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox']:disabled, .cxa-addresseditor-component .address-edit-section input[type='checkbox'].disabled, .cxa-addresseditor-component .address-edit-section input[type='checkbox'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-edit-section input[type='checkbox'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox']:active, .cxa-addresseditor-component .address-edit-section input[type='checkbox']:checked, .cxa-addresseditor-component .address-edit-section input[type='checkbox']:checked:active {
+  font-weight: 400;
+  color: #0e909f;
+  border-color: #0e909f;
+}
+
+.cxa-addresseditor-component .address-edit-section input[type='checkbox']:checked:after {
+  content: '\2714';
+  font-size: 18px;
+  color: #0e909f;
+  border-color: #0e909f;
+  padding-top: 3px;
+  display: inline-block;
+}
+
+.cxa-addresseditor-component .address-edit-section select {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-appearance: menulist;
+  padding: 0 8px;
+}
+
+.cxa-addresseditor-component .address-edit-section select:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section select:active, .cxa-addresseditor-component .address-edit-section select:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-edit-section select:disabled, .cxa-addresseditor-component .address-edit-section select.disabled, .cxa-addresseditor-component .address-edit-section select[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-edit-section select {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-edit-section label {
+  color: #6b717b;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-edit-section {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-edit-section > * {
+    width: 100%;
+  }
+}
+
+.cxa-addresseditor-component .address-selector-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-bottom: 15px;
+}
+
+.cxa-addresseditor-component .address-selector-section > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-selector-section > * {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-selector-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cxa-addresseditor-component .address-selector-section > * {
+    width: 89.4%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.cxa-addresseditor-component .address-selector-section > * {
+  -ms-flex-preferred-size: 29.8%;
+  flex-basis: 29.8%;
+}
+
+.cxa-addresseditor-component .address-selector-section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.cxa-addresseditor-component .address-selector-section > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-selector-section > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.cxa-addresseditor-component .address-selector-section > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.cxa-addresseditor-component .address-selector-section > div input[type="text"] {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-selector-section > div input[type="password"] {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-selector-section > div select {
+  width: 100%;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='text'] {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 10px;
+  line-height: 1.42857143;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='text']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='text']:active, .cxa-addresseditor-component .address-selector-section input[type='text']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='text']:disabled, .cxa-addresseditor-component .address-selector-section input[type='text'].disabled, .cxa-addresseditor-component .address-selector-section input[type='text'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-selector-section input[type='text'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='password'] {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 10px;
+  line-height: 1.42857143;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='password']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='password']:active, .cxa-addresseditor-component .address-selector-section input[type='password']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='password']:disabled, .cxa-addresseditor-component .address-selector-section input[type='password'].disabled, .cxa-addresseditor-component .address-selector-section input[type='password'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-selector-section input[type='password'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio'] {
+  -webkit-appearance: none;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 34px;
+  text-align: center;
+  margin-right: 7px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio']:active, .cxa-addresseditor-component .address-selector-section input[type='radio']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio']:disabled, .cxa-addresseditor-component .address-selector-section input[type='radio'].disabled, .cxa-addresseditor-component .address-selector-section input[type='radio'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-selector-section input[type='radio'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio']:active, .cxa-addresseditor-component .address-selector-section input[type='radio']:checked, .cxa-addresseditor-component .address-selector-section input[type='radio']:checked:active {
+  font-weight: 400;
+  color: #0e909f;
+  border-color: #0e909f;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='radio']:checked:after {
+  content: ' ';
+  font-size: 18px;
+  color: #0e909f;
+  background-color: #0e909f;
+  border-color: #0e909f;
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox'] {
+  -webkit-appearance: none;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 34px;
+  max-width: 34px;
+  min-width: 34px;
+  text-align: center;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox']:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox']:active, .cxa-addresseditor-component .address-selector-section input[type='checkbox']:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox']:disabled, .cxa-addresseditor-component .address-selector-section input[type='checkbox'].disabled, .cxa-addresseditor-component .address-selector-section input[type='checkbox'][disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-selector-section input[type='checkbox'] {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox']:active, .cxa-addresseditor-component .address-selector-section input[type='checkbox']:checked, .cxa-addresseditor-component .address-selector-section input[type='checkbox']:checked:active {
+  font-weight: 400;
+  color: #0e909f;
+  border-color: #0e909f;
+}
+
+.cxa-addresseditor-component .address-selector-section input[type='checkbox']:checked:after {
+  content: '\2714';
+  font-size: 18px;
+  color: #0e909f;
+  border-color: #0e909f;
+  padding-top: 3px;
+  display: inline-block;
+}
+
+.cxa-addresseditor-component .address-selector-section select {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-appearance: menulist;
+  padding: 0 8px;
+}
+
+.cxa-addresseditor-component .address-selector-section select:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section select:active, .cxa-addresseditor-component .address-selector-section select:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-selector-section select:disabled, .cxa-addresseditor-component .address-selector-section select.disabled, .cxa-addresseditor-component .address-selector-section select[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-selector-section select {
+  background-color: #f0f0f0;
+}
+
+.cxa-addresseditor-component .address-selector-section label {
+  color: #6b717b;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-selector-section > * {
+    width: 100%;
+  }
+}
+
+.cxa-addresseditor-component .set-primary label {
+  -ms-flex-item-align: center !important;
+  -ms-grid-row-align: center !important;
+  align-self: center !important;
+}
+
+.cxa-addresseditor-component .address-buttons-section {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: false;
+  -ms-flex-align: false;
+  align-items: false;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.cxa-addresseditor-component .address-buttons-section > * {
+  -ms-flex-item-align: false;
+  -ms-grid-row-align: false;
+  align-self: false;
+}
+
+.cxa-addresseditor-component .address-buttons-section > *:not(:last-child) {
+  margin-right: 15px;
+}
+
+.cxa-addresseditor-component .address-buttons-section > *:not(:first-child) {
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-buttons-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cxa-addresseditor-component .address-buttons-section > * {
+    width: 89.4%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.cxa-addresseditor-component .address-buttons-section > div {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.cxa-addresseditor-component .address-buttons-section > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-addresseditor-component .address-buttons-section > div > * {
+  margin: 0;
+}
+
+.cxa-addresseditor-component .address-buttons-section a,
+.cxa-addresseditor-component .address-buttons-section button {
+  margin-top: 15px;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  border: 2px solid #0e909f;
+  font-size: 14px !important;
+  font-weight: 400;
+  height: 34px;
+  text-align: center !important;
+  background: #0e909f;
+  color: #fff !important;
+  text-shadow: none;
+  box-shadow: none;
+  padding: 4px 25px 4px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button:active, .cxa-addresseditor-component .address-buttons-section .save-addresss-button:hover {
+  background: #0d8896 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button:active {
+  background: #0c7783 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button:disabled, .cxa-addresseditor-component .address-buttons-section .save-addresss-button.disabled, .cxa-addresseditor-component .address-buttons-section .save-addresss-button[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .save-addresss-button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.cxa-addresseditor-component .address-buttons-section .save-addresss-button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  border: 2px solid #dc291e;
+  background: #fff;
+  color: #dc291e !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button:active, .cxa-addresseditor-component .address-buttons-section .delete-address-button:hover {
+  background: #d3271d !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button:active {
+  background: #c1241a !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button:disabled, .cxa-addresseditor-component .address-buttons-section .delete-address-button.disabled, .cxa-addresseditor-component .address-buttons-section .delete-address-button[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .delete-address-button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button:hover {
+  color: #fff;
+  background-color: #dd291e;
+}
+
+.cxa-addresseditor-component .address-buttons-section .delete-address-button:active {
+  color: #fff;
+  background-color: #db291e;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  padding-top: 8px;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button:active, .cxa-addresseditor-component .address-buttons-section .cancel-edit-button:hover {
+  background: #0d8896 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button:active {
+  background: #0c7783 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button:disabled, .cxa-addresseditor-component .address-buttons-section .cancel-edit-button.disabled, .cxa-addresseditor-component .address-buttons-section .cancel-edit-button[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .cancel-edit-button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.cxa-addresseditor-component .address-buttons-section .cancel-edit-button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: auto;
+  border: 2px solid #868b93;
+  background: #fff;
+  color: #707680 !important;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center !important;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  padding-top: 8px;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account:active, .cxa-addresseditor-component .address-buttons-section .back-to-my-account:hover {
+  background: #81868e !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account:active {
+  background: #767c84 !important;
+  color: #fff !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account:disabled, .cxa-addresseditor-component .address-buttons-section .back-to-my-account.disabled, .cxa-addresseditor-component .address-buttons-section .back-to-my-account[disabled],
+fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .back-to-my-account {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account:hover {
+  color: #fff;
+  background-color: #b9bcc1;
+}
+
+.cxa-addresseditor-component .address-buttons-section .back-to-my-account:active {
+  color: #fff;
+  background-color: #6b717b;
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-buttons-section {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .cxa-addresseditor-component .address-buttons-section > * {
+    width: 100% !important;
+  }
+}

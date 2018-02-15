@@ -1,0 +1,25 @@
+@import '../base/index';
+@import '../mixins/index';
+
+.product-details-page{
+    main{
+        .component.column-splitter{
+            .container-rounded{
+                padding: 40px 40px 31px 40px;
+                height: 100%;
+                .product-info{
+                    .product-name {
+                        margin-bottom: 10px;
+                        h1 {
+                            margin-top: 0;
+                            line-height: 125%;
+                            font-weight: 500;
+                            color: $heading-color;
+                            font-family: 'KievitPro' !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

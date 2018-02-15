@@ -1,0 +1,213 @@
+@import '../../index';
+@mixin shopping-cart-icon($isActive: false) {
+    @include sc-icon($scxa-shoppingcart);
+    font-size: 17px;
+    padding: 5px 30px 5px 9px;
+    font-size: 12px;
+    border-radius: 150px;
+    float: right;
+    position: relative;
+    border: 2px solid $primary-color;
+    @if($isActive) {
+        color: $light;
+        background: $primary-color;
+    }
+    @else {
+        color: $primary-color;
+        background: $light;
+    }
+}
+
+.component.cxa-minicart-component {
+    display: flex;
+    justify-content: center;
+    .basket {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        &:before{
+            width: 60px;
+            content: "";
+            position: absolute;
+            height: 150px;
+        }
+        .minicart {
+            align-self: flex-end;
+            max-width: 480px;
+            float: right;
+            width: 480px;
+            padding: 22px 16px;
+            z-index: 100;
+            position: absolute;
+            margin-top: 45px;
+            @include respond-to($sm){
+                width: 100%;
+                max-width: initial;
+                right: 0;
+                margin-top: 44px;
+                padding: 22px 30px;
+            }
+
+            .minicart-content {
+                padding: 0;
+                .minicart-item {
+                    display: flex;
+                    margin: 10px 0;
+                    padding: 10px 0;
+                    img {
+                        max-width: 72px;
+                        max-height: 72px;
+                    }
+                }
+            }
+            .minicart-total {
+                line-height: 20px;
+                span {
+                    padding-left: $padding;
+                }
+            }
+        }
+    }
+    .minicart-item {
+        display: flex;
+        justify-content: space-between;
+        .minicart-delete {
+            margin-left: 2px;
+            margin-right: auto;
+        }
+    }
+    .minicart-buttons {
+        @include row-of-elements-wide-apart();
+    }
+    .minicart-footer {
+        @include row-of-elements-wide-apart();
+        margin-top: $margin*2;
+        margin-bottom: $margin*2;
+    }
+}
+
+.component.cxa-minicart-component {
+    .basket {
+        .minicart {
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+            background: $light;
+            border-radius: 4px;
+            .minicart-content {
+                .minicart-item {
+                    border-bottom: 1px solid #e4e7ec;
+                    .minicart-info {
+                        margin-left: 10px;
+                        width: 345px;
+                        min-width: 345px;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        p {
+                            line-height: 180%;
+                        }
+                        a {
+                            line-height: 22px;
+                        }
+                        h5 {
+                            a {
+                                font-size: $font-size-medium;
+                                font-weight: bold;
+                                color: $heading-color;
+                                &:hover {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                        .price {
+                            align-self: flex-end;
+                            font-size: $font-size-large;
+                            color: $heading-color;
+                            font-weight: 600;
+                            @include respond-to($sm){
+                                align-self: flex-start;
+                            }
+                        }
+
+                        @include respond-to($sm){
+                            min-width: unset;
+                            width: auto;
+                        }
+                    }
+                    .minicart-delete {
+                        a {
+                            span {
+                                &:before {
+                                    @include sc-icon($scxa-delete-copy);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:before {
+                @include angleIcon(rgba(0, 0, 0, 0.4), 28px);
+                opacity: 0.2;
+                right: 42px;
+
+                @include respond-to($sm){
+                    right: 55px;
+                }
+            }
+            .minicart-footer {
+                .minicart-total-label {
+                    color: $heading-color;
+                    font-weight: bold;
+                    font-size: $font-size-base;
+                }
+                .minicart-total-amount {
+                    font-size: $font-size-h2;
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+            }
+            .minicart-buttons {
+                .checkout-button {
+                    @include primary-button-filled();
+                    @include large-height();
+                }
+                .view-cart-button {
+                    @include primary-button-line();
+                    @include large-height();
+                }
+            }
+        }
+        .top-text {
+            display: flex;
+            &>a {
+                display: none;
+            }
+            .cart-items-count {
+                background: #ca241c;
+                color: $light;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 10px;
+                margin-left: -25px;
+                z-index: 111;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            &:before {
+                @include shopping-cart-icon(false);
+            }
+            &:hover:before {
+                @include shopping-cart-icon(true);
+            }
+            &.active {
+                &:before {
+                    @include shopping-cart-icon(true);
+                }
+            }
+        }
+    }
+}
