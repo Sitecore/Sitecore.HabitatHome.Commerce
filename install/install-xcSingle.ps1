@@ -29,7 +29,8 @@ $xConnect = $config.settings.xConnect
 $sitecore = $config.settings.sitecore
 $solr = $config.settings.solr
 $assets = $config.assets
-$modules = $config.modules
+
+$resourcePath = Join-Path $assets.root "Resources"
 
 
 Write-Host "*******************************************************" -ForegroundColor Green
@@ -187,7 +188,13 @@ function Install-CommerceAssets {
     
     }
 }
+
+Function Stop-XConnect {
+    Install-SitecoreConfiguration $(Join-Path $resourcePath "stop-site.json") `
+        -SiteName $xConnect.siteName
+}
 Install-Prerequisites
 Install-RequiredInstallationAssets
 Install-CommerceAssets
-#Stop-XConnect
+Stop-XConnect
+#

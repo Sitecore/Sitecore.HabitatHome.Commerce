@@ -27,13 +27,6 @@
         "site": {
             "storefrontHostName": "@@site.storefrontHostName@@",
             "storefrontPrefix": "@@site.storefrontPrefix@@"
-        },
-
-        "sql": {
-            "server": "@@sql.server@@",
-            "adminUser": "@@sql.adminUser@@",
-            "adminPassword": "@@sql.adminPassword@@"
-
         }
     }
 
