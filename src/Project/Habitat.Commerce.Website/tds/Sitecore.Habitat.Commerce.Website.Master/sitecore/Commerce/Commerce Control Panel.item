@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {770EF91B-36CC-42BF-865E-B76633FAC34B}
+database: master
+path: /sitecore/Commerce/Commerce Control Panel
+parent: {CA2E00B1-0917-44A5-AD05-5FC3167AAA0C}
+name: Commerce Control Panel
+master: {00000000-0000-0000-0000-000000000000}
+template: {E9DABEAE-FED4-416C-9BCA-AE7C6950E18A}
+templatekey: Commerce Control Panel Folder
+created: 20180126T112703Z
+
+----version----
+language: en
+version: 1
+revision: 9d44dcba-e4bb-45f7-904f-a816df6d4e71
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150821T123416Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9d44dcba-e4bb-45f7-904f-a816df6d4e71
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150821T123416Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

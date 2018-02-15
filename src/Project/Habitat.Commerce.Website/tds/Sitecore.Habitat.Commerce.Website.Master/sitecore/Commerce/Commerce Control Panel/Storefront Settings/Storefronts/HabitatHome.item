@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {2F395077-DA43-4935-B85C-29AE53A62F50}
+database: master
+path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome
+parent: {99A2D449-7CC0-4FAC-B516-DB2176898898}
+name: HabitatHome
+master: {CAB95775-02C2-4B53-9CD4-983A8CC5CA4A}
+template: {59190273-FDCC-4048-9537-7EDBDF94B22D}
+templatekey: Storefront
+created: 20180213T181729Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{B0CFD948-A7EB-4F73-888A-E3A2E1B6A387}
+----version----
+language: en
+version: 1
+revision: 3d795b66-dac1-4df1-98e5-a9c7172ebe37
+
+----field----
+field: {A68724CC-9513-46F5-AA82-D26C0644B21D}
+name: Title
+key: title
+content-length: 12
+
+Habitat Home
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180204T191237Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3d795b66-dac1-4df1-98e5-a9c7172ebe37
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180214T165242Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
