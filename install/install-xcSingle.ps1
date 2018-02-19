@@ -297,4 +297,4 @@ Set-ModulesPath
 Install-Commerce
 
 
-#Start-XConnect
+Start-XConnect
