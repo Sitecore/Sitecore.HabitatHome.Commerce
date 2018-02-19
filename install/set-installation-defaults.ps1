@@ -28,17 +28,33 @@ $assets.commerce.installationFolder = Join-Path $assets.root "Commerce"
 #Commerce Files to Extract
 $sifCommerceVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "SIF.Sitecore.Commerce"} 
 $sifCommerceVersion.version = "1.0.1748"
+$assets.commerce.sifCommerceRoot = Join-Path $assets.commerce.installationFolder $($sifCommerceVersion.name + "." + $sifCommerceVersion.version)
 $commerceEngineVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.Commerce.Engine"} 
 $commerceEngineVersion.version = "2.0.1922"
+
+$commerceEngineSDKVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.Commerce.Engine.SDK"} 
+$commerceEngineSDKVersion.version = "2.0.1922"
+
 $bizFxVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.BizFX"} 
 $bizFxVersion.version = "1.0.572"
 
 # Settings
+$site = $json.settings.site
+# Commerce Settings
+$commerce = $json.settings.commerce
+$commerce.storefrontPrefix = "retail"
+$commerce.storefrontHostName = $commerce.storefrontPrefix + "." + $site.suffix
+
+$commerce.serviceAccountDomain = "$($Env:COMPUTERNAME)"
+$commerce.serviceAccountUserName = "CSFndRuntimeUser"
+$commerce.serviceAccountPassword = "Pu8azaCr"
+$commerce.brainTreeAccountMerchandId = ""
+$commerce.brainTreeAccountPublicKey = ""
+$commerce.brainTreeAccountPrivateKey = ""
+$commerce.identityServerName = "SitecoreIdentityServer"
 
 # Site Settings
 $site = $json.settings.site
-$site.storefrontPrefix = "retail"
-$site.storefrontHostName = $site.storefrontPrefix + "." + $site.suffix
 
 # XConnect Parameters
 $xConnect = $json.settings.xConnect
@@ -47,7 +63,7 @@ $xConnect.certificateConfigurationPath = Join-Path $assets.root "xconnect-create
 
 # Sitecore Parameters
 $sitecore = $json.settings.sitecore
- $json.modules = ""
+$json.modules = ""
 
 # Solr Parameters
 $solr = $json.settings.solr

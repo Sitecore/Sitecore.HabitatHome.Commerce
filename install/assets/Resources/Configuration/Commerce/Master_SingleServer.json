@@ -336,31 +336,31 @@
         "ConfigFileList": [ "Sitecore.Marketing.Search.config" ]
       }
     },
-    // "InstallPowershellExtensions": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": ".\\Configuration\\SitecoreUtilities\\InstallModule.json",
-    //     "ModuleFullPath": "[parameter('PowerShellExtensionsModuleFullPath')]",
-    //     "ModulesDirDst": "[variable('ModulesDirDst')]",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
-    // "InstallSXAFrameworkModule": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": ".\\Configuration\\Commerce\\SXAStorefront\\SXAStorefront.Framework.json",
-    //     "ModuleFullPath": "[parameter('SXAModuleFullPath')]",
-    //     "ModulesDirDst": "[variable('ModulesDirDst')]",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
-    // "PublishExtensions": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": ".\\Configuration\\SitecoreUtilities\\PublishToWeb.json",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
+    "InstallPowershellExtensions": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": ".\\Configuration\\SitecoreUtilities\\InstallModule.json",
+        "ModuleFullPath": "[parameter('PowerShellExtensionsModuleFullPath')]",
+        "ModulesDirDst": "[variable('ModulesDirDst')]",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
+    "InstallSXAFrameworkModule": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": ".\\Configuration\\Commerce\\SXAStorefront\\SXAStorefront.Framework.json",
+        "ModuleFullPath": "[parameter('SXAModuleFullPath')]",
+        "ModulesDirDst": "[variable('ModulesDirDst')]",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
+    "PublishExtensions": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": ".\\Configuration\\SitecoreUtilities\\PublishToWeb.json",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
     "InstallHabitatImagesModule": {
       "Type": "InstallSitecoreConfiguration",
       "Params": {
@@ -474,13 +474,13 @@
         "ProjectConfigIncludeDir": "[variable('ProjectConfigIncludeDir')]"
       }
     },
-    // "PublishCommerce": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": ".\\Configuration\\SitecoreUtilities\\PublishToWeb.json",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
+    "PublishCommerce": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": ".\\Configuration\\SitecoreUtilities\\PublishToWeb.json",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
     "EnableIndexUpdate": {
       "Type": "SetXml",
       "Params": [
@@ -507,13 +507,13 @@
         "ConfigDir": "[variable('EngineConnectIncludeDir')]"
       }
     },
-    // "Reindex": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": ".\\Configuration\\SitecoreUtilities\\RebuildIndexes.json",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
+    "Reindex": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": ".\\Configuration\\SitecoreUtilities\\RebuildIndexes.json",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
     "RemoveSiteUtilityFolder": {
       "Type": "ManageCommerceService",
       "Params": {

@@ -22,17 +22,18 @@
 	        // Each task is an action that will be completed when Install-SitecoreConfiguration is called.
 	        // By default, tasks are applied in the order they are declared.
 	        // Tasks may reference Parameters, Variables, and config functions.
-	        "StartWebsite": {
-	            // Stops the website if it is running.
-	            "Type": "ManageWebsite",
+	      
+	        "StartAppPool": {
+	            // Stops the app pool if it is running.
+	            "Type": "ManageAppPool",
 	            "Params": {
 	                "Name": "[parameter('SiteName')]",
 	                "Action": "Start"
 	            }
-	        },
-	        "StartAppPool": {
-	            // Stops the app pool if it is running.
-	            "Type": "ManageAppPool",
+			},
+			"StartWebsite": {
+	            // Stops the website if it is running.
+	            "Type": "ManageWebsite",
 	            "Params": {
 	                "Name": "[parameter('SiteName')]",
 	                "Action": "Start"

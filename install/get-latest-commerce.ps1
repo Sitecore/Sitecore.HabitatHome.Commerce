@@ -11,6 +11,9 @@ if ($DownloadFolder -eq ""){
 if ($CommerceAssetFolder -eq ""){
     $CommerceAssetFolder = Join-Path "$PWD" "assets\Commerce"
 }
+$msbuildNuGetUrl = "https://v9assets.blob.core.windows.net/shared-assets/msbuild.microsoft.visualstudio.web.targets.14.0.0.3.nupkg"
+$msbuildNuGetPackageFileName = "msbuild.microsoft.visualstudio.web.targets.14.0.0.3.nupkg"
+$msbuildNuGetPackageDestination = $([io.path]::combine($DownloadFolder,$msbuildNuGetPackageFileName))
 
 $commercePackagePaths = $CommercePackageUrl.Split("?")
 $commercePackageFileName = $commercePackagePaths[0].substring($commercePackagePaths[0].LastIndexOf("/") + 1)
@@ -19,6 +22,10 @@ $commercePackageDestination = $([io.path]::combine($DownloadFolder,$commercePack
 Write-Host "Saving $CommercePackageUrl to $commercePackageDestination - if required" -ForegroundColor Green
 if (!(Test-Path $commercePackageDestination)) {
     Start-BitsTransfer -Source $CommercePackageUrl -Destination $commercePackageDestination
+}
+Write-Host "Saving $msbuildNuGetUrl to $msbuildNuGetPackageDestination - if required" -ForegroundColor Green
+if (!(Test-Path $msbuildNuGetPackageDestination)){
+    Start-BitsTransfer -source $msbuildNuGetUrl -Destination $msbuildNuGetPackageDestination
 }
 Write-Host "Extracting to $($CommerceAssetFolder)"
 set-alias sz "$env:ProgramFiles\7-zip\7z.exe"

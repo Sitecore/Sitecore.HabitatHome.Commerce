@@ -1,5 +1,5 @@
 Param(
-    [string] $ConfigurationFile = ".\configuration-xc0.json"
+    [string] $ConfigurationFile = '.\configuration-xc0.json'
 )
 
 #####################################################
@@ -11,8 +11,8 @@ $ErrorActionPreference = 'Stop'
 #Set-Location $PSScriptRoot
 
 if (!(Test-Path $ConfigurationFile)) {
-    Write-Host "Configuration file '$($ConfigurationFile)' not found." -ForegroundColor Red
-    Write-Host  "Please use 'set-installation...ps1' files to generate a configuration file." -ForegroundColor Red
+    Write-Host 'Configuration file '$($ConfigurationFile)' not found.' -ForegroundColor Red
+    Write-Host  'Please use 'set-installation...ps1' files to generate a configuration file.' -ForegroundColor Red
     Exit 1
 }
 
@@ -29,7 +29,7 @@ $xConnect = $config.settings.xConnect
 $sitecore = $config.settings.sitecore
 $solr = $config.settings.solr
 $assets = $config.assets
-
+$commerce = $config.settings.commerce
 $resourcePath = Join-Path $assets.root "Resources"
 
 
@@ -184,17 +184,98 @@ function Install-CommerceAssets {
     
         $extract = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version + ".zip")
         $output = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version)
-        sz x -o"$($output)" $extract -r -y -aoa
-    
+        if ($package.name -eq "Sitecore.Commerce.Engine.SDK") {
+            sz e $extract -o"$($assets.commerce.installationFolder)" "Sitecore.Commerce.Engine.DB.dacpac" -y -aoa
+        }
+        else {
+            sz x -o"$($output)" $extract -r -y -aoa    
+        }
     }
+    # Extract MSBuild nuget package
+    $extract = $(Join-Path $assets.downloadFolder "msbuild.microsoft.visualstudio.web.targets.14.0.0.3.nupkg")
+    $output = $(Join-Path $assets.commerce.installationFolder "msbuild.microsoft.visualstudio.web.targets.14.0.0.3")
+    sz x -o"$($output)" $extract -r -y -aoa
 }
 
 Function Stop-XConnect {
     Install-SitecoreConfiguration $(Join-Path $resourcePath "stop-site.json") `
         -SiteName $xConnect.siteName
 }
+Function Start-XConnect {
+    Install-SitecoreConfiguration $(Join-Path $resourcePath "start-site.json") `
+        -SiteName $xConnect.siteName
+}
+Function Set-ModulesPath {
+    $modulesPath = ( Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "Modules" )
+    if ($env:PSModulePath -notlike "*$modulesPath*") {
+        $p = $env:PSModulePath + ";" + $modulesPath
+        [Environment]::SetEnvironmentVariable("PSModulePath", $p)
+    }
+}
+Function Install-Commerce {
+    $params = @{
+        Path                               = $(Join-Path $resourcePath  'HabitatHome_Master_SingleServer.json')
+        BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
+        SitePrefix                         = $site.prefix
+        SiteName                           = $site.hostName
+        SiteHostHeaderName                 = $commerce.storefrontHostName 
+        InstallDir                         = $(Join-Path $site.webRoot $site.hostName)
+        XConnectInstallDir                 = $xConnect.siteRoot
+        CertificateName                    = $site.habitatHomeSslCertificateName
+        CommerceServicesDbServer           = $sql.server
+        CommerceServicesDbName             = $($site.storefrontHostName + "_SharedEnvironments")
+        CommerceServicesGlobalDbName       = $($site.storefrontHostName + "_Global")
+        SitecoreDbServer                   = $sql.server
+        SitecoreCoreDbName                 = $($site.prefix + "_Core")
+        CommerceSearchProvider             = "solr"
+        SolrUrl                            = $solr.url
+        SolrRoot                           = $solr.root
+        SolrService                        = $solr.serviceName
+        SolrSchemas                        = (Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "SolrSchemas" )
+        SearchIndexPrefix                  = ""
+        AzureSearchServiceName             = ""
+        AzureSearchAdminKey                = ""
+        AzureSearchQueryKey                = ""
+        CommerceEngineDacPac               = (Join-Path $assets.commerce.installationFolder  "Sitecore.Commerce.Engine.DB.dacpac")
+        CommerceOpsServicesPort            = "5015"
+        CommerceShopsServicesPort          = "5005"
+        CommerceAuthoringServicesPort      = "5000"
+        CommerceMinionsServicesPort        = "5010"		
+        SitecoreCommerceEngineZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.Commerce.Engine.2*.zip" -Recurse | Select-Object -ExpandProperty FullName)
+        SitecoreBizFxServicesContentPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include Sitecore.BizFX.* -Attribute Directory  -Recurse | Select-Object -ExpandProperty FullName)
+        SitecoreIdentityServerZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.IdentityServer.1.*.zip" -Recurse)
+        CommerceEngineCertificatePath      = $(Join-Path -Path $assets.certificatesPath -ChildPath "habitat.dev.local.xConnect.Client.crt" )	
+        SiteUtilitiesSrc                   = $(Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "SiteUtilityPages")
+        CommerceConnectModuleFullPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore Commerce Connect*.zip" -Recurse	)
+        CEConnectPackageFullPath           = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore.Commerce.Engine.Connect*.update" -Recurse)
+        SXACommerceModuleFullPath          = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator 1.*.zip" -Recurse)
+        SXAStorefrontModuleFullPath        = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Storefront 1.*.zip"-Recurse )
+        SXAStorefrontThemeModuleFullPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Storefront Themes*.zip"-Recurse )
+        SXAStorefrontCatalogModuleFullPath = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Habitat Catalog*.zip" -Recurse)
+        MergeToolFullPath                  = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "*Microsoft.Web.XmlTransform.dll" -Recurse | Select FullName)
+        UserAccount                        = @{
+            Domain   = $commerce.serviceAccountDomain
+            UserName = $commerce.serviceAccountUserName
+            Password = $commerce.serviceAccountPassword
+        }
+        BraintreeAccount                   = @{
+            MerchantId = $commerce.brainTreeAccountMerchandId
+            PublicKey  = $commerce.brainTreeAccountPublicKey
+            PrivateKey = $commerce.brainTreeAccountPrivateKey
+        }
+        SitecoreIdentityServerName         = 'SitecoreIdentityServer'
+    }
+    Write-Output $params
+    Install-SitecoreBaseConfigurationFolderuration @params
+}
+
+
 Install-Prerequisites
 Install-RequiredInstallationAssets
 Install-CommerceAssets
 Stop-XConnect
-#
+Set-ModulesPath
+Install-Commerce
+
+
+#Start-XConnect
