@@ -145,6 +145,13 @@ function Install-Prerequisites {
     if (-not $versionExists) {
         throw "Please install .NET Framework $($assets.dotnetMinimumVersion) or newer"
     }
+
+    # Install Url Rewrite and Web Deploy 3.6
+    set-alias wpi "$env:ProgramFiles\Microsoft\Web Platform Installer\WebpiCmd-x64.exe"
+    wpi /install /Products:UrlRewrite2, WebDeploy36NoSMO
+
+
+
 }
 
 function Install-RequiredInstallationAssets {
@@ -195,6 +202,16 @@ function Install-CommerceAssets {
     $extract = $(Join-Path $assets.downloadFolder "msbuild.microsoft.visualstudio.web.targets.14.0.0.3.nupkg")
     $output = $(Join-Path $assets.commerce.installationFolder "msbuild.microsoft.visualstudio.web.targets.14.0.0.3")
     sz x -o"$($output)" $extract -r -y -aoa
+
+    #  Install ASP.NET Core 2.0 and .NET Core Windows Server Hosting 2.0.0 
+    Write-Host "Installing ASP.NET Core 2.0 and .NET Core Windows Server Hosting 2.0.0"
+    $cmd = "$assets.downloadFolder\DotNetCore.2.0.5-WindowsHosting.exe"
+    $params = "/install /quiet /norestart"
+    $params = $params.Split(" ")
+    & "$cmd"  $params
+    $cmd = "$assets.downloadFolder\dotnet-sdk-2.0.0-win-x64.exe"
+    & "$cmd" $params
+        
 }
 
 Function Stop-XConnect {
