@@ -206,7 +206,7 @@ Function Start-XConnect {
         -SiteName $xConnect.siteName
 }
 Function Set-ModulesPath {
-    $modulesPath = ( Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "Modules" )
+    $modulesPath = ( Join-Path -Path $resourcePath -ChildPath "Modules" )
     if ($env:PSModulePath -notlike "*$modulesPath*") {
         $p = $env:PSModulePath + ";" + $modulesPath
         [Environment]::SetEnvironmentVariable("PSModulePath", $p)
@@ -216,6 +216,7 @@ Function Install-Commerce {
     $params = @{
         Path                               = $(Join-Path $resourcePath  'HabitatHome_Master_SingleServer.json')
         BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
+        webRoot                            = $site.webRoot
         SitePrefix                         = $site.prefix
         SiteName                           = $site.hostName
         SiteHostHeaderName                 = $commerce.storefrontHostName 
@@ -223,8 +224,8 @@ Function Install-Commerce {
         XConnectInstallDir                 = $xConnect.siteRoot
         CertificateName                    = $site.habitatHomeSslCertificateName
         CommerceServicesDbServer           = $sql.server
-        CommerceServicesDbName             = $($site.storefrontHostName + "_SharedEnvironments")
-        CommerceServicesGlobalDbName       = $($site.storefrontHostName + "_Global")
+        CommerceServicesDbName             = $($site.hostName + "_SharedEnvironments")
+        CommerceServicesGlobalDbName       = $($site.hostName + "_Global")
         SitecoreDbServer                   = $sql.server
         SitecoreCoreDbName                 = $($site.prefix + "_Core")
         CommerceSearchProvider             = "solr"
@@ -243,6 +244,7 @@ Function Install-Commerce {
         CommerceMinionsServicesPort        = "5010"		
         SitecoreCommerceEngineZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.Commerce.Engine.2*.zip" -Recurse | Select-Object -ExpandProperty FullName)
         SitecoreBizFxServicesContentPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include Sitecore.BizFX.* -Attribute Directory  -Recurse | Select-Object -ExpandProperty FullName)
+        SitecoreBizFxPostFix               = $site.prefix
         SitecoreIdentityServerZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.IdentityServer.1.*.zip" -Recurse)
         CommerceEngineCertificatePath      = $(Join-Path -Path $assets.certificatesPath -ChildPath "habitat.dev.local.xConnect.Client.crt" )	
         SiteUtilitiesSrc                   = $(Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "SiteUtilityPages")
@@ -252,7 +254,7 @@ Function Install-Commerce {
         SXAStorefrontModuleFullPath        = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Storefront 1.*.zip"-Recurse )
         SXAStorefrontThemeModuleFullPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Storefront Themes*.zip"-Recurse )
         SXAStorefrontCatalogModuleFullPath = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Habitat Catalog*.zip" -Recurse)
-        MergeToolFullPath                  = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "*Microsoft.Web.XmlTransform.dll" -Recurse | Select FullName)
+        MergeToolFullPath                  = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "*Microsoft.Web.XmlTransform.dll" -Recurse | Select-Object -ExpandProperty FullName)
         UserAccount                        = @{
             Domain   = $commerce.serviceAccountDomain
             UserName = $commerce.serviceAccountUserName
@@ -266,7 +268,7 @@ Function Install-Commerce {
         SitecoreIdentityServerName         = 'SitecoreIdentityServer'
     }
     Write-Output $params
-    Install-SitecoreBaseConfigurationFolderuration @params
+    Install-SitecoreConfiguration @params
 }
 
 

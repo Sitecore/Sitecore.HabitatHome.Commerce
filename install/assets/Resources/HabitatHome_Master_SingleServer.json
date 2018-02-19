@@ -31,7 +31,6 @@
     },
     "WebRoot":{
       "Type":"string",
-      "DefaultValue":"c:\\inetpub\\wwwroot",
       "Description":"The physical path of the configured Web Root for the environment"
   },
     "InstallDir": {
@@ -142,6 +141,10 @@
     "SitecoreBizFxServicesContentPath": {
       "Type": "string",
       "Description": "SitecoreBizFx Services Content Path"
+    },
+    "SitecoreBizFxPostFix": {
+      "Type": "string",
+      "Description": "String to add at the end of 'SitecoreBizFx' to make it unique to the instance"
     },
     "SitecoreIdentityServerZipPath": {
       "Type": "string",
@@ -257,6 +260,7 @@
       "Type": "InstallSitecoreConfiguration",
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\CommerceEngine\\CommerceEngine.Deploy.json')]",
+        "WebRoot":"[parameter('WebRoot')]",        
         "CertificateName": "[parameter('CertificateName')]",
         "CommerceServicesDbServer": "[parameter('CommerceServicesDbServer')]",
         "CommerceServicesDbName": "[parameter('CommerceServicesDbName')]",
@@ -285,7 +289,9 @@
       "Type": "InstallSitecoreConfiguration",
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SitecoreBizFx\\SitecoreBizFx.json')]",
+        "WebRoot":"[parameter('WebRoot')]",
         "SitecoreBizFxServicesContentPath": "[parameter('SitecoreBizFxServicesContentPath')]",
+        "SitecoreBizFxPostFix":"[parameter('SitecoreBizFxPostFix')]",
         "CommerceAuthoringServicesPort": "[parameter('CommerceAuthoringServicesPort')]",
         "UserAccount": "[parameter('UserAccount')]"
       }
@@ -294,6 +300,7 @@
       "Type": "InstallSitecoreConfiguration",
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SitecoreIdentityServer\\SitecoreIdentityServer.json')]",
+        "WebRoot":"[parameter('WebRoot')]",
         "SitecoreIdentityServerZipPath": "[parameter('SitecoreIdentityServerZipPath')]",
         "SitecoreDbServer": "[parameter('SitecoreDbServer')]",
         "SitecoreCoreDbName": "[parameter('SitecoreCoreDbName')]",
@@ -384,6 +391,7 @@
       "Type": "InstallSitecoreConfiguration",
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\CEConnect\\InitializeCommerce.json')]",
+        "WebRoot":"[parameter('WebRoot')]",
         "EngineConnectIncludeDir": "[variable('EngineConnectIncludeDir')]",
         "CertificatePath": "[parameter('CommerceEngineCertificatePath')]",
         "CommerceServicesPostfix": "[variable('CommerceServicesPostfix')]",
@@ -394,6 +402,7 @@
       "Type": "InstallSitecoreConfiguration",
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\CommerceEngine\\CommerceEngine.Initialize.json')]",
+        "WebRoot":"[parameter('WebRoot')]",
         "CommerceServicesPostfix": "[variable('CommerceServicesPostfix')]",
         "CommerceShopsServicesPort": "[parameter('CommerceShopsServicesPort')]"
       }

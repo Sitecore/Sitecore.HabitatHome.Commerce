@@ -135,6 +135,10 @@
       "Type": "string",
       "Description": "SitecoreBizFx Services Content Path"
     },
+    "SitecoreBizFxPostFix": {
+      "Type": "string",
+      "Description": "String to add at the end of 'SitecoreBizFx' to make it unique to the instance"
+    },
     "SitecoreIdentityServerZipPath": {
       "Type": "string",
       "Description": "SitecoreIdentityServer Zip Path"
@@ -143,7 +147,7 @@
       "Type": "psobject",
       "Description": "UserAccount for Commerce Serices App Pool"
     },
-	  "BraintreeAccount": {
+    "BraintreeAccount": {
       "Type": "psobject",
       "Description": "Braintree sandbox account for Payment plugin"
     },
@@ -231,10 +235,9 @@
     "ContentSearchEnabledXpath": "//configuration/sitecore/settings/setting[@name='ContentSearch.Enabled']",
     "ConnectionString": "[concat('Data Source=.;Initial Catalog=', concat(parameter('SitecoreCoreDbName'), ';Integrated Security=True'))]",
     "ProjectConfigIncludeDir": "[concat(parameter('InstallDir'), '\\App_Config\\Include\\Project\\Commerce')]",
-    "SiteRootUrl": "[concat('http://', concat(parameter('SiteHostHeaderName')))]",
-    "ContentSearchEnabledXpath": "//configuration/sitecore/settings/setting[@name='ContentSearch.Enabled']"
+    "SiteRootUrl": "[concat('http://', concat(parameter('SiteHostHeaderName')))]"
   },
-  "Modules": [ "InstallSitecoreConfiguration", "ManageCommerceService", "SitecoreUtilityTasks" ],
+  "Modules": ["InstallSitecoreConfiguration", "ManageCommerceService", "SitecoreUtilityTasks"],
   "Tasks": {
     // Tasks are separate units of work in a configuration.
     // Each task is an action that will be completed when Install-SitecoreConfiguration is called.
@@ -285,7 +288,7 @@
         "CommerceMinionsServicesPort": "[parameter('CommerceMinionsServicesPort')]",
         "SitecoreCommerceEngineZipPath": "[parameter('SitecoreCommerceEngineZipPath')]",
         "UserAccount": "[parameter('UserAccount')]",
-		    "BraintreeAccount": "[parameter('BraintreeAccount')]"
+        "BraintreeAccount": "[parameter('BraintreeAccount')]"
       }
     },
     "DeploySitecoreBizFx": {
@@ -318,22 +321,20 @@
     "DisableIndexUpdate": {
       // Speed up deployment
       "Type": "SetXml",
-      "Params": [
-        {
-          "FilePath": "[variable('ContentSearchConfig'))]",
-          "Xpath": "[variable('ContentSearchEnabledXpath')]",
-          "Attributes": {
-            "value": "false"
-          }
+      "Params": [{
+        "FilePath": "[variable('ContentSearchConfig'))]",
+        "Xpath": "[variable('ContentSearchEnabledXpath')]",
+        "Attributes": {
+          "value": "false"
         }
-      ]
+      }]
     },
     "DisableConfigFiles": {
       // Speed up deployment
       "Type": "DisableConfigFiles",
       "Params": {
         "ConfigDir": "[variable('MarketingConfigDir')]",
-        "ConfigFileList": [ "Sitecore.Marketing.Search.config" ]
+        "ConfigFileList": ["Sitecore.Marketing.Search.config"]
       }
     },
     "InstallPowershellExtensions": {
@@ -483,21 +484,19 @@
     },
     "EnableIndexUpdate": {
       "Type": "SetXml",
-      "Params": [
-        {
-          "FilePath": "[variable('ContentSearchConfig'))]",
-          "Xpath": "[variable('ContentSearchEnabledXpath')]",
-          "Attributes": {
-            "value": "true"
-          }
+      "Params": [{
+        "FilePath": "[variable('ContentSearchConfig'))]",
+        "Xpath": "[variable('ContentSearchEnabledXpath')]",
+        "Attributes": {
+          "value": "true"
         }
-      ]
+      }]
     },
     "EnableConfigFiles": {
       "Type": "EnableConfigFiles",
       "Params": {
         "ConfigDir": "[variable('MarketingConfigDir')]",
-        "ConfigFileList": [ "Sitecore.Marketing.Search.config" ]
+        "ConfigFileList": ["Sitecore.Marketing.Search.config"]
       }
     },
     "EnableCEConnectIndexing": {
