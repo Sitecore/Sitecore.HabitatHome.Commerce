@@ -37,3 +37,5 @@ IconCache/
 T4RenderCache/
 BuiltFiles_*.txt
 /src/**/tds/*/Report/*
+
+InstallUtil.InstallLog
