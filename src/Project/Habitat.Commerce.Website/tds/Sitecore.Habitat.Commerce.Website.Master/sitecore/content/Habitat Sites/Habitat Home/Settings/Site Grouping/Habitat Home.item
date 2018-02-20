@@ -35,9 +35,9 @@ content-length: 0
 field: {8E0DD914-9AFB-4D45-BF8B-7FF5D6E5337E}
 name: HostName
 key: hostname
-content-length: 63
+content-length: 21
 
-*home.dev.local|*-hh.habitathomedemo.com|na.habitathomedemo.com
+habitathome.dev.local
 ----field----
 field: {1EE576AF-BA8E-4312-9FBD-2CCF8395BAA1}
 name: StartItem
@@ -76,7 +76,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ba1a62dd-d5af-4835-b7ed-1cb04f09fe6a
+revision: d375161c-6c46-4d92-873c-c4e2bece59be
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -98,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba1a62dd-d5af-4835-b7ed-1cb04f09fe6a
+d375161c-6c46-4d92-873c-c4e2bece59be
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180214T141406Z
+20180220T155157Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
