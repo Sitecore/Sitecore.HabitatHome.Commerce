@@ -11,6 +11,13 @@ templatekey: Storefront Configuration
 created: 20180213T181729Z
 
 ----field----
+field: {0E4E60F6-CB5A-4971-9B9B-8F438A15213D}
+name: Enforce SSL
+key: enforce ssl
+content-length: 1
+
+1
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -20,7 +27,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 34ce94ee-8f3e-41e7-af55-709fa14179ed
+revision: 97f1eaad-c7e6-4ed5-b5a0-39e2c9bdbf89
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-34ce94ee-8f3e-41e7-af55-709fa14179ed
+97f1eaad-c7e6-4ed5-b5a0-39e2c9bdbf89
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180204T191237Z
+20180221T154731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin

@@ -41,7 +41,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6e04693f-2f91-4fb7-83eb-c343a47c8558
+revision: 621e10a5-9616-490d-9ba3-128f947fcf8a
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -79,13 +79,6 @@ content-length: 4
 
 Home
 ----field----
-field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
-name: __Final Renderings
-key: __final renderings
-content-length: 1017
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}" s:par="GridParameters={08B60EE1-3F06-4C49-9449-E7420AFE5A2F}&amp;Styles={6D43D8D9-6159-4C76-9886-E72E2CF69135}&amp;Navigation={848DFE42-2B13-430E-A0B9-89CE25730A06}&amp;Transition={D4B706CC-7EEC-4DB9-A87D-123B29803490}&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" /><r uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" /><r uid="{253493AA-5C42-4CAF-A33C-7D63A6BE791E}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" /></d></r>
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -105,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6e04693f-2f91-4fb7-83eb-c343a47c8558
+621e10a5-9616-490d-9ba3-128f947fcf8a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T033446Z
+20180221T174000Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,13 +120,6 @@ key: __workflow state
 content-length: 0
 
 
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
 ----version----
 language: fr-CA
 version: 1
