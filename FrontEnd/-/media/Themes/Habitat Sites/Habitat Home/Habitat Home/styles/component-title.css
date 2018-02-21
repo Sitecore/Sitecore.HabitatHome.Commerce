@@ -17,3 +17,13 @@
 .title h1:hover, .title .field-title a:hover {
   color: #878787;
 }
+
+@media only screen and (max-width: 786px) {
+  .title h1, .title .field-title a {
+    margin: 1em 0;
+  }
+}
+
+.promo-hero + .title .field-title a {
+  margin-top: 0;
+}

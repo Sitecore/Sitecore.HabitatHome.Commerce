@@ -169,9 +169,173 @@ $strongCyan: #1B909C;
 
 @import "styles/forms/*";
 
+/*
+Standard Form Styles
+*/
+.sitecore-form {
+  .component-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h2,h3 {
+    color: #1B909C;
+  }
+}
+
+.sitecore-form-intro {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.sitecore-form-standard{
+  margin-bottom: 100px;
+  
+  label {
+    font-weight: bold;  
+    &:disabled {
+      color: #B1B3AC;
+      opacity: 0.8;
+    }
+  }
+  
+  label, 
+  input, 
+  select {
+    font-size: 16px;
+    line-height: 41px;
+  }
+  
+  input[type='text'],
+  input[type='tel'],
+  input[type='date'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'],
+  select {
+    border: 1px solid #B1B3AC;
+    height: 41px;
+    line-height: 41px;
+    padding: 0 15px;
+    display: block;
+    width: 100%;   
+    text-align: left !important; 
+
+    &:disabled {
+      background-color: white;
+      color: #B1B3AC;
+      border-color: #B1B3AC;
+      opacity: 0.8;
+    }
+  }
+
+  option {
+    text-align: left !important;
+  }
+  
+  textarea {
+    border: 1px solid #B1B3AC;
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+    text-align: left !important;
+  }
+
+  input[type='submit'],
+  button {
+    background-color: #1B909C;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    line-height: 55px;
+    font-weight: bold;
+    padding: 0 60px;
+    transition: opacity 0.2s ease-in-out;
+    margin: 1em 0;
+
+    &:not(:disabled):hover {
+      opacity: 0.8;
+    }
+
+    &:disabled {
+      background: #B1B3AC;
+    }
+  }
+}
+
+.field-group {    
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto 30px;
+  text-align: left;  
+
+  label {    
+    display: block;
+    text-align: left !important;
+  }
+}
+
+.checkcontainer {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 30px;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #B1B3AC;
+
+    &:after {      
+      content: "";
+      position: absolute;
+      display: none;            
+      top: 0;
+      left: 5px;
+      width: 8px;
+      height: 15px;
+      border: solid #1B909C;
+      border-width: 0 3px 3px 0;        
+      transform: rotate(45deg);
+    }
+  }
+
+  input:checked + .checkmark:after {
+    display: block    
+  }
+
+  input[type='radio'] + .checkmark {     
+    border-radius: 50%;
+
+    &:after {
+      width: 14px;
+      height: 14px;   
+      border-radius: 50%;             
+      top: 50%;
+      left: 50%;            
+      transform: translate(-50%, -50%);
+      background: #1B909C;
+    }      
+  }
+
+}
+
 .content-finder {
   form {
     margin: 1em 0;
+
     input.btn-next, input.btn-previous {
       @include cta-button();
       background: $strongCyan;
@@ -184,8 +348,8 @@ $strongCyan: #1B909C;
       z-index: -100;
       opacity: 0;
       display: block;
-      width: 100%;
-      height: 100%;           
+      width: 0;
+      height: 0;
     }
 
     .col-right > label {
@@ -212,7 +376,8 @@ $strongCyan: #1B909C;
         font-family: $demo-icons;
         font-weight: normal;
         display: block;
-        font-size: 64px;
+        font-size: 84px;
+        line-height: 1;
       }
     }
 
@@ -279,7 +444,7 @@ $strongCyan: #1B909C;
         width: auto;
       }
 
-      .col-right > label {
+      .col-right > .field-group > label {
         display: block;
         width: auto;
       }

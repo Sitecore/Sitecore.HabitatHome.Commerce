@@ -54,7 +54,16 @@ main {
     line-height: 1.6;
     font-weight: 400;
     .component-content {
-      padding: 0 10em;
+      padding: 0 5em;
+
+
+      @include respond-to(mobile-large){
+        padding: 0 2.5em;
+      }
+
+      @include respond-to(desktop-large){
+        padding: 0 10em;
+      }
     }
   }
 

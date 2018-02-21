@@ -14,6 +14,19 @@
         &:hover {
             color: $title-color-active;
         }
+
+        @include respond-to(mobile-large) {
+            margin: 1em 0;
+        }
     }
     @import "variants/title/*";
+
+    
 }
+
+
+.promo-hero + .title {
+    .field-title a {
+      margin-top: 0;
+    }
+  }

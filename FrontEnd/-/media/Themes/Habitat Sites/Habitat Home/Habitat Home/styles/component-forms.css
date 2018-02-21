@@ -228,6 +228,185 @@
   margin: 0 0 0 5px;
 }
 
+/*
+Standard Form Styles
+*/
+.sitecore-form .component-content {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sitecore-form h2, .sitecore-form h3 {
+  color: #1B909C;
+}
+
+.sitecore-form-intro {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.sitecore-form-standard {
+  margin-bottom: 100px;
+}
+
+.sitecore-form-standard label {
+  font-weight: bold;
+}
+
+.sitecore-form-standard label:disabled {
+  color: #B1B3AC;
+  opacity: 0.8;
+}
+
+.sitecore-form-standard label,
+.sitecore-form-standard input,
+.sitecore-form-standard select {
+  font-size: 16px;
+  line-height: 41px;
+}
+
+.sitecore-form-standard input[type='text'],
+.sitecore-form-standard input[type='tel'],
+.sitecore-form-standard input[type='date'],
+.sitecore-form-standard input[type='number'],
+.sitecore-form-standard input[type='email'],
+.sitecore-form-standard input[type='password'],
+.sitecore-form-standard select {
+  border: 1px solid #B1B3AC;
+  height: 41px;
+  line-height: 41px;
+  padding: 0 15px;
+  display: block;
+  width: 100%;
+  text-align: left !important;
+}
+
+.sitecore-form-standard input[type='text']:disabled,
+.sitecore-form-standard input[type='tel']:disabled,
+.sitecore-form-standard input[type='date']:disabled,
+.sitecore-form-standard input[type='number']:disabled,
+.sitecore-form-standard input[type='email']:disabled,
+.sitecore-form-standard input[type='password']:disabled,
+.sitecore-form-standard select:disabled {
+  background-color: white;
+  color: #B1B3AC;
+  border-color: #B1B3AC;
+  opacity: 0.8;
+}
+
+.sitecore-form-standard option {
+  text-align: left !important;
+}
+
+.sitecore-form-standard textarea {
+  border: 1px solid #B1B3AC;
+  padding: 0 15px;
+  display: block;
+  width: 100%;
+  text-align: left !important;
+}
+
+.sitecore-form-standard input[type='submit'],
+.sitecore-form-standard button {
+  background-color: #1B909C;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  line-height: 55px;
+  font-weight: bold;
+  padding: 0 60px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  margin: 1em 0;
+}
+
+.sitecore-form-standard input[type='submit']:not(:disabled):hover,
+.sitecore-form-standard button:not(:disabled):hover {
+  opacity: 0.8;
+}
+
+.sitecore-form-standard input[type='submit']:disabled,
+.sitecore-form-standard button:disabled {
+  background: #B1B3AC;
+}
+
+.field-group {
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto 30px;
+  text-align: left;
+}
+
+.field-group label {
+  display: block;
+  text-align: left !important;
+}
+
+.checkcontainer {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkcontainer .checkmark {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 8px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #B1B3AC;
+}
+
+.checkcontainer .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 5px;
+  width: 8px;
+  height: 15px;
+  border: solid #1B909C;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkcontainer input:checked + .checkmark:after {
+  display: block;
+}
+
+.checkcontainer input[type='radio'] + .checkmark {
+  border-radius: 50%;
+}
+
+.checkcontainer input[type='radio'] + .checkmark:after {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #1B909C;
+}
+
 .content-finder form {
   margin: 1em 0;
 }
@@ -255,8 +434,8 @@
   z-index: -100;
   opacity: 0;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
 }
 
 .content-finder form .col-right > label {
@@ -285,7 +464,8 @@
   font-family: "SitecoreDemoIcons";
   font-weight: normal;
   display: block;
-  font-size: 64px;
+  font-size: 84px;
+  line-height: 1;
 }
 
 .content-finder form .col-right > input[type="radio"]:checked + label {
@@ -350,7 +530,7 @@
     float: none;
     width: auto;
   }
-  .content-finder form .col-right > label {
+  .content-finder form .col-right > .field-group > label {
     display: block;
     width: auto;
   }

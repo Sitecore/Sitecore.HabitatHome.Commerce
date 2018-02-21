@@ -52,7 +52,19 @@ main .article-content {
 }
 
 main .article-content .component-content {
-  padding: 0 10em;
+  padding: 0 5em;
+}
+
+@media only screen and (max-width: 786px) {
+  main .article-content .component-content {
+    padding: 0 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main .article-content .component-content {
+    padding: 0 10em;
+  }
 }
 
 main .article-header h2 {
