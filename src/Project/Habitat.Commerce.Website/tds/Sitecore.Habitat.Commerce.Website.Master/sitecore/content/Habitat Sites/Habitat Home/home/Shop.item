@@ -1,48 +1,55 @@
 ----item----
 version: 1
-id: {2F395077-DA43-4935-B85C-29AE53A62F50}
+id: {1AC616B3-9ADE-4CCD-B8B7-FD34C672D03C}
 database: master
-path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome
-parent: {99A2D449-7CC0-4FAC-B516-DB2176898898}
-name: HabitatHome
-master: {CAB95775-02C2-4B53-9CD4-983A8CC5CA4A}
-template: {59190273-FDCC-4048-9537-7EDBDF94B22D}
-templatekey: Storefront
-created: 20180213T181729Z
+path: /sitecore/content/Habitat Sites/Habitat Home/home/Shop
+parent: {10083CA0-5093-4D67-99DB-2579ABB421D3}
+name: Shop
+master: {82D1AB06-4382-4FDA-A382-E9CDEE6ABD80}
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
+created: 20180213T183325Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 31
+
+Office/16x16/folder_network.png
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
 content-length: 38
 
-{B0CFD948-A7EB-4F73-888A-E3A2E1B6A387}
+{75CF448B-DA1A-4061-BCFE-B3755E43266A}
 ----version----
 language: en
 version: 1
-revision: 6b092c7f-3adf-43d6-a445-96c44bb9ba36
+revision: 385a5486-cc03-44d7-9806-586e8313c6ca
 
 ----field----
-field: {A68724CC-9513-46F5-AA82-D26C0644B21D}
-name: Title
-key: title
-content-length: 11
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
 
-HabitatHome
+Shop
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20180204T191237Z
+20180204T191324Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -56,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6b092c7f-3adf-43d6-a445-96c44bb9ba36
+385a5486-cc03-44d7-9806-586e8313c6ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T041738Z
+20180215T215607Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
