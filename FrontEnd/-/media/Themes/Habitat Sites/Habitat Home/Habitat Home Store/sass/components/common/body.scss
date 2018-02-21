@@ -1,16 +1,16 @@
 @import '../../index';
-body{
-    background-color: $secondary-background-color;
+/* body{
+    //background-color: $secondary-background-color;
     overflow-x: hidden;
     background: none;
-    background-color: $secondary-background-color;
+    //background-color: $secondary-background-color;
     padding:0px;
 }
 #wrapper{
     overflow: hidden;
 }
 main{
-    background: $secondary-background-color;
+    //background: $secondary-background-color;
     #content{
         padding: 0;
     }
@@ -24,4 +24,4 @@ a{
         color: $primary-color;
         @include transition();
     }
-}
+} */

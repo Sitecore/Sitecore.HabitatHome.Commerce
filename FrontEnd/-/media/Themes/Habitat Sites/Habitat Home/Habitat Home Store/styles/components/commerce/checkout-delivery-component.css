@@ -785,11 +785,11 @@
 .component.cxa-checkoutdelivery-component .shipall-section .shipall-options .shipall-options-toggle button {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -798,16 +798,16 @@
 }
 
 .component.cxa-checkoutdelivery-component .shipall-section .shipall-options .shipall-options-toggle button:active, .component.cxa-checkoutdelivery-component .shipall-section .shipall-options .shipall-options-toggle button:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutdelivery-component .shipall-section .shipall-options .shipall-options-toggle button:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -844,11 +844,11 @@ fieldset[disabled] .component.cxa-checkoutdelivery-component .shipall-section .s
 .component.cxa-checkoutdelivery-component .btn-delivery-prev {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -860,16 +860,16 @@ fieldset[disabled] .component.cxa-checkoutdelivery-component .shipall-section .s
 }
 
 .component.cxa-checkoutdelivery-component .btn-delivery-prev:active, .component.cxa-checkoutdelivery-component .btn-delivery-prev:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutdelivery-component .btn-delivery-prev:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;

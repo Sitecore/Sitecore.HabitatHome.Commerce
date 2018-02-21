@@ -206,11 +206,11 @@ fieldset[disabled] .component.cxa-register-component .registeration-form .regist
 .component.cxa-register-component .registeration-form .register-buttons a {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -222,16 +222,16 @@ fieldset[disabled] .component.cxa-register-component .registeration-form .regist
 }
 
 .component.cxa-register-component .registeration-form .register-buttons a:active, .component.cxa-register-component .registeration-form .register-buttons a:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-register-component .registeration-form .register-buttons a:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;

@@ -227,11 +227,11 @@
 .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
   border: 2px solid #dc291e;
   background: #fff;
-  color: #dc291e !important;
+  color: #dc291e;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -240,16 +240,16 @@
 }
 
 .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:hover {
-  background: #d3271d !important;
-  color: #fff !important;
+  background: #d3271d;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active {
-  background: #c1241a !important;
-  color: #fff !important;
+  background: #c1241a;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -274,11 +274,11 @@ fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .prom
 .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -287,16 +287,16 @@ fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .prom
 }
 
 .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:active, .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;

@@ -40,7 +40,7 @@
   font-style: normal;
 }
 
-.h1,
+/* .h1,
 .h2,
 .h3,
 .h4,
@@ -52,36 +52,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif !important;
-  color: #383c41 !important;
+    font-family: $header-font-family !important;
+    color: $heading-color !important;
 }
 
 h1 {
-  font-size: 36px;
+    font-size: $font-size-h1;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: $font-size-h2;
 }
 
 h3 {
-  font-size: 24px;
+    font-size: $font-size-h3;
 }
 
 h4 {
-  font-size: 18px;
+    font-size: $font-size-h4;
 }
 
 h5 {
-  font-size: 14px;
+    font-size: $font-size-h5;
 }
 
 h6 {
-  font-size: 12px;
+    font-size: $font-size-h6;
 }
 
 p {
-  color: #6b717b;
+    color: $primary-text-color;
 }
 
 html,
@@ -135,7 +135,7 @@ thead,
 tr,
 th,
 td {
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 14px;
-  color: #6b717b;
-}
+    font-family: $font-family !important;
+    font-size: $font-size-base;
+    color: $primary-text-color;
+} */

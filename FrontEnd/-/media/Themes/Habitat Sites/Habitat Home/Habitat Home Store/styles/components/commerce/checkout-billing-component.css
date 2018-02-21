@@ -2482,11 +2482,11 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-get-balance button {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -2495,16 +2495,16 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-get-balance button:active, .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-get-balance button:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-get-balance button:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -2743,11 +2743,11 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .apply-full-amount-btn {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -2756,16 +2756,16 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .apply-full-amount-btn:active, .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .apply-full-amount-btn:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .apply-full-amount-btn:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -2887,11 +2887,11 @@ fieldset[disabled]
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .remove-gift-card-link {
   border: 2px solid #dc291e;
   background: #fff;
-  color: #dc291e !important;
+  color: #dc291e;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -2901,16 +2901,16 @@ fieldset[disabled]
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .remove-gift-card-link:active, .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .remove-gift-card-link:hover {
-  background: #d3271d !important;
-  color: #fff !important;
+  background: #d3271d;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .remove-gift-card-link:active {
-  background: #c1241a !important;
-  color: #fff !important;
+  background: #c1241a;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -2957,11 +2957,11 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .buttons-row .previous-button {
   border: 2px solid #0e909f;
   background: #fff;
-  color: #0e909f !important;
+  color: #0e909f;
   font-size: 14px;
   font-weight: 600;
   height: 34px;
-  text-align: center !important;
+  text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
@@ -2973,16 +2973,16 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .buttons-row .previous-button:active, .component.cxa-checkoutbilling-component .buttons-row .previous-button:hover {
-  background: #0d8896 !important;
-  color: #fff !important;
+  background: #0d8896;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
 }
 
 .component.cxa-checkoutbilling-component .buttons-row .previous-button:active {
-  background: #0c7783 !important;
-  color: #fff !important;
+  background: #0c7783;
+  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
