@@ -14,21 +14,21 @@ created: 20180221T101209Z
 field: {AB51C8B2-F0E1-4471-9AAE-CC080D774923}
 name: Type
 key: type
-content-length: 83
+content-length: 86
 
-Sitecore.Foundation.Rules.Conditions.CurrentPageUrlCondition,Sitecore.Feature.Rules
+Sitecore.Foundation.Rules.Conditions.CurrentPageUrlCondition,Sitecore.Foundation.Rules
 ----version----
 language: en
 version: 1
-revision: f6bb4032-dfd4-42d1-8f65-338ac5ff444b
+revision: 9e5362cc-c6f3-4a92-a5bb-73df3340aa53
 
 ----field----
 field: {AF321234-4EB9-4EF5-9197-65903351939C}
 name: Text
 key: text
-content-length: 183
+content-length: 201
 
-when the current url is of the [CategoryId,Tree,root=/sitecore/Content/Habitat Sites/Habitat Home/Home/Product Catalog&selection=Commerce/Catalog/Commerce Category,specified] category
+when the current url is of the [CategoryPath,Tree,root=/sitecore/Content/Habitat Sites/Habitat Home/Home/Product Catalog&selection=Commerce/Catalog/Commerce Category&resulttype=path,specified] category
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6bb4032-dfd4-42d1-8f65-338ac5ff444b
+9e5362cc-c6f3-4a92-a5bb-73df3340aa53
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180221T152738Z
+20180222T112735Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

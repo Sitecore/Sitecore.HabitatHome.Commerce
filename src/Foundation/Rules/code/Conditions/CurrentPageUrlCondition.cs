@@ -1,6 +1,4 @@
-﻿using Sitecore.Data;
-using Sitecore.Data.Items;
-using Sitecore.Diagnostics;
+﻿using Sitecore.Diagnostics;
 using Sitecore.Rules;
 using Sitecore.Rules.Conditions;
 using System.Text.RegularExpressions;
@@ -10,30 +8,24 @@ namespace Sitecore.Foundation.Rules.Conditions
 {
     public class CurrentPageUrlCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {
-        public string CategoryId { get; set; }
+        public string CategoryPath { get; set; }
         protected override bool Execute(T ruleContext)
         {
             Assert.ArgumentNotNull(ruleContext, "ruleContext");
-            
-            if (ID.TryParse(this.CategoryId, out var category))
+
+            string category = CategoryPath.Substring(CategoryPath.LastIndexOf("-") + 1).ToLower();
+            if (!string.IsNullOrWhiteSpace(category))
             {
-                Item categoryItem = Database.GetDatabase("master").GetItem(category);
-                string categoryName = categoryItem.DisplayName.ToLower();
-                var categoryMatch = Regex.Match(categoryName, "\\b[^\\d\\W]+\\b", RegexOptions.CultureInvariant);
+                var categoryMatch = Regex.Match(category, "\\b[^\\d\\W]+\\b", RegexOptions.CultureInvariant);
 
                 if (categoryMatch.Success)
                 {
                     if (CheckContains(categoryMatch, HttpContext.Current.Request.Url.AbsolutePath.ToLower()))
                     {
-                        Log.Info("Promotion persinalized for category " + categoryName, this);
                         return true;
                     }
-                    Log.Info("Promotion NOT persinalized for category " + categoryName, this);
                 }
-
             }
-
-            Log.Info("Category personalization failed for " + CategoryId, this);
             return false;
         }
 
