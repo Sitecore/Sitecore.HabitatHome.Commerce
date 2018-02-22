@@ -1,0 +1,119 @@
+﻿// -------------------------------------------------------------------------- //
+//         Sitecore Install Framework - Initialize Commerce Services          //
+//                                                                            //
+//  Run this configuration to initialize Commerce Services.                   //
+//                                                                            //
+//  NOTE: Only single line comments are accepted in configurations.           //
+// -------------------------------------------------------------------------- //
+{
+  "Parameters": {
+    "WebRoot": {
+      "Type": "string",
+      "Description": "The physical path of the configured Web Root for the environment"
+    },
+    "UrlIdentityServerGetToken": {
+      "Type": "string",
+      "DefaultValue": "https://localhost:5050/connect/token",
+      "Description": "Url IdentityServer GetToken"
+    },
+    "CommerceShopsServicesPort": {
+      "Type": "string",
+      "Description": "Commerce Shops Services port"
+    },
+    "SitecoreAdminAccount": {
+      "Type": "psobject",
+      "DefaultValue": {
+        "UserName": "sitecore\\admin",
+        "Password": "b"
+      },
+      "Description": "Sitecore Admin account."
+    },
+    "CommerceServicesPostfix": {
+      "Type": "string",
+      "DefaultValue": "Sc9",
+      "Description": "The Commerce Engine postfix for services names"
+    }
+  },
+  "Variables": {
+    "CommerceOps": "[concat('CommerceOps_', parameter('CommerceServicesPostfix'))]",
+    "CommerceShops": "[concat('CommerceShops_', parameter('CommerceServicesPostfix'))]",
+    "CommerceAuthoring": "[concat('CommerceAuthoring_', parameter('CommerceServicesPostfix'))]",
+    "CommerceMinions": "[concat('CommerceMinions_', parameter('CommerceServicesPostfix'))]",
+    "CommerceOpsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceOps'))]",
+    "CommerceShopsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceShops'))]",
+    "CommerceAuthoringPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceAuthoring'))]",
+    "CommerceMinionsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceMinions'))]",
+    "HabitatEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatShops',shopName='Storefront')",
+    "AWEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='AdventureWorksShops',shopName='Storefront')",
+    "InitializeHabitatParam": "/commerceops/InitializeEnvironment(environment='HabitatShops')",
+    "InitializeAWParam": "/commerceops/InitializeEnvironment(environment='AdventureWorksShops')",
+    "UrlCommerceShopsServicesBootstrap": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), '/commerceops/Bootstrap()'))]",
+    "UrlHabitatEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('HabitatEnsureSyncDefaultContentParams'))]",
+    "UrlAWEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('AWEnsureSyncDefaultContentParams')))]",
+    "UrlHabitatCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeHabitatParam')))]",
+    "UrlAWCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeAWParam')))]"
+  },
+  "Modules": ["InitializeCommerce"],
+  "Tasks": {
+    "DisableCsrfValidation": {
+      "Type": "DisableCsrfValidation",
+      "Params": {
+        "CommerceServicesPathCollection": [
+          "[variable('CommerceOpsPhysicalPath')]",
+          "[variable('CommerceShopsPhysicalPath')]",
+          "[variable('CommerceAuthoringPhysicalPath')]",
+          "[variable('CommerceMinionsPhysicalPath')]"
+        ]
+      }
+    },
+    "GetIdServerToken": {
+      "Type": "GetIdServerToken",
+      "Params": {
+        "SitecoreAdminAccount": "[parameter('SitecoreAdminAccount')]",
+        "UrlIdentityServerGetToken": "[parameter('UrlIdentityServerGetToken')]"
+      }
+    },
+    "BootStrapCommerceServices": {
+      "Type": "BootStrapCommerceServices",
+      "Params": {
+        "UrlCommerceShopsServicesBootstrap": "[variable('UrlCommerceShopsServicesBootstrap')]"
+      }
+    },
+    // Disabled due to Bad Gateway Error (Timeout) Issue
+    //    "EnsureSyncHabitatDefaultContentPaths": {
+    //      "Type": "EnsureSyncDefaultContentPaths",
+    //      "Params": {
+    //        "UrlEnsureSyncDefaultContentPaths": "[variable('UrlHabitatEnsureSyncDefaultContentPaths')]"
+    //      }
+    //    },
+    //    "EnsureSyncAWDefaultContentPaths": {
+    //      "Type": "EnsureSyncDefaultContentPaths",
+    //      "Params": {
+    //        "UrlEnsureSyncDefaultContentPaths": "[variable('UrlAWEnsureSyncDefaultContentPaths')]"
+    //      }
+    //    },
+    "InitializeHabitatCommerceServices": {
+      "Type": "InitializeCommerceServices",
+      "Params": {
+        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlHabitatCommerceShopsServicesInitializeEnvironment')]"
+      }
+    },
+    "InitializeAWCommerceServices": {
+      "Type": "InitializeCommerceServices",
+      "Params": {
+        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlAWCommerceShopsServicesInitializeEnvironment')]"
+      }
+    },
+    "EnableCsrfValidation": {
+      "Type": "EnableCsrfValidation",
+      "Params": {
+        "CommerceServicesPathCollection": [
+          "[variable('CommerceOpsPhysicalPath')]",
+          "[variable('CommerceShopsPhysicalPath')]",
+          "[variable('CommerceAuthoringPhysicalPath')]",
+          "[variable('CommerceMinionsPhysicalPath')]"
+        ]
+      }
+    }
+  }
+}
