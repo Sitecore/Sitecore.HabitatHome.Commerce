@@ -1,0 +1,247 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-ShardingPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "ShardingPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-ContentPath.*?$",
+        "TableName": "ContentLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-ContentItem.*?$",
+        "TableName": "ContentLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Order.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-PendingOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-OnHoldOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-ProblemOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-ReleasedOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-CompletedOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-CancelledOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-OrdersIndex.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-FraudOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-ShippedOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-AnonymousOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-AuthenticatedOrder.*?$",
+        "TableName": "OrdersLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Carts-.*?$",
+        "TableName": "CartsLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Promotion.*?$",
+        "TableName": "PromotionsLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-DeletedPromotionsIndex-.*?$",
+        "TableName": "PromotionsLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-PriceBooks.*?$",
+        "TableName": "PricingLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-PriceCards.*?$",
+        "TableName": "PricingLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Catalog.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Products-.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Category.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Categories.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-SellableItem.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-RelationshipType.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Promotion.*?$",
+        "TableName": "PromotionsEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Promotion-.*?$",
+        "TableName": "PromotionsEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-PriceBook.*?$",
+        "TableName": "PricingEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "PriceBook-.*?$",
+        "TableName": "PricingEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-PriceCard.*?$",
+        "TableName": "PricingEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "PriceCard-.*?$",
+        "TableName": "PricingEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Order.*?$",
+        "TableName": "OrdersEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Order-.*?$",
+        "TableName": "OrdersEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Catalog.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Catalog-.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Category.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Category-.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-RelationshipType.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "RelationshipType-.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-SellableItem.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "SellableItem-.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Product.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Product-.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-Content.*?$",
+        "TableName": "ContentEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Content-.*?$",
+        "TableName": "ContentEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-RelationshipDefinition.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "RelationshipDefinition-.*?$",
+        "TableName": "CatalogEntities"
+      }
+    ]
+  }
+}

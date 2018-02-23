@@ -1,0 +1,111 @@
+{
+	"id": "09dab1dd-7537-0081-2dba-200245894c04",
+	"name": "JournalingAPISamples",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "a9ca385a-bc97-263f-a97f-478a71247a5c",
+			"name": "API",
+			"description": "",
+			"order": [
+				"dcb0adae-a88b-86fa-f100-f2ae39287e15",
+				"203eaba8-dc67-9e5e-ae79-3a82005838dc",
+				"946a1bfa-d3a2-c210-3a29-20d20ce5aaa0",
+				"29662173-6690-6cce-3e42-c04dcff63f46"
+			],
+			"owner": "195787",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04"
+		},
+		{
+			"id": "0cf4f043-f0f9-5d18-5814-0ce4b52bab87",
+			"name": "Lists",
+			"description": "",
+			"order": [
+				"1feda2d3-a1ae-e7f7-f199-673a5b62c0e3"
+			],
+			"owner": "195787",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04"
+		}
+	],
+	"timestamp": 0,
+	"owner": "195787",
+	"public": false,
+	"requests": [
+		{
+			"id": "1feda2d3-a1ae-e7f7-f199-673a5b62c0e3",
+			"name": "Lists - JournalEntries",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='JournalEntries',type='Sitecore.Commerce.Plugin.Journaling.JournalEntry, Sitecore.Commerce.Plugin.Journaling',skip=0,take=10)?$expand=Items",
+			"responses": [],
+			"folder": "0cf4f043-f0f9-5d18-5814-0ce4b52bab87",
+			"preRequestScript": "",
+			"tests": ""
+		},
+		{
+			"id": "203eaba8-dc67-9e5e-ae79-3a82005838dc",
+			"name": "Lists - JournalEntries",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='JournalEntries',type='Sitecore.Commerce.Plugin.Journaling.JournalEntry, Sitecore.Commerce.Plugin.Journaling',skip=0,take=10)?$expand=Items",
+			"responses": [],
+			"folder": "a9ca385a-bc97-263f-a97f-478a71247a5c",
+			"preRequestScript": "",
+			"tests": ""
+		},
+		{
+			"id": "29662173-6690-6cce-3e42-c04dcff63f46",
+			"name": "Lists - Order - Entity Journal Entries",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='List-journalentries-byentity-{6366ac27-61bc-4e6d-af5b-df3c4b3bcb8a}-ByDate',type='Sitecore.Commerce.Plugin.Journaling.JournalEntry, Sitecore.Commerce.Plugin.Journaling',skip=0,take=10)?$expand=Items($expand=Components)",
+			"responses": [],
+			"folder": "a9ca385a-bc97-263f-a97f-478a71247a5c",
+			"preRequestScript": "",
+			"tests": ""
+		},
+		{
+			"id": "946a1bfa-d3a2-c210-3a29-20d20ce5aaa0",
+			"name": "Get Journal Entry",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/JournalEntries('{{JournalEntryId}}')?$expand=Components",
+			"responses": [],
+			"folder": "a9ca385a-bc97-263f-a97f-478a71247a5c",
+			"preRequestScript": "",
+			"tests": ""
+		},
+		{
+			"id": "dcb0adae-a88b-86fa-f100-f2ae39287e15",
+			"name": "Lists - OrdersJournal",
+			"collectionId": "09dab1dd-7537-0081-2dba-200245894c04",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": "",
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findJournalId(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Journaling.JournalEntry';\n}\n\npostman.setGlobalVariable(\"JournalEntryId\", jsonData.Items.find(findJournalId).Id);",
+			"preRequestScript": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='OrdersJournal',type='Sitecore.Commerce.Plugin.Journaling.JournalEntry, Sitecore.Commerce.Plugin.Journaling',skip=0,take=10)?$expand=Items($expand=Components)",
+			"responses": [],
+			"folder": "a9ca385a-bc97-263f-a97f-478a71247a5c"
+		}
+	]
+}

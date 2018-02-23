@@ -1,0 +1,94 @@
+{
+	"id": "618ec507-645c-bb07-b7bf-e2310cbd4060",
+	"name": "Authentication",
+	"description": "Authenticate and get Token to be able to call Engine API.",
+	"order": [],
+	"folders": [
+		{
+			"id": "ed48c68d-5a6f-ddb3-8070-c7fe96ddd201",
+			"name": "Sitecore",
+			"description": "Authenticate to Sitecore.IdentityServer",
+			"order": [
+				"56c13d0f-409a-b6bc-215f-de8cd2d376e2"
+			],
+			"owner": "2032412"
+		}
+	],
+	"timestamp": 1502724800445,
+	"owner": "2032412",
+	"public": false,
+	"requests": [
+		{
+			"id": "56c13d0f-409a-b6bc-215f-de8cd2d376e2",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{SitecoreIdServerHost}}/connect/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"disabled": false,
+					"description": "",
+					"key": "password",
+					"value": "{{SitecoreIdServerPassword}}",
+					"enabled": true,
+					"type": "text"
+				},
+				{
+					"disabled": false,
+					"description": "",
+					"key": "grant_type",
+					"value": "password",
+					"enabled": true,
+					"type": "text"
+				},
+				{
+					"key": "username",
+					"value": "{{SitecoreIdServerUserName}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "postman-api",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "openid EngineAPI postman_api",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "var jsonData = JSON.parse(responseBody);\n\npostman.setGlobalVariable(\"SitecoreIdToken\", \"Bearer \" + jsonData.access_token);\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1502806478738,
+			"name": "GetToken",
+			"description": "Get Token from Sitecore Identity Server",
+			"collectionId": "618ec507-645c-bb07-b7bf-e2310cbd4060",
+			"responses": []
+		}
+	]
+}

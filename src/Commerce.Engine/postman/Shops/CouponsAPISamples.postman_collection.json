@@ -1,0 +1,655 @@
+{
+	"id": "684662e5-ee8d-27ec-5ea6-967243279974",
+	"name": "CouponsAPISamples",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"name": "API",
+			"description": "",
+			"order": [
+				"171eba34-ee76-2b2f-9f16-8003811e291d",
+				"c96b2ffb-2b33-9f26-aa4f-31ae101fb289",
+				"b066821f-1c62-8292-9781-3b678301c7f2",
+				"89b634ec-10b9-838f-ae52-cf68e087a1c1",
+				"c514617a-19d6-8f49-f3af-c867fca26474",
+				"254af9b6-d625-9c03-0b5a-01376e832b00"
+			],
+			"owner": "195787",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"folders_order": []
+		},
+		{
+			"id": "00b42dfd-b9c6-ed05-e9a0-b04199136815",
+			"name": "DoActions",
+			"description": "",
+			"order": [
+				"40a0855d-b8b0-d76f-5a7b-df6c6eb01541",
+				"1ad7eaa3-f39c-d073-4cf3-a2f042c59e16",
+				"f8898631-0d8f-e5ff-8e67-58b55b5ada81"
+			],
+			"owner": "195787",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"folders_order": []
+		},
+		{
+			"id": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"name": "Entity Views",
+			"description": "",
+			"order": [
+				"ab683db0-eeeb-7515-d450-002708cb0a66",
+				"ad36bbfd-6eeb-55d7-0033-3a9d234ea1be",
+				"ac1e0bd5-8e91-a8ae-7a3e-48759a386ac0",
+				"cc431295-94e1-fe22-4b37-f58dea1270ef",
+				"4d27c7c2-0c33-c764-8052-f19dca361ab6",
+				"9c7c96b9-00d4-8275-89b6-451542c05b4f"
+			],
+			"owner": "195787",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"folders_order": []
+		}
+	],
+	"folders_order": [
+		"1b665747-602f-7253-1c33-1becd1c0c152",
+		"00b42dfd-b9c6-ed05-e9a0-b04199136815",
+		"c92d2f79-0694-f106-1797-cfa14324a04c"
+	],
+	"timestamp": 1477937838657,
+	"owner": "195787",
+	"public": false,
+	"requests": [
+		{
+			"id": "171eba34-ee76-2b2f-9f16-8003811e291d",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Coupons('{{PublicCouponGroupFriendlyId}}')?$expand=Components",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478118394459,
+			"name": "Get Coupon",
+			"description": "Get a Coupon entity by Id",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "1ad7eaa3-f39c-d073-4cf3-a2f042c59e16",
+			"headers": "ShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()",
+			"folder": "00b42dfd-b9c6-ed05-e9a0-b04199136815",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findPrivateCouponGroupAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Coupons.PrivateCouponGroupAdded';\n}\n\npostman.setGlobalVariable(\"PrivateCouponGroupId\", \"Entity-PrivateCouponGroup-\" + jsonData.Models.find(findPrivateCouponGroupAdded).GroupFriendlyId);\npostman.setGlobalVariable(\"PrivateCouponGroupFriendlyId\", jsonData.Models.find(findPrivateCouponGroupAdded).GroupFriendlyId);\npostman.setGlobalVariable(\"PrivateCouponGroupName\", jsonData.Models.find(findPrivateCouponGroupAdded).Name);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504794648605,
+			"name": "Add Private Coupon",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"CouponDetails\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"AddPrivateCoupon\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Prefix\",\n      \"Policies\": [],\n      \"DisplayName\": \"Prefix\",\n      \"Value\": \"PRE\",\n      \"IsHidden\": false\n    },\n        {\n      \"Name\": \"Suffix\",\n      \"Policies\": [],\n      \"DisplayName\": \"Suffix\",\n      \"Value\": \"POST\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"Total\",\n      \"Policies\": [],\n      \"DisplayName\": \"Total\",\n      \"Value\": \"5\",\n      \"IsHidden\": false\n    }\n  ],\n  \"ChildViews\": []\n}"
+		},
+		{
+			"id": "254af9b6-d625-9c03-0b5a-01376e832b00",
+			"name": "Remove coupon from cart",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"couponCode\": \"RTRN15\"\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/RemoveCouponFromCart()",
+			"responses": [],
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"preRequestScript": "",
+			"tests": "",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "40a0855d-b8b0-d76f-5a7b-df6c6eb01541",
+			"headers": "ShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\nContent-Type: application/json\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findPublicCouponAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Coupons.PublicCouponAdded';\n}\n\npostman.setGlobalVariable(\"PublicCouponGroupId\", \"Entity-Coupon-\" + jsonData.Models.find(findPublicCouponAdded).CouponFriendlyId);\npostman.setGlobalVariable(\"PublicCouponGroupFriendlyId\", jsonData.Models.find(findPublicCouponAdded).CouponFriendlyId);\npostman.setGlobalVariable(\"PublicCouponGroupName\", jsonData.Models.find(findPublicCouponAdded).Name);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479142179882,
+			"name": "Add Public Coupon",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"PublicCoupons\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"AddPublicCoupon\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Code\",\n      \"Policies\": [],\n      \"DisplayName\": \"Code\",\n      \"Value\": \"CouponCode-ZZZ\",\n      \"IsHidden\": false\n    }\n  ],\n  \"ChildViews\": []\n}",
+			"folder": "00b42dfd-b9c6-ed05-e9a0-b04199136815",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "4d27c7c2-0c33-c764-8052-f19dca361ab6",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504794388814,
+			"name": "Promotion - Coupons - For AddPrivate",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"CouponDetails\",\n    \"itemId\": \"\",\n    \"forAction\":\"AddPrivateCoupon\"\n}"
+		},
+		{
+			"id": "89b634ec-10b9-838f-ae52-cf68e087a1c1",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/PrivateCouponGroups('{{PrivateCouponGroupFriendlyId}}')?$expand=Components",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478120379290,
+			"name": "Get Private Coupon Group",
+			"description": "Get a single PrivateCouponGroup entity by ID",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "9c7c96b9-00d4-8275-89b6-451542c05b4f",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504794364263,
+			"name": "Promotion - Coupons - For NewAllocation",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PrivateCouponGroupId}}\",\n    \"viewName\":\"AllocationDetails\",\n    \"itemId\": \"\",\n    \"forAction\":\"NewAllocation\"\n}"
+		},
+		{
+			"id": "ab683db0-eeeb-7515-d450-002708cb0a66",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483995590906,
+			"name": "Promotion - PublicCoupons",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"PublicCoupons\",\n    \"forAction\":\"\"\n}",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "ac1e0bd5-8e91-a8ae-7a3e-48759a386ac0",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504794801517,
+			"name": "PrivateCoupon - Master",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PrivateCouponGroupId}}\",\n    \"viewName\":\"Master\",\n    \"forAction\":\"\"\n}"
+		},
+		{
+			"id": "ad36bbfd-6eeb-55d7-0033-3a9d234ea1be",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1483995569307,
+			"name": "Promotion - PrivateCoupons",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"PrivateCoupons\",\n    \"forAction\":\"\"\n}",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "b066821f-1c62-8292-9781-3b678301c7f2",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/PrivateCouponGroups",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478120284284,
+			"name": "Get Private Coupon Groups",
+			"description": "Get all of the PrivateCouponGroup entities",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "c514617a-19d6-8f49-f3af-c867fca26474",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCouponToCart()",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478627750962,
+			"name": "Add Coupon To Cart",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"couponCode\": \"RTRNC15P\"\n}\n",
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "c96b2ffb-2b33-9f26-aa4f-31ae101fb289",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Coupons",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1478117342840,
+			"name": "Get Coupons",
+			"description": "Get all of the Coupon entities",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"folder": "1b665747-602f-7253-1c33-1becd1c0c152",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "cc431295-94e1-fe22-4b37-f58dea1270ef",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479142243326,
+			"name": "Promotion - Coupons - For AddPublic",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"PublicCoupons\",\n    \"itemId\": \"\",\n    \"forAction\":\"AddPublicCoupon\"\n}",
+			"folder": "c92d2f79-0694-f106-1797-cfa14324a04c",
+			"collection_id": "684662e5-ee8d-27ec-5ea6-967243279974"
+		},
+		{
+			"id": "f8898631-0d8f-e5ff-8e67-58b55b5ada81",
+			"headers": "ShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()",
+			"folder": "00b42dfd-b9c6-ed05-e9a0-b04199136815",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1504794701232,
+			"name": "New Allocation",
+			"description": "",
+			"collectionId": "684662e5-ee8d-27ec-5ea6-967243279974",
+			"responses": [],
+			"rawModeData": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"AllocationDetails\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PrivateCouponGroupId}}\",\n  \"Action\": \"NewAllocation\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Count\",\n      \"Policies\": [],\n      \"DisplayName\": \"Count\",\n      \"Value\": \"3\",\n      \"IsHidden\": false\n    }\n  ],\n  \"ChildViews\": []\n}"
+		}
+	]
+}

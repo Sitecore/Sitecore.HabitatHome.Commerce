@@ -1,0 +1,356 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-SearchPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "SearchPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "OrdersScope",
+        "ViewName": "OrdersDashboard"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "CustomersScope",
+        "ViewName": "CustomersDashboard"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "CatalogItemsScope",
+        "ViewName": "MerchandisingDashboard"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
+        "Name": "CatalogItemsScope",
+        "IncrementalListName": "CatalogItemsIndex",
+        "FullListName": "CatalogItems",
+        "DeletedListName": "",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.Category",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem"
+          ]
+        },
+        "ResultDetailsTags": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core",
+              "Name": "CatalogTable"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
+        "Name": "CustomersScope",
+        "IncrementalListName": "CustomersIndex",
+        "FullListName": "Customers",
+        "DeletedListName": "DeletedCustomersIndex",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Customers.Customer"
+          ]
+        },
+        "ResultDetailsTags": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core",
+              "Name": "CustomersTable"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
+        "Name": "OrdersScope",
+        "IncrementalListName": "OrdersIndex",
+        "FullListName": "Orders",
+        "DeletedListName": "DeletedOrdersIndex",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Orders.Order"
+          ]
+        },
+        "ResultDetailsTags": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core",
+              "Name": "OrdersList"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "CatalogItemsScope",
+        "Properties": {
+          "EntityId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "SitecoreId": {
+            "TypeName": "System.String",
+            "IsKey": true,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "ProductId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DisplayName": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DateCreated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DateUpdated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "Name": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "ArtifactStoreId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": false
+          },
+          "VariantId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "VariantDisplayName": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          }
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "CustomersScope",
+        "Properties": {
+          "EntityId": {
+            "TypeName": "System.String",
+            "IsKey": true,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "Email": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "Status": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": true,
+            "IsRetrievable": true
+          },
+          "FirstName": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "LastName": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DateCreated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DateUpdated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "ArtifactStoreId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": false
+          }
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
+        "SearchScopeName": "OrdersScope",
+        "Properties": {
+          "EntityId": {
+            "TypeName": "System.String",
+            "IsKey": true,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "Email": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "CustomerId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "OrderConfirmationId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "Status": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": true,
+            "IsRetrievable": true
+          },
+          "OrderPlacedDate": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "DateCreated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": false
+          },
+          "DateUpdated": {
+            "TypeName": "System.DateTimeOffset",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": true,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "ArtifactStoreId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": true,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": false
+          }
+        }
+      }
+    ]
+  }
+}
