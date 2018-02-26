@@ -36,7 +36,6 @@ $commerce.identityServerName = "SitecoreIdentityServer"
 # XConnect Parameters
 $xConnect = $json.settings.xConnect
 
-
 # Sitecore Parameters
 $sitecore = $json.settings.sitecore
 
