@@ -1,3 +1,189 @@
+.cxa-minicart-component {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 80px;
+    line-height: 74px;
+    border-top: 4px solid transparent;
+
+    .top-text {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;        
+        position: relative;
+        z-index: 100;
+        width: 76px;
+        line-height: 74px;
+        text-align: center;
+
+        &:before {
+            font-family: FontAwesome;
+            content: "";
+            font-size: 20px;
+            color: #B1B3AC;
+            height: 81px;
+        }
+        a {
+            display: none;
+        }
+    }
+
+    .cart-items-count {        
+        display: block;
+        position: absolute;        
+        min-width: 20px;
+        background-color: #50a1ab;
+        color: #fefefe;
+        padding: 0.5em;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 50px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1;
+        top: 18px;
+        right: 12px;
+    }
+
+    .minicart {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 380px;
+        padding: 25px;
+        background-color: white;
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+        line-height: 1;
+        font-size: 16px;
+    }
+
+    &.open {
+        .minicart {
+            display: block;
+        }
+
+        .top-text{
+            background-color: white;
+        }
+    }
+
+    .view-cart-button {
+        display: none;
+    }
+
+    .checkout-button {
+        display: block;
+        text-align: center;
+        width: 100%;        
+        background-color: #50a1ab;
+        color: #fefefe;
+        line-height: 50px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:after {
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: inherit;
+            line-height: inherit;
+            font-family: FontAwesome;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "";
+            margin-left: 0.625em;
+            font-weight: 400;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        //border: 1px solid #50a1ab;
+    }
+
+    .minicart-footer {
+        margin-bottom: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .minicart-item {
+        text-align: left;
+        padding-bottom: 23px;        
+        margin-bottom: 23px;
+        border-bottom: 1px solid rgba(177, 179, 172, 0.5);
+        position: relative;        
+
+        img {
+            float: left;
+            display: block;
+            max-width: 150px;
+            max-height: 150px;
+            margin-right: 10px;
+            color: #141919;
+        }
+
+        .minicart-info {
+            float :left;
+            width: 170px;
+            padding-right: 20px;
+            font-size: 14px;
+            color: #B1B3AC;
+
+            h5 {
+                font-size: 20px;
+                line-height: 1.1;
+                font-weight: 300;
+                color: #141919;
+                margin-bottom: 15px;
+            }
+        }
+
+        .price {
+            color: #141919;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .minicart-total-amount {
+        font-size: 1.5em;
+    }
+
+    .minicart-delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        span:after {
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-size: 20px;
+            line-height: inherit;
+            font-family: FontAwesome;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\f00d";
+            color: #B1B3AC;
+            margin-left: 0.625em;
+            font-weight: 400;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+/* 
 @import '../../index';
 @mixin shopping-cart-icon($isActive: false) {
     @include sc-icon($scxa-shoppingcart);
@@ -210,4 +396,4 @@
             }
         }
     }
-}
+} */

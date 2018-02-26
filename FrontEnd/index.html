@@ -323,20 +323,22 @@
                                                         <a href="shoppingcart/index.html" title="Click here to view the cart" class="toggle-cart" data-bind="event:{ mouseover: function(){$parent.slideDown($element);}}">
                                                             Items in your cart
                                                         </a>
-                                                        <p class="cart-items-count" data-bind="text: cartLines().length">
+                                                        <p class="cart-items-count" data-bind="text: cartLines().length">3</p>
                                                     </div>
-                                                    <div class="minicart" style="display: none">
+                                                    <div class="minicart">
                                                         <div class="minicart-content" data-bind="foreach: cartLines, visible: cartLines().length">
                                                             <div class="minicart-item" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}">
-                                                                <img alt="Image" data-bind="attr:{src: image, alt: displayName}">
+                                                                <img alt="Image" src="http://www.placebear.com/150/150" data-bind="attr:{src: image, alt: displayName}">
                                                                 <div class="minicart-info">
                                                                     <h5>
-                                                                        <a data-bind="text: displayName, attr:{ href:productUrl}"></a>
+                                                                        <a data-bind="text: displayName, attr:{ href:productUrl}">
+                                                                            Ullamco reprehenderit mollit sit
+                                                                        </a>
                                                                     </h5>
                                                                     <p>Quantity
-                                                                        <strong data-bind="text: quantity"></strong>
+                                                                        <strong data-bind="text: quantity">2</strong>
                                                                     </p>
-                                                                    <span class="price" data-bind="text: linePrice"></span>
+                                                                    <span class="price" data-bind="text: linePrice">$238.99</span>
                                                                 </div>
                                                                 <span class="minicart-delete">
                                                                     <a href="#">
@@ -347,7 +349,7 @@
                                                         </div>
                                                         <div class="minicart-footer">
                                                             <span class="minicart-total-label">Total </span>
-                                                            <span class="minicart-total-amount" data-bind="text: total "></span>
+                                                            <span class="minicart-total-amount" data-bind="text: total ">$1200.00</span>
                                                         </div>
                                                         <div class="minicart-buttons">
                                                             <a class="checkout-button" title="Click here to checkout" href="https://habitathome.dev.local/checkout">

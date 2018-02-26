@@ -46,5 +46,31 @@
         "presets": [
             "es2015"
         ]
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "ecmaVersion": 5,
+        "sourceType": "module",
+        "rules": {
+            "no-alert": 0,
+            "no-bitwise": 0,
+            "camelcase": 1,
+            "curly": 1,
+            "eqeqeq": 0,
+            "no-eq-null": 0,
+            "guard-for-in": 1,
+            "no-empty": 1
+        },
+        "globals": {
+            "$": false,
+            "jQuery": false,
+            "Sitecore": false,
+            "XA": false,
+            "_": false
+        },
+        "env": {
+            "browser": true,
+            "node": true
+        }
     }
 }
