@@ -36,3 +36,6 @@ IconCache/
 T4RenderCache/
 BuiltFiles_*.txt
 /src/**/tds/*/Report/*
+
+/install/set-installation-overrides.ps1
+InstallUtil.InstallLog
