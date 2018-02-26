@@ -39,3 +39,4 @@ BuiltFiles_*.txt
 
 /install/set-installation-overrides.ps1
 InstallUtil.InstallLog
+/install/assets/Resources/Modules

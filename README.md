@@ -1,16 +1,26 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+The instructions in this README will guide you through the installation process of the Habitat Home Commerce Demo. 
+
+There is a dependency on Sitecore.Habitat and Sitecore.Habitat.Home which will be detailed below.
+
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This guide assumes you've cloned and deployed both Sitecore.Habitat and Sitecore.Habitat.Home. See the README.md file in Sitecore.Habitat repository
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Assumption: the configuration file used to deploy Sitecore.Habitat still exists. It is required during the installation process.
 
+**Clone this repository**
+
+# Installation
+## Prerequisites
+
+Most prerequisites are automatically downloaded and installed. 
+
+You must manually install (using IIS Web Platform Installer):
+1. **URL Rewrite 2.1**
+2. **Web Deploy 3.6 without bundled SQL support**
+
+## 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
 
