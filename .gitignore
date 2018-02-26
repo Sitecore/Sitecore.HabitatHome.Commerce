@@ -28,7 +28,6 @@ settings.user.ps1
 /install/assets/Downloads
 configuration-x*0.json
 /install/deploy/*
-/install/LocalRepo
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user
