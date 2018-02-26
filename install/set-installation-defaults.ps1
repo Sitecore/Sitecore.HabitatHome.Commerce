@@ -3,15 +3,15 @@ Param(
     [string] $XPConfigurationFile = "C:\projects\sitecore.habitat\install\configuration-xp0.json"
 )
 
-Write-Host "Setting Defaults and creating $ConfigurationFile"
+Write-Host "Setting Defaults and creating $ConfigurationFile" -foregroundColor Green
 
 $json = Get-Content -Raw .\install-settings.json -Encoding Ascii |  ConvertFrom-Json
 $assetsPath = Join-Path "$PWD" "assets"
 [System.Reflection.Assembly]::LoadFile($(Join-Path $assetsPath "Newtonsoft.Json.dll"))
 [System.Reflection.Assembly]::LoadFile($(Join-Path $assetsPath "JsonMerge.dll"))
+$installSettingsPath = $(Join-Path $PWD  ".\install-settings.json" -Resolve)
+$json = [JsonMerge.JsonMerge]::MergeJson($XPConfigurationFile, $installSettingsPath  ) | ConvertFrom-Json
 
-$json = [JsonMerge.JsonMerge]::MergeJson($XPConfigurationFile, "C:\projects\sitecore.habitat.commerce\install\install-settings.json") | ConvertFrom-Json
-Write-Host $json
 # Assets and prerequisites
 
 $assets = $json.assets
@@ -56,10 +56,6 @@ $commerce.identityServerName = "SitecoreIdentityServer"
 # Site Settings
 $site = $json.settings.site
 
-# XConnect Parameters
-$xConnect = $json.settings.xConnect
-
-$xConnect.certificateConfigurationPath = Join-Path $assets.root "xconnect-createcert.json"
 
 # Sitecore Parameters
 $sitecore = $json.settings.sitecore
@@ -67,5 +63,6 @@ $json.modules = ""
 
 # Solr Parameters
 $solr = $json.settings.solr
-
+Write-Host
+Write-Host "Saving content to $ConfigurationFile" -ForegroundColor Green
 Set-Content $ConfigurationFile  (ConvertTo-Json -InputObject $json -Depth 4 )
