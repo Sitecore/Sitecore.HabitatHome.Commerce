@@ -1,0 +1,26 @@
+﻿{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-ControllerMethodRolesPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "ControllerMethodRolesPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
+        "ControllerMethodRegularExpression": "/commerceops/",
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
+        "ControllerMethodRegularExpression": "/api/",
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
+      }
+    ]
+  }
+}

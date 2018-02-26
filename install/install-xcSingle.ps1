@@ -191,6 +191,7 @@ function Install-Prerequisites {
             
             $extract = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version + ".zip")
             $output = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version)
+          
             if ($package.name -eq "Sitecore.Commerce.Engine.SDK") {
                 sz e $extract -o"$($assets.commerce.installationFolder)" "Sitecore.Commerce.Engine.DB.dacpac" -y -aoa
             }
@@ -205,13 +206,16 @@ function Install-Prerequisites {
 
         #  Install ASP.NET Core 2.0 and .NET Core Windows Server Hosting 2.0.0 
         Write-Host "Installing ASP.NET Core 2.0 and .NET Core Windows Server Hosting 2.0.0"
-        $cmd = "$assets.downloadFolder\DotNetCore.2.0.5-WindowsHosting.exe"
+        $cmd = Join-Path $assets.downloadFolder "\DotNetCore.2.0.5-WindowsHosting.exe"
+
         $params = "/install /quiet /norestart"
         $params = $params.Split(" ")
         & "$cmd"  $params
-        $cmd = "$assets.downloadFolder\dotnet-sdk-2.0.0-win-x64.exe"
+
+        $cmd = Join-Path $assets.downloadFolder "dotnet-sdk-2.0.0-win-x64.exe"
         & "$cmd" $params
         
+        Copy-Item $(Join-Path $sifCommerceRoot "Modules") $resourcePath -Recurse -Force
     }
 
     Function Stop-XConnect {
@@ -223,17 +227,19 @@ function Install-Prerequisites {
         -SiteName $xConnect.siteName
     }
     Function Start-Site {
-        $Hostname = "$commerce.storefrontHostName"
+        $Hostname = "$($site.hostName)"
 
         $R = try { Invoke-WebRequest "https://$Hostname/sitecore/login" -ea SilentlyContinue } catch {}
         while (!$R) {
-          Start-Sleep 10
+            
+          Start-Sleep 30
           echo "Waiting for Sitecore to start up..."
           $R = try { Invoke-WebRequest "https://$Hostname/sitecore/login" -ea SilentlyContinue } catch {}
       }
       
   }
   Function Set-ModulesPath {
+    Write-Host "Setting Modules Path" -ForegroundColor Green
     $modulesPath = ( Join-Path -Path $resourcePath -ChildPath "Modules" )
     if ($env:PSModulePath -notlike "*$modulesPath*") {
         $p = $env:PSModulePath + ";" + $modulesPath
@@ -241,6 +247,7 @@ function Install-Prerequisites {
     }
 }
 Function Install-Commerce {
+    Write-Host "Installing Commerce" -ForegroundColor Green
     $params = @{
         Path                               = $(Join-Path $resourcePath  'HabitatHome_Master_SingleServer.json')
         BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
@@ -295,8 +302,8 @@ Function Install-Commerce {
         }
         SitecoreIdentityServerName         = 'SitecoreIdentityServer'
     }
-    Write-Output $params
-    Install-SitecoreConfiguration @params
+    
+    Install-SitecoreConfiguration @params -WorkingDirectory $(Join-Path $PWD "logs")
 }
 
 

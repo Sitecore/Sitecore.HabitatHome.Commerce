@@ -1,5 +1,6 @@
 module.exports = function () {
-    var instanceRoot = "C:\\inetpub\\wwwroot\\habitat.dev.local";
+    var sitesRoot = "C:\\inetpub\\wwwroot";
+    var instanceRoot = sitesRoot + "\\habitat.dev.local";
     var config = {
         websiteRoot: instanceRoot + "\\",
         sitecoreLibraries: instanceRoot + "\\bin",
@@ -7,6 +8,11 @@ module.exports = function () {
         packageXmlBasePath: ".\\src\\Project\\Habitat\\code\\App_Data\\packages\\habitat.xml",
         packagePath: instanceRoot + "\\App_Data\\packages",
         solutionName: "Habitat.Home.Commerce",
+        commerceEngineSolutionName: "Customer.Sample.Solution",
+        commerceAuthoringRoot: sitesRoot + "\\CommerceAuthoring_Sc9",
+        commerceMinionsRoot: sitesRoot + "\\CommerceMinions_Sc9",
+        commerceOpsRoot: sitesRoot + "\\CommerceOps_Sc9",
+        commerceShopsRoot: sitesRoot + "\\CommerceShops_Sc9",
         buildConfiguration: "Debug",
         buildToolsVersion: 15.0,
         buildMaxCpuCount: 1,
