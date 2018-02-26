@@ -62,11 +62,23 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
+      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
@@ -104,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Catalog\ProductListWithCart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
