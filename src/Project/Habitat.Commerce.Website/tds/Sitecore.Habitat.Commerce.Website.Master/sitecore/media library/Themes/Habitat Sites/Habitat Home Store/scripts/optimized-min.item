@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {67544E3B-CD3F-4AB3-9FDB-51D8ED9EB79E}
+id: {A699E852-02D9-4FA8-8121-97C4D2E9BB0E}
 database: master
 path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/optimized-min
 parent: {4927763F-3FA1-4CA7-9644-BB1D9F6AD1D0}
@@ -8,7 +8,7 @@ name: optimized-min
 master: {00000000-0000-0000-0000-000000000000}
 template: {B43AB8D5-E123-42DD-8042-DE869CC98C4F}
 templatekey: Optimized File
-created: 20180215T174744Z
+created: 20180227T150004Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
@@ -7004,56 +7004,9 @@ content-length: 24
 
 People/32x32/package.png
 ----version----
-language: de-DE
-version: 1
-revision: 243058cc-611f-4403-8a18-18c2e216f8ba
-
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 18
-
-extranet\Anonymous
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20180201T224850Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 18
-
-extranet\Anonymous
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-243058cc-611f-4403-8a18-18c2e216f8ba
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20180201T224850Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 18
-
-extranet\Anonymous
-----version----
 language: en
 version: 1
-revision: 2d86e909-2271-407d-a955-f9fb68770994
+revision: 3c59aa50-3b5e-46fa-9af5-efab287e7443
 
 ----field----
 field: {3F4B20E9-36E6-4D45-A423-C86567373F82}
@@ -7082,7 +7035,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180201T224850Z
+20180227T150004Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -7096,14 +7049,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2d86e909-2271-407d-a955-f9fb68770994
+3c59aa50-3b5e-46fa-9af5-efab287e7443
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T224850Z
+20180227T150004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -7112,9 +7065,9 @@ content-length: 18
 
 extranet\Anonymous
 ----version----
-language: fr-FR
+language: fr-CA
 version: 1
-revision: 38a05b97-9071-461d-b5b7-dc963b321e4c
+revision: 3d4956f1-1ec8-4a5b-97b1-9c4f06fc5631
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -7129,7 +7082,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180201T224850Z
+20180227T150004Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -7143,61 +7096,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-38a05b97-9071-461d-b5b7-dc963b321e4c
+3d4956f1-1ec8-4a5b-97b1-9c4f06fc5631
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T224850Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 18
-
-extranet\Anonymous
-----version----
-language: ja-JP
-version: 1
-revision: fc462405-90ff-4826-94c1-e3ebd5bebbe5
-
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 18
-
-extranet\Anonymous
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20180201T224850Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 18
-
-extranet\Anonymous
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-fc462405-90ff-4826-94c1-e3ebd5bebbe5
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20180201T224850Z
+20180227T150004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

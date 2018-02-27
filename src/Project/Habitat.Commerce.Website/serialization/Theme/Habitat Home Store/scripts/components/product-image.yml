@@ -1,0 +1,64 @@
+﻿---
+ID: "3c789a71-eade-4444-bb03-51aa47f47d18"
+Parent: "ead66b75-97b8-4bb7-8e22-94fedbda140d"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/product-image"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/4B21CD9A0A79428C84613BA6605225F8.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "24766c90-d7af-4f2e-a7a9-f3d9921046d6"
+  Value: JChmdW5jdGlvbigpew0KICAgIHZhciBsaXN0ID0gJCgnLnByb2R1Y3QtaW1hZ2VzIGxpJyk7DQogICAgbGlzdC5maXJzdCgpLmFkZENsYXNzKCdhY3RpdmUnKTsNCg0KICAgIGxpc3QuY2xpY2soZnVuY3Rpb24oZSl7DQogICAgICAgICQoJy5wcm9kdWN0LWltYWdlcyBsaScpLnJlbW92ZUNsYXNzKCdhY3RpdmUnKTsNCiAgICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpOw0KICAgICAgICAkKHRoaXMpLmFkZENsYXNzKCdhY3RpdmUnKTsNCiAgICAgICAgDQogICAgICAgIGlmKGxpc3QubGVuZ3RoID4gMSl7DQogICAgICAgICAgICB2YXIgaW1hZ2VTcmMgPSAkKHRoaXMpLmZpbmQoJ2EnKS5hdHRyKCdocmVmJyk7DQogICAgICAgICAgICAkKCIucHJvZHVjdC1pbWFnZSIpLmZpbmQoImltZyIpLmF0dHIoJ3NyYycsIGltYWdlU3JjKTsNCiAgICAgICAgfQ0KICAgICAgICANCiAgICB9KTsNCn0pOw0K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 450
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034926Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

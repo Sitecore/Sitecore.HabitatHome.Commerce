@@ -1,0 +1,64 @@
+﻿---
+ID: "916b909a-1df7-4951-bd88-ef3c5c1573da"
+Parent: "ead66b75-97b8-4bb7-8e22-94fedbda140d"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/search-bar"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/B83323A0D7CE41D19A339AFA49DECA28.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "323c6e6a-0910-4e21-b4aa-50850799cb63"
+  Value: JChkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCkgew0KICAgIHZhciBzZWFyY2hGb3JtID0gJCgnI1NlYXJjaEZvcm0nKTsNCiAgICB2YXIgdG9nZ2xlU2VhcmNoID0gJCgnLnRvZ2dsZS1zZWFyY2gtYmFyJyk7DQoNCiAgICAkKHRvZ2dsZVNlYXJjaCkubW91c2VsZWF2ZShmdW5jdGlvbiAoZSkgew0KICAgICAgICBoaWRlU2VhcmNoRm9ybShlKTsNCiAgICB9KTsNCg0KICAgICQoc2VhcmNoRm9ybSkubW91c2VsZWF2ZShmdW5jdGlvbiAoZSkgew0KICAgICAgICBoaWRlU2VhcmNoRm9ybShlKTsNCiAgICB9KTsNCg0KICAgIGZ1bmN0aW9uIGhpZGVTZWFyY2hGb3JtKHRhcmdldCkgew0KICAgICAgICB2YXIgZWxlQ2xhc3NOYW1lID0gdGFyZ2V0LnJlbGF0ZWRUYXJnZXQuY2xhc3NOYW1lOw0KDQogICAgICAgIGlmIChlbGVDbGFzc05hbWUgIT0gJ3NlYXJjaC10ZXh0Ym94Jykgew0KICAgICAgICAgICAgJChzZWFyY2hGb3JtKS5yZW1vdmVDbGFzcygnYWN0aXZlJyk7DQogICAgICAgIH0gZWxzZSB7DQogICAgICAgICAgICB0YXJnZXQucHJldmVudERlZmF1bHQoKTsNCiAgICAgICAgfQ0KICAgIH0NCg0KICAgICQodG9nZ2xlU2VhcmNoKS5jbGljayhmdW5jdGlvbiAoZSkgew0KICAgICAgICAkKHNlYXJjaEZvcm0pLnRvZ2dsZUNsYXNzKCdhY3RpdmUnKTsNCiAgICB9KTsNCg0KICAgICQoc2VhcmNoRm9ybSkuZmluZCgnOnN1Ym1pdCcpLmNsaWNrKGZ1bmN0aW9uIChldmVudCkgew0KICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOw0KICAgICAgICAkKHRoaXMpLmF0dHIoJ2Rpc2FibGVkJywgJ2Rpc2FibGVkJyk7DQogICAgICAgICQoc2VhcmNoRm9ybSkuc3VibWl0KCk7DQogICAgfSk7DQp9KTs=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 854
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171218T082824Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171218T082824Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171218T082824Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171218T082824Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
