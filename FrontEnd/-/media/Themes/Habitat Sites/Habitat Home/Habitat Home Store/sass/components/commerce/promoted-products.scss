@@ -10,7 +10,7 @@
         }
         .load-more-btn{
             border: 2px solid $promoted-color;
-            color: $promoted-color;
+            color: $promoted-color; 
             &:active, &:hover{
                 color: $light;
                 background: $promoted-color;

@@ -51,6 +51,7 @@ main .category-promo .field-promoicon img {
   -o-object-position: center;
   object-position: center;
   width: 100%;
+  height: auto;
 }
 
 main .category-hero .field-promoicon:before,

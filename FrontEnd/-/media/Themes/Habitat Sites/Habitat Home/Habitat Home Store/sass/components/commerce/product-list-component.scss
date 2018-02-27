@@ -8,7 +8,7 @@ $promoted-color: #f6a623;
         padding: 10px 20px;
         border-radius: 0;
         color: white;
-        max-width: 250px;
+        max-width: 250px; 
         display: block;
         float: none;
         margin: 0 auto;
@@ -184,7 +184,7 @@ $promoted-color: #f6a623;
                 }
             }
         }
-    }
+    }    
 }
 
 .component.cxa-productlist-component {
@@ -249,4 +249,10 @@ $promoted-color: #f6a623;
             }
         }
     }
+}
+
+
+.row.column-splitter.category-list {
+    margin-left:auto;
+    margin-right:auto;
 }

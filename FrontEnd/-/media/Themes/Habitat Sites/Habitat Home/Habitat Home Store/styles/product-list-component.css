@@ -505,3 +505,8 @@
 .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-rating .rated .icon-star:before {
   color: #1d8c96;
 }
+
+.row.column-splitter.category-list {
+  margin-left: auto;
+  margin-right: auto;
+}

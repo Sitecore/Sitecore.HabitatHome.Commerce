@@ -17,7 +17,7 @@
         }
         .add-to-cart-btn {
             @include primary-button-filled();
-            @include large-height;
+            @include large-height; 
             width: 150px;
         }
         form {

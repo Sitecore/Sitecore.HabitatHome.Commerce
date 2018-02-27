@@ -11,7 +11,7 @@ main .category-promo {
     }
 
     .widget-background {
-        &:before {
+        &:before { 
             content: '';
             display: block;
             position: absolute;
@@ -41,6 +41,7 @@ main .category-promo {
             object-fit: cover;
             object-position: center;
             width: 100%;
+            height: auto;
         }
 
         &:before {
