@@ -1,0 +1,3961 @@
+{
+	"info": {
+		"name": "PromotionsAPISamples",
+		"_postman_id": "a047f98c-8a52-4f2b-fe48-6f05dce04c00",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"description": "",
+			"item": [
+				{
+					"name": "Get promotion books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/PromotionBooks"
+					},
+					"response": []
+				},
+				{
+					"name": "Get promotion book",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/PromotionBooks('{{PromotionBookName}}')?$expand=Components",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"PromotionBooks('{{PromotionBookName}}')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Components"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get promotions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/Promotions"
+					},
+					"response": []
+				},
+				{
+					"name": "Get promotion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/Promotions('{{PromotionFriendlyId}}')?$expand=Components",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"Promotions('{{PromotionFriendlyId}}')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Components"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Catalogs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetPromotionBookAssociatedCatalogs(bookName='{{PromotionBookName}}')"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Do Actions",
+			"description": "",
+			"item": [
+				{
+					"name": "Add Book",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findBookAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.PromotionBookAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"PromotionBookId\", \"Entity-PromotionBook-\" + jsonData.Models.find(findBookAdded).Name);",
+									"postman.setGlobalVariable(\"PromotionBookName\", jsonData.Models.find(findBookAdded).Name);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [],\n  \"EntityId\": \"\",\n  \"Action\": \"AddPromotionBook\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Name\",\n      \"Policies\": [],\n      \"DisplayName\": \"Name\",\n      \"Value\": \"postmanpromotionbook\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"DisplayName\",\n      \"Policies\": [],\n      \"DisplayName\": \"DisplayName\",\n      \"Value\": \"this is my book's display name\",\n      \"IsHidden\": false,\n      \"OriginalType\": null,\n      \"IsReadOnly\": false\n    },\n    {\n      \"Name\": \"Description\",\n      \"Policies\": [],\n      \"DisplayName\": \"Description\",\n      \"Value\": \"this is my book's description\",\n      \"IsHidden\": false,\n      \"OriginalType\": null,\n      \"IsReadOnly\": false\n    }\n  ],\n  \"ChildViews\": []\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionBookId}}\",\n  \"Action\": \"EditPromotionBook\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Name\",\n      \"Policies\": [],\n      \"DisplayName\": \"Name\",\n      \"Value\": \"postmanpromotionbook\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"ViewProperty\",\n      \"IsReadOnly\": true\n    },\n    {\n      \"Name\": \"Description\",\n      \"Policies\": [],\n      \"DisplayName\": \"Description\",\n      \"Value\": \"edited description\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"ViewProperty\",\n      \"IsReadOnly\": false\n    },\n    {\n      \"Name\": \"DisplayName\",\n      \"Policies\": [],\n      \"DisplayName\": \"DisplayName\",\n      \"Value\": \"edited display name\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"ViewProperty\",\n      \"IsReadOnly\": false\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Associate Catalog",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"PromotionBookCatalogs\",\n  \"Policies\": [],\n  \"DisplayName\": \"PromotionBookCatalogs\",\n  \"EntityId\": \"{{PromotionBookId}}\",\n  \"Action\": \"AssociateCatalog\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n        {\n          \"Name\": \"CatalogName\",\n          \"Policies\": [],\n          \"DisplayName\": \"CatalogName\",\n          \"Value\": \"A\",\n          \"IsHidden\": false,\n          \"OriginalType\": \"String\",\n          \"IsReadOnly\": false,\n          \"UiType\": \"\"\n        }\n    ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"List\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Disassociate Catalog",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"PromotionBookCatalogs\",\n  \"Policies\": [],\n  \"DisplayName\": \"PromotionBookCatalogs\",\n  \"EntityId\": \"{{PromotionBookId}}\",\n  \"Action\": \"DisassociateCatalog\",\n  \"ItemId\": \"A\",\n  \"Properties\": [\n\t   {\n\t      \"Name\": \"Version\",\n\t      \"Policies\": [],\n\t      \"DisplayName\": \"Version\",\n\t      \"Value\": \"1\",\n\t      \"IsHidden\": true,\n\t      \"OriginalType\": \"System.Int32\",\n\t      \"IsReadOnly\": true,\n\t      \"UiType\": \"\"\n\t    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"List\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findPromotionAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.PromotionAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"PromotionId\", \"Entity-Promotion-\" + jsonData.Models.find(findPromotionAdded).PromotionFriendlyId);",
+									"postman.setGlobalVariable(\"PromotionFriendlyId\", jsonData.Models.find(findPromotionAdded).PromotionFriendlyId);",
+									"postman.setGlobalVariable(\"PromotionName\", jsonData.Models.find(findPromotionAdded).Name);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionBookId}}\",\n  \"Action\": \"AddPromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Name\",\n      \"Policies\": [],\n      \"DisplayName\": \"Name\",\n      \"Value\": \"postmanpromotion\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"ValidFrom\",\n      \"Policies\": [],\n      \"DisplayName\": \"ValidFrom\",\n      \"Value\": \"10/13/2016\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"ValidTo\",\n      \"Policies\": [],\n      \"DisplayName\": \"ValidTo\",\n      \"Value\": \"10/16/2016\",\n      \"IsHidden\": false\n    },\n        {\n            \"Name\": \"DisplayText\",\n            \"Policies\": [],\n            \"DisplayName\": \"Display Text\",\n            \"Value\": \"text\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n        {\n            \"Name\": \"DisplayCartText\",\n            \"Policies\": [],\n            \"DisplayName\": \"Display Cart Text\",\n            \"Value\": \"cart text\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n    {\n      \"Name\": \"Description\",\n      \"Policies\": [],\n      \"DisplayName\": \"Description\",\n      \"Value\": \"this is a description\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"DisplayName\",\n      \"Policies\": [],\n      \"DisplayName\": \"DisplayName\",\n      \"Value\": \"this is a display name\",\n      \"IsHidden\": false\n    },\n    {\n      \"Name\": \"IsExclusive\",\n      \"Policies\": [],\n      \"DisplayName\": \"IsExclusive\",\n      \"Value\": \"true\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"Boolean\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": []\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [\n  ],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"EditPromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t{\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\",\n      \"IsRequired\": true\n    },\n    {\n      \"Name\": \"BookName\",\n      \"Policies\": [],\n      \"DisplayName\": \"BookName\",\n      \"Value\": \"postmanpromotionbook\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": true\n    },\n    {\n      \"Name\": \"Name\",\n      \"Policies\": [],\n      \"DisplayName\": \"Name\",\n      \"Value\": \"postmanpromotion\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": true\n    },\n    {\n      \"Name\": \"ValidFrom\",\n      \"Policies\": [],\n      \"DisplayName\": \"ValidFrom\",\n      \"Value\": \"3/3/2017 12:00:00 AM\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    },\n    {\n      \"Name\": \"ValidTo\",\n      \"Policies\": [],\n      \"DisplayName\": \"ValidTo\",\n      \"Value\": \"3/3/2018 12:00:00 AM\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    },\n      {\n            \"Name\": \"DisplayText\",\n            \"Policies\": [],\n            \"DisplayName\": \"Display Text\",\n            \"Value\": \"text edited\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n        {\n            \"Name\": \"DisplayCartText\",\n            \"Policies\": [],\n            \"DisplayName\": \"Display Cart Text\",\n            \"Value\": \"cart text edited\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n    {\n      \"Name\": \"DisplayName\",\n      \"Policies\": [],\n      \"DisplayName\": \"DisplayName\",\n      \"Value\": \"edited display name\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    },\n    {\n      \"Name\": \"Description\",\n      \"Policies\": [],\n      \"DisplayName\": \"Description\",\n      \"Value\": \"edited description\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    },\n    {\n      \"Name\": \"IsExclusive\",\n      \"Policies\": [],\n      \"DisplayName\": \"IsExclusive\",\n      \"Value\": \"false\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"Boolean\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionBookId}}\",\n  \"Action\": \"DeletePromotion\",\n  \"ItemId\": \"{{PromotionId}}\",\n  \"Properties\": [\n  \t{\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Duplicate Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findPromotionAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.PromotionAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"ClonePromotionIdd\", \"Entity-Promotion-\" + jsonData.Models.find(findPromotionAdded).PromotionFriendlyId);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"Details\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"DuplicatePromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"PromotionDuplicateName\",\n      \"Policies\": [],\n      \"DisplayName\": \"PromotionDuplicateName\",\n      \"Value\": \"postmanpromotionduplicate\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Request Promotion Approval",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"SetPromotionApprovalStatus\",\n  \"Policies\": [],\n  \"DisplayName\": \"SetPromotionApprovalStatus\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"RequestPromotionApproval\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Comment\",\n      \"Policies\": [],\n      \"DisplayName\": \"Comment\",\n      \"Value\": \"ready to go\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"SetPromotionApprovalStatus\",\n  \"Policies\": [],\n  \"DisplayName\": \"SetPromotionApprovalStatus\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"RejectPromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"2\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Comment\",\n      \"Policies\": [],\n      \"DisplayName\": \"Comment\",\n      \"Value\": \"no good enough\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"SetPromotionApprovalStatus\",\n  \"Policies\": [],\n  \"DisplayName\": \"SetPromotionApprovalStatus\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"ApprovePromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"2\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Comment\",\n      \"Policies\": [],\n      \"DisplayName\": \"Comment\",\n      \"Value\": \"good\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Retract Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"SetPromotionApprovalStatus\",\n  \"Policies\": [],\n  \"DisplayName\": \"SetPromotionApprovalStatus\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"RetractPromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"3\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Comment\",\n      \"Policies\": [],\n      \"DisplayName\": \"Comment\",\n      \"Value\": \"oops\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Disable Promotion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"SetPromotionApprovalStatus\",\n  \"Policies\": [],\n  \"DisplayName\": \"SetPromotionApprovalStatus\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"DisablePromotion\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"3\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Comment\",\n      \"Policies\": [],\n      \"DisplayName\": \"Comment\",\n      \"Value\": \"oops\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Select Qualification",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"QualificationDetails\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"SelectQualification\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Condition\",\n      \"Policies\": [],\n      \"DisplayName\": \"Condition\",\n      \"Value\": \"CartHasFulfillmentCondition\",\n      \"IsHidden\": false,\n      \"IsReadOnly\": false\n    }\n  ],\n  \"ChildViews\": []\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Qualification",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findQualificationAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.QualificationAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"QualificationId\", jsonData.Models.find(findQualificationAdded).QualificationId);",
+									"postman.setGlobalVariable(\"QualificationName\", jsonData.Models.find(findQualificationAdded).Name);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n      \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n      \"Name\": \"QualificationDetails\",\n      \"Policies\": [],\n      \"DisplayName\": \"Qualification Details\",\n      \"EntityId\": \"{{PromotionId}}\",\n      \"Action\": \"AddQualification\",\n      \"ItemId\": \"\",\n      \"Properties\": [\n      \t {\n\t      \"Name\": \"Version\",\n\t      \"Policies\": [],\n\t      \"DisplayName\": \"Version\",\n\t      \"Value\": \"1\",\n\t      \"IsHidden\": true,\n\t      \"OriginalType\": \"System.Int32\",\n\t      \"IsReadOnly\": true,\n\t      \"UiType\": \"\"\n\t    },\n        {\n          \"Name\": \"Condition\",\n          \"Policies\": [],\n          \"DisplayName\": \"Condition\",\n          \"Value\": \"CartHasFulfillmentCondition\",\n          \"IsHidden\": false,\n          \"OriginalType\": \"System.String\",\n          \"IsReadOnly\": true,\n          \"UiType\": \"\",\n          \"IsRequired\": true\n        },\n        {\n          \"Name\": \"ConditionOperator\",\n          \"Policies\": [\n            {\n              \"@odata.type\": \"#Sitecore.Commerce.Core.AvailableSelectionsPolicy\",\n              \"PolicyId\": \"fa32052d55864ac79c69c2624487add2\",\n              \"Models\": [],\n              \"List\": [\n                {\n                  \"Name\": \"And\",\n                  \"Policies\": [],\n                  \"DisplayName\": \"And\",\n                  \"IsDefault\": false\n                },\n                {\n                  \"Name\": \"Or\",\n                  \"Policies\": [],\n                  \"DisplayName\": \"Or\",\n                  \"IsDefault\": false\n                }\n              ],\n              \"AllowMultiSelect\": false\n            }\n          ],\n          \"DisplayName\": \"Condition Operator\",\n          \"Value\": \"Or\",\n          \"IsHidden\": false,\n          \"OriginalType\": \"System.String\",\n          \"IsReadOnly\": false,\n          \"UiType\": \"\",\n          \"IsRequired\": true\n        }\n      ],\n      \"ChildViews\": [],\n      \"DisplayRank\": 500,\n      \"UiHint\": \"Flat\"\n    }"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Qualification",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"QualificationDetails\",\n  \"Policies\": [],\n  \"DisplayName\": \"Qualification Details\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"EditQualification\",\n  \"ItemId\": \"{{QualificationId}}\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"3\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"ConditionOperator\",\n      \"Policies\": [],\n      \"DisplayName\": \"Condition Operator\",\n      \"Value\": \"And\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Condition\",\n      \"Policies\": [],\n      \"DisplayName\": \"Condition\",\n      \"Value\": \"CartHasFulfillmentCondition\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Qualification",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n    \"Name\": \"Qualifications\",\n    \"Policies\": [],\n    \"EntityId\": \"{{PromotionId}}\",\n    \"Action\": \"DeleteQualification\",\n    \"ItemId\": \"{{QualificationId}}\",\n    \"Properties\": [\n    \t{\n\t      \"Name\": \"Version\",\n\t      \"Policies\": [],\n\t      \"DisplayName\": \"Version\",\n\t      \"Value\": \"1\",\n\t      \"IsHidden\": true,\n\t      \"OriginalType\": \"System.Int32\",\n\t      \"IsReadOnly\": true,\n\t      \"UiType\": \"\"\n\t    }\n    ],\n    \"ChildViews\": [],\n    \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Select Benefit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"BenefitDetails\",\n  \"Policies\": [],\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"SelectBenefit\",\n  \"ItemId\": \"\",\n  \"Properties\": [\n  \t{\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"1\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Action\",\n      \"Policies\": [],\n      \"DisplayName\": \"Action\",\n      \"Value\": \"CartSubtotalPercentOffAction\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"String\",\n      \"IsReadOnly\": false\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Benefit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findBenefitAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.BenefitAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"BenefitId\", jsonData.Models.find(findBenefitAdded).BenefitId);",
+									"postman.setGlobalVariable(\"BenefitName\", jsonData.Models.find(findBenefitAdded).Name);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n      \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n      \"Name\": \"BenefitDetails\",\n      \"Policies\": [],\n      \"EntityId\": \"{{PromotionId}}\",\n      \"Action\": \"AddBenefit\",\n      \"ItemId\": \"\",\n      \"Properties\": [\n      \t {\n\t      \"Name\": \"Version\",\n\t      \"Policies\": [],\n\t      \"DisplayName\": \"Version\",\n\t      \"Value\": \"2\",\n\t      \"IsHidden\": true,\n\t      \"OriginalType\": \"System.Int32\",\n\t      \"IsReadOnly\": true,\n\t      \"UiType\": \"\"\n\t    },\n \t\t{\n          \"Name\": \"Action\",\n          \"Policies\": [],\n          \"DisplayName\": \"Action\",\n          \"Value\": \"CartSubtotalPercentOffAction\",\n          \"IsHidden\": false,\n          \"OriginalType\": \"String\",\n          \"IsReadOnly\": true,\n          \"UiType\": \"\"\n        },\n        {\n          \"Name\": \"PercentOff\",\n          \"Policies\": [],\n          \"DisplayName\": \"Percent Off\",\n          \"Value\": \"15\",\n          \"IsHidden\": false,\n          \"OriginalType\": \"System.Int32\",\n          \"IsReadOnly\": false,\n          \"UiType\": \"\"\n        }\n      ],\n      \"ChildViews\": [],\n      \"DisplayRank\": 500\n    }"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Benefit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"@odata.context\": \"http://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n  \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n  \"Name\": \"BenefitDetails\",\n  \"Policies\": [],\n  \"DisplayName\": \"Benefit Details\",\n  \"EntityId\": \"{{PromotionId}}\",\n  \"Action\": \"EditBenefit\",\n  \"ItemId\": \"{{BenefitId}}\",\n  \"Properties\": [\n    {\n      \"Name\": \"Version\",\n      \"Policies\": [],\n      \"DisplayName\": \"Version\",\n      \"Value\": \"3\",\n      \"IsHidden\": true,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"Action\",\n      \"Policies\": [],\n      \"DisplayName\": \"Action\",\n      \"Value\": \"CartSubtotalPercentOffAction\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.String\",\n      \"IsReadOnly\": true,\n      \"UiType\": \"\"\n    },\n    {\n      \"Name\": \"PercentOff\",\n      \"Policies\": [],\n      \"DisplayName\": \"Percent Off\",\n      \"Value\": \"51\",\n      \"IsHidden\": false,\n      \"OriginalType\": \"System.Int32\",\n      \"IsReadOnly\": false,\n      \"UiType\": \"\"\n    }\n  ],\n  \"ChildViews\": [],\n  \"DisplayRank\": 500,\n  \"UiHint\": \"Flat\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Item",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"",
+									"function findItemAdded(model) {",
+									"    var type = '@odata.type';",
+									"    return model[type] === '#Sitecore.Commerce.Plugin.Promotions.PromotionItemAdded';",
+									"}",
+									"",
+									"postman.setGlobalVariable(\"PromotionItemId\", jsonData.Models.find(findItemAdded).PromotionItemId);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"@odata.context\": \"https://localhost:5000/Api/$metadata#Sitecore.Commerce.EntityViews.EntityView\",\n    \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n    \"Name\": \"ItemDetails\",\n    \"Policies\": [],\n    \"DisplayName\": \"Item Details\",\n    \"EntityId\": \"{{PromotionId}}\",\n    \"Action\": \"AddItem\",\n    \"ItemId\": \"\",\n    \"Properties\": [\n        {\n            \"Name\": \"Version\",\n            \"Policies\": [],\n            \"DisplayName\": \"Version\",\n            \"Value\": \"1\",\n            \"IsHidden\": true,\n            \"OriginalType\": \"System.Int32\",\n            \"IsReadOnly\": true,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n        {\n            \"Name\": \"Catalog\",\n            \"Policies\": [\n                {\n                    \"@odata.type\": \"#Sitecore.Commerce.Core.AvailableSelectionsPolicy\",\n                    \"PolicyId\": \"1787c0f3c5cb43b8b3257de8a14db17d\",\n                    \"Models\": [],\n                    \"List\": [],\n                    \"AllowMultiSelect\": false\n                }\n            ],\n            \"DisplayName\": \"Catalog\",\n            \"Value\": \"Adventure Works Catalog\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"Dropdown\",\n            \"IsRequired\": true\n        },\n        {\n            \"Name\": \"Excluded\",\n            \"Policies\": [],\n            \"DisplayName\": \"Excluded\",\n            \"Value\": \"false\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.Boolean\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"\",\n            \"IsRequired\": true\n        },\n        {\n            \"Name\": \"ItemId\",\n            \"Policies\": [\n                {\n                    \"PolicyId\": \"EntityType\",\n                    \"Models\": [\n                        {\n                            \"Name\": \"SellableItem\",\n                            \"Policies\": []\n                        },\n                        {\n                            \"Name\": \"SearchVariants\",\n                            \"Policies\": []\n                        }\n                    ]\n                },\n                {\n                    \"@odata.type\": \"#Sitecore.Commerce.Plugin.Search.SearchScopePolicy\",\n                    \"PolicyId\": \"a0031a6f43db4a8a8a1ab6674168870d\",\n                    \"Models\": [],\n                    \"FullListName\": \"CatalogItems\",\n                    \"EntityTypeNames\": [\n                        \"Sitecore.Commerce.Plugin.Catalog.Catalog\",\n                        \"Sitecore.Commerce.Plugin.Catalog.Category\",\n                        \"Sitecore.Commerce.Plugin.Catalog.SellableItem\"\n                    ],\n                    \"IncrementalListName\": \"CatalogItemsIndex\",\n                    \"DeletedListName\": \"\",\n                    \"Name\": \"CatalogItemsScope\",\n                    \"ResultDetailsTags\": [\n                        {\n                            \"Name\": \"CatalogTable\",\n                            \"Policies\": [],\n                            \"Excluded\": false\n                        }\n                    ]\n                }\n            ],\n            \"DisplayName\": \"Item Id\",\n            \"Value\": \"Entity-SellableItem-AW074 04\",\n            \"IsHidden\": false,\n            \"OriginalType\": \"System.String\",\n            \"IsReadOnly\": false,\n            \"UiType\": \"Autocomplete\",\n            \"IsRequired\": true\n        }\n    ],\n    \"ChildViews\": [],\n    \"DisplayRank\": 500,\n    \"UiHint\": \"Flat\",\n    \"Icon\": \"chart_column_stacked\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Item",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"@odata.type\": \"#Sitecore.Commerce.EntityViews.EntityView\",\n    \"Name\": \"Items\",\n    \"Policies\": [],\n    \"EntityId\": \"{{PromotionId}}\",\n    \"Action\": \"RemoveItem\",\n    \"ItemId\": \"{{PromotionItemId}}\",\n    \"Properties\": [\n    \t {\n\t      \"Name\": \"Version\",\n\t      \"Policies\": [],\n\t      \"DisplayName\": \"Version\",\n\t      \"Value\": \"1\",\n\t      \"IsHidden\": true,\n\t      \"OriginalType\": \"System.Int32\",\n\t      \"IsReadOnly\": true,\n\t      \"UiType\": \"\"\n\t    }\n    ],\n    \"ChildViews\": [],\n    \"DisplayRank\": 500\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/DoUxAction()"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entity Views",
+			"description": "",
+			"item": [
+				{
+					"name": "Books",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"\",\n    \"viewName\":\"PromotionBooks\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Master",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"Master\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Details",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"Details\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Details - For Add",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"\",\n    \"viewName\":\"Details\",\n    \"itemId\": \"\",\n    \"forAction\":\"AddPromotionBook\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Details - For Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"Details\",\n    \"itemId\": \"\",\n    \"forAction\":\"EditPromotionBook\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Promotions",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"PromotionBookPromotions\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Catalogs",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"PromotionBookCatalogs\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Catalogs - For Associate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"PromotionBookCatalogs\",\n    \"forAction\":\"AssociateCatalog\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Master",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Master\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Preview",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Preview\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Details",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Details\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Details - For Add",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionBookId}}\",\n    \"viewName\":\"Details\",\n    \"itemId\": \"\",\n    \"forAction\":\"AddPromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Details - For Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Details\",\n    \"itemId\": \"\",\n    \"forAction\":\"EditPromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Details - For Duplicate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Details\",\n    \"forAction\":\"DuplicatePromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Status - For Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"SetPromotionApprovalStatus\",\n    \"itemId\": \"\",\n    \"forAction\":\"RequestPromotionApproval\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Status - For Reject",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"SetPromotionApprovalStatus\",\n    \"itemId\": \"\",\n    \"forAction\":\"RejectPromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Status - For Approve",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"SetPromotionApprovalStatus\",\n    \"itemId\": \"\",\n    \"forAction\":\"ApprovePromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Status - For Retract",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"SetPromotionApprovalStatus\",\n    \"itemId\": \"\",\n    \"forAction\":\"RetractPromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion - Status - For Disable",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"SetPromotionApprovalStatus\",\n    \"itemId\": \"\",\n    \"forAction\":\"DisablePromotion\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Qualifications",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Qualifications\",\n    \"forAction\":\"\",\n    \"itemId\": \"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Qualification - Details",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"QualificationDetails\",\n    \"forAction\":\"\",\n    \"itemId\": \"{{QualificationId}}\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Qualification - Details - For Select",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"QualificationDetails\",\n    \"forAction\":\"SelectQualification\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Qualification - Details - For Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"QualificationDetails\",\n    \"forAction\":\"EditQualification\",\n    \"itemId\": \"{{QualificationId}}\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Benefits",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Benefits\",\n    \"forAction\":\"\",\n    \"itemId\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Benefit - Details",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"BenefitDetails\",\n    \"forAction\":\"\",\n    \"itemId\":\"{{BenefitId}}\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Benefit - Details - For Select",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"BenefitDetails\",\n    \"forAction\":\"SelectBenefit\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Benefit - Details - For Edit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"BenefitDetails\",\n    \"forAction\":\"EditBenefit\",\n    \"itemId\": \"{{BenefitId}}\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Items",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"Items\",\n    \"forAction\":\"\",\n    \"itemId\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Item - Details",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"ItemDetails\",\n    \"forAction\":\"\",\n    \"itemId\":\"{{PromotionItemId}}\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Item - Details - For Add",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"{{PromotionId}}\",\n    \"viewName\":\"ItemDetails\",\n    \"forAction\":\"AddItem\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()"
+					},
+					"response": []
+				},
+				{
+					"name": "Promotions - Dashboard",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"entityId\":\"\",\n    \"viewName\":\"PromotionsDashboard\",\n    \"forAction\":\"\"\n}"
+						},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetEntityView()",
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"description": "",
+			"item": [
+				{
+					"name": "Books",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='PromotionBooks',type='Sitecore.Commerce.Plugin.Promotions.PromotionBook, Sitecore.Commerce.Plugin.Promotions',skip=0,take=10)?$expand=Items",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='PromotionBooks',type='Sitecore.Commerce.Plugin.Promotions.PromotionBook, Sitecore.Commerce.Plugin.Promotions',skip=0,take=10)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book - Promotions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='pricebooks-postmanpricebook-pricecards',type='Sitecore.Commerce.Plugin.Pricing.PriceCards, Sitecore.Commerce.Plugin.Pricing',skip=0,take=10)?$expand=Items",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='pricebooks-postmanpricebook-pricecards',type='Sitecore.Commerce.Plugin.Pricing.PriceCards, Sitecore.Commerce.Plugin.Pricing',skip=0,take=10)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='Promotions',type='Sitecore.Commerce.Plugin.Promotions.Promotion, Sitecore.Commerce.Plugin.Promotions',skip=0,take=20)?$expand=Items",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='Promotions',type='Sitecore.Commerce.Plugin.Promotions.Promotion, Sitecore.Commerce.Plugin.Promotions',skip=0,take=20)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotions - Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='PromotionsIndex',type='Sitecore.Commerce.Plugin.Promotions.Promotion, Sitecore.Commerce.Plugin.Promotions',skip=0,take=10)?$expand=Items($expand=Components)",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='PromotionsIndex',type='Sitecore.Commerce.Plugin.Promotions.Promotion, Sitecore.Commerce.Plugin.Promotions',skip=0,take=10)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items($expand"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleted Promotions - Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='DeletedPromotionsIndex',type='Sitecore.Commerce.Core.Tombstone, Sitecore.Commerce.Core',skip=0,take=10)?$expand=Items($expand=Components)",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='DeletedPromotionsIndex',type='Sitecore.Commerce.Core.Tombstone, Sitecore.Commerce.Core',skip=0,take=10)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items($expand"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tombstones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{ServiceHost}}/{{ShopsApi}}/GetList(id='Tombstones',type='Sitecore.Commerce.Core.Tombstone, Sitecore.Commerce.Core',skip=0,take=10)?$expand=Items($expand=Components)",
+							"host": [
+								"{{ServiceHost}}"
+							],
+							"path": [
+								"{{ShopsApi}}",
+								"GetList(id='Tombstones',type='Sitecore.Commerce.Core.Tombstone, Sitecore.Commerce.Core',skip=0,take=10)"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "Items($expand"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rules",
+			"description": "",
+			"item": [
+				{
+					"name": "Get conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetConditions(conditionType='')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetConditions(conditionType='Sitecore.Commerce.Plugin.Carts.ICartCondition, Sitecore.Commerce.Plugin.Carts')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get runtime session conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetConditions(conditionType='Sitecore.Commerce.Plugin.Rules.IRuntimeSessionCondition, Sitecore.Commerce.Plugin.Rules')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get date conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetConditions(conditionType='Sitecore.Commerce.Plugin.Rules.IDateCondition, Sitecore.Commerce.Plugin.Rules')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get shop conditions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetConditions(conditionType='Sitecore.Commerce.Plugin.Shops.IShopCondition, Sitecore.Commerce.Plugin.Shops')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get actions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetActions(actionType='')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get carts actions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetActions(actionType='Sitecore.Commerce.Plugin.Carts.ICartAction, Sitecore.Commerce.Plugin.Carts')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get operators",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetOperators(operatorType='')"
+					},
+					"response": []
+				},
+				{
+					"name": "Get date operators",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetOperators(operatorType='Sitecore.Framework.Rules.IBinaryOperator`2[[System.DateTime],[System.DateTime]], Sitecore.Framework.Rules.Abstractions')",
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get int operators",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetOperators(operatorType='Sitecore.Framework.Rules.IBinaryOperator`2[[System.Int32],[System.Int32]], Sitecore.Framework.Rules.Abstractions')",
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get decimal operators",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "ShopName",
+								"value": "{{ShopName}}"
+							},
+							{
+								"key": "ShopperId",
+								"value": "{{ShopperId}}"
+							},
+							{
+								"key": "Language",
+								"value": "{{Language}}"
+							},
+							{
+								"key": "Currency",
+								"value": "{{Currency}}"
+							},
+							{
+								"key": "Environment",
+								"value": "{{Environment}}"
+							},
+							{
+								"key": "GeoLocation",
+								"value": "{{GeoLocation}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{SitecoreIdToken}}"
+							}
+						],
+						"body": {},
+						"url": "{{ServiceHost}}/{{ShopsApi}}/GetOperators(operatorType='Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions')",
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -29,7 +29,6 @@ settings.user.ps1
 /install/assets/Downloads
 configuration-x*0.json
 /install/deploy/*
-/install/LocalRepo
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user
@@ -38,4 +37,7 @@ IconCache/
 T4RenderCache/
 BuiltFiles_*.txt
 /src/**/tds/*/Report/*
-/Themes/Habitat Sites/Habitat Home/Habitat Home Store/node_modules/
+
+/install/set-installation-overrides.ps1
+InstallUtil.InstallLog
+/install/assets/Resources/Modules

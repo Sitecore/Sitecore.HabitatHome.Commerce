@@ -1,0 +1,190 @@
+{
+	"id": "2d8a49db-843e-ec6e-99d0-b5c47214b7da",
+	"name": "ShopsAPISamples",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "API",
+			"description": "",
+			"collectionId": "2d8a49db-843e-ec6e-99d0-b5c47214b7da",
+			"order": [
+				"24024707-a1d6-6ad2-eb2b-32b65ea74253",
+				"12f24c50-fd98-38d2-928c-89aed61fda66"
+			],
+			"owner": "195787",
+			"folders_order": [],
+			"id": "92f59a2d-b16d-199e-d553-1ee9f3efc6a9"
+		}
+	],
+	"folders_order": [
+		"92f59a2d-b16d-199e-d553-1ee9f3efc6a9"
+	],
+	"timestamp": 1485189424227,
+	"owner": "195787",
+	"public": false,
+	"requests": [
+		{
+			"id": "12f24c50-fd98-38d2-928c-89aed61fda66",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Shops('{{ShopName}}')?$expand=Components",
+			"folder": "92f59a2d-b16d-199e-d553-1ee9f3efc6a9",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "Components",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506109073625,
+			"name": "Get shop",
+			"description": "",
+			"collectionId": "2d8a49db-843e-ec6e-99d0-b5c47214b7da",
+			"responses": []
+		},
+		{
+			"id": "24024707-a1d6-6ad2-eb2b-32b65ea74253",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Shops",
+			"folder": "92f59a2d-b16d-199e-d553-1ee9f3efc6a9",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506109070645,
+			"name": "Shops",
+			"description": "",
+			"collectionId": "2d8a49db-843e-ec6e-99d0-b5c47214b7da",
+			"responses": []
+		}
+	]
+}

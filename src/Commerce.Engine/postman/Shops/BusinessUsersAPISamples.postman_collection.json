@@ -1,0 +1,191 @@
+{
+	"id": "037b3c91-2471-4795-12ce-83914cf5ecf9",
+	"name": "BusinessUsersAPISamples",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "API",
+			"description": "",
+			"collectionId": "037b3c91-2471-4795-12ce-83914cf5ecf9",
+			"order": [
+				"e8625177-1a09-f22c-8c93-84c5158cb266",
+				"912cfed7-25dd-f8bd-3e75-5f474654e9de"
+			],
+			"owner": "195787",
+			"folders_order": [],
+			"id": "ee839330-128e-51d1-0dcf-715462df6e1e"
+		}
+	],
+	"folders_order": [
+		"ee839330-128e-51d1-0dcf-715462df6e1e"
+	],
+	"timestamp": 1506108002472,
+	"owner": "195787",
+	"public": false,
+	"requests": [
+		{
+			"id": "912cfed7-25dd-f8bd-3e75-5f474654e9de",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/BusinessUsers('Entity-BusinessUser-64de6fbdb8304ef1b3367ad31330ed27')?$expand=Components",
+			"folder": "ee839330-128e-51d1-0dcf-715462df6e1e",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "Components",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506615085605,
+			"name": "Get business user",
+			"description": "",
+			"collectionId": "037b3c91-2471-4795-12ce-83914cf5ecf9",
+			"responses": []
+		},
+		{
+			"id": "e8625177-1a09-f22c-8c93-84c5158cb266",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/BusinessUsers",
+			"folder": "ee839330-128e-51d1-0dcf-715462df6e1e",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506108179649,
+			"name": "Business Users",
+			"description": "",
+			"collectionId": "037b3c91-2471-4795-12ce-83914cf5ecf9",
+			"responses": [],
+			"collection_id": "037b3c91-2471-4795-12ce-83914cf5ecf9"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The Sitecore Commerce Braintree Payment Plugin Sample.</Description>
+    <VersionPrefix>2.0.0</VersionPrefix>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>$(PackageTags);Commerce;Plugin;Sample;Braintree Payment</PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Braintree" Version="3.8.0" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="2.0.*" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>
