@@ -1,3 +1,5 @@
+@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+
 .cxa-minicart-component {
     display: inline-block;
     position: relative;
@@ -5,6 +7,10 @@
     height: 80px;
     line-height: 74px;
     border-top: 4px solid transparent;
+
+    @include respond-to(mobile-large) {
+        display: none;
+    }
 
     .top-text {
         display: inline-block;

@@ -46,18 +46,25 @@ main .category-promo {
         &:before {
             content: '';
             background: url(../images/carousel_overlay.png) no-repeat center bottom;
-            width: 175px;
-            height: 260px;
+            width: 110px;
+            height: 167px;               
             background-size: contain;
             position: absolute;
             right: 0;
             bottom: 0;
             z-index: 2;
 
+            @include respond-to(desktop-large){
+                width: 175px;
+                height: 260px;
+            }
+
             @include respond-to(mobile-large) {
                 width: 70px;
                 height: 104px;
             }
+
+            
         }
     }
 

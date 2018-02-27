@@ -4,8 +4,8 @@
     .product-image {
         padding: $padding/2;
         background: $light;
-        border-radius: $border-radius;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+        //box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
         img {
             width: 100%;
         }

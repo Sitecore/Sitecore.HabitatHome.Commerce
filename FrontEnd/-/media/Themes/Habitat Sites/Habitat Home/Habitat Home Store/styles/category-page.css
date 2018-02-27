@@ -57,13 +57,21 @@ main .category-hero .field-promoicon:before,
 main .category-promo .field-promoicon:before {
   content: '';
   background: url(../images/carousel_overlay.png) no-repeat center bottom;
-  width: 175px;
-  height: 260px;
+  width: 110px;
+  height: 167px;
   background-size: contain;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 2;
+}
+
+@media only screen and (min-width: 1200px) {
+  main .category-hero .field-promoicon:before,
+  main .category-promo .field-promoicon:before {
+    width: 175px;
+    height: 260px;
+  }
 }
 
 @media only screen and (max-width: 786px) {
