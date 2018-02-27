@@ -4,10 +4,10 @@
 $promoted-color: #f6a623;
 .component.cxa-productlist-component {
     .load-more-btn, .btn.btn-block {
-        border: 2px solid $primary-color;
+        border: 0;
         padding: 10px 20px;
-        border-radius: 4px;
-        color: $primary-color;
+        border-radius: 0;
+        color: white;
         max-width: 250px;
         display: block;
         float: none;
@@ -16,10 +16,10 @@ $promoted-color: #f6a623;
         font-size: 13px;
         text-align: center;
         font-weight: bold;
-        background: transparent;
+        background: #1d8c96;
         &:active, &:hover{
-            color: $light;
-            background: $primary-color;
+            //color: $light;
+            //background: $primary-color;
         }
     }
     .btn.btn-block{
@@ -56,6 +56,7 @@ $promoted-color: #f6a623;
                     .product-info {
                         @include row-of-elements-packed(true, $top-or-left, $packed-elements-margin);
                         width: 85%;
+                        margin: 10px 0;
                         .savings {
                             position: absolute;
                             top: 169px;
@@ -69,6 +70,7 @@ $promoted-color: #f6a623;
                                 margin-left: $margin/3;
                             }
                             .savings-percentage {
+                                display: none;
                                 order: 2;
                                 margin-left: 5px
                             }
@@ -82,12 +84,23 @@ $promoted-color: #f6a623;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
+                            margin-bottom: 5px;
                         }
                         .product-brand {
-                            margin-top: $margin/3;
-                            margin-bottom: $margin;
-                            width: 100%;
-                            order: 2;
+                            order: 3;
+                            //border-bottom: 1px solid #d8d9d5;
+
+                            display: inline;
+                            padding: 0.3em 0.5em;
+                            font-size: 11px;
+                            font-weight: bold;
+                            line-height: 1;
+                            color: #fff;
+                            text-align: center;
+                            white-space: nowrap;
+                            vertical-align: baseline;
+                            background-color: #424C5F;
+                            margin-right: 5px;
                         }
                         .product-rating {
                             width: 33%;
@@ -108,6 +121,7 @@ $promoted-color: #f6a623;
                                 margin-right: 5px;
                             }
                             margin-bottom: 0;
+                            display: none;
                         }
                         .lowest-variant-price {
                             order: 5;
@@ -116,25 +130,54 @@ $promoted-color: #f6a623;
                             min-height: 22px;
                         }
                         .current-price {
-                            padding: 11px $padding/2 0 $padding/2;
-                            text-align: center;
+                            //padding: 11px $padding/2 0 $padding/2;
+                            text-align: left;
                             min-height: $control-large-height;
                             order: 6;
                             margin-right: 0;
-                            @include align-elements($center);
-                            width: 50%;
+                            //@include align-elements($center);
+                            width: 50%; 
+                            font-size: 16px;
+                            padding: 0.1875em 0;
+                            border: 1px solid transparent;
+
+                            padding-top: 10px;
+                            margin-top: 10px;
+                            border-top: 1px solid #d8d9d5;
                         }
                         .product-category {
                             order: 7;
                             margin-right: 0;
                             min-height: $control-large-height;
                             width: 50%;
+
+                            padding-top: 10px;
+                            margin-top: 10px;
+                            border-top: 1px solid #d8d9d5;
+                            
                             a {
                                 display: inline-block;
-                                min-height: $control-large-height;
-                                padding: 9px 15px 7px 15px;
                                 width: 100%;
                                 text-align: center;
+                                font-size: 16px;
+                                padding: 0.1875em 0.3125em;
+                                font-weight: 300;
+                                text-transform: none;
+                                border: 1px solid rgb(20, 25, 25);
+                                color: rgb(20, 25, 25);
+
+                                &:after {
+                                    font-family: FontAwesome;
+                                    content: '\f105';
+                                    font-size: 20px;
+                                    vertical-align: middle;
+                                    font-weight: bold;
+                                    margin-left: 4px;
+                                }
+
+                                &:hover {
+                                    color: rgb(20, 25, 25);
+                                }
                             }
                         }
                     }
@@ -148,9 +191,6 @@ $promoted-color: #f6a623;
     .product-list {
         &>ul {
             >li {
-                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.11);
-                background-color: $light;
-                border-radius: $border-radius;
                 min-height: 387px;
                 .product-summary {
                     .product-info {
@@ -159,6 +199,7 @@ $promoted-color: #f6a623;
                             color: $light;
                             font-size: $font-size-large;
                             font-weight: bold;
+                            display: none;
                             span {
                                 background-color: $promoted-color;
                                 color: $light;
@@ -169,98 +210,37 @@ $promoted-color: #f6a623;
                         .lowest-variant-price,
                         .product-title {
                             a {
-                                color: $secondary-color;
+                                font-size: 20px;
+                                line-height: 1.6;
+                                font-weight: 300;
+                                color: #141919;
+
                                 &:active,
                                 &:hover,
                                 &:focus {
                                     text-decoration: none;
-                                    color: $primary-color;
                                     cursor: pointer;
                                 }
                             }
                         }
-                        .product-brand {
-                            color: $secondary-text-color;
-                            font-size: 13px;
-                        }
                         .current-price {
-                            background: darken($primary-color, 2);
+/*                             background: darken($primary-color, 2);
                             color: $light;
                             border-radius: $border-radius 0 0 $border-radius;
-                            cursor: default;
-                        }
-                        .current-price.on-sale {
-                            background-color: $promoted-color;
-                            color: $light;
-                        }
-                        .product-stock-status {
-                            font-weight: bold;
-                            color: $secondary-text-color;
-                        }
-                        .product-stock-status.In-Stock {
-                            &:before {
-                                @include sc-icon($scxa-happyface);
-                            }
-                        }
-                        .product-stock-status.Out-of-Stock {
-                            &:before {
-                                @include sc-icon($scxa-sadface);
-                            }
+                            cursor: default; */
                         }
                         .product-rating {
                             .icon-star {
                                 &:before {
                                     @include sc-icon($scxa-ratingstar);
-                                    color: #e1e3e5;
+                                    color: #9a9a9a;
                                 }
                             }
                             .rated {
                                 .icon-star {
                                     &:before {
-                                        color: #ffc107;
+                                        color: #1d8c96;
                                     }
-                                }
-                            }
-                        }
-                        .product-category {
-                            &:not(.on-sale) {
-                                a {
-                                    @include primary-button-line();
-                                    padding: 9px 15px 7px 15px;
-                                    border-radius: 0 $border-radius $border-radius 0;
-                                    span{
-                                        color: $primary-color;
-                                    }
-                                    &:hover *{
-                                        color: $light;
-                                    }
-                                    &:active,
-                                    &:hover,
-                                    &:focus {
-                                        text-decoration: none;
-                                        background-color: $primary-color;
-                                    }
-                                }
-                            }
-                            a {
-                                &:active,
-                                &:hover,
-                                &:focus {
-                                    text-decoration: none;
-                                    color: $light
-                                }
-                            }
-                        }
-                        .product-category.on-sale {
-                            a {
-                                @include button-border($light, $promoted-color, $promoted-color);
-                                padding: 9px 15px 7px 15px;
-                                border-top-left-radius: 0;
-                                border-bottom-left-radius: 0;
-                                &:active,
-                                &:hover,
-                                &:focus {
-                                    text-decoration: none;
                                 }
                             }
                         }

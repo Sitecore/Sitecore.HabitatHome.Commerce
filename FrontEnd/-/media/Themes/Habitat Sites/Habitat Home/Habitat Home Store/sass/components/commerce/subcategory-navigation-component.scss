@@ -16,6 +16,7 @@
         cursor: pointer;
         &:after {
             float: right;
+            color: rgb(20, 25, 25);
         }
     }
     .subcategory-navigation {
@@ -36,6 +37,7 @@
     @include sidebar();
     .subcategories-title {
         @include sidebarTitleLocal();
+        color: rgb(20, 25, 25) !important;
     }
     .subcategory-navigation {
         margin: 0;
@@ -47,4 +49,10 @@
             @include sidebarTitleLocal();
         }
     }
+}
+
+.component.cxa-subcategorynavigation-component {
+    box-shadow: 0 0 transparent;
+    border: 1px solid rgb(20, 25, 25);
+    border-radius: 0;
 }
