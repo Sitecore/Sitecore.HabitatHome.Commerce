@@ -80,9 +80,6 @@
     <Reference Include="Sitecore.ContentSearch.Linq">
       <HintPath>..\..\..\..\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Foundation.DependencyInjection">
-      <HintPath>..\..\..\..\lib\Sitecore.Foundation.DependencyInjection.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
