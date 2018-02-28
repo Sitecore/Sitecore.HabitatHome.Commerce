@@ -1,26 +1,20 @@
-﻿using Sitecore.Commerce.XA.Feature.Cart.Repositories;
+﻿using Sitecore.Commerce.Engine.Connect;
+using Sitecore.Commerce.Engine.Connect.Interfaces;
+using Sitecore.Commerce.Engine.Connect.Search;
+using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Web.Mvc;
-using System.Web.UI;
-using Sitecore.Commerce.Engine.Connect;
-using Sitecore.Commerce.Engine.Connect.Interfaces;
-using Sitecore.Commerce.Engine.Connect.Search;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
-using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq;
-using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.ContentSearch.Security;
-using Sitecore.Data.Items;
+using System;
+using System.Linq;
+using System.Web.Mvc;
+using System.Web.UI;
 
 namespace Sitecore.Feature.Catalog.Controllers
 {
@@ -64,11 +58,11 @@ namespace Sitecore.Feature.Catalog.Controllers
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
         public JsonResult AddCartLine(string addToCart_CatalogName, string addToCart_ProductId, string addToCart_VariantId, Decimal quantity = 1)
         {
-            //Sitecore.Commerce.XA.Foundation.Connect.Managers.SearchManager sm = new SearchManager(StorefrontContext);
-           
-            //var productItem = sm.GetProduct(addToCart_ProductId, addToCart_CatalogName);
+            //var productRenderingModel = this.ProductVariantsRepository.GetProductVariantRenderingModel(this.VisitorContext);
+            //var variant = productRenderingModel?.Variants?.FirstOrDefault()?.VariantId;
+            //addToCart_VariantId = variant;
 
-
+            //Get product with search
             using (IProviderSearchContext searchContext = CommerceTypeLoader.CreateInstance<ICommerceSearchManager>()
                 .GetIndex(addToCart_CatalogName).CreateSearchContext(SearchSecurityOptions.Default))
             {
@@ -77,22 +71,19 @@ namespace Sitecore.Feature.Catalog.Controllers
                     item.Name == addToCart_ProductId.ToLowerInvariant());
 
                 var result = query.GetResults<CommerceSellableItemSearchResultItem>().Hits.FirstOrDefault()?.Document;
-
                 var productItem = Sitecore.Context.Database.GetItem(result?.SitecoreId);
-
 
                 if (productItem != null && productItem.HasChildren)
                 {
-                    //foreach (Item child in productItem.Children)
-                    //{
                     VariantEntity model = this.ModelProvider.GetModel<VariantEntity>();
                     model.Initialize(productItem.Children.FirstOrDefault());
-                    //variantEntityList.Add(model);
                     addToCart_VariantId = model.VariantId;
-                    //}
+                }
+                else
+                {
+                    addToCart_VariantId = addToCart_ProductId;
                 }
             }
-
 
             BaseJsonResult baseJsonResult;
             try
