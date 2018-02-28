@@ -18,8 +18,9 @@ build/assets/**/*
 .sonar
 vars.user.cmd
 .vs
+.vscode
 /target
-/node_modules
+node_modules/
 settings.user.ps1
 *.log
 *.zip

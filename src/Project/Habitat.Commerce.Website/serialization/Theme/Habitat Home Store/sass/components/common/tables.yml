@@ -1,0 +1,31 @@
+﻿---
+ID: "d2c3330e-a13e-4c35-9547-2dc726c272b0"
+Parent: "ef27a5f1-60c7-4036-bf68-c57b29ef9ccc"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/common/tables
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/70262FC3B10844828FBCC4284E3887D8.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "10534b3a-60c5-40dc-a50b-4df1a2c6cd53"
+  Value: QGltcG9ydCAnLi4vLi4vbWl4aW5zL2luZGV4JzsNCkBpbXBvcnQgJy4uLy4uL2Jhc2UvaW5kZXgnOw0KdGFibGV7DQogICAgQGluY2x1ZGUgdGFibGUoKTsNCn0=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 92
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100945Z
