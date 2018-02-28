@@ -502,6 +502,10 @@ header {
 
 }
 
+body.preview header {
+  margin-top: 89px;
+} 
+
 footer {
   background: $bg-footer;
   color: $text-white;

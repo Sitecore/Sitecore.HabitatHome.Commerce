@@ -3381,6 +3381,10 @@ header .search-box.header-search > div.component-content span, header .search-bo
   width: 250px;
 }
 
+body.preview header {
+  margin-top: 89px;
+}
+
 footer {
   background: #141919;
   color: #fff;
