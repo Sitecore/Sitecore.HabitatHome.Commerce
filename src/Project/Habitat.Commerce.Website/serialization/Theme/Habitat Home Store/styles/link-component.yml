@@ -1,0 +1,31 @@
+﻿---
+ID: "8059d9f7-ec09-469b-8a69-8020af86bff8"
+Parent: "2b056b9d-9332-407e-82f8-9c4bf8438cb0"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/link-component"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/8059D9F7EC09469B8A698020AF86BFF8.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4b5524d6-59f5-4d66-8f10-34a780c2d7f3"
+  Value: LyogQGltcG9ydCAnLi4vLi4vbWl4aW5zL2luZGV4JzsNCi5jb21wb25lbnQubGlua3sNCiAgICBwYWRkaW5nLWxlZnQ6MDsNCiAgICBhew0KICAgICAgICBAaW5jbHVkZSBsaW5rKCk7DQogICAgfQ0KfSAqLw0K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 120
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: text/css
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: css
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180221T164202Z

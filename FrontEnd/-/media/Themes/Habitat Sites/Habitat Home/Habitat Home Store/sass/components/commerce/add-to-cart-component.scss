@@ -1,0 +1,26 @@
+    @import '../../index';
+    .cxa-addtocart-component {
+        .component-content {
+            width: 100%;
+            display: inline-block;
+            .add-to-cart-qty {
+                label {
+                    margin-bottom: 8px;
+                }
+            }
+            .add-to-cart-button {
+                margin-left: 5px;
+            }
+        }
+        .quantity-input {
+            @include numeric-input-group();
+        }
+        .add-to-cart-btn {
+            @include primary-button-filled();
+            @include large-height; 
+            width: 150px;
+        }
+        form {
+            @include row-of-elements-packed(false, $bottom-or-right, $packed-elements-margin);
+        }
+    }

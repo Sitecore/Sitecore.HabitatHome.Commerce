@@ -1,0 +1,15 @@
+@import '../../index';
+.cxa-productlistpageinfo-component {
+    margin-top: 10px;
+    .productlist-header-section {
+        h6 {
+            color: $secondary-text-color !important;
+            font-size: 14px;
+            font-weight: normal;
+            span {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+}

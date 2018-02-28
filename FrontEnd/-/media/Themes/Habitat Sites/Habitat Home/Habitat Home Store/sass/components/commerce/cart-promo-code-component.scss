@@ -1,0 +1,69 @@
+@import '../../index';
+$input-width: 300px;
+$button-width:180px;
+.cxa-shoppingcartpromotion-component {
+    padding-top: $padding*3;
+    .component-content {
+        .promotion-code-remove>a,
+        .add-promo-code-button {
+            width: $button-width;
+            display: inline-block;
+            text-align: center;
+            margin-left: 15px;
+        }
+        
+        .promo-code-input,
+        .added-promotion-code {
+            width: $input-width;
+            display: inline-block;
+        }
+        @include vertical-form-layout(0, 10px);
+        @include align-elements($packed-toward-start);
+        .cart-promotion-form {
+            @include row-of-elements-packed(false, false, 15px);
+            @include align-elements($top-or-left);
+        }
+        .added-promotion-codes {
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            table {
+                width:initial;
+                tbody {
+                    tr {
+                        td{
+                            padding-bottom: 15px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .promotion-code-remove {
+            vertical-align: bottom;
+        }
+        .promo-code-input-label,
+        .added-promo-code-label {
+            display: none;
+        }
+        
+        .promotion-code-remove>a {
+            @include error-button-line();
+        }
+        .add-promo-code-button {
+            @include primary-button-line();
+        }
+        .cart-promotion-form{
+            @include form-section();
+        }
+        .added-promotion-code {
+            @include text-input();
+            font-weight:600;
+            background-color: $secondary-background-color;
+        }
+        .added-promotion-codes{
+            @include form-section();
+            width:100%;
+        }
+    }
+}

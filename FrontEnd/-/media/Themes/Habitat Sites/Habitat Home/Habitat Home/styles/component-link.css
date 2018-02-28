@@ -1,0 +1,14 @@
+/* breakpoints */
+.link {
+  background: transparent;
+}
+
+.link a {
+  font-size: 13px;
+  color: #141919;
+  border-bottom: 1px solid #50a1ab;
+}
+
+.link a:hover {
+  color: #878787;
+}

@@ -1,0 +1,7 @@
+/* @import '../../mixins/index';
+.component.link{
+    padding-left:0;
+    a{
+        @include link();
+    }
+} */

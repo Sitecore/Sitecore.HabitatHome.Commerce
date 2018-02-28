@@ -1,0 +1,378 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-shoppingcartpromotion-component {
+  padding-top: 30px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a,
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promo-code-input,
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
+  width: 300px;
+  display: inline-block;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > * {
+  width: 100%;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div input[type="text"] {
+  width: 100%;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div input[type="password"] {
+  width: 100%;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div select {
+  width: 100%;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > div > label {
+  margin-right: 3px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: false;
+  -ms-flex-align: false;
+  align-items: false;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > * {
+  -ms-flex-item-align: false;
+  -ms-grid-row-align: false;
+  align-self: false;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > *:not(:last-child) {
+  margin-right: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > *:not(:first-child) {
+  margin-left: 0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > div {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > div > * {
+  margin: 0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes table {
+  width: initial;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes table tbody tr td {
+  padding-bottom: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove {
+  vertical-align: bottom;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promo-code-input-label,
+.cxa-shoppingcartpromotion-component .component-content .added-promo-code-label {
+  display: none;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
+  border: 2px solid #dc291e;
+  background: #fff;
+  color: #dc291e;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:hover {
+  background: #d3271d;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active {
+  background: #c1241a;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:disabled, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a.disabled, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a[disabled],
+fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:hover {
+  color: #fff;
+  background-color: #dd291e;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active {
+  color: #fff;
+  background-color: #db291e;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:active, .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:hover {
+  background: #0d8896;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:active {
+  background: #0c7783;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:disabled, .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button.disabled, .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button[disabled],
+fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form {
+  width: 100%;
+  margin-top: 15px;
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .cart-promotion-form h4 {
+  margin-bottom: 15px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
+  height: 34px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #747a83;
+  border: solid 1px #b9bcc1;
+  background-image: none;
+  box-shadow: none !important;
+  text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 10px;
+  line-height: 1.42857143;
+  font-weight: 600;
+  background-color: #f0f0f0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:hover {
+  border-color: #b8bbc0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:active, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code:focus {
+  border-color: #0e909f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:disabled, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code.disabled, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code[disabled],
+fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
+  background-color: #f0f0f0;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes {
+  width: 100%;
+  margin-top: 15px;
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes h4 {
+  margin-bottom: 15px;
+}

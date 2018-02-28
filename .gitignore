@@ -18,7 +18,9 @@ build/assets/**/*
 .sonar
 vars.user.cmd
 .vs
+.vscode
 /target
+node_modules/
 settings.user.ps1
 *.log
 *.zip
@@ -39,6 +41,3 @@ BuiltFiles_*.txt
 /install/set-installation-overrides.ps1
 InstallUtil.InstallLog
 /install/assets/Resources/Modules
-
-/FrontEnd/**/node_modules
-/node_modules
