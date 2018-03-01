@@ -1,0 +1,91 @@
+----item----
+version: 1
+id: {A605837C-C044-47BC-A031-91483A16858C}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home/Habitat Home Store/sass/components/commerce/product-info-component
+parent: {3EF3A3EC-1015-472E-9FD4-6246F11C0338}
+name: product-info-component
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20180215T174741Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 906
+
+QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KLmN4YS1wcm9kdWN0aW5mb3JtYXRpb24tY29tcG9uZW50
+IHsNCiAgICBwYWRkaW5nOiAwOw0KICAgIG1hcmdpbjogMCAwIDEwcHggMDsNCiAgICAuY29tcG9u
+ZW50LWNvbnRlbnQgew0KICAgICAgICB0ZXh0LWFsaWduOiBsZWZ0Ow0KICAgICAgICBtYXJnaW4t
+dG9wOiAwOw0KICAgICAgICAucHJvZHVjdC1uYW1lIHsNCiAgICAgICAgICAgIG1hcmdpbi1ib3R0
+b206IDEwcHg7DQogICAgICAgICAgICBoMSB7DQogICAgICAgICAgICAgICAgbWFyZ2luLXRvcDog
+MDsNCiAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDogMTUwJTsNCiAgICAgICAgICAgICAgICBm
+b250LXdlaWdodDogNTAwOw0KICAgICAgICAgICAgICAgIGNvbG9yOiAkaGVhZGluZy1jb2xvcjsN
+CiAgICAgICAgICAgICAgICBmb250LWZhbWlseTogJ0tpZXZpdFBybycgIWltcG9ydGFudDsNCiAg
+ICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgICAucHJvZHVjdC1udW1iZXIgew0KICAgICAg
+ICAgICAgZGlzcGxheTogbm9uZTsNCiAgICAgICAgfQ0KICAgICAgICAucHJvZHVjdC1kZXNjcmlw
+dGlvbiB7DQogICAgICAgICAgICBoNiB7DQogICAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTsN
+CiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCn0=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 3
+
+662
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/2E785583D5524832ACAF0C1C8328A931.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: f3966655-e10e-46c2-8ab6-7d8e680eefde
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171120T100938Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f3966655-e10e-46c2-8ab6-7d8e680eefde
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180123T032600Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

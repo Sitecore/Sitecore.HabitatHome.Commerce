@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {4CAF1BDE-C68C-44C9-83B0-5989FFAE168E}
+database: master
+path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Country-Region Configuration
+parent: {2F395077-DA43-4935-B85C-29AE53A62F50}
+name: Country-Region Configuration
+master: {CAB95775-02C2-4B53-9CD4-983A8CC5CA4A}
+template: {762364A6-3CCB-43D2-9ACB-C889DB0F7FCF}
+templatekey: Country-Region Configuration
+created: 20180213T181729Z
+
+----field----
+field: {6D8C6738-20EC-4CA0-B9EE-DC6B64CA224F}
+name: Countries-Regions
+key: countries-regions
+content-length: 77
+
+{9E9E8CB4-B03D-4650-9388-2F73CD0AD28F}|{60D23160-C39D-4B72-89DB-489CCB57276A}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{F974A4BD-5F0D-4EE5-8A0E-AC55D19B7306}
+----version----
+language: en
+version: 1
+revision: c7a6369b-38fb-4e6a-b008-2c29d220ad5c
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 28
+
+Country-Region Configuration
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180204T191237Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c7a6369b-38fb-4e6a-b008-2c29d220ad5c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180204T191237Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

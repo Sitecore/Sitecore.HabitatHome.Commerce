@@ -59,17 +59,23 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <BundledProject Include="..\..\..\src\Project\Habitat.Commerce.Website\tds\Sitecore.Habitat.Commerce.Website.Master\Sitecore.Habitat.Commerce.Website.Master.scproj">
-      <ProjectId>{abaa4489-822b-4f34-b7d5-eae8c9973150}</ProjectId>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\..\src\Feature\Catalog\tds\Sitecore.Feature.Catalog.Master\Sitecore.Feature.Catalog.Master.scproj">
+      <ProjectId>{bb335b14-ad2a-4810-89ab-6d8079e60812}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\..\src\Foundation\Rules\tds\Sitecore.Foundation.Rules.Master\Sitecore.Foundation.Rules.Master.scproj">
+      <ProjectId>{d4d58b24-2473-4fbd-af1e-efb91b025c4b}</ProjectId>
     </BundledProject>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Project\Habitat.Commerce.Website\tds\Sitecore.Habitat.Commerce.Website.Master\Sitecore.Habitat.Commerce.Website.Master.scproj">
+    <ProjectReference Include="..\..\..\src\Feature\Catalog\tds\Sitecore.Feature.Catalog.Master\Sitecore.Feature.Catalog.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
+    <ProjectReference Include="..\..\..\src\Foundation\Rules\tds\Sitecore.Foundation.Rules.Master\Sitecore.Foundation.Rules.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
   <Import Project="..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.11\build\HedgehogDevelopment.TDS.targets" Condition="Exists('..\..\..\packages\HedgehogDevelopment.TDS.5.7.0.11\build\HedgehogDevelopment.TDS.targets')" />
