@@ -1,0 +1,2126 @@
+{
+	"id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+	"name": "CartsAPISamples",
+	"order": [],
+	"folders_order": [
+		"b321f43c-6ac9-e7d9-1005-ade8030d477a",
+		"e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+		"7a5de49a-c9bb-d16a-975a-accb41da8b8e"
+	],
+	"folders": [
+		{
+			"id": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"name": "API",
+			"order": [
+				"e039aafc-053a-54ef-794a-6eaa05938a98",
+				"ddba7926-f922-35b0-c54c-7b07ef3a12c6",
+				"690ec16e-85ec-6383-bf20-584a3cf0a0e8",
+				"10f7a3a9-ade3-7ccf-f2d3-65f6e6844b3b",
+				"8c2ea2a3-e29f-f98a-dae5-5fbf7906b2c3",
+				"6c3c707b-ce04-bd66-706e-5192d76c412d",
+				"f066adf7-cb1d-e391-cf97-21f7899fa418",
+				"66a69279-1049-ac0a-1dac-0a66c8624db2",
+				"a9efba38-ba6d-d498-9b6f-39a2e5802307",
+				"270d1038-84a7-402d-869e-180e9c6fc8b4",
+				"7828cfa5-ee00-492e-601b-e9f859173f10",
+				"ad7290d4-d4bc-37de-96d8-f78e3ed583b7",
+				"e4f962bb-4f9a-5525-7c5d-83992d93f80b",
+				"bff95d83-a2ba-fd84-34e1-abb91f0eec69",
+				"f2b1c21b-88ab-9dcd-a716-a3c6615678e4",
+				"0504b9a6-3e6f-e9d7-f356-105483872485",
+				"7b55d90a-c957-2fc0-f073-a308f1fd747d",
+				"b4927203-3b87-ea19-2666-5c1bf409b8b9",
+				"3ab08618-ab76-e562-b63c-edf39b07deab",
+				"578a53bc-f533-c537-e2bf-f646e71a4714",
+				"da11db1e-ac27-5dc3-b731-9da7d102e354",
+				"b0cce092-c896-f123-bed4-e7c54aaa7416",
+				"1da3d7a7-308e-8ecb-d175-c0e9b1db14b9",
+				"72323bbc-524d-5cac-060e-69848005f02a",
+				"2b2fe4bd-7ff8-7e3d-a92b-8e466d4eb46e"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4"
+		},
+		{
+			"id": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"name": "Fulfillment Options and Methods",
+			"order": [
+				"2489bff0-68fb-77b4-407e-34b3acb53afd",
+				"57b96a8a-7f78-95b3-f226-4f88d8e1e7c9",
+				"333fd754-0add-cf7e-12b5-c7a0452fe2fc",
+				"817c6550-ac76-53c8-8848-06a19a6b6dc2",
+				"787d82fa-8fd3-d4ea-d315-47444820d58a"
+			],
+			"folders_order": [],
+			"description": "Support for Cart and Line level fulfillment options",
+			"owner": 0,
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4"
+		},
+		{
+			"id": "7a5de49a-c9bb-d16a-975a-accb41da8b8e",
+			"name": "Payment Options and Methods",
+			"order": [
+				"21c56a84-5782-335a-d339-1d813dfa341b",
+				"bab8e71a-d427-95ef-4234-f0f8e6b528fb"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4"
+		}
+	],
+	"owner": 0,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "0504b9a6-3e6f-e9d7-f356-105483872485",
+			"name": "Set Cart to Physical Fulfillment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findTotals(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.Totals';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"CartGrandTotal\", jsonData.Models.find(findTotals).GrandTotal.Amount);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"fulfillment\": {\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.Fulfillment.PhysicalFulfillmentComponent\",\n        \"ShippingParty\": {\n            \"AddressName\": \"name\", \n            \"FirstName\": \"firstname\", \n            \"LastName\":\"lastname\", \n            \"City\": \"city\", \n            \"Address1\": \"123 st\", \n            \"State\": \"ON\", \n            \"Country\": \"CA\", \n            \"ZipPostalCode\":\"1234567\"\n        },\n        \"FulfillmentMethod\": {\n            \"EntityTarget\": \"B146622D-DC86-48A3-B72A-05EE8FFD187A\", \n            \"Name\": \"Ground\"\n        }\n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/SetCartFulfillment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findTotals(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.Totals';\n}\n\npostman.setGlobalVariable(\"CartGrandTotal\", jsonData.Models.find(findTotals).GrandTotal.Amount);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "10f7a3a9-ade3-7ccf-f2d3-65f6e6844b3b",
+			"name": "Add  Cart Line With Variant",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW098 04|5\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "1da3d7a7-308e-8ecb-d175-c0e9b1db14b9",
+			"name": "Remove Cart Lines",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "DELETE",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\": \"Cart01\",\n    \"cartLineId\": \"{{LineId}}\"\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/RemoveCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "21c56a84-5782-335a-d339-1d813dfa341b",
+			"name": "Get cart payment options",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartPaymentOptions(cartId='Cart01')",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "7a5de49a-c9bb-d16a-975a-accb41da8b8e",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "2489bff0-68fb-77b4-407e-34b3acb53afd",
+			"name": "Get cart fulfillment options",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartFulfillmentOptions(cartId='Cart01')",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "270d1038-84a7-402d-869e-180e9c6fc8b4",
+			"name": "Add  BackOrderable Item",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW210 12|4\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "2b2fe4bd-7ff8-7e3d-a92b-8e466d4eb46e",
+			"name": "Add Email to Cart",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"email\": \"testEmail@email.com\"\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddEmailToCart()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "333fd754-0add-cf7e-12b5-c7a0452fe2fc",
+			"name": "Get all fulfillment methods",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetFulfillmentMethods()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3ab08618-ab76-e562-b63c-edf39b07deab",
+			"name": "Set Cart Line to Digital Fulfillment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"cartLineId\": \"{{LineId}}\",\n    \"fulfillment\": {\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.Fulfillment.ElectronicFulfillmentComponent\",\n        \"FulfillmentMethod\": {\"EntityTarget\": \"8A23234F-8163-4609-BD32-32D9DD6E32F5\", \"Name\": \"Email\"},\n        \"EmailAddress\": \"g@g.com\",\n        \"EmailContent\": \"this is the email content\"\n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/SetCartLineFulfillment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "578a53bc-f533-c537-e2bf-f646e71a4714",
+			"name": "Add Federated Payment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n    \"cartId\":\"Cart01\",\r\n    \"payment\": {\r\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.Payments.FederatedPaymentComponent\",\r\n        \"PaymentMethod\": {\"EntityTarget\": \"0CFFAB11-2674-4A18-AB04-228B1F8A1DEC\", \"Name\": \"Federated\"},\r\n        \"PaymentMethodNonce\": \"fake-valid-nonce\",\r\n        \"Amount\": { \"Amount\": {{CartGrandTotal}} },\r\n        \"BillingParty\": {\"AddressName\": \"name\", \"FirstName\": \"firstname\", \"LastName\":\"lastname\", \"City\": \"city\", \"Address1\": \"123 st\", \"State\": \"ON\", \"Country\": \"CA\", \"ZipPostalCode\":\"123456\"} \r\n    }\r\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddFederatedPayment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "57b96a8a-7f78-95b3-f226-4f88d8e1e7c9",
+			"name": "Get line fulfillment options",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartLineFulfillmentOptions(cartId='Cart01', cartLineId='d1ba79344a5d43a592ce1365ff2913fd')",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "66a69279-1049-ac0a-1dac-0a66c8624db2",
+			"name": "Add  Cart Line GiftCard",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|22565422120|100\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "690ec16e-85ec-6383-bf20-584a3cf0a0e8",
+			"name": "Add Cart Line Without Variants",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW475 14|\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6c3c707b-ce04-bd66-706e-5192d76c412d",
+			"name": "Add Cart Line Sahara",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW114 06|23\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "72323bbc-524d-5cac-060e-69848005f02a",
+			"name": "Merge Carts",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"fromCartId\":\"Cart01\",\n    \"toCartId\": \"Cart02\"\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/MergeCarts()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7828cfa5-ee00-492e-601b-e9f859173f10",
+			"name": "Add Warranty",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Habitat_Master|7042259|57042259\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "787d82fa-8fd3-d4ea-d315-47444820d58a",
+			"name": "Get cart line fulfillment methods",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"fulfillment\": {\n        \"LineId\": \"d1ba79344a5d43a592ce1365ff2913fd\",\n        \"FulfillmentOption\": {\"EntityTarget\": \"{7863330B-D7EC-45A3-84B2-40478A169BB4}\", \"Name\": \"ShipToMe\"},\n        \"ShippingParty\": {\"AddressName\": \"name\", \"City\": \"city\", \"Line1\": \"123 st\", \"StateProviceCode\": \"province\", \"CountryCode\": \"country\", \"PostalCode\":\"postalcode\"} \n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartLineFulfillmentMethods()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7b55d90a-c957-2fc0-f073-a308f1fd747d",
+			"name": "Set Cart to Digital Fulfillment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"fulfillment\": {\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.Fulfillment.ElectronicFulfillmentComponent\",\n        \"FulfillmentMethod\": {\n            \"EntityTarget\": \"8A23234F-8163-4609-BD32-32D9DD6E32F5\", \n            \"Name\": \"Email\"\n        },\n        \"EmailAddress\": \"g@g.com\",\n        \"EmailContent\": \"this is the email content\"\n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/SetCartFulfillment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "817c6550-ac76-53c8-8848-06a19a6b6dc2",
+			"name": "Get  cart fulfillment methods",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"fulfillment\": {\n        \"FulfillmentOption\": {\"EntityTarget\": \"{7863330B-D7EC-45A3-84B2-40478A169BB4}\", \"Name\": \"ShipToMe\"},\n        \"ShippingParty\": {\"AddressName\": \"name\", \"City\": \"city\", \"Line1\": \"123 st\", \"StateProviceCode\": \"province\", \"CountryCode\": \"country\", \"PostalCode\":\"postalcode\"} \n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartFulfillmentMethods()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "e02ca7ff-45b3-ecf2-7e0b-1f6579dee6da",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "8c2ea2a3-e29f-f98a-dae5-5fbf7906b2c3",
+			"name": "Add Cart Line Galaxy",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW535 11|12\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a9efba38-ba6d-d498-9b6f-39a2e5802307",
+			"name": "Add  PreOrderable Item",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW074 04|9\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ad7290d4-d4bc-37de-96d8-f78e3ed583b7",
+			"name": "Add Optix Camera",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Habitat_Master|7042071|57042071\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b0cce092-c896-f123-bed4-e7c54aaa7416",
+			"name": "Remove Payment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "DELETE",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"paymentId\": \"{{GiftCardPaymentId}}\"\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/RemovePayment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b4927203-3b87-ea19-2666-5c1bf409b8b9",
+			"name": "Set Cart Line to Physical Fulfillment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"cartLineId\": \"{{LineId}}\",\n    \"fulfillment\": {\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.Fulfillment.PhysicalFulfillmentComponent\",\n        \"FulfillmentMethod\": {\"EntityTarget\": \"B146622D-DC86-48A3-B72A-05EE8FFD187A\", \"Name\": \"Ground\"},\n        \"ShippingParty\": {\"AddressName\": \"name\", \"FirstName\": \"firstname\", \"LastName\":\"lastname\", \"City\": \"city\", \"Address1\": \"123 st\", \"State\": \"Ontario\", \"StateCode\": \"ON\", \"Country\": \"Canada\", \"CountryCode\": \"CA\", \"ZipPostalCode\":\"postalcode\"}\n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/SetCartLineFulfillment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "bab8e71a-d427-95ef-4234-f0f8e6b528fb",
+			"name": "Get cart payment methods",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "GET",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/GetCartPaymentMethods(cartId='Cart01', paymentType='Federated')",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "7a5de49a-c9bb-d16a-975a-accb41da8b8e",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "bff95d83-a2ba-fd84-34e1-abb91f0eec69",
+			"name": "Add Habitat GiftCard",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Habitat_Master|6042986|56042987\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "da11db1e-ac27-5dc3-b731-9da7d102e354",
+			"name": "Add Gift Card Payment",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"payment\": {\n        \"@odata.type\": \"Sitecore.Commerce.Plugin.GiftCards.GiftCardPaymentComponent\",\n        \"PaymentMethod\": {\"EntityTarget\": \"B5E5464E-C851-4C3C-8086-A4A874DD2DB0\", \"Name\": \"GiftCard\"},\n        \"GiftCardCode\": \"GC1000000\",\n        \"Amount\": { \"Amount\": 100 }\n    }\n}",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddGiftCardPayment()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ddba7926-f922-35b0-c54c-7b07ef3a12c6",
+			"name": "Delete Cart Cart01",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "DELETE",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Carts('Cart01')",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "e039aafc-053a-54ef-794a-6eaa05938a98",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{ServiceHost}}/{{ShopsApi}}/Carts('Cart01')?$expand=Lines($expand=CartLineComponents)",
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "Lines($expand=CartLineComponents)",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findPaymentId(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.GiftCards.GiftCardPaymentComponent';",
+							"}",
+							""
+						]
+					}
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"auth": null,
+			"time": 1513713136068,
+			"name": "Get Cart Cart01",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"responses": [],
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findPaymentId(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.GiftCards.GiftCardPaymentComponent';\n}\n",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "e4f962bb-4f9a-5525-7c5d-83992d93f80b",
+			"name": "Add Mira Laptop",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"function findLineAdded(model) {",
+							"    var type = '@odata.type';",
+							"    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';",
+							"}",
+							"",
+							"postman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);"
+						]
+					}
+				}
+			],
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{ShopsEnvironment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Habitat_Master|6042185|56042185\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{ShopsEnvironment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"preRequestScript": null,
+			"tests": "var jsonData = JSON.parse(responseBody);\n\nfunction findLineAdded(model) {\n    var type = '@odata.type';\n    return model[type] === '#Sitecore.Commerce.Plugin.Carts.LineAdded';\n}\n\npostman.setGlobalVariable(\"LineId\", jsonData.Models.find(findLineAdded).LineId);",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f066adf7-cb1d-e391-cf97-21f7899fa418",
+			"name": "Add Cart Line Alpine",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"itemId\": \"Adventure Works Catalog|AW188 06|19\",\n    \"quantity\": 1\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/AddCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f2b1c21b-88ab-9dcd-a716-a3c6615678e4",
+			"name": "Update Cart Lines",
+			"collectionId": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"method": "PATCH",
+			"headers": "Content-Type: application/json\nShopName: {{ShopName}}\nShopperId: {{ShopperId}}\nLanguage: {{Language}}\nCurrency: {{Currency}}\nEnvironment: {{Environment}}\nGeoLocation: {{GeoLocation}}\nCustomerId: {{CustomerId}}\nAuthorization: {{SitecoreIdToken}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n    \"cartId\":\"Cart01\",\n    \"cartLineId\": \"{{LineId}}\",\n    \"quantity\": 20\n}\n",
+			"url": "{{ServiceHost}}/{{ShopsApi}}/UpdateCartLine()",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "ShopName",
+					"value": "{{ShopName}}"
+				},
+				{
+					"key": "ShopperId",
+					"value": "{{ShopperId}}"
+				},
+				{
+					"key": "Language",
+					"value": "{{Language}}"
+				},
+				{
+					"key": "Currency",
+					"value": "{{Currency}}"
+				},
+				{
+					"key": "Environment",
+					"value": "{{Environment}}"
+				},
+				{
+					"key": "GeoLocation",
+					"value": "{{GeoLocation}}"
+				},
+				{
+					"key": "CustomerId",
+					"value": "{{CustomerId}}"
+				},
+				{
+					"key": "Authorization",
+					"value": "{{SitecoreIdToken}}"
+				}
+			],
+			"auth": null,
+			"folder": "b321f43c-6ac9-e7d9-1005-ade8030d477a",
+			"collection_id": "d47a516a-e9dc-3d89-10b3-ebcc03cc14e4",
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

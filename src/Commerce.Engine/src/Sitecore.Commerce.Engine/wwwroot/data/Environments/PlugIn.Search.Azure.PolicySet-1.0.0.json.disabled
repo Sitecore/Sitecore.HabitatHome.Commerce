@@ -1,0 +1,19 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "ArtifactStoreId": "1E72831D-50CE-43C2-A253-042BFB841CDF",
+  "Id": "Entity-PolicySet-AzureSearchPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "AzureSearchPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Search.Azure.AzureSearchPolicy, Sitecore.Commerce.Plugin.Search.Azure",
+        "SearchServiceName": "",
+        "SearchServiceAdminApiKey": "",
+        "SearchServiceQueryApiKey": ""
+      }
+    ]
+  }
+}

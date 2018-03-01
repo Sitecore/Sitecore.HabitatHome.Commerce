@@ -7,6 +7,7 @@ var nugetRestore = require("gulp-nuget-restore");
 var msbuild = require("gulp-msbuild");
 var foreach = require("gulp-foreach");
 var debug = require("gulp-debug");
+var exec = require("child_process").exec;
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -220,3 +221,50 @@ gulp.task("Publish-Project-Projects",
     function () {
         return publishProjects("./src/Project");
     });
+
+gulp.task("CE~default", function (callback) {
+    config.runCleanBuilds = true;
+    return runSequence(
+        "CE-Nuget-Restore",
+        "CE-Publish-CommerceEngine-Authoring",
+        "CE-Publish-CommerceEngine-Ops",
+        "CE-Publish-CommerceEngine-Minions",
+        "CE-Publish-CommerceEngine-Shops",
+        callback);
+});
+
+gulp.task("CE-Nuget-Restore", function (callback) {
+    var solution = "./" + config.commerceEngineSolutionName + ".sln";
+    return gulp.src(solution).pipe(nugetRestore());
+});
+
+gulp.task("CE-Publish-CommerceEngine-Authoring", function (callback) {                                                    
+    publishCommerceEngine(config.commerceAuthoringRoot, callback);
+});
+
+gulp.task("CE-Publish-CommerceEngine-Ops", function (callback) {                    
+    publishCommerceEngine(config.commerceOpsRoot, callback);
+});
+
+gulp.task("CE-Publish-CommerceEngine-Minions", function (callback) {
+    publishCommerceEngine(config.commerceMinionsRoot, callback);
+});
+
+gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {    
+    publishCommerceEngine(config.commerceShopsRoot, callback);
+});
+
+var publishCommerceEngine = function (dest, callback) {
+    var cmd = "dotnet publish .\\src\\Commerce.Engine\\Customer.Sample.Solution.sln -o " + dest
+    var options = { maxBuffer: Infinity };
+    console.log("cmd: " + cmd);
+    return exec(cmd, options, function (err, stdout, stderr) {
+        if (err) {
+            console.error("exec error: " + err);
+            throw err;
+        }
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        callback();
+    });
+};

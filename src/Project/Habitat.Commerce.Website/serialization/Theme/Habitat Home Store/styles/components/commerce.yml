@@ -1,0 +1,18 @@
+﻿---
+ID: "d88e855d-a8a7-42ad-8f18-e2431293321d"
+Parent: "7fb2c686-645e-4b9a-9482-041b8bfb01ef"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/components/commerce
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T095739Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

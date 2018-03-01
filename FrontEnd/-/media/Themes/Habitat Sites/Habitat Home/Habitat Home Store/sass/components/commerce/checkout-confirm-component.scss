@@ -1,0 +1,100 @@
+@import '../../index';
+.component.cxa-checkoutconfirm-component {
+    .component-content {
+        @include vertical-form-layout();
+        h4{
+            margin-bottom:15px;
+        }
+    }
+    .confirm-total-summary {
+        line-height: 2.5;
+        @include form-section();
+        @include column-of-elements-wide-apart(false,$center);
+        .order-information-label{
+            @include align-element($top-or-left);
+        }
+        >div {
+            @include row-of-elements-wide-apart(false, $center);
+        }
+    }
+    .checkout-footer-pane{
+        @include horizontal-form-layout(2);
+        .addresses{
+            @include vertical-form-layout();
+        }
+        .payment-methods{
+            @include vertical-form-layout();
+        }
+    }
+    .buttons-row {
+        margin-bottom: $margin;
+        @include row-of-elements-wide-apart(false, $center);
+        margin-bottom: $margin;
+    }
+        .confirm-products-container {
+        display: none;
+    }
+    .order-total-label{
+        display:none;
+    }
+    .payment-methods{
+        h4{
+            margin-bottom:$margin !important;
+            font-weight: bold;
+        }
+        
+    }
+    .footer-shipping-address-pane{
+        h4{
+            margin-bottom:$margin;
+            font-weight: bold;
+        }
+    }
+    .gift-cards{
+        margin-top: 15px;
+    }
+}
+
+.component.cxa-checkoutconfirm-component {    
+    .confirm-total-summary {
+        >div {
+            border-bottom: 1px solid lighten($border-color, 15%);
+            span:last-child {
+                @include highlighted-text;
+            }
+        }
+        >div:last-child{
+            border-bottom: none;
+        }
+        .confirm-totals-total {
+            > span:first-child{
+                @include highlighted-text();
+            }
+            .confirm-total {
+                color: $primary-color;
+            }
+        }
+    }
+    .confirm-prev {
+        a {
+            @include primary-button-line();
+            @include large-height();
+        }
+    }
+    .confirm-next {
+        button {
+            @include primary-button-filled();
+            @include large-height();
+        }
+    }
+    .edit-shipping-address-link{
+        @include link();
+    }
+    .edit-billing-address-link{
+        @include link();
+    }
+    .edit-payment-method-link{
+        @include link();
+    }
+
+}

@@ -1,0 +1,36 @@
+@import '../../index';
+.component.cxa-productinventory-component {
+    color: $secondary-text-color;
+    border: none;
+    margin: 8px 0 25px 0;
+    .stock-info {
+        border: none;
+        margin-bottom: 0;
+    }
+    .stock-status {
+        &:after {
+            content: ':';
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .stock-count.In-Stock {
+        &:before {
+            @include sc-icon($scxa-happyface);
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .stock-count.Out-of-Stock {
+        &:before {
+            @include sc-icon($scxa-sadface);
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .stock-count-label,
+    .stock-count {
+        font-weight: bold;
+        color: $secondary-text-color;
+    }
+}

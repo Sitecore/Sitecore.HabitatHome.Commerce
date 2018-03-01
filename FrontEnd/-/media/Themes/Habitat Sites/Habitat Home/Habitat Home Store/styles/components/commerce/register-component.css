@@ -1,0 +1,254 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.component.cxa-register-component .registeration-form form {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.component.cxa-register-component .registeration-form form > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-register-component .registeration-form form > * {
+  margin: 0;
+}
+
+.component.cxa-register-component .registeration-form form > * {
+  width: 100%;
+}
+
+.component.cxa-register-component .registeration-form form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-register-component .registeration-form form > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-register-component .registeration-form form > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.component.cxa-register-component .registeration-form form > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.component.cxa-register-component .registeration-form form > div input[type="text"] {
+  width: 100%;
+}
+
+.component.cxa-register-component .registeration-form form > div input[type="password"] {
+  width: 100%;
+}
+
+.component.cxa-register-component .registeration-form form > div select {
+  width: 100%;
+}
+
+.component.cxa-register-component .registeration-form form > div > label {
+  margin-right: 3px;
+}
+
+.component.cxa-register-component .registeration-form form input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-register-component .registeration-form form input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-register-component .registeration-form form label:after {
+  content: '*';
+}
+
+.component.cxa-register-component .registeration-form form .register-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.component.cxa-register-component .registeration-form form .register-buttons > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.component.cxa-register-component .registeration-form form .register-buttons > * {
+  margin: 0;
+}
+
+.component.cxa-register-component .registeration-form form .register-buttons button {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-bottom: 0;
+  width: 205px;
+}
+
+.component.cxa-register-component .registeration-form form .register-buttons a {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: 15px;
+  width: 205px;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton {
+  border: 2px solid #0e909f;
+  font-size: 14px !important;
+  font-weight: 400;
+  height: 34px;
+  text-align: center !important;
+  background: #0e909f;
+  color: #fff !important;
+  text-shadow: none;
+  box-shadow: none;
+  padding: 4px 25px 4px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  min-height: 42px;
+  height: 42px;
+  padding: 8px 25px 8px 25px;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton:active, .component.cxa-register-component .registeration-form .register-buttons #registerButton:hover {
+  background: #0d8896 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton:active {
+  background: #0c7783 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton:disabled, .component.cxa-register-component .registeration-form .register-buttons #registerButton.disabled, .component.cxa-register-component .registeration-form .register-buttons #registerButton[disabled],
+fieldset[disabled] .component.cxa-register-component .registeration-form .register-buttons #registerButton {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons #registerButton:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a {
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  min-height: 42px;
+  height: 42px;
+  padding: 8px 25px 8px 25px;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a:active, .component.cxa-register-component .registeration-form .register-buttons a:hover {
+  background: #0d8896;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a:active {
+  background: #0c7783;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a:disabled, .component.cxa-register-component .registeration-form .register-buttons a.disabled, .component.cxa-register-component .registeration-form .register-buttons a[disabled],
+fieldset[disabled] .component.cxa-register-component .registeration-form .register-buttons a {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.component.cxa-register-component .registeration-form .register-buttons a:active {
+  color: #fff;
+  background-color: #064b53;
+}

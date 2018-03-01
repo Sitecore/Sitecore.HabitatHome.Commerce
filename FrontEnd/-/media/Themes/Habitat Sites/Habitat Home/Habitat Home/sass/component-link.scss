@@ -1,0 +1,13 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+.link {
+    background: $link-bg;
+    a {
+        font-size: $font-normal;
+        color: $link-text-color;
+        border-bottom: 1px solid $link-border;
+        &:hover {
+            color: $link-text-color-active;
+        }
+    }
+}

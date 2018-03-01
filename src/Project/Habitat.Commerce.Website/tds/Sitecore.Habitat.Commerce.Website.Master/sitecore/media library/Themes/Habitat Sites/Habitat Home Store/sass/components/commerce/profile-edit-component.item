@@ -1,0 +1,101 @@
+----item----
+version: 1
+id: {86065B86-5ECD-48CE-BFAF-7E76E591F1DD}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/profile-edit-component
+parent: {3EF3A3EC-1015-472E-9FD4-6246F11C0338}
+name: profile-edit-component
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20180215T174741Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1678
+
+QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KLmN4YS1wcm9maWxlZWRpdG9yLWNvbXBvbmVudCB7DQog
+ICAgcGFkZGluZzogMDsNCiAgICBmb3JtIHsNCiAgICAgICAgQGluY2x1ZGUgaG9yaXpvbnRhbC1m
+b3JtLWxheW91dCgyKTsNCiAgICAgICAgLnByb2ZpbGVlZGl0b3ItYnV0dG9ucy1zZWN0aW9uIHsN
+CiAgICAgICAgICAgIGZsZXg6IDAgMSAxMDAlOw0KICAgICAgICAgICAgQGluY2x1ZGUgcm93LW9m
+LWVsZW1lbnRzLXBhY2tlZCh0cnVlKTsNCiAgICAgICAgICAgID4qIHsNCiAgICAgICAgICAgICAg
+ICB3aWR0aDogMjAwcHg7DQogICAgICAgICAgICB9DQogICAgICAgICAgICBhIHsNCiAgICAgICAg
+ICAgICAgICBvcmRlcjogMTsNCiAgICAgICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7
+DQogICAgICAgICAgICB9DQogICAgICAgICAgICBidXR0b24gew0KICAgICAgICAgICAgICAgIG9y
+ZGVyOiAyOw0KICAgICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAkbWFyZ2luLzM7DQogICAgICAg
+ICAgICAgICAgbWFyZ2luLWJvdHRvbTogMDsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAg
+ICAgICAmPiogew0KICAgICAgICAgICAgQGluY2x1ZGUgcmVzcG9uZC10bygkbWQpIHsNCiAgICAg
+ICAgICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0N
+CiAgICAucHJvZmlsZWVkaXRvci1idXR0b25zLXNlY3Rpb24gew0KICAgICAgICBidXR0b24gew0K
+ICAgICAgICAgICAgQGluY2x1ZGUgYnV0dG9uKCRwcmltYXJ5LWNvbG9yLCAkbGlnaHQsICRwcmlt
+YXJ5LWNvbG9yKTsNCiAgICAgICAgICAgIEBpbmNsdWRlIGxhcmdlLWhlaWdodCgpOw0KICAgICAg
+ICAgICAgQGluY2x1ZGUgcmVzcG9uZC10bygkbWQpIHsNCiAgICAgICAgICAgICAgICBtYXJnaW4t
+bGVmdDogMCAhaW1wb3J0YW50Ow0KICAgICAgICAgICAgICAgIG1hcmdpbi10b3A6ICRtYXJnaW47
+DQogICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgICAgICB9DQogICAgICAgIH0N
+CiAgICAgICAgYSB7DQogICAgICAgICAgICBAaW5jbHVkZSBwcmltYXJ5LWJ1dHRvbi1saW5lKCk7
+DQogICAgICAgICAgICBAaW5jbHVkZSBsYXJnZS1oZWlnaHQoKTsNCiAgICAgICAgICAgIEBpbmNs
+dWRlIHJlc3BvbmQtdG8oJG1kKSB7DQogICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAg
+ICAgICAgICB9DQogICAgICAgIH0NCiAgICB9DQp9
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1227
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/3FD884550A4A42E69F7EE42313098A50.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: fb239c3d-5305-4866-b504-048aff35848d
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171120T100941Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fb239c3d-5305-4866-b504-048aff35848d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20171120T100941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

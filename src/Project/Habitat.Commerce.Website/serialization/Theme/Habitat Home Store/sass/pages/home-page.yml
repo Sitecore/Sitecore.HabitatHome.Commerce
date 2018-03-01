@@ -1,0 +1,31 @@
+﻿---
+ID: "692678b5-00fa-477c-bc2b-67a763ec1f8d"
+Parent: "56937795-46ba-42bc-aa0a-54a600e48de6"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/pages/home-page"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/4CA15B6AE6D74EA8ADFABA28543030AE.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "02f9a7ff-d9e7-4d6f-9fe4-da9493f31615"
+  Value: LmhvbWUtcGFnZSB7DQogICAgI2NvbnRlbnQuY29udGFpbmVyew0KICAgICAgICB3aWR0aDogMTAwJTsNCiAgICB9DQogICAgI2hlYWRlciB7DQogICAgICAgIC5yb3cgew0KICAgICAgICAgICAgJjpudGgtY2hpbGQoMSkgew0KICAgICAgICAgICAgICAgIC5yb3ctc3BsaXR0ZXIgew0KICAgICAgICAgICAgICAgICAgICAmPmRpdiB7DQogICAgICAgICAgICAgICAgICAgICAgICAmOm50aC1jaGlsZCgzKSB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTsNCiAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCiAgICBtYWluew0KICAgICAgICAuY29udGFpbmVyLmNvbnRhaW5lci1jbGVhbi1iYWNrZ3JvdW5kew0KICAgICAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7DQogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOw0KICAgICAgICB9DQogICAgfQ0KfQ==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 526
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100956Z

@@ -1,0 +1,64 @@
+@import '../../index';
+.cxa-addresslist-component {
+    .component-content{
+        width:100%;
+        @include vertical-form-layout();
+        @include align-elements($top-or-left);
+    }
+    .empty-adddress-list-message{
+        margin-top: 10px;
+    }
+    .address-header {
+        margin-top: 15px;
+        width: 100%;
+        @include row-of-elements-wide-apart(false, true);
+        .address-title {
+            color: $primary-link-color;
+        }
+        .is-primary {
+            color: $primary-link-color;
+            &:before {
+                @include sc-icon($scxa-check-copy);
+                font-size: 12px;
+                margin: 0 5px;
+            }
+        }
+    }
+    .full-address {
+        display: none;
+    }
+    .address-details {
+        @include vertical-form-layout();
+        @include align-elements($top-or-left);
+        padding-left: 0;
+    }
+    .add-new-address-section {
+        border-top: 1px solid lighten($border-color,20);
+        margin-top: 30px;
+        width: 100%;
+        .add-new-address-link {
+            margin-top: 15px;
+            @include link();
+            font-size: 12px;
+            
+            &:before{
+                @include sc-icon($scxa-add);
+                font-size: 11px;
+            }
+            //for Experience Editor
+            span{
+                @include link();
+            }
+        }
+    }
+    .address-list{
+        width:100%;
+    }
+    .address-list-table{
+        tbody{
+            tr{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

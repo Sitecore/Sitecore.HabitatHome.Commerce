@@ -1,0 +1,337 @@
+/* breakpoints */
+main div.component.container > div.component-content > .promo.promo-hero {
+  margin-top: -10px;
+}
+
+main .promo {
+  padding: 3em 0;
+}
+
+main .promo > div > div {
+  width: 50%;
+}
+
+main .promo > div > div > img {
+  width: 70%;
+  height: auto;
+}
+
+main .promo > div > div h3 {
+  font-size: 52px;
+  line-height: 1.07692;
+  font-weight: 700;
+  margin: 0;
+  color: #1d8c96;
+}
+
+main .promo > div > div h3 p {
+  font-size: 52px;
+  line-height: 1.07692;
+  font-weight: 700;
+  margin: 0;
+  color: #1d8c96;
+}
+
+main .promo > div > div p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(47, 52, 56, 0.7);
+}
+
+main .promo.promo-hero {
+  font-size: 20px;
+  color: #fff;
+  float: none;
+  clear: both;
+  margin: 0 0 100px 0;
+  padding: 0;
+  position: relative;
+}
+
+main .promo.promo-hero > div > div {
+  width: 100%;
+}
+
+main .promo.promo-hero > div > div > div {
+  position: absolute;
+}
+
+main .promo.promo-hero > div > div .field-promoicon {
+  position: inherit;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+main .promo.promo-hero > div > div .field-promoicon img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+main .promo.promo-hero > div > div .field-promoicon:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  max-height: 600px;
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#66000000', GradientType=0);
+}
+
+main .promo.promo-hero .field-promotext {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+main .promo.promo-hero .field-promotext2 {
+  font-size: 4.1em;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+main .promo.promo-left .field-promoicon {
+  float: right;
+}
+
+main .promo.promo-left .field-promoicon > img {
+  float: right;
+}
+
+main .promo.promo-right > div > div {
+  float: left;
+}
+
+main .promo.promo-right .field-promoicon > img {
+  float: left;
+}
+
+main .promo div.field-promolink a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.28571;
+  font-weight: 700;
+  color: #141919;
+  border: 1px solid #141919;
+  padding: 1.28571em 3em;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 17.14286em;
+  margin: 1em 0;
+}
+
+main .promo.promo-top {
+  padding: 0 0 3em 0;
+  background-color: #fefefe;
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+}
+
+main .promo.promo-top > div > div {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+
+main .promo.promo-top > div > div a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.28571;
+  font-weight: 700;
+  color: #141919;
+  border: 1px solid #141919;
+  padding: 1.28571em 3em;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 17.14286em;
+  margin: 1em 0;
+}
+
+main .promo.promo-top > div > div img {
+  width: 100%;
+  height: auto;
+}
+
+main .promo.promo-top > div > div h3.field-promotext {
+  padding: 1em 0;
+}
+
+main .promo.promo-top > div > div .field-promotext3 {
+  padding: 30px 0 10px 0;
+}
+
+main .promo.promo-top > div > div .field-promotext3 p {
+  margin-bottom: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #141919;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+div.promo-hero:after {
+  content: "";
+  background: url(../images/carousel_overlay.png) no-repeat center center;
+  width: 8em;
+  height: 11em;
+  display: block;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.full-width-cta > div {
+  background-size: cover;
+}
+
+.full-width-cta > div div.promo > div {
+  padding: 1.875em;
+  max-width: 33.125em;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 150px 0;
+}
+
+.full-width-cta > div div.promo > div h3.field-promotext p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.85714;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #141919;
+}
+
+.full-width-cta > div div.promo > div div.field-promotext2 p {
+  font-size: 3.25em;
+  line-height: 1.07692;
+  font-weight: 700;
+  margin: 0;
+  color: #1d8c96;
+}
+
+.full-width-cta > div div.promo > div > div {
+  width: 100%;
+}
+
+.full-width-cta.full-width-cta-right > div div.promo > div {
+  float: right;
+}
+
+.product-items-block {
+  font-size: 16px;
+}
+
+.product-items-block .link {
+  width: auto;
+  float: right;
+}
+
+.product-items-block .link .featuredProduct-action a {
+  border: none;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 0.625em;
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #141919;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 17.14286em;
+}
+
+.product-items-block .link .featuredProduct-action a:before {
+  width: 32px;
+  height: 32px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  display: inline-block;
+  content: "\f021";
+  margin-right: 10px;
+}
+
+.product-items-block-title .article-content {
+  float: left;
+  width: auto;
+}
+
+.product-items-block-title .article-content .component-content {
+  color: #1d8c96;
+  padding: 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.product-items-block div.product-item {
+  padding: 0 15px;
+}
+
+.product-items-block div.product-item div.product-item-image {
+  width: 100%;
+}
+
+.product-items-block div.product-item div.product-item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-items-block div.product-item div.caption {
+  width: 100%;
+}
+
+.product-items-block div.product-item div.caption div.product-item-info {
+  font-size: 1.25em;
+  padding-bottom: 1.25em;
+  min-height: 7.5em;
+  border-bottom: 1px solid #d8d9d5;
+  margin: 0.625em 0;
+}
+
+.product-items-block div.product-item div.caption div.product-item-foot-action {
+  display: inline-block;
+  float: right;
+}
+
+.product-items-block div.product-item div.caption div.product-item-foot-action > a {
+  min-width: 0;
+  font-size: 1em;
+  padding: 0.1875em 0.3125em;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.product-items-block div.product-item div.caption div.product-item-foot-action > a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f054";
+  padding-left: .5em;
+}
+
+@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .product-items-block-title .article-content .component-content {
+    line-height: 1.1;
+    font-size: 1.5em;
+    width: 100%;
+    clear: both;
+  }
+  .product-items-block .link {
+    clear: both;
+    width: 100%;
+  }
+  .product-items-block .link .featuredProduct-action a {
+    text-align: left;
+  }
+}
