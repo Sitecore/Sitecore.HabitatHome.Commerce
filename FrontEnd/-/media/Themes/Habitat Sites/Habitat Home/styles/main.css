@@ -3382,7 +3382,7 @@ header .search-box.header-search > div.component-content span, header .search-bo
 }
 
 body.preview header {
-  margin-top: 89px;
+  position: relative;
 }
 
 footer {
