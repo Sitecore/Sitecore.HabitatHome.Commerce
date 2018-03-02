@@ -130,6 +130,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Sitecore.Feature.Catalog.Serialization.config" />
     <None Include="packages.config" />
     <Content Include="Views\Catalog\ProductListWithCart.cshtml" />
     <None Include="Web.Debug.config">
