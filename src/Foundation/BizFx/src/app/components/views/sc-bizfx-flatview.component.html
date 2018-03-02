@@ -1,0 +1,67 @@
+<sc-expander>
+  <sc-expander-header>
+    <sc-bizfx-header id="viewHeader-{{view.Name}}" [view]="view"></sc-bizfx-header>
+
+    <sc-bizfx-actionbar scExpanderHeaderContent id="viewActions-{{view.Name}}" *ngIf="view.Actions" [view]="view"></sc-bizfx-actionbar>
+  </sc-expander-header>
+
+  <sc-expander-content>
+    <table scTable class="mb-0" *ngIf="view.Properties.length">
+      <thead>
+        <tr>
+          <th *ngFor="let property of (view.Properties | isNotHidden)">{{property.DisplayName}}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td *ngFor="let property of (view.Properties | isNotHidden)">
+            <div [ngSwitch]="property.OriginalType">
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchCase="'System.DateTimeOffset'" class="property">
+                  <div *ngIf="property.UiType === 'FullDateTime'">
+                      {{property.Value | scDate:'short':'':bizFxContext.language}}
+                  </div>
+                  <div *ngIf="property.UiType !== 'FullDateTime'">
+                      {{property.Value | scDate:'shortDate':'':bizFxContext.language}}
+                  </div>
+              </div>
+
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchCase="'System.Decimal'" class="property">
+                {{property.Value | scNumber:'':bizFxContext.language}}
+              </div>
+
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchCase="'Sitecore.Commerce.Core.Money'" class="property">
+                {{property.Value | scCurrency:'code':'':bizFxContext.language}}
+              </div>
+
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchCase="'Html'" class="property">
+                <div [innerHTML]="property.Value"></div>
+              </div>
+
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchCase="'List'" class="property">
+                <div *ngFor="let item of getList(property)">
+                  {{item}}
+                </div>
+              </div>
+
+              <div id="property-{{view.Name}}-{{property.Name}}" *ngSwitchDefault class="property">
+                {{property.Value}}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </sc-expander-content>
+</sc-expander>
+
+<div *ngFor="let childView of view.ChildViews">
+  <sc-bizfx-flatview *ngIf="childView.UiHint === 'Flat'" id="flatView-{{childView.Name}}" [view]="childView"></sc-bizfx-flatview>
+
+  <sc-bizfx-listview *ngIf="childView.UiHint === 'List'" id="listView-{{childView.Name}}" [view]="childView"></sc-bizfx-listview>
+
+  <sc-bizfx-tableview *ngIf="childView.UiHint === 'Table'" id="tableView-{{childView?.Name}}" [view]="childView"></sc-bizfx-tableview>
+
+  <sc-bizfx-searchview *ngIf="childView.UiHint === 'Search'" id="tableView-{{childView?.Name}}" [view]="childView"></sc-bizfx-searchview>
+</div>
