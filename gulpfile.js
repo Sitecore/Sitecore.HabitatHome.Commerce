@@ -255,7 +255,8 @@ gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {
 });
 
 var publishCommerceEngine = function (dest, callback) {
-    var cmd = "dotnet publish .\\src\\Commerce.Engine\\Customer.Sample.Solution.sln -o " + dest
+    var solution = config.commerceEngineSolutionName + ".sln";
+    var cmd = "dotnet publish .\\" + solution + " -o " + dest
     var options = { maxBuffer: Infinity };
     console.log("cmd: " + cmd);
     return exec(cmd, options, function (err, stdout, stderr) {
