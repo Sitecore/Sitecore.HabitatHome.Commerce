@@ -30,10 +30,8 @@
         "EnvironmentList": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
-            "AdventureWorksShops",
-            "AdventureWorksAuthoring",
-            "HabitatAuthoring",
-            "HabitatShops"
+            "HabitatHomeAuthoring",
+            "HabitatHomeShops"
           ]
         }
       },
@@ -55,33 +53,6 @@
         "DeploymentId": "Deployment01",
         "DeploymentVersion": "1.0.0",
         "ParentNodeId": "Hub01"
-      },
-      {
-        "$type": "Plugin.Sample.Upgrade.MigrationPolicy, Plugin.Sample.Upgrade",
-        "DefaultEnvironmentName": "AdventureWorksAuthoring",
-        "SqlPolicySetName": "SqlPolicySet",
-        "ReviewOnly": false,
-        "ListsToMigrate": {
-          "*orders*": null,
-          "carts": null,
-          "giftcards": null,
-          "order-*-salesactivity": null,
-          "coupons": null,
-          "entitlements": null,
-          "managedlists": null,
-          "pricebooks*": null,
-          "pricecards": null,
-          "privatecoupongroups": null,
-          "promotionbooks*": null,
-          "promotions": null,
-          "promotions-*-coupons": null,
-          "promotion-*-publiccoupons": null,
-          "promotion-*-privatecoupongroups": null,
-          "promotion-*-unallocatedcoupons": null,
-          "salesactivities": null,
-          "settledsalesactivities": null,
-          "sellableitems": 0
-        }
       },
       {
         "$type": "Plugin.Sample.Upgrade.MigrationSqlPolicy, Plugin.Sample.Upgrade",

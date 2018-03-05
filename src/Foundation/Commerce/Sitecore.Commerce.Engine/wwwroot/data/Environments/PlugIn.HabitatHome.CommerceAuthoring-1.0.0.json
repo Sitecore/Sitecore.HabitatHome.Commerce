@@ -1,6 +1,6 @@
 {
   "$type": "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
-  "ArtifactStoreId": "40E77B7B-4BE9-4186-B53B-5BFD89A6A83B",
+  "ArtifactStoreId": "78A1EA61-1F37-42A7-AC89-9A3F46D60CA5",
   "Components": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
     "$values": [{
@@ -9,7 +9,7 @@
         "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
         "$values": ["CommerceEnvironments"]
       },
-      "Id": "c132ddc8e1b24a0ca378b6d069c14b84",
+      "Id": "efe49ff743d34b649fffcof293615cd9",
       "Policies": {
         "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
         "$values": []
@@ -22,19 +22,24 @@
   },
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
-  "Id": "Entity-CommerceEnvironment-AdventureWorksShops",
+  "Id": "Entity-CommerceEnvironment-HabitatHomeAuthoring",
   "Version": 1,
   "IsPersisted": false,
-  "Name": "AdventureWorksShops",
+  "Name": "HabitatHomeAuthoring",
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [{
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-ShopsMemoryCachePolicySet"
+        "PolicySetId": "Entity-PolicySet-AuthoringMemoryCachePolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-ContentPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Management.SearchMediaItemsPolicy, Sitecore.Commerce.Plugin.Management",
+        "MediaItemsSearchId": "7E1319C9-FA87-4D78-93CE-202815F0F1EA",
+        "PageSize": 10
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -65,6 +70,11 @@
         "PolicySetId": "Entity-PolicySet-ControllerMethodRolesPolicySet"
       },
       {
+        "$type": "Sitecore.Commerce.Plugin.Journaling.EntityJournalingPolicy, Sitecore.Commerce.Plugin.Journaling",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Orders.Order",
+        "Journal": "OrdersJournal"
+      },
+      {
         "$type": "Sitecore.Commerce.Plugin.BusinessUsers.EnvironmentBusinessToolsPolicy,Sitecore.Commerce.Plugin.BusinessUsers",
         "ServiceUrl": "https://localhost:5000"
       },
@@ -76,17 +86,38 @@
             "Carts.CartPolicySets-1.0",
             "Catalog.DefaultSellableItems-1.0",
             "Catalog.DefaultRelationshipDefinitions-1.0",
+            "Environment.HabitatHome.DefaultRelationships-1.0",
             "GiftCards.DefaultGiftCard-1.0",
             "GiftCards.TestGiftCards-1.0",
             "Pricing.DefaultPriceBook-1.0",
-            "Environment.AdventureWorks.PolicySets-1.0",
-            "Environment.AdventureWorks.SellableItems-1.0",
-            "Environment.AdventureWorks.Pricing-1.0",
-            "Environment.AdventureWorks.Promotions-1.0",
-            "Environment.AdventureWorks.RelationshipTypes-1.0",
-            "Environment.AdventureWorks.Catalog-1.0"
+            "Environment.HabitatHome.SellableItems-1.0",
+            "Environment.HabitatHome.Pricing-1.0",
+            "Environment.HabitatHome.Promotions-1.0",
+            "Environment.HabitatHome.Catalog-1.0"
           ]
         }
+      },
+      {
+        "$type": "Plugin.Sample.Customers.CsMigration.ProfilesSqlPolicy, Plugin.Sample.Customers.CsMigration",
+        "Server": ".",
+        "Database": "SXAStorefrontSite_profiles",
+        "TrustedConnection": true,
+        "UserName": "",
+        "Password": ""
+      },
+      {
+        "$type": "Plugin.Sample.Customers.CsMigration.ProfilePropertiesMappingPolicy, Plugin.Sample.Customers.CsMigration",
+        "UserProperties": {
+          "GeneralInfo.language": "Language",
+          "GeneralInfo.tel_number": "PhoneNumber"
+        },
+        "AddressProperties": {
+          "ProfileSystem.user_id_changed_by": "ChangedBy"
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
       },
       {
         "$type": "Sitecore.Commerce.EntityViews.ActionsRolesPolicy, Sitecore.Commerce.Plugin.Views",
@@ -625,10 +656,6 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
-      },
-      {
         "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
         "TypeFullName": "Sitecore.Commerce.Plugin.Coupons.Coupon",
         "Models": {
@@ -922,7 +949,6 @@
         "$type": "Sitecore.Commerce.Plugin.Carts.RollupCartLinesPolicy, Sitecore.Commerce.Plugin.Carts",
         "Rollup": true
       },
-
       {
         "$type": "Sitecore.Commerce.Plugin.Journaling.EntityJournalingPolicy, Sitecore.Commerce.Plugin.Journaling",
         "EntityFullName": "Sitecore.Commerce.Plugin.Orders.Order",

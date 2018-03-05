@@ -20,10 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Plugin.Demo.HabitatHome\Plugin.Demo.HabitatHome.csproj" />
     <ProjectReference Include="..\Plugin.Demo.Payments.Moneybags\Plugin.Demo.Payments.Moneybags.csproj" />
-    <ProjectReference Include="..\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
     <ProjectReference Include="..\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
-    <ProjectReference Include="..\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
     <ProjectReference Include="..\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
   </ItemGroup>
 

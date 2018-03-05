@@ -17,7 +17,7 @@ namespace Plugin.Sample.Upgrade
     using Sitecore.Commerce.Plugin.ManagedLists;
 
     /// <summary>
-    /// The Habitat configure class.
+    /// The Upgrade Plugin configure class.
     /// </summary>
     /// <seealso cref="Sitecore.Framework.Configuration.IConfigureSitecore" />
     public class ConfigureSitecore : IConfigureSitecore
