@@ -365,14 +365,11 @@
         "XConnectInstallRootDst": "[parameter('XConnectInstallDir')]"
       }
     },
-    "InstallSXAStorefrontModule": {
+    "InstallSXACommerceModule": {
       "Type": "InstallSitecoreConfiguration",
       "Params": {
-        "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SXAStorefront\\SXAStorefront.Storefront.json')]",
+        "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SXAStorefront\\SXACommerce.json')]",
         "SXACommerceModuleFullPath": "[parameter('SXACommerceModuleFullPath')]",
-        "SXAStorefrontModuleFullPath": "[parameter('SXAStorefrontModuleFullPath')]",
-        "SXAStorefrontThemeModuleFullPath": "[parameter('SXAStorefrontThemeModuleFullPath')]",
-        "SXAStorefrontCatalogModuleFullPath": "[parameter('SXAStorefrontCatalogModuleFullPath')]",
         "ModulesDirDst": "[variable('ModulesDirDst')]",
         "BaseUrl": "[variable('UtilitiesBaseUrl')]",
         "MergeTool": "[parameter('MergeToolFullPath')]",
@@ -421,25 +418,6 @@
         "BaseUrl": "[variable('UtilitiesBaseUrl')]"
       }
      },
-    // //Create the default storefront tenant and site
-    // "CreateDefaultTenantAndSite": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SXAStorefront\\SXAStorefront.CreateDefaultTenantAndSite.json')]",
-    //     "SiteName": "[parameter('SiteName')]",
-    //     "SiteRootUrl": "[variable('SiteRootUrl')]",
-    //     "SitecoreUsername": "[parameter('SitecoreUsername')]",
-    //     "SitecoreUserPassword": "[parameter('SitecoreUserPassword')]",
-    //     "ProjectConfigIncludeDir": "[variable('ProjectConfigIncludeDir')]"
-    //   }
-    // },
-    // "PublishCommerce": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": "[concat(parameter('BaseConfigurationFolder'), '\\SitecoreUtilities\\PublishToWeb.json')]",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
     "EnableIndexUpdate": {
       "Type": "SetXml",
       "Params": [
@@ -466,13 +444,13 @@
         "ConfigDir": "[variable('EngineConnectIncludeDir')]"
       }
     },
-    // "Reindex": {
-    //   "Type": "InstallSitecoreConfiguration",
-    //   "Params": {
-    //     "Path": "[concat(parameter('BaseConfigurationFolder'), '\\SitecoreUtilities\\RebuildIndexes.json')]",
-    //     "BaseUrl": "[variable('UtilitiesBaseUrl')]"
-    //   }
-    // },
+    "Reindex": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": "[concat(parameter('BaseConfigurationFolder'), '\\SitecoreUtilities\\RebuildIndexes.json')]",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
+      }
+    },
     "RemoveSiteUtilityFolder": {
       "Type": "ManageCommerceService",
       "Params": {
