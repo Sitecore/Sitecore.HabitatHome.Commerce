@@ -5,4 +5,89 @@
         }
         
     }
+
+    main {
+        padding-top: 81px;
+    }
+
+    .cxa-stepindicator-component {
+        display: none;
+    }
+
+    .shopping-cart-lines {
+        th {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+
+    .cxa-shoppingcartlines-component .shoppingcart-quantity div button,
+    .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
+        color: #141919;  
+        border: 1px solid #141919;           
+        border-radius: 0;
+    }
+    .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .cxa-shoppingcartlines-component .price {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+    .cxa-shoppingcartlines-component .shoppingcart-total .total {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+
+    .cxa-shoppingcartlines-component .shoppingcart-delete a {
+        color: #141919;
+
+        span:before {
+            font-family: FontAwesome;
+            content: '\f00d';            
+            font-size: 18px;
+        }
+    } 
+
+    .cxa-shoppingcartpromotion-component .component-content {
+        & > div.cart-promotion-title {
+            display: none;
+        }
+
+        .cart-promotion-form > *:not(:last-child) {
+            margin: 0;
+        }
+
+        .add-promo-code-button {
+            color: white;
+            background-color: #0e909f;
+            //border: 0;
+            border-radius: 0;
+            text-transform: uppercase;
+        }
+
+        input, 
+        .add-promo-code-button {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 2em;
+            height: 48px;
+            margin: 0;
+            width: auto;
+            
+            //border: 0;
+        }
+
+        .cart-promotion-form,
+        .added-promotion-codes {
+            justify-content: flex-end;
+            margin-top: 0;
+        }
+    } 
+
 }
