@@ -1,0 +1,48 @@
+<sc-expander>
+  <sc-expander-header>
+    <sc-bizfx-header id="viewHeader-{{view?.Name}}" *ngIf="view" [view]="view"></sc-bizfx-header>
+
+    <sc-bizfx-actionbar scExpanderHeaderContent id="viewActions-{{view?.Name}}" *ngIf="view?.Actions" [view]="view"></sc-bizfx-actionbar>
+  </sc-expander-header>
+
+  <sc-progress-indicator-panel [show]="paginating" [hideBackground]="!view">
+    <sc-expander-content>
+      <table scTable class="mb-0" *ngIf="view?.ChildViews.length">
+        <thead>
+          <tr>
+            <th id="tableview-header-icon" style="width: 32px;" *ngIf="view.ChildViews[0].Properties"></th>
+            <th id="header-{{property.Name}}" *ngFor="let property of (view.ChildViews[0].Properties | isNotHidden)">
+              <ng-container *ngIf="property.UiType !== 'DownloadCsv'">{{property.DisplayName}}</ng-container>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody *ngIf="view.ChildViews.length !== 1" [scSelect]="selectedView.ItemId" (scSelectChange)="onSelect($event)" [isSelectionRequired]="true">
+          <tr *ngFor="let childView of view.ChildViews" [scSelectRow]="childView.ItemId">
+            <td>
+              <sc-icon size="small" icon="{{childView.Icon}}"></sc-icon>
+            </td>
+            <td *ngFor="let property of (childView.Properties | isNotHidden)">
+              <sc-bizfx-viewproperty-byui [property]="property" [view]="childView" [hideHeader]="true"></sc-bizfx-viewproperty-byui>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody *ngIf="view.ChildViews.length === 1">
+          <tr *ngFor="let childView of view.ChildViews">
+            <td>
+              <sc-icon size="small" icon="{{childView.Icon}}"></sc-icon>
+            </td>
+            <td *ngFor="let property of (childView?.Properties | isNotHidden)">
+              <sc-bizfx-viewproperty-byui [property]="property" [view]="childView" [hideHeader]="true"></sc-bizfx-viewproperty-byui>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ngb-pagination [collectionSize]="count" (pageChange)="paginate($event)" [page]="page" [maxSize]="top.Value" [rotate]="true"
+        [boundaryLinks]="true" [ellipses]="false" class="d-flex mt-3 mr-3 justify-content-end" *ngIf="showPagination" id="pagination-{{view.Name}}"></ngb-pagination>
+
+    </sc-expander-content>
+  </sc-progress-indicator-panel>
+</sc-expander>

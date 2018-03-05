@@ -1,0 +1,15 @@
+.component-container{
+    display: table;
+    width: 100%;
+    color: black;
+    display: inline-flex;
+}
+.properties-dropdown{
+    float: left;
+    margin-right: 5em;
+}
+.property-header{
+    color: brown;
+    text-align: left;
+	font-weight: bold;
+}

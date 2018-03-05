@@ -1,0 +1,60 @@
+@import "../../../../node_modules/bootstrap/scss/mixins.scss";
+@import "../../../../node_modules/bootstrap/scss/variables.scss";
+@import "../../../../node_modules/@speak/styling/src/utils/colors/colors.scss";
+@import "../../../../node_modules/@speak/styling/src/custom.scss";
+
+.tile {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  margin-top: $spacer;
+  padding: $spacer $spacer 0 $spacer;
+  flex: 0 0 100%;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex: 0 0 50%;
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(odd) {
+      flex: 0 0 calc(50% - #{$spacer});
+      margin-right: $spacer;
+    }
+  }
+
+  &.selectable {
+    cursor: pointer;
+  }
+
+  &.active {
+    background-color: $table-bg-active;
+  }
+
+  .tile-icon {
+    flex: 0;
+    margin-right: $spacer;
+  }
+
+  .tile-description {
+    align-content: flex-start;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+    .tile-description-item {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+  }
+
+  ::ng-deep .property {
+    margin: 2px 15px 15px 0;
+  }
+}
+
