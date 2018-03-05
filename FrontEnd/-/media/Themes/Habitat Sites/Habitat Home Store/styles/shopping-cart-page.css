@@ -1,0 +1,83 @@
+.shopping-cart-page .component.link a.checkout {
+  width: 200px;
+}
+
+.shopping-cart-page main {
+  padding-top: 81px;
+}
+
+.shopping-cart-page .cxa-stepindicator-component {
+  display: none;
+}
+
+.shopping-cart-page .shopping-cart-lines th {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div button,
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
+  color: #141919;
+  border: 1px solid #141919;
+  border-radius: 0;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
+  border-left: 0;
+  border-right: 0;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-total .total {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-delete a {
+  color: #141919;
+}
+
+.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-delete a span:before {
+  font-family: FontAwesome;
+  content: '\f00d';
+  font-size: 18px;
+}
+
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content > div.cart-promotion-title {
+  display: none;
+}
+
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content .cart-promotion-form > *:not(:last-child) {
+  margin: 0;
+}
+
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
+  color: white;
+  background-color: #0e909f;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content input,
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 2em;
+  height: 48px;
+  margin: 0;
+  width: auto;
+}
+
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content .cart-promotion-form,
+.shopping-cart-page .cxa-shoppingcartpromotion-component .component-content .added-promotion-codes {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 0;
+}

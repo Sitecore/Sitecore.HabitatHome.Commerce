@@ -275,6 +275,21 @@ Standard Form Styles
   }
 }
 
+.field-group-inline {
+  display: flex;
+  justify-content: center;
+
+  .field-group {
+    margin: 0;
+    width: auto;
+    max-width: inherit;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
 .checkcontainer {
   display: block;
   position: relative;
@@ -574,9 +589,10 @@ Standard Form Styles
     }
     input[data-sc-field-name="Email"] {
       height: 48px;
-      width:60%;
+      width: 250px;
       margin: auto;
       font-size: 16px;
+      padding: 0 10px;
     }
 
     input[type="submit"] {

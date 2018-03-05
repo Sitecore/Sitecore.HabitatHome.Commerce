@@ -342,6 +342,25 @@ Standard Form Styles
   text-align: left !important;
 }
 
+.field-group-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.field-group-inline .field-group {
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+
+.field-group-inline .field-group input {
+  width: 100%;
+}
+
 .checkcontainer {
   display: block;
   position: relative;
@@ -685,9 +704,10 @@ Standard Form Styles
 
 .newsletter-form form input[data-sc-field-name="Email"] {
   height: 48px;
-  width: 60%;
+  width: 250px;
   margin: auto;
   font-size: 16px;
+  padding: 0 10px;
 }
 
 .newsletter-form form input[type="submit"] {
