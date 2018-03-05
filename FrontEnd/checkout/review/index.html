@@ -1242,64 +1242,161 @@
                                                     <th class="delete-row">&nbsp;</th>
                                                 </tr>
                                             </thead>
-                                            <tbody data-bind="foreach: cartLines">
+                                            <tbody>
                                                 <tr>
                                                     <td class="shoppingcart-image">
-                                                        <a data-bind="attr:{'href' : productUrl}">
-                                                            <img data-bind="attr: {src: image}" alt=" " pid="image">
-                                                        </a>
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Camcorders%3dhabitat_master-camcorders/Optix10MPActionCameraWaterBundle%3d7042127"><img data-bind="attr: {src: image}" alt=" " pid="image" src="product-catalog/7042127_01.jpg?h=100&amp;w=100&amp;hash=DA6E79A0E1A0406D0DF1DB43A3D9CF26DC1B81A7"></a>
                                                     </td>
                                                     <td class="shoppingcart-info">
-                                                        <a data-bind="attr:{'href' : productUrl}">
-                                                            <h5 class="displayName" data-bind="text: displayName"></h5>
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Camcorders%3dhabitat_master-camcorders/Optix10MPActionCameraWaterBundle%3d7042127">
+                                                            <h5 class="displayName" data-bind="text: displayName">Optix 10.MP Action Camera Water Bundle</h5>
                                                         </a>
                                                         <div class="variant-information">
-                                                            <div class="color-information" data-bind="visible: colorInformation">
+                                                            <div class="color-information" data-bind="visible: colorInformation" style="display: none;">
                                                                 <span class="variant-label">Color:</span>
                                                                 <span class="variant-value" data-bind="text: colorInformation, css: colorInformation"></span>
-                                                            </div>
-                                                            <div class="size-information" data-bind="visible: sizeInformation">
+                                                            </div>  
+                                                            <div class="size-information" data-bind="visible: sizeInformation" style="display: none;">
                                                                 <span class="variant-label">Size:</span>
                                                                 <span class="variant-value" data-bind="text: sizeInformation"></span>
-                                                            </div>
-                                                            <div class="style-information" data-bind="visible: styleInformation">
+                                                            </div>       
+                                                            <div class="style-information" data-bind="visible: styleInformation" style="display: none;">
                                                                 <span class="variant-label">Style:</span>
                                                                 <span class="variant-value" data-bind="text: styleInformation"></span>
                                                             </div>
-                                                            <div class="gift-card-amount-information" data-bind="visible: giftCardAmountInformation">
+                                                            <div class="gift-card-amount-information" data-bind="visible: giftCardAmountInformation" style="display: none;">
                                                                 <span class="variant-label">Gift card amount:</span>
                                                                 <span class="variant-value" data-bind="text: giftCardAmountInformation"></span>
                                                             </div>
-                                                        </div>
+                                                            
+                                                        </div>               
                                                     </td>
                                                     <td class="shoppingcart-price">
-                                                        <span class="price" data-bind="text: linePrice"></span>
-                                                        <p data-bind="visible: discountOfferNames.length > 0">
+                                                        <span class="price" data-bind="text: linePrice">209.99 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
                                                             <span>Discount</span>
                                                             <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
                                                         </p>
                                                     </td>
                                                     <td class="shoppingcart-quantity">
                                                         <div>
-                                                            <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating"
-                                                                style="display:none"></button>
-                                                            <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating">
-                                                            <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating"
-                                                                style="display:none"></button>
+                                                            <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display:none"></button>
+                                                            <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating" data-ajax-lineitemid="07b7334501b44ffba7416f50f675690b">
+                                                            <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display:none"></button>
                                                         </div>
                                                     </td>
                                                     <td class="shoppingcart-total">
-                                                        <span class="total" data-bind="text: lineTotal"></span>
-                                                        <p data-bind="visible: discountOfferNames.length > 0">
+                                                        <span class="total" data-bind="text: lineTotal">419.98 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
                                                             <span></span>
-                                                            <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
+                                                            <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving">0.00 USD</span>
                                                         </p>
                                                     </td>
-                                                    <td class="shoppingcart-delete">
-                                                        <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}">
-                                                            <span data-bind="click: $parents[1].removeItem"></span>
-                                                        </a>
+                                                    <td class="shoppingcart-delete"><a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}" data-ajax-lineitemid="07b7334501b44ffba7416f50f675690b"><span data-bind="click: $parents[1].removeItem"></span></a></td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td class="shoppingcart-image">
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Cameras%3dhabitat_master-cameras/Optix21MPFlashMemoryCamcorder%E2%80%9410X40X200XZoom%3d7042114"><img data-bind="attr: {src: image}" alt=" " pid="image" src="product-catalog/7042114_01.jpg?h=100&amp;w=100&amp;hash=03293C5ADF992965DE990EE65205D93E61D7D5E9"></a>
                                                     </td>
+                                                    <td class="shoppingcart-info">
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Cameras%3dhabitat_master-cameras/Optix21MPFlashMemoryCamcorder%E2%80%9410X40X200XZoom%3d7042114">
+                                                            <h5 class="displayName" data-bind="text: displayName">Optix 2.1MP Flash Memory Camcorder—10X 40X 200X Zoom</h5>
+                                                        </a>
+                                                        <div class="variant-information">
+                                                            <div class="color-information" data-bind="visible: colorInformation" style="display: none;">
+                                                                <span class="variant-label">Color:</span>
+                                                                <span class="variant-value" data-bind="text: colorInformation, css: colorInformation"></span>
+                                                            </div>  
+                                                            <div class="size-information" data-bind="visible: sizeInformation" style="display: none;">
+                                                                <span class="variant-label">Size:</span>
+                                                                <span class="variant-value" data-bind="text: sizeInformation"></span>
+                                                            </div>       
+                                                            <div class="style-information" data-bind="visible: styleInformation" style="display: none;">
+                                                                <span class="variant-label">Style:</span>
+                                                                <span class="variant-value" data-bind="text: styleInformation"></span>
+                                                            </div>
+                                                            <div class="gift-card-amount-information" data-bind="visible: giftCardAmountInformation" style="display: none;">
+                                                                <span class="variant-label">Gift card amount:</span>
+                                                                <span class="variant-value" data-bind="text: giftCardAmountInformation"></span>
+                                                            </div>
+                                                            
+                                                        </div>               
+                                                    </td>
+                                                    <td class="shoppingcart-price">
+                                                        <span class="price" data-bind="text: linePrice">729.99 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
+                                                            <span>Discount</span>
+                                                            <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
+                                                        </p>
+                                                    </td>
+                                                    <td class="shoppingcart-quantity">
+                                                        <div>
+                                                            <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display:none"></button>
+                                                            <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating" data-ajax-lineitemid="c145154b61df4a7b9b07d7c519e6bb05">
+                                                            <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display:none"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="shoppingcart-total">
+                                                        <span class="total" data-bind="text: lineTotal">729.99 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
+                                                            <span></span>
+                                                            <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving">0.00 USD</span>
+                                                        </p>
+                                                    </td>
+                                                    <td class="shoppingcart-delete"><a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}" data-ajax-lineitemid="c145154b61df4a7b9b07d7c519e6bb05"><span data-bind="click: $parents[1].removeItem"></span></a></td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td class="shoppingcart-image">
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Camcorders%3dhabitat_master-camcorders/Optix50MPWaterproofCamcorder%E2%80%9410X80XZoom%3d7042119"><img data-bind="attr: {src: image}" alt=" " pid="image" src="product-catalog/7042119_01.jpg?h=100&amp;w=100&amp;hash=7B297065EB38A4420D99B64FED97A70AA121E084"></a>
+                                                    </td>
+                                                    <td class="shoppingcart-info">
+                                                        <a data-bind="attr:{'href' : productUrl}" href="/shop/Camcorders%3dhabitat_master-camcorders/Optix50MPWaterproofCamcorder%E2%80%9410X80XZoom%3d7042119">
+                                                            <h5 class="displayName" data-bind="text: displayName">Optix 5.0MP Waterproof Camcorder—10X/80X Zoom (Orange)</h5>
+                                                        </a>
+                                                        <div class="variant-information">
+                                                            <div class="color-information" data-bind="visible: colorInformation">
+                                                                <span class="variant-label">Color:</span>
+                                                                <span class="variant-value Orange" data-bind="text: colorInformation, css: colorInformation">Orange</span>
+                                                            </div>  
+                                                            <div class="size-information" data-bind="visible: sizeInformation" style="display: none;">
+                                                                <span class="variant-label">Size:</span>
+                                                                <span class="variant-value" data-bind="text: sizeInformation"></span>
+                                                            </div>       
+                                                            <div class="style-information" data-bind="visible: styleInformation" style="display: none;">
+                                                                <span class="variant-label">Style:</span>
+                                                                <span class="variant-value" data-bind="text: styleInformation"></span>
+                                                            </div>
+                                                            <div class="gift-card-amount-information" data-bind="visible: giftCardAmountInformation" style="display: none;">
+                                                                <span class="variant-label">Gift card amount:</span>
+                                                                <span class="variant-value" data-bind="text: giftCardAmountInformation"></span>
+                                                            </div>
+                                                            
+                                                        </div>               
+                                                    </td>
+                                                    <td class="shoppingcart-price">
+                                                        <span class="price" data-bind="text: linePrice">144.99 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
+                                                            <span>Discount</span>
+                                                            <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
+                                                        </p>
+                                                    </td>
+                                                    <td class="shoppingcart-quantity">
+                                                        <div>
+                                                            <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display:none"></button>
+                                                            <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating" data-ajax-lineitemid="d0c27c167b5a4ce2b200372a814bfbae">
+                                                            <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display:none"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="shoppingcart-total">
+                                                        <span class="total" data-bind="text: lineTotal">144.99 USD</span>
+                                                        <p data-bind="visible: discountOfferNames.length > 0" style="display: none;">
+                                                            <span></span>
+                                                            <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving">0.00 USD</span>
+                                                        </p>
+                                                    </td>
+                                                    <td class="shoppingcart-delete"><a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}" data-ajax-lineitemid="d0c27c167b5a4ce2b200372a814bfbae"><span data-bind="click: $parents[1].removeItem"></span></a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1456,104 +1553,90 @@
                                         <h4 class="order-information-label">Order information</h4>
                                         <div class="confirm-totals-subtotal">
                                             <span>Subtotal:</span>
-                                            <span class="confirm-subTotal" data-bind="text: cart().subTotal"></span>
+                                            <span class="confirm-subTotal">1,294.96 USD</span>
                                         </div>
                                         <div class="confirm-totals-shipping">
-                                            <span>Shipping cost:
-                                                <span id="billingShippingCostLabel"></span>
-                                            </span>
-                                            <span class="confirm-shippingTotal" data-bind="text: cart().shippingTotal"></span>
+                                            <span>Shipping cost: <span id="billingShippingCostLabel"></span></span>
+                                            <span class="confirm-shippingTotal">15.00 USD</span>
                                         </div>
                                         <div class="confirm-totals-tax">
                                             <span>VAT :</span>
-                                            <span class="confirm-taxTotal" data-bind="text: cart().taxTotal"></span>
+                                            <span class="confirm-taxTotal">129.50 USD</span>
                                         </div>
                                         <div class="confirm-totals-savings">
                                             <span>Savings :</span>
-                                            <span class="confirm-discountTotal" data-bind="text: cart().discount"></span>
+                                            <span class="confirm-discountTotal">15.00 USD</span>
                                         </div>
                                         <div class="confirm-totals-total">
                                             <span>Total :</span>
-                                            <span class="confirm-total" data-bind="text: cart().total"></span>
+                                            <span class="confirm-total">1,424.46 USD</span>
                                         </div>
                                     </div>
                                     <div class="checkout-footer-pane">
                                         <div class="addresses">
                                             <!-- ko if: isShipAll -->
                                             <div class="confirm-shipping-address-container">
-                                                <div class="footer-shipping-address-pane" data-bind="with: shippingAddress">
+                                                <div class="footer-shipping-address-pane">
                                                     <h4>Shipping address</h4>
                                                     <ul class="footer-address">
-                                                        <li class="confirm-shippingAddressName" data-bind="text: name"></li>
-                                                        <li class="confirm-shippingAddressLine" data-bind="text: address1"></li>
+                                                        <li class="confirm-shippingAddressName">elena</li>
+                                                        <li class="confirm-shippingAddressLine">dfad</li>
                                                         <li>
-                                                            <span class="confirm-shippingAddressCity" data-bind="text: city"></span>,
-                                                            <span class="confirm-shippingAddressState" data-bind="text: state"></span>,
-                                                            <span class="confirm-shippingAddressCountry" data-bind="text: country"></span>
+                                                            <span class="confirm-shippingAddressCity">ronkonk</span>, <span class="confirm-shippingAddressState">NY</span>, <span class="confirm-shippingAddressCountry">US</span>
                                                         </li>
-                                                        <li class="confirm-shippingAddressZipCode" data-bind="text: zipPostalCode"></li>
+                                                        <li class="confirm-shippingAddressZipCode">12324</li>
                                                     </ul>
                                                 </div>
                                                 <div class="edit-shipping-address">
-                                                    <a href="http://habitathome.dev.local/checkout/delivery" class="edit-shipping-address-link" disabled="disabled">Edit shipping address</a>
+                                                    <a href="https://habitathome.dev.local/checkout/delivery" class="edit-shipping-address-link" disabled="disabled">Edit shipping address</a>
                                                 </div>
                                             </div>
                                             <!-- /ko -->
                                             <!-- ko if: $root.creditCardPayment().isAdded -->
                                             <div class="confirm-billing-address-container">
-                                                <div class="footer-shipping-address-pane" data-bind="with: billingAddress">
+                                                <div class="footer-shipping-address-pane">
                                                     <h4>Billing address</h4>
                                                     <ul class="footer-address">
-                                                        <li class="confirm-billingAddressName" data-bind="text: name"></li>
-                                                        <li class="confirm-billingAddressLine" data-bind="text: address1"></li>
+                                                        <li class="confirm-billingAddressName">elena</li>
+                                                        <li class="confirm-billingAddressLine">dfad</li>
                                                         <li>
-                                                            <span class="confirm-billingAddressCity" data-bind="text: city"></span>,
-                                                            <span class="confirm-billingAddressState" data-bind="text: state"></span>,
-                                                            <span class="confirm-billingAddressCountry" data-bind="text: country"></span>
+                                                            <span class="confirm-billingAddressCity">ronkonk</span>, <span class="confirm-billingAddressState">NY</span>, <span class="confirm-billingAddressCountry">US</span>
                                                         </li>
-                                                        <li class="confirm-billingAddressZipCode" data-bind="text: zipPostalCode"></li>
+                                                        <li class="confirm-billingAddressZipCode">12324</li>
                                                     </ul>
                                                     <div class="edit-billing-address">
-                                                        <a href="http://habitathome.dev.local/checkout/billing" class="edit-billing-address-link" disabled="disabled">Edit billing address</a>
+                                                        <a href="https://habitathome.dev.local/checkout/billing" class="edit-billing-address-link" disabled="disabled">Edit billing address</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- /ko -->
+                        
                                         </div>
                                         <div class="confirm-payment-methods">
                                             <div class="payment-methods">
                                                 <h4>Payment methods</h4>
                                                 <!-- ko if: $root.creditCardPayment().isAdded -->
                                                 <h5>Credit card</h5>
-                                                <ul class="payment-method-lines" data-bind="with: creditCardPayment">
-                                                    <li class="confirm-creditCardNameOnCard" data-bind="text: customerNameOnPayment"></li>
-                                                    <li class="confirm-creditCardType" data-bind="text: description"></li>
-                                                    <li class="confirm-creditCardNumber" data-bind="text: creditCardNumberMasked"></li>
+                                                <ul class="payment-method-lines">
+                                                    <li class="confirm-creditCardNameOnCard"></li>
+                                                    <li class="confirm-creditCardType"></li>
+                                                    <li class="confirm-creditCardNumber"></li>
                                                     <li>
-                                                        <span class="confirm-creditCardExpMonth" data-bind="text: expirationMonth"></span> -
-                                                        <span id="confirm-creditCardExpYear" data-bind="text: expirationYear"></span>
+                                                        <span class="confirm-creditCardExpMonth"></span> - <span id="confirm-creditCardExpYear"></span>
                                                     </li>
                                                     <li class="confirm-creditCardAmount">
-                                                        <span data-bind="text: formatCurrency(creditCardAmount(), 2, '.', 'USD', ',', 3)"></span>
-                                                        <span data-bind="text: $root.currencyCode"></span>
+                                                        <span>1,424.46 USD</span>
+                                                        <span></span>
                                                     </li>
                                                 </ul>
                                                 <!-- /ko -->
-                                                <!-- ko if: $root.giftCardPayment().isAdded -->
-                                                <h4>Gift cards</h4>
-                                                <ul class="gift-cards" data-bind="with: giftCardPayment" id="confirm-giftCardContainer">
-                                                    <li class="confirm-giftCardNumber" data-bind="text: giftCardNumber"></li>
-                                                    <li class="confirm-giftCardAmount">
-                                                        <span data-bind="text: formatCurrency(giftCardAmount(), 2, '.', 'USD', ',', 3)"></span>
-                                                        <span data-bind="text: $root.currencyCode"></span>
-                                                    </li>
-                                                </ul>
-                                                <!-- /ko -->
+                                                <!-- ko if: $root.giftCardPayment().isAdded --><!-- /ko -->
                                             </div>
                                             <div class="edit-payment-method">
-                                                <a href="http://habitathome.dev.local/checkout/billing" class="edit-payment-method-link">Edit payment methods</a>
+                                                <a href="https://habitathome.dev.local/checkout/billing" class="edit-payment-method-link">Edit payment methods</a>
                                             </div>
                                         </div>
+                        
                                     </div>
                                 </div>
                                 <div class="buttons-row">
