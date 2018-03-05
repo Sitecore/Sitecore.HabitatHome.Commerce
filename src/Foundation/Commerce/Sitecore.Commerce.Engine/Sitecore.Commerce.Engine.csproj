@@ -61,6 +61,10 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="2.0.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\data\Catalogs\" />
+  </ItemGroup>
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PreserveCompilationContext>true</PreserveCompilationContext>
