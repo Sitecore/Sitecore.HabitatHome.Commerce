@@ -5,18 +5,9 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A330984-9652-4DA1-99D3-B55E6DEAC6AA}"
 	ProjectSection(SolutionItems) = preProject
-		src\WebDeployUpdates\CECloud.parameters.xml = src\WebDeployUpdates\CECloud.parameters.xml
 		gulp-config.js = gulp-config.js
 		gulpfile.js = gulpfile.js
 		src\Foundation\Commerce\nuget.config = src\Foundation\Commerce\nuget.config
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CECloud_SCCPL", "CECloud_SCCPL", "{0946C395-5DF9-48DA-BB53-DC5CA2A4BEFE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyToRoot", "CopyToRoot", "{541693FF-FDF0-4257-8EF4-814D8B2C3E21}"
-	ProjectSection(SolutionItems) = preProject
-		src\WebDeployUpdates\CECloud_SCCPL\CopyToRoot\CreateUser.Global.sql = src\WebDeployUpdates\CECloud_SCCPL\CopyToRoot\CreateUser.Global.sql
-		src\WebDeployUpdates\CECloud_SCCPL\CopyToRoot\CreateUser.Shared.sql = src\WebDeployUpdates\CECloud_SCCPL\CopyToRoot\CreateUser.Shared.sql
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Demo.Payments.Moneybags", "src\Foundation\Commerce\Plugin.Demo.Payments.Moneybags\Plugin.Demo.Payments.Moneybags.csproj", "{8084392E-5BBA-4981-BA81-A9D3BE403C18}"
@@ -64,10 +55,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{0946C395-5DF9-48DA-BB53-DC5CA2A4BEFE} = {3A330984-9652-4DA1-99D3-B55E6DEAC6AA}
-		{541693FF-FDF0-4257-8EF4-814D8B2C3E21} = {0946C395-5DF9-48DA-BB53-DC5CA2A4BEFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32813392-1C11-4D75-BF11-1ECBEF674669}
