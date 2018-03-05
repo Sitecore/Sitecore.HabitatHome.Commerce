@@ -1,0 +1,45 @@
+<div [ngSwitch]="property.UiType">
+
+  <div *ngSwitchCase="'EntityLink'">
+    <a routerLink="/entityView/Master/{{view.ItemId}}" routerLinkActive="active">
+      <sc-bizfx-viewproperty-bytype [property]="property" [view]="view" [hideHeader]="hideHeader"></sc-bizfx-viewproperty-bytype>
+    </a>
+  </div>
+
+  <div *ngSwitchCase="'ItemLink'">
+    <a routerLink="/entityView/{{view.Name}}/{{view.EntityId}}/{{view.ItemId}}" routerLinkActive="active">
+      <sc-bizfx-viewproperty-bytype [property]="property" [view]="view" [hideHeader]="hideHeader"></sc-bizfx-viewproperty-bytype>
+    </a>
+  </div>
+
+  <div *ngSwitchCase="'SubItemLink'">
+    <a routerLink="/entityView/{{view.Name}}/{{buildSubItemLink()}}" routerLinkActive="active">
+      <sc-bizfx-viewproperty-bytype [property]="property" [view]="view" [hideHeader]="hideHeader"></sc-bizfx-viewproperty-bytype>
+    </a>
+  </div>
+
+  <div *ngSwitchCase="'Html'" id="property-{{view.Name}}-{{property.Name}}">
+    <div [innerHTML]="property.Value"></div>
+  </div>
+
+  <p *ngSwitchCase="'MultiLine'" id="property-{{view.Name}}-{{property.Name}}">
+    {{property.Value}}
+  </p>
+
+  <div *ngSwitchCase="'List'" id="property-{{view.Name}}-{{property.Name}}">
+    <div *ngFor="let item of list">
+      {{item}}
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'DownloadCsv'">
+    <button scIconButton="secondary" id="download-action" type="button" (click)="downloadCsv()">
+      <sc-icon icon="download" size="small"></sc-icon>
+    </button>
+  </div>
+
+  <div *ngSwitchDefault>
+    <sc-bizfx-viewproperty-bytype [property]="property" [view]="view" [hideHeader]="hideHeader"></sc-bizfx-viewproperty-bytype>
+  </div>
+
+</div>

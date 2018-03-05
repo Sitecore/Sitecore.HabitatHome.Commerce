@@ -1,0 +1,14 @@
+
+.dialog-title{
+    display: inline-block;
+}
+.dialog-close-button{
+    float: right;
+}
+.error-message{
+    color:red;
+}
+.action-container { 
+    width: 600px;
+    color: saddlebrown;
+}

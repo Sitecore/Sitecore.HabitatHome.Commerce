@@ -1,0 +1,10 @@
+{
+    "ValidationErrors": {
+        "IsRequired": "{{DisplayName}} est requis.",
+        "IncorrectDecimalValue": "{{DisplayName}} contient une valeur incorrecte."
+    },
+    "ActionExecuted": "{{DisplayName}} exécuté.",
+    "Back": "Retour",
+    "Logout": "Déconnecter",
+    "LanguageSelector": "Langue affichée"
+}

@@ -1,0 +1,27 @@
+<sc-expander>
+  <sc-expander-header>
+    <sc-bizfx-header id="viewHeader-{{view.Name}}" [view]="view"></sc-bizfx-header>
+    <sc-bizfx-actionbar scExpanderHeaderContent id="viewActions-{{view.Name}}" *ngIf="view.Actions" [view]="view"></sc-bizfx-actionbar>
+  </sc-expander-header>
+  
+  <sc-expander-content>
+    <div class="m-3">
+      <div class="d-flex flex-wrap" *ngIf="view.ChildViews.length">
+        <div class="tile"
+          *ngFor="let childView of view?.ChildViews; let i = index"
+          (click)="onSelect(childView)"
+          [class.active]="(childView === selectedView || (i === 0 && !selectedView)) && view?.Actions?.length"
+          [class.selectable]="view?.Actions?.length">
+          <div class="tile-icon" *ngIf="childView.Icon">
+            <sc-icon size="small" icon="{{childView.Icon}}"></sc-icon>
+          </div>
+          <div class="tile-description">
+            <div class="tile-description-item" *ngFor="let property of (childView?.Properties | isNotHidden)">
+              <sc-bizfx-viewproperty-byui [property]="property" [view]="childView"></sc-bizfx-viewproperty-byui>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-expander-content>
+</sc-expander>
