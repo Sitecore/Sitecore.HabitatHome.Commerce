@@ -168,7 +168,7 @@
       "Type": "DeployCommerceContent",
       "Params": {
         "Name": "[variable('CommerceOps')]",
-        "ServicesContentPath": "[parameter('SitecoreCommerceEngineZipPath')]",
+        "ServicesContentPath": "[parameter('SitecoreCommerceEngineContent')]",
         "PhysicalPath": "[variable('CommerceOpsPhysicalPath')]",
         "CommerceServicesDbName": "[parameter('CommerceServicesDbName')]",
         "CommerceServicesGlobalDbName": "[parameter('CommerceServicesGlobalDbName')]",

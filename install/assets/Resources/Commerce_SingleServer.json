@@ -134,7 +134,7 @@
       "Type": "string",
       "Description": "Commerce Minions Services port"
     },
-    "SitecoreCommerceEngineZipPath": {
+    "SitecoreCommerceEnginePath": {
       "Type": "string",
       "Description": "Sitecore Commerce Engine Zip Path"
     },

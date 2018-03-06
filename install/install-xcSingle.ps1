@@ -249,7 +249,7 @@ function Install-Prerequisites {
 Function Install-Commerce {
     Write-Host "Installing Commerce" -ForegroundColor Green
     $params = @{
-        Path                               = $(Join-Path $resourcePath  'HabitatHome_Master_SingleServer.json')
+        Path                               = $(Join-Path $resourcePath  'Commerce_SingleServer.json')
         BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
         webRoot                            = $site.webRoot
         SitePrefix                         = $site.prefix
@@ -278,7 +278,7 @@ Function Install-Commerce {
         CommerceAuthoringServicesPort      = "5000"
         CommerceMinionsServicesPort        = "5010"     
         SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\Commerce.Engine")
-        SitecoreBizFxServicesContentPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include Sitecore.BizFX.* -Attribute Directory  -Recurse | Select-Object -ExpandProperty FullName)
+        SitecoreBizFxServicesContentPath   = $(Join-Path $resourcePath "Publish\Sitecore.BizFX")
         SitecoreBizFxPostFix               = $site.prefix
         SitecoreIdentityServerZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.IdentityServer.1.*.zip" -Recurse)
         CommerceEngineCertificatePath      = $(Join-Path -Path $assets.certificatesPath -ChildPath "habitat.dev.local.xConnect.Client.crt" )    
