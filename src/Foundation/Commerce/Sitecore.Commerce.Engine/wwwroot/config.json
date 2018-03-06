@@ -12,9 +12,9 @@
     "AllowedOrigins": [
       "https://localhost:4200",
       "http://localhost:4200",
-      "http://sxa.storefront.com",
-      "https://habitathome.dev.local",
-      "*"
+      "http://sxa.storefront.com",    
+      "https://habitat.dev.local",   
+      "https://habitathome.dev.local"
     ],
     "AntiForgeryEnabled": false,
     "UseHttpsInKestrel": true,  

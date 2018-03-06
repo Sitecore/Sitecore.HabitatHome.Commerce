@@ -15,7 +15,7 @@ namespace Plugin.Demo.Payments.Moneybags
     using Sitecore.Framework.Pipelines.Definitions.Extensions;
 
     /// <summary>
-    /// The payments braintree configure sitecore class
+    /// The payments moneybags configure sitecore class
     /// </summary>
     /// <seealso cref="Sitecore.Framework.Configuration.IConfigureSitecore" />
     public class ConfigureSitecore : IConfigureSitecore
