@@ -116,10 +116,6 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
-      },
-      {
         "$type": "Sitecore.Commerce.EntityViews.ActionsRolesPolicy, Sitecore.Commerce.Plugin.Views",
         "Roles": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views]], mscorlib",
@@ -1188,17 +1184,7 @@
         "EnableTermsAndConditions": true,
         "MinimumOrderQuantity": 1.0
       },
-      {
-        "$type": "Sitecore.Commerce.Plugin.Tax.GlobalTaxPolicy, Sitecore.Commerce.Plugin.Tax",
-        "DefaultCartTaxRate": 0.1,
-        "DefaultItemTaxRate": 0.1,
-        "TaxCalculationEnabled": true,
-        "PriceIncudesTax": false,
-        "CalculateTaxBasedOn": "ShippingAddress",
-        "ShippingTaxClass": "CartItems",
-        "RoundAtSubTotal": false
-      },
-      {
+            {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",
         "TransactionalityEnabled": true,
         "TransactionTimeOut": 180
