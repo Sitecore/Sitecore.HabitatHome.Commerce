@@ -5,6 +5,7 @@
 //                                                                            //
 //  NOTE: Only single line comments are accepted in configurations.           //
 // -------------------------------------------------------------------------- //
+
 {
   "Parameters": {
     "WebRoot": {
@@ -43,11 +44,13 @@
     "CommerceShopsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceShops'))]",
     "CommerceAuthoringPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceAuthoring'))]",
     "CommerceMinionsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceMinions'))]",
-    "HabitatHomeEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatHomeShops',shopName='Storefront')",
-    "InitializeHabitatHomeParam": "/commerceops/InitializeEnvironment(environment='HabitatHomeShops')",
+
     "UrlCommerceShopsServicesBootstrap": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), '/commerceops/Bootstrap()'))]",
-    "UrlHabitatEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('HabitatHomeEnsureSyncDefaultContentParams'))]",
-    "UrlHabitatHomeCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeHabitatHomeParam')))]"
+    "InitializeParam": "/commerceops/InitializeEnvironment(environment='envNameValue')",
+    "UrlInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeParam')))]",
+    "EnsureSyncDefaultContentPathsParam": "/commerceops/EnsureSyncDefaultContentPaths(environment='envNameValue',shopName='CommerceEngineDefaultStorefront')",
+    "UrlEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('EnsureSyncDefaultContentPathsParam')))]",
+    "UrlCheckCommandStatus": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), '/commerceops/CheckCommandStatus(taskId=taskIdValue)'))]"
   },
   "Modules": ["InitializeCommerce"],
   "Tasks": {
@@ -75,23 +78,24 @@
         "UrlCommerceShopsServicesBootstrap": "[variable('UrlCommerceShopsServicesBootstrap')]"
       }
     },
-    // Disabled due to Bad Gateway Error (Timeout) Issue
-    //    "EnsureSyncHabitatDefaultContentPaths": {
-    //      "Type": "EnsureSyncDefaultContentPaths",
-    //      "Params": {
-    //        "UrlEnsureSyncDefaultContentPaths": "[variable('UrlHabitatEnsureSyncDefaultContentPaths')]"
-    //      }
-    //    },
-    //    "EnsureSyncAWDefaultContentPaths": {
-    //      "Type": "EnsureSyncDefaultContentPaths",
-    //      "Params": {
-    //        "UrlEnsureSyncDefaultContentPaths": "[variable('UrlAWEnsureSyncDefaultContentPaths')]"
-    //      }
-    //    },
-    "InitializeHabitatHomeCommerceServices": {
+     "EnsureSyncDefaultContentPaths": {
+       "Type": "EnsureSyncDefaultContentPaths",
+       "Params": {
+         "UrlEnsureSyncDefaultContentPaths": "[variable('UrlEnsureSyncDefaultContentPaths')]",
+         "UrlCheckCommandStatus": "[variable('UrlCheckCommandStatus')]",
+         "Environments": [
+           "HabitatHomeAuthoring"
+         ]
+       }
+     },
+    "InitializeCommerceServices": {
       "Type": "InitializeCommerceServices",
       "Params": {
-        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlHabitatHomeCommerceShopsServicesInitializeEnvironment')]"
+        "UrlInitializeEnvironment": "[variable('UrlInitializeEnvironment')]",
+        "UrlCheckCommandStatus": "[variable('UrlCheckCommandStatus')]",
+        "Environments": [
+          "HabitatHomeAuthoring"
+        ]
       }
     },
     "EnableCsrfValidation": {
