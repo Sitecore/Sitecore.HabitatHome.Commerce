@@ -277,7 +277,7 @@ Function Install-Commerce {
         CommerceShopsServicesPort          = "5005"
         CommerceAuthoringServicesPort      = "5000"
         CommerceMinionsServicesPort        = "5010"     
-        SitecoreCommerceEngineZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.Commerce.Engine.2*.zip" -Recurse | Select-Object -ExpandProperty FullName)
+        SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\Commerce.Engine")
         SitecoreBizFxServicesContentPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include Sitecore.BizFX.* -Attribute Directory  -Recurse | Select-Object -ExpandProperty FullName)
         SitecoreBizFxPostFix               = $site.prefix
         SitecoreIdentityServerZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.IdentityServer.1.*.zip" -Recurse)

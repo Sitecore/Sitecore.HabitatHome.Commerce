@@ -39,5 +39,6 @@ BuiltFiles_*.txt
 /src/**/tds/*/Report/*
 
 /install/set-installation-overrides.ps1
+/install/assets/Resources/Publish
 InstallUtil.InstallLog
 *.dll
