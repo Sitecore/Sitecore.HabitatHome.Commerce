@@ -38,12 +38,13 @@ Function Invoke-ApplyCertificateTask {
     $node = $xml.configuration.sitecore.commerceEngineConfiguration
     $node.certificateThumbprint = $cert.Thumbprint
     $xml.Save($pathToConfig)  
-
+    Write-Host "Applying Certficate ..." -ForegroundColor Green 
     foreach ($path in $CommerceServicesPathCollection) {
         $pathToJson = $(Join-Path -Path $path -ChildPath "wwwroot\config.json") 
         $originalJson = Get-Content $pathToJson -Raw | ConvertFrom-Json
         $certificateNode = $originalJson.Certificates.Certificates[0]
         $certificateNode.Thumbprint = $cert.Thumbprint       
+        Write-Host "Converting JSON...."
         $originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
     } 
 }
@@ -132,7 +133,7 @@ Function Invoke-EnableCsrfValidationTask {
         [Parameter(Mandatory = $true)]
         [string[]]$CommerceServicesPathCollection
     )
-
+    Write-Host "Enabling CSRF Validation ..." -ForegroundColor Green 
     foreach ($path in $CommerceServicesPathCollection) {
         $pathToJson = $(Join-Path -Path $path -ChildPath "wwwroot\config.json")
         $originalJson = Get-Content $pathToJson -Raw  | ConvertFrom-Json
@@ -147,6 +148,7 @@ Function Invoke-DisableCsrfValidationTask {
         [Parameter(Mandatory = $true)]
         [string[]]$CommerceServicesPathCollection
     )
+    Write-Host "Disabling CSRF Validation ..." -ForegroundColor Green 
     foreach ($path in $CommerceServicesPathCollection) {
         $pathToJson = $(Join-Path -Path $path -ChildPath "wwwroot\config.json")
         $originalJson = Get-Content $pathToJson -Raw  | ConvertFrom-Json

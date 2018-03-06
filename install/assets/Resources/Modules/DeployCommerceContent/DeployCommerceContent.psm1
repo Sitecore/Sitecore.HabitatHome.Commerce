@@ -37,7 +37,9 @@ Function Invoke-DeployCommerceContentTask {
 		[Parameter(Mandatory=$false)]
         [string]$AzureSearchAdminKey,		
 		[Parameter(Mandatory=$false)]
-        [string]$AzureSearchQueryKey		
+        [string]$AzureSearchQueryKey,
+        [Parameter(Mandatory=$false)]
+        [string]$EnvironmentName		
     )
 
     try {       
@@ -45,11 +47,20 @@ Function Invoke-DeployCommerceContentTask {
             {($_ -match "CommerceOps")} {                    
 				Write-Host
 				$global:opsServicePath = $PhysicalPath	
-				$commerceServicesZip =  Get-Item $ServicesContentPath | select-object -first 1
-				#Extracting the CommerceServices zip file Commerce Shops Services
-				Write-Host "Extracting CommerceServices from $commerceServicesZip to $PhysicalPath" -ForegroundColor Yellow ;
-				Expand-Archive $commerceServicesZip -DestinationPath $PhysicalPath -Force
-				Write-Host "Commerce OpsApi Services extraction completed" -ForegroundColor Green ;
+				$commerceServicesItem =  Get-Item $ServicesContentPath | select-object -first 1
+
+                if (Test-Path $commerceServicesItem -PathType Leaf){
+                    # Assume path to zip file passed in, extract zip to $PhysicalPath
+                    #Extracting the CommerceServices zip file Commerce Shops Services
+                Write-Host "Extracting CommerceServices from $commerceServicesItem to $PhysicalPath" -ForegroundColor Yellow ;
+                Expand-Archive $commerceServicesItem -DestinationPath $PhysicalPath -Force
+                }
+				else {
+                    # Assume path is to a published Commerce Engine folder. Copy the contents of the folder to the $PhysicalPath
+                    Write-Host "Copying the contents of CommerceServices from $commerceServicesItem to $PhysicalPath" -ForegroundColor Yellow ;
+                    Copy-Item -Path $commerceServicesItem -Destination $PhysicalPath -Force -Recurse
+                }
+				Write-Host "Commerce OpsApi Services copy/extraction completed" -ForegroundColor Green ;
 
 				$commerceServicesLogDir = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\logs")                
                 if(-not (Test-Path -Path $commerceServicesLogDir)) {                      
@@ -63,11 +74,17 @@ Function Invoke-DeployCommerceContentTask {
 				# Set the proper environment name                
 				$pathToJson  = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\config.json")
 				$originalJson = Get-Content $pathToJson -Raw  | ConvertFrom-Json
-				$originalJson.AppSettings.EnvironmentName = "AdventureWorksOpsApi"
-                if ($SiteHostHeaderName -ne "sxa.storefront.com") {
-                    $allowedOrigins = @("https://localhost:4200", "https://$SiteHostHeaderName")
-                    $originalJson.AppSettings.AllowedOrigins = $allowedOrigins 
+                if ($EnvironmentName -ne ""){
+                    $originalJson.AppSettings.EnvironmentName = $EnvironmentName
                 }
+                else {
+                    $originalJson.AppSettings.EnvironmentName = "AdventureWorksOpsApi"    
+                }
+				
+                
+                $allowedOrigins = @("https://localhost:4200", "https://$SiteHostHeaderName")
+                $originalJson.AppSettings.AllowedOrigins = $allowedOrigins 
+                
 				$originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
 
                 #Replace database name in Global.json
@@ -200,7 +217,7 @@ Function Invoke-DeployCommerceContentTask {
                 # Copy the the CommerceServices files to the $Name Services
 				Write-Host "Copying Commerce Services from $global:opsServicePath to $PhysicalPath" -ForegroundColor Yellow ;
 				Copy-Item -Path $global:opsServicePath -Destination $PhysicalPath -Force -Recurse
-				Write-Host "Commerce Shops Services extraction completed" -ForegroundColor Green ;
+				Write-Host "$($_) Services extraction completed" -ForegroundColor Green ;
 
 				$commerceServicesLogDir = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\logs")
 				if(-not (Test-Path -Path $commerceServicesLogDir)) {                      
@@ -214,22 +231,37 @@ Function Invoke-DeployCommerceContentTask {
 				# Set the proper environment name
 				$pathToJson  = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\config.json")
 				$originalJson = Get-Content $pathToJson -Raw | ConvertFrom-Json
+				if ($EnvironmentName -ne ""){
+                    $environment = $EnvironmentName
+                }
+                else {
+                $environment = "HabitatShops"
+                if ($Name -match "CommerceAuthoring"){
+                    $environment = "HabitatAuthoring"
+                }elseif ($Name -match "CommerceMinions"){
+                    $environment = "HabitatMinions"
+                }           
+                }
 				
-				$environment = "HabitatShops"
-				if ($Name -match "CommerceAuthoring"){
-					$environment = "HabitatAuthoring"
-				}elseif ($Name -match "CommerceMinions"){
-					$environment = "HabitatMinions"
-				}		
 				$originalJson.AppSettings.EnvironmentName = $environment
 				$originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
 			}               
             'SitecoreIdentityServer' {
 				Write-Host
-				# Extracting Sitecore.IdentityServer zip file
-				$commerceServicesZip =  Get-Item $ServicesContentPath | select-object -first 1
-				Write-Host "Extracting Sitecore.IdentityServer from $commerceServicesZip to $PhysicalPath" -ForegroundColor Yellow ;
-				Expand-Archive $commerceServicesZip -DestinationPath $PhysicalPath -Force
+				$commerceServicesItem = Get-Item $ServicesContentPath | select-object -first 1
+
+                   if (Test-Path $commerceServicesItem -PathType Leaf){
+                    # Assume path to zip file passed in, extract zip to $PhysicalPath
+                    #Extracting the CommerceServices zip file Commerce Shops Services
+                Write-Host "Extracting Sitecore.IdentityServer from $commerceServicesZip to $PhysicalPath" -ForegroundColor Yellow ;
+                Expand-Archive $commerceServicesItem -DestinationPath $PhysicalPath -Force
+                }
+                else {
+                    # Assume path is to a published Commerce Engine folder. Copy the contents of the folder to the $PhysicalPath
+                    Write-Host "Copying the contents of CommerceServices from $commerceServicesItem to $PhysicalPath" -ForegroundColor Yellow ;
+                    Copy-Item -Path $commerceServicesItem -Destination $PhysicalPath -Force -Recurse
+                }
+
 				Write-Host "Sitecore.IdentityServer extraction completed" -ForegroundColor Green ;
 
 				$commerceServicesLogDir = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\logs")

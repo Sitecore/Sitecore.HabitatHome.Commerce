@@ -43,15 +43,11 @@
     "CommerceShopsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceShops'))]",
     "CommerceAuthoringPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceAuthoring'))]",
     "CommerceMinionsPhysicalPath": "[joinpath(parameter('WebRoot'),  variable('CommerceMinions'))]",
-    "HabitatEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatShops',shopName='Storefront')",
-    "AWEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='AdventureWorksShops',shopName='Storefront')",
-    "InitializeHabitatParam": "/commerceops/InitializeEnvironment(environment='HabitatShops')",
-    "InitializeAWParam": "/commerceops/InitializeEnvironment(environment='AdventureWorksShops')",
+    "HabitatHomeEnsureSyncDefaultContentParams": "/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatHomeShops',shopName='Storefront')",
+    "InitializeHabitatHomeParam": "/commerceops/InitializeEnvironment(environment='HabitatHomeShops')",
     "UrlCommerceShopsServicesBootstrap": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), '/commerceops/Bootstrap()'))]",
-    "UrlHabitatEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('HabitatEnsureSyncDefaultContentParams'))]",
-    "UrlAWEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('AWEnsureSyncDefaultContentParams')))]",
-    "UrlHabitatCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeHabitatParam')))]",
-    "UrlAWCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeAWParam')))]"
+    "UrlHabitatEnsureSyncDefaultContentPaths": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('HabitatHomeEnsureSyncDefaultContentParams'))]",
+    "UrlHabitatHomeCommerceShopsServicesInitializeEnvironment": "[concat('https://localhost:', concat(parameter('CommerceShopsServicesPort'), variable('InitializeHabitatHomeParam')))]"
   },
   "Modules": ["InitializeCommerce"],
   "Tasks": {
@@ -92,16 +88,10 @@
     //        "UrlEnsureSyncDefaultContentPaths": "[variable('UrlAWEnsureSyncDefaultContentPaths')]"
     //      }
     //    },
-    "InitializeHabitatCommerceServices": {
+    "InitializeHabitatHomeCommerceServices": {
       "Type": "InitializeCommerceServices",
       "Params": {
-        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlHabitatCommerceShopsServicesInitializeEnvironment')]"
-      }
-    },
-    "InitializeAWCommerceServices": {
-      "Type": "InitializeCommerceServices",
-      "Params": {
-        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlAWCommerceShopsServicesInitializeEnvironment')]"
+        "UrlCommerceShopsServicesInitializeEnvironment": "[variable('UrlHabitatHomeCommerceShopsServicesInitializeEnvironment')]"
       }
     },
     "EnableCsrfValidation": {

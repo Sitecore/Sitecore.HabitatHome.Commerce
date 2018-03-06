@@ -32,7 +32,11 @@
     "WebRoot":{
       "Type":"string",
       "Description":"The physical path of the configured Web Root for the environment"
-  },
+    },
+    "SolutionName":{
+    "Type": "string",
+        "Description": "Name used for Environment Prefix."
+    },
     "InstallDir": {
       "Type": "string",
       "Description": "The sitecore site content path."
@@ -146,9 +150,9 @@
       "Type": "string",
       "Description": "String to add at the end of 'SitecoreBizFx' to make it unique to the instance"
     },
-    "SitecoreIdentityServerZipPath": {
+    "SitecoreIdentityServerPath": {
       "Type": "string",
-      "Description": "SitecoreIdentityServer Zip Path"
+      "Description": "SitecoreIdentityServer Path"
     },
     "UserAccount": {
       "Type": "psobject",
@@ -280,9 +284,10 @@
         "CommerceShopsServicesPort": "[parameter('CommerceShopsServicesPort')]",
         "CommerceAuthoringServicesPort": "[parameter('CommerceAuthoringServicesPort')]",
         "CommerceMinionsServicesPort": "[parameter('CommerceMinionsServicesPort')]",
-        "SitecoreCommerceEngineZipPath": "[parameter('SitecoreCommerceEngineZipPath')]",
+        "SitecoreCommerceEnginePath": "[parameter('SitecoreCommerceEnginePath')]",
         "UserAccount": "[parameter('UserAccount')]",
-		    "BraintreeAccount": "[parameter('BraintreeAccount')]"
+		    "BraintreeAccount": "[parameter('BraintreeAccount')]",
+        "SolutionName": "[parameter('SolutionName')]"
       }
     },
     "DeploySitecoreBizFx": {
@@ -301,7 +306,7 @@
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\SitecoreIdentityServer\\SitecoreIdentityServer.json')]",
         "WebRoot":"[parameter('WebRoot')]",
-        "SitecoreIdentityServerZipPath": "[parameter('SitecoreIdentityServerZipPath')]",
+        "SitecoreIdentityServerPath": "[parameter('SitecoreIdentityServerPath')]",
         "SitecoreDbServer": "[parameter('SitecoreDbServer')]",
         "SitecoreCoreDbName": "[parameter('SitecoreCoreDbName')]",
         "UserAccount": "[parameter('UserAccount')]",

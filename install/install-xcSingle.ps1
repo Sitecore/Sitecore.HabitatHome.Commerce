@@ -148,7 +148,8 @@ function Install-Prerequisites {
 
         # Install Url Rewrite and Web Deploy 3.6
         set-alias wpi "$env:ProgramFiles\Microsoft\Web Platform Installer\WebpiCmd-x64.exe"
-        wpi /install /Products:UrlRewrite2, WebDeploy36NoSMO
+        wpi /install /Products:UrlRewrite2
+        wpi /install /Products:WebDeploy36NoSMO
 
 
 
@@ -215,7 +216,7 @@ function Install-Prerequisites {
         $cmd = Join-Path $assets.downloadFolder "dotnet-sdk-2.0.0-win-x64.exe"
         & "$cmd" $params
         
-        Copy-Item $(Join-Path $sifCommerceRoot "Modules") $resourcePath -Recurse -Force
+        #Copy-Item $(Join-Path $sifCommerceRoot "Modules") $resourcePath -Recurse -Force
     }
 
     Function Stop-XConnect {
@@ -253,6 +254,7 @@ Function Install-Commerce {
         BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
         webRoot                            = $site.webRoot
         SitePrefix                         = $site.prefix
+        SolutionName                       = "HabitatHome"
         SiteName                           = $site.hostName
         SiteHostHeaderName                 = $commerce.storefrontHostName 
         InstallDir                         = $(Join-Path $site.webRoot $site.hostName)
@@ -277,10 +279,10 @@ Function Install-Commerce {
         CommerceShopsServicesPort          = "5005"
         CommerceAuthoringServicesPort      = "5000"
         CommerceMinionsServicesPort        = "5010"     
-        SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\Commerce.Engine")
-        SitecoreBizFxServicesContentPath   = $(Join-Path $resourcePath "Publish\Sitecore.BizFX")
+        SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\Habitat.Commerce.Engine")
+        SitecoreBizFxServicesContentPath   = $(Join-Path $resourcePath "Publish\Habitat.Commerce.BizFX")
         SitecoreBizFxPostFix               = $site.prefix
-        SitecoreIdentityServerZipPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore.IdentityServer.1.*.zip" -Recurse)
+        SitecoreIdentityServerPath      = $(Join-Path $resourcePath "Publish\Habitat.Commerce.IdentityServer")
         CommerceEngineCertificatePath      = $(Join-Path -Path $assets.certificatesPath -ChildPath "habitat.dev.local.xConnect.Client.crt" )    
         SiteUtilitiesSrc                   = $(Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "SiteUtilityPages")
         CommerceConnectModuleFullPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore Commerce Connect*.zip" -Recurse  )
