@@ -118,10 +118,6 @@
         "ServiceUrl": "https://localhost:5000"
       },
       {
-        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
-      },
-      {
         "$type": "Sitecore.Commerce.Core.GlobalEnvironmentPolicy, Sitecore.Commerce.Core",
         "Languages": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
@@ -474,16 +470,6 @@
         "EnableGuestCheckout": true,
         "EnableTermsAndConditions": true,
         "MinimumOrderQuantity": 1.0
-      },
-      {
-        "$type": "Sitecore.Commerce.Plugin.Tax.GlobalTaxPolicy, Sitecore.Commerce.Plugin.Tax",
-        "DefaultCartTaxRate": 0.1,
-        "DefaultItemTaxRate": 0.1,
-        "TaxCalculationEnabled": true,
-        "PriceIncudesTax": false,
-        "CalculateTaxBasedOn": "ShippingAddress",
-        "ShippingTaxClass": "CartItems",
-        "RoundAtSubTotal": false
       },
       {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",

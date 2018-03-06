@@ -9,7 +9,7 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
-        "Host": "sxa.storefront.com",
+        "Host": "habitat.dev.local",
         "SitecoreDatabase": "master",
         "UserName": "admin",
         "Domain": "sitecore",

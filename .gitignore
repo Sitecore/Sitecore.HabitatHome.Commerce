@@ -41,3 +41,7 @@ BuiltFiles_*.txt
 /install/set-installation-overrides.ps1
 InstallUtil.InstallLog
 /install/assets/Resources/Modules
+
+/FrontEnd/**/node_modules
+/node_modules
+/src/**/logs

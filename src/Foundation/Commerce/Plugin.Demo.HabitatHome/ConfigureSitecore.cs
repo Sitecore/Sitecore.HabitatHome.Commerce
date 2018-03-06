@@ -30,7 +30,7 @@
                             d =>
                             {
                                 d.Add<InitializeCatalogBlock>()
-                                    //.Add<InitializeInventoryBlock>() - todo: add block when inventory zip is available
+                                    .Add<InitializeInventoryBlock>()
                                     .Add<InitializeEnvironmentPricingBlock>()
                                     .Add<InitializeEnvironmentPromotionsBlock>();
                             })
