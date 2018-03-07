@@ -86,7 +86,7 @@
 
             var book =
                 await this._addBookPipeline.Run(
-                    new AddPromotionBookArgument("HabitatHomet_PromotionBook")
+                    new AddPromotionBookArgument("HabitatHome_PromotionBook")
                         {
                             DisplayName = "HabitatHome Promotion Book",
                             Description = "This is the HabitatHome promotion book"
