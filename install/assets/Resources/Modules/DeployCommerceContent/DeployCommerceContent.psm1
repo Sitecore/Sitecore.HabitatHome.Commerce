@@ -81,8 +81,8 @@ Function Invoke-DeployCommerceContentTask {
                     $originalJson.AppSettings.EnvironmentName = "AdventureWorksOpsApi"    
                 }
 				
-                
-                $allowedOrigins = @("https://localhost:4200", "https://$SiteHostHeaderName")
+                #TODO: Should take a list of allowed origins in parameters
+                $allowedOrigins = @("https://localhost:4200", "https://$SiteHostHeaderName","https://habitat.dev.local","https://habitathome.dev.local")
                 $originalJson.AppSettings.AllowedOrigins = $allowedOrigins 
                 
                 $originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
