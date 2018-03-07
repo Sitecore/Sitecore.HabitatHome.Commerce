@@ -78,7 +78,7 @@
 
                 // BOOK
                 var book = await this._addPriceBookPipeline.Run(
-                    new AddPriceBookArgument("Habitat_PriceBook")
+                    new AddPriceBookArgument("HabitatHome_PriceBook")
                     {
                         ParentBook = string.Empty,
                         Description = "Habitat Home price book",
@@ -93,7 +93,7 @@
 
                 await this.CreateTagsCard(book, context);
 
-                await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);
+                await this.AssociateCatalogToBook(book.Name, "HabitatHome_Master", context);
             }
             catch (Exception ex)
             {
@@ -115,7 +115,7 @@
             var date = DateTimeOffset.UtcNow;
 
             // CARD
-            var adventureCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_PriceCard"), context);
+            var adventureCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_PriceCard"), context);
 
             // READY FOR APPROVAL SNAPSHOT
             adventureCard = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(adventureCard, new PriceSnapshotComponent(date.AddMinutes(-10))), context);
@@ -184,7 +184,7 @@
             var date = DateTimeOffset.UtcNow;
 
             // VARIANTS CARD
-            var adventureVariantsCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_VariantsPriceCard"), context);
+            var adventureVariantsCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_VariantsPriceCard"), context);
 
             // READY FOR APPROVAL SNAPSHOT
             adventureVariantsCard = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(adventureVariantsCard, new PriceSnapshotComponent(date.AddMinutes(-10))), context);
@@ -244,7 +244,7 @@
         private async Task CreateTagsCard(PriceBook book, CommercePipelineExecutionContext context)
         {
             // TAGS CARD
-            var card = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_TagsPriceCard"), context);
+            var card = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_TagsPriceCard"), context);
 
             // TAGS CARD FIRST SNAPSHOT
             card = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(card, new PriceSnapshotComponent(DateTimeOffset.UtcNow)), context);

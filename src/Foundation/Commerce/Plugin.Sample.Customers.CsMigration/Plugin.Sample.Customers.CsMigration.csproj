@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.1.4" />
     <PackageReference Include="System.Data.SqlClient" Version="4.3.0" />
   </ItemGroup>
 
