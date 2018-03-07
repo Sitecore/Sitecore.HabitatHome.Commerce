@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.1.3" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.1.6" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.1.3" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
