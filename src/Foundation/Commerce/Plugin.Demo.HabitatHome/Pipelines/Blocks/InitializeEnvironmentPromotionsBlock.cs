@@ -113,7 +113,7 @@
             await this.CreateLine5PctOffCouponPromotion(book, context);
             await this.CreateLine5OffCouponPromotion(book, context);
             await this.CreateLineLaptopPricePromotion(book, context);
-            await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);
+            await this.AssociateCatalogToBook(book.Name, "HabitatHome_Master", context);
 
             return arg;
         }
@@ -319,7 +319,7 @@
             promotion = await this._addPromotionItemPipeline.Run(
                             new PromotionItemArgument(
                                 promotion,
-                                "Habitat_Master|7042071|"),
+                                "HabitatHome_Master|7042071|"),
                             context);
 
             await this._addBenefitPipeline.Run(
@@ -596,7 +596,7 @@
             promotion = await this._addPromotionItemPipeline.Run(
                             new PromotionItemArgument(
                                 promotion,
-                                "Habitat_Master|6042588|"),
+                                "HabitatHome_Master|6042588|"),
                             context);
 
             await this._addBenefitPipeline.Run(
@@ -610,7 +610,7 @@
                             Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "PercentOff", Value = "50", IsOperator = false, DisplayType = "System.Decimal" },
-                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
+                                                 new PropertyModel { Name = "TargetItemId", Value = "HabitatHome_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
                                              }
                         }),
                 context);
@@ -639,7 +639,7 @@
             promotion = await this._addPromotionItemPipeline.Run(
                             new PromotionItemArgument(
                                 promotion,
-                                "Habitat_Master|6042178|"),
+                                "HabitatHome_Master|6042178|"),
                             context);
 
             await this._addBenefitPipeline.Run(
@@ -653,7 +653,7 @@
                             Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "SellPrice", Value = "5", IsOperator = false, DisplayType = "System.Decimal" },
-                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042178|", IsOperator = false, DisplayType = "System.String" }
+                                                 new PropertyModel { Name = "TargetItemId", Value = "HabitatHome_Master|6042178|", IsOperator = false, DisplayType = "System.String" }
                                              }
                         }),
                 context);
@@ -683,7 +683,7 @@
             promotion = await this._addPromotionItemPipeline.Run(
                             new PromotionItemArgument(
                                 promotion,
-                                "Habitat_Master|6042588|"),
+                                "HabitatHome_Master|6042588|"),
                             context);
 
             await this._addBenefitPipeline.Run(
@@ -697,7 +697,7 @@
                             Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "AmountOff", Value = "5", IsOperator = false, DisplayType = "System.Decimal" },
-                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
+                                                 new PropertyModel { Name = "TargetItemId", Value = "HabitatHome_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
                                              }
                         }),
                 context);
@@ -727,7 +727,7 @@
             promotion = await this._addPromotionItemPipeline.Run(
                             new PromotionItemArgument(
                                 promotion,
-                                "Habitat_Master|6042179|"),
+                                "HabitatHome_Master|6042179|"),
                             context);
 
             await this._addBenefitPipeline.Run(
@@ -741,7 +741,7 @@
                             Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "PercentOff", Value = "50", IsOperator = false, DisplayType = "System.Decimal" },
-                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042179|", IsOperator = false, DisplayType = "System.String" }
+                                                 new PropertyModel { Name = "TargetItemId", Value = "HabitatHome_Master|6042179|", IsOperator = false, DisplayType = "System.String" }
                                              }
                         }),
                 context);

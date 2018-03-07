@@ -52,7 +52,7 @@
                 return arg;
             }
 
-            using (var stream = new FileStream(GetPath("Habitat.zip"), FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(GetPath("HabitatHome.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
 
