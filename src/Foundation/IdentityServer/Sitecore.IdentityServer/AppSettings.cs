@@ -8,6 +8,7 @@ namespace Sitecore.IdentityServer
 {
     using System.Collections.Generic;
     using IdentityServer4.Models;
+    using Sitecore.IdentityServer.Configuration;
 
     /// <summary>
     /// Represents Settings frm appSettings.json
@@ -77,6 +78,14 @@ namespace Sitecore.IdentityServer
         /// The name of the identifier server certificate store.
         /// </value>
         public string IDServerCertificateStoreName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the roles in roles.
+        /// </summary>
+        /// <value>
+        /// The roles in roles.
+        /// </value>
+        public RolesInRoles RolesInRoles { get; set; }
     }
 
     /// <summary>

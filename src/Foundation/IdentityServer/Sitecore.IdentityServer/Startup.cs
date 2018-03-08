@@ -20,11 +20,14 @@ namespace Sitecore.IdentityServer
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
+    using IdentityServer4.Services;
+    using Sitecore.IdentityServer.Services;
 
     using Serilog;
     using Serilog.Events;
 
     using Validators;
+    using System.Linq;
 
     /// <summary>
     /// Defines the application startup.
@@ -93,10 +96,15 @@ namespace Sitecore.IdentityServer
                                               ApplicationName = appSettings.SitecoreMembershipOptions.ApplicationName,
                                               UseRoleProviderSource = appSettings.SitecoreMembershipOptions.UseRoleProviderSource
                                           })
+                
                 .AddResourceOwnerValidator<SitecoreResourceOwnerValidator>();
 
             services.AddTransient<IRedirectUriValidator, WildcardRedirectUriValidator>();
 
+            var service = services.First(s => s.ServiceType == typeof(IClaimsService));
+            services.Remove(service);
+            services.Add(new ServiceDescriptor(typeof(IClaimsService), typeof(SitecoreClaimsService), ServiceLifetime.Transient));
+          
             if (this._hostEnv.IsDevelopment())
             {
                 idServices.AddDeveloperSigningCredential();
