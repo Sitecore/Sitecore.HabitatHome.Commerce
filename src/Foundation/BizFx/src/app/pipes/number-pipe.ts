@@ -1,6 +1,5 @@
 import { Inject, LOCALE_ID, Pipe, PipeTransform } from '@angular/core';
-import { formatNumber } from '../i18n/format-number';
-import { NumberFormatStyle, findCurrencySymbol, getLocaleCurrencyName, getLocaleCurrencySymbol } from '../i18n/locale-data-api';
+import { NumberFormatStyle, findCurrencySymbol, getLocaleCurrencyName, getLocaleCurrencySymbol, formatNumber } from '@sitecore/bizfx';
 import { InvalidPipeArgumentError } from './invalid-pipe-argument-error';
 
 /*

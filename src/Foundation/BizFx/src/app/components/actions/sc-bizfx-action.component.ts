@@ -7,8 +7,9 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 import { ScDialogService } from '@speak/ng-bcl/dialog';
 
-import { ScBizFxViewsService, getPropertyValidators } from '@sitecore/bizfx';
+import { ScBizFxContextService, ScBizFxViewsService, getLocaleNumberSymbol, NumberSymbol, parseDecimalNumber } from '@sitecore/bizfx';
 import { ScBizFxView, ScBizFxProperty, ScBizFxAction, ScBizFxActionMessage } from '@sitecore/bizfx';
+import { getPropertyValidators } from '@sitecore/bizfx';
 
 @Component({
   selector: 'sc-bizfx-action',
@@ -27,6 +28,7 @@ export class ScBizFxActionComponent implements OnInit {
   loadingView = false;
 
   constructor(
+    public bizFxContext: ScBizFxContextService,
     private viewsService: ScBizFxViewsService,
     private dialogService: ScDialogService,
     private fb: FormBuilder) {
@@ -113,8 +115,10 @@ export class ScBizFxActionComponent implements OnInit {
     const group: any = {};
 
     properties.forEach(property => {
-      const validators = getPropertyValidators(property);
-      group[property.Name] = new FormControl({ value: property.Value || null, disabled: property.IsReadOnly }, validators);
+      const validators = getPropertyValidators(property, this.bizFxContext.language);
+      const control = new FormControl({ value: property.Value || null, disabled: property.IsReadOnly }, validators);
+      this.transformProperty(property, control);
+      group[property.Name] = control;
     });
 
     return group;
@@ -134,14 +138,56 @@ export class ScBizFxActionComponent implements OnInit {
   }
 
   protected mapProperty(property: ScBizFxProperty, control: AbstractControl): any {
-    if (control) {
-      if (property.OriginalType === 'System.DateTimeOffset' && Date.parse(control.value)) {
-        property.Value = (control.value as Date).toISOString();
-      } else if (!control.value && typeof control.value === 'string') {
-        property.Value = control.value.trim();
-      } else {
-        property.Value = control.value;
-      }
+    if (!control) {
+      return;
+    }
+
+    switch (property.OriginalType) {
+      case 'System.DateTimeOffset':
+        if (Date.parse(control.value)) {
+          property.Value = (control.value as Date).toISOString();
+        }
+
+        break;
+      case 'System.String':
+        if (control.value != null) {
+          property.Value = control.value.trim();
+        }
+
+        break;
+      case 'System.Decimal':
+        const currencyDecimal = getLocaleNumberSymbol(this.bizFxContext.language, NumberSymbol.CurrencyDecimal);
+        const currencyGroup = getLocaleNumberSymbol(this.bizFxContext.language, NumberSymbol.CurrencyGroup);
+        const options = [currencyGroup, currencyDecimal];
+        property.Value = parseDecimalNumber(control.value, options);
+
+        break;
+      default:
+        if (control.value != null) {
+          property.Value = control.value;
+        }
+
+        break;
+    }
+  }
+
+  protected transformProperty(property: ScBizFxProperty, control: FormControl) {
+    switch (property.OriginalType) {
+      case 'System.DateTimeOffset':
+        const date = new Date(property.Value);
+        control.setValue(date);
+
+        break;
+      case 'System.Boolean':
+        let checked = false;
+        if (property.Value !== undefined && property.Value !== null) {
+          checked = property.Value.toLowerCase() === 'true';
+        }
+        control.setValue(checked);
+
+        break;
+      default:
+        break;
     }
   }
 }

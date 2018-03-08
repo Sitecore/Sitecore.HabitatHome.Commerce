@@ -1,5 +1,5 @@
 import { Inject, LOCALE_ID, Pipe, PipeTransform } from '@angular/core';
-import { formatDate } from '../i18n/format-date';
+import { formatDate } from '@sitecore/bizfx';
 import { InvalidPipeArgumentError } from './invalid-pipe-argument-error';
 
 export const ISO8601_DATE_REGEX =

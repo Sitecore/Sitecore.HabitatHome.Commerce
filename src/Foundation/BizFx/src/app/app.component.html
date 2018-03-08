@@ -1,12 +1,16 @@
 <sc-progress-indicator-panel [show]="(nav.loading || env.loading || languages.loading) && !isTaskPage">
   <sc-page [showNav]="isNavigationShown">
     <div scPageHeader>
-      <sc-global-header appName="{{appName}}" pageTitle="{{pageTitle}}" [(show)]="isNavigationShown">
-        <a [routerLink]="routes[0].Link" scGlobalLogo></a>
-        <div gh-account>
-          <sc-bizfx-login></sc-bizfx-login>
-        </div>
-      </sc-global-header>
+        <sc-global-header appName="{{appName}}" pageTitle="{{pageTitle}}" [(show)]="isNavigationShown">
+            <div gh-logo>
+                <a [routerLink]="routes[0].Link">
+                  <i class="si si-home si-l homeicon"></i>
+                </a>
+            </div>   
+            <div gh-account>
+              <sc-bizfx-login></sc-bizfx-login>
+            </div>
+        </sc-global-header>
     </div>
 
     <aside [class.hidden-xs-up]="isTaskPage" scPageNav>

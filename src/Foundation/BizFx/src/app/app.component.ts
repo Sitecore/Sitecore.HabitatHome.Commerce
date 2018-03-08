@@ -8,6 +8,15 @@ import { ScBizFxViewsService, ScBizFxAuthService, ScBizFxContextService } from '
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'app-root',
+  styles: [`
+  i:hover {
+    color: gray;
+  }
+
+  .homeicon {
+    color: white
+  }
+`],
   templateUrl: './app.component.html'
 })
 

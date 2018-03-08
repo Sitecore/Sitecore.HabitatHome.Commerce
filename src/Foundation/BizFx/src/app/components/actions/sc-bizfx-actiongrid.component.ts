@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormArray, FormBuilder, FormControl, Validators } from '@angular/forms';
 
-import { ScBizFxProperty, ScBizFxView, getPropertyValidators, deepClone } from '@sitecore/bizfx';
+import { ScBizFxContextService, ScBizFxProperty, ScBizFxView, getPropertyValidators, deepClone } from '@sitecore/bizfx';
 
 @Component({
     selector: 'sc-bizfx-actiongrid',
@@ -18,6 +18,7 @@ export class ScBizFxActionGridComponent implements OnInit {
     children: ScBizFxView[] = [];
 
     constructor(
+        public bizFxContext: ScBizFxContextService,
         private fb: FormBuilder) {
     }
 
@@ -58,7 +59,7 @@ export class ScBizFxActionGridComponent implements OnInit {
 
         const cloneGroup: any = {};
         clone.Properties.forEach(property => {
-            const validators = getPropertyValidators(property);
+            const validators = getPropertyValidators(property, this.bizFxContext.language);
             cloneGroup[property.Name] = new FormControl({ value: property.Value || null, disabled: property.IsReadOnly }, validators);
         });
         this.grid.push(this.fb.group(cloneGroup));

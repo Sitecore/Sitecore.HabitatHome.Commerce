@@ -62,7 +62,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 import { DecimalPipe, CurrencyPipe } from './pipes/number-pipe';
 import { DatePipe } from './pipes/date-pipe';
-import { registerLocaleData } from './i18n/locale-data';
+import { registerLocaleData } from '@sitecore/bizfx';
 
 /* Locales */
 import localeFr from '../locales/fr';

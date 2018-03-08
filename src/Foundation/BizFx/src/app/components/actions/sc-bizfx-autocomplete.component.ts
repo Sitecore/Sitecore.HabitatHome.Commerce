@@ -15,7 +15,7 @@ import 'rxjs/add/observable/fromEvent';
 
 import { CreateNewAutocompleteGroup, SelectedAutocompleteItem, NgAutocompleteComponent, AutocompleteGroup } from 'ng-auto-complete';
 
-import { ScBizFxView } from '@sitecore/bizfx';
+import { ScBizFxView, ScBizFxProperty } from '@sitecore/bizfx';
 import {
     ScBizFxContextService,
     ScBizFxBaseService,
@@ -36,9 +36,9 @@ import {
         '::ng-deep .ng-autocomplete-placeholder{display:none}']
 })
 
-export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements AfterViewInit {
+export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements OnInit, AfterViewInit {
     @Input() view: ScBizFxView;
-    @Input() property;
+    @Input() property: ScBizFxProperty;
     term: string;
     results: Observable<ScBizFxView>;
     resultsView: ScBizFxView;
@@ -65,6 +65,13 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
         super(http, bizFxContext, authService);
     }
 
+    ngOnInit(): void {
+        if (this.property.Value !== undefined) {
+            this.group = [CreateNewAutocompleteGroup(this.property.Value, 'completer', [],
+            { titleKey: 'title', childrenKey: null })];
+        }
+    }
+
     ngAfterViewInit(): void {
         this.doSearch = false;
         this.haveSearched = false;
@@ -83,7 +90,7 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
             let SearchPolicy = '';
             this.PolicyScope = '';
             // we need to get the search scope
-            const Policies = <any>this.property;
+            const Policies = <any>this.property.Policies;
             for (let i = 0; i < Policies.length; i++) {
                 if (Policies[i]['@odata.type'] !== undefined &&
                     Policies[i]['@odata.type'] === '#Sitecore.Commerce.Plugin.Search.SearchScopePolicy') {
@@ -136,7 +143,7 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
         if (this.data !== undefined && this.data['Models'] !== undefined) {
             searchResults = this.data['Models'][0]['ChildViews'];
             const searchValues = [];
-            const Policies = <any>this.property;
+            const Policies = <any>this.property.Policies;
             let variantSearch = false;
             for (let i = 0; i < Policies.length; i++) {
                 if (Policies[i].PolicyId === 'EntityType') {
@@ -154,7 +161,7 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
                     const properties = entry['Properties'];
                     for (const prop of properties) {
                         if (prop['DisplayName'] === 'Display Name') {
-                            searchValues.push({ 'title': prop['Value'] + ' | ' + entry['EntityId'], 'id': entry['EntityId'] });
+                            searchValues.push({ 'title': prop['Value'], 'id': entry['EntityId'] });
                             const len = entry['Properties'].length;
                             let variantDisplayNames = -1;
                             let variantIds = -1;
@@ -166,11 +173,17 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
                                     }
                                     if (entry['Properties'][i] !== undefined && entry['Properties'][i].Name === 'variantdisplayname') {
                                         variantDisplayNames = i;
-                                        hasVariants = true;
+                                        if (entry['Properties'][i] && entry['Properties'][i].Value !== null
+                                          && entry['Properties'][i].Value !== '') {
+                                          hasVariants = true;
+                                        }
                                     }
                                     if (entry['Properties'][i] !== undefined && entry['Properties'][i].Name === 'variantid') {
                                         variantIds = i;
-                                        hasVariants = true;
+                                        if (entry['Properties'][i] && entry['Properties'][i].Value !== null
+                                          && entry['Properties'][i].Value !== '') {
+                                          hasVariants = true;
+                                        }
                                     }
                                 }
                                 // if we have variants, push those results.
@@ -179,9 +192,8 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
                                     const variantIdsArray = (String)(entry['Properties'][variantIds].Value).split('|');
                                     for (let i = 0; i < variantDisplayNameArray.length; i++) {
                                         searchValues.push({
-                                            'title': '-' + variantDisplayNameArray[i]
-                                                + ' (' + variantIdsArray[i] + ')' + ' | '
-                                                + entry['EntityId'], 'id': entry['EntityId'] + '|' + variantIdsArray[i]
+                                            'title': '  -> ' + variantDisplayNameArray[i],
+                                            'id': entry['EntityId'] + '|' + variantIdsArray[i]
                                         });
                                     }
                                 }
@@ -199,7 +211,7 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
                 const ele = (<any>document.getElementsByClassName('ng-dropdown open'))[0];
                 ele.style.visibility = 'show';
                 scopedCompleter.TriggerChange();
-            }, 1);
+            }, 5);
         }
     }
 
@@ -216,6 +228,6 @@ export class ScBizFxAutocompleteComponent extends ScBizFxBaseService implements 
                 && item.item.id !== undefined && item.item.id !== null) {
                 inputElement.value = <string>item.item.id;
             }
-        }, 1);
+        }, 5);
     }
 }

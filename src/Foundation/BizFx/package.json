@@ -60,7 +60,7 @@
     "@angular-devkit/core": "~0.0.27",
     "@angular/compiler-cli": "~4.4.6",
     "@angular/language-service": "~4.4.6",
-    "@compodoc/compodoc": "~1.0.5",
+    "@compodoc/compodoc": "1.0.5",
     "@types/jasmine": "~2.8.4",
     "@types/node": "~9.3.0",
     "codelyzer": "~4.0.2",

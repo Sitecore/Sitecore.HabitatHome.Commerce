@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, ElementRef, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 import { Angular2Csv } from 'angular2-csv/Angular2-csv';
@@ -11,28 +11,11 @@ import { ScBizFxProperty } from '@sitecore/bizfx';
   templateUrl: './sc-bizfx-actionproperty.component.html',
 })
 
-export class ScBizFxActionPropertyComponent implements OnInit, AfterViewInit {
+export class ScBizFxActionPropertyComponent implements AfterViewInit {
   @Input() property: ScBizFxProperty;
   @Input() actionForm: FormGroup;
 
   constructor(private el: ElementRef, private cd: ChangeDetectorRef) { }
-
-  ngOnInit() {
-    // Handle initial checkbox state in dynamic form
-    // https://github.com/angular/material2/issues/4096
-    if (this.property.OriginalType === 'System.Boolean') {
-      let checked = false;
-      if (this.property.Value !== undefined && this.property.Value !== null) {
-        checked = this.property.Value.toLowerCase() === 'true';
-      }
-      this.actionForm.controls[this.property.Name].setValue(checked);
-    }
-
-    if (this.property.OriginalType === 'System.DateTimeOffset' || this.property.OriginalType === 'System.DateTime') {
-      const date = new Date(this.property.Value);
-      this.actionForm.controls[this.property.Name].setValue(date);
-    }
-  }
 
   ngAfterViewInit(): void {
     this.resetSelectedIndex();
@@ -41,7 +24,6 @@ export class ScBizFxActionPropertyComponent implements OnInit, AfterViewInit {
   get propertyControl() { return this.actionForm.get(this.property.Name); }
 
   get isValid() {
-    this.cd.detach();
     if (this.property !== undefined && this.property.UiType === 'Autocomplete') {
       const inputElement = (<HTMLInputElement>document.getElementsByClassName('ng-autocomplete-input')[0]);
       if (inputElement !== undefined && inputElement.value.length > 0) {
@@ -52,7 +34,6 @@ export class ScBizFxActionPropertyComponent implements OnInit, AfterViewInit {
     }
 
     const control = this.propertyControl;
-    setTimeout(() => { this.cd.reattach(); });
     return control.valid || control.pristine;
   }
 

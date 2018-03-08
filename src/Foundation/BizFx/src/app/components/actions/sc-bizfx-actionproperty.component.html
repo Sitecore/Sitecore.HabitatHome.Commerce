@@ -6,7 +6,7 @@
 
       <div *ngSwitchCase="'Autocomplete'">
         <label for="property-{{property.Name}}">{{property.DisplayName}}</label>
-        <sc-bizfx-autocomplete [property]="property.Policies"></sc-bizfx-autocomplete>
+        <sc-bizfx-autocomplete [property]="property"></sc-bizfx-autocomplete>
       </div>
 
       <div *ngSwitchCase="'SelectList'" class="form-group">

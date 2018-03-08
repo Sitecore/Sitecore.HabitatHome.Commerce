@@ -1,4 +1,4 @@
-import { registerLocaleData } from '../app/i18n/locale-data';
+import { registerLocaleData } from '@sitecore/bizfx';
 
 export const locale_af = [
   'af',
