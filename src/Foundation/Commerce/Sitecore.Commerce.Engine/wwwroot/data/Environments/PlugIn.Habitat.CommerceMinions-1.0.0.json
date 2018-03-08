@@ -24,10 +24,10 @@
   },
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
-  "Id": "Entity-CommerceEnvironment-HabitatHomeMinions",
+  "Id": "Entity-CommerceEnvironment-HabitatMinions",
   "Version": 1,
   "IsPersisted": false,
-  "Name": "HabitatHomeMinions",
+  "Name": "HabitatMinions",
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [

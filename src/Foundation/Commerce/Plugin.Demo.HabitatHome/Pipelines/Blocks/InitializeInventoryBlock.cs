@@ -43,7 +43,7 @@
         /// <returns></returns>
         public override async Task<string> Run(string arg, CommercePipelineExecutionContext context)
         {
-            var artifactSet = "Environment.HabitatHome.Catalog-1.0";
+            var artifactSet = "Environment.Habitat.Catalog-1.0";
 
             // Check if this environment has subscribed to this Artifact Set
             if (!context.GetPolicy<EnvironmentInitializationPolicy>().InitialArtifactSets.Contains(artifactSet))
@@ -51,7 +51,7 @@
                 return arg;
             }
 
-            using (var stream = new FileStream(this.GetPath("HabitatHome_Inventory.zip"), FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(this.GetPath("Habitat_Inventory.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
                 await this.ImportInventorySetsCommand.Process(context.CommerceContext, file, CatalogConstants.ImportMode.Replace, 10);

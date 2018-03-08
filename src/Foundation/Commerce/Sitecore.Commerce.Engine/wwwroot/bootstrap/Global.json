@@ -30,8 +30,8 @@
         "EnvironmentList": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
-            "HabitatHomeAuthoring",
-            "HabitatHomeShops"
+            "HabitatAuthoring",
+            "HabitatShops"
           ]
         }
       },
