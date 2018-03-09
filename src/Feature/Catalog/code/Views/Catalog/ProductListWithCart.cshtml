@@ -145,8 +145,6 @@
                                     <label class="quantity-label">@quantityLabel</label>
                                     <div class="quantity-input">
                                         <button type="button" class="decrease" style="display: none"></button>
-                                        @Html.TextBox("quantity1", new { data_bind = "attr: {value: CatalogName}", @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
-                                        @Html.TextBoxFor(model => model.CurrentCatalogItemId, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
                                         <input value="1" class="add-to-cart-qty-input" data-val="true" data-val-number="The field Quantity must be a number." data-val-required="The Quantity field is required." id="Quantity" max="100" min="1" name="Quantity" required="required" type="number">
                                         <button type="button" class="increase" style="display: none"></button>
                                     </div>
