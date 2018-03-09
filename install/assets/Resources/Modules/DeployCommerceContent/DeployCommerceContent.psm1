@@ -295,7 +295,8 @@ Function Invoke-DeployCommerceContentTask {
                 if ($CommerceAuthoringServicesPort -ne "5000") {
                     $pathToJson = $(Join-Path -Path $PhysicalPath -ChildPath "assets\config.json")
                     $originalJson = Get-Content $pathToJson -Raw  | ConvertFrom-Json
-                    $originalJson.EngineUri = $originalJson.EngineUri.replace("5000", $CommerceAuthoringServicesPort)                    
+                    $originalJson.EngineUri = $originalJson.EngineUri.replace("5000", $CommerceAuthoringServicesPort)  
+                    $originalJson.EnvironmentName = $EnvironmentName                  
                     $originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
                 }			
             }

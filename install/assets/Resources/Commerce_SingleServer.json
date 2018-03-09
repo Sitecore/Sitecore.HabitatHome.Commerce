@@ -298,7 +298,8 @@
         "SitecoreBizFxServicesContentPath": "[parameter('SitecoreBizFxServicesContentPath')]",
         "SitecoreBizFxPostFix":"[parameter('SitecoreBizFxPostFix')]",
         "CommerceAuthoringServicesPort": "[parameter('CommerceAuthoringServicesPort')]",
-        "UserAccount": "[parameter('UserAccount')]"
+        "UserAccount": "[parameter('UserAccount')]",
+        "EnvironmentName":"[concat(parameter('SolutionName'),'Authoring')]"
       }
     },
     "DeploySitecoreIdentityServer": {
