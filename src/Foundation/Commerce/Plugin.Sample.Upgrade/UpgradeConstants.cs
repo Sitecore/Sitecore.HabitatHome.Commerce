@@ -92,6 +92,11 @@ namespace Plugin.Sample.Upgrade
                 public const string MigrateGiftCardBlock = "Upgrade.MigrateGiftCard";
 
                 /// <summary>
+                /// The migrate journal entry block
+                /// </summary>
+                public const string MigrateJournalEntryBlock = "Upgrade.MigrateJournalEntry";
+
+                /// <summary>
                 /// The migrate sellable item block
                 /// </summary>
                 public const string MigrateSellableItemBlock = "Upgrade.MigrateSellableItem";

@@ -254,7 +254,7 @@ Function Install-Commerce {
         BaseConfigurationFolder            = $(Join-Path $resourcePath "Configuration")
         webRoot                            = $site.webRoot
         SitePrefix                         = $site.prefix
-        SolutionName                       = "HabitatHome"
+        SolutionName                       = "Habitat"
         SiteName                           = $site.hostName
         SiteHostHeaderName                 = $commerce.storefrontHostName 
         InstallDir                         = $(Join-Path $site.webRoot $site.hostName)

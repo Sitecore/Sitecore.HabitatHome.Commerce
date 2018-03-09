@@ -28,7 +28,6 @@ namespace Sitecore.Commerce.Sample.Console
 
         static void Main(string[] args)
         {
-
             OpsServiceUri = Properties.Settings.Default.OpsServiceUri;
             ShopsServiceUri = Properties.Settings.Default.ShopsServiceUri;
             MinionsServiceUri = Properties.Settings.Default.MinionsServiceUri;
@@ -42,13 +41,14 @@ namespace Sitecore.Commerce.Sample.Console
 
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-
-            Console.ForegroundColor = ConsoleColor.Green;
+            
+            Console.ForegroundColor = ConsoleColor.Cyan;
 
             if (ShouldBootstrapOnLoad)
             {
                 //// Bootstrap the environment
                 Bootstrapping.RunScenarios();
+                Content.RunScenarios();
             }
 
             //// Environment 

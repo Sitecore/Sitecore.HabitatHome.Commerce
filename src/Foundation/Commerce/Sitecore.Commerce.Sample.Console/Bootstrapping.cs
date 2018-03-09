@@ -1,13 +1,17 @@
-﻿namespace Sitecore.Commerce.Sample.Console
+﻿
+namespace Sitecore.Commerce.Sample.Console
 {
     using System;
     using System.Diagnostics;
+    using System.Linq;
+    using System.Threading;
 
     using Contexts;
     using FluentAssertions;
 
     using CommerceOps = CommerceOps.Sitecore.Commerce.Engine;
-
+    using CommerceOps.Sitecore.Commerce.Core.Commands;
+    
     public static class Bootstrapping
     {
         private const string Environment = "AdventureWorksShops";
@@ -20,11 +24,8 @@
             var devOp = new DevOpAndre();
             var container = devOp.Context.OpsContainer();
 
-            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("---------------------------------------------------");
-
-            // CleanGlobalEnvironment(container);
-            // BootstrapEnvironment(container);
+            
             CleanEnvironment(container, Environment);
             CleanEnvironment(container, "HabitatShops");
             InitializeEnvironment(container, Environment);
@@ -45,7 +46,7 @@
         {
             Console.WriteLine($"Begin>> Clean Environment: {environment}");
             var result = container.CleanEnvironment(environment).GetValue();
-            Console.WriteLine($"End  >> Clean Environment: {result.ResponseCode}");
+            Console.WriteLine($"End>> Clean Environment: {result.ResponseCode}");
             result.ResponseCode.Should().Be("Ok");
         }
 
@@ -53,8 +54,23 @@
         {
             Console.WriteLine($"Begin>> Initialize Environment:{environmentName}");
             var result = container.InitializeEnvironment(environmentName).GetValue();
-            Console.WriteLine($"End  >> Initialize Environment: {result.ResponseCode}");
             result.ResponseCode.Should().Be("Ok");
+
+            var longRunningCommand = result;
+            longRunningCommand.Should().NotBeNull();
+            var waitingTime = new Stopwatch();
+            waitingTime.Start();
+            while (!longRunningCommand.Status.Equals("RanToCompletion") && waitingTime.Elapsed <= TimeSpan.FromMinutes(10))
+            {
+                Thread.Sleep(60000);
+                longRunningCommand = container.CheckCommandStatus(longRunningCommand.TaskId).GetValue();
+                longRunningCommand.Should().NotBeNull();
+            }
+
+            waitingTime.Stop();
+            waitingTime.Elapsed.Should().BeLessOrEqualTo(TimeSpan.FromMinutes(10));
+            longRunningCommand.ResponseCode.Should().Be("Ok");
+            Console.WriteLine($"End>> Initialize Environment: {longRunningCommand.ResponseCode}");
         }
 
         private static void GetPipelines(CommerceOps.Container container)
@@ -63,7 +79,7 @@
 
             string localPath = AppDomain.CurrentDomain.BaseDirectory;
 
-            string pipelineFile =  $"{localPath}/logs/ConfiguredPipelines.log";
+            string pipelineFile = $"{localPath}/logs/ConfiguredPipelines.log";
 
             if (!System.IO.Directory.Exists($"{localPath}/logs"))
             {
@@ -75,7 +91,6 @@
                 System.IO.File.Delete(pipelineFile);
             }
 
-
             using (System.IO.StreamWriter file =
             new System.IO.StreamWriter(pipelineFile))
             {
@@ -83,22 +98,20 @@
                 file.WriteLine("-----------------------------------------------------------------");
                 foreach (var pipeline in pipelineConfiguration.List)
                 {
-                    //System.Console.WriteLine($"{pipeline.Namespace}");
-                    //System.Console.WriteLine($"{pipeline.Name}({pipeline.Receives}=>{pipeline.Returns})");
                     file.WriteLine($"{pipeline.Namespace}");
                     file.WriteLine($"{pipeline.Name} ({pipeline.Receives} => {pipeline.Returns})");
                     foreach (var block in pipeline.Blocks)
                     {
                         var computedNamespace = block.Namespace.Replace("Sitecore.Commerce.","");
-                        //System.Console.WriteLine($"     {block.Name}({block.Receives}=>{block.Returns})");
                         file.WriteLine($"     {computedNamespace}.{block.Name} ({block.Receives} => {block.Returns})");
                     }
+
                     if (!string.IsNullOrEmpty(pipeline.Comment))
                     {
                         file.WriteLine("     ------------------------------------------------------------");
                         file.WriteLine($"     Comment: {pipeline.Comment}");
                     }
-                    //System.Console.WriteLine("-----------------------------------------------------------------");
+
                     file.WriteLine("-----------------------------------------------------------------");
                 }
             }

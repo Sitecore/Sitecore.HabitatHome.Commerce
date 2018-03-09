@@ -7,7 +7,6 @@
 namespace Plugin.Sample.Upgrade
 {
     using Sitecore.Commerce.Core;
-    using Sitecore.Commerce.Plugin.Journaling;
     using Sitecore.Framework.Conditions;
     using Sitecore.Framework.Pipelines;
 
@@ -87,8 +86,8 @@ namespace Plugin.Sample.Upgrade
                     }
                 }
 
-                // we are not migrating JournalEntry and EntityIndex will be migrated anyway 
-                if (entity != null && (entity is JournalEntry || entity is EntityIndex))
+                // we are not migrating EntityIndex as it will be created 
+                if (entity != null && entity is EntityIndex)
                 {
                     entity = null;
                 }

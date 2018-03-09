@@ -17,7 +17,7 @@ namespace Plugin.Sample.Upgrade
     using Sitecore.Commerce.Plugin.ManagedLists;
 
     /// <summary>
-    /// The Upgrade Plugin configure class.
+    /// The Habitat configure class.
     /// </summary>
     /// <seealso cref="Sitecore.Framework.Configuration.IConfigureSitecore" />
     public class ConfigureSitecore : IConfigureSitecore
@@ -64,6 +64,7 @@ namespace Plugin.Sample.Upgrade
                      .Add<GetSourceEntityBlock>()
                      .Add<MigrateOrderEntityBlock>()
                      .Add<MigrateGiftCardBlock>()
+                     .Add<MigrateJournalEntryBlock>()
                      .Add<MigrateSellableItemBlock>()
                      .Add<SetEntityListMembershipsBlock>()
                      .Add<PersistMigratedEntityBlock>();                      

@@ -9,6 +9,7 @@ namespace Plugin.Sample.Upgrade
     using Microsoft.Extensions.Logging;
 
     using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.Plugin.Journaling;
     using Sitecore.Framework.Conditions;
     using Sitecore.Framework.Pipelines;
 
@@ -76,6 +77,12 @@ namespace Plugin.Sample.Upgrade
             
             // Start Environment to initilize policySets
             var environment = await this._startEnvironmentPipeline.Run(arg.Name, context);
+
+            // not adding new JournalEntiry during the migration
+            foreach (var policy in environment.GetPolicies<EntityJournalingPolicy>())
+            {
+                arg.Policies.Remove(policy);
+            }
 
             // Allow to migrate enitities with not alphanumeric names
             foreach (var policy in environment.GetPolicies<ValidationPolicy>())

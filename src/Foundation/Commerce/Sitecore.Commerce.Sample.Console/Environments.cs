@@ -23,7 +23,9 @@
             var watch = new Stopwatch();
             watch.Start();
 
-            var habitat = Proxy.GetValue(OpsContainer.Environments.ByKey("Entity-CommerceEnvironment-HabitatAuthoring").Expand("Components"));          
+            NewEnvironment();
+
+            var habitat = Proxy.GetValue(OpsContainer.Environments.ByKey("Entity-CommerceEnvironment-HabitatAuthoring").Expand("Components"));
             habitat.Should().NotBeNull();
 
             Console.WriteLine("Begin Clone Environment");
@@ -38,7 +40,7 @@
 
             // Change the Id of the environment in order to import as a new Environment
             var newEnvironmentId = Guid.NewGuid().ToString("N");
-            
+
             dynamicEnvironment.ArtifactStoreId = newEnvironmentId;
             dynamicEnvironment.Name = "ConsoleSample." + newEnvironmentId;
 
@@ -77,7 +79,7 @@
             result.Name.Should().Be("Unisex hiking pants");
 
             // Get the environment to validate change was made
-            var updatedEnvironment = Proxy.GetValue(OpsContainer.Environments.ByKey(importedEnvironment.EnvironmentId) );
+            var updatedEnvironment = Proxy.GetValue(OpsContainer.Environments.ByKey(importedEnvironment.EnvironmentId));
             var globalAvailabilityPolicy = updatedEnvironment.Policies.OfType<GlobalAvailabilityPolicy>().FirstOrDefault();
             globalAvailabilityPolicy.Should().NotBeNull();
             globalAvailabilityPolicy.AvailabilityExpires.Should().Be(0);
@@ -85,6 +87,30 @@
             watch.Stop();
 
             Console.WriteLine($"End Clone Environments: {watch.ElapsedMilliseconds} ms");
+        }
+
+        private static void NewEnvironment()
+        {
+            var environment = new Sitecore.Commerce.Core.CommerceEnvironment {Name = "ConsoleNewEnvironment"};
+            var environmentJson = JsonConvert.SerializeObject(environment);
+
+            ImportEnvironment(environmentJson);
+
+            var getEnvironment = Proxy.GetValue(OpsContainer.Environments.ByKey("Entity-CommerceEnvironment-ConsoleNewEnvironment").Expand("Components"));
+            getEnvironment.Should().NotBeNull("Verify environment can be found (belongs in list) after it imported");
+
+            var exportedEnvironmentJson = ExportEnvironment("ConsoleNewEnvironment");
+            exportedEnvironmentJson.Should().NotBeNullOrEmpty("Verify enviroment exported");
+
+            var exportedEnvironment = JsonConvert.DeserializeObject<Sitecore.Commerce.Core.CommerceEnvironment>(exportedEnvironmentJson);
+            exportedEnvironment.Name.Should().Be(environment.Name, "Verify exported environment can be deserialized and the environment name was preserved");
+            exportedEnvironment.DisplayName = "New Display Name";
+
+            ImportEnvironment(JsonConvert.SerializeObject(exportedEnvironment));
+
+            var updatedEnvironmentJson = ExportEnvironment("ConsoleNewEnvironment");
+            var updatedEnvironment = JsonConvert.DeserializeObject<Sitecore.Commerce.Core.CommerceEnvironment>(updatedEnvironmentJson);
+            updatedEnvironment.DisplayName.Should().Be("New Display Name", "Verify updated environment");
         }
 
         private static ImportedEnvironmentModel ImportEnvironment(string environmentAsString)

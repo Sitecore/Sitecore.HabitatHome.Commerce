@@ -92,7 +92,7 @@
             view.Action.Should().Be("AddCustomer");
             view.Properties.Should().NotBeEmpty();
             view.Properties.FirstOrDefault(p => p.Name.Equals("Email")).Value = string.IsNullOrEmpty(email) ? _customerEmail : email;
-            view.Properties.FirstOrDefault(p => p.Name.Equals("Password")).Value = "Password01";
+            //view.Properties.FirstOrDefault(p => p.Name.Equals("Password")).Value = "Password01";
 
             var action = Proxy.DoCommand(container.DoAction(view));
             action.Messages.Any(m => m.Code.Equals("validationerror", StringComparison.OrdinalIgnoreCase)).Should().BeTrue();

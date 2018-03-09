@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>The Sitecore Commerce Upgrade Plugin Sample.</Description>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>2.1.0</VersionPrefix>
     <TargetFramework>net462</TargetFramework>
     <PackageTags>$(PackageTags);Commerce;Plugin;Sample;Upgrade</PackageTags>
 
@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.1.3" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.1.6" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.1.3" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.1.*" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -21,6 +21,16 @@
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
   </PropertyGroup>
 
 </Project>

@@ -75,7 +75,8 @@ Function Invoke-DeployCommerceContentTask {
                 $pathToJson = $(Join-Path -Path $PhysicalPath -ChildPath "wwwroot\config.json")
                 $originalJson = Get-Content $pathToJson -Raw  | ConvertFrom-Json
                 if ($EnvironmentName -ne "") {
-                    $originalJson.AppSettings.EnvironmentName = $EnvironmentName
+                    #$originalJson.AppSettings.EnvironmentName = $EnvironmentName
+                    $originalJson.AppSettings.EnvironmentName = "AdventureWorksOpsApi"
                 }
                 else {
                     $originalJson.AppSettings.EnvironmentName = "AdventureWorksOpsApi"    
