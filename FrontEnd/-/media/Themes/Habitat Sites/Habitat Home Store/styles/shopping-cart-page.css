@@ -29,8 +29,8 @@
 
 .shopping-cart-page .component.link.continue-button-component a:before {
   font-family: FontAwesome;
-  content: '\f054';
-  margin-left: 1em;
+  content: '\f053';
+  margin-right: 1em;
 }
 
 .shopping-cart-page .component.link.checkout-link-component .field-link {

@@ -4,14 +4,6 @@ $button-width:180px;
 .cxa-shoppingcartpromotion-component {
     padding-top: $padding*3;
     .component-content {
-        .promotion-code-remove>a,
-        .add-promo-code-button {
-/*             width: $button-width;
-            display: inline-block;
-            text-align: center;
-            margin-left: 15px; */
-        }
-        
         .promo-code-input {
             width: $input-width;
             display: inline-block;
