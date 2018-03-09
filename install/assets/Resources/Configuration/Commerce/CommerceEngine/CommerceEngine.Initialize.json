@@ -84,7 +84,7 @@
          "UrlEnsureSyncDefaultContentPaths": "[variable('UrlEnsureSyncDefaultContentPaths')]",
          "UrlCheckCommandStatus": "[variable('UrlCheckCommandStatus')]",
          "Environments": [
-           "HabitatHomeAuthoring"
+           "HabitatAuthoring"
          ]
        }
      },
@@ -94,7 +94,7 @@
         "UrlInitializeEnvironment": "[variable('UrlInitializeEnvironment')]",
         "UrlCheckCommandStatus": "[variable('UrlCheckCommandStatus')]",
         "Environments": [
-          "HabitatHomeAuthoring"
+          "HabitatAuthoring"
         ]
       }
     },
