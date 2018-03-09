@@ -1,0 +1,42 @@
+<div [formGroup]="actionForm">
+  <div formArrayName="Grid">
+    <table scTable>
+      <thead>
+        <tr>
+          <th *ngFor="let header of headers">
+            <div class="property-header" id="grid-header-{{header.Name}}">{{header.DisplayName}}</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let child of children; let i=index" [formGroupName]="i">
+          <td *ngFor="let childProperty of (child.Properties | isNotHidden)">
+            <div class="input-group" style="width: auto;">
+              <input type="text" class="form-control" [value]="childProperty.Value" name="childProperty.Name" [formControlName]="childProperty.Name">
+              <span class="input-group-btn">
+                <button scIconButton="secondary" type="button" (click)="removeRow(i)" *ngIf="child.DisplayRank === -1">
+                  <sc-icon icon="delete" size="small"></sc-icon>
+                </button>
+              </span>
+            </div>
+
+            <div class="alert alert-danger" role="alert" *ngIf="!isValid(i, childProperty)">
+              <div *ngIf="propertyControl(i, childProperty).errors.required">
+                {{ 'ValidationErrors.IsRequired' | translate:childProperty }}
+              </div>
+        
+              <div *ngIf="propertyControl(i, childProperty).errors.invalidDecimal">
+                {{ 'ValidationErrors.IncorrectDecimalValue' | translate:childProperty }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button scIconButton="secondary" id="add-row" type="button" (click)="addRow()" *ngIf="allowAdd">
+      <sc-icon icon="add" size="small"></sc-icon>
+    </button>
+
+  </div>
+</div>

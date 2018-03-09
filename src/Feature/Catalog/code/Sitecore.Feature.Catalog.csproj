@@ -53,32 +53,38 @@
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Core">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Engine.Connect">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.44\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.44\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Feature.Cart">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.38\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Feature.Catalog">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Feature.Catalog.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.38\Sitecore.Commerce.XA.Feature.Catalog.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Catalog">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Catalog.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.38\Sitecore.Commerce.XA.Foundation.Catalog.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.38\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
-      <HintPath>..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.38\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch">
-      <HintPath>..\..\..\..\lib\Sitecore.ContentSearch.dll</HintPath>
+    <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch.Linq">
-      <HintPath>..\..\..\..\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
@@ -87,13 +93,13 @@
       <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
-      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />

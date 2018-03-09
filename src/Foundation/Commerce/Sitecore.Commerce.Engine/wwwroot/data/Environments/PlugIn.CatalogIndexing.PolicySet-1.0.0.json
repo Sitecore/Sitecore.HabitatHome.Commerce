@@ -1,0 +1,84 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-SitecoreCatalogIndexingPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "SitecoreCatalogIndexingPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "SellableItemsIndexMaster",
+        "IncrementalListName": "SellableItemsIncrementalIndexMaster",
+        "DeletedListName": "SellableItemsDeletedIndexMaster",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "SellableItemsIndexWeb",
+        "IncrementalListName": "SellableItemsIncrementalIndexWeb",
+        "DeletedListName": "SellableItemsDeletedIndexWeb",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "CategoriesIndexMaster",
+        "IncrementalListName": "CategoriesIncrementalIndexMaster",
+        "DeletedListName": "CategoriesDeletedIndexMaster",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "CategoriesIndexWeb",
+        "IncrementalListName": "CategoriesIncrementalIndexWeb",
+        "DeletedListName": "CategoriesDeletedIndexWeb",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "CatalogsIndexMaster",
+        "IncrementalListName": "CatalogsIncrementalIndexMaster",
+        "DeletedListName": "CatalogsDeletedIndexMaster",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalog, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Name": "CatalogsIndexWeb",
+        "IncrementalListName": "CatalogsIncrementalIndexWeb",
+        "DeletedListName": "CatalogsDeletedIndexWeb",
+        "EntityTypeNames": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalog, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      }
+    ]
+  }
+}
