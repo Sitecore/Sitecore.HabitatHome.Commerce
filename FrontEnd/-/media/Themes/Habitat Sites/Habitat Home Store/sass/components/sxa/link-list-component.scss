@@ -8,3 +8,43 @@
     }
 }
  */
+
+ .component.link-list {
+     &.category-link-list{
+        float: none !important;
+
+        h3 {
+            border: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            display: block;
+            flex-basis: 175px;
+            text-align: center;
+   
+            & > div {   
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+
+                a {
+                    padding: 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+     }
+     
+ }

@@ -43,14 +43,13 @@
 
 .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a,
 .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
-  width: 180px;
-  display: inline-block;
-  text-align: center;
-  margin-left: 15px;
+  /*             width: $button-width;
+            display: inline-block;
+            text-align: center;
+            margin-left: 15px; */
 }
 
-.cxa-shoppingcartpromotion-component .component-content .promo-code-input,
-.cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
+.cxa-shoppingcartpromotion-component .component-content .promo-code-input {
   width: 300px;
   display: inline-block;
 }
@@ -208,67 +207,34 @@
 }
 
 .cxa-shoppingcartpromotion-component .component-content .added-promotion-codes table {
-  width: initial;
+  width: 100%;
 }
 
-.cxa-shoppingcartpromotion-component .component-content .added-promotion-codes table tbody tr td {
-  padding-bottom: 15px;
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-title {
+  text-align: right;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove {
-  vertical-align: bottom;
+  vertical-align: middle;
+  text-align: right;
+  width: 200px;
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
+  font-size: 16px;
+  content: '';
+}
+
+.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:before {
+  font-family: FontAwesome;
+  content: '\f00d';
+  font-size: 18px;
+  margin-right: 0.5em;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .promo-code-input-label,
 .cxa-shoppingcartpromotion-component .component-content .added-promo-code-label {
   display: none;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
-  border: 2px solid #dc291e;
-  background: #fff;
-  color: #dc291e;
-  font-size: 14px;
-  font-weight: 600;
-  height: 34px;
-  text-align: center;
-  text-shadow: none;
-  box-shadow: none;
-  display: inline-block;
-  padding: 4px 25px 4px 25px;
-  border-radius: 4px;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:hover {
-  background: #d3271d;
-  color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active {
-  background: #c1241a;
-  color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:disabled, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a.disabled, .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a[disabled],
-fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a {
-  cursor: not-allowed;
-  opacity: 0.4;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:hover {
-  color: #fff;
-  background-color: #dd291e;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a:active {
-  color: #fff;
-  background-color: #db291e;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
@@ -324,6 +290,7 @@ fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .add-
   border-bottom: 1px solid #e2e3e5;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .cart-promotion-form h4 {
@@ -331,37 +298,8 @@ fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .add-
 }
 
 .cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
-  height: 34px;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #747a83;
-  border: solid 1px #b9bcc1;
-  background-image: none;
-  box-shadow: none !important;
-  text-align: left;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  padding: 5px 10px;
-  line-height: 1.42857143;
   font-weight: 600;
-  background-color: #f0f0f0;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:hover {
-  border-color: #b8bbc0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:active, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code:focus {
-  border-color: #0e909f;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.cxa-shoppingcartpromotion-component .component-content .added-promotion-code:disabled, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code.disabled, .cxa-shoppingcartpromotion-component .component-content .added-promotion-code[disabled],
-fieldset[disabled] .cxa-shoppingcartpromotion-component .component-content .added-promotion-code {
-  background-color: #f0f0f0;
+  font-size: 18px;
 }
 
 .cxa-shoppingcartpromotion-component .component-content .added-promotion-codes {

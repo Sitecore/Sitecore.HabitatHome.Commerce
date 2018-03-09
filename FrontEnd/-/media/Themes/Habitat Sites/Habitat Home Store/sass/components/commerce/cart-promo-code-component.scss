@@ -6,14 +6,13 @@ $button-width:180px;
     .component-content {
         .promotion-code-remove>a,
         .add-promo-code-button {
-            width: $button-width;
+/*             width: $button-width;
             display: inline-block;
             text-align: center;
-            margin-left: 15px;
+            margin-left: 15px; */
         }
         
-        .promo-code-input,
-        .added-promotion-code {
+        .promo-code-input {
             width: $input-width;
             display: inline-block;
         }
@@ -28,38 +27,47 @@ $button-width:180px;
             padding-top: 30px;
             padding-bottom: 30px;
             table {
-                width:initial;
-                tbody {
-                    tr {
-                        td{
-                            padding-bottom: 15px;
-                        }
-                        
-                    }
-                }
+                width: 100%;
             }
         }
+        .promotion-code-title {
+            text-align: right;
+        }
         .promotion-code-remove {
-            vertical-align: bottom;
+            vertical-align: middle;
+            text-align: right;
+            width: 200px;
+
+            & > a {
+                //@include error-button-line();
+                font-size: 16px;
+                content: '';
+
+                &:before {
+                    font-family: FontAwesome;
+                    content: '\f00d';
+                    font-size: 18px;
+                    margin-right: 0.5em;
+                }
+            }
         }
         .promo-code-input-label,
         .added-promo-code-label {
             display: none;
         }
         
-        .promotion-code-remove>a {
-            @include error-button-line();
-        }
         .add-promo-code-button {
             @include primary-button-line();
         }
         .cart-promotion-form{
             @include form-section();
+            padding-bottom: 40px;
         }
         .added-promotion-code {
-            @include text-input();
+            //@include text-input();
             font-weight:600;
-            background-color: $secondary-background-color;
+            font-size: 18px;
+            //background-color: $secondary-background-color;
         }
         .added-promotion-codes{
             @include form-section();
