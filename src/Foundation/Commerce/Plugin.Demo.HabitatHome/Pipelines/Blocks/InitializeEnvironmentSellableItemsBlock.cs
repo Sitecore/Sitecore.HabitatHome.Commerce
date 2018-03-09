@@ -45,7 +45,7 @@
         /// </returns>
         public override async Task<string> Run(string arg, CommercePipelineExecutionContext context)
         {
-            var artifactSet = "Environment.HabitatHome.SellableItems-1.0";
+            var artifactSet = "Environment.Habitat.SellableItems-1.0";
 
             // Check if this environment has subscribed to this Artifact Set
             if (!context.GetPolicy<EnvironmentInitializationPolicy>().InitialArtifactSets.Contains(artifactSet))

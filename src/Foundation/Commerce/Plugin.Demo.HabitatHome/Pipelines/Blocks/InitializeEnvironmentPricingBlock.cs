@@ -62,7 +62,7 @@
         /// </returns>
         public async override Task<string> Run(string arg, CommercePipelineExecutionContext context)
         {
-            var artifactSet = "Environment.HabitatHome.Pricing-1.0";
+            var artifactSet = "Environment.Habitat.Pricing-1.0";
 
             // Check if this environment has subscribed to this Artifact Set
             if (!context.GetPolicy<EnvironmentInitializationPolicy>().InitialArtifactSets.Contains(artifactSet))
@@ -78,11 +78,11 @@
 
                 // BOOK
                 var book = await this._addPriceBookPipeline.Run(
-                    new AddPriceBookArgument("HabitatHome_PriceBook")
+                    new AddPriceBookArgument("Habitat_PriceBook")
                     {
                         ParentBook = string.Empty,
                         Description = "Habitat Home price book",
-                        DisplayName = "HabitatHome",
+                        DisplayName = "Habitat",
                         CurrencySetId = currencySetId
                     },
                     context);
@@ -93,7 +93,7 @@
 
                 await this.CreateTagsCard(book, context);
 
-                await this.AssociateCatalogToBook(book.Name, "HabitatHome_Master", context);
+                await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);
             }
             catch (Exception ex)
             {
@@ -115,7 +115,7 @@
             var date = DateTimeOffset.UtcNow;
 
             // CARD
-            var adventureCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_PriceCard"), context);
+            var adventureCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_PriceCard"), context);
 
             // READY FOR APPROVAL SNAPSHOT
             adventureCard = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(adventureCard, new PriceSnapshotComponent(date.AddMinutes(-10))), context);
@@ -184,7 +184,7 @@
             var date = DateTimeOffset.UtcNow;
 
             // VARIANTS CARD
-            var adventureVariantsCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_VariantsPriceCard"), context);
+            var adventureVariantsCard = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_VariantsPriceCard"), context);
 
             // READY FOR APPROVAL SNAPSHOT
             adventureVariantsCard = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(adventureVariantsCard, new PriceSnapshotComponent(date.AddMinutes(-10))), context);
@@ -244,7 +244,7 @@
         private async Task CreateTagsCard(PriceBook book, CommercePipelineExecutionContext context)
         {
             // TAGS CARD
-            var card = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "HabitatHome_TagsPriceCard"), context);
+            var card = await this._addPriceCardPipeline.Run(new AddPriceCardArgument(book, "Habitat_TagsPriceCard"), context);
 
             // TAGS CARD FIRST SNAPSHOT
             card = await this._addPriceSnapshotPipeline.Run(new PriceCardSnapshotArgument(card, new PriceSnapshotComponent(DateTimeOffset.UtcNow)), context);
@@ -257,7 +257,7 @@
             card = await this._addPriceTierPipeline.Run(new PriceCardSnapshotTierArgument(card, firstSnapshot, new PriceTier("CAD", 5, 201M)), context);
 
             // TAGS CARD FIRST SNAPSHOT TAGS
-            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("HabitatHome")), context);    
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("Habitat")), context);    
             card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("common")), context);
 
             // TAGS CARD SECOND SNAPSHOT
@@ -271,7 +271,7 @@
             card = await this._addPriceTierPipeline.Run(new PriceCardSnapshotTierArgument(card, secondSnapshot, new PriceTier("CAD", 5, 151M)), context);
 
             // TAGS CARD SECOND SNAPSHOT TAGS
-            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("HabitatHome variants")), context);   
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("Habitat variants")), context);   
             card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("common")), context);
 
             // TAGS CARD APPROVAl COMPONENT

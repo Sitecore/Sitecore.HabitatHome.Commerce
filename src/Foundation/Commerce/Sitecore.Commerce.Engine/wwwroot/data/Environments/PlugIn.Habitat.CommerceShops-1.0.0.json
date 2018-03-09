@@ -24,25 +24,20 @@
   },
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
-  "Id": "Entity-CommerceEnvironment-HabitatHomeAuthoring",
+  "Id": "Entity-CommerceEnvironment-HabitatShops",
   "Version": 1,
   "IsPersisted": false,
-  "Name": "HabitatHomeAuthoring",
+  "Name": "HabitatShops",
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-AuthoringMemoryCachePolicySet"
+        "PolicySetId": "Entity-PolicySet-ShopsMemoryCachePolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-ContentPolicySet"
-      },
-      {
-        "$type": "Sitecore.Commerce.Plugin.Management.SearchMediaItemsPolicy, Sitecore.Commerce.Plugin.Management",
-        "MediaItemsSearchId": "7E1319C9-FA87-4D78-93CE-202815F0F1EA",
-        "PageSize": 10
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -77,11 +72,6 @@
         "PolicySetId": "Entity-PolicySet-SitecoreCatalogIndexingPolicySet"
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.Journaling.EntityJournalingPolicy, Sitecore.Commerce.Plugin.Journaling",
-        "EntityFullName": "Sitecore.Commerce.Plugin.Orders.Order",
-        "Journal": "OrdersJournal"
-      },
-      {
         "$type": "Sitecore.Commerce.Plugin.BusinessUsers.EnvironmentBusinessToolsPolicy,Sitecore.Commerce.Plugin.BusinessUsers",
         "ServiceUrl": "https://localhost:5000"
       },
@@ -93,33 +83,17 @@
             "Carts.CartPolicySets-1.0",
             "Catalog.DefaultSellableItems-1.0",
             "Catalog.DefaultRelationshipDefinitions-1.0",
-            "Environment.HabitatHome.DefaultRelationships-1.0",
+            "Environment.Habitat.DefaultRelationships-1.0",
             "GiftCards.DefaultGiftCard-1.0",
             "GiftCards.TestGiftCards-1.0",
             "Pricing.DefaultPriceBook-1.0",
-            "Environment.HabitatHome.SellableItems-1.0",
-            "Environment.HabitatHome.Pricing-1.0",
-            "Environment.HabitatHome.Promotions-1.0",
-            "Environment.HabitatHome.Catalog-1.0"
+            "Catalog.DefaultSellableItems-1.0",
+            "Environment.Habitat.SellableItems-1.0",
+            "Environment.Habitat.Pricing-1.0",
+            "Environment.Habitat.Promotions-1.0",
+            "Environment.Habitat.RelationshipTypes-1.0",
+            "Environment.Habitat.Catalog-1.0"
           ]
-        }
-      },
-      {
-        "$type": "Plugin.Sample.Customers.CsMigration.ProfilesSqlPolicy, Plugin.Sample.Customers.CsMigration",
-        "Server": ".",
-        "Database": "SXAStorefrontSite_profiles",
-        "TrustedConnection": true,
-        "UserName": "",
-        "Password": ""
-      },
-      {
-        "$type": "Plugin.Sample.Customers.CsMigration.ProfilePropertiesMappingPolicy, Plugin.Sample.Customers.CsMigration",
-        "UserProperties": {
-          "GeneralInfo.language": "Language",
-          "GeneralInfo.tel_number": "PhoneNumber"
-        },
-        "AddressProperties": {
-          "ProfileSystem.user_id_changed_by": "ChangedBy"
         }
       },
       {
@@ -826,7 +800,7 @@
         "$type": "Sitecore.Commerce.Plugin.Promotions.GlobalPromotionsPolicy, Sitecore.Commerce.Plugin.Promotions",
         "MaxPromotionNameLength": "50",
         "MaxPromotionBookNameLength": "50",
-        "PromotionsRequireApproval": "false"
+        "PromotionsRequireApproval": "true"
       },
       {
         "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
@@ -1226,6 +1200,16 @@
         "EnableGuestCheckout": true,
         "EnableTermsAndConditions": true,
         "MinimumOrderQuantity": 1.0
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Tax.GlobalTaxPolicy, Sitecore.Commerce.Plugin.Tax",
+        "DefaultCartTaxRate": 0.1,
+        "DefaultItemTaxRate": 0.1,
+        "TaxCalculationEnabled": true,
+        "PriceIncudesTax": false,
+        "CalculateTaxBasedOn": "ShippingAddress",
+        "ShippingTaxClass": "CartItems",
+        "RoundAtSubTotal": false
       },
       {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",

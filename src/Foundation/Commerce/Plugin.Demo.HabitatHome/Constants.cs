@@ -18,21 +18,21 @@
                 /// <summary>
                 /// The initialize catalog block name.
                 /// </summary>
-                public const string InitializeCatalogBlock = "HabitatHome.block.InitializeCatalog";
+                public const string InitializeCatalogBlock = "Habitat.block.InitializeCatalog";
 
                 /// <summary>
                 /// The registered plugin block name.
                 /// </summary>
-                public const string RegisteredPluginBlock = "HabitatHome.block.RegisteredPlugin";
+                public const string RegisteredPluginBlock = "Habitat.block.RegisteredPlugin";
 
                 /// <summary>
                 /// The initialize sellable items block name.
                 /// </summary>
-                public const string InitializeSellableItemsBlock = "HabitatHome.block.InitializeEnvironmentSellableItems";
+                public const string InitializeSellableItemsBlock = "Habitat.block.InitializeEnvironmentSellableItems";
 
-                public const string InitializePricingBlock = "HabitatHome.block.InitializeEnvironmentPricing";
+                public const string InitializePricingBlock = "Habitat.block.InitializeEnvironmentPricing";
 
-                public const string InitializePromotionsBlock = "HabitatHome.block.InitializeEnvironmentPromotions";
+                public const string InitializePromotionsBlock = "Habitat.block.InitializeEnvironmentPromotions";
                                                               
             }
         }

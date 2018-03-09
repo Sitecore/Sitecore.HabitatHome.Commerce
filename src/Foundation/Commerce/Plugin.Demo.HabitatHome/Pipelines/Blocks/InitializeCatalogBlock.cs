@@ -44,7 +44,7 @@
         /// <returns></returns>
         public override async Task<string> Run(string arg, CommercePipelineExecutionContext context)
         {
-            var artifactSet = "Environment.HabitatHome.Catalog-1.0";
+            var artifactSet = "Environment.Habitat.Catalog-1.0";
 
             // Check if this environment has subscribed to this Artifact Set
             if (!context.GetPolicy<EnvironmentInitializationPolicy>().InitialArtifactSets.Contains(artifactSet))
@@ -52,7 +52,7 @@
                 return arg;
             }
 
-            using (var stream = new FileStream(GetPath("HabitatHome.zip"), FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(GetPath("Habitat.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
 
