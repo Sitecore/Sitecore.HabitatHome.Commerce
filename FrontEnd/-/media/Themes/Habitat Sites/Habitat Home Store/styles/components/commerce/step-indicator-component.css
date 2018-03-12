@@ -1,3 +1,41 @@
+.cxa-stepindicator-component {
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.cxa-stepindicator-component .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cxa-stepindicator-component li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 1px solid #e2e3e5;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.cxa-stepindicator-component li a {
+  color: #e2e3e5;
+}
+
+.cxa-stepindicator-component li.active {
+  border-color: #0e909f;
+}
+
+.cxa-stepindicator-component li.active a {
+  color: #383c41;
+}
+
 /* @import '../../index';
 .cxa-stepindicator-component {
     width: 100%;

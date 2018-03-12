@@ -1086,7 +1086,7 @@
                         data-uniqueid="{EC8A9414-CF93-4981-94A0-EDD67F423EE3}" data-stylesfield="Styles" data-gridfield="GridParameters"
                         data-renderingclass="container">
                         <div class="component-content">
-                            <div class="component cxa-stepindicator-component col-xs-12 add-your-css-classes-here" data-pageid="{C19C709A-A181-4795-8DDA-00EA317F5386}"
+                            <div class="component cxa-stepindicator-component add-your-css-classes-here" data-pageid="{C19C709A-A181-4795-8DDA-00EA317F5386}"
                                 data-renderingid="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}" data-uniqueid="{B85F9BF7-0E59-4FBC-A0B8-1253909B6A21}"
                                 data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="cxa-stepindicator-component">
                                 <div class="component-content checkout-step-indicator">
@@ -1095,7 +1095,7 @@
                                             <li class="">
                                                 <a id="Cart" href="#" class="step-tab">Cart</a>
                                             </li>
-                                            <li class="">
+                                            <li class="active">
                                                 <a id="Delivery" href="#" class="step-tab">Delivery Options</a>
                                             </li>
                                             <li class="">
@@ -1108,7 +1108,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="component cxa-checkoutdelivery-component add-your-css-classes-here" data-pageid="{C19C709A-A181-4795-8DDA-00EA317F5386}"
+                            <div class="component cxa-checkoutdelivery-component add-your-css-classes-here sitecore-form-standard" data-pageid="{C19C709A-A181-4795-8DDA-00EA317F5386}"
                                 data-renderingid="{33DF6C8F-BB50-447B-8CF8-ED84F665B2BA}" data-uniqueid="{9FFA71AF-62B1-4ADB-BDAF-98814E5614FA}"
                                 data-stylesfield="Styles" data-gridfield="GridParameters" data-renderingclass="cxa-checkoutdelivery-component">
                                 <div class="component-content">
@@ -1201,9 +1201,32 @@
                                             <div class="shipall-options-items">
                                                 <div class="shipall-options-item" data-bind="foreach: shippingMethods">
                                                     <div class="shipping-option">
-                                                        <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod">
-                                                        <label data-bind="text: description"></label>
+                                                        <input id="shippingMethodId1" checked type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod" name="shippingMethodId"
+                                                            pvalue="b146622d-dc86-48a3-b72a-05ee8ffd187a">
+                                                        <label for="shippingMethodId1" data-bind="text: description">Ground</label>
                                                     </div>
+
+
+                                                    <div class="shipping-option">
+                                                        <input id="shippingMethodId2" type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod" name="shippingMethodId"
+                                                            pvalue="65a9ae69-77f8-4530-b5ba-bde0615cbc28">
+                                                        <label for="shippingMethodId2"  data-bind="text: description">Next Day Air</label>
+                                                    </div>
+
+
+                                                    <div class="shipping-option">
+                                                        <input  id="shippingMethodId3"  type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod" name="shippingMethodId"
+                                                            pvalue="cf0af82a-e1b8-45c2-91db-7b9847af287c">
+                                                        <label  for="shippingMethodId3" data-bind="text: description">Standard</label>
+                                                    </div>
+
+
+                                                    <div class="shipping-option">
+                                                        <input id="shippingMethodId4" type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod" name="shippingMethodId"
+                                                            pvalue="d5930340-c1dd-482c-b972-50a9250bb7a6">
+                                                        <label for="shippingMethodId4" data-bind="text: description">Standard Overnight</label>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1214,7 +1237,7 @@
                                         </div>
                                         <!-- ko if: $root.isAuthenticated() -->
                                         <div class="send-byemail-tome">
-                                            <input type="checkbox" data-bind="event: {change: setSendToMe}">
+                                            <input id="sendEmailToMe" type="checkbox" data-bind="event: {change: setSendToMe}">
                                             <label for="sendEmailToMe">Send to me</label>
                                         </div>
                                         <!-- /ko -->

@@ -1,7 +1,32 @@
 .cxa-stepindicator-component {
     width: auto;
     margin-bottom: 30px;
-    
+
+    .steps {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        flex-grow: 1;
+        text-align: center;
+        border-bottom: 1px solid #e2e3e5;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0;
+
+        a {
+            color: #e2e3e5;
+        }
+
+        &.active {
+            border-color: #0e909f;
+            a {
+                color: #383c41;
+            }
+        }
+    }
 }
 /* @import '../../index';
 .cxa-stepindicator-component {
