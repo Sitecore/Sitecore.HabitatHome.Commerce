@@ -41,14 +41,6 @@
   align-items: flex-start;
 }
 
-.cxa-shoppingcartpromotion-component .component-content .promotion-code-remove > a,
-.cxa-shoppingcartpromotion-component .component-content .add-promo-code-button {
-  /*             width: $button-width;
-            display: inline-block;
-            text-align: center;
-            margin-left: 15px; */
-}
-
 .cxa-shoppingcartpromotion-component .component-content .promo-code-input {
   width: 300px;
   display: inline-block;

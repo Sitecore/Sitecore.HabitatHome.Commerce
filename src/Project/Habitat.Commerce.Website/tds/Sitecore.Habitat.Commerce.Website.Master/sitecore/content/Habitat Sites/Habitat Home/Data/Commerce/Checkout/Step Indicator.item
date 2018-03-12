@@ -20,15 +20,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 1f70a77a-10a3-48ee-b894-9c7809ef5c04
+revision: ed5160ee-b3fd-4756-9727-bca4eed4e6cd
 
 ----field----
 field: {A1AE012C-3162-439B-AECC-E30D9241CAE0}
 name: Step Name and Labels
 key: step name and labels
-content-length: 57
+content-length: 113
 
-Cart=Cart&Delivery=Delivery&Billing=Billing&Review=Review
+Cart=Cart&Delivery=Delivery%20Options&Billing=Billing%20%26%20Payment%20Information&Review=Review%20%26%20Confirm
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -56,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1f70a77a-10a3-48ee-b894-9c7809ef5c04
+ed5160ee-b3fd-4756-9727-bca4eed4e6cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T152359Z
+20180308T210245Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin

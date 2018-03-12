@@ -4,10 +4,7 @@
     .component-content {
         width: 100%;
         margin-bottom: $margin;
-        //@include vertical-form-layout(0, 10px);
-       // @include align-elements($top-or-left);
         .cart-total-summary {
-            //@include row-of-elements-wide-apart(false, true);
             line-height: 28px;
             padding: 15px 0;
             margin-bottom: 5px;

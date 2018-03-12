@@ -1,22 +1,12 @@
-/* @import '../../base/index';
-
-.component.link-list{
-    h3{
-        padding-bottom: $padding*1.5;
-        font-size: $font-size-medium;
-        font-weight:bold;
-    }
-}
- */
-.component.link-list.category-link-list {
+.component.link-list.image-link-list {
   float: none !important;
 }
 
-.component.link-list.category-link-list h3 {
+.component.link-list.image-link-list h3 {
   border: 0;
 }
 
-.component.link-list.category-link-list ul {
+.component.link-list.image-link-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,19 +15,19 @@
   justify-content: center;
 }
 
-.component.link-list.category-link-list li {
+.component.link-list.image-link-list li {
   display: block;
   -ms-flex-preferred-size: 175px;
   flex-basis: 175px;
   text-align: center;
 }
 
-.component.link-list.category-link-list li > div img {
+.component.link-list.image-link-list li > div img {
   width: 100px;
   height: auto;
 }
 
-.component.link-list.category-link-list li > div a {
+.component.link-list.image-link-list li > div a {
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
@@ -45,6 +35,6 @@
   line-height: 26px;
 }
 
-.component.link-list.category-link-list li > div a:before {
+.component.link-list.image-link-list li > div a:before {
   display: none;
 }
