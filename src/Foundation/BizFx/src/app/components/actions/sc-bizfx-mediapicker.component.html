@@ -1,0 +1,28 @@
+<div [formGroup]="actionForm">
+  <table scTable class="mb-0" *ngIf="resultsView?.length">
+    <thead>
+      <tr>
+        <th id="header-{{property.Name}}" *ngFor="let property of (resultsView[0]?.Properties | isNotHidden)">{{property.DisplayName}}</th>
+      </tr>
+    </thead>
+
+    <tbody *ngIf="resultsView.length !== 1" [scSelect]="selectedView.ItemId" (scSelectChange)="onSelect($event)" [isSelectionRequired]="true">
+      <tr *ngFor="let childView of resultsView; let i = index" [scSelectRow]="childView.ItemId">
+        <td *ngFor="let property of (childView?.Properties | isNotHidden)">
+          <sc-bizfx-viewproperty-byui [property]="property" [view]="childView" [hideHeader]="true"></sc-bizfx-viewproperty-byui>
+        </td>
+      </tr>
+    </tbody>
+
+    <tbody *ngIf="resultsView.length === 1">
+      <tr *ngFor="let childView of resultsView; let i = index">
+        <td *ngFor="let property of (childView?.Properties | isNotHidden)">
+          <sc-bizfx-viewproperty-byui [property]="property" [view]="childView" [hideHeader]="true"></sc-bizfx-viewproperty-byui>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ngb-pagination [collectionSize]="count" (pageChange)="search($event)" [page]="1" [maxSize]="5" [rotate]="true" [boundaryLinks]="true"
+    [ellipses]="false" class="d-flex mt-3 mr-3 justify-content-end" *ngIf="resultsView?.length"></ngb-pagination>
+</div>

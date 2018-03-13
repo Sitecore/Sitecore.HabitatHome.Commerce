@@ -1,13 +1,13 @@
 # Introduction 
 The instructions in this README will guide you through the installation process of the Habitat Home Commerce Demo. 
 
-There is a dependency on Sitecore.Habitat and Sitecore.Habitat.Home which will be detailed below.
+There is a dependency on **Sitecore.Habitat** and **Sitecore.Habitat.Home** which will be detailed below.
 
 
 # Getting Started
 This guide assumes you've cloned and deployed both Sitecore.Habitat and Sitecore.Habitat.Home. See the README.md file in Sitecore.Habitat repository
 
-Assumption: the configuration file used to deploy Sitecore.Habitat still exists. It is required during the installation process.
+**Assumption**: the configuration file used to deploy Sitecore.Habitat still exists. It is required during the installation process.
 
 **Clone this repository**
 

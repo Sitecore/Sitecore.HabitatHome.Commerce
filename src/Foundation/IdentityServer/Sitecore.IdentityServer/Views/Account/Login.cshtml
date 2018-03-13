@@ -1,0 +1,30 @@
+﻿@using Sitecore.IdentityServer.Models
+@model Sitecore.IdentityServer.Models.LoginViewModel
+<div class="login-outer">
+    <div class="login-main-wrap">
+        <div class="login-box">
+            <div class="logo-wrap">
+                <img src="~/images/logo_new.png" alt="Sitecore logo"/>
+            </div>
+            @Html.Partial("_ValidationSummary")
+            <form asp-route="Login" runat="server" class="form-horizontal">
+                <div class="form-wrap">
+                    <input type="hidden" asp-for="ReturnUrl"/>
+                    <label asp-for="Username" class="login-label"></label>
+                    <input class="form-control" placeholder="Enter user name" asp-for="Username" autofocus>
+                    <label asp-for="Password" class="login-label"></label>
+                    <input type="password" class="form-control" placeholder="Enter password" asp-for="Password" autocomplete="off">
+                </div>
+
+                <button class="btn btn-primary btn-block">Log in</button>
+
+                <div class="remember-me-lnk">
+                    <label class="checkbox login-label" asp-for="RememberLogin">
+                        <input asp-for="RememberLogin">
+                        Remember me
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

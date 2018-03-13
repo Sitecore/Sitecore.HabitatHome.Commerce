@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="Sitecore.IdentityServer" tags="IisApp">
+    <parameterEntry type="ProviderPath" scope="iisapp" match="WebSite" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="WebSite" />
+  </parameter>
+  
+  <parameter name="BizFxUrl" description="Business Tools Url." defaultValue="">
+    <parameterEntry kind="TextFile" scope="wwwroot\\appsettings.json" match="PlaceholderForBizFxUrl" />
+  </parameter>
+  <parameter name="BizFxUrlWildcard" description="Business Tools Url." defaultValue="">
+    <parameterEntry kind="TextFile" scope="wwwroot\\appsettings.json" match="PlaceholderForBizFxUrlWildcard" />
+  </parameter>
+  <parameter name="SitecoreConnectionString" description="Sitecore membership connection string." defaultValue="">
+    <parameterEntry kind="TextFile" scope="wwwroot\\appsettings.json" match="PlaceholderForSitecoreConnectionString" />
+  </parameter>
+  <parameter name="IDServerCertificateThumbprint" description="Certificate Thumbprint." defaultValue="">
+    <parameterEntry kind="TextFile" scope="wwwroot\\appsettings.json" match="PlaceHolderForIDServerCertificateThumbprint" />
+  </parameter>
+</parameters>

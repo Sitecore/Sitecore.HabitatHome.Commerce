@@ -1,0 +1,64 @@
+@import "../../../../node_modules/ngx-chips/dist/modules/core/styles/core/_core.scss";
+@import "../../../../node_modules/ngx-chips/dist/modules/core/styles/themes/_bootstrap-theme.scss";
+@import "../../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../../node_modules/bootstrap/scss/_forms.scss";
+
+// apply theme to the container
+::ng-deep .ng2-tag-input.sitecore-theme {
+  @include tag-input-theme($bootstrap-theme);
+
+  @extend .form-control;
+
+  border-bottom-width: 1px !important;
+  padding-left: $spacer !important;
+  padding-right: $spacer !important;
+
+  &.ng2-tag-input--focused {
+    border-color: #88cde7 !important;
+  }
+
+  tag {
+    @include tag-theme($bootstrap-tag-theme);
+
+    height: 25px;
+    line-height: 21px;
+    padding-left: 1rem;
+
+    delete-icon {
+      @include icon-theme($bootstrap-icon-theme);
+
+      &:hover {
+        transform: scale(1.2) translateY(-1px);
+      }
+
+      svg {
+        height: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  tag-input-form {
+    input {
+      border: 0 !important;
+      box-shadow: none !important;
+      color: #464a4c;
+      font-size: 1rem;
+      height: auto;
+      line-height: 1.25;
+      outline: 0 !important;
+      padding: 5px 0;
+      width: 20rem;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border: 0 !important;
+        box-shadow: none !important;
+        outline: 0 !important;
+      }
+    }
+  }
+}
+

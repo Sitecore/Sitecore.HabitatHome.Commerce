@@ -35,6 +35,10 @@
 		"CommerceAuthoringServicesPort": {
 			"Type": "string",
 			"Description": "Commerce Authoring Services port"
+		},
+		"EnvironmentName": {
+			"Type": "string",
+			"Description": "Name of the Authoring Environment"
 		}
 	},
 	"Variables": {
@@ -95,7 +99,8 @@
         "ServicesContentPath": "[parameter('SitecoreBizFxServicesContentPath')]",
         "CommerceAuthoringServicesPort": "[parameter('CommerceAuthoringServicesPort')]",
         "PhysicalPath": "[variable('SitecoreBizFxPhysicalPath')]",
-        "UserAccount": "[parameter('UserAccount')]"
+		"UserAccount": "[parameter('UserAccount')]",
+		"EnvironmentName":"[parameter('EnvironmentName')]"
       }
 		},
 		"CreatePaths": {

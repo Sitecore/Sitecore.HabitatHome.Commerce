@@ -1,0 +1,27 @@
+<!-- Commenting out the SPEAK control to be able to rip off favorites -->
+<!-- <sc-action-control>
+  <sc-action *ngFor="let action of view?.Actions" id="action-{{view.Name}}-{{action.Name}}" text="{{action.DisplayName}}" icon="{{action.Icon}}"
+    [isDisabled]="!action.IsEnabled" (actionClick)="doAction(action)"></sc-action>
+</sc-action-control> -->
+
+<div class="action-ctrl">
+  <sc-dropdown *ngIf="!shouldAutoPromoteActions()" #dropdown>
+    <button scButton scDropdownToggle [class.btn-icon-only]="true"></button>
+    <sc-dropdown-menu menuAlignment="right">
+      <ng-content></ng-content>
+      <div *ngFor="let action of view?.Actions" class="dropdown-item" [class.disabled]="!action.IsEnabled">
+        <button class="action-ctrl-action" [attr.title]="tooltipAttribute(action)" [disabled]="!action.IsEnabled" (click)="doAction(action)"
+          id="action-{{view.Name}}-{{action.Name}}">
+          <sc-icon size="small" color="basic-x-dark" [icon]="action.Icon"></sc-icon>{{action.DisplayName}}
+        </button>
+      </div>
+    </sc-dropdown-menu>
+  </sc-dropdown>
+
+  <div class="btn-group fav-group" role="group" *ngIf="shouldAutoPromoteActions()">
+    <button *ngFor="let action of view?.Actions" type="button" class="btn btn-icon-only btn-secondary" [class.disabled]="!action.IsEnabled"
+      [attr.title]="tooltipAttribute(action)" [disabled]="!action.IsEnabled" (click)="doAction(action)" id="action-{{view.Name}}-{{action.Name}}">
+      <sc-icon size="small" color="basic-x-dark" [icon]="action.Icon"></sc-icon>
+    </button>
+  </div>
+</div>
