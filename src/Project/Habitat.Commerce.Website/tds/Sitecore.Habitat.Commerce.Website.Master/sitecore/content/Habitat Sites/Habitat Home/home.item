@@ -6,9 +6,9 @@ path: /sitecore/content/Habitat Sites/Habitat Home/home
 parent: {CCC93859-7295-4776-B013-842A7B484932}
 name: home
 master: {00000000-0000-0000-0000-000000000000}
-template: {2C6679F9-65B4-4437-8A4C-BE4C790B16E0}
-templatekey: Home
-created: 20180209T180543Z
+template: {1E6A5A9F-0BF0-4EFB-9F63-F0F43957887E}
+templatekey: Store Home
+created: 20180312T180547Z
 
 ----field----
 field: {182C3780-07F9-4586-8A1D-92C9D9BACC8F}
@@ -41,7 +41,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 621e10a5-9616-490d-9ba3-128f947fcf8a
+revision: 00cc88dc-dd89-4daf-b2a9-8f35631178b6
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -54,9 +54,9 @@ Habitat Home
 field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
 name: Page Design
 key: page design
-content-length: 38
+content-length: 0
 
-{91F1292D-FCE1-4B76-867A-9F6E048CDC78}
+
 ----field----
 field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
 name: NavigationTitle
@@ -98,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-621e10a5-9616-490d-9ba3-128f947fcf8a
+00cc88dc-dd89-4daf-b2a9-8f35631178b6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180221T174000Z
+20180313T033919Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
