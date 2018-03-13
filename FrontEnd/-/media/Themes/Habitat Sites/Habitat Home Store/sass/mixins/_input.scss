@@ -17,7 +17,7 @@
     max-width: $control-large-height;
     min-width: $control-large-height;
     padding: 0;
-    @if($increase) {
+    @if($increase) { 
         order: 3;
         border-radius: 0;
         border-left: none;

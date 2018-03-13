@@ -11,7 +11,7 @@
       "Type": "string",
       "Description": "The physical path of the configured Web Root for the environment"
     },
-    "SitecoreIdentityServerZipPath": {
+    "SitecoreIdentityServerPath": {
       "Type": "string",
       "Description": "Sitecore IdentityServer Zip Path"
     },
@@ -100,7 +100,7 @@
       "Type": "DeployCommerceContent",
       "Params": {
         "Name": "SitecoreIdentityServer",
-        "ServicesContentPath": "[parameter('SitecoreIdentityServerZipPath')]",
+        "ServicesContentPath": "[parameter('SitecoreIdentityServerPath')]",
         "PhysicalPath": "[variable('SitecoreIdentityServerPhysicalPath')]",
         "SitecoreDbServer": "[parameter('SitecoreDbServer')]",
         "SitecoreCoreDbName": "[parameter('SitecoreCoreDbName')]",

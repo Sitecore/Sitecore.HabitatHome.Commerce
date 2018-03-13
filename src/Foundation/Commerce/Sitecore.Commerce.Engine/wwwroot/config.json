@@ -1,0 +1,61 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Sitecore Commerce Engine",
+    "BootStrapFile": "Global",
+    "DeploymentId": "Deployment01",
+    "EnvironmentName": "HabitatMinions",
+    "EncryptionProtectionType": "Machine",
+    "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
+    "EncryptionSID": "Enter a valid SID for a domain registered user",
+    "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
+    "SitecoreIdentityServerUrl": "https://localhost:5050",
+    "AllowedOrigins": [
+      "https://localhost:4200",
+      "http://localhost:4200",
+      "http://sxa.storefront.com",
+      "https://habitat.dev.local",
+      "https://habitathome.dev.local"
+    ],
+    "AntiForgeryEnabled": false,
+    "UseHttpsInKestrel": true,  
+    "SslPort": 5000,
+    "SslPfxPath": "wwwroot/localhost.pfx",
+    "SslPfxPassword": "sitecore"
+  },
+  "ApplicationInsights": {
+    "InstrumentationKey": "",
+    "MinimumLevel": "Information"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Information",
+      "System": "Warning",
+      "Microsoft": "Warning"
+    },
+    "ApplicationInsightsLoggingEnabled": false
+  },
+  "Serilog": {
+    "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Information",
+        "System": "Information"
+      }
+    },
+    "FileSizeLimitBytes": 100000000
+  },
+  "Certificates": {
+    "Certificates": [
+      {
+        "Thumbprint": "F1D8349D784BF672B99103C1C204A57556DD263A",
+        "DefaultRoles": [
+          "sitecore\\QA",
+          "sitecore\\Commerce Business User"
+        ] 
+      }
+    ],
+    "CertificateHeaderName": "X-CommerceEngineCert"
+  } 
+}

@@ -8,6 +8,7 @@ var msbuild = require("gulp-msbuild");
 var foreach = require("gulp-foreach");
 var debug = require("gulp-debug");
 var exec = require("child_process").exec;
+var util = require("gulp-util");
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -73,7 +74,7 @@ gulp.task("Apply-Xml-Transform",
     function () {
         var layerPathFilters = [
             "./src/Foundation/**/*.xdt", "./src/Feature/**/*.xdt", "./src/Project/**/*.xdt",
-            "!./src/**/obj/**/*.xdt", "!./src/**/bin/**/*.xdt"
+            "!./src/**/obj/**/*.xdt", "!./src/**/bin/**/*.xdt", "!./src/**/packages/**/*.xdt"
         ];
         return gulp.src(layerPathFilters)
             .pipe(foreach(function (stream, file) {
@@ -255,7 +256,8 @@ gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {
 });
 
 var publishCommerceEngine = function (dest, callback) {
-    var cmd = "dotnet publish .\\src\\Commerce.Engine\\Customer.Sample.Solution.sln -o " + dest
+    var solution = config.commerceEngineSolutionName + ".sln";
+    var cmd = "dotnet publish .\\" + solution + " -o " + dest
     var options = { maxBuffer: Infinity };
     console.log("cmd: " + cmd);
     return exec(cmd, options, function (err, stdout, stderr) {

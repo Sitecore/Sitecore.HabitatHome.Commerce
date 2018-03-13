@@ -78,10 +78,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Project\Habitat.Commerce.Website.Serialization.config" />
+    <None Include="App_Config\Include\Project\Habitat.Commerce.Website.Serialization.config.disabled" />
     <Content Include="App_Config\Include\Project\z.Habitat.Commerce.Website.DevSettings.config" />
     <Content Include="sitecore.habitatcommerce.version.txt" />
     <None Include="packages.config" />
+    <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
+    <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,6 +99,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

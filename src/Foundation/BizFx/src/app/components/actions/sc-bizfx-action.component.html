@@ -1,0 +1,41 @@
+<form (ngSubmit)="submitAction()" id="dialog-form" [formGroup]="actionForm" novalidate>
+  <sc-dialog id="action-{{view?.Name}}-{{view?.Action}}" class="modal-lg">
+    <sc-dialog-header>
+      <h4>{{action.DisplayName}}</h4>
+    </sc-dialog-header>
+
+    <sc-dialog-body class="p-0">
+      <div *ngIf="action.RequiresConfirmation" class="p-3">
+        <p>{{action.ConfirmationMessage}}</p>
+      </div>
+
+      <sc-progress-indicator-panel [show]="loadingView" [hideBackground]="true">
+        <div *ngIf="messages">
+          <div *ngFor="let message of messages">
+            <sc-bizfx-messagebar [message]="message.Text" type="danger" [isStatic]="true"></sc-bizfx-messagebar>
+          </div>
+        </div>
+
+        <div *ngIf="view" class="p-3">
+          <sc-bizfx-braintreeview *ngIf="view.UiHint === 'BraintreePayment'" [view]="view" [actionForm]="actionForm"></sc-bizfx-braintreeview>
+
+          <sc-bizfx-actionproperty *ngFor="let property of view.Properties" [property]="property" [actionForm]="actionForm"></sc-bizfx-actionproperty>
+
+          <sc-bizfx-actiongrid *ngIf="view.UiHint === 'Grid'" [view]="view" [actionForm]="actionForm" [grid]="grid"></sc-bizfx-actiongrid>
+
+          <sc-bizfx-mediapicker *ngIf="view.UiHint === 'MediaPicker'" [view]="view" [actionForm]="actionForm"></sc-bizfx-mediapicker>
+        </div>
+      </sc-progress-indicator-panel>
+    </sc-dialog-body>
+
+    <sc-dialog-footer>
+      <button id="submit-action" type="submit" class="btn btn-icon-only btn-primary" form="dialog-form" [disabled]="!actionForm.valid">
+        <sc-icon size="medium" color="basic-x-dark" icon="check"></sc-icon>
+      </button>
+
+      <button scDialogClose id="cancel-action" type="button" class="btn btn-icon-only btn-secondary">
+        <sc-icon size="medium" color="basic-x-dark" icon="delete"></sc-icon>
+      </button>
+    </sc-dialog-footer>
+  </sc-dialog>
+</form>

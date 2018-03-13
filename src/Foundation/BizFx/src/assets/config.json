@@ -1,0 +1,11 @@
+{
+  "EnvironmentName": "HabitatAuthoring",
+  "EngineUri": "https://localhost:5000",
+  "IdentityServerUri": "https://localhost:5050",
+  "BizFxUri": "https://localhost:4200",
+  "Language": "en",
+  "Currency": "USD",
+  "ShopName": "CommerceEngineDefaultStorefront",
+  "LanguageCookieName": "selectedLanguage",
+  "EnvironmentCookieName": "selectedEnvironment"
+}

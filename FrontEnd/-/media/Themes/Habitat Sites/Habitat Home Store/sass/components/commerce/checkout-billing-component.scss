@@ -10,7 +10,7 @@
         @include form-section();
         .contact-info-form {
             //@include horizontal-form-layout(2);
-            display: flex;
+            display: flex; 
             flex-flow: column;
             flex-direction: column;
             width: 400px;

@@ -8,7 +8,7 @@ main .component.column-splitter{
     max-width: $main-container-width;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom : 10px;
+    margin-bottom : 10px; 
     display:flex;
     flex-flow: row nowrap;
     >.container-rounded{

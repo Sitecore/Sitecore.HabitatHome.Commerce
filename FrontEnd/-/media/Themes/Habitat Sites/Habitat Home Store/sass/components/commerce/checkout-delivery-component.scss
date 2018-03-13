@@ -1,6 +1,6 @@
-@import '../../index';
+@import '../../index'; 
 .component.cxa-checkoutdelivery-component {
-    .delivery-form {
+    .delivery-form { 
         margin-bottom: 15px;
         padding-bottom: 15px;
         width: 100%;
@@ -14,9 +14,9 @@
     .shipall-title {
         margin-top: 15px;
         margin-bottom: 15px;
-    }
+    } 
     .buttons-row {
-        margin-top: 25px;
+        margin-top: 25px; 
         @include row-of-elements-wide-apart(true);
     }
     .shipall-options {
