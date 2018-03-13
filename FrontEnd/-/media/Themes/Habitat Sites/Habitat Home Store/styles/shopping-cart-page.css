@@ -41,49 +41,6 @@
   padding-top: 81px;
 }
 
-.shopping-cart-page .cxa-stepindicator-component {
-  display: none;
-}
-
-.shopping-cart-page .shopping-cart-lines th {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div button,
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
-  color: #141919;
-  border: 1px solid #141919;
-  border-radius: 0;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
-  border-left: 0;
-  border-right: 0;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .price {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 300;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-total .total {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 600;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-delete a {
-  color: #141919;
-}
-
-.shopping-cart-page .cxa-shoppingcartlines-component .shoppingcart-delete a span:before {
-  font-family: FontAwesome;
-  content: '\f00d';
-  font-size: 18px;
-}
-
 .shopping-cart-page .cxa-shoppingcartpromotion-component .component-content > div.cart-promotion-title {
   display: none;
 }

@@ -44,50 +44,6 @@
         padding-top: 81px;
     }
 
-    .cxa-stepindicator-component {
-        display: none;
-    }
-
-    .shopping-cart-lines {
-        th {
-            font-weight: bold;
-            font-size: 20px;
-        }
-    }
-
-    .cxa-shoppingcartlines-component .shoppingcart-quantity div button,
-    .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
-        color: #141919;  
-        border: 1px solid #141919;           
-        border-radius: 0;
-    }
-    .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
-        border-left: 0;
-        border-right: 0;
-    }
-
-    .cxa-shoppingcartlines-component .price {
-        font-size: 16px;
-        line-height: 18px;
-        font-weight: 300;
-    }
-
-    .cxa-shoppingcartlines-component .shoppingcart-total .total {
-        font-size: 16px;
-        line-height: 18px;
-        font-weight: 600;
-    }
-
-    .cxa-shoppingcartlines-component .shoppingcart-delete a {
-        color: #141919;
-
-        span:before {
-            font-family: FontAwesome;
-            content: '\f00d';            
-            font-size: 18px;
-        }
-    } 
-
     .cxa-shoppingcartpromotion-component .component-content {
         & > div.cart-promotion-title {
             display: none;

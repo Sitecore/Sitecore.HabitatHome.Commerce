@@ -1023,7 +1023,7 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   align-items: flex-start;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .component.cxa-checkoutbilling-component .billing-summary h4 {
@@ -2739,10 +2739,18 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
   color: #383c41;
 }
 
-.component.cxa-checkoutbilling-component .billing-summary .billing-total-summary .order-summary > span:last-child {
-  font-size: 18px;
+.component.cxa-checkoutbilling-component .billing-summary .billing-total-summary .order-summary {
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.component.cxa-checkoutbilling-component .billing-summary .billing-total-summary .order-summary.order-summary-total {
+  border-bottom: 0;
+}
+
+.component.cxa-checkoutbilling-component .billing-summary .billing-total-summary .order-summary.order-summary-total span:last-child {
   font-weight: bold;
-  color: #383c41;
 }
 
 .component.cxa-checkoutbilling-component .billing-summary .billing-total-summary .order-summary-discount {

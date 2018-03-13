@@ -3,16 +3,28 @@
 .cxa-shoppingcartlines-component {
     table {
         @include cart-lines-table();
+        th {
+            font-weight: bold;
+            font-size: 20px;
+        }
     }
     .shoppingcart-quantity div {
         @include numeric-input-group();
+        button,
+        input {
+            color: #141919;  
+            border: 1px solid #141919;           
+            border-radius: 0;
+        }
     }
     .shoppingcart-delete {
         a {
+            color: #141919;
             span {
                 &:before {
-                    @include sc-icon($scxa-delete-copy);
-                    opacity: 0.5;
+                    font-family: FontAwesome;
+                    content: '\f00d';            
+                    font-size: 18px;
                 }
             }
         }
@@ -32,13 +44,15 @@
         }
     }
     .price {
-        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 300;
     }
     .shoppingcart-total {
         .total {
-            font-size: $font-size-large;
+            font-size: 16px;
+            line-height: 18px;
             font-weight: 600;
-            color: $heading-color;
         }
     }
     .shoppingcart-total-saving {

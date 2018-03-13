@@ -99,7 +99,7 @@
         @include form-section();
         @include horizontal-form-layout(2);
         @include align-elements($top-or-left);
-        font-size: 18px;
+        font-size: 16px;
 
         h4 {
             width: 100%;
@@ -283,8 +283,19 @@
         }
         .billing-total-summary {
             .order-summary {
+                border-bottom: 1px solid #e2e3e5;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
                 >span:last-child {
-                    @include highlighted-text();
+                    //@include highlighted-text();
+                }
+
+                &.order-summary-total {
+                    border-bottom: 0;
+
+                    span:last-child {
+                        font-weight: bold;
+                    }
                 }
             }
             .order-summary-discount {
