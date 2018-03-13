@@ -1,14 +1,14 @@
 ----item----
 version: 1
-id: {434FF48D-E94E-4EFA-96D2-E48142A2B313}
+id: {51B15A65-0BE2-4A1B-9081-A5A0BD501F58}
 database: master
-path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/components/commerce/checkout-delivery-component
-parent: {D88E855D-A8A7-42AD-8F18-E2431293321D}
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/checkout-delivery-component
+parent: {2B056B9D-9332-407E-82F8-9C4BF8438CB0}
 name: checkout-delivery-component
 master: {00000000-0000-0000-0000-000000000000}
 template: {962B53C4-F93B-4DF9-9821-415C867B8903}
 templatekey: File
-created: 20180215T174745Z
+created: 20180313T052916Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
@@ -514,11 +514,11 @@ name: __Icon
 key: __icon
 content-length: 61
 
--/media/434FF48DE94E4EFA96D2E48142A2B313.ashx?h=16&thn=1&w=16
+-/media/51B15A650BE24A1B9081A5A0BD501F58.ashx?h=16&thn=1&w=16
 ----version----
 language: en
 version: 1
-revision: 6b36de29-fabb-47dc-95b3-17f722975560
+revision: c24bf2e5-5fb7-4401-b580-978fd9337588
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -526,21 +526,68 @@ name: __Created
 key: __created
 content-length: 16
 
-20171120T095740Z
+20180313T052916Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6b36de29-fabb-47dc-95b3-17f722975560
+c24bf2e5-5fb7-4401-b580-978fd9337588
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180313T053523Z
+20180313T052926Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-CA
+version: 1
+revision: 194865c5-6398-41f1-a9dd-68f049c51207
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180313T052916Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+194865c5-6398-41f1-a9dd-68f049c51207
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180313T052916Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
