@@ -9,7 +9,21 @@
     .contact-info-section {
         @include form-section();
         .contact-info-form {
-            @include horizontal-form-layout(2);
+            //@include horizontal-form-layout(2);
+            display: flex;
+            flex-flow: column;
+            flex-direction: column;
+            width: 400px;
+
+            & > div {
+                display: flex;
+                flex-flow: column;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+        }
+        h4 {
+            margin: 0 0 1em;
         }
     }
     .apply-credit-card-toggle {
@@ -28,6 +42,7 @@
                     .validate-payment-btn {
                         @include align-element($bottom-or-right);
                     }
+                    order: 1;
                 }
                 .show-payment {
                     width: 100%;
@@ -73,6 +88,9 @@
                 @include row-of-elements-packed(false, $bottom-or-right,10px);
                 .applied-gift-card-info {
                     @include row-of-elements-packed(false, $bottom-or-right);
+                    span {
+                        border-radius: 0; 
+                    }
                 }
             }
         }
@@ -81,6 +99,11 @@
         @include form-section();
         @include horizontal-form-layout(2);
         @include align-elements($top-or-left);
+        font-size: 18px;
+
+        h4 {
+            width: 100%;
+        }
         .billing-payment-summary {
             @include vertical-form-layout();
             @include align-elements($top-or-left);
@@ -101,13 +124,27 @@
     .buttons-row {
         @include form-section();
         @include row-of-elements-wide-apart(false, $center);
-        margin-bottom: $margin;
+        margin: 40px 0 0;
+        padding: 0;
+        border: 0;
     }
 }
 
 .component.cxa-checkoutbilling-component {
     h4 {
-        @include secondary-title();
+        //@include secondary-title();
+        font-size: 24px;
+        color: #0e909f;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #e2e3e5;
+        margin: 1em 0 0.5em;
+        text-transform: capitalize;
+    }
+    label {
+        color: #141919 !important;
+    }
+    input, select {
+        border-radius: 0 !important;
     }
     .billing-discount{
         color: $error-second-color !important;
@@ -132,8 +169,15 @@
         .payment-amount {
             @include form-primary-style();
             .validate-payment-btn {
-                @include primary-button-filled();
-                @include large-height();
+                //@include primary-button-filled();
+                //@include large-height();
+                background-color: #0e909f;
+                color: white;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 18px;
+                height: 34px;
+                padding: 0 20px;
             }
         }
         .billing-paycard-container,
@@ -162,10 +206,14 @@
                 @include form-primary-style();
                 .payment-get-balance {
                     button {
-                        @include primary-button-line();
-                    }
-                    span {
-                        @include highlighted-text();
+                        background-color: white;
+                        color: #141919;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        line-height: 18px;
+                        height: 34px;
+                        padding: 0 20px;
+                        border: 1px solid #141919;
                     }
                 }
             }
@@ -173,10 +221,25 @@
                 @include form-primary-style();
                 .payment {
                     .apply-full-amount-btn {
-                        @include primary-button-line();
+                        //@include primary-button-line();
+                        background-color: white;
+                        color: #141919;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        line-height: 18px;
+                        height: 34px;
+                        padding: 0 20px;
+                        border: 1px solid #141919;
                     }
                     .gift-card-payment-btn {
-                        @include primary-button-filled();
+                        //@include primary-button-filled();
+                        background-color: #0e909f;
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        line-height: 18px;
+                        height: 34px;
+                        padding: 0 20px;
                     }
                 }
             }
@@ -190,6 +253,8 @@
                         @include text-input();
                         background-color: $secondary-background-color;
                         width: 175px;
+                        border-radius: 0;
+                        margin-right: 1em;
                     }
                     .giftcard-payment-number+span {
                         display: none;
@@ -198,6 +263,7 @@
                 .remove-gift-card-link {
                     @include error-button-line();
                     width: 120px;
+                    border-radius: 0;
                 }
             }
         }
@@ -227,13 +293,34 @@
         }
     }
     .buttons-row {
+        .previous-button,
+        .to-confirm-button {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 48px;
+            border-radius: 0;
+            text-transform: uppercase;
+            padding: 0 2em;
+            text-align: center;
+        }
         .previous-button {
-            @include primary-button-line();
-            @include large-height();
+            background-color: white;
+            color: #141919;
+            &:before {
+                font-family: FontAwesome;
+                content: '\f053';
+                margin-right: 1em;
+            }
         }
         .to-confirm-button {
-            @include primary-button-filled();
-            @include large-height();
+            color: white;
+            background-color: #0e909f;
+            &:after {
+                font-family: FontAwesome;
+                content: '\f054';
+                margin-left: 1em;
+            }
         }
     }
 }
