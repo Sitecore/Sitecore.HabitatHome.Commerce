@@ -51,6 +51,8 @@
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
 
     <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="2.1.6" />
+
+    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="2.1.5" />
     <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="2.1.3" />
 
     <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="2.1.5" />

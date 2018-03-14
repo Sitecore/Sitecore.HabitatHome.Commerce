@@ -184,6 +184,8 @@ namespace Sitecore.Commerce.Engine
            
             services.AddMvc()
                     .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+                                                                                                     
+            services.ConfigureCartPipelines();
 
             this._nodeContext.AddObject(services);
         }

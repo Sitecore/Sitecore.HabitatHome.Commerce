@@ -3,24 +3,22 @@
   "ArtifactStoreId": "78A1EA61-1F37-42A7-AC89-9A3F46D60CA5",
   "Components": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [
-      {
-        "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
-        "Memberships": {
-          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "CommerceEnvironments" ]
-        },
-        "Id": "efe49ff743d34b649fffcof293615cd9",
-        "Policies": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-          "$values": []
-        },
-        "ChildComponents": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-          "$values": []
-        }
+    "$values": [{
+      "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
+      "Memberships": {
+        "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+        "$values": ["CommerceEnvironments"]
+      },
+      "Id": "efe49ff743d34b649fffcof293615cd9",
+      "Policies": {
+        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+        "$values": []
+      },
+      "ChildComponents": {
+        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
+        "$values": []
       }
-    ]
+    }]
   },
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
@@ -1200,6 +1198,16 @@
         "EnableGuestCheckout": true,
         "EnableTermsAndConditions": true,
         "MinimumOrderQuantity": 1.0
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Tax.GlobalTaxPolicy, Sitecore.Commerce.Plugin.Tax",
+        "DefaultCartTaxRate": 0.1,
+        "DefaultItemTaxRate": 0.1,
+        "TaxCalculationEnabled": true,
+        "PriceIncudesTax": false,
+        "CalculateTaxBasedOn": "ShippingAddress",
+        "ShippingTaxClass": "CartItems",
+        "RoundAtSubTotal": false
       },
       {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",
