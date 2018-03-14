@@ -1,0 +1,26 @@
+﻿---
+ID: "e8a6bcae-8818-4a69-ad2d-9e02f2046f7b"
+Parent: "c1e6e09a-fe5e-48d7-a3f5-a2b5a0f5fcbc"
+Template: "a6298267-7240-472e-94d0-09fad3d32c7b"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Texts/Checkout
+DB: master
+BranchID: "f4debfdc-2d8f-4c56-8876-c4af7de0ce00"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 275
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A4BFEF64-DCB6-4E2D-B233-33CC50026107}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152508Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

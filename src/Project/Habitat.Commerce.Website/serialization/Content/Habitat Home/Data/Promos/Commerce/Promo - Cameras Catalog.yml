@@ -1,0 +1,36 @@
+﻿---
+ID: "2b4b8b35-f276-479c-8e32-0f37979bc3bb"
+Parent: "88b64564-9f3c-4c21-869a-cff918e90686"
+Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Commerce/Promo - Cameras Catalog"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: <h2>Protect Your Most Valuable Asset&mdash;You</h2>
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{51831BF4-8AFE-4F51-B8AF-B8DAECA92A1C}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180218T141729Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "82a6ce45-59b5-4bc8-83b9-79ccb8174a2a"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{56D9D3C5-9511-4386-A7C7-6C14FE02ED98}" />
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: <p>Habitat Sentinel Security Cameras offer motion detection and selectable zoom to grab important footage. Multiple programs let you engage and monitor your security system from anywhere.</p>
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E9F2E3A7-0575-0632-B67E-5E65092230C3}" />

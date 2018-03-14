@@ -1,0 +1,14 @@
+﻿---
+ID: "88b64564-9f3c-4c21-869a-cff918e90686"
+Parent: "006c1e3c-51c2-4bb5-b212-c6280f436889"
+Template: "f07cbe89-73ae-4de6-9217-2570260cac6e"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Commerce
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180212T124236Z
