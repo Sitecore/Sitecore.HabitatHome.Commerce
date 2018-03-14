@@ -1,0 +1,137 @@
+﻿---
+ID: "2349477d-5c4d-4102-8f57-d869fd65c090"
+Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
+Template: "a8359172-32a7-47ee-9c1a-35cc46148ce6"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/buy-gift-cards"
+DB: master
+BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/16x16/gift card.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {2FA513FA-E25E-491E-927E-5363D206B41B}
+    {CB32CE1B-1A05-4D3E-94A2-B349858386AB}
+    {CE7D72F3-4574-4C94-9FD9-2E77360043A4}
+    {FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}
+    {7D98DBB3-4D8A-4FD9-9722-029200EC82BE}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Type: Checklist
+  Value: |
+    {E0A2A027-0932-4878-A7D6-0416D5263EFB}
+    {61BD64D6-809E-40AE-9297-2724A19329B3}
+    {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
+    {500AE4C0-FA7B-463F-8149-EFFF7F044101}
+    {A0E7FF57-6994-4B09-AA21-104239628D5A}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2300
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5FEACA72-95B5-47E0-AFB1-09BE3FFF615C}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Buy Gift Cards
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B31B84D1-6D70-4255-8B6C-5CC41533CD8A}"
+              p:before="*"
+              s:ds="{E408AA28-E09C-4B7D-83D7-9629996554C6}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BD70D540C-DAA4-4272-BD2E-92474D473F10%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+              s:ph="/main/container-2" />
+            <r
+              uid="{C69D0B1A-E702-4129-A471-6B0F246E3471}"
+              p:after="r[@uid='{B31B84D1-6D70-4255-8B6C-5CC41533CD8A}']"
+              s:ds="{7434D852-53B8-40BB-BB53-C558181872CA}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B837DA9F8-E307-4615-9B66-7F3B97E1470B%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+              s:ph="/main/container-2" />
+            <r
+              uid="{C284EFC5-E181-4BFA-963E-4339DE51794F}"
+              p:after="r[@uid='{C69D0B1A-E702-4129-A471-6B0F246E3471}']"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+              s:ph="main" />
+            <r
+              uid="{25387B48-1D7E-4DFF-8CB1-F25B343BC1BE}"
+              p:after="r[@uid='{C284EFC5-E181-4BFA-963E-4339DE51794F}']"
+              s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
+              s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+              s:ph="/main/column-2-1" />
+            <r
+              uid="{46BFE7AE-F881-4789-9B06-95468EC7CBF5}"
+              p:after="r[@uid='{25387B48-1D7E-4DFF-8CB1-F25B343BC1BE}']"
+              s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/column-2-1" />
+            <r
+              uid="{675B0955-66EA-46D8-92F7-14EB7BDEEB09}"
+              p:after="r[@uid='{46BFE7AE-F881-4789-9B06-95468EC7CBF5}']"
+              s:ds="{E679D02C-76B3-4B37-ADF1-7F8E510FC44E}"
+              s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+              s:ph="/main/column-2-1" />
+            <r
+              uid="{DFA15B1C-3E12-4A29-98AB-0384ACB829F2}"
+              p:after="r[@uid='{675B0955-66EA-46D8-92F7-14EB7BDEEB09}']"
+              s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
+              s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+              s:ph="/main/column-2-1" />
+            <r
+              uid="{16E732A0-8EC7-462B-92FB-C9761FEBBD00}"
+              p:after="r[@uid='{DFA15B1C-3E12-4A29-98AB-0384ACB829F2}']"
+              s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/column-1-1" />
+            <r
+              uid="{7BAB3D98-B4B9-4B4D-9668-289136755E92}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2=39F88DE5-E4E1-42D2-80F6-8BB47D2D9956&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: "{974DCBB1-796B-41AF-BD27-A96F38CB89B1}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152530Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Buy Gift Card
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Buy Gift Cards
+  Versions:

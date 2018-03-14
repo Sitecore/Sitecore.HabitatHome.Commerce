@@ -1,0 +1,344 @@
+﻿---
+ID: "01a6854c-f47e-4284-b94a-c77610d03d7c"
+Parent: "a1874e15-32cf-40dc-99d0-43991e3bb5f2"
+Template: "cd0b1c23-ffd4-4336-8d3f-eaeea1911eb2"
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/category/*
+DB: master
+BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/16x16/elements4.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {2FA513FA-E25E-491E-927E-5363D206B41B}
+    {CB32CE1B-1A05-4D3E-94A2-B349858386AB}
+    {CE7D72F3-4574-4C94-9FD9-2E77360043A4}
+    {FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}
+    {7D98DBB3-4D8A-4FD9-9722-029200EC82BE}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Type: Checklist
+  Value: |
+    {E0A2A027-0932-4878-A7D6-0416D5263EFB}
+    {61BD64D6-809E-40AE-9297-2724A19329B3}
+    {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
+    {500AE4C0-FA7B-463F-8149-EFFF7F044101}
+    {A0E7FF57-6994-4B09-AA21-104239628D5A}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        s:l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" />
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{4A4E6DA1-C27D-467B-8900-262A87F05FAD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{6A1417A8-5C3E-41D1-B7AD-9B46BADE4540}"
+              p:before="*"
+              s:ds=""
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7B1864351A-0EDC-4650-95C0-7AB675D646AF%7D&amp;ColumnWidth2=%7B80A9BB41-C410-400E-B762-771D5F9B78AA%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
+              s:ph="/main/container-3" />
+            <r
+              uid="{2BC91643-B819-4794-9AB9-7AD6BDABA329}"
+              p:after="r[@uid='{6A1417A8-5C3E-41D1-B7AD-9B46BADE4540}']"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7BDBB14D5B-EEA8-4F01-B58C-70275B1AD095%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
+              s:ph="main" />
+            <r
+              uid="{E82D91D8-1401-4332-86B4-3C8EC115E6A6}"
+              p:after="r[@uid='{2BC91643-B819-4794-9AB9-7AD6BDABA329}']"
+              s:ds="{F23358E9-C734-4BE2-BE47-A469758A8699}"
+              s:id="{EA89C258-F47F-4A76-A9E2-DF450985B897}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B968D2D51-1E55-4D75-9679-528029D8A2E8%7D%7C%7B8636EB85-386A-42BA-AA14-D5F592867741%7D%7C%7B689708EA-D282-4A39-9F6F-6F95F428942F%7D"
+              s:ph="/main/container-3/column-2-2" />
+            <r
+              uid="{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}"
+              p:after="r[@uid='{E82D91D8-1401-4332-86B4-3C8EC115E6A6}']"
+              s:ds="{BBE422B1-5B81-4F46-A445-A672967BE9D9}"
+              s:id="{C1DE5434-8570-46CB-BF87-FC33DBDFD89E}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B5D87E990-D33A-4613-BE6D-0D0235197254%7D%7C%7B1864351A-0EDC-4650-95C0-7AB675D646AF%7D%7C%7B2A09D451-70CD-4A11-868C-3C56B6A7749C%7D"
+              s:ph="/main/container-3/column-2-2" />
+            <r
+              uid="{55F6562F-CB97-4370-B0B4-901A06DB0686}"
+              p:after="r[@uid='{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}']"
+              s:ds="{1F414CAF-AB86-4423-95C5-64A154539DE3}"
+              s:id="{9CA5EB05-780A-438F-AABE-18B09C97D5FD}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D%7C%7B2DAC5C5F-3B64-4A60-9A98-262F32C05800%7D%7C%7BBC2E9EFE-9CAA-4B85-9310-D503C36485ED%7D&amp;Results per Page Values=12%7C18%7C24%7C30"
+              s:ph="/main/container-3/column-2-2" />
+            <r
+              uid="{115257A3-5BA5-41A2-AEF9-7FBB5DA81C73}"
+              p:after="r[@uid='{55F6562F-CB97-4370-B0B4-901A06DB0686}']"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles={CB43FDF9-F4E1-4545-8371-5BF41C62C379}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+              s:ph="main" />
+            <r
+              uid="{3CB64BB0-AFCD-4C43-AA81-032271DF21BC}"
+              p:after="r[@uid='{115257A3-5BA5-41A2-AEF9-7FBB5DA81C73}']"
+              s:ds="{16DD5B6B-A8E7-40E4-AD29-A08BDA93F556}"
+              s:id="{9610E495-0265-4293-892B-4CDC07B7686B}"
+              s:par="GridParameters&amp;Show No Result Message&amp;Use Lazy Loading&amp;Max Page Size=12"
+              s:ph="/main/container-3/column-2-2" />
+            <r
+              uid="{476649C4-A26B-4852-B97A-F6889A7C24C3}"
+              p:after="r[@uid='{3CB64BB0-AFCD-4C43-AA81-032271DF21BC}']"
+              s:ds="{0FEAF12A-5867-48E3-A86B-051C68FE2FCA}"
+              s:id="{2A6D6B26-5912-4AD1-B396-47669C2AEBEE}"
+              s:par="GridParameters&amp;Pages on Each Side of Current Page=5"
+              s:ph="/main/container-3/column-2-2" />
+            <r
+              uid="{6C220F82-884C-4B65-AF8D-F1B7FC785F18}"
+              p:after="r[@uid='{476649C4-A26B-4852-B97A-F6889A7C24C3}']"
+              s:ds=""
+              s:id="{E3E0051B-CF20-4014-9373-5F96297DF2A5}"
+              s:par="GridParameters"
+              s:ph="/main/container-3/column-1-2" />
+            <r
+              uid="{8C4298C4-0624-47FB-A7FF-0491A0D69D24}"
+              p:after="r[@uid='{6C220F82-884C-4B65-AF8D-F1B7FC785F18}']"
+              s:ds=""
+              s:id="{57DDDA93-8C79-452E-8D7E-6F828B97F8C2}"
+              s:par="GridParameters"
+              s:ph="/main/container-3/column-1-2" />
+            <r
+              uid="{95D3E1F4-B1C8-4860-B3F3-A35998456CBC}"
+              p:after="r[@uid='{8C4298C4-0624-47FB-A7FF-0491A0D69D24}']"
+              s:ds=""
+              s:id="{7F30A08E-92A2-4C33-B9CF-0AA6AEB064C3}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+              s:ph="nav-bar" />
+            <r
+              uid="{C6677917-3CE0-4AE0-B137-C3CD19C9C3DA}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters&amp;FieldNames=%7B41829F09-CE76-47ED-8C9F-F5C133201624%7D&amp;Styles=%7B0693224B-762B-4B16-A713-09C6A6152D9B%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
+              s:ph="/main/container-">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{83B74D35-8E74-41F1-BC65-A848E5812FF6}"
+                    s:name="Televisions">
+                    <conditions>
+                      <condition
+                        uid="9DACE60617754EECB7CB98C38A69C6EB"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Televisions"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Televisions" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="93AEA7CC4B7D410D8BDF8FEDDF6C402D"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{67E82024-68F0-46A8-86D0-502641702FA3}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{B2CB307E-BF97-4267-BF71-699F3D741D91}"
+                    s:name="Phones">
+                    <conditions>
+                      <condition
+                        uid="6C395347B1214BE9B695F720B2FD1893"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="5C223EF1C3F24A979B10684EFEBD45D8"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{34E50F5C-D9CE-4F4C-BE4E-3F8486F27AE9}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{05D861E6-D72E-42F7-8A73-49364E354E17}"
+                    s:name="Health Beauty">
+                    <conditions>
+                      <condition
+                        uid="CEE23BF0626243049E60DB86AB06A24E"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="B13F1407BEFB4360B658C80077059F64"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{D9A39063-E3F3-4889-9EC5-25004E21BFB3}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{B7C2E2FA-EF0A-4838-B3B8-847BD0FD1F6D}"
+                    s:name="Gaming">
+                    <conditions>
+                      <condition
+                        uid="CE4092FD151E4E18A9188DF246C488F6"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Gaming"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Gaming" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="40A8728DF9064627B55EBA4EF087C6D7"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{E347985A-ADF3-4154-8C8D-D5DA741A8BF7}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{0501EAC6-8951-4739-8C3F-B526482687FB}"
+                    s:name="Gift Cards">
+                    <conditions>
+                      <condition
+                        uid="F32F3A10DC294A4185D6FF3A0FD4A64D"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-eGift Cards and Gift Wrapping"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-eGift Cards and Gift Wrapping" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="74ED221A04F94593BF8CD7D58F78AA99"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{7434D852-53B8-40BB-BB53-C558181872CA}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{247BB3C4-F626-43DD-ACD0-1720BD5EE781}"
+                    s:name="Connected Home">
+                    <conditions>
+                      <condition
+                        uid="AB0D5874E45245229D31A728ABA87BB6"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Connected home"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Connected home" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="741C148E9480454185BDE1A2D82DCCE5"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{F457A05E-92BD-44F2-8C01-1AB096E34C2C}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{B64724CF-BA8D-42E8-B21C-86D3CD646B6F}"
+                    s:name="Computers and Tablets">
+                    <conditions>
+                      <condition
+                        uid="9C8996EAEB7B4B09AF977DD85030091C"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="126362CA67B1447992FE14DD61DB34CE"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{05D637CA-5037-4021-8E70-FA4C321921FC}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{9A9B8F59-1D77-41B9-97AA-197E5B84A410}"
+                    s:name="Cameras">
+                    <conditions>
+                      <condition
+                        uid="39A6EDFAA5A9472E97A167E363BF0B22"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Cameras"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Cameras" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="DD19B64FD4304B11A41C13FEC0195BC6"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{2B4B8B35-F276-479C-8E32-0F37979BC3BB}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{9D78D57D-3B1E-4A3E-B603-ACE4DD81E934}"
+                    s:name="Audio">
+                    <conditions>
+                      <condition
+                        uid="90C86DCDE86045FC9AB3CCD428406441"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Audio"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Audio" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="75AF996EDE264A168CEEDA35B51F18D9"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{74198218-F839-426D-AC78-E9970E09C0D8}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{8D92D456-A264-4C0F-8D00-72DF73BA5680}"
+                    s:name="Appliances">
+                    <conditions>
+                      <condition
+                        uid="F52DE4DED27D49DDB1A1FBE8FB5CDB0A"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Appliances"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Appliances" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="5BE9A10F2E7C45C593BE863B46020FE5"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{FF74D946-D625-4432-B42B-D2530353A640}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="D735C1E72B894A84A04DB79D52E4A639"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="4CA2A7CF15144807A5F95378A50F5935"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{F457A05E-92BD-44F2-8C01-1AB096E34C2C}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191320Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
