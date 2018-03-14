@@ -8,8 +8,15 @@ name: Settings
 master: {00000000-0000-0000-0000-000000000000}
 template: {BE2A1204-F7BA-4BE3-933D-190C97496700}
 templatekey: Settings
-created: 20180209T180543Z
+created: 20180312T180547Z
 
+----field----
+field: {AD84CC6B-32EF-49D8-9326-916976CB2520}
+name: Grid Mapping
+key: grid mapping
+content-length: 91
+
+%7bFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7d%3d%257B8250F168-8C71-49AF-A4C2-F2C95D607CB8%257D
 ----field----
 field: {E8881464-38AF-4655-BE4A-EE10586578A2}
 name: Templates
@@ -21,9 +28,9 @@ content-length: 38
 field: {BEEEDE03-AB13-4558-96F9-C3E8957B46F8}
 name: Themes
 key: themes
-content-length: 77
+content-length: 116
 
-{FE579EA5-4FF1-47D4-A514-6EA5EEE9AB01}|{C93E1FAF-D37E-4D73-8502-99557466041C}
+{FE579EA5-4FF1-47D4-A514-6EA5EEE9AB01}|{24A18569-AC94-4C12-8BC1-97E6A1319C01}|{C93E1FAF-D37E-4D73-8502-99557466041C}
 ----field----
 field: {E81E1F9E-8B87-495B-9CB7-84A2A23133BE}
 name: MediaLibrary
@@ -55,7 +62,7 @@ content-length: 467
 ----version----
 language: en
 version: 1
-revision: 5dd56089-b3a7-409b-a4aa-6d68e491b5ba
+revision: d7e840c9-a7c9-4a11-bd3d-daf39567c259
 
 ----field----
 field: {81B370B0-9EA6-435D-BE15-FCFFB1CEC57F}
@@ -112,14 +119,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5dd56089-b3a7-409b-a4aa-6d68e491b5ba
+d7e840c9-a7c9-4a11-bd3d-daf39567c259
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180215T175038Z
+20180314T020342Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -130,7 +137,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: 0170afb3-72d8-4608-8200-e7ee279acfc1
+revision: 291da9ee-6ffb-4669-a907-8d373b98c444
 
 ----field----
 field: {A98F8B72-64AA-4A9C-90DB-92F7AEAD55AD}
@@ -273,13 +280,6 @@ content-length: 0
 
 
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -299,21 +299,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0170afb3-72d8-4608-8200-e7ee279acfc1
+291da9ee-6ffb-4669-a907-8d373b98c444
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180125T223932Z
+20180214T172402Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics

@@ -28,16 +28,16 @@ content-length: 38
 field: {FC9C3C29-7A69-4088-8C89-22FB3D493A9A}
 name: GiftCardProductId
 key: giftcardproductid
-content-length: 7
+content-length: 0
 
-6042986
+
 ----field----
 field: {48420F58-F1DF-4B80-8386-B62AA84E9B57}
 name: Gift Card Page Link
 key: gift card page link
-content-length: 124
+content-length: 133
 
-<link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -48,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: fca8870d-8fc9-446b-aecb-d1a6583f7c9d
+revision: 49d08960-29e1-434b-8899-c01b412d3960
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -84,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fca8870d-8fc9-446b-aecb-d1a6583f7c9d
+49d08960-29e1-434b-8899-c01b412d3960
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180213T181908Z
+20180312T212400Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

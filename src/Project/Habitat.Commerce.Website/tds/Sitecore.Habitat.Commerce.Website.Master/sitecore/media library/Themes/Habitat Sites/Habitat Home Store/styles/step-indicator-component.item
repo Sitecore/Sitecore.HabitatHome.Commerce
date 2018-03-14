@@ -1,0 +1,170 @@
+----item----
+version: 1
+id: {8D048968-ABBA-4BBD-AEB1-075D0F293391}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/step-indicator-component
+parent: {2B056B9D-9332-407E-82F8-9C4BF8438CB0}
+name: step-indicator-component
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20180309T215156Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 3394
+
+LmN4YS1zdGVwaW5kaWNhdG9yLWNvbXBvbmVudCB7CiAgd2lkdGg6IDEwMCU7CiAgbWFyZ2luLWJv
+dHRvbTogMzBweDsKfQoKLmN4YS1zdGVwaW5kaWNhdG9yLWNvbXBvbmVudCAuc3RlcHMgewogIGRp
+c3BsYXk6IC13ZWJraXQtYm94OwogIGRpc3BsYXk6IC1tcy1mbGV4Ym94OwogIGRpc3BsYXk6IGZs
+ZXg7CiAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyOwogIC1tcy1mbGV4LXBhY2s6IGNlbnRlcjsK
+ICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKfQoKLmN4YS1zdGVwaW5kaWNhdG9yLWNvbXBvbmVu
+dCBsaSB7CiAgLXdlYmtpdC1ib3gtZmxleDogMTsKICAtbXMtZmxleC1wb3NpdGl2ZTogMTsKICBm
+bGV4LWdyb3c6IDE7CiAgdGV4dC1hbGlnbjogY2VudGVyOwogIGJvcmRlci1ib3R0b206IDFweCBz
+b2xpZCAjZTJlM2U1OwogIGZvbnQtc2l6ZTogMTZweDsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJj
+YXNlOwogIGZvbnQtd2VpZ2h0OiBib2xkOwogIHBhZGRpbmc6IDEwcHggMDsKfQoKLmN4YS1zdGVw
+aW5kaWNhdG9yLWNvbXBvbmVudCBsaSBhIHsKICBjb2xvcjogI2UyZTNlNTsKfQoKLmN4YS1zdGVw
+aW5kaWNhdG9yLWNvbXBvbmVudCBsaS5hY3RpdmUgewogIGJvcmRlci1jb2xvcjogIzBlOTA5ZjsK
+fQoKLmN4YS1zdGVwaW5kaWNhdG9yLWNvbXBvbmVudCBsaS5hY3RpdmUgYSB7CiAgY29sb3I6ICMz
+ODNjNDE7Cn0KCi8qIEBpbXBvcnQgJy4uLy4uL2luZGV4JzsNCi5jeGEtc3RlcGluZGljYXRvci1j
+b21wb25lbnQgew0KICAgIHdpZHRoOiAxMDAlOw0KICAgIG1hcmdpbi1ib3R0b206IDMwcHg7DQog
+ICAgLmNvbXBvbmVudC1jb250ZW50IHsNCiAgICAgICAgQGluY2x1ZGUgcm93KCRjZW50ZXIsICRj
+ZW50ZXIsICRjZW50ZXIsIDAsIGZhbHNlKTsNCiAgICAgICAgPmRpdiB7DQogICAgICAgICAgICB3
+aWR0aDogODAlDQogICAgICAgIH0gDQogICAgfQ0KICAgIC5zdGVwcyB7DQogICAgICAgIG1hcmdp
+bjogYXV0bzsNCiAgICAgICAgQGluY2x1ZGUgcm93LW9mLWVsZW1lbnRzLXdpZGUtYXBhcnQoKTsN
+CiAgICAgICAgbGkgew0KICAgICAgICAgICAgZmxleC1iYXNpczogMTIwcHg7DQogICAgICAgICAg
+ICBjdXJzb3I6IGRlZmF1bHQ7DQogICAgICAgICAgICBhIHsNCiAgICAgICAgICAgICAgICBjdXJz
+b3I6IGRlZmF1bHQ7DQogICAgICAgICAgICB9DQogICAgICAgIH0NCiAgICB9DQp9DQoNCi5jeGEt
+c3RlcGluZGljYXRvci1jb21wb25lbnQgew0KICAgIG1hcmdpbi10b3A6IDMwcHg7DQogICAgLnN0
+ZXBzIHsNCiAgICAgICAgbGkgew0KICAgICAgICAgICAgQGluY2x1ZGUgc2Vjb25kYXJ5LWJ1dHRv
+bi1saW5lKCk7DQogICAgICAgICAgICB3aWR0aDogMzJweDsNCiAgICAgICAgICAgIHRleHQtYWxp
+Z246IGNlbnRlcjsNCiAgICAgICAgICAgIHBhZGRpbmctdG9wOiA1cHg7DQogICAgICAgICAgICBi
+b3JkZXItcmFkaXVzOiAxMDBweDsNCiAgICAgICAgICAgIHotaW5kZXg6IDM7DQogICAgICAgICAg
+ICAmOmhvdmVyIHsNCiAgICAgICAgICAgICAgICBhIHsNCiAgICAgICAgICAgICAgICAgICAgY29s
+b3I6ICRsaWdodDsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgIH0N
+CiAgICAgICAgbGkuYWN0aXZlIHsNCiAgICAgICAgICAgIEBpbmNsdWRlIHByaW1hcnktYnV0dG9u
+LWxpbmUoKTsNCiAgICAgICAgICAgIHdpZHRoOiAzMnB4Ow0KICAgICAgICAgICAgYSB7DQogICAg
+ICAgICAgICAgICAgY29sb3I6ICRwcmltYXJ5LWNvbG9yOw0KICAgICAgICAgICAgfQ0KICAgICAg
+ICAgICAgJjpob3ZlciB7DQogICAgICAgICAgICAgICAgYSB7DQogICAgICAgICAgICAgICAgICAg
+IGNvbG9yOiAkbGlnaHQ7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAg
+ICAgICAgcGFkZGluZy10b3A6IDVweDsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDEwMHB4
+Ow0KICAgICAgICB9DQogICAgICAgICY6bGFzdC1jaGlsZCB7DQogICAgICAgICAgICBsaTpsYXN0
+LWNoaWxkIHsNCiAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDA7DQogICAgICAgICAgICB9
+DQogICAgICAgIH0NCiAgICAgICAgJjpiZWZvcmUgew0KICAgICAgICAgICAgY29udGVudDogIiI7
+DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiBsaWdodGVuKCRzZWNvbmRhcnktY29sb3IsIDI1JSk7
+DQogICAgICAgICAgICBoZWlnaHQ6IDJweDsNCiAgICAgICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0
+ZTsNCiAgICAgICAgICAgIHotaW5kZXg6IDI7DQogICAgICAgICAgICB3aWR0aDogNzAlOw0KICAg
+ICAgICB9DQogICAgfQ0KfQ0KDQouY29tcG9uZW50LmNvbHVtbi1zcGxpdHRlciB7DQogICAgLmN4
+YS1zdGVwaW5kaWNhdG9yLWNvbXBvbmVudCB7DQogICAgICAgIC5zdGVwcyB7DQogICAgICAgICAg
+ICAmOmJlZm9yZSB7DQogICAgICAgICAgICAgICAgbWF4LXdpZHRoOiA2NSU7DQogICAgICAgICAg
+ICB9DQogICAgICAgIH0NCiAgICB9DQp9ICovCg==
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+css
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 8
+
+text/css
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2479
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/8D048968ABBA4BBDAEB1075D0F293391.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 44315507-e16a-4714-8803-d960207c980d
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180309T215157Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+44315507-e16a-4714-8803-d960207c980d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180313T052901Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-CA
+version: 1
+revision: 3742f1ec-ebf2-4b38-9b41-a0321f12e766
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180309T215157Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3742f1ec-ebf2-4b38-9b41-a0321f12e766
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180309T215157Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
