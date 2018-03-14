@@ -2,8 +2,8 @@
 version: 1
 id: {36F09CD6-F54D-4DC9-89C3-DFF716A76C73}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/Data/Images/Order Confirmation Image
-parent: {14B3E355-BB38-4E5B-A66D-0E711377428C}
+path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/orderconfirmation/Data/Order Confirmation Image
+parent: {535A44B6-ED45-4517-B4B8-9C3A06D34F28}
 name: Order Confirmation Image
 master: {710522E3-0C54-42F7-BFB8-E2262589F5EA}
 template: {BB8A85AB-1F6D-4518-8772-1C9F4F8DAC18}
@@ -27,7 +27,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 26962593-669e-4195-bb7a-00f2b65e58b9
+revision: b5e0ca9b-b555-4efd-b00e-293374d787fe
 
 ----field----
 field: {EBE4FDEF-16D5-4D19-833C-24A241628A3A}
@@ -63,18 +63,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-26962593-669e-4195-bb7a-00f2b65e58b9
+b5e0ca9b-b555-4efd-b00e-293374d787fe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T152637Z
+20180314T015518Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin
