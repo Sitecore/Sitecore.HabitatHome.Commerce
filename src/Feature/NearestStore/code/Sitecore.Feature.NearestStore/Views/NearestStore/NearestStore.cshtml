@@ -1,0 +1,33 @@
+﻿@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@using Sitecore.Feature.NearestStore.Models
+
+@model UserLocation
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+
+}
+
+<div class="nearest-store-wrapper" data-attr-lat="@Model.Latitude" data-att-long="@Model.Longitude">
+    <div class="store-pickup">
+        <div class="row">
+            <div class="col-xs-12">
+                <label>Available in the Broadway store</label><br />
+                <button class="btn btn-medium">PICK UP AT THIS STORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="store-pickup">
+        <div class="row">
+            <div class="col-xs-12">
+                <label>Available in the Augusta store</label><br />
+                <button class="btn btn-medium">PICK UP AT THIS STORE</button>
+            </div>
+        </div>
+
+    </div>
+</div>

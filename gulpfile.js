@@ -218,6 +218,15 @@ gulp.task("Publish-Feature-Projects",
         return publishProjects("./src/Feature");
     });
 
+gulp.task("Publish-Feature-NearestStore",
+    function () {
+        console.log("publish to " + config.websiteRoot + " folder");
+        return gulp.src(["./src/Feature/NearestStore/code/Sitecore.Feature.NearestStore/*.csproj"])
+            .pipe(foreach(function (stream, file) {
+                return publishStream(stream, config.websiteRoot);
+            }));
+    });
+
 gulp.task("Publish-Project-Projects",
     function () {
         return publishProjects("./src/Project");

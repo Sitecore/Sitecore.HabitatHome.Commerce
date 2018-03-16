@@ -24,6 +24,7 @@
     <ProjectReference Include="..\Plugin.Demo.Payments.Moneybags\Plugin.Demo.Payments.Moneybags.csproj" />
     <ProjectReference Include="..\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
     <ProjectReference Include="..\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
+    <ProjectReference Include="..\Sitecore.Commerce.Habitat.Plugin.StoreInventory\Plugin.Demo.HabitatHome.StoreInventorySet.csproj" />
   </ItemGroup>
 
   <ItemGroup>

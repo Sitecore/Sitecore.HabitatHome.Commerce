@@ -1,0 +1,17 @@
+﻿.nearest-store-wrapper label {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.nearest-store-wrapper button {
+    border-radius: 0px;
+    background-color: #FFF;
+    border: 1px solid #0e909f;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+.store-pickup {
+    margin-bottom:35px;
+}
