@@ -87,3 +87,59 @@ Languages:
     Hint: __Display name
     Value: Review
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8AEF0C98-5E0F-4064-BD58-C3B010C11391}"
+              p:before="*"
+              s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
+              s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
+              s:par="GridParameters&amp;Current Step"
+              s:ph="/main/container-1" />
+            <r
+              uid="{50E8A8D7-E6D1-4AFF-95A7-07720DCF8E35}"
+              p:after="r[@uid='{8AEF0C98-5E0F-4064-BD58-C3B010C11391}']"
+              s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
+              s:id="{3E8F1BDD-037D-4AD7-953C-D39E9191C5FD}"
+              s:par="GridParameters"
+              s:ph="/main/container-1" />
+            <r
+              uid="{58E19DCA-B4F4-4317-85FC-A4A1E795D8B2}"
+              p:after="r[@uid='{50E8A8D7-E6D1-4AFF-95A7-07720DCF8E35}']"
+              s:ds="{3CC6B88D-912B-49D4-BF25-21231246E773}"
+              s:id="{9D1D9DB3-EE59-4AAA-862E-65FFFB097FD3}"
+              s:par="Billing Page Url=%7B61AB8488-C4AA-4674-BA41-857CF39A72B4%7D&amp;Delivery Page Url=%7BC19C709A-A181-4795-8DDA-00EA317F5386%7D&amp;GridParameters"
+              s:ph="/main/container-1" />
+            <r
+              uid="{F8271785-BE1D-4C86-A31E-96F584AB6BE0}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191320Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Review
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

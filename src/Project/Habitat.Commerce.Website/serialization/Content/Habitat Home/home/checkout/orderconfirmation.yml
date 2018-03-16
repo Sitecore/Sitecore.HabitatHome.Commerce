@@ -103,3 +103,72 @@ Languages:
     Hint: __Display name
     Value: Order Confirmation
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{15EDC979-901D-468D-AC2C-6267E0B46F43}"
+              p:before="*"
+              s:ds="local:/Data/Thank you Order"
+              s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/container-1/column-1-2" />
+            <r
+              uid="{7A80968F-05F3-4C28-A87D-6BB794F3F9B6}"
+              p:after="r[@uid='{15EDC979-901D-468D-AC2C-6267E0B46F43}']"
+              s:ds="{D1295EC1-D072-4D65-AC3A-F5CBAC66F066}"
+              s:id="{E4D1D252-5689-4F23-8655-B9AC90D36F15}"
+              s:par=""
+              s:ph="/main/container-1/column-1-2" />
+            <r
+              uid="{8FFD6D85-B4AC-41E1-A00A-3ADC4127637C}"
+              p:after="r[@uid='{7A80968F-05F3-4C28-A87D-6BB794F3F9B6}']"
+              s:ds="local:/Data/Order Confirmation - Note Message"
+              s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/container-1/column-1-2" />
+            <r
+              uid="{C181852F-713F-4D92-B376-132AC6EF31E0}"
+              p:after="r[@uid='{8FFD6D85-B4AC-41E1-A00A-3ADC4127637C}']"
+              s:ds="local:/Data/Order Confirmation Image"
+              s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
+              s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/container-1/column-2-2" />
+            <r
+              uid="{19AFBB9B-4395-47EC-B181-11C55E9A0739}"
+              p:after="r[@uid='{C181852F-713F-4D92-B376-132AC6EF31E0}']"
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="EnabledPlaceholders=1%2c2&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;DynamicPlaceholderId=2"
+              s:ph="/main/container-1" />
+            <r
+              uid="{DF95A546-2F2C-45DB-B1E2-43F3668E3458}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191321Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: OrderConfirmation
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
