@@ -1,0 +1,35 @@
+﻿---
+ID: "1b3998bb-0cd8-41a5-8f9a-b7c8455dead5"
+Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
+Template: "d2919305-81d1-4fe2-b219-061879275996"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Address Editor
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5462ECE8-A8AD-43CE-89D8-BA61E2419A01}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f062b73-7480-4f9a-b569-82abc81af029"
+      Hint: State Label
+      Value: State/Province
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152356Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "88c6afaa-4eee-43b5-8dc1-3ce00b858e62"
+      Hint: Change Address Label
+      Value: My saved addresses
+    - ID: "aa78aa44-d488-49a1-bf7e-698dae183998"
+      Hint: State Hint Text
+      Value: State/Province
+    - ID: "b4837d13-6edb-4060-82a9-5ebd6f5d56c5"
+      Hint: Country Label
+      Value: Country/Region

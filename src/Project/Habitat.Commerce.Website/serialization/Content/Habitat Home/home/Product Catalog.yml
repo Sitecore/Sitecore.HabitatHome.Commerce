@@ -1,0 +1,21 @@
+﻿---
+ID: "1a7ee598-1988-430d-953d-cb10a8647e3f"
+Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
+Template: "e55834fb-7c93-44a2-87c0-62beba282ced"
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/Product Catalog
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/16x16/cubes_blue.png
+- ID: "2882072b-e310-406b-8dd9-b22c9ea4a0f3"
+  Hint: CategoryDatasource
+  Value: /sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180215T222939Z

@@ -1,0 +1,101 @@
+----item----
+version: 1
+id: {34E50F5C-D9CE-4F4C-BE4E-3F8486F27AE9}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Commerce/Promo - Phone Catalog
+parent: {88B64564-9F3C-4C21-869A-CFF918E90686}
+name: Promo - Phone Catalog
+master: {00000000-0000-0000-0000-000000000000}
+template: {324733CF-AFEC-4281-9A18-03B6CFC4E535}
+templatekey: Promo
+created: 20180212T124251Z
+
+----version----
+language: en
+version: 1
+revision: c2447a86-a79f-49cb-bd65-077d711d7242
+
+----field----
+field: {14023DD5-30E7-4E3C-BF31-D835F3A87410}
+name: PromoText
+key: promotext
+content-length: 30
+
+Power in the Palm of Your Hand
+----field----
+field: {18F9BEB8-0116-40FD-B47E-FD0A2327D7E0}
+name: PromoIcon
+key: promoicon
+content-length: 64
+
+<image mediaid="{9295AFA2-E01D-43FB-AF60-9BB6401927F0}"></image>
+----field----
+field: {B8C1A9D2-DE76-4519-AFF4-1442525F32B0}
+name: PromoLink
+key: promolink
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{8E456D84-4251-DBA1-4B86-CE103DEDCD02}" />
+----field----
+field: {B59ADC09-32A3-46F2-AEDE-B0C633979263}
+name: PromoText2
+key: promotext2
+content-length: 216
+
+<p>Stay connected no matter where you are. Surf the web, take photos, and conduct business with Habitat mobile and smartphones. Powerful processors and intuitive interfaces give you an enhanced mobile experience.</p>
+----field----
+field: {82A6CE45-59B5-4BC8-83B9-79CCB8174A2A}
+name: PromoIcon2
+key: promoicon2
+content-length: 58
+
+<image mediaid="{5C23342F-C365-4695-AFD0-2CA58CB72F21}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180212T124251Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2447a86-a79f-49cb-bd65-077d711d7242
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180218T135847Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -472,6 +472,16 @@
         "MinimumOrderQuantity": 1.0
       },
       {
+        "$type": "Sitecore.Commerce.Plugin.Tax.GlobalTaxPolicy, Sitecore.Commerce.Plugin.Tax",
+        "DefaultCartTaxRate": 0.1,
+        "DefaultItemTaxRate": 0.1,
+        "TaxCalculationEnabled": true,
+        "PriceIncudesTax": false,
+        "CalculateTaxBasedOn": "ShippingAddress",
+        "ShippingTaxClass": "CartItems",
+        "RoundAtSubTotal": false
+      },
+      {
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",
         "TransactionalityEnabled": true,
         "TransactionTimeOut": 180

@@ -1,0 +1,40 @@
+.component.link-list.image-link-list {
+  float: none !important;
+}
+
+.component.link-list.image-link-list h3 {
+  border: 0;
+}
+
+.component.link-list.image-link-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.component.link-list.image-link-list li {
+  display: block;
+  -ms-flex-preferred-size: 175px;
+  flex-basis: 175px;
+  text-align: center;
+}
+
+.component.link-list.image-link-list li > div img {
+  width: 100px;
+  height: auto;
+}
+
+.component.link-list.image-link-list li > div a {
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.component.link-list.image-link-list li > div a:before {
+  display: none;
+}

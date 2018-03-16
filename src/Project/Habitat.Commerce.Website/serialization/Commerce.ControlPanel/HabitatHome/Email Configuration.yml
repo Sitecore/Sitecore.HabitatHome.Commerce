@@ -1,0 +1,30 @@
+﻿---
+ID: "e50f8e7a-a906-43dd-8de3-ee623a25982e"
+Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
+Template: "8753e14e-8ce5-4be3-8e63-486c7ee87702"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Email Configuration
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "c3c59a8c-a79f-43ec-b332-cdbef8e4d19e"
+  Hint: From Email Address
+  Value: info@sitecore.net
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7D40F452-6F70-43BB-BC23-A72F2C34B902}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Email Configuration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
