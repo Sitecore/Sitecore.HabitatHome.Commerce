@@ -1,7 +1,7 @@
 var gulp = require("gulp");
 var fs = require("fs");
 var unicorn = require("./scripts/unicorn.js");
-var habitat = require("./scripts/habitat.js");                   
+var habitat = require("./scripts/habitat.js");
 var runSequence = require("run-sequence");
 var nugetRestore = require("gulp-nuget-restore");
 var msbuild = require("gulp-msbuild");
@@ -9,6 +9,7 @@ var foreach = require("gulp-foreach");
 var debug = require("gulp-debug");
 var exec = require("child_process").exec;
 var util = require("gulp-util");
+var get = require("simple-get");
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -21,23 +22,25 @@ module.exports.config = config;
 gulp.task("default",
     function (callback) {
         config.runCleanBuilds = true;
-        return runSequence(          
+        return runSequence(
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
             "Sync-Unicorn",
             "Publish-Transforms",
+            "Deploy-EXM-Campaigns",
             callback);
     });
 
 gulp.task("tds",
     function (callback) {
         config.runCleanBuilds = true;
-        return runSequence(         
-            "Nuget-Restore-TDS",   
-            "Apply-Xml-Transform",  
+        return runSequence(
+            "Nuget-Restore-TDS",
+            "Apply-Xml-Transform",
             "Publish-Transforms",
             "TDS-Build",
+            "Deploy-EXM-Campaigns",
             callback);
     });
 
@@ -65,7 +68,7 @@ gulp.task("Publish-All-Projects",
             "Publish-Foundation-Projects",
             "Publish-Feature-Projects",
             "Publish-Project-Projects",
-            
+
             callback);
     });
 
@@ -239,11 +242,11 @@ gulp.task("CE-Nuget-Restore", function (callback) {
     return gulp.src(solution).pipe(nugetRestore());
 });
 
-gulp.task("CE-Publish-CommerceEngine-Authoring", function (callback) {                                                    
+gulp.task("CE-Publish-CommerceEngine-Authoring", function (callback) {
     publishCommerceEngine(config.commerceAuthoringRoot, callback);
 });
 
-gulp.task("CE-Publish-CommerceEngine-Ops", function (callback) {                    
+gulp.task("CE-Publish-CommerceEngine-Ops", function (callback) {
     publishCommerceEngine(config.commerceOpsRoot, callback);
 });
 
@@ -251,7 +254,7 @@ gulp.task("CE-Publish-CommerceEngine-Minions", function (callback) {
     publishCommerceEngine(config.commerceMinionsRoot, callback);
 });
 
-gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {    
+gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {
     publishCommerceEngine(config.commerceShopsRoot, callback);
 });
 
@@ -270,3 +273,19 @@ var publishCommerceEngine = function (dest, callback) {
         callback();
     });
 };
+
+gulp.task("Deploy-EXM-Campaigns",
+    function () {
+        console.log("Deploying EXM Campaigns");
+
+        var url = config.instanceUrl + "utilities/deployemailcampaigns.aspx?apiKey=97CC4FC13A814081BF6961A3E2128C5B";
+        console.log("Deploying EXM Campaigns at " + url);
+        get({
+            url: url,
+            "rejectUnauthorized": false
+        }, function (err, res) {
+            if (err) {
+                throw err;
+            }
+        });
+    });
