@@ -8,7 +8,7 @@ module.exports = function () {
         licensePath: instanceRoot + "\\App_Data\\license.xml",
         packageXmlBasePath: ".\\src\\Project\\Habitat\\code\\App_Data\\packages\\habitat.xml",
         packagePath: instanceRoot + "\\App_Data\\packages",
-        solutionName: "Habitat.Home.Commerce",
+        solutionName: "Habitat.Commerce",
         commerceEngineSolutionName: "Habitat.Commerce.Engine",
         commerceAuthoringRoot: sitesRoot + "\\CommerceAuthoring_Sc9",
         commerceMinionsRoot: sitesRoot + "\\CommerceMinions_Sc9",
