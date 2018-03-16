@@ -9,32 +9,26 @@ main div.component.container > div.component-content > .promo.promo-hero {
 
 main .promo {
   padding: 3em 0;
+  font-size: $font-big;
+  line-height: 1.6;
+  color: $text-color;
+
   & > div > div {
     width: 50%;
     & > img {
       width: 70%;
       height: auto;
     }
-    h3 {
-      font-size: 52px;
-      line-height: 1.07692;
-      font-weight: 700;
-      margin: 0;
-      color: $text-headings;
-      p {
-        font-size: 52px;
-        line-height: 1.07692;
-        font-weight: 700;
-        margin: 0;
-        color: $text-headings;
-      }
-    }
-    p {
-      font-size: $font-big;
-      line-height: 1.6;
-      color: $text-color;
-    }
   }
+
+  h3, h3 p {
+    font-size: 52px;
+    line-height: 1.07692;
+    font-weight: 700;
+    margin: 0;
+    color: $text-headings;
+  }  
+
   &.promo-hero {
     font-size: $font-big;
     color: #fff;
