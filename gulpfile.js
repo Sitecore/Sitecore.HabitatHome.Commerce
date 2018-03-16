@@ -26,7 +26,7 @@ gulp.task("default",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
-            //"Sync-Unicorn",
+            "Sync-Unicorn",
             "Publish-Transforms",
             "Deploy-EXM-Campaigns",
             callback);
