@@ -167,6 +167,11 @@ body {
   &.on-page-editor {
     background: $page-bg-editor !important;
   }
+
+  padding-top: 81px;
+  &.preview {
+    padding-top: 0;
+  }
 }
 
 a {
