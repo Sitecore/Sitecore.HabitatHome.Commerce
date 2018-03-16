@@ -21,8 +21,8 @@ $assets.downloadFolder = Join-Path $assets.root "Downloads"
 #Commerce
 $assets.commerce.nugetPackageLocation = "http://nuget1ca2/nuget/Commerce/"
 $assets.commerce.nugetPackageName = "Sitecore.Commerce.ReleasePackage.Content"
-$assets.commerce.nugetPackageVersion = "2.1.41"
-$assets.commerce.packageUrl = "https://v9assets.blob.core.windows.net/v9-onprem-assets/Sitecore.Commerce.2018.03-2.1.41.zip?sv=2017-04-17&ss=bfqt&srt=sco&sp=rwdlacup&se=2027-11-09T20%3A11%3A50Z&st=2017-11-09T12%3A11%3A50Z&spr=https&sig=naspk%2BQflDLjyuC6gfXw4OZKvhhxzTlTvDctfw%2FByj8%3D"
+$assets.commerce.nugetPackageVersion = "2.1.55"
+$assets.commerce.packageUrl = "https://v9assets.blob.core.windows.net/v9-onprem-assets/Sitecore.Commerce.2018.03-2.1.55.zip?sv=2017-04-17&ss=bfqt&srt=sco&sp=rwdlacup&se=2027-11-09T20%3A11%3A50Z&st=2017-11-09T12%3A11%3A50Z&spr=https&sig=naspk%2BQflDLjyuC6gfXw4OZKvhhxzTlTvDctfw%2FByj8%3D"
 $assets.commerce.installationFolder = Join-Path $assets.root "Commerce"
 
 
@@ -31,7 +31,7 @@ $sifCommerceVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -
 $sifCommerceVersion.version = "1.1.4"
 $assets.commerce.sifCommerceRoot = Join-Path $assets.commerce.installationFolder $($sifCommerceVersion.name + "." + $sifCommerceVersion.version)
 $commerceEngineVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.Commerce.Engine"} 
-$commerceEngineVersion.version = "2.1.41"
+$commerceEngineVersion.version = "2.1.55"
 
 $commerceEngineSDKVersion = $assets.commerce.filesToExtract | Where-Object { $_.name -eq "Sitecore.Commerce.Engine.SDK"} 
 $commerceEngineSDKVersion.version = "2.1.10"
