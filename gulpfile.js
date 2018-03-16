@@ -9,6 +9,7 @@ var foreach = require("gulp-foreach");
 var debug = require("gulp-debug");
 var exec = require("child_process").exec;
 var util = require("gulp-util");
+var get = require("simple-get");
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -25,7 +26,7 @@ gulp.task("default",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
-            "Sync-Unicorn",
+            //"Sync-Unicorn",
             "Publish-Transforms",
             "Deploy-EXM-Campaigns",
             callback);
