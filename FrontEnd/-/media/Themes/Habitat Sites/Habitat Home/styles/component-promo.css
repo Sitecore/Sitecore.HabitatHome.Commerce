@@ -5,6 +5,9 @@ main div.component.container > div.component-content > .promo.promo-hero {
 
 main .promo {
   padding: 3em 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(47, 52, 56, 0.7);
 }
 
 main .promo > div > div {
@@ -16,26 +19,12 @@ main .promo > div > div > img {
   height: auto;
 }
 
-main .promo > div > div h3 {
+main .promo h3, main .promo h3 p {
   font-size: 52px;
   line-height: 1.07692;
   font-weight: 700;
   margin: 0;
   color: #1d8c96;
-}
-
-main .promo > div > div h3 p {
-  font-size: 52px;
-  line-height: 1.07692;
-  font-weight: 700;
-  margin: 0;
-  color: #1d8c96;
-}
-
-main .promo > div > div p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: rgba(47, 52, 56, 0.7);
 }
 
 main .promo.promo-hero {
