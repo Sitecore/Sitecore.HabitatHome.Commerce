@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Braintree" Version="3.8.0" />
+    <PackageReference Include="Braintree" Version="3.13.0" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="2.1.5" />
   </ItemGroup>
 
