@@ -6,6 +6,6 @@
 
     public interface IStoresRepository
     {
-        IEnumerable<InventorySet> GetNearestStores(UserLocation userLocation);
+        IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation);
     }
 }

@@ -3,6 +3,7 @@
 namespace Sitecore.Feature.NearestStore.Repositories
 {
     using Sitecore.Commerce.Plugin.Inventory;
+    using Sitecore.Feature.NearestStore.Managers;
     using Sitecore.Feature.NearestStore.Models;
     using System;
     using System.Collections.Generic;
@@ -12,13 +13,21 @@ namespace Sitecore.Feature.NearestStore.Repositories
     //[Service(typeof(IStoresRepository))]  TODO: REFERENCE FOUNDATION.DEPENDENCYINJECTION
     public class StoresRepository : IStoresRepository
     {
-        public IEnumerable<InventorySet> GetNearestStores(UserLocation userLocation)
+        private NearestStoreManager nm;
+
+        public StoresRepository()
         {
+            nm = new NearestStoreManager();
+        }
+        public IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation)
+        {
+            NearestStoreManager nm = new NearestStoreManager();
             if (userLocation == null)
                 throw new ArgumentNullException(nameof(userLocation));
 
-            List<InventorySet> inventorySet = new List<InventorySet>();
-            return inventorySet;
+            IEnumerable<InventoryStore> inventoryStores = nm.GetNearestStores(userLocation);
+            
+            return inventoryStores;
         }
     }
 }
