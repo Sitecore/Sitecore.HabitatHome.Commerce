@@ -13,7 +13,7 @@ namespace Sitecore.Feature.NearestStore.Models
         public string InventoryStoreId { get; set; }
         public string DisplayName { get; set; }
         public double Distance { get; set; }
-
+        public int InventoryAmount { get; set; }
         public InventoryStore(dynamic result)
         {
             this.Id = result.Id;
@@ -29,6 +29,9 @@ namespace Sitecore.Feature.NearestStore.Models
             model.InventoryStoreId = this.InventoryStoreId;
             model.DisplayName = GetDisplayName(this.InventoryStoreId);
             model.Distance = GetDistanceInMiles(this.Distance);
+            model.InventoryAmount = this.InventoryAmount;
+            model.ZeroInventory = this.InventoryAmount == 0;
+            model.Limited = this.InventoryAmount < 6 && this.InventoryAmount != 0 ? true : false;
             return model;
         }
 

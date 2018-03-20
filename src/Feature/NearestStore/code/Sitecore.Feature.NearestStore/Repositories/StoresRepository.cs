@@ -19,14 +19,28 @@ namespace Sitecore.Feature.NearestStore.Repositories
         {
             nm = new NearestStoreManager();
         }
-        public IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation)
+        public IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation, string pid)
         {
-            NearestStoreManager nm = new NearestStoreManager();
             if (userLocation == null)
                 throw new ArgumentNullException(nameof(userLocation));
+            if(String.IsNullOrEmpty(pid))
+                throw new ArgumentNullException(nameof(pid));
 
-            IEnumerable<InventoryStore> inventoryStores = nm.GetNearestStores(userLocation);
+            IEnumerable<InventoryStore> inventoryStores = nm.GetNearestStores(userLocation, pid).Take(2);
+            foreach (var store in inventoryStores)
+                store.InventoryAmount = nm.GetProductInventory(store.InventoryStoreId, pid);
             
+            return inventoryStores;
+        }
+
+        public IEnumerable<InventoryStore> GetStoresInventory(string pid)
+        {            
+            if (String.IsNullOrEmpty(pid))
+                throw new ArgumentNullException(nameof(pid));
+
+            IEnumerable<InventoryStore> inventoryStores = nm.GetSavedStoresInventory(pid);
+            foreach (var store in inventoryStores)
+                store.InventoryAmount = nm.GetProductInventory(store.InventoryStoreId, pid);
             return inventoryStores;
         }
     }

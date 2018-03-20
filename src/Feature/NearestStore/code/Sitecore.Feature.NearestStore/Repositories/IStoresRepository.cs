@@ -6,6 +6,7 @@
 
     public interface IStoresRepository
     {
-        IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation);
+        IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation, string pid);
+        IEnumerable<InventoryStore> GetStoresInventory(string pid);
     }
 }

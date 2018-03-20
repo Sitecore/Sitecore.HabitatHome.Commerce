@@ -9,31 +9,37 @@
 
 @{
     var currentItem = Html.Sitecore().CurrentItem;
-
 }
 
-<div class="nearest-store-wrapper" data-attr-lat="@Model.Latitude" data-att-long="@Model.Longitude">
-    <div class="store-pickup">
-        <div class="row">
-            <div class="col-xs-12">
-                <label>Available in the Broadway store</label><br />
-                <div class="fullWidthCTA-col-text-action">
-                    <a class="btn" href="#">Pick up at this store</a>
+<div id="divNearestStores" class="component cxa-nearest-store-component" data-attr-lat="@Model.Latitude" data-att-long="@Model.Longitude">
+   
+    <div class="loader" style="display:none;">Loading...</div>
+    <div>
+        <!-- ko foreach: NearestStoresList --> 
+        <div class="store-pickup">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- ko if: ZeroInventory -->
+                    <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
+                    <!--/ko-->
+                    <!-- ko if: Limited -->
+                    <label>Only  <span data-bind="text: InventoryAmount"></span> available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away)</label><br />
+                    <div class="product-item-pickup">
+                        <a class="btn" href="#">Pick up at this store</a>
+                    </div>
+                    <!--/ko-->
+                    <!-- ko ifnot: Limited -->
+                    <label>Available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away) </label><br />
+                    <div class="product-item-pickup">
+                        <a class="btn" href="#">Pick up at this store</a>
+                    </div>                   
+                    <!--/ko-->
                 </div>
-
             </div>
         </div>
-    </div>
-    <div class="store-pickup">
-        <div class="row">
-            <div class="col-xs-12">
-                <label>Available in the Augusta store</label><br />
-                <div class="fullWidthCTA-col-text-action">
-                    <a class="btn" href="#">Pick up at this store</a>
-                </div>
 
-            </div>
-        </div>
-
+        <!--/ko-->
     </div>
+    
+    
 </div>
