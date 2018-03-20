@@ -47,7 +47,7 @@ namespace Sitecore.Feature.NearestStore.Models
 
         private double GetDistanceInMiles (double meters)
         {
-            return (Math.Round(meters / 1609.344));
+            return (Math.Round(meters / 1609.344, 1));
         }
 
     }
