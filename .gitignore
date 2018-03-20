@@ -47,3 +47,4 @@ InstallUtil.InstallLog
 /node_modules
 /src/**/logs
 *.dll
+/src/Project/Habitat.Commerce.Website/serialization/Theme/Habitat Home Store
