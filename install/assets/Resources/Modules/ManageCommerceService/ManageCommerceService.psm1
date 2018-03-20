@@ -62,6 +62,7 @@ Function Invoke-ManageCommerceServiceTask {
                             Enable-WindowsOptionalFeature -Online -FeatureName IIS-ApplicationInit
                         }
                         else {
+				Import-Module ServerManager
                             Install-WindowsFeature -Name Web-AppInit
                         }
                     }
