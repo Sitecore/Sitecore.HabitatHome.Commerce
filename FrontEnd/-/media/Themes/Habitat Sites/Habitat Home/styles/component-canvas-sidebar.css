@@ -394,3 +394,29 @@ html.show-sidebar-left, html.show-sidebar-right {
 .row-col-eq > [class^="col-"] > .panel {
   height: 100%;
 }
+
+.panel-primary > .panel-heading a {
+  background-color: #1B909C;
+  padding: 20px 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-primary > .panel-heading .badge {
+  color: #1B909C;
+}
+
+.off-canvas-sidebar .panel-heading {
+  padding: 0;
+}
+
+.panel-heading[role="tab"]:hover a,
+.panel-heading[role="tab"]:focus a,
+.panel-heading[role="tab"]:active a {
+  background-color: #2E384E;
+  color: #FFF;
+}
+
+.off-canvas-sidebar dd {
+  margin-left: 2em;
+}
