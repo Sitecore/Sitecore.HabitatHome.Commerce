@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 400
+  Value: 100
 Languages:
 - Language: en
   Versions:
@@ -20,6 +20,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "aa9c8d1c-b210-4efa-86db-83e8fa32c672"
+      Hint: Title
+      Value: 
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

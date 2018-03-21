@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 150
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Audio Systems" anchor="" linktype="internal" class="" title=""  querystring="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
+        <link text="Car Audio" anchor="" linktype="internal" class="" title=""  querystring="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

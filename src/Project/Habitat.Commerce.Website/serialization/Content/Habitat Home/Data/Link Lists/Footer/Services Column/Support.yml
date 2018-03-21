@@ -1,13 +1,9 @@
 ﻿---
-ID: "5545e611-f912-4ee7-991e-8ad7990e2b9d"
-Parent: "f61676a8-97da-4f0c-8e6a-373eed878ee8"
-Template: "f7561ffc-c0d8-477f-b53d-2703a4060be1"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Other Column
+ID: "275bda4b-c4d8-4458-90a6-97edb49d9aba"
+Parent: "5545e611-f912-4ee7-991e-8ad7990e2b9d"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Services Column/Support
 DB: master
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -15,11 +11,15 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171031T192918Z
+      Value: 20171031T193834Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="Support" anchor="" linktype="internal" class="" title=""  querystring="" id="{FD27A69C-2AFD-461D-8C59-73554C376648}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -43,7 +43,7 @@ Languages:
       Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171031T192918Z
+      Value: 20171031T193834Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
@@ -61,9 +61,6 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "aa9c8d1c-b210-4efa-86db-83e8fa32c672"
-      Hint: Title
-      Value: 
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
@@ -71,3 +68,7 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link id="{64F922B1-D57D-4AFA-AE26-9D59502F69A6}" querystring="" text="" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/guides" linktype="internal" />
