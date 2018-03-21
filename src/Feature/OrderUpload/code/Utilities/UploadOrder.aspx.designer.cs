@@ -22,15 +22,6 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility {
         protected global::System.Web.UI.HtmlControls.HtmlForm MyOrderForm;
         
         /// <summary>
-        /// txtOrderJson control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOrderJson;
-        
-        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
@@ -38,5 +29,14 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// txtOrderJson control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOrderJson;
     }
 }

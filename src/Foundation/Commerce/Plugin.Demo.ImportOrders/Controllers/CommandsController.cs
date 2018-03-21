@@ -45,19 +45,20 @@ namespace Sitecore.Commerce.Plugin.Sample
         /// <returns>A <see cref="IActionResult"/></returns>
         [HttpPut]
         [Route("CreateOfflineOrder()")]
-        public async Task<IActionResult> CreateOfflineOrder([FromBody] ODataActionParameters value)
+        public async Task<string> CreateOfflineOrder([FromBody] ODataActionParameters value)
         {
             //var id = value["Id"].ToString();
             var command = this.Command<CreateOfflineOrderCommand>();
 
-            if(!value.ContainsKey("Order"))
-                return (IActionResult)new BadRequestObjectResult((object)value);            
+            if (!value.ContainsKey("Order"))
+                return "Bad Request, Cannot Find Order key"; //(IActionResult)new BadRequestObjectResult((object)value);            
 
             var inputArgs = JsonConvert.DeserializeObject<OfflineStoreOrderArgument>(value["Order"].ToString());         
 
             var result = await command.Process(this.CurrentContext, inputArgs);
 
-            return new ObjectResult(command);
+            return JsonConvert.SerializeObject(result);
+            //return new ObjectResult(command);
         }
     }
 }
