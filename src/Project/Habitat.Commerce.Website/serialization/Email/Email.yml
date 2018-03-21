@@ -8,16 +8,16 @@ BranchID: "f8fae92a-4f10-470c-ad5c-7ed9e6b636af"
 SharedFields:
 - ID: "1b963507-6176-4336-a14d-d5070c3b0286"
   Hint: Base URL
-  Value: "http://your.host"
+  Value: "https://habitathome.dev.local"
 - ID: "1ec023fb-dbb4-4a7b-837d-55f9614737b8"
   Hint: POP3 Password
-  Value: 
+  Value: b
 - ID: "52d572ad-9678-423f-96e2-477528418ba1"
   Hint: "Global Opt-out List"
-  Value: 
+  Value: "{CDCDD641-7FFF-472E-A050-0EB117394039}"
 - ID: "afb3e366-dab4-4e10-b61f-bc3776542bb8"
   Hint: POP3 User Name
-  Value: 
+  Value: admin
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
@@ -28,7 +28,7 @@ SharedFields:
 - ID: "ff64b61e-e68d-4be1-bfd1-aae311f4aca1"
   Hint: Embed Images
   Type: Checkbox
-  Value: 0
+  Value: 1
 Languages:
 - Language: en
   Fields:

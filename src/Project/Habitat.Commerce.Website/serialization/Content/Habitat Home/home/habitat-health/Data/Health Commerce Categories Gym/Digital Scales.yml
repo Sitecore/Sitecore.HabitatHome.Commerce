@@ -1,0 +1,22 @@
+﻿---
+ID: "deabff80-8e40-4343-8710-0584ab14cb14"
+Parent: "f9b7f64c-dc30-4885-a82f-2c0b2de57d45"
+Template: "ddb08f92-1cc2-43e2-b5c1-fe7f98e32ec9"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Gym/Digital Scales"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180320T225407Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="Digital Scales" anchor="" linktype="internal" class="" title=""  querystring="" id="{9008B511-7815-FDA8-5A83-927BBF70CABF}" />
