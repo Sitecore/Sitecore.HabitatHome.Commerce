@@ -8,7 +8,7 @@ name: billing
 master: {82D1AB06-4382-4FDA-A382-E9CDEE6ABD80}
 template: {87A908C5-A372-4BEF-AF0B-FEB5BE1C4799}
 templatekey: Billing
-created: 20180204T191320Z
+created: 20180315T144830Z
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -21,13 +21,88 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 145
+content-length: 144
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /></r>
 ----version----
 language: en
 version: 1
-revision: 22f2a267-9acf-485d-b357-aa9837375b37
+revision: b1abc7df-621b-4286-8682-ee447a30b33d
+
+----field----
+field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
+name: Page Design
+key: page design
+content-length: 0
+
+
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 7
+
+Billing
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+Billing
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 866
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{B4EAB0E5-A243-44F4-A458-05170A74C7E5}" p:before="*" s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}" s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}" s:par="GridParameters&amp;Current Step" s:ph="/main/container-1" /><r uid="{FC91980A-4497-4A2E-AD7C-7914CB76DDDB}" p:after="r[@uid='{B4EAB0E5-A243-44F4-A458-05170A74C7E5}']" s:ds="{DB1CC358-376A-40D8-8FA8-657B6226720F}" s:id="{5DFBBA2F-736F-4185-8FA5-C9107A3647B0}" s:par="GridParameters" s:ph="/main/container-1" /><r uid="{E34EE012-884E-4FD4-B94D-30C7CFAA7845}" p:after="*[1=2]" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B0CC74E1D-658E-460C-8D9F-DB5C73E078FD%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="main" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180204T191320Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1abc7df-621b-4286-8682-ee447a30b33d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180315T180126Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 0
+
+
+----version----
+language: fr-CA
+version: 1
+revision: ac23d53c-a6a3-45f5-b277-dbc3560bb84e
 
 ----field----
 field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
@@ -58,13 +133,6 @@ content-length: 823
 
 <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{B4EAB0E5-A243-44F4-A458-05170A74C7E5}" p:before="*" s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}" s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}" s:par="GridParameters&amp;Current Step" s:ph="/main/container-1" /><r uid="{FC91980A-4497-4A2E-AD7C-7914CB76DDDB}" p:after="r[@uid='{B4EAB0E5-A243-44F4-A458-05170A74C7E5}']" s:ds="{DB1CC358-376A-40D8-8FA8-657B6226720F}" s:id="{5DFBBA2F-736F-4185-8FA5-C9107A3647B0}" s:par="GridParameters" s:ph="/main/container-1" /><r uid="{E34EE012-884E-4FD4-B94D-30C7CFAA7845}" p:after="*[1=2]" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="main" /></d></r>
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -84,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-22f2a267-9acf-485d-b357-aa9837375b37
+ac23d53c-a6a3-45f5-b277-dbc3560bb84e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180313T053625Z
+20180315T144830Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state
@@ -106,10 +174,3 @@ key: __workflow state
 content-length: 0
 
 
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />

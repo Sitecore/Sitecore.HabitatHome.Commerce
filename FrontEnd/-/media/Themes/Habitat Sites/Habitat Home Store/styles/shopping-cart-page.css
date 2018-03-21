@@ -1,3 +1,11 @@
+.shopping-cart-page {
+  padding-top: 81px;
+}
+
+.shopping-cart-page.preview {
+  padding-top: 0;
+}
+
 .shopping-cart-page .component.link a.checkout {
   display: inline-block;
   font-weight: bold;
@@ -35,10 +43,6 @@
 
 .shopping-cart-page .component.link.checkout-link-component .field-link {
   text-align: right;
-}
-
-.shopping-cart-page main {
-  padding-top: 81px;
 }
 
 .shopping-cart-page .cxa-shoppingcartpromotion-component .component-content > div.cart-promotion-title {

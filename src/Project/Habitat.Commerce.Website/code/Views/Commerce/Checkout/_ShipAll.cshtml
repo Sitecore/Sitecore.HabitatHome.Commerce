@@ -92,7 +92,7 @@
     <div class="shipall-options-items">
         <div class="shipall-options-item" data-bind="foreach: shippingMethods">
             <div class="shipping-option">
-                <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id}, checkMe: $root.shippingMethod">
+                <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id, id: id}, checkMe: $root.shippingMethod">
                 <label data-bind="text: description, attr: {'for': id}"></label>
             </div>
 

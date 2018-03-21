@@ -261,8 +261,8 @@ Function Install-Commerce {
         XConnectInstallDir                 = $xConnect.siteRoot
         CertificateName                    = $site.habitatHomeSslCertificateName
         CommerceServicesDbServer           = $sql.server
-        CommerceServicesDbName             = $($site.hostName + "_SharedEnvironments")
-        CommerceServicesGlobalDbName       = $($site.hostName + "_Global")
+        CommerceServicesDbName             = $($site.prefix + "_SharedEnvironments")
+        CommerceServicesGlobalDbName       = $($site.prefix + "_Global")
         SitecoreDbServer                   = $sql.server
         SitecoreCoreDbName                 = $($site.prefix + "_Core")
         CommerceSearchProvider             = "solr"

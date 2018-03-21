@@ -14,9 +14,9 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
     <PackageReference Include="Sitecore.Commerce.Core">
-      <Version>2.0.*</Version>
+      <Version>2.1.6</Version>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.0.526" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.1.5" />
   </ItemGroup>
 
   <ItemGroup>
