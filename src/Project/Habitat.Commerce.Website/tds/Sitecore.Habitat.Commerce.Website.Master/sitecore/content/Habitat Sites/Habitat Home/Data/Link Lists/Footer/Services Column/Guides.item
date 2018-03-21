@@ -1,34 +1,27 @@
 ----item----
 version: 1
-id: {212299F9-B7BC-494E-8534-E02C1FC81B7F}
+id: {B2AC7183-AEA2-4E41-9CBD-780AF231C314}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Productivity Column/Productivity
-parent: {4AC5862E-D0C3-4E65-AB1F-A03201F1747D}
-name: Productivity
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Services Column/Guides
+parent: {5545E611-F912-4EE7-991E-8AD7990E2B9D}
+name: Guides
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180320T211244Z
+created: 20180321T145403Z
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-100
 ----version----
 language: en
 version: 1
-revision: a56d7bcf-a61a-4da1-b26f-888daf01fa28
+revision: 7725fb62-d48f-45bc-8767-afa7de7599cd
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 136
+content-length: 130
 
-<link text="Productivity" anchor="" linktype="internal" class="" title=""  querystring="" id="{72450FD0-D6F5-4375-A500-106F514431C7}" />
+<link text="Guides" anchor="" linktype="internal" class="" title=""  querystring="" id="{64F922B1-D57D-4AFA-AE26-9D59502F69A6}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -42,7 +35,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180320T211244Z
+20180321T145403Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -56,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a56d7bcf-a61a-4da1-b26f-888daf01fa28
+7725fb62-d48f-45bc-8767-afa7de7599cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180321T170414Z
+20180321T145434Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,34 +1,34 @@
 ----item----
 version: 1
-id: {5545E611-F912-4EE7-991E-8AD7990E2B9D}
+id: {2F45EFB0-FEE7-4FCE-B4F1-D782D6855A09}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Other Column
-parent: {F61676A8-97DA-4F0C-8E6A-373EED878EE8}
-name: Other Column
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Services Column/Gift Cards
+parent: {5545E611-F912-4EE7-991E-8AD7990E2B9D}
+name: Gift Cards
 master: {00000000-0000-0000-0000-000000000000}
-template: {F7561FFC-C0D8-477F-B53D-2703A4060BE1}
-templatekey: Link List
-created: 20180209T214248Z
+template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
+templatekey: Link
+created: 20180209T214303Z
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-500
 ----version----
 language: en
 version: 1
-revision: 8b236f76-51ee-4557-ae5e-185a90cbf5d2
+revision: e43d5a26-ef10-4f1f-bd82-e3dcfced1c8d
 
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 134
+
+<link text="Gift Cards" anchor="" linktype="internal" class="" title=""  querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20171031T192918Z
+20171031T193828Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -42,33 +42,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b236f76-51ee-4557-ae5e-185a90cbf5d2
+e43d5a26-ef10-4f1f-bd82-e3dcfced1c8d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180216T173945Z
+20180321T145032Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: 92b8622b-17ef-4cc0-a5fd-92b02bd3fc58
+revision: 826244d6-44a6-4d9d-8ce3-1ae194e55781
 
 ----field----
-field: {AA9C8D1C-B210-4EFA-86DB-83E8FA32C672}
-name: Title
-key: title
-content-length: 0
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 128
 
-
+<link text="Aide" anchor="" linktype="internal" class="" title=""  querystring="" id="{FD27A69C-2AFD-461D-8C59-73554C376648}" />
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
@@ -138,7 +138,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20171031T192918Z
+20171031T193828Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -152,14 +152,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-92b8622b-17ef-4cc0-a5fd-92b02bd3fc58
+826244d6-44a6-4d9d-8ce3-1ae194e55781
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180216T173945Z
+20180216T174003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,34 +1,34 @@
 ----item----
 version: 1
-id: {974E6D6D-1992-4BB5-AA05-3BA3C2B302FA}
+id: {275BDA4B-C4D8-4458-90A6-97EDB49D9ABA}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Other Column/Gift Cards
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Services Column/Support
 parent: {5545E611-F912-4EE7-991E-8AD7990E2B9D}
-name: Gift Cards
+name: Support
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180209T214303Z
+created: 20180209T214304Z
 
 ----version----
 language: en
 version: 1
-revision: a474b89e-39ff-4e12-b089-0a5c3a867699
+revision: 72b31616-7fc7-4e7d-ad9f-f5bab1d6ad74
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 173
+content-length: 131
 
-<link id="{0751298F-6306-4CF3-AABB-38CA24C1585B}" querystring="" text="" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/gift-cards" linktype="internal" />
+<link text="Support" anchor="" linktype="internal" class="" title=""  querystring="" id="{FD27A69C-2AFD-461D-8C59-73554C376648}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20171031T193807Z
+20171031T193834Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -42,33 +42,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a474b89e-39ff-4e12-b089-0a5c3a867699
+72b31616-7fc7-4e7d-ad9f-f5bab1d6ad74
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180216T174003Z
+20180321T144951Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: bf003bea-b39c-4f1f-a942-f73bd9e7b545
+revision: e4cadc01-4e11-41ed-aeb0-6090dff4c7aa
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 138
+content-length: 169
 
-<link text="Cartes-cadeaux" anchor="" linktype="internal" class="" title=""  querystring="" id="{0751298F-6306-4CF3-AABB-38CA24C1585B}" />
+<link id="{64F922B1-D57D-4AFA-AE26-9D59502F69A6}" querystring="" text="" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/guides" linktype="internal" />
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
@@ -138,7 +138,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20171031T193807Z
+20171031T193834Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -152,7 +152,7 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bf003bea-b39c-4f1f-a942-f73bd9e7b545
+e4cadc01-4e11-41ed-aeb0-6090dff4c7aa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
