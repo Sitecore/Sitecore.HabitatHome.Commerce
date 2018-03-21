@@ -13,6 +13,9 @@
                 <asp:Button ID="btnSubmit" runat="server" Text="Upload" OnClick="btnSubmit_Click" Width="400" />
             </div>
             <div>
+                <label>PASTE THE JSON WITH ORDERS IN THE TEXTBOX BELOW AND HIT UPLOAD</label>
+            </div>
+            <div>
                 <asp:TextBox ID="txtOrderJson" runat="server" TextMode="MultiLine" Rows="50" Columns="150"></asp:TextBox>            
             </div>
         </div>       
