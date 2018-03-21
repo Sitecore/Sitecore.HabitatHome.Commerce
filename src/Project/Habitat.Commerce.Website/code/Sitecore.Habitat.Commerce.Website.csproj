@@ -49,6 +49,21 @@
       <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Engine.Connect">
+      <HintPath>..\..\..\Feature\Catalog\code\bin\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -62,6 +77,7 @@
       <HintPath>..\..\..\..\packages\Sitecore.Zip.NoReferences.9.0.171219\lib\NET462\Sitecore.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -81,6 +97,7 @@
     <Content Include="App_Config\Include\Project\Habitat.Home.Website.Serialization.config" />
     <Content Include="App_Config\Include\Project\z.Habitat.Commerce.Website.DevSettings.config" />
     <Content Include="sitecore.habitatcommerce.version.txt" />
+    <Content Include="Views\OrderUpload\UploadOfflineOrder.aspx" />
     <None Include="packages.config" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
@@ -98,6 +115,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\OrderUpload\UploadOfflineOrder.aspx.cs">
+      <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\OrderUpload\UploadOfflineOrder.aspx.designer.cs">
+      <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
