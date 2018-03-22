@@ -1,0 +1,412 @@
+﻿---
+ID: "055766be-d42e-4e94-b53b-3f6d223ec3d5"
+Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
+Template: "69dd5f28-429f-46b6-b55c-9da3500a7369"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Health
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <p
+              uid="{8F07E7AE-AEDE-46D5-B17B-2E6C7B6B5300}"
+              p:before="*"
+              s:key="/main/sxa-content-container/container-1/container-11"
+              s:md="/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/container- trainer" />
+            <r
+              uid="{EFA2EB26-5BCA-4D7F-A607-805347DFE054}"
+              p:after="p[@uid='{8F07E7AE-AEDE-46D5-B17B-2E6C7B6B5300}']"
+              s:ds="local:/Data/Promo - Trainer"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters&amp;FieldNames=%7B37AF3984-2F68-47EC-BAFB-B7A831F910CA%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
+              s:ph="/main/sxa-content-container/container-1/container-11">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{016C10C2-2313-4922-8500-C5DC90DABEF9}"
+                    s:name="Social - Foodie">
+                    <conditions>
+                      <condition
+                        uid="279B0DF388F7439F9BE69BD07292FB5D"
+                        s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                        s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="DBF6EBAF617E47889B49CCEA2A77D728"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Promo - Social Foodie Cooking" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="6218ED03346545888C2380070D342D7E"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{D4A90CC7-42BD-45A5-B34D-7B5D62273264}"
+              p:after="r[@uid='{EFA2EB26-5BCA-4D7F-A607-805347DFE054}']"
+              s:ds="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}"
+              s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+              s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={3E6E7D0C-2472-4157-B4C8-F920504A4196}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=10"
+              s:ph="/main/sxa-content-container/container-1/container-7/column-2-8" />
+            <r
+              uid="{6193009E-B1D0-4708-AEEF-334B46A9C08A}"
+              p:after="r[@uid='{D4A90CC7-42BD-45A5-B34D-7B5D62273264}']"
+              s:ds="{B5684B40-75E9-4FE6-912F-2D1C8D761AF2}"
+              s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+              s:par="GridParameters=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
+              s:ph="/main/sxa-content-container/container-1/container-7/column-1-8" />
+            <r
+              uid="{326CFC73-5A94-4202-AE7D-BF7396761FFC}"
+              p:after="r[@uid='{6193009E-B1D0-4708-AEEF-334B46A9C08A}']"
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=8"
+              s:ph="/main/sxa-content-container/container-1/container-7" />
+            <r
+              uid="{CE607538-624F-43DE-A3B5-635D2151A804}"
+              p:after="r[@uid='{326CFC73-5A94-4202-AE7D-BF7396761FFC}']"
+              s:ds="local:/Data/Hero"
+              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{03544570-8F36-4BB4-B123-28B16D6F5756}"
+                    s:name="Hero - Foodie">
+                    <actions>
+                      <action
+                        uid="08FA9178B9304AE99D2726B45DACF8E2"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Hero - Foodie" />
+                    </actions>
+                    <conditions>
+                      <or
+                        uid="9D80CB26D2DE4CD48B7968BF86308BB1">
+                        <condition
+                          uid="E0247277EB1246A3A0F0B539168676D8"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        <condition
+                          uid="B4C5E093A2B14824920AC5A9A5B68E9E"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Frank Foodie" />
+                      </or>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{A66C87F0-C704-46D5-A649-B7972794D6F6}"
+                    s:name="Hero - Fitness">
+                    <conditions>
+                      <or
+                        uid="A42A8DE790464281B17001699CBF11D9">
+                        <condition
+                          uid="712493F5119A40DEBA5D5C378C159DF3"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        <condition
+                          uid="11267AD14C944DAF9CA99E6721A677B8"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Francine Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="CC2A5699C04242F3BDBEB6D1DABF817A"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Hero - Fitness" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="BE9D6973B8CB4F6EABCACFC4C9FD9716"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{7CBDDD4D-859B-42E8-A640-6214C4188A84}"
+              p:after="r[@uid='{CE607538-624F-43DE-A3B5-635D2151A804}']"
+              s:ds="local:/Data/Health Commerce Categories Default"
+              s:id="{4646BD4F-05FF-4A19-9600-4D74F2F1548B}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={BB418DE9-224E-4B3C-842B-310A3473A274}&amp;Styles&amp;TitleHeadingLevel={6A44D9C6-61F0-4B69-8E1A-FDC27F96BA0F}&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{E3F183CF-7483-419A-8DEA-20EC30EE5383}"
+                    s:name="Fitness">
+                    <conditions>
+                      <or
+                        uid="28340F5BA59A4F4C8565E7BACCFC8AB4">
+                        <condition
+                          uid="6D1B6BBB07764EF08930CFE300DF74B7"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        <condition
+                          uid="BC10F16C504D4CB7B3BC01F88942F37F"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Francine Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="DE360AD4F86C4819B609192CAE7E2559"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Health Commerce Categories Gym" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{2690D2C3-21BB-4859-BCAD-E8592AC930A2}"
+                    s:name="Foodie">
+                    <conditions>
+                      <or
+                        uid="EFF12D26AC704DA494E832DAFC4B84E5">
+                        <condition
+                          uid="757434508EA84E09A0D715BC5C9F221B"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        <condition
+                          uid="EF54D122670F4DBAB8DE4FC433F9D445"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Frank Foodie" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="ADAC249C8B1A430DBE1225605EC526D7"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Health Commerce Categories Foodie" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="8B52F21597644F6FA7A61883FEBFB4C1"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{807D306C-5F71-40F4-9F38-AC9D1B521239}"
+              p:after="r[@uid='{7CBDDD4D-859B-42E8-A640-6214C4188A84}']"
+              s:ds="local:/Data/Promo - Smart Health"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{4C8EEAEA-0245-4508-8C3E-8396AF93E401}"
+                    s:name="Social - Foodie">
+                    <conditions>
+                      <or
+                        uid="6205D5BFE72143CA84D5CCE5E882066D">
+                        <condition
+                          uid="5857751A93AD4AC8A3AAB7ACF7D94F38"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        <condition
+                          uid="AA31BE03096F4E698396B76480DCF5B7"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Frank Foodie" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="3DAA3161CF5D4DD4B87377872538FFF3"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Promo - Social Foodie" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="485941D428004CB5A419455B4F9618C1"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{B950B0FF-8581-45FB-BC08-0CA25414C611}"
+              p:after="r[@uid='{807D306C-5F71-40F4-9F38-AC9D1B521239}']"
+              s:ds="local:/Data/Promo - Healthy Kitchen"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={837DA9F8-E307-4615-9B66-7F3B97E1470B}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{0EDA3A3E-26A0-4027-8C5A-538E305F8B05}"
+                    s:name="Search - Fitness">
+                    <conditions>
+                      <or
+                        uid="B4FFBC06C64A4633BF5BE6EE6C2AC8EB">
+                        <condition
+                          uid="31DEDCCB4E684D6BB07A8245888E2D77"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        <condition
+                          uid="C436EF2B29D649368D088919C79E6B4F"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Francine Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="FB084133CDF84E59AFC0866B842EC766"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Promo - Fitness Equipment" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{9A985F1C-3507-43C0-8D39-AB2F7129CC68}"
+                    s:name="Social - Foodie" />
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="18557BC7778E4B58A0CA38F58981A804"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{8E2E788A-E650-444F-9A84-FA47DC476BE8}"
+              p:after="r[@uid='{B950B0FF-8581-45FB-BC08-0CA25414C611}']"
+              s:ds="local:/Data/Promo - Healthy Home Tools"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{E16AB914-A2F8-4892-868D-5982976BAE01}"
+                    s:name="Social - Foodie" />
+                  <rule
+                    uid="{EE782199-BE9E-485E-936A-0C72FAFF0E06}"
+                    s:name="Search - Fitness">
+                    <conditions>
+                      <or
+                        uid="8897EF77FA454D7E9C901AE4F637751A">
+                        <condition
+                          uid="0125E34790E0482481F50F1741A01092"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        <condition
+                          uid="777969FA39C14AAF9EA6FCDA5CD51131"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Francine Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="61B82BF30EC54E40B3DF2CEEAA12650C"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Promo - Smart Home Gym" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="A32A7BC9D0DC4A069723EE14B33CE9B3"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{7317C239-24E6-498C-BB50-DBA7187E7FB0}"
+              p:after="r[@uid='{8E2E788A-E650-444F-9A84-FA47DC476BE8}']"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7B11429EC9-1E51-4694-B09C-44ECC88D3F89%7D%22%20alt%3D%22Photo%20home%20theatre%22%20height%3D%22%22%20width%3D%22%22%20hspace%3D%22%22%20vspace%3D%22%22%20%2F%3E&amp;Styles=%7B45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B%7D%7C%7BF5947911-00C7-4F00-84F4-3D748376BB32%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{133BCAF3-C1E2-4728-B435-2866E3456D27}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B45645D8F-56A4-460A-B5FB-51709FEFCE52%7D%7C%7B3D258225-9410-4FAF-A516-43490258337D%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180315T020621Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Habitat Health
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Habitat Health
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Health
+  Versions:

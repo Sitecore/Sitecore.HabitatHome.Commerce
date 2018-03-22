@@ -11,7 +11,9 @@ SharedFields:
 - ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
   Hint: Allowed Renderings
   Type: TreelistEx
-  Value: "{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+  Value: |
+    {51C13F03-8364-4F61-B860-2EC6CA7439B3}
+    {6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}
 - ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
   Hint: IsVerifiedStyle
   Type: Checkbox
