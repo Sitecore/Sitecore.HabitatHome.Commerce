@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{16EEDF9E-8112-4055-BAEF-EC001E3BDF3A}</ProjectGuid>
+    <ProjectGuid>{DC1D5779-DA56-44AB-9268-5D07FC8C873E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.NearestStore</RootNamespace>
-    <AssemblyName>Sitecore.Feature.NearestStore</AssemblyName>
+    <RootNamespace>Sitecore.Feature.GiftCardBalance</RootNamespace>
+    <AssemblyName>Sitecore.Feature.GiftCardBalance</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -55,9 +55,6 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
     </Reference>
@@ -73,11 +70,11 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
       <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
@@ -139,11 +136,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.NearestStore.config" />
-    <Content Include="App_Config\Include\Feature\Feature.NearestStore.Serialization.config" />
-    <None Include="packages.config" />
-    <Content Include="Scripts\Commerce\Feature\NearestStore\habitat.commerce.feature.neareststores.js" />
-    <Content Include="Views\NearestStore\NearestStore.cshtml" />
+    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.GiftCardBalance.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -152,20 +148,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.config" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\NearestStoreController.cs" />
-    <Compile Include="Managers\NearestStoreManager.cs" />
-    <Compile Include="Models\InventoryStore.cs" />
-    <Compile Include="Models\Responses\ServiceResponse.cs" />
-    <Compile Include="Models\UserLocation.cs" />
+    <Compile Include="Controllers\GiftCardBalanceController.cs" />
+    <Compile Include="Managers\GiftCardBalanceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IStoresRepository.cs" />
-    <Compile Include="Repositories\StoresRepository.cs" />
-    <Compile Include="Utilities\GeoUtil.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Scripts\Commerce\Feature\GiftCard\habitat.commerce.feature.giftcardbalance.js" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -177,11 +172,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54220</DevelopmentServerPort>
+          <DevelopmentServerPort>22720</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54220/</IISUrl>
+          <IISUrl>http://localhost:22720/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
