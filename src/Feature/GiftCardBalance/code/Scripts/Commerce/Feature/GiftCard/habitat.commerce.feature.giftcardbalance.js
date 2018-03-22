@@ -28,7 +28,7 @@ function InitializeGiftCardWidget() {
                 console.log(result.Errors[0]);
             }
             else {
-                var balanceHtml = '<div class="gift-card-balance"><div class="payment-total">Balance: <span>' + result.Data + ' USD</span></div></div>';
+                var balanceHtml = '<div class="gift-card-balance"><div class="payment-total">Balance: <span>' + result.Data + '</span></div></div>';
                 $(balanceHtml).insertAfter('.apply-gif-card-balance');
             }
         })

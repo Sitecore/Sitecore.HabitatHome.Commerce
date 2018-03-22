@@ -139,10 +139,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.NearestStore.config" />
     <Content Include="App_Config\Include\Feature\Feature.NearestStore.Serialization.config" />
-    <Content Include="App_Config\Include\Feature\Commerce\Commerce.Feature.NearestStore.config" />
     <None Include="packages.config" />
-    <Content Include="Scripts\Commerce\Feature\NearestStore\commerce.feature.neareststores.js" />
+    <Content Include="Scripts\Commerce\Feature\NearestStore\habitat.commerce.feature.neareststores.js" />
     <Content Include="Views\NearestStore\NearestStore.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

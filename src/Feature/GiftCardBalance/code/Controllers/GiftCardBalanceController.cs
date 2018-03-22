@@ -17,22 +17,15 @@ namespace Sitecore.Feature.GiftCardBalance.Controllers
         
 
         [AllowAnonymous]
-        [HttpPost]
-        //[OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
+        [HttpPost]        
         public JsonResult GetBalance(string cardId)
         {
             GiftCardBalanceManager gm = new GiftCardBalanceManager();
             JsonResult baseJsonResult;
-            try
-            {
-                dynamic result = new System.Dynamic.ExpandoObject();
-                result = gm.GetGiftCardBalance(cardId);
-                baseJsonResult = this.Json(result);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+                        
+            var result = gm.GetGiftCardBalance(cardId);
+            baseJsonResult = this.Json(result);                
+           
             return this.Json((object)baseJsonResult);
         }
 
