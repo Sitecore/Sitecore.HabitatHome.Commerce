@@ -309,6 +309,14 @@ div.promo-hero:after {
   padding-left: .5em;
 }
 
+.promo-columns .promo .component-content > div:last-child {
+  padding: 0 2em;
+}
+
+.promo-columns .promo .component-content > div:last-child .field-promolink {
+  margin-top: 1em;
+}
+
 @media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .product-items-block-title .article-content .component-content {
     line-height: 1.1;
