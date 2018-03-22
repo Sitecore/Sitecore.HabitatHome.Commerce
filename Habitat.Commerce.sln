@@ -24,13 +24,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rules", "Rules", "{D446ABE2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Rules", "src\Foundation\Rules\code\Sitecore.Foundation.Rules.csproj", "{04432910-3448-4B99-8063-6C25639CB61F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.NearestStore", "src\Feature\NearestStore\code\Sitecore.Feature.NearestStore\Sitecore.Feature.NearestStore.csproj", "{16EEDF9E-8112-4055-BAEF-EC001E3BDF3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.NearestStore", "src\Feature\NearestStore\code\Sitecore.Feature.NearestStore.csproj", "{16EEDF9E-8112-4055-BAEF-EC001E3BDF3A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{C603A77C-CA79-4B27-8DB1-78C80003DE02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Catalog", "src\Feature\Catalog\code\Sitecore.Feature.Catalog.csproj", "{6C0B3988-35D2-4A2F-8DA8-C48C19537C12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Store", "Store", "{9F381F10-3F30-4490-A55D-5806EC94F6C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderUpload", "OrderUpload", "{F1E5D499-5383-4737-AB40-EBA0A7C388CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.UploadOrder", "src\Feature\OrderUpload\code\Sitecore.Feature.UploadOrder.csproj", "{2FC27868-C662-45DE-8BB7-86E2227CF472}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +58,10 @@ Global
 		{6C0B3988-35D2-4A2F-8DA8-C48C19537C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C0B3988-35D2-4A2F-8DA8-C48C19537C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C0B3988-35D2-4A2F-8DA8-C48C19537C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC27868-C662-45DE-8BB7-86E2227CF472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC27868-C662-45DE-8BB7-86E2227CF472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC27868-C662-45DE-8BB7-86E2227CF472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC27868-C662-45DE-8BB7-86E2227CF472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +74,8 @@ Global
 		{C603A77C-CA79-4B27-8DB1-78C80003DE02} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
 		{6C0B3988-35D2-4A2F-8DA8-C48C19537C12} = {C603A77C-CA79-4B27-8DB1-78C80003DE02}
 		{9F381F10-3F30-4490-A55D-5806EC94F6C4} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{F1E5D499-5383-4737-AB40-EBA0A7C388CE} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{2FC27868-C662-45DE-8BB7-86E2227CF472} = {F1E5D499-5383-4737-AB40-EBA0A7C388CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}
