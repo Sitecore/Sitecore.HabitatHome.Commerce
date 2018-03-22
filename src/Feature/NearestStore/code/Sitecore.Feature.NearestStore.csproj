@@ -140,7 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.NearestStore.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Commerce\Commerce.Feature.NearestStore.config" />
     <None Include="packages.config" />
+    <Content Include="Scripts\Commerce\Feature\NearestStore\commerce.feature.neareststores.js" />
     <Content Include="Views\NearestStore\NearestStore.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -150,8 +152,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Sitecore.Commerce.XA.Feature.NearestStore.config" />
-    <Content Include="Scripts\Commerce\Feature\NearestStore\cxa.feature.neareststores.js" />
     <Content Include="Styles\Commerce\Feature\NearestStore\nearest-store-component.css" />
     <None Include="Web.config" />
   </ItemGroup>

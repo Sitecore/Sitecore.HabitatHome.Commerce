@@ -51,14 +51,13 @@ namespace Sitecore.Commerce.Plugin.Sample
             var command = this.Command<CreateOfflineOrderCommand>();
 
             if (!value.ContainsKey("Order"))
-                return "Bad Request, Cannot Find Order key"; //(IActionResult)new BadRequestObjectResult((object)value);            
+                return "Bad Request, Cannot Find Order key"; 
 
             var inputArgs = JsonConvert.DeserializeObject<OfflineStoreOrderArgument>(value["Order"].ToString());         
 
             var result = await command.Process(this.CurrentContext, inputArgs);
 
-            return JsonConvert.SerializeObject(result);
-            //return new ObjectResult(command);
+            return JsonConvert.SerializeObject(result);            
         }
     }
 }
