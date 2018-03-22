@@ -208,8 +208,7 @@ var publishProjects = function (location, dest) {
 
     console.log("publish to " + dest + " folder");
     return gulp.src([location + "/**/code/*.csproj"])
-        .pipe(foreach(function (stream, file) {  
-            console.log(file);
+        .pipe(foreach(function (stream, file) {
             return publishStream(stream, dest);
         }));
 };
@@ -222,6 +221,23 @@ gulp.task("Publish-Feature-Projects",
         return publishProjects("./src/Feature");
     });
 
+gulp.task("Publish-Feature-NearestStore",
+    function () {
+        console.log("publish to " + config.websiteRoot + " folder");
+        return gulp.src(["./src/Feature/NearestStore/code/*.csproj"])
+            .pipe(foreach(function (stream, file) {
+                return publishStream(stream, config.websiteRoot);
+            }));
+    });
+
+gulp.task("Publish-Feature-GiftCardBalance",
+    function () {
+        console.log("publish to " + config.websiteRoot + " folder");
+        return gulp.src(["./src/Feature/GiftCardBalance/code/*.csproj"])
+            .pipe(foreach(function (stream, file) {
+                return publishStream(stream, config.websiteRoot);
+            }));
+    });
 
 gulp.task("Publish-Project-Projects",
     function () {
@@ -291,4 +307,3 @@ gulp.task("Deploy-EXM-Campaigns",
             }
         });
     });
-

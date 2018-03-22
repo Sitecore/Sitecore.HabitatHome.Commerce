@@ -136,8 +136,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Sitecore.Commerce.XA.Feature.GiftCardBalance.config" />
-    <Content Include="Styles\Commerce\Feature\GiftCardBalance\giftcard-balance-component.css" />
+    <Content Include="App_Config\Include\Feature\Commerce\Commerce.Feature.GiftCardBalance.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -160,7 +159,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Scripts\Commerce\Feature\GiftCard\cxa.feature.giftcardbalance.js" />
+    <Content Include="Scripts\Commerce\Feature\GiftCard\commerce.feature.giftcardbalance.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

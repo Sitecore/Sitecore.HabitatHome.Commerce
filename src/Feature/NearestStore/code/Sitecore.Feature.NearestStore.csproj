@@ -152,7 +152,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\Commerce\Feature\NearestStore\nearest-store-component.css" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
