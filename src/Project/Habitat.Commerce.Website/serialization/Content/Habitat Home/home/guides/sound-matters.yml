@@ -112,9 +112,9 @@ SharedFields:
         <r
           uid="{CEDD274F-BA46-451B-934C-386E2369E3A9}"
           p:before="*"
-          s:ds="local:/Data/Promo - Hero"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={D70D540C-DAA4-4272-BD2E-92474D473F10}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ds="local:/Data/Hero"
+          s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
           s:ph="/main/sxa-content-container/container-1" />
         <r
           uid="{0F8955B1-8131-428D-A065-18168AF81A3C}"
