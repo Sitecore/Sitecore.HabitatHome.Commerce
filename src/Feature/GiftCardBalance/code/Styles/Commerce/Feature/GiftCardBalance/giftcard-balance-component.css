@@ -1,0 +1,8 @@
+﻿.gift-card-balance .payment-total {
+    font-size: 16px;
+}
+.gift-card-balance .payment-total span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #383c41;
+}
