@@ -224,7 +224,16 @@ gulp.task("Publish-Feature-Projects",
 gulp.task("Publish-Feature-NearestStore",
     function () {
         console.log("publish to " + config.websiteRoot + " folder");
-        return gulp.src(["./src/Feature/NearestStore/code/Sitecore.Feature.NearestStore/*.csproj"])
+        return gulp.src(["./src/Feature/NearestStore/code/*.csproj"])
+            .pipe(foreach(function (stream, file) {
+                return publishStream(stream, config.websiteRoot);
+            }));
+    });
+
+gulp.task("Publish-Feature-GiftCardBalance",
+    function () {
+        console.log("publish to " + config.websiteRoot + " folder");
+        return gulp.src(["./src/Feature/GiftCardBalance/code/*.csproj"])
             .pipe(foreach(function (stream, file) {
                 return publishStream(stream, config.websiteRoot);
             }));
