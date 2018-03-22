@@ -1,0 +1,75 @@
+﻿---
+ID: "07dfbcde-a7d9-4345-ae7c-924925ef3a91"
+Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
+Template: "c2786e73-44c7-43be-954b-1b35aeba4bd0"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/habitat-home-health"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Home Health
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8DF4BF6E-7685-45AB-A469-B9BC653C6BFB}"
+              p:before="*"
+              s:ds="{5B916626-BB90-4EBE-82E2-603198795DA8}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={D70D540C-DAA4-4272-BD2E-92474D473F10}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{57BA7E6A-8C98-42C0-A125-77084AE24AC5}"
+              p:after="r[@uid='{8DF4BF6E-7685-45AB-A469-B9BC653C6BFB}']"
+              s:ds="{6E4D27E7-877A-42CD-BC87-F21133F4E7D4}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{A9C71EC3-CBB9-4F79-B26D-1937118FA2D9}"
+              p:after="*[1=2]"
+              s:ds="{FF03BF85-5897-47E3-B058-7366443EA376}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={F414A716-6088-4281-A446-87EE974AB933}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180314T190258Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Habitat Home Health
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Habitat Home Health
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Home Health
+  Versions:
