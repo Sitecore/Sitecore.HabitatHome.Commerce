@@ -48,3 +48,4 @@ InstallUtil.InstallLog
 /src/**/logs
 *.dll
 /src/Project/Habitat.Commerce.Website/serialization/Theme/Habitat Home Store
+/src/Feature/NearestStore/code
