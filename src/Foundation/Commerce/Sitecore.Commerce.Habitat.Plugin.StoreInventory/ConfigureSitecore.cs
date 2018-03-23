@@ -32,7 +32,7 @@ namespace Sitecore.Commerce.Plugin.Sample
 
             services.Sitecore().Pipelines(config => config
 
-             .AddPipeline<ICreateStoreInventorySetPipeline, CreateStoreInventorySetPipeline>(
+            .AddPipeline<ICreateStoreInventorySetPipeline, CreateStoreInventorySetPipeline>(
                     configure =>
                         {
                             configure.Add<CreateStoreInventorySetBlock>();
@@ -49,6 +49,14 @@ namespace Sitecore.Commerce.Plugin.Sample
             {
                 configure.Add<GetNearestStoreDetailsByLocationBlock>();
             })
+
+            .AddPipeline<IGetProductsToUpdateInventoryPipeline, GetProductsToUpdateInventoryPipeline>(
+                configure =>
+                {
+                    configure.Add<GetProductsToUpdateInventoryBlock>();
+                })
+
+            
 
                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<ConfigureServiceApiBlock>()));
 
