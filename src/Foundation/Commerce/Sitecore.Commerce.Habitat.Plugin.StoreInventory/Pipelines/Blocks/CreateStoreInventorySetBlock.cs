@@ -41,9 +41,7 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Pipelines.Blocks
                 string validationError = context.GetPolicy<KnownResultCodes>().ValidationError;
                 //string commerceTermKey = "InventorySetNameAlreadyInUse";
                 object[] args = new object[1] { (object)arg.Name };
-                string defaultMessage = string.Format("Inventory set name {0} is already in use.", (object)arg.Name);
-                //executionContext.Abort(await commerceContext.AddMessage(validationError, commerceTermKey, args, defaultMessage), (object)context);
-                //executionContext = (CommercePipelineExecutionContext)null;
+                string defaultMessage = string.Format("Inventory set name {0} is already in use.", (object)arg.Name);                
                 return new InventorySet() { Id = CommerceEntity.IdPrefix<InventorySet>() + arg.Name };
             }
 

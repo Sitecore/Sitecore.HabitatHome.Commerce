@@ -67,53 +67,23 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Commands
 
                 var products = await this._getProductsToUpdateInventoryPipeline.Run(catalogName, commerceContext.GetPipelineContextOptions());
                 productsToAssociate = products;
+
+                if(productsToAssociate == null)
+                {
+                    return null;
+                }
             }
 
 
             // Once Done.. then assign inventory to products in the sets
 
-            // Associate Sellable Item to Inventory Set
-
-            //using (CommandActivity.Start(commerceContext, (CommerceCommand)createStoreInventoryCommand))
-            //{
-            //    Func<Task> func = await createStoreInventoryCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
-            //    {
-
-            //        CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
-
-            //        foreach (string product in productsToAssociate)
-            //        {
-            //            var productIds = product.Split('|');
-            //            string variantId = null;
-            //            var productId = product.Split('|').FirstOrDefault();
-
-            //            if (productIds.Count() > 1)
-            //            {
-            //                variantId = product.Split('|').Skip(1).FirstOrDefault();
-            //            }
-
-
-            //            SellableItemInventorySetsArgument args = new SellableItemInventorySetsArgument()
-            //            {
-            //                InventorySetIds = sets.Select(x => x.Id).ToList(),
-            //                SellableItemId = productId,
-            //                VariationId = variantId
-            //            };
-            //            bool result = await this._associateStoreInventoryToSellableItem.Run(args, pipelineContextOptions);
-            //            System.Threading.Thread.Sleep(100);
-            //        }
-
-            //    }));
-            //}
-
+            // Associate Sellable Item to Inventory Set           
 
             foreach(var product in productsToAssociate)
             {
                 using (CommandActivity.Start(commerceContext, (CommerceCommand)createStoreInventoryCommand))
                 {
-                    //Func<Task> func = await createStoreInventoryCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
-                    //{
-
+                    
                         CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
 
                         var productIds = product.Split('|');
@@ -134,7 +104,7 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Commands
                         };
                         bool result = await this._associateStoreInventoryToSellableItem.Run(args, pipelineContextOptions);
 
-                    //}));
+                   
                 }
             }
 

@@ -61,32 +61,41 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Pipelines.Blocks
 
 
 
+
             SellableItem sellableItem = entity as SellableItem;
-            ItemVariationComponent sellableItemVariation = sellableItem.GetVariation(argument.VariationId);
-            if (!string.IsNullOrEmpty(argument.VariationId) && sellableItemVariation == null)
-            {
-                executionContext = context;
-                CommerceContext commerceContext = context.CommerceContext;
-                string validationError = context.GetPolicy<KnownResultCodes>().ValidationError;
-                string commerceTermKey = "ItemNotFound";
-                object[] args = new object[1]
-                {
-                    (object) argument.VariationId
-                };
-                string defaultMessage = string.Format("Item '{0}' was not found.", (object)argument.VariationId);
-                executionContext.Abort(await commerceContext.AddMessage(validationError, commerceTermKey, args, defaultMessage), (object)context);
-                executionContext = (CommercePipelineExecutionContext)null;
-                return false;
-            }
 
 
-            if (string.IsNullOrEmpty(argument.VariationId) & sellableItem.HasComponent<ItemVariationsComponent>())
+            if ((string.IsNullOrEmpty(argument.VariationId)) & sellableItem.HasComponent<ItemVariationsComponent>())
             {
                 executionContext = context;
                 executionContext.Abort(await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().ValidationError, "AssociateInventoryWithVariant", new object[0], "Can not associate inventory to the base sellable item. Use one of the variants instead."), (object)context);
                 executionContext = (CommercePipelineExecutionContext)null;
                 return false;
             }
+
+            ItemVariationComponent sellableItemVariation = null;
+            if (argument.VariationId != null)
+            {
+                sellableItemVariation = sellableItem.GetVariation(argument.VariationId);
+                if (!string.IsNullOrEmpty(argument.VariationId) && sellableItemVariation == null)
+                {
+                    executionContext = context;
+                    CommerceContext commerceContext = context.CommerceContext;
+                    string validationError = context.GetPolicy<KnownResultCodes>().ValidationError;
+                    string commerceTermKey = "ItemNotFound";
+                    object[] args = new object[1]
+                    {
+                    (object) argument.VariationId
+                    };
+                    string defaultMessage = string.Format("Item '{0}' was not found.", (object)argument.VariationId);
+                    executionContext.Abort(await commerceContext.AddMessage(validationError, commerceTermKey, args, defaultMessage), (object)context);
+                    executionContext = (CommercePipelineExecutionContext)null;
+                    return false;
+                }               
+            }         
+
+
+            
 
 
             List<InventoryAssociation> inventoryAssociations = new List<InventoryAssociation>();
@@ -130,8 +139,7 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Pipelines.Blocks
                     string str1 = string.Format("{0}-{1}", inventorySetId.SimplifyEntityName(), (object)sellableItem.ProductId);
                     if (!string.IsNullOrEmpty(argument.VariationId))
                         str1 += string.Format("-{0}", (object)argument.VariationId);
-                    InventoryInformation inventoryInformation1 = new InventoryInformation();
-                    //string str2 = string.Format("{0}{1}", (object)CommerceEntity.IdPrefix<InventoryInformation>(), (object)str1);
+                    InventoryInformation inventoryInformation1 = new InventoryInformation();                    
                     inventoryInformation1.Id = string.Format("{0}{1}", (object)CommerceEntity.IdPrefix<InventoryInformation>(), (object)str1);
                     string str3 = str1;
                     inventoryInformation1.FriendlyId = str3;
