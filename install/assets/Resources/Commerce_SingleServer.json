@@ -212,6 +212,10 @@
       "Type": "string",
       "Description": "Sitecore Admin Password",
       "DefaultValue": "b"
+    },
+    "HabitatImagesModuleFullPath": {
+      "Type": "string",
+      "Description": "Habitat Images module full path"
     }
   },
   "Variables": {
@@ -448,6 +452,15 @@
       "Params": {
         "Path": "[concat(parameter('BaseConfigurationFolder'), '\\Commerce\\CEConnect\\EnableCEConnectIndexing.json')]",
         "ConfigDir": "[variable('EngineConnectIncludeDir')]"
+      }
+    },
+    "InstallHabitatImagesModule": {
+      "Type": "InstallSitecoreConfiguration",
+      "Params": {
+        "Path": "[concat(parameter('BaseConfigurationFolder'), Commerce\\HabitatImages\\HabitatImages.json",
+        "ModuleFullPath": "[parameter('HabitatImagesModuleFullPath')]",
+        "ModulesDirDst": "[variable('ModulesDirDst')]",
+        "BaseUrl": "[variable('UtilitiesBaseUrl')]"
       }
     },
     "Reindex": {

@@ -297,6 +297,7 @@ Function Install-Commerce {
         SXAStorefrontThemeModuleFullPath   = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Storefront Themes*.zip"-Recurse )
         SXAStorefrontCatalogModuleFullPath = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Sitecore Commerce Experience Accelerator Habitat Catalog*.zip" -Recurse)
         MergeToolFullPath                  = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "*Microsoft.Web.XmlTransform.dll" -Recurse | Select-Object -ExpandProperty FullName)
+        HabitatImagesModuleFullPath        = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Habitat Home Product Images.zip" -Recurse)
         UserAccount                        = @{
             Domain   = $commerce.serviceAccountDomain
             UserName = $commerce.serviceAccountUserName
