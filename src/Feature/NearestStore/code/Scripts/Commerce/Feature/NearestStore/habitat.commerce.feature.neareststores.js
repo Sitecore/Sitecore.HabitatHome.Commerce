@@ -8,8 +8,7 @@
     self.NearestStoresList = ko.observable([]);
 
 
-    self.InitializeViewModel = function (userLatitude, userLongitude, productID, variantID) {
-        console.log('init');
+    self.InitializeViewModel = function (userLatitude, userLongitude, productID, variantID) {  
         self.UserLat(userLatitude);
         self.UserLong(userLongitude);
         self.ProductId = productID;
