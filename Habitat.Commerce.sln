@@ -40,6 +40,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GiftCardBalance", "GiftCard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.GiftCardBalance", "src\Feature\GiftCardBalance\code\Sitecore.Feature.GiftCardBalance.csproj", "{DC1D5779-DA56-44AB-9268-5D07FC8C873E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OfflineOrderHistory", "OfflineOrderHistory", "{B47F7D63-33B6-4FBC-AB39-5C38B3B6BAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.OfflineOrderHistory", "src\Feature\OfflineOrderHistory\code\Sitecore.Feature.OfflineOrderHistory.csproj", "{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +74,10 @@ Global
 		{DC1D5779-DA56-44AB-9268-5D07FC8C873E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC1D5779-DA56-44AB-9268-5D07FC8C873E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC1D5779-DA56-44AB-9268-5D07FC8C873E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,8 @@ Global
 		{2FC27868-C662-45DE-8BB7-86E2227CF472} = {F1E5D499-5383-4737-AB40-EBA0A7C388CE}
 		{C486145B-9B0E-4C13-8C0F-FC79D41187D3} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
 		{DC1D5779-DA56-44AB-9268-5D07FC8C873E} = {C486145B-9B0E-4C13-8C0F-FC79D41187D3}
+		{B47F7D63-33B6-4FBC-AB39-5C38B3B6BAA7} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{42CF6E0E-BFD5-4207-BD7F-EC5C22701590} = {B47F7D63-33B6-4FBC-AB39-5C38B3B6BAA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}

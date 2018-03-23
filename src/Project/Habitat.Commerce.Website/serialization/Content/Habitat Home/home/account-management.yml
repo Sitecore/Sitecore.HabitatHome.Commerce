@@ -58,9 +58,29 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{83DAC912-1FF9-41A5-993F-C2BA0FC78914}"
+              p:after="*[1=2]"
+              s:ds="{2C1A4647-F067-46E9-A380-908AEE38AC0E}"
+              s:id="{CE39AB87-34C6-46F8-A5E2-B532158B10EF}"
+              s:par="GridParameters&amp;View Order Details Link=%7BC8121F23-0CED-4828-8F8B-994D27F1CC7E%7D"
+              s:ph="/main/sxa-empty/container-1" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171117T180040Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: My Account
