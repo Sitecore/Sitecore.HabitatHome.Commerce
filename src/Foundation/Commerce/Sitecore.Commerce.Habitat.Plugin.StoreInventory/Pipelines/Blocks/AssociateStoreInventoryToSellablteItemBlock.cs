@@ -120,19 +120,7 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Pipelines.Blocks
                     if ((nullable2.GetValueOrDefault() == flag ? (nullable2.HasValue ? 1 : 0) : 0) != 0)
                     {
                         inventoryInformation.Quantity = rnd.Next(50);
-                        isUpdate = true;
-                        //executionContext = context;
-                        //CommerceContext commerceContext = context.CommerceContext;
-                        //string error = context.GetPolicy<KnownResultCodes>().Error;
-                        //string commerceTermKey = "SellableItemAlreadyAssociated";
-                        //object[] args = new object[1]
-                        //{
-                        //(object) argument.SellableItemId
-                        //};
-                        //string defaultMessage = string.Format("The sellable item '{0}' is already associated.", (object)argument.SellableItemId);
-                        //executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, args, defaultMessage), (object)context);
-                        //executionContext = (CommercePipelineExecutionContext)null;
-                        //return false;
+                        isUpdate = true;                        
                     }
                 }
 

@@ -63,6 +63,13 @@ namespace Sitecore.Commerce.Plugin.Sample
             var storeInfos =  jarray != null ? jarray.ToObject<IEnumerable<StoreDetailsModel>>() : (IEnumerable<StoreDetailsModel>)null;
             var productsToAssociate = jarrayProducts != null ? jarrayProducts.ToObject<IEnumerable<string>>() : (IEnumerable<string>)null;
 
+            // You need to have catalog mentioned if you are not providing a list of products to update inventory.
+            if(productsToAssociate == null || string.IsNullOrEmpty(productsToAssociate.FirstOrDefault()))
+            {
+                if (!value.ContainsKey("catalog"))
+                    return (IActionResult)new BadRequestObjectResult((object)value);
+            }
+
             List<CreateStoreInventorySetArgument> args = new List<CreateStoreInventorySetArgument>();
 
             foreach(var store in storeInfos)
@@ -90,7 +97,7 @@ namespace Sitecore.Commerce.Plugin.Sample
 
 
             var command = this.Command<CreateStoreInventoryCommand>();
-            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList());
+            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList(), Convert.ToString(value["catalog"]));
 
             return new ObjectResult(command);
         }
