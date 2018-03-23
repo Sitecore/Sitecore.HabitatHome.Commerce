@@ -218,14 +218,19 @@ function Install-Prerequisites {
         
         #Copy-Item $(Join-Path $sifCommerceRoot "Modules") $resourcePath -Recurse -Force
     }
-
     Function Stop-XConnect {
-        Install-SitecoreConfiguration $(Join-Path $resourcePath "stop-site.json") `
-        -SiteName $xConnect.siteName
+        $params = @{
+            Path = $(Join-Path $resourcePath "stop-site.json")
+            SiteName = $xConnect.siteName
+        }
+        Install-SitecoreConfiguration  @params -WorkingDirectory $(Join-Path $PWD "logs")
     }
     Function Start-XConnect {
-        Install-SitecoreConfiguration $(Join-Path $resourcePath "start-site.json") `
-        -SiteName $xConnect.siteName
+        $params = @{
+            Path            = $(Join-Path $resourcePath "start-site.json")
+            SiteName        = $xConnect.siteName
+        }
+        Install-SitecoreConfiguration  @params -WorkingDirectory $(Join-Path $PWD "logs")
     }
     Function Start-Site {
         $Hostname = "$($site.hostName)"
@@ -316,5 +321,4 @@ Stop-XConnect
 Set-ModulesPath
 Install-Commerce
 Start-Site
-
 Start-XConnect
