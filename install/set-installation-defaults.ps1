@@ -43,7 +43,7 @@ $bizFxVersion.version = "1.1.9"
 $site = $json.settings.site
 # Commerce Settings
 $commerce = $json.settings.commerce
-$commerce.storefrontPrefix = "habitathome"
+$commerce.storefrontPrefix = $site.habitatHomePrefix
 $commerce.storefrontHostName = $commerce.storefrontPrefix + "." + $site.suffix
 
 $commerce.serviceAccountDomain = "$($Env:COMPUTERNAME)"
