@@ -10,7 +10,7 @@ SharedFields:
   Value: HeroTitle
 - ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
   Hint: CssClass
-  Value: 
+  Value: "field-promotext"
 - ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
   Hint: Tag
   Value: "{AD7A95FD-05D0-484E-8AFB-FB1DDD5F44AB}"

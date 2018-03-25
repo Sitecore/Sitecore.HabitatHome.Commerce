@@ -81,3 +81,25 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ログアウト
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13b96afd-2685-4c98-b2ac-d44d49893807"
+      Hint: DestinationUrl
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104454Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8a83d191-8f06-4ab2-9600-1968bebf0805"
+      Hint: LogoutLinkCaption
+      Value: Logout

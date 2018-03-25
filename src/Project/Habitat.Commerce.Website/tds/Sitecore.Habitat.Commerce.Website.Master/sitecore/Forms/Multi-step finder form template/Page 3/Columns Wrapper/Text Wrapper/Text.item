@@ -1,0 +1,134 @@
+----item----
+version: 1
+id: {9026ADEB-B18D-4F46-AE13-B482074532A5}
+database: master
+path: /sitecore/Forms/Multi-step finder form template/Page 3/Columns Wrapper/Text Wrapper/Text
+parent: {E88D87A1-96E9-46B6-A085-8E55495CA4CF}
+name: Text
+master: {00000000-0000-0000-0000-000000000000}
+template: {FC18F915-EAC6-460A-8777-6E1376A9EA09}
+templatekey: Text
+created: 20180325T032958Z
+
+----field----
+field: {C6CAA979-C3AC-4FFC-861E-2961F5FC3C48}
+name: Html Tag
+key: html tag
+content-length: 1
+
+p
+----field----
+field: {7ABAA3F6-6EC0-4B65-A463-7919BFAE55AA}
+name: Css Class
+key: css class
+content-length: 10
+
+help-block
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{983BFA5F-C6B6-4AEE-A3BB-46B95D52E7DF}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: en
+version: 1
+revision: c6478cec-05fe-455c-98b6-51da081d1727
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 170
+
+By selecting the type of electronics you are interested in Habitat Home will personalize your experience to match your interest. You can change your interest at any time.
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171121T215008Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c6478cec-05fe-455c-98b6-51da081d1727
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180322T125145Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-CA
+version: 1
+revision: 590ecc5a-629a-4e1e-aa65-b5072ec0ac37
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 162
+
+En sélectionnant le type de produits qui vous intéresse, Habitat Home pourra vous livrer du content personnalisé. Vous pouvez modifier vos intérêts en tout temps.
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180130T140435Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+590ecc5a-629a-4e1e-aa65-b5072ec0ac37
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180216T174044Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

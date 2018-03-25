@@ -93,3 +93,25 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104451Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: |
+        <p><strong>Step 1: Choose an Assistant</strong></p>
+        <p>Virtual voice-controlled assistants like Apple&rsquo;s Siri, Google&rsquo;s Assistant and Amazon&rsquo;s Alexa make it easy to control smart home products by speaking simple commands. Each of these tools has its strengths and weaknesses, so choose the one that will be more likely to work for your needs.</p>
+        <p><strong>Step 2: Select a Location</strong></p>
+        <p>One other thing you'll want to think about as you bring a smart assistant into your home is where you're going to put it. You can use your smart assistant anywhere you like, so long as it's in range of your home's Wi-Fi signal and a power outlet. Whether that means you put it in the bedroom, bathroom, kitchen, or living room is up to you, and the choice really depends on how you're planning on using it.</p>
+        <p><strong>Step 3: Put Your Assistant to Work</strong></p>
+        <p>This is where the fun begins. With your virtual assistant, you can set up your home a number of ways to make it &ldquo;smarter.&rdquo; You can set your assistant to work with other smart devices or outlets. This will give you the ability to control your lights, fans, thermostat, speakers, locks, and much more.</p>
+        <p><strong>Step 4: Fine Tune Your Devices</strong></p>
+        <p>You can improve your smart home setup as you go by making tweaks to your devices and the way you keep them organized. Depending on the device, you can modify the settings for optimal livability on a daily basis. This kind of fine-tuning can help guide you through a gradual expansion of your setup. Start small, get comfortable with how your smart assistant works, and then build outwards, bit by bit. It won't take long for your smart home to take shape.</p>

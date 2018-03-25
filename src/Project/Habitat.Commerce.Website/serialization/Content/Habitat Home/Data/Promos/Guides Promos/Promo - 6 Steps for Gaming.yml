@@ -107,3 +107,36 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - ゲームのための6つのステップ"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: <p>ゲームのための6つのステップ</p>
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{EE675D1C-5190-4B35-B9C6-EAAF8BCFA404}" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104521Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "832d3c97-5c05-49bf-89ef-9c29d30345e7"
+      Hint: PromoText3
+      Value: <p>ゲーム ガイド</p>
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: |
+        <p>専用のゲーマーには専用のゲームルームが必要です。 理想的なゲーム環境には、快適性、利便性、テクノロジー、そしていくつかの気分を変えるアクセサリがあります。</p><p class="field-promotext2" />
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="内容を確認する" querystring="" target="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426}" />

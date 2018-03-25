@@ -8,12 +8,12 @@ name: Appliances for the Healthy Lifestyle
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190400Z
+created: 20180323T040742Z
 
 ----version----
 language: en
 version: 1
-revision: 6319d71b-eae6-443b-8664-b572c5287693
+revision: 1388da69-a483-4dea-898c-2192edbdc05e
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6319d71b-eae6-443b-8664-b572c5287693
+1388da69-a483-4dea-898c-2192edbdc05e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180129T200639Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\unicorn
 ----version----
 language: fr-CA
 version: 1
-revision: ee28dab4-1d40-4fcc-a603-78fd284f31eb
+revision: 5e10bcec-328f-4754-bb81-4328a43555b8
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee28dab4-1d40-4fcc-a603-78fd284f31eb
+5e10bcec-328f-4754-bb81-4328a43555b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T120534Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -181,3 +181,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: 9c642e99-6b53-4cc5-9870-96e8511e2392
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 117
+
+<link linktype="internal" text="スマートストーブのレシピ" querystring="" target="" id="{B5684B40-75E9-4FE6-912F-2D1C8D761AF2}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+健康的な生活のための家電製品
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104517Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9c642e99-6b53-4cc5-9870-96e8511e2392
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040742Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

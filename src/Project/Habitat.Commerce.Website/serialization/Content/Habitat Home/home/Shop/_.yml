@@ -119,8 +119,8 @@ Languages:
               uid="{C6677917-3CE0-4AE0-B137-C3CD19C9C3DA}"
               p:after="*[1=2]"
               s:ds=""
-              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-              s:par="GridParameters&amp;FieldNames=%7B41829F09-CE76-47ED-8C9F-F5C133201624%7D&amp;Styles=%7B0693224B-762B-4B16-A713-09C6A6152D9B%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
+              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+              s:par="GridParameters&amp;FieldNames=%7B66E5B6DB-E51D-45C3-820A-FD55B85BD0F1%7D&amp;Styles=%7B0693224B-762B-4B16-A713-09C6A6152D9B%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
               s:ph="/main/container-">
               <rls>
                 <ruleset>
@@ -138,7 +138,7 @@ Languages:
                       <action
                         uid="93AEA7CC4B7D410D8BDF8FEDDF6C402D"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{67E82024-68F0-46A8-86D0-502641702FA3}" />
+                        s:DataSource="{EA5B68C3-E118-42CE-93AF-E7D93CAF9486}" />
                     </actions>
                   </rule>
                   <rule
@@ -155,7 +155,7 @@ Languages:
                       <action
                         uid="5C223EF1C3F24A979B10684EFEBD45D8"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{34E50F5C-D9CE-4F4C-BE4E-3F8486F27AE9}" />
+                        s:DataSource="{E5891D24-DC59-4547-BBF0-CA4E027E0846}" />
                     </actions>
                   </rule>
                   <rule
@@ -172,7 +172,7 @@ Languages:
                       <action
                         uid="B13F1407BEFB4360B658C80077059F64"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{D9A39063-E3F3-4889-9EC5-25004E21BFB3}" />
+                        s:DataSource="{0AFF8C07-5635-4507-B2CD-5D4B890B7DB4}" />
                     </actions>
                   </rule>
                   <rule
@@ -189,24 +189,7 @@ Languages:
                       <action
                         uid="40A8728DF9064627B55EBA4EF087C6D7"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{E347985A-ADF3-4154-8C8D-D5DA741A8BF7}" />
-                    </actions>
-                  </rule>
-                  <rule
-                    uid="{0501EAC6-8951-4739-8C3F-B526482687FB}"
-                    s:name="Gift Cards">
-                    <conditions>
-                      <condition
-                        uid="F32F3A10DC294A4185D6FF3A0FD4A64D"
-                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-eGift Cards and Gift Wrapping"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-eGift Cards and Gift Wrapping" />
-                    </conditions>
-                    <actions>
-                      <action
-                        uid="74ED221A04F94593BF8CD7D58F78AA99"
-                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{7434D852-53B8-40BB-BB53-C558181872CA}" />
+                        s:DataSource="{C83AE894-69B6-4132-A975-FF38100D9698}" />
                     </actions>
                   </rule>
                   <rule
@@ -223,7 +206,7 @@ Languages:
                       <action
                         uid="741C148E9480454185BDE1A2D82DCCE5"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{F457A05E-92BD-44F2-8C01-1AB096E34C2C}" />
+                        s:DataSource="{8813D2EF-1A78-4B95-9E86-E5DEF2F8FC3A}" />
                     </actions>
                   </rule>
                   <rule
@@ -240,7 +223,7 @@ Languages:
                       <action
                         uid="126362CA67B1447992FE14DD61DB34CE"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{05D637CA-5037-4021-8E70-FA4C321921FC}" />
+                        s:DataSource="{CF734DE4-40E0-4B72-A774-F8D28720E925}" />
                     </actions>
                   </rule>
                   <rule
@@ -257,7 +240,7 @@ Languages:
                       <action
                         uid="DD19B64FD4304B11A41C13FEC0195BC6"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{2B4B8B35-F276-479C-8E32-0F37979BC3BB}" />
+                        s:DataSource="{99375E3C-5C5C-4B40-91AA-217A2E85BB67}" />
                     </actions>
                   </rule>
                   <rule
@@ -274,7 +257,7 @@ Languages:
                       <action
                         uid="75AF996EDE264A168CEEDA35B51F18D9"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{74198218-F839-426D-AC78-E9970E09C0D8}" />
+                        s:DataSource="{C86EFD2A-8EFD-4470-A9A9-A7D594AEBE88}" />
                     </actions>
                   </rule>
                   <rule
@@ -291,7 +274,7 @@ Languages:
                       <action
                         uid="5BE9A10F2E7C45C593BE863B46020FE5"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{FF74D946-D625-4432-B42B-D2530353A640}" />
+                        s:DataSource="{12B2BE9B-A22D-4B2B-BDD3-872C352694B0}" />
                     </actions>
                   </rule>
                   <rule
@@ -306,7 +289,7 @@ Languages:
                       <action
                         uid="4CA2A7CF15144807A5F95378A50F5935"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{F457A05E-92BD-44F2-8C01-1AB096E34C2C}" />
+                        s:DataSource="{8813D2EF-1A78-4B95-9E86-E5DEF2F8FC3A}" />
                     </actions>
                   </rule>
                 </ruleset>

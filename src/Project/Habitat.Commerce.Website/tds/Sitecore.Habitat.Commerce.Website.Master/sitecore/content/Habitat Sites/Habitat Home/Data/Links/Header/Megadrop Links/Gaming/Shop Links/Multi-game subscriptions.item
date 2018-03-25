@@ -8,20 +8,20 @@ name: Multi-game subscriptions
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190405Z
+created: 20180323T040744Z
 
 ----version----
 language: en
 version: 1
-revision: b65c470a-c457-479d-8414-2b1b3c582c1d
+revision: 04a5eae7-99cd-4aa0-a187-d925e8e0558e
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 157
+content-length: 101
 
-<link text="Multi-game subscriptions" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C3AE4B30-C20D-1F98-232F-E04ECCE4D873}" />
+<link text="Multi-game subscriptions" linktype="rel" url="/shop/Multigame-Subscriptions" anchor="" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b65c470a-c457-479d-8414-2b1b3c582c1d
+04a5eae7-99cd-4aa0-a187-d925e8e0558e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T111006Z
+20180323T183927Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: fbee61ff-2621-4c5d-973c-08fbbd395790
+revision: 82829121-ce8a-40ed-bbce-5d460e2f3df2
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fbee61ff-2621-4c5d-973c-08fbbd395790
+82829121-ce8a-40ed-bbce-5d460e2f3df2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T122208Z
+20180216T174017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics

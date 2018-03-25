@@ -56,9 +56,14 @@ SharedFields:
           s:ph="head" />
         <r
           uid="{A0C95F67-71DF-49F8-A112-F68DA0C377F7}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{4A98F7A3-340F-48F2-864A-BC4D6FF942C9}']"
           s:id="{3B138D20-BB25-449D-898A-670997743402}"
           s:ph="head" />
+        <r
+          uid="{4475928F-0A4D-4EE9-8E5A-B87405C01C53}"
+          p:after="*[1=2]"
+          s:id="{432E53A1-E676-4A07-92BC-A3EF517A5811}"
+          s:ph="body-top" />
       </d>
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -134,3 +139,18 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Metadata
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104529Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -8,7 +8,7 @@ name: Are Laptops Becoming Obsolete
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190400Z
+created: 20180323T040742Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -20,7 +20,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: 08ba396c-c886-41d2-a442-843251fc2cee
+revision: 12f21bbd-304a-4203-bb13-d7fe08b3d71c
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-08ba396c-c886-41d2-a442-843251fc2cee
+12f21bbd-304a-4203-bb13-d7fe08b3d71c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180129T200639Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -67,7 +67,7 @@ sitecore\unicorn
 ----version----
 language: fr-CA
 version: 1
-revision: 385abccb-6ea0-4197-bd20-e3d23740e53a
+revision: cb19e151-b6a7-4978-ac30-bdb0c31ef232
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -159,21 +159,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-385abccb-6ea0-4197-bd20-e3d23740e53a
+cb19e151-b6a7-4978-ac30-bdb0c31ef232
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180130T225648Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -188,3 +188,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: 2fc72537-db12-4a37-bdc9-2b1d27b70c5a
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 125
+
+<link linktype="internal" text="ラップトップは時代遅れになっていますか？" querystring="" target="" id="{0397DE13-C539-4683-8599-F57D437AD23E}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+ラップトップが時代遅れに
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104514Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2fc72537-db12-4a37-bdc9-2b1d27b70c5a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040742Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

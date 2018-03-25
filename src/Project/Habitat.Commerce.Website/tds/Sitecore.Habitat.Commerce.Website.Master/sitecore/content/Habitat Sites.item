@@ -8,7 +8,7 @@ name: Habitat Sites
 master: {9A4AAD67-383B-4504-93B9-D3502BE2B59D}
 template: {36AC0B4C-C464-460B-BDBA-2D2F252073BB}
 templatekey: Tenant
-created: 20171027T151103Z
+created: 20180323T040027Z
 
 ----field----
 field: {9C596379-F8D4-45D1-A064-CDF1EDE2E7C7}
@@ -55,7 +55,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b43650b8-d5af-4684-8a7e-9786e005c1b7
+revision: 887346e5-e164-43b0-a95c-dcd15cac3c60
 
 ----field----
 field: {7D29B525-8118-45C6-A89B-773A6A576EC7}
@@ -84,18 +84,65 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b43650b8-d5af-4684-8a7e-9786e005c1b7
+887346e5-e164-43b0-a95c-dcd15cac3c60
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T035738Z
+20180323T211826Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: ebb8d672-c8eb-4d8d-aab3-c9bd953f8f49
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 11
+
+Habitat サイト
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104415Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ebb8d672-c8eb-4d8d-aab3-c9bd953f8f49
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T211826Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

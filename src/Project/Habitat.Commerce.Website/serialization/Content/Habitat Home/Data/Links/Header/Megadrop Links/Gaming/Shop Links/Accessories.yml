@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Accessories" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B6C43DCA-3178-A8B3-A6A3-62078A309DA6}" />
+        <link text="NextCube Accessories" linktype="rel" url="/shop/NextCube-Accessories" anchor="" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
