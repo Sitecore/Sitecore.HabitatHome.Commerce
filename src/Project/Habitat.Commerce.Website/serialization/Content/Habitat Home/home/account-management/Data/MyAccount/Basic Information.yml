@@ -42,6 +42,22 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{82B0DD41-316E-45BC-9880-83BF13E41B60}"
+              s:ds="{BC09AA64-AAB1-4825-B173-91CFC2E91E05}" />
+            <r
+              uid="{6D6EC25F-C7A6-4C1A-8AAB-4849B47431FD}"
+              s:ds="{BC09AA64-AAB1-4825-B173-91CFC2E91E05}" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171215T100409Z

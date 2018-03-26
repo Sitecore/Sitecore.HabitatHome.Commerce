@@ -68,11 +68,14 @@ Languages:
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
               uid="{83DAC912-1FF9-41A5-993F-C2BA0FC78914}"
-              p:after="*[1=2]"
+              p:after="r[@uid='{1DC65EA5-DB87-4B6C-B428-D684E30E0E87}']"
               s:ds="{2C1A4647-F067-46E9-A380-908AEE38AC0E}"
               s:id="{CE39AB87-34C6-46F8-A5E2-B532158B10EF}"
-              s:par="GridParameters&amp;View Order Details Link=%7BC8121F23-0CED-4828-8F8B-994D27F1CC7E%7D"
+              s:par="GridParameters&amp;View Order Details Link={C8121F23-0CED-4828-8F8B-994D27F1CC7E}"
               s:ph="/main/sxa-empty/container-1" />
+            <r
+              uid="{CDA8C7DB-981B-4A3A-B573-B23B699210B9}"
+              p:after="*[1=2]" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"

@@ -41,7 +41,7 @@ SharedFields:
           uid="{B52CB16B-6400-4872-9C47-83411631A533}"
           p:after="r[@uid='{A91FD2E7-189C-45D6-99F0-BA2F2F4572E1}']"
           s:ds=""
-          s:id="{E441A637-F081-4FB7-8780-04DFE9419FEE}"
+          s:id="{8088A650-0910-4CE0-802A-3D5E757F1254}"
           s:par=""
           s:ph="/main/sxa-content-container/container-1/container-1" />
         <r
@@ -62,9 +62,26 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B52CB16B-6400-4872-9C47-83411631A533}"
+              s:ds="{9966060E-4400-436F-9A2B-59DEE9AF88D8}"
+              s:par="GridParameters" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171115T192426Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Register

@@ -40,9 +40,9 @@ SharedFields:
         <r
           uid="{0ED1EF6A-FB22-4BA8-BC06-A1EB128A9267}"
           p:after="r[@uid='{B842C450-6284-4F3B-9BAF-8498B83F241C}']"
-          s:ds=""
-          s:id="{809FDBFF-892F-40F5-BD5D-97A021C711C1}"
-          s:par=""
+          s:ds="{9CEF2DD3-F945-45D2-A1AC-E3379B91D0B5}"
+          s:id="{97D8D8DA-E6FD-4983-BDB6-ABD28C6E0209}"
+          s:par="GridParameters"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
           uid="{04FB28D9-4468-430B-A054-A919810AE058}"
@@ -79,6 +79,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171115T192422Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Login

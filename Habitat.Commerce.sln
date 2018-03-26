@@ -40,9 +40,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GiftCardBalance", "GiftCard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.GiftCardBalance", "src\Feature\GiftCardBalance\code\Sitecore.Feature.GiftCardBalance.csproj", "{DC1D5779-DA56-44AB-9268-5D07FC8C873E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OfflineOrderHistory", "OfflineOrderHistory", "{B47F7D63-33B6-4FBC-AB39-5C38B3B6BAA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderHistory", "OrderHistory", "{B47F7D63-33B6-4FBC-AB39-5C38B3B6BAA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.OfflineOrderHistory", "src\Feature\OfflineOrderHistory\code\Sitecore.Feature.OfflineOrderHistory.csproj", "{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.OrderHistory", "src\Feature\OrderHistory\code\Sitecore.Feature.OrderHistory.csproj", "{42CF6E0E-BFD5-4207-BD7F-EC5C22701590}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
