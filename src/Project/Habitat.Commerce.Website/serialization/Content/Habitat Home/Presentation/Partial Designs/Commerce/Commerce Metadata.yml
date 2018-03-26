@@ -11,7 +11,7 @@ SharedFields:
   Value: "commerce-metadata"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
-  Value: "{B6573F5A-C1FE-443C-A11A-34E27BD31580}"
+  Value: 
 Languages:
 - Language: en
   Versions:
