@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.OrderHistory.config" />
+    <Content Include="App_Config\Include\Feature\Feature.OrderHistory.Serialization.config" />
     <None Include="packages.config" />
     <Content Include="Views\OrderHistory\OrderHistory.cshtml" />
     <None Include="Web.Debug.config">
