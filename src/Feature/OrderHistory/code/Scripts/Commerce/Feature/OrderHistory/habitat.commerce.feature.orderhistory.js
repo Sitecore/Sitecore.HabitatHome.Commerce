@@ -75,7 +75,7 @@
                 $(component.RootElement).find('.recent-orders-list').removeClass("loading");
                 if (success && data && data.Success) {
                     $.each(data.Orders, function (index, value) {
-                        console.log(value);
+              
                         if (value["OrderStatus"] != null && value["OrderStatus"] == 'StoreOrder') {
                             inStoreOrders.push(value);                            
                         }
@@ -83,8 +83,6 @@
                             onlineOrders.push(value);
                         }
                     });
-                    console.log(inStoreOrders);
-                    console.log(onlineOrders);
                     component.Model.updateModel(data);
                 }
             });
