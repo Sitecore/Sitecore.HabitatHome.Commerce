@@ -30,7 +30,38 @@ SharedFields:
           s:ds="{87D70FED-3FB3-4662-BA2E-C5397C88CAD0}"
           s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
           s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
-          s:ph="/header/container-1/column-2-2/container-3" />
+          s:ph="/header/container-1/column-2-2/container-3">
+          <rls>
+            <ruleset>
+              <rule
+                uid="{202EB548-267A-4923-AE5F-8C1BF3EEC192}"
+                s:name="Authenticated">
+                <conditions>
+                  <condition
+                    uid="9046A9B45D4C477FADA9E134AA2A2DC4"
+                    s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}"
+                    s:except="true" />
+                </conditions>
+                <actions>
+                  <action
+                    uid="0BC4D3B6ECAB4D219BCBA32906CFB7AF"
+                    s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    s:DataSource="{4E8AB109-2424-4CE5-B2F1-5E4F52E4B581}" />
+                </actions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                s:name="Default">
+                <conditions>
+                  <condition
+                    uid="FD2290E790204B0787316766ECCB19F0"
+                    s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                </conditions>
+                <actions />
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
           uid="{B0255F6B-72B5-4E57-B12F-00BA1B2D7FC4}"
           p:after="r[@uid='{64E2ED67-5B9A-46DC-A5AD-1539385A5A5C}']"
@@ -154,6 +185,21 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180212T215049Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ヘッダー
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104529Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

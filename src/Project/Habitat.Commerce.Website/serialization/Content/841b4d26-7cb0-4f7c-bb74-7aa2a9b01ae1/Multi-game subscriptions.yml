@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Multi-game subscriptions" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C3AE4B30-C20D-1F98-232F-E04ECCE4D873}" />
+        <link text="Multi-game subscriptions" linktype="rel" url="/shop/Multigame-Subscriptions" anchor="" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

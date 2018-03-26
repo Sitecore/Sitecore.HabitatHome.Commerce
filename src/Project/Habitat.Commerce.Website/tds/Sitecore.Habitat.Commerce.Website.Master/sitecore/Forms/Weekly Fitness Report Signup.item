@@ -1,0 +1,115 @@
+----item----
+version: 1
+id: {91A995B9-1CF5-4434-AEEC-294056A113F8}
+database: master
+path: /sitecore/Forms/Weekly Fitness Report Signup
+parent: {B701850A-CB8A-4943-B2BC-DDDB1238C103}
+name: Weekly Fitness Report Signup
+master: {00000000-0000-0000-0000-000000000000}
+template: {6ABEE1F2-4AB4-47F0-AD8B-BDB36F37F64C}
+templatekey: Form
+created: 20180325T033016Z
+
+----field----
+field: {D99833EA-238A-4505-90EF-C69BF3EBA946}
+name: Is Tracking Enabled
+key: is tracking enabled
+content-length: 1
+
+1
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{3A4DF9C0-7C82-4415-90C3-25440257756D}
+----field----
+field: {9EB86F19-2E5D-48DB-9795-0EE4868EFF11}
+name: Is Ajax
+key: is ajax
+content-length: 1
+
+1
+----field----
+field: {5303564E-92A6-4A74-B0D5-1471C717197D}
+name: Css Class
+key: css class
+content-length: 0
+
+
+----field----
+field: {FCE03B41-4CBB-4F7F-920F-FF04F12FA896}
+name: Scripts
+key: scripts
+content-length: 142
+
+jquery-2.1.3.min.js|jquery.validate.min.js|jquery.validate.unobtrusive.min.js|jquery.unobtrusive-ajax.min.js|form.validate.js|form.tracking.js
+----field----
+field: {C3F328AB-4A32-4140-8878-0477CA1CE9DF}
+name: Styles
+key: styles
+content-length: 0
+
+
+----field----
+field: {558F9307-EBAF-480D-88B5-DFE9E63A66DE}
+name: Is Template
+key: is template
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 85f5aa35-92d6-4061-ad2a-aab961bf8b70
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T175940Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+85f5aa35-92d6-4061-ad2a-aab961bf8b70
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T193750Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

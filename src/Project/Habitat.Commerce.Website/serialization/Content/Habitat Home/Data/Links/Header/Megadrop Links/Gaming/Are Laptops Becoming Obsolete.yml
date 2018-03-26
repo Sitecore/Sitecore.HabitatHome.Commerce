@@ -76,3 +76,22 @@ Languages:
       Hint: Link
       Value: |
         <link text="Les portables, chose du passé?" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{0397DE13-C539-4683-8599-F57D437AD23E}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ラップトップが時代遅れに
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104519Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="ラップトップは時代遅れになっていますか？" querystring="" target="" id="{0397DE13-C539-4683-8599-F57D437AD23E}" />

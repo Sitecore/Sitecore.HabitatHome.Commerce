@@ -154,3 +154,59 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104449Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: |
+        <h1>The Ultimate Beef Wellington</h1>
+        <p><a href="-/media/7BC92BB8C37F4837867E2F4AC4E91DB2.ashx">Download a PDF of the recipe here</a>.</p>
+        <h3>Ingredients</h3>
+        <p><em>Serves 12 </em></p>
+        <ul>
+            <li>3 lb center-cut beef tenderloin</li>
+            <li>kosher salt, to taste</li>
+            <li>black pepper, to taste</li>
+            <li>2 tablespoons canola oil</li>
+            <li>&frac14; cup English mustard</li>
+            <li>1 tablespoon butter</li>
+            <li>2 shallots, minced</li>
+            <li>2 lb cremini mushroom, minced</li>
+            <li>5 cloves garlic, minced</li>
+            <li>&frac12; lb prosciutto, thinly sliced, or ham</li>
+            <li>1 sheet puff pastry</li>
+            <li>2 eggs, beaten<br />
+            <br />
+            </li>
+        </ul>
+        <h3>Preparation</h3>
+        <ol>
+            <li>Preheat oven to 400&deg;F (200&deg;C).</li>
+            <li>Let the beef tenderloin come to room temperature. Season with kosher salt and pepper on all sides.</li>
+            <li>Add canola oil to a large pan on high heat. Once the oil is hot, add the tenderloin. Without moving the tenderloin, cook until a dark brown crust forms, about 3 minutes. Repeat searing on all sides, including the tenderloin ends.</li>
+            <li>Remove the tenderloin from the pan and transfer to a cutting board or wire rack and remove ties.</li>
+            <li>Brush the mustard on all sides of the meat while it&rsquo;s still warm. Let the meat rest for while making the duxelles (mushrooms cooked and reduced until dry).</li>
+            <li>To the same pan, add the butter, mushrooms, minced shallot, and minced garlic over medium heat. Cook, stirring occasionally until all the liquid evaporates and the mushroom mixture becomes a thick, dry-like paste.</li>
+            <li>Remove the mushrooms from the pan and let cool completely.</li>
+            <li>Place a large layer of overlapping sheets of plastic wrap on your work surface that is twice the length and width of the tenderloin.</li>
+            <li>Lay overlapping strips of prosciutto on the plastic into an even square layer.</li>
+            <li>Spread a layer of the mushrooms evenly over the prosciutto.</li>
+            <li>Tightly and evenly wrap the tenderloin with the prosciutto, using the plastic wrap to wrap it even tighter and seal ends. Tie the ends of the plastic wrap together to hold the Wellington&rsquo;s shape.</li>
+            <li>Place in the refrigerator for 15 minutes.</li>
+            <li>Place a new layer of plastic wrap on the work surface and lay a sheet of puff pastry over it. Unwrap the prosciutto-wrapped beef tenderloin onto the puff pastry, wrapping until the ends meet.</li>
+            <li>Cut off any extra puff pastry, making sure there is no overlap.</li>
+            <li>Wrap the puff pastry in plastic wrap, tying the ends together to form a log shape. Place in the refrigerator for 15 minutes.</li>
+            <li>Place the beef Wellington on a greased, parchment paper-lined baking sheet. Brush the surface with the beaten eggs. With a fork, score a decorative design onto the surface of the puff pastry.</li>
+            <li>Decorate with additional pastry (optional). Sprinkle with kosher salt.</li>
+            <li>Bake for 40 minutes or until the puff pastry is a dark golden brown and the internal temperature of the beef is 135&deg;F (57&deg;C) for medium-rare.</li>
+            <li>Enjoy!</li>
+        </ol>

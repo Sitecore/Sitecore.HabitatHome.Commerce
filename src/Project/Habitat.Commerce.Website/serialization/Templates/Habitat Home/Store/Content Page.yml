@@ -23,7 +23,7 @@ SharedFields:
   Value: "{BD74A392-DACD-4C23-853A-D520762B33A1}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: "-100"
+  Value: 300
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
   Value: "{A87F7FE4-9947-4C5D-B116-B08BEB32FA00}"

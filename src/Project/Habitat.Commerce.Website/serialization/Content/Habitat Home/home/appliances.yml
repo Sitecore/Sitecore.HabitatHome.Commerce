@@ -74,7 +74,7 @@ SharedFields:
     </tracking>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 425
+  Value: 800
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -341,3 +341,59 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Appliances
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 家電製品
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104436Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 家電製品
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
+      Hint: Navigation Secondary Promotions
+      Type: Treelist
+      Value: |
+        {11CA8F93-8A0E-48AC-8AB2-F713F233010E}
+        {B190EBD5-84E1-4D21-A716-841C0934426F}
+        {FE6E0B8D-320F-49F6-8915-B93BD5406687}
+        {B67F1914-971F-4240-838F-3F742C840FE8}
+        {4DD5F837-0C01-41D4-9CF4-A4B439CF97E5}
+        {E948FE8E-5765-42F5-94BA-43227C3A1996}
+        {DC4A91A8-513B-4BC9-AC7C-F50CA452208B}
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: 家の中心部にはハブがあります。 Helix Vivaは、モバイルアプリを介してホームネットワークに接続します。 家族の写真を表示し、食品の在庫を管理し、ボタンを押して温度を管理します。
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: 家電製品
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{67CA812E-75DA-48A3-9082-561679BBBF16}" alt="appliances thumb" height="" width="" hspace="" vspace="" />
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {8057FDE8-A8E4-4C2F-903A-6CDAAFF639A4}
+        {E5E13302-A48B-4C41-A78B-DDAE084255DB}
+        {5B9A9DE0-5050-45A0-88D0-F94E022E251E}
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{67CA812E-75DA-48A3-9082-561679BBBF16}" alt="ソファ" height="" width="" hspace="" vspace="" />
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: 家電製品

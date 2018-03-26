@@ -137,10 +137,13 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{11429EC9-1E51-4694-B09C-44ECC88D3F89}" alt="home theater hero" height="" width="" hspace="" vspace="" />
+        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" height="" hspace="" width="" alt="home theater hero" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171112T204932Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
@@ -161,18 +164,19 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
+      Hint: Subtitle
+      Value: Stay Flexible
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{02C21C81-5FE3-483E-8EE1-E49D8D8E0B2D}" alt="home theater nav thumbnail" height="" width="" hspace="" vspace="" />
+        <image mediaid="{02C21C81-5FE3-483E-8EE1-E49D8D8E0B2D}" height="" hspace="" width="" alt="home theater nav thumbnail" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
-      Value: |
-        <p>Once considered a luxury, home theaters have soared in popularity over the past five years.</p>
-        <p>Habitat's research experts predict the home theater market will grow by eight percent annually, with sales exceeding $28 billion by 2020.</p>
+      Value: <p>Keep yourself limber and experience the benefits of stretching, which include increased flexibility and improvements to your circulation</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
-      Value: How to Create the Perfect Home Theater
+      Value: The Importance of  Stretching
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -289,3 +293,53 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: "Comment créer le cinéma-maison parfait"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 完璧なホームシアターを作る方法
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{11429EC9-1E51-4694-B09C-44ECC88D3F89}" alt="home theater hero" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104449Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Setting Up the Perfect Home Theater
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>Once considered a luxury, home theaters have soared in popularity over the past five years.</p>
+        <p>Habitat's research experts predict the home theater market will grow by eight percent annually, with sales exceeding $28 billion by 2020. The growing number of smart devices, as well as the wide range of high-quality components, makes home theaters a more viable, and popular, option.</p>
+        <p>Setting up a home theater requires extensive planning and the help of a contractor and other professionals. Here are a few things to consider to make your dream home theater a reality.</p>
+        <p style="color: #141919; background-color: #fefefe;"><strong style="margin-bottom: 0px;">Choose the right room</strong></p>
+        <p style="color: #141919; background-color: #fefefe; margin-bottom: 15px;">The ideal room will have enough space for seating and few windows, closets and doors. You'll also need to make sure its sound doesn't disturb the rest of the house or your neighbors. If possible, the chosen room will be located in or over the basement (it's easier to run cables and wires this way) and will have a high ceiling for mounting a projector.</p>
+        <p style="color: #141919; background-color: #fefefe; margin-bottom: 15px;"><img alt="" src="-/media/36E2F65B319C45A792CDE8DE70459CCF.ashx?h=520&amp;w=860" style="height: 520px; width: 860px;" /></p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{02C21C81-5FE3-483E-8EE1-E49D8D8E0B2D}" alt="home theater nav thumbnail" height="" width="" hspace="" vspace="" />
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Summary
+      Value: |
+        <p>かつて贅沢と見なされれていたホームシアターは過去5年間で人気が高まっています。</p>
+        <p>Habitat のリサーチ・エキスパートは、ホームシアター市場が年間8％成長し、2020年までに売上高が280億ドルを超えると予測しています。</p>
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: 完璧なホームシアターを作る方法

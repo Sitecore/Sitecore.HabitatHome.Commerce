@@ -23,4 +23,7 @@ Languages:
         sitecore\virtualssuser
     - ID: "b482e3ad-f347-4630-8cdc-f2710bb54dd5"
       Hint: Profile View Header
-      Value: 
+      Value: Account Details
+    - ID: "bd90418d-29c3-4579-b465-14b04303f8e4"
+      Hint: Profile View Tooltip
+      Value: Account details

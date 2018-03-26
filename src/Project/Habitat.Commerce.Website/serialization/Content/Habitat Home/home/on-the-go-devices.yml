@@ -74,7 +74,7 @@ SharedFields:
     </tracking>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 250
+  Value: 788
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -157,6 +157,23 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{AAF5FEEC-27DC-4A12-AB0D-BB3A6E25F2AF}"
+              p:after="r[@uid='{A9D551D5-28A7-457D-AE65-923D84806A18}']"
+              s:ds="{503C7C53-B494-4E3F-8930-54E7A6EADBA1}"
+              s:id="{4646BD4F-05FF-4A19-9600-4D74F2F1548B}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames={BB418DE9-224E-4B3C-842B-310A3473A274}&amp;Styles&amp;TitleHeadingLevel={6A44D9C6-61F0-4B69-8E1A-FDC27F96BA0F}&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171122T213140Z
@@ -169,7 +186,7 @@ Languages:
         {"items":[]}
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: On the Go Devices
+      Value: On the Go
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -181,14 +198,14 @@ Languages:
         {2F0BEB49-40E0-4B9D-9361-99FFE448CAA9}
         {70240052-656D-4D43-9C75-B57BB543FC31}
         {7346C566-6793-46CE-9B78-279772B8A1A7}
+        {E9DFF58B-14C6-49F0-953D-E0F44CF19F0B}
         {89A9221F-DA9B-4DBD-AFB0-06F0AFF4E067}
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: Stay connected no matter where you are. Surf the web, take photos, and conduct business from one small device. Habitat's powerful processors and intuitive interfaces let you do it all quickly and easily.
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
-      Value: |
-        <image border="" height="472" mediaid="{BCC9F2F6-FA81-46A8-BB62-D4D0ED0E68A6}" hspace="" class="" width="620" alt="on the go devices" vspace="" linktype="" />
+      Value: 
     - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
       Hint: Navigation Promotions
       Type: Treelist
@@ -314,3 +331,53 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: On the Go Devices
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: モバイル デバイス
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104430Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: モバイル デバイス
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
+      Hint: Navigation Secondary Promotions
+      Type: Treelist
+      Value: |
+        {2F0BEB49-40E0-4B9D-9361-99FFE448CAA9}
+        {70240052-656D-4D43-9C75-B57BB543FC31}
+        {7346C566-6793-46CE-9B78-279772B8A1A7}
+        {89A9221F-DA9B-4DBD-AFB0-06F0AFF4E067}
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: どこにいても接続してください。 Webをサーフィンし、写真を撮り、1つの小型デバイスからビジネスを行う。 ハビタットの強力なプロセッサーと直感的なインターフェースにより、すべての作業をすばやく簡単に行うことができます。
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image border="" height="472" mediaid="{BCC9F2F6-FA81-46A8-BB62-D4D0ED0E68A6}" hspace="" class="" width="620" alt="on the go devices" vspace="" linktype="" />
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {7BB96694-8DE4-449E-B6B3-9CCEA79A2DF3}
+        {5E451BD9-CEA5-47B9-8BB7-8BD964819788}
+        {1ED1DAA3-B0B5-4679-A45D-297347572420}
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: モバイル デバイス

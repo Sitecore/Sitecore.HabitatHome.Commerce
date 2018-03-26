@@ -1,0 +1,122 @@
+----item----
+version: 1
+id: {07DFBCDE-A7D9-4345-AE7C-924925EF3A91}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/habitat-home-health
+parent: {602E4F4D-11E2-44E9-A8AC-12AE5E05A1A4}
+name: habitat-home-health
+master: {00000000-0000-0000-0000-000000000000}
+template: {C2786E73-44C7-43BE-954B-1B35AEBA4BD0}
+templatekey: Landing Page
+created: 20180325T024943Z
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}
+----version----
+language: en
+version: 1
+revision: e3a15c43-79b0-4d19-828b-41c921861d0e
+
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 19
+
+Habitat Home Health
+----field----
+field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
+name: Page Design
+key: page design
+content-length: 38
+
+{91F1292D-FCE1-4B76-867A-9F6E048CDC78}
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 19
+
+Habitat Home Health
+----field----
+field: {4C2F221F-9426-45ED-9EEB-C79BB3169565}
+name: StickyNotes
+key: stickynotes
+content-length: 12
+
+{"items":[]}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+Habitat Home Health
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 2036
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{14B77B4F-3C0C-421C-8D98-2E9F6BFD12D0}" p:before="*" s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}" s:id="{C4222625-2637-43FE-82D7-341009A277CA}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-content-container/container-1/Container-25/column-2-6" /><r uid="{F62865CE-A792-49EF-8E24-A4D7F36F1AE0}" p:after="r[@uid='{14B77B4F-3C0C-421C-8D98-2E9F6BFD12D0}']" s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-content-container/container-1/Container-25/column-1-6" /><r uid="{A379A0F4-AA80-42B2-8EE3-A5092E8D2070}" p:after="r[@uid='{F62865CE-A792-49EF-8E24-A4D7F36F1AE0}']" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=6" s:ph="/main/sxa-content-container/container-1/Container-25" /><r uid="{FE051D4A-8AA4-4DBB-971F-FECF6B96619A}" p:after="r[@uid='{A379A0F4-AA80-42B2-8EE3-A5092E8D2070}']" s:ds="local:/Data/Coming Soon Hero" s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={C7A7E725-BC84-45AE-AD50-0659F9AB7F98}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4" s:ph="/main/sxa-content-container/container-1" /><r uid="{1FE29CD4-42A4-4A19-AB13-E76D0EBE9164}" p:after="*[1=2]" s:ds="{037CA84D-6910-6AFB-AA79-B469134915DB}" s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}" s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=5" s:ph="/main/sxa-content-container/container-1" /></d></r>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180314T190258Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e3a15c43-79b0-4d19-828b-41c921861d0e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T141421Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FF509B64-B6D4-4FB7-9718-C4218B992740}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

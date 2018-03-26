@@ -275,3 +275,60 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: "Les ordinateurs portables, chose du passé?"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ラップトップが古くなっていませんか？
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{7DF3868E-4ABA-4E60-9173-C649505FE671}" alt="laptops hero" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104447Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Laptops Obsolete
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>Not all that many years ago, just about everyone wanted a desktop or laptop computer to access the Internet. Now, our smartphones act as miniature computers, giving us the ability to email, talk, text, share, and browse the Internet. Meanwhile, tablets bridge the gap between the two, offering larger screens and the option of an attachable keyboard. </p>
+        <p>As smartphones get smarter and tablets improve in functionality, will the laptop go the way of the typewriter? Not in the immediate future, according to Habitat technology experts. However, as consumers demand increased mobility, these products will become more similar. </p>
+        <p>Here are a few innovations to watch for, now and in the years to come.</p>
+        <p><strong>Tablet/Laptop combos</strong></p>
+        <p>Habitat and other notable brands sell tablets that function like small laptops.</p>
+        <p>When choosing a tablet, check its operating system. Some models run on mobile operating systems, which limits your ability to use certain applications.</p>
+        <p>Habitat Gesture tablets, available with screens up to 10.8 inches, feature lighting-fast processing, vivid picture quality, attachable keyboards, and a front and rear camera. You can operate all Google applications with a Habitat tablet, as well as many Mac- and PC-based apps. They also offer a battery life long enough to make it through a cross-country flight.</p>
+        <p><strong>What's new in laptops</strong></p>
+        <p>Over the years, laptops have slimmed down, lost weight, and gained more of what we love about our smartphones, including voice-controlled personal assistants. </p>
+        <p>Now, laptops also have new port&mdash;the USB Type C. The new offering allows for higher speeds than USB and enough bandwidth for dual 4K displays. Even better, you can insert the USB cable with either side up&mdash;no more trying, flipping it over, and trying again. This is an across the board change, so look for USB-C in all new laptops, including Habitat Fusion and Mira.</p>
+        <p>Don't worry, you can still use devices that have USB-A ports with your laptop. All you need is an adapter, such as the Helix EXT USB Type A to C charge-and-sync cable.</p>
+        <p><strong>Desktops still make sense</strong></p>
+        <p>Although laptops and tablets have certainly eclipsed desktop computers in sales, stationary computers still have their place in many businesses and households. Businesses that need powerful graphics processors or multiple displays still opt for a desktop model. With a desktop, you can also easily monitor when your kids use the computer and what they see when they go online.</p>
+        <p>Habitat Spark Desktops range from entry-level models for simple surfing and word processing to high-end models with 16GB of memory and a 2TB hard drive. </p>
+        <p>If you're looking for superhero power and speed, don't count out a desktop computer. Not sure which tablet, laptop, or desktop is right for you? Let a Habitat computer expert help you decide.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{2B51B501-B5A4-435D-95C8-8B74140AEEDC}" alt="laptops obsolete thumbnail" height="" width="" hspace="" vspace="" />
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Summary
+      Value: <p>何年も前から、デスクトップやラップトップコンピュータがインターネットにアクセスすることを望んでいた人はほとんどいませんでした。 現在、スマートフォンは小型コンピュータとして機能し、電子メール、会話、テキスト、共有、ブラウズをインターネットに提供します。 一方で、タブレットは2つの間の隙間を埋めるため、大きなスクリーンと取り付け可能なキーボードのオプションを提供します。 </p>
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: ラップトップが古くなっていませんか？

@@ -81,3 +81,30 @@ Languages:
     - ID: "d7be3834-097a-4151-827d-d852b54ff530"
       Hint: DestinationUrl
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ログイン
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "129b54ab-7d51-4c6b-899c-642bb3ee4b85"
+      Hint: RememberMeLabel
+      Value: ログインを続ける
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104527Z
+    - ID: "53e213e6-e020-4c32-a559-ec90b5b67179"
+      Hint: UsernameLabel
+      Value: "ユーザー名: "
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b80f0331-68e7-4515-8485-903b5c8b2390"
+      Hint: PasswordLabel
+      Value: "パスワード: "
+    - ID: "bc5cd635-130e-4a03-a5d0-e1afb9ae6055"
+      Hint: FailureText
+      Value: あなたのログインは成功しませんでした。 もう一度お試しください。

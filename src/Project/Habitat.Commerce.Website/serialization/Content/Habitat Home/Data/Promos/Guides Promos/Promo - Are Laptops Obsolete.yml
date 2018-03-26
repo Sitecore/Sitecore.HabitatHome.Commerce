@@ -104,3 +104,36 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - 古くなってきたラップトップ"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: <p>ラップトップは時代遅れになっていますか？</p>
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{7DF3868E-4ABA-4E60-9173-C649505FE671}" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104522Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "832d3c97-5c05-49bf-89ef-9c29d30345e7"
+      Hint: PromoText3
+      Value: <p>コンピューターニュース</p>
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: |
+        <p>何年も前から、デスクトップやラップトップコンピュータがインターネットにアクセスすることを望んでいた人はほとんどいませんでした。 現在、スマートフォンは小型コンピュータとして機能し、電子メール、会話、テキスト、共有、ブラウズをインターネットに提供します。&nbsp;</p><p class="field-promotext2" />
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="より詳しく" querystring="" target="" id="{0397DE13-C539-4683-8599-F57D437AD23E}" />

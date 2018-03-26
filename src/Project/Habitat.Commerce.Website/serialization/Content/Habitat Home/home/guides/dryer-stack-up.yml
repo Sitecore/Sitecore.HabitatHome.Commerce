@@ -373,3 +373,71 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: "Comment votre sécheuse se compare-t-elle?"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 乾燥機の課題
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{4F3BDCA5-4B83-4C3F-BDF3-6D5BF616FF12}" alt="乾燥機" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104445Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: "How does your dryer stack up? See our guide to dryer efficiency before you start shopping."
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: "Dryers have come a long way from the noisy, ugly, cubes of laundry days past. These days, you'll find bigger, bolder, more energy-efficient machines boasting game-changing smart features, entirely new levels of functionality, and designs so attractive, you'll feel guilty stashing them in the basement."
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 乾燥機の課題
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: "Dryers have come a long way from the noisy, ugly, cubes of laundry days past. These days, you'll find bigger, bolder, more energy-efficient machines boasting game-changing smart features, entirely new levels of functionality, and designs so attractive, you'll feel guilty stashing them in the basement."
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <div>
+        		乾燥機は洗濯日数の騒々しい、醜いキューブから長い道のりを歩んできました。 最近では、ゲームを変えるスマートな機能、まったく新しいレベルの機能性、そして魅力的なデザインを誇る、より大きくて大胆でエネルギー効率の高いマシンを見つけることができます。
+        </div>
+        <div>
+        		&nbsp;
+        </div>
+        <div>
+        		言い換えれば、それはあなたの非常に最初の乾燥機をアップグレードする、または購入するのに最適な時間です（私はあなたに、コインランドリーを見ています）。 正しい情報で武装していれば、暑さの中で靴下をまっすぐに履くよりも気分が良い購入をすることができます。</div>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: dryer efficiency, dryer buying guide, laundry room, upgrade dryer, best dryer 2018, electric or gas dryer
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: 乾燥機は洗濯日数の騒々しい、醜いキューブから長い道のりを歩んできました。 最近では、ゲームを変えるスマートな機能、まったく新しいレベルの機能性、そして魅力的なデザインを誇る、より大きくて大胆でエネルギー効率の高いマシンを見つけることができます。
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: 乾燥機の課題はありませんか？
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Summary
+      Value: 乾燥機は洗濯日数の騒々しい、醜いキューブから長い道のりを歩んできました。 最近では、ゲームを変えるスマートな機能、まったく新しいレベルの機能性、そして魅力的なデザインを誇る、より大きくて大胆でエネルギー効率の高いマシンを見つけることができます。
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{4F3BDCA5-4B83-4C3F-BDF3-6D5BF616FF12}" alt="乾燥機" height="" width="" hspace="" vspace="" />
+    - ID: "de457091-0989-414e-addf-59db0ddb6690"
+      Hint: TwitterImage
+      Value: |
+        <image mediaid="{4F3BDCA5-4B83-4C3F-BDF3-6D5BF616FF12}" alt="乾燥機" height="" width="" hspace="" vspace="" />
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: 乾燥機に課題はありませんか？

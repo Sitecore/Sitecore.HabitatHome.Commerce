@@ -152,3 +152,9 @@ Languages:
     - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
       Hint: Register Outcome
       Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 設定
+  Versions:

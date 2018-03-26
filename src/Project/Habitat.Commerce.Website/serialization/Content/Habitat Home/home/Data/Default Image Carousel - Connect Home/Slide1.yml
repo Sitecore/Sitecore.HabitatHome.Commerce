@@ -125,3 +125,42 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: スライド１
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{D1E8A162-7746-4E6F-95AF-4EB114DA5256}"
+              s:ds="{F32EF903-847F-491F-AA4F-559D78745A2E}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104428Z
+    - ID: "427ec0bd-3bf2-45b9-880f-bdb0054e7925"
+      Hint: SlideImage
+      Value: |
+        <image mediaid="{751A24EF-79B8-41DD-A34E-B1B22E89BE6D}" alt="ホーム ヒーロー 1" height="" width="" hspace="" vspace=""></image>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7209159d-6b3e-4281-983e-f7f82104fa1b"
+      Hint: SlideText
+      Value: デザイン <br />シンプルな生活を支える
+    - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
+      Hint: SlideLink
+      Value: |
+        <link text="Learn More" anchor="" linktype="internal" class="" title=""  querystring="" id="{C9D2D5F3-E258-4483-AF1C-CE18B7857BEA}" />

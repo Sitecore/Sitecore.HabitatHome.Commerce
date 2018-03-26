@@ -74,7 +74,7 @@ SharedFields:
     </tracking>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 350
+  Value: 797
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -164,15 +164,36 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{3636A2C3-1068-42C4-867E-81B0BC858A87}"
+              p:after="r[@uid='{A9D551D5-28A7-457D-AE65-923D84806A18}']"
+              s:ds="local:/Data/Productivity"
+              s:id="{4646BD4F-05FF-4A19-9600-4D74F2F1548B}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames={BB418DE9-224E-4B3C-842B-310A3473A274}&amp;Styles&amp;TitleHeadingLevel={6A44D9C6-61F0-4B69-8E1A-FDC27F96BA0F}&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171122T194045Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Computers
+      Value: Productivity
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -181,10 +202,9 @@ Languages:
       Hint: Navigation Secondary Promotions
       Type: Treelist
       Value: |
-        {9C0507FB-8AEC-48FB-ACDA-8F4931361E9B}
         {9DD9AD43-D27E-441B-AC8C-87BD2476E389}
         {68511ACD-19B1-41F9-A930-377EED8D0DEA}
-        {835C1C55-E214-4A26-9429-D77990350E38}
+        {9C0507FB-8AEC-48FB-ACDA-8F4931361E9B}
         {5F06C642-BA6F-4457-8AE5-57183EA2332C}
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
@@ -326,3 +346,57 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Computers
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: コンピューター
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104434Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: コンピューター
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
+      Hint: Navigation Secondary Promotions
+      Type: Treelist
+      Value: |
+        {9C0507FB-8AEC-48FB-ACDA-8F4931361E9B}
+        {9DD9AD43-D27E-441B-AC8C-87BD2476E389}
+        {68511ACD-19B1-41F9-A930-377EED8D0DEA}
+        {835C1C55-E214-4A26-9429-D77990350E38}
+        {5F06C642-BA6F-4457-8AE5-57183EA2332C}
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: 誰が、あなたは両方の世界のベストを持つことはできないと言います。 ハビタットスパークオールインワンは、オフィスでうまく見えるスリムなプロファイルで、デスクトップコンピュータのパワー、スピード、そして鮮明さを提供します。
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: コンピューター
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{052C5881-CB06-47AE-BDC5-64B04ADA1F1F}" alt="computers thumbnail" height="" width="" hspace="" vspace="" />
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {2B2C9688-BFF0-4263-85D5-904700234A38}
+        {1B685513-745E-4225-A47F-A29E76C88CD3}
+        {F771ACA9-F0FF-46D0-B290-12619B31E8D1}
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{052C5881-CB06-47AE-BDC5-64B04ADA1F1F}" alt="コンピューター" height="" width="" hspace="" vspace="" />
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: コンピューター

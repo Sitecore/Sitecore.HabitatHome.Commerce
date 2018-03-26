@@ -9,7 +9,9 @@ SharedFields:
 - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
   Hint: Renderings
   Type: TreelistEx
-  Value: "{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+  Value: |
+    {6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}
+    {162AB463-0CE1-4295-8F7E-2E2E969984ED}
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{23CB9DFB-5950-4F41-886A-A1C8FD105F44}"

@@ -8,8 +8,15 @@ name: Commerce
 master: {31CE8C90-EF91-4185-9BB1-85F3A10CECC0}
 template: {3D2BC93D-7975-413B-B6EE-2CF6FC4EA128}
 templatekey: Commerce Folder
-created: 20180206T121203Z
+created: 20180325T024930Z
 
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 35
+
+Office/32x32/platform_truck_box.png
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -20,15 +27,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d8e41658-88a6-4e52-9576-3e1469d9e180
+revision: f07fb7f2-2009-466d-b88b-ac757bb8a183
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 22
-
-sitecore\virtualssuser
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,18 +49,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d8e41658-88a6-4e52-9576-3e1469d9e180
+f07fb7f2-2009-466d-b88b-ac757bb8a183
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T152355Z
+20180326T025850Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin

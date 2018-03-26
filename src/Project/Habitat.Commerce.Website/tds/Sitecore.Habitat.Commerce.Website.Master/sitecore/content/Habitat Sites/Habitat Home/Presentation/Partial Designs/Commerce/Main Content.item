@@ -8,7 +8,7 @@ name: Main Content
 master: {5CFE5120-4808-405A-8337-4975BDEEEB64}
 template: {EAFFC9F9-3684-4650-92F4-78560BED789B}
 templatekey: Partial Design
-created: 20180315T144837Z
+created: 20180325T024951Z
 
 ----field----
 field: {55FAAE90-3BBA-4F7F-96FE-13C3F40055FF}
@@ -35,20 +35,20 @@ content-length: 3
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
-content-length: 38
+content-length: 0
 
-{ABA7456E-9379-433B-82DB-B2244AA4AFAF}
+
 ----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 144
+content-length: 97
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}"><p:d /></d></r>
 ----version----
 language: en
 version: 1
-revision: b866017a-cfb8-4a15-a931-c6444534eedd
+revision: e1a35562-ba27-426f-a2ff-0dfbc216b4d4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -70,18 +70,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b866017a-cfb8-4a15-a931-c6444534eedd
+e1a35562-ba27-426f-a2ff-0dfbc216b4d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180315T144837Z
+20180326T033834Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin

@@ -102,3 +102,32 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - セキュリティは大きな入り口になる"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: スマートストーブを使ったレシピ
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{F16386C2-726D-4E65-BB74-4B4E2C1BB199}" height="" hspace="" width="" alt="smart home security" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104439Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: <p>この高度に技術的な＆nbsp;有名な牛のウェリントンのレシピはあまり簡単ではありません。 これは、最先端の技術を備えた最先端のスマートストーブを使用しているからです。 それがどのように動作するかを見て、自分で試してみるためにレシピカードをダウンロードしてください。</p>
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="より詳しく" querystring="" target="" id="{B5684B40-75E9-4FE6-912F-2D1C8D761AF2}" />

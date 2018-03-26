@@ -98,3 +98,28 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: <p>Let Our Experts Set Up Your Smart Home&nbsp;</p>
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{E59F1330-6FD3-47DC-B708-9B34296D7314}" height="" hspace="" width="" alt="" vspace="" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104451Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: "<p>We know how time consuming and difficult it can be to set up new technology. That's why we offer best-in-class smart home installation services. It'll save you time and ensure all your new smart devices are properly configured.</p>"
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="Learn More" querystring="" target="_blank" id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" />
