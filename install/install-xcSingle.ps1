@@ -31,7 +31,7 @@ $solr = $config.settings.solr
 $assets = $config.assets
 $commerce = $config.settings.commerce
 $resourcePath = Join-Path $assets.root "Resources"
-
+$publishPath = Join-Path $resourcePath "Publish"
 
 Write-Host "*******************************************************" -ForegroundColor Green
 Write-Host " Installing Commerce $($assets.commerce.packageVersion)" -ForegroundColor Green
@@ -252,6 +252,26 @@ function Install-Prerequisites {
         [Environment]::SetEnvironmentVariable("PSModulePath", $p)
     }
 }
+
+Function Publish-CommerceEngine {
+    Write-Host "Publishing Commerce Engine" -ForegroundColor Green
+    $SolutionName = Join-Path "..\" "Habitat.Commerce.Engine.sln"
+    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.Engine"
+    dotnet publish $SolutionName -o $publishLocation
+}
+
+Function Publish-IdentityServer{
+    Write-Host "Publishing IdentityServer" -ForegroundColor Green
+    $SolutionName = Join-Path "..\" "Habitat.Commerce.IdentityServer.sln"
+    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.IdentityServer"
+    dotnet publish $SolutionName -o $publishLocation
+}
+Function Publish-BizFx {
+    Write-Host "Publishing BizFx" -ForegroundColor Green
+    $bizFxSource = Join-Path $commerceAssets.installationFolder "Sitecore.BizFX.1.1.9/*"
+    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.BizFx"
+    Copy-Item -Path $bizFxSource -Destination $PublishLocation  -Force
+}
 Function Install-Commerce {
     Write-Host "Installing Commerce" -ForegroundColor Green
     $params = @{
@@ -320,6 +340,9 @@ Install-RequiredInstallationAssets
 Install-CommerceAssets
 Stop-XConnect
 Set-ModulesPath
+Publish-CommerceEngine
+Publish-IdentityServer
+Publish-BizFx
 Install-Commerce
 Start-Site
 Start-XConnect
