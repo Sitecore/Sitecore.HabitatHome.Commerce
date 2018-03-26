@@ -26,6 +26,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-2Days {
+  &:before {
+    content: $icon-2Days; 
+  }
+}
+.icon-4Days {
+  &:before {
+    content: $icon-4Days; 
+  }
+}
+.icon-days {
+  &:before {
+    content: $icon-days; 
+  }
+}
+.icon-Aerobics {
+  &:before {
+    content: $icon-Aerobics; 
+  }
+}
+.icon-Low {
+  &:before {
+    content: $icon-Low; 
+  }
+}
+.icon-Medium {
+  &:before {
+    content: $icon-Medium; 
+  }
+}
+.icon-High {
+  &:before {
+    content: $icon-High; 
+  }
+}
+.icon-Strength {
+  &:before {
+    content: $icon-Strength; 
+  }
+}
+.icon-Weight-Lifting {
+  &:before {
+    content: $icon-Weight-Lifting; 
+  }
+}
+.icon-Yoga {
+  &:before {
+    content: $icon-Yoga; 
+  }
+}
 .icon-all-of-them {
   &:before {
     content: $icon-all-of-them;
