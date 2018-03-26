@@ -469,6 +469,37 @@ Standard Form Styles
       }
     }
     
+    label.two-days:before {
+      content: $icon-2Days;
+    }
+
+    label.four-days:before {
+      content: $icon-4Days;
+    }
+    label.days:before {
+      content: $icon-days;
+    }
+    label.aerobics:before {
+      content: $Aerobics;
+    }
+    label.low:before {
+      content: $icon-Low;
+    }
+    label.medium:before {
+      content: $icon-Medium;
+    }
+    label.high:before {
+      content: $icon-High;
+    }
+    label.strength:before {
+      content: $icon-Strength;
+    }
+    label.weight-lifting:before {
+      content: $icon-Weight-Lifting;
+    }
+    label.yoga:before {
+      content: $icon-Yoga;
+    }
     label.smart-home:before {      
       content: $icon-smart-home;
     }    
