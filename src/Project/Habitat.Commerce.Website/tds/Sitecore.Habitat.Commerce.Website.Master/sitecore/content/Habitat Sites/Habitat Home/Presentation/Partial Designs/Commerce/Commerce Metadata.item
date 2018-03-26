@@ -8,7 +8,7 @@ name: Commerce Metadata
 master: {5CFE5120-4808-405A-8337-4975BDEEEB64}
 template: {9F54E3D8-1BBA-4442-84E1-F0528B780ECC}
 templatekey: Metadata Partial Design
-created: 20180223T034955Z
+created: 20180325T024951Z
 
 ----field----
 field: {55FAAE90-3BBA-4F7F-96FE-13C3F40055FF}
@@ -21,13 +21,13 @@ commerce-metadata
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
-content-length: 38
+content-length: 0
 
-{B6573F5A-C1FE-443C-A11A-34E27BD31580}
+
 ----version----
 language: en
 version: 1
-revision: 556cb7ee-9347-4929-8d9d-4c28c9c63f87
+revision: cedf309c-d6bc-46fe-83c3-99ddc4e0cc93
 
 ----field----
 field: {76A92454-C8BE-479B-B260-26AEBCED5A1A}
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-556cb7ee-9347-4929-8d9d-4c28c9c63f87
+cedf309c-d6bc-46fe-83c3-99ddc4e0cc93
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180312T211103Z
+20180326T033827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,7 +8,7 @@ name: product
 master: {82D1AB06-4382-4FDA-A382-E9CDEE6ABD80}
 template: {BD74A392-DACD-4C23-853A-D520762B33A1}
 templatekey: Page
-created: 20180204T191323Z
+created: 20180325T024932Z
 
 ----field----
 field: {1FBC6A49-6281-48EE-87E9-A3970B145ADB}
@@ -31,6 +31,13 @@ key: __icon
 content-length: 24
 
 Office/16x16/element.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+400
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -55,7 +62,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: e3bc191f-b786-400c-b3d1-24b9cc714091
+revision: 803a0b44-96e3-4899-b661-6553375d6de6
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -86,13 +93,6 @@ content-length: 7
 
 Product
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -112,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e3bc191f-b786-400c-b3d1-24b9cc714091
+803a0b44-96e3-4899-b661-6553375d6de6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180228T033726Z
+20180325T040532Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

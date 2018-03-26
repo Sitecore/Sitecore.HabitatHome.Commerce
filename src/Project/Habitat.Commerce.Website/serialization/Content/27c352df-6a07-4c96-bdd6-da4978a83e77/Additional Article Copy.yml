@@ -82,3 +82,23 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104450Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: |
+        <p><strong>Configure your surround sound system</strong></p>
+        <p>Without stunning sound quality, a home theater is just a dark room with a big TV. Choose components wisely.</p><p><br /></p>
+        <p>The heart of the audio system, an A/V receiver, routes the video source to the TV or projection screen and the audio to the speakers. Position the receiver in an easy-to-reach location so you can easily mix and change cables. The Habitat Aura 200-Watt 7.2-Channel, Network-Ready 4K UHD Receiver offers 100 watts per channel—more than enough power for your movies, music, games, and more.</p><p><br /></p>
+        <p>When choosing speakers, listen to several models to find a package that suits your taste. You can configure the speakers for 5.1 surround sound—the standard—or 7.1, which gives you even more presence. Look for certified DTS or Dolby Digital surround, multiple audio and A/V connections, and at least 100 watts of sound per channel.</p><p><br /></p>
+        <p>Habitat Aura high-performance speakers provide stunning audio for an amazing home theater experience. As a space-saving alternative, consider a sound bar, which delivers surround-sound quality in a diminutive package.</p><p><br /></p>
+        <p style="margin-bottom: 15px;">Unwind with friends and family by watching a new release in your expertly designed home theater. Let Habitat's A/V experts help you design the ultimate movie night.</p>

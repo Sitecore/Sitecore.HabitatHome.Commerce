@@ -15,7 +15,7 @@ Languages:
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{A8995D9C-2F0F-4CB7-B75E-EE16059333CE}" />
+        <image mediaid="{FAA23D7C-0186-4D4C-9FAA-277113C4BCE7}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180315T203749Z
@@ -25,7 +25,7 @@ Languages:
         sitecore\admin
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: <p>Lorem ipsum dolor sit amet, mea ex percipit menandri persecuti, mel in justo accommodare, postea numquam at sit. Ea inimicus consequat est, eu adhuc scaevola interpretaris per. Cu meis accumsan lucilius mea, eum ea harum discere. Mel tamquam adipisci at.</p>
+      Value: <p>There are incredible advantages to a healthy home environment, and a home gym that utilizes cutting edge technology can help you make the most of them.&nbsp;</p>
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |

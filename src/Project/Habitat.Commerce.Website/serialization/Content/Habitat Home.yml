@@ -127,3 +127,16 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "2a84eca4-68bb-4451-b4ac-98ea71a5a3dc"
+    Hint: SiteProfiles
+    Type: Multilist
+    Value: |
+      {54D63273-947A-4927-B21A-0022625315E1}
+      {538A727F-87C6-4249-810D-0A90EE6AE6DB}
+      {552DD90F-A527-438E-AC33-32D236244123}
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat ホーム
+  Versions:

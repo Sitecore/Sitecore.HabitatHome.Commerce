@@ -10,7 +10,7 @@ SharedFields:
   Value: HeroOverlayImage
 - ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
   Hint: CssClass
-  Value: "hero-image-2"
+  Value: "hero-image-2 field-promoicon2"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0

@@ -11,6 +11,9 @@ SharedFields:
 - ID: "2882072b-e310-406b-8dd9-b22c9ea4a0f3"
   Hint: CategoryDatasource
   Value: /sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
 Languages:
 - Language: en
   Versions:

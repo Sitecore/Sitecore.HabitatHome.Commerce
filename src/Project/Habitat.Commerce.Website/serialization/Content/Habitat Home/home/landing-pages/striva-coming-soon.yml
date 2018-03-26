@@ -1,0 +1,153 @@
+﻿---
+ID: "d21f38e3-e371-48ab-8d3e-007b90ee2bb4"
+Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
+Template: "c2786e73-44c7-43be-954b-1b35aeba4bd0"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/striva-coming-soon"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Striva Coming Soon
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{1587707C-909A-4DC1-A452-4200217F641A}"
+              p:before="*"
+              s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/column-2-4/Container-26" />
+            <r
+              uid="{990B80E6-971E-492E-A3F3-9D457F691C12}"
+              p:after="r[@uid='{1587707C-909A-4DC1-A452-4200217F641A}']"
+              s:ds="{26CFC0CB-8E68-C687-FED4-B92944B4D736}"
+              s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=6"
+              s:ph="/main/sxa-content-container/container-1/column-2-4" />
+            <r
+              uid="{90E93E24-023F-4DFA-A1CD-2A954CEF3F15}"
+              p:after="r[@uid='{990B80E6-971E-492E-A3F3-9D457F691C12}']"
+              s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/column-1-4/Container-25" />
+            <r
+              uid="{0B66760B-3D38-40D7-A8B7-DB01548FAEEF}"
+              p:after="r[@uid='{90E93E24-023F-4DFA-A1CD-2A954CEF3F15}']"
+              s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}"
+              s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/column-1-4/Container-25" />
+            <r
+              uid="{F6940A52-96FC-43C7-A964-62CA19594068}"
+              p:after="r[@uid='{0B66760B-3D38-40D7-A8B7-DB01548FAEEF}']"
+              s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/column-1-4/Container-25" />
+            <r
+              uid="{A28E0A30-AECC-4992-A88D-298FBCC81BB4}"
+              p:after="r[@uid='{F6940A52-96FC-43C7-A964-62CA19594068}']"
+              s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
+              s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/column-1-4/Container-25" />
+            <r
+              uid="{F38C94CD-E4FD-4AE4-8056-D63ECDAEB898}"
+              p:after="r[@uid='{A28E0A30-AECC-4992-A88D-298FBCC81BB4}']"
+              s:ds="{7DF442FE-502C-DD50-5CBC-17EDD2283AF6}"
+              s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=5"
+              s:ph="/main/sxa-content-container/container-1/column-1-4" />
+            <r
+              uid="{C3222787-CF7D-4EE9-ACE6-60ABD8318934}"
+              p:after="r[@uid='{F38C94CD-E4FD-4AE4-8056-D63ECDAEB898}']"
+              s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}"
+              s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/Container-22/column-2-3" />
+            <r
+              uid="{B3F1AF2B-5672-4331-92EC-C029360C14E9}"
+              p:after="r[@uid='{C3222787-CF7D-4EE9-ACE6-60ABD8318934}']"
+              s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/Container-22/column-2-3" />
+            <r
+              uid="{FE091C29-AE07-4DF5-A329-E9FF2E1BEBCB}"
+              p:after="r[@uid='{B3F1AF2B-5672-4331-92EC-C029360C14E9}']"
+              s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
+              s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/Container-22/column-2-3" />
+            <r
+              uid="{23CB62E9-4BA0-49AC-A21E-66FBB01E7057}"
+              p:after="r[@uid='{FE091C29-AE07-4DF5-A329-E9FF2E1BEBCB}']"
+              s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/Container-22/column-1-3" />
+            <r
+              uid="{31D43535-DF6E-4774-ACDC-503BB6A62C84}"
+              p:after="r[@uid='{23CB62E9-4BA0-49AC-A21E-66FBB01E7057}']"
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=3"
+              s:ph="/main/sxa-content-container/container-1/Container-22" />
+            <r
+              uid="{D9A16D7C-142C-4ABA-81E9-456C4449A653}"
+              p:after="r[@uid='{31D43535-DF6E-4774-ACDC-503BB6A62C84}']"
+              s:ds="local:/Data/Striva Coming Soon Hero"
+              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{7E311E27-19B0-4395-9B67-610F8EBDAEB2}"
+              p:after="r[@uid='{D9A16D7C-142C-4ABA-81E9-456C4449A653}']"
+              s:ds="{AA6BC9DE-9A18-DB24-1532-4AE06F9B977D}"
+              s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=2"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{D9D8759B-82EE-46DB-8FDF-768405F155BE}"
+              p:after="*[1=2]"
+              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=4"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180322T202308Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Striva Coming Soon
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Striva Coming Soon
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Striva Coming Soon
+  Versions:

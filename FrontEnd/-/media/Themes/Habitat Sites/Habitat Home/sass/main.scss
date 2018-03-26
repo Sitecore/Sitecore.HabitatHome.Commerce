@@ -357,6 +357,14 @@ header {
       font-size: 11px;
       line-height: 80px;
       font-weight: 400;
+      top: 2.5px;
+
+      .language-selector-select-item {
+        position: relative;
+        &:after {
+          right: 0;
+        }
+      }
 
       &.open {
         background-color: #262C2B;
@@ -398,6 +406,7 @@ header {
         border: 0;
         margin: 15px 0;
         text-align: left;
+        line-height: 2;
 
         a {
           white-space: nowrap;

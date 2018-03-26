@@ -19,3 +19,21 @@ Languages:
       Hint: FacetKey
       Type: Treelist
       Value: "{A503A07D-DA64-4578-AC8C-864394DBB00E}"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104506Z
+    - ID: "2f0fd1ae-4dbd-4448-be5c-0470819e11a4"
+      Hint: FacetValue
+      Value: FirstName
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a9258cff-e39c-4c69-8a69-9e35d9a853d4"
+      Hint: FacetKey
+      Type: Treelist
+      Value: "{A503A07D-DA64-4578-AC8C-864394DBB00E}"

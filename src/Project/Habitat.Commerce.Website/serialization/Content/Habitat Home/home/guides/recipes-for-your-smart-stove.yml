@@ -206,7 +206,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{C8776A82-BB4C-4509-9D64-DAF6F10F7717}" />
+        <image mediaid="{E6455AF9-64B4-4F4A-BCE6-8282ED9B36CF}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171121T210710Z
@@ -243,7 +243,7 @@ Languages:
       Value: smart stove, recipe, kitchen appliances, connected home, beef wellington, recipe video
     - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
       Hint: Subtitle
-      Value: Smart Appliances
+      Value: High intensity
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.
@@ -256,10 +256,10 @@ Languages:
         <image mediaid="{077BB138-1D40-43F0-9FB5-B222AE0A8D84}" alt="recipe for smart stove nav thumbail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
-      Value: <p>To take advantage of the new smart stoves on the market, we are showcasing a fantasic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.</p>
+      Value: <p>Make the most of the time you've got. These workouts are short and intense for those days when you have less time.</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
-      Value: A Recipe for Your Smart Stove
+      Value: Ten Minute Workouts at Home
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -372,3 +372,68 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Une recette pour votre cuisinière intelligente
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: スマートストーブのレシピ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{C8776A82-BB4C-4509-9D64-DAF6F10F7717}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104448Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: A Recipe for Your Smart Stove
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Recipes for Your Smart Stove
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>The connected home was a fantasy just a decade ago. A home that can respond to your demands and adjust to your preferences sounds more like the premise of an awesome &ldquo;Twilight Zone&rdquo; episode. But with the introduction of smart technology into everyday appliances, the completely connected home is now a reality.<br />
+        <br />
+        Products like Nest, which allow users to control their thermostat via their mobile phone, and other smart technology, such as the Cinder Sensing Cooker, a skillet which uses smart sensors to adjust cooking temperature based on the food and desired result (such as rare versus medium rare), the connected home is ushering in a new era of convenience for homeowners.<br />
+        <br />
+        To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.</p>
+        &nbsp;
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: smart stove, recipe, kitchen appliances, connected home, beef wellington, recipe video
+    - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
+      Hint: Subtitle
+      Value: スマート家電
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: A Recipe for Your Smart Stove
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{077BB138-1D40-43F0-9FB5-B222AE0A8D84}" alt="recipe for smart stove nav thumbail" height="" width="" hspace="" vspace="" />
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Summary
+      Value: <p>市場で新しいスマートストーブを利用するために、私たちは食べることが楽しく満足できる幻想的なレシピを紹介しています。 家庭のシェフには、接続されたコンロで利用可能なエキサイティングな機能を使用するチャンスがあります。</p>
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: スマートストーブのレシピ

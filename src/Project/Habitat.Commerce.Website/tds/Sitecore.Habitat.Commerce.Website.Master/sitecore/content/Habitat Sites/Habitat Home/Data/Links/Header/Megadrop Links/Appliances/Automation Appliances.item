@@ -8,12 +8,12 @@ name: Automation Appliances
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190400Z
+created: 20180323T040742Z
 
 ----version----
 language: en
 version: 1
-revision: dabbda57-de84-4447-b961-1df7b2a3633f
+revision: 14a9685e-1ee2-4537-8896-b80cc4234267
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dabbda57-de84-4447-b961-1df7b2a3633f
+14a9685e-1ee2-4537-8896-b80cc4234267
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180129T200639Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\unicorn
 ----version----
 language: fr-CA
 version: 1
-revision: b8cb74fb-0d37-4d44-a775-df5be0e0746b
+revision: 864370c3-8306-4066-a07d-073b50946fea
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b8cb74fb-0d37-4d44-a775-df5be0e0746b
+864370c3-8306-4066-a07d-073b50946fea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T120559Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -181,3 +181,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: b146c79d-15ad-4d7a-949d-cd974966fe61
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 121
+
+<link linktype="internal" text="家電製品のホームオートメーション" querystring="" target="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 11
+
+家電のオートメーション
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104517Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b146c79d-15ad-4d7a-949d-cd974966fe61
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040742Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

@@ -24,6 +24,9 @@ SharedFields:
     {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
     {500AE4C0-FA7B-463F-8149-EFFF7F044101}
     {A0E7FF57-6994-4B09-AA21-104239628D5A}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
 - ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
   Hint: __Default workflow
   Value: 

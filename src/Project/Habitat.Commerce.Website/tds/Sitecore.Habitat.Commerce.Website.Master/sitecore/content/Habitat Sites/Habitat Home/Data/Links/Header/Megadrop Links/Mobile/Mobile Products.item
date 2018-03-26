@@ -8,7 +8,7 @@ name: Mobile Products
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190400Z
+created: 20180323T040742Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -20,7 +20,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 1852db91-4dbc-41a0-bdc2-7c7179fb0cc7
+revision: 233d80e9-23c2-426e-b5fd-71a6ebbfe2cf
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1852db91-4dbc-41a0-bdc2-7c7179fb0cc7
+233d80e9-23c2-426e-b5fd-71a6ebbfe2cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180129T200639Z
+20180216T174015Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -67,7 +67,7 @@ sitecore\unicorn
 ----version----
 language: fr-CA
 version: 1
-revision: 5202d8a0-0530-4099-bc8e-c82afc535831
+revision: 0e667925-469d-4402-98c0-8210a70ed2d1
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -159,21 +159,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5202d8a0-0530-4099-bc8e-c82afc535831
+0e667925-469d-4402-98c0-8210a70ed2d1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180130T225724Z
+20180216T174015Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -188,3 +188,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: 6de4d527-8023-46fd-8952-1f920439c0ef
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 117
+
+<link linktype="internal" text="出張用のモバイルデバイス" querystring="" target="" id="{D3595670-2879-4F94-A749-0796D46A67C9}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+モバイル製品
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104514Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6de4d527-8023-46fd-8952-1f920439c0ef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040742Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

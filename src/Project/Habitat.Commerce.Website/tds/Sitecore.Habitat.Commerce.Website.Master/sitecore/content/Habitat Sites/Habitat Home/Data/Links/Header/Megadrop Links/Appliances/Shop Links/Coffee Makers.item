@@ -8,20 +8,20 @@ name: Coffee Makers
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190404Z
+created: 20180323T040745Z
 
 ----version----
 language: en
 version: 1
-revision: 5ef33aa7-e4c3-4d4b-8640-c5edf9509740
+revision: 74bd1022-d76b-47fd-978b-041034758b51
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 146
+content-length: 80
 
-<link text="Coffee Makers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{06F5147B-9E24-FA33-20FB-D4B7D8D21392}" />
+<link text="Coffee Makers" linktype="rel" url="/shop/coffee-makers" anchor="" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5ef33aa7-e4c3-4d4b-8640-c5edf9509740
+74bd1022-d76b-47fd-978b-041034758b51
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T105955Z
+20180323T183429Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: c0b02450-af09-469d-ad74-ecc55a95c674
+revision: ae65e973-cc62-4437-a4f4-28dc43ee68b8
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0b02450-af09-469d-ad74-ecc55a95c674
+ae65e973-cc62-4437-a4f4-28dc43ee68b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T121245Z
+20180216T174018Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -181,3 +181,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: ce7b30a8-6b0f-487d-8ee4-c5af666316c1
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 111
+
+<link linktype="internal" text="珈琲メーカー" querystring="" target="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+コーヒーメーカー
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104517Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ce7b30a8-6b0f-487d-8ee4-c5af666316c1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040745Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

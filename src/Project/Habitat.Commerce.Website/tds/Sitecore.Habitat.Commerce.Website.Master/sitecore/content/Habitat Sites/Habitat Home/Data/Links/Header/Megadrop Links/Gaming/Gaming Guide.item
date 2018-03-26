@@ -8,12 +8,12 @@ name: Gaming Guide
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190401Z
+created: 20180323T040741Z
 
 ----version----
 language: en
 version: 1
-revision: ea9aeb23-381b-4407-8de8-2719eb4f0469
+revision: 676ad6b4-677f-4f75-a730-27de05c5380c
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -42,25 +42,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ea9aeb23-381b-4407-8de8-2719eb4f0469
+676ad6b4-677f-4f75-a730-27de05c5380c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T121926Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----version----
 language: fr-CA
 version: 1
-revision: 19b7e21d-7ffc-488f-b362-e8576cf9a832
+revision: 19b0c581-da69-476e-8484-0832587f6314
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19b7e21d-7ffc-488f-b362-e8576cf9a832
+19b0c581-da69-476e-8484-0832587f6314
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T121812Z
+20180216T174014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -181,3 +181,57 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: ja-JP
+version: 1
+revision: 23b42bd8-30ae-451a-8108-04c4b44198b0
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 114
+
+<link linktype="internal" text="究極のゲームガイド" querystring="" target="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+ゲームガイド
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104519Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+23b42bd8-30ae-451a-8108-04c4b44198b0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T040741Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

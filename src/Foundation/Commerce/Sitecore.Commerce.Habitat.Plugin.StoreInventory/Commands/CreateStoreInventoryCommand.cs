@@ -16,18 +16,21 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Commands
         private readonly ICreateStoreInventorySetPipeline _createStoreInventorySetPipeline;
         private readonly IAssociateSellableItemToInventorySetPipeline _associateSellableItemToInventorySetPipeline;
         private readonly IEditInventoryInformationPipeline _editInventoryInformationPipeline;
-        private readonly IAssociateStoreInventoryToSellableItem _associateStoreInventoryToSellableItem
+        private readonly IAssociateStoreInventoryToSellableItem _associateStoreInventoryToSellableItem;
+        private readonly IGetProductsToUpdateInventoryPipeline _getProductsToUpdateInventoryPipeline
+
 ;
-        public CreateStoreInventoryCommand(ICreateStoreInventorySetPipeline createInventorySetPipeline, IAssociateStoreInventoryToSellableItem associateStoreInventoryToSellableItem, IAssociateSellableItemToInventorySetPipeline associateSellableItemToInventorySetPipeline, IEditInventoryInformationPipeline editInventoryInformationPipeline, IServiceProvider serviceProvider)
+        public CreateStoreInventoryCommand(IGetProductsToUpdateInventoryPipeline getProductsToUpdateInventoryPipeline, ICreateStoreInventorySetPipeline createInventorySetPipeline, IAssociateStoreInventoryToSellableItem associateStoreInventoryToSellableItem, IAssociateSellableItemToInventorySetPipeline associateSellableItemToInventorySetPipeline, IEditInventoryInformationPipeline editInventoryInformationPipeline, IServiceProvider serviceProvider)
         : base(serviceProvider)
         {
             this._createStoreInventorySetPipeline = createInventorySetPipeline;
             this._editInventoryInformationPipeline = editInventoryInformationPipeline;
             this._associateSellableItemToInventorySetPipeline = associateSellableItemToInventorySetPipeline;
             this._associateStoreInventoryToSellableItem = associateStoreInventoryToSellableItem;
+            this._getProductsToUpdateInventoryPipeline = getProductsToUpdateInventoryPipeline;
         }
 
-        public async Task<List<InventorySet>> Process(CommerceContext commerceContext, List<CreateStoreInventorySetArgument> inputArgumentList, List<string> productsToAssociate)
+        public async Task<List<InventorySet>> Process(CommerceContext commerceContext, List<CreateStoreInventorySetArgument> inputArgumentList, List<string> productsToAssociate, string catalogName)
         {
             CreateStoreInventoryCommand createStoreInventoryCommand = this;
 
@@ -58,19 +61,31 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Commands
                 }));
             }
 
+            // Update all products if no input passed
+            if (productsToAssociate.Count == 0)
+            {
+
+                var products = await this._getProductsToUpdateInventoryPipeline.Run(catalogName, commerceContext.GetPipelineContextOptions());
+                productsToAssociate = products;
+
+                if(productsToAssociate == null)
+                {
+                    return null;
+                }
+            }
+
+
             // Once Done.. then assign inventory to products in the sets
 
-            // Associate Sellable Item to Inventory Set
+            // Associate Sellable Item to Inventory Set           
 
-            using (CommandActivity.Start(commerceContext, (CommerceCommand)createStoreInventoryCommand))
+            foreach(var product in productsToAssociate)
             {
-                Func<Task> func = await createStoreInventoryCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                using (CommandActivity.Start(commerceContext, (CommerceCommand)createStoreInventoryCommand))
                 {
+                    
+                        CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
 
-                    CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
-
-                    foreach (string product in productsToAssociate)
-                    {
                         var productIds = product.Split('|');
                         string variantId = null;
                         var productId = product.Split('|').FirstOrDefault();
@@ -87,14 +102,11 @@ namespace Plugin.Demo.HabitatHome.StoreInventorySet.Commands
                             SellableItemId = productId,
                             VariationId = variantId
                         };
-                        bool result = await this._associateStoreInventoryToSellableItem.Run(args, pipelineContextOptions);                        
-                    }
+                        bool result = await this._associateStoreInventoryToSellableItem.Run(args, pipelineContextOptions);
 
-                }));
+                   
+                }
             }
-
-
-
 
             return sets;
         }

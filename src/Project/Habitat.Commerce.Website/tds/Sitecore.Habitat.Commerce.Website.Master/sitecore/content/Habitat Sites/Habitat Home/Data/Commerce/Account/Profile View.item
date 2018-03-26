@@ -8,7 +8,7 @@ name: Profile View
 master: {31CE8C90-EF91-4185-9BB1-85F3A10CECC0}
 template: {BEC35F53-D76F-4FEB-BA22-F14C12EAD76C}
 templatekey: Profile View
-created: 20180206T121203Z
+created: 20180325T024944Z
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -20,22 +20,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2cd2f2b3-7e1c-467f-9f2a-43d096fccf36
+revision: 85c156fc-4163-4489-a9ea-b8a0b01845e4
 
 ----field----
 field: {B482E3AD-F347-4630-8CDC-F2710BB54DD5}
 name: Profile View Header
 key: profile view header
-content-length: 0
+content-length: 15
 
-
+Account Details
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
+field: {BD90418D-29C3-4579-B465-14B04303F8E4}
+name: Profile View Tooltip
+key: profile view tooltip
+content-length: 15
 
-sitecore\admin
+Account details
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2cd2f2b3-7e1c-467f-9f2a-43d096fccf36
+85c156fc-4163-4489-a9ea-b8a0b01845e4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T152356Z
+20180326T025947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin

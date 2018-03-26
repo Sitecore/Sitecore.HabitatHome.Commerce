@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {7AF7CF08-F12E-411D-A3E6-B585AABFD7C3}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Gym/Virtual Trainers
+parent: {F9B7F64C-DC30-4885-A82F-2C0B2DE57D45}
+name: Virtual Trainers
+master: {00000000-0000-0000-0000-000000000000}
+template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
+templatekey: _NavigationImage
+created: 20180325T025004Z
+
+----version----
+language: en
+version: 1
+revision: 010416b8-0cf3-4ca0-bd64-cbc68916e26f
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 132
+
+<link text="Trainers" anchor="" linktype="internal" class="" title=""  querystring="" id="{9F7B4376-1BE2-BD1E-A25D-E16643463FE4}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180320T225350Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+010416b8-0cf3-4ca0-bd64-cbc68916e26f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180320T230348Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

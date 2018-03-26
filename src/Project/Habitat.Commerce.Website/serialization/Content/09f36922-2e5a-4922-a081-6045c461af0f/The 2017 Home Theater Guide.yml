@@ -2,7 +2,7 @@
 ID: "f8c78930-0386-4b3f-a2ca-ec986cc1d833"
 Parent: "09f36922-2e5a-4922-a081-6045c461af0f"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Links/Header/Megadrop Links/TV and Audio/The 2017 Home Theater Guide
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Links/Header/Megadrop Links/Entertainment/The 2017 Home Theater Guide
 DB: master
 Languages:
 - Language: en
@@ -72,3 +72,22 @@ Languages:
       Hint: Link
       Value: |
         <link text="Guide cinéma-maison" anchor="" linktype="internal" class="" title=""  querystring="" id="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 2017 シアターガイド
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104515Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="究極のホームシアターガイド" querystring="" target="" id="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}" />

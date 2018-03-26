@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Microwaves" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{1304D651-CF23-6C72-FA89-8941A3C9FFF4}" />
+        <link text="Microwaves" linktype="rel" url="/shop/Microwaves" anchor="" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -72,3 +72,22 @@ Languages:
       Hint: Link
       Value: |
         <link text="Micro-ondes" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 電子レンジ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104518Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="電子レンジ" querystring="" target="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />

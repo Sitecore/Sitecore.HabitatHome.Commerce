@@ -1,0 +1,18 @@
+﻿---
+ID: "c22ce83e-2ae1-4056-9280-fe78dd87fe6b"
+Parent: "ec73a297-9636-40dd-98ef-7632b957ce08"
+Template: "4603a786-5bcd-4a19-b71e-b402310d29ec"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/trainer-finder/recommendations/Data/Product - Silver Package"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180322T152123Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

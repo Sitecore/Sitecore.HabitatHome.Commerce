@@ -1,5 +1,5 @@
 ﻿---
-ID: "974e6d6d-1992-4bb5-aa05-3ba3c2b302fa"
+ID: "2f45efb0-fee7-4fce-b4f1-d782d6855a09"
 Parent: "5545e611-f912-4ee7-991e-8ad7990e2b9d"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Services Column/Gift Cards
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171031T193807Z
+      Value: 20171031T193828Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link id="{0751298F-6306-4CF3-AABB-38CA24C1585B}" querystring="" text="" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/gift-cards" linktype="internal" />
+        <link text="Gift Cards" anchor="" linktype="internal" class="" title=""  querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -43,7 +43,7 @@ Languages:
       Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171031T193807Z
+      Value: 20171031T193828Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
@@ -71,4 +71,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Cartes-cadeaux" anchor="" linktype="internal" class="" title=""  querystring="" id="{0751298F-6306-4CF3-AABB-38CA24C1585B}" />
+        <link text="Aide" anchor="" linktype="internal" class="" title=""  querystring="" id="{FD27A69C-2AFD-461D-8C59-73554C376648}" />

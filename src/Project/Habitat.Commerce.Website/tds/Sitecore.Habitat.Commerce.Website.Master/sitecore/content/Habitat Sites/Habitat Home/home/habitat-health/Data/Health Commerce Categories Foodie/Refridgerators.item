@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {C2A89392-9DED-4312-825C-2B672A930195}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Foodie/Refridgerators
+parent: {933B76F9-29DA-4C9E-BF3B-2FB078A420B2}
+name: Refridgerators
+master: {00000000-0000-0000-0000-000000000000}
+template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
+templatekey: _NavigationImage
+created: 20180325T025004Z
+
+----version----
+language: en
+version: 1
+revision: 7d768f9d-26c8-4655-9a44-d6c1543ca926
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 139
+
+<link text="Food Management" anchor="" linktype="internal" class="" title=""  querystring="" id="{440C1CD5-20C1-E0D1-3319-9766112ED9CA}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180320T225327Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7d768f9d-26c8-4655-9a44-d6c1543ca926
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180320T230140Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

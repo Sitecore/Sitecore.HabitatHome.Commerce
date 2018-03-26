@@ -8,20 +8,20 @@ name: Single Game Subscriptions
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190405Z
+created: 20180323T040744Z
 
 ----version----
 language: en
 version: 1
-revision: dd22576d-5f3d-4462-b3d3-40ec404d953e
+revision: 8d17f87c-b551-4f1d-86f3-d2676fc5f7c7
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 158
+content-length: 104
 
-<link text="Single Game Subscriptions" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7199CB3B-5AA3-BC42-5D1B-1ACCF315D932}" />
+<link text="Single Game Subscriptions" linktype="rel" url="/shop/Single-Game-Subscriptions" anchor="" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd22576d-5f3d-4462-b3d3-40ec404d953e
+8d17f87c-b551-4f1d-86f3-d2676fc5f7c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T111059Z
+20180323T183949Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: 99685dec-ff35-4583-b8d9-e228b2fc6f1b
+revision: 31b9b754-d312-4423-91df-614093952d0b
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-99685dec-ff35-4583-b8d9-e228b2fc6f1b
+31b9b754-d312-4423-91df-614093952d0b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T122233Z
+20180216T174017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics

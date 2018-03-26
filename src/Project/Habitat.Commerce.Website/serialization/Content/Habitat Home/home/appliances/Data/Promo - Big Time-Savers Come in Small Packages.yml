@@ -102,3 +102,32 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - 大きな時間を節約する小さなパッケージが登場"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: 大きな時間を節約する小さなパッケージが登場
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{B0C820B3-6305-4012-835A-95E2D9ED1012}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104437Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: <p>最も簡単なアプライアンスですら大きな影響を与えます。 生息地ドエル蒸気モップと真空は、より健康な家庭のために汚れ、ほこり、およびアレルゲンを排除します。 10スピードミキサーと12スピードミキサーは、毎回完璧な生地を提供します。</p>
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="すべてのハンドヘルド" querystring="" target="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />

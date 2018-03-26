@@ -348,3 +348,61 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Automatisation avec Android et Arduino 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Android から Arduino
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104443Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: Learn the basics behind a  home automation set up with our Android to Arduino guide.
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Android から Arduino
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: "Have you always dreamed of automating your home? Do you want to control the lights, fans, and appliances from your smartphone? Perhaps you just want a tutorial about connected devices and getting started with them? Our DIY home automation project outlined in this article will show you how to automate your home using an Android smartphone and Arduino. "
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <div><span style="font-size: 20px;">Have you always dreamed of automating your home? Do you want to control the lights, fans, and appliances from your smartphone? Perhaps you just want a tutorial about connected devices and getting started with them? Our DIY home automation project outlined in this article will show you how to automate your home using an Android smartphone and Arduino. This requires no experience with Android programming. This system uses Bluetooth to </span>connect to<span style="font-size: 20px;"> your device and control the various appliances in your home. Have fun with this home automation hacking tutorial.</span><br /></div><div><br /></div><div><b>Required Materials</b></div><div><span style="font-size: 20px;">Hardware:</span><br /></div><div>Arduino / Arduino Clone</div><div>A 5v TTL -UART Bluetooth module like: JY-MCU BT_BOARD or Bluesmirf Gold/Silver.</div><div>Five 5V SPDT relays like: 5V relay.</div><div>Prototype board or breadboard.</div><div>Connecting wires.</div><div><br /></div><div>Software:</div><div>Arduino IDE</div><div>Eclipse for Android programming (optional, not required).</div><div><br /></div><div><b>How Does it Work?</b></div><div><span style="font-size: 20px;">Our Android to Arduino home automation project comes with a free application called “DIY SmartHome.” This application controls the various appliances connected to your Arduino and relays. When the toggle buttons on the application are pressed, corresponding Bluetooth signals are sent from your Android phone to the Bluetooth module you have hooked up to your Arduino. The Arduino finds out which signal was sent and compares it to the predefined signals assigned for each appliance. When it identifies that signal, the Arduino activates the relay hooked up to its digital pin by passing 5V through it. Thus the relay is switched ON and the corresponding appliance connected to the relay is turned ON as well. To switch it OFF, Arduino passes a 0V or logic low to its digital pin.</span><br /></div><div><br /></div><div>For setting up this system, wiring connections have to be made between the Arduino and Bluetooth module and also with the relays. Here, the Bluetooth Module’s Tx is connected to Arduino Rx (digital pin 0) and the module’s Rx to Arduino Tx (digital pin 1). 5V and GND of the module are connected to the Arduino’s 5V and GND.</div><div><br /></div><div>The relay you're using is SPDT; it has 5 pins on the underside. Pins 1 and 3 are the coil pins. Pin 1 is connected to the Arduino digital pin and pin 3 is connected to Arduino GND. Pin 2 is the common contact in the relay to which you have to connect the power for your appliance (AC 230V), and pin 4 is the pin to which you have to connect your appliance wire.</div><div><br /></div><div>In a normal SPDT relay, whose pin out is shown in the above step, pins 2 and 4 act identical to the two terminals of a switch. When a digital HIGH voltage is applied from the Arduino to the relay, the switch turns ON, when the voltage is withdrawn, it turns OFF. You can attach this system you made to a normal switchboard by extending the wires from behind the switches in the board to your relay. As seen in the connection diagram in the above step, you have to connect a power AC line to the common terminal of all the relays. Then, you have to extend the wires from behind the switchboard of the corresponding lights/lamps you wish to control. Each of these wires is connected to the “NO”(Normally Open) terminal of the relays. NOTE: If you wish to control door locks, you may use door lock solenoids, which can be purchased and connected to your system and turned ON/OFF using the same way.&nbsp;</div><div><br /></div><div><b>Loading the Arduino Software</b></div><div><span style="font-size: 20px;">If you are new to Arduino, download the Arduino IDE (Integrated Development Environment) from Arduino. The code is really simple: here it checks the incoming Bluetooth signal via the Bluetooth module and then compares using an “if” statement with previously defined values. If it matches the value, the relay is activated using the “digitalWrite(</span>pin,HIGH<span style="font-size: 20px;">)” command, which passes 5V to the Arduino digital pin. Then, upload the code to your Arduino board.</span><br /></div><div><br /></div><div><b>Discovering New Bluetooth Devices</b></div><div><span style="font-size: 20px;">To download the android application to your phone, copy this .apk file to your phone from the PC and then click on it from the phone to install it. Be sure to check “Allow installation of non-Market apps” in the Security tab under settings. Once you have installed the application, before opening it you need to pair and connect to your Bluetooth module. For this, you need to power the Arduino and Bluetooth module and then turn ON the Bluetooth of your phone and make it visible to other devices. After that, search for new devices in Bluetooth, select your Bluetooth module from the list, enter the pairing code when prompted, it is usually '1234'&nbsp; or '0000'.</span><br /></div><div><br /></div><div>Note the name of your device, in this case, it is HC-06. After pairing with the system, go to the application and enter the name of your Bluetooth module you noted earlier (case-sensitive). After that, the phone will connect to your system, and by clicking the respective buttons, the appliances turn ON/OFF. Have fun with your new Android to Arduino home automation set up.</div>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: android to arduino, home automation, diy automation, beginner arduino, smart home, bluetooth, connected devices
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: あなたはいつも自宅を自動化することを夢見てきましたか？ スマートフォンからライト、ファン、アプライアンスを制御しますか？ おそらく、接続されたデバイスに関するチュートリアルが必要なだけで、それらのデバイスを使い始めることができますか？ この記事で紹介したDIYホームオートメーションプロジェクトでは、AndroidスマートフォンとArduinoを使用して自宅を自動化する方法を紹介します。
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: Android と Arduino のホームオートメーション
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Summary
+      Value: あなたはいつも自宅を自動化することを夢見てきましたか？ あなたはスマートフォンからライト、ファン、アプライアンスをコントロールしたいですか？この記事で概説しているDIYのホームオートメーションプロジェクトでは、AndroidスマートフォンとArduinoを使って自宅を自動化する方法を紹介します。&nbsp;
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
+    - ID: "de457091-0989-414e-addf-59db0ddb6690"
+      Hint: TwitterImage
+      Value: |
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Android と Arduino のホームオートメーション

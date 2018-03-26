@@ -118,7 +118,7 @@
   max-height: 403px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary {
+.component.cxa-productlist-component .product-list .product-summary {
   position: relative;
   height: 100%;
   display: -webkit-box;
@@ -138,32 +138,32 @@
   flex-flow: column nowrap;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary > * {
+.component.cxa-productlist-component .product-list .product-summary > * {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary > * {
+.component.cxa-productlist-component .product-list .product-summary > * {
   margin: 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .photo {
+.component.cxa-productlist-component .product-list .product-summary .photo {
   width: 100%;
   height: 220px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .photo a {
+.component.cxa-productlist-component .product-list .product-summary .photo a {
   text-align: center;
   display: inherit;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .photo img {
+.component.cxa-productlist-component .product-list .product-summary .photo img {
   max-width: 100%;
   max-height: 208px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info {
+.component.cxa-productlist-component .product-list .product-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,21 +183,21 @@
   margin: 10px 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > * {
+.component.cxa-productlist-component .product-list .product-info > * {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > *:not(:last-child) {
+.component.cxa-productlist-component .product-list .product-info > *:not(:last-child) {
   margin-right: 3px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > *:not(:first-child) {
+.component.cxa-productlist-component .product-list .product-info > *:not(:first-child) {
   margin-left: 0;
 }
 
 @media (max-width: 991px) {
-  .component.cxa-productlist-component .product-list ul > li .product-summary .product-info {
+  .component.cxa-productlist-component .product-list .product-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
@@ -206,7 +206,7 @@
     -ms-flex-align: center;
     align-items: center;
   }
-  .component.cxa-productlist-component .product-list ul > li .product-summary .product-info > * {
+  .component.cxa-productlist-component .product-list .product-info > * {
     width: 89.4%;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -214,7 +214,7 @@
   }
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > div {
+.component.cxa-productlist-component .product-list .product-info > div {
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,16 +233,16 @@
   flex-flow: column nowrap;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > div > * {
+.component.cxa-productlist-component .product-list .product-info > div > * {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info > div > * {
+.component.cxa-productlist-component .product-list .product-info > div > * {
   margin: 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .savings {
+.component.cxa-productlist-component .product-list .product-info .savings {
   position: absolute;
   top: 169px;
   right: 0;
@@ -257,14 +257,14 @@
   margin: 2px 1px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .savings .savings-text {
+.component.cxa-productlist-component .product-list .product-info .savings .savings-text {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
   margin-left: 5px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .savings .savings-percentage {
+.component.cxa-productlist-component .product-list .product-info .savings .savings-percentage {
   display: none;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
@@ -272,11 +272,11 @@
   margin-left: 5px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .previous-price {
+.component.cxa-productlist-component .product-list .product-info .previous-price {
   display: none;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-title {
+.component.cxa-productlist-component .product-list .product-info .product-title {
   width: 100%;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
@@ -287,7 +287,7 @@
   margin-bottom: 5px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-brand {
+.component.cxa-productlist-component .product-list .product-info .product-brand {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
@@ -302,9 +302,11 @@
   vertical-align: baseline;
   background-color: #424C5F;
   margin-right: 5px;
+  -ms-flex-preferred-size: 51%;
+  flex-basis: 51%;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating {
+.component.cxa-productlist-component .product-list .product-info .product-rating {
   width: 33%;
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
@@ -312,7 +314,7 @@
   margin-bottom: 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,21 +332,21 @@
   flex-flow: row nowrap;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > * {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > * {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > *:not(:last-child) {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > *:not(:last-child) {
   margin-right: 3px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > *:not(:first-child) {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > *:not(:first-child) {
   margin-left: 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > div {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > div {
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,16 +365,16 @@
   flex-flow: column nowrap;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > div > * {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > div > * {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-rating ul > div > * {
+.component.cxa-productlist-component .product-list .product-info .product-rating ul > div > * {
   margin: 0;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-stock-status {
+.component.cxa-productlist-component .product-list .product-info .product-stock-status {
   width: 50%;
   -webkit-box-ordinal-group: 5;
   -ms-flex-order: 4;
@@ -384,12 +386,12 @@
   display: none;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-stock-status:before {
+.component.cxa-productlist-component .product-list .product-info .product-stock-status:before {
   display: inline-block;
   margin-right: 5px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .lowest-variant-price {
+.component.cxa-productlist-component .product-list .product-info .lowest-variant-price {
   -webkit-box-ordinal-group: 6;
   -ms-flex-order: 5;
   order: 5;
@@ -398,7 +400,7 @@
   min-height: 22px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .current-price {
+.component.cxa-productlist-component .product-list .product-info .current-price {
   text-align: left;
   min-height: 42px;
   -webkit-box-ordinal-group: 7;
@@ -414,7 +416,7 @@
   border-top: 1px solid #d8d9d5;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-category {
+.component.cxa-productlist-component .product-list .product-info .product-category {
   -webkit-box-ordinal-group: 8;
   -ms-flex-order: 7;
   order: 7;
@@ -426,7 +428,7 @@
   border-top: 1px solid #d8d9d5;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-category a {
+.component.cxa-productlist-component .product-list .product-info .product-category a {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -438,7 +440,7 @@
   color: #141919;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-category a:after {
+.component.cxa-productlist-component .product-list .product-info .product-category a:after {
   font-family: FontAwesome;
   content: '\f105';
   font-size: 20px;
@@ -447,8 +449,25 @@
   margin-left: 4px;
 }
 
-.component.cxa-productlist-component .product-list ul > li .product-summary .product-info .product-category a:hover {
+.component.cxa-productlist-component .product-list .product-info .product-category a:hover {
   color: #141919;
+}
+
+.productlistsorting-component select {
+  border: 1px solid #B1B3AC;
+  height: 41px;
+  line-height: 41px;
+  padding: 0 15px;
+  display: block;
+  width: 100%;
+  text-align: left !important;
+}
+
+.productlistsorting-component select:disabled {
+  background-color: white;
+  color: #B1B3AC;
+  border-color: #B1B3AC;
+  opacity: 0.8;
 }
 
 .component.cxa-productlist-component .product-list > ul > li {

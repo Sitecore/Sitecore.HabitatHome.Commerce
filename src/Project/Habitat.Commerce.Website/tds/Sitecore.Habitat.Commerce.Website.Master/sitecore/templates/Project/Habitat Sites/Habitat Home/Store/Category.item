@@ -8,7 +8,7 @@ name: Category
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
-created: 20180201T222254Z
+created: 20180325T024927Z
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
@@ -37,11 +37,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-716
+900
 ----version----
 language: en
 version: 1
-revision: eb2fe7b5-4f46-49ea-884d-241027341b4b
+revision: 906b97f6-1876-446a-83e8-a6834546464e
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -50,13 +50,6 @@ key: __display name
 content-length: 8
 
 Category
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb2fe7b5-4f46-49ea-884d-241027341b4b
+906b97f6-1876-446a-83e8-a6834546464e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180215T221403Z
+20180325T185121Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

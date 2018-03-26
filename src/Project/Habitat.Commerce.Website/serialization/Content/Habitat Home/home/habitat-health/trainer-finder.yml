@@ -67,6 +67,10 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{D590210C-4B80-4014-B82E-3DD16DB7331C}" />
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Trainer Finder

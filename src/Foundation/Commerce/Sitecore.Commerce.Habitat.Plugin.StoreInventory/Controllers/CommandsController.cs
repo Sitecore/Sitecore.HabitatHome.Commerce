@@ -63,6 +63,16 @@ namespace Sitecore.Commerce.Plugin.Sample
             var storeInfos =  jarray != null ? jarray.ToObject<IEnumerable<StoreDetailsModel>>() : (IEnumerable<StoreDetailsModel>)null;
             var productsToAssociate = jarrayProducts != null ? jarrayProducts.ToObject<IEnumerable<string>>() : (IEnumerable<string>)null;
 
+            string catalogName = null;
+            // You need to have catalog mentioned if you are not providing a list of products to update inventory.
+            if(productsToAssociate == null || string.IsNullOrEmpty(productsToAssociate.FirstOrDefault()))
+            {
+                if (!value.ContainsKey("catalog"))
+                    return (IActionResult)new BadRequestObjectResult((object)value);
+
+                catalogName = Convert.ToString(value["catalog"]);
+            }
+
             List<CreateStoreInventorySetArgument> args = new List<CreateStoreInventorySetArgument>();
 
             foreach(var store in storeInfos)
@@ -70,6 +80,8 @@ namespace Sitecore.Commerce.Plugin.Sample
                 var storeName = Regex.Replace(store.StoreName, "[^0-9a-zA-Z]+", "");
                 CreateStoreInventorySetArgument arg = new CreateStoreInventorySetArgument(storeName, store.StoreName, store.StoreName);
 
+
+                // Default to US if no country code provided
                 if(string.IsNullOrEmpty(store.Country))
                 {
                     store.Country = "US";
@@ -90,7 +102,12 @@ namespace Sitecore.Commerce.Plugin.Sample
 
 
             var command = this.Command<CreateStoreInventoryCommand>();
-            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList());
+            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList(), catalogName);
+
+            if(result == null)
+            {
+                return (IActionResult)new BadRequestObjectResult((object)value);
+            }
 
             return new ObjectResult(command);
         }

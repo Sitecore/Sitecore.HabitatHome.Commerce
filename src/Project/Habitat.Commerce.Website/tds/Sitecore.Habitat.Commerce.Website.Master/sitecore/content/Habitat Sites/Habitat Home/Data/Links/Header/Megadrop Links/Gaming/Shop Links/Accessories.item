@@ -8,20 +8,20 @@ name: Accessories
 master: {00000000-0000-0000-0000-000000000000}
 template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
 templatekey: Link
-created: 20180118T190405Z
+created: 20180323T040744Z
 
 ----version----
 language: en
 version: 1
-revision: d9adf4e6-639f-4328-8fdb-06ad04d23ee4
+revision: 1fbc2756-d71f-4cf5-a432-3033df4a09a3
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 144
+content-length: 94
 
-<link text="Accessories" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B6C43DCA-3178-A8B3-A6A3-62078A309DA6}" />
+<link text="NextCube Accessories" linktype="rel" url="/shop/NextCube-Accessories" anchor="" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d9adf4e6-639f-4328-8fdb-06ad04d23ee4
+1fbc2756-d71f-4cf5-a432-3033df4a09a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180219T111136Z
+20180323T183849Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -60,7 +60,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: e19b1bf2-a741-4a27-bdf4-c99da7a72921
+revision: bdb7b3a4-fa7a-4164-ae8e-d89340c6b345
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -152,21 +152,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e19b1bf2-a741-4a27-bdf4-c99da7a72921
+bdb7b3a4-fa7a-4164-ae8e-d89340c6b345
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180131T122141Z
+20180216T174017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
