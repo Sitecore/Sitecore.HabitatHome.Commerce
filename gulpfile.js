@@ -32,6 +32,17 @@ gulp.task("default",
             callback);
     });
 
+gulp.task("publish",
+    function (callback) {
+        config.runCleanBuilds = true;
+        return runSequence(
+            "Nuget-Restore",
+            "Publish-All-Projects",
+            "Apply-Xml-Transform",    
+            "Publish-Transforms",      
+            callback);
+    });
+
 gulp.task("tds",
     function (callback) {
         config.runCleanBuilds = true;
