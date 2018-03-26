@@ -131,3 +131,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Shopping Cart

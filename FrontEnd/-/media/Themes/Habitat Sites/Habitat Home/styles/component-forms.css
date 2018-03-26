@@ -558,6 +558,50 @@ Standard Form Styles
   }
 }
 
+.content-finder form label.one-two-days:before {
+  content: "";
+}
+
+.content-finder form label.three-four-days:before {
+  content: "";
+}
+
+.content-finder form label.five-or-more:before {
+  content: "";
+}
+
+.content-finder form label.aerobics:before {
+  content: "";
+}
+
+.content-finder form label.cardio:before {
+  content: "";
+}
+
+.content-finder form label.low:before {
+  content: "";
+}
+
+.content-finder form label.medium:before {
+  content: "";
+}
+
+.content-finder form label.high:before {
+  content: "";
+}
+
+.content-finder form label.strength:before {
+  content: "";
+}
+
+.content-finder form label.weight-lifting:before {
+  content: "";
+}
+
+.content-finder form label.yoga:before {
+  content: "";
+}
+
 .content-finder form label.smart-home:before {
   content: "";
 }
