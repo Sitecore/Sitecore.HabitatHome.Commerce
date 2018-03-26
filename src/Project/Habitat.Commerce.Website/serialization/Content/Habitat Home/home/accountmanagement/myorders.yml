@@ -72,7 +72,7 @@ Languages:
               uid="{840FFA3A-31F5-4670-B83D-4A2F5CADB0C9}"
               p:after="r[@uid='{091D639E-2FF7-415C-9FF9-FD681E33866A}']"
               s:ds="{2C1A4647-F067-46E9-A380-908AEE38AC0E}"
-              s:id="{CE39AB87-34C6-46F8-A5E2-B532158B10EF}"
+              s:id="{6E6CF518-4676-4319-A3EC-3F579E81705D}"
               s:par="GridParameters&amp;View Order Details Link=%7B730E39CD-859F-4C93-973C-6B1E4B55D6DF%7D"
               s:ph="/main/container-1" />
             <r
@@ -96,7 +96,7 @@ Languages:
       Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180216T120807Z
+      Value: 20180326T022354Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 

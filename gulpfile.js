@@ -219,7 +219,7 @@ var publishProjects = function (location, dest) {
 
     console.log("publish to " + dest + " folder");
     return gulp.src([location + "/**/code/*.csproj"])
-        .pipe(foreach(function (stream, file) {              
+        .pipe(foreach(function (stream, file) {
             return publishStream(stream, dest);
         }));
 };
@@ -301,4 +301,3 @@ gulp.task("Deploy-EXM-Campaigns",
             }
         });
     });
-

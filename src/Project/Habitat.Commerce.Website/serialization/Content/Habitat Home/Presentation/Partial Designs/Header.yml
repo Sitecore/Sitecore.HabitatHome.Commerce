@@ -133,11 +133,16 @@ SharedFields:
           s:ph="/header/container-1" />
         <r
           uid="{9F4E7FA0-8A8D-4291-928B-B09B2F6684E8}"
-          p:after="*[1=2]"
+          p:after="r[@uid='{8849B7D1-633F-4864-82AD-F0A67E0E9951}']"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="header" />
+        <r
+          uid="{675E36C7-B564-4464-B47E-BB55F614E62E}"
+          p:after="*[1=2]"
+          s:id="{432E53A1-E676-4A07-92BC-A3EF517A5811}"
+          s:ph="/header/container-1" />
       </d>
     </r>
 Languages:
@@ -145,6 +150,20 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5C56AF5B-47B8-43F6-8BF1-E16B703B0B84}">
+              <p:d />
+            </r>
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171031T165939Z

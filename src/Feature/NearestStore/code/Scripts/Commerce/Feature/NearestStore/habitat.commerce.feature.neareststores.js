@@ -8,7 +8,7 @@
     self.NearestStoresList = ko.observable([]);
 
 
-    self.InitializeViewModel = function (userLatitude, userLongitude, productID, variantID) {
+    self.InitializeViewModel = function (userLatitude, userLongitude, productID, variantID) {  
         self.UserLat(userLatitude);
         self.UserLong(userLongitude);
         self.ProductId = productID;
@@ -19,6 +19,7 @@
         else {
             self.LoadNearestStores();
         }
+        
     }
 
     self.LoadNearestStores = function () {
@@ -46,6 +47,28 @@
 
     self.GetInventory = function () {
         var ServiceRequest = new Object();        
+        ServiceRequest.ProductId = self.ProductId;
+        ServiceRequest.VariantId = self.VariantId;
+        var promise = GetInventory(ServiceRequest).done(function (result) {
+            if (result.Errors != null & result.Errors != "undefined") {
+                self.ErrorMessage(data.Errors[0]);
+            }
+            else {
+                var storesData = result.Data;
+                var storesList = [];
+                //self.NearestStoresList(storesData);
+                $.each(result.Data, function (index, value) {
+                    var newStore = new NewStore(value);
+                    storesList.push(newStore);
+                });
+                self.NearestStoresList(storesList);
+            }
+        })
+    }
+
+    self.UpdateVariant = function (variantId) {
+        self.VariantId = variantId;
+        var ServiceRequest = new Object();
         ServiceRequest.ProductId = self.ProductId;
         ServiceRequest.VariantId = self.VariantId;
         var promise = GetInventory(ServiceRequest).done(function (result) {
@@ -140,9 +163,10 @@ function getCookie(cname) {
 }
 
 function InitializeNearestStoreWidget() {
-
+    
     NearestStoreVMController = new NearestStoreViewModel();
     if ($("#divNearestStores").length > 0) {
+
         ko.applyBindings(NearestStoreVMController, document.getElementById("divNearestStores"));
         var userLatitude = $("#divNearestStores").attr("data-attr-lat");
         var userLongitude = $("#divNearestStores").attr("data-att-long");
@@ -150,9 +174,15 @@ function InitializeNearestStoreWidget() {
         var variantID = ($("#addtocart_variantid").val() != "" ? $("#addtocart_variantid").val() : $(".valid-variant-combo").children(":first").attr("id"));
 
         NearestStoreVMController.InitializeViewModel(userLatitude, userLongitude, productID, variantID);
+        $("#variantColor").on('change', function () {
+            NearestStoreVMController.UpdateVariant($("#addtocart_variantid").val());
+           
+        });
     }
+    
 }
 
 $(document).ready(function () {
+    
     InitializeNearestStoreWidget();
 });

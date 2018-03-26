@@ -29,10 +29,12 @@
                     </div>
                     <!--/ko-->
                     <!-- ko ifnot: Limited -->
+                    <!-- ko ifnot: ZeroInventory -->
                     <label>Available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away) </label><br />
                     <div class="product-item-pickup">
                         <a class="btn" href="#">Pick up at this store</a>
-                    </div>                   
+                    </div>
+                    <!--/ko-->
                     <!--/ko-->
                 </div>
             </div>
