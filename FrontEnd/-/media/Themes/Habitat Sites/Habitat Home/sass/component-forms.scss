@@ -469,18 +469,21 @@ Standard Form Styles
       }
     }
     
-    label.two-days:before {
+    label.one-two-days:before {
       content: $icon-2Days;
     }
 
-    label.four-days:before {
+    label.three-four-days:before {
       content: $icon-4Days;
     }
-    label.days:before {
+    label.five-or-more:before {
       content: $icon-days;
     }
     label.aerobics:before {
-      content: $Aerobics;
+      content: $icon-Aerobics;
+    }
+    label.cardio:before{
+      content: $icon-fitness-tech;
     }
     label.low:before {
       content: $icon-Low;

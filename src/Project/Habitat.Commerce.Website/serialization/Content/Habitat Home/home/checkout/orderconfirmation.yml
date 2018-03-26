@@ -20,7 +20,7 @@ SharedFields:
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
-  Value: "{5B2B171D-5218-46E4-A49C-F88D8F534A75}"
+  Value: 
 Languages:
 - Language: en
   Fields:
@@ -97,6 +97,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Order Confirmation
 - Language: "fr-CA"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
