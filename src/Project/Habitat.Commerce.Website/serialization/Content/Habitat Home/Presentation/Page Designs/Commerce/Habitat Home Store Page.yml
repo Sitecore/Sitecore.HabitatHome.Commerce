@@ -20,7 +20,7 @@ SharedFields:
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
-  Value: "{DAE8EEEE-B50C-4837-AB58-9B636E1C9CD7}"
+  Value: 
 - ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
   Hint: __Enable item fallback
   Type: Checkbox
