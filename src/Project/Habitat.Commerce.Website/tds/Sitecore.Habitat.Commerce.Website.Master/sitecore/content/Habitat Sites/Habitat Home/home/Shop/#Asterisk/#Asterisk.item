@@ -8,7 +8,7 @@ name: *
 master: {82D1AB06-4382-4FDA-A382-E9CDEE6ABD80}
 template: {6B1871AF-B8C4-4C39-81D9-E747764E62BF}
 templatekey: Product
-created: 20180216T151805Z
+created: 20180325T024954Z
 
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
@@ -34,8 +34,15 @@ content-length: 145
 ----version----
 language: en
 version: 1
-revision: 27206545-1025-4df2-84fe-cac6ddc8d3fd
+revision: 6b32c1e9-5eca-4c0a-b9a9-fe5f32294bde
 
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 15
+
+Product Details
 ----field----
 field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
 name: Page Design
@@ -84,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-27206545-1025-4df2-84fe-cac6ddc8d3fd
+6b32c1e9-5eca-4c0a-b9a9-fe5f32294bde
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180227T171937Z
+20180326T190829Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

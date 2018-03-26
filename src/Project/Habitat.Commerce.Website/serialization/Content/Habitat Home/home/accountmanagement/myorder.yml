@@ -4,8 +4,20 @@ Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "87c8da7f-fed1-44d2-82a7-d5a2c5c74909"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/myorder
 DB: master
+BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/16x16/history.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: My Order
   Versions:
   - Version: 1
     Fields:
@@ -88,8 +100,19 @@ Languages:
               s:ph="main" />
           </d>
         </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Value: "20180326T023118:636576282789437187Z"
+      Hint: __Created
+      Value: 20180216T120807Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Order Details
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
     - ID: "db258a10-db4e-4f13-b178-4adb06a92076"
       Hint: Title
       Value: Order Details

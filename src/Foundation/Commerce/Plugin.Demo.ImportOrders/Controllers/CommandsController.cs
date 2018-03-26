@@ -9,6 +9,7 @@ using Plugin.Demo.ImportOrders.Pipelines.Arguments;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using Plugin.Demo.ImportOrders.Entities;
+using System.Text.RegularExpressions;
 
 namespace Sitecore.Commerce.Plugin.Sample
 {
@@ -53,7 +54,10 @@ namespace Sitecore.Commerce.Plugin.Sample
             if (!value.ContainsKey("Order"))
                 return "Bad Request, Cannot Find Order key"; 
 
-            var inputArgs = JsonConvert.DeserializeObject<OfflineStoreOrderArgument>(value["Order"].ToString());         
+            var inputArgs = JsonConvert.DeserializeObject<OfflineStoreOrderArgument>(value["Order"].ToString());
+
+            var storeName = Regex.Replace(inputArgs.StoreDetails.Name, "[^0-9a-zA-Z]+", "");
+            inputArgs.ShopName = storeName;
 
             var result = await command.Process(this.CurrentContext, inputArgs);
 

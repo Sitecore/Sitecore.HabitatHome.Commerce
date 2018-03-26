@@ -25,7 +25,7 @@ Languages:
       Value: "{FF6A8672-457B-4D6C-9255-31C875FC6E3B}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: Low
+      Value: low
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
