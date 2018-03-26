@@ -43,9 +43,7 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
                 return;
             }
             OrderInput inputJson = JsonConvert.DeserializeObject<OrderInput>(order);
-            Sitecore.Context.SetActiveSite("Storefront");
-
-            //var response ="{\"ShopName\":\"SacramentoStore\",\"OrderPlacedDate\":\"2018-02-14T14:32:41.5332063-08:00\",\"OrderConfirmationId\":\"670003123232\",\"Status\":\"StoreOrder\",\"SalesActivity\":[],\"Lines\":[{\"ItemId\":\"Habitat_Master|7042121|57042121\",\"ParentId\":null,\"Quantity\":1.0,\"UnitListPrice\":{\"CurrencyCode\":\"USD\",\"Amount\":429.99},\"Totals\":{\"SubTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":429.99},\"AdjustmentsTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":0.0},\"GrandTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":429.99},\"PaymentsTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":0.0},\"Name\":\"\",\"Policies\":[]},\"Adjustments\":[],\"Id\":\"05dfb3baf98543ccb27dffbf29c39263\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[{\"SellPrice\":{\"CurrencyCode\":\"USD\",\"Amount\":429.99},\"Expires\":\"2018-03-21T16:30:39.4487539+00:00\",\"PolicyId\":\"c24f0ed4f2f1449b8a488403b6bf368a\",\"Models\":[]}],\"ChildComponents\":[{\"ProductName\":\"\",\"ItemTemplate\":null,\"DisplayName\":\"Optix 12.8MP 4K Ultra HD Action Camera (White)\",\"ExternalId\":null,\"ProductUrl\":\"\",\"ItemType\":\"\",\"Comment\":\"\",\"Size\":\"\",\"Color\":\"\",\"Style\":\"\",\"Image\":{\"ImageName\":\"\",\"Url\":\"\",\"SitecoreId\":\"\",\"AltText\":\"\",\"Width\":0.0,\"Height\":0.0},\"Tags\":[],\"Catalog\":\"\",\"Id\":\"5d29c4184ff24cdcad330334de219d60\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[],\"ChildComponents\":[]},{\"VariationId\":\"57042121\",\"Id\":\"3615d6d7e627406cbbfc31fe44260a54\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[],\"ChildComponents\":[]}]}],\"Totals\":{\"SubTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":429.99},\"AdjustmentsTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":3.0},\"GrandTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":460.99},\"PaymentsTotal\":{\"CurrencyCode\":\"USD\",\"Amount\":460.99},\"Name\":\"\",\"Policies\":[]},\"Adjustments\":[{\"AdjustmentType\":\"Discount\",\"Adjustment\":{\"CurrencyCode\":\"USD\",\"Amount\":-3.0},\"AwardingBlock\":\"In Store Discount\",\"IsTaxable\":false,\"IncludeInGrandTotal\":true,\"Name\":\"Discount\",\"DisplayName\":\"\"},{\"AdjustmentType\":\"Tax\",\"Adjustment\":{\"CurrencyCode\":\"USD\",\"Amount\":34.0},\"AwardingBlock\":\"Tax:block:calculatecarttax\",\"IsTaxable\":false,\"IncludeInGrandTotal\":true,\"Name\":\"TaxFee\",\"DisplayName\":\"\"}],\"CompositeKey\":null,\"Components\":[{\"MaskedNumber\":\"3321\",\"ExpiresMonth\":10,\"ExpiresYear\":2020,\"CardType\":\"Visa\",\"PaymentMethodNonce\":\"\",\"TransactionStatus\":\"authorized\",\"TransactionId\":\"ejcg6vky\",\"PaymentInstrumentType\":\"credit_card\",\"BillingParty\":{\"ExternalId\":null,\"AddressName\":null,\"City\":null,\"PhoneNumber\":null,\"Email\":null,\"State\":null,\"StateCode\":null,\"Organization\":null,\"FirstName\":null,\"LastName\":null,\"Country\":null,\"CountryCode\":null,\"Address1\":null,\"Address2\":null,\"ZipPostalCode\":null,\"IsPrimary\":false,\"Name\":\"\",\"Policies\":[]},\"Amount\":{\"CurrencyCode\":\"USD\",\"Amount\":460.99},\"PaymentMethod\":{\"Name\":\"00000000-0000-0000-0000-000000000000\",\"EntityTarget\":\"Card\",\"Policies\":[]},\"Id\":\"71d7ed6db197430c96f9b0a80ae9b81d\",\"Name\":\"Store Payment\",\"Comments\":\"Store Payment\",\"Policies\":[],\"ChildComponents\":[]},{\"ShippingParty\":{\"ExternalId\":\"0\",\"AddressName\":\"Sacramento Store\",\"City\":\"Sacramento\",\"PhoneNumber\":null,\"Email\":null,\"State\":\"CA\",\"StateCode\":\"CA\",\"Organization\":null,\"FirstName\":null,\"LastName\":null,\"Country\":\"US\",\"CountryCode\":\"US\",\"Address1\":\"926 Marshall Dr.\",\"Address2\":null,\"ZipPostalCode\":\"95814\",\"IsPrimary\":false,\"Name\":\"\",\"Policies\":[]},\"Shipments\":[],\"FulfillmentMethod\":{\"Name\":\"Offline Store Order By Customer\",\"EntityTarget\":\"b146622d-dc86-48a3-b72a-05ee8ffd187a\",\"Policies\":[]},\"LineId\":\"\",\"Status\":\"\",\"Id\":\"650b400c62f74b66a7e9e334eb83d350\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[],\"ChildComponents\":[]},{\"ShopperId\":\"Entity-Customer-7ee8cf19db2b4a32b3a281f048f24fe2\",\"CustomerId\":\"Entity-Customer-7ee8cf19db2b4a32b3a281f048f24fe2\",\"IpAddress\":\"\",\"Latitude\":\"\",\"Longitude\":\"\",\"Currency\":\"\",\"Language\":\"\",\"Email\":\"prasa@gmail.com\",\"IsRegistered\":true,\"Id\":\"5760fdade70e4c34920f16ee794f8af5\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[],\"ChildComponents\":[]},{\"Memberships\":[\"Orders\",\"AuthenticatedOrders\",\"Orders-ByCustomer-Entity-Customer-7ee8cf19db2b4a32b3a281f048f24fe2\"],\"Id\":\"edb603afc25f4ce28281000525e00ea0\",\"Name\":\"\",\"Comments\":\"\",\"Policies\":[],\"ChildComponents\":[]}],\"DateCreated\":\"2018-03-21T16:25:39.4467398+00:00\",\"DateUpdated\":\"2018-03-21T16:25:39.7038446+00:00\",\"DisplayName\":\"\",\"FriendlyId\":\"Entity-Order-d6d071c1a541456eb8c1d5d28cb135f2\",\"Id\":\"Entity-Order-d6d071c1a541456eb8c1d5d28cb135f2\",\"Version\":1,\"IsPersisted\":true,\"Name\":\"InStoreOrder\",\"Policies\":[]}";
+            Sitecore.Context.SetActiveSite("Storefront");            
 
             foreach(var orderDetails in inputJson.Order)
             {
@@ -78,6 +76,7 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
 
                         ServicePipelineArgs args = new ServicePipelineArgs(new SubmitVisitorOrderRequest(new Commerce.Entities.Carts.Cart()), new SubmitVisitorOrderResult() { Order = outComeOrder, Success = true });
                         CorePipeline.Run("commerce.orders.submitOfflineOrder", args);
+                        Response.Write($" <br /> {startSpanGreen} Submitting to XConnect {orderDetails.OrderConfirmationId} {endSpan}");
                     }
                     else
                     {
@@ -90,7 +89,7 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
                 }
 
                 Tracker.Current.EndVisit(true);
-                Response.Write($" <br /> {startSpanGreen} Submitted order to authoring  and XConnect {orderDetails.OrderConfirmationId} {endSpan}");
+                Response.Write($" <br /> {startSpanGreen} Processing Completed {orderDetails.OrderConfirmationId} {endSpan}");
                 Response.Write($" <br /> {startSpanRed}-------------------------- {DateTime.Now} --------------------------------- {endSpan}");
             }
 
@@ -154,14 +153,11 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
             outComeOrder.Total.Amount = System.Convert.ToDecimal(jo["Totals"]?["GrandTotal"]["Amount"].ToString());
             outComeOrder.Total.CurrencyCode = jo["Totals"]?["GrandTotal"]["CurrencyCode"].ToString();
             outComeOrder.Total.TaxTotal = new Sitecore.Commerce.Entities.Prices.TaxTotal();
-            //outComeOrder.Total.TaxTotal.Amount = System.Convert.ToDecimal(jo["Totals"]?["GrandTotal"]["Amount"].ToString());
+           
 
 
 
-            var data = jo["Lines"][0]["Totals"]["SubTotal"]["Amount"];
-            var data2 = jo["Lines"][0]["ChildComponents"][0]["DisplayName"];
-            var data3 = jo["Adjustments"][0];
-            var data4 = jo["Components"][2];
+           
 
         }
 
@@ -174,7 +170,7 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
 
             //Response.Write(config.ShopsServiceUrl);
             httpClient.DefaultRequestHeaders.Add("ShopName", config.DefaultShopName);
-            httpClient.DefaultRequestHeaders.Add("Language", "en-US");
+            httpClient.DefaultRequestHeaders.Add("Language", Sitecore.Context.Language.Name);
             httpClient.DefaultRequestHeaders.Add("Currency", config.DefaultShopCurrency);
             httpClient.DefaultRequestHeaders.Add("Environment", config.DefaultEnvironment);
 
@@ -198,8 +194,7 @@ namespace Sitecore.Feature.UploadOrder.HabitatUtility
         public ImportOrderModel Order { get; set; }
     }
     public class ImportOrderModel
-    {
-        public string ShopName { get; set; }
+    {        
         public string OrderConfirmationId { get; set; }
         public string OrderPlacedDate { get; set; }
         public string Email { get; set; }
