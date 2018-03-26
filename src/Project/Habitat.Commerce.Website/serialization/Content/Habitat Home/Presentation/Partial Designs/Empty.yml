@@ -20,7 +20,13 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
+          uid="{6AA79748-9624-43C3-9139-32407434F190}"
+          p:before="*"
+          s:id="{A6AEE2E8-BFB1-4D86-BA02-5E73C723B38E}"
+          s:ph="main" />
+        <r
           uid="{7BFCF47A-3746-4155-8B22-A3889FE9FEEF}"
+          p:after="*[1=2]"
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="main" />

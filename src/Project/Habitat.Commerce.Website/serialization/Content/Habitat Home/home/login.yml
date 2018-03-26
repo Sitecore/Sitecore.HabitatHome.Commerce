@@ -14,7 +14,7 @@ SharedFields:
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 2700
+  Value: 2850
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -40,13 +40,20 @@ SharedFields:
         <r
           uid="{0ED1EF6A-FB22-4BA8-BC06-A1EB128A9267}"
           p:after="r[@uid='{B842C450-6284-4F3B-9BAF-8498B83F241C}']"
-          s:ds=""
-          s:id="{809FDBFF-892F-40F5-BD5D-97A021C711C1}"
-          s:par=""
+          s:ds="{9CEF2DD3-F945-45D2-A1AC-E3379B91D0B5}"
+          s:id="{97D8D8DA-E6FD-4983-BDB6-ABD28C6E0209}"
+          s:par="GridParameters"
+          s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
+        <r
+          uid="{DB9B22E5-06C0-4E73-9611-72F95BDE8A44}"
+          p:after="r[@uid='{0ED1EF6A-FB22-4BA8-BC06-A1EB128A9267}']"
+          s:ds="local:/Data/Forgot Password Link"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
           uid="{04FB28D9-4468-430B-A054-A919810AE058}"
-          p:after="r[@uid='{0ED1EF6A-FB22-4BA8-BC06-A1EB128A9267}']"
+          p:after="r[@uid='{DB9B22E5-06C0-4E73-9611-72F95BDE8A44}']"
           s:ds=""
           s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
