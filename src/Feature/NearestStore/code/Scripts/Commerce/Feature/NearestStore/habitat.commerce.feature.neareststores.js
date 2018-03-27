@@ -35,7 +35,7 @@
             else {
                 
                 var storesList = [];
-                if (result.Data.length() > 0) {
+                if (result.Data.length > 0) {
                     $.each(result.Data, function (index, value) {
                         var newStore = new NewStore(value);
                         storesList.push(newStore);
@@ -84,7 +84,7 @@
                 var storesData = result.Data;
                 var storesList = [];
                 //self.NearestStoresList(storesData);
-                if (result.Data.length() > 0) {
+                if (result.Data.length > 0) {
                     $.each(result.Data, function (index, value) {
                         var newStore = new NewStore(value);
                         storesList.push(newStore);
