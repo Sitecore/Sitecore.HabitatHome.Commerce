@@ -57,7 +57,7 @@ namespace Sitecore.Feature.OrderLines.Models
                 this.Lines.Add(model);
             }
             this.StoreOrder = order.Status.ToLower() == "storeorder" ? true : false;
-            this.StoreName = GetDisplayName(order.ShopName);
+            this.StoreName = !String.IsNullOrEmpty(order.ShopName) ? GetDisplayName(order.ShopName) : "";
             this.TrackingNumber = order.TrackingNumber;
             this.InitializeDataSourceValues();
         }
