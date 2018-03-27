@@ -26,8 +26,19 @@ Languages:
     - ID: "9c385368-a554-4a92-9a8d-37f3ef3a09f4"
       Hint: HeroImage
       Value: |
-        <image mediaid="{F5E11C3E-6AF7-4B25-AF41-08A6F173B45A}" />
+        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}"></image>
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
       Value: |
         <span style="color: #545454;">Shop a wide selection of </span><span style="color: #6a6a6a;">home gyms</span><span style="color: #545454;"> and </span><span style="color: #6a6a6a;">home gym</span><span style="color: #545454;"> equipment for high performance workouts.</span>
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014505Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

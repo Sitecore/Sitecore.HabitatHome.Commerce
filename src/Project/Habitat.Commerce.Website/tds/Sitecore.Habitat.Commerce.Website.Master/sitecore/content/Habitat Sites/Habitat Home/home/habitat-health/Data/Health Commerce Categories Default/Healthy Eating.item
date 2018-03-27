@@ -13,15 +13,22 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: 98043d6d-5243-458e-8afb-bec515850b38
+revision: c6ef356b-c720-489d-9920-58a21d9444a7
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 139
+content-length: 90
 
-<link text="Healthy Cooking" anchor="" linktype="internal" class="" title=""  querystring="" id="{A7E7736A-B442-8ED5-F5D2-F4A0D588E65A}" />
+<link text="Healthy Cooking" linktype="rel" url="/shop/Digital-Subscriptions" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{4638C889-9BA6-4F14-B4E4-CFA636DC98A6}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-98043d6d-5243-458e-8afb-bec515850b38
+c6ef356b-c720-489d-9920-58a21d9444a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T225915Z
+20180326T205541Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -64,3 +71,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

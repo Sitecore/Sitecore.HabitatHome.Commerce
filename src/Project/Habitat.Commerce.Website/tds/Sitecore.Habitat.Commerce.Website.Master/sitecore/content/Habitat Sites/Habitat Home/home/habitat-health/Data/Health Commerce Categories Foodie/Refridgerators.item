@@ -13,15 +13,15 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: 7d768f9d-26c8-4655-9a44-d6c1543ca926
+revision: 4b3e06fd-bfe6-4c26-a7a2-91933c9549b3
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 139
+content-length: 80
 
-<link text="Food Management" anchor="" linktype="internal" class="" title=""  querystring="" id="{440C1CD5-20C1-E0D1-3319-9766112ED9CA}" />
+<link text="Refrigerators" linktype="rel" url="/shop/Refrigerators" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d768f9d-26c8-4655-9a44-d6c1543ca926
+4b3e06fd-bfe6-4c26-a7a2-91933c9549b3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T230140Z
+20180326T171638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

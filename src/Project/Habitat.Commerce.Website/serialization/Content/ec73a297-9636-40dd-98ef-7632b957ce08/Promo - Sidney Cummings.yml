@@ -15,7 +15,7 @@ Languages:
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{71324099-6FAD-40D2-B0D6-FA7B671CB919}" />
+        <image mediaid="{9F8416A1-1C7B-4024-BB41-DA64D3858608}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180322T155052Z
@@ -30,3 +30,14 @@ Languages:
       Hint: PromoLink
       Value: |
         <link linktype="external" text="Learn More About Sydney" url="https://www.royalchange.fit/" anchor="" target="" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014956Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

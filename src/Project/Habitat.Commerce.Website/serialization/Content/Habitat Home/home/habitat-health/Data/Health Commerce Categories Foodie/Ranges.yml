@@ -19,4 +19,15 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Healthy Cooking" anchor="" linktype="internal" class="" title=""  querystring="" id="{A7E7736A-B442-8ED5-F5D2-F4A0D588E65A}" />
+        <link text="Healthy Cooking" linktype="rel" url="/shop/ranges" anchor="" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014953Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

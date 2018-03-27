@@ -74,7 +74,7 @@ SharedFields:
     </tracking>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 788
+  Value: 1100
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -166,11 +166,24 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{DB03B9CC-CC95-4A40-8E86-8229283A0767}"
+              p:before="*"
+              s:ds="local:/Data/On The Go Products"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Product Lists=E18343E5-C678-4FB8-AA98-DCA52A3573B7"
+              s:ph="/main/sxa-content-container/container-1/container-8" />
+            <r
               uid="{AAF5FEEC-27DC-4A12-AB0D-BB3A6E25F2AF}"
               p:after="r[@uid='{A9D551D5-28A7-457D-AE65-923D84806A18}']"
               s:ds="{503C7C53-B494-4E3F-8930-54E7A6EADBA1}"
               s:id="{4646BD4F-05FF-4A19-9600-4D74F2F1548B}"
               s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames={BB418DE9-224E-4B3C-842B-310A3473A274}&amp;Styles&amp;TitleHeadingLevel={6A44D9C6-61F0-4B69-8E1A-FDC27F96BA0F}&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{6A61D718-83F3-449C-9663-42123FA8ED93}"
+              p:after="r[@uid='{D7B2C388-3D8F-4173-8A23-341F58D2F38A}']"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8"
               s:ph="/main/sxa-content-container/container-1" />
           </d>
         </r>

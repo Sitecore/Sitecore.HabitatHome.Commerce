@@ -13,15 +13,15 @@ created: 20180323T183717Z
 ----version----
 language: en
 version: 1
-revision: 8d92351f-8753-4f1a-b7dd-7f46cd0cd126
+revision: 199750da-56dc-4022-a0dc-64121c540217
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 131
+content-length: 68
 
-<link text="Cameras" anchor="" linktype="internal" class="" title=""  querystring="" id="{E9F2E3A7-0575-0632-B67E-5E65092230C3}" />
+<link text="Cameras" linktype="rel" url="/shop/Cameras" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8d92351f-8753-4f1a-b7dd-7f46cd0cd126
+199750da-56dc-4022-a0dc-64121c540217
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T224001Z
+20180326T172814Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

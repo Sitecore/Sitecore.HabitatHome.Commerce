@@ -80,7 +80,7 @@ SharedFields:
       <profile
         id="552dd90f-a527-438e-ac33-32d236244123"
         name="Topic Interest Category"
-        presets="smart and connected|100||">
+        presets="foodie|100||">
         <key
           name="Child Safety"
           value="0" />
@@ -98,6 +98,12 @@ SharedFields:
           value="0" />
         <key
           name="Smart and Connected"
+          value="0" />
+        <key
+          name="Fitness"
+          value="0" />
+        <key
+          name="Foodie"
           value="10" />
       </profile>
     </tracking>
@@ -206,7 +212,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{E6455AF9-64B4-4F4A-BCE6-8282ED9B36CF}" />
+        <image mediaid="{C572C422-19D2-4F46-812C-659196B6D15A}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171121T210710Z
@@ -243,7 +249,7 @@ Languages:
       Value: smart stove, recipe, kitchen appliances, connected home, beef wellington, recipe video
     - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
       Hint: Subtitle
-      Value: High intensity
+      Value: delicious and nutritious
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: To take advantage of the new smart stoves on the market, we are showcasing a fantastic recipe that will be fun to make and satisfying to eat. It offers home chefs the chance to use the exciting features available in the connected stove.
@@ -256,10 +262,10 @@ Languages:
         <image mediaid="{077BB138-1D40-43F0-9FB5-B222AE0A8D84}" alt="recipe for smart stove nav thumbail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
-      Value: <p>Make the most of the time you've got. These workouts are short and intense for those days when you have less time.</p>
+      Value: <p>Impressive and faster than you would think. Dazzle your friends and family with this delicious <br />recipe straight from our experts.</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
-      Value: Ten Minute Workouts at Home
+      Value: Beef Wellington
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

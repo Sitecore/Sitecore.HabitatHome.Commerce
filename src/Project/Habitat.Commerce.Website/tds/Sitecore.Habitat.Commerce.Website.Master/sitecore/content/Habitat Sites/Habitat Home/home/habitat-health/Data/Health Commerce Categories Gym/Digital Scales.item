@@ -13,15 +13,15 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: e8ea511f-0831-4c3b-bad6-02de9d34dabf
+revision: 24f72ec3-f6c2-4f0f-896e-8da1306365ee
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 138
+content-length: 82
 
-<link text="Digital Scales" anchor="" linktype="internal" class="" title=""  querystring="" id="{9008B511-7815-FDA8-5A83-927BBF70CABF}" />
+<link text="Digital Scales" linktype="rel" url="/shop/digital-scales" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8ea511f-0831-4c3b-bad6-02de9d34dabf
+24f72ec3-f6c2-4f0f-896e-8da1306365ee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T230233Z
+20180326T171659Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

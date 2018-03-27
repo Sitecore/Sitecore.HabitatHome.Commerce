@@ -18,6 +18,35 @@ content-length: 194
 
 {E0A2A027-0932-4878-A7D6-0416D5263EFB}|{61BD64D6-809E-40AE-9297-2724A19329B3}|{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}|{500AE4C0-FA7B-463F-8149-EFFF7F044101}|{A0E7FF57-6994-4B09-AA21-104239628D5A}
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 987
+
+<tracking>
+  <profile id="54d63273-947a-4927-b21a-0022625315e1" name="Electronics Category" presets="fitness tech|100||">
+    <key name="Appliances" value="0" />
+    <key name="Audio" value="0" />
+    <key name="Cameras" value="0" />
+    <key name="Computers" value="0" />
+    <key name="Fitness Tech" value="10" />
+    <key name="Games" value="0" />
+    <key name="Phones" value="0" />
+    <key name="Tablets" value="0" />
+    <key name="TVs" value="0" />
+  </profile>
+  <profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|90||smart and connected|10||">
+    <key name="Child Safety" value="0" />
+    <key name="Energy Savings" value="0" />
+    <key name="Fitness" value="9" />
+    <key name="Foodie" value="0" />
+    <key name="Newest and Coolest" value="0" />
+    <key name="Overclocking" value="0" />
+    <key name="Reliability" value="0" />
+    <key name="Smart and Connected" value="1" />
+  </profile>
+</tracking>
+----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -27,7 +56,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 34c156b1-1fae-43a6-973b-a1fe047b6f90
+revision: 74ae3dce-c4f1-4b28-9726-cd0dadc6fe2b
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -98,14 +127,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-34c156b1-1fae-43a6-973b-a1fe047b6f90
+74ae3dce-c4f1-4b28-9726-cd0dadc6fe2b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T205535Z
+20180326T151154Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
