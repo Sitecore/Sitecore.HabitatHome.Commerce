@@ -79,11 +79,16 @@
                 var storesData = result.Data;
                 var storesList = [];
                 //self.NearestStoresList(storesData);
-                $.each(result.Data, function (index, value) {
-                    var newStore = new NewStore(value);
-                    storesList.push(newStore);
-                });
-                self.NearestStoresList(storesList);
+                if (result.Data.length() > 0) {
+                    $.each(result.Data, function (index, value) {
+                        var newStore = new NewStore(value);
+                        storesList.push(newStore);
+                    });
+                    self.NearestStoresList(storesList);
+                }
+                else {
+
+                }
             }
         })
     }
@@ -104,6 +109,8 @@ function NewStore(data) {
             self.Limited = b['Value'];
         if ((b['Key'] == 'Quantity'))
             self.Quantity = b['Value'];
+        if ((b['Key'] == 'InventoryAmount'))
+            self.InventoryAmount = b['Value'];
     })
 }
 //Promise Functions

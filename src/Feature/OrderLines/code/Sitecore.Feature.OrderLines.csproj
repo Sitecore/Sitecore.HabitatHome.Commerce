@@ -124,6 +124,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.OrderLines.config" />
+    <Content Include="App_Config\Include\Feature\Feature.OrderLines.Serialization.config" />
     <None Include="packages.config" />
     <Content Include="Views\OrderLines\OrderLines.cshtml" />
     <None Include="Web.Debug.config">
@@ -138,7 +140,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\OrderLinesController.cs" />
+    <Compile Include="Models\OrderLinesMockData.cs" />
+    <Compile Include="Models\OrderLinesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IOrderLinesRepository.cs" />
+    <Compile Include="Repositories\OrderLinesRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

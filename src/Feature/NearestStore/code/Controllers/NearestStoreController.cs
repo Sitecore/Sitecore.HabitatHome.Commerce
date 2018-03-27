@@ -67,7 +67,7 @@ namespace Sitecore.Feature.NearestStore.Controllers
             JsonResult baseJsonResult;
             try
             {                
-                dynamic stores = from s in this.StoresRepository.GetStoresInventory(pid) select s.GetViewModel();
+                dynamic stores = from s in this.StoresRepository.GetStoresInventory(pid) where s != null select s.GetViewModel();
                 baseJsonResult = this.Json(stores);
             }
             catch (Exception ex)

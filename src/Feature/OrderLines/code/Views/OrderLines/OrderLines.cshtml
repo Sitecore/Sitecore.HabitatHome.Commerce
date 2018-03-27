@@ -1,19 +1,14 @@
 ﻿@using System.Web.Mvc.Ajax
 @using System.Web.Mvc.Html
-@using Sitecore.Commerce.Connect.Core
-@using Sitecore.Commerce.XA.Feature.Account
-@using Sitecore.Commerce.XA.Feature.Account.Models
+@using Sitecore.Feature.OrderLines.Models
 @using Sitecore.Mvc
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Commerce.XA.Foundation.Connect.Managers
 @using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderLines.DataSourceFields
 
-@model OrderLinesRenderingModel
+@model OrderLinesViewModel
 
-@{ 
-
-}
 <div @Html.Sxa().Component("cxa-orderdetailslines-component", Model.Attributes)>
     @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
@@ -24,7 +19,7 @@
     else
     {
         <div class="component-content">
-     
+
             <div class="order-lines-header">
                 <h3 title="@Model.YourProductsHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.YourProductsHeader, Html.Sitecore().CurrentItem)</h3>
             </div>
@@ -89,10 +84,22 @@
                                             <span>
                                                 @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
                                             </span>
-                                            <span class="shippingMethodName">
-                                        
-                                                @cartLine.ShippingMethodName
-                                            </span>
+
+                                            @if ((bool)Model.StoreOrder)
+                                            {
+                                                <span class="shippingMethodName">
+                                                    @cartLine.ShippingMethodName (@Model.StoreName)
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="shippingMethodName">
+                                                    @cartLine.ShippingMethodName<br />
+                                                    @Model.TrackingNumber
+                                                </span>
+                                            }
+
+
                                         </p>
                                     }
                                     @if (cartLine.Address != null)
