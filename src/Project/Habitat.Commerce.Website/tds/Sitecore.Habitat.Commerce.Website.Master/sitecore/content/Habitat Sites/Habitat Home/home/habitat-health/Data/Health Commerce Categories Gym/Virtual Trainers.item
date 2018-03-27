@@ -13,15 +13,15 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: 010416b8-0cf3-4ca0-bd64-cbc68916e26f
+revision: 59e34201-cd1f-42f2-8a9c-0c82769b50a1
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 132
+content-length: 83
 
-<link text="Trainers" anchor="" linktype="internal" class="" title=""  querystring="" id="{9F7B4376-1BE2-BD1E-A25D-E16643463FE4}" />
+<link text="Trainers" linktype="rel" url="/shop/Digital-Subscriptions" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-010416b8-0cf3-4ca0-bd64-cbc68916e26f
+59e34201-cd1f-42f2-8a9c-0c82769b50a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T230348Z
+20180326T171905Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -16,7 +16,22 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{4638C889-9BA6-4F14-B4E4-CFA636DC98A6}" />
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Healthy Cooking" anchor="" linktype="internal" class="" title=""  querystring="" id="{A7E7736A-B442-8ED5-F5D2-F4A0D588E65A}" />
+        <link text="Healthy Cooking" linktype="rel" url="/shop/Digital-Subscriptions" anchor="" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014954Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

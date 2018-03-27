@@ -13,15 +13,22 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: a5bf3f35-bf7d-4f50-bffa-20362b8ff9cf
+revision: d713d1d1-2e8c-461d-8950-47e02c89063c
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 140
+content-length: 95
 
-<link text="Fitness Trackers" anchor="" linktype="internal" class="" title=""  querystring="" id="{E2976897-B231-4F6E-9C8C-7AD1E22FB72B}" />
+<link text="Fitness Trackers" linktype="rel" url="/shop/fitness-activity-trackers" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{89937E4D-7B49-496B-B159-F60434A6E242}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a5bf3f35-bf7d-4f50-bffa-20362b8ff9cf
+d713d1d1-2e8c-461d-8950-47e02c89063c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T225844Z
+20180326T205541Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -64,3 +71,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -19,4 +19,15 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Smart Gym" anchor="" linktype="internal" class="" title=""  querystring="" id="{56E3457D-B331-5CBB-D9EC-FD203ACF1C67}" />
+        <link text="Home Gym" linktype="rel" url="/shop/Smart-Sports-Equipment" anchor="" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014955Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

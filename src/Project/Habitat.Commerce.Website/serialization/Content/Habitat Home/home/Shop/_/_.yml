@@ -9,6 +9,15 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Office/16x16/element.png
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{0D221789-0510-4209-8EB9-8EBC61DB76C3}"
+        name="Visited Product Details Page" />
+    </tracking>
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

@@ -13,15 +13,15 @@ created: 20180323T183716Z
 ----version----
 language: en
 version: 1
-revision: a6d458f4-7b1d-402c-9947-8e78989ef5e0
+revision: 3950b0ba-f253-49e7-9c91-8674bc8f4f7b
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 131
+content-length: 68
 
-<link text="Tablets" anchor="" linktype="internal" class="" title=""  querystring="" id="{F9C1FBF9-0A17-4723-5BA4-F97AB9EE1969}" />
+<link text="Tablets" linktype="rel" url="/shop/tablets" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a6d458f4-7b1d-402c-9947-8e78989ef5e0
+3950b0ba-f253-49e7-9c91-8674bc8f4f7b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T224545Z
+20180326T172906Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -11,6 +11,24 @@ templatekey: Page
 created: 20180325T024943Z
 
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 495
+
+<tracking>
+  <profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|100||">
+    <key name="Child Safety" value="0" />
+    <key name="Energy Savings" value="0" />
+    <key name="Fitness" value="10" />
+    <key name="Foodie" value="0" />
+    <key name="Newest and Coolest" value="0" />
+    <key name="Overclocking" value="0" />
+    <key name="Reliability" value="0" />
+    <key name="Smart and Connected" value="0" />
+  </profile>
+</tracking>
+----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
 key: __workflow
@@ -20,7 +38,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: fc62dfe1-4b34-4211-960a-d5c3c844e3e2
+revision: b928b7c8-1b27-4f18-ac07-27eaa28a46ca
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -84,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fc62dfe1-4b34-4211-960a-d5c3c844e3e2
+b928b7c8-1b27-4f18-ac07-27eaa28a46ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T141340Z
+20180326T151304Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

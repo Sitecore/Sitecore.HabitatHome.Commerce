@@ -441,6 +441,10 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat Sites\Habitat Home\Data\Commerce\Product Lists\On The Go Products.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Habitat Sites\Habitat Home\Data\Commerce\Product Lists\Promoted Products List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -1537,6 +1541,10 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Habitat Sites\Habitat Home\home\on-the-go-devices\Data\On The Go Products.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Habitat Sites\Habitat Home\home\on-the-go-devices\Data\Promo - Groove to your own beat.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -2589,6 +2597,106 @@
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health.item">
+      <ItemDeployment>DeployOnce</ItemDeployment>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Beauty-Icon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\FitnessTrackerIcon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Health-HomeGym-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Health-MensGrooming-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Health-Trackers-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Health-Trainer.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Health-WomensBeauty-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\HealthyCooking-Healthier.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\HealthyCooking-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\healthycooking-icon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\HealthyCooking-MealPrep.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\HealthyCooking-NextGen.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\HomeGym-Icon.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\Karen-Fitness-Report.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-Benefits.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-Benefits1800x700.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-DreamGym.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-FitnessGoals.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-FitnessGoals1800x700.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Project\Habitat Sites\Habitat Home\Images\Health\SmartHomeGym-Hero.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Themes.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
@@ -3418,6 +3526,10 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Themes\Habitat Sites\Habitat Home Store\styles\components\commerce\navigation-component.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Themes\Habitat Sites\Habitat Home Store\styles\components\commerce\nearest-store-component.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
