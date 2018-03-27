@@ -47,7 +47,7 @@ namespace Sitecore.Feature.NearestStore.Controllers
                 UserLocation ul = new UserLocation();
                 ul.Latitude = userLatitude;
                 ul.Longitude = userLongitude;
-                dynamic stores = from s in this.StoresRepository.GetNearestStores(ul, pid) select s.GetViewModel();
+                dynamic stores = from s in this.StoresRepository.GetNearestStores(ul, pid) where s != null select s.GetViewModel();
                 baseJsonResult = this.Json(stores);
             }
             catch (Exception ex)
