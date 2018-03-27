@@ -33,14 +33,19 @@
                 self.ErrorMessage(data.Errors[0]);
             }
             else {
-                var storesData = result.Data;
+                
                 var storesList = [];
-                //self.NearestStoresList(storesData);
-                $.each(result.Data, function (index, value) {
-                    var newStore = new NewStore(value);                    
-                    storesList.push(newStore);                    
-                });
-                self.NearestStoresList(storesList);
+                if (result.Data.length() > 0) {
+                    $.each(result.Data, function (index, value) {
+                        var newStore = new NewStore(value);
+                        storesList.push(newStore);
+                    });
+                    self.NearestStoresList(storesList);
+                }
+                else {
+    self.ErrorMessage("There are no stores near you.")
+    $('.error-message').show();
+}
             }
         })
     }
@@ -87,7 +92,8 @@
                     self.NearestStoresList(storesList);
                 }
                 else {
-
+                    self.ErrorMessage("There are no stores near you.")
+                    $('.error-message').show();
                 }
             }
         })
