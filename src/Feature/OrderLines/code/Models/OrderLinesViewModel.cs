@@ -11,6 +11,7 @@ using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Sitecore.Feature.OrderLines.Models
 {
@@ -55,8 +56,8 @@ namespace Sitecore.Feature.OrderLines.Models
                 model.Initialize(orderLine, shipping, party);
                 this.Lines.Add(model);
             }
-            this.StoreOrder = order.IsOfflineOrder;
-            this.StoreName = order.ShopName;
+            this.StoreOrder = order.Status.ToLower() == "storeorder" ? true : false;
+            this.StoreName = GetDisplayName(order.ShopName);
             this.TrackingNumber = order.TrackingNumber;
             this.InitializeDataSourceValues();
         }
@@ -95,6 +96,16 @@ namespace Sitecore.Feature.OrderLines.Models
           };
                 }
             }
+        }
+
+        private string GetDisplayName(string StoreId)
+        {
+            var r = new Regex(@"
+                (?<=[A-Z])(?=[A-Z][a-z]) |
+                 (?<=[^A-Z])(?=[A-Z]) |
+                 (?<=[A-Za-z])(?=[^A-Za-z])", RegexOptions.IgnorePatternWhitespace);
+
+            return (r.Replace(StoreId, " "));
         }
     }
 }

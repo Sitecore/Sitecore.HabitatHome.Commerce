@@ -80,27 +80,33 @@
                                     </div>
                                     @if (!string.IsNullOrEmpty(cartLine.ShippingMethodName))
                                     {
-                                        <p class="cart-delivery">
-                                            <span>
-                                                @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
-                                            </span>
+                                    <p class="cart-delivery">
+                                        <span>
+                                            @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
+                                        </span>
 
-                                            @if ((bool)Model.StoreOrder)
-                                            {
-                                                <span class="shippingMethodName">
-                                                    @cartLine.ShippingMethodName (@Model.StoreName)
-                                                </span>
-                                            }
-                                            else
-                                            {
-                                                <span class="shippingMethodName">
-                                                    @cartLine.ShippingMethodName<br />
-                                                    @Model.TrackingNumber
-                                                </span>
-                                            }
+                                        @if ((bool)Model.StoreOrder)
+    {
+                                    <span class="shippingMethodName">
+                                        Pick up at @Model.StoreName
+                                    </span>
+}
+else
+{
+                                    <span class="shippingMethodName">
+                                        @cartLine.ShippingMethodName<br />
 
+                                    </span>
+                                    
 
-                                        </p>
+                                    <div class="field-link">
+                                        <span class="address-label">Tracking #:</span>
+                                
+                                            <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
+                                     
+                                    </div>
+}
+                                    </p>
                                     }
                                     @if (cartLine.Address != null)
                                     {
