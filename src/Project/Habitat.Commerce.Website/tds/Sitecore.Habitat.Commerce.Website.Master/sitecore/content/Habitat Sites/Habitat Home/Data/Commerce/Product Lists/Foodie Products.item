@@ -10,11 +10,25 @@ template: {091B84A9-0A36-46F6-BF5C-09A536EBBF79}
 templatekey: Selected Products
 created: 20180325T034622Z
 
+----field----
+field: {84AE61A2-AD10-42E5-9954-220FED6EE9A5}
+name: Products List
+key: products list
+content-length: 194
+
+{5D59ECC5-E136-A491-B9B8-B0AD29B5529C}|{269EB4BB-98B1-02CD-6CA3-5DF31A38F71D}|{C71D5E50-069B-5D0E-B459-4CA18F0ADBED}|{184B79C7-9766-107E-40C8-CECBFD9EA174}|{0E06E905-746E-EB93-3715-BAFC9EFCD093}
 ----version----
 language: en
 version: 1
-revision: 41e6d765-bf92-4c26-b11e-d792338765b8
+revision: 9df6468f-c3e4-4386-8458-d2b3282747e4
 
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 27
+
+Your Foodie Recommendations
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -42,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-41e6d765-bf92-4c26-b11e-d792338765b8
+9df6468f-c3e4-4386-8458-d2b3282747e4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T223236Z
+20180326T144725Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

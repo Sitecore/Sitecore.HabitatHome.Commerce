@@ -13,7 +13,7 @@ created: 20180323T183807Z
 ----version----
 language: en
 version: 1
-revision: 1ade3239-ed7a-41ac-8a9f-10ae0b28b12d
+revision: a056506a-e3de-47a6-b8fe-d9d43aa3ddd6
 
 ----field----
 field: {14023DD5-30E7-4E3C-BF31-D835F3A87410}
@@ -28,7 +28,7 @@ name: PromoIcon
 key: promoicon
 content-length: 58
 
-<image mediaid="{71324099-6FAD-40D2-B0D6-FA7B671CB919}" />
+<image mediaid="{9F8416A1-1C7B-4024-BB41-DA64D3858608}" />
 ----field----
 field: {B8C1A9D2-DE76-4519-AFF4-1442525F32B0}
 name: PromoLink
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1ade3239-ed7a-41ac-8a9f-10ae0b28b12d
+a056506a-e3de-47a6-b8fe-d9d43aa3ddd6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180322T160655Z
+20180326T193802Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

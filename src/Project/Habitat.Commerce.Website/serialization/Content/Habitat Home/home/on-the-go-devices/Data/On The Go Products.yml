@@ -1,0 +1,25 @@
+﻿---
+ID: "ea0d805d-10ca-42fb-b1d2-f57d6660df6e"
+Parent: "ee5fbc10-6443-48ca-82c2-0eae4c513be2"
+Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/on-the-go-devices/Data/On The Go Products"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180326T203602Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014946Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

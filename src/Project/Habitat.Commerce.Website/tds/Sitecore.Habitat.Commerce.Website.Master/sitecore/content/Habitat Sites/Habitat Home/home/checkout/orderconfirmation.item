@@ -11,6 +11,13 @@ templatekey: Order Confirmation
 created: 20180325T024941Z
 
 ----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 99
+
+<tracking><event id="{78387702-166A-4B38-B21D-5AC1FEC3F59E}" name="Purchase Complete" /></tracking>
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder

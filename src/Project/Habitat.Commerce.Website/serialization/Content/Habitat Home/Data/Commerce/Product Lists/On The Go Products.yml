@@ -1,0 +1,38 @@
+﻿---
+ID: "e18343e5-c678-4fb8-aa98-dca52a3573b7"
+Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
+Template: "091b84a9-0a36-46f6-bf5c-09a536ebbf79"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/On The Go Products
+DB: master
+SharedFields:
+- ID: "84ae61a2-ad10-42e5-9954-220fed6ee9a5"
+  Hint: Products List
+  Type: tree list
+  Value: |
+    {2B13A270-5201-0AF5-D88A-735CEEE24393}
+    {331457BD-6DBF-51EB-C13B-855B19BABB51}
+    {3CA7D4D2-1E04-F300-037A-BED82BA7E329}
+    {0F151979-8FBC-3178-8E6E-B7D3C4D3ABC3}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180326T203723Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014501Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

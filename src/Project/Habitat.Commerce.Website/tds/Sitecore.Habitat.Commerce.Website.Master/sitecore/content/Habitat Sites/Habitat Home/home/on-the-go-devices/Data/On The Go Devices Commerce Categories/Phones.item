@@ -13,15 +13,15 @@ created: 20180323T183716Z
 ----version----
 language: en
 version: 1
-revision: 46d1ec6b-64e3-44b3-9268-9aa949a19b5c
+revision: cbe46441-b1a6-43a2-80ff-03886d082a78
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 130
+content-length: 66
 
-<link text="Phones" anchor="" linktype="internal" class="" title=""  querystring="" id="{8E456D84-4251-DBA1-4B86-CE103DEDCD02}" />
+<link text="Phones" linktype="rel" url="/shop/Phones" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-46d1ec6b-64e3-44b3-9268-9aa949a19b5c
+cbe46441-b1a6-43a2-80ff-03886d082a78
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T224119Z
+20180326T172842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

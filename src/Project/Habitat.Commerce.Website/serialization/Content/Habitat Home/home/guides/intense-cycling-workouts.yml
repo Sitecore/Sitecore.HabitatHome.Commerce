@@ -32,8 +32,15 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}"
+              uid="{211E6D99-CEA2-4DC9-98E3-EDFED7B43063}"
               p:before="*"
+              s:ds="local:/Data/Hero"
+              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}"
+              p:after="r[@uid='{211E6D99-CEA2-4DC9-98E3-EDFED7B43063}']"
               s:ds="local:/Data/Text 1"
               s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
@@ -61,9 +68,9 @@ Languages:
             <r
               uid="{3DB3BE50-9633-477A-852E-D80629A86D1C}"
               p:after="r[@uid='{C33307C9-7854-4827-86B6-DC6B4FAD0142}']"
-              s:ds="{68BC4EFC-3737-EF08-C814-DE74735D9EA7}"
+              s:ds="{1A4B20CF-1BD4-7B3D-8E3C-039ACB54169A}"
               s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;DynamicPlaceholderId=7"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=7"
               s:ph="/main/sxa-article-content/container-1/column-2-1" />
             <r
               uid="{3384003B-7404-4EA4-88F6-D3635337D1C2}"
@@ -116,7 +123,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{283FE52F-D013-42A4-8367-4B129E6F7281}" />
+        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180323T174726Z
@@ -134,7 +141,7 @@ Languages:
       Hint: Content
       Value: |
         <p>These intense cycling workouts are quick, fun, and 5 times as effective as other forms of exercises.</p>
-        <p>Chocolate pudding bonbon pudding. Carrot cake carrot cake wafer sesame snaps tootsie roll. Wafer jelly marzipan sweet roll liquorice drag&eacute;e jelly beans cotton candy. Jelly-o candy canes drag&eacute;e fruitcake lollipop tootsie roll. Gummi bears tiramisu brownie candy biscuit chocolate cake cookie. Cupcake chocolate cake candy canes. Pastry gummies tiramisu dessert jelly. Tart fruitcake pastry danish pie fruitcake cake muffin liquorice. Jelly beans chocolate cake caramels jelly candy canes chupa chups liquorice marzipan gummi bears. Dessert sweet roll cookie pudding cheesecake liquorice brownie caramels. Sweet gingerbread cupcake. Brownie jelly-o jelly-o. Caramels powder lemon drops. Drag&eacute;e cheesecake dessert halvah candy oat cake jelly candy canes.</p>
+        <p>Chocolate pudding bonbon pudding. Carrot cake carrot cake wafer sesame snaps tootsie roll. Wafer jelly marzipan sweet roll liquorice dragée jelly beans cotton candy. Jelly-o candy canes dragée fruitcake lollipop tootsie roll. Gummi bears tiramisu brownie candy biscuit chocolate cake cookie. Cupcake chocolate cake candy canes. Pastry gummies tiramisu dessert jelly. Tart fruitcake pastry danish pie fruitcake cake muffin liquorice. Jelly beans chocolate cake caramels jelly candy canes chupa chups liquorice marzipan gummi bears. Dessert sweet roll cookie pudding cheesecake liquorice brownie caramels. Sweet gingerbread cupcake. Brownie jelly-o jelly-o. Caramels powder lemon drops. Dragée cheesecake dessert halvah candy oat cake jelly candy canes.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -152,9 +159,14 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Intense Cycling Workouts
-- Language: "fr-CA"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Intense Cycling Workouts
+- Language: "ja-JP"
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180327T014507Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

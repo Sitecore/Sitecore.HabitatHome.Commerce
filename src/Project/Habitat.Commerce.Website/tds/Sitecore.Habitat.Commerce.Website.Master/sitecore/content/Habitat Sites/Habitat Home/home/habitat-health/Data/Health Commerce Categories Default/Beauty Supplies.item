@@ -13,15 +13,22 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: d3e484be-7b84-4a70-bf98-bae8e5b6593e
+revision: 63274ba9-8869-43ca-ba86-5b1a77308f5f
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 139
+content-length: 84
 
-<link text="Beauty Supplies" anchor="" linktype="internal" class="" title=""  querystring="" id="{B52C9C73-FD59-42AE-CCEE-9CBEB8DE56FE}" />
+<link text="Beauty Supplies" linktype="rel" url="/shop/Women-s-Shavers" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{ACCBCC3D-04E9-4E4E-949F-5EC0AA91F4ED}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d3e484be-7b84-4a70-bf98-bae8e5b6593e
+63274ba9-8869-43ca-ba86-5b1a77308f5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T225813Z
+20180326T205540Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -64,3 +71,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -13,15 +13,15 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: 4867cdd1-62ed-4037-af5f-d80a461f9e2b
+revision: 1213fb8a-4d7b-4c12-8c36-993796533d6f
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 133
+content-length: 84
 
-<link text="Smart Gym" anchor="" linktype="internal" class="" title=""  querystring="" id="{56E3457D-B331-5CBB-D9EC-FD203ACF1C67}" />
+<link text="Home Gym" linktype="rel" url="/shop/Smart-Sports-Equipment" anchor="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4867cdd1-62ed-4037-af5f-d80a461f9e2b
+1213fb8a-4d7b-4c12-8c36-993796533d6f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180320T230321Z
+20180326T171754Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
