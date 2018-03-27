@@ -16,7 +16,7 @@
     function (element) {
         var component = new Component(element);
         var productListsRawValue = $(component.RootElement).find("[name = productListsRawValue]").val();
-        var relationshipTitles = $(component.RootElement).find("[name = relationshipTitles]").val();
+        var relationshipId = $(component.RootElement).find("[name = relationshipId]").val();
         var currentItemId = $(component.RootElement).find("[name = currentItemId]").val();
         var currentCatalogItemId = $(component.RootElement).find("[name = currentCatalogItemId]").val();
         var maxPageSize = $(component.RootElement).find("[name = maxPageSize]").val();
@@ -24,7 +24,7 @@
 
         component.model = new PromotedProductsViewModel();
         component.model.productListsRawValue(productListsRawValue);
-        component.model.relationshipTitles(relationshipTitles);
+        component.model.relationshipId(relationshipId);
         component.model.currentItemId(currentItemId);
         component.model.currentCatalogItemId(currentCatalogItemId);
         component.model.maxPageSize(maxPageSize);
@@ -33,8 +33,8 @@
 
         component.InExperienceEditorMode = function() {
         }
-        component.Init = function() {
-            component.model.loadPromotedProducts();
+        component.Init = function () {
+            component.model.loadProducts();
             ko.applyBindings(component.model, component.RootElement);
         };
     return component;

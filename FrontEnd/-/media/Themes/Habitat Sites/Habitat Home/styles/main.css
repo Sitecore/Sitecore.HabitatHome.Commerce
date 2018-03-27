@@ -2792,6 +2792,46 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-2Days:before {
+  content: "";
+}
+
+.icon-4Days:before {
+  content: "";
+}
+
+.icon-days:before {
+  content: "";
+}
+
+.icon-Aerobics:before {
+  content: "";
+}
+
+.icon-Low:before {
+  content: "";
+}
+
+.icon-Medium:before {
+  content: "";
+}
+
+.icon-High:before {
+  content: "";
+}
+
+.icon-Strength:before {
+  content: "";
+}
+
+.icon-Weight-Lifting:before {
+  content: "";
+}
+
+.icon-Yoga:before {
+  content: "";
+}
+
 .icon-all-of-them:before {
   content: "";
 }

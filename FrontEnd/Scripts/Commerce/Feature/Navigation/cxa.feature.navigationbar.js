@@ -22,6 +22,18 @@
 }(this, function (element) {
     var component = new Component(element);
 
+    component.Init = function () {
+        $message = $(component.RootElement).data("message-summary-error");
+
+        if ($message) {
+            $(function () {
+                setTimeout(function () {
+                    MessageContext.PublishWarning("", $message, "");
+                }, 2000);
+            });
+        }
+    }
+
     component.Visual.DisableLinks = function () {
         return false;
     }
