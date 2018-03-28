@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
-- Language: "de-DE"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171128T103457Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1
@@ -43,17 +32,6 @@ Languages:
     - ID: "3f4b20e9-36e6-4d45-a423-c86567373f82"
       Hint: Title
       Value:  
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171128T103456Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

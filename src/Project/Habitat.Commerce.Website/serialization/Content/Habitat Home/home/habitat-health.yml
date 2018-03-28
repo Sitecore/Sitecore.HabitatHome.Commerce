@@ -34,58 +34,21 @@ Languages:
               s:key="/main/sxa-content-container/container-1/container-11"
               s:md="/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/container- trainer" />
             <r
-              uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
+              uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
               p:after="p[@uid='{8F07E7AE-AEDE-46D5-B17B-2E6C7B6B5300}']"
+              s:ds="local:/Data/Foodie Products"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists=E3A70BD6-DADC-43CA-9941-EEC8F3E02B93&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type"
+              s:ph="/main/sxa-content-container/container-1/container-14" />
+            <r
+              uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
+              p:after="r[@uid='{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}']"
               s:ds="local:/Data/Fitness Products"
               s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Product List&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists=43243E9E-160C-4930-8698-A9138CDFC95D&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type"
               s:ph="/main/sxa-content-container/container-1/container-18">
               <rls>
                 <ruleset>
-                  <rule
-                    uid="{F62A7C46-59A7-4A96-BC54-65C14ED08239}"
-                    s:name="Foodie">
-                    <conditions>
-                      <or
-                        uid="E3C68750346140C5A1B460800B97D8E5">
-                        <condition
-                          uid="D34C5F95FD364EE19535E3393EF081E4"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
-                        <condition
-                          uid="3904A7F455104C5A89311EB7DC5E0935"
-                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                          s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
-                      </or>
-                    </conditions>
-                    <actions>
-                      <action
-                        uid="B5E88BD6C38F472ABF8568B6F6C87FC4"
-                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="local:/Data/Foodie Products" />
-                    </actions>
-                  </rule>
-                  <rule
-                    uid="{1C2B071B-D784-432B-8397-44C64ACE6056}"
-                    s:name="Fitness">
-                    <conditions>
-                      <condition
-                        uid="86FF64FB55D6416186D2D80A9A050243"
-                        s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
-                        s:GoalId="{A39866FF-6B67-49A1-9D42-34890ABB4815}"
-                        s:NumberOfElapsedDaysOperatorId="{2E1FC840-5919-4C66-8182-A33A1039EDBF}"
-                        s:NumberOfElapsedDays="365"
-                        s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                        s:NumberOfPastInteractions="1" />
-                    </conditions>
-                    <actions>
-                      <action
-                        uid="8BB32D7EFA5D47B390B513E1D9F22408"
-                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="local:/Data/Fitness Products" />
-                    </actions>
-                  </rule>
                   <rule
                     uid="{00000000-0000-0000-0000-000000000000}"
                     s:name="Default">
@@ -94,7 +57,12 @@ Languages:
                         uid="51DBEBAFAB8F4923AC85D2E71D1115B5"
                         s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
-                    <actions />
+                    <actions>
+                      <action
+                        uid="728A98EFEAAB40B2B000F750010AC736"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Fitness Products" />
+                    </actions>
                   </rule>
                 </ruleset>
               </rls>
@@ -404,43 +372,65 @@ Languages:
               uid="{B27113BF-612F-4507-99D4-059C68D7848B}"
               p:after="r[@uid='{B950B0FF-8581-45FB-BC08-0CA25414C611}']"
               s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=14"
-              s:ph="/main/sxa-content-container/container-1" />
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=14"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{5C1BD1A9-6FAE-44F2-8680-1D52346DCDF0}"
+                    s:name="Show For Foodie">
+                    <conditions>
+                      <or
+                        uid="FD8183455F1C49589DD8F89188CFCEE2">
+                        <condition
+                          uid="5C5F71F1E81945FBA837B35021949396"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        <condition
+                          uid="A0E06DD5C62F4E95A6D157BD93E478F5"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Frank Foodie" />
+                      </or>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="99C2D46BC4F2410985A0D265E4B72D7A"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="672DA44C93F84BF6B992E9FC1E01B82B"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
             <r
               uid="{47413929-4892-48C8-AAD7-29472C6BB44F}"
               p:after="r[@uid='{B27113BF-612F-4507-99D4-059C68D7848B}']"
               s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=18"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=18"
               s:ph="/main/sxa-content-container/container-1">
               <rls>
                 <ruleset>
                   <rule
                     uid="{460866CF-97A1-43D0-B55D-76097403A666}"
-                    s:name="Show">
+                    s:name="Show For Fitness">
                     <conditions>
-                      <or
-                        uid="CFEE85F9F35344A1B265BA9342777753">
-                        <or
-                          uid="B397B60C34FA4665A3E80EC6C1EE9BC6">
-                          <condition
-                            uid="EE5B9F5A991E4FCAB1D1BA2D4C180A86"
-                            s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
-                            s:GoalId="{A39866FF-6B67-49A1-9D42-34890ABB4815}"
-                            s:NumberOfElapsedDaysOperatorId="{2E1FC840-5919-4C66-8182-A33A1039EDBF}"
-                            s:NumberOfElapsedDays="365"
-                            s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                            s:NumberOfPastInteractions="1" />
-                          <condition
-                            uid="AFBA1367BE844039ABFCAC2240A3554A"
-                            s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                            s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
-                        </or>
-                        <condition
-                          uid="C7DDCBC56C0247EBAFBF5A413D1DD88A"
-                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                          s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
-                      </or>
+                      <condition
+                        uid="EE5B9F5A991E4FCAB1D1BA2D4C180A86"
+                        s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
+                        s:GoalId="{A39866FF-6B67-49A1-9D42-34890ABB4815}"
+                        s:NumberOfElapsedDaysOperatorId="{2E1FC840-5919-4C66-8182-A33A1039EDBF}"
+                        s:NumberOfElapsedDays="365"
+                        s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                        s:NumberOfPastInteractions="1" />
                     </conditions>
                   </rule>
                   <rule
@@ -575,7 +565,7 @@ Languages:
               p:after="r[@uid='{A540AD71-F883-4E13-966F-B407058520E7}']"
               s:ds=""
               s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{D590210C-4B80-4014-B82E-3DD16DB7331C}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
+              s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7BD590210C-4B80-4014-B82E-3DD16DB7331C%7D%22%20%2F%3E&amp;Styles=%7B45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B%7D%7C%7BF5947911-00C7-4F00-84F4-3D748376BB32%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
               s:ph="/main/sxa-content-container/container-1">
               <rls>
                 <ruleset>
@@ -735,6 +725,12 @@ Languages:
                           s:PatternName="Francine Fitness" />
                       </or>
                     </conditions>
+                    <actions>
+                      <action
+                        uid="4C5CAA258A584F8C979D85B44D19522C"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{8A33684A-7711-4445-A119-BD1EFEC890B6}" />
+                    </actions>
                   </rule>
                   <rule
                     uid="{00000000-0000-0000-0000-000000000000}"
@@ -744,7 +740,12 @@ Languages:
                         uid="9415C6774C09428E8B0C7BE12984C7A5"
                         s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
-                    <actions />
+                    <actions>
+                      <action
+                        uid="FBD369AC65194FE6BDB86FC7A415C6B2"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{6238B3BB-E9C4-4AFB-B445-BE302466691E}" />
+                    </actions>
                   </rule>
                 </ruleset>
               </rls>
@@ -866,6 +867,12 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Habitat Health
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat Health
+  Versions:
 - Language: "ja-JP"
   Versions:
   - Version: 1
