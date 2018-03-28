@@ -1,8 +1,8 @@
 ﻿---
 ID: "f646d538-5cb0-4132-ab98-25a11507b11d"
-Parent: "2ff30b5a-78f1-4abd-b981-8f6bc175f3f0"
+Parent: "d069d737-10e8-4b76-9e07-3e8880f8c5d8"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Order History/Order Lines
+Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Order Lines/Order Lines
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
