@@ -41,12 +41,7 @@
                         storesList.push(newStore);
                     });
                     self.NearestStoresList(storesList);
-                }
-                else {
-    self.ErrorMessage("There are no stores near you.")
-    $('.error-message').show();
-}
-            }
+                }                
         })
     }
 
@@ -90,10 +85,6 @@
                         storesList.push(newStore);
                     });
                     self.NearestStoresList(storesList);
-                }
-                else {
-                    self.ErrorMessage("There are no stores near you.")
-                    $('.error-message').show();
                 }
             }
         })
