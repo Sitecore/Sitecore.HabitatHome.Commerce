@@ -231,7 +231,7 @@ fieldset[disabled] .cxa-addtocart-component .quantity-input button {
   min-height: 42px;
   height: 42px;
   padding: 8px 25px 8px 25px;
-  width: 150px;
+  min-width: 150px;
 }
 
 .cxa-addtocart-component .add-to-cart-btn:active, .cxa-addtocart-component .add-to-cart-btn:hover {
