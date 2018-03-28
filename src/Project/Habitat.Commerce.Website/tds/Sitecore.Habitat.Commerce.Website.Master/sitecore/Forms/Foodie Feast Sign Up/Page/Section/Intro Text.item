@@ -41,15 +41,15 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 08b3843a-18e7-426f-a78a-7bb4788f312b
+revision: 3829a4d9-169e-4aee-8295-243bd2913386
 
 ----field----
 field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
 name: Text
 key: text
-content-length: 28
+content-length: 81
 
-The Foodie Feast Newsletter!
+Sign up to receive the Foodie Feast newsletter and never miss out our new guides!
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-08b3843a-18e7-426f-a78a-7bb4788f312b
+3829a4d9-169e-4aee-8295-243bd2913386
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180322T131841Z
+20180326T154216Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

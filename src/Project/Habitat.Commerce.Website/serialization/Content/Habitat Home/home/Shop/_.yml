@@ -125,6 +125,206 @@ Languages:
               <rls>
                 <ruleset>
                   <rule
+                    uid="{425BC1CC-0CCC-4BD2-A3B8-56CB748F7240}"
+                    s:name="Specify name...">
+                    <actions>
+                      <action
+                        uid="7CF91AE1AA704A77A44B2D87798BB80F"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{0C42B860-6FF6-4565-9992-17BF162EB2FB}" />
+                    </actions>
+                    <conditions>
+                      <or
+                        uid="B484B640C3E24E6EA6523B9785C4321F">
+                        <or
+                          uid="72A1F29BE9F24070BD3934F1B2B4E2E3">
+                          <or
+                            uid="DA2E728410E1439A84F6BBE71394BA7C">
+                            <condition
+                              uid="1A345F6116BE450CA88769000A4A8A2B"
+                              s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                              s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receiver Packages" />
+                            <condition
+                              uid="610DCF9D34E6411B9C88DC1571B75826"
+                              s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                              s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
+                          </or>
+                          <condition
+                            uid="26BE181F3AC844E5A04C7F0CC4ABBEC0"
+                            s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                            s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
+                        </or>
+                        <condition
+                          uid="53FD1AD1B418492283D4FBA581266CF9"
+                          s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Speakers" />
+                      </or>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{73C3F614-29CC-4A82-BCCA-2F89701FB9B3}"
+                    s:name="Gaming">
+                    <actions>
+                      <action
+                        uid="1D9C3E4518DA4D999B2E93C649E673AB"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{C83AE894-69B6-4132-A975-FF38100D9698}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="458F9987253446F8A48D2D5181647D5B"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Consoles" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{0C14B1FC-9434-4E81-81BA-F99F64303123}"
+                    s:name="Speakers">
+                    <actions>
+                      <action
+                        uid="F8A383A081C74C78A88D6F8F519BE150"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{C2BCC990-D175-478C-8500-B8DB8811DA1C}" />
+                    </actions>
+                    <conditions>
+                      <or
+                        uid="CD6DDEF13F1C4D38B6F08D66A9B93D34">
+                        <or
+                          uid="37166E3F3F0040A08FDC656C7BCA540B">
+                          <or
+                            uid="8B642F80A9B24790AE75FE44A773257D">
+                            <or
+                              uid="E38204B45F704820B918DC5B12682A3E">
+                              <or
+                                uid="7A5001A7C65C428EB1B40D04C57581B9">
+                                <condition
+                                  uid="2D9AFEF314824D1D87D61BDFBA1C0079"
+                                  s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                                  s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Speakers" />
+                                <condition
+                                  uid="7024352F16D54E61A40007B5EE8F03A1"
+                                  s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                                  s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Amplifiers" />
+                              </or>
+                              <condition
+                                uid="44F0BE96A6454E6ABB569D6556536433"
+                                s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                                s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Bluetooth Speakers" />
+                            </or>
+                            <condition
+                              uid="BA37FD04658445A083F2967CB5ED7DB7"
+                              s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                              s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Computer Speakers" />
+                          </or>
+                          <condition
+                            uid="FE3D8D6F989447FE8C594F6EA655945E"
+                            s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                            s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Home Audio" />
+                        </or>
+                        <condition
+                          uid="DA2CF47406A446998C66E4E6D448CD0F"
+                          s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Soundbars" />
+                      </or>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{E5F6E097-B61F-4878-A556-6120593E5C7B}"
+                    s:name="Home Theater">
+                    <actions>
+                      <action
+                        uid="9FADE973C6854759A31270201992E76E"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{03F2C4D9-F39D-4B9D-B364-ADE0A6236AEB}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="32F5835C9C3D49598A16732EAEE7294C"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Home Theater" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{7D64D2DF-5319-45A0-8E46-01E1E122D430}"
+                    s:name="Fitness Subscriptions">
+                    <actions>
+                      <action
+                        uid="1E84DC7F69744694A55DF70E149D84CD"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{ADB91091-3FCC-4B88-9A38-52F76D7952FD}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="40D3C7FFCF48426CBD57D598AA0D3248"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Digital Subscriptions" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{7CBF2AA5-DD06-4632-A9EE-0FDE1C14EAC3}"
+                    s:name="Men's Grooming">
+                    <actions>
+                      <action
+                        uid="BC5E452B0EC94E45A381846F605E67AC"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{29E5A94B-1947-430D-ACDA-DEDB06A7BCC7}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="D2476E03409E4A80A9C2FBEF8888C695"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Electric Shaver" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{BEAF618A-3EA3-4952-BAE1-B8A067F0A1A2}"
+                    s:name="Women's Beauty">
+                    <actions>
+                      <action
+                        uid="EC565379EA5143ABBEC4BEF1E6D1F6EE"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{B51E9DCD-BAF6-4659-A2F6-4D4AD9D35946}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="3C81C605039D4900A4206ADC54A91F5C"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Women s Shavers" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{868639BA-0205-4A4F-B697-4AF378A6F261}"
+                    s:name="Home Gym">
+                    <actions>
+                      <action
+                        uid="94BE1DA53EA64063B2DA0107FE5F469C"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{FD1F08FE-BAE7-4901-9148-63783B3BFCDE}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="264C5F71D38446C283DD92A615C6B184"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Smart Sports Equipment" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{E59D5B7A-7181-4F04-87DF-37E366461B48}"
+                    s:name="Wearables">
+                    <conditions>
+                      <condition
+                        uid="6EDF17D56A864956AC8A60893F0C979A"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Fitness Activity Trackers" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="4D996CC3D375428285CD00DEEC7732BE"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{C2E4412B-2FFE-48FB-B642-AFA676E87B24}" />
+                    </actions>
+                  </rule>
+                  <rule
                     uid="{83B74D35-8E74-41F1-BC65-A848E5812FF6}"
                     s:name="Televisions">
                     <conditions>
@@ -145,11 +345,18 @@ Languages:
                     uid="{B2CB307E-BF97-4267-BF71-699F3D741D91}"
                     s:name="Phones">
                     <conditions>
-                      <condition
-                        uid="6C395347B1214BE9B695F720B2FD1893"
-                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones" />
+                      <or
+                        uid="A4EBB4510BDF4D1BA36ADECFA02D1F8F">
+                        <condition
+                          uid="6C395347B1214BE9B695F720B2FD1893"
+                          s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                          s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones"
+                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Phones" />
+                        <condition
+                          uid="38BD4D5095BC45EF8F99F381216B4B87"
+                          s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Accessories" />
+                      </or>
                     </conditions>
                     <actions>
                       <action

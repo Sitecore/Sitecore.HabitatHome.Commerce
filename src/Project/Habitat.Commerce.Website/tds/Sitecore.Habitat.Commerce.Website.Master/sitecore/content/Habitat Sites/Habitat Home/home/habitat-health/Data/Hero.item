@@ -13,7 +13,7 @@ created: 20180325T024956Z
 ----version----
 language: en
 version: 1
-revision: 3efd24a1-9ae5-4557-8b71-87af362be415
+revision: c8f355f7-58df-440d-a0f0-f8be563e8ea3
 
 ----field----
 field: {440B5413-5322-4166-9FBE-580F70973751}
@@ -28,7 +28,7 @@ name: HeroImage
 key: heroimage
 content-length: 58
 
-<image mediaid="{7367FFA5-A84E-49F7-A025-A040A9ABA72E}" />
+<image mediaid="{34510C0D-20F1-4BA1-B14E-D475292196A8}" />
 ----field----
 field: {AF73CF76-4E8A-46B0-9403-BCEA092724EF}
 name: HeroSupertitle
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3efd24a1-9ae5-4557-8b71-87af362be415
+c8f355f7-58df-440d-a0f0-f8be563e8ea3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180319T190608Z
+20180327T210936Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
