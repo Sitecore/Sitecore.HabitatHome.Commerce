@@ -25,11 +25,15 @@ namespace Sitecore.Feature.NearestStore.Repositories
                 throw new ArgumentNullException(nameof(userLocation));
             if(String.IsNullOrEmpty(pid))
                 throw new ArgumentNullException(nameof(pid));
+            List<InventoryStore> inventoryStores = new List<InventoryStore>();
+            inventoryStores = nm.GetNearestStores(userLocation, pid).Take(2).ToList();
+            if (inventoryStores.Count() > 0)
+            {
+                foreach (var store in inventoryStores)
+                    store.InventoryAmount = nm.GetProductInventory(store.InventoryStoreId, pid);
 
-            IEnumerable<InventoryStore> inventoryStores = nm.GetNearestStores(userLocation, pid).Take(2);
-            foreach (var store in inventoryStores)
-                store.InventoryAmount = nm.GetProductInventory(store.InventoryStoreId, pid);
-            
+                
+            }
             return inventoryStores;
         }
 
