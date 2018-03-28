@@ -13,7 +13,7 @@ created: 20180325T024955Z
 ----version----
 language: en
 version: 1
-revision: 14a8a8d2-d7b3-4a4b-9180-83a75749f09d
+revision: 22e81ca0-e813-48a6-953b-cf37955e64cf
 
 ----field----
 field: {14023DD5-30E7-4E3C-BF31-D835F3A87410}
@@ -44,13 +44,6 @@ content-length: 229
 
 <p>Smart cooking might sound gimmicky... but we've tested, and tasted the merits firsthand here at Habitat Home. Best of all, our portfolio of connected small appliances come with a lower cost of entry than ever before!&nbsp;</p>
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -70,25 +63,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-14a8a8d2-d7b3-4a4b-9180-83a75749f09d
+22e81ca0-e813-48a6-953b-cf37955e64cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T121107Z
+20180326T112128Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+sitecore\unicorn

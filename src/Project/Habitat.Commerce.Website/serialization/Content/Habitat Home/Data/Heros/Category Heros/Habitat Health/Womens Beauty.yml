@@ -12,7 +12,7 @@ Languages:
     - ID: "0d089052-245b-4b23-8042-b63d06c8fe64"
       Hint: HeroOverlayImage
       Value: |
-        <image mediaid="{5C23342F-C365-4695-AFD0-2CA58CB72F21}" />
+        <image mediaid="{FCD12D6D-D76B-4DEF-9E0C-D25E1B8995B6}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180323T173442Z
@@ -30,14 +30,3 @@ Languages:
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
       Value: The next generation of healthy beauty products are here.
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180327T014505Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

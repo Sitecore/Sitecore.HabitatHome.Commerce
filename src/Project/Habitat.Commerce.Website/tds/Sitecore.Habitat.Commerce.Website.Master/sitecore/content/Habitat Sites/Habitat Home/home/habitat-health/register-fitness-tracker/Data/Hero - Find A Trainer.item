@@ -13,7 +13,7 @@ created: 20180324T013206Z
 ----version----
 language: en
 version: 1
-revision: 8dc59360-e1ff-41d4-a82c-750c8555d95a
+revision: fdfbeedc-50f4-4d15-99c8-907465c18e3f
 
 ----field----
 field: {440B5413-5322-4166-9FBE-580F70973751}
@@ -29,13 +29,6 @@ key: heroimage
 content-length: 58
 
 <image mediaid="{6AEC1BED-11C8-4C73-85EC-AD088AA5D254}" />
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,25 +49,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8dc59360-e1ff-41d4-a82c-750c8555d95a
+fdfbeedc-50f4-4d15-99c8-907465c18e3f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T193548Z
+20180326T112143Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+extranet\Anonymous
