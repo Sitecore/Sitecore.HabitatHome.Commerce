@@ -1,9 +1,13 @@
+/* breakpoints */
 .component.link-list.image-link-list {
   float: none !important;
 }
 
 .component.link-list.image-link-list h3 {
   border: 0;
+  text-align: center;
+  margin: 0 0 1em;
+  font-size: 24px;
 }
 
 .component.link-list.image-link-list ul {
@@ -15,11 +19,26 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 786px) {
+  .component.link-list.image-link-list ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
 .component.link-list.image-link-list li {
   display: block;
   -ms-flex-preferred-size: 175px;
   flex-basis: 175px;
   text-align: center;
+}
+
+@media only screen and (max-width: 786px) {
+  .component.link-list.image-link-list li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    margin-bottom: 1.5em;
+  }
 }
 
 .component.link-list.image-link-list li > div img {
