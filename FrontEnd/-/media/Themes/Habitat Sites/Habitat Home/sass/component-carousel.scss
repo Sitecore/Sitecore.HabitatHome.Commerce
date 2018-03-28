@@ -291,7 +291,8 @@ $slide-height-large: 833px;
             color:$text-white;
             text-align: left;
             margin-bottom: 35px;
-
+            color: red;
+            
             @include respond-to(all-mobile) {
                 font-size: 84px;
             }

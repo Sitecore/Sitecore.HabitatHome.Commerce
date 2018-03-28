@@ -16,6 +16,11 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
+.component.cxa-register-component {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .component.cxa-register-component .registeration-form form {
   height: 100%;
   width: 100%;
