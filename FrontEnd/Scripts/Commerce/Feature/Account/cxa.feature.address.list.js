@@ -38,7 +38,7 @@
         var mockData = { Addresses: [] };
 
         for (var addressNumber = 1; addressNumber <= maxRecords; addressNumber++) {
-            mockData.Addresses.push({ DetailsUrl: addressPageUrl, Address1: "Lorem ipsum dolor sit", Address2: "consectetur adipiscing elit", City: "Nunc", Country: "Proin", State: "Amet", IsPrimary: (addressNumber === 1) });
+            mockData.Addresses.push({ DetailsUrl: addressPageUrl, Name: "Lorem ipsum dolor sit " + addressNumber, Address1: "Lorem ipsum dolor sit", Address2: "consectetur adipiscing elit", City: "Nunc", Country: "Proin", State: "Amet", IsPrimary: (addressNumber === 1) });
         }
 
         return mockData;

@@ -14,25 +14,23 @@ function PromotedProductsViewModel() {
     var self = this;
     self.promotedProducts = ko.observableArray();
     self.promotedProductsTitle = ko.observable();
-    self.relatedProducts = ko.observableArray();
+    self.productsList = ko.observableArray();
+    self.listTitle = ko.observable();
     self.useLazyLoading = ko.observable(false);
     self.maxPageSize = ko.observable();
     self.pageNumber = ko.observable(0);
     self.currentItemId = ko.observable();
     self.currentCatalogItemId = ko.observable();
     self.productListsRawValue = ko.observable();
-    self.relationshipTitles = ko.observable();
+    self.relationshipId = ko.observable();
+    self.canLoadMoreProducts = ko.observable(false);
 
-    self.canLoadMorePromotedProducts = ko.observable(true);
-    self.canLoadMoreRelatedProducts = ko.observable(true);
-
-    self.loadPromotedProducts = function () {
+    self.loadProducts = function () {
         var params = self.loadingParameters();
 
         AjaxService.Post("/api/cxa/Catalog/GetPromotedProducts", params, function (data, success, sender) {
             if (success && data && data.Success) {
-                addPromotedProducts(data);
-                addRelatedProducts(data);
+                addProductList(data);
             }
         });
     }
@@ -55,31 +53,25 @@ function PromotedProductsViewModel() {
         // Promoted productLists rendering parameter value
         params.plrv = self.productListsRawValue();
 
-        // Related products  relationship titles rendering parameter value
-        params.rt = self.relationshipTitles();
+        // Relationship type field Id rendering parameter value
+        params.rt = self.relationshipId();
 
         return params;
     }
 
-    function addPromotedProducts(data) {
-        $(data.PromotedProducts).each(function () {
-            self.promotedProducts.push(this);
+    function addProductList(data) {
+        $(data.ProductsList).each(function () {
+            self.productsList.push(this);
         });
-        self.promotedProductsTitle(data.PromotedProductsTitle);
-        self.canLoadMorePromotedProducts(data.PromotedProducts && (data.PromotedProducts.length >= (self.maxPageSize() || 4)));
-    };
 
-    function addRelatedProducts(data) {
-        $(data.RelatedProducts).each(function () {
-            self.relatedProducts.push(this);
-        });
-        self.canLoadMoreRelatedProducts(data.RelatedProducts && (data.RelatedProducts.length >= (self.maxPageSize() || 12)));
+        self.listTitle(data.ListTitle);
+        self.canLoadMoreProducts(data.ProductsList && (data.ProductsList.length >= (self.maxPageSize() || 4)));
     };
 
     function getPageNumber() {
         var pageNumber = self.pageNumber();
         // Increment the page number so that the next call for loadMoreProducts will load the next page
-        self.pageNumber(self.pageNumber() +1 );
+        self.pageNumber(self.pageNumber() + 1);
         return pageNumber;
     }
 

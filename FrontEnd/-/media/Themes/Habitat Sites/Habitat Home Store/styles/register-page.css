@@ -1,0 +1,9 @@
+.register-page .title,
+.register-page .cxa-register-component {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.register-page .cxa-register-component {
+  margin-bottom: 80px;
+}
