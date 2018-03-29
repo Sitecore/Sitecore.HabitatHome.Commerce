@@ -1,0 +1,101 @@
+----item----
+version: 1
+id: {1F5C1FB9-F098-42DE-945F-14FEB93164EB}
+database: master
+path: /sitecore/system/Marketing Control Panel/Automation Plans/2018/03/27/20/58/1f5c1fb9-f098-42de-945f-14feb93164eb
+parent: {9D16AAAD-016D-48CA-AEAF-A0441304E340}
+name: 1f5c1fb9-f098-42de-945f-14feb93164eb
+master: {00000000-0000-0000-0000-000000000000}
+template: {D4D43C33-3661-4630-AF63-0754CAB7B110}
+templatekey: Plan Definition
+created: 20180328T145638Z
+
+----field----
+field: {1766652D-080B-409C-ABBF-3A90E0F801F5}
+name: Start Date
+key: start date
+content-length: 16
+
+20180321T172500Z
+----field----
+field: {2C41A32F-86A9-4F43-8550-BF0AF266E3F2}
+name: End Date
+key: end date
+content-length: 16
+
+20180430T040000Z
+----field----
+field: {3FB918C8-08EC-4879-8062-088BBF71EE72}
+name: Plan Data
+key: plan data
+content-length: 2558
+
+{"ReentryMode":0,"ContextKeyFactoryType":null,"EntryActivityId":"5ab0c215-5fba-655d-054a-87b23f4c6b67","Alias":"1f5c1fb9-f098-42de-945f-14feb93164eb","IgnoreIsActiveProperty":true,"Activities":{"5ab0c215-5fba-655d-054a-87b23f4c6b67":{"Paths":{"default":"b37883aa-f790-0832-8a28-20a2242998f6"},"Id":"5ab0c215-5fba-655d-054a-87b23f4c6b67","ActivityTypeId":"8c92d3c1-2c38-4e8a-92d1-9590e17cce89","Parameters":{"Condition":{"$type":"Sitecore.Marketing.Rules.Rule[], Sitecore.Marketing","$values":[{"Id":"017d18a8-a5c3-4ba6-aa37-89555f7189fb","Name":" ","ConditionType":"Sitecore.Marketing.Rules.ConditionNode, Sitecore.Marketing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=null","_condition":{"$type":"Sitecore.Marketing.Rules.ConditionNode, Sitecore.Marketing","Id":"646a2033-4022-43e7-910d-43d003941758","DescriptorId":"2b7a7b4f-a20e-47ff-8445-8cd7d66b1dca","Properties":{"$type":"System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.String, mscorlib]], mscorlib","DefinitionId":"{0D221789-0510-4209-8EB9-8EBC61DB76C3}"}}}]},"UseCondition":true}},"b37883aa-f790-0832-8a28-20a2242998f6":{"Paths":{"false":"287712df-0afd-d68e-36ea-6f0a7b5c6747","true":"71745ddb-b2af-ff64-1309-f2696dc7b849"},"Id":"b37883aa-f790-0832-8a28-20a2242998f6","ActivityTypeId":"bb714802-ce83-491f-963f-16fb11c61bf2","Parameters":{"Goals":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":["78387702-166a-4b38-b21d-5ac1fec3f59e"]},"ListenerDelay":{"$type":"Sitecore.Marketing.Automation.Models.ListenerDelay, Sitecore.Marketing.Automation.Models","Delay":"00:02:00","WaitUntil":null},"MatchAll":false,"Name":"Goal triggered"}},"287712df-0afd-d68e-36ea-6f0a7b5c6747":{"Paths":{"default":"a71b6e73-018e-4c95-aaae-859b75751b02"},"Id":"287712df-0afd-d68e-36ea-6f0a7b5c6747","ActivityTypeId":"dd1184fd-2225-497d-a009-25f1b08af4f4","Parameters":{}},"a71b6e73-018e-4c95-aaae-859b75751b02":{"Paths":{"default":"60581e6c-7cf7-4729-78c3-2ff62e62a750"},"Id":"a71b6e73-018e-4c95-aaae-859b75751b02","ActivityTypeId":"51774db5-b90b-4189-9613-104039723a0b","Parameters":{"MessageId":"caf67df7-5ec9-4480-9cd5-5346648b55eb"}},"71745ddb-b2af-ff64-1309-f2696dc7b849":{"Paths":{"default":"60581e6c-7cf7-4729-78c3-2ff62e62a750"},"Id":"71745ddb-b2af-ff64-1309-f2696dc7b849","ActivityTypeId":"fef847a8-540e-408d-9cf1-3d8a133c3de0","Parameters":{}},"60581e6c-7cf7-4729-78c3-2ff62e62a750":{"Paths":{},"Id":"60581e6c-7cf7-4729-78c3-2ff62e62a750","ActivityTypeId":"a47371c2-8921-421f-8902-f3eccd229d56","Parameters":{}}},"UniversalActivities":{}}
+----field----
+field: {621D7A1F-C6A3-4A2F-8FCD-7DD1FD893C9C}
+name: Custom Values
+key: custom values
+content-length: 2
+
+{}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: 34470358-d48e-4d84-a2ef-c7e2d3003811
+
+----field----
+field: {365F1971-B028-4065-BC11-CE1F471452AF}
+name: Name
+key: name
+content-length: 34
+
+Browse Recover Automation Campaign
+----field----
+field: {E259E500-B38E-41FE-82DB-8B604BCF9E75}
+name: Description
+key: description
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180327T205833Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+34470358-d48e-4d84-a2ef-c7e2d3003811
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180328T173515Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{39156DC0-21C6-4F64-B641-31E85C8F5DFE}
