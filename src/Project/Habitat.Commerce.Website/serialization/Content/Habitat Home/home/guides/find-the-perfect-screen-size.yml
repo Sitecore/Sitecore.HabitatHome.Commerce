@@ -47,6 +47,10 @@ Languages:
               s:ph="/main/sxa-article-content/container-1" />
           </d>
         </r>
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{F8454421-62A2-4BEF-8A49-A28C8405DC86}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180323T152749Z
@@ -83,3 +87,14 @@ Languages:
     Hint: __Display name
     Value: Find the Perfect Screen Size
   Versions:
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180329T160024Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
