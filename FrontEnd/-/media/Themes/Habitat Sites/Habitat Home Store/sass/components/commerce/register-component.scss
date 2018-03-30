@@ -1,6 +1,9 @@
 @import '../../index';
 
 .component.cxa-register-component{
+    max-width: 500px;
+    margin: 0 auto;
+    
     .registeration-form{
         form {
             @include vertical-form-layout();

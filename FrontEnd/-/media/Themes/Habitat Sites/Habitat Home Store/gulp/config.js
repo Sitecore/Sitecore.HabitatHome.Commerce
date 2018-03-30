@@ -8,7 +8,7 @@ export default {
     sassSourceMap: false,
     // Please configure
     serverOptions: {
-        server: 'http://sxa.storefront.com', //need to be changed
+        server: 'https://habitathomedemo.hhogdev.com', //need to be changed
         removeScriptPath: '/-/script/v2/master/RemoveMedia',
         uploadScriptPath: '/sitecore modules/PowerShell/Services/RemoteScriptCall.ashx',
         updateTemplatePath: '/-/script/v2/master/ChangeTemplate',
