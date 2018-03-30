@@ -8,22 +8,22 @@ name: Add To Cart
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20180127T222200Z
+created: 20180314T083802Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 95
+content-length: 75
 
-Sitecore.Commerce.XA.Feature.Cart.Controllers.CartController, Sitecore.Commerce.XA.Feature.Cart
+Sitecore.Feature.Cart.Controllers.DemoCartController, Sitecore.Feature.Cart
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 9
+content-length: 13
 
-AddToCart
+AddToDemoCart
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -55,7 +55,7 @@ Office/16x16/shopping_bag_full.png
 ----version----
 language: en
 version: 1
-revision: 228fccee-df06-428e-9e49-f959e01d570b
+revision: 96d90d63-b216-4200-a344-0bda9ffe6579
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -64,13 +64,6 @@ key: __display name
 content-length: 11
 
 Add To Cart
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -91,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-228fccee-df06-428e-9e49-f959e01d570b
+96d90d63-b216-4200-a344-0bda9ffe6579
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20171211T083025Z
+20180329T142331Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

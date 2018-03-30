@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {D4C2C340-C869-405B-ABAB-61EA18DCDE52}
+database: master
+path: /sitecore/system/Marketing Control Panel/Automation Plans/2018/03/27
+parent: {A12F368F-9382-4BA7-B5DE-084ECFF373AF}
+name: 27
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADB6CA4F-03EF-4F47-B9AC-9CE2BA53FF97}
+templatekey: Bucket
+created: 20180328T145636Z
+
+----version----
+language: en
+version: 1
+revision: 8ed14260-4518-4864-88b3-b21f5760f963
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180327T205833Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8ed14260-4518-4864-88b3-b21f5760f963
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180328T173515Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

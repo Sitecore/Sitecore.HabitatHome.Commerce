@@ -16,14 +16,14 @@ name: Controller
 key: controller
 content-length: 75
 
-Sitecore.Feature.Cart.Controllers.MiniCartController, Sitecore.Feature.Cart
+Sitecore.Feature.Cart.Controllers.DemoCartController, Sitecore.Feature.Cart
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 8
+content-length: 12
 
-Minicart
+DemoMinicart
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -62,7 +62,7 @@ Office/16x16/shopping_bag.png
 ----version----
 language: en
 version: 1
-revision: 4bc989cc-ad70-4635-ab26-bfe6454d81da
+revision: 426f5f71-28ea-453d-ba1b-8e35a305c956
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -91,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4bc989cc-ad70-4635-ab26-bfe6454d81da
+426f5f71-28ea-453d-ba1b-8e35a305c956
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180325T052219Z
+20180329T143137Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

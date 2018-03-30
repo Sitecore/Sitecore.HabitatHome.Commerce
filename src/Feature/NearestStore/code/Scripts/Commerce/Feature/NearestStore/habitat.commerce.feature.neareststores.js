@@ -33,7 +33,7 @@
                 self.ErrorMessage(data.Errors[0]);
             }
             else {
-                
+
                 var storesList = [];
                 if (result.Data.length > 0) {
                     $.each(result.Data, function (index, value) {
@@ -41,9 +41,10 @@
                         storesList.push(newStore);
                     });
                     self.NearestStoresList(storesList);
-                }                
-        })
-    }
+                }
+            }
+        });
+    }    
 
     self.GetInventory = function () {
         var ServiceRequest = new Object();        
