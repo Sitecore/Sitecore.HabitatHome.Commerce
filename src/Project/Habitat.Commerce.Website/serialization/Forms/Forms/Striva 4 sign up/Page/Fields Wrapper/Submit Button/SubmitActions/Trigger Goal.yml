@@ -8,7 +8,7 @@ SharedFields:
 - ID: "5c796924-3f06-4d1f-8510-8ad9a4244477"
   Hint: Parameters
   Value: |
-    {"referenceId":"{ECC7FA00-8B66-47E4-AAD2-5477E6C9D8B7}"}
+    {"referenceId":"{95810E6D-E7B5-4D15-A3E4-B064B148E2E2}"}
 - ID: "abc57b6d-5542-4ab9-a889-106225a032e6"
   Hint: Submit Action
   Value: "{106587B9-1B9C-4DDB-AE96-BAC8416C21B5}"
@@ -27,3 +27,14 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210726Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

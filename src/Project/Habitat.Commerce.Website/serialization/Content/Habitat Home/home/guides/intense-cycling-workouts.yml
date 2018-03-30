@@ -82,6 +82,17 @@ SharedFields:
       </profile>
     </tracking>
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210530Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -143,7 +154,7 @@ Languages:
               p:after="r[@uid='{211E6D99-CEA2-4DC9-98E3-EDFED7B43063}']"
               s:ds="local:/Data/Text 1"
               s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={B3CF5C8B-D6AA-4A97-9CB9-8048F269B9B6}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
               s:ph="/main/sxa-recommended-content/container-1" />
             <r
               uid="{E192B52C-6224-47FA-9616-27CF7B0C88A2}"
@@ -164,7 +175,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}" />
+        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180323T174726Z
@@ -193,7 +204,7 @@ Languages:
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{283FE52F-D013-42A4-8367-4B129E6F7281}" />
+        <image mediaid="{ABA71F37-F063-448D-9675-1D2530E8A9C7}" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
       Value: <p>These intense cycling workouts are quick, fun, and 5 times as effective as other forms of exercises.</p>

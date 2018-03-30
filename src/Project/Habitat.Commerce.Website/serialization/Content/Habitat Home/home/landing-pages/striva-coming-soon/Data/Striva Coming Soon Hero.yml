@@ -12,7 +12,7 @@ Languages:
     - ID: "0d089052-245b-4b23-8042-b63d06c8fe64"
       Hint: HeroOverlayImage
       Value: |
-        <image mediaid="{7367FFA5-A84E-49F7-A025-A040A9ABA72E}" />
+        <image mediaid="{130ADEFC-6528-4813-8D84-47DA589126AC}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180322T215433Z
@@ -26,10 +26,21 @@ Languages:
     - ID: "9c385368-a554-4a92-9a8d-37f3ef3a09f4"
       Hint: HeroImage
       Value: |
-        <image mediaid="{73398813-9AB9-46A4-B305-EC7BB7E97A14}" alt="image" height="" width="" hspace="" vspace="" ></image>
+        <image mediaid="{F5E11C3E-6AF7-4B25-AF41-08A6F173B45A}" alt="image" height="" width="" hspace="" vspace=""></image>
     - ID: "af73cf76-4e8a-46b0-9403-bcea092724ef"
       Hint: HeroSupertitle
       Value: Habitat Health
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
       Value: The best in fitness tracking capabilities.&nbsp;
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

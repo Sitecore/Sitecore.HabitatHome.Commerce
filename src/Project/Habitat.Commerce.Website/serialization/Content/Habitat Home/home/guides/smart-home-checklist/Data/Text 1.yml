@@ -9,6 +9,17 @@ SharedFields:
   Hint: __Workflow
   Value: "{FA377E81-7540-4995-A1B3-6A961B7458B9}"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210553Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: en
   Versions:
   - Version: 1

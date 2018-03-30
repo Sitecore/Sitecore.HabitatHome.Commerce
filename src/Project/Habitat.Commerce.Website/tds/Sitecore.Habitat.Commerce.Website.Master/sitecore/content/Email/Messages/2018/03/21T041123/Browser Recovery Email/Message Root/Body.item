@@ -27,7 +27,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 884ce2d4-5ed3-46e4-bc4d-a0b5852c5edc
+revision: 4ccbcb4a-0bb9-462b-bcb7-19e56c2887e5
 
 ----field----
 field: {9C4FE3FF-D76E-462B-97B7-80DBB35A80DF}
@@ -36,13 +36,6 @@ key: title
 content-length: 29
 
 Smart Kitchens Are The Future
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -63,25 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-884ce2d4-5ed3-46e4-bc4d-a0b5852c5edc
+4ccbcb4a-0bb9-462b-bcb7-19e56c2887e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T161424Z
+20180328T173519Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
+sitecore\unicorn

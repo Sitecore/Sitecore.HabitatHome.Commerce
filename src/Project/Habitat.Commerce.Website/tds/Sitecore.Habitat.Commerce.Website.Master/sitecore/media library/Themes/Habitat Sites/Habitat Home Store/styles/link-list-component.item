@@ -8,28 +8,35 @@ name: link-list-component
 master: {00000000-0000-0000-0000-000000000000}
 template: {962B53C4-F93B-4DF9-9821-415C867B8903}
 templatekey: File
-created: 20180221T164202Z
+created: 20180325T025023Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
 name: Blob
 key: blob
-content-length: 1062
+content-length: 1604
 
-LmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2UtbGluay1saXN0IHsKICBmbG9hdDogbm9uZSAhaW1w
-b3J0YW50Owp9CgouY29tcG9uZW50LmxpbmstbGlzdC5pbWFnZS1saW5rLWxpc3QgaDMgewogIGJv
-cmRlcjogMDsKfQoKLmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2UtbGluay1saXN0IHVsIHsKICBk
-aXNwbGF5OiAtd2Via2l0LWJveDsKICBkaXNwbGF5OiAtbXMtZmxleGJveDsKICBkaXNwbGF5OiBm
-bGV4OwogIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjsKICAtbXMtZmxleC1wYWNrOiBjZW50ZXI7
-CiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7Cn0KCi5jb21wb25lbnQubGluay1saXN0LmltYWdl
-LWxpbmstbGlzdCBsaSB7CiAgZGlzcGxheTogYmxvY2s7CiAgLW1zLWZsZXgtcHJlZmVycmVkLXNp
-emU6IDE3NXB4OwogIGZsZXgtYmFzaXM6IDE3NXB4OwogIHRleHQtYWxpZ246IGNlbnRlcjsKfQoK
-LmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2UtbGluay1saXN0IGxpID4gZGl2IGltZyB7CiAgd2lk
-dGg6IDEwMHB4OwogIGhlaWdodDogYXV0bzsKfQoKLmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2Ut
-bGluay1saXN0IGxpID4gZGl2IGEgewogIHBhZGRpbmc6IDA7CiAgdGV4dC10cmFuc2Zvcm06IHVw
-cGVyY2FzZTsKICBmb250LXdlaWdodDogYm9sZDsKICBmb250LXNpemU6IDE0cHg7CiAgbGluZS1o
-ZWlnaHQ6IDI2cHg7Cn0KCi5jb21wb25lbnQubGluay1saXN0LmltYWdlLWxpbmstbGlzdCBsaSA+
-IGRpdiBhOmJlZm9yZSB7CiAgZGlzcGxheTogbm9uZTsKfQo=
+LyogYnJlYWtwb2ludHMgKi8KLmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2UtbGluay1saXN0IHsK
+ICBmbG9hdDogbm9uZSAhaW1wb3J0YW50Owp9CgouY29tcG9uZW50LmxpbmstbGlzdC5pbWFnZS1s
+aW5rLWxpc3QgaDMgewogIGJvcmRlcjogMDsKICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgbWFyZ2lu
+OiAwIDAgMWVtOwogIGZvbnQtc2l6ZTogMjRweDsKfQoKLmNvbXBvbmVudC5saW5rLWxpc3QuaW1h
+Z2UtbGluay1saXN0IHVsIHsKICBkaXNwbGF5OiAtd2Via2l0LWJveDsKICBkaXNwbGF5OiAtbXMt
+ZmxleGJveDsKICBkaXNwbGF5OiBmbGV4OwogIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjsKICAt
+bXMtZmxleC1wYWNrOiBjZW50ZXI7CiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7Cn0KCkBtZWRp
+YSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzg2cHgpIHsKICAuY29tcG9uZW50Lmxpbmst
+bGlzdC5pbWFnZS1saW5rLWxpc3QgdWwgewogICAgLW1zLWZsZXgtd3JhcDogd3JhcDsKICAgIGZs
+ZXgtd3JhcDogd3JhcDsKICB9Cn0KCi5jb21wb25lbnQubGluay1saXN0LmltYWdlLWxpbmstbGlz
+dCBsaSB7CiAgZGlzcGxheTogYmxvY2s7CiAgLW1zLWZsZXgtcHJlZmVycmVkLXNpemU6IDE3NXB4
+OwogIGZsZXgtYmFzaXM6IDE3NXB4OwogIHRleHQtYWxpZ246IGNlbnRlcjsKfQoKQG1lZGlhIG9u
+bHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3ODZweCkgewogIC5jb21wb25lbnQubGluay1saXN0
+LmltYWdlLWxpbmstbGlzdCBsaSB7CiAgICAtbXMtZmxleC1wcmVmZXJyZWQtc2l6ZTogNTAlOwog
+ICAgZmxleC1iYXNpczogNTAlOwogICAgbWFyZ2luLWJvdHRvbTogMS41ZW07CiAgfQp9CgouY29t
+cG9uZW50LmxpbmstbGlzdC5pbWFnZS1saW5rLWxpc3QgbGkgPiBkaXYgaW1nIHsKICB3aWR0aDog
+MTAwcHg7CiAgaGVpZ2h0OiBhdXRvOwp9CgouY29tcG9uZW50LmxpbmstbGlzdC5pbWFnZS1saW5r
+LWxpc3QgbGkgPiBkaXYgYSB7CiAgcGFkZGluZzogMDsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJj
+YXNlOwogIGZvbnQtd2VpZ2h0OiBib2xkOwogIGZvbnQtc2l6ZTogMTRweDsKICBsaW5lLWhlaWdo
+dDogMjZweDsKfQoKLmNvbXBvbmVudC5saW5rLWxpc3QuaW1hZ2UtbGluay1saXN0IGxpID4gZGl2
+IGE6YmVmb3JlIHsKICBkaXNwbGF5OiBub25lOwp9Cg==
 ----field----
 field: {C06867FE-9A43-4C7D-B739-48780492D06F}
 name: Extension
@@ -48,9 +55,9 @@ text/css
 field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
 name: Size
 key: size
-content-length: 3
+content-length: 4
 
-776
+1171
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -61,7 +68,7 @@ content-length: 61
 ----version----
 language: en
 version: 1
-revision: 8d49877a-67a1-450f-9677-22817637e682
+revision: 0c396554-0678-43e3-a760-8e771e6cbe72
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8d49877a-67a1-450f-9677-22817637e682
+0c396554-0678-43e3-a760-8e771e6cbe72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180309T215529Z
+20180330T203133Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -44,3 +44,14 @@ Languages:
     - ID: "d6d7cf71-876a-4572-837d-cf995c05ea15"
       Hint: Subject
       Value: Thanks for visiting...
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210731Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
