@@ -101,6 +101,12 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Best In Wearable Fitness Tech
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Best In Wearable Fitness Technology
+  Versions:
 - Language: "fr-FR"
   Versions:
   - Version: 1
