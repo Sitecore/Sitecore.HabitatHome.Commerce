@@ -13,7 +13,7 @@ created: 20180325T024955Z
 ----version----
 language: en
 version: 1
-revision: 9e7f30da-a563-4d38-86f2-24a45b8312bb
+revision: 5a0c2eaa-abde-4f22-ae10-501eec6761c9
 
 ----field----
 field: {14023DD5-30E7-4E3C-BF31-D835F3A87410}
@@ -28,7 +28,7 @@ name: PromoIcon
 key: promoicon
 content-length: 58
 
-<image mediaid="{C8776A82-BB4C-4509-9D64-DAF6F10F7717}" />
+<image mediaid="{C572C422-19D2-4F46-812C-659196B6D15A}" />
 ----field----
 field: {B8C1A9D2-DE76-4519-AFF4-1442525F32B0}
 name: PromoLink
@@ -63,18 +63,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e7f30da-a563-4d38-86f2-24a45b8312bb
+5a0c2eaa-abde-4f22-ae10-501eec6761c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T112128Z
+20180330T155726Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

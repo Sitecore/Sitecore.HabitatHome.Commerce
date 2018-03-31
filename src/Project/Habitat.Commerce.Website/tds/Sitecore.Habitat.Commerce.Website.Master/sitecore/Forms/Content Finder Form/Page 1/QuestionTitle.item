@@ -1,0 +1,188 @@
+----item----
+version: 1
+id: {DA94A627-7313-463B-8C67-6DA82EE90566}
+database: master
+path: /sitecore/Forms/Content Finder Form/Page 1/QuestionTitle
+parent: {8BEBCD20-8360-49F2-BE9A-DD23C618CA78}
+name: QuestionTitle
+master: {00000000-0000-0000-0000-000000000000}
+template: {FC18F915-EAC6-460A-8777-6E1376A9EA09}
+templatekey: Text
+created: 20180323T040805Z
+
+----field----
+field: {C6CAA979-C3AC-4FFC-861E-2961F5FC3C48}
+name: Html Tag
+key: html tag
+content-length: 2
+
+h3
+----field----
+field: {7ABAA3F6-6EC0-4B65-A463-7919BFAE55AA}
+name: Css Class
+key: css class
+content-length: 14
+
+question-title
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{983BFA5F-C6B6-4AEE-A3BB-46B95D52E7DF}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+-100
+----version----
+language: en
+version: 1
+revision: 5a7f05cf-e3f0-49fb-9c49-d3134e12f504
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 27
+
+What are you interested in?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171215T141328Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5a7f05cf-e3f0-49fb-9c49-d3134e12f504
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111412Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: fr-CA
+version: 1
+revision: 5fa18a33-ad13-4a38-b716-2f2404796f4d
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 29
+
+Qu'est-ce qui vous intéresse?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180130T135659Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5fa18a33-ad13-4a38-b716-2f2404796f4d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111412Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 1e84c544-360f-47d0-9c1c-4383fe9d7f72
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 11
+
+何に興味がありますか？
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+質問のタイトル
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104941Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1e84c544-360f-47d0-9c1c-4383fe9d7f72
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111412Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

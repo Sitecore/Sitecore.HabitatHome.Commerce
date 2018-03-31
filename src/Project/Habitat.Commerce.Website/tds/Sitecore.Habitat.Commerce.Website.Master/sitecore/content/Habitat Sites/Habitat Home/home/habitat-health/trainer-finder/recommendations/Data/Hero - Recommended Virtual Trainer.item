@@ -13,7 +13,7 @@ created: 20180325T025006Z
 ----version----
 language: en
 version: 1
-revision: d4c6d795-4d63-422c-aaf5-2432bf2d1262
+revision: 20f1a14c-0a22-427f-9c79-f14ff5c2ba60
 
 ----field----
 field: {440B5413-5322-4166-9FBE-580F70973751}
@@ -26,9 +26,9 @@ Meet Your Virtual Trainer!
 field: {9C385368-A554-4A92-9A8D-37F3EF3A09F4}
 name: HeroImage
 key: heroimage
-content-length: 58
+content-length: 110
 
-<image mediaid="{6AEC1BED-11C8-4C73-85EC-AD088AA5D254}" />
+<image mediaid="{6AEC1BED-11C8-4C73-85EC-AD088AA5D254}" alt="Sydney" height="" width="" hspace="" vspace="" />
 ----field----
 field: {AF73CF76-4E8A-46B0-9403-BCEA092724EF}
 name: HeroSupertitle
@@ -56,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4c6d795-4d63-422c-aaf5-2432bf2d1262
+20f1a14c-0a22-427f-9c79-f14ff5c2ba60
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T112149Z
+20180330T141259Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin

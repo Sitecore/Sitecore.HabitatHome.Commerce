@@ -1,0 +1,120 @@
+----item----
+version: 1
+id: {0ACB1B7C-5A38-4EB2-B427-5C4B08DB572C}
+database: master
+path: /sitecore/Forms/Onboarding Sign Up/Page/Fields Wrapper/Submit Button/SubmitActions/Trigger Goal
+parent: {FEA55CE8-3A45-4321-B9D1-624EE8F257FE}
+name: Trigger Goal
+master: {00000000-0000-0000-0000-000000000000}
+template: {05FE45D4-B9C7-40DE-B767-7C5ABE7119F9}
+templatekey: Submit Action Definition
+created: 20180323T040808Z
+
+----field----
+field: {ABC57B6D-5542-4AB9-A889-106225A032E6}
+name: Submit Action
+key: submit action
+content-length: 38
+
+{106587B9-1B9C-4DDB-AE96-BAC8416C21B5}
+----field----
+field: {5C796924-3F06-4D1F-8510-8AD9A4244477}
+name: Parameters
+key: parameters
+content-length: 56
+
+{"referenceId":"{ECC7FA00-8B66-47E4-AAD2-5477E6C9D8B7}"}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
+----version----
+language: en
+version: 1
+revision: ae56dc99-09a4-4218-815f-38e69b704dd9
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171206T194058Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ae56dc99-09a4-4218-815f-38e69b704dd9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111415Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 4bd9a655-e86f-4a5a-bf88-799d3702570b
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+ゴールをトリガー
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104947Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4bd9a655-e86f-4a5a-bf88-799d3702570b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111415Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
