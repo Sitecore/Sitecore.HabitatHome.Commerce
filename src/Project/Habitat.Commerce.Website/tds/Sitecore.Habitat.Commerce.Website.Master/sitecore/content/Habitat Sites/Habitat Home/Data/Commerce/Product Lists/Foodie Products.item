@@ -1,0 +1,106 @@
+----item----
+version: 1
+id: {E3A70BD6-DADC-43CA-9941-EEC8F3E02B93}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Foodie Products
+parent: {E1B36626-2FB2-45A8-AEC5-7E47C7F88C0D}
+name: Foodie Products
+master: {00000000-0000-0000-0000-000000000000}
+template: {091B84A9-0A36-46F6-BF5C-09A536EBBF79}
+templatekey: Selected Products
+created: 20180325T034622Z
+
+----field----
+field: {84AE61A2-AD10-42E5-9954-220FED6EE9A5}
+name: Products List
+key: products list
+content-length: 194
+
+{5D59ECC5-E136-A491-B9B8-B0AD29B5529C}|{269EB4BB-98B1-02CD-6CA3-5DF31A38F71D}|{C71D5E50-069B-5D0E-B459-4CA18F0ADBED}|{184B79C7-9766-107E-40C8-CECBFD9EA174}|{0E06E905-746E-EB93-3715-BAFC9EFCD093}
+----version----
+language: en
+version: 1
+revision: c2ddaabb-b240-49c3-977a-edafdd499a60
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 27
+
+Your Foodie Recommendations
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180323T223236Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2ddaabb-b240-49c3-977a-edafdd499a60
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180327T021027Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: c9dc6c39-b208-4932-824d-5bdeb55a96a6
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180327T014502Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c9dc6c39-b208-4932-824d-5bdeb55a96a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180327T021027Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

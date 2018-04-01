@@ -1,0 +1,47 @@
+﻿@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@using Sitecore.Feature.NearestStore.Models
+
+@model UserLocation
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+}
+
+<div id="divNearestStores" class="component cxa-nearest-store-component" data-attr-lat="@Model.Latitude" data-att-long="@Model.Longitude">
+   
+    <div class="loader" style="display:none;">Loading...</div>
+    <div>
+        <!-- ko foreach: NearestStoresList --> 
+        <div class="store-pickup">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- ko if: ZeroInventory -->
+                    <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
+                    <!--/ko-->
+                    <!-- ko if: Limited -->
+                    <label>Only  <span data-bind="text: InventoryAmount"></span> available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away)</label><br />
+                    <div class="product-item-pickup">
+                        <a class="btn" href="#">Pick up at this store</a>
+                    </div>
+                    <!--/ko-->
+                    <!-- ko ifnot: Limited -->
+                    <!-- ko ifnot: ZeroInventory -->
+                    <label>Available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away) </label><br />
+                    <div class="product-item-pickup">
+                        <a class="btn" href="#">Pick up at this store</a>
+                    </div>
+                    <!--/ko-->
+                    <!--/ko-->
+                </div>
+            </div>
+        </div>
+
+        <!--/ko-->
+    </div>
+    
+    
+</div>

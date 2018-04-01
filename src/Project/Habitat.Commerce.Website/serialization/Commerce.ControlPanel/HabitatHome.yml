@@ -1,0 +1,26 @@
+﻿---
+ID: "2f395077-da43-4935-b85c-29ae53a62f50"
+Parent: "99a2d449-7cc0-4fac-b516-db2176898898"
+Template: "59190273-fdcc-4048-9537-7edbdf94b22d"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B0CFD948-A7EB-4F73-888A-E3A2E1B6A387}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "a68724cc-9513-46f5-aa82-d26c0644b21d"
+      Hint: Title
+      Value: HabitatHome

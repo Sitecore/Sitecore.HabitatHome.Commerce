@@ -1,0 +1,15 @@
+@import '../../index';
+
+/* input, textarea{
+    box-shadow: none !important;
+    @include transition();
+    &:active, &:focus{
+        border:1px solid $primary-color;
+        @include transition();
+        outline: none !important;
+    }
+}
+
+textarea{
+    min-height: 50px;
+} */

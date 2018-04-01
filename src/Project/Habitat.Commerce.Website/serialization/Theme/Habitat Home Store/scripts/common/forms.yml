@@ -1,0 +1,42 @@
+﻿---
+ID: "bd768848-f79e-4f61-b35a-8d2e7d5733c5"
+Parent: "cdb03b76-2691-4ec1-806f-b2d8bd92d4e7"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/common/forms
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/1EF8B777624E4C7B8F4CFEAF6C75A393.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "7a3c7149-f609-4c57-afce-1a07b0d3b960"
+  Value: KGZ1bmN0aW9uIChyb290LCAkLCBmYWN0b3J5KSB7DQogIGZhY3RvcnkoJCkNCn0od2luZG93LCB3aW5kb3cualF1ZXJ5LCBmdW5jdGlvbiAoJCkgew0KICAkKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbiAoKSB7DQogICAgdmFyIGNvbXBvbmVudHMgPSAkKCcuY29tcG9uZW50LWNvbnRlbnQnKQ0KICAgIHZhciBmb3JtcyA9IGNvbXBvbmVudHMuZmluZCgnZm9ybScpOw0KICAgICQoZm9ybXMpLmVhY2goZnVuY3Rpb24gKCkgew0KICAgICAgdmFyIGZvcm0gPSB0aGlzDQogICAgICAkKHRoaXMpLm9uKCdzdWJtaXQnLCBmdW5jdGlvbiAoKSB7DQogICAgICAgIGlmICgkKGZvcm0pLnZhbGlkKCkpDQogICAgICAgIHsNCiAgICAgICAgICAgIHdpbmRvdy5NZXNzYWdlQ29udGV4dC5DbGVhckFsbE1lc3NhZ2VzKCkNCiAgICAgICAgICAgIA0KICAgICAgICAgICAgdmFyIHN1Ym1pdEJ1dHRvbiA9ICQodGhpcykuZmluZCgnOnN1Ym1pdCcpIA0KICAgICAgICAgICAgaWYoISQoc3VibWl0QnV0dG9uKS5oYXNDbGFzcygnc2VhcmNoLWJ1dHRvbicpKSB7DQogICAgICAgICAgICAgICQoc3VibWl0QnV0dG9uKS5idXR0b24oJ2xvYWRpbmcnKQ0KICAgICAgICAgICAgfSAgICAgICAgICANCiAgICAgICAgICAgIA0KICAgICAgICB9DQogICAgICAgIA0KICAgICAgfSkNCiAgICAgICQoZG9jdW1lbnQpLm9uKCdhamF4Q29tcGxldGUnLCBmdW5jdGlvbiAoKSB7DQogICAgICAgIHZhciBzdWJtaXRCdXR0b24gPSAkKGZvcm1zKS5maW5kKCc6c3VibWl0JykNCiAgICAgICAgJChzdWJtaXRCdXR0b24pLmJ1dHRvbigncmVzZXQnKQ0KICAgICAgfSkNCiAgICAgICQoZG9jdW1lbnQpLm9uKCdhamF4RXJyb3InLCBmdW5jdGlvbiAoKSB7DQogICAgICAgIHZhciBzdWJtaXRCdXR0b24gPSAkKGZvcm1zKS5maW5kKCc6c3VibWl0JykNCiAgICAgICAgJChzdWJtaXRCdXR0b24pLmJ1dHRvbigncmVzZXQnKQ0KICAgICAgfSkNCiAgICB9KQ0KICB9KQ0KfSkpOw0K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 984
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034921Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T034921Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

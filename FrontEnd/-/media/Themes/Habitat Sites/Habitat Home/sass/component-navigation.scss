@@ -1,0 +1,673 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+
+.navigation {
+  background: $nav-bg;
+  padding: 10px;
+  .level1, .level0 {
+    > .navigation-title > a {
+      font-size: $navigation-font-basic;
+      border-color: $nav-border-root;
+      border-style: solid;
+      border-width: 0 0 2px 0;
+      padding-right: 3px;
+      margin-right: 5px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  a {
+    color: $nav-color-root;
+    .lt-ie9 &, .lt-ie9 & span {
+      color: $nav-color-root;
+    }
+    &:focus, &:hover {
+      color: $nav-color-root-active;
+    }
+  }
+  li {
+    &.submenu {
+      margin-bottom: 0;
+    }
+    > .navigation-title {
+      > a {
+        padding: 3px 5px 3px 0;
+        display: block;
+        color: $nav-color-root;
+        text-decoration: none;
+      }
+    }
+    > ul a {
+      font-size: $navigation-font-basic-submenu;
+    }
+  }
+  .submenu > ul {
+    padding-left: 10px;
+  }
+  @import "variants/navigation/*";
+}
+
+@import "styles/navigation/*";
+$megadrop-link-width: 260px;
+$megadrop-content-width: calc(100% - 260px);
+
+.megadrop {  
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  width: auto;
+
+  .megadrop-icon {
+    border-left: 1px solid #747776;
+    border-right: 1px solid #747776;
+    margin-top: 4px;    
+
+    &:before {
+      margin: 4px 0 0;
+      padding-bottom: 4px;
+      content: "";
+      font-family: FontAwesome;
+      font-size: 1.5em;
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;      
+      text-align: center;
+      color: #50a1ab;    
+      height: 72px;
+      width: 76px;
+      line-height: 68px;
+      vertical-align: top;
+      cursor: pointer;    
+    }
+  }
+
+  .megadrop-nav {    
+    position: absolute;
+    top: 80px;    
+    right: 0;    
+    width: calc(100vw - 45px);
+    max-width: 1250px;    
+    padding: 0;
+    display: none;
+
+    @include respond-to(tablet) {
+      width: calc(100vw - 35px);
+    }
+
+    @include respond-to(desktop-large) {
+      width: calc(100vw - 110px);
+    }
+
+    @include respond-to(mobile-large) {
+      right: -5px;
+      width: calc(100vw);
+    }
+  }
+
+  &.open {     
+
+    .megadrop-nav {
+      display: block;
+    }
+
+    .megadrop-icon {
+      margin-top: 0;
+
+      &:before { 
+        border-top: 4px solid $purple;   
+        background-color: $bg-footer;        
+        content: "\f00d";
+        margin: 0;
+        height: 80px;
+        line-height: 76px;
+      }
+    }
+  }
+  
+
+  nav {
+    border-bottom: 4px solid #5b256d;
+    background-color: #262C2B;
+
+    & > ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      list-style-type: none;
+      width: $megadrop-link-width;
+
+      @include respond-to(mobile-large) {
+        width: auto;
+        border-bottom: 0;
+        padding-bottom: 15px;
+      }
+
+      & > li {
+        //width: $megadrop-link-width;
+        text-align: left;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .megadrop-secondary-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    width: $megadrop-content-width;        
+    background-color: #141919;
+    padding: 40px 30px;
+    border-bottom: 4px solid #5b256d;
+
+    @include respond-to(mobile-large) {
+      padding: 20px 40px;
+      border-bottom: 0;
+    }
+
+    @include respond-to(desktop-large) {
+      padding: 40px 100px;
+    }
+
+    .field-navigationtitle {
+      margin-bottom: 1.875em;
+
+      @include respond-to(mobile-large) {
+        margin-bottom: 1.3em;
+      }
+
+      a{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #fefefe;
+
+        &:after {
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-stretch: normal;
+          font-size: inherit;
+          line-height: inherit;
+          font-family: FontAwesome;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          vertical-align: middle;
+          content: "";
+          font-size: 0.61538em;
+          margin-left: 0.5em;
+          font-weight: 400;
+          line-height: 1.625;
+          color: #1d8c96;
+        }        
+      }      
+    }
+
+    @include respond-to(mobile-large) {
+      position: relative;
+      width: auto;
+    }    
+  }
+
+  .megadrop-secondary-title-link {
+    background: #272C2B;
+
+    & > a {   
+      font-weight: 700;
+      font-size: 20px;
+      padding: 0.7em 0;
+      margin: 0 0 0 20px;
+      display: inline-block;
+      color: #919494;            
+
+      &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }  
+
+    @include respond-to(mobile-large) {
+      & > a {
+        font-size: 18px;
+        margin: 0 0 0 40px;
+        display: block;
+        
+        &:after {
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: inherit;
+          font-family: FontAwesome;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: "";
+          font-size: 0.7em;
+          line-height: 1.42857;
+          margin-left: 0.71429em;
+          color: #1d8c96;
+        }
+      }      
+    }
+  }
+
+  .megadrop-secondary-link .megadrop-secondary-title-link > a{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0.375em 1.5em;
+    display: block;
+    color: #919494;    
+
+    @include respond-to(mobile-large) {
+      font-size: 16px;      
+      padding-left: 0;
+    }
+  }
+
+  li.active .megadrop-secondary-content {
+    display: block;
+  }
+
+  li.active .megadrop-secondary-title-link{
+    background-color: #141919;
+    & > a {
+      color: white;
+
+      &:after {
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-stretch: normal;
+        font-size: inherit;
+        line-height: inherit;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        font-size: 0.7em;
+        line-height: 1.42857;
+        margin-left: 0.71429em;
+        color: #1d8c96;
+      }      
+    }  
+    
+    @include respond-to(mobile-large) {
+      & > a {        
+        &:after {
+          content: "";
+        }
+      }
+      border-bottom: 1px solid #1d8c96;        
+    }
+  }  
+
+  .megadrop-secondary-main {
+    margin: 0 -15px 30px;
+
+    & > li {
+      float: left;
+      padding: 0 15px;
+      width: 33.3333%;
+
+      @include respond-to(mobile-large) {
+        float: none;
+        width: auto;     
+        margin-bottom: 15px;    
+        
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+      }
+    }
+
+    
+  }
+
+  .megadrop-secondary-main-image {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+
+    @include respond-to(mobile-large) {
+      width: 15%;
+      float: left;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .megadrop-secondary-main-link {
+    margin-top: 6px;
+
+    a {
+      color: white;
+      font-size: 20px;      
+      text-decoration: none;
+      font-weight: bold;      
+    }
+
+    @include respond-to(mobile-large) {
+      width: 85%;
+      float: left;
+      
+      a {
+        padding-left: 20px;        
+        display: inline-block;
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      width: auto;
+      float: none;
+
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .tags{
+    border-top: 1px solid rgba(114, 203, 201, 0.3);
+    margin-top: 20px;
+    padding: 8px 0;
+
+    & > span {
+      display: inline-block; 
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
+    }
+
+    ul {
+      display: inline-block;      
+    }
+
+    .megadrop-secondary-main-link {  
+      display: inline-block;     
+      margin: 0 0 0 8px;       
+
+      a {      
+        font-weight: 400;
+        font-size: 16px;
+
+        &:after {
+          content: '|';
+          color: #1d8c96;
+          font-size: 18px;
+          margin-left: 12px;
+        }        
+      }  
+      
+      &:last-child a:after {
+          display: none;
+      }
+
+      @include respond-to(mobile-large) {
+        float: none;
+        width: auto;
+
+        a {
+          padding-left: 0;
+        }
+      }
+    }
+  } 
+
+  
+}
+
+
+
+
+
+/*
+.megadrop {
+  display: inline-block;
+  width: auto;
+  .megadrop-navbar ul li.megadrop-secondary-link div.megadrop-secondary-title-link a {
+    font-weight: 300;
+  }
+
+  .megadrop-icon {
+    font-size: 20px;
+    padding: 24px 30px 24px 30px;
+    border-left: 1px solid #747776;
+    border-right: 1px solid #747776;
+    color: #50a1ab;
+    margin-top: 5px;
+
+    @include respond-to(mobile-large) { 
+      transform: translateY(-81px);
+    }
+
+  }
+
+  &.open .megadrop-icon {
+    background-color: $bg-footer;
+    border-top: 5px solid $purple;
+    margin-top: 0;
+    i:before {
+      content: "\f00d"
+    }
+  }
+  &.open .megadrop-navbar {
+    display: block;
+  }
+  .megadrop-navbar {
+    display: none;
+    position: absolute;
+    top: $header-height;
+    left: 30px; //twice default bootstrap margin, padding
+    width: calc(100% - 60px);
+    background: $bg-footer;
+
+    @include respond-to(mobile-large) {
+      left: auto;
+      right: 0;
+      width: 100%;
+    }
+    ul {
+      position: relative;
+    }
+    ul li {
+      div.megadrop-secondary-title-link {
+        width: $megadrop-link-width;
+        display: inline-block;
+        a {
+          font-weight: 700;
+          font-size: $font-big;
+          padding: 0.7em 1.2em;
+          display: block;
+          color: $megadrop-link;
+          background: #272C2B;
+        }
+      }
+      div.megadrop-secondary-content {
+        width: calc(100% - #{$megadrop-link-width});
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        &-inner {
+          background-color: #141919;
+          //padding: 40px 80px;
+          padding: 2.5em 2.849%;
+          h2 {
+            margin-bottom: 1.875em;
+            padding: 0 10px;
+            & > a {
+              font-size: 1.625em;
+              line-height: 1;
+              font-weight: 700;
+              color: #fefefe;
+            }
+            &:after {
+              font-style: normal;
+              font-variant: normal;
+              font-stretch: normal;
+              line-height: inherit;
+              font-family: FontAwesome;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              display: inline-block;
+              vertical-align: text-bottom;
+              content: "";
+              font-size: inherit;
+              margin-left: 0.5em;
+              font-weight: 400;
+              color: #1d8c96;
+            }
+          }
+        }
+      }
+    }
+    ul li.active {
+      div.megadrop-secondary-title-link {
+        background: $bg-footer;
+        a {
+          color: #fff;
+          background: $bg-footer;
+          &:after {
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            font-stretch: normal;
+            font-family: FontAwesome;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\f054";
+            font-size: 0.7em;
+            line-height: 1.42857;
+            margin-left: 0.71429em;
+            color: #1d8c96;
+          }
+        }
+      }
+      div.megadrop-secondary-content {
+        display: inline-block;
+      }
+    }
+  }
+  ul.megadrop-secondary-main {
+    & > li {
+      width: 33.3333%;
+      float: left;
+      padding: 10px;
+      a {
+        font-size: 1.625em;
+        line-height: 1;
+        font-weight: 700;
+        color: #fefefe;
+      }
+    }
+    .megadrop-secondary-main-image {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      img {
+        min-height: 100%;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .megadrop-secondary-main-link {
+      margin: 1em 0;
+    }
+  }
+  .tags {
+    border-top: 1px solid rgba(114, 203, 201, 0.3);
+    padding: 20px 10px;
+    color: #fefefe;
+    width: 100%;
+    font-size: $font-medium;
+    ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        border-right: 1px solid rgba(114, 203, 201, 0.3);
+        a {
+          display: block;
+          color: #fefefe;
+          font-size: 1em;
+          font-weight: 400;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+*/
+
+@media only screen and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*
+  .megadrop {
+    .megadrop-navbar {
+      width: 100%;
+      left: 0;
+      padding: 0;
+      ul li {
+        div.megadrop-secondary-title-link {
+          display: block;
+          width: 100%;
+        }
+        &.active {
+          & > div {
+            border-bottom: 1px solid rgba(114, 203, 201, 0.3);
+          }
+          div.megadrop-secondary-content {
+            display: block;
+            width: 100%;
+            position: static;
+          }
+        }
+        div.megadrop-secondary-content-inner {
+          padding: 1em;
+        }
+      }
+    }
+    ul.megadrop-secondary-main > li {
+      width: 100%;
+      display: block;
+      .megadrop-secondary-main-image {
+        height: auto;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  .megadrop .megadrop-navbar ul li div.megadrop-secondary-title-link a:after {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    font-size: 0.7em;
+    line-height: 1.42857;
+    margin-left: 0.71429em;
+    color: #1d8c96;
+  }
+  .megadrop .megadrop-navbar ul li.active div.megadrop-secondary-title-link a:after {
+    content: "\f078";
+  }*/
+}

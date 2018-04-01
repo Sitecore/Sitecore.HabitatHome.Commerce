@@ -1,0 +1,106 @@
+----item----
+version: 1
+id: {B1F364FB-69BC-412A-8283-7B430BDE0354}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Default/Smart Gym
+parent: {B7BE6C71-C208-48CB-BA6B-5AF0A766B93A}
+name: Smart Gym
+master: {00000000-0000-0000-0000-000000000000}
+template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
+templatekey: _NavigationImage
+created: 20180325T025004Z
+
+----version----
+language: en
+version: 1
+revision: b7831192-459c-4c68-8b4e-df5e119c17d6
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 84
+
+<link text="Home Gym" linktype="rel" url="/shop/Smart-Sports-Equipment" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{30E7F3DC-E24F-4DEA-BF8C-0AF8042420D5}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180320T225327Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b7831192-459c-4c68-8b4e-df5e119c17d6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180327T021034Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: c4e3a307-745e-4c5e-84a1-ae46a306c5a0
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180327T014954Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c4e3a307-745e-4c5e-84a1-ae46a306c5a0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180327T021034Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

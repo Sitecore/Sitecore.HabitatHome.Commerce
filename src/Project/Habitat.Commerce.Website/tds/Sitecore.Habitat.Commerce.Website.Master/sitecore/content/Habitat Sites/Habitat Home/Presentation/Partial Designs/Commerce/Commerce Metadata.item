@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {DE829BC4-9894-42E4-B8F0-34B6D65FB60B}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Commerce/Commerce Metadata
+parent: {8C4C09FA-C2AE-4C0F-9B8B-3B341D36E8B8}
+name: Commerce Metadata
+master: {5CFE5120-4808-405A-8337-4975BDEEEB64}
+template: {9F54E3D8-1BBA-4442-84E1-F0528B780ECC}
+templatekey: Metadata Partial Design
+created: 20180325T024951Z
+
+----field----
+field: {55FAAE90-3BBA-4F7F-96FE-13C3F40055FF}
+name: Signature
+key: signature
+content-length: 17
+
+commerce-metadata
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: cedf309c-d6bc-46fe-83c3-99ddc4e0cc93
+
+----field----
+field: {76A92454-C8BE-479B-B260-26AEBCED5A1A}
+name: Base Partial Design
+key: base partial design
+content-length: 38
+
+{B3946082-2776-4ADA-8A18-B1845263161F}
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 644
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{4B235A1D-E9DB-40EE-B4F3-4EAFA424D688}" p:before="*" s:id="{D2EB2C0D-5453-4430-B4C4-B98F26F21447}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="head" /><r uid="{C89D0A86-C87C-4445-AD09-B81D30910A22}" p:after="r[@uid='{4B235A1D-E9DB-40EE-B4F3-4EAFA424D688}']" s:id="{432E53A1-E676-4A07-92BC-A3EF517A5811}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="body-top" /><r uid="{C42E728E-1195-444A-9EA8-E51EF0E6D45A}" p:after="*[1=2]" s:id="{B761C521-23CC-4F51-8340-15F5483BE921}" s:par="" s:ph="body-top" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180220T165232Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cedf309c-d6bc-46fe-83c3-99ddc4e0cc93
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180326T033827Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

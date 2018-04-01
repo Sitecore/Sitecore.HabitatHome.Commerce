@@ -1,0 +1,29 @@
+﻿---
+ID: "73498bff-9834-4ae9-b365-18b90efb8a6e"
+Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
+Template: "9b901ea7-7073-4ed9-b884-ee0e37621a56"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Lines
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{193049CD-9713-4294-8FD2-1A4D12004EC2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152355Z
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: Shipping
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "fd3be299-5255-4b17-95f2-d09237bc8ffc"
+      Hint: Order Lines Header Label
+      Value: 

@@ -1,0 +1,51 @@
+@import 'responsive';
+@import 'layouts';
+@mixin table() {
+    @include responsive-table();
+}
+
+@mixin cart-lines-table() {
+    thead {
+        tr {
+            th {
+                padding-bottom: $padding;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+                padding-top: $padding*2.4;
+                padding-bottom: $padding*2.4;
+            }
+            > td:first-child {
+                vertical-align: middle;
+                min-width: 100px;
+                min-height: 100px;
+                width:100px;
+                img {
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+            > td:nth-child(2) {
+                width: 45%;
+                vertical-align: top;
+                h5{
+                    max-width:87%;
+                }
+            }
+            > td:nth-child(3) {
+                width: 15%;
+                padding-right:$padding;
+            }
+            > td:nth-child(4) {
+                width: 17.5%
+            }
+            > td:nth-child(5){
+                width: 17.5%;
+            }
+        }
+    }
+}

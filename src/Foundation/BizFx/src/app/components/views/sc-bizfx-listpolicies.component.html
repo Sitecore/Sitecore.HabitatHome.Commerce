@@ -1,0 +1,14 @@
+<div *ngIf="policies.length > 0">
+  <div *ngFor="let policy of policies">
+    <div *ngIf="policy['@odata.type'] != 'EntityViews.ActionsPolicy'">
+      <div>{{policy["@odata.type"].replace("#Sitecore.Commerce.EntityViews.","")}}</div>
+
+      <div *ngFor="let key of policy.arrayOfKeys">
+        <div *ngIf="key !== '@odata.type' && key !== 'PolicyId'">
+          <div>{{key}}:</div>
+          <div>{{policy[key]}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

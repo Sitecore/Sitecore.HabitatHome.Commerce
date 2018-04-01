@@ -1,0 +1,30 @@
+﻿---
+ID: "b55c5c5f-2d75-4674-85a4-88b04654a58d"
+Parent: "e8a6bcae-8818-4a69-ad2d-9e02f2046f7b"
+Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Texts/Checkout/Order confirmation - order information"
+DB: master
+BranchID: "f4debfdc-2d8f-4c56-8876-c4af7de0ce00"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{CCF885A9-66A3-40C3-9A5F-981CC0CEEFB4}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Order Confirmation - Order Information"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152509Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: "<h3>Order information:</h3>"

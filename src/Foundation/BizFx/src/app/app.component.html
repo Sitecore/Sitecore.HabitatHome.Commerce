@@ -1,0 +1,46 @@
+<sc-progress-indicator-panel [show]="(nav.loading || env.loading || languages.loading) && !isTaskPage">
+  <sc-page [showNav]="isNavigationShown">
+    <div scPageHeader>
+        <sc-global-header appName="{{appName}}" pageTitle="{{pageTitle}}" [(show)]="isNavigationShown">
+            <div gh-logo>
+                <a [routerLink]="routes[0].Link">
+                  <i class="si si-home si-l homeicon"></i>
+                </a>
+            </div>   
+            <div gh-account>
+              <sc-bizfx-login></sc-bizfx-login>
+            </div>
+        </sc-global-header>
+    </div>
+
+    <aside [class.hidden-xs-up]="isTaskPage" scPageNav>
+      <sc-bizfx-nav #nav></sc-bizfx-nav>
+    </aside>
+
+    <div scPageAppHeader>
+      <sc-application-header text="{{pageTitle}}">
+        <sc-bizfx-breadcrumb [routes]="routes"></sc-bizfx-breadcrumb>
+      </sc-application-header>
+    </div>
+
+    <div scPageActionBar>
+      <sc-action-bar>
+        <sc-action-bar-left>
+          <sc-back-button text="{{'Back' | translate}}" *ngIf="isTaskPage"></sc-back-button>
+
+          <sc-bizfx-env #env></sc-bizfx-env>
+        </sc-action-bar-left>
+
+        <sc-action-bar-right>
+          <sc-bizfx-languages #languages></sc-bizfx-languages>
+        </sc-action-bar-right>
+      </sc-action-bar>
+    </div>
+
+    <article scPageContent [class.taskpage]="isTaskPage" [class.dashboardpage]="!isTaskPage">
+      <sc-bizfx-nav [class.hidden-xs-up]="!isHomePage" [iconNav]=true></sc-bizfx-nav>
+      <sc-bizfx-messagebar [message]="message" type="danger" [isStatic]="false"></sc-bizfx-messagebar>
+      <router-outlet></router-outlet>
+    </article>
+  </sc-page>
+</sc-progress-indicator-panel>
