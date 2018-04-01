@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sitecore.Commerce.Sample.Console.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ShopsServiceUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://localhost:5000/api/</Value>
+    </Setting>
+    <Setting Name="AuthoringServiceUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://localhost:5000/api/</Value>
+    </Setting>
+    <Setting Name="MinionsServiceUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://localhost:5000/CommerceOps/</Value>
+    </Setting>
+    <Setting Name="OpsServiceUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://localhost:5000/CommerceOps/</Value>
+    </Setting>
+    <Setting Name="RequestedTestRuns" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SitecoreIdServerUri" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://localhost:5050/</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sitecore\admin</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">b</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

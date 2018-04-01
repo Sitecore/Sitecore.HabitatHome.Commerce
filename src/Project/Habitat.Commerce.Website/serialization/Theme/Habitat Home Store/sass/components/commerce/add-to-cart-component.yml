@@ -1,0 +1,31 @@
+﻿---
+ID: "6500eb0f-fb51-4117-93f8-3af1f4314500"
+Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/add-to-cart-component"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/6500EB0FFB51411793F83AF1F4314500.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "9a361173-5ea2-4b87-a787-7f46c13a931e"
+  Value: ICAgIEBpbXBvcnQgJy4uLy4uL2luZGV4JzsNCiAgICAuY3hhLWFkZHRvY2FydC1jb21wb25lbnQgew0KICAgICAgICAuY29tcG9uZW50LWNvbnRlbnQgew0KICAgICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogICAgICAgICAgICAuYWRkLXRvLWNhcnQtcXR5IHsNCiAgICAgICAgICAgICAgICBsYWJlbCB7DQogICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDhweDsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgICAgICAuYWRkLXRvLWNhcnQtYnV0dG9uIHsNCiAgICAgICAgICAgICAgICBtYXJnaW4tbGVmdDogNXB4Ow0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICAgIC5xdWFudGl0eS1pbnB1dCB7DQogICAgICAgICAgICBAaW5jbHVkZSBudW1lcmljLWlucHV0LWdyb3VwKCk7DQogICAgICAgIH0NCiAgICAgICAgLmFkZC10by1jYXJ0LWJ0biB7DQogICAgICAgICAgICBAaW5jbHVkZSBwcmltYXJ5LWJ1dHRvbi1maWxsZWQoKTsNCiAgICAgICAgICAgIEBpbmNsdWRlIGxhcmdlLWhlaWdodDsgDQogICAgICAgICAgICB3aWR0aDogMTUwcHg7DQogICAgICAgIH0NCiAgICAgICAgZm9ybSB7DQogICAgICAgICAgICBAaW5jbHVkZSByb3ctb2YtZWxlbWVudHMtcGFja2VkKGZhbHNlLCAkYm90dG9tLW9yLXJpZ2h0LCAkcGFja2VkLWVsZW1lbnRzLW1hcmdpbik7DQogICAgICAgIH0NCiAgICB9
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 741
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100933Z

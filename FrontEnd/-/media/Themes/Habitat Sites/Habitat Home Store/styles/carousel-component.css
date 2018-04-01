@@ -1,0 +1,102 @@
+/* @import '../../mixins/index';
+@import '../../base/index';
+$navItemsSize: 7px;
+$sliderImageSize: 480px;
+$spaceFromNavToSlider: 65px;
+.component.carousel {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    top: -1px;
+    background: $secondary-background-color;
+    margin: 0 auto;
+    float: none;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .slides {
+        margin: 0 !important;
+        .component.content.col-xs-12 {
+            padding: 0px;
+        }
+    }
+    .field-slidetext {
+        margin: 0;
+        overflow: visible;
+        bottom: 60%;
+        position: absolute;
+        z-index: 15;
+        left: 60px;
+        max-width: 420px;
+        h1 {
+            font-size: 70px;
+            color: $light;
+        }
+        p {
+            color: lighten($secondary-text-color, 10);
+            text-align: justify !important;
+        }
+    }
+    .content {
+        margin: 0;
+    }
+    .nav {
+        margin: 0;
+        overflow: visible;
+        z-index: 100;
+        bottom: 14%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 15;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        .nav-items {
+            min-width: 44px;
+            
+            &:before, &:after{
+                display: none;
+            }
+            .sxa-numbers {
+                border: none;
+                color: $light;
+                font-size: 0px;
+                background: $primary-color;
+                width: $navItemsSize;
+                height: $navItemsSize;
+                min-width: auto;
+                min-height: auto;
+                border-radius: 100px;
+                opacity: 0.8;
+                margin-left: $margin/3;
+                padding: 0;
+                @include transition();
+                span {
+                    font-size: 0;
+                }
+                &.active {
+                    opacity: 1;
+                    min-width: $navItemsSize + 3;
+                    min-height: $navItemsSize + 3;
+                }
+            }
+        }
+    }
+    @include respond-to($sm) {
+        .field-slidetext {
+            lefT: 30px;
+            bottom: 50%;
+            h1 {
+                font-size: $font-size-medium !important;
+                text-align: left !important;
+                max-width: 50%;
+            }
+            p {
+                font-size: 0.8*$font-size-xsmall !important;
+                max-width: 39%;
+            }
+        }
+    }
+} */

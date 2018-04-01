@@ -18,8 +18,9 @@ build/assets/**/*
 .sonar
 vars.user.cmd
 .vs
+.vscode
 /target
-/node_modules
+node_modules/
 settings.user.ps1
 *.log
 *.zip
@@ -28,7 +29,6 @@ settings.user.ps1
 /install/assets/Downloads
 configuration-x*0.json
 /install/deploy/*
-/install/LocalRepo
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user
@@ -37,3 +37,15 @@ IconCache/
 T4RenderCache/
 BuiltFiles_*.txt
 /src/**/tds/*/Report/*
+
+/install/set-installation-overrides.ps1
+/install/assets/Resources/Publish
+InstallUtil.InstallLog
+/install/assets/Resources/Modules
+
+/FrontEnd/**/node_modules
+/node_modules
+/src/**/logs
+*.dll
+/src/Project/Habitat.Commerce.Website/serialization/Theme/Habitat Home Store
+/src/Feature/NearestStore/code

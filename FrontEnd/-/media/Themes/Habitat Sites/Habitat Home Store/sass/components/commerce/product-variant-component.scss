@@ -1,0 +1,16 @@
+@import '../../index';
+.cxa-productvariant-component {
+    .component-content {
+        width: 100%;
+        float: left;
+        .product-variant-name {
+            width: 48%;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 10px;
+        }
+        .invalid-variant {
+            color: $secondary-text-color;
+        }
+    }
+}

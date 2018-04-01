@@ -1,0 +1,81 @@
+<div *ngIf="property && !property.IsHidden">
+
+  <div [formGroup]="actionForm" class="action-property-container">
+
+    <div [ngSwitch]="property.UiType">
+
+      <div *ngSwitchCase="'Autocomplete'">
+        <label for="property-{{property.Name}}">{{property.DisplayName}}</label>
+        <sc-bizfx-autocomplete [property]="property"></sc-bizfx-autocomplete>
+      </div>
+
+      <div *ngSwitchCase="'SelectList'" class="form-group">
+        <label for="property-{{property.Name}}">{{property.DisplayName}}</label>
+        <select class="form-control" id="property-{{property.Name}}" [formControlName]="property.Name">
+          <option *ngFor="let option of property.SelectList" [value]="option.Name">{{option.DisplayName}}</option>
+        </select>
+      </div>
+
+      <div *ngSwitchCase="'Html'">
+        <div id="property-{{property.Name}}" [innerHTML]="property.Value"></div>
+      </div>
+
+      <div *ngSwitchCase="'MultiLine'" class="form-group">
+        <label for="property-{{property.Name}}">{{property.DisplayName}}</label>
+        <textarea class="form-control" id="property-{{property.Name}}" [formControlName]="property.Name" [value]="property.Value"></textarea>
+      </div>
+
+      <div *ngSwitchCase="'RichText'">
+        <ckeditor [formControlName]="property.Name" debounce="500">
+          {{property.Value}}
+        </ckeditor>
+      </div>
+
+      <div *ngSwitchCase="'Tags'">
+        <sc-bizfx-actionproperty-tags id="tagsView-{{property.Name}}" [actionForm]="actionForm" [property]="property"></sc-bizfx-actionproperty-tags>
+      </div>
+
+      <div *ngSwitchCase="'DownloadCsv'">
+        <button scIconButton="secondary" id="download-action" type="button" (click)="downloadCsv()">
+          <sc-icon icon="download" size="small"></sc-icon>
+        </button>
+      </div>
+
+      <div *ngSwitchDefault>
+
+        <div [ngSwitch]="property.OriginalType">
+
+          <div *ngSwitchCase="'System.Boolean'">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id='property-{{property.Name}}' [formControlName]="property.Name" [value]="property.Value"> {{property.DisplayName}}
+              </label>
+            </div>
+          </div>
+
+          <div *ngSwitchCase="'System.DateTimeOffset'" class="form-group">
+            <sc-bizfx-actionproperty-datetime id='property-{{property.Name}}' [formControlName]="property.Name" [property]="property"
+              [(dateTime)]="property.Value"></sc-bizfx-actionproperty-datetime>
+          </div>
+
+          <div *ngSwitchDefault class="form-group">
+            <label for="property-{{property.Name}}">{{property.DisplayName}}</label>
+            <input class="form-control" id="property-{{property.Name}}" [formControlName]="property.Name" [value]="property.Value">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="alert alert-danger" role="alert" *ngIf="!isValid">
+        <div *ngIf="propertyControl.errors.required">
+          {{ 'ValidationErrors.IsRequired' | translate:property }}
+        </div>
+
+        <div *ngIf="propertyControl.errors.invalidDecimal">
+          {{ 'ValidationErrors.IncorrectDecimalValue' | translate:property }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div>
+  <a routerLink="/entityView/{{view.Name}}/{{view.EntityId}}/{{view.ItemId}}" routerLinkActive="active" class="router-link">
+    <sc-bizfx-viewproperty-bytype [property]="property" [view]="view"></sc-bizfx-viewproperty-bytype>
+  </a>
+
+  <button scIconButton="secondary" type="button" (click)="selected=!selected">
+    <sc-icon icon="navigate_down" size="small"></sc-icon>
+  </button>
+</div>
+
+<div id="children-{{view.Name}}" [hidden]="!selected" class="child-view-container">
+  <div *ngFor="let childView of view.ChildViews">
+    <div class="sc-expander-body">
+      <sc-bizfx-flatview *ngIf="childView.UiHint === 'Flat'" id="flatView-{{childView.Name}}" [view]="childView"></sc-bizfx-flatview>
+
+      <sc-bizfx-listview *ngIf="childView.UiHint === 'List'" id="listView-{{childView.Name}}" [view]="childView"></sc-bizfx-listview>
+
+      <sc-bizfx-tableview *ngIf="childView.UiHint === 'Table'" id="tableView-{{childView?.Name}}" [view]="childView"></sc-bizfx-tableview>
+
+      <sc-bizfx-searchview *ngIf="view.UiHint === 'Search'" id="tableView-{{view?.Name}}" [view]="view"></sc-bizfx-searchview>
+    </div>
+  </div>
+</div>

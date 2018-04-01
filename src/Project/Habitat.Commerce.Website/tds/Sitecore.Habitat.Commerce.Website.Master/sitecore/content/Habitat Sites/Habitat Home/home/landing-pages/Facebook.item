@@ -1,0 +1,103 @@
+----item----
+version: 1
+id: {0BDD9DEB-F986-489F-B1AC-3ED44F7F984E}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/Facebook
+parent: {602E4F4D-11E2-44E9-A8AC-12AE5E05A1A4}
+name: Facebook
+master: {00000000-0000-0000-0000-000000000000}
+template: {568D0B5C-ECCB-4A2F-A301-79C7761CDA36}
+templatekey: Demo Page
+created: 20180323T040625Z
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 23
+
+<tracking ignore="1" />
+----version----
+language: en
+version: 1
+revision: 514bbb98-5acc-42a3-ae60-f5033afb43f2
+
+----field----
+field: {621CFA47-D63B-4B8E-81E7-0CA5C2619909}
+name: HTML Content
+key: html content
+content-length: 3204
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Facebook - Habitat Health</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="/~/media/project/habitat-sites/habitat-home/images/landing-pages/fb-icon.png" />
+        <link rel="apple-touch-icon" href="fb-icon.png" />
+		<style type="text/css">
+			/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+			
+			body, html {
+				height: 100%;
+				width: 100%;
+			}
+			
+			.bg {
+				position: relative;
+				width: 100%;
+				max-width: 1999px;
+				min-height: 1249px;
+				min-width: 1000px;
+				
+				background-repeat: no-repeat; background-size: contain; background-position: top left;
+				background-color: #e9ebee;
+			}
+			
+			.link {
+				position: absolute;
+				top: 0;
+				left: 21%;
+				width: 36%;
+				height: 100%;
+				display: block;
+			}
+		</style>
+    </head>
+    <body>
+		<div class="bg" style="background-image: url(/~/media/project/habitat-sites/habitat-home/images/landing-pages/bg.png);">
+			<a class="link" href="/habitat-health?sc_camp=86F4B51D01D84372889A2DEAC430E01D">&nbsp;</a>
+		</div>
+    </body>
+</html>
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180316T194219Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+514bbb98-5acc-42a3-ae60-f5033afb43f2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180324T013616Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

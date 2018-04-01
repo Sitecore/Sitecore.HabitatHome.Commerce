@@ -1,0 +1,33 @@
+﻿---
+ID: "569d1afa-d8f3-4f26-90a3-053b483147a4"
+Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
+Template: "81afaa32-f1b0-47de-a8e6-3e443a06510e"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Currency Configuration
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{D5BD9BB5-FCC1-4ACC-9E7C-6D42F6848DFB}"
+- ID: "f8abfa72-0fba-44a5-9122-cf11acb0ea61"
+  Hint: Currency Set
+  Value: "{0F65742E-317F-44B0-A4DE-EBF06209E8EE}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Currency Configuration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

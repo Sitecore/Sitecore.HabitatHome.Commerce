@@ -1,0 +1,120 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-productlistitemsonpage-component {
+  padding-left: 9px;
+  margin-bottom: 30px;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section > * {
+  margin: 0;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  line-height: 22px;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > *:not(:last-child) {
+  margin-right: 3px;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > *:not(:first-child) {
+  margin-left: 0;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > div {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container > div > * {
+  margin: 0;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container select {
+  width: 120px;
+}
+
+.cxa-productlistitemsonpage-component .productlist-header-section .results-container span {
+  color: #747a83;
+}

@@ -1,0 +1,98 @@
+----item----
+version: 1
+id: {9E2C0448-1A2F-4B33-881C-15B0D90E507E}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/tasks/watchJS
+parent: {B4A26495-8B8D-401A-871D-0C120B680710}
+name: watchJS
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20180215T174739Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1472
+
+aW1wb3J0IGd1bHAgZnJvbSAnZ3VscCc7DQppbXBvcnQgc2FzcyBmcm9tICdndWxwLXNhc3MnOw0K
+aW1wb3J0IHdhdGNoIGZyb20gJ2d1bHAtd2F0Y2gnOw0KaW1wb3J0IGd1bHBpZiBmcm9tICdndWxw
+LWlmJzsNCmltcG9ydCBlc2xpbnQgZnJvbSAnZ3VscC1lc2xpbnQnOw0KLy8NCmltcG9ydCBsb2dp
+biBmcm9tICcuL2xvZ2luJzsNCmltcG9ydCBjb25maWcgZnJvbSAnLi4vY29uZmlnJzsNCmltcG9y
+dCBmaWxlQWN0aW9uUmVzb2x2ZXIgZnJvbSAnLi4vdXRpbC9maWxlQWN0aW9uUmVzb2x2ZXInOw0K
+DQpndWxwLnRhc2soJ3dhdGNoLWpzJywgWydsb2dpbiddLCAoKSA9PiB7DQogICAgdmFyIGNvbmYg
+PSBjb25maWcuanM7DQogICAgcmV0dXJuIHdhdGNoKGNvbmYucGF0aCwgZnVuY3Rpb24oZmlsZSkg
+ew0KICAgICAgICB2YXIgc3RyZWFtID0gZ3VscC5zcmMoZmlsZS5wYXRoKQ0KICAgICAgICAgICAg
+LnBpcGUoZXNsaW50KCkpDQogICAgICAgICAgICAucGlwZShlc2xpbnQuZm9ybWF0KCkpDQogICAg
+ICAgICAgICAucGlwZShlc2xpbnQucmVzdWx0cyhyZXN1bHRzID0+IHsNCiAgICAgICAgICAgICAg
+ICAvLyBDYWxsZWQgb25jZSBmb3IgYWxsIEVTTGludCByZXN1bHRzLg0KICAgICAgICAgICAgICAg
+IGlmIChyZXN1bHRzLmVycm9yQ291bnQgPT0gMCB8fCBjb25mLmVzTGludFVwbG9hZE9uRXJyb3Ip
+IHsNCiAgICAgICAgICAgICAgICAgICAgZmlsZUFjdGlvblJlc29sdmVyKGZpbGUpOw0KICAgICAg
+ICAgICAgICAgIH0gZWxzZSB7DQogICAgICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKCdQbGVh
+c2UgZml4IGVycm9ycyBiZWZvcmUgdXBsb2FkaW5nIG9yIHNldCBlc0xpbnRVcGxvYWRPbkVycm9y
+OnRydWUnLnllbGxvdyk7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSkpOw0KDQoN
+CiAgICAgICAgcmV0dXJuIHN0cmVhbTsNCiAgICB9KQ0KfSk7DQoNCmd1bHAudGFzaygnanMtd2F0
+Y2gnLCBbJ2xvZ2luJ10sDQogICAgZnVuY3Rpb24oKSB7DQogICAgICAgIGdsb2JhbC5pc1dhdGNo
+aW5nID0gdHJ1ZTsNCiAgICAgICAgZ3VscC5ydW4oJ3dhdGNoLWpzJykNCiAgICB9KQ==
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 2
+
+js
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/x-javascript
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1075
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/66183B701D9040BB90FDC38E8D5BB3BC.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: b5e34c54-690a-473d-893e-c6872e40657a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171108T075256Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b5e34c54-690a-473d-893e-c6872e40657a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20171108T075256Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,35 @@
+﻿---
+ID: "63a148b0-1e79-4aaa-99a2-807cb19cc71b"
+Parent: "c44568ae-eab7-4ba7-8752-29e6bdfe73f2"
+Template: "59e0ae1a-6a2a-4c7b-931a-5def873b9df6"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Currencies Display Adjustments/USD
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "2ba6f36e-ba91-41a9-a252-2358456799f1"
+  Hint: Currency Number Format
+  Value: "en-US"
+- ID: "360ec3f9-fe2c-41bc-a00d-424b24fa9579"
+  Hint: Currency Symbol
+  Value: USD
+- ID: "e505daf1-5476-4b05-af5d-f3425859eb91"
+  Hint: Currency Symbol Position
+  Value: 3
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2F96C35F-D0D6-46A8-B0ED-21873B0F6298}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "510e3fca-7730-4be6-9b74-7d1ab7287f47"
+      Hint: Currency Description
+      Value: US Dollars
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

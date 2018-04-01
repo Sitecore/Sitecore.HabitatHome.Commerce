@@ -1,0 +1,137 @@
+﻿---
+ID: "c19c709a-a181-4795-8dda-00ea317f5386"
+Parent: "0baec103-b372-44e9-9199-f30d4a40a3ed"
+Template: "d0dc7711-3483-4b86-a017-6c2b0de107f3"
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/delivery
+DB: master
+BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" />
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Delivery
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B85F9BF7-0E59-4FBC-A0B8-1253909B6A21}"
+              p:before="*"
+              s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
+              s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
+              s:par="GridParameters&amp;Current Step"
+              s:ph="/main/container-1" />
+            <r
+              uid="{7CDBE4AB-189B-4B7E-844B-E7F655ABC5C5}"
+              p:after="r[@uid='{B85F9BF7-0E59-4FBC-A0B8-1253909B6A21}']"
+              s:ds="{45993EA5-0C1D-45FC-A8C0-1480A9451B6A}"
+              s:id="{33DF6C8F-BB50-447B-8CF8-ED84F665B2BA}"
+              s:par="GridParameters"
+              s:ph="/main/container-1" />
+            <r
+              uid="{EC8A9414-CF93-4981-94A0-EDD67F423EE3}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B0CC74E1D-658E-460C-8D9F-DB5C73E078FD%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191320Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Delivery
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Delivery
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Delivery
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B85F9BF7-0E59-4FBC-A0B8-1253909B6A21}"
+              p:before="*"
+              s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
+              s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
+              s:par="GridParameters&amp;Current Step"
+              s:ph="/main/container-1" />
+            <r
+              uid="{7CDBE4AB-189B-4B7E-844B-E7F655ABC5C5}"
+              p:after="r[@uid='{B85F9BF7-0E59-4FBC-A0B8-1253909B6A21}']"
+              s:ds="{45993EA5-0C1D-45FC-A8C0-1480A9451B6A}"
+              s:id="{33DF6C8F-BB50-447B-8CF8-ED84F665B2BA}"
+              s:par="GridParameters"
+              s:ph="/main/container-1" />
+            <r
+              uid="{EC8A9414-CF93-4981-94A0-EDD67F423EE3}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+      Hint: Page Design
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191320Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Delivery
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

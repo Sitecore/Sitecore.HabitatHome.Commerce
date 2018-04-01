@@ -1,0 +1,101 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2016 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+@{
+    var deliveryPage = Html.Sitecore().CurrentItem;
+
+    // Header
+    var headerShipAllLabel = Html.Sitecore().Field("Ship All Items Header", deliveryPage);
+    var shippingAddressLabel = Html.Sitecore().Field("Shipping Address Header", deliveryPage);
+    var chooseAddressLabel = Html.Sitecore().Field("Choose from Address Book Label", deliveryPage);
+    var addressLabel = Html.Sitecore().Field("Choose Address Label", deliveryPage);
+    var otherAddressLabel = Html.Sitecore().Field("Choose Other Address Label", deliveryPage);
+    var shippingNameLabel = Html.Sitecore().Field("Name Label", deliveryPage);
+    var shippingNameLabelPlaceholder = deliveryPage["Name Label"];
+    var cityLabel = Html.Sitecore().Field("City Label", deliveryPage);
+    var cityLabelPlaceholder = deliveryPage["City Label"];
+    var countryLabel = Html.Sitecore().Field("Country Label", deliveryPage);
+    var stateLabel = Html.Sitecore().Field("State Label", deliveryPage);
+    var stateLabelPlaceholder = deliveryPage["State Label"];
+    var address1Label = Html.Sitecore().Field("Address Label", deliveryPage);
+    var address1LabelPlaceholder = deliveryPage["Address Label"];
+    var zipcodeLabel = Html.Sitecore().Field("Zip Code Label", deliveryPage);
+    var zipcodeLabelPlaceholder = deliveryPage["Zip Code Label"];
+    var viewButtonLabel = Html.Sitecore().Field("View Options Button Label", deliveryPage);
+    var viewButtonLoadingLabel = deliveryPage["View Options Button In-Progress Label"];
+    var availableShippingOptionsLabel = Html.Sitecore().Field("Available Shipping Options Header", deliveryPage);
+}
+<div class="shipall-title">
+    <h1>@headerShipAllLabel</h1>
+</div>
+<div class="shipall-addresses-title">
+    <h3>@shippingAddressLabel:</h3>
+</div>
+<div  data-bind="with: shippingAddress">
+
+    <div class="shipall-addresses" data-bind="visible: $parent.isAuthenticated">
+        <label for="ShippingAddressSelect">@chooseAddressLabel</label>
+        <select id="ShippingAddressSelect" data-bind="foreach: $parent.userAddresses, value:$parent.selectedShippingAddress" title="@addressLabel" title2="@otherAddressLabel">
+            <!-- ko if: externalId() != 'UseShipping' -->
+            <option data-bind="attr:{ value: externalId }, text: fullAddress"></option>
+            <!-- /ko -->
+        </select>
+    </div>
+    <input type="hidden" id="ShipAllItemsInput-ExternalId" data-bind="value: externalId" />
+    <div class="addrss-form">
+    <div class="shipall-name">
+        <label for="ShipAllItemsInput-Name">@shippingNameLabel<span class="required">*</span></label>
+        <input type="text" placeholder="@shippingNameLabelPlaceholder" data-bind="value: name, event: {change: $root.shippingAddressFieldChanged}">
+    </div>
+    <div class="shipall-city">
+        <label for="ShipAllItemsInput-City">@cityLabel<span class="required">*</span> </label>
+        <input type="text" placeholder="@cityLabelPlaceholder" data-bind="value: city, event: {change: $root.shippingAddressFieldChanged}">
+    </div>
+    <div class="shipall-country">
+        <label for="ShipAllItemsInput-Country">@countryLabel<span class="required">*</span></label>
+        <select data-bind="options: $parent.countries, optionsText:'country', optionsValue:'code', value: country, event: {change: $root.shippingAddressFieldChanged}"></select>
+    </div>
+    <div class="shipall-state">
+        <label for="ShipAllItemsInput-State">@stateLabel</label>
+        <!-- ko if: states == 'undefined' -->
+        <select data-bind="options: $parent.states, optionsText:'name', optionsValue:'code', value: state, event: {change: $root.shippingAddressFieldChanged}"></select>
+        <!-- /ko -->
+        <!-- ko if: states != 'undefined' -->
+        <input type="text" placeholder="@stateLabelPlaceholder" data-bind="value: state, event: {change: $root.shippingAddressFieldChanged}">
+        <!-- /ko -->
+    </div>
+    <div class="shipall-address">
+        <label for="ShipAllItemsInput-Address">@address1Label</label>
+        <input type="text" placeholder="@address1LabelPlaceholder" data-bind="value:address1, event: {change: $root.shippingAddressFieldChanged}">
+    </div>
+        <div class="shipall-zipcode">
+            <label for="ShipAllItemsInput-Zipcode">@zipcodeLabel</label>
+            <input type="text" placeholder="@zipcodeLabelPlaceholder" data-bind="value: zipPostalCode, event: {change: $root.shippingAddressFieldChanged}">
+        </div>
+    </div>
+</div>
+<div class="shipall-options">
+    <div class="shipall-options-title">
+        <h4>@availableShippingOptionsLabel:</h4>
+    </div>
+    <div class="shipall-options-toggle">
+        <button id="orderGetShippingMethods" type="button" data-loading-text="@viewButtonLoadingLabel">@viewButtonLabel</button>
+    </div>
+    <div class="shipall-options-items">
+        <div class="shipall-options-item" data-bind="foreach: shippingMethods">
+            <div class="shipping-option">
+                <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id, id: id}, checkMe: $root.shippingMethod">
+                <label data-bind="text: description, attr: {'for': id}"></label>
+            </div>
+
+        </div>
+    </div>
+</div>

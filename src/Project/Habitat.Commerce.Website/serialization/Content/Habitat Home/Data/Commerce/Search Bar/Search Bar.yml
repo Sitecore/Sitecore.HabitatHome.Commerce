@@ -1,0 +1,23 @@
+﻿---
+ID: "bd8047aa-3b4a-4b4c-9ff9-2a64fb9b5243"
+Parent: "32a0cbd6-e199-4d43-8387-4468bf7130b5"
+Template: "adbf000c-955a-45c3-8c57-b8d8535bc711"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Search Bar/Search Bar
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5B659B48-3B7D-4214-B4AE-1B1483ACB6C9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152401Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

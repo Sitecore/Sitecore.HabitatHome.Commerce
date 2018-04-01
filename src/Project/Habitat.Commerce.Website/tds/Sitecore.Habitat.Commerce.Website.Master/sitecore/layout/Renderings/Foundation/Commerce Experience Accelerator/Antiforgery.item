@@ -8,7 +8,7 @@ name: Antiforgery
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20180127T222204Z
+created: 20180309T135003Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -20,7 +20,7 @@ Sitecore.Commerce.XA.Foundation.SiteMetadata.Controllers.AntiForgeryController, 
 ----version----
 language: en
 version: 1
-revision: 73e6d618-8bbd-4f0e-98fe-733de669f181
+revision: a287b201-fadc-4f2c-8e31-e1a9ef2db78f
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -29,13 +29,6 @@ key: __display name
 content-length: 11
 
 Antiforgery
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,18 +49,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-73e6d618-8bbd-4f0e-98fe-733de669f181
+a287b201-fadc-4f2c-8e31-e1a9ef2db78f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170606T035803Z
+20180309T160147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\Admin
+sitecore\unicorn
