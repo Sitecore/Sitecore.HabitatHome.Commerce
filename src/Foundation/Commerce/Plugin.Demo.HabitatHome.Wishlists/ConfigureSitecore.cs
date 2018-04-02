@@ -15,6 +15,7 @@ namespace Plugin.Demo.HabitatHome.Wishlists
     using Plugin.Demo.HabitatHome.Wishlists.Pipelines.Blocks.AddWishlistLine;
     using Sitecore.Commerce.Plugin.Catalog;
     using Sitecore.Commerce.Plugin.Carts;
+    using Plugin.Demo.HabitatHome.Wishlists.Pipelines.Blocks.RemoveWishlistLine;
 
     /// <summary>
     /// The configure sitecore class.
@@ -38,10 +39,21 @@ namespace Plugin.Demo.HabitatHome.Wishlists
                     configure =>
                         {
                             configure.Add<ValidateSellableItemBlock>();
-                            configure.Add<AddWishListLineItemBlock>();
-                            configure.Add<AddContactBlock>();
+                            configure.Add<AddWishListLineBlock>();
+                            configure.Add<AddContactBlock>()
+                           .Add<ICalculateCartLinesPipeline>()
+                           .Add<ICalculateCartPipeline>();
                             configure.Add<PersistCartBlock>();
                         })
+
+                .AddPipeline<IRemoveWishListLinePipeline, RemoveWishListLinePipeline>(
+                    configure =>
+                    {
+                        configure.Add<RemoveWishlistLineBlock>()
+                       .Add<ICalculateCartLinesPipeline>()
+                       .Add<ICalculateCartPipeline>()
+                       .Add<PersistCartBlock>();
+                    })
 
                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<ConfigureServiceApiBlock>()));
 

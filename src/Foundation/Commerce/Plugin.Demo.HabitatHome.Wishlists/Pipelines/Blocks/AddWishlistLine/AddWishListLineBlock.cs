@@ -15,11 +15,11 @@ using Plugin.Demo.HabitatHome.Wishlists.Components;
 namespace Plugin.Demo.HabitatHome.Wishlists.Pipelines.Blocks.AddWishlistLine
 {
     [PipelineDisplayName("Wishlists.AddWishListLineItemBlock")]
-    public class AddWishListLineItemBlock : PipelineBlock<CartLineArgument, Cart, CommercePipelineExecutionContext>
+    public class AddWishListLineBlock : PipelineBlock<CartLineArgument, Cart, CommercePipelineExecutionContext>
     {
         public override async Task<Cart> Run(CartLineArgument arg, CommercePipelineExecutionContext context)
         {
-            AddWishListLineItemBlock addCartLineBlock = this;
+            AddWishListLineBlock addCartLineBlock = this;
             
             Condition.Requires<CartLineArgument>(arg).IsNotNull<CartLineArgument>(string.Format("{0}: The argument cannot be null.", addCartLineBlock.Name));            
             Condition.Requires<Cart>(arg.Cart).IsNotNull<Cart>(string.Format("{0}: The cart cannot be null.", addCartLineBlock.Name));            
@@ -94,7 +94,7 @@ namespace Plugin.Demo.HabitatHome.Wishlists.Pipelines.Blocks.AddWishlistLine
             return cart;
         }
 
-        public AddWishListLineItemBlock()
+        public AddWishListLineBlock()
           : base((string)null)
         {
         }

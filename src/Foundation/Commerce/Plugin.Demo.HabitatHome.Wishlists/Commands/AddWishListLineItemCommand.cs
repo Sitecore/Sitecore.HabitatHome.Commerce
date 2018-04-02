@@ -64,10 +64,11 @@ namespace Plugin.Demo.HabitatHome.Wishlists.Commands
                                     }
                             });
 
-                            cart.SetComponent(new CartTypeComponent() { CartType = CartTypeEnum.Wishlist.ToString() });
-
-                            result = await this._addWishListLineItemPipeli.Run(new CartLineArgument(cart, line), (IPipelineExecutionContextOptions)context);
+                            cart.SetComponent(new CartTypeComponent() { CartType = CartTypeEnum.Wishlist.ToString() });                           
                         }
+                       
+
+                        result = await this._addWishListLineItemPipeli.Run(new CartLineArgument(cart, line), (IPipelineExecutionContextOptions)context);
                     }
                 }));
             }

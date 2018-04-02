@@ -64,8 +64,13 @@ namespace Plugin.Demo.HabitatHome.Wishlists
             actionConfiguration2.Parameter<string>("wishlistId");            
             actionConfiguration2.Parameter<string>("itemId");            
             actionConfiguration2.Parameter<System.Decimal>("quantity");
-            string entitySetName2 = "Commands";
-            actionConfiguration2.ReturnsFromEntitySet<CommerceCommand>(entitySetName2);
+            //string entitySetName2 = "Commands";
+            actionConfiguration2.ReturnsFromEntitySet<CommerceCommand>("Commands");
+
+            ActionConfiguration actionConfiguration3 = modelBuilder.Action("RemoveWishListLineItem");            
+            actionConfiguration3.Parameter<string>("wishlistId");            
+            actionConfiguration3.Parameter<string>("cartLineId");            
+            actionConfiguration3.ReturnsFromEntitySet<CommerceCommand>("Commands");
 
             return Task.FromResult(modelBuilder);
         }

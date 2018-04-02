@@ -72,6 +72,32 @@ namespace Plugin.Demo.HabitatHome.Wishlists
             }
             return (IActionResult)new BadRequestObjectResult((object)value);
         }
+
+        [HttpPut]
+        [Route("RemoveWishListLineItem()")]
+        public async Task<IActionResult> RemoveWishListLineItem([FromBody] ODataActionParameters value)
+        {
+            CommandsController commandsController = this;
+            if (!commandsController.ModelState.IsValid || value == null)
+                return (IActionResult)new BadRequestObjectResult(commandsController.ModelState);
+            if (value.ContainsKey("wishlistId"))
+            {
+                object obj1 = value["wishlistId"];
+                if (!string.IsNullOrEmpty(obj1 != null ? obj1.ToString() : (string)null) && value.ContainsKey("cartLineId"))
+                {
+                    object obj2 = value["cartLineId"];
+                    if (!string.IsNullOrEmpty(obj2 != null ? obj2.ToString() : (string)null))
+                    {
+                        string wishlistId = value["wishlistId"].ToString();
+                        string cartLineId = value["cartLineId"].ToString();
+                        RemoveWishListLineCommand command = commandsController.Command<RemoveWishListLineCommand>();
+                        Cart cart = await command.Process(commandsController.CurrentContext, wishlistId, cartLineId).ConfigureAwait(false);
+                        return (IActionResult)new ObjectResult((object)command);
+                    }
+                }
+            }
+            return (IActionResult)new BadRequestObjectResult((object)value);
+        }
     }
 }
 
