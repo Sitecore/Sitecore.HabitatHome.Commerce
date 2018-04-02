@@ -1,0 +1,176 @@
+----item----
+version: 1
+id: {2D976C32-7D06-4F04-AA48-8B0A5C409F6E}
+database: master
+path: /sitecore/system/Marketing Control Panel/Campaigns/Habitat Home/Email - Recipe for Smart Stove
+parent: {FBEFEA07-DA28-48D4-9527-6AB943A5414E}
+name: Email - Recipe for Smart Stove
+master: {00000000-0000-0000-0000-000000000000}
+template: {94FD1606-139E-46EE-86FF-BC5BF3C79804}
+templatekey: Campaign
+created: 20180323T040814Z
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: 43c152c4-99e5-4351-a4cf-7a8e691192bf
+
+----field----
+field: {4C1BF83B-06E2-4B07-AD16-0E65D95E356E}
+name: Channel
+key: channel
+content-length: 38
+
+{52B75873-4CE0-4E98-B63A-B535739E6180}
+----field----
+field: {FFAEA943-DF50-4F11-94ED-4690418A7D96}
+name: Campaign group
+key: campaign group
+content-length: 38
+
+{7FB8D4A4-D421-4B55-B5B6-C488737592AA}
+----field----
+field: {3C0EEC17-C74D-4921-9577-D41AEA11B6DB}
+name: Marketing asset
+key: marketing asset
+content-length: 38
+
+{BC5D7BD3-8B1C-4A60-90DF-E7B87071D6EA}
+----field----
+field: {297AB1FA-9A3B-483D-B8F7-41E7BBE549FB}
+name: Campaign facet 1
+key: campaign facet 1
+content-length: 38
+
+{313E5783-3059-4CB1-9284-2571AC2C204F}
+----field----
+field: {13F24114-C29B-4ACB-A39B-445CCE2ED60C}
+name: Campaign facet 2
+key: campaign facet 2
+content-length: 38
+
+{7161697B-C2D8-4B73-8B19-7EA04EF9A92B}
+----field----
+field: {336BA862-E974-4CD6-BE4D-4BFDD78994E1}
+name: Campaign facet 3
+key: campaign facet 3
+content-length: 38
+
+{67BA62FE-7F1A-4BA1-B244-79160A0893C4}
+----field----
+field: {0F47D1B4-BCB4-4F7F-9065-6ECB46AAB9A1}
+name: Title
+key: title
+content-length: 30
+
+Email - Recipe for Smart Stove
+----field----
+field: {BD4720D7-9ED6-4438-959B-7B1C5C32C10B}
+name: StartDate
+key: startdate
+content-length: 16
+
+20171213T161200Z
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171213T161141Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+43c152c4-99e5-4351-a4cf-7a8e691192bf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111417Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{39156DC0-21C6-4F64-B641-31E85C8F5DFE}
+----version----
+language: ja-JP
+version: 1
+revision: 099b5173-1306-4ad9-b437-3a908144c76e
+
+----field----
+field: {BD4720D7-9ED6-4438-959B-7B1C5C32C10B}
+name: StartDate
+key: startdate
+content-length: 35
+
+20171213T161200:636487783200000000Z
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 20
+
+電子メール - スマートストーブなレシピ
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T105008Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+099b5173-1306-4ad9-b437-3a908144c76e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111417Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{39156DC0-21C6-4F64-B641-31E85C8F5DFE}
