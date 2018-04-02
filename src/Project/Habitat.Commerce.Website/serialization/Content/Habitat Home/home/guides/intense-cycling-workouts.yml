@@ -82,6 +82,17 @@ SharedFields:
       </profile>
     </tracking>
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T215345Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -99,8 +110,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{FEA412B7-EC6D-43C3-9DB9-51D55D5CE29B}"
+              uid="{D29B62F4-8A35-4970-B1FC-F0EAB44EC518}"
               p:before="*"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
+              s:ph="/main/sxa-recommended-content/container-1" />
+            <r
+              uid="{FEA412B7-EC6D-43C3-9DB9-51D55D5CE29B}"
+              p:after="r[@uid='{D29B62F4-8A35-4970-B1FC-F0EAB44EC518}']"
               s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
               s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
@@ -125,8 +142,15 @@ Languages:
               s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=10"
               s:ph="/main/sxa-article-content/container-1/Container-29" />
             <r
-              uid="{123C96CF-022D-42BB-AAE2-4E971796DD1E}"
+              uid="{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}"
               p:after="r[@uid='{7C2A80E2-0BE5-493E-9DB3-2C69164F191D}']"
+              s:ds="local:/Data/Text 1"
+              s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={B3CF5C8B-D6AA-4A97-9CB9-8048F269B9B6}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-article-content/container-1/Container-29" />
+            <r
+              uid="{123C96CF-022D-42BB-AAE2-4E971796DD1E}"
+              p:after="r[@uid='{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}']"
               s:ds="{60D4A835-8064-8348-7CDF-0BAB67141B11}"
               s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=9"
@@ -139,15 +163,8 @@ Languages:
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8"
               s:ph="/main/sxa-content-container/container-1" />
             <r
-              uid="{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}"
-              p:after="r[@uid='{211E6D99-CEA2-4DC9-98E3-EDFED7B43063}']"
-              s:ds="local:/Data/Text 1"
-              s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
-              s:ph="/main/sxa-recommended-content/container-1" />
-            <r
               uid="{E192B52C-6224-47FA-9616-27CF7B0C88A2}"
-              p:after="r[@uid='{A0F5F2D4-9035-49BB-AD6D-07024C45D3E2}']"
+              p:after="r[@uid='{211E6D99-CEA2-4DC9-98E3-EDFED7B43063}']"
               s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}"
               s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
@@ -164,7 +181,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}" />
+        <image mediaid="{5AF2C84C-803F-49BC-B33A-D803AD4A3E14}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180323T174726Z
@@ -193,7 +210,7 @@ Languages:
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{283FE52F-D013-42A4-8367-4B129E6F7281}" />
+        <image mediaid="{ABA71F37-F063-448D-9675-1D2530E8A9C7}" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
       Value: <p>These intense cycling workouts are quick, fun, and 5 times as effective as other forms of exercises.</p>
