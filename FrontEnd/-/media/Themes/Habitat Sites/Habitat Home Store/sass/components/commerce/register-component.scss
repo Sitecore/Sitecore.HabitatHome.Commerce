@@ -1,6 +1,9 @@
 @import '../../index';
 
 .component.cxa-register-component{
+    //max-width: 500px;
+    //margin: 0 auto;
+
     .registeration-form{
         form {
             @include vertical-form-layout();
@@ -12,12 +15,12 @@
                 button {
                     order: 2;
                     margin-bottom: 0;
-                    width:205px;
+                    min-width:205px;
                 }
                 a {
                     order: 1;
                     margin-right: $margin;
-                     width:205px;
+                    min-width:205px;
                 }
             }
         }
@@ -27,9 +30,16 @@
                 @include large-height();
             }
             a{
-                @include primary-button-line();
+                text-transform: uppercase;
+                @include secondary-button-line();
                 @include large-height();
+                display: flex;
+                /* justify-content: center; */
+                justify-content: center;
+                align-items: center;
             }
+
+            margin-top: 2em;
         }
     }
 }

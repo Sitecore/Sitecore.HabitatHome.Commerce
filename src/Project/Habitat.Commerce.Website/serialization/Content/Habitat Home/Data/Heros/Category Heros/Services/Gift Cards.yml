@@ -31,3 +31,14 @@ Languages:
       Hint: HeroText
       Value: |
         <span>Give your friends, family, and colleagues a gift they'll always remember: a Habitat Gift Card. Available in any amount, a gift card gives your loved one a taste of Habitat: stylish products with advanced technology, "smart" features, and seamless design. It's the gift of living well, simply.&nbsp;</span>
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180329T155928Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

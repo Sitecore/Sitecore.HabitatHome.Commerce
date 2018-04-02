@@ -38,17 +38,23 @@
     //Message Handlers
     component.ErrorMessageHandler = function (source, message, data) {
         var item = new Message(message, data);
-        model.errorMessages.push(item);
+        if (item.message) {
+            model.errorMessages.push(item);
+        }
     }
 
     component.WarningMessageHandler = function (source, message, data) {
         var item = new Message(message, data);
-        model.warningMessages.push(item);
+        if (item.message) {
+            model.warningMessages.push(item);
+        }
     }
 
     component.InfoMessageHandler = function (source, message, data) {
         var item = new Message(message, data);
-        model.infoMessages.push(item);
+        if (item.message) {
+            model.infoMessages.push(item);
+        }
     }
 
     component.CommandMessageHandler = function (source, command, data) {

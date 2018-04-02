@@ -21,4 +21,15 @@ Languages:
     - ID: "e9baf418-31e2-415e-b168-6109e5dbf2ef"
       Hint: Author Image
       Value: |
-        <image mediaid="{9F8416A1-1C7B-4024-BB41-DA64D3858608}" />
+        <image mediaid="{4F106EE2-D598-45BD-AAC2-A4C569CCC38C}" />
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210747Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

@@ -1,0 +1,101 @@
+----item----
+version: 1
+id: {398879DE-7AE2-4A17-ACA5-540753DF3825}
+database: master
+path: /sitecore/system/Marketing Control Panel/Segments/Potential Striva 4 Customers-398879de-7ae2-4a17-aca5-540753df3825
+parent: {CD304D58-D53B-420C-9D1A-C83255AF1554}
+name: Potential Striva 4 Customers-398879de-7ae2-4a17-aca5-540753df3825
+master: {00000000-0000-0000-0000-000000000000}
+template: {95D4ED35-1E47-48E9-95DB-DE0614A0E86C}
+templatekey: Segment
+created: 20180330T213314Z
+
+----field----
+field: {75AF2497-ADA0-4271-80DA-84F9DD2E4075}
+name: Rules
+key: rules
+content-length: 604
+
+[{"Id":"01fd7792-c728-4988-bb34-aef5fdcad76f","Name":"Specify name...","ConditionType":"Sitecore.Marketing.Rules.ConditionNode, Sitecore.Marketing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=null","_condition":{"Id":"a2df176a-9eaf-4a44-b777-813c79a51a41","DescriptorId":"9805a980-2ee4-4b15-9910-4e449e05fedf","Properties":{"DefinitionId":"{95810E6D-E7B5-4D15-A3E4-B064B148E2E2}"}}},{"Id":"7af7ace6-a588-49ec-9496-802f03ccbf90","Name":"Specify name...","ConditionType":"Sitecore.Marketing.Rules.NullNode, Sitecore.Marketing, Version=12.0.0.0, Culture=neutral, PublicKeyToken=null","_condition":{}}]
+----field----
+field: {621D7A1F-C6A3-4A2F-8FCD-7DD1FD893C9C}
+name: Custom Values
+key: custom values
+content-length: 2
+
+{}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: 2d45c68d-b46a-4854-9136-ceefb87f1907
+
+----field----
+field: {365F1971-B028-4065-BC11-CE1F471452AF}
+name: Name
+key: name
+content-length: 28
+
+Potential Striva 4 Customers
+----field----
+field: {E259E500-B38E-41FE-82DB-8B604BCF9E75}
+name: Description
+key: description
+content-length: 81
+
+Users whose pattern of behavior indicates they may be interested in the Striva 4.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T164552Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2d45c68d-b46a-4854-9136-ceefb87f1907
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180330T164552Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}

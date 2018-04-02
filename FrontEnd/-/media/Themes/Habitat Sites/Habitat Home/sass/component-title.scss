@@ -5,7 +5,7 @@
     h1, .field-title a {
         font-size: 4.5em;
         font-weight: 700;
-        margin: 2em 0;
+        margin: 0.5em 0;
         padding: 0;
         color: $text-headings;
         display: block;
@@ -20,8 +20,7 @@
         }
     }
     @import "variants/title/*";
-
-    
+   
 }
 
 

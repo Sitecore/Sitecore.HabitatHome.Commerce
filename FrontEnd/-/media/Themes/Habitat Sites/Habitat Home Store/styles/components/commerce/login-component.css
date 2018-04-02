@@ -332,7 +332,7 @@ fieldset[disabled] .component.cxa-login-component form select {
   padding: 4px 25px 4px 25px;
   display: inline-block;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0;
   min-height: 42px;
   height: 42px;
   padding: 8px 25px 8px 25px;

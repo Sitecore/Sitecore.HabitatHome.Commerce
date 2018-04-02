@@ -2,7 +2,7 @@
 @import "abstracts/vars";
 @import "base/fontawesome/font-awesome-mix-var";
 
-$slide-height: 680px;
+$slide-height: 680px; 
 $slide-height-large: 833px;
 
 .carousel {
@@ -14,7 +14,7 @@ $slide-height-large: 833px;
     .wrapper {
         position: relative;
     }
-    .slides {
+    .slides { 
         position: relative;
         &:after {
             content: "";
@@ -291,7 +291,7 @@ $slide-height-large: 833px;
             color:$text-white;
             text-align: left;
             margin-bottom: 35px;
-
+            
             @include respond-to(all-mobile) {
                 font-size: 84px;
             }

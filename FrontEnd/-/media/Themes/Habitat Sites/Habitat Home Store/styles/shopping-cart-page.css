@@ -90,3 +90,17 @@
   width: 100%;
   padding: 1em 5em;
 }
+
+.checkout-delivery-page,
+.checkout-page-billing,
+.checkout-review-page,
+.order-confirmation-page {
+  padding-top: 81px;
+}
+
+.checkout-delivery-page.preview,
+.checkout-page-billing.preview,
+.checkout-review-page.preview,
+.order-confirmation-page.preview {
+  padding-top: 0;
+}
