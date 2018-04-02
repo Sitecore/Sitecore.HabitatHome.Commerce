@@ -1,0 +1,184 @@
+----item----
+version: 1
+id: {4D30B785-2CD0-44C1-94F5-E16E84244EA2}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/guides/best-in-wearable-fitness-technology
+parent: {64F922B1-D57D-4AFA-AE26-9D59502F69A6}
+name: best-in-wearable-fitness-technology
+master: {00000000-0000-0000-0000-000000000000}
+template: {14807D83-9671-4D70-B0F4-F54012F2BFB8}
+templatekey: Guide Page
+created: 20180330T210519Z
+
+----field----
+field: {7BD35DCD-61BB-42E0-8BF5-07803AF6EEDE}
+name: Author
+key: author
+content-length: 38
+
+{9DFF331C-3B0A-477F-8FED-B27E9664C13C}
+----field----
+field: {4D71857F-C77D-44FA-8899-C671A0458D7F}
+name: Publish Date
+key: publish date
+content-length: 16
+
+20180330T184600Z
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}
+----version----
+language: en
+version: 1
+revision: 6dc5d097-a4f4-4324-913c-ee260c768659
+
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 29
+
+Best In Wearable Fitness Tech
+----field----
+field: {5A0B08E5-7F6C-48DC-929A-5D6CFDA45E1D}
+name: Content
+key: content
+content-length: 1097
+
+<p>With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed by measuring every day activities.&nbsp;</p>
+<p>Cotton candy jelly cupcake candy canes pastry marzipan. Caramels donut fruitcake pudding chocolate cake ice cream. Apple pie bonbon icing bear claw jelly bonbon chocolate tootsie roll. Lollipop oat cake jelly-o candy canes caramels apple pie chupa chups jelly biscuit. Caramels gummi bears lemon drops muffin cheesecake gingerbread. Jelly beans sweet roll chocolate fruitcake topping. Topping wafer cheesecake fruitcake chupa chups marshmallow cake. Danish candy canes halvah chocolate cake sweet roll gummi bears donut fruitcake. Caramels gingerbread wafer jelly cotton candy brownie drag&eacute;e. Jelly beans fruitcake sweet chocolate croissant danish brownie macaroon. Lemon drops candy gummies. Icing gingerbread pudding jelly beans cotton candy wafer carrot cake danish toffee. Cotton candy tart caramels pudding ice cream caramels macaroon macaroon. Cake powder candy cookie icing dessert ice cream lemon drops wafer.</p>
+----field----
+field: {6F76CE61-3806-4512-8E49-207F96308D8B}
+name: Subtitle
+key: subtitle
+content-length: 17
+
+New Year, new you
+----field----
+field: {CA65ACA5-4323-418A-AA72-A5037F606D2A}
+name: Summary
+key: summary
+content-length: 123
+
+With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed.&nbsp;
+----field----
+field: {23AA5741-FA6A-4ADD-9E79-7A752AF6DEB1}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{4E1B5236-26B1-4E7A-B997-8B8E025B9CB5}"></image>
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 35
+
+Best In Wearable Fitness Technology
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 35
+
+Best In Wearable Fitness Technology
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 2567
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{EB62C74D-F2B2-4D1E-94C2-E0254538FA25}" p:before="*" s:ds="{7FFDAD1C-50A6-4CE7-81C5-259DCD6D1FC1}" s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={3E6E7D0C-2472-4157-B4C8-F920504A4196}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5" s:ph="/main/sxa-article-content/container-1/column-2-2" /><r uid="{C6BFA351-243B-40B3-86C1-DEB4433878BF}" p:after="r[@uid='{EB62C74D-F2B2-4D1E-94C2-E0254538FA25}']" s:ds="{8A33684A-7711-4445-A119-BD1EFEC890B6}" s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={3E6E7D0C-2472-4157-B4C8-F920504A4196}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4" s:ph="/main/sxa-article-content/container-1/column-1-2" /><r uid="{5796A68A-5B48-4295-AB5C-FC1C6C2984E8}" p:after="r[@uid='{C6BFA351-243B-40B3-86C1-DEB4433878BF}']" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=3" s:ph="/main/sxa-recommended-content/container-1" /><r uid="{48F28386-988F-487B-9453-9917F8F67B2D}" p:after="r[@uid='{5796A68A-5B48-4295-AB5C-FC1C6C2984E8}']" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2" s:ph="/main/sxa-article-content/container-1" /><r uid="{A5782BFA-639A-4B78-8A5E-173C071B5339}" p:after="*[1=2]" s:ds="local:/Data/Hero - Best Fitness Tech" s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T184546Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6dc5d097-a4f4-4324-913c-ee260c768659
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FF509B64-B6D4-4FB7-9718-C4218B992740}
+----version----
+language: fr-FR
+version: 1
+revision: 4a5481ab-ffde-4d35-8ff3-805e5fa0fd01
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T210522Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4a5481ab-ffde-4d35-8ff3-805e5fa0fd01
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

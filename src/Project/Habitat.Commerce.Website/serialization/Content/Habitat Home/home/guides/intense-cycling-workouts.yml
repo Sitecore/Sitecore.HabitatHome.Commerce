@@ -123,8 +123,21 @@ Languages:
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
               s:ph="/main/sxa-article-content/container-1/Container-29/column-2-10" />
             <r
-              uid="{6EBAAABD-C7C5-4128-8599-C40370F05166}"
+              uid="{E6858264-292D-41A8-95D1-A12A4C46850A}"
               p:after="r[@uid='{FEA412B7-EC6D-43C3-9DB9-51D55D5CE29B}']"
+              s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-article-content/container-1/Container-29/column-2-10" />
+            <r
+              uid="{10FEC043-25D0-47B8-9363-CFB573935D95}"
+              p:after="r[@uid='{E6858264-292D-41A8-95D1-A12A4C46850A}']"
+              s:ds="{E679D02C-76B3-4B37-ADF1-7F8E510FC44E}"
+              s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-article-content/container-1/Container-29/column-2-10" />
+            <r
+              uid="{6EBAAABD-C7C5-4128-8599-C40370F05166}"
+              p:after="r[@uid='{10FEC043-25D0-47B8-9363-CFB573935D95}']"
               s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
               s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
@@ -223,6 +236,18 @@ Languages:
     Hint: __Display name
     Value: Intense Cycling Workouts
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180402T200852Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: "intense-cycling-workouts"
 - Language: "fr-FR"
   Versions:
   - Version: 1
