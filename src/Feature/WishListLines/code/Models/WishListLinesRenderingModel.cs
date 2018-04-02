@@ -7,7 +7,7 @@ using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 
-namespace Sitecore.Feature.WishLists.Models
+namespace Sitecore.Feature.WishListLines.Models
 {
     public class WishListLinesRenderingModel : BaseCommerceRenderingModel
     {

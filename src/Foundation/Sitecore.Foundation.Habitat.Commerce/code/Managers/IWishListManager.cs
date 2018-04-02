@@ -14,7 +14,7 @@ namespace Sitecore.Foundation.Habitat.Commerce.Managers
 {
     public interface IWishListManager
     {
-        ManagerResponse<CreateWishListResult, WishList> CreateWishList(CommerceStorefront storefront, IVisitorContext visitorContext);
+        ManagerResponse<CreateWishListResult, WishList> CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext);
 
         ManagerResponse<GetWishListResult, WishList> GetWishList(IVisitorContext visitorContext, IStorefrontContext storefrontContext, string wishListId);
 

@@ -34,12 +34,12 @@ namespace Sitecore.Foundation.Habitat.Commerce.Managers
 
         public WishListServiceProvider WishListServiceProvider { get; set; }
 
-        public ManagerResponse<CreateWishListResult, WishList> CreateWishList(CommerceStorefront storefront, IVisitorContext visitorContext)
+        public ManagerResponse<CreateWishListResult, WishList> CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext)
         {
-            Assert.ArgumentNotNull((object)storefront, nameof(storefront));
+            Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             string userId = visitorContext.UserId;
-            string shopName = storefront.ShopName;
+            string shopName = storefrontContext.CurrentStorefront.ShopName;
             string wishListName = "WishList" + Guid.NewGuid().ToString() + shopName;
             
             CreateWishListResult wishListResult = this.WishListServiceProvider.CreateWishList(new CreateWishListRequest(userId, wishListName, shopName));
@@ -81,21 +81,8 @@ namespace Sitecore.Foundation.Habitat.Commerce.Managers
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             Assert.ArgumentNotNull((object)wishList, nameof(wishList));
             Assert.ArgumentNotNull((object)wishListLines, nameof(wishListLines));
-            //List<WishListLine> wishListLineList = new List<WishListLine>();
-            //foreach (CartLineArgument cartLine in wishListLines)
-            //{
-            //    Assert.ArgumentNotNullOrEmpty(cartLine.ProductId, "inputModel.ProductId");
-            //    Assert.ArgumentNotNullOrEmpty(cartLine.CatalogName, "inputModel.CatalogName");
-            //    Assert.ArgumentNotNull((object)cartLine.Quantity, "inputModel.Quantity");
-            //    Decimal quantity = cartLine.Quantity;
-            //    cartLine.ProductId.Equals(storefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase);
-            //    Item product = this.SearchManager.GetProduct(cartLine.ProductId, cartLine.CatalogName);
-            //    Assert.IsNotNull((object)product, "Unable to find the product in the catalog.");
-            //    WishListLine wishListLine = new WishListLine();
-            //    //wishListLine.GetProperties()["ProductUrl"] = (object)this.GetProductLink(storefront, product, cartLine.ProductId);
-            //    //commerceCartLine.GetProperties()["ImageUrl"] = (object)this.GetImageLink(product);
-            //    wishListLineList.Add((CartLine)commerceCartLine);
-            //}
+
+            
             AddLinesToWishListResult wishListResult = this.WishListServiceProvider.AddLinesToWishList(new AddLinesToWishListRequest(wishList, (IEnumerable<WishListLine>)wishListLines));
             Helpers.LogSystemMessages((IEnumerable<SystemMessage>)wishListResult.SystemMessages, (object)wishListResult);
             AddLinesToWishListResult serviceProviderResult = wishListResult;

@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{93F58317-41FE-4CF4-B56F-B4BEF2DB2FE2}</ProjectGuid>
+    <ProjectGuid>{3EFA7D2E-458D-4E7D-A640-62754C06A66B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.WishLists</RootNamespace>
-    <AssemblyName>Sitecore.Feature.WishLists</AssemblyName>
+    <RootNamespace>Sitecore.Feature.WishListLines</RootNamespace>
+    <AssemblyName>Sitecore.Feature.WishListLines</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -52,9 +52,6 @@
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
     </Reference>
@@ -67,14 +64,14 @@
     <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Commerce.XA.Feature.Account">
-      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Account.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Feature.WishLists">
+      <HintPath>..\..\..\..\lib\Modules\Feature\WishList\Sitecore.Feature.WishLists.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Foundation.Habitat.Commerce">
       <HintPath>..\..\..\..\lib\Modules\Foundation\Habitat.Commerce\Sitecore.Foundation.Habitat.Commerce.dll</HintPath>
@@ -131,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\WishListLines\WishListLines.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,15 +140,13 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\WishListsController.cs" />
-    <Compile Include="Models\JsonResults\WishListJsonResult.cs" />
-    <Compile Include="Models\JsonResults\WishListLineJsonResult.cs" />
-    <Compile Include="Pipelines\WishListPipeline.cs" />
+    <Compile Include="Controllers\WishListLinesController.cs" />
+    <Compile Include="Models\WishListLinesRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IWishListLinesRepository.cs" />
+    <Compile Include="Repositories\WishListLinesRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Managers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -164,9 +160,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55122</DevelopmentServerPort>
+          <DevelopmentServerPort>24854</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:55122/</IISUrl>
+          <IISUrl>http://localhost:24854/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
