@@ -9,7 +9,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 
-namespace Sitecore.Feature.WishLists.Models.JsonResults
+namespace Sitecore.Feature.WishListLines.Models.JsonResults
 {
     public class WishListJsonResult : BaseJsonResult
     {

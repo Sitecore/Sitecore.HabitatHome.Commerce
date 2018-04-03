@@ -9,7 +9,7 @@ using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
 using Sitecore.Feature.WishListLines.Models;
-using Sitecore.Feature.WishLists.Models.JsonResults;
+using Sitecore.Feature.WishListLines.Models.JsonResults;
 using Sitecore.Foundation.Habitat.Commerce.Managers;
 using System;
 using System.Collections.Generic;

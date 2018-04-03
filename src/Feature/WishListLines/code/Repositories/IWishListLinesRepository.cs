@@ -3,7 +3,7 @@ using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Feature.WishListLines.Models;
-using Sitecore.Feature.WishLists.Models.JsonResults;
+using Sitecore.Feature.WishListLines.Models.JsonResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;

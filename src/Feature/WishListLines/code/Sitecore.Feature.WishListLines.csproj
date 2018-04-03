@@ -70,9 +70,6 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Feature.WishLists">
-      <HintPath>..\..\..\..\lib\Modules\Feature\WishList\Sitecore.Feature.WishLists.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Foundation.Habitat.Commerce">
       <HintPath>..\..\..\..\lib\Modules\Foundation\Habitat.Commerce\Sitecore.Foundation.Habitat.Commerce.dll</HintPath>
     </Reference>
@@ -141,6 +138,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\WishListLinesController.cs" />
+    <Compile Include="Models\JsonResults\WishListJsonResult.cs" />
+    <Compile Include="Models\JsonResults\WishListLineJsonResult.cs" />
     <Compile Include="Models\WishListLinesRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IWishListLinesRepository.cs" />
