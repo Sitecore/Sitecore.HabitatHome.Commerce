@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Plugin.Demo.HabitatHome.Wishlists\Plugin.Demo.HabitatHome.Wishlists.csproj" />
     <ProjectReference Include="..\Plugin.Demo.HabitatHome\Plugin.Demo.HabitatHome.csproj" />
     <ProjectReference Include="..\Plugin.Demo.ImportOrders\Plugin.Demo.ImportOrders.csproj" />
     <ProjectReference Include="..\Plugin.Demo.Payments.Moneybags\Plugin.Demo.Payments.Moneybags.csproj" />

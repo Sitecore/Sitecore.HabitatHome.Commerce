@@ -1,0 +1,188 @@
+----item----
+version: 1
+id: {5B6CE3AF-237C-47E4-8ADE-8DA697B13C9F}
+database: master
+path: /sitecore/Forms/Onboarding Sign Up/Page/Section/Intro Text
+parent: {9DECB1CE-8AED-49ED-A0BB-373633554080}
+name: Intro Text
+master: {00000000-0000-0000-0000-000000000000}
+template: {FC18F915-EAC6-460A-8777-6E1376A9EA09}
+templatekey: Text
+created: 20180323T040808Z
+
+----field----
+field: {C6CAA979-C3AC-4FFC-861E-2961F5FC3C48}
+name: Html Tag
+key: html tag
+content-length: 2
+
+h3
+----field----
+field: {7ABAA3F6-6EC0-4B65-A463-7919BFAE55AA}
+name: Css Class
+key: css class
+content-length: 0
+
+
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{983BFA5F-C6B6-4AEE-A3BB-46B95D52E7DF}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: en
+version: 1
+revision: 7b4ed155-c7f3-4c27-aea5-6940a8a109ea
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 69
+
+Join our connected living content list to get more content like this!
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171206T193716Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7b4ed155-c7f3-4c27-aea5-6940a8a109ea
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: fr-CA
+version: 1
+revision: 935d7bc6-9ea9-4fe4-a4d0-4e5fe0a96404
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 97
+
+Joignez-vous à notre liste de contenu "les branchés" pour obtenir plus de contenu comme celui-ci!
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180130T184853Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+935d7bc6-9ea9-4fe4-a4d0-4e5fe0a96404
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111415Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: fda07ab8-2b2f-447e-9ce9-eede92d2cd44
+
+----field----
+field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
+name: Text
+key: text
+content-length: 46
+
+このようなコンテンツを取得するには、接続されたリビングコンテンツのリストに参加してください！
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 3
+
+導入文
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104946Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fda07ab8-2b2f-447e-9ce9-eede92d2cd44
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111415Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

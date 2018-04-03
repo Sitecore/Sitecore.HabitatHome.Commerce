@@ -23,7 +23,7 @@ name: End Date
 key: end date
 content-length: 16
 
-99991231T235959Z
+00010101T000000Z
 ----field----
 field: {3FB918C8-08EC-4879-8062-088BBF71EE72}
 name: Plan Data
@@ -48,15 +48,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0856e90c-c647-479e-8537-b4980a8e1636
+revision: 171d29cc-52fb-4845-bd54-08365e4ce9e9
 
 ----field----
 field: {365F1971-B028-4065-BC11-CE1F471452AF}
 name: Name
 key: name
-content-length: 18
+content-length: 24
 
-Store Credit Email
+Gift Card Reminder Email
 ----field----
 field: {E259E500-B38E-41FE-82DB-8B604BCF9E75}
 name: Description
@@ -77,25 +77,65 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0856e90c-c647-479e-8537-b4980a8e1636
+171d29cc-52fb-4845-bd54-08365e4ce9e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T112204Z
+20180330T192545Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+{39156DC0-21C6-4F64-B641-31E85C8F5DFE}
+----version----
+language: fr-FR
+version: 1
+revision: 40e6cf74-8272-41fc-836e-57606959d138
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180323T184517Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+40e6cf74-8272-41fc-836e-57606959d138
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180330T192545Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
