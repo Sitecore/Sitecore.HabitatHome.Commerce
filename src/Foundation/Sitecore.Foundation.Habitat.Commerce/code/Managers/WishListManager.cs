@@ -48,14 +48,14 @@ namespace Sitecore.Foundation.Commerce.WishLists.Managers
             return new ManagerResponse<CreateWishListResult, WishList>(serviceProviderResult, serviceProviderResult.WishList);
         }
 
-        public ManagerResponse<GetWishListResult, WishList> GetWishList(IVisitorContext visitorContext, IStorefrontContext storefrontContext, string wishListId)
+        public ManagerResponse<GetWishListResult, WishList> GetWishList(IVisitorContext visitorContext, IStorefrontContext storefrontContext)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             string userId = visitorContext.UserId;
             string shopName = storefrontContext.CurrentStorefront.ShopName;
             
-            GetWishListResult wishListResult = this.WishListServiceProvider.GetWishList(new GetWishListRequest(userId, wishListId, shopName));
+            GetWishListResult wishListResult = this.WishListServiceProvider.GetWishList(new GetWishListRequest(userId, string.Empty, shopName));
             Helpers.LogSystemMessages((IEnumerable<SystemMessage>)wishListResult.SystemMessages, (object)wishListResult);
             GetWishListResult serviceProviderResult = wishListResult;
             return new ManagerResponse<GetWishListResult, WishList>(serviceProviderResult, serviceProviderResult.WishList);

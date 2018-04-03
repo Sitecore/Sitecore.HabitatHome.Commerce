@@ -70,8 +70,8 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Foundation.Habitat.Commerce">
-      <HintPath>..\..\..\..\lib\Modules\Foundation\Habitat.Commerce\Sitecore.Foundation.Habitat.Commerce.dll</HintPath>
+    <Reference Include="Sitecore.Foundation.Commerce.WishLists">
+      <HintPath>..\..\..\..\lib\Modules\Commerce-Foundation\Habitat.Commerce\Sitecore.Foundation.Commerce.WishLists.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>

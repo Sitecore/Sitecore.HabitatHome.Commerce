@@ -16,7 +16,7 @@ namespace Sitecore.Foundation.Commerce.WishLists.Managers
     {
         ManagerResponse<CreateWishListResult, WishList> CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext);
 
-        ManagerResponse<GetWishListResult, WishList> GetWishList(IVisitorContext visitorContext, IStorefrontContext storefrontContext, string wishListId);
+        ManagerResponse<GetWishListResult, WishList> GetWishList(IVisitorContext visitorContext, IStorefrontContext storefrontContext);
 
         ManagerResponse<GetWishListsResult, IEnumerable<WishListHeader>> GetWishLists(IVisitorContext visitorContext, IStorefrontContext storefrontContext);
 

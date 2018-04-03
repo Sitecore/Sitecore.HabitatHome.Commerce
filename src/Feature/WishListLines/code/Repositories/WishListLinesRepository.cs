@@ -10,7 +10,7 @@ using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
 using Sitecore.Feature.WishListLines.Models;
 using Sitecore.Feature.WishListLines.Models.JsonResults;
-using Sitecore.Foundation.Habitat.Commerce.Managers;
+using Sitecore.Foundation.Commerce.WishLists.Managers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +42,8 @@ namespace Sitecore.Feature.WishListLines.Repositories
             model.Initialize();
             return model;
         }
+
+        // Not required
         public virtual WishListJsonResult CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
@@ -72,20 +74,44 @@ namespace Sitecore.Feature.WishListLines.Repositories
                 model.SetErrors(nameof(CreateWishList), ex);
             }
             return model;
-        }
-        //TODO: GET CART FROM NEW PIPELINE AND USE CART ID. IF NO WISHLIST, RETURN NEW WISHLIST WITH ID POPULATED (GETWISHLIST PIPELINE)
-        //add ADD LINES TO WISHLIST METHOD
+        }        
 
-
-        public virtual WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string wishListId, IEnumerable<string> wishListLineIds)
+        public virtual WishListJsonResult AddWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<WishListLine> wishListLines)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
-            Assert.ArgumentNotNull((object)wishListId, nameof(wishListId));
+            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));                        
+            WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
+            CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
+            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext);
+            if (!currentWishList.ServiceProviderResult.Success || currentWishList.Result == null)
+            {
+                string systemMessage = "Wish List not found.";
+                currentWishList.ServiceProviderResult.SystemMessages.Add(new SystemMessage()
+                {
+                    Message = systemMessage
+                });
+                model.SetErrors((ServiceProviderResult)currentWishList.ServiceProviderResult);
+                return model;
+            }
+            ManagerResponse<AddLinesToWishListResult, WishList> managerResponse = this.WishListManager.AddLinesToWishList(currentStorefront, visitorContext, currentWishList.Result, wishListLines);
+            if (!managerResponse.ServiceProviderResult.Success)
+            {
+                model.SetErrors((ServiceProviderResult)managerResponse.ServiceProviderResult);
+                return model;
+            }
+            model.Initialize(managerResponse.Result);
+            model.Success = true;
+            return model;
+        }
+
+        public virtual WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<string> wishListLineIds)
+        {
+            Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
+            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            
             Assert.ArgumentNotNull((object)wishListLineIds, nameof(wishListLineIds));
             WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
             CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
-            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext, wishListId);
+            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext);
             if (!currentWishList.ServiceProviderResult.Success || currentWishList.Result == null)
             {
                 string systemMessage = "Wish List not found.";
@@ -107,16 +133,17 @@ namespace Sitecore.Feature.WishListLines.Repositories
             return model;
         }
 
-        public virtual WishListJsonResult UpdateWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string wishListId, string lineNumber, Decimal quantity)
+
+        // Not implemented
+        public virtual WishListJsonResult UpdateWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string lineNumber, Decimal quantity)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
-            Assert.ArgumentNotNull((object)wishListId, nameof(wishListId));
+            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            
             Assert.ArgumentNotNull((object)lineNumber, nameof(lineNumber));
             Assert.IsTrue(quantity > Decimal.Zero, "quantity > 0");
             WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
             CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
-            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext, wishListId);
+            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext);
             if (!currentWishList.ServiceProviderResult.Success || currentWishList.Result == null)
             {
                 string systemMessage = "Wish List not found.";

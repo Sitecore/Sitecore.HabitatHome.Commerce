@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Commerce.Entities.WishLists;
+using Sitecore.Commerce.Services;
 
 namespace Sitecore.Feature.WishListLines.Repositories
 {
@@ -15,12 +17,12 @@ namespace Sitecore.Feature.WishListLines.Repositories
     {
         WishListLinesRenderingModel GetWishListLinesModel();
 
-        //BaseJsonResult AddLinesToWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<string> wishListLineIds);
+        WishListJsonResult AddWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<WishListLine> wishListLines);
         WishListJsonResult CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext);
 
-        WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string wishListId, IEnumerable<string> wishListLineIds);
+        WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<string> wishListLineIds);
 
-        WishListJsonResult UpdateWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string wishListId, string lineNumber, Decimal quantity);
+        WishListJsonResult UpdateWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string lineNumber, Decimal quantity);
 
         //BaseJsonResult UpdateLineItemQuantity(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string lineNumber, Decimal quantity);
 
