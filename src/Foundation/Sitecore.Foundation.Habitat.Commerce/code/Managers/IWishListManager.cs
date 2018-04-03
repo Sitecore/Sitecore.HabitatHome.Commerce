@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Foundation.Habitat.Commerce.Managers
+namespace Sitecore.Foundation.Commerce.WishLists.Managers
 {
     public interface IWishListManager
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Foundation.Habitat.Commerce.Providers
+namespace Sitecore.Foundation.Commerce.WishLists.Providers
 {
     public class WishListConnectServiceProvider : ConnectServiceProvider, IWishListConnectServiceProvider
     {

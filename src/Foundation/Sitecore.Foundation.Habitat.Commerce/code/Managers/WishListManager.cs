@@ -8,13 +8,13 @@ using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Foundation.Habitat.Commerce.Providers;
+using Sitecore.Foundation.Commerce.WishLists.Providers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Foundation.Habitat.Commerce.Managers
+namespace Sitecore.Foundation.Commerce.WishLists.Managers
 {
     public class WishListManager : IWishListManager
     {
