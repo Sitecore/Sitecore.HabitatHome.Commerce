@@ -58,7 +58,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.WishLists"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WishLists", "WishLists", "{73839A16-68E5-4FF5-B6F2-E4A084D105F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.WishLists", "src\Foundation\Sitecore.Foundation.Habitat.Commerce\code\Sitecore.Foundation.Commerce.WishLists.csproj", "{69B1F75B-7AF9-4803-ABDE-8F62A7137DF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.WishLists", "src\Foundation\WishLists\code\Sitecore.Foundation.Commerce.WishLists.csproj", "{69B1F75B-7AF9-4803-ABDE-8F62A7137DF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WishListLines", "WishListLines", "{F13367E2-951C-45EE-8F6A-37216365B1C4}"
 EndProject
