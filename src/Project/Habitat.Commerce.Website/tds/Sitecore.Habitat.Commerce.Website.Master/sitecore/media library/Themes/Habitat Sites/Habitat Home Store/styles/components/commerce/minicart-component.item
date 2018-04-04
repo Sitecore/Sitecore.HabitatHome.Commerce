@@ -8,7 +8,7 @@ name: minicart-component
 master: {00000000-0000-0000-0000-000000000000}
 template: {962B53C4-F93B-4DF9-9821-415C867B8903}
 templatekey: File
-created: 20180215T174745Z
+created: 20180325T025036Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
@@ -20,7 +20,7 @@ QGNoYXJzZXQgIlVURi04IjsKLyogYnJlYWtwb2ludHMgKi8KLmN4YS1taW5pY2FydC1jb21wb25l
 bnQgewogIGRpc3BsYXk6IGlubGluZS1ibG9jazsKICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgdmVy
 dGljYWwtYWxpZ246IG1pZGRsZTsKICBoZWlnaHQ6IDgwcHg7CiAgbGluZS1oZWlnaHQ6IDc0cHg7
 CiAgYm9yZGVyLXRvcDogNHB4IHNvbGlkIHRyYW5zcGFyZW50Owp9CgpAbWVkaWEgb25seSBzY3Jl
-ZW4gYW5kIChtYXgtd2lkdGg6IDc4NnB4KSB7CiAgLmN4YS1taW5pY2FydC1jb21wb25lbnQgewog
+ZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7CiAgLmN4YS1taW5pY2FydC1jb21wb25lbnQgewog
 ICAgZGlzcGxheTogbm9uZTsKICB9Cn0KCi5jeGEtbWluaWNhcnQtY29tcG9uZW50IC50b3AtdGV4
 dCB7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7CiAg
 Y3Vyc29yOiBwb2ludGVyOwogIHBvc2l0aW9uOiByZWxhdGl2ZTsKICB6LWluZGV4OiAxMDA7CiAg
@@ -233,7 +233,7 @@ content-length: 61
 ----version----
 language: en
 version: 1
-revision: 42ad26ef-37e1-4499-b3f1-1874f6a9b908
+revision: c5b7dce5-2080-4a08-882f-8a59a13d3450
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -248,14 +248,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-42ad26ef-37e1-4499-b3f1-1874f6a9b908
+c5b7dce5-2080-4a08-882f-8a59a13d3450
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180227T185841Z
+20180404T183947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

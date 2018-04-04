@@ -3978,7 +3978,7 @@ main .btn.btn-block.btn-primary {
   padding-top: 100px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .site-search-results > .component-content > .row > .col-sm-4 {
     float: none;
     width: auto;
@@ -4001,7 +4001,7 @@ main .btn.btn-block.btn-primary {
   line-height: 0.9;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .site-search-results .search-result-list .field-title a {
     font-size: 30px;
   }
@@ -4025,7 +4025,7 @@ main .btn.btn-block.btn-primary {
   width: 100%;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .site-search-results .search-result-list li {
     display: block;
     margin-bottom: 2em;
@@ -4085,7 +4085,7 @@ main .btn.btn-block.btn-primary {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .site-search-results .facet-single-selection-list {
     margin-bottom: 40px;
   }
