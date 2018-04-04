@@ -34,7 +34,13 @@ namespace Sitecore.Feature.InventoryUpload.HabitatUtility
                 return;
             }
             var inputJson = JsonConvert.DeserializeObject<ImportInventoryModel>(inventory);
-            Sitecore.Context.SetActiveSite("Storefront");            
+            Sitecore.Context.SetActiveSite("Storefront");  
+            
+            if(inputJson.Stores.Count() > 2)
+            {
+                Response.Write($" <br /> {startSpanRed} PROCESSING STOPPED - PLEASE UPLOAD AT MAX 2 STORES {endSpan}");
+                return;
+            }
 
            var inventoryDetails= inputJson;
             {
@@ -54,7 +60,7 @@ namespace Sitecore.Feature.InventoryUpload.HabitatUtility
 
                     Response.Write(result.IsSuccessStatusCode
                         ? $" <br /> {startSpanGreen} SUCCESS submitting inventory to authoring {endSpan}"
-                        : $" <br /> {startSpanRed}Failed to submit Inventory to authoring  {endSpan}");
+                        : $" <br /> {startSpanRed} Failed to submit Inventory to authoring  {endSpan}");
                 }
                 catch (Exception ex)
                 {
@@ -91,7 +97,7 @@ namespace Sitecore.Feature.InventoryUpload.HabitatUtility
     }    
     public class ImportInventoryModel
     {        
-        public List<string> ProductToAssociate { get; set; }
+        public List<string> ProductsToAssociate { get; set; }
         public string Catalog { get; set; }
         
         public List<Store> Stores { get; set; }
