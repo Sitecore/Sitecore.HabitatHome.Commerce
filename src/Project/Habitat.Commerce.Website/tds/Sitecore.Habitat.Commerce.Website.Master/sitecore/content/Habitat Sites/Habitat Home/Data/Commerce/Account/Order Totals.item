@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {E1D396F3-4685-435C-A009-10AEEF1AF9F8}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Totals
+parent: {F7829E6C-7957-4E54-9644-787873FF8AD6}
+name: Order Totals
+master: {31CE8C90-EF91-4185-9BB1-85F3A10CECC0}
+template: {9D1CAFC5-E4E6-45D4-BAD1-C8A0FE542499}
+templatekey: Order Totals
+created: 20180325T024944Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{85A688CD-32C0-4F18-B892-8D5D2E68008D}
+----version----
+language: en
+version: 1
+revision: 49ef1d1d-7d11-4957-9065-9350517de9ba
+
+----field----
+field: {4902E256-F5B7-4AAF-8C51-F0D72392F508}
+name: Order Total Header Label
+key: order total header label
+content-length: 7
+
+Summary
+----field----
+field: {7D63A0FD-57ED-4A04-A84A-41EE5A60E3AB}
+name: Tax Total Text
+key: tax total text
+content-length: 3
+
+Tax
+----field----
+field: {E4345F9C-2BF1-4018-92E7-5A60E5039A9F}
+name: Order Total Text
+key: order total text
+content-length: 5
+
+Total
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180201T152356Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+49ef1d1d-7d11-4957-9065-9350517de9ba
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T163555Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,106 @@
+----item----
+version: 1
+id: {C2A89392-9DED-4312-825C-2B672A930195}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Foodie/Refridgerators
+parent: {933B76F9-29DA-4C9E-BF3B-2FB078A420B2}
+name: Refridgerators
+master: {00000000-0000-0000-0000-000000000000}
+template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
+templatekey: _NavigationImage
+created: 20180325T025004Z
+
+----version----
+language: en
+version: 1
+revision: 9b35796b-21a4-42fc-8b94-37e5bf1a95b3
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 80
+
+<link text="Refrigerators" linktype="rel" url="/shop/Refrigerators" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{E03545B3-EFE1-4C11-897D-2D0325D736D1}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180320T225327Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9b35796b-21a4-42fc-8b94-37e5bf1a95b3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T182205Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: d66c45a9-6d61-4b9b-89c4-24fabd3e8447
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180327T014953Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d66c45a9-6d61-4b9b-89c4-24fabd3e8447
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180327T021034Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

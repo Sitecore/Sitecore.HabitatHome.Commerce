@@ -1,0 +1,23 @@
+﻿---
+ID: "d3cb4d5b-b5a1-441c-a226-b9a6b64b8ff8"
+Parent: "046748ba-3697-4d42-83e6-f34712c33a78"
+Template: "b83234ee-422d-4952-bf42-f85d7bc0e02a"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Cart
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5E220491-D990-4764-94D4-37EFBFB987CB}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152357Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

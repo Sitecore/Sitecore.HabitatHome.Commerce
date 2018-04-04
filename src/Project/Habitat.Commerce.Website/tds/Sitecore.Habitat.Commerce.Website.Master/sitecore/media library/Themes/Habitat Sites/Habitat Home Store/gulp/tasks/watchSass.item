@@ -1,0 +1,128 @@
+----item----
+version: 1
+id: {02A9D951-DDD5-4CC6-962B-6EBDB24D1B3B}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/tasks/watchSass
+parent: {B4A26495-8B8D-401A-871D-0C120B680710}
+name: watchSass
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20180215T174739Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 3780
+
+aW1wb3J0IGd1bHAgZnJvbSAnZ3VscCc7DQppbXBvcnQgc2FzcyBmcm9tICdndWxwLXNhc3MnOw0K
+aW1wb3J0IHNvdXJjZW1hcHMgZnJvbSAnZ3VscC1zb3VyY2VtYXBzJzsNCmltcG9ydCByZW5hbWUg
+ZnJvbSAnZ3VscC1yZW5hbWUnOw0KaW1wb3J0IGNvbmNhdCBmcm9tICdndWxwLWNvbmNhdCc7DQpp
+bXBvcnQgYXV0b3ByZWZpeGVyIGZyb20gJ2d1bHAtYXV0b3ByZWZpeGVyJzsNCmltcG9ydCB3YXRj
+aCBmcm9tICdndWxwLXdhdGNoJzsNCmltcG9ydCBwYXRoIGZyb20gJ3BhdGgnOw0KaW1wb3J0IGZz
+IGZyb20gJ2ZzJzsNCmltcG9ydCBzYXNzR3JhcGhlciBmcm9tICdndWxwLXNhc3MtZ3JhcGhlcic7
+DQppbXBvcnQgZmlsdGVyIGZyb20gImd1bHAtZmlsdGVyIjsNCmltcG9ydCBidWxrU2FzcyBmcm9t
+ICdndWxwLXNhc3MtYnVsay1pbXBvcnQnOw0KaW1wb3J0IGd1bHBpZiBmcm9tICdndWxwLWlmJzsN
+Ci8vDQppbXBvcnQgZGVzdFBhdGggZnJvbSAnLi4vdXRpbC9kZXN0UGF0aCc7DQppbXBvcnQgbG9n
+aW4gZnJvbSAnLi9sb2dpbic7DQppbXBvcnQgY29uZmlnIGZyb20gJy4uL2NvbmZpZyc7DQppbXBv
+cnQgc3R5bGVzQnVpbGRlciBmcm9tICcuLi91dGlsL3Nhc3NTdHlsZUJ1aWxkZXInOw0KaW1wb3J0
+IGNvbXBvbmVudHNCdWlsZGVyIGZyb20gJy4uL3V0aWwvc2Fzc0NvbXBvbmVudHNCdWlsZGVyJzsN
+CmltcG9ydCB1cGRhdGVGcm9tRGVwZW5kZW5jeSBmcm9tICcuLi91dGlsL3Nhc3NVcGRhdGVGcm9t
+RGVwZW5kZW5jeSc7DQppbXBvcnQgcmVtb3ZlVGFyZ2V0Q3NzIGZyb20gJy4uL3V0aWwvcmVtb3Zl
+VGFyZ2V0Q3NzJzsNCmltcG9ydCBzdGFydFRhc2sgZnJvbSAnLi4vdXRpbC9zdGFydFRhc2snOw0K
+DQpndWxwLnRhc2soJ3dhdGNoLXN0eWxlcycsICgpID0+IHsNCiAgICBsZXQgY29uZiA9IGNvbmZp
+Zy5zYXNzLnN0eWxlczsNCiAgICByZXR1cm4gd2F0Y2goY29uZi5zYXNzUGF0aCwgZnVuY3Rpb24o
+ZmlsZSkgew0KICAgICAgICBzdHlsZXNCdWlsZGVyKGZpbGUpOw0KICAgIH0pDQoNCn0pDQoNCmd1
+bHAudGFzaygnd2F0Y2gtYmFzZScsICgpID0+IHsNCiAgICBsZXQgY29uZiA9IGNvbmZpZy5zYXNz
+LmNvcmU7DQogICAgcmV0dXJuIHdhdGNoKGNvbmYuc2Fzc1BhdGgsIGZ1bmN0aW9uKGZpbGUpIHsN
+CiAgICAgICAgc3R5bGVzQnVpbGRlcihmaWxlKTsNCiAgICAgICAgY29tcG9uZW50c0J1aWxkZXIo
+ZmlsZSk7DQogICAgfSkNCn0pDQoNCmd1bHAudGFzaygnd2F0Y2gtY29tcG9uZW50JywgKCkgPT4g
+ew0KICAgIHZhciBjb25mID0gY29uZmlnLnNhc3MuY29tcG9uZW50czsNCiAgICByZXR1cm4gd2F0
+Y2goY29uZi5zYXNzUGF0aCwgeyBiYXNlOiBwYXRoLnJlc29sdmUoJ3Nhc3MvJykgfSkNCiAgICAg
+ICAgLm9uKCd1bmxpbmsnLCBmdW5jdGlvbihmaWxlKSB7DQogICAgICAgICAgICByZW1vdmVUYXJn
+ZXRDc3MoZmlsZSk7DQogICAgICAgIH0pDQogICAgICAgIC5waXBlKGd1bHBpZihmdW5jdGlvbihm
+aWxlKSB7DQogICAgICAgICAgICByZXR1cm4gZmlsZS5ldmVudCA9PSAnY2hhbmdlJyB8fCBmaWxl
+LmV2ZW50ID09ICdhZGQnOw0KICAgICAgICB9LCBidWxrU2FzcygpKSkNCiAgICAgICAgLnBpcGUo
+Z3VscGlmKGZ1bmN0aW9uKCkgew0KICAgICAgICAgICAgcmV0dXJuIGNvbmZpZy5zYXNzU291cmNl
+TWFwOw0KICAgICAgICB9LCBzb3VyY2VtYXBzLmluaXQoKSkpDQogICAgICAgIC5waXBlKHNhc3Mo
+eyBvdXRwdXRTdHlsZTogJ2V4cGFuZGVkJyB9KS5vbignZXJyb3InLCBmdW5jdGlvbihlcnJvcikg
+ew0KICAgICAgICAgICAgc3RhcnRUYXNrKCd3YXRjaC1jb21wb25lbnQnLCAwKQ0KICAgICAgICAg
+ICAgc2Fzcy5sb2dFcnJvci5jYWxsKHRoaXMsIGVycm9yKTsNCg0KICAgICAgICB9KSkNCiAgICAg
+ICAgLnBpcGUoYXV0b3ByZWZpeGVyKGNvbmZpZy5hdXRvcHJlZml4ZXIpKQ0KICAgICAgICAucGlw
+ZShyZW5hbWUoeyBkaXJuYW1lOiAnJyB9KSkNCiAgICAgICAgLnBpcGUoZ3VscGlmKGZ1bmN0aW9u
+KCkgew0KICAgICAgICAgICAgcmV0dXJuIGNvbmZpZy5zYXNzU291cmNlTWFwOw0KICAgICAgICB9
+LCBzb3VyY2VtYXBzLndyaXRlKCkpKQ0KICAgICAgICAucGlwZShndWxwLmRlc3QoZnVuY3Rpb24o
+ZmlsZSkgeyByZXR1cm4gZGVzdFBhdGgoeyBmaWxlOiBmaWxlIH0pIH0pKTsNCg0KfSk7DQoNCmd1
+bHAudGFzaygnd2F0Y2gtZGVwZW5kZW5jeScsICgpID0+IHsNCiAgICBsZXQgY29uZiA9IGNvbmZp
+Zy5zdHlsZXNDb25maWc7DQogICAgcmV0dXJuIHdhdGNoKCdzYXNzL3N0eWxlcy8qKi8qLnNjc3Mn
+LCB7IGJhc2U6IHBhdGgucmVzb2x2ZSgnc2Fzcy8nKSB9LCBmdW5jdGlvbihmaWxlKSB7DQogICAg
+ICAgIGxldCBkaXJOYW1lID0gZmlsZS5kaXJuYW1lLm1hdGNoKCdbYS16XC1dKiQnKVswXSwNCiAg
+ICAgICAgICAgIGZpbGVOYW1lID0gY29uZltkaXJOYW1lXTsNCiAgICAgICAgaWYgKGZpbGVOYW1l
+KSB7DQogICAgICAgICAgICB1cGRhdGVGcm9tRGVwZW5kZW5jeShmaWxlLCBmaWxlTmFtZSk7DQog
+ICAgICAgIH0NCg0KICAgIH0pDQp9KQ0KDQoNCmd1bHAudGFzaygnc2Fzcy13YXRjaCcsDQogICAg
+ZnVuY3Rpb24oKSB7DQogICAgICAgIGdsb2JhbC5pc1dhdGNoaW5nID0gdHJ1ZTsNCiAgICAgICAg
+Z3VscC5ydW4oJ3dhdGNoLWNvbXBvbmVudCcpDQogICAgICAgIGd1bHAucnVuKCd3YXRjaC1iYXNl
+JykNCiAgICAgICAgZ3VscC5ydW4oJ3dhdGNoLXN0eWxlcycpDQogICAgICAgIGd1bHAucnVuKCd3
+YXRjaC1kZXBlbmRlbmN5JykNCiAgICB9KQ==
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 2
+
+js
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/x-javascript
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2761
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/E51047F191034111949C7B405C635D35.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: b1d947a2-a014-434d-bf05-c34b59ed7325
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171108T075256Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1d947a2-a014-434d-bf05-c34b59ed7325
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20171108T075256Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

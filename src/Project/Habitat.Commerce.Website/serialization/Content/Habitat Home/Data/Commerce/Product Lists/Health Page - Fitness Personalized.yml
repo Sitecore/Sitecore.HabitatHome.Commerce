@@ -1,0 +1,30 @@
+﻿---
+ID: "43243e9e-160c-4930-8698-a9138cdfc95d"
+Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
+Template: "091b84a9-0a36-46f6-bf5c-09a536ebbf79"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Health Page - Fitness Personalized"
+DB: master
+SharedFields:
+- ID: "84ae61a2-ad10-42e5-9954-220fed6ee9a5"
+  Hint: Products List
+  Type: tree list
+  Value: |
+    {653AAAE9-9118-4ACF-AF29-D57C6E7F745B}
+    {D6520A25-4DD1-BA36-B1C2-182875CEC8E4}
+    {AE3A8B76-1CF6-4F05-1072-7E4A7626DC71}
+    {68BC4EFC-3737-EF08-C814-DE74735D9EA7}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180323T215159Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "89c0a60e-6b17-4921-afec-6482a13c7f9e"
+      Hint: Title
+      Value: To Fit Your Fitness Needs

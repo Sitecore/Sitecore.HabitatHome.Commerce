@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {71A6B2B9-449C-4661-B95D-87C4CE284753}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Page Designs/Commerce/Habitat Home Store Checkout Page
+parent: {95626B2B-0291-48BC-ACF2-6D037EC4AA03}
+name: Habitat Home Store Checkout Page
+master: {5DB503C1-E507-44F6-8302-C16744553392}
+template: {26336120-B85F-4BF2-A988-290C7B3328FC}
+templatekey: Page Design
+created: 20180325T024951Z
+
+----field----
+field: {7B487159-E180-4846-BE49-E196E4C3A2B3}
+name: Page Design Theme
+key: page design theme
+content-length: 0
+
+
+----field----
+field: {FD4E2050-186C-4375-8B99-E8A85DD7436E}
+name: __Enable item fallback
+key: __enable item fallback
+content-length: 0
+
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 144
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /></r>
+----version----
+language: en
+version: 1
+revision: 49663054-cfcc-4dff-8d60-38a0b461f446
+
+----field----
+field: {0966B999-0D0E-4278-ACC9-9DA69D461FE6}
+name: PartialDesigns
+key: partialdesigns
+content-length: 194
+
+{DE829BC4-9894-42E4-B8F0-34B6D65FB60B}|{ACF349A6-E08F-4C3F-BB86-A86F5C003E7A}|{0F4A411E-1B6C-41FD-9DED-6C9825DA1FB4}|{11EB17F2-88C8-489E-BA29-059DC7BC0455}|{47190973-2196-4887-AD63-4E0424C2CDCA}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180201T152522Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+49663054-cfcc-4dff-8d60-38a0b461f446
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180403T192932Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

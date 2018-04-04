@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {43243E9E-160C-4930-8698-A9138CDFC95D}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Health Page - Fitness Personalized
+parent: {E1B36626-2FB2-45A8-AEC5-7E47C7F88C0D}
+name: Health Page - Fitness Personalized
+master: {00000000-0000-0000-0000-000000000000}
+template: {091B84A9-0A36-46F6-BF5C-09A536EBBF79}
+templatekey: Selected Products
+created: 20180325T034622Z
+
+----field----
+field: {84AE61A2-AD10-42E5-9954-220FED6EE9A5}
+name: Products List
+key: products list
+content-length: 155
+
+{653AAAE9-9118-4ACF-AF29-D57C6E7F745B}|{D6520A25-4DD1-BA36-B1C2-182875CEC8E4}|{AE3A8B76-1CF6-4F05-1072-7E4A7626DC71}|{68BC4EFC-3737-EF08-C814-DE74735D9EA7}
+----version----
+language: en
+version: 1
+revision: a3200d35-3d29-4877-b07d-aeb76514eceb
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 25
+
+To Fit Your Fitness Needs
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180323T215159Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a3200d35-3d29-4877-b07d-aeb76514eceb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180323T221734Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

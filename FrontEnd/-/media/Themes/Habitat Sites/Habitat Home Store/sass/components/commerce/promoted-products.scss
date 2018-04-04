@@ -1,0 +1,34 @@
+@import '../../index';
+@import './product-list-component';
+.component.cxa-promoted-products-component {
+    @extend .component.cxa-productlist-component;
+    .product-list{
+        .title{
+            font-size: $font-size-xlarge;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: bold;
+        }
+        .load-more-btn{
+            display: none;
+        }
+        &>ul{
+            >li{
+                .product-summary{
+                    .product-info{
+                        .product-category {
+                            a {
+                                font-size: .7em;
+                                text-decoration: none;
+
+                                &:after, {
+                                    font-size: .7em;
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

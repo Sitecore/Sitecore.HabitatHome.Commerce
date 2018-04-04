@@ -1,0 +1,23 @@
+﻿---
+ID: "6ac1a349-d945-4147-ae5c-e7f94756da81"
+Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
+Template: "a2f1eb5f-126e-49ef-91ba-b40420b7928a"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Address List
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FE48300B-C0FB-4F14-9F99-A47527AD9E30}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152356Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

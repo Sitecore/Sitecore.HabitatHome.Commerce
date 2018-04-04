@@ -1,0 +1,23 @@
+﻿---
+ID: "bbe422b1-5b81-4f46-a445-a672967be9d9"
+Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
+Template: "0b7cd8ec-0a11-459a-9827-7d792b5bf6ba"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog/Product List Page Info
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6DE3C0E0-809C-482C-B786-1B69C129AEF5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152358Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

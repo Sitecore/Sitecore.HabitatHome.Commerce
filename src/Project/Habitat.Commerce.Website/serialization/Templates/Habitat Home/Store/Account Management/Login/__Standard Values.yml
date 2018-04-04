@@ -1,0 +1,22 @@
+﻿---
+ID: "54643ae0-7917-4e6e-b2d2-f6af61fd127e"
+Parent: "27ea5bb1-c49d-473a-846e-8f88dbd418f8"
+Template: "27ea5bb1-c49d-473a-846e-8f88dbd418f8"
+Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Account Management/Login/__Standard Values
+DB: master
+SharedFields:
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: "login-page"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170125T110526Z

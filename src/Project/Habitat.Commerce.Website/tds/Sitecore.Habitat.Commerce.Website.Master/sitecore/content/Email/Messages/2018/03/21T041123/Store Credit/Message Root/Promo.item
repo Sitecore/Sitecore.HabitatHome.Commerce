@@ -1,0 +1,94 @@
+----item----
+version: 1
+id: {A14B200F-C38D-4C71-ADDD-2B28C01FC0F2}
+database: master
+path: /sitecore/content/Email/Messages/2018/03/21T041123/Store Credit/Message Root/Promo
+parent: {4628E560-3B8B-44DE-9D83-EE8E790D16C7}
+name: Promo
+master: {06A7EA2B-A5C7-4091-8E4B-35001A173758}
+template: {7B14280B-F67B-43BF-A509-0FC4B1D74589}
+templatekey: Promo
+created: 20180325T032120Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{47998574-673A-4A8B-A42F-B44D41F2D102}
+----version----
+language: en
+version: 1
+revision: 1687620e-db03-4c83-ab7f-9444a7945d41
+
+----field----
+field: {2BE2FD2C-B43F-4237-9B24-2905EFE66483}
+name: Title
+key: title
+content-length: 23
+
+Helix Fitness Trackers 
+----field----
+field: {270CC513-EE8A-4D95-87A3-9EF5129733AD}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{D46A18FA-2C00-4BBF-A52A-D04CAA613906}" />
+----field----
+field: {4521AD3A-5672-409A-86C1-58362E88DDB6}
+name: Link
+key: link
+content-length: 238
+
+<link linktype="external" text="Shop The Line" url="https://habitathomedemo.hhogdev.com/shop/DefaultRecommendations%3dhabitat_master-defaultrecommendations/HabitatStrivaActivityTrackerwithHeartRateMonitor%3d6042886" anchor="" target="" />
+----field----
+field: {330DC4A3-644B-4ED4-8775-F7313DCAB71F}
+name: LinkLabel
+key: linklabel
+content-length: 14
+
+Shop the Line 
+----field----
+field: {EFFCB8E2-8C7E-4CA8-87EA-6E9B9D120C13}
+name: PromoText
+key: promotext
+content-length: 120
+
+Maximize your efforts with our complete line of wearable fitness technology. Available in all Habitat Home stores!&nbsp;
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180322T202838Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1687620e-db03-4c83-ab7f-9444a7945d41
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180326T112211Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

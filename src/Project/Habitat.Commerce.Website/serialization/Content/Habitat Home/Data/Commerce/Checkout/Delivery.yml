@@ -1,0 +1,29 @@
+﻿---
+ID: "45993ea5-0c1d-45fc-a8c0-1480a9451b6a"
+Parent: "6c346c07-69d0-4757-90db-27c28f115157"
+Template: "abbadeb8-d7c2-492f-a96e-ba78d898328e"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Delivery
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{D99135E6-544A-4BD7-9B41-AB83CA1BE028}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152358Z
+    - ID: "3c527720-2c82-4eff-932a-6072dfeda6ac"
+      Hint: Previous Button Label
+      Value: Continue shopping great products
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "c13d2d38-e9db-489c-ad66-cb7afbd7fdcf"
+      Hint: Name Label
+      Value: Name

@@ -1,0 +1,669 @@
+﻿{
+  "productsToAssociate": [ "Entity-SellableItem-6042183|56042183" ],
+  "catalog":  "Habitat_Master",
+	"stores": [{
+		"StoreName": "Edmonton Store",
+		"Address": "11285 274 Street",
+		"City": "Edmonton",
+		"State": "Alberta",
+		"Abbreviation": "AB",
+		"ZipCode": "T7X 6P9",
+		"Lat": 53.5559564,
+		"Long": -113.7748093,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Victoria Store",
+		"Address": "675 Belleville Street",
+		"City": "Victoria",
+		"State": "British Columbia",
+		"Abbreviation": "BC",
+		"ZipCode": "V8W 9W2",
+		"Lat": 48.41963,
+		"Long": -123.37026,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Winnipeg Store",
+		"Address": "433 Broadway",
+		"City": "Winnipeg",
+		"State": "Manitoba",
+		"Abbreviation": "MB",
+		"ZipCode": "R3C 3J3",
+		"Lat": 49.884394,
+		"Long": -97.146918,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Fredericton Store",
+		"Address": "706 Queen St.",
+		"City": "Fredericton",
+		"State": "New Brunswick",
+		"Abbreviation": "NB",
+		"ZipCode": "E3B 1C5",
+		"Lat": 45.959325,
+		"Long": -66.636103,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "St. Johns Store",
+		"Address": "100 Prince Philip Dr.",
+		"City": "St. Johns",
+		"State": "Newfoundland and Labrador",
+		"Abbreviation": "NL",
+		"ZipCode": "A1B 3R4",
+		"Lat": 47.583408,
+		"Long": -52.723808,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Halifax Store",
+		"Address": "1723 Hollis St.",
+		"City": "Halifax",
+		"State": "Nova Scotia",
+		"Abbreviation": "NS",
+		"ZipCode": "B3J 1V9",
+		"Lat": 44.64791,
+		"Long": -63.573396,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Yellowknife Store",
+		"Address": "4750 48 Street",
+		"City": "Yellowknife",
+		"State": "Northwest Territories",
+		"Abbreviation": "NT",
+		"ZipCode": "X1A 3T5",
+		"Lat": 62.459384,
+		"Long": -114.382042,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Iqaluit Store",
+		"Address": "901 Nunavut St.",
+		"City": "Iqaluit",
+		"State": "Nunavut",
+		"Abbreviation": "NU",
+		"ZipCode": "X0A 0H0",
+		"Lat": 63.750278,
+		"Long": -68.523056,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Ottowa Store",
+		"Address": "4321 Wellington St.",
+		"City": "Ottawa",
+		"State": "Ontario",
+		"Abbreviation": "ON",
+		"ZipCode": "K1A 04A",
+		"Lat": 45.424807,
+		"Long": -75.699234,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Toronto Store",
+		"Address": "1 King's Collect Circle",
+		"City": "Toronto",
+		"State": "Ontario",
+		"Abbreviation": "ON",
+		"ZipCode": "M5S 1A8",
+		"Lat": 43.662447,
+		"Long": -79.391708,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Charlottetown Store",
+		"Address": "110 Queen Street",
+		"City": "Charlottetown",
+		"State": "Prince Edward Island",
+		"Abbreviation": "PE",
+		"ZipCode": "C1A 4B1",
+		"Lat": 46.234927,
+		"Long": -63.126084,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Quebec City Store",
+		"Address": "1045 Rue Des Parliamentaires",
+		"City": "Quebec City",
+		"State": "Quebec",
+		"Abbreviation": "QC",
+		"ZipCode": "G1A 1A3",
+		"Lat": 46.808762,
+		"Long": -71.214178,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Regina Store",
+		"Address": "3085 Albert St.",
+		"City": "Regina",
+		"State": "Saskatchewan",
+		"Abbreviation": "SK",
+		"ZipCode": "S4S 0B3",
+		"Lat": 50.432426,
+		"Long": -104.615099,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "Whitehorse Store",
+		"Address": "2074 2nd Ave",
+		"City": "Whitehorse",
+		"State": "Yukon",
+		"Abbreviation": "YT",
+		"ZipCode": "Y1A 1B1",
+		"Lat": 60.716948,
+		"Long": -135.049374,
+		"Country": "CA"
+	},
+	{
+		"StoreName": "London Store",
+		"Address": "10 Berners Street",
+		"City": "Fitzrovia",
+		"State": "LONDON",
+		"Abbreviation": "LDN",
+		"ZipCode": "W1T 3NP",
+		"Lat": 51.5208135,
+		"Long": -0.1447712,
+		"Country": "GB"
+	},
+	{
+	   "StoreName": "Montgomery Store",
+	   "Address": "3 Studebaker Street ",
+	   "City": "Montgomery",
+	   "State": "Alabama",
+	   "Abbreviation": "AL",
+	   "ZipCode": 36104,
+	   "Lat": 32.361538,
+	   "Long": -86.279118
+	 },
+	 {
+	   "StoreName": "Juneau Store",
+	   "Address": "577 West Broad Street ",
+	   "City": "Juneau",
+	   "State": "Alaska",
+	   "Abbreviation": "AK",
+	   "ZipCode": 99801,
+	   "Lat": 58.301935,
+	   "Long": -134.41974
+	 },
+	 {
+	   "StoreName": "Phoenix Store",
+	   "Address": "785 W. Fairfield Lane ",
+	   "City": "Phoenix",
+	   "State": "Arizona",
+	   "Abbreviation": "AZ",
+	   "ZipCode": 85001,
+	   "Lat": 33.448457,
+	   "Long": -112.073844
+	 },
+	 {
+	   "StoreName": "Little Rock Store",
+	   "Address": "390 North Bohemia Court ",
+	   "City": "Little Rock",
+	   "State": "Arkansas",
+	   "Abbreviation": "AR",
+	   "ZipCode": 72201,
+	   "Lat": 34.736009,
+	   "Long": -92.331122
+	 },
+	 {
+	   "StoreName": "Sacramento Store",
+	   "Address": "926 Marshall Dr. ",
+	   "City": "Sacramento",
+	   "State": "California",
+	   "Abbreviation": "CA",
+	   "ZipCode": 95814,
+	   "Lat": 38.555605,
+	   "Long": -121.468926
+	 },
+	 {
+	   "StoreName": "Denver Store",
+	   "Address": "917 North Newcastle Ave. ",
+	   "City": "Denver",
+	   "State": "Colorado",
+	   "Abbreviation": "CO",
+	   "ZipCode": 80202,
+	   "Lat": 39.7391667,
+	   "Long": -104.984167
+	 },
+	 {
+	   "StoreName": "Hartford Store",
+	   "Address": "307 East Lower River St. ",
+	   "City": "Hartford",
+	   "State": "Connecticut",
+	   "Abbreviation": "CT",
+	   "ZipCode": 6103,
+	   "Lat": 41.767,
+	   "Long": -72.677
+	 },
+	 {
+	   "StoreName": "Dover Store",
+	   "Address": "81 West Second Lane ",
+	   "City": "Dover",
+	   "State": "Delaware",
+	   "Abbreviation": "DE",
+	   "ZipCode": 19901,
+	   "Lat": 39.161921,
+	   "Long": -75.526755
+	 },
+	 {
+	   "StoreName": "Tallahassee Store",
+	   "Address": "8438 Hillside St. ",
+	   "City": "Tallahassee",
+	   "State": "Florida",
+	   "Abbreviation": "FL",
+	   "ZipCode": 32301,
+	   "Lat": 30.4518,
+	   "Long": -84.27277
+	 },
+	 {
+	   "StoreName": "Atlanta Store",
+	   "Address": "9759 Hudson St. ",
+	   "City": "Atlanta",
+	   "State": "Georgia",
+	   "Abbreviation": "GA",
+	   "ZipCode": 30303,
+	   "Lat": 33.76,
+	   "Long": -84.39
+	 },
+	 {
+	   "StoreName": "Honolulu Store",
+	   "Address": "771 Fulton Rd. ",
+	   "City": "Honolulu",
+	   "State": "Hawaii",
+	   "Abbreviation": "HI",
+	   "ZipCode": 96813,
+	   "Lat": 21.30895,
+	   "Long": -157.826182
+	 },
+	 {
+	   "StoreName": "Boise Store",
+	   "Address": "9513 Walnut Court ",
+	   "City": "Boise",
+	   "State": "Idaho",
+	   "Abbreviation": "ID",
+	   "ZipCode": 83702,
+	   "Lat": 43.613739,
+	   "Long": -116.237651
+	 },
+	 {
+	   "StoreName": "Springfield Store",
+	   "Address": "655 SE. Rocky River Ave. ",
+	   "City": "Springfield",
+	   "State": "Illinois",
+	   "Abbreviation": "IL",
+	   "ZipCode": 62701,
+	   "Lat": 39.78325,
+	   "Long": -89.650373
+	 },
+	 {
+	   "StoreName": "Indianapolis Store",
+	   "Address": "84B Constitution Dr. ",
+	   "City": "Indianapolis",
+	   "State": "Indiana",
+	   "Abbreviation": "IN",
+	   "ZipCode": 46225,
+	   "Lat": 39.790942,
+	   "Long": -86.147685
+	 },
+	 {
+	   "StoreName": "Des Moines Store",
+	   "Address": "979 W. Bank Dr. ",
+	   "City": "Des Moines",
+	   "State": "Iowa",
+	   "Abbreviation": "IA",
+	   "ZipCode": 50309,
+	   "Lat": 41.590939,
+	   "Long": -93.620866
+	 },
+	 {
+	   "StoreName": "Topeka Store",
+	   "Address": "8796 West Santa Clara Lane ",
+	   "City": "Topeka",
+	   "State": "Kansas",
+	   "Abbreviation": "KS",
+	   "ZipCode": 66603,
+	   "Lat": 39.04,
+	   "Long": -95.69
+	 },
+	 {
+	   "StoreName": "Frankfort Store",
+	   "Address": "8345 North Bayport Road ",
+	   "City": "Frankfort",
+	   "State": "Kentucky",
+	   "Abbreviation": "KY",
+	   "ZipCode": 40601,
+	   "Lat": 38.197274,
+	   "Long": -84.86311
+	 },
+	 {
+	   "StoreName": "Baton Rouge Store",
+	   "Address": "8546 Richardson Dr. ",
+	   "City": "Baton Rouge",
+	   "State": "Louisiana",
+	   "Abbreviation": "LA",
+	   "ZipCode": 70802,
+	   "Lat": 30.45809,
+	   "Long": -91.140229
+	 },
+	 {
+	   "StoreName": "Augusta Store",
+	   "Address": "8347 Penn Street ",
+	   "City": "Augusta",
+	   "State": "Maine",
+	   "Abbreviation": "ME",
+	   "ZipCode": 4330,
+	   "Lat": 44.323535,
+	   "Long": -69.765261
+	 },
+	 {
+	   "StoreName": "Annapolis Store",
+	   "Address": "7548 Beacon Lane ",
+	   "City": "Annapolis",
+	   "State": "Maryland",
+	   "Abbreviation": "MD",
+	   "ZipCode": 21401,
+	   "Lat": 38.972945,
+	   "Long": -76.501157
+	 },
+	 {
+	   "StoreName": "Boston Store",
+	   "Address": "8960 Hamilton Avenue ",
+	   "City": "Boston",
+	   "State": "Massachusetts",
+	   "Abbreviation": "MA",
+	   "ZipCode": 2201,
+	   "Lat": 42.2352,
+	   "Long": -71.0275
+	 },
+	 {
+	   "StoreName": "Lansing Store",
+	   "Address": "7772 Taylor Drive ",
+	   "City": "Lansing",
+	   "State": "Michigan",
+	   "Abbreviation": "MI",
+	   "ZipCode": 48933,
+	   "Lat": 42.7335,
+	   "Long": -84.5467
+	 },
+	 {
+	   "StoreName": "St. Paul Store",
+	   "Address": "178 Green Dr. ",
+	   "City": "St. Paul",
+	   "State": "Minnesota",
+	   "Abbreviation": "MN",
+	   "ZipCode": 55102,
+	   "Lat": 44.95,
+	   "Long": -93.094
+	 },
+	 {
+	   "StoreName": "Jackson Store",
+	   "Address": "2 North Birchwood St. ",
+	   "City": "Jackson",
+	   "State": "Mississippi",
+	   "Abbreviation": "MS",
+	   "ZipCode": 39205,
+	   "Lat": 32.32,
+	   "Long": -90.207
+	 },
+	 {
+	   "StoreName": "Jefferson City Store",
+	   "Address": "28 Glenholme Street ",
+	   "City": "Jefferson City",
+	   "State": "Missouri",
+	   "Abbreviation": "MO",
+	   "ZipCode": 65101,
+	   "Lat": 38.572954,
+	   "Long": -92.189283
+	 },
+	 {
+	   "StoreName": "Helena Store",
+	   "Address": "289 Manhattan Court ",
+	   "City": "Helena",
+	   "State": "Montana",
+	   "Abbreviation": "MT",
+	   "ZipCode": 59623,
+	   "Lat": 46.595805,
+	   "Long": -112.027031
+	 },
+	 {
+	   "StoreName": "Lincoln Store",
+	   "Address": "400 Kingston Rd. ",
+	   "City": "Lincoln",
+	   "State": "Nebraska",
+	   "Abbreviation": "NE",
+	   "ZipCode": 68502,
+	   "Lat": 40.809868,
+	   "Long": -96.675345
+	 },
+	 {
+	   "StoreName": "Carson City Store",
+	   "Address": "7979 Goldfield Ave. ",
+	   "City": "Carson City",
+	   "State": "Nevada",
+	   "Abbreviation": "NV",
+	   "ZipCode": 89701,
+	   "Lat": 39.160949,
+	   "Long": -119.753877
+	 },
+	 {
+	   "StoreName": "Concord Store",
+	   "Address": "67 Bald Hill St. ",
+	   "City": "Concord",
+	   "State": "New Hampshire",
+	   "Abbreviation": "NH",
+	   "ZipCode": 3301,
+	   "Lat": 43.220093,
+	   "Long": -71.549127
+	 },
+	 {
+	   "StoreName": "Trenton Store",
+	   "Address": "75 Division Drive ",
+	   "City": "Trenton",
+	   "State": "New Jersey",
+	   "Abbreviation": "NJ",
+	   "ZipCode": 8608,
+	   "Lat": 40.221741,
+	   "Long": -74.756138
+	 },
+	 {
+	   "StoreName": "Santa Fe Store",
+	   "Address": "771 East Ann Road ",
+	   "City": "Santa Fe",
+	   "State": "New Mexico",
+	   "Abbreviation": "NM",
+	   "ZipCode": 87501,
+	   "Lat": 35.667231,
+	   "Long": -105.964575
+	 },
+	 {
+	   "StoreName": "Albany Store",
+	   "Address": "604 E. Monroe St. ",
+	   "City": "Albany",
+	   "State": "New York",
+	   "Abbreviation": "NY",
+	   "ZipCode": 12207,
+	   "Lat": 42.659829,
+	   "Long": -73.781339
+	 },
+	 {
+	   "StoreName": "Raleigh Store",
+	   "Address": "455 Hall Street ",
+	   "City": "Raleigh",
+	   "State": "North Carolina",
+	   "Abbreviation": "NC",
+	   "ZipCode": 27601,
+	   "Lat": 35.771,
+	   "Long": -78.638
+	 },
+	 {
+	   "StoreName": "Bismarck Store",
+	   "Address": "92 Brookside Avenue ",
+	   "City": "Bismarck",
+	   "State": "North Dakota",
+	   "Abbreviation": "ND",
+	   "ZipCode": 58501,
+	   "Lat": 48.813343,
+	   "Long": -100.779004
+	 },
+	 {
+	   "StoreName": "Columbus Store",
+	   "Address": "4 Rock Creek Court ",
+	   "City": "Columbus",
+	   "State": "Ohio",
+	   "Abbreviation": "OH",
+	   "ZipCode": 43215,
+	   "Lat": 39.962245,
+	   "Long": -83.000647
+	 },
+	 {
+	   "StoreName": "Oklahoma City Store",
+	   "Address": "9075 St Paul St. ",
+	   "City": "Oklahoma City",
+	   "State": "Oklahoma",
+	   "Abbreviation": "OK",
+	   "ZipCode": 73102,
+	   "Lat": 35.482309,
+	   "Long": -97.534994
+	 },
+	 {
+	   "StoreName": "Salem Store",
+	   "Address": "78 Ann Street ",
+	   "City": "Salem",
+	   "State": "Oregon",
+	   "Abbreviation": "OR",
+	   "ZipCode": 97301,
+	   "Lat": 44.931109,
+	   "Long": -123.029159
+	 },
+	 {
+	   "StoreName": "Harrisburg Store",
+	   "Address": "246 Center Drive ",
+	   "City": "Harrisburg",
+	   "State": "Pennsylvania",
+	   "Abbreviation": "PA",
+	   "ZipCode": 17101,
+	   "Lat": 40.269789,
+	   "Long": -76.875613
+	 },
+	 {
+	   "StoreName": "Providence Store",
+	   "Address": "9702 4th Street ",
+	   "City": "Providence",
+	   "State": "Rhode Island",
+	   "Abbreviation": "RI",
+	   "ZipCode": 2903,
+	   "Lat": 41.82355,
+	   "Long": -71.422132
+	 },
+	 {
+	   "StoreName": "Columbia Store",
+	   "Address": "7688 Virginia Court ",
+	   "City": "Columbia",
+	   "State": "South Carolina",
+	   "Abbreviation": "SC",
+	   "ZipCode": 29217,
+	   "Lat": 34,
+	   "Long": -81.035
+	 },
+	 {
+	   "StoreName": "Pierre Store",
+	   "Address": "69 Lafayette St. ",
+	   "City": "Pierre",
+	   "State": "South Dakota",
+	   "Abbreviation": "SD",
+	   "ZipCode": 57501,
+	   "Lat": 44.367966,
+	   "Long": -100.336378
+	 },
+	 {
+	   "StoreName": "Nashville Store",
+	   "Address": "9916 West Sulphur Springs Ave. ",
+	   "City": "Nashville",
+	   "State": "Tennessee",
+	   "Abbreviation": "TN",
+	   "ZipCode": 37219,
+	   "Lat": 36.165,
+	   "Long": -86.784
+	 },
+	 {
+	   "StoreName": "Austin Store",
+	   "Address": "4 Sutor Dr. ",
+	   "City": "Austin",
+	   "State": "Texas",
+	   "Abbreviation": "TX",
+	   "ZipCode": 78701,
+	   "Lat": 30.266667,
+	   "Long": -97.75
+	 },
+	 {
+	   "StoreName": "Salt Lake City Store",
+	   "Address": "535 N. College Drive ",
+	   "City": "Salt Lake City",
+	   "State": "Utah",
+	   "Abbreviation": "UT",
+	   "ZipCode": 84111,
+	   "Lat": 40.7547,
+	   "Long": -111.892622
+	 },
+	 {
+	   "StoreName": "Montpelier Store",
+	   "Address": "512 Purple Finch Drive ",
+	   "City": "Montpelier",
+	   "State": "Vermont",
+	   "Abbreviation": "VT",
+	   "ZipCode": 5602,
+	   "Lat": 44.26639,
+	   "Long": -72.57194
+	 },
+	 {
+	   "StoreName": "Richmond Store",
+	   "Address": "8877 West Beaver Ridge Dr. ",
+	   "City": "Richmond",
+	   "State": "Virginia",
+	   "Abbreviation": "VA",
+	   "ZipCode": 23219,
+	   "Lat": 37.54,
+	   "Long": -77.46
+	 },
+	 {
+	   "StoreName": "Olympia Store",
+	   "Address": "976 Bay St. ",
+	   "City": "Olympia",
+	   "State": "Washington",
+	   "Abbreviation": "WA",
+	   "ZipCode": 98507,
+	   "Lat": 47.042418,
+	   "Long": -122.893077
+	 },
+	 {
+	   "StoreName": "Charleston Store",
+	   "Address": "8087 Pennington Drive ",
+	   "City": "Charleston",
+	   "State": "West Virginia",
+	   "Abbreviation": "WV",
+	   "ZipCode": 25301,
+	   "Lat": 38.349497,
+	   "Long": -81.633294
+	 },
+	 {
+	   "StoreName": "Madison Store",
+	   "Address": "788 Oak Meadow Court ",
+	   "City": "Madison",
+	   "State": "Wisconsin",
+	   "Abbreviation": "WI",
+	   "ZipCode": 53703,
+	   "Lat": 43.074722,
+	   "Long": -89.384444
+	 },
+	 {
+	   "StoreName": "Cheyenne Store",
+	   "Address": "87 Sherman Street ",
+	   "City": "Cheyenne",
+	   "State": "Wyoming",
+	   "Abbreviation": "WY",
+	   "ZipCode": 82001,
+	   "Lat": 41.145548,
+	   "Long": -104.802042
+	 }]
+}

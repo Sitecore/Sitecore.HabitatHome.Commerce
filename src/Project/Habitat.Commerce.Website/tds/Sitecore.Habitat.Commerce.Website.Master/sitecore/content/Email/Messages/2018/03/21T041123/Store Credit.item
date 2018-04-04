@@ -1,0 +1,136 @@
+----item----
+version: 1
+id: {8E3A9CA2-B9B7-4ADB-AB79-D17DE7C0C565}
+database: master
+path: /sitecore/content/Email/Messages/2018/03/21T041123/Store Credit
+parent: {CF20A0FF-BD95-462D-A4CE-70CC41736B2E}
+name: Store Credit
+master: {06A7EA2B-A5C7-4091-8E4B-35001A173758}
+template: {078D8A76-F971-4891-B422-76C0BCF9FA03}
+templatekey: AB Test Message
+created: 20180325T032110Z
+
+----field----
+field: {09AD7C00-A8DE-46F7-BC54-E7572E38C136}
+name: Body
+key: body
+content-length: 38
+
+{4628E560-3B8B-44DE-9D83-EE8E790D16C7}
+----field----
+field: {21F2A1E0-AC16-443B-B7A9-83504159F2BB}
+name: Device
+key: device
+content-length: 38
+
+{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}
+----field----
+field: {78F0B1F8-FDF4-4C1C-BEC6-1AC68A210A52}
+name: Campaign
+key: campaign
+content-length: 38
+
+{AC471957-E20A-4DB7-BDBB-7CF8DDE87160}
+----field----
+field: {2BBF5276-ED11-4CD0-946F-66678B524457}
+name: Campaign Position
+key: campaign position
+content-length: 38
+
+{C1B8669B-C41A-4ED3-BF0D-E859CF880D42}
+----field----
+field: {0934BEC4-325A-427B-95BB-46F78CEA9591}
+name: Message Type
+key: message type
+content-length: 38
+
+{B2F77E26-C5AC-4A6B-BBB3-F290100EB3D8}
+----field----
+field: {AF0FE26A-A78B-491D-885C-03D95BC17342}
+name: State
+key: state
+content-length: 6
+
+Active
+----field----
+field: {6EC7A9E6-9FD5-4892-BBF6-11E76E0E5DB8}
+name: Start Time
+key: start time
+content-length: 16
+
+20180323T205709Z
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 27
+
+office/32x32/mail_write.png
+----field----
+field: {9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}
+name: __Read Only
+key: __read only
+content-length: 1
+
+1
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{E6267A85-945B-444B-B246-400D4522A380}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 941
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{48D55F1B-C559-411D-AC73-A51DF6C02247}"><r ds="{792BC61C-5161-41AE-BC91-1788C900E4B1}" id="{69EB7A6D-ACEF-4D06-A923-804918AA245E}" par="" ph="ec-title" uid="{C472E7DB-2977-4A4A-9F58-CF271AAE45F3}" /><r ds="{70CE856E-580D-4D16-8C3D-D3EAE83D5F9C}" id="{87A142FF-6DA2-40E1-93B2-93BAB4560EE6}" par="" ph="ec-header" uid="{15E98787-AEC1-4007-81CC-069D310D7209}" /><r ds="{792BC61C-5161-41AE-BC91-1788C900E4B1}" id="{26A4BFDF-B274-46A0-BB76-D4E025B40C47}" par="" ph="ec-main" uid="{A5ECCE8C-CBD2-4669-BA39-5CAD038864FA}" /><r ds="{A14B200F-C38D-4C71-ADDD-2B28C01FC0F2}" id="{6BDA85A1-1CB2-4F84-A777-67025160523F}" par="" ph="ec-main" uid="{F71D3F57-B8AB-48AC-8D72-EEF37982A3B8}" /><r ds="{E0CC1C94-F342-4D0C-ADC8-3FB88171858C}" id="{D7040DF2-C910-4353-80E8-53EFAB32495C}" par="" ph="ec-footer" uid="{D6FCB945-D468-40E3-BCFF-3C888A8F33B2}" /></d></r>
+----version----
+language: en
+version: 1
+revision: ecdaa062-2afa-4f39-bc2c-6648600d6ec5
+
+----field----
+field: {0D844C9C-BD6C-49B8-9475-947DA791F268}
+name: From Address
+key: from address
+content-length: 27
+
+noreply@habitathomedemo.com
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 12
+
+Store Credit
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180322T202837Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ecdaa062-2afa-4f39-bc2c-6648600d6ec5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180326T112621Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

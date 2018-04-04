@@ -1,0 +1,27 @@
+@import '../index';
+.account-management-page {
+    #content {
+        .component.image.file-type-icon-media-link {
+            margin-top: $margin;
+            display: inline-block;
+            max-width: 72px;
+            img {
+                border-radius: 100px;
+            }
+        }
+        .component.link {
+            padding: 0;
+        }
+        .component.link a {
+            width: 100%;
+            float: left;
+            color: $primary-text-color;
+            border: none;
+            &:after {
+                float: right;
+                margin-left: auto;
+                @include sc-icon($scxa-forward);
+            }
+        }
+    }
+}

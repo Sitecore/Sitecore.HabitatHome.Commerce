@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {897D41AE-BDD6-419F-8C9A-DA891E89723C}
+database: master
+path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/fonts/sccxxa_icons
+parent: {3CBD39DE-CB7C-4FD7-A822-ABB67E036124}
+name: sccxxa_icons
+master: {00000000-0000-0000-0000-000000000000}
+template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
+templatekey: Media folder
+created: 20180215T174740Z
+
+----version----
+language: en
+version: 1
+revision: 6a055195-163d-4549-8123-a742f98bbb36
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170607T060453Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6a055195-163d-4549-8123-a742f98bbb36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170607T060453Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,58 @@
+@import '../../index';
+@mixin sidebarTitleLocal {
+    @include sidebarTitle();
+    span {
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+    cursor: pointer;
+}
+
+.cxa-subcategorynavigation-component {
+    padding: $padding*1.25;
+    margin-bottom: $margin; 
+    .subcategories-title {
+        cursor: pointer;
+        &:after {
+            float: right;
+            color: rgb(20, 25, 25);
+        }
+    }
+    .subcategory-navigation {
+        margin: 0;
+        position: relative;
+    }
+    ul{
+        li{
+            display: block;
+            a{
+                display: block
+            }
+        }
+    }
+}
+
+.component.cxa-subcategorynavigation-component {
+    @include sidebar();
+    .subcategories-title {
+        @include sidebarTitleLocal();
+        color: rgb(20, 25, 25) !important;
+    }
+    .subcategory-navigation {
+        margin: 0;
+        position: relative;
+        ul {
+            @include sidebarList();
+        }
+        h4 {
+            @include sidebarTitleLocal();
+        }
+    }
+}
+
+.component.cxa-subcategorynavigation-component {
+    box-shadow: 0 0 transparent;
+    border: 1px solid rgb(20, 25, 25);
+    border-radius: 0;
+}

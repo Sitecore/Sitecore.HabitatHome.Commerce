@@ -1,0 +1,171 @@
+----item----
+version: 1
+id: {EEBBA754-E4F3-4148-A3EB-A32AE7F61703}
+database: master
+path: /sitecore/media library/Project/Habitat Sites/Habitat Home/Icons/TrainerPackage-Platinum
+parent: {88513059-AFCD-4FD9-B0DD-061F7060251F}
+name: TrainerPackage-Platinum
+master: {00000000-0000-0000-0000-000000000000}
+template: {DAF085E8-602E-43A6-8299-038FF171349F}
+templatekey: Jpeg
+created: 20180404T023432Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 4428
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/4QBoRXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUA
+AAABAAAARgEoAAMAAAABAAIAAAExAAIAAAARAAAATgAAAAAAAABgAAAAAQAAAGAAAAABcGFpbnQu
+bmV0IDQuMC4yMQAA/9sAQwACAQECAQECAgICAgICAgMFAwMDAwMGBAQDBQcGBwcHBgcHCAkLCQgI
+CggHBwoNCgoLDAwMDAcJDg8NDA4LDAwM/9sAQwECAgIDAwMGAwMGDAgHCAwMDAwMDAwMDAwMDAwM
+DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAYQBkAwEiAAIRAQMRAf/E
+AB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAE
+EQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZH
+SElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEB
+AQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXET
+IjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFla
+Y2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+x8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/fyiiigAoorjPih+
+0T4F+C0ZPirxXoeiyY3CC4ul+0OPVYhl2/BTQk3sB2dFfL3iH/grx8H9LvPI02bxJ4ikJ2r/AGfp
+hXefbzmjP6U/Tf8AgpdD4gIbTfhf8RLqJujmxxkf8B3fzrT2U+wH09RXz/p/7dsk+DdfDfxxZr3L
+2h4/NRXQaL+214R1KYRXVvrmlydxc2o4/wC+WJ/Sj2cuwHsFFc54Z+LvhrxgVXT9Ys5pH+7GzeXI
+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
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 3
+
+100
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 2
+
+97
+----field----
+field: {B0145335-8735-414B-9169-A1D4E4DC9641}
+name: Software
+key: software
+content-length: 16
+
+paint.net 4.0.21
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+jpg
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 10
+
+image/jpeg
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+3235
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 8
+
+100 x 97
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/EEBBA754E4F34148A3EBA32AE7F61703.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 58931445-49b4-41a7-9caa-55226a4896eb
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 14
+
+TrainerPackage
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180402T180500Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+58931445-49b4-41a7-9caa-55226a4896eb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T180559Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

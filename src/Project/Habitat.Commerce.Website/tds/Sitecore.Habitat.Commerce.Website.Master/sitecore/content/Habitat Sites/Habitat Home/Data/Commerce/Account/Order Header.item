@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {A6D549AD-54C9-4ADF-A5E3-7DBD0864A06C}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Header
+parent: {F7829E6C-7957-4E54-9644-787873FF8AD6}
+name: Order Header
+master: {31CE8C90-EF91-4185-9BB1-85F3A10CECC0}
+template: {39195CA1-14E1-407A-804E-C8B5FF875D23}
+templatekey: Order Header
+created: 20180206T121203Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{50CB07CB-37AF-4C39-89FE-F98C7C7B3842}
+----version----
+language: en
+version: 1
+revision: 5abc98b2-a2b8-4e43-b88e-028ebe185654
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180201T152355Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5abc98b2-a2b8-4e43-b88e-028ebe185654
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180201T152355Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

@@ -1,0 +1,32 @@
+﻿---
+ID: "279239ae-082d-4945-8c58-159ca2a4240e"
+Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
+Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog/Related Products
+DB: master
+BranchID: "94f50702-b790-439a-acd3-cf6a25d2812d"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{675CD1E4-ED4B-4102-94E4-BF951FCF8E9F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152515Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "705673ce-882a-4249-b2ec-8f465e458670"
+      Hint: Show More Products Tooltip
+      Value: Show more products
+    - ID: "e3cd10ec-06b9-4723-bcaa-ffe03e59a502"
+      Hint: Product Page Link Text
+      Value: Details
+    - ID: "f2f7d133-2be5-4080-a4bb-dd533e858756"
+      Hint: Show More Products Text
+      Value: Show more
