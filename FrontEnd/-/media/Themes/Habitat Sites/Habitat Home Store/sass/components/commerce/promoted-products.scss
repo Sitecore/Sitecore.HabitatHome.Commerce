@@ -1,5 +1,7 @@
-/* @import '../../index';
+@import '../../index';
 @import './product-list-component';
+@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+
 .component.cxa-promoted-products-component {
     @extend .component.cxa-productlist-component;
     .product-list{
@@ -9,56 +11,91 @@
             display: block;
         }
         .load-more-btn{
-            border: 2px solid $promoted-color;
-            color: $promoted-color; 
+            //border: 2px solid $promoted-color;
+            //color: $promoted-color; 
+            text-transform: uppercase;
             &:active, &:hover{
                 color: $light;
-                background: $promoted-color;
+                //background: $promoted-color;
             }
         }
         &>ul{
+            flex-direction: row wrap !important;
+
             >li{
+                max-width: inherit;
+                width: 50%;
+                flex-basis: 50%;
+                margin-right: 0;
+
                 .product-summary{
                     .product-info{
                         .product-category {
-                            a {
-                                border-color: $promoted-color !important;
+                            a {                                
+                                position: relative;
+                                padding-right: 20px;
+
                                 &:active,
                                 &:hover,
                                 &:focus {
-                                    background-color: $promoted-color !important;
-                                    color: $light;
+                                    opacity: 0.7;
                                 }
+
                                 &:active *,
                                 &:hover *,
                                 &:focus * {
-                                    color: $light !important;
+                                    
                                 }
-                                span{
-                                    color: $promoted-color !important;
+                                span{                                    
 
                                     &:active,
                                     &:hover,
                                     &:focus {
                                         text-decoration: none;
-                                        color: $light !important;
+                                        //color: $light !important;
                                     }
+                                }
+
+                                &:after {
+                                    position: absolute;
+                                    right: 5px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
                                 }
                             }
                         }
-                    }
+                        flex-flow: row wrap !important;
+                        @include respond-to(mobile-large) {
+                            flex-flow: row wrap !important;
+                        }  
+                    }                 
+                }                
+
+                @include respond-to(desktop) {
+                    flex-basis: 25%;
+                    width: 25%;
                 }
+
+                @include respond-to(mobile-large) {
+                    flex-basis: 100%;
+                    width: 100%;
+                    margin: 2em 0;
+                }
+            }
+
+            @include respond-to(mobile) {
+                
             }
         }
     }
     .current-price {
-        background-color: $promoted-color !important;
+        
     }
     .product-category {
         &.on-sale {
             a {
-                color: $promoted-color;
+                //color: $promoted-color;
             }
         }
     }
-} */
+} 

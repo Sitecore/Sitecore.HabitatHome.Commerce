@@ -344,7 +344,7 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .compact-cart .cxa-shoppingcartlines-component table tbody tr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

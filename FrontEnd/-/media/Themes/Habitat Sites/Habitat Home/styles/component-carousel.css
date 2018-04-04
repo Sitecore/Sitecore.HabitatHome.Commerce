@@ -190,7 +190,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .nav {
     width: 70px;
     height: 104px;
@@ -244,7 +244,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .nav .nav-items {
     bottom: 5px;
     right: 0;
@@ -303,7 +303,7 @@
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .slide .slide-content {
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
@@ -320,6 +320,7 @@
   color: #fff;
   text-align: left;
   margin-bottom: 35px;
+  color: red;
 }
 
 @media only screen and (max-width: 959px) {
@@ -328,7 +329,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .slide .field-slidetext {
     font-size: 52px;
     margin-bottom: 15px;
@@ -351,7 +352,7 @@
   min-width: 17.14286em;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .slide .field-slidelink > a {
     width: 100%;
   }
@@ -366,7 +367,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .home-carousel .slide {
     height: 485px;
   }

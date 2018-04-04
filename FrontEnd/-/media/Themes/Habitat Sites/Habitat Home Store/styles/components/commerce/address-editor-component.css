@@ -52,7 +52,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-edit-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -396,14 +396,14 @@ fieldset[disabled] .cxa-addresseditor-component .address-edit-section select {
   font-weight: 600;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-edit-section {
     width: 100%;
     display: block;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-edit-section > * {
     width: 100%;
   }
@@ -437,7 +437,7 @@ fieldset[disabled] .cxa-addresseditor-component .address-edit-section select {
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-selector-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -720,7 +720,7 @@ fieldset[disabled] .cxa-addresseditor-component .address-selector-section select
   font-weight: 600;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-selector-section > * {
     width: 100%;
   }
@@ -768,7 +768,7 @@ fieldset[disabled] .cxa-addresseditor-component .address-selector-section select
   margin-left: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-buttons-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1021,14 +1021,14 @@ fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .back-t
   background-color: #6b717b;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-buttons-section {
     width: 100%;
     display: block;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .cxa-addresseditor-component .address-buttons-section > * {
     width: 100% !important;
   }
