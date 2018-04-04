@@ -4441,6 +4441,10 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\media library\Themes\Habitat Sites\Habitat Home Store\styles\pages\register-page.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\media library\Themes\Habitat Sites\Habitat Home Store\styles\pages\shopping-cart-page.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
