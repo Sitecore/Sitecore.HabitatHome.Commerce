@@ -1,0 +1,237 @@
+----item----
+version: 1
+id: {8A33684A-7711-4445-A119-BD1EFEC890B6}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/guides/ten-minute-home-workouts
+parent: {64F922B1-D57D-4AFA-AE26-9D59502F69A6}
+name: ten-minute-home-workouts
+master: {00000000-0000-0000-0000-000000000000}
+template: {14807D83-9671-4D70-B0F4-F54012F2BFB8}
+templatekey: Guide Page
+created: 20180323T191828Z
+
+----field----
+field: {7BD35DCD-61BB-42E0-8BF5-07803AF6EEDE}
+name: Author
+key: author
+content-length: 38
+
+{CCA66699-B6C8-43D1-BF33-68492C373174}
+----field----
+field: {4D71857F-C77D-44FA-8899-C671A0458D7F}
+name: Publish Date
+key: publish date
+content-length: 16
+
+20180322T190500Z
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 845
+
+<tracking><profile id="54d63273-947a-4927-b21a-0022625315e1" name="Electronics Category" presets="fitness tech|100||"><key name="Appliances" value="0" /><key name="Audio" value="0" /><key name="Cameras" value="0" /><key name="Computers" value="0" /><key name="Fitness Tech" value="10" /><key name="Games" value="0" /><key name="Phones" value="0" /><key name="Tablets" value="0" /><key name="TVs" value="0" /></profile><profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|100||"><key name="Child Safety" value="0" /><key name="Energy Savings" value="0" /><key name="Fitness" value="10" /><key name="Foodie" value="0" /><key name="Newest and Coolest" value="0" /><key name="Overclocking" value="0" /><key name="Reliability" value="0" /><key name="Smart and Connected" value="0" /></profile></tracking>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}
+----version----
+language: de-DE
+version: 1
+revision: 16cee8bd-1fb4-497a-a0ac-92e387920467
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T210538Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+16cee8bd-1fb4-497a-a0ac-92e387920467
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: en
+version: 1
+revision: 434480fe-86ba-49cc-8327-3a255bbae7d2
+
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 24
+
+Ten Minute Home Workouts
+----field----
+field: {5A0B08E5-7F6C-48DC-929A-5D6CFDA45E1D}
+name: Content
+key: content
+content-length: 742
+
+<p>Cake icing brownie pudding macaroon drag&eacute;e. Candy canes chocolate lollipop souffl&eacute; fruitcake dessert candy pastry. Chocolate bar chupa chups cupcake tiramisu apple pie jujubes cake toffee. Liquorice chocolate cake cotton candy candy chocolate bar. Icing tiramisu sugar plum sweet roll croissant. Tiramisu biscuit cake cotton candy sugar plum sweet macaroon. Cupcake chocolate cake biscuit oat cake jujubes sweet roll tiramisu bear claw jelly beans. Macaroon brownie tootsie roll pie gummies lollipop jelly tootsie roll pie. Dessert jujubes donut. Pastry halvah liquorice oat cake topping wafer biscuit. Liquorice carrot cake pudding carrot cake halvah liquorice topping. Danish drag&eacute;e chocolate bar jelly-o danish.</p>
+----field----
+field: {6F76CE61-3806-4512-8E49-207F96308D8B}
+name: Subtitle
+key: subtitle
+content-length: 9
+
+Smart Gym
+----field----
+field: {CA65ACA5-4323-418A-AA72-A5037F606D2A}
+name: Summary
+key: summary
+content-length: 110
+
+Raise your heart rate even when time is short with these high intensity workouts from trainer Sydney Cummings.
+----field----
+field: {23AA5741-FA6A-4ADD-9E79-7A752AF6DEB1}
+name: Image
+key: image
+content-length: 65
+
+<image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" ></image>
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 24
+
+Ten Minute Home Workouts
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{D590210C-4B80-4014-B82E-3DD16DB7331C}" />
+----field----
+field: {4C2F221F-9426-45ED-9EEB-C79BB3169565}
+name: StickyNotes
+key: stickynotes
+content-length: 12
+
+{"items":[]}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Ten Minute Home Workouts
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 1949
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{08FA49AC-BD56-465B-91ED-223988D83C75}" p:before="*" s:ds="local:/Data/Hero - Ten Minute Workouts" s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={C7A7E725-BC84-45AE-AD50-0659F9AB7F98}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1" /><r uid="{11E5AE23-1B6B-4456-B7BD-385E3309DF81}" p:after="r[@uid='{08FA49AC-BD56-465B-91ED-223988D83C75}']" s:ds="local:/Data/Text 1" s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={B3CF5C8B-D6AA-4A97-9CB9-8048F269B9B6}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/sxa-recommended-content/container-1" /><r uid="{381DAE97-9A2B-4912-8EEE-03B598686ED9}" p:after="r[@uid='{11E5AE23-1B6B-4456-B7BD-385E3309DF81}']" s:ds="local:/Data/Video - Workout 1" s:id="{3C84ED23-7591-45E0-8850-1AE96D1342B1}" s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/sxa-article-content/container-1" /><r uid="{880613AE-CA6E-4FF1-9EB1-7FF0B27A2267}" p:after="r[@uid='{381DAE97-9A2B-4912-8EEE-03B598686ED9}']" s:ds="local:/Data/Text 2" s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/sxa-article-content/container-1" /><r uid="{B203D6F8-CA08-41E3-8CF6-BBACBC67D59B}" p:after="*[1=2]" s:ds="local:/Data/Video - Workout 2" s:id="{3C84ED23-7591-45E0-8850-1AE96D1342B1}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/sxa-article-content/container-1" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180322T190045Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+434480fe-86ba-49cc-8327-3a255bbae7d2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FF509B64-B6D4-4FB7-9718-C4218B992740}
+----version----
+language: fr-FR
+version: 1
+revision: a3e942d8-955a-4b44-b02c-2b7c49aebd99
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180329T160030Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a3e942d8-955a-4b44-b02c-2b7c49aebd99
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

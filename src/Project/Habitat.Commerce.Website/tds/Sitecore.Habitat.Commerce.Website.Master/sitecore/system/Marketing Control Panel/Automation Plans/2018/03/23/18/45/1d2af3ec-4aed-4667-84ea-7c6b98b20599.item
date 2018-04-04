@@ -28,9 +28,9 @@ content-length: 16
 field: {3FB918C8-08EC-4879-8062-088BBF71EE72}
 name: Plan Data
 key: plan data
-content-length: 1646
+content-length: 1645
 
-{"ReentryMode":0,"ContextKeyFactoryType":null,"EntryActivityId":"c1bc24e5-c688-5622-1c44-7e6d56ac123d","Alias":"1d2af3ec-4aed-4667-84ea-7c6b98b20599","IgnoreIsActiveProperty":false,"Activities":{"c1bc24e5-c688-5622-1c44-7e6d56ac123d":{"Paths":{"default":"37f30ffa-be11-fb38-0925-f6c327b655d6"},"Id":"c1bc24e5-c688-5622-1c44-7e6d56ac123d","ActivityTypeId":"8c92d3c1-2c38-4e8a-92d1-9590e17cce89","Parameters":{"EventIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":[]},"GoalIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":[]},"OutcomeIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":["9016e456-95cb-42e9-ad58-997d6d77ae83"]},"TestOperation":0,"UseCondition":false}},"37f30ffa-be11-fb38-0925-f6c327b655d6":{"Paths":{"default":"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8"},"Id":"37f30ffa-be11-fb38-0925-f6c327b655d6","ActivityTypeId":"9046a4aa-07d9-4377-8a6e-1db27765b2ba","Parameters":{"Name":"Delay","ListenerDelay":{"$type":"Sitecore.Marketing.Automation.Models.ListenerDelay, Sitecore.Marketing.Automation.Models","Delay":"00:02:00","WaitUntil":null}}},"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8":{"Paths":{"default":"2ca3d034-1e22-dfcd-ff11-0e841d099581"},"Id":"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8","ActivityTypeId":"51774db5-b90b-4189-9613-104039723a0b","Parameters":{"MessageId":"8e3a9ca2-b9b7-4adb-ab79-d17de7c0c565"}},"2ca3d034-1e22-dfcd-ff11-0e841d099581":{"Paths":{},"Id":"2ca3d034-1e22-dfcd-ff11-0e841d099581","ActivityTypeId":"a47371c2-8921-421f-8902-f3eccd229d56","Parameters":{}}},"UniversalActivities":{}}
+{"ReentryMode":0,"ContextKeyFactoryType":null,"EntryActivityId":"c1bc24e5-c688-5622-1c44-7e6d56ac123d","Alias":"1d2af3ec-4aed-4667-84ea-7c6b98b20599","IgnoreIsActiveProperty":true,"Activities":{"c1bc24e5-c688-5622-1c44-7e6d56ac123d":{"Paths":{"default":"37f30ffa-be11-fb38-0925-f6c327b655d6"},"Id":"c1bc24e5-c688-5622-1c44-7e6d56ac123d","ActivityTypeId":"8c92d3c1-2c38-4e8a-92d1-9590e17cce89","Parameters":{"EventIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":[]},"GoalIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":[]},"OutcomeIds":{"$type":"System.Collections.Generic.List`1[[System.Guid, mscorlib]], mscorlib","$values":["9016e456-95cb-42e9-ad58-997d6d77ae83"]},"TestOperation":0,"UseCondition":false}},"37f30ffa-be11-fb38-0925-f6c327b655d6":{"Paths":{"default":"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8"},"Id":"37f30ffa-be11-fb38-0925-f6c327b655d6","ActivityTypeId":"9046a4aa-07d9-4377-8a6e-1db27765b2ba","Parameters":{"Name":"Delay","ListenerDelay":{"$type":"Sitecore.Marketing.Automation.Models.ListenerDelay, Sitecore.Marketing.Automation.Models","Delay":"00:03:00","WaitUntil":null}}},"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8":{"Paths":{"default":"2ca3d034-1e22-dfcd-ff11-0e841d099581"},"Id":"b8b1a677-3ee4-c22c-a1ae-5610190dd0c8","ActivityTypeId":"51774db5-b90b-4189-9613-104039723a0b","Parameters":{"MessageId":"4e3c11ca-c6c0-4c9c-8078-b0ccb03509b4"}},"2ca3d034-1e22-dfcd-ff11-0e841d099581":{"Paths":{},"Id":"2ca3d034-1e22-dfcd-ff11-0e841d099581","ActivityTypeId":"a47371c2-8921-421f-8902-f3eccd229d56","Parameters":{}}},"UniversalActivities":{}}
 ----field----
 field: {621D7A1F-C6A3-4A2F-8FCD-7DD1FD893C9C}
 name: Custom Values
@@ -48,15 +48,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0856e90c-c647-479e-8537-b4980a8e1636
+revision: 290a044a-d064-42b3-8314-70b529ee6523
 
 ----field----
 field: {365F1971-B028-4065-BC11-CE1F471452AF}
 name: Name
 key: name
-content-length: 18
+content-length: 24
 
-Store Credit Email
+Gift Card Reminder Email
 ----field----
 field: {E259E500-B38E-41FE-82DB-8B604BCF9E75}
 name: Description
@@ -77,21 +77,75 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0856e90c-c647-479e-8537-b4980a8e1636
+290a044a-d064-42b3-8314-70b529ee6523
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T112204Z
+20180402T154726Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----version----
+language: fr-FR
+version: 1
+revision: 23929157-5014-441f-8cad-3a3f2ee9d1a6
+
+----field----
+field: {365F1971-B028-4065-BC11-CE1F471452AF}
+name: Name
+key: name
+content-length: 36
+
+1d2af3ec-4aed-4667-84ea-7c6b98b20599
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
 content-length: 16
 
-sitecore\unicorn
+20180323T184517Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+23929157-5014-441f-8cad-3a3f2ee9d1a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T162552Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state

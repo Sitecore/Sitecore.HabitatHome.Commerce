@@ -1,0 +1,165 @@
+----item----
+version: 1
+id: {E03545B3-EFE1-4C11-897D-2D0325D736D1}
+database: master
+path: /sitecore/media library/Project/Habitat Sites/Habitat Home/Icons/Fridge
+parent: {88513059-AFCD-4FD9-B0DD-061F7060251F}
+name: Fridge
+master: {00000000-0000-0000-0000-000000000000}
+template: {DAF085E8-602E-43A6-8299-038FF171349F}
+templatekey: Jpeg
+created: 20180404T023434Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 3382
+
+/9j/4AAQSkZJRgABAQEASABIAAD/4QFIRXhpZgAATU0AKgAAAAgACwEAAAMAAAABAfsAAAEBAAMA
+AAABA+gAAAECAAMAAAADAAAAkgEGAAMAAAABAAIAAAEVAAMAAAABAAMAAAEaAAUAAAABAAAAmAEb
+AAUAAAABAAAAoAEoAAMAAAABAAIAAAExAAIAAAARAAAAqAEyAAIAAAAUAAAAuodpAAQAAAABAAAA
+zgAAAQYACAAIAAgAAABIAAAAAQAAAEgAAAABcGFpbnQubmV0IDQuMC4yMQAAMjAxNjowODowOCAw
+OTo1Mzo1OAAABJAAAAcAAAAEMDIyMaABAAMAAAAB//8AAKACAAQAAAABAAADIKADAAQAAAABAAAD
+IAAAAAAAAAADARoABQAAAAEAAAEwARsABQAAAAEAAAE4ASgAAwAAAAEAAgAAAAAAAAAAAEgAAAAB
+AAAASAAAAAH/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcH
+Cg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwM
+DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABkAGQDASIAAhEBAxEB/8QAHwAA
+AQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpT
+VFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5
+usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAA
+AAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEI
+FEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVm
+Z2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK
+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
+FFABRRRQAUUUUAFFFFABRRRQB//Z
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 3
+
+100
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 3
+
+100
+----field----
+field: {90A6FE48-F3E0-42F3-A18A-EDAA7DB9CA57}
+name: DateTime
+key: datetime
+content-length: 19
+
+2016:08:08 09:53:58
+----field----
+field: {B0145335-8735-414B-9169-A1D4E4DC9641}
+name: Software
+key: software
+content-length: 16
+
+paint.net 4.0.21
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+jpg
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 10
+
+image/jpeg
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2472
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 9
+
+100 x 100
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/E03545B3EFE14C11897D2D0325D736D1.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: fd313a12-1221-48bb-9a82-ad6f42d4df7c
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 6
+
+Fridge
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180402T182040Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fd313a12-1221-48bb-9a82-ad6f42d4df7c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T182050Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

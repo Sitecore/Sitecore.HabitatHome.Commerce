@@ -10,6 +10,9 @@
     <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Policies\SamplePolicy.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
@@ -30,7 +33,6 @@
     <Content Include="Controllers\CommandsController.cs" />
     <Content Include="Controllers\SampleController.cs" />
     <Content Include="Models\SampleModel.cs" />
-    <Content Include="Policies\SamplePolicy.cs" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -44,5 +46,9 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
     <Reference Include="System.Transactions" />
     <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Policies\" />
   </ItemGroup>
 </Project>

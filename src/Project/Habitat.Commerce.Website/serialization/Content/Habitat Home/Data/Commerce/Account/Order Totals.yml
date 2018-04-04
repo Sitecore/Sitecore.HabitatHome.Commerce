@@ -24,6 +24,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: Tax
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: Total
