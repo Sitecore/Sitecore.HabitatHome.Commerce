@@ -12,3 +12,12 @@
 .link a:hover {
   color: #878787;
 }
+
+.link .link-button > a {
+  font-weight: 700;
+  color: #141919;
+  border: 1px solid #141919;
+  padding: 1.28571em 3em;
+  border-radius: 0;
+  text-transform: uppercase;
+}

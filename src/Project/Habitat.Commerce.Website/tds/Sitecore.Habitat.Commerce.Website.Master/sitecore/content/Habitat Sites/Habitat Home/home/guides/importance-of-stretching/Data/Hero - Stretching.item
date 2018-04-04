@@ -1,41 +1,34 @@
 ----item----
 version: 1
-id: {0A91248F-9234-4B49-A80F-ED18E224F81B}
+id: {5BE4886A-EB1D-469D-A034-EBDA66723F66}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Default/Beauty Supplies
-parent: {B7BE6C71-C208-48CB-BA6B-5AF0A766B93A}
-name: Beauty Supplies
+path: /sitecore/content/Habitat Sites/Habitat Home/home/guides/importance-of-stretching/Data/Hero - Stretching
+parent: {05B90C59-91BE-4638-9752-0202E9C22033}
+name: Hero - Stretching
 master: {00000000-0000-0000-0000-000000000000}
-template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
-templatekey: _NavigationImage
-created: 20180325T025004Z
+template: {643A85F5-C9F1-4836-B17B-35ADE22D03D3}
+templatekey: Hero
+created: 20180323T191820Z
 
 ----version----
 language: en
 version: 1
-revision: 98a9cb11-051e-40fa-a5c6-8d092238d74f
+revision: ae46b1e7-558a-4ec7-914b-daf1f4868335
 
 ----field----
-field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
-name: Link
-key: link
-content-length: 84
-
-<link text="Beauty Supplies" linktype="rel" url="/shop/Women-s-Shavers" anchor="" />
-----field----
-field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
-name: Navigation Image
-key: navigation image
+field: {9C385368-A554-4A92-9A8D-37F3EF3A09F4}
+name: HeroImage
+key: heroimage
 content-length: 58
 
-<image mediaid="{ACCBCC3D-04E9-4E4E-949F-5EC0AA91F4ED}" />
+<image mediaid="{6AEC1BED-11C8-4C73-85EC-AD088AA5D254}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20180320T225350Z
+20180322T194331Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -49,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-98a9cb11-051e-40fa-a5c6-8d092238d74f
+ae46b1e7-558a-4ec7-914b-daf1f4868335
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T021034Z
+20180329T164446Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -65,9 +58,9 @@ content-length: 16
 
 sitecore\unicorn
 ----version----
-language: ja-JP
+language: fr-FR
 version: 1
-revision: a98364ba-8b24-4554-9cab-64e09eb69fd4
+revision: 68a8ce8f-4385-4fe8-b411-2afb4597bb94
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -75,7 +68,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180327T014953Z
+20180329T160054Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -89,14 +82,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a98364ba-8b24-4554-9cab-64e09eb69fd4
+68a8ce8f-4385-4fe8-b411-2afb4597bb94
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T021034Z
+20180329T164446Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

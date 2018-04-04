@@ -1,4 +1,4 @@
-/* @import '../../index';
+@import '../../index';
 @import './product-list-component';
 .component.cxa-promoted-products-component {
     @extend .component.cxa-productlist-component;
@@ -7,14 +7,10 @@
             font-size: $font-size-xlarge;
             margin-bottom: 15px;
             display: block;
+            font-weight: bold;
         }
         .load-more-btn{
-            border: 2px solid $promoted-color;
-            color: $promoted-color; 
-            &:active, &:hover{
-                color: $light;
-                background: $promoted-color;
-            }
+            display: none;
         }
         &>ul{
             >li{
@@ -22,43 +18,17 @@
                     .product-info{
                         .product-category {
                             a {
-                                border-color: $promoted-color !important;
-                                &:active,
-                                &:hover,
-                                &:focus {
-                                    background-color: $promoted-color !important;
-                                    color: $light;
-                                }
-                                &:active *,
-                                &:hover *,
-                                &:focus * {
-                                    color: $light !important;
-                                }
-                                span{
-                                    color: $promoted-color !important;
+                                font-size: .7em;
+                                text-decoration: none;
 
-                                    &:active,
-                                    &:hover,
-                                    &:focus {
-                                        text-decoration: none;
-                                        color: $light !important;
-                                    }
+                                &:after, {
+                                    font-size: .7em;
                                 }
-                            }
+                            }                            
                         }
                     }
                 }
             }
         }
     }
-    .current-price {
-        background-color: $promoted-color !important;
-    }
-    .product-category {
-        &.on-sale {
-            a {
-                color: $promoted-color;
-            }
-        }
-    }
-} */
+} 
