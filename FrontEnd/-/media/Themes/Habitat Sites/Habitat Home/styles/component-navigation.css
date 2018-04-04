@@ -498,7 +498,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-nav {
     right: -5px;
     width: -webkit-calc(100vw);
@@ -536,7 +536,7 @@
   width: 260px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop nav > ul {
     width: auto;
     border-bottom: 0;
@@ -562,7 +562,7 @@
   border-bottom: 4px solid #5b256d;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-content {
     padding: 20px 40px;
     border-bottom: 0;
@@ -579,7 +579,7 @@
   margin-bottom: 1.875em;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-content .field-navigationtitle {
     margin-bottom: 1.3em;
   }
@@ -614,7 +614,7 @@
   color: #1d8c96;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-content {
     position: relative;
     width: auto;
@@ -639,7 +639,7 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-title-link > a {
     font-size: 18px;
     margin: 0 0 0 40px;
@@ -670,7 +670,7 @@
   color: #919494;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-link .megadrop-secondary-title-link > a {
     font-size: 16px;
     padding-left: 0;
@@ -706,7 +706,7 @@
   color: #1d8c96;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop li.active .megadrop-secondary-title-link {
     border-bottom: 1px solid #1d8c96;
   }
@@ -725,7 +725,7 @@
   width: 33.3333%;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-main > li {
     float: none;
     width: auto;
@@ -744,7 +744,7 @@
   height: auto;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-main-image {
     width: 15%;
     float: left;
@@ -768,7 +768,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .megadrop-secondary-main-link {
     width: 85%;
     float: left;
@@ -828,7 +828,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .megadrop .tags .megadrop-secondary-main-link {
     float: none;
     width: auto;
