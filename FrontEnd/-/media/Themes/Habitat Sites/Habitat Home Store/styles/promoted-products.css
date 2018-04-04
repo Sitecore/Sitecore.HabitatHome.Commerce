@@ -553,14 +553,11 @@
   font-size: 20px;
   margin-bottom: 15px;
   display: block;
+  font-weight: bold;
 }
 
 .component.cxa-promoted-products-component .product-list .load-more-btn {
-  text-transform: uppercase;
-}
-
-.component.cxa-promoted-products-component .product-list .load-more-btn:active, .component.cxa-promoted-products-component .product-list .load-more-btn:hover {
-  color: #fff;
+  display: none;
 }
 
 .component.cxa-promoted-products-component .product-list > ul {

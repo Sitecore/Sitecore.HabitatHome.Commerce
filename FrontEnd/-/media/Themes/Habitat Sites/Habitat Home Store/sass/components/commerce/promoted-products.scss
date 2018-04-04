@@ -9,15 +9,10 @@
             font-size: $font-size-xlarge;
             margin-bottom: 15px;
             display: block;
+            font-weight: bold;
         }
         .load-more-btn{
-            //border: 2px solid $promoted-color;
-            //color: $promoted-color; 
-            text-transform: uppercase;
-            &:active, &:hover{
-                color: $light;
-                //background: $promoted-color;
-            }
+            display: none;
         }
         &>ul{
             flex-direction: row wrap !important;
@@ -41,18 +36,12 @@
                                     opacity: 0.7;
                                 }
 
-                                &:active *,
-                                &:hover *,
-                                &:focus * {
-                                    
-                                }
                                 span{                                    
 
                                     &:active,
                                     &:hover,
                                     &:focus {
                                         text-decoration: none;
-                                        //color: $light !important;
                                     }
                                 }
 
@@ -85,16 +74,6 @@
 
             @include respond-to(mobile) {
                 
-            }
-        }
-    }
-    .current-price {
-        
-    }
-    .product-category {
-        &.on-sale {
-            a {
-                //color: $promoted-color;
             }
         }
     }
