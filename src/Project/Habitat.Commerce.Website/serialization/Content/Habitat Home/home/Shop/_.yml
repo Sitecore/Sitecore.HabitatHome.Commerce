@@ -270,12 +270,12 @@ Languages:
                   </rule>
                   <rule
                     uid="{1779DD0B-D88B-44C8-8695-8CD815953183}"
-                    s:name="Gift Cards">
+                    s:name="Smart Gym">
                     <actions>
                       <action
                         uid="A0363731555C475C8C52451B4A0EB4F7"
                         s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                        s:DataSource="{42F12A0D-4028-4E2E-BE91-E4E4352C8DA3}" />
+                        s:DataSource="{FD1F08FE-BAE7-4901-9148-63783B3BFCDE}" />
                     </actions>
                     <conditions>
                       <condition

@@ -1,0 +1,232 @@
+----item----
+version: 1
+id: {7FFDAD1C-50A6-4CE7-81C5-259DCD6D1FC1}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/guides/importance-of-stretching
+parent: {64F922B1-D57D-4AFA-AE26-9D59502F69A6}
+name: importance-of-stretching
+master: {00000000-0000-0000-0000-000000000000}
+template: {14807D83-9671-4D70-B0F4-F54012F2BFB8}
+templatekey: Guide Page
+created: 20180323T191818Z
+
+----field----
+field: {7BD35DCD-61BB-42E0-8BF5-07803AF6EEDE}
+name: Author
+key: author
+content-length: 38
+
+{CCA66699-B6C8-43D1-BF33-68492C373174}
+----field----
+field: {4D71857F-C77D-44FA-8899-C671A0458D7F}
+name: Publish Date
+key: publish date
+content-length: 16
+
+20180322T194100Z
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 845
+
+<tracking><profile id="54d63273-947a-4927-b21a-0022625315e1" name="Electronics Category" presets="fitness tech|100||"><key name="Appliances" value="0" /><key name="Audio" value="0" /><key name="Cameras" value="0" /><key name="Computers" value="0" /><key name="Fitness Tech" value="10" /><key name="Games" value="0" /><key name="Phones" value="0" /><key name="Tablets" value="0" /><key name="TVs" value="0" /></profile><profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|100||"><key name="Child Safety" value="0" /><key name="Energy Savings" value="0" /><key name="Fitness" value="10" /><key name="Foodie" value="0" /><key name="Newest and Coolest" value="0" /><key name="Overclocking" value="0" /><key name="Reliability" value="0" /><key name="Smart and Connected" value="0" /></profile></tracking>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}
+----version----
+language: de-DE
+version: 1
+revision: 762ef9d1-a57b-4c4d-8627-fd7fcc56a833
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T210512Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+762ef9d1-a57b-4c4d-8627-fd7fcc56a833
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014417Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: en
+version: 1
+revision: bdd64223-bc9b-431a-9bc8-9e152f16a36e
+
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 24
+
+Importance of Stretching
+----field----
+field: {5A0B08E5-7F6C-48DC-929A-5D6CFDA45E1D}
+name: Content
+key: content
+content-length: 3006
+
+<p class="paragraph ng-attr-widget" style="color: #404040; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 10px 20px 0px;"><span class="ng-directive ng-binding">Cake icing brownie pudding macaroon drag&eacute;e. Candy canes chocolate lollipop souffl&eacute; fruitcake dessert candy pastry. Chocolate bar chupa chups cupcake tiramisu apple pie jujubes cake toffee. Liquorice chocolate cake cotton candy candy chocolate bar. Icing tiramisu sugar plum sweet roll croissant. Tiramisu biscuit cake cotton candy sugar plum sweet macaroon. Cupcake chocolate cake biscuit oat cake jujubes sweet roll tiramisu bear claw jelly beans. Macaroon brownie tootsie roll pie gummies lollipop jelly tootsie roll pie. Dessert jujubes donut. Pastry halvah liquorice oat cake topping wafer biscuit. Liquorice carrot cake pudding carrot cake halvah liquorice topping. Danish drag&eacute;e chocolate bar jelly-o danish.</span></p>
+<p class="paragraph ng-attr-widget" style="color: #404040; margin: 0px; padding: 10px 20px 0px;"><span class="ng-directive ng-binding">Dessert jelly beans tootsie roll brownie bonbon. Croissant jelly-o souffl&eacute; chocolate cupcake chocolate bar muffin souffl&eacute; halvah. Drag&eacute;e oat cake gummi bears drag&eacute;e fruitcake souffl&eacute; lemon drops marshmallow. Topping pudding dessert cookie marshmallow. Tiramisu sugar plum muffin oat cake. Sesame snaps macaroon pastry ice cream tootsie roll sesame snaps jelly. Cotton candy dessert lemon drops tiramisu sesame snaps. Chocolate drag&eacute;e croissant cake tart. Caramels tootsie roll sweet oat cake lemon drops cake fruitcake biscuit. Liquorice cheesecake icing carrot cake marzipan fruitcake croissant marzipan. Carrot cake pie gingerbread topping marshmallow jelly gingerbread pudding cupcake. Gummi bears marshmallow brownie muffin lollipop jujubes. Tart pudding cotton candy. Jelly chocolate cake jelly-o biscuit sweet roll.</span></p>
+<p class="paragraph ng-attr-widget" style="color: #404040; margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 10px 20px 0px;"><span class="ng-directive ng-binding">Wafer donut pudding cookie drag&eacute;e topping. Powder wafer sugar plum souffl&eacute;. Carrot cake cake carrot cake sesame snaps halvah liquorice sugar plum. Donut cotton candy tart lollipop pie candy canes chocolate cake. Souffl&eacute; gummies macaroon bear claw cake. Oat cake sesame snaps tootsie roll sesame snaps dessert chocolate cake cotton candy marzipan. Ice cream jelly-o chocolate bar cake. Dessert wafer jelly beans brownie tootsie roll sweet roll. Jelly cake powder chocolate sugar plum donut danish icing jujubes. Powder chocolate cake biscuit ice cream souffl&eacute;. Icing fruitcake macaroon pastry gingerbread. Liquorice pastry sugar plum brownie jelly carrot cake lollipop carrot cake candy canes. Bonbon sugar plum chocolate fruitcake carrot cake oat cake carrot cake gummi bears. Ice cream cake gingerbread marzipan ice cream candy canes donut candy canes.</span></p>
+----field----
+field: {6F76CE61-3806-4512-8E49-207F96308D8B}
+name: Subtitle
+key: subtitle
+content-length: 9
+
+Smart Gym
+----field----
+field: {CA65ACA5-4323-418A-AA72-A5037F606D2A}
+name: Summary
+key: summary
+content-length: 177
+
+<span style="background-color: #ffffff; color: #313131;">Stretching can lead to better posture, fewer aches and pains, greater confidence, and a cheerier outlook on life.</span>
+----field----
+field: {23AA5741-FA6A-4ADD-9E79-7A752AF6DEB1}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{A7C5267D-4B44-4A50-B1E2-994E9CD5E327}"></image>
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 24
+
+Importance of Stretching
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{085840FC-1F6E-46E6-9A87-66BD1C0BD2BA}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Importance of Stretching
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 435
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{B0A84201-8A95-4C76-AC1B-5B0F83D7372D}" s:ds="local:/Data/Hero - Stretching" s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180322T194121Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bdd64223-bc9b-431a-9bc8-9e152f16a36e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014417Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FF509B64-B6D4-4FB7-9718-C4218B992740}
+----version----
+language: fr-FR
+version: 1
+revision: c3ae1b86-20fa-4fe0-9f99-53a43ee5f98d
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180329T160024Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c3ae1b86-20fa-4fe0-9f99-53a43ee5f98d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180331T014417Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

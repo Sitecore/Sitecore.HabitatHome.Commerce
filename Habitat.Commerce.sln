@@ -64,6 +64,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WishListLines", "WishListLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.WishListLines", "src\Feature\WishListLines\code\Sitecore.Feature.WishListLines.csproj", "{3EFA7D2E-458D-4E7D-A640-62754C06A66B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryUpload", "InventoryUpload", "{FF07FD8F-AED9-428E-937C-0DADEDB4825C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.InventoryUpload", "src\Feature\InventoryUpload\code\Sitecore.Feature.InventoryUpload.csproj", "{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +122,10 @@ Global
 		{3EFA7D2E-458D-4E7D-A640-62754C06A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EFA7D2E-458D-4E7D-A640-62754C06A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EFA7D2E-458D-4E7D-A640-62754C06A66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +154,8 @@ Global
 		{69B1F75B-7AF9-4803-ABDE-8F62A7137DF4} = {73839A16-68E5-4FF5-B6F2-E4A084D105F7}
 		{F13367E2-951C-45EE-8F6A-37216365B1C4} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
 		{3EFA7D2E-458D-4E7D-A640-62754C06A66B} = {F13367E2-951C-45EE-8F6A-37216365B1C4}
+		{FF07FD8F-AED9-428E-937C-0DADEDB4825C} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{EFCB36D2-F7E3-4B84-809B-EDC3C4595FE1} = {FF07FD8F-AED9-428E-937C-0DADEDB4825C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}
