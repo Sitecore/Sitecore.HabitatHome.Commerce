@@ -34,7 +34,125 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6dc5d097-a4f4-4324-913c-ee260c768659
+revision: 7b32e10f-5a6c-4ef5-84d4-64123f2da90d
+
+----field----
+field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
+name: Title
+key: title
+content-length: 29
+
+Best In Wearable Fitness Tech
+----field----
+field: {5A0B08E5-7F6C-48DC-929A-5D6CFDA45E1D}
+name: Content
+key: content
+content-length: 1096
+
+<p>With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed by measuring every day activities.&nbsp;</p>
+<p>Cotton candy jelly cupcake candy canes pastry marzipan. Caramels donut fruitcake pudding chocolate cake ice cream. Apple pie bonbon icing bear claw jelly bonbon chocolate tootsie roll. Lollipop oat cake jelly-o candy canes caramels apple pie chupa chups jelly biscuit. Caramels gummi bears lemon drops muffin cheesecake gingerbread. Jelly beans sweet roll chocolate fruitcake topping. Topping wafer cheesecake fruitcake chupa chups marshmallow cake. Danish candy canes halvah chocolate cake sweet roll gummi bears donut fruitcake. Caramels gingerbread wafer jelly cotton candy brownie drag&eacute;e. Jelly beans fruitcake sweet chocolate croissant danish brownie macaroon. Lemon drops candy gummies. Icing gingerbread pudding jelly beans cotton candy wafer carrot cake danish toffee. Cotton candy tart caramels pudding ice cream caramels macaroon macaroon. Cake powder candy cookie icing dessert ice cream lemon drops wafer.</p>
+----field----
+field: {6F76CE61-3806-4512-8E49-207F96308D8B}
+name: Subtitle
+key: subtitle
+content-length: 17
+
+New Year, new you
+----field----
+field: {CA65ACA5-4323-418A-AA72-A5037F606D2A}
+name: Summary
+key: summary
+content-length: 123
+
+With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed.&nbsp;
+----field----
+field: {23AA5741-FA6A-4ADD-9E79-7A752AF6DEB1}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{4E1B5236-26B1-4E7A-B997-8B8E025B9CB5}"></image>
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 35
+
+Best In Wearable Fitness Technology
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 35
+
+Best In Wearable Fitness Technology
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 4733
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{4AACF56A-384C-4C85-AA47-2A80FA7EBF6B}" p:before="*" s:ds="local:/Data/Text 3" s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/sxa-article-content/container-1/container-8" /><r uid="{F27E6074-78DC-4090-8054-977BA8530943}" p:after="r[@uid='{4AACF56A-384C-4C85-AA47-2A80FA7EBF6B}']" s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}" s:id="{C4222625-2637-43FE-82D7-341009A277CA}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-article-content/container-1/Container-26/column-2-7" /><r uid="{5D6D60F2-4864-42A1-9407-073DC0C0B0C2}" p:after="r[@uid='{F27E6074-78DC-4090-8054-977BA8530943}']" s:ds="{E679D02C-76B3-4B37-ADF1-7F8E510FC44E}" s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-article-content/container-1/Container-26/column-2-7" /><r uid="{468C5377-5E82-4585-AF29-35A4F5F581F0}" p:after="r[@uid='{5D6D60F2-4864-42A1-9407-073DC0C0B0C2}']" s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}" s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-article-content/container-1/Container-26/column-2-7" /><r uid="{D34AAF30-2833-4034-A2A3-E75EC0B9BBF4}" p:after="r[@uid='{468C5377-5E82-4585-AF29-35A4F5F581F0}']" s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/sxa-article-content/container-1/Container-26/column-1-7" /><r uid="{97DE1FA1-907A-435A-9EC2-0A4D5E62B3DE}" p:after="r[@uid='{D34AAF30-2833-4034-A2A3-E75EC0B9BBF4}']" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=7" s:ph="/main/sxa-article-content/container-1/Container-26" /><r uid="{1F25D62B-72C8-4387-B257-37A8ECDC45CC}" p:after="r[@uid='{97DE1FA1-907A-435A-9EC2-0A4D5E62B3DE}']" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8" s:ph="/main/sxa-article-content/container-1"><rls><ruleset><rule uid="{45B8E9C9-D9D2-4644-82E5-2B08A01B12F8}" s:name="Show when platinum in cart"><conditions><condition uid="C16D9D46C5D847A69A99048BF0A92215" s:id="{9D3B7B5B-48BA-4B54-A522-166FFDEAC33D}" s:ProductId="8042103" s:operatorid="{814EF7D0-1639-44FD-AEEF-735B5AC14425}" s:ProductQuantity="1" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="C547D63BF0F84438A82714DAB8E41DD1" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions><action uid="6A8CC8ACD984404E97DCE939C83763B2" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" /></actions></rule></ruleset></rls></r><r uid="{7B88D053-7433-49B3-B3B2-CC2165CE5CAA}" p:after="r[@uid='{1F25D62B-72C8-4387-B257-37A8ECDC45CC}']" s:ds="{213AE470-B319-1CD0-8E28-2D9263E8AE30}" s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}" s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=6" s:ph="/main/sxa-article-content/container-1"><rls><ruleset><rule uid="{9253CEDE-3CB4-4C1E-8B69-22F461D9F0E1}" s:name="Show with Platinum Trainer in cart"><conditions><condition uid="A36A43D316344AC691199BE8C6C61B56" s:id="{9D3B7B5B-48BA-4B54-A522-166FFDEAC33D}" s:ProductId="8042103" s:operatorid="{814EF7D0-1639-44FD-AEEF-735B5AC14425}" s:ProductQuantity="1" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="72B783883F1B4671A0E1CA1AA639E801" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions><action uid="9F9FE413D45C439B8BBEBDD51E5E3E4B" s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" /></actions></rule></ruleset></rls></r><r uid="{A5782BFA-639A-4B78-8A5E-173C071B5339}" p:after="*[1=2]" s:ds="local:/Data/Hero - Best Fitness Tech" s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T184546Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7b32e10f-5a6c-4ef5-84d4-64123f2da90d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180403T215015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FF509B64-B6D4-4FB7-9718-C4218B992740}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: fr-CA
+version: 1
+revision: 5b0efbb4-23d0-4e11-b3d9-5685b1e1399e
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -120,14 +238,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6dc5d097-a4f4-4324-913c-ee260c768659
+5b0efbb4-23d0-4e11-b3d9-5685b1e1399e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180331T014418Z
+20180402T134104Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -145,7 +263,7 @@ content-length: 38
 ----version----
 language: fr-FR
 version: 1
-revision: 4a5481ab-ffde-4d35-8ff3-805e5fa0fd01
+revision: 5aa78560-c8e4-4096-981b-d75514009159
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -167,14 +285,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4a5481ab-ffde-4d35-8ff3-805e5fa0fd01
+5aa78560-c8e4-4096-981b-d75514009159
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180331T014418Z
+20180402T134104Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

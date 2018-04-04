@@ -1,9 +1,13 @@
 ﻿---
-ID: "0a91248f-9234-4b49-a80f-ed18e224f81b"
+ID: "0ebae186-f5af-4cf2-aafe-7f5b9d30ed3a"
 Parent: "b7be6c71-c208-48cb-ba6b-5af0a766b93a"
 Template: "ddb08f92-1cc2-43e2-b5c1-fe7f98e32ec9"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Default/Beauty Supplies"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Default/Dental"
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
 Languages:
 - Language: en
   Versions:
@@ -19,11 +23,11 @@ Languages:
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{ACCBCC3D-04E9-4E4E-949F-5EC0AA91F4ED}" />
+        <image mediaid="{14DDDD4C-A478-433C-B3B1-6BEC04225FBB}" />
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Beauty Supplies" linktype="rel" url="/shop/Women-s-Shavers" anchor="" />
+        <link text="Dental Care" linktype="rel" url="/shop/electric-tooth-brushes" anchor="" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

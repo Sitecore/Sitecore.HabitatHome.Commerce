@@ -1,34 +1,41 @@
 ----item----
 version: 1
-id: {0A91248F-9234-4B49-A80F-ED18E224F81B}
+id: {0AE76F59-11F7-40D3-AF55-1801ADFC9434}
 database: master
-path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Default/Beauty Supplies
-parent: {B7BE6C71-C208-48CB-BA6B-5AF0A766B93A}
-name: Beauty Supplies
+path: /sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Health Commerce Categories Foodie/Dental
+parent: {933B76F9-29DA-4C9E-BF3B-2FB078A420B2}
+name: Dental
 master: {00000000-0000-0000-0000-000000000000}
 template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
 templatekey: _NavigationImage
-created: 20180325T025004Z
+created: 20180404T023717Z
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+800
 ----version----
 language: en
 version: 1
-revision: 98a9cb11-051e-40fa-a5c6-8d092238d74f
+revision: 90eec4c4-3f7e-49ab-a28f-7f63be433f1a
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
 name: Link
 key: link
-content-length: 84
+content-length: 87
 
-<link text="Beauty Supplies" linktype="rel" url="/shop/Women-s-Shavers" anchor="" />
+<link text="Dental Care" linktype="rel" url="/shop/electric-tooth-brushes" anchor="" />
 ----field----
 field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
 name: Navigation Image
 key: navigation image
 content-length: 58
 
-<image mediaid="{ACCBCC3D-04E9-4E4E-949F-5EC0AA91F4ED}" />
+<image mediaid="{14DDDD4C-A478-433C-B3B1-6BEC04225FBB}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -49,21 +56,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-98a9cb11-051e-40fa-a5c6-8d092238d74f
+90eec4c4-3f7e-49ab-a28f-7f63be433f1a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T021034Z
+20180402T183104Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----version----
 language: ja-JP
 version: 1
