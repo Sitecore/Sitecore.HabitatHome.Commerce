@@ -64,6 +64,9 @@
     <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.Cart">
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
@@ -124,6 +127,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.Wishlist.config" />
     <None Include="packages.config" />
     <Content Include="Views\WishListLines\WishListLines.cshtml" />
     <None Include="Web.Debug.config">

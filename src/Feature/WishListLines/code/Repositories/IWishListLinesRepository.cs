@@ -17,7 +17,7 @@ namespace Sitecore.Feature.WishListLines.Repositories
     {
         WishListLinesRenderingModel GetWishListLinesModel();
         WishListJsonResult GetWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext);
-        WishListJsonResult AddWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<WishListLine> wishListLines);
-        WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<string> wishListLineIds);
+        WishListJsonResult AddWishListLine(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string catalogName, string productId, string variantId, Decimal quantity);
+        WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, List<string> wishListLineIds);
     }
 }

@@ -72,7 +72,7 @@ namespace Sitecore.Feature.WishListLines.Repositories
             return model;
         }
 
-        public virtual WishListJsonResult AddWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<WishListLine> wishListLines)
+        public virtual WishListJsonResult AddWishListLine(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string catalogName, string productId, string variantId, Decimal quantity)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));                        
@@ -89,6 +89,11 @@ namespace Sitecore.Feature.WishListLines.Repositories
                 model.SetErrors((ServiceProviderResult)currentWishList.ServiceProviderResult);
                 return model;
             }
+
+            List<WishListLine> wishListLines = new List<WishListLine>();
+            var wishlistLine = new WishListLine() { Quantity = quantity, Product = new Commerce.Entities.Carts.CartProduct() { ProductId = catalogName + "|" + productId + "|" + variantId, } };
+            wishListLines.Add(wishlistLine);
+
             ManagerResponse<AddLinesToWishListResult, WishList> managerResponse = this.WishListManager.AddLinesToWishList(currentStorefront, visitorContext, currentWishList.Result, wishListLines);
             if (!managerResponse.ServiceProviderResult.Success)
             {
@@ -100,7 +105,7 @@ namespace Sitecore.Feature.WishListLines.Repositories
             return model;
         }
 
-        public virtual WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<string> wishListLineIds)
+        public virtual WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, List<string> wishListLineIds)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            

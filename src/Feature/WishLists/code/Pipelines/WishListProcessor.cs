@@ -51,14 +51,7 @@ namespace Sitecore.Feature.WishLists.Pipelines
         {
             return Proxy.DoCommand<CommerceCommand>(this.GetContainer(shopName, userId, customerId, "", currency, new DateTime?()).RemoveWishListLineItem(wishListId, lineId));
         }
-
-        protected virtual string GenerateLineItemId(WishListLine line)
-        {
-            CommerceCartProduct product = line.Product as CommerceCartProduct;
-            if (product == null || string.IsNullOrEmpty(product.ProductCatalog) || string.IsNullOrEmpty(product.ProductId))
-                return string.Empty;
-            return product.ProductCatalog + "|" + product.ProductId + "|" + product.ProductVariantId;
-        }
+     
 
         internal WishList TranslateCartToWishListEntity(Sitecore.Commerce.Plugin.Carts.Cart cart, ServiceProviderResult currentResult)
         {

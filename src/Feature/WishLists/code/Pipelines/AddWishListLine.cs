@@ -38,7 +38,7 @@ namespace Sitecore.Feature.WishLists.Pipelines
                 request.Lines = (IEnumerable<WishListLine>)list;
                 foreach (WishListLine line in request.Lines)
                 {
-                    string lineItemId = this.GenerateLineItemId(line);
+                    string lineItemId = line.Product?.ProductId;
                     if (!string.IsNullOrEmpty(lineItemId))
                     {
                         var command = this.AddWishListLine(request.WishList.UserId, request.WishList.ShopName, request.WishList.ExternalId, lineItemId, line.Quantity, request.WishList.CustomerId, args.Request.CurrencyCode);
