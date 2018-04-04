@@ -43,38 +43,34 @@ namespace Sitecore.Feature.WishListLines.Repositories
             return model;
         }
 
-        // Not required
-        public virtual WishListJsonResult CreateWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext)
+        public WishListJsonResult GetWishList(IStorefrontContext storefrontContext, IVisitorContext visitorContext)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
-            try
+            CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
+            ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext);
+
+            if (!currentWishList.ServiceProviderResult.Success || currentWishList.Result == null)
             {
-                ManagerResponse<CreateWishListResult, WishList> newWishList = this.WishListManager.CreateWishList(storefrontContext, visitorContext);
-                if (!newWishList.ServiceProviderResult.Success || newWishList.Result == null)
+                string systemMessage = "Wish List not found.";
+                currentWishList.ServiceProviderResult.SystemMessages.Add(new SystemMessage()
                 {
-                    model.Success = false;
-                    string systemMessage = "Could not create wish list";
-                    newWishList.ServiceProviderResult.SystemMessages.Add(new SystemMessage()
-                    {
-                        Message = systemMessage
-                    });
-                    model.SetErrors((ServiceProviderResult)newWishList.ServiceProviderResult);
-                    return model;
-                }
-                else
-                {
-                    model.Success = true;
-                    model.Initialize(newWishList.Result);
-                }
+                    Message = systemMessage
+                });
+                model.SetErrors((ServiceProviderResult)currentWishList.ServiceProviderResult);
+                return model;
             }
-            catch (Exception ex)
+
+            if (!currentWishList.ServiceProviderResult.Success)
             {
-                model.SetErrors(nameof(CreateWishList), ex);
+                model.SetErrors((ServiceProviderResult)currentWishList.ServiceProviderResult);
+                return model;
             }
+            model.Initialize(currentWishList.Result);
+            model.Success = true;
             return model;
-        }        
+        }
 
         public virtual WishListJsonResult AddWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IEnumerable<WishListLine> wishListLines)
         {
