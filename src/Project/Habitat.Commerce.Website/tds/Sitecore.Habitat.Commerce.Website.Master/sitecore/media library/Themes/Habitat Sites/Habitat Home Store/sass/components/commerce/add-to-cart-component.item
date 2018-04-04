@@ -8,13 +8,13 @@ name: add-to-cart-component
 master: {00000000-0000-0000-0000-000000000000}
 template: {962B53C4-F93B-4DF9-9821-415C867B8903}
 templatekey: File
-created: 20180215T174740Z
+created: 20180328T195949Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
 name: Blob
 key: blob
-content-length: 1012
+content-length: 1022
 
 ICAgIEBpbXBvcnQgJy4uLy4uL2luZGV4JzsNCiAgICAuY3hhLWFkZHRvY2FydC1jb21wb25lbnQg
 ew0KICAgICAgICAuY29tcG9uZW50LWNvbnRlbnQgew0KICAgICAgICAgICAgd2lkdGg6IDEwMCU7
@@ -26,9 +26,10 @@ bGVmdDogNXB4Ow0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICAgIC5xdWFudGl0eS1p
 bnB1dCB7DQogICAgICAgICAgICBAaW5jbHVkZSBudW1lcmljLWlucHV0LWdyb3VwKCk7DQogICAg
 ICAgIH0NCiAgICAgICAgLmFkZC10by1jYXJ0LWJ0biB7DQogICAgICAgICAgICBAaW5jbHVkZSBw
 cmltYXJ5LWJ1dHRvbi1maWxsZWQoKTsNCiAgICAgICAgICAgIEBpbmNsdWRlIGxhcmdlLWhlaWdo
-dDsgDQogICAgICAgICAgICB3aWR0aDogMTUwcHg7DQogICAgICAgIH0NCiAgICAgICAgZm9ybSB7
-DQogICAgICAgICAgICBAaW5jbHVkZSByb3ctb2YtZWxlbWVudHMtcGFja2VkKGZhbHNlLCAkYm90
-dG9tLW9yLXJpZ2h0LCAkcGFja2VkLWVsZW1lbnRzLW1hcmdpbik7DQogICAgICAgIH0NCiAgICB9
+dDsgDQogICAgICAgICAgICBtaW4td2lkdGg6IDE1MHB4Ow0KICAgICAgICB9DQogICAgICAgIGZv
+cm0gew0KICAgICAgICAgICAgQGluY2x1ZGUgcm93LW9mLWVsZW1lbnRzLXBhY2tlZChmYWxzZSwg
+JGJvdHRvbS1vci1yaWdodCwgJHBhY2tlZC1lbGVtZW50cy1tYXJnaW4pOw0KICAgICAgICB9DQog
+ICAgfQ==
 ----field----
 field: {C06867FE-9A43-4C7D-B739-48780492D06F}
 name: Extension
@@ -49,7 +50,7 @@ name: Size
 key: size
 content-length: 3
 
-741
+745
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -60,7 +61,7 @@ content-length: 61
 ----version----
 language: en
 version: 1
-revision: db242a9e-f4e3-49ff-add6-9238f68036cd
+revision: e93b0bf5-803f-4e16-847d-56dbaad83a1b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -75,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-db242a9e-f4e3-49ff-add6-9238f68036cd
+e93b0bf5-803f-4e16-847d-56dbaad83a1b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180227T145952Z
+20180331T020718Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

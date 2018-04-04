@@ -13,7 +13,7 @@ created: 20180323T192322Z
 ----version----
 language: en
 version: 1
-revision: 820e20b7-6501-4263-aecb-8dda704f0fa1
+revision: ef6dcc08-0f0f-4c9b-a379-a11719e4d11a
 
 ----field----
 field: {440B5413-5322-4166-9FBE-580F70973751}
@@ -26,9 +26,9 @@ Striva 4 Coming Soon
 field: {9C385368-A554-4A92-9A8D-37F3EF3A09F4}
 name: HeroImage
 key: heroimage
-content-length: 116
+content-length: 115
 
-<image mediaid="{73398813-9AB9-46A4-B305-EC7BB7E97A14}" alt="image" height="" width="" hspace="" vspace="" ></image>
+<image mediaid="{F5E11C3E-6AF7-4B25-AF41-08A6F173B45A}" alt="image" height="" width="" hspace="" vspace=""></image>
 ----field----
 field: {AF73CF76-4E8A-46B0-9403-BCEA092724EF}
 name: HeroSupertitle
@@ -49,14 +49,7 @@ name: HeroOverlayImage
 key: herooverlayimage
 content-length: 58
 
-<image mediaid="{7367FFA5-A84E-49F7-A025-A040A9ABA72E}" />
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
+<image mediaid="{130ADEFC-6528-4813-8D84-47DA589126AC}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -77,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-820e20b7-6501-4263-aecb-8dda704f0fa1
+ef6dcc08-0f0f-4c9b-a379-a11719e4d11a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T130107Z
+20180330T170450Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

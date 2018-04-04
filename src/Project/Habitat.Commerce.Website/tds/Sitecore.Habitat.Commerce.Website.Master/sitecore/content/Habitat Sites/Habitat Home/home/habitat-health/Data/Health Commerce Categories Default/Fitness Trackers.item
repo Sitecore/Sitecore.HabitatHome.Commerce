@@ -10,10 +10,17 @@ template: {DDB08F92-1CC2-43E2-B5C1-FE7F98E32EC9}
 templatekey: _NavigationImage
 created: 20180325T025004Z
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+275
 ----version----
 language: en
 version: 1
-revision: 82d52006-3ffc-400a-ac83-9910ba5083f4
+revision: 0945886f-41c0-4991-8359-e4c7a2c95d2f
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -49,21 +56,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-82d52006-3ffc-400a-ac83-9910ba5083f4
+0945886f-41c0-4991-8359-e4c7a2c95d2f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T021034Z
+20180402T182934Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----version----
 language: ja-JP
 version: 1

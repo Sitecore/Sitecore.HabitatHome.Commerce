@@ -14,20 +14,9 @@ created: 20180325T024943Z
 field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
 name: __Tracking
 key: __tracking
-content-length: 495
+content-length: 437
 
-<tracking>
-  <profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|100||">
-    <key name="Child Safety" value="0" />
-    <key name="Energy Savings" value="0" />
-    <key name="Fitness" value="10" />
-    <key name="Foodie" value="0" />
-    <key name="Newest and Coolest" value="0" />
-    <key name="Overclocking" value="0" />
-    <key name="Reliability" value="0" />
-    <key name="Smart and Connected" value="0" />
-  </profile>
-</tracking>
+<tracking><profile id="552dd90f-a527-438e-ac33-32d236244123" name="Topic Interest Category" presets="fitness|100||"><key name="Child Safety" value="0" /><key name="Energy Savings" value="0" /><key name="Fitness" value="10" /><key name="Foodie" value="0" /><key name="Newest and Coolest" value="0" /><key name="Overclocking" value="0" /><key name="Reliability" value="0" /><key name="Smart and Connected" value="0" /></profile></tracking>
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -38,7 +27,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 653ce1df-3de5-40ef-ac0c-0210c5c8a5f0
+revision: 57718d6a-16cb-4077-8eb8-ffc7a2fa9820
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -95,28 +84,35 @@ name: __Revision
 key: __revision
 content-length: 36
 
-653ce1df-3de5-40ef-ac0c-0210c5c8a5f0
+57718d6a-16cb-4077-8eb8-ffc7a2fa9820
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T034743Z
+20180402T200005Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{FF509B64-B6D4-4FB7-9718-C4218B992740}
+{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: ja-JP
 version: 1

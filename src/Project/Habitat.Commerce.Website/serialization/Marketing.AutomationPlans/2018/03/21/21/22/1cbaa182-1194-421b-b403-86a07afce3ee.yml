@@ -10,7 +10,7 @@ SharedFields:
   Value: 00010101T000000Z
 - ID: "2c41a32f-86a9-4f43-8550-bf0af266e3f2"
   Hint: End Date
-  Value: 00010101T000000Z
+  Value: 99991231T235959
 - ID: "3fb918c8-08ec-4879-8062-088bbf71ee72"
   Hint: Plan Data
   Value: |

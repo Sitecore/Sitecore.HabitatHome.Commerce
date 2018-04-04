@@ -1,0 +1,148 @@
+----item----
+version: 1
+id: {7493C92D-DA35-44A7-B8D8-CB3A6BF9D561}
+database: master
+path: /sitecore/Forms/Onboarding Sign Up
+parent: {B701850A-CB8A-4943-B2BC-DDDB1238C103}
+name: Onboarding Sign Up
+master: {00000000-0000-0000-0000-000000000000}
+template: {6ABEE1F2-4AB4-47F0-AD8B-BDB36F37F64C}
+templatekey: Form
+created: 20180323T040808Z
+
+----field----
+field: {D99833EA-238A-4505-90EF-C69BF3EBA946}
+name: Is Tracking Enabled
+key: is tracking enabled
+content-length: 1
+
+1
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{3A4DF9C0-7C82-4415-90C3-25440257756D}
+----field----
+field: {9EB86F19-2E5D-48DB-9795-0EE4868EFF11}
+name: Is Ajax
+key: is ajax
+content-length: 0
+
+
+----field----
+field: {5303564E-92A6-4A74-B0D5-1471C717197D}
+name: Css Class
+key: css class
+content-length: 0
+
+
+----field----
+field: {FCE03B41-4CBB-4F7F-920F-FF04F12FA896}
+name: Scripts
+key: scripts
+content-length: 142
+
+jquery-2.1.3.min.js|jquery.validate.min.js|jquery.validate.unobtrusive.min.js|jquery.unobtrusive-ajax.min.js|form.validate.js|form.tracking.js
+----field----
+field: {C3F328AB-4A32-4140-8878-0477CA1CE9DF}
+name: Styles
+key: styles
+content-length: 0
+
+
+----field----
+field: {558F9307-EBAF-480D-88B5-DFE9E63A66DE}
+name: Is Template
+key: is template
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 202ea8b0-5f94-4c92-b984-bb71eb6ce9de
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171206T181138Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+202ea8b0-5f94-4c92-b984-bb71eb6ce9de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 003ba191-444e-48eb-a51f-f1dfd1d96866
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+サインアップ
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104945Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+003ba191-444e-48eb-a51f-f1dfd1d96866
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

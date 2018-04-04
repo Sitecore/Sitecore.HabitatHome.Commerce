@@ -13,13 +13,13 @@ created: 20180323T040641Z
 ----version----
 language: en
 version: 1
-revision: 380bdba3-7a01-4651-a044-dea0dd166481
+revision: b65c8a8e-1e5f-430c-860d-108989deaf88
 
 ----field----
 field: {B3635965-6786-457C-9DEE-28DE73C0A331}
 name: Text
 key: text
-content-length: 88
+content-length: 87
 
 <p><h4>Registered Customers</h4></p>
 <p>If you have an account, please login below.</p>
@@ -43,21 +43,28 @@ name: __Revision
 key: __revision
 content-length: 36
 
-380bdba3-7a01-4651-a044-dea0dd166481
+b65c8a8e-1e5f-430c-860d-108989deaf88
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180321T111314Z
+20180404T041312Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: fr-CA
 version: 1

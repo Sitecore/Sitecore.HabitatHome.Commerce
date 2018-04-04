@@ -8,8 +8,16 @@ SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"
   Hint: FieldName
   Value: Navigation Image
+- ID: "8be1f2e3-5e71-48df-9cc0-9bb4bca4784d"
+  Hint: IsSuffixLink
+  Type: Checkbox
+  Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
+  Value: 0
+- ID: "cd6f5d0b-d11e-4fd3-a5d8-a75e6ca07a0c"
+  Hint: IsPrefixLink
+  Type: Checkbox
   Value: 0
 - ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
   Hint: Tag
@@ -23,6 +31,12 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "15867cb6-e128-4d78-9d4f-739e5963dfc4"
+      Hint: Suffix
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180215T135934Z
+    - ID: "fd5230d8-e68d-4e17-9d85-ea676f27ac3a"
+      Hint: Prefix
+      Value: 

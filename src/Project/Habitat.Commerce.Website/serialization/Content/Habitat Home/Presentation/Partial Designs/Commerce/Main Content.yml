@@ -42,3 +42,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
+      Hint: Base Partial Design
+      Value: "{8519D408-9F84-4DED-B330-ED983C07E3F1}"
