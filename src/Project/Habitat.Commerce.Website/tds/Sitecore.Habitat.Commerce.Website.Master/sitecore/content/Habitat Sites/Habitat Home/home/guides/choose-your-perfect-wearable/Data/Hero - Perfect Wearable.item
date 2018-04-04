@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {5852E364-7885-45A0-92AB-0BE2FD0782DD}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/guides/choose-your-perfect-wearable/Data/Hero - Perfect Wearable
+parent: {C5BAAA77-F49D-4516-AAA2-58F501E004E2}
+name: Hero - Perfect Wearable
+master: {00000000-0000-0000-0000-000000000000}
+template: {643A85F5-C9F1-4836-B17B-35ADE22D03D3}
+templatekey: Hero
+created: 20180330T210614Z
+
+----version----
+language: en
+version: 1
+revision: 1e5124bf-8147-40b3-8d5d-92db19972534
+
+----field----
+field: {9C385368-A554-4A92-9A8D-37F3EF3A09F4}
+name: HeroImage
+key: heroimage
+content-length: 58
+
+<image mediaid="{AD86164D-A23D-4460-AB13-D098997786A8}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T191948Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1e5124bf-8147-40b3-8d5d-92db19972534
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180330T192148Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

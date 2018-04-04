@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {5D63AD3C-CC98-4D03-84B7-5A370218CECB}
+database: master
+path: /sitecore/content/Habitat Sites/Habitat Home/home/buy-gift-cards/Data/Hero
+parent: {E9FF70CB-483A-43D3-9B18-154347AF43FF}
+name: Hero
+master: {00000000-0000-0000-0000-000000000000}
+template: {643A85F5-C9F1-4836-B17B-35ADE22D03D3}
+templatekey: Hero
+created: 20180403T181736Z
+
+----version----
+language: en
+version: 1
+revision: 1f61706f-89b9-4fa2-843a-a18759be4c30
+
+----field----
+field: {440B5413-5322-4166-9FBE-580F70973751}
+name: HeroTitle
+key: herotitle
+content-length: 15
+
+Get a Gift Card
+----field----
+field: {9C385368-A554-4A92-9A8D-37F3EF3A09F4}
+name: HeroImage
+key: heroimage
+content-length: 65
+
+<image mediaid="{627AA15D-190C-46CA-88BB-EBD598E6063F}" ></image>
+----field----
+field: {AF73CF76-4E8A-46B0-9403-BCEA092724EF}
+name: HeroSupertitle
+key: herosupertitle
+content-length: 28
+
+share the habitat experience
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180403T181736Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1f61706f-89b9-4fa2-843a-a18759be4c30
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180403T211035Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

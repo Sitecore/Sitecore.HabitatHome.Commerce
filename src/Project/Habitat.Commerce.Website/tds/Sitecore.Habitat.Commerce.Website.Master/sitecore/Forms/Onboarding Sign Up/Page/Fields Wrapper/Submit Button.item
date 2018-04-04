@@ -1,0 +1,188 @@
+----item----
+version: 1
+id: {255D10AB-EEFC-4A5F-BA48-70B1957F7027}
+database: master
+path: /sitecore/Forms/Onboarding Sign Up/Page/Fields Wrapper/Submit Button
+parent: {60B74F90-0727-47F4-812B-741D39D40805}
+name: Submit Button
+master: {00000000-0000-0000-0000-000000000000}
+template: {94A46D66-B1B8-405D-AAE4-7B5A9CD61C5E}
+templatekey: Button
+created: 20180323T040808Z
+
+----field----
+field: {D842AF43-E220-48D7-9714-6EB2381D2B0C}
+name: Navigation Step
+key: navigation step
+content-length: 1
+
+0
+----field----
+field: {467C22B4-B1A2-4620-B8BB-74C2D8B369FC}
+name: Label Css Class
+key: label css class
+content-length: 0
+
+
+----field----
+field: {7ABAA3F6-6EC0-4B65-A463-7919BFAE55AA}
+name: Css Class
+key: css class
+content-length: 0
+
+
+----field----
+field: {589A7ADE-81D4-4A60-B9E2-7EAF6AE8A563}
+name: Field Type
+key: field type
+content-length: 38
+
+{7CE25CAB-EF3A-4F73-AB13-D33BDC1E4EE2}
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----version----
+language: en
+version: 1
+revision: d617bbbd-6b3c-4967-b0e2-90e77b527458
+
+----field----
+field: {71FFD7B2-8B09-4F7B-8A66-1E4CEF653E8D}
+name: Title
+key: title
+content-length: 11
+
+Sign Me Up!
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171206T193717Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d617bbbd-6b3c-4967-b0e2-90e77b527458
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: fr-CA
+version: 1
+revision: d95ebf8b-c4f3-498e-a5fc-44e96e7b7c58
+
+----field----
+field: {71FFD7B2-8B09-4F7B-8A66-1E4CEF653E8D}
+name: Title
+key: title
+content-length: 12
+
+Ajoutez-moi!
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180130T185040Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d95ebf8b-c4f3-498e-a5fc-44e96e7b7c58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: ja-JP
+version: 1
+revision: 97172a38-2555-4277-b1b6-ac2033b9658f
+
+----field----
+field: {71FFD7B2-8B09-4F7B-8A66-1E4CEF653E8D}
+name: Title
+key: title
+content-length: 6
+
+サインアップ
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+サブミットボタン
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T104946Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+97172a38-2555-4277-b1b6-ac2033b9658f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180321T111414Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

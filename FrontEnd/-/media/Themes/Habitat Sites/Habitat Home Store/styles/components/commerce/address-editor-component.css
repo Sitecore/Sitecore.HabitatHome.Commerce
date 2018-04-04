@@ -835,7 +835,7 @@ fieldset[disabled] .cxa-addresseditor-component .address-selector-section select
   padding: 4px 25px 4px 25px;
   display: inline-block;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .cxa-addresseditor-component .address-buttons-section .save-addresss-button:active, .cxa-addresseditor-component .address-buttons-section .save-addresss-button:hover {
@@ -872,31 +872,28 @@ fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .save-a
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
-  border: 2px solid #dc291e;
+  border: 1px solid #dc291e;
   background: #fff;
   color: #dc291e;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   height: 34px;
   text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
   padding: 4px 25px 4px 25px;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .cxa-addresseditor-component .address-buttons-section .delete-address-button:active, .cxa-addresseditor-component .address-buttons-section .delete-address-button:hover {
-  background: #d3271d;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  opacity: 0.8;
   text-decoration: none;
 }
 
 .cxa-addresseditor-component .address-buttons-section .delete-address-button:active {
-  background: #c1241a;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -922,32 +919,29 @@ fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .delete
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
-  border: 2px solid #0e909f;
+  border: 1px solid #0e909f;
   background: #fff;
   color: #0e909f;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   height: 34px;
   text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
   padding: 4px 25px 4px 25px;
-  border-radius: 4px;
+  border-radius: 0;
   padding-top: 8px;
 }
 
 .cxa-addresseditor-component .address-buttons-section .cancel-edit-button:active, .cxa-addresseditor-component .address-buttons-section .cancel-edit-button:hover {
-  background: #0d8896;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  opacity: 0.8;
   text-decoration: none;
 }
 
 .cxa-addresseditor-component .address-buttons-section .cancel-edit-button:active {
-  background: #0c7783;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -974,32 +968,29 @@ fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .cancel
   -ms-flex-order: 1;
   order: 1;
   margin-right: auto;
-  border: 2px solid #868b93;
+  border: 1px solid #141919;
   background: #fff;
-  color: #707680;
+  color: #141919;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   height: 34px;
   text-align: center;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
   padding: 4px 25px 4px 25px;
-  border-radius: 4px;
+  border-radius: 0;
   padding-top: 8px;
 }
 
 .cxa-addresseditor-component .address-buttons-section .back-to-my-account:active, .cxa-addresseditor-component .address-buttons-section .back-to-my-account:hover {
-  background: #81868e;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  opacity: 0.8;
   text-decoration: none;
 }
 
 .cxa-addresseditor-component .address-buttons-section .back-to-my-account:active {
-  background: #767c84;
-  color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
@@ -1012,13 +1003,11 @@ fieldset[disabled] .cxa-addresseditor-component .address-buttons-section .back-t
 }
 
 .cxa-addresseditor-component .address-buttons-section .back-to-my-account:hover {
-  color: #fff;
-  background-color: #b9bcc1;
+  opacity: 0.8;
 }
 
 .cxa-addresseditor-component .address-buttons-section .back-to-my-account:active {
-  color: #fff;
-  background-color: #6b717b;
+  opacity: 0.8;
 }
 
 @media (max-width: 959px) {

@@ -13,7 +13,7 @@ created: 20180325T025004Z
 ----version----
 language: en
 version: 1
-revision: 19dabb09-bb70-46ac-b668-33ca65bb9419
+revision: f421a1e5-90b0-4dd0-8da7-a49ef428cc61
 
 ----field----
 field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
@@ -22,6 +22,13 @@ key: link
 content-length: 75
 
 <link text="Healthy Cooking" linktype="rel" url="/shop/ranges" anchor="" />
+----field----
+field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
+name: Navigation Image
+key: navigation image
+content-length: 58
+
+<image mediaid="{CE71E35A-38E1-4F44-99FB-6FE9E63C827B}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -42,21 +49,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19dabb09-bb70-46ac-b668-33ca65bb9419
+f421a1e5-90b0-4dd0-8da7-a49ef428cc61
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180327T021034Z
+20180402T182147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
 ----version----
 language: ja-JP
 version: 1
