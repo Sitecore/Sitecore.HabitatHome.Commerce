@@ -83,6 +83,22 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8BBD6185-0DDD-4B40-B4E6-99D671511091}"
+              p:after="r[@uid='{DB9B22E5-06C0-4E73-9611-72F95BDE8A44}']"
+              s:id="{A6AEE2E8-BFB1-4D86-BA02-5E73C723B38E}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171115T192422Z
