@@ -16,7 +16,7 @@ using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 
 namespace Sitecore.Feature.WishListLines.Controllers
 {
-    public class WishListLinessController : BaseCommerceStandardController
+    public class WishListLinesController : BaseCommerceStandardController
     {
         
         protected IWishListLinesRepository WishListLinesRepository { get; set; }
@@ -24,7 +24,7 @@ namespace Sitecore.Feature.WishListLines.Controllers
         public IModelProvider ModelProvider { get; protected set; }
         public IAddToCartRepository AddToCartRepository { get; protected set; }
 
-        public WishListLinessController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IAddToCartRepository addToCartRepository, IWishListLinesRepository wishListLinesRepository) : base(storefrontContext)
+        public WishListLinesController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IAddToCartRepository addToCartRepository, IWishListLinesRepository wishListLinesRepository) : base(storefrontContext)
         {
 
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));

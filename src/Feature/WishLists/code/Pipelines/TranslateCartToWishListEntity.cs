@@ -17,16 +17,16 @@ using Sitecore.Commerce.Plugin.Catalog;
 namespace Sitecore.Feature.WishLists.Pipelines
 {
 
-    public class TranslateCartToWishListEntity : TranslateODataEntityToEntity<TranslateCartToEntityRequest, TranslateCartToWishListEntityResult, Sitecore.Commerce.Plugin.Carts.Cart, WishList>
+    public class TranslateCartToWishListEntity // : TranslateODataEntityToEntity<TranslateCartToEntityRequest, TranslateCartToWishListEntityResult, Sitecore.Commerce.Plugin.Carts.Cart, WishList>
     {
         public TranslateCartToWishListEntity(IEntityFactory entityFactory)
-          : base(entityFactory)
+          //: base(entityFactory)
         {
         }
 
-        protected override void Translate(TranslateCartToEntityRequest request, Sitecore.Commerce.Plugin.Carts.Cart source, WishList destination)
+        protected void Translate(TranslateCartToEntityRequest request, Sitecore.Commerce.Plugin.Carts.Cart source, WishList destination)
         {
-            base.Translate(request, source, destination);
+            //base.Translate(request, source, destination);
             destination.ExternalId = source.Id;
             destination.Name = source.Name;
             destination.ShopName = source.ShopName;
@@ -42,7 +42,12 @@ namespace Sitecore.Feature.WishLists.Pipelines
             }
             
             this.TranslateLines(request, source, destination);            
-        }        
+        }
+
+        //protected override WishList GetTranslateDestination(TranslateCartToEntityRequest request)
+        //{
+        //    return this.EntityFactory.Create<WishList>("Cart");
+        //}
 
         protected virtual void TranslateLines(TranslateCartToEntityRequest request, Sitecore.Commerce.Plugin.Carts.Cart source, WishList destination)
         {
