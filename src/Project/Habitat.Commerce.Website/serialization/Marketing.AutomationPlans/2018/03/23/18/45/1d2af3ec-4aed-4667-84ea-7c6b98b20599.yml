@@ -10,7 +10,7 @@ SharedFields:
   Value: 00010101T000000Z
 - ID: "2c41a32f-86a9-4f43-8550-bf0af266e3f2"
   Hint: End Date
-  Value: 99991231T235959Z
+  Value: 00010101T000000Z
 - ID: "3fb918c8-08ec-4879-8062-088bbf71ee72"
   Hint: Plan Data
   Value: |
@@ -34,7 +34,7 @@ Languages:
       Value: Gift Card Reminder Email
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}"
+      Value: "{39156DC0-21C6-4F64-B641-31E85C8F5DFE}"
     - ID: "e259e500-b38e-41fe-82db-8b604bcf9e75"
       Hint: Description
       Value: Alerting customer to the store credit
