@@ -9,7 +9,7 @@
   border-top: 4px solid transparent;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .cxa-minicart-component {
     display: none;
   }

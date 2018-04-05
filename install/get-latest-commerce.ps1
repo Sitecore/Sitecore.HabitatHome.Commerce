@@ -15,15 +15,6 @@ $msbuildNuGetUrl = "https://v9assets.blob.core.windows.net/shared-assets/msbuild
 $msbuildNuGetPackageFileName = "msbuild.microsoft.visualstudio.web.targets.14.0.0.3.nupkg"
 $msbuildNuGetPackageDestination = $([io.path]::combine($DownloadFolder, $msbuildNuGetPackageFileName))
 
-$habitatHomeImagePackageUrl = "https://v9assets.blob.core.windows.net/v9-onprem-assets/Habitat Home Product Images.zip?sv=2017-04-17&ss=bfqt&srt=sco&sp=rwdlacup&se=2027-11-09T20%3A11%3A50Z&st=2017-11-09T12%3A11%3A50Z&spr=https&sig=naspk%2BQflDLjyuC6gfXw4OZKvhhxzTlTvDctfw%2FByj8%3D"
-$habitatHomeImagePackageFileName = "Habitat Home Product Images.zip"
-$habitatHomeImagePackageDestination = (Join-Path $CommerceAssetFolder $habitatHomeImagePackageFileName)
-
-
-if (!(Test-Path $habitatHomeImagePackageDestination)) {
-    Write-Host ("Saving '{0}' to '{1}'" -f $habitatHomeImagePackageFileName, $CommerceAssetFolder) -ForegroundColor Green
-    Start-BitsTransfer -source $habitatHomeImagePackageUrl -Destination $habitatHomeImagePackageDestination
-}
 Write-Host "Saving $msbuildNuGetUrl to $msbuildNuGetPackageDestination - if required" -ForegroundColor Green
 if (!(Test-Path $msbuildNuGetPackageDestination)) {
     Start-BitsTransfer -source $msbuildNuGetUrl -Destination $msbuildNuGetPackageDestination
@@ -61,3 +52,13 @@ if (!(Test-Path $commercePackageDestination)) {
 Write-Host "Extracting to $($CommerceAssetFolder)"
 set-alias sz "$env:ProgramFiles\7-zip\7z.exe"
 sz x -o"$CommerceAssetFolder" $commercePackageDestination -r -y -aoa
+
+$habitatHomeImagePackageUrl = "https://v9assets.blob.core.windows.net/v9-onprem-assets/Habitat Home Product Images.zip?sv=2017-04-17&ss=bfqt&srt=sco&sp=rwdlacup&se=2027-11-09T20%3A11%3A50Z&st=2017-11-09T12%3A11%3A50Z&spr=https&sig=naspk%2BQflDLjyuC6gfXw4OZKvhhxzTlTvDctfw%2FByj8%3D"
+$habitatHomeImagePackageFileName = "Habitat Home Product Images.zip"
+$habitatHomeImagePackageDestination = (Join-Path $CommerceAssetFolder $habitatHomeImagePackageFileName)
+
+
+if (!(Test-Path $habitatHomeImagePackageDestination)) {
+    Write-Host ("Saving '{0}' to '{1}'" -f $habitatHomeImagePackageFileName, $CommerceAssetFolder) -ForegroundColor Green
+    Start-BitsTransfer -source $habitatHomeImagePackageUrl -Destination $habitatHomeImagePackageDestination
+}

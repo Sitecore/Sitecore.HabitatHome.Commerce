@@ -6,9 +6,10 @@ $break-desktop-large: 1200px;
 $break-desktop: 960px;
 $break-mobile: 380px;
 $break-mobile-horizontal: 640px;
-$break-mobile-large: 786px;
+$break-mobile-large: 768px;
+
 @mixin wrapper() {
-    max-width: 960px;
+    max-width: $break-desktop;
     margin: 0 auto !important;
 }
 @mixin clearfix {
