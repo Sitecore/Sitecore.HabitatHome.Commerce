@@ -13,7 +13,7 @@
         "UserName": "",
         "Password": "",
         "Server": ".",
-        "Database": "SitecoreCommerce9_SharedEnvironments",
+        "Database": "habitat_SharedEnvironments",
         "AdditionalParameters": "",
         "ConnectTimeout": 120000,
         "CommandTimeout": 180,
