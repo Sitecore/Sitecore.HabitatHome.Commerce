@@ -17,7 +17,7 @@ Function Invoke-InstallModuleTask {
     Write-Host "Installing module: " $moduleToInstall -ForegroundColor Green ; 
     $urlInstallModules = $BaseUrl + "/InstallModules.aspx?modules=" + $moduleToInstall
     Write-Host $urlInstallModules
-    Invoke-RestMethod $urlInstallModules -TimeoutSec 720
+    Invoke-RestMethod $urlInstallModules -TimeoutSec 1800
 }
 
 Function Invoke-InstallPackageTask {
@@ -38,7 +38,7 @@ Function Invoke-InstallPackageTask {
     Write-Host "Installing package: " $packageToInstall -ForegroundColor Green ; 
     $urlInstallPackages = $BaseUrl + "/InstallPackages.aspx?package=" + $packageToInstall
     Write-Host $urlInstallPackages
-    Invoke-RestMethod $urlInstallPackages -TimeoutSec 720
+    Invoke-RestMethod $urlInstallPackages -TimeoutSec 1800
 }
 
 Function Invoke-PublishToWebTask {
@@ -50,7 +50,7 @@ Function Invoke-PublishToWebTask {
 	
 	Write-Host "Publishing to web..." -ForegroundColor Green ; 
 	$urlPublish = $BaseUrl + "/Publish.aspx"
-	Invoke-RestMethod $urlPublish -TimeoutSec 720
+	Invoke-RestMethod $urlPublish -TimeoutSec 1800
 	Write-Host "Publishing to web complete..." -ForegroundColor Green ; 
 }
 
@@ -77,11 +77,11 @@ Function Invoke-CreateDefaultStorefrontTask {
 		Stop-WebSite $siteName
 
 		if((Get-WebAppPoolState $siteName).Value -ne 'Stopped')
-   		{
-   			Stop-WebAppPool -Name $siteName
-   		}
+ï¿½ ï¿½		{
+ï¿½ ï¿½			Stop-WebAppPool -Name $siteName
+ï¿½ ï¿½		}
 	
-   		Start-WebAppPool -Name $siteName
+ï¿½ ï¿½		Start-WebAppPool -Name $siteName
 		Start-WebSite $siteName
 		Write-Host "Restarting the website and application pool for $($siteName) complete..." -ForegroundColor Green ; 
 	}
@@ -112,17 +112,17 @@ Function Invoke-RebuildIndexesTask {
 	
 	Write-Host "Rebuilding index 'sitecore_core_index' ..." -ForegroundColor Green ; 
 	$urlRebuildIndex = $BaseUrl + "/RebuildIndex.aspx?index=sitecore_core_index"
-	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 300
+	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 1200
 	Write-Host "Rebuilding index 'sitecore_core_index' completed." -ForegroundColor Green ;    
 
 	Write-Host "Rebuilding index 'sitecore_master_index' ..." -ForegroundColor Green ; 
 	$urlRebuildIndex = $BaseUrl + "/RebuildIndex.aspx?index=sitecore_master_index"
-	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 600
+	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 1200
 	Write-Host "Rebuilding index 'sitecore_master_index' completed." -ForegroundColor Green ; 	
 
 	Write-Host "Rebuilding index 'sitecore_web_index' ..." -ForegroundColor Green ; 
 	$urlRebuildIndex = $BaseUrl + "/RebuildIndex.aspx?index=sitecore_web_index"
-	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 600
+	Invoke-RestMethod $urlRebuildIndex -TimeoutSec 1200
 	Write-Host "Rebuilding index 'sitecore_web_index' completed." -ForegroundColor Green ; 
 }
 
