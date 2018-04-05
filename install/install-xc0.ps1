@@ -268,9 +268,12 @@ Function Publish-IdentityServer{
 }
 Function Publish-BizFx {
     Write-Host "Publishing BizFx" -ForegroundColor Green
-    $bizFxSource = Join-Path $commerceAssets.installationFolder "Sitecore.BizFX.1.1.9/*"
+    $bizFxSource = Join-Path $commerceAssets.installationFolder "Sitecore.BizFX.1.1.9/"
     $PublishLocation = Join-Path $publishPath "Habitat.Commerce.BizFx"
-    Copy-Item -Path $bizFxSource -Destination $PublishLocation  -Force
+    if (Test-Path $PublishLocation){
+        Remove-Item $PublishLocation -Force -Recurse
+    }
+    Copy-Item -Path $bizFxSource -Destination $PublishLocation  -Force -Recurse
 }
 Function Install-Commerce {
     Write-Host "Installing Commerce" -ForegroundColor Green
