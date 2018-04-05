@@ -7,10 +7,17 @@
     <PackageTags>$(PackageTags);Commerce;Service Proxy</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
-  
-   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
