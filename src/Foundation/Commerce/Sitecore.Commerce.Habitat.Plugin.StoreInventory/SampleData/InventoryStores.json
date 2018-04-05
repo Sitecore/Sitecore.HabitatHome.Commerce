@@ -1,7 +1,7 @@
 ﻿{
-  "productsToAssociate": [ "Entity-SellableItem-6042183|56042183" ],
-  "catalog":  "Habitat_Master",
-	"stores": [{
+  "ProductsToAssociate": [ "Entity-SellableItem-6042183|56042183" ],
+  "Catalog":  "Habitat_Master",
+	"Stores": [{
 		"StoreName": "Edmonton Store",
 		"Address": "11285 274 Street",
 		"City": "Edmonton",

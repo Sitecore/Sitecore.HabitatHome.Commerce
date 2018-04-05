@@ -49,7 +49,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .component.cxa-checkoutdelivery-component .addrss-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -163,7 +163,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .component.cxa-checkoutdelivery-component .buttons-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -322,7 +322,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .component.cxa-checkoutdelivery-component .delivery-option-item .delivery-item-header .ship-option-select {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -491,7 +491,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .component.cxa-checkoutdelivery-component .delivery-option-item .delivery-item-content .address-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -615,7 +615,7 @@
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
   .component.cxa-checkoutdelivery-component .shipbymail-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
