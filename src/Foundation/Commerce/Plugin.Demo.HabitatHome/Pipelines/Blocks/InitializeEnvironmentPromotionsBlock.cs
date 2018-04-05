@@ -992,14 +992,14 @@
         {
             var promotion =
                 await this._addPromotionPipeline.Run(
-                    new AddPromotionArgument(book, "FreeGiftCardWithGymPromotion",
+                    new AddPromotionArgument(book, "Free100GiftCardWithGymAndPlatinumTrainingPromotion",
                     DateTimeOffset.UtcNow.AddDays(-6),
                     DateTimeOffset.UtcNow.AddYears(1),
-                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi",
-                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi")
+                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum",
+                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum")
                     {
-                        DisplayName = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi",
-                        Description = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi"
+                        DisplayName = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum",
+                        Description = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum"
                     },
                     context);
 
