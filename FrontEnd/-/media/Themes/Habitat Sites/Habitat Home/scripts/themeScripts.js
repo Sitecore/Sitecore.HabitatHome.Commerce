@@ -4,7 +4,7 @@ XA.component.themeScripts = (function ($) {
     $('header .search-box').on("click", function (e) {
         var target = $(e.target);
         if (target.hasClass('search-box-input')) {
-            return false;
+            return false; 
         }
         $(this).toggleClass('open');
         $(".megadrop.open").removeClass("open");
