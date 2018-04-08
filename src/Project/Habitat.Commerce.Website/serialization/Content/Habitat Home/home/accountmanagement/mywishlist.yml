@@ -1,8 +1,8 @@
 ﻿---
-ID: "4a137c93-84c9-4232-b468-ae11590fc93b"
-Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
+ID: "4dfecde7-f8bf-44b5-9f76-77a5b5526ae8"
+Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "19855ed8-05c2-4595-b240-743831c3a2c7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/shoppingcart
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/mywishlist
 DB: master
 BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
@@ -52,7 +52,7 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Shopping Cart
+    Value: My Wish List
   Versions:
   - Version: 1
     Fields:
@@ -65,36 +65,15 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{37141A9A-8879-4C7C-8F7C-3620CB14DA68}"
-              p:before="*"
-              s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
-              s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Current Step=Cart"
-              s:ph="/main/container-1" />
-            <r
               uid="{242E7AAB-16C1-4D65-A0D5-7C310C812C18}"
-              p:after="r[@uid='{37141A9A-8879-4C7C-8F7C-3620CB14DA68}']"
+              p:before="*"
               s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
-              s:id="{1EF188EF-3257-4A36-ABE1-15E74FFE6E92}"
+              s:id="{FF8ACF38-AE4E-446C-B4E7-6665052CF769}"
               s:par="GridParameters"
-              s:ph="/main/container-1" />
-            <r
-              uid="{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}"
-              p:after="r[@uid='{242E7AAB-16C1-4D65-A0D5-7C310C812C18}']"
-              s:ds="{8CD9D2A6-E00B-4A5F-8345-778B957A1095}"
-              s:id="{AB1E2893-6556-49D5-9095-B7AAF09B8BEF}"
-              s:par="GridParameters"
-              s:ph="/main/container-1" />
-            <r
-              uid="{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}"
-              p:after="r[@uid='{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}']"
-              s:ds="{4C95BC54-FE4E-40ED-B857-09C1D8D1972D}"
-              s:id="{062251D0-4C83-43BE-8119-B33DAF14DF2F}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D%7C%7B08B60EE1-3F06-4C49-9449-E7420AFE5A2F%7D%7C%7B3EBE0FCB-B055-4BFD-8C61-5FD42C9A8E9D%7D"
               s:ph="/main/container-1" />
             <r
               uid="{FA71BE58-6FAE-4688-B348-3E132D6D64F8}"
-              p:after="r[@uid='{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}']"
+              p:after="r[@uid='{242E7AAB-16C1-4D65-A0D5-7C310C812C18}']"
               s:ds="{712E0541-7DAB-4D2E-A364-5A98CF8F2572}"
               s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D%7C%7B2040C827-8640-4E61-907E-D3D5A25696C3%7D%7C%7BF58A39D5-1B62-4A8A-95AD-65B3878BB873%7D&amp;FieldNames&amp;Styles=884D05E0-144F-4D3E-83D7-50CD3D701438%7C5F9C431A-89BC-48FE-8D65-BF5C45C67E97%7CC3F2671E-6BC2-4126-BF74-FF863909F98E&amp;Reset Caching Options&amp;RenderingIdentifier"
@@ -126,11 +105,11 @@ Languages:
       Value: 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Cart
+      Value: Wish List
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
-      Value: Shopping Cart
+      Value: My Wish List

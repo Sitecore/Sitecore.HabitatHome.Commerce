@@ -96,6 +96,6 @@ namespace Sitecore.Feature.WishListLines.Controllers
                 baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
             }
             return this.Json(baseJsonResult);
-        }
+        } 
     }
 }

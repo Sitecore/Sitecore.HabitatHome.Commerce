@@ -1,6 +1,6 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3EFA7D2E-458D-4E7D-A640-62754C06A66B}</ProjectGuid>
+    <ProjectGuid>{5364E572-BD04-4B3D-9FA9-03B05073F5AC}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Feature.WishListLines</RootNamespace>
-    <AssemblyName>Sitecore.Feature.WishListLines</AssemblyName>
+    <RootNamespace>Sitecore.Feature.ShoppingCartLines</RootNamespace>
+    <AssemblyName>Sitecore.Feature.ShoppingCartLines</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -45,51 +45,42 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.ServiceProxy, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.ServiceProxy.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Feature.Cart">
-      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
-      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
-      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Foundation.Commerce.WishLists">
-      <HintPath>..\..\..\..\lib\Modules\Commerce-Foundation\Habitat.Commerce\Sitecore.Foundation.Commerce.WishLists.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
-      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
-      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
-      <HintPath>..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\lib\Modules\SXA-1.6.180103\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -101,22 +92,22 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -127,11 +118,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.WishlistLines.config" />
+    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.ShoppingCartLines.config" />
     <None Include="packages.config" />
-    <Content Include="Scripts\Commerce\Feature\WishListLines\habitat.commerce.feature.wishlist.lines.model.js" />
-    <Content Include="Scripts\Commerce\Feature\WishListLines\habitat.commerce.feature.wishlist.lines.js" />
-    <Content Include="Views\WishListLines\WishListLines.cshtml" />
+    <Content Include="Views\ShoppingCartLines\ShoppingCartLines.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,13 +132,8 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\WishListLinesController.cs" />
-    <Compile Include="Models\JsonResults\WishListJsonResult.cs" />
-    <Compile Include="Models\JsonResults\WishListLineJsonResult.cs" />
-    <Compile Include="Models\WishListLinesRenderingModel.cs" />
+    <Compile Include="Controllers\ShoppingCartLinesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IWishListLinesRepository.cs" />
-    <Compile Include="Repositories\WishListLinesRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
@@ -165,9 +149,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24854</DevelopmentServerPort>
+          <DevelopmentServerPort>5236</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:24854/</IISUrl>
+          <IISUrl>http://localhost:5236/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -181,8 +165,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
