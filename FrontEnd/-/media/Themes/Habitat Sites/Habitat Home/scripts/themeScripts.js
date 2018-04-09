@@ -4,7 +4,7 @@ XA.component.themeScripts = (function ($) {
     $('header .search-box').on("click", function (e) {
         var target = $(e.target);
         if (target.hasClass('search-box-input')) {
-            return false;
+            return false; 
         }
         $(this).toggleClass('open');
         $(".megadrop.open").removeClass("open");
@@ -75,5 +75,15 @@ XA.component.themeScripts = (function ($) {
         $('div.content-finder form label').removeClass("selected");
         $('div.content-finder form input[type="radio"]:checked').parent('label').addClass("selected");
     })*/
+
+    //Sidebar
+    var $sidebar = $("#sidebar");
+    $sidebar.find('.panel-collapse').hide();
+    $sidebar.find(".panel-title > a").click(function(e){
+        e.preventDefault();
+        var targetSelector = $(this).attr('href');
+        $(targetSelector).slideToggle(300);
+    });
+
 }(jQuery, document));
 
