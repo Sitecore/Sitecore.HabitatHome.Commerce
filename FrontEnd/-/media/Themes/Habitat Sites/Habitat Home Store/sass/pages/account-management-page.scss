@@ -1,5 +1,76 @@
 @import '../index';
 .account-management-page {
+
+    .account-summary {
+        padding-bottom: 5em;
+        
+        .link-list h3 {
+            border: 0;
+        }
+    
+        .link-list {
+            margin-bottom: 0;            
+        }
+        
+        .logout,
+        .link-list > .component-content li {
+            padding-right: 2em;
+            margin: 0;
+
+            a {
+                padding: 1em;
+                border-top: 1px solid #D8D9D5;
+                display: block;
+                font-weight: bold;
+                border-bottom: 0;
+        
+                &:hover {
+                    border-bottom: 0;
+                    color: $dark;
+                }
+        
+                &:before {
+                    content: '';
+                }                
+            }
+   
+            &.active {
+                a {
+                    color: $primary-color;
+                }
+            }
+        } 
+
+        .rich-text {
+            margin: 0;
+            padding-right: 40px;
+        }
+        .rich-text h4 {
+            font-size: 20px;
+            line-height: 1.3;
+            font-weight: 700;
+            padding-bottom: 0.3125em;
+            border-bottom: 1px solid #D8D9D5;
+            margin-bottom: 2.25em;
+        }
+
+        .cxa-addresslist-component,
+        .cxa-profileview-component {
+            margin-top: 0;
+        }
+
+        .edit-profile {
+            color: #ADAFA8;
+        }
+        .edit-profile-text{
+            display: none;
+        }
+        .edit-profile-button {            
+            
+        }
+    }
+
+    /*
     #content {
         .component.image.file-type-icon-media-link {
             margin-top: $margin;
@@ -23,5 +94,5 @@
                 @include sc-icon($scxa-forward);
             }
         }
-    }
+    }*/
 }
