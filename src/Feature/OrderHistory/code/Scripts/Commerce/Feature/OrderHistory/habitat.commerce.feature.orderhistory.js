@@ -77,9 +77,9 @@
                     $.each(data.Orders, function (index, value) {
               
                         if (value["OrderStatus"] != null && value["OrderStatus"] == 'StoreOrder') {
-                            inStoreOrders.push(value);                            
+                            inStoreOrders.push(value);
                         }
-                        if (value["OrderStatus"] != null && value["OrderStatus"] == 'Pending') {
+                        else {
                             onlineOrders.push(value);
                         }
                     });

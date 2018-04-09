@@ -101,8 +101,14 @@
                                     <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
                                 </p>
                             </td>
-                            <td class="shoppingcart-delete"><a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
-                            
+                            <td class="shoppingcart-addtowishlist" style="width:5%;">
+                               
+                            </td>
+                            <td class="shoppingcart-delete">
+                                <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a><br />
+                                <button class="btn" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                    <span>Add to My Wish List</span>
+                                </button>
                             </td>
                         </tr>
                     </tbody>

@@ -70,7 +70,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.InventoryU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShoppingCartLines", "ShoppingCartLines", "{A75DF3E0-38AD-4297-90B6-120B2879F2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.ShoppingCartLines", "src\Feature\ShoppingCartLines\code\Sitecore.Feature.ShoppingCartLines\Sitecore.Feature.ShoppingCartLines.csproj", "{5364E572-BD04-4B3D-9FA9-03B05073F5AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.ShoppingCartLines", "src\Feature\ShoppingCartLines\code\Sitecore.Feature.ShoppingCartLines.csproj", "{5364E572-BD04-4B3D-9FA9-03B05073F5AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
