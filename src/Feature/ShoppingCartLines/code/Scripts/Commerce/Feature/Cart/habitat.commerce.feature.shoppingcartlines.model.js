@@ -36,11 +36,32 @@ function CartLinesViewModel(data) {
         $(event.currentTarget).find(".glyphicon").addClass("glyphicon-refresh-animate");
         var lineItemId = item.externalCartLineId;
         var sender = event.currentTarget;
-        AjaxService.Post("/api/cxa/wishlists/AddWishListLine", { lineNumber: lineItemId }, function (data, success, sender) {
-            if (success && data.Success) {
-                CartContext.TriggerCartUpdateEvent();
+
+        var cartID = self.cart().id;
+        AjaxService.Post("api/cxa/ShoppingCartLines/GetCurrentCart", cartID, function (data, success, sender) {
+            if (success) {
+                $.each(data.Data, function () {
+                    var exId;var prodId;var varId;
+                    $(this).map(function (i, b) {
+                        if ((b['Key'] == 'ExternalCartLineId'))
+                            exId = b['Value'];
+                        if ((b['Key'] == 'ProductId'))
+                            prodId = b['Value'];
+                        if ((b['Key'] == 'VariantId'))
+                            varId = b['Value'];
+                    })        
+                    if (item.externalCartLineId === exId) {
+                        AjaxService.Post("/api/cxa/wishlists/AddWishListLine", { productId: lineItemId }, function (data, success, sender) {
+                            if (success && data.Success) {
+                                CartContext.TriggerCartUpdateEvent();
+                            }
+                        });
+                    }
+                });
             }
-        });
+        })
+
+        
     };
     self.increaseQuantity = function (item) {
         item.quantity = Number(item.quantity) + 1;

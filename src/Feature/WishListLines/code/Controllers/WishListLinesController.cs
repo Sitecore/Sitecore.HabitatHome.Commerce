@@ -46,11 +46,12 @@ namespace Sitecore.Feature.WishListLines.Controllers
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public JsonResult AddWishListLine(string catalogName, string productId, string variantId, Decimal quantity)
+        public JsonResult AddWishListLine(string productId, string variantId, Decimal quantity)
         {
             BaseJsonResult baseJsonResult;
             try
             {
+                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
                 baseJsonResult = this.WishListLinesRepository.AddWishListLine(this.StorefrontContext, this.VisitorContext, catalogName, productId, variantId, quantity);
             }
             catch (Exception ex)
