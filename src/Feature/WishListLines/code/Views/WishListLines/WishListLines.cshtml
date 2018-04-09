@@ -19,7 +19,7 @@
     var discountLabel = currentItem["Discount Label"]; // Html.Sitecore().Field("Discount Label", Html.Sitecore().CurrentItem);
     var savingsLabel = currentItem["Saving Label"]; // Html.Sitecore().Field("Savings Label", Html.Sitecore().CurrentItem);
 }
-<div @Html.Sxa().Component("cxa-wishlistlines-component", Model.Attributes) data-cxa-component-class="WishListLines" data-cxa-component-initialized="false" data-cxa-component-model="WishListLinesViewModel" data-cxa-component-type="component">
+<div @Html.Sxa().Component("cxa-shoppingcartlines-component", Model.Attributes) data-cxa-component-class="WishListLines" data-cxa-component-initialized="false" data-cxa-component-model="WishListLinesViewModel" data-cxa-component-type="component">
     @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         <div class="error-message">
@@ -88,9 +88,9 @@
                             </td>
                             <td class="shoppingcart-delete" style="text-align:center;">
                             <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
-                            <button class="btn" style="margin:20px 0px 0px;" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}, click: $parents[1].addItemToCart">
+                            <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}, click: $parents[1].addItemToCart">
                                 <i class="fa"></i>
-                                <span>Move to Cart</span>
+                                <span>Add to Cart</span>
                             </button>
                             </td>
                         </tr>

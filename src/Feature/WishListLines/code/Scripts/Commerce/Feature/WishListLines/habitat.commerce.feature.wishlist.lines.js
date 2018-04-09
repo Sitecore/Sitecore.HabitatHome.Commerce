@@ -22,7 +22,7 @@
 
     }
     // browser global variable
-    root.CartLines = factory;
+    root.WishListLines = factory;
 
 }(this, function (element) {
     "use strict";
@@ -69,7 +69,7 @@
     };
 
     component.StartListening = function () {
-        CartContext.SubscribeHandler(CartContext.CartEvents.CartUpdate, component.OnCartUpdated)
+        //CartContext.SubscribeHandler(CartContext.CartEvents.CartUpdate, component.OnCartUpdated)
     };
 
     component.Init = function () {
