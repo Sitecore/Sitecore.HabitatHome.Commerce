@@ -100,14 +100,12 @@
                                     <span>@savingsLabel</span>
                                     <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
                                 </p>
-                            </td>
-                            <td class="shoppingcart-addtowishlist" style="width:5%;">
-                               
-                            </td>
-                            <td class="shoppingcart-delete">
+                            </td>                            
+                            <td class="shoppingcart-delete" style="text-align:center;">
                                 <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a><br />
-                                <button class="btn" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
-                                    <span>Add to My Wish List</span>
+                                <button class="btn" style="margin:20px 0px 0px;" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                    <i class="fa"></i>
+                                    <span>Move to My Wish List</span>
                                 </button>
                             </td>
                         </tr>

@@ -72,10 +72,12 @@ namespace Sitecore.Feature.WishListLines.Repositories
             return model;
         }
 
+
+
         public virtual WishListJsonResult AddWishListLine(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string catalogName, string productId, string variantId, Decimal quantity)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));                        
+            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
             CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
             ManagerResponse<GetWishListResult, WishList> currentWishList = this.WishListManager.GetWishList(visitorContext, storefrontContext);
@@ -104,6 +106,55 @@ namespace Sitecore.Feature.WishListLines.Repositories
             model.Success = true;
             return model;
         }
+
+
+
+        //public virtual WishListJsonResult AddWishListLine(IStorefrontContext storefrontContext, IVisitorContext visitorContext, string catalogName, string productId, string variantId, Decimal quantity)
+        //{
+        //    Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
+        //    Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));                        
+        //    WishListJsonResult model = this.ModelProvider.GetModel<WishListJsonResult>();
+        //    CommerceStorefront currentStorefront = storefrontContext.CurrentStorefront;
+        //    ManagerResponse<GetWishListsResult, IEnumerable<WishListHeader>> allWishLists = this.WishListManager.GetWishLists(visitorContext, storefrontContext);
+        //    WishListHeader currentWishListHeader = allWishLists.Result != null ? allWishLists.Result.ToList()[0] : null;
+        //    WishList currentWishList = new WishList();
+        //    if(currentWishListHeader == null)
+        //    {
+        //        ManagerResponse<CreateWishListResult, WishList> createWishListResponse = this.WishListManager.CreateWishList(storefrontContext, visitorContext);
+        //        if (!createWishListResponse.ServiceProviderResult.Success)
+        //        {
+        //            model.SetErrors((ServiceProviderResult)createWishListResponse.ServiceProviderResult);
+        //            return model;
+        //        }
+        //        currentWishList = createWishListResponse.Result;
+        //    }
+        //    else
+        //    {
+        //        ManagerResponse<GetWishListResult, WishList> getWishListResponse = this.WishListManager.GetWishList(visitorContext, storefrontContext);
+        //        if (!getWishListResponse.ServiceProviderResult.Success)
+        //        {
+        //            model.SetErrors((ServiceProviderResult)getWishListResponse.ServiceProviderResult);
+        //            return model;
+        //        }
+        //        currentWishList = getWishListResponse.Result;
+        //    }           
+
+        //    List<WishListLine> wishListLines = new List<WishListLine>();
+        //    var wishlistLine = new WishListLine() { Quantity = quantity, Product = new Commerce.Entities.Carts.CartProduct() { ProductId = catalogName + "|" + productId + "|" + variantId, } };
+        //    wishListLines.Add(wishlistLine);
+
+        //    ManagerResponse<AddLinesToWishListResult, WishList> managerResponse = this.WishListManager.AddLinesToWishList(currentStorefront, visitorContext, currentWishList, wishListLines);
+        //    if (!managerResponse.ServiceProviderResult.Success)
+        //    {
+        //        model.SetErrors((ServiceProviderResult)managerResponse.ServiceProviderResult);
+        //        return model;
+        //    }
+        //    model.Initialize(managerResponse.Result);
+        //    model.Success = true;
+        //    return model;
+        //}
+
+
 
         public virtual WishListJsonResult RemoveWishListLines(IStorefrontContext storefrontContext, IVisitorContext visitorContext, List<string> wishListLineIds)
         {

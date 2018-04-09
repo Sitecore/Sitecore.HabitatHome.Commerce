@@ -65,13 +65,13 @@ namespace Sitecore.Feature.WishListLines.Models.JsonResults
             this.ProductId = listLine.Product.ProductId;
             this.Quantity = listLine.Quantity.ToString((IFormatProvider)Context.Language.CultureInfo);
             this.LinePrice = listLine.Product.Price.Amount.ToCurrency();
-            this.LineTotal = listLine.Total.Amount.ToCurrency();
+            this.LineTotal = this.LinePrice;
             this.SetLink(); 
         }
 
         public virtual void SetLink()
         {
-            this.ProductUrl = this.ProductId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(this.ProductId, this.StorefrontContext.CurrentStorefront.Catalog));
+            //this.ProductUrl = this.ProductId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(this.ProductId, this.StorefrontContext.CurrentStorefront.Catalog));
         }
     }
 }

@@ -29,16 +29,14 @@ function CartLinesViewModel(data) {
             }
         });
     };
-    self.addItemToWishList = function (item, event) {
-        console.log(item);
-        $(event.currentTarget).find(".glyphicon").removeClass("glyphicon-remove-circle");
-        $(event.currentTarget).find(".glyphicon").addClass("glyphicon-refresh");
-        $(event.currentTarget).find(".glyphicon").addClass("glyphicon-refresh-animate");
-        var lineItemId = item.externalCartLineId;
+    self.addItemToWishList = function (item, event) {    
+        $(event.currentTarget).find(".fa").addClass("fa-spinner");
+        $(event.currentTarget).find(".fa").addClass("fa-spin");
+        var lineItemId = item.externalCartLineId;      
         var sender = event.currentTarget;
 
         var cartID = self.cart().id;
-        AjaxService.Post("api/cxa/ShoppingCartLines/GetCurrentCart", cartID, function (data, success, sender) {
+        AjaxService.Post("api/cxa/ShoppingCartLines/GetCurrentCartLines", cartID, function (data, success, sender) {
             if (success) {
                 $.each(data.Data, function () {
                     var exId;var prodId;var varId;
@@ -50,18 +48,16 @@ function CartLinesViewModel(data) {
                         if ((b['Key'] == 'VariantId'))
                             varId = b['Value'];
                     })        
-                    if (item.externalCartLineId === exId) {
-                        AjaxService.Post("/api/cxa/wishlists/AddWishListLine", { productId: lineItemId }, function (data, success, sender) {
+                    if (lineItemId === exId) {
+                        AjaxService.Post("/api/cxa/wishlistlines/AddWishListLine", { productId: prodId, variantId: varId, quantity: item.quantity }, function (data, success, sender) {
                             if (success && data.Success) {
-                                CartContext.TriggerCartUpdateEvent();
+                                self.removeItem(item, event);                                
                             }
                         });
                     }
                 });
             }
-        })
-
-        
+        })        
     };
     self.increaseQuantity = function (item) {
         item.quantity = Number(item.quantity) + 1;

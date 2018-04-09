@@ -41,7 +41,7 @@ namespace Sitecore.Foundation.Commerce.WishLists.Managers
             string userId = visitorContext.UserId;
             string shopName = storefrontContext.CurrentStorefront.ShopName;
             string wishListName = "WishList" + Guid.NewGuid().ToString() + shopName;
-            
+            var wsp = this.WishListServiceProvider.PipelineService.ToString();
             CreateWishListResult wishListResult = this.WishListServiceProvider.CreateWishList(new CreateWishListRequest(userId, wishListName, shopName));
             Helpers.LogSystemMessages((IEnumerable<SystemMessage>)wishListResult.SystemMessages, (object)wishListResult);
             CreateWishListResult serviceProviderResult = wishListResult;
@@ -54,8 +54,9 @@ namespace Sitecore.Foundation.Commerce.WishLists.Managers
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             string userId = visitorContext.UserId;
             string shopName = storefrontContext.CurrentStorefront.ShopName;
+            string wishListId = "wishListId";
             
-            GetWishListResult wishListResult = this.WishListServiceProvider.GetWishList(new GetWishListRequest(userId, string.Empty, shopName));
+            GetWishListResult wishListResult = this.WishListServiceProvider.GetWishList(new GetWishListRequest(userId, wishListId, shopName));
             Helpers.LogSystemMessages((IEnumerable<SystemMessage>)wishListResult.SystemMessages, (object)wishListResult);
             GetWishListResult serviceProviderResult = wishListResult;
             return new ManagerResponse<GetWishListResult, WishList>(serviceProviderResult, serviceProviderResult.WishList);

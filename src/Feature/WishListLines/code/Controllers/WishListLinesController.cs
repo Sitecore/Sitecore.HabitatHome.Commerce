@@ -42,6 +42,24 @@ namespace Sitecore.Feature.WishListLines.Controllers
             return (ActionResult)this.View("~/Views/WishListLines/WishListLines.cshtml", (object)this.WishListLinesRepository.GetWishListLinesModel()); ;
         }
 
+        [AllowAnonymous]
+        [HttpPost]
+        [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
+        public JsonResult GetWishList()
+        {
+            BaseJsonResult baseJsonResult;
+            try
+            {
+                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
+                baseJsonResult = this.WishListLinesRepository.GetWishList(this.StorefrontContext, this.VisitorContext);
+            }
+            catch (Exception ex)
+            {
+                baseJsonResult = this.ModelProvider.GetModel<BaseJsonResult>();
+                baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
+            }
+            return this.Json(baseJsonResult);
+        }
 
         [AllowAnonymous]
         [HttpPost]
@@ -66,12 +84,14 @@ namespace Sitecore.Feature.WishListLines.Controllers
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public JsonResult RemoveWishListLines(List<string> lineIds)
+        public JsonResult RemoveWishListLines(string lineIds)
         {
             BaseJsonResult baseJsonResult;
             try
             {
-                baseJsonResult = this.WishListLinesRepository.RemoveWishListLines(this.StorefrontContext, this.VisitorContext, lineIds);
+                List<string> ids = new List<string>();
+                ids.Add(lineIds);
+                baseJsonResult = this.WishListLinesRepository.RemoveWishListLines(this.StorefrontContext, this.VisitorContext, ids);
             }
             catch (Exception ex)
             {
@@ -84,11 +104,12 @@ namespace Sitecore.Feature.WishListLines.Controllers
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public JsonResult AddWishListLineToCart(string catalogName, string productId, string variantId, Decimal quantity)
+        public JsonResult AddWishListLineToCart(string productId, string variantId, Decimal quantity)
         {
             BaseJsonResult baseJsonResult;
             try
             {
+                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
                 baseJsonResult = this.AddToCartRepository.AddLineItemsToCart(this.StorefrontContext, this.VisitorContext, catalogName, productId, variantId, quantity);
             }
             catch (Exception ex)

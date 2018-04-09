@@ -14,7 +14,7 @@
 
     if (typeof define === "function" && define.amd) {
         // use AMD define funtion to support AMD modules if in use
-        define("CXA/Feature/CartLines", ["exports"], factory);
+        define("CXA/Feature/WishListLines", ["exports"], factory);
 
     } else if (typeof exports === "object") {
         // to support CommonJS
@@ -28,10 +28,10 @@
     "use strict";
 
     var component = new Component(element);
-    component.Name = "CXA/Feature/CartLines";
+    component.Name = "CXA/Feature/WishListLines";
     component.InExperienceEditorMode = function () {
         component.Visual.Disable();
-        component.Model = new CartLinesViewModel({});
+        component.Model = new WishListLinesViewModel({});
         ko.applyBindings(component.Model, component.RootElement);
 
         for (var i = 0; i < 5; i++) {
@@ -61,7 +61,7 @@
         $(component.RootElement).find(".glyphicon").removeClass("glyphicon-remove-circle");
         $(component.RootElement).find(".glyphicon").addClass("glyphicon-remove-circle");
 
-        AjaxService.Post("/api/cxa/Cart/GetShoppingCartLines", {}, function (data, success, sender) {
+        AjaxService.Post("/api/cxa/WishListLines/GetWishList", {}, function (data, success, sender) {
             if (success && data && data.Success) {
                 component.model.updateModel(data);
             }
@@ -73,11 +73,12 @@
     };
 
     component.Init = function () {
+        
         if (CXAApplication.RunningMode === RunningModes.Normal) {
             component.StartListening();
-            AjaxService.Post("/api/cxa/Cart/GetShoppingCartLines", {}, function (data, success, sender) {
+            AjaxService.Post("/api/cxa/WishListLines/GetWishList", {}, function (data, success, sender) {
                 if (success && data && data.Success) {
-                    component.model = new CartLinesViewModel(data);
+                    component.model = new WishListLinesViewModel(data);
                     ko.applyBindings(component.model, component.RootElement);
                 }
             });
