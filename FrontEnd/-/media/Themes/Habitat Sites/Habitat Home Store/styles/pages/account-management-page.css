@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*justification types*/
 /* alignment types */
 /*----------------------------------Columns -------------------------------------------------------------------------*/
@@ -17,33 +16,100 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
-.account-management-page #content .component.image.file-type-icon-media-link {
-  margin-top: 15px;
-  display: inline-block;
-  max-width: 72px;
+.account-management-page {
+  /*
+    #content {
+        .component.image.file-type-icon-media-link {
+            margin-top: $margin;
+            display: inline-block;
+            max-width: 72px;
+            img {
+                border-radius: 100px;
+            }
+        }
+        .component.link {
+            padding: 0;
+        }
+        .component.link a {
+            width: 100%;
+            float: left;
+            color: $primary-text-color;
+            border: none;
+            &:after {
+                float: right;
+                margin-left: auto;
+                @include sc-icon($scxa-forward);
+            }
+        }
+    }*/
 }
 
-.account-management-page #content .component.image.file-type-icon-media-link img {
-  border-radius: 100px;
+.account-management-page .account-summary {
+  padding-bottom: 5em;
 }
 
-.account-management-page #content .component.link {
-  padding: 0;
+.account-management-page .account-summary .link-list h3 {
+  border: 0;
 }
 
-.account-management-page #content .component.link a {
-  width: 100%;
-  float: left;
-  color: #6b717b;
-  border: none;
+.account-management-page .account-summary .link-list {
+  margin-bottom: 0;
 }
 
-.account-management-page #content .component.link a:after {
-  float: right;
-  margin-left: auto;
-  display: inline-block;
-  font-family: "SCCXAICONS";
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  content: "";
+.account-management-page .account-summary .logout,
+.account-management-page .account-summary .link-list > .component-content li {
+  padding-right: 2em;
+  margin: 0;
+}
+
+.account-management-page .account-summary .logout a,
+.account-management-page .account-summary .link-list > .component-content li a {
+  padding: 1em;
+  border-top: 1px solid #D8D9D5;
+  display: block;
+  font-weight: bold;
+  border-bottom: 0;
+}
+
+.account-management-page .account-summary .logout a:hover,
+.account-management-page .account-summary .link-list > .component-content li a:hover {
+  border-bottom: 0;
+  color: #000;
+}
+
+.account-management-page .account-summary .logout a:before,
+.account-management-page .account-summary .link-list > .component-content li a:before {
+  content: '';
+}
+
+.account-management-page .account-summary .logout.active a,
+.account-management-page .account-summary .link-list > .component-content li.active a {
+  color: #0e909f;
+}
+
+.account-management-page .account-summary .rich-text {
+  margin: 0;
+  padding-right: 40px;
+}
+
+.account-management-page .account-summary .rich-text h4 {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  padding-bottom: 0.3125em;
+  border-bottom: 1px solid #D8D9D5;
+  margin-bottom: 2.25em;
+}
+
+.account-management-page .account-summary .cxa-addresslist-component,
+.account-management-page .account-summary .cxa-profileview-component {
+  margin-top: 0;
+}
+
+.account-management-page .account-summary .edit-profile {
+  color: #ADAFA8;
+}
+
+.account-management-page .account-summary .edit-profile-text {
+  display: none;
 }
