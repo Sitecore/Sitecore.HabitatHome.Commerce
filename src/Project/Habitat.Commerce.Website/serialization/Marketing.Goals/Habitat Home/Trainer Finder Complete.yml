@@ -5,6 +5,9 @@ Template: "475e9026-333f-432d-a4dc-52e03b75cb6b"
 Path: /sitecore/system/Marketing Control Panel/Goals/Habitat Home/Trainer Finder Complete
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Cup.png
 - ID: "33ae0e84-74a0-437f-ab2b-859dfa96f6c9"
   Hint: Points
   Value: 15

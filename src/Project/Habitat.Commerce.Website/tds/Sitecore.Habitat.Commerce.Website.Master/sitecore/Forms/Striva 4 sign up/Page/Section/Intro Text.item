@@ -41,15 +41,15 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 70cb69dc-af53-48d2-ae78-602cd89bb054
+revision: 0a592349-43c2-49e9-8d20-02aab909fd38
 
 ----field----
 field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
 name: Text
 key: text
-content-length: 28
+content-length: 48
 
-Get updates on the Striva 4!
+Get updates on the new Striva 4 fitness tracker!
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70cb69dc-af53-48d2-ae78-602cd89bb054
+0a592349-43c2-49e9-8d20-02aab909fd38
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180323T131524Z
+20180330T162432Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -88,7 +88,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: e8c46f4c-8d2f-452a-bf2c-0d55571c3768
+revision: 887f462a-0b3b-4642-83a2-ade86cc75900
 
 ----field----
 field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
@@ -117,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8c46f4c-8d2f-452a-bf2c-0d55571c3768
+887f462a-0b3b-4642-83a2-ade86cc75900
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180216T174044Z
+20180326T181256Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

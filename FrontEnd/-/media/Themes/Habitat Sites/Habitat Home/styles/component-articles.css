@@ -55,7 +55,7 @@ main .article-content .component-content {
   padding: 0 5em;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .article-content .component-content {
     padding: 0 2.5em;
   }

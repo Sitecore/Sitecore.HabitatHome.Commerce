@@ -82,6 +82,17 @@ SharedFields:
       </profile>
     </tracking>
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210512Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -109,7 +120,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{283FE52F-D013-42A4-8367-4B129E6F7281}" ></image>
+        <image mediaid="{A7C5267D-4B44-4A50-B1E2-994E9CD5E327}"></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180322T194121Z
@@ -135,7 +146,7 @@ Languages:
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{283FE52F-D013-42A4-8367-4B129E6F7281}" />
+        <image mediaid="{085840FC-1F6E-46E6-9A87-66BD1C0BD2BA}" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
       Value: |
@@ -149,3 +160,14 @@ Languages:
     Hint: __Display name
     Value: Importance of Stretching
   Versions:
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180329T160024Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

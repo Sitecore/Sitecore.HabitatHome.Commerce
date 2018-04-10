@@ -42,7 +42,7 @@
     padding: $padding*0.4 $padding*2.5 $padding*0.4 $padding*2.5;
     display: inline-block;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0;
     &:active,
     &:hover {
         background: darken($bg, 2) !important;
@@ -64,28 +64,30 @@
 }
 
 @mixin button-border($bg, $color, $borderColor) {
-    border: 2px solid $borderColor;
+    border: 1px solid $borderColor;
     background: $bg;
     color: $color;
     font-size: $font-size-base;
-    font-weight: 600;
+    font-weight: 400;
     height: $control-normal-height;
     text-align: center;
     text-shadow: none;
     box-shadow: none;
     display: inline-block;
     padding: $padding*0.4 $padding*2.5 $padding*0.4 $padding*2.5;
-    border-radius: $border-radius;
+    border-radius: 0;
+
     &:active,
     &:hover {
-        background: darken($borderColor, 2);
-        color: $bg;
+        //background: darken($borderColor, 2);
+        //color: $bg;        
         @include transition();
+        opacity: 0.8;
         text-decoration: none;
     }
     &:active {
-        background: darken($borderColor, 6);
-        color: $bg;
+        //background: darken($borderColor, 6);
+        //color: $bg;
         @include transition();
         text-decoration: none;
     }
@@ -135,14 +137,16 @@
 }
 
 @mixin secondary-button-line() {
-    @include button-border($light, $teriary-text-color, $secondary-color);
+    @include button-border($light, $dark, $dark);
     &:hover {
-        color: $light;
-        background-color: $secondary-hover-color;
+        opacity: 0.8;
+        //color: $light;
+        //background-color: $secondary-hover-color;
     }
     &:active {
-        color: $light;
-        background-color: $secondary-active-color;
+        opacity: 0.8;
+        //color: $light;
+        //background-color: $secondary-active-color;
     }
 }
 

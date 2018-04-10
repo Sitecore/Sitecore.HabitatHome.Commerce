@@ -51,13 +51,14 @@ namespace Sitecore.Commerce.Plugin.Sample
         [Route("CreateStoreInventory()")]
         public async Task<IActionResult> CreateStoreInventory([FromBody] ODataActionParameters value)
         {
-            if (!value.ContainsKey("stores") || !(value["stores"] is JArray))
+
+            if (!value.ContainsKey("Stores") || !(value["Stores"] is JArray))
                 return (IActionResult)new BadRequestObjectResult((object)value);
 
-            if (!value.ContainsKey("productsToAssociate") || !(value["productsToAssociate"] is JArray))
+            if (!value.ContainsKey("ProductsToAssociate") || !(value["ProductsToAssociate"] is JArray))
                 return (IActionResult)new BadRequestObjectResult((object)value);
-            JArray jarray = (JArray)value["stores"];
-            JArray jarrayProducts = (JArray)value["productsToAssociate"];
+            JArray jarray = (JArray)value["Stores"];
+            JArray jarrayProducts = (JArray)value["ProductsToAssociate"];
 
           
             var storeInfos =  jarray != null ? jarray.ToObject<IEnumerable<StoreDetailsModel>>() : (IEnumerable<StoreDetailsModel>)null;
@@ -67,10 +68,10 @@ namespace Sitecore.Commerce.Plugin.Sample
             // You need to have catalog mentioned if you are not providing a list of products to update inventory.
             if(productsToAssociate == null || string.IsNullOrEmpty(productsToAssociate.FirstOrDefault()))
             {
-                if (!value.ContainsKey("catalog"))
+                if (!value.ContainsKey("Catalog"))
                     return (IActionResult)new BadRequestObjectResult((object)value);
 
-                catalogName = Convert.ToString(value["catalog"]);
+                catalogName = Convert.ToString(value["Catalog"]);
             }
 
             List<CreateStoreInventorySetArgument> args = new List<CreateStoreInventorySetArgument>();

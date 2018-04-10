@@ -105,6 +105,17 @@ SharedFields:
       </profile>
     </tracking>
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180330T210511Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -122,7 +133,15 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{0D738D8D-F003-4E16-83F5-15C2DD2BA6A4}"
+              p:before="*"
+              s:ds="local:/Data/Hero"
+              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={C7A7E725-BC84-45AE-AD50-0659F9AB7F98}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
               uid="{BA819743-5253-43B4-B17E-CB0294764F98}"
+              p:after="*[1=2]"
               s:ds="local:/Data/Text 1"
               s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
@@ -132,13 +151,13 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{CFE077C5-A415-48AB-95A2-96B60BBA92BE}" />
+        <image mediaid="{B7810CAE-B609-4EC9-9353-9CE53C275253}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180326T132153Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
@@ -156,6 +175,10 @@ Languages:
     - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
       Hint: Subtitle
       Value: Foodie Feast
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{C572C422-19D2-4F46-812C-659196B6D15A}" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
       Value: <p>Get all the southern flavor and personality with only a fraction of the effort.</p>
@@ -168,3 +191,14 @@ Languages:
     Hint: __Display name
     Value: Sheet Pan Jambalaya
   Versions:
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180329T160050Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

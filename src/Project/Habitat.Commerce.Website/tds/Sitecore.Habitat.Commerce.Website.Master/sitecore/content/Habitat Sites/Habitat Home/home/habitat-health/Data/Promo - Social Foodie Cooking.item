@@ -13,7 +13,7 @@ created: 20180325T024955Z
 ----version----
 language: en
 version: 1
-revision: 9e7f30da-a563-4d38-86f2-24a45b8312bb
+revision: 8b1815f1-fa2c-4a7e-8324-69da5ad2840c
 
 ----field----
 field: {14023DD5-30E7-4E3C-BF31-D835F3A87410}
@@ -28,7 +28,7 @@ name: PromoIcon
 key: promoicon
 content-length: 58
 
-<image mediaid="{C8776A82-BB4C-4509-9D64-DAF6F10F7717}" />
+<image mediaid="{C572C422-19D2-4F46-812C-659196B6D15A}" />
 ----field----
 field: {B8C1A9D2-DE76-4519-AFF4-1442525F32B0}
 name: PromoLink
@@ -63,14 +63,54 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e7f30da-a563-4d38-86f2-24a45b8312bb
+8b1815f1-fa2c-4a7e-8324-69da5ad2840c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T112128Z
+20180402T134109Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn
+----version----
+language: fr-FR
+version: 1
+revision: a77528c5-1a40-4333-a8a9-17e4ebb99562
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180330T210751Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a77528c5-1a40-4333-a8a9-17e4ebb99562
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180402T134109Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
