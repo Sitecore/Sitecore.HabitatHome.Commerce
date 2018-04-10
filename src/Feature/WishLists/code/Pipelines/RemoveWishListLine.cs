@@ -41,7 +41,10 @@ namespace Sitecore.Feature.WishLists.Pipelines
                 }
                 Sitecore.Commerce.Plugin.Carts.Cart cart = this.GetWishList(request.WishList.UserId, request.WishList.ShopName, request.WishList.ExternalId, "", args.Request.CurrencyCode);
                 if (cart != null)
+                {
                     result.WishList = TranslateCartToWishListEntity(cart, (ServiceProviderResult)result);
+                    result.RemovedLines = new System.Collections.ObjectModel.ReadOnlyCollection<WishListLine>(SetListLines(result.WishList));
+                }
             }
             catch (ArgumentException ex)
             {

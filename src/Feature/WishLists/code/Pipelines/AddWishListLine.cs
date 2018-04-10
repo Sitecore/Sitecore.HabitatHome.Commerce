@@ -5,6 +5,7 @@ using System;
 using Sitecore.Commerce.Engine.Connect.Pipelines;
 using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Services.WishLists;
+using Sitecore.Foundation.Commerce.WishLists;
 using Sitecore.Commerce.Engine.Connect.Pipelines.Arguments;
 using Sitecore.Feature.WishLists.Pipelines.Arguments;
 using System.Linq;
@@ -19,9 +20,9 @@ namespace Sitecore.Feature.WishLists.Pipelines
         {
             AddLinesToWishListRequest request;
             AddLinesToWishListResult result;
+            
 
-            ValidateArguments<AddLinesToWishListRequest, AddLinesToWishListResult>(args, out request, out result);
-
+            ValidateArguments<AddLinesToWishListRequest, Commerce.Services.WishLists.AddLinesToWishListResult>(args, out request, out result);            
             try
             {
                 Assert.IsNotNull((object)request.WishList, "request.WishList");
@@ -42,17 +43,21 @@ namespace Sitecore.Feature.WishLists.Pipelines
                     if (!string.IsNullOrEmpty(lineItemId))
                     {
                         var command = this.AddWishListLine(request.WishList.UserId, request.WishList.ShopName, request.WishList.ExternalId, lineItemId, line.Quantity, request.WishList.CustomerId, args.Request.CurrencyCode);
-                        result.HandleCommandMessages(command);
+                       result.HandleCommandMessages(command);
                         if (!result.Success)
                             break;
                     }
                 }
                 Sitecore.Commerce.Plugin.Carts.Cart cart = this.GetWishList(request.WishList.UserId, request.WishList.ShopName, request.WishList.ExternalId, "", args.Request.CurrencyCode);
                 if (cart != null)
+                {
                     result.WishList = TranslateCartToWishListEntity(cart, (ServiceProviderResult)result);
+                    result.AddedLines = new System.Collections.ObjectModel.ReadOnlyCollection<WishListLine>(SetListLines(result.WishList));                    
+                }
+                
             }
             catch (ArgumentException ex)
-            {
+            {               
                 result.Success = false;
                 result.SystemMessages.Add(CreateSystemMessage((Exception)ex));
             }

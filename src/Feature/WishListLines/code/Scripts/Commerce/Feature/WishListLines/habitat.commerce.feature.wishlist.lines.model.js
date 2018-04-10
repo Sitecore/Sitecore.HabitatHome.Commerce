@@ -34,15 +34,9 @@ function WishListLinesViewModel(data) {
     self.addItemToCart = function (item, event) {
         $(event.currentTarget).find(".fa").addClass("fa-spinner");
         $(event.currentTarget).find(".fa").addClass("fa-spin");
-        var lineItemId = item.externalWishListLineId;
-        var productId = item.ProductId.split("|")[0];
-        var variantId = item.ProductId.split("|")[1];
-        console.log(item);
-        console.log(lineItemId);
-        var lineIds = [];
-        lineIds.push(lineItemId);
+   
         var sender = event.currentTarget;
-        AjaxService.Post("/api/cxa/wishlistlines/AddWishListLineToCart", { productId: productId, variantId: variantId, quantity: item.quantity }, function (data, success, sender) {
+        AjaxService.Post("/api/cxa/wishlistlines/AddWishListLineToCart", { productId: item.productId, variantId: item.variantId, quantity: item.quantity }, function (data, success, sender) {
             if (success && data.Success) {
                 CartContext.TriggerCartUpdateEvent();
             }
@@ -86,6 +80,8 @@ function WishListLineItemData(cartData, line, cart) {
     self.displayName = line.DisplayName;
 
     // TODO: Schema specific
+    self.productId = line.ProductId.split("|")[0];
+    self.variantId = line.ProductId.split("|")[1];
     self.colorInformation = line.ColorInformation;
     self.sizeInformation = line.SizeInformation;
     self.styleInformation = line.StyleInformation;

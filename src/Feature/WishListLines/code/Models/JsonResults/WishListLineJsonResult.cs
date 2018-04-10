@@ -66,12 +66,17 @@ namespace Sitecore.Feature.WishListLines.Models.JsonResults
             this.Quantity = listLine.Quantity.ToString((IFormatProvider)Context.Language.CultureInfo);
             this.LinePrice = listLine.Product.Price.Amount.ToCurrency();
             this.LineTotal = this.LinePrice;
-            this.SetLink(); 
+            this.DisplayName = listLine.Product.ProductName;
+            var productItem = this.SearchManager.GetProduct(listLine.Product.SitecoreProductItemId.ToString(), this.StorefrontContext.CurrentStorefront.Catalog);
+            var prodId = this.ProductId.Split('|')[0];
+            var productItem2 = this.SearchManager.GetProduct(prodId, this.StorefrontContext.CurrentStorefront.Catalog);
+            this.ProductUrl = "";
+            this.SetLink(prodId);     
         }
 
-        public virtual void SetLink()
+        public virtual void SetLink(string productId)
         {
-            //this.ProductUrl = this.ProductId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(this.ProductId, this.StorefrontContext.CurrentStorefront.Catalog));
+            this.ProductUrl = productId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(productId, this.StorefrontContext.CurrentStorefront.Catalog));
         }
     }
 }

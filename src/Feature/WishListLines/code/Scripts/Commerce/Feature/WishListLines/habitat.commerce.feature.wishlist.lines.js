@@ -69,7 +69,7 @@
     };
 
     component.StartListening = function () {
-        //CartContext.SubscribeHandler(CartContext.CartEvents.CartUpdate, component.OnCartUpdated)
+        CartContext.SubscribeHandler(CartContext.CartEvents.CartUpdate, component.OnCartUpdated)
     };
 
     component.Init = function () {

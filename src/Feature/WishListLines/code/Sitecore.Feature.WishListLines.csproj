@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.WishlistLines.config" />
+    <Content Include="App_Config\Include\Feature\Feature.WishListLines.Serialization.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\Commerce\Feature\WishListLines\habitat.commerce.feature.wishlist.lines.model.js" />
     <Content Include="Scripts\Commerce\Feature\WishListLines\habitat.commerce.feature.wishlist.lines.js" />

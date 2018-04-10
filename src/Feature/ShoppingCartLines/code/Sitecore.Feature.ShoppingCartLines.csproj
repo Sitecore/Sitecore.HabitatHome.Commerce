@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.ShoppingCartLines.config" />
+    <Content Include="App_Config\Include\Feature\Feature.ShoppingCartLines.Serialization.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\Commerce\Feature\Cart\habitat.commerce.feature.shoppingcartlines.model.js" />
     <Content Include="Views\ShoppingCartLines\ShoppingCartLines.cshtml" />

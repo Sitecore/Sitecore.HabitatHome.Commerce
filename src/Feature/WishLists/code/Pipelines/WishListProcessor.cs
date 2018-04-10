@@ -171,6 +171,16 @@ namespace Sitecore.Feature.WishLists.Pipelines
             });
         }
 
+        internal List<WishListLine> SetListLines(WishList wishList)
+        {
+            List<WishListLine> lines = new List<WishListLine>();
+            foreach (var line in wishList.Lines)
+            {
+                lines.Add(line);
+            }
+            return lines;
+        }
+
 
         internal SystemMessage CreateSystemMessage(Exception ex)
         {

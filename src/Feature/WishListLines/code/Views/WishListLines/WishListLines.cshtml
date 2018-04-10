@@ -35,8 +35,7 @@
                         <tr>
                             <th colspan="2" title="@Model.ProductDetailsTooltip">@productDetailsLabel</th>
                             <th title="@Model.UnitPriceTooltip">@unitPriceLabel</th>
-                            <th title="@Model.QuantityTooltip">@quantityLabel</th>
-                            <th title="@Model.ProductTotalTooltip" class="total-header">@totalLabel</th>
+                            <th title="Add to Cart" class="total-header">Add to Cart</th>
                             <th class="delete-row">&nbsp;</th>
                         </tr>
                     </thead>
@@ -72,26 +71,22 @@
                                     <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
                                 </p>*@
                             </td>
-                            <td class="shoppingcart-quantity">
+                            @*<td class="shoppingcart-quantity">
                                 <div>
                                     <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display:none"></button>
                                     <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalWishListLineId}, disable: $parents[1].quntityUpdating">
                                     <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display:none"></button>
                                 </div>
-                            </td>
+                            </td>*@
                             <td class="shoppingcart-total">
-                                <span class="total" data-bind="text: lineTotal"></span>
-                                @*<p data-bind="visible: discountOfferNames.length > 0">
-                                    <span>@savingsLabel</span>
-                                    <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
-                                </p>*@
+                                <button class="btn" style="background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}, click: $parents[1].addItemToCart">
+                                    <i class="fa"></i>
+                                    <span>Add to Cart</span>
+                                </button>
                             </td>
                             <td class="shoppingcart-delete" style="text-align:center;">
                             <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
-                            <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalWishListLineId}, click: $parents[1].addItemToCart">
-                                <i class="fa"></i>
-                                <span>Add to Cart</span>
-                            </button>
+                            
                             </td>
                         </tr>
                     </tbody>
