@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="Utilities\UploadOfflineOrder.aspx.cs">
       <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Utilities\UploadOfflineOrder.aspx.designer.cs">
       <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
@@ -133,7 +134,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59569</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
