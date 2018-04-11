@@ -76,3 +76,9 @@ Languages:
       Hint: Link
       Value: |
         <link text="Ordinateurs" anchor="" linktype="internal" class="" title=""  querystring="" id="{72450FD0-D6F5-4375-A500-106F514431C7}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: コンピューター
+  Versions:
