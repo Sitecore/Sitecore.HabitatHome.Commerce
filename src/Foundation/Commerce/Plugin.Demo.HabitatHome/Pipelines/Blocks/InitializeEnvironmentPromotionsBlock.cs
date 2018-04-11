@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Threading.Tasks;     
+    using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Plugin.Carts;
@@ -11,7 +11,7 @@
     using Sitecore.Commerce.Plugin.Promotions;
     using Sitecore.Commerce.Plugin.Rules;
     using Sitecore.Framework.Pipelines;
-    
+
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.InitializePromotionsBlock)]
     public class InitializeEnvironmentPromotionsBlock : PipelineBlock<string, string, CommercePipelineExecutionContext>
     {
@@ -87,9 +87,9 @@
             var book =
                 await this._addBookPipeline.Run(
                     new AddPromotionBookArgument("Habitat_PromotionBook")
-                        {
-                            DisplayName = "Habitat Promotion Book",
-                            Description = "This is the Habitat promotion book"
+                    {
+                        DisplayName = "Habitat Promotion Book",
+                        Description = "This is the Habitat promotion book"
                     },
                     context);
 
@@ -113,6 +113,7 @@
             await this.CreateLine5PctOffCouponPromotion(book, context);
             await this.CreateLine5OffCouponPromotion(book, context);
             await this.CreateLineLaptopPricePromotion(book, context);
+            await this.CreateBundleFitnessPromotion(book, context);
             await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);
 
             return arg;
@@ -131,10 +132,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "CartFreeShippingPromotion", DateTimeOffset.UtcNow.AddDays(-1), DateTimeOffset.UtcNow.AddYears(1), "Free Shipping", "Free Shipping")
-                        {
-                            DisplayName = "Free Shipping",
-                            Description = "Free shipping when Cart subtotal of $100 or more"
-                        },
+                    {
+                        DisplayName = "Free Shipping",
+                        Description = "Free shipping when Cart subtotal of $100 or more"
+                    },
                     context);
 
             promotion =
@@ -142,17 +143,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "100", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -160,24 +161,24 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = FulfillmentConstants.Conditions.CartHasFulfillmentCondition,
-                                Name = FulfillmentConstants.Conditions.CartHasFulfillmentCondition,
-                                Properties = new List<PropertyModel>()
-                            }),
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = FulfillmentConstants.Conditions.CartHasFulfillmentCondition,
+                            Name = FulfillmentConstants.Conditions.CartHasFulfillmentCondition,
+                            Properties = new List<PropertyModel>()
+                        }),
                     context);
 
             await this._addBenefitPipeline.Run(
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = FulfillmentConstants.Actions.CartFreeShippingAction,
-                            Name = FulfillmentConstants.Actions.CartFreeShippingAction
-                        }),
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = FulfillmentConstants.Actions.CartFreeShippingAction,
+                        Name = FulfillmentConstants.Actions.CartFreeShippingAction
+                    }),
                 context);
 
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
@@ -195,11 +196,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Cart5PctOffExclusiveCouponPromotion", DateTimeOffset.UtcNow.AddDays(-2), DateTimeOffset.UtcNow.AddYears(1), "5% Off Cart (Exclusive Coupon)", "5% Off Cart (Exclusive Coupon)")
-                        {
-                            IsExclusive = true,
-                            DisplayName = "5% Off Cart (Exclusive Coupon)",
-                            Description = "5% off Cart with subtotal of $10 or more (Exclusive Coupon)"
-                        },
+                    {
+                        IsExclusive = true,
+                        DisplayName = "5% Off Cart (Exclusive Coupon)",
+                        Description = "5% off Cart with subtotal of $10 or more (Exclusive Coupon)"
+                    },
                     context);
 
             promotion =
@@ -207,17 +208,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -225,15 +226,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "5", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNEC5P"), context);
@@ -252,11 +253,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Cart5OffExclusiveCouponPromotion", DateTimeOffset.UtcNow.AddDays(-3), DateTimeOffset.UtcNow.AddYears(1), "$5 Off Cart (Exclusive Coupon)", "$5 Off Cart (Exclusive Coupon)")
-                        {
-                            IsExclusive = true,
-                            DisplayName = "$5 Off Cart (Exclusive Coupon)",
-                            Description = "$5 off Cart with subtotal of $10 or more (Exclusive Coupon)"
-                        },
+                    {
+                        IsExclusive = true,
+                        DisplayName = "$5 Off Cart (Exclusive Coupon)",
+                        Description = "$5 off Cart with subtotal of $10 or more (Exclusive Coupon)"
+                    },
                     context);
 
             promotion =
@@ -264,17 +265,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -282,15 +283,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalAmountOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalAmountOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalAmountOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalAmountOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "AmountOff", Value = "5", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNEC5A"), context);
@@ -309,11 +310,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "CartOptixCameraExclusivePromotion", DateTimeOffset.UtcNow.AddDays(-4), DateTimeOffset.UtcNow.AddYears(1), "Optix Camera 50% Off Cart (Exclusive)", "Optix Camera 50% Off Cart (Exclusive)")
-                        {
-                            IsExclusive = true,
-                            DisplayName = "Optix Camera 50% Off Cart (Exclusive)",
-                            Description = "50% off Cart when buying Optix Camera (Exclusive)"
-                        },
+                    {
+                        IsExclusive = true,
+                        DisplayName = "Optix Camera 50% Off Cart (Exclusive)",
+                        Description = "50% off Cart when buying Optix Camera (Exclusive)"
+                    },
                     context);
 
             promotion = await this._addPromotionItemPipeline.Run(
@@ -326,15 +327,15 @@
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                            Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                            Properties = new List<PropertyModel>
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                        Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                        Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "PercentOff", Value = "50", IsOperator = false, DisplayType = "System.Decimal" }
                                              }
-                        }),
+                    }),
                 context);
 
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
@@ -352,10 +353,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Cart15PctOffCouponPromotion", DateTimeOffset.UtcNow.AddDays(-5), DateTimeOffset.UtcNow.AddYears(1), "15% Off Cart (Coupon)", "15% Off Cart (Coupon)")
-                        {
-                            DisplayName = "15% Off Cart (Coupon)",
-                            Description = "15% off Cart with subtotal of $50 or more (Coupon)"
-                        },
+                    {
+                        DisplayName = "15% Off Cart (Coupon)",
+                        Description = "15% off Cart with subtotal of $50 or more (Coupon)"
+                    },
                     context);
 
             promotion =
@@ -363,17 +364,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "50", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -381,15 +382,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "15", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNC15P"), context);
@@ -409,10 +410,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Cart10PctOffCouponPromotion", date, date.AddYears(1), "10% Off Cart (Coupon)", "10% Off Cart (Coupon)")
-                        {
-                            DisplayName = "10% Off Cart (Coupon)",
-                            Description = "10% off Cart with subtotal of $50 or more (Coupon)"
-                        },
+                    {
+                        DisplayName = "10% Off Cart (Coupon)",
+                        Description = "10% off Cart with subtotal of $50 or more (Coupon)"
+                    },
                     context);
 
             promotion =
@@ -420,17 +421,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "50", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -438,15 +439,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "10", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNC10P"), context);
@@ -466,10 +467,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Cart10OffCouponPromotion", date, date.AddYears(1), "$10 Off Cart (Coupon)", "$10 Off Cart (Coupon)")
-                        {
-                            DisplayName = "$10 Off Cart (Coupon)",
-                            Description = "$10 off Cart with subtotal of $50 or more (Coupon)"
-                        },
+                    {
+                        DisplayName = "$10 Off Cart (Coupon)",
+                        Description = "$10 off Cart with subtotal of $50 or more (Coupon)"
+                    },
                     context);
 
             promotion =
@@ -477,17 +478,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "50", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -495,15 +496,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalAmountOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalAmountOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalAmountOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalAmountOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "AmountOff", Value = "10", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNC10A"), context);
@@ -522,10 +523,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "DisabledPromotion", DateTimeOffset.UtcNow, DateTimeOffset.UtcNow.AddYears(1), "Disabled", "Disabled")
-                        {
-                            DisplayName = "Disabled",
-                            Description = "Disabled"
-                        },
+                    {
+                        DisplayName = "Disabled",
+                        Description = "Disabled"
+                    },
                     context);
 
             promotion =
@@ -533,17 +534,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "5", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -551,15 +552,15 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "100", DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion.SetPolicy(new DisabledPolicy());
@@ -587,10 +588,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "LineHabitat34withTouchScreenPromotion", DateTimeOffset.UtcNow.AddDays(-1), DateTimeOffset.UtcNow.AddYears(1), "Habitat Touch Screen 50% Off", "Habitat Touch Screen 50% Off")
-                        {
-                            DisplayName = "Habitat Touch Screen 50% Off",
-                            Description = "50% off the Habitat 34.0 Cubic Refrigerator with Touchscreen item"
-                        },
+                    {
+                        DisplayName = "Habitat Touch Screen 50% Off",
+                        Description = "50% off the Habitat 34.0 Cubic Refrigerator with Touchscreen item"
+                    },
                     context);
 
             promotion = await this._addPromotionItemPipeline.Run(
@@ -603,16 +604,16 @@
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
-                            Name = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
-                            Properties = new List<PropertyModel>
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
+                        Name = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
+                        Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "PercentOff", Value = "50", IsOperator = false, DisplayType = "System.Decimal" },
                                                  new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
                                              }
-                        }),
+                    }),
                 context);
 
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
@@ -630,9 +631,9 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "LineHabitatLaptopPricePromotion", DateTimeOffset.UtcNow.AddDays(-1), DateTimeOffset.UtcNow.AddYears(1), "Pay only $5", "Pay only $5")
-                        {
-                            DisplayName = "Pay only $5",
-                            Description = "Pay only $5"
+                    {
+                        DisplayName = "Pay only $5",
+                        Description = "Pay only $5"
                     },
                     context);
 
@@ -646,16 +647,16 @@
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = CartsConstants.Actions.CartItemSellPriceAction,
-                            Name = CartsConstants.Actions.CartItemSellPriceAction,
-                            Properties = new List<PropertyModel>
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.Actions.CartItemSellPriceAction,
+                        Name = CartsConstants.Actions.CartItemSellPriceAction,
+                        Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "SellPrice", Value = "5", IsOperator = false, DisplayType = "System.Decimal" },
                                                  new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042178|", IsOperator = false, DisplayType = "System.String" }
                                              }
-                        }),
+                    }),
                 context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABSELLPRICE"), context);
@@ -674,10 +675,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "LineHabitat34withTouchScreen5OffPromotion", DateTimeOffset.UtcNow.AddDays(-2), DateTimeOffset.UtcNow.AddYears(1), "Habitat Touch Screen $5 Off Item", "Habitat Touch Screen $5 Off Item")
-                        {
-                            DisplayName = "Habitat Touch Screen $5 Off",
-                            Description = "$5 off the Habitat 34.0 Cubic Refrigerator with Touchscreen item"
-                        },
+                    {
+                        DisplayName = "Habitat Touch Screen $5 Off",
+                        Description = "$5 off the Habitat 34.0 Cubic Refrigerator with Touchscreen item"
+                    },
                     context);
 
             promotion = await this._addPromotionItemPipeline.Run(
@@ -690,16 +691,16 @@
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
-                            Name = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
-                            Properties = new List<PropertyModel>
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
+                        Name = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
+                        Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "AmountOff", Value = "5", IsOperator = false, DisplayType = "System.Decimal" },
                                                  new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042588|", IsOperator = false, DisplayType = "System.String" }
                                              }
-                        }),
+                    }),
                 context);
 
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
@@ -717,11 +718,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "LineMiraLaptopExclusivePromotion", DateTimeOffset.UtcNow.AddDays(-2), DateTimeOffset.UtcNow.AddYears(1), "Mira Laptop 50% Off Item (Exclusive)", "Mira Laptop 50% Off Item (Exclusive)")
-                        {
-                            DisplayName = "Mira Laptop 50% Off Item (Exclusive)",
-                            Description = "50% off the Mira Laptop item (Exclusive)",
-                            IsExclusive = true
-                        },
+                    {
+                        DisplayName = "Mira Laptop 50% Off Item (Exclusive)",
+                        Description = "50% off the Mira Laptop item (Exclusive)",
+                        IsExclusive = true
+                    },
                     context);
 
             promotion = await this._addPromotionItemPipeline.Run(
@@ -734,16 +735,16 @@
                 new PromotionActionModelArgument(
                     promotion,
                     new ActionModel
-                        {
-                            Id = Guid.NewGuid().ToString(),
-                            LibraryId = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
-                            Name = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
-                            Properties = new List<PropertyModel>
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
+                        Name = CartsConstants.Actions.CartItemSubtotalPercentOffAction,
+                        Properties = new List<PropertyModel>
                                              {
                                                  new PropertyModel { Name = "PercentOff", Value = "50", IsOperator = false, DisplayType = "System.Decimal" },
                                                  new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042179|", IsOperator = false, DisplayType = "System.String" }
                                              }
-                        }),
+                    }),
                 context);
 
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
@@ -761,11 +762,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Line20PctOffExclusiveCouponPromotion", DateTimeOffset.UtcNow.AddDays(-3), DateTimeOffset.UtcNow.AddYears(1), "20% Off Item (Exclusive Coupon)", "20% Off Item (Exclusive Coupon)")
-                        {
-                            IsExclusive = true,
-                            DisplayName = "20% Off Item (Exclusive Coupon)",
-                            Description = "20% off any item with subtotal of $50 or more (Exclusive Coupon)"
-                        },
+                    {
+                        IsExclusive = true,
+                        DisplayName = "20% Off Item (Exclusive Coupon)",
+                        Description = "20% off any item with subtotal of $50 or more (Exclusive Coupon)"
+                    },
                     context);
 
             promotion =
@@ -773,17 +774,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "25", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -791,17 +792,17 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "20", DisplayType = "System.Decimal" },
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "25", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNEL20P"), context);
@@ -820,11 +821,11 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Line20OffExclusiveCouponPromotion", DateTimeOffset.UtcNow.AddDays(-4), DateTimeOffset.UtcNow.AddYears(1), "$20 Off Item (Exclusive Coupon)", "$20 Off Item (Exclusive Coupon)")
-                        {
-                            IsExclusive = true,
-                            DisplayName = "$20 Off Item (Exclusive Coupon)",
-                            Description = "$20 off any item with subtotal of $50 or more (Exclusive Coupon)"
-                        },
+                    {
+                        IsExclusive = true,
+                        DisplayName = "$20 Off Item (Exclusive Coupon)",
+                        Description = "$20 off any item with subtotal of $50 or more (Exclusive Coupon)"
+                    },
                     context);
 
             promotion =
@@ -832,17 +833,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "25", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -850,17 +851,17 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
-                                Name = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
+                            Name = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "AmountOff", Value = "20", DisplayType = "System.Decimal" },
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "25", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNEL20A"), context);
@@ -879,10 +880,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Line5PctOffCouponPromotion", DateTimeOffset.UtcNow.AddDays(-5), DateTimeOffset.UtcNow.AddYears(1), "5% Off Item (Coupon)", "5% Off Item (Coupon)")
-                        {
-                            DisplayName = "5% Off Item (Coupon)",
-                            Description = "5% off any item with subtotal of 10$ or more (Coupon)"
-                        },
+                    {
+                        DisplayName = "5% Off Item (Coupon)",
+                        Description = "5% off any item with subtotal of 10$ or more (Coupon)"
+                    },
                     context);
 
             promotion =
@@ -890,17 +891,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -908,17 +909,17 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
-                                Name = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
+                            Name = CartsConstants.Actions.CartAnyItemSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "PercentOff", Value = "5", DisplayType = "System.Decimal" },
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNL5P"), context);
@@ -937,10 +938,10 @@
             var promotion =
                 await this._addPromotionPipeline.Run(
                     new AddPromotionArgument(book, "Line5OffCouponPromotion", DateTimeOffset.UtcNow.AddDays(-6), DateTimeOffset.UtcNow.AddYears(1), "$5 Off Item (Coupon)", "$5 Off Item (Coupon)")
-                        {
-                            DisplayName = "$5 Off Item (Coupon)",
-                            Description = "$5 off any item with subtotal of $10 or more (Coupon)"
-                        },
+                    {
+                        DisplayName = "$5 Off Item (Coupon)",
+                        Description = "$5 off any item with subtotal of $10 or more (Coupon)"
+                    },
                     context);
 
             promotion =
@@ -948,17 +949,17 @@
                     new PromotionConditionModelArgument(
                         promotion,
                         new ConditionModel
-                            {
-                                ConditionOperator = "And",
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
-                                Properties = new List<PropertyModel>
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.Conditions.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion =
@@ -966,17 +967,17 @@
                     new PromotionActionModelArgument(
                         promotion,
                         new ActionModel
-                            {
-                                Id = Guid.NewGuid().ToString(),
-                                LibraryId = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
-                                Name = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
-                                Properties = new List<PropertyModel>
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
+                            Name = CartsConstants.Actions.CartAnyItemSubtotalAmountOffAction,
+                            Properties = new List<PropertyModel>
                                                  {
                                                      new PropertyModel { Name = "AmountOff", Value = "5", DisplayType = "System.Decimal" },
                                                      new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
                                                      new PropertyModel { Name = "Subtotal", Value = "10", IsOperator = false, DisplayType = "System.Decimal" }
                                                  }
-                            }),
+                        }),
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNL5A"), context);
@@ -985,5 +986,104 @@
         }
 
         #endregion
+
+        #region Bundle Promotions
+        private async Task CreateBundleFitnessPromotion(PromotionBook book, CommercePipelineExecutionContext context)
+        {
+            var promotion =
+                await this._addPromotionPipeline.Run(
+                    new AddPromotionArgument(book, "Free100GiftCardWithGymAndPlatinumTrainingPromotion",
+                    DateTimeOffset.UtcNow.AddDays(-6),
+                    DateTimeOffset.UtcNow.AddYears(1),
+                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum",
+                    "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum")
+                    {
+                        DisplayName = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum",
+                        Description = "Free $100 Gift Card With Habitat Striva Stationary Bike with Wifi and Sydney Training Platinum"
+                    },
+                    context);
+
+            //Qualifications
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Name = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalEqualityOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Quantity", Value = "1", IsOperator = false, DisplayType = "System.String" },
+                                                     new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|8042103|", IsOperator = false, DisplayType = "System.String" }
+                                               }
+                        }),
+                    context);
+
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Name = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalEqualityOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Quantity", Value = "1", IsOperator = false, DisplayType = "System.String" },
+                                                     new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|8042104|", IsOperator = false, DisplayType = "System.String" }
+                                               }
+                        }),
+                    context);
+
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Name = CartsConstants.Conditions.CartItemQuantityCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalEqualityOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Quantity", Value = "1", IsOperator = false, DisplayType = "System.String" },
+                                                     new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042986|56042988", IsOperator = false, DisplayType = "System.String" }
+                                               }
+                        }),
+                    context);
+                                      
+            //Benefits             
+            await this._addBenefitPipeline.Run(
+               new PromotionActionModelArgument(
+                   promotion,
+                   new ActionModel
+                   {
+                       Id = Guid.NewGuid().ToString(),
+                       LibraryId = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
+                       Name = CartsConstants.Actions.CartItemSubtotalAmountOffAction,
+                       Properties = new List<PropertyModel>
+                                            {
+                                                 new PropertyModel { Name = "AmountOff", Value = "100", IsOperator = false, DisplayType = "System.Decimal" },
+                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|6042986|56042988", IsOperator = false, DisplayType = "System.String" }
+                                            }
+                   }),
+               context);
+
+
+            promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
+            await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context);
+        }
+
+        #endregion
+
     }
 }

@@ -30,14 +30,3 @@ Languages:
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
       Value: "Touchscreens and attachable keyboards mean easy navigation and efficient word processing. Front and rear cameras and an easy-to-use stylus let you create, play, and work from anywhere."
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180329T155926Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

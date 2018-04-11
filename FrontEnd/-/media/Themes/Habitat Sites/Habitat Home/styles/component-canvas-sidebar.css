@@ -110,6 +110,11 @@ html.show-sidebar-left, html.show-sidebar-right {
   font-size: 16px;
 }
 
+.off-canvas-sidebar .sidebar .panel-title > a:hover, .off-canvas-sidebar .sidebar .panel-title > a:active, .off-canvas-sidebar .sidebar .panel-title > a:focus {
+  color: white;
+  text-decoration: none;
+}
+
 .sidebar {
   background-color: #FFF;
   -webkit-transition: all 0.4s ease;

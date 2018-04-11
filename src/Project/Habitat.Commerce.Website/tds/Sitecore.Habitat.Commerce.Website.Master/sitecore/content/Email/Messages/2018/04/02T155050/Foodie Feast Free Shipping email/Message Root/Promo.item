@@ -1,0 +1,101 @@
+----item----
+version: 1
+id: {D2D88E41-31B7-454E-8D09-014004C3F836}
+database: master
+path: /sitecore/content/Email/Messages/2018/04/02T155050/Foodie Feast Free Shipping email/Message Root/Promo
+parent: {50DF726F-D5C0-4544-93FE-EF210DD91213}
+name: Promo
+master: {06A7EA2B-A5C7-4091-8E4B-35001A173758}
+template: {7B14280B-F67B-43BF-A509-0FC4B1D74589}
+templatekey: Promo
+created: 20180411T151713Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{47998574-673A-4A8B-A42F-B44D41F2D102}
+----version----
+language: en
+version: 1
+revision: 38939b67-d86d-4748-b607-f1d6dde8e573
+
+----field----
+field: {2BE2FD2C-B43F-4237-9B24-2905EFE66483}
+name: Title
+key: title
+content-length: 49
+
+The Connected Refrigerator for the Modern Foodie.
+----field----
+field: {270CC513-EE8A-4D95-87A3-9EF5129733AD}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{3F457FD3-9E84-4F30-9A2A-0865539D5147}" />
+----field----
+field: {4521AD3A-5672-409A-86C1-58362E88DDB6}
+name: Link
+key: link
+content-length: 183
+
+<link text="Check it out!" linktype="rel" url="/shop/Appliances%3dhabitat_master-appliances/HabitatViva4-Door280CubicFootRefrigeratorwithIceMakerandTouchscreen%3d6042579" anchor="" />
+----field----
+field: {330DC4A3-644B-4ED4-8775-F7313DCAB71F}
+name: LinkLabel
+key: linklabel
+content-length: 13
+
+Check It Out!
+----field----
+field: {EFFCB8E2-8C7E-4CA8-87EA-6E9B9D120C13}
+name: PromoText
+key: promotext
+content-length: 372
+
+The Habitat Viva Refrigerator is the modern foodie's dream. Four doors to allow for easy access and 28.0 cubic feet means you can store just about anything in it. Best of all the massive touchscreen and connected capabilities means your fridge is always learning and keeping you informed. Never wonder what you can cook for dinner again with the Habitat Viva Refrigerator!
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180406T160319Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+38939b67-d86d-4748-b607-f1d6dde8e573
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180409T142554Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

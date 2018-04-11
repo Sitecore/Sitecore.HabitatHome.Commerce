@@ -151,7 +151,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{B7810CAE-B609-4EC9-9353-9CE53C275253}" />
+        <image mediaid="{B7810CAE-B609-4EC9-9353-9CE53C275253}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180326T132153Z

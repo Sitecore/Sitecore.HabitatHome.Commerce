@@ -76,3 +76,9 @@ Languages:
       Hint: Link
       Value: |
         <link text="Casques d'écoute" anchor="" linktype="internal" class="" title=""  querystring="" id="{DC2D421A-6AB9-4907-8E1E-8C4F36BA4259}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ヘッドフォン
+  Versions:

@@ -62,25 +62,11 @@ Write-Host "*******************************************************" -Foreground
     }
     Function Install-CommerceAssets {
         Set-Location $PSScriptRoot
+		$imagesLocation = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include  "Habitat Home Product Images.zip" -Recurse)
+		if (Test-Path $imagesLocation){
+			Remove-Item $imagesLocation -Force
+		}
         . .\get-latest-commerce.ps1 -DownloadFolder $assets.downloadFolder -CommerceAssetFolder $assets.commerce.installationFolder -CommercePackageUrl $assets.commerce.packageUrl
-
-        # This is where we expand the archives:
-        $packagesToExtract = $assets.commerce.filesToExtract
-
-        set-alias sz "$env:ProgramFiles\7-zip\7z.exe"
-        
-        foreach ($package in $packagesToExtract) {
-            
-            $extract = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version + ".zip")
-            $output = Join-Path $assets.commerce.installationFolder $($package.name + "." + $package.version)
-          
-            if ($package.name -eq "Sitecore.Commerce.Engine.SDK") {
-                sz e $extract -o"$($assets.commerce.installationFolder)" "Sitecore.Commerce.Engine.DB.dacpac" -y -aoa
-            }
-            else {
-                sz x -o"$($output)" $extract -r -y -aoa    
-            }
-        }
     }  
   
   Function Set-ModulesPath {
