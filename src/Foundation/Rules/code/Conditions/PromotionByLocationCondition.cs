@@ -10,6 +10,7 @@ namespace Sitecore.Foundation.Rules.Conditions
     public class PromotionByLocationCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {
         public string InventoryStoreId { get; set; }
+        public string ProductId { get; set; }
         protected override bool Execute(T ruleContext)
         {
             //if Promo Cookie exists
@@ -17,13 +18,21 @@ namespace Sitecore.Foundation.Rules.Conditions
           
             //if Nearest stores cookie exists
                     //Get store cookie values
-            //if 
+            if(GetUserLocations(ProductId).Contains(InventoryStoreId))
+            {
+                return true;
+            }
             return false;
         }
 
-        private List<string> GetUserLocations()
+        private List<string> GetUserLocations(string productId)
         {
             List<string> userLocations = new List<string>();
+
+            userLocations.Add("JeffersonCityStore");
+            //GET NEAREST STORES FROM PROXY
+
+            return userLocations;
 
         }
     }
