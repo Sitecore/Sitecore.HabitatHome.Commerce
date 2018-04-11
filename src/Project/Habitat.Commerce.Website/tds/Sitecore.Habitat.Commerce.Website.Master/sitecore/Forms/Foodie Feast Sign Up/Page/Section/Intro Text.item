@@ -41,15 +41,15 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 3829a4d9-169e-4aee-8295-243bd2913386
+revision: 0162e9e8-f2a8-4f82-9d07-baaad5847752
 
 ----field----
 field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
 name: Text
 key: text
-content-length: 81
+content-length: 121
 
-Sign up to receive the Foodie Feast newsletter and never miss out our new guides!
+Get FREE shipping on your first order and never miss out on a great recipe guide by signing up for the Foodie Feast List!
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3829a4d9-169e-4aee-8295-243bd2913386
+0162e9e8-f2a8-4f82-9d07-baaad5847752
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T154216Z
+20180409T152903Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -88,7 +88,7 @@ sitecore\admin
 ----version----
 language: fr-CA
 version: 1
-revision: e8c46f4c-8d2f-452a-bf2c-0d55571c3768
+revision: a587abf7-aa04-4f43-bb8c-ef08195ad1ff
 
 ----field----
 field: {9666782B-21BB-40CE-B38F-8F6C53FA5070}
@@ -117,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8c46f4c-8d2f-452a-bf2c-0d55571c3768
+a587abf7-aa04-4f43-bb8c-ef08195ad1ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180216T174044Z
+20180328T173512Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

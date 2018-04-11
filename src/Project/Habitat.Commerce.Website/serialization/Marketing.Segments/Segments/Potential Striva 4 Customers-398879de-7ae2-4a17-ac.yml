@@ -22,7 +22,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180330T164552Z
+      Value: 20180404T025534Z
     - ID: "365f1971-b028-4065-bc11-ce1f471452af"
       Hint: Name
       Value: Potential Striva 4 Customers
@@ -32,7 +32,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
+        extranet\Anonymous
     - ID: "e259e500-b38e-41fe-82db-8b604bcf9e75"
       Hint: Description
       Value: Users whose pattern of behavior indicates they may be interested in the Striva 4.
@@ -43,6 +43,12 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180404T025534Z
+    - ID: "365f1971-b028-4065-bc11-ce1f471452af"
+      Hint: Name
+      Value: "Potential Striva 4 Customers-398879de-7ae2-4a17-aca5-540753df3825"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
