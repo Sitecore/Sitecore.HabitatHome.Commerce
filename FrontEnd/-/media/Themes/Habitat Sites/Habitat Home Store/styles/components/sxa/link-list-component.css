@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .component.link-list.image-link-list ul {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .component.link-list.image-link-list li {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;

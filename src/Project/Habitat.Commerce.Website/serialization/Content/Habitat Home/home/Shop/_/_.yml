@@ -12,12 +12,7 @@ SharedFields:
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
   Hint: __Tracking
   Type: Tracking
-  Value: |
-    <tracking>
-      <event
-        id="{0D221789-0510-4209-8EB9-8EBC61DB76C3}"
-        name="Visited Product Details Page" />
-    </tracking>
+  Value: <tracking />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -104,8 +99,44 @@ Languages:
               s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1=%7B88064982-2F4B-4F08-802C-9438C91412D9%7D&amp;Styles2=%7BD096404C-2546-40E5-8011-01326BFA1BE7%7D&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BFB140AEF-DE33-4088-9F1D-406C6BA32A8E%7D&amp;ColumnWidth2=%7BFB140AEF-DE33-4088-9F1D-406C6BA32A8E%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
               s:ph="/main" />
             <r
-              uid="{7FDAD893-FA7F-43B1-9BFB-EB8250B88562}"
+              uid="{B151B4B4-DF47-44E7-95B5-9A1F789FD20B}"
               p:after="r[@uid='{337A5544-89EB-450A-8DD0-634EB8BA97B9}']"
+              s:ds="{6238B3BB-E9C4-4AFB-B445-BE302466691E}"
+              s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B4AA37DA1-3A7B-4DAA-A226-A82B450BB966%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+              s:ph="/main">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{D494826B-40DC-470B-8AC0-CF01A58A2ECB}"
+                    s:name="show on health pdps">
+                    <conditions>
+                      <condition
+                        uid="D1CDF47FC65344AE938F0291C7BC3237"
+                        s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
+                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="AEB3D6C6781B4BBA92D0C2BB6D105272"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="55977B04364E44308A752D2C0CC64CD1"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{7FDAD893-FA7F-43B1-9BFB-EB8250B88562}"
+              p:after="r[@uid='{B151B4B4-DF47-44E7-95B5-9A1F789FD20B}']"
               s:ds="{856116A0-1B54-41CD-B414-8EEEF78ACFC0}"
               s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists&amp;Use Lazy Loading=1&amp;Max Page Size=4"

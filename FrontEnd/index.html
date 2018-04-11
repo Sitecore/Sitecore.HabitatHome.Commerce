@@ -1566,12 +1566,14 @@
         </main>
         <!-- /#content -->
 
-        <div class="off-canvas-sidebar off-canvas-sidebar-right">
+        <div class="off-canvas-sidebar off-canvas-sidebar-right" id="sidebar">
             <div class="btn-group-vertical hover" role="group">
-                <button type="button" class="btn btn-info sidebar-closed" data-toggle="sidebar" title="Open visit details panel" data-side="right" style="display: block;">
+                <button type="button" class="btn btn-info sidebar-closed" data-toggle="sidebar" title="Open visit details panel" data-side="right"
+                    style="display: block;">
                     <i class="fa fa-info-circle"></i>
                 </button>
-                <button type="button" class="btn btn-info btn-lg sidebar-opened" style="display: none;" data-toggle="sidebar" title="Close visit details panel" data-side="right">
+                <button type="button" class="btn btn-info btn-lg sidebar-opened" style="display: none;" data-toggle="sidebar" title="Close visit details panel"
+                    data-side="right">
                     <i class="fa fa-times"></i>
                     <span class="hover-only">Close</span>
                 </button>
@@ -1587,481 +1589,515 @@
         
             <div class="sidebar sidebar-fixed-right">
                 <div class="panel-group" id="experiencedata">
-            <div class="panel panel-primary">
-          <div class="panel-heading" role="tab">
-            <h3 class="panel-title">
-              <a role="button" href="#visitsPanel" data-toggle="collapse" class="panel-title collapsed" data-parent="#experiencedata" aria-expanded="false">
-                <span class="fa fa-heart"></span>
-                Engagement
-                <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Engagement Value">
-                  <span class="fa fa-heart"></span>
-                  105
-                </span>
-                <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Pages Viewed">
-                  <span class="fa fa-eye"></span>
-                  4
-                </span>
-                <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Number of Visits">
-                  <span class="fa fa-history"></span>
-                  31
-                </span>
-                <i class="fa fa-chevron-down pull-right"></i>
-              </a>
-            </h3>
-          </div>
-          <div id="visitsPanel" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-            <div class="panel-body">
-              <div class="media">
-                <div class="media-left">
-                  <span class="fa fa-heart"></span>
-                </div>
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a role="button" href="#visitsPanel"  class="panel-title" data-parent="#sidebar">
+                                    <span class="fa fa-heart"></span>
+                                    Engagement
+                                    <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Engagement Value">
+                                        <span class="fa fa-heart"></span>
+                                        105
+                                    </span>
+                                    <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Pages Viewed">
+                                        <span class="fa fa-eye"></span>
+                                        4
+                                    </span>
+                                    <span class="badge" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Number of Visits">
+                                        <span class="fa fa-history"></span>
+                                        31
+                                    </span>
+                                    <i class="fa fa-chevron-down pull-right"></i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="visitsPanel" class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-heart"></span>
+                                    </div>
         
-                <div class="media-body ">
-                  <h4 class="media-title">
-                    Engagement value:
-                    <strong class="pull-right">105</strong>
-                  </h4>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <span class="fa fa-eye"></span>
-                </div>
-                <div class="media-body ">
-                  <h4 class="media-title">
-                    Pages seen in this visit:
-                    <strong class="pull-right">4</strong>
-                  </h4>
-                </div>
-              </div>
-              <table class="table table-condensed table-borderless">
-                  <tbody><tr>
-                    <td class="text-muted text-nowrap">
-                                                    <span class="fa fa-street-view" title="Page has personalisation"></span>
-                    </td>
-                    <td class="text-nowrap" title="Home">Home</td>
-                    <td>
-                        <span>-</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-muted text-nowrap">
-                                                    <span class="fa fa-street-view" title="Page has personalisation"></span>
-                    </td>
-                    <td class="text-nowrap" title="Guides/Setting-Up-the-Perfect-Home-Theater">.../Setting-Up-the-P...</td>
-                    <td>
-                        <span>-</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-muted text-nowrap">
-                                                </td>
-                    <td class="text-nowrap" title="Guides/Kitchen-Appliances">.../Kitchen-Applianc...</td>
-                    <td>
-        00:03            </td>
-                  </tr>
-                  <tr>
-                    <td class="text-muted text-nowrap">
-                                                    <span class="fa fa-street-view" title="Page has personalisation"></span>
-                    </td>
-                    <td class="text-nowrap" title="Home">Home</td>
-                    <td>
-        00:14            </td>
-                  </tr>
-              </tbody></table>
-              <div class="media">
-                <div class="media-left">
-                  <span class="fa fa-history"></span>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-title">
-                    Visits to the site:
-                      <strong class="pull-right">31</strong>
-                  </h4>
-                </div>
-              </div>
-                <div class="media">
-                  <div class="media-left">
-                    <span class="fa fa-street-view"></span>
-                  </div>
-                  <div class="media-body ">
-                    <h4 class="media-title">
-                      Engagement plans:
-                    </h4>
-                    <table class="table table-condensed table-borderless">
-                        <tbody><tr>
-                          <td colspan="2"><small>Storefront Abandoned Carts</small></td>
-                        </tr>
-                        <tr>
-                          <td>15-02 08:43</td>
-                          <td>Initial State</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2"><small>Storefront New Order Placed</small></td>
-                        </tr>
-                        <tr>
-                          <td>01-03 04:19</td>
-                          <td>Initial State</td>
-                        </tr>
-                    </tbody></table>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-            <div class="panel panel-primary">
-            <div class="panel-heading" role="tab">
-                <h3 class="panel-title">
-                    <a role="button" href="#personalInfoPanel" data-toggle="collapse" class="panel-title" data-parent="#experiencedata" aria-expanded="true">
-                        <span class="fa fa-user"></span>
-                        Personal Information
-                        <i class="fa fa-chevron-down pull-right"></i>
-                    </a>
-                </h3>
-            </div>
-            <div id="personalInfoPanel" class="panel-collapse collapse in" role="tabpanel" aria-expanded="true" style="">
-                <div class="panel-body">
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-user"></span>
-                        </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-        Elena  Mosoff                    </h4>
-                            <dl>
-                                    <dt>Email (main)</dt>
-                                    <dd>emosoff@hhog.com</dd>
-                                    <dt>Identification</dt>
-                                    <dd>CommerceUsers\emosoff@hhog.com</dd>
-                            </dl>
-                        </div>
-                        <div class="media-right">
-                                <span class="fa fa-user-plus icon-lg"></span>
-                        </div>
-                    </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <span class="fa fa-globe"></span>
-                            </div>
-                            <div class="media-body ">
-                                <h4 class="media-title">
-                                    Location
-                                </h4>
-                                <dl>
-                                        <dt>Place</dt>
-                                        <dd>Baldwin, NY, US</dd>
-        
-                                        <dt>Business</dt>
-                                        <dd>Optimum Online</dd>
-        
-                                        <dt>Url</dt>
-                                        <dd><a href="N/A">N/A</a></dd>
-                                    
-                                        <dt>Map</dt>
-                                        <dd><a href="https://maps.google.com/?q=40.6539,-73.6082" target="_blank">Map Link (external)</a></dd>
-                                </dl>
-                            </div>
-                        </div>
-                                    <div class="media">
-                            <div class="media-left">
-                                <span class="fa fa-tablet"></span>
-                            </div>
-                            <div class="media-body ">
-                                <h4 class="media-title">
-                                    Device
-                                </h4>
-                                <div class="text-nowrap">
-                                    <dl>
-                                        <dt>Device</dt>
-                                        <dd>Misc, Windows PC</dd>
-                                        <dt>Browser</dt>
-                                        <dd>Chrome 64</dd>
-                                    </dl>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Engagement value:
+                                            <strong class="pull-right">105</strong>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-eye"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Pages seen in this visit:
+                                            <strong class="pull-right">4</strong>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <table class="table table-condensed table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-muted text-nowrap">
+                                                <span class="fa fa-street-view" title="Page has personalisation"></span>
+                                            </td>
+                                            <td class="text-nowrap" title="Home">Home</td>
+                                            <td>
+                                                <span>-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted text-nowrap">
+                                                <span class="fa fa-street-view" title="Page has personalisation"></span>
+                                            </td>
+                                            <td class="text-nowrap" title="Guides/Setting-Up-the-Perfect-Home-Theater">.../Setting-Up-the-P...</td>
+                                            <td>
+                                                <span>-</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted text-nowrap">
+                                            </td>
+                                            <td class="text-nowrap" title="Guides/Kitchen-Appliances">.../Kitchen-Applianc...</td>
+                                            <td>
+                                                00:03 </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-muted text-nowrap">
+                                                <span class="fa fa-street-view" title="Page has personalisation"></span>
+                                            </td>
+                                            <td class="text-nowrap" title="Home">Home</td>
+                                            <td>
+                                                00:14 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-history"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-title">
+                                            Visits to the site:
+                                            <strong class="pull-right">31</strong>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-street-view"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Engagement plans:
+                                        </h4>
+                                        <table class="table table-condensed table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <small>Storefront Abandoned Carts</small>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15-02 08:43</td>
+                                                    <td>Initial State</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <small>Storefront New Order Placed</small>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>01-03 04:19</td>
+                                                    <td>Initial State</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
-        </div>
-            <div class="panel panel-primary">
-            <div class="panel-heading" role="tab">
-                <h4 class="panel-title">
-                    <a role="button" href="#onsiteBehaviorPanel" data-toggle="collapse" class="panel-title collapsed" data-parent="#experiencedata" aria-expanded="false">
-                        <span class="fa fa-bullseye"></span>
-                        Onsite Behavior
-                        <i class="fa fa-chevron-down pull-right"></i>
-                    </a>
-                </h4>
-            </div>
-            <div id="onsiteBehaviorPanel" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-                <div class="panel-body">
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-users"></span>
+                    </div>
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a role="button" href="#personalInfoPanel"  class="panel-title" data-parent="#experiencedata" aria-expanded="true">
+                                    <span class="fa fa-user"></span>
+                                    Personal Information
+                                    <i class="fa fa-chevron-down pull-right"></i>
+                                </a>
+                            </h3>
                         </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-                                Profiling
-                            </h4>
-                            <div class="media-body">
-                                        <ul class="nav nav-tabs nav-justified small">
-                                            <li class="active">
-                                                <a href="#onSiteBehaviorProfileCurrent" data-toggle="tab">Current Visit</a>
-                                            </li>
-                                            <li>
-                                                <a href="#onSiteBehaviorProfileHistoric" data-toggle="tab">Historic</a>
-                                            </li>
-                                        </ul>
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active m-t-1" id="onSiteBehaviorProfileCurrent">
-              <div class="media">
-                <div class="media-body ">
-                  <h5 class="media-title">
-                    Product Category Interest
-                  </h5>
-                  <ol class="list-unstyled">
-                      <li>
-                        <div>Gary the Gamer</div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="69.7829624023994" aria-valuemin="0" aria-valuemax="100" style="width: 69.7829624023994%">
-                            70 %
-                          </div>
-                        </div>
-                      </li>
-                                  <li>
-                        <div>
-                          <small>Howard Home Cinema</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10.6292339077885" aria-valuemin="0" aria-valuemax="100" style="width: 10.6292339077885%">
-                            <small>11 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Anthony the Audiophile</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5.61395734768567" aria-valuemin="0" aria-valuemax="100" style="width: 5.61395734768567%">
-                            <small>6 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Mike the Mobile</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.85605670156012" aria-valuemin="0" aria-valuemax="100" style="width: 4.85605670156012%">
-                            <small>5 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Christine Computers</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.68926910576342" aria-valuemin="0" aria-valuemax="100" style="width: 4.68926910576342%">
-                            <small>5 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Sam Smart Home</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.4285205348028" aria-valuemin="0" aria-valuemax="100" style="width: 4.4285205348028%">
-                            <small>4 %</small>
-                          </div>
-                        </div>
-                      </li>
-                  </ol>
-                </div>
+                        <div id="personalInfoPanel" class="panel-collapse collapse in"  aria-expanded="true" style="">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-user"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Elena Mosoff </h4>
+                                        <dl>
+                                            <dt>Email (main)</dt>
+                                            <dd>emosoff@hhog.com</dd>
+                                            <dt>Identification</dt>
+                                            <dd>CommerceUsers\emosoff@hhog.com</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="media-right">
+                                        <span class="fa fa-user-plus icon-lg"></span>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Location
+                                        </h4>
+                                        <dl>
+                                            <dt>Place</dt>
+                                            <dd>Baldwin, NY, US</dd>
         
-              </div>
-        </div>
-        <div role="tabpanel" class="tab-pane  m-t-1" id="onSiteBehaviorProfileHistoric">
-              <div class="media">
-                <div class="media-body ">
-                  <h5 class="media-title">
-                    Product Category Interest
-                  </h5>
-                  <ol class="list-unstyled">
-                      <li>
-                        <div>Gary the Gamer</div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="69.9847802302465" aria-valuemin="0" aria-valuemax="100" style="width: 69.9847802302465%">
-                            70 %
-                          </div>
-                        </div>
-                      </li>
-                                  <li>
-                        <div>
-                          <small>Howard Home Cinema</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10.476196491414" aria-valuemin="0" aria-valuemax="100" style="width: 10.476196491414%">
-                            <small>10 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Anthony the Audiophile</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5.58976230796693" aria-valuemin="0" aria-valuemax="100" style="width: 5.58976230796693%">
-                            <small>6 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Mike the Mobile</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.8482756053514" aria-valuemin="0" aria-valuemax="100" style="width: 4.8482756053514%">
-                            <small>5 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Christine Computers</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.68111368336122" aria-valuemin="0" aria-valuemax="100" style="width: 4.68111368336122%">
-                            <small>5 %</small>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <small>Sam Smart Home</small>
-                        </div>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.41987168165996" aria-valuemin="0" aria-valuemax="100" style="width: 4.41987168165996%">
-                            <small>4 %</small>
-                          </div>
-                        </div>
-                      </li>
-                  </ol>
-                </div>
+                                            <dt>Business</dt>
+                                            <dd>Optimum Online</dd>
         
-              </div>
-        </div>                            </div>
+                                            <dt>Url</dt>
+                                            <dd>
+                                                <a href="N/A">N/A</a>
+                                            </dd>
+        
+                                            <dt>Map</dt>
+                                            <dd>
+                                                <a href="https://maps.google.com/?q=40.6539,-73.6082" target="_blank">Map Link (external)</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-tablet"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Device
+                                        </h4>
+                                        <div class="text-nowrap">
+                                            <dl>
+                                                <dt>Device</dt>
+                                                <dd>Misc, Windows PC</dd>
+                                                <dt>Browser</dt>
+                                                <dd>Chrome 64</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-trophy"></span>
-                        </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-                                Triggered goals
-                                    <strong class="pull-right">1</strong>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                            <h4 class="panel-title">
+                                <a role="button" href="#onsiteBehaviorPanel"  class="panel-title" data-parent="#experiencedata"
+                                    aria-expanded="false">
+                                    <span class="fa fa-bullseye"></span>
+                                    Onsite Behavior
+                                    <i class="fa fa-chevron-down pull-right"></i>
+                                </a>
                             </h4>
-                            <div class="media-body">
-                                <ul class="nav nav-tabs nav-justified small">
-                                    <li class="active">
-                                        <a href="#onSiteBehaviorGoals" data-toggle="tab">Goals</a>
-                                    </li>
-                                    <li>
-                                        <a href="#onSiteBehaviorPageEvents" data-toggle="tab">Page Events</a>
-                                    </li>
-                                </ul>
-        
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="onSiteBehaviorGoals">
-                                            <ol class="list-unstyled">
-                                                    <li>
-                                                        <div>
-                                                            <small>01-03 04:03</small>
-                                                        </div>
-                                                        <div class="text-nowrap">
-                                                            Visitor Order Created
-                                                                <small class="badge pull-right"><span class="fa fa-heart"></span> 100</small>
-                                                        </div>
-                                                    </li>
-                                            </ol>
+                        </div>
+                        <div id="onsiteBehaviorPanel" class="panel-collapse"  aria-expanded="false">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-users"></span>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="onSiteBehaviorPageEvents">
-                                            <div class="alert alert-info small">
-                                                You have triggered no page events so far
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Profiling
+                                        </h4>
+                                        <div class="media-body">
+                                            <ul class="nav nav-tabs nav-justified small">
+                                                <li class="active">
+                                                    <a href="#onSiteBehaviorProfileCurrent" data-toggle="tab">Current Visit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#onSiteBehaviorProfileHistoric" data-toggle="tab">Historic</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div  class="tab-pane active m-t-1" id="onSiteBehaviorProfileCurrent">
+                                                    <div class="media">
+                                                        <div class="media-body ">
+                                                            <h5 class="media-title">
+                                                                Product Category Interest
+                                                            </h5>
+                                                            <ol class="list-unstyled">
+                                                                <li>
+                                                                    <div>Gary the Gamer</div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="69.7829624023994" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 69.7829624023994%">
+                                                                            70 %
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Howard Home Cinema</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10.6292339077885" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 10.6292339077885%">
+                                                                            <small>11 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Anthony the Audiophile</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5.61395734768567" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 5.61395734768567%">
+                                                                            <small>6 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Mike the Mobile</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.85605670156012" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.85605670156012%">
+                                                                            <small>5 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Christine Computers</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.68926910576342" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.68926910576342%">
+                                                                            <small>5 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Sam Smart Home</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.4285205348028" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.4285205348028%">
+                                                                            <small>4 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+                                                <div  class="tab-pane  m-t-1" id="onSiteBehaviorProfileHistoric">
+                                                    <div class="media">
+                                                        <div class="media-body ">
+                                                            <h5 class="media-title">
+                                                                Product Category Interest
+                                                            </h5>
+                                                            <ol class="list-unstyled">
+                                                                <li>
+                                                                    <div>Gary the Gamer</div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="69.9847802302465" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 69.9847802302465%">
+                                                                            70 %
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Howard Home Cinema</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10.476196491414" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 10.476196491414%">
+                                                                            <small>10 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Anthony the Audiophile</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5.58976230796693" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 5.58976230796693%">
+                                                                            <small>6 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Mike the Mobile</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.8482756053514" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.8482756053514%">
+                                                                            <small>5 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Christine Computers</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.68111368336122" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.68111368336122%">
+                                                                            <small>5 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div>
+                                                                        <small>Sam Smart Home</small>
+                                                                    </div>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="4.41987168165996" aria-valuemin="0" aria-valuemax="100"
+                                                                            style="width: 4.41987168165996%">
+                                                                            <small>4 %</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ol>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-trophy"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Triggered goals
+                                            <strong class="pull-right">1</strong>
+                                        </h4>
+                                        <div class="media-body">
+                                            <ul class="nav nav-tabs nav-justified small">
+                                                <li class="active">
+                                                    <a href="#onSiteBehaviorGoals" data-toggle="tab">Goals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#onSiteBehaviorPageEvents" data-toggle="tab">Page Events</a>
+                                                </li>
+                                            </ul>
+        
+                                            <div class="tab-content">
+                                                <div  class="tab-pane active" id="onSiteBehaviorGoals">
+                                                    <ol class="list-unstyled">
+                                                        <li>
+                                                            <div>
+                                                                <small>01-03 04:03</small>
+                                                            </div>
+                                                            <div class="text-nowrap">
+                                                                Visitor Order Created
+                                                                <small class="badge pull-right">
+                                                                    <span class="fa fa-heart"></span> 100</small>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div  class="tab-pane" id="onSiteBehaviorPageEvents">
+                                                    <div class="alert alert-info small">
+                                                        You have triggered no page events so far
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-money"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Outcomes
+                                            <strong class="pull-right">1</strong>
+                                        </h4>
+                                        <ol class="list-unstyled">
+                                            <li>
+                                                <div>
+                                                    <small>01-03 04:03</small>
+                                                </div>
+                                                <div>
+                                                    <small>Purchase</small>
+                                                </div>
+                                                <div>Product Purchase</div>
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-money"></span>
-                        </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-                                Outcomes
-                                    <strong class="pull-right">1</strong>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" >
+                            <h4 class="panel-title">
+                                <a role="button" href="#referralPanel"  class="panel-title" data-parent="#experiencedata"
+                                    aria-expanded="false">
+                                    <span class="fa fa-bullhorn"></span>
+                                    Referral
+                                    <i class="fa fa-chevron-down pull-right"></i>
+                                </a>
                             </h4>
-                                <ol class="list-unstyled">
-                                        <li>
-                                            <div><small>01-03 04:03</small></div>
-                                            <div><small>Purchase</small></div>
-                                            <div>Product Purchase</div>
-                                        </li>
-                                </ol>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="panel panel-primary">
-            <div class="panel-heading" role="tab">
-                <h4 class="panel-title">
-                    <a role="button" href="#referralPanel" data-toggle="collapse" class="panel-title collapsed" data-parent="#experiencedata" aria-expanded="false">
-                        <span class="fa fa-bullhorn"></span>
-                        Referral
-                        <i class="fa fa-chevron-down pull-right"></i>
-                    </a>
-                </h4>
-            </div>
-            <div id="referralPanel" class="panel-collapse collapse" role="tabpanel" aria-expanded="false">
-                <div class="panel-body">
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-sign-in"></span>
-                        </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-                                Referrer
-                            </h4>
-                                <div class="text-nowrap" title="Direct traffic">
-                                    Direct traffic
+                        <div id="referralPanel" class="panel-collapse"  aria-expanded="false">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-sign-in"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Referrer
+                                        </h4>
+                                        <div class="text-nowrap" title="Direct traffic">
+                                            Direct traffic
+                                        </div>
+                                    </div>
                                 </div>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-left">
-                            <span class="fa fa-bullhorn"></span>
-                        </div>
-                        <div class="media-body ">
-                            <h4 class="media-title">
-                                Campaigns
-                            </h4>
-                                <div class="alert alert-info small">
-                                    You have not been associated with any campaigns
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="fa fa-bullhorn"></span>
+                                    </div>
+                                    <div class="media-body ">
+                                        <h4 class="media-title">
+                                            Campaigns
+                                        </h4>
+                                        <div class="alert alert-info small">
+                                            You have not been associated with any campaigns
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-            </div>
-        </div>     
-            
-        </div>
         
             </div>
         </div>
@@ -2506,7 +2542,7 @@
     <script src="-/media/Base Themes/SearchTheme/Scripts/component-search-service.js"></script>
     <script src="-/media/Base Themes/SearchTheme/Scripts/component-search-router.js"></script>
     <script src="-/media/Base Themes/SearchTheme/Scripts/component-search-facet-daterange.js"></script>
-    <script src="-/media/Themes/Habitat Sites/Habitat Home/scripts/bootstrap.js"></script>
+    <script src="-/media/Themes/Habitat Sites/Habitat Home/scripts/bootstrap.js"></script> 
     <script src="-/media/Themes/Habitat Sites/Habitat Home/scripts/component-accordions.js"></script>
     <script src="-/media/Themes/Habitat Sites/Habitat Home/scripts/component-archive.js"></script>
     <script src="-/media/Themes/Habitat Sites/Habitat Home/scripts/component-breadcrumb.js"></script>

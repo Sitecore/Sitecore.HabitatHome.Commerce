@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Plugin.Demo.HabitatHome.Wishlists\Plugin.Demo.HabitatHome.Wishlists.csproj" />
     <ProjectReference Include="..\Plugin.Demo.HabitatHome\Plugin.Demo.HabitatHome.csproj" />
     <ProjectReference Include="..\Plugin.Demo.ImportOrders\Plugin.Demo.ImportOrders.csproj" />
     <ProjectReference Include="..\Plugin.Demo.Payments.Moneybags\Plugin.Demo.Payments.Moneybags.csproj" />
@@ -68,8 +69,14 @@
   <ItemGroup>
     <Folder Include="wwwroot\data\Catalogs\" />
   </ItemGroup>
-
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+  
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <NoWarn>NU1603</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <OutputType>Exe</OutputType>
@@ -79,3 +86,4 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 </Project>
+

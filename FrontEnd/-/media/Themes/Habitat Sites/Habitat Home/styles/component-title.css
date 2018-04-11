@@ -4,9 +4,9 @@
 }
 
 .title h1, .title .field-title a {
-  font-size: 4.5em;
+  font-size: 3.25em;
   font-weight: 700;
-  margin: 0.5em 0;
+  margin: 1em 0;
   padding: 0;
   color: #1d8c96;
   display: block;
@@ -18,7 +18,7 @@
   color: #878787;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .title h1, .title .field-title a {
     margin: 1em 0;
   }

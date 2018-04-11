@@ -183,7 +183,7 @@
   min-height: 240px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .parallax-background > .component-content {
     background-attachment: scroll;
   }

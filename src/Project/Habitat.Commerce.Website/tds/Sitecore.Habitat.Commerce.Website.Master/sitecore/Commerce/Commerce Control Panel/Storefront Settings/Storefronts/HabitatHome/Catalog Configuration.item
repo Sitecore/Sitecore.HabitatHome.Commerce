@@ -8,7 +8,7 @@ name: Catalog Configuration
 master: {CAB95775-02C2-4B53-9CD4-983A8CC5CA4A}
 template: {D36BAE09-F787-4B31-BADA-D830E0799257}
 templatekey: Catalog Configuration
-created: 20180213T181729Z
+created: 20180323T151739Z
 
 ----field----
 field: {D7CAD4B2-7027-4D9B-A813-747105FD50C8}
@@ -28,9 +28,9 @@ content-length: 38
 field: {FC9C3C29-7A69-4088-8C89-22FB3D493A9A}
 name: GiftCardProductId
 key: giftcardproductid
-content-length: 0
+content-length: 7
 
-
+6042986
 ----field----
 field: {48420F58-F1DF-4B80-8386-B62AA84E9B57}
 name: Gift Card Page Link
@@ -48,7 +48,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 49d08960-29e1-434b-8899-c01b412d3960
+revision: f849dd6d-0f36-41bc-b7f7-8ce9d51e77ef
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -84,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-49d08960-29e1-434b-8899-c01b412d3960
+f849dd6d-0f36-41bc-b7f7-8ce9d51e77ef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180312T212400Z
+20180402T202129Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

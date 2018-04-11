@@ -43,15 +43,29 @@ Make a copy of `set-installation-overrides.ps1.example` and remove the .example 
 Edit set-installation-overrides.ps1 to suit your installation needs.
 
 ### 4 Generate configuration file
-Execute the following two commands to generate `configuration-xc0.ps1`
+Execute the following commands to generate a configuration file (`configuration-xc0.ps1`)
+
 `.\set-installation-defaults.ps1`
+You can optionally pass in the XPConfigurationFile parameter if you don't use the default path or the default configuration file name:
+ `set-installation-defaults.ps1 -XPConfigurationFile <path-to-file>`
+
+Now run your overrides file
 `.\set-installation-overrides.ps1`
 
-### 5 Install Commerce
+### 5 Publish the Commerce Engine and Identity Server
+From Sitecore.Habitat.Commerce, execute the following to publish the Habitat Home Commerce Engine and Identity Server
+`dotnet publish .\Habitat.Commerce.Engine.sln -o c:\projects\sitecore.habitat.commerce\install\assets\resources\publish\Habitat.Commerce.Engine`
+`dotnet publish .\Habitat.Commerce.IdentityServer.sln -o c:\projects\sitecore.habitat.commerce\install\assets\resources\publish\Habitat.Commerce.IdentityServer`
+  
+### 6 Install Commerce
 Start the installation process
 `install-xc0.ps1`
 
-### 6 Deploy Solution
+### 7 Give the CSFndRuntimeUser permission to your webroot
+Browse to the root of the IIS (by default c:\inetpub\wwwroot) and give the Application Pool user read/write permissions.
+Using Windows Explorer, navigate to c:\inetpub\wwwroot and in the Windows Security dialog, add <your-computer-name>\CSFndRuntimeUser with read/write permisisons
+
+### 8 Deploy Solution
 Navigate back to the root of the repository (*c:\projects\sitecore.habitat.commerce*)
 `npm install`
 `node_modules\.bin\gulp`

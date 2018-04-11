@@ -37,7 +37,7 @@ main .category-promo .field-promoicon {
   margin-bottom: 200px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .field-promoicon,
   main .category-promo .field-promoicon {
     margin-bottom: 0;
@@ -75,7 +75,7 @@ main .category-promo .field-promoicon:before {
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .field-promoicon:before,
   main .category-promo .field-promoicon:before {
     width: 70px;
@@ -93,7 +93,7 @@ main .category-promo .widget-content {
   z-index: 3;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .widget-content,
   main .category-promo .widget-content {
     position: relative;
@@ -117,7 +117,7 @@ main .category-promo .hero-image-2 img {
   height: auto;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .hero-image-2,
   main .category-promo .hero-image-2 {
     width: 400px;
@@ -134,7 +134,7 @@ main .category-promo .hero-text {
   margin-left: 41.66667%;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .hero-text,
   main .category-promo .hero-text {
     width: 100%;
@@ -158,7 +158,7 @@ main .category-promo .hero-text .editorContent {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .hero-text .editorContent,
   main .category-promo .hero-text .editorContent {
     display: block;
@@ -176,7 +176,7 @@ main .category-promo .hero-text h2 {
   color: white;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .hero-text h2,
   main .category-promo .hero-text h2 {
     color: #141919;
@@ -192,7 +192,7 @@ main .category-promo .hero-content {
   padding-top: 30px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   main .category-hero .hero-content,
   main .category-promo .hero-content {
     width: 100%;
@@ -235,7 +235,7 @@ main .category-hero {
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .row.column-splitter > div.subcategorynavigation-col {
     padding: 0 50px;
   }
