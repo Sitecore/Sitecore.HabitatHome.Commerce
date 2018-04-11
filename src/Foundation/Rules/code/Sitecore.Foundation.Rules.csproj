@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conditions\CurrentPageUrlCondition.cs" />
+    <Compile Include="Conditions\PromotionByLocationCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
