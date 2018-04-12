@@ -118,6 +118,7 @@
     <Compile Include="Models\InventoryStore.cs" />
     <Compile Include="Models\UserLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreLocatorConstants.cs" />
     <Compile Include="Utilities\GeoUtility.cs" />
   </ItemGroup>
   <ItemGroup />

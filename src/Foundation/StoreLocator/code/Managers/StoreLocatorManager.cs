@@ -11,6 +11,7 @@ using System.Web.Script.Serialization;
 using Newtonsoft.Json;
 using Sitecore.Foundation.Commerce.StoreLocator.Utilities;
 using Sitecore.Diagnostics;
+using Sitecore.Foundation.Commerce.StoreLocator;
 
 namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
 {
@@ -19,7 +20,7 @@ namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
         public IEnumerable<InventoryStore> GetNearestStores()
         {
             List<InventoryStore> storeList = new List<InventoryStore>();
-            if (!HttpContext.Current.Response.Cookies.AllKeys.Contains("sxa_site_shops_stores"))
+            if (!HttpContext.Current.Response.Cookies.AllKeys.Contains(StoreLocatorConstants.STORE_COOKIES_KEY))
             {
                 storeList = SaveNearestStores().ToList();
             }
@@ -55,7 +56,7 @@ namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
                     storeList.Add(new InventoryStore(newStore));
                 }
                 string storeJson = new JavaScriptSerializer().Serialize(storeList.GetRange(0, 2));
-                HttpCookie storesCookie = new HttpCookie("sxa_site_shops_stores", storeJson)
+                HttpCookie storesCookie = new HttpCookie(StoreLocatorConstants.STORE_COOKIES_KEY, storeJson)
                 {
                     Expires = DateTime.Now.AddHours(1)
                 };
@@ -70,7 +71,7 @@ namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
         public IEnumerable<InventoryStore> GetSavedStores()
         {
             List<InventoryStore> storeList = new List<InventoryStore>();
-            HttpCookie storesCookie = HttpContext.Current.Request.Cookies["sxa_site_shops_stores"];
+            HttpCookie storesCookie = HttpContext.Current.Request.Cookies[StoreLocatorConstants.STORE_COOKIES_KEY];
             dynamic savedStores = JsonConvert.DeserializeObject(storesCookie.Value);
             foreach (var store in savedStores)
             {
