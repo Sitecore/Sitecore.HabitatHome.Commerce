@@ -74,7 +74,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.ShoppingCa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoreLocator", "StoreLocator", "{4B9D5E04-114C-46C7-A513-9D1E0D6E93C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.StoreLocator", "src\Foundation\StoreLocator\code\Sitecore.Foundation.StoreLocator.csproj", "{1B20D2C1-D19C-4A1E-AB0C-3164B231BBB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.StoreLocator", "src\Foundation\StoreLocator\code\Sitecore.Foundation.Commerce.StoreLocator.csproj", "{1B20D2C1-D19C-4A1E-AB0C-3164B231BBB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -255,43 +255,6 @@ Languages:
               uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}"
               s:par="GridParameters={08B60EE1-3F06-4C49-9449-E7420AFE5A2F}&amp;Styles={6D43D8D9-6159-4C76-9886-E72E2CF69135}&amp;Navigation={848DFE42-2B13-430E-A0B9-89CE25730A06}&amp;Transition={D4B706CC-7EEC-4DB9-A87D-123B29803490}&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" />
             <r
-              uid="{470DBE3D-103F-46DC-A74A-D34FF1FAF685}"
-              p:after="r[@uid='{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}']"
-              s:ds="{6E4D27E7-877A-42CD-BC87-F21133F4E7D4}"
-              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
-              s:ph="/main/sxa-content-container/container-1">
-              <rls>
-                <ruleset>
-                  <rule
-                    uid="{B544FDB3-43DC-43C1-8FE5-3BC2D294DCAB}"
-                    s:name="Specify name...">
-                    <conditions>
-                      <condition
-                        uid="032B784D92014CC68C0FA8C2C143F1AE"
-                        s:id="{E50F637B-B70C-45FF-9C90-74BC095AEF15}"
-                        s:ProductId="6042741|56042741"
-                        s:InventoryStoreId="JeffersonCityStore" />
-                    </conditions>
-                  </rule>
-                  <rule
-                    uid="{00000000-0000-0000-0000-000000000000}"
-                    s:name="Default">
-                    <conditions>
-                      <condition
-                        uid="C2DE5C48C890420BA6693E970AE05068"
-                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                    </conditions>
-                    <actions>
-                      <action
-                        uid="15FFDB77848646129996FBD0CB6968EE"
-                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
-                    </actions>
-                  </rule>
-                </ruleset>
-              </rls>
-            </r>
-            <r
               uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}"
               s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" />
             <r

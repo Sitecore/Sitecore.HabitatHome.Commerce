@@ -73,6 +73,9 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Foundation.Commerce.StoreLocator">
+      <HintPath>..\..\..\..\lib\Modules\Commerce-Foundation\Habitat.Commerce\Sitecore.Foundation.Commerce.StoreLocator.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -157,13 +160,9 @@
   <ItemGroup>
     <Compile Include="Controllers\NearestStoreController.cs" />
     <Compile Include="Managers\NearestStoreManager.cs" />
-    <Compile Include="Models\InventoryStore.cs" />
-    <Compile Include="Models\Responses\ServiceResponse.cs" />
-    <Compile Include="Models\UserLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IStoresRepository.cs" />
     <Compile Include="Repositories\StoresRepository.cs" />
-    <Compile Include="Utilities\GeoUtil.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

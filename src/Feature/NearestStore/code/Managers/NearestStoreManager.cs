@@ -8,79 +8,32 @@ using System.Security.Cryptography.X509Certificates;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using Sitecore.Feature.NearestStore.Models;
 using Newtonsoft.Json.Linq;
 using System.Web.Helpers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Script.Serialization;
 using System;
-
+using Sitecore.Foundation.Commerce.StoreLocator.Managers;
+using Sitecore.Foundation.Commerce.StoreLocator.Models;
 
 namespace Sitecore.Feature.NearestStore.Managers
 {
     public class NearestStoreManager
     {
-        public IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation, string pid)
+        protected StoreLocatorManager LocatorManager;
+        public NearestStoreManager()
         {
-            List<InventoryStore> storeList = new List<InventoryStore>();
-
-            var ceConfig = (CommerceEngineConfiguration)Factory.CreateObject("commerceEngineConfiguration", true);
-            var uri = new System.Uri(EngineConnectUtility.EngineConfiguration.ShopsServiceUrl);
-
-            var client = this.GetClient(ceConfig);
-
-            var result = client.GetAsync("NearestStoreLocator('" + userLocation.Latitude +"|" + userLocation.Longitude +"')").Result;
-
-            if (result.IsSuccessStatusCode)
-            {
-                var resultContent = result.Content.ReadAsStringAsync().Result;
-                JObject resultList = JObject.Parse(resultContent);               
-
-                foreach (var store in resultList["value"])
-                {
-                    dynamic newStore = new System.Dynamic.ExpandoObject();
-                    newStore.Id = store["Id"];
-                    newStore.InventoryStoreId = store["InventoryStoreId"];
-                    newStore.DisplayName = store["DisplayName"];
-                    newStore.Distance = store["Distance"];  
-                    storeList.Add(new InventoryStore(newStore));
-                }                
-                string storeJson = new JavaScriptSerializer().Serialize(storeList.GetRange(0,2));
-                HttpCookie storesCookie = new HttpCookie("sxa_site_shops_stores", storeJson)
-                {
-                    Expires = DateTime.Now.AddDays(30)
-                };
-                HttpContext.Current.Response.Cookies.Add(storesCookie);               
-                
-            }
-            else
-            {
-                return null;
-            }
-
-            return storeList;
-
+            this.LocatorManager = new StoreLocatorManager();
+        }
+        public IEnumerable<InventoryStore> GetNearestStores()
+        {
+            return this.LocatorManager.GetNearestStores();
         }
 
-        public IEnumerable<InventoryStore> GetSavedStoresInventory(string pid)
+        public IEnumerable<InventoryStore> GetSavedStores()
         {
-            List<InventoryStore> storeList = new List<InventoryStore>();
-            HttpCookie storesCookie = HttpContext.Current.Request.Cookies["sxa_site_shops_stores"];
-            dynamic savedStores = JsonConvert.DeserializeObject(storesCookie.Value);
-            foreach (var store in savedStores)
-            {
-                dynamic newStore = new System.Dynamic.ExpandoObject();
-                newStore.Id = store.Id;
-                newStore.InventoryStoreId = store.InventoryStoreId;
-                newStore.DisplayName = store.DisplayName;
-                newStore.Distance = store.Distance;
-                
-                storeList.Add(new InventoryStore(newStore));
-            }
-
-            return storeList;
-
+            return this.LocatorManager.GetSavedStores();
         }
         public int GetProductInventory(string inventoryStoreId, string pid)
         {
@@ -89,11 +42,8 @@ namespace Sitecore.Feature.NearestStore.Managers
             {
                 var ceConfig = (CommerceEngineConfiguration)Factory.CreateObject("commerceEngineConfiguration", true);
                 var uri = new System.Uri(EngineConnectUtility.EngineConfiguration.ShopsServiceUrl);
-
                 var client = this.GetClient(ceConfig);
-
                 var result = client.GetAsync("InventoryInformation('" + inventoryStoreId + "-" + pid + "')").Result;
-
                 if (result.IsSuccessStatusCode)
                 {
                     var resultContent = result.Content.ReadAsStringAsync().Result;
