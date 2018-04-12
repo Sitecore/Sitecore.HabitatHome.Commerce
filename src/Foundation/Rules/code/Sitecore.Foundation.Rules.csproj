@@ -55,10 +55,6 @@
     <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Foundation.Commerce.StoreLocator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\lib\Modules\Commerce-Foundation\Habitat.Commerce\Sitecore.Foundation.Commerce.StoreLocator.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -96,6 +92,12 @@
     <Compile Include="Conditions\SpecificProductQuantityCondition.cs" />
     <Compile Include="Conditions\PromotionByLocationCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StoreLocator\code\Sitecore.Foundation.Commerce.StoreLocator.csproj">
+      <Project>{1b20d2c1-d19c-4a1e-ab0c-3164b231bbb4}</Project>
+      <Name>Sitecore.Foundation.Commerce.StoreLocator</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
