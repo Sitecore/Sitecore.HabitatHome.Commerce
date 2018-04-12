@@ -73,9 +73,6 @@
     <Reference Include="Sitecore.Commerce.XA.Foundation.Connect">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Connect.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Foundation.Commerce.WishLists">
-      <HintPath>..\..\..\..\lib\Modules\Commerce-Foundation\Habitat.Commerce\Sitecore.Foundation.Commerce.WishLists.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -152,7 +149,12 @@
     <Compile Include="Repositories\IWishListLinesRepository.cs" />
     <Compile Include="Repositories\WishListLinesRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\WishLists\code\Sitecore.Foundation.Commerce.WishLists.csproj">
+      <Project>{69b1f75b-7af9-4803-abde-8f62a7137df4}</Project>
+      <Name>Sitecore.Foundation.Commerce.WishLists</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -8,9 +8,7 @@
     self.NearestStoresList = ko.observable([]);
 
 
-    self.InitializeViewModel = function (userLatitude, userLongitude, productID, variantID) {  
-        self.UserLat(userLatitude);
-        self.UserLong(userLongitude);
+    self.InitializeViewModel = function (productID, variantID) {          
         self.ProductId = productID;
         self.VariantId = variantID;
         if (getCookie("sxa_site_shops_stores") != "") {
@@ -18,14 +16,11 @@
         }
         else {
             self.LoadNearestStores();
-        }
-        
+        }        
     }
 
     self.LoadNearestStores = function () {
-        var ServiceRequest = new Object();
-        ServiceRequest.Latitude = self.UserLat();
-        ServiceRequest.Longitude = self.UserLong();
+        var ServiceRequest = new Object();        
         ServiceRequest.ProductId = self.ProductId;
         ServiceRequest.VariantId = self.VariantId;
         var promise = GetNearestStores(ServiceRequest).done(function (result) {
@@ -114,14 +109,13 @@ function NewStore(data) {
 //Promise Functions
 function GetNearestStores(ServiceRequest) {
 
-    var url = "/api/cxa/NearestStore/GetStores?userLatitude=" + ServiceRequest.Latitude + "&userLongitude=" + ServiceRequest.Longitude + "&pid=" + ServiceRequest.ProductId + "-" + ServiceRequest.VariantId;
+    var url = "/api/cxa/NearestStore/GetStores?pid=" + ServiceRequest.ProductId + "-" + ServiceRequest.VariantId;
     var requestData = JSON.stringify(ServiceRequest);
     $('.loader').show();
     var ajaxRequest = $.ajax({
         type: 'POST',
         contentType: "application/json;charset=utf-8",
         url: url,
-        //data: { 'userLatitude': ServiceRequest.Latitude, 'userLongitude': ServiceRequest.Longitude },
         success: function (data) {
             $('.loader').hide();
         },
@@ -172,22 +166,16 @@ function InitializeNearestStoreWidget() {
     NearestStoreVMController = new NearestStoreViewModel();
     if ($("#divNearestStores").length > 0) {
 
-        ko.applyBindings(NearestStoreVMController, document.getElementById("divNearestStores"));
-        var userLatitude = $("#divNearestStores").attr("data-attr-lat");
-        var userLongitude = $("#divNearestStores").attr("data-att-long");
+        ko.applyBindings(NearestStoreVMController, document.getElementById("divNearestStores"));        
         var productID = $("#addtocart_productid").val();
         var variantID = ($("#addtocart_variantid").val() != "" ? $("#addtocart_variantid").val() : $(".valid-variant-combo").children(":first").attr("id"));
 
-        NearestStoreVMController.InitializeViewModel(userLatitude, userLongitude, productID, variantID);
+        NearestStoreVMController.InitializeViewModel(productID, variantID);
         $("#variantColor").on('change', function () {
-            NearestStoreVMController.UpdateVariant($("#addtocart_variantid").val());
-           
+            NearestStoreVMController.UpdateVariant($("#addtocart_variantid").val());           
         });
-    }
-    
+    }    
 }
-
-$(document).ready(function () {
-    
+$(document).ready(function () {    
     InitializeNearestStoreWidget();
 });

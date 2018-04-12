@@ -157,15 +157,16 @@
   <ItemGroup>
     <Compile Include="Controllers\NearestStoreController.cs" />
     <Compile Include="Managers\NearestStoreManager.cs" />
-    <Compile Include="Models\InventoryStore.cs" />
-    <Compile Include="Models\Responses\ServiceResponse.cs" />
-    <Compile Include="Models\UserLocation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IStoresRepository.cs" />
     <Compile Include="Repositories\StoresRepository.cs" />
-    <Compile Include="Utilities\GeoUtil.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\StoreLocator\code\Sitecore.Foundation.Commerce.StoreLocator.csproj">
+      <Project>{1b20d2c1-d19c-4a1e-ab0c-3164b231bbb4}</Project>
+      <Name>Sitecore.Foundation.Commerce.StoreLocator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

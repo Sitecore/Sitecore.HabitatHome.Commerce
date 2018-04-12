@@ -2,10 +2,7 @@
 using Sitecore.Commerce.Engine.Connect.Interfaces;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
-using Sitecore.Feature.NearestStore.Models;
-using Sitecore.Feature.NearestStore.Models.Responses;
 using Sitecore.Feature.NearestStore.Repositories;
-using Sitecore.Feature.NearestStore.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,23 +28,19 @@ namespace Sitecore.Feature.NearestStore.Controllers
         //}
         public ActionResult NearestStore()
         {
-            UserLocation ul = GeoUtil.GetUserLocation();
-            return (ActionResult)this.View("~/Views/NearestStore/NearestStore.cshtml", ul);
+            return (ActionResult)this.View("~/Views/NearestStore/NearestStore.cshtml");
         }
 
 
         [AllowAnonymous]
         [HttpPost]
         //[OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public JsonResult GetStores(string userLatitude, string userLongitude, string pid)
+        public JsonResult GetStores(string pid)
         {
             JsonResult baseJsonResult;
             try
             {
-                UserLocation ul = new UserLocation();
-                ul.Latitude = userLatitude;
-                ul.Longitude = userLongitude;
-                dynamic stores = from s in this.StoresRepository.GetNearestStores(ul, pid) where s != null select s.GetViewModel();
+                dynamic stores = from s in this.StoresRepository.GetNearestStores(pid) where s != null select s.GetViewModel();
                 baseJsonResult = this.Json(stores);
             }
             catch (Exception ex)

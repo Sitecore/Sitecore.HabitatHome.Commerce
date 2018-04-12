@@ -90,7 +90,14 @@
   <ItemGroup>
     <Compile Include="Conditions\CurrentPageUrlCondition.cs" />
     <Compile Include="Conditions\SpecificProductQuantityCondition.cs" />
+    <Compile Include="Conditions\PromotionByLocationCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StoreLocator\code\Sitecore.Foundation.Commerce.StoreLocator.csproj">
+      <Project>{1b20d2c1-d19c-4a1e-ab0c-3164b231bbb4}</Project>
+      <Name>Sitecore.Foundation.Commerce.StoreLocator</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
