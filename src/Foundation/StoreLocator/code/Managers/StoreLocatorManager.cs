@@ -57,6 +57,7 @@ namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
                 }
                 string storeJson = new JavaScriptSerializer().Serialize(storeList.GetRange(0, 2));
                 HttpCookie storesCookie = new HttpCookie(StoreLocatorConstants.STORE_COOKIES_KEY, storeJson)
+
                 {
                     Expires = DateTime.Now.AddHours(1)
                 };
@@ -92,7 +93,6 @@ namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
             {
                 BaseAddress = new System.Uri(config.ShopsServiceUrl)
             };
-
             httpClient.DefaultRequestHeaders.Add("ShopName", config.DefaultShopName);
             httpClient.DefaultRequestHeaders.Add("Language", "en-US");
             httpClient.DefaultRequestHeaders.Add("Currency", config.DefaultShopCurrency);
