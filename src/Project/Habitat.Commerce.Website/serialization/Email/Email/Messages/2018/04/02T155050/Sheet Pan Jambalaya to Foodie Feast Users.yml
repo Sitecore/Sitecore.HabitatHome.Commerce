@@ -70,7 +70,7 @@ SharedFields:
 - ID: "f8d592cc-f3e5-4a8e-a600-8aebe8cc36e4"
   Hint: Included Recipient Lists
   Type: TreelistEx
-  Value: "{8259608D-BF29-45C1-DBE8-CFD7E00B203C}"
+  Value: 
 Languages:
 - Language: en
   Fields:

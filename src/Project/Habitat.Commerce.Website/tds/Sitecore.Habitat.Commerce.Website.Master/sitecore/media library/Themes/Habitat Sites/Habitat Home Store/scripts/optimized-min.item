@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {FEF643EF-9675-42DE-825B-73455B4F431F}
+id: {1E790C83-1386-48FD-B1D2-52B73379A221}
 database: master
 path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/optimized-min
 parent: {4927763F-3FA1-4CA7-9644-BB1D9F6AD1D0}
@@ -8,7 +8,7 @@ name: optimized-min
 master: {00000000-0000-0000-0000-000000000000}
 template: {B43AB8D5-E123-42DD-8042-DE869CC98C4F}
 templatekey: Optimized File
-created: 20180410T195636Z
+created: 20180413T182343Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
@@ -7006,7 +7006,7 @@ People/32x32/package.png
 ----version----
 language: en
 version: 1
-revision: 1365cea1-24e3-4299-b5f6-e7323903d89c
+revision: 89ebfa08-97a5-4681-b723-c2fc6868306c
 
 ----field----
 field: {3F4B20E9-36E6-4D45-A423-C86567373F82}
@@ -7035,7 +7035,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180410T195636Z
+20180413T182343Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -7049,14 +7049,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1365cea1-24e3-4299-b5f6-e7323903d89c
+89ebfa08-97a5-4681-b723-c2fc6868306c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180410T195637Z
+20180413T182344Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -7067,7 +7067,7 @@ CommerceUsers\emosoff@hhog.com
 ----version----
 language: fr-CA
 version: 1
-revision: c74b45e5-5c30-40e4-983a-cceb9200f9c7
+revision: 147fbd4e-20c6-4c4a-970f-5135b6a84e8a
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -7082,7 +7082,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180410T195636Z
+20180413T182344Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -7096,14 +7096,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c74b45e5-5c30-40e4-983a-cceb9200f9c7
+147fbd4e-20c6-4c4a-970f-5135b6a84e8a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180410T195636Z
+20180413T182344Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -7114,7 +7114,7 @@ CommerceUsers\emosoff@hhog.com
 ----version----
 language: ja-JP
 version: 1
-revision: c2ed2ea7-3f77-417a-acf1-dfedb6086628
+revision: 7975f024-31dd-4d74-8fea-73353bc2b193
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -7129,7 +7129,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20180410T195637Z
+20180413T182344Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -7143,14 +7143,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c2ed2ea7-3f77-417a-acf1-dfedb6086628
+7975f024-31dd-4d74-8fea-73353bc2b193
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180410T195637Z
+20180413T182344Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

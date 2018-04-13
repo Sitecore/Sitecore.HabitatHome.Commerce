@@ -164,7 +164,7 @@ Languages:
       Value: 20180330T184546Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Best In Wearable Fitness Technology
@@ -183,7 +183,7 @@ Languages:
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
-        <image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" />
+        <image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" alt="Wearable technology product" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
       Value: With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed.&nbsp;
