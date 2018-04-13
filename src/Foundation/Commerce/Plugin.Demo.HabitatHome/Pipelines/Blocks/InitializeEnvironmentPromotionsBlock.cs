@@ -11,6 +11,7 @@
     using Sitecore.Commerce.Plugin.Promotions;
     using Sitecore.Commerce.Plugin.Rules;
     using Sitecore.Framework.Pipelines;
+    using Sitecore.Commerce.Plugin.Customers;
 
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.InitializePromotionsBlock)]
     public class InitializeEnvironmentPromotionsBlock : PipelineBlock<string, string, CommercePipelineExecutionContext>
@@ -114,7 +115,8 @@
             await this.CreateLine5OffCouponPromotion(book, context);
             await this.CreateLineLaptopPricePromotion(book, context);
             await this.CreateBundleFitnessPromotion(book, context);
-            await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);
+            await this.CreateFreeShippingCouponPromotion(book, context);
+            await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);            
 
             return arg;
         }
@@ -981,6 +983,60 @@
                     context);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABRTRNL5A"), context);
+            promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
+            await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context);
+        }
+
+
+        /// <summary>
+        /// Creates line 5 amount off coupon promotion.
+        /// </summary>
+        /// <param name="book">The book.</param>
+        /// <param name="context">The context.</param>
+        /// <returns>A <see cref="Task"/></returns>
+        private async Task CreateFreeShippingCouponPromotion(PromotionBook book, CommercePipelineExecutionContext context)
+        {
+            var promotion =
+                await this._addPromotionPipeline.Run(
+                    new AddPromotionArgument(book, "FreeShippingForFoodieFirstOrder", DateTimeOffset.UtcNow.AddDays(-6), DateTimeOffset.UtcNow.AddYears(1), 
+                    "Free shipping for joining the Foodie email list (Coupon)", "Free shipping for joining the Foodie email list (Coupon)")
+                    {
+                        DisplayName = "Free shipping for joining the Foodie email list (Coupon)",
+                        Description = "Free shipping for joining the Foodie email list (Coupon)"
+                    },
+                    context);
+
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CustomersConstants.Conditions.CurrentCustomerOrdersCountCondition,
+                            Name = CustomersConstants.Conditions.CurrentCustomerOrdersCountCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.IntegerEqualsOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[int],[int]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Count", Value = "1", IsOperator = false, DisplayType = "int" }
+                                                 }
+                        }),
+                    context);
+
+            promotion =
+                await this._addBenefitPipeline.Run(
+                    new PromotionActionModelArgument(
+                        promotion,
+                        new ActionModel
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = FulfillmentConstants.Actions.CartFreeShippingAction,
+                            Name = FulfillmentConstants.Actions.CartFreeShippingAction
+                        }),
+                    context);
+
+            promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "FREESHIPFOODIE"), context);
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
             await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context);
         }
