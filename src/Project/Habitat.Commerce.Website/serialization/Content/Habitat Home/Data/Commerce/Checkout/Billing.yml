@@ -21,6 +21,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "885fdd76-fca3-4fe7-90fd-71d8d3ea8076"
+      Hint: Taxes Label
+      Value: Tax
     - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
       Hint: Billing Name Label
       Value: Name
