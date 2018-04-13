@@ -115,7 +115,7 @@
             await this.CreateLine5OffCouponPromotion(book, context);
             await this.CreateLineLaptopPricePromotion(book, context);
             await this.CreateBundleFitnessPromotion(book, context);
-            await this.CreateFreeShippingCouponPromotion(book, context);
+            await this.CreateFreeShippingFoodieCouponPromotion(book, context);
             await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context);            
 
             return arg;
@@ -994,7 +994,7 @@
         /// <param name="book">The book.</param>
         /// <param name="context">The context.</param>
         /// <returns>A <see cref="Task"/></returns>
-        private async Task CreateFreeShippingCouponPromotion(PromotionBook book, CommercePipelineExecutionContext context)
+        private async Task CreateFreeShippingFoodieCouponPromotion(PromotionBook book, CommercePipelineExecutionContext context)
         {
             var promotion =
                 await this._addPromotionPipeline.Run(
