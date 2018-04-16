@@ -15,8 +15,7 @@ namespace Sitecore.Feature.ShoppingCartLines.Managers
         {
             dynamic cartResult = new System.Dynamic.ExpandoObject();
             List<dynamic> cartLineList = new List<dynamic>();
-
-            cartId = "DefaultEntity-Customer-b88c56b45a924082a428ef8c2fa72a36HabitatHome";
+            
             if (!string.IsNullOrEmpty(cartId))
             {
                 var ceConfig = (CommerceEngineConfiguration)Factory.CreateObject("commerceEngineConfiguration", true);
