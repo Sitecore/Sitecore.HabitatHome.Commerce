@@ -24,9 +24,9 @@ namespace Sitecore.Foundation.Rules.Conditions
             var orderOutcomes = outcomesManager.GetSubmittedOrderOutcomes(pastDaysAmount);
             if (orderOutcomes.Count() > 0)
             {
-                if (orderOutcomes.Where(o => o.Order.CartLines.Where(c => c.Product.ProductId.Split('|')[1] == productId).FirstOrDefault() != null).FirstOrDefault() == null)
+                if (orderOutcomes.Where(o => o.Order.CartLines.Where(c => (c.Product.ProductId.Contains("|") ? c.Product.ProductId.Split('|')[1] : c.Product.ProductId) == productId).FirstOrDefault() != null).FirstOrDefault() == null)
                     return false;
-                if (orderOutcomes.Where(o => o.Order.CartLines.Where(c => c.Product.ProductId.Split('|')[1] == targetProductId).FirstOrDefault() != null).FirstOrDefault() == null)
+                if (orderOutcomes.Where(o => o.Order.CartLines.Where(c => (c.Product.ProductId.Contains("|") ? c.Product.ProductId.Split('|')[1] : c.Product.ProductId) == targetProductId).FirstOrDefault() != null).FirstOrDefault() == null)
                     return true;
                 return false;
             }
