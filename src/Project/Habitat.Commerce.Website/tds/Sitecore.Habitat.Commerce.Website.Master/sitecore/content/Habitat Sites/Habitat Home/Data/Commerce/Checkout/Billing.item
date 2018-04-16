@@ -8,7 +8,7 @@ name: Billing
 master: {31CE8C90-EF91-4185-9BB1-85F3A10CECC0}
 template: {5580F871-81DD-4ABC-9CB4-BDF177F8C835}
 templatekey: Billing
-created: 20180206T121203Z
+created: 20180325T024946Z
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -20,7 +20,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 28383d7c-997d-4244-9d75-f666154de057
+revision: eba07798-0825-41ed-9f4e-3a9dc543c621
 
 ----field----
 field: {A1681C07-73DE-4E45-AAA7-F11BDB25EE60}
@@ -30,12 +30,12 @@ content-length: 4
 
 Name
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
+field: {885FDD76-FCA3-4FE7-90FD-71D8D3EA8076}
+name: Taxes Label
+key: taxes label
+content-length: 3
 
-sitecore\admin
+Tax
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-28383d7c-997d-4244-9d75-f666154de057
+eba07798-0825-41ed-9f4e-3a9dc543c621
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180201T152359Z
+20180404T203644Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin

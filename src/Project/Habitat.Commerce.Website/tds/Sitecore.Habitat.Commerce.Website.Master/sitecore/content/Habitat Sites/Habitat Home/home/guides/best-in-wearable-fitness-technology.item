@@ -34,7 +34,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7b32e10f-5a6c-4ef5-84d4-64123f2da90d
+revision: d6cad1d5-f0d1-41cd-9f4f-69352a41d7e9
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -47,7 +47,7 @@ Best In Wearable Fitness Tech
 field: {5A0B08E5-7F6C-48DC-929A-5D6CFDA45E1D}
 name: Content
 key: content
-content-length: 1096
+content-length: 1097
 
 <p>With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed by measuring every day activities.&nbsp;</p>
 <p>Cotton candy jelly cupcake candy canes pastry marzipan. Caramels donut fruitcake pudding chocolate cake ice cream. Apple pie bonbon icing bear claw jelly bonbon chocolate tootsie roll. Lollipop oat cake jelly-o candy canes caramels apple pie chupa chups jelly biscuit. Caramels gummi bears lemon drops muffin cheesecake gingerbread. Jelly beans sweet roll chocolate fruitcake topping. Topping wafer cheesecake fruitcake chupa chups marshmallow cake. Danish candy canes halvah chocolate cake sweet roll gummi bears donut fruitcake. Caramels gingerbread wafer jelly cotton candy brownie drag&eacute;e. Jelly beans fruitcake sweet chocolate croissant danish brownie macaroon. Lemon drops candy gummies. Icing gingerbread pudding jelly beans cotton candy wafer carrot cake danish toffee. Cotton candy tart caramels pudding ice cream caramels macaroon macaroon. Cake powder candy cookie icing dessert ice cream lemon drops wafer.</p>
@@ -83,9 +83,9 @@ Best In Wearable Fitness Technology
 field: {A3555EF5-6619-441D-B4DB-DA3FD5F9C770}
 name: Navigation Image
 key: navigation image
-content-length: 58
+content-length: 131
 
-<image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" />
+<image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" alt="Wearable technology product" height="" width="" hspace="" vspace="" />
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
@@ -120,14 +120,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b32e10f-5a6c-4ef5-84d4-64123f2da90d
+d6cad1d5-f0d1-41cd-9f4f-69352a41d7e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180403T215015Z
+20180413T174435Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,7 +141,7 @@ name: __Workflow state
 key: __workflow state
 content-length: 38
 
-{FF509B64-B6D4-4FB7-9718-C4218B992740}
+{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}
 ----field----
 field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
 name: __Lock
@@ -152,7 +152,7 @@ content-length: 5
 ----version----
 language: fr-CA
 version: 1
-revision: 5b0efbb4-23d0-4e11-b3d9-5685b1e1399e
+revision: c9e01c1d-23ab-4273-baca-ed5685eae540
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -238,14 +238,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5b0efbb4-23d0-4e11-b3d9-5685b1e1399e
+c9e01c1d-23ab-4273-baca-ed5685eae540
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180402T134104Z
+20180413T174208Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -263,7 +263,7 @@ content-length: 38
 ----version----
 language: fr-FR
 version: 1
-revision: 5aa78560-c8e4-4096-981b-d75514009159
+revision: 28a5f712-c8e7-4c15-b345-e0e9bbe288e2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -285,14 +285,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5aa78560-c8e4-4096-981b-d75514009159
+28a5f712-c8e7-4c15-b345-e0e9bbe288e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180402T134104Z
+20180413T174208Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

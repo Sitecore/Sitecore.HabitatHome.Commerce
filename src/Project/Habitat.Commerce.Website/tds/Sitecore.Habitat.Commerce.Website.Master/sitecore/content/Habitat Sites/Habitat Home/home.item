@@ -28,9 +28,9 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 8108
+content-length: 8140
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{CF360A7E-54D7-4253-83A5-8931C14F0BD7}" p:before="*" s:ds="{CC803CDE-0970-4687-BDF2-6CD33837B237}" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={F414A716-6088-4281-A446-87EE974AB933}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8" s:ph="/main/sxa-content-container/container-1/container-3/column-3-1" /><r uid="{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}" p:after="r[@uid='{CF360A7E-54D7-4253-83A5-8931C14F0BD7}']" s:ds="{13F51703-7567-4C86-9FE6-EF801AE108C3}" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={F414A716-6088-4281-A446-87EE974AB933}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7" s:ph="/main/sxa-content-container/container-1/container-3/column-2-1" /><r uid="{60937992-F1F1-4E25-A284-81DD3BDD6BBE}" p:after="r[@uid='{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}']" s:ds="" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=2,3&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1&amp;ColumnWidth2={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth3={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1/container-3" /><r uid="{E1FA64CF-6A5A-4364-9830-C32D63D64B58}" p:after="r[@uid='{60937992-F1F1-4E25-A284-81DD3BDD6BBE}']" s:ds="local:/Data/CTA - Design Your Connected Home" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4" s:ph="/main/sxa-content-container/container-1/container-2" /><r uid="{1C0F3249-32A1-475D-8E69-8B2111ED267D}" p:after="r[@uid='{E1FA64CF-6A5A-4364-9830-C32D63D64B58}']" s:ds="local:/Data/CTA - The Perfect Home Theater" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3" s:ph="/main/sxa-content-container/container-1/container-1"><rls><ruleset><rule uid="{F70150C0-5E7A-4665-AE38-C6C05376BFE4}" s:name="Smart Headline"><actions><action uid="F84CAE4656A94CD8862668257F019956" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/CTA - The Perfect Connected Home" /></actions><conditions><or uid="4F091204432345BD8AE5393B495C7DB0"><condition uid="ED41F8ECE93C498E9F77D98C12FBF38E" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /><condition uid="55ECB7D0BEE447619E090666244F016B" s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /></or></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="D5C8D92080AC4CECADCC2B29DCB02A68" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}" p:after="r[@uid='{1C0F3249-32A1-475D-8E69-8B2111ED267D}']" s:ds="local:/Data/Default Image Carousel - Connect Home" s:id="{5A21C781-8E74-4DD0-8261-8CCDA1BF0454}" s:par="GridParameters=%7B08B60EE1-3F06-4C49-9449-E7420AFE5A2F%7D&amp;Styles=%7B6D43D8D9-6159-4C76-9886-E72E2CF69135%7D&amp;Navigation=%7B848DFE42-2B13-430E-A0B9-89CE25730A06%7D&amp;Transition=%7BD4B706CC-7EEC-4DB9-A87D-123B29803490%7D&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="92225A1E4A8A4563B26B91CA5EE4F286" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}" p:after="r[@uid='{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}']" s:ds="local:/Data/Promo - Content Finder" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{75829464-687D-4799-AC69-832D3328FBB6}" s:name="Specify name..."><conditions><condition uid="1804B69F9ADF45F680CA9AFEADECE5C6" s:id="{4D290FF3-1587-4FEE-AB37-88768766A9D9}" s:GoalId="{596FDFA9-9E21-4B9D-9B54-EB97F724E1DA}" /></conditions><actions><action uid="BA950A4DDA0B4C4CA6A5B4F834FDA493" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/Promo - Start Over Content Finder" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="6F1B3266994941FA88A9E6B720181EF1" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}" p:after="r[@uid='{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}']" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{815FCF64-4D70-46E4-A3C2-75F0619EB12A}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="838C07E4D39A41D88CB1D05098D22A5D" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{6B1C256F-3488-4908-BB96-B7746E471A36}" p:after="r[@uid='{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}']" s:ds="local:/Data/Promo - Sight and Sound" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{0A13F1A6-2A45-4D6B-A843-3AB210194F4D}" s:name="Show Smart Home"><actions><action uid="FB75AEDB0F3544489588CBDDF0DA5F24" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/Promo - Smart Home" /></actions><conditions><condition uid="2810FE36FBF84577BE44661A766DFC36" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="89F847B70B2A454DABC57E642E692061" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{253493AA-5C42-4CAF-A33C-7D63A6BE791E}" p:after="r[@uid='{6B1C256F-3488-4908-BB96-B7746E471A36}']" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{D355AF3D-77F9-4CEF-83AA-410B62010433}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" s:ph="/main/sxa-content-container/container-1" /><r uid="{9749980A-8AB6-4A87-8582-5E25A501D2A2}" p:after="*[1=2]" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7B45645D8F-56A4-460A-B5FB-51709FEFCE52%7D%7C%7B62BB4AA0-351C-43D1-A474-9F52EA6ECF07%7D%7C%7B3D258225-9410-4FAF-A516-43490258337D%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3" s:ph="/main/sxa-content-container/container-1" /></d></r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{CF360A7E-54D7-4253-83A5-8931C14F0BD7}" p:before="*" s:ds="{CC803CDE-0970-4687-BDF2-6CD33837B237}" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={F414A716-6088-4281-A446-87EE974AB933}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8" s:ph="/main/sxa-content-container/container-1/container-3/column-3-1" /><r uid="{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}" p:after="r[@uid='{CF360A7E-54D7-4253-83A5-8931C14F0BD7}']" s:ds="{13F51703-7567-4C86-9FE6-EF801AE108C3}" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={F414A716-6088-4281-A446-87EE974AB933}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7" s:ph="/main/sxa-content-container/container-1/container-3/column-2-1" /><r uid="{60937992-F1F1-4E25-A284-81DD3BDD6BBE}" p:after="r[@uid='{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}']" s:ds="" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=2,3&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1&amp;ColumnWidth2={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth3={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1/container-3" /><r uid="{E1FA64CF-6A5A-4364-9830-C32D63D64B58}" p:after="r[@uid='{60937992-F1F1-4E25-A284-81DD3BDD6BBE}']" s:ds="local:/Data/CTA - Design Your Connected Home" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4" s:ph="/main/sxa-content-container/container-1/container-2" /><r uid="{1C0F3249-32A1-475D-8E69-8B2111ED267D}" p:after="r[@uid='{E1FA64CF-6A5A-4364-9830-C32D63D64B58}']" s:ds="local:/Data/CTA - The Perfect Home Theater" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3" s:ph="/main/sxa-content-container/container-1/container-1"><rls><ruleset><rule uid="{F70150C0-5E7A-4665-AE38-C6C05376BFE4}" s:name="Smart Headline"><actions><action uid="F84CAE4656A94CD8862668257F019956" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/CTA - The Perfect Connected Home" /></actions><conditions><or uid="4F091204432345BD8AE5393B495C7DB0"><condition uid="ED41F8ECE93C498E9F77D98C12FBF38E" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /><condition uid="55ECB7D0BEE447619E090666244F016B" s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /></or></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="D5C8D92080AC4CECADCC2B29DCB02A68" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}" p:after="r[@uid='{1C0F3249-32A1-475D-8E69-8B2111ED267D}']" s:ds="local:/Data/Default Image Carousel - Connect Home" s:id="{5A21C781-8E74-4DD0-8261-8CCDA1BF0454}" s:par="GridParameters=%7B08B60EE1-3F06-4C49-9449-E7420AFE5A2F%7D&amp;Styles=%7B6D43D8D9-6159-4C76-9886-E72E2CF69135%7D&amp;Navigation=%7B848DFE42-2B13-430E-A0B9-89CE25730A06%7D&amp;Transition=%7BD4B706CC-7EEC-4DB9-A87D-123B29803490%7D&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="92225A1E4A8A4563B26B91CA5EE4F286" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}" p:after="r[@uid='{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}']" s:ds="local:/Data/Promo - Content Finder" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{75829464-687D-4799-AC69-832D3328FBB6}" s:name="Specify name..."><conditions><condition uid="1804B69F9ADF45F680CA9AFEADECE5C6" s:id="{4D290FF3-1587-4FEE-AB37-88768766A9D9}" s:GoalId="{596FDFA9-9E21-4B9D-9B54-EB97F724E1DA}" /></conditions><actions><action uid="BA950A4DDA0B4C4CA6A5B4F834FDA493" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/Promo - Start Over Content Finder" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="6F1B3266994941FA88A9E6B720181EF1" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}" p:after="r[@uid='{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}']" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&amp;lt;image mediaid=&amp;quot;{815FCF64-4D70-46E4-A3C2-75F0619EB12A}&amp;quot; /&amp;gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="838C07E4D39A41D88CB1D05098D22A5D" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{6B1C256F-3488-4908-BB96-B7746E471A36}" p:after="r[@uid='{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}']" s:ds="local:/Data/Promo - Sight and Sound" s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}" s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" s:ph="/main/sxa-content-container/container-1"><rls><ruleset><rule uid="{0A13F1A6-2A45-4D6B-A843-3AB210194F4D}" s:name="Show Smart Home"><actions><action uid="FB75AEDB0F3544489588CBDDF0DA5F24" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="local:/Data/Promo - Smart Home" /></actions><conditions><condition uid="2810FE36FBF84577BE44661A766DFC36" s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}" s:ProfileName="Topic Interest Category" s:PatternName="Sam Smarts" /></conditions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="89F847B70B2A454DABC57E642E692061" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{253493AA-5C42-4CAF-A33C-7D63A6BE791E}" p:after="r[@uid='{6B1C256F-3488-4908-BB96-B7746E471A36}']" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&amp;lt;image mediaid=&amp;quot;{D355AF3D-77F9-4CEF-83AA-410B62010433}&amp;quot; /&amp;gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" s:ph="/main/sxa-content-container/container-1" /><r uid="{9749980A-8AB6-4A87-8582-5E25A501D2A2}" p:after="*[1=2]" s:ds="" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7B45645D8F-56A4-460A-B5FB-51709FEFCE52%7D%7C%7B62BB4AA0-351C-43D1-A474-9F52EA6ECF07%7D%7C%7B3D258225-9410-4FAF-A516-43490258337D%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3" s:ph="/main/sxa-content-container/container-1" /></d></r>
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -41,7 +41,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: dcebf458-4602-451b-9a8f-b22fdaf5e08d
+revision: 15ce355e-f4d4-44a3-a6fc-81966c32b310
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -79,6 +79,13 @@ content-length: 4
 
 Home
 ----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 1354
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}" s:par="GridParameters={08B60EE1-3F06-4C49-9449-E7420AFE5A2F}&amp;Styles={6D43D8D9-6159-4C76-9886-E72E2CF69135}&amp;Navigation={848DFE42-2B13-430E-A0B9-89CE25730A06}&amp;Transition={D4B706CC-7EEC-4DB9-A87D-123B29803490}&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" /><r uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" /><r uid="{253493AA-5C42-4CAF-A33C-7D63A6BE791E}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2" /><r uid="{9749980A-8AB6-4A87-8582-5E25A501D2A2}" s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45645D8F-56A4-460A-B5FB-51709FEFCE52}|{62BB4AA0-351C-43D1-A474-9F52EA6ECF07}|{3D258225-9410-4FAF-A516-43490258337D}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3" /></d></r>
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -98,21 +105,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dcebf458-4602-451b-9a8f-b22fdaf5e08d
+15ce355e-f4d4-44a3-a6fc-81966c32b310
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T150104Z
+20180413T145830Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
 name: __Workflow state
@@ -123,7 +130,7 @@ content-length: 0
 ----version----
 language: fr-CA
 version: 1
-revision: 5245ca47-0682-4610-a954-5e25c0fc97d4
+revision: 5594be10-67ee-4d43-a949-7a3478b47ff0
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -327,21 +334,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5245ca47-0682-4610-a954-5e25c0fc97d4
+5594be10-67ee-4d43-a949-7a3478b47ff0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180130T133405Z
+20180413T145830Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 16
 
-sitecore\admin
+sitecore\unicorn
 ----field----
 field: {A14F1B0C-4384-49EC-8790-28A440F3670C}
 name: __Semantics
@@ -356,17 +363,10 @@ key: __workflow state
 content-length: 0
 
 
-----field----
-field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
-name: __Lock
-key: __lock
-content-length: 5
-
-<r />
 ----version----
 language: ja-JP
 version: 1
-revision: c33a1f27-1760-461c-bf6a-a6702d343025
+revision: d862852a-110f-438c-941c-3448e719ddc3
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -430,14 +430,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c33a1f27-1760-461c-bf6a-a6702d343025
+d862852a-110f-438c-941c-3448e719ddc3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180321T110220Z
+20180413T145830Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

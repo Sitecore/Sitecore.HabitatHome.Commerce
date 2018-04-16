@@ -142,9 +142,9 @@ Languages:
             <r
               uid="{306DA9C2-028C-470C-825E-E20B39D6F634}"
               p:after="r[@uid='{430D6B3C-0757-47ED-889A-2C0E003C9D1A}']"
-              s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}"
+              s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
               s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
               s:ph="/main/sxa-article-content/container-1/column-2-1/Container-23" />
             <r
               uid="{3E50BE56-36C3-4BCA-A4C6-FED5F57918D0}"
@@ -197,13 +197,13 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{7367FFA5-A84E-49F7-A025-A040A9ABA72E}" />
+        <image mediaid="{7367FFA5-A84E-49F7-A025-A040A9ABA72E}" alt="Automate Dinner kitchen image" height="" width="" hspace="" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180326T152719Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
