@@ -26,7 +26,7 @@ Languages:
       Value: The Ultimate Beef Wellington
     - ID: "330dc4a3-644b-4ed4-8775-f7313dcab71f"
       Hint: LinkLabel
-      Value: wATCH   
+      Value: WATCH   
     - ID: "4521ad3a-5672-409a-86c1-58362e88ddb6"
       Hint: Link
       Value: |
@@ -37,4 +37,4 @@ Languages:
         sitecore\admin
     - ID: "effcb8e2-8c7e-4ca8-87ea-6e9b9d120c13"
       Hint: PromoText
-      Value: "<p>Want a healthy meal that actually tastes good? Get away from the health foods that use so much spice it masks the lack of taste. Try this tasty Beef wellington recipe and you'll be full but not fat.</p>"
+      Value: "Want a healthy meal that actually tastes good? Get away from the health foods that use so much spice it masks the lack of taste. Try this tasty Beef wellington recipe and you'll be full but not fat."

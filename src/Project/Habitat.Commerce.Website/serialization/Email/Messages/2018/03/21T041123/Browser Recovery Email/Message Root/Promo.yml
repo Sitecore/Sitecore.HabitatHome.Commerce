@@ -37,4 +37,4 @@ Languages:
         sitecore\admin
     - ID: "effcb8e2-8c7e-4ca8-87ea-6e9b9d120c13"
       Hint: PromoText
-      Value: <p>There will be a list of products here.</p>
+      Value: There will be a list of products here.
