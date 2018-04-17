@@ -8,7 +8,7 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {CD0B1C23-FFD4-4336-8D3F-EAEEA1911EB2}
 templatekey: Category
-created: 20180201T222254Z
+created: 20180409T191439Z
 
 ----field----
 field: {D4952280-2D7D-4BF4-A99A-EA36DAD0F0A7}
@@ -28,13 +28,13 @@ content-length: 779
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 237
+content-length: 236
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /><d id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}" l="{72C595AD-68BB-44BC-B5CD-2A857039515F}" /></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /><d id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}" l="{72C595AD-68BB-44BC-B5CD-2A857039515F}" /></r>
 ----version----
 language: en
 version: 1
-revision: 0b9d3271-5e43-4cae-9e18-04114fa687ce
+revision: 0d5cd6cc-f5ad-4d21-8c32-2782b375bcbb
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -43,13 +43,6 @@ key: __display name
 content-length: 0
 
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -63,18 +56,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0b9d3271-5e43-4cae-9e18-04114fa687ce
+0d5cd6cc-f5ad-4d21-8c32-2782b375bcbb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180204T191419Z
+20180409T191439Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 18
 
-sitecore\virtualssuser
+extranet\Anonymous

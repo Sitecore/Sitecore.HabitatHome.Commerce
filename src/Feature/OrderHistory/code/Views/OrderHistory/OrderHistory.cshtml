@@ -36,7 +36,7 @@
                         <!--ko ifnot: status() == 'StoreOrder' -->
 
                         <tr>
-                            <td class="order-id"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
+                            <td class="order-id"  width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
                             <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
                             <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
                             <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>
@@ -66,7 +66,7 @@
                         <!--ko if: status() == 'StoreOrder' -->
 
                         <tr>
-                            <td class="order-id"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
+                            <td class="order-id" width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
                             <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
                             <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
                             <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>

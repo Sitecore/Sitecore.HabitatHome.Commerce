@@ -1,12 +1,12 @@
 ﻿namespace Sitecore.Feature.NearestStore.Repositories
 {
     using Sitecore.Commerce.Plugin.Inventory;
-    using Sitecore.Feature.NearestStore.Models;
+    using Sitecore.Foundation.Commerce.StoreLocator.Models;
     using System.Collections.Generic;    
 
     public interface IStoresRepository
     {
-        IEnumerable<InventoryStore> GetNearestStores(UserLocation userLocation, string pid);
+        IEnumerable<InventoryStore> GetNearestStores(string pid);
         IEnumerable<InventoryStore> GetStoresInventory(string pid);
     }
 }

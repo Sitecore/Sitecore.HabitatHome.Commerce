@@ -26,9 +26,6 @@
 
 }(this, function (element, model) {
     "use strict";
-
-    console.log("oh-init");
-
     var component = new Component(element, model);
 
     component.Name = "CXA/Feature/OrderHistory";
@@ -74,15 +71,7 @@
             AjaxService.Post("/api/cxa/Orders/GetOrderHistory", {}, function (data, success) {
                 $(component.RootElement).find('.recent-orders-list').removeClass("loading");
                 if (success && data && data.Success) {
-                    $.each(data.Orders, function (index, value) {
-              
-                        if (value["OrderStatus"] != null && value["OrderStatus"] == 'StoreOrder') {
-                            inStoreOrders.push(value);
-                        }
-                        else {
-                            onlineOrders.push(value);
-                        }
-                    });
+                    
                     component.Model.updateModel(data);
                 }
             });

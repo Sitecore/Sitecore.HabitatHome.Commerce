@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {FE8E6D1A-E368-4289-BE80-5B1EBA4A002F}
+database: master
+path: /sitecore/system/Marketing Control Panel/Taxonomies/Campaign facet 1/Commerce Focus/Full Value
+parent: {8B8C278E-3834-46E1-AF06-ED9C19BED114}
+name: Full Value
+master: {00000000-0000-0000-0000-000000000000}
+template: {3AE2C9E6-8000-40EE-9693-ED7BAEE50A66}
+templatekey: Custom group
+created: 20180323T040811Z
+
+----version----
+language: en
+version: 1
+revision: f704f027-4ab0-4556-9786-6653b1ee5268
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180104T201855Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 17
+
+default\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f704f027-4ab0-4556-9786-6653b1ee5268
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180315T120341Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

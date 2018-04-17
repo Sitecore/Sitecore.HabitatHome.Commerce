@@ -8,7 +8,7 @@ name: checkout
 master: {82D1AB06-4382-4FDA-A382-E9CDEE6ABD80}
 template: {158FC353-A7C0-4383-B8DE-6BDE74DCF3A7}
 templatekey: Checkout
-created: 20180325T024932Z
+created: 20180409T191400Z
 
 ----field----
 field: {1FBC6A49-6281-48EE-87E9-A3970B145ADB}
@@ -41,7 +41,7 @@ content-length: 144
 ----version----
 language: en
 version: 1
-revision: 8522dbef-5c85-41f2-80f2-26a970d1ee5e
+revision: 5fc33fa6-1828-490d-bda7-b951fe84eca3
 
 ----field----
 field: {E2A634FD-5177-46DE-B629-5393CAED77D7}
@@ -98,89 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8522dbef-5c85-41f2-80f2-26a970d1ee5e
+5fc33fa6-1828-490d-bda7-b951fe84eca3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180326T190728Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
-name: __Workflow state
-key: __workflow state
-content-length: 0
-
-
-----version----
-language: fr-CA
-version: 1
-revision: be854f36-5c84-4272-b1b1-dc484d69b46d
-
-----field----
-field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
-name: Page Design
-key: page design
-content-length: 0
-
-
-----field----
-field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
-name: NavigationTitle
-key: navigationtitle
-content-length: 8
-
-Checkout
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 8
-
-Checkout
-----field----
-field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
-name: __Final Renderings
-key: __final renderings
-content-length: 412
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{9BDF07F7-B6D6-49F4-B9E7-D58B7E1A9C94}" s:ds="{410D76DD-61E1-4A6C-A696-EC44FCD3140D}" s:id="{7AE14FB7-E165-49CA-85FB-B45E4B14B955}" s:par="Shopping Cart Link=%2Fsitecore%2Fcontent%2FHabitat%20Sites%2FHabitat%20Home%2Fhome%2Fshoppingcart&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D" s:ph="main" /></d></r>
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20180204T191320Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 22
-
-sitecore\virtualssuser
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-be854f36-5c84-4272-b1b1-dc484d69b46d
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20180315T144826Z
+20180409T191400Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -195,3 +120,22 @@ key: __workflow state
 content-length: 0
 
 
+----version----
+language: fr-CA
+version: 1
+revision: 7e2cb83b-da14-4bee-b01f-d8e313f9282e
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Checkout
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7e2cb83b-da14-4bee-b01f-d8e313f9282e
