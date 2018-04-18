@@ -4747,6 +4747,7 @@
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Control Panel\Segments\Foodie Feast Users-317511a9-486f-4df4-c60a-6ee66a65d81e.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Marketing Control Panel\Segments\Potential Striva 4 Customers-398879de-7ae2-4a17-aca5-540753df3825.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
