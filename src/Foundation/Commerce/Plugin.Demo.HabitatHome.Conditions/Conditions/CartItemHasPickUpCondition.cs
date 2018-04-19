@@ -19,6 +19,7 @@ namespace Plugin.Demo.HabitatHome.Conditions.Conditions
         public IRuleValue<string> StoreName { get; set; }
 
         public bool Evaluate(IRuleExecutionContext context)
+
         {
             string targetItemId = this.TargetItemId.Yield(context);
             string storeName = this.StoreName.Yield(context);
@@ -26,28 +27,19 @@ namespace Plugin.Demo.HabitatHome.Conditions.Conditions
             Cart cart = commerceContext != null ? commerceContext.GetObject<Cart>() : (Cart)null;
             if (cart == null || !cart.Lines.Any<CartLineComponent>() || (string.IsNullOrEmpty(targetItemId) || string.IsNullOrEmpty(storeName)))
                 return false;
-            //return this.MatchingLines(context).Where<CartLineComponent>(
-            //    (Func<CartLineComponent, bool>)(
-            //        l => l.HasComponent<CartProductComponent>()))
-            //        .Any<CartLineComponent>(
-            //            (Func<CartLineComponent, bool>)(
-            //                l => (l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty != null ?l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty.AddressName.ToLower(): "") == storeName.ToLower()
-            //                )
-            //            );
-            var cartLinesWithParty = cart.Lines.Where<CartLineComponent>(l => l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty != null);
-
-            if (cart.Lines.Where<CartLineComponent>((Func<CartLineComponent, bool>)(
-                l => l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty != null)).FirstOrDefault() != null)
+            
+            if (this.MatchingLines(context).Any<CartLineComponent>((Func<CartLineComponent, bool>)(l => l.HasComponent<CartProductComponent>())))
             {
-                var matchingParty = cart.Lines.Where(l => l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty != null && l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty.AddressName.ToLower() == storeName.ToLower());
-                if (matchingParty != null)
-                    return true;
-                else
-                    return false;
+                var cartShippingParty = cart.GetComponent<PhysicalFulfillmentComponent>().ShippingParty;
+                if (cartShippingParty != null)
+                    return cartShippingParty.AddressName.ToLower() == storeName.ToLower();
+                var cartLinesWithParty = cart.Lines.Where<CartLineComponent>(l => l.ItemId.Contains(targetItemId) && l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty != null);
+                if (cartLinesWithParty.Count<CartLineComponent>() > 0)
+                    return cartLinesWithParty.Any<CartLineComponent>(
+                            (Func<CartLineComponent, bool>)(
+                                l => l.GetComponent<PhysicalFulfillmentComponent>().ShippingParty.AddressName.ToLower() == storeName.ToLower()));
             }
-            else
-                return false;
-
+            return false;
         }
 
     }
