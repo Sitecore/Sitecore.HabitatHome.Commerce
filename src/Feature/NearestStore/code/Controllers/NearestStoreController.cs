@@ -45,7 +45,7 @@ namespace Sitecore.Feature.NearestStore.Controllers
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
             return this.Json((object)baseJsonResult);
         }
