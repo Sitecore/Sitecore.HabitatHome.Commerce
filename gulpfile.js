@@ -29,11 +29,24 @@ gulp.task("default",
             "Sync-Unicorn",
             "Publish-Transforms",
             "Deploy-EXM-Campaigns",
-            "Rebuild-Core-Index",
-            "Rebuild-Master-Index",
-            "Rebuild-Web-Index",
             callback);
     });
+
+gulp.task("initial",
+        function (callback) {
+            config.runCleanBuilds = true;
+            return runSequence(
+                "Nuget-Restore",
+                "Publish-All-Projects",
+                "Apply-Xml-Transform",
+                "Sync-Unicorn",
+                "Publish-Transforms",
+                "Deploy-EXM-Campaigns",
+                "Rebuild-Core-Index",
+                "Rebuild-Master-Index",
+                "Rebuild-Web-Index",
+                callback);
+        });
 
 gulp.task("publish",
     function (callback) {
