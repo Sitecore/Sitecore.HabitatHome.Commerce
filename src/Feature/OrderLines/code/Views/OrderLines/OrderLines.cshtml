@@ -1,15 +1,12 @@
-﻿@using System.Web.Mvc.Ajax
-@using System.Web.Mvc.Html
-@using Sitecore.Feature.OrderLines.Models
+﻿@using Sitecore.Feature.OrderLines.Models
 @using Sitecore.Mvc
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
-@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Commerce.XA.Foundation.Connect.Managers
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions              
 @using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderLines.DataSourceFields
 
 @model OrderLinesViewModel
 
-<div @Html.Sxa().Component("cxa-orderdetailslines-component", Model.Attributes)>
+<div @Html.Sxa().Component("cxa-orderdetailslines-component", Model.Attributes) ) data-cxa-component-class="OrderLines" data-cxa-component-initialized="false" data-cxa-component-model="OrderLinesViewModel" data-cxa-component-type="component">
     @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         <div class="error-message">
@@ -32,6 +29,7 @@
                             <th>@Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem)</th>
                             <th>@Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem)</th>
                             <th>@Html.Sitecore().Field("Total Label", Html.Sitecore().CurrentItem)</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -80,33 +78,33 @@
                                     </div>
                                     @if (!string.IsNullOrEmpty(cartLine.ShippingMethodName))
                                     {
-                                    <p class="cart-delivery">
-                                        <span>
-                                            @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
-                                        </span>
+                                        <p class="cart-delivery">
+                                            <span>
+                                                @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
+                                            </span>
 
-                                        @if ((bool)Model.StoreOrder)
-    {
-                                    <span class="shippingMethodName">
-                                        Pick up at @Model.StoreName
-                                    </span>
-}
-else
-{
-                                    <span class="shippingMethodName">
-                                        @cartLine.ShippingMethodName<br />
+                                            @if ((bool)Model.StoreOrder)
+                                            {
+                                                <span class="shippingMethodName">
+                                                    Pick up at @Model.StoreName
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="shippingMethodName">
+                                                    @cartLine.ShippingMethodName<br />
 
-                                    </span>
-                                    
+                                                </span>
 
-                                    <div class="field-link">
-                                        <span class="address-label">Tracking #:</span>
-                                
-                                            <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
-                                     
-                                    </div>
-}
-                                    </p>
+
+                                                <div class="field-link">
+                                                    <span class="address-label">Tracking #:</span>
+
+                                                    <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
+
+                                                </div>
+                                            }
+                                        </p>
                                     }
                                     @if (cartLine.Address != null)
                                     {
@@ -160,6 +158,16 @@ else
                                         </span>
                                     }
                                 </td>
+                                <td class="reorder">
+                                    <div class="reorder-button">
+                                        <button type="submit" class="add-to-cart-btn" data-bind="attr: {'productId': @cartLine.ProductId, 'variantId': @cartLine.ProductVariantId, 'quantity': @cartLine.Quantity }, click: addItemToCart">
+                                            <span class="initial-label">Add to cart</span>
+                                            <span class="loading-label" style="display:none;">Adding to cart...</span>
+                                        </button>
+                                    </div>
+
+                                </td>
+
                             </tr>
                         }
                     </tbody>
