@@ -66,6 +66,31 @@
                     .line-total {
                         text-align: right;
                     }
+                    .reorder {
+                        .reorder-button {
+                            margin-left: 15px;
+                            text-align: right;
+
+                            .add-to-cart-btn {
+                                border: 2px solid $primary-color;
+                                font-size: 14px !important;
+                                font-weight: 400;
+                                height: 34px;
+                                text-align: center !important;
+                                background: $primary-color;
+                                color: $primary-background-color !important;
+                                text-shadow: none;
+                                box-shadow: none;
+                                padding: 4px 15px 4px 15px;
+                                display: inline-block;
+                                cursor: pointer;
+                                border-radius: 0;
+                                min-height: 42px;
+                                height: 42px;
+                                min-width: 150px;
+                            }
+                        }
+                    }
                 }
             }
         }
