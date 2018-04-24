@@ -28,7 +28,8 @@ export default function(file) {
         ].join('');
     setTimeout(function() {
         request.get({
-            url: url
+            url: url,
+            "rejectUnauthorized": false
         }, function(err, httpResponse, body) {
             try {
                 var response = JSON.parse(body);

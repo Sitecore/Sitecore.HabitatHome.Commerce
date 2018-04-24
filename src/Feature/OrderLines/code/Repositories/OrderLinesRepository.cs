@@ -15,7 +15,7 @@ namespace Sitecore.Feature.OrderLines.Repositories
         public OrderLinesRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, IOrderManager orderManager)
           : base(modelProvider, storefrontContext)
         {
-            Assert.IsNotNull((object)orderManager, nameof(orderManager));
+            Assert.IsNotNull(orderManager, nameof(orderManager));
             this.OrderManager = orderManager;
         }
 
@@ -23,14 +23,17 @@ namespace Sitecore.Feature.OrderLines.Repositories
 
         public OrderLinesViewModel GetOrderLinesRenderingModel(IVisitorContext visitorContext, string orderId)
         {
-            OrderLinesViewModel model = this.ModelProvider.GetModel<OrderLinesViewModel>();
-            this.Init((BaseCommerceRenderingModel)model);
+            OrderLinesViewModel model = ModelProvider.GetModel<OrderLinesViewModel>();
+            Init(model);
             if (string.IsNullOrEmpty(orderId))
+            {
                 return OrderLinesMockData.InitializeMockData(model);
-            ManagerResponse<GetVisitorOrderResult, Order> orderDetails = this.OrderManager.GetOrderDetails(this.StorefrontContext.CurrentStorefront, visitorContext, orderId);
+            }
+
+            ManagerResponse<GetVisitorOrderResult, Order> orderDetails = OrderManager.GetOrderDetails(StorefrontContext.CurrentStorefront, visitorContext, orderId);
             if (!orderDetails.ServiceProviderResult.Success || orderDetails.Result == null)
             {
-                string systemMessage = this.StorefrontContext.GetSystemMessage("Could not retrieve order details!", true);
+                string systemMessage = StorefrontContext.GetSystemMessage("Could not retrieve order details!", true);
                 model.ErrorMessage = systemMessage;
                 return model;
             }

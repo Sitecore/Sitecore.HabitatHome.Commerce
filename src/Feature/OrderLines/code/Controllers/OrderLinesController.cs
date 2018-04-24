@@ -1,9 +1,17 @@
-﻿using Sitecore.Commerce.XA.Foundation.Common;
+﻿using Sitecore.Commerce.Entities.Carts;
+using Sitecore.Commerce.Services;
+using Sitecore.Commerce.Services.Carts;
+using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
+using Sitecore.Commerce.XA.Foundation.Common.Models;
+using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
+using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
+using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
-using Sitecore.Feature.OrderLines.Models;
 using Sitecore.Feature.OrderLines.Repositories;
+using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Web.UI;
 
@@ -11,19 +19,21 @@ namespace Sitecore.Feature.OrderLines.Controllers
 {
     public class OrderLinesController : BaseCommerceStandardController
     {
-        public OrderLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IOrderLinesRepository orderLinesRepository)
-      : base(storefrontContext)
+        private readonly ICartManager _cartManager;      
+        private readonly IVisitorContext _visitorContext;
+        private readonly IOrderLinesRepository _orderLinesRepository;
+        private readonly IModelProvider _modelProvider;                
+
+        public OrderLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IOrderLinesRepository orderLinesRepository, IModelProvider modelProvider, ICartManager cartManager) : base(storefrontContext)
         {
-            Assert.IsNotNull((object)storefrontContext, nameof(storefrontContext));
-            Assert.IsNotNull((object)visitorContext, nameof(visitorContext));
-            Assert.IsNotNull((object)orderLinesRepository, nameof(orderLinesRepository));
-            this.OrderLinesRepository = orderLinesRepository;
-            this.VisitorContext = visitorContext;
+            Assert.IsNotNull(storefrontContext, nameof(storefrontContext));
+            Assert.IsNotNull(visitorContext, nameof(visitorContext));
+            Assert.IsNotNull(orderLinesRepository, nameof(orderLinesRepository));
+            _orderLinesRepository = orderLinesRepository;
+            _modelProvider = modelProvider;
+            _visitorContext = visitorContext;
+            _cartManager = cartManager;                   
         }
-
-        protected IVisitorContext VisitorContext { get; set; }
-
-        protected IOrderLinesRepository OrderLinesRepository { get; set; }
 
         [HttpGet]
         [Authorize]
@@ -31,8 +41,44 @@ namespace Sitecore.Feature.OrderLines.Controllers
         public ActionResult OrderLines([Bind(Prefix = "id")] string orderId = "")
         {          
 
-            return (ActionResult)this.View("~/Views/OrderLines/OrderLines.cshtml", (object)this.OrderLinesRepository.GetOrderLinesRenderingModel(this.VisitorContext, orderId));
+            return View("~/Views/OrderLines/OrderLines.cshtml", _orderLinesRepository.GetOrderLinesRenderingModel(_visitorContext, orderId));
 
         }
+
+        [HttpPost]
+        public JsonResult ReorderItem(string productId, string variantId, string quantity)
+        {
+            BaseJsonResult model = new BaseJsonResult(StorefrontContext);
+            CommerceStorefront currentStorefront = StorefrontContext.CurrentStorefront;
+            ManagerResponse<CartResult, Cart> currentCart = _cartManager.GetCurrentCart(_visitorContext, StorefrontContext, false);
+            if (!currentCart.ServiceProviderResult.Success || currentCart.Result == null)
+            {
+                string systemMessage = StorefrontContext.GetSystemMessage("Cart Not Found Error", true);
+                currentCart.ServiceProviderResult.SystemMessages.Add(new SystemMessage
+                {
+                    Message = systemMessage
+                });
+                model.SetErrors(currentCart.ServiceProviderResult);
+                return model;
+            }
+
+            List<CartLineArgument> list = new List<CartLineArgument>();
+            list.Add(new CartLineArgument
+            {
+                CatalogName = StorefrontContext.CurrentStorefront.Catalog,
+                ProductId = productId,
+                VariantId = variantId,
+                Quantity = decimal.Parse(quantity)
+            });
+
+            ManagerResponse<CartResult, Cart> managerResponse = _cartManager.AddLineItemsToCart(currentStorefront, _visitorContext, currentCart.Result, list);
+            if (!managerResponse.ServiceProviderResult.Success)
+            {
+                model.SetErrors(managerResponse.ServiceProviderResult);
+                return model;
+            }
+            model.Success = true;
+            return base.Json(model);
+        }                
     }
 }

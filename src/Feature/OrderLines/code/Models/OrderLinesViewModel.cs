@@ -1,7 +1,6 @@
 ﻿using Sitecore.Commerce.Entities;
 using Sitecore.Commerce.Entities.Carts;
-using Sitecore.Commerce.Entities.Orders;
-using Sitecore.Commerce.XA.Feature.Account.Models;
+using Sitecore.Commerce.Entities.Orders;              
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Data.Items;
@@ -19,10 +18,10 @@ namespace Sitecore.Feature.OrderLines.Models
     {
         public OrderLinesViewModel(IModelProvider modelProvider, IStorefrontContext storefrontContext)
         {
-            Assert.IsNotNull((object)modelProvider, nameof(modelProvider));
+            Assert.IsNotNull(modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;
             this.StorefrontContext = storefrontContext;
-            this.Lines = new List<OrderLineRenderingModel>();
+            this.Lines = new List<OrderLineVariantRenderingModel>();
         }
 
         public virtual string YourProductsHeaderTooltip { get; set; }
@@ -34,7 +33,7 @@ namespace Sitecore.Feature.OrderLines.Models
 
         public virtual string TrackingNumber { get; set; }
 
-        public virtual List<OrderLineRenderingModel> Lines { get; }
+        public virtual List<OrderLineVariantRenderingModel> Lines { get; }
 
         public virtual Dictionary<string, string> VariantLabels { get; private set; }
 
@@ -48,11 +47,15 @@ namespace Sitecore.Feature.OrderLines.Models
             foreach (CartLine line in order.Lines)
             {
                 CartLine orderLine = line;
-                OrderLineRenderingModel model = this.ModelProvider.GetModel<OrderLineRenderingModel>();
-                Party party = (Party)null;
-                ShippingInfo shipping = order.Shipping.FirstOrDefault<ShippingInfo>((Func<ShippingInfo, bool>)(s => s.LineIDs.ToList<string>().Contains(orderLine.ExternalCartLineId)));
+                OrderLineVariantRenderingModel model = this.ModelProvider.GetModel<OrderLineVariantRenderingModel>();
+
+                Party party = null;                                                              
+                ShippingInfo shipping = order.Shipping.FirstOrDefault(s => s.LineIDs.ToList().Contains(orderLine.ExternalCartLineId));
                 if (shipping != null)
-                    party = order.Parties.FirstOrDefault<Party>((Func<Party, bool>)(p => p.ExternalId.Equals(shipping.PartyID, StringComparison.OrdinalIgnoreCase)));
+                {
+                    party = order.Parties.FirstOrDefault(p => p.ExternalId.Equals(shipping.PartyID, StringComparison.OrdinalIgnoreCase));
+                }
+
                 model.Initialize(orderLine, shipping, party);
                 this.Lines.Add(model);
             }
@@ -64,36 +67,32 @@ namespace Sitecore.Feature.OrderLines.Models
 
         protected virtual void InitializeDataSourceValues()
         {
-            Rendering rendering = RenderingContext.CurrentOrNull.ValueOrDefault<RenderingContext, Rendering>((Func<RenderingContext, Rendering>)(context => context.Rendering));
+            Rendering rendering = RenderingContext.CurrentOrNull.ValueOrDefault(context => context.Rendering);
             if (rendering == null)
             {
-                this.ErrorMessage = "[Order Details Lines] Rendering not found.";
+                ErrorMessage = "[Order Details Lines] Rendering not found.";
             }
             else
-            {
-                Item obj = rendering.Item;
-                if (obj == null)
+            {                                
+                if (rendering.Item == null)
                 {
-                    this.ErrorMessage = "[Order Details Lines] Please set the rendering datasource appropriately";
+                    ErrorMessage = "[Order Details Lines] Please set the rendering datasource appropriately";
                 }
                 else
                 {
-                    this.YourProductsHeaderTooltip = obj.Fields["Order Lines Header Tooltip"].Value;
-                    this.VariantLabels = new Dictionary<string, string>()
-          {
-            {
-              "Color",
-              this.StorefrontContext.GetVariantSpecificationLabels("Color", true)
-            },
-            {
-              "Size",
-              this.StorefrontContext.GetVariantSpecificationLabels("Size", true)
-            },
-            {
-              "Style",
-              this.StorefrontContext.GetVariantSpecificationLabels("Style", true)
-            }
-          };
+                    YourProductsHeaderTooltip = rendering.Item.Fields["Order Lines Header Tooltip"].Value;
+                    VariantLabels = new Dictionary<string, string>()
+                    {
+                        {
+                          "Color", StorefrontContext.GetVariantSpecificationLabels("Color", true)
+                        },
+                        {
+                          "Size", StorefrontContext.GetVariantSpecificationLabels("Size", true)
+                        },
+                        {
+                          "Style", StorefrontContext.GetVariantSpecificationLabels("Style", true)
+                        }
+                    };
                 }
             }
         }

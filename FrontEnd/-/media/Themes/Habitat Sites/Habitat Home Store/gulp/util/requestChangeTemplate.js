@@ -33,7 +33,8 @@ export default function(file) {
             console.log(url);
             var a = request.post({
                 url: url,
-                formData: formData
+                formData: formData,
+                "rejectUnauthorized": false 
             }, function(err, httpResponse, body) {
                 resolve();
                 if (err) {
