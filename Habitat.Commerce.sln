@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{38E46594-2B99-43FF-9E92-9A11B45168D8}"
 	ProjectSection(SolutionItems) = preProject
@@ -80,6 +80,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderOutcomes", "OrderOutco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.OrderOutcomes", "src\Foundation\OrderOutcomes\code\Sitecore.Foundation.Commerce.OrderOutcomes.csproj", "{BCA79AED-CF8B-438E-98A6-BF0ECB4A7020}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Customers", "Customers", "{F9848F58-F3F6-4A70-B63B-F10FB19A5544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Customers", "src\Feature\Customers\code\Sitecore.Feature.Customers.csproj", "{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,6 +154,10 @@ Global
 		{BCA79AED-CF8B-438E-98A6-BF0ECB4A7020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCA79AED-CF8B-438E-98A6-BF0ECB4A7020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCA79AED-CF8B-438E-98A6-BF0ECB4A7020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -186,6 +194,8 @@ Global
 		{1B20D2C1-D19C-4A1E-AB0C-3164B231BBB4} = {4B9D5E04-114C-46C7-A513-9D1E0D6E93C4}
 		{741A0A5C-2A66-4964-B4C4-35CA2E4D7088} = {1B6FFBEA-35BD-4381-A2BE-4FA54E3940E1}
 		{BCA79AED-CF8B-438E-98A6-BF0ECB4A7020} = {741A0A5C-2A66-4964-B4C4-35CA2E4D7088}
+		{F9848F58-F3F6-4A70-B63B-F10FB19A5544} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{59FCF243-F2D0-4ADA-9FAB-107EFAA61DD5} = {F9848F58-F3F6-4A70-B63B-F10FB19A5544}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}
