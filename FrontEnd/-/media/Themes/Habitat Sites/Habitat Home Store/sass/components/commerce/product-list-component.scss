@@ -16,11 +16,7 @@ $promoted-color: #f6a623;
         font-size: 13px;
         text-align: center;
         font-weight: bold;
-        background: #1d8c96;
-        &:active, &:hover{
-            //color: $light;
-            //background: $primary-color;
-        }
+        background: $primary-color;
     }
     .btn.btn-block{
         margin-bottom: $margin;
@@ -56,10 +52,35 @@ $promoted-color: #f6a623;
                     max-width: 100%;
                     max-height: 208px;
                 }
-            }
-            
-        }
 
+                .add-to-cart-button {
+                    top: 15px;
+                    right: 15px;
+                    position: absolute;
+                    z-index: 10;
+                    button {
+                        background-color: Transparent;
+                        background-repeat:no-repeat;
+                        border: none;
+                        cursor:pointer;
+                        overflow: hidden; 
+                    }
+                    span.loading-label>i {
+                        font-size: 40px;
+                        color: $primary-color;
+                    }
+                    span.initial-label:before
+                    {
+                        font-family: FontAwesome;
+                        content: '\f217';
+                        font-size: 40px;
+                        color: $primary-color;
+                        height: 81px;
+                    }
+                }
+                
+            }
+        }
         .product-info {
             @include row-of-elements-packed(true, $top-or-left, $packed-elements-margin);
             width: 85%;
