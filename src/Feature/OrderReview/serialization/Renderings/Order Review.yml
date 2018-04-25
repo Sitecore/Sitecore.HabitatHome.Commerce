@@ -1,0 +1,14 @@
+﻿---
+ID: "afb8588f-e379-4fb2-bbcd-4751c2cc0b8b"
+Parent: "474a2a52-9bd6-438d-bcda-675065d602b5"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Order Review
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180423T145912Z
