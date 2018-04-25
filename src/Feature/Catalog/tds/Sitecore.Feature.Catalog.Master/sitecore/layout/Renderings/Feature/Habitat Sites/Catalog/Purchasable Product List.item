@@ -2,28 +2,28 @@
 version: 1
 id: {9610E495-0265-4293-892B-4CDC07B7686B}
 database: master
-path: /sitecore/layout/Renderings/Feature/Habitat Sites/Catalog/Product List
+path: /sitecore/layout/Renderings/Feature/Habitat Sites/Catalog/Purchasable Product List
 parent: {7D1395AA-EF97-4B25-8D0D-3C35A04FE89D}
-name: Product List
+name: Purchasable Product List
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20180309T160056Z
+created: 20180323T151721Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 88
+content-length: 95
 
-Sitecore.Feature.Catalog.Controllers.CatalogWithCartController, Sitecore.Feature.Catalog
+Sitecore.Feature.Catalog.Controllers.PurchasableProductListController, Sitecore.Feature.Catalog
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 19
+content-length: 22
 
-ProductListWithCart
+PurchasableProductList
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -42,30 +42,30 @@ content-length: 0
 field: {3D08DB46-2267-41B0-BC52-BE69FD618633}
 name: Cacheable
 key: cacheable
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {F3E7E552-D7C8-469B-A150-69E4E14AB35C}
 name: ClearOnIndexUpdate
 key: clearonindexupdate
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {6C0C64A9-B969-44E9-9EB8-47BC54EC77C6}
 name: VaryByUrlPath
 key: varybyurlpath
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {ABB0F612-25E3-413C-8FE2-C1AC4C3D6F5E}
 name: VaryByCurrency
 key: varybycurrency
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
 name: Datasource Location
@@ -90,7 +90,7 @@ Office/16x16/elements4.png
 ----version----
 language: en
 version: 1
-revision: 39be91ba-a3ef-465d-82ac-55e5f9c96fd4
+revision: 154d1b8d-3a05-4f10-a634-76dc998906a7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -112,18 +112,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-39be91ba-a3ef-465d-82ac-55e5f9c96fd4
+154d1b8d-3a05-4f10-a634-76dc998906a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180309T160056Z
+20180424T194208Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\admin
