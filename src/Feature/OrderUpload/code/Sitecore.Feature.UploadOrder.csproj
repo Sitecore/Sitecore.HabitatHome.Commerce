@@ -101,18 +101,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Utilities\UploadOfflineOrder.aspx" />
     <Content Include="Utilities\UploadOrder.aspx" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Utilities\UploadOfflineOrder.aspx.cs">
-      <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Utilities\UploadOfflineOrder.aspx.designer.cs">
-      <DependentUpon>UploadOfflineOrder.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Utilities\UploadOrder.aspx.cs">
       <DependentUpon>UploadOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
