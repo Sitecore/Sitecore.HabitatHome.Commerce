@@ -8,7 +8,7 @@ name: order-details-header-component
 master: {00000000-0000-0000-0000-000000000000}
 template: {962B53C4-F93B-4DF9-9821-415C867B8903}
 templatekey: File
-created: 20180215T174745Z
+created: 20180325T025037Z
 
 ----field----
 field: {40E50ED9-BA07-4702-992E-A912738D32DC}
@@ -51,7 +51,7 @@ aWduLWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47CiAgLXdlYmtpdC1ib3gtb3JpZW50OiBob3Jpem9u
 dGFsOwogIC13ZWJraXQtYm94LWRpcmVjdGlvbjogbm9ybWFsOwogIC1tcy1mbGV4LWZsb3c6IHJv
 dyBub3dyYXA7CiAgZmxleC1mbG93OiByb3cgbm93cmFwOwogIC1tcy1mbGV4LXBhY2s6IGRpc3Ry
 aWJ1dGU7CiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7CiAgYmFja2dyb3VuZC1jb2xv
-cjogIzAzOGFjZDsKfQoKLmN4YS1vcmRlcmRldGFpbHNoZWFkZXItY29tcG9uZW50IC5vcmRlci1o
+cjogIzBlOTA5ZjsKfQoKLmN4YS1vcmRlcmRldGFpbHNoZWFkZXItY29tcG9uZW50IC5vcmRlci1o
 ZWFkZXItbGluZXMgPiAqIHsKICAtbXMtZmxleC1pdGVtLWFsaWduOiBjZW50ZXI7CiAgLW1zLWdy
 aWQtcm93LWFsaWduOiBjZW50ZXI7CiAgYWxpZ24tc2VsZjogY2VudGVyOwp9CgouY3hhLW9yZGVy
 ZGV0YWlsc2hlYWRlci1jb21wb25lbnQgLm9yZGVyLWhlYWRlci1saW5lcyA+ICogewogIG1hcmdp
@@ -90,7 +90,7 @@ content-length: 61
 ----version----
 language: en
 version: 1
-revision: 3b8304ba-676f-4c39-ab1d-cfcaa17f3c48
+revision: 3fd84221-5386-4d58-b0b8-310ab1b53d34
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -105,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3b8304ba-676f-4c39-ab1d-cfcaa17f3c48
+3fd84221-5386-4d58-b0b8-310ab1b53d34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180227T185841Z
+20180424T022259Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

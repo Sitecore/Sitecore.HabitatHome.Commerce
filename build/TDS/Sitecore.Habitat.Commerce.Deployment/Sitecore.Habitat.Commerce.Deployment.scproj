@@ -62,18 +62,36 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <BundledProject Include="..\..\..\src\Feature\Cart\tds\Sitecore.Feature.Cart.Master\Sitecore.Feature.Cart.Master.scproj">
+      <ProjectId>{9f4cf094-1a92-49cc-ba69-6e8fd4ef49a0}</ProjectId>
+    </BundledProject>
     <BundledProject Include="..\..\..\src\Feature\Catalog\tds\Sitecore.Feature.Catalog.Master\Sitecore.Feature.Catalog.Master.scproj">
       <ProjectId>{bb335b14-ad2a-4810-89ab-6d8079e60812}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\..\src\Feature\Customers\tds\Sitecore.Feature.Customers.Master\Sitecore.Feature.Customers.Master.scproj">
+      <ProjectId>{6581cce6-c44d-4641-a088-e8728a6b16a7}</ProjectId>
     </BundledProject>
     <BundledProject Include="..\..\..\src\Foundation\Rules\tds\Sitecore.Foundation.Rules.Master\Sitecore.Foundation.Rules.Master.scproj">
       <ProjectId>{d4d58b24-2473-4fbd-af1e-efb91b025c4b}</ProjectId>
     </BundledProject>
+    <BundledProject Include="..\..\..\src\Project\Habitat.Commerce.Website\tds\Sitecore.Habitat.Commerce.Website.Master\Sitecore.Habitat.Commerce.Website.Master.scproj">
+      <ProjectId>{abaa4489-822b-4f34-b7d5-eae8c9973150}</ProjectId>
+    </BundledProject>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Feature\Cart\tds\Sitecore.Feature.Cart.Master\Sitecore.Feature.Cart.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\Feature\Catalog\tds\Sitecore.Feature.Catalog.Master\Sitecore.Feature.Catalog.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\src\Feature\Customers\tds\Sitecore.Feature.Customers.Master\Sitecore.Feature.Customers.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\src\Foundation\Rules\tds\Sitecore.Foundation.Rules.Master\Sitecore.Foundation.Rules.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\src\Project\Habitat.Commerce.Website\tds\Sitecore.Habitat.Commerce.Website.Master\Sitecore.Habitat.Commerce.Website.Master.scproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

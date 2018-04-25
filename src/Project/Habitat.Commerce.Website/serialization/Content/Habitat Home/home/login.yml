@@ -52,8 +52,15 @@ SharedFields:
           s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
-          uid="{04FB28D9-4468-430B-A054-A919810AE058}"
+          uid="{74D00E8F-08CE-4A7B-BB41-6AB64C26CEDD}"
           p:after="r[@uid='{DB9B22E5-06C0-4E73-9611-72F95BDE8A44}']"
+          s:ds=""
+          s:id="{0534FEFB-9A67-457B-8AA8-3255BA39CB2F}"
+          s:par=""
+          s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
+        <r
+          uid="{04FB28D9-4468-430B-A054-A919810AE058}"
+          p:after="r[@uid='{74D00E8F-08CE-4A7B-BB41-6AB64C26CEDD}']"
           s:ds=""
           s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"

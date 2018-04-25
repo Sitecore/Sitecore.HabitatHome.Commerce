@@ -90,7 +90,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
-    <Content Include="web.config.xdt" />
+    <None Include="web.config.xdt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

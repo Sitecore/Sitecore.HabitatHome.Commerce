@@ -20,6 +20,7 @@ using Sitecore.Commerce.Plugin.Fulfillment;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using Plugin.Demo.ImportOrders.Models;
+using Sitecore.Commerce.Plugin.Catalog;
 
 namespace Plugin.Demo.ImportOrders.Pipelines.Blocks
 {
@@ -111,21 +112,26 @@ namespace Plugin.Demo.ImportOrders.Pipelines.Blocks
 
             foreach(var line in arg.Lines)
             {
+                var items = line.ItemId.Split('|');
+                CommerceEntity entity = await createOrderBlock.findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), "Entity-SellableItem-" + (items.Count() > 2 ? items[1] : line.ItemId), false), context);
                 CartLineComponent lineComponent = new CartLineComponent
                 {
                     ItemId = line.ItemId,
                     Quantity = line.Quantity,
                     Totals = new Totals() { SubTotal = new Money(arg.CurrencyCode, line.SubTotal), GrandTotal = new Money(arg.CurrencyCode, line.SubTotal) },
                     UnitListPrice = new Money() { CurrencyCode = arg.CurrencyCode, Amount = line.UnitListPrice },
-                    Id = Guid.NewGuid().ToString("N"),
+                    Id = Guid.NewGuid().ToString("N"),                    
                     Policies = new List<Policy>()
                 };
                 lineComponent.Policies.Add(new PurchaseOptionMoneyPolicy() { PolicyId = "c24f0ed4f2f1449b8a488403b6bf368a", SellPrice = new Money() { CurrencyCode = arg.CurrencyCode, Amount = line.SubTotal } });
 
-                lineComponent.ChildComponents.Add(new CartProductComponent() { DisplayName = line.ProductName});
-
+                if ((entity is SellableItem))
+                {
+                    SellableItem sellableItem = entity as SellableItem;
+                    lineComponent.ChildComponents.Add(new CartProductComponent() { DisplayName = line.ProductName, Id = items.Count() > 2 ? items[1] : line.ItemId, Image = new Image() { ImageName = line.ProductName, AltText = line.ProductName, Height = 50, Width = 50, SitecoreId = sellableItem.GetComponent<ImagesComponent>().Images.FirstOrDefault() } });
+                }
                 // if it has a variant
-                var items = line.ItemId.Split('|');
+
                 if (items.Count() > 2)
                 {
                     // Set VariantionId

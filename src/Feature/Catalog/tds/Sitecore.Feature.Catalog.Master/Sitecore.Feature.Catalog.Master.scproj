@@ -35,12 +35,12 @@
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)' == 'TDS' ">
-        <OutputPath>.\bin\TDS\</OutputPath>
-        <InstallSitecoreConnector>False</InstallSitecoreConnector>
-        <DisableFileDeployment>False</DisableFileDeployment>
-        <LightningDeployMode>False</LightningDeployMode>
-    </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'TDS' ">
+    <OutputPath>.\bin\TDS\</OutputPath>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <LightningDeployMode>False</LightningDeployMode>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
@@ -79,7 +79,7 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Sites\Catalog\Product List.item">
+    <SitecoreItem Include="sitecore\layout\Renderings\Feature\Habitat Sites\Catalog\Purchasable Product List.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>

@@ -48,7 +48,7 @@
   font-size: 13px;
   text-align: center;
   font-weight: bold;
-  background: #1d8c96;
+  background: #0e909f;
 }
 
 .component.cxa-productlist-component .btn.btn-block {
@@ -161,6 +161,34 @@
 .component.cxa-productlist-component .product-list .product-summary .photo img {
   max-width: 100%;
   max-height: 208px;
+}
+
+.component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  z-index: 10;
+}
+
+.component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button span.loading-label > i {
+  font-size: 40px;
+  color: #0e909f;
+}
+
+.component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button span.initial-label:before {
+  font-family: FontAwesome;
+  content: '\f217';
+  font-size: 40px;
+  color: #0e909f;
+  height: 81px;
 }
 
 .component.cxa-productlist-component .product-list .product-info {

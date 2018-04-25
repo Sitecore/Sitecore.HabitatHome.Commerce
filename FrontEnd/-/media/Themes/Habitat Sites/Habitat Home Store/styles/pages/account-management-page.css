@@ -74,7 +74,7 @@
 .account-management-page .account-summary .logout a:hover,
 .account-management-page .account-summary .link-list > .component-content li a:hover {
   border-bottom: 0;
-  color: #000;
+  color: #141919;
 }
 
 .account-management-page .account-summary .logout a:before,

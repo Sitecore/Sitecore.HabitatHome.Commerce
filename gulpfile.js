@@ -32,6 +32,33 @@ gulp.task("default",
             callback);
     });
 
+gulp.task("quick-deploy",
+    function (callback) {
+        config.runCleanBuilds = true;
+        return runSequence(
+            "Nuget-Restore",
+            "Publish-All-Projects",
+            "Apply-Xml-Transform",     
+            "Publish-Transforms",       
+            callback);
+    });
+
+gulp.task("initial",
+        function (callback) {
+            config.runCleanBuilds = true;
+            return runSequence(
+                "Nuget-Restore",
+                "Publish-All-Projects",
+                "Apply-Xml-Transform",
+                "Sync-Unicorn",
+                "Publish-Transforms",
+                "Deploy-EXM-Campaigns",
+                "Rebuild-Core-Index",
+                "Rebuild-Master-Index",
+                "Rebuild-Web-Index",
+                callback);
+        });
+
 gulp.task("publish",
     function (callback) {
         config.runCleanBuilds = true;
@@ -292,6 +319,54 @@ gulp.task("Deploy-EXM-Campaigns",
 
         var url = config.instanceUrl + "utilities/deployemailcampaigns.aspx?apiKey=97CC4FC13A814081BF6961A3E2128C5B";
         console.log("Deploying EXM Campaigns at " + url);
+        get({
+            url: url,
+            "rejectUnauthorized": false
+        }, function (err, res) {
+            if (err) {
+                throw err;
+            }
+        });
+    });
+
+gulp.task("Rebuild-Core-Index",
+    function () {
+        console.log("Rebuilding Index Core");
+
+        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_core_index";
+
+        get({
+            url: url,
+            "rejectUnauthorized": false
+        }, function (err, res) {
+            if (err) {
+                throw err;
+            }
+        });
+    });
+
+gulp.task("Rebuild-Master-Index",
+    function () {
+        console.log("Rebuilding Index Master");
+
+        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_master_index";
+
+        get({
+            url: url,
+            "rejectUnauthorized": false
+        }, function (err, res) {
+            if (err) {
+                throw err;
+            }
+        });
+    });
+
+gulp.task("Rebuild-Web-Index",
+    function () {
+        console.log("Rebuilding Index Web");
+
+        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_web_index";
+
         get({
             url: url,
             "rejectUnauthorized": false
