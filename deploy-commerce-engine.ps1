@@ -1,14 +1,18 @@
 Param(
-    [string]$webRoot = "C:\inetpub\wwwroot",
-    [string]$publishFolder = (Join-Path $PSScriptRoot "publishTemp"),
-    [string]$certificateName = "habitathome.dev.local",
+    
     [string]$siteName = "habitathome.dev.local",
+    [string]$certificateName = "habitathome.dev.local",
     [string]$engineHostName = "localhost",
     [string]$identityServerHost = "localhost:5050",
-    [string]$CommerceOpsPort = "5000",
+    [string]$webRoot = "C:\inetpub\wwwroot",
+    [string[]] $engines = @("CommerceAuthoring", "CommerceMinions", "CommerceOps", "CommerceShops"),
     [string]$engineSuffix = "habitat",
+    [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
-    [string]$adminPassword = "b"
+    [string]$adminPassword = "b",
+    [string]$publishFolder = (Join-Path $PSScriptRoot "publishTemp"),
+    [switch]$Initialize,
+    [switch]$Bootstrap
 )
 
 Function Start-CommerceEngineCompile {
@@ -36,7 +40,7 @@ Function  Start-CommerceEnginePepare {
 
     $appSettings = $config.AppSettings
     $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('localhost', $engineHostName)
-	$appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('habitathome.dev.local', $siteName)
+    $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('habitathome.dev.local', $siteName)
     $appSettings.SitecoreIdentityServerUrl = ("https://{0}" -f $identityServerHost)
     $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
     
@@ -51,15 +55,29 @@ Function  Start-CommerceEnginePepare {
 Function Publish-CommerceEngine {
     Write-Host ("Deploying Commerce Engine") -ForegroundColor Green
     IISRESET /STOP
-    Write-Host ("Copying to Commerce Authoring") -ForegroundColor Green
-    Copy-Item -Path "$publishFolder\*" -Destination (Join-Path $webRoot ("CommerceAuthoring_{0}" -f $engineSuffix) ) -Recurse -Force
-    Write-Host ("Copying to Commerce Minions") -ForegroundColor Green
-    Copy-Item -Path "$publishFolder\*" -Destination (Join-Path $webRoot ("CommerceMinions_{0}" -f $engineSuffix) ) -Recurse -Force 
-    Write-Host ("Copying to Commerce Ops") -ForegroundColor Green
-    Copy-Item -Path "$publishFolder\*" -Destination (Join-Path $webRoot ("CommerceOps_{0}" -f $engineSuffix) ) -Recurse -Force 
-    Write-Host ("Copying to Commerce Shops") -ForegroundColor Green
-    Copy-Item -Path "$publishFolder\*" -Destination (Join-Path $webRoot ("CommerceShops_{0}" -f $engineSuffix) ) -Recurse -Force 
+    
+    foreach ($engine in $engines) {
+        Write-Host ("Copying to {0}" -f $engine) -ForegroundColor Green
+        if ($engineSuffix.length -gt 0) {
+            $engineWebRoot = (Join-Path $webRoot ("{0}_{1}" -f $engine, $engineSuffix) )
+        }
+        else {
+            $engineWebRoot = (Join-Path $webRoot ("{0}" -f $engine) )
+        }
+        $engineWebRootBackup = ("{0}_backup" -f $engineWebRoot)
+        
+        if (Test-Path $engineWebRootBackup -PathType Container) {
+            Remove-Item $engineWebRootBackup -Recurse -Force
+        }
+        
+        Rename-Item $engineWebRoot -NewName $engineWebRootBackup -ErrorAction SilentlyContinue
+        Get-ChildItem $engineWebRoot -Recurse | ForEach-Object {Remove-Item $_.FullName -Recurse}
+        Copy-Item -Path "$publishFolder" -Destination $engineWebRoot -Container -Recurse -Force
+    }
+    
+
     IISRESET /START
+
     Start-Sleep 10
 }
 Function Get-IdServerToken {
@@ -162,11 +180,22 @@ Function InitializeCommerceServices {
 
     Write-Host "Initialization completed ..." -ForegroundColor Green 
 }
+if ($DeployOnly) {
 
+}
 Start-CommerceEngineCompile
 Start-CommerceEnginePepare
 Publish-CommerceEngine
-Get-IdServerToken
-CleanEnvironment
-BootStrapCommerceServices
-InitializeCommerceServices
+
+if ($Bootstrap -or $Initialize) {
+    Get-IdServerToken   
+}
+
+if ($Bootstrap) {
+    BootStrapCommerceServices
+}
+
+if ($Initialize) {
+    CleanEnvironment
+    InitializeCommerceServices
+}
