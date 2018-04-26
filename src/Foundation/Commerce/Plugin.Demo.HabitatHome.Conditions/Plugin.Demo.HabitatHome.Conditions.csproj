@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <NoWarn>NU1603</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
