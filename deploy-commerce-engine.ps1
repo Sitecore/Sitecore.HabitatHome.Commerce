@@ -18,7 +18,9 @@ Param(
 Function Start-CommerceEngineCompile {
 	
     $engineSolutionName = "Habitat.Commerce.Engine.sln"
-
+	if (Test-Path $publishFolder){
+		Remove-Item $publishFolder -Recurse -Force
+	}
     Write-Host ("Compiling and Publishing Engine to {0}" -f $publishFolder) -ForegroundColor Green
     dotnet publish $engineSolutionName -o $publishFolder
 
