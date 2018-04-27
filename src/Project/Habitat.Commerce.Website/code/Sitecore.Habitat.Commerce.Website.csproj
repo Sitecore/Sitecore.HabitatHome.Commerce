@@ -87,6 +87,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Project\Habitat.Home.Website.Serialization.config" />
     <Content Include="App_Config\Include\Project\z.Habitat.Commerce.Website.DevSettings.config" />
+    <Content Include="App_Config\Include\Project\Habitat.Home.Website.config" />
     <None Include="packages.config" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
