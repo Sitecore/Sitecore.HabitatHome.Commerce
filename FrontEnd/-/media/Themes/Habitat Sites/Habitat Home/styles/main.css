@@ -3989,6 +3989,29 @@ main .btn.btn-block.btn-primary {
   font-size: 14px;
 }
 
+.site-search-results .search-result-list .search-result-labels {
+  margin-bottom: 0.66667em;
+}
+
+.site-search-results .search-result-list .search-result-links {
+  margin-top: 0.66667em;
+}
+
+.site-search-results .search-result-list .search-result-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.site-search-results .search-result-list .search-result-links a:after {
+  font-family: FontAwesome;
+  content: "";
+  font-size: 20px;
+  vertical-align: middle;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
 .site-search-results .search-result-list .field-title {
   margin-bottom: 1em;
 }

@@ -1,13 +1,13 @@
 ﻿---
-ID: "d285c7f4-0c5f-47f0-9859-be66c577b7d8"
-Parent: "f4822f80-d082-43cc-832c-79c615723b12"
+ID: "ecf91734-cc9d-45c5-b106-e5c8e411130e"
+Parent: "7167ab53-837e-4365-9288-8f28616be4db"
 Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Summary/Description/Page Description
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Summary/Product Descriptoin
 DB: master
 SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"
   Hint: FieldName
-  Value: MetaDescription
+  Value: Description
 - ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
   Hint: CssClass
   Value: "field-summary"
@@ -21,4 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180216T203302Z
+      Value: 20180216T203254Z

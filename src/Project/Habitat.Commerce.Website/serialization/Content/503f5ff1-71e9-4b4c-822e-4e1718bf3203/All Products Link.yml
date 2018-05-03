@@ -1,0 +1,37 @@
+﻿---
+ID: "1cc84c8d-7f39-402d-abea-cecc65733b48"
+Parent: "503f5ff1-71e9-4b4c-822e-4e1718bf3203"
+Template: "7c02e9f5-54b5-4ef4-bd10-f4c5d448a48c"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Links/All Products Link
+DB: master
+SharedFields:
+- ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
+  Hint: EnableRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{19CA3BAE-34D5-4049-ACCC-44017ADD89CD}">
+        <conditions>
+          <condition
+            id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+            uid="2BD83D8A0F984A0791111A012EEFC06C"
+            templateid="{4C4FD207-A9F7-443D-B32A-50AA33523661}" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "f9926e84-399e-4070-b2ed-a31f6f542bdd"
+  Hint: IsLink
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07211f80-7ffc-4df4-a4de-c8956f391850"
+      Hint: Text
+      Value: See all products
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180503T151555Z

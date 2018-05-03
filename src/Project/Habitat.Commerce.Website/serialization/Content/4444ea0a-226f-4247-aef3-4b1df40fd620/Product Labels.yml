@@ -1,30 +1,40 @@
 ﻿---
-ID: "f8cf37f6-8059-423d-bfe2-457af96c8acc"
-Parent: "f9ef9ed7-2bd7-432d-b5ea-c3d161ee3acd"
-Template: "6e188261-e572-4330-b88a-88c68b0926e7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Search/Checklist Filter/Filter Checklist Tag
+ID: "f9ecdcca-4936-4c32-b2df-508c9e3285d5"
+Parent: "4444ea0a-226f-4247-aef3-4b1df40fd620"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels
 DB: master
 SharedFields:
-- ID: "0a5dbe83-3914-4630-90ef-d1bbbcdede7f"
-  Hint: Facet
-  Value: "{2BB1545C-7525-4FF6-B393-01B858A7C582}"
+- ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
+  Hint: EnableRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{02678438-122C-4110-841D-22A9C3BAC14D}">
+        <conditions>
+          <condition
+            id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+            uid="46B3FB5FE49E4C5D8DF93C8D791FD69A"
+            operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}"
+            value="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "search-result-labels"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "21a0b495-72bd-4bcb-a9ee-abdee527e79b"
-      Hint: GoButtonLabel
-      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171128T161335Z
-    - ID: "57008eba-acb7-4f86-a239-57c8027c2afe"
-      Hint: RemoveFilterText
-      Value: 
-    - ID: "ae2fb54e-10cb-4dec-bf62-dfeb17d3cc7e"
-      Hint: Title
-      Value: Tags
+      Value: 20171211T130737Z
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -46,20 +56,14 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
-    - ID: "21a0b495-72bd-4bcb-a9ee-abdee527e79b"
-      Hint: GoButtonLabel
-      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171128T161335Z
+      Value: 20171211T130737Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
-      Value: 
-    - ID: "57008eba-acb7-4f86-a239-57c8027c2afe"
-      Hint: RemoveFilterText
       Value: 
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
@@ -72,9 +76,6 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "ae2fb54e-10cb-4dec-bf62-dfeb17d3cc7e"
-      Hint: Title
-      Value: Tags
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
@@ -82,17 +83,3 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180321T104526Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "ae2fb54e-10cb-4dec-bf62-dfeb17d3cc7e"
-      Hint: Title
-      Value: Tags
