@@ -55,6 +55,12 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.1.78\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.1.54\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
     </Reference>
@@ -63,6 +69,9 @@
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Feature.Cart">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine">
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
@@ -136,9 +145,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Habitat.Commerce.Feature.ShoppingCartLines.config" />
+    <Content Include="App_Config\Include\Feature\Commerce\z.Habitat.Commerce.Feature.ShoppingCartLines.config" />
     <Content Include="App_Config\Include\Feature\Feature.ShoppingCartLines.Serialization.config" />
     <None Include="packages.config" />
+    <Content Include="Scripts\Commerce\Feature\Cart\habitat.commerce.feature.shoppingcartlines.js" />
     <Content Include="Scripts\Commerce\Feature\Cart\habitat.commerce.feature.shoppingcartlines.model.js" />
     <Content Include="Views\ShoppingCartLines\ShoppingCartLines.cshtml" />
     <None Include="Web.Debug.config">
@@ -154,7 +164,11 @@
   <ItemGroup>
     <Compile Include="Controllers\ShoppingCartLinesController.cs" />
     <Compile Include="Managers\ShoppingCartLinesManager.cs" />
+    <Compile Include="Models\JsonResults\ShoppingCartJsonResult.cs" />
+    <Compile Include="Models\JsonResults\ShoppingCartLineJsonResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IShoppingCartLinesRepository.cs" />
+    <Compile Include="Repositories\ShoppingCartLinesRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

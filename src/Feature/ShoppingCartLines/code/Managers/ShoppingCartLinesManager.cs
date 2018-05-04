@@ -39,6 +39,7 @@ namespace Sitecore.Feature.ShoppingCartLines.Managers
                         string itemId = lineItem["ItemId"].ToString();
                         line.ProductId = itemId.Split('|')[1];
                         line.VariantId = itemId.Split('|')[2];
+                        line.Comments = lineItem["Comments"];
                         cartLineList.Add(line);
                     }
                 }

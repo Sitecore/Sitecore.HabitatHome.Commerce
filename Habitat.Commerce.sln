@@ -97,6 +97,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{7A24
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Catalog", "src\Foundation\Catalog\code\Sitecore.Foundation.Catalog.csproj", "{5CD30D98-0B87-4906-B7B5-B165B68C38EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductKit", "ProductKit", "{790D22B8-D466-466A-B7D8-4E241963EFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.ProductKit", "src\Feature\ProductKit\code\Sitecore.Feature.ProductKit.csproj", "{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,10 @@ Global
 		{5CD30D98-0B87-4906-B7B5-B165B68C38EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD30D98-0B87-4906-B7B5-B165B68C38EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD30D98-0B87-4906-B7B5-B165B68C38EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -227,6 +235,8 @@ Global
 		{70BF79BF-E57D-478C-8C99-1D210131A77F} = {1C3D9E2B-3F5A-45F6-AB66-08CD8DFF6D50}
 		{7A244530-E379-4E20-A89F-2805AC2CEC71} = {1B6FFBEA-35BD-4381-A2BE-4FA54E3940E1}
 		{5CD30D98-0B87-4906-B7B5-B165B68C38EE} = {7A244530-E379-4E20-A89F-2805AC2CEC71}
+		{790D22B8-D466-466A-B7D8-4E241963EFC8} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{5E151EE0-5AE0-4B3E-BA05-945B9E0F61C4} = {790D22B8-D466-466A-B7D8-4E241963EFC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}

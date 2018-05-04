@@ -1,9 +1,10 @@
-﻿using Sitecore.Commerce.XA.Feature.Cart.Repositories;
+﻿
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Diagnostics;
 using Sitecore.Feature.ShoppingCartLines.Managers;
+using Sitecore.Feature.ShoppingCartLines.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,10 @@ namespace Sitecore.Feature.ShoppingCartLines.Controllers
         public ActionResult ShoppingCartLines()
         {
             return (ActionResult)this.View("~/Views/ShoppingCartLines/ShoppingCartLines.cshtml", (object)this.ShoppingCartLinesRepository.GetShoppingCartLinesModel());
+        }
+        public JsonResult GetShoppingCartLines()
+        {            
+            return this.Json((object)this.ShoppingCartLinesRepository.GetCurrentShoppingCart(this.StorefrontContext, this.VisitorContext));
         }
 
         [AllowAnonymous]
