@@ -57,7 +57,6 @@ $promoted-color: #f6a623;
                     top: 15px;
                     right: 15px;
                     position: absolute;
-                    z-index: 10;
                     button {
                         background-color: Transparent;
                         background-repeat:no-repeat;
@@ -116,8 +115,6 @@ $promoted-color: #f6a623;
             }
             .product-brand {
                 order: 3;
-                //border-bottom: 1px solid #d8d9d5;
-
                 display: inline;
                 padding: 0.3em 0.5em;
                 font-size: 11px;
@@ -159,12 +156,10 @@ $promoted-color: #f6a623;
                 min-height: 22px;
             }
             .current-price {
-                //padding: 11px $padding/2 0 $padding/2;
                 text-align: left;
                 min-height: $control-large-height;
                 order: 6;
                 margin-right: 0;
-                //@include align-elements($center);
                 width: 50%; 
                 font-size: 16px;
                 padding: 0.1875em 0;
@@ -267,12 +262,6 @@ $promoted-color: #f6a623;
                                     cursor: pointer;
                                 }
                             }
-                        }
-                        .current-price {
-/*                             background: darken($primary-color, 2);
-                            color: $light;
-                            border-radius: $border-radius 0 0 $border-radius;
-                            cursor: default; */
                         }
                         .product-rating {
                             .icon-star {
