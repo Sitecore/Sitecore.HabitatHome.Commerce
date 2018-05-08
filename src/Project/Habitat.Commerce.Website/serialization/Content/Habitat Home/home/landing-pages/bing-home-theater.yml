@@ -1691,7 +1691,7 @@ Languages:
         
                 .sw_meIc:after, .sw_spd:after, .sw_pref:after, .idp_ham:after, .idp_wlid:after, .idp_tw:after {
                     position: relative;
-                    content: url(http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png);
+                    content: url(/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png);
                 }
         
                 .sw_meIc, .sw_spd, .idp_ham, .idp_wlid, .idp_tw {
@@ -2119,7 +2119,7 @@ Languages:
                     }
         
                 .b_searchboxSubmit {
-                    background-image: url(http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png);
+                    background-image: url(/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png);
                     background-repeat: no-repeat;
                 }
         
@@ -2184,10 +2184,11 @@ Languages:
                 <form action="/search" id="sb_form">
                     <a class="b_logoArea" href="/?FORM=Z9FD1" h="ID=SERP,5023.1">
                         <h1 class="b_logo">
-                            <img src="http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png" alt="Go to Bing homepage" title="Back to Bing search" />
+                            <img src="/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png" alt="Go to Bing homepage" title="Back to Bing search" />
                             <div>Go to Bing homepage</div>
                         </h1>
-                    </a><div class="b_searchboxForm" role="search"><input class="b_searchbox" id="sb_form_q" name="q" title="Enter your search term" type="search" value="Home Theater" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" /><input type="submit" class="b_searchboxSubmit" id="sb_form_go" title="Search" tabIndex="0" name="go" value="Search" /><input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="QBRE" name="form" /></div>
+                    </a><div class="b_searchboxForm" role="search"><input class="b_searchbox" id="sb_form_q" name="q" title="Enter your search term" type="search" value="Home Theater" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" />
+                    <input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="QBRE" name="form" /></div>
                 </form><div id="id_h" role="complementary" aria-label="Account Rewards and Preferences" data-priority="2"><a id="id_l" class="id_button" role="button" aria-haspopup="true" href="javascript:void(0);" h="ID=SERP,5024.1"><span id="id_s" aria-hidden="false">Sign in</span><span id="id_f" aria-hidden="true">Hi {0}</span><span class="sw_spd id_avatar" id="id_a" aria-hidden="false" aria-label="Default Profile Picture"></span><span id="id_n" style="display:none" aria-hidden="true"></span><img id="id_p" class="id_avatar sw_spd" style="display:none" aria-hidden="true" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" aria-label="Profile Picture" onError="FallBackToDefaultProfilePic(this)" /></a><span id="id_d" _iid="SERP.5039"></span><a class="id_button" id="id_rh" aria-label="Microsoft Rewards" role="dialog" href="/rewards/dashboard" h="ID=SERP,5031.1"><span id="id_rc">2015</span><span class="id_avatar sw_meIc"></span></a><a class="b_hide" id="id_rwl" href="/rewards/dashboard" h="ID=SERP,5030.1"></a><a id="id_sc" class="idp_ham nohphbtop" aria-label="Preferences" role="button" tabindex="0" href="javascript:void(0);" h="ID=SERP,5037.1"></a><span id="id_hbfo" _iid="SERP.5038" class="slide_up nohpfo" aria-hidden="true" aria-haspopup="true"></span></div><div id="sw_tfbb"></div><nav class="b_scopebar" role="navigation"><ul><li class="b_active" data-menuUrl=""><a href="/?scope=web&amp;FORM=HDRSC1" h="ID=SERP,5016.1">Web</a></li><li data-menuUrl=""><a href="/images/search?q=Home+Theater&amp;FORM=HDRSC2" h="ID=SERP,5017.1">Images</a></li><li data-menuUrl=""><a href="/videos/search?q=Home+Theater&amp;FORM=HDRSC3" h="ID=SERP,5018.1">Videos</a></li><li data-menuUrl=""><a href="/maps?q=Home+Theater&amp;mkt=en&amp;FORM=HDRSC4" h="ID=SERP,5019.1">Maps</a></li><li data-menuUrl=""><a href="/news/search?q=Home+Theater&amp;FORM=HDRSC6" h="ID=SERP,5020.1">News</a></li><li class="scopebar_pipe">|</li><li data-menuUrl=""><a href="/saves?FORM=HDRSAV" h="ID=SERP,5021.1">My saves</a></li></ul></nav>
             </header>
             <script type="text/javascript">
@@ -4910,7 +4911,7 @@ Languages:
         
                 .sw_meIc:after, .sw_spd:after, .sw_pref:after, .idp_ham:after, .idp_wlid:after, .idp_tw:after {
                     position: relative;
-                    content: url(http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png);
+                    content: url(/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png);
                 }
         
                 .sw_meIc, .sw_spd, .idp_ham, .idp_wlid, .idp_tw {
@@ -5338,7 +5339,7 @@ Languages:
                     }
         
                 .b_searchboxSubmit {
-                    background-image: url(http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png);
+                    background-image: url(/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png);
                     background-repeat: no-repeat;
                 }
         
@@ -5403,10 +5404,10 @@ Languages:
                 <form action="/search" id="sb_form">
                     <a class="b_logoArea" href="/?FORM=Z9FD1" h="ID=SERP,5023.1">
                         <h1 class="b_logo">
-                            <img src="http://www.bing.com/sa/simg/SharedSpriteDesktop_0317.png" alt="Go to Bing homepage" title="Back to Bing search" />
+                            <img src="/~/media/project/habitat-sites/habitat-home/images/landing-pages/bing-icon.png" alt="Go to Bing homepage" title="Back to Bing search" />
                             <div>Go to Bing homepage</div>
                         </h1>
-                    </a><div class="b_searchboxForm" role="search"><input class="b_searchbox" id="sb_form_q" name="q" title="Enter your search term" type="search" value="Home Theater" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" /><input type="submit" class="b_searchboxSubmit" id="sb_form_go" title="Search" tabIndex="0" name="go" value="Search" /><input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="QBRE" name="form" /></div>
+                    </a><div class="b_searchboxForm" role="search"><input class="b_searchbox" id="sb_form_q" name="q" title="Enter your search term" type="search" value="Home Theater" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" /><input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="QBRE" name="form" /></div>
                 </form><div id="id_h" role="complementary" aria-label="Account Rewards and Preferences" data-priority="2"><a id="id_l" class="id_button" role="button" aria-haspopup="true" href="javascript:void(0);" h="ID=SERP,5024.1"><span id="id_s" aria-hidden="false">Sign in</span><span id="id_f" aria-hidden="true">Hi {0}</span><span class="sw_spd id_avatar" id="id_a" aria-hidden="false" aria-label="Default Profile Picture"></span><span id="id_n" style="display:none" aria-hidden="true"></span><img id="id_p" class="id_avatar sw_spd" style="display:none" aria-hidden="true" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" aria-label="Profile Picture" onError="FallBackToDefaultProfilePic(this)" /></a><span id="id_d" _iid="SERP.5039"></span><a class="id_button" id="id_rh" aria-label="Microsoft Rewards" role="dialog" href="/rewards/dashboard" h="ID=SERP,5031.1"><span id="id_rc">2015</span><span class="id_avatar sw_meIc"></span></a><a class="b_hide" id="id_rwl" href="/rewards/dashboard" h="ID=SERP,5030.1"></a><a id="id_sc" class="idp_ham nohphbtop" aria-label="Preferences" role="button" tabindex="0" href="javascript:void(0);" h="ID=SERP,5037.1"></a><span id="id_hbfo" _iid="SERP.5038" class="slide_up nohpfo" aria-hidden="true" aria-haspopup="true"></span></div><div id="sw_tfbb"></div><nav class="b_scopebar" role="navigation"><ul><li class="b_active" data-menuUrl=""><a href="/?scope=web&amp;FORM=HDRSC1" h="ID=SERP,5016.1">Web</a></li><li data-menuUrl=""><a href="/images/search?q=Home+Theater&amp;FORM=HDRSC2" h="ID=SERP,5017.1">Images</a></li><li data-menuUrl=""><a href="/videos/search?q=Home+Theater&amp;FORM=HDRSC3" h="ID=SERP,5018.1">Videos</a></li><li data-menuUrl=""><a href="/maps?q=Home+Theater&amp;mkt=en&amp;FORM=HDRSC4" h="ID=SERP,5019.1">Maps</a></li><li data-menuUrl=""><a href="/news/search?q=Home+Theater&amp;FORM=HDRSC6" h="ID=SERP,5020.1">News</a></li><li class="scopebar_pipe">|</li><li data-menuUrl=""><a href="/saves?FORM=HDRSAV" h="ID=SERP,5021.1">My saves</a></li></ul></nav>
             </header>
             <script type="text/javascript">
