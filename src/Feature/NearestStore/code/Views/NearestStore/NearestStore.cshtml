@@ -1,40 +1,55 @@
-﻿@using System.Web.Mvc.Ajax
-@using System.Web.Mvc.Html
-@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.Data.Items;
 @using Sitecore.Mvc
 
 @{
     var currentItem = Html.Sitecore().CurrentItem;
+    Item relatedProduct = Model.CatalogItem;
+    bool isKit = relatedProduct["Tags"] != null && !String.IsNullOrEmpty(relatedProduct["Tags"]) ? relatedProduct["Tags"].Split('|').Any(t => t.ToLower() == "kit") : false;
+
 }
 
-<div id="divNearestStores" class="component cxa-nearest-store-component">
-   
-    <div class="loader" style="display:none;">Loading...</div>
-    <div>
-        <!-- ko foreach: NearestStoresList --> 
-        <div class="store-pickup">
-            <div class="row">
-                <div class="col-xs-12">
-                    <!-- ko if: ZeroInventory -->
-                    <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
-                    <!--/ko-->
-                    <!-- ko if: Limited -->
-                    <label>Only  <span data-bind="text: InventoryAmount"></span> available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away)</label><br />
-                    
-                    <!--/ko-->
-                    <!-- ko ifnot: Limited -->
-                    <!-- ko ifnot: ZeroInventory -->
-                    <label>Available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away) </label><br />
-                    
-                    <!--/ko-->
-                    <!--/ko-->
+@if (isKit)
+{
+    <div class="store-pickup">
+        <div class="row">
+            <div class="col-xs-12"><label>Online Only</label></div>
+        </div>
+    </div>
+}
+else
+{
+    <div id="divNearestStores" class="component cxa-nearest-store-component">
+
+        <div class="loader" style="display:none;">Loading...</div>
+        <div>
+            <!-- ko foreach: NearestStoresList -->
+            <div class="store-pickup">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- ko if: ZeroInventory -->
+                        <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
+                        <!--/ko-->
+                        <!-- ko if: Limited -->
+                        <label>Only  <span data-bind="text: InventoryAmount"></span> available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away)</label><br />
+
+                        <!--/ko-->
+                        <!-- ko ifnot: Limited -->
+                        <!-- ko ifnot: ZeroInventory -->
+                        <label>Available in the <span data-bind="text: DisplayName"></span> (<span data-bind="text: Distance"></span> miles away) </label><br />
+
+                        <!--/ko-->
+                        <!--/ko-->
+                    </div>
                 </div>
             </div>
+
+            <!--/ko-->
         </div>
 
-        <!--/ko-->
+
     </div>
-    
-    
-</div>
+}

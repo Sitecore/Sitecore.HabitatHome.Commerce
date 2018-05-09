@@ -166,13 +166,6 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{DB03B9CC-CC95-4A40-8E86-8229283A0767}"
-              p:before="*"
-              s:ds="local:/Data/On The Go Products"
-              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Product Lists=E18343E5-C678-4FB8-AA98-DCA52A3573B7"
-              s:ph="/main/sxa-content-container/container-1/container-8" />
-            <r
               uid="{AAF5FEEC-27DC-4A12-AB0D-BB3A6E25F2AF}"
               p:after="r[@uid='{A9D551D5-28A7-457D-AE65-923D84806A18}']"
               s:ds="{503C7C53-B494-4E3F-8930-54E7A6EADBA1}"

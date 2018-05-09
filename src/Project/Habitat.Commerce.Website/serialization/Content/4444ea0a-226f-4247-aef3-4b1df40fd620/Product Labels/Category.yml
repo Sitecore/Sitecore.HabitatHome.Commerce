@@ -1,0 +1,39 @@
+﻿---
+ID: "5642860e-1982-4d30-ac40-a9d4c709eb03"
+Parent: "f9ecdcca-4936-4c32-b2df-508c9e3285d5"
+Template: "7c02e9f5-54b5-4ef4-bd10-f4c5d448a48c"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels/Category
+DB: master
+SharedFields:
+- ID: "1aa68c0b-eb67-4575-9ca8-1689c2aff091"
+  Hint: Tag
+  Value: "{E8E2C26D-2F96-4A9C-9C17-D095E6CE46CC}"
+- ID: "8414031e-7b85-426c-8516-84d6223a1208"
+  Hint: CssClass
+  Value: "label label-info"
+- ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
+  Hint: EnableRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{5B12266C-1EED-4E3B-B389-C9B9D6170860}">
+        <conditions>
+          <condition
+            id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+            uid="2A51F7DE997F4D7A8331CFB5F7F0CC82"
+            templateid="{4C4FD207-A9F7-443D-B32A-50AA33523661}" />
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07211f80-7ffc-4df4-a4de-c8956f391850"
+      Hint: Text
+      Value: Category
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180502T163559Z

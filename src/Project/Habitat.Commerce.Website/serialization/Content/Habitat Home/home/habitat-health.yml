@@ -34,8 +34,15 @@ Languages:
               s:key="/main/sxa-content-container/container-1/container-11"
               s:md="/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/container- trainer" />
             <r
-              uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
+              uid="{79236A15-7C25-4CF2-ACE2-FE6869DEEEDB}"
               p:after="p[@uid='{8F07E7AE-AEDE-46D5-B17B-2E6C7B6B5300}']"
+              s:ds="local:/Data/Foodie Feast Thank You"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=20"
+              s:ph="/main/sxa-content-container/container-1/container-19" />
+            <r
+              uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
+              p:after="r[@uid='{79236A15-7C25-4CF2-ACE2-FE6869DEEEDB}']"
               s:ds="local:/Data/Foodie Products"
               s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists=E3A70BD6-DADC-43CA-9941-EEC8F3E02B93&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type"
@@ -261,8 +268,47 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{05B7145C-3B80-48C3-BADB-D5078F12E1AE}"
+              uid="{5B548513-9243-4460-93B2-B58566281362}"
               p:after="r[@uid='{807D306C-5F71-40F4-9F38-AC9D1B521239}']"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage=&lt;image mediaid=&quot;{D5B98824-B2DC-4319-9DC8-49F4FF0D86F7}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=19"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{141C9951-BA8C-4C86-ACBB-D71CCE926956}"
+                    s:name="Show when Foodie Feast Complete">
+                    <conditions>
+                      <condition
+                        uid="36B84E3A82DB43D4BC66E3F61679A02D"
+                        s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
+                        s:GoalId="{2A2EBECC-D066-4FBC-8701-BBA74AAC9F2E}"
+                        s:NumberOfElapsedDaysOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                        s:NumberOfElapsedDays="1"
+                        s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                        s:NumberOfPastInteractions="1" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="10DB598999B845628B9DA2887D6FC759"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="658C82732E31422E87F7795F9F95B04A"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{05B7145C-3B80-48C3-BADB-D5078F12E1AE}"
+              p:after="r[@uid='{5B548513-9243-4460-93B2-B58566281362}']"
               s:id="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}"
               s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={460B5E75-23EF-430C-94C4-F86DB2DB5EDF}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=12"
               s:ph="/main/sxa-content-container/container-1">
