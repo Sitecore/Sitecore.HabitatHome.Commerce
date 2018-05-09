@@ -1,0 +1,32 @@
+﻿---
+ID: "95b992e8-a57c-4935-b190-dea0d27f6f03"
+Parent: "094748be-4f62-43be-a4f8-95cd04e2643c"
+Template: "ddb08f92-1cc2-43e2-b5c1-fe7f98e32ec9"
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/gaming/Data/Category Subnavigation/Home Theater
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180218T095256Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{D18E970A-3B84-4E33-9945-47F565133475}" />
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Accessories" querystring="" target="" id="{B6C43DCA-3178-A8B3-A6A3-62078A309DA6}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ホームシアター
+  Versions:

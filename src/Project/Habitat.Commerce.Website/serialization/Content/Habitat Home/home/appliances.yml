@@ -187,6 +187,13 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{69EB9833-13A9-4B7E-A63A-908102A79668}"
+              p:before="*"
+              s:ds="local:/Data/Category Subnavigation"
+              s:id="{4646BD4F-05FF-4A19-9600-4D74F2F1548B}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames={BB418DE9-224E-4B3C-842B-310A3473A274}&amp;Styles&amp;TitleHeadingLevel={6A44D9C6-61F0-4B69-8E1A-FDC27F96BA0F}&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/sxa-content-container/container-1/Container-210" />
+            <r
               uid="{841C049F-3ED9-4415-875D-4D8D9FC6870D}"
               p:after="r[@uid='{A9D551D5-28A7-457D-AE65-923D84806A18}']"
               s:ds="{06F5147B-9E24-FA33-20FB-D4B7D8D21392}"
