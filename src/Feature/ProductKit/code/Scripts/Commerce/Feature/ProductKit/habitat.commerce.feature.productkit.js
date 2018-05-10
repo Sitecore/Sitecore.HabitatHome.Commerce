@@ -26,7 +26,6 @@
                         productsList.push(newRelatedProduct);
                     });
                     self.RelatedProductsList(productsList);
-                    console.log(self.RelatedProductsList());
                 }
             }
         });
@@ -37,7 +36,6 @@
 
 function RelatedProduct(data) {
     self = this;
-    console.log(data['ProductName']);
     self.DisplayName = data['ProductName'];
     self.Description = data['Description'];
     self.ImageUrl = data['Image'];

@@ -82,9 +82,15 @@
                                 </div>
                                 <div class="related-product-information" style="padding-left:25px">
                                     <div data-bind="foreach: relatedKitProducts">
-                                        <span data-bind="text: DisplayName" class="small"></span><br/>
+                                        <span data-bind="text: DisplayName" class="small"></span><br />
                                     </div>
                                 </div>
+                                <div class="related-product-information" style="padding-left:25px">
+                                    <div data-bind="foreach: relatedBundleProducts">
+                                        <span data-bind="text: DisplayName" class="small"></span> <span data-bind="text: ProductPrice" class="small"></span><br />
+                                    </div>
+                                </div>
+
                             </td>
                             <td class="shoppingcart-price">
                                 <span class="price" data-bind="text: linePrice"></span>

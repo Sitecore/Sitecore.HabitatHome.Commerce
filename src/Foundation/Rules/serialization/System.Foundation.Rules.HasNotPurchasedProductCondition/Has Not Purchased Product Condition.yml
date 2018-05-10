@@ -22,4 +22,4 @@ Languages:
         sitecore\admin
     - ID: "af321234-4eb9-4ef5-9197-65903351939c"
       Hint: Text
-      Value: "If customer has not purchased product with id [PurchasedProductId,String,,id] in the past [Days,Int,,number of] days."
+      Value: "If user has not purchased product with id [PurchasedProductId,String,,product id] in the past [Days,Int,,number of] days."
