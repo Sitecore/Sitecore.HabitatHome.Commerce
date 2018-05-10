@@ -122,6 +122,7 @@ function ShoppingCartLineItemData(cartData, line, cart) {
     self.selectedShippingOptionName = ko.observable($('#SelectDeliveryFirstMessage').val());
 
     self.relatedKitProducts = ko.observable("");
+    self.relatedBundleProducts = ko.observable("");
 
     self.toggleShipContent = function () {
         self.showShipOptionContent(!self.showShipOptionContent());
@@ -382,28 +383,40 @@ function ShoppingCartViewModel(data, userAddresses) {
                     }
                 }
             }
-            //if (this.IsKit == true) {               
+            if (this.IsKit == true) {               
                 var relatedProductList = [];
                 if (this.RelatedKitProducts.length > 0) {
                     $.each(this.RelatedKitProducts, function (index, value) {
-                        var newProduct = new RelatedKitProduct(value);
+                        var newProduct = new RelatedPackageProduct(value);
                         relatedProductList.push(newProduct);
                     });
                     lineItem.relatedKitProducts(relatedProductList);
                 }
-            //}
+            }
+            if (this.IsBundle == true) {
+                var relatedProductList = [];
+                if (this.RelatedBundleProducts.length > 0) {
+                    $.each(this.RelatedBundleProducts, function (index, value) {
+                        var newProduct = new RelatedPackageProduct(value);
+                        relatedProductList.push(newProduct);
+                    });
+                    lineItem.relatedBundleProducts(relatedProductList);
+                }
+            }
 
             self.cartLines.push(lineItem);
         });
     }
 }
 
-function RelatedKitProduct(data) {
+function RelatedPackageProduct(data) {
     self = this;
     $(data).map(function (i, b) {
         if ((b['Key'] == 'ProductId'))
             self.ProductId = b['Value'];
         if ((b['Key'] == 'DisplayName'))
-            self.DisplayName = b['Value'];       
+            self.DisplayName = b['Value'];
+        if ((b['Key'] == 'ProductPrice'))
+            self.ProductPrice = b['Value'];
     })
 }
