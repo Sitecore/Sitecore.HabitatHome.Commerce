@@ -32,25 +32,17 @@ namespace Sitecore.Feature.ProductKit.Controllers
 
         public ActionResult ProductKit()
         {
-            return (ActionResult)this.View("~/Views/ProductKit/ProductKit.cshtml", this.ProductKitRepository.GetProductKitRenderingModel(_visitorContext));
+            return View("~/Views/ProductKit/ProductKit.cshtml", this.ProductKitRepository.GetProductKitRenderingModel(_visitorContext));
         }
 
         [AllowAnonymous]
-        [HttpPost]
-        //[OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
+        [HttpPost]                                                                
         public JsonResult GetRelatedProducts(string pid)
         {
-            JsonResult baseJsonResult;            
-            try
-            {
-                dynamic relatedProducts = this.ProductKitRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, pid);
-                baseJsonResult = this.Json(relatedProducts);
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            return this.Json((object)baseJsonResult);
+            dynamic relatedProducts = this.ProductKitRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, pid);
+            JsonResult baseJsonResult = this.Json(relatedProducts);
+
+            return this.Json(baseJsonResult);
         }
     }
 }

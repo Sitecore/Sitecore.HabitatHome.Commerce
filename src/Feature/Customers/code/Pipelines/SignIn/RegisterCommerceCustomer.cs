@@ -52,7 +52,7 @@ namespace Sitecore.Feature.Customers.Pipelines.SignIn
             catch (Exception ex)
             {
                 // log error
-                Sitecore.Diagnostics.Log.Error(string.Format("Failed to create a customer for external user login {0}", args.User.UserName), this);
+                Sitecore.Diagnostics.Log.Error($"Failed to create a customer for external user login {args.User.UserName}. {ex.Message}", this);
             }    
         }
     }

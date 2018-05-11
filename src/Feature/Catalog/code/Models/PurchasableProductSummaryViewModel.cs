@@ -19,7 +19,7 @@ namespace Sitecore.Feature.Catalog.Models
 
         public bool IsPurchasable { get; set; } 
 
-        public void Initialize(ProductEntity product, bool initializeAsMock = false)
+        public new void Initialize(ProductEntity product, bool initializeAsMock = false)
         {
             base.Initialize(product, initializeAsMock);
 

@@ -113,6 +113,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddToWishList", "AddToWishL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.AddToWishList", "src\Feature\AddToWishList\code\Sitecore.Feature.AddToWishList.csproj", "{14CC9FA0-5158-4D2C-AD5D-04A760C7AFA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommerceEngine", "CommerceEngine", "{B5F21741-0DE5-41E3-BB6B-BD7362D1691F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "src\Foundation\Commerce\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{F5606E7F-821D-41AD-9091-71787C643D63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -214,6 +218,10 @@ Global
 		{14CC9FA0-5158-4D2C-AD5D-04A760C7AFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14CC9FA0-5158-4D2C-AD5D-04A760C7AFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14CC9FA0-5158-4D2C-AD5D-04A760C7AFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5606E7F-821D-41AD-9091-71787C643D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5606E7F-821D-41AD-9091-71787C643D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5606E7F-821D-41AD-9091-71787C643D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5606E7F-821D-41AD-9091-71787C643D63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -266,6 +274,8 @@ Global
 		{7A80F28E-426E-403C-9B7F-7DE1582A3D78} = {0D5C82DA-1FA3-427A-BEBD-9A977F81A8BB}
 		{F9313D62-07AF-4657-ABC7-590C418B95F7} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
 		{14CC9FA0-5158-4D2C-AD5D-04A760C7AFA0} = {F9313D62-07AF-4657-ABC7-590C418B95F7}
+		{B5F21741-0DE5-41E3-BB6B-BD7362D1691F} = {1B6FFBEA-35BD-4381-A2BE-4FA54E3940E1}
+		{F5606E7F-821D-41AD-9091-71787C643D63} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}

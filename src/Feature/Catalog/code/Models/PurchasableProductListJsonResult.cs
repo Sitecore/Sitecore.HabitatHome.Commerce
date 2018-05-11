@@ -15,7 +15,7 @@ namespace Sitecore.Feature.Catalog.Models
         {
         }
 
-        public void Initialize(BaseCommerceModelRepository repository, List<ProductEntity> productEntityList, bool initializeAsMock = false, string searchKeyword = "")
+        public new void Initialize(BaseCommerceModelRepository repository, List<ProductEntity> productEntityList, bool initializeAsMock = false, string searchKeyword = "")
         {
             base.Initialize(repository, productEntityList, initializeAsMock, searchKeyword);
 

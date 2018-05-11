@@ -23,6 +23,7 @@ gulp.task("default",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
@@ -36,6 +37,7 @@ gulp.task("quick-deploy",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",     
@@ -47,6 +49,7 @@ gulp.task("initial",
         function (callback) {
             config.runCleanBuilds = true;
             return runSequence(
+                "Copy-Sitecore-Lib",
                 "Nuget-Restore",
                 "Publish-All-Projects",
                 "Apply-Xml-Transform",
@@ -63,6 +66,7 @@ gulp.task("publish",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",    
@@ -74,6 +78,7 @@ gulp.task("tds",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
             "Nuget-Restore-TDS",
             "Apply-Xml-Transform",
             "Publish-Transforms",
@@ -86,6 +91,15 @@ gulp.task("tds",
 /*****************************
   Initial setup
 *****************************/
+gulp.task("Copy-Sitecore-Lib", function (callback) {
+    console.log("Copying Sitecore SXA Libraries");
+
+    fs.statSync(config.sitecoreLibraries);
+    var sxa = config.sitecoreLibraries + "/**/Sitecore.XA.*";
+    var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";    
+    gulp.src(sxa).pipe(gulp.dest("./lib/Modules/SXA"));
+    return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
+});
 
 gulp.task("Nuget-Restore",
     function (callback) {
@@ -258,59 +272,10 @@ gulp.task("Publish-Feature-Projects",
         return publishProjects("./src/Feature");
     });
 
-
 gulp.task("Publish-Project-Projects",
     function () {
         return publishProjects("./src/Project");
     });
-
-gulp.task("CE~default", function (callback) {
-    config.runCleanBuilds = true;
-    return runSequence(
-        "CE-Nuget-Restore",
-        "CE-Publish-CommerceEngine-Authoring",
-        "CE-Publish-CommerceEngine-Ops",
-        "CE-Publish-CommerceEngine-Minions",
-        "CE-Publish-CommerceEngine-Shops",
-        callback);
-});
-
-gulp.task("CE-Nuget-Restore", function (callback) {
-    var solution = "./" + config.commerceEngineSolutionName + ".sln";
-    return gulp.src(solution).pipe(nugetRestore());
-});
-
-gulp.task("CE-Publish-CommerceEngine-Authoring", function (callback) {
-    publishCommerceEngine(config.commerceAuthoringRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Ops", function (callback) {
-    publishCommerceEngine(config.commerceOpsRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Minions", function (callback) {
-    publishCommerceEngine(config.commerceMinionsRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {
-    publishCommerceEngine(config.commerceShopsRoot, callback);
-});
-
-var publishCommerceEngine = function (dest, callback) {
-    var solution = config.commerceEngineSolutionName + ".sln";
-    var cmd = "dotnet publish .\\" + solution + " -o " + dest
-    var options = { maxBuffer: Infinity };
-    console.log("cmd: " + cmd);
-    return exec(cmd, options, function (err, stdout, stderr) {
-        if (err) {
-            console.error("exec error: " + err);
-            throw err;
-        }
-        console.log("stdout: " + stdout);
-        console.log("stderr: " + stderr);
-        callback();
-    });
-};
 
 gulp.task("Deploy-EXM-Campaigns",
     function () {
