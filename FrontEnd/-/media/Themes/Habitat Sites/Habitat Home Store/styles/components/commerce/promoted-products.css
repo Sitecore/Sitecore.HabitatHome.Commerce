@@ -535,7 +535,8 @@
 }
 
 .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a,
-.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a {
+.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a,
+.component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a {
   font-size: 20px;
   line-height: 1.6;
   font-weight: 300;
@@ -543,9 +544,12 @@
 }
 
 .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:active, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:active, .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:hover, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:hover, .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:focus, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .lowest-variant-price a:focus,
-.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:active, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:active,
-.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:hover, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:hover,
-.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:focus, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:focus {
+.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:active,
+.component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:active,
+.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:hover,
+.component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:hover,
+.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:focus,
+.component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-title a:focus {
   text-decoration: none;
   cursor: pointer;
 }

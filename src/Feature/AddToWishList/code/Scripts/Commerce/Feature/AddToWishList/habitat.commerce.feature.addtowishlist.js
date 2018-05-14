@@ -10,15 +10,16 @@
         
     }
 
-    self.AddItemToWishList = function (event) {
-        $(event.currentTarget).find(".fa").addClass("fa-spinner");
-        $(event.currentTarget).find(".fa").addClass("fa-spin");
+    self.AddItemToWishList = function (item, event) {        
         var itemQuantity = $('.add-to-cart-qty-input').val();
         var sender = event.currentTarget;
+        $(event.currentTarget).attr('disabled', 'disabled');
+        $(event.currentTarget).find('span').text('ADDING TO MY WISH LIST ...');
 
         AjaxService.Post("/api/cxa/wishlistlines/AddWishListLine", { productId: self.ProductId, variantId: self.VariantId, quantity: itemQuantity }, function (data, success, sender) {
             if (success && data.Success) {
-                
+                $(event.currentTarget).removeAttr('disabled');
+                $(event.currentTarget).find('span').text('ADD TO MY WISH LIST');
             }
         });
     }
