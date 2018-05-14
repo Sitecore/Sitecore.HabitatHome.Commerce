@@ -36,6 +36,7 @@ export default function(file) {
             };
             var a = request.post({
                 url: url,
+                "rejectUnauthorized": false,
                 formData: formData
             }, function(err, httpResponse, body) {
                 resolve();

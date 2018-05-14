@@ -1055,6 +1055,26 @@ $hero-height: 500px;
 
   .search-result-list {
     font-size: 14px;
+    .search-result-labels {
+      margin-bottom:0.66667em;
+    }
+    .search-result-links {
+      margin-top:0.66667em;
+      a {        
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:after{
+          font-family: FontAwesome;
+          content: "";
+          font-size: 20px;
+          vertical-align: middle;
+          font-weight: bold;
+          margin-left: 4px;
+        }
+      }
+    }
+
     .field-title {
       margin-bottom: 1em;  
       a {

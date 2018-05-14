@@ -4,6 +4,8 @@ using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
+using Sitecore.Data.Items;
+using Sitecore.Resources.Media;
 using Sitecore.Diagnostics;
 using Sitecore.Links;
 using System;
@@ -70,13 +72,19 @@ namespace Sitecore.Feature.WishListLines.Models.JsonResults
             var productItem = this.SearchManager.GetProduct(listLine.Product.SitecoreProductItemId.ToString(), this.StorefrontContext.CurrentStorefront.Catalog);
             var prodId = this.ProductId.Split('|')[0];
             var productItem2 = this.SearchManager.GetProduct(prodId, this.StorefrontContext.CurrentStorefront.Catalog);
-            this.ProductUrl = "";
+            var imageId = listLine.Product.GetPropertyValue("Image").ToString();
+            this.SetImageUrl(imageId);
             this.SetLink(prodId);     
         }
 
         public virtual void SetLink(string productId)
         {
             this.ProductUrl = productId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(productId, this.StorefrontContext.CurrentStorefront.Catalog));
+        }
+        public virtual void SetImageUrl(string imageId)
+        {
+            MediaItem imageItem = Sitecore.Context.Database.GetItem(imageId);           
+            this.Image = imageItem != null ? MediaManager.GetMediaUrl(imageItem) :" ";
         }
     }
 }

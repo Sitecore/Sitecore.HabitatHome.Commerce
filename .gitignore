@@ -5,6 +5,7 @@ specs/**/[Bb]in/
 .nuget/
 _ReSharper.*
 packages/
+publishTemp
 artifacts/
 build/assets/**/*
 *.user
@@ -48,3 +49,4 @@ InstallUtil.InstallLog
 /src/**/logs
 *.dll
 deploy/
+publishTemp

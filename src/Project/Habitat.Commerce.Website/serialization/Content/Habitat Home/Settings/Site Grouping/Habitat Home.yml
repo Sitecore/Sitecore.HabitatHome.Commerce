@@ -11,6 +11,9 @@ SharedFields:
 - ID: "301e719a-6f65-4874-b565-a953a7b5ac83"
   Hint: OtherProperties
   Value: "formsRoot=%7BA5F044BD-4086-4BBB-A7E4-488479B419AB%7D&dictionaryPath=%2Fsitecore%2Fcontent%2FHabitat%20Sites%2FHabitat%2FData%2FDictionary&enableFieldLanguageFallback=true&enableItemLanguageFallback=true"
+- ID: "602ab79d-fc25-4c5b-89d3-27aaef3bb37c"
+  Hint: LoginPage
+  Value: "{79902BF1-F289-4B38-A8A1-9DAD2E65AC01}"
 - ID: "8e0dd914-9afb-4d45-bf8b-7ff5d6e5337e"
   Hint: HostName
   Value: habitathome.dev.local

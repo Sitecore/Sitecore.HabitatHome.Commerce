@@ -45,19 +45,19 @@ namespace Plugin.Demo.HabitatHome.Wishlists
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
 
             // Add the entities
-            modelBuilder.AddEntityType(typeof(SampleEntity));
+            //modelBuilder.AddEntityType(typeof(SampleEntity));
 
             // Add the entity sets
-            modelBuilder.EntitySet<SampleEntity>("Sample");
+            //modelBuilder.EntitySet<SampleEntity>("Sample");
 
             // Add complex types
 
             // Add unbound functions
 
             // Add unbound actions
-            var configuration = modelBuilder.Action("SampleCommand");
-            configuration.Parameter<string>("Id");
-            configuration.ReturnsFromEntitySet<CommerceCommand>("Commands");
+            //var configuration = modelBuilder.Action("SampleCommand");
+            //configuration.Parameter<string>("Id");
+            //configuration.ReturnsFromEntitySet<CommerceCommand>("Commands");
 
 
             ActionConfiguration actionConfiguration2 = modelBuilder.Action("AddWishListLineItem");            

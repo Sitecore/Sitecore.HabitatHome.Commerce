@@ -52,6 +52,7 @@
                         </tr>
                     </thead>
                     <tbody data-bind="foreach: cartLines">
+                        
                         <tr>
                             <td class="shoppingcart-image">
                                 <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt=" " pid="image" /></a>
@@ -79,6 +80,17 @@
                                     </div>
 
                                 </div>
+                                <div class="related-product-information" style="padding-left:25px">
+                                    <div data-bind="foreach: relatedKitProducts">
+                                        <span data-bind="text: DisplayName" class="small"></span><br />
+                                    </div>
+                                </div>
+                                <div class="related-product-information" style="padding-left:25px">
+                                    <div data-bind="foreach: relatedBundleProducts">
+                                        <span data-bind="text: DisplayName" class="small"></span> <span data-bind="text: ProductPrice" class="small"></span><br />
+                                    </div>
+                                </div>
+
                             </td>
                             <td class="shoppingcart-price">
                                 <span class="price" data-bind="text: linePrice"></span>
@@ -103,10 +115,13 @@
                             </td>                            
                             <td class="shoppingcart-delete" style="text-align:center;">
                                 <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a><br />
+                                @if (Sitecore.Context.IsLoggedIn)
+                                {
                                 <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
                                     <i class="fa"></i>
                                     <span>Move to My Wish List</span>
                                 </button>
+                                }
                             </td>
                         </tr>
                     </tbody>

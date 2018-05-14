@@ -1,13 +1,12 @@
 ﻿using Sitecore.Commerce.Entities;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.XA.Foundation.Common;
-using Sitecore.Commerce.XA.Foundation.Connect.Managers;
-using Sitecore.Commerce.XA.Feature.Account.Models;
+using Sitecore.Commerce.XA.Foundation.Connect.Managers;      
 using Sitecore.Commerce.Engine.Connect.Entities;
 
 namespace Sitecore.Feature.OrderLines.Models
 {
-    public class OrderLineVariantRenderingModel  : OrderLineRenderingModel
+    public class OrderLineVariantRenderingModel  : Commerce.XA.Foundation.CommerceEngine.Models.OrderLineRenderingModel
     {
         public OrderLineVariantRenderingModel(IStorefrontContext storefrontContext, ISearchManager searchManager) : base(storefrontContext, searchManager)
         {

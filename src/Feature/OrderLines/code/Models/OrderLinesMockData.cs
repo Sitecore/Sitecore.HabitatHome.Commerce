@@ -1,8 +1,7 @@
 ﻿using Sitecore.Commerce.Entities;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Entities.Orders;
-using Sitecore.Commerce.Entities.Prices;
-using Sitecore.Commerce.XA.Feature.Account.Models;
+using Sitecore.Commerce.Entities.Prices;                     
 using Sitecore.Data;
 using System;
 using System.Collections.Generic;

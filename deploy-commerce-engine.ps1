@@ -12,15 +12,16 @@ Param(
     [string]$adminPassword = "b",
     [string]$publishFolder = (Join-Path $PSScriptRoot "publishTemp"),
     [switch]$Initialize,
-    [switch]$Bootstrap
+    [switch]$Bootstrap,
+    [switch]$SkipPublish
 )
 
 Function Start-CommerceEngineCompile {
 	
     $engineSolutionName = "Habitat.Commerce.Engine.sln"
-	if (Test-Path $publishFolder){
-		Remove-Item $publishFolder -Recurse -Force
-	}
+    if (Test-Path $publishFolder) {
+        Remove-Item $publishFolder -Recurse -Force
+    }
     Write-Host ("Compiling and Publishing Engine to {0}" -f $publishFolder) -ForegroundColor Green
     dotnet publish $engineSolutionName -o $publishFolder
 
@@ -185,10 +186,11 @@ Function InitializeCommerceServices {
 if ($DeployOnly) {
 
 }
-Start-CommerceEngineCompile
-Start-CommerceEnginePepare
-Publish-CommerceEngine
-
+if (!($SkipPublish)) {
+    Start-CommerceEngineCompile
+    Start-CommerceEnginePepare
+    Publish-CommerceEngine
+}
 if ($Bootstrap -or $Initialize) {
     Get-IdServerToken   
 }

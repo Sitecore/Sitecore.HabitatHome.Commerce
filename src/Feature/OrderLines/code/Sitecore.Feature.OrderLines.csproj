@@ -67,6 +67,10 @@
     <Reference Include="Sitecore.Commerce.XA.Feature.Account">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Feature.Account.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.CommerceEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.CommerceEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
       <HintPath>..\..\..\..\lib\Modules\Commerce.SXA-1.1.47\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>

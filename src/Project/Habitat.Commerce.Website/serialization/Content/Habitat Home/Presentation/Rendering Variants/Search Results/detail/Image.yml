@@ -5,6 +5,22 @@ Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Image
 DB: master
 SharedFields:
+- ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
+  Hint: EnableRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{02678438-122C-4110-841D-22A9C3BAC14D}">
+        <conditions>
+          <condition
+            id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+            uid="46B3FB5FE49E4C5D8DF93C8D791FD69A"
+            operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}"
+            value="/sitecore/content/Habitat Sites/Habitat Home" />
+        </conditions>
+      </rule>
+    </ruleset>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200
