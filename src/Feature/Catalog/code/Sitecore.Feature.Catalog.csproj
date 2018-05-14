@@ -142,6 +142,7 @@
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.Serialization.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.config" />
     <None Include="packages.config" />
+    <Content Include="Scripts\Commerce\Feature\Catalog\cxa.feature.catalog.productprice.model.js" />
     <Content Include="Scripts\Commerce\Feature\Catalog\habitat.commerce.feature.productlist.js" />
     <Content Include="Scripts\Commerce\Feature\Catalog\habitat.commerce.feature.productlist.model.js" />
     <Content Include="Views\Catalog\PurchasableProductList.cshtml" />

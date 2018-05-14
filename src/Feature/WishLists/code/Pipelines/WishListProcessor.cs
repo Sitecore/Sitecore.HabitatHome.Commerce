@@ -121,6 +121,7 @@ namespace Sitecore.Feature.WishLists.Pipelines
                             product.ProductId = productComponent.Id;
                             product.ProductName = string.IsNullOrEmpty(productComponent.ProductName) ? productComponent.DisplayName : productComponent.ProductName;
                             destination.SetPropertyValue("_product_Images", productComponent.Image == null || string.IsNullOrEmpty(productComponent.Image.SitecoreId) ? (object)string.Empty : (object)productComponent.Image.SitecoreId);
+                            product.SetPropertyValue("Image", productComponent.Image == null || string.IsNullOrEmpty(productComponent.Image.SitecoreId) ? (object)string.Empty : (object)productComponent.Image.SitecoreId);
                             product.SetPropertyValue("Color", string.IsNullOrEmpty(productComponent.Color) ? (object)(string)null : (object)productComponent.Color);
                             product.SetPropertyValue("Size", string.IsNullOrEmpty(productComponent.Size) ? (object)(string)null : (object)productComponent.Size);
                             product.SetPropertyValue("Style", string.IsNullOrEmpty(productComponent.Style) ? (object)(string)null : (object)productComponent.Style);

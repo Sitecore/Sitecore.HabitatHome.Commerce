@@ -92,9 +92,9 @@
   display: inline-block;
   vertical-align: middle;
   border-radius: 15px;
-  font-size: 10px;
+  font-size: 1.875em;
   text-align: center !important;
-  width: 15px;
+  width: 1.875em;
   cursor: pointer;
   position: absolute;
   color: #141919;

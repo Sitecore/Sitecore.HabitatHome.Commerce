@@ -10,7 +10,7 @@ SharedFields:
   Value: Title
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 200
 - ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
   Hint: Tag
   Value: "{AD7A95FD-05D0-484E-8AFB-FB1DDD5F44AB}"

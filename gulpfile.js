@@ -26,8 +26,8 @@ gulp.task("default",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
-            "Sync-Unicorn",
             "Publish-Transforms",
+            "Sync-Unicorn",
             "Deploy-EXM-Campaigns",
             callback);
     });
@@ -50,8 +50,8 @@ gulp.task("initial",
                 "Nuget-Restore",
                 "Publish-All-Projects",
                 "Apply-Xml-Transform",
-                "Sync-Unicorn",
                 "Publish-Transforms",
+                "Sync-Unicorn",
                 "Deploy-EXM-Campaigns",
                 "Rebuild-Core-Index",
                 "Rebuild-Master-Index",
@@ -106,7 +106,6 @@ gulp.task("Publish-All-Projects",
             "Publish-Foundation-Projects",
             "Publish-Feature-Projects",
             "Publish-Project-Projects",
-
             callback);
     });
 

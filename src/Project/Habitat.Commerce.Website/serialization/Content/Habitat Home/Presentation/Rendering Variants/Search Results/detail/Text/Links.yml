@@ -1,0 +1,21 @@
+﻿---
+ID: "503f5ff1-71e9-4b4c-822e-4e1718bf3203"
+Parent: "4444ea0a-226f-4247-aef3-4b1df40fd620"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Links
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "search-result-links"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180503T151540Z

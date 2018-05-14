@@ -167,7 +167,6 @@
   top: 15px;
   right: 15px;
   position: absolute;
-  z-index: 10;
 }
 
 .component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button button {
@@ -531,13 +530,6 @@
 .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-title a:focus {
   text-decoration: none;
   cursor: pointer;
-}
-
-.component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .current-price {
-  /*                             background: darken($primary-color, 2);
-                            color: $light;
-                            border-radius: $border-radius 0 0 $border-radius;
-                            cursor: default; */
 }
 
 .component.cxa-productlist-component .product-list > ul > li .product-summary .product-info .product-rating .icon-star:before {

@@ -2,6 +2,7 @@
 using Sitecore.Commerce.Engine.Connect.Interfaces;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
+using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Feature.NearestStore.Repositories;
 using System;
 using System.Collections.Generic;
@@ -15,20 +16,18 @@ namespace Sitecore.Feature.NearestStore.Controllers
     public class NearestStoreController : BaseCommerceStandardController
     {
         private IStoresRepository StoresRepository { get; }
-
+        private readonly IVisitorContext _visitorContext;
 
         //TODO: ADD DEPENDENCY INJECTION
-        public NearestStoreController(IStoresRepository storesRepository)
+        public NearestStoreController(IStoresRepository storesRepository, IVisitorContext visitorContext)
         {
             this.StoresRepository = storesRepository;
+            _visitorContext = visitorContext;
         }
-        //public NearestStoreController()
-        //{
-        //    this.StoresRepository = new StoresRepository();
-        //}
+
         public ActionResult NearestStore()
         {
-            return (ActionResult)this.View("~/Views/NearestStore/NearestStore.cshtml");
+            return (ActionResult)this.View("~/Views/NearestStore/NearestStore.cshtml", this.StoresRepository.GetNearestStoreRenderingModel(_visitorContext));
         }
 
 

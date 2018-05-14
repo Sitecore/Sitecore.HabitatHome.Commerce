@@ -1,0 +1,25 @@
+﻿---
+ID: "aac21499-2190-4093-b419-a7b546e956ae"
+Parent: "9643f053-9a0c-4815-a6f8-a69192d3fca5"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: /sitecore/system/Settings/Rules/Definitions/Elements/CommerceConnect Conditional Renderings/Has Purchased Product Condition
+DB: master
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: Sitecore.Foundation.Rules.Conditions.HasPurchasedProductCondition, Sitecore.Foundation.Rules
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180411T171044Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "If user has purchased product with id [PurchasedProductId,String,,product id] in the past [Days,Int,,number of] days."

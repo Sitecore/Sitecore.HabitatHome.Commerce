@@ -1,0 +1,32 @@
+﻿---
+ID: "0beb80cb-0565-4f3c-a0c0-449f74722a4c"
+Parent: "6b34ee3d-929f-4fc0-9701-b8cad7dd58f5"
+Template: "ddb08f92-1cc2-43e2-b5c1-fe7f98e32ec9"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/smart-home/Data/Category Subnavigation/Headphones"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180218T095342Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{56D9D3C5-9511-4386-A7C7-6C14FE02ED98}" />
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Security Cameras" querystring="" target="" id="{A4061541-80EF-738F-D600-E73A3B7C7D9E}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ヘッドフォン
+  Versions:
