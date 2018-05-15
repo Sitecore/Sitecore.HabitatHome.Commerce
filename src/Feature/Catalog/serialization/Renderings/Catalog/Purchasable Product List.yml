@@ -37,7 +37,7 @@ SharedFields:
   Value: PurchasableProductList
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.Catalog.Controllers.PurchasableProductListController, Sitecore.Feature.Catalog
+  Value: Sitecore.HabitatHome.Feature.Catalog.Controllers.PurchasableProductListController, Sitecore.HabitatHome.Feature.Catalog
 - ID: "f3e7e552-d7c8-469b-a150-69e4e14ab35c"
   Hint: ClearOnIndexUpdate
   Type: Checkbox
