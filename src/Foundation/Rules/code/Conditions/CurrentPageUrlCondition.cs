@@ -4,7 +4,7 @@ using Sitecore.Rules.Conditions;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace Sitecore.Foundation.Rules.Conditions
+namespace Sitecore.HabitatHome.Foundation.Rules.Conditions
 {
     public class CurrentPageUrlCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {

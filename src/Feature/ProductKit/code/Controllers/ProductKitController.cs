@@ -4,7 +4,7 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.DependencyInjection;
 using Sitecore.Diagnostics;
-using Sitecore.Feature.ProductKit.Repositories;
+using Sitecore.HabitatHome.Feature.ProductKit.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.Web.Mvc;
 using System.Web.UI;
 
-namespace Sitecore.Feature.ProductKit.Controllers
+namespace Sitecore.HabitatHome.Feature.ProductKit.Controllers
 {
     public class ProductKitController : BaseCommerceStandardController
     {

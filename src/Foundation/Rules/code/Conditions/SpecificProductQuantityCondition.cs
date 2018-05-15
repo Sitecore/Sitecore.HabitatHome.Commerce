@@ -6,7 +6,7 @@ using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Rules;
 using Sitecore.Commerce.Rules.Conditions;
 
-namespace Sitecore.Foundation.Rules.Conditions
+namespace Sitecore.HabitatHome.Foundation.Rules.Conditions
 {
     public class SpecificProductQuantityCondition<T> : BaseCartMetricsCondition<T> where T : RuleContext
     {

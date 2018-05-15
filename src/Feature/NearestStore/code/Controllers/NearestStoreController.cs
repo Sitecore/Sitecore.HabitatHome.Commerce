@@ -1,10 +1,10 @@
-﻿using Sitecore.Commerce.XA.Foundation.Common.Controllers;
-using Sitecore.Commerce.XA.Foundation.Connect;
-using Sitecore.Feature.NearestStore.Repositories;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Sitecore.Commerce.XA.Foundation.Common.Controllers;
+using Sitecore.Commerce.XA.Foundation.Connect;
+using Sitecore.HabitatHome.Feature.NearestStore.Repositories;
 
-namespace Sitecore.Feature.NearestStore.Controllers
+namespace Sitecore.HabitatHome.Feature.NearestStore.Controllers
 {
     public class NearestStoreController : BaseCommerceStandardController
     {

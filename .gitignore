@@ -24,7 +24,6 @@ vars.user.cmd
 node_modules/
 settings.user.ps1
 *.log
-*.zip
 /install/Deploy-*
 /install/assets/Commerce
 /install/assets/Downloads

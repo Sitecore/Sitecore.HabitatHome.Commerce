@@ -1,19 +1,18 @@
-﻿using Newtonsoft.Json.Linq;
-using Sitecore.Commerce.Engine.Connect;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Web;
-using Sitecore.Foundation.Commerce.StoreLocator.Models;
-using Sitecore.Configuration;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
-using Sitecore.Foundation.Commerce.StoreLocator.Utilities;
+using Newtonsoft.Json.Linq;
+using Sitecore.Commerce.Engine.Connect;
+using Sitecore.Configuration;
 using Sitecore.Diagnostics;
-using Sitecore.Foundation.Commerce.StoreLocator;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Models;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Utilities;
 
-namespace Sitecore.Foundation.Commerce.StoreLocator.Managers
+namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
 {
     public class StoreLocatorManager
     {

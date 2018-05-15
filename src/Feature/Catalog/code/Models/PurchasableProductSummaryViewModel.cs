@@ -1,13 +1,13 @@
-﻿using Sitecore.Commerce.XA.Feature.Catalog.Models;   
-using System.Linq;                
+﻿using System.Collections.Generic;
+using System.Linq;
+using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
-using Sitecore.Commerce.XA.Foundation.Common.Providers;          
+using Sitecore.Commerce.XA.Foundation.Common.Providers;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
 using Sitecore.Data.Items;
-using System.Collections.Generic;
 
-namespace Sitecore.Feature.Catalog.Models
+namespace Sitecore.HabitatHome.Feature.Catalog.Models
 {
     public class PurchasableProductSummaryViewModel : ProductSummaryViewModel
     {

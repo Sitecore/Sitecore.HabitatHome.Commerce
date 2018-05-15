@@ -1,4 +1,7 @@
-﻿using Sitecore.Commerce.Entities.WishLists;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Services;
 using Sitecore.Commerce.Services.WishLists;
 using Sitecore.Commerce.XA.Foundation.Common;
@@ -6,15 +9,10 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
-using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Foundation.Commerce.WishLists.Providers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using Sitecore.HabitatHome.Foundation.WishLists.Providers;
 
-namespace Sitecore.Foundation.Commerce.WishLists.Managers
+namespace Sitecore.HabitatHome.Foundation.WishLists.Managers
 {
     public class WishListManager : IWishListManager
     {

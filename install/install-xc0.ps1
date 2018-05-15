@@ -255,21 +255,21 @@ function Install-Prerequisites {
 
 Function Publish-CommerceEngine {
     Write-Host "Publishing Commerce Engine" -ForegroundColor Green
-    $SolutionName = Join-Path "..\" "Habitat.Commerce.Engine.sln"
-    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.Engine"
+    $SolutionName = Join-Path "..\" "HabitatHome.Commerce.Engine.sln"
+    $PublishLocation = Join-Path $publishPath "HabitatHome.Commerce.Engine"
     dotnet publish $SolutionName -o $publishLocation
 }
 
 Function Publish-IdentityServer{
     Write-Host "Publishing IdentityServer" -ForegroundColor Green
-    $SolutionName = Join-Path "..\" "Habitat.Commerce.IdentityServer.sln"
-    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.IdentityServer"
+    $SolutionName = Join-Path "..\" "HabitatHome.Commerce.IdentityServer.sln"
+    $PublishLocation = Join-Path $publishPath "HabitatHome.Commerce.IdentityServer"
     dotnet publish $SolutionName -o $publishLocation
 }
 Function Publish-BizFx {
     Write-Host "Publishing BizFx" -ForegroundColor Green
     $bizFxSource = Join-Path $commerceAssets.installationFolder "Sitecore.BizFX.1.1.9/"
-    $PublishLocation = Join-Path $publishPath "Habitat.Commerce.BizFx"
+    $PublishLocation = Join-Path $publishPath "HabitatHome.Commerce.BizFx"
     if (Test-Path $PublishLocation){
         Remove-Item $PublishLocation -Force -Recurse
     }
@@ -307,10 +307,10 @@ Function Install-Commerce {
         CommerceShopsServicesPort          = "5005"
         CommerceAuthoringServicesPort      = "5000"
         CommerceMinionsServicesPort        = "5010"     
-        SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\Habitat.Commerce.Engine")
-        SitecoreBizFxServicesContentPath   = $(Join-Path $resourcePath "Publish\Habitat.Commerce.BizFX")
+        SitecoreCommerceEnginePath          = $(Join-Path $resourcePath "Publish\HabitatHome.Commerce.Engine")
+        SitecoreBizFxServicesContentPath   = $(Join-Path $resourcePath "Publish\HabitatHome.Commerce.BizFX")
         SitecoreBizFxPostFix               = $site.prefix
-        SitecoreIdentityServerPath      = $(Join-Path $resourcePath "Publish\Habitat.Commerce.IdentityServer")
+        SitecoreIdentityServerPath      = $(Join-Path $resourcePath "Publish\HabitatHome.Commerce.IdentityServer")
         CommerceEngineCertificatePath      = $(Join-Path -Path $assets.certificatesPath -ChildPath "habitat.dev.local.xConnect.Client.crt" )    
         SiteUtilitiesSrc                   = $(Join-Path -Path $assets.commerce.sifCommerceRoot -ChildPath "SiteUtilityPages")
         CommerceConnectModuleFullPath      = $(Get-ChildItem -Path $assets.commerce.installationFolder  -Include "Sitecore Commerce Connect*.zip" -Recurse  )

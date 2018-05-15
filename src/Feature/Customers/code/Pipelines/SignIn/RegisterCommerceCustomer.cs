@@ -9,7 +9,7 @@ using Sitecore.Commerce.XA.Foundation.Connect.Providers;
 using Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignIn;
 using System;              
 
-namespace Sitecore.Feature.Customers.Pipelines.SignIn
+namespace Sitecore.HabitatHome.Feature.Customers.Pipelines.SignIn
 {
     public class RegisterCommerceCustomer : SignInProcessor
     {

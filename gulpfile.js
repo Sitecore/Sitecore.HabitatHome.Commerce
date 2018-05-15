@@ -74,20 +74,6 @@ gulp.task("publish",
             callback);
     });
 
-gulp.task("tds",
-    function (callback) {
-        config.runCleanBuilds = true;
-        return runSequence(
-            "Copy-Sitecore-Lib",
-            "Nuget-Restore-TDS",
-            "Apply-Xml-Transform",
-            "Publish-Transforms",
-            "TDS-Build",
-            "Deploy-EXM-Campaigns",
-            callback);
-    });
-
-
 /*****************************
   Initial setup
 *****************************/
@@ -106,13 +92,7 @@ gulp.task("Nuget-Restore",
         var solution = "./" + config.solutionName + ".sln";
         return gulp.src(solution).pipe(nugetRestore());
     });
-
-gulp.task("Nuget-Restore-TDS",
-    function (callback) {
-        var solution = "./" + config.solutionName + ".TDS.sln";
-        return gulp.src(solution).pipe(nugetRestore());
-    });
-
+          
 gulp.task("Publish-All-Projects",
     function (callback) {
         return runSequence(
@@ -198,33 +178,6 @@ gulp.task("Build-Solution",
             }));
     });
 
-
-gulp.task("TDS-Build",
-    function () {
-        var targets = ["Build"];
-        if (config.runCleanBuilds) {
-            targets = ["Clean", "Build"];
-        }
-
-        var solution = "./" + config.solutionName + ".TDS.sln";
-        return gulp.src(solution)
-            .pipe(msbuild({
-                targets: targets,
-                configuration: config.buildConfiguration,
-                logCommand: false,
-                verbosity: config.buildVerbosity,
-                stdout: true,
-                errorOnFail: true,
-                maxcpucount: config.buildMaxCpuCount,
-                nodeReuse: false,
-                toolsVersion: config.buildToolsVersion,
-                properties: {
-                    Platform: config.buildPlatform
-                }
-            }));
-    });
-
-
 /*****************************
   Publish
 *****************************/
@@ -254,6 +207,7 @@ var publishStream = function (stream, dest) {
             }
         }));
 };
+
 var publishProjects = function (location, dest) {
     dest = dest || config.websiteRoot;
 
@@ -263,10 +217,12 @@ var publishProjects = function (location, dest) {
             return publishStream(stream, dest);
         }));
 };
+
 gulp.task("Publish-Foundation-Projects",
     function () {
         return publishProjects("./src/Foundation");
     });
+
 gulp.task("Publish-Feature-Projects",
     function () {
         return publishProjects("./src/Feature");

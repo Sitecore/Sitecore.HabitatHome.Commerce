@@ -8,13 +8,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
-using Sitecore.Feature.ProductBundle.Models.JsonResults;
-using Sitecore.Feature.ProductBundle.Managers;
+using Sitecore.HabitatHome.Feature.ProductBundle.Models.JsonResults;
+using Sitecore.HabitatHome.Feature.ProductBundle.Managers;
 using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;
 
-namespace Sitecore.Feature.ProductBundle.Repositories
+namespace Sitecore.HabitatHome.Feature.ProductBundle.Repositories
 {
     public class ProductBundleRepository : BaseCatalogRepository, IProductBundleRepository
     {

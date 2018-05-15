@@ -2,7 +2,7 @@
 using Sitecore.ContentSearch;
 using Sitecore.Data.Items;
 
-namespace Sitecore.Foundation.Search.ComputedFields
+namespace Sitecore.HabitatHome.Foundation.Search.ComputedFields
 {
     public class HasLayout : XA.Foundation.Search.ComputedFields.HasLayout
     {                                      

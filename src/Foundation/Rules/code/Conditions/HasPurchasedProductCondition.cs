@@ -1,9 +1,9 @@
 ﻿using System.Linq;
+using Sitecore.HabitatHome.Foundation.Orders.Managers;
 using Sitecore.Rules;
 using Sitecore.Rules.Conditions;
-using Sitecore.Foundation.Commerce.OrderOutcomes.Managers;
 
-namespace Sitecore.Foundation.Rules.Conditions
+namespace Sitecore.HabitatHome.Foundation.Rules.Conditions
 {
     public class HasPurchasedProductCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Feature.ProductKit.Models.JsonResults
+namespace Sitecore.HabitatHome.Feature.ProductKit.Models.JsonResults
 {
     public class RelatedProductJsonResult
     {

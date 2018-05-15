@@ -1,11 +1,11 @@
-﻿using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
+﻿using System.Collections.Generic;
+using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Repositories;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
-using System.Collections.Generic;
 
-namespace Sitecore.Feature.Catalog.Models
+namespace Sitecore.HabitatHome.Feature.Catalog.Models
 {
     public class PurchasableProductListJsonResult : ProductListJsonResult
     {                                                                                           

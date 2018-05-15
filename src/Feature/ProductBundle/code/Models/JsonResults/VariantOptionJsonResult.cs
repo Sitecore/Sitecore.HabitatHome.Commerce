@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Feature.ProductBundle.Models.JsonResults
+namespace Sitecore.HabitatHome.Feature.ProductBundle.Models.JsonResults
 {
     public class VariantOptionJsonResult
     {

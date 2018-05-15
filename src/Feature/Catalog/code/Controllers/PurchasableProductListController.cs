@@ -1,21 +1,21 @@
-﻿using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Services;
 using Sitecore.Commerce.Services.Carts;
-using Sitecore.Commerce.XA.Foundation.Common;                
+using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
+using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
-using Sitecore.Commerce.XA.Foundation.Connect.Managers;        
-using System.Web.Mvc;
-using System.Collections.Generic;
+using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection;
-using Sitecore.Feature.Catalog.Models;
-using Sitecore.Feature.Catalog.Repositories;
+using Sitecore.HabitatHome.Feature.Catalog.Models;
+using Sitecore.HabitatHome.Feature.Catalog.Repositories;
 
-namespace Sitecore.Feature.Catalog.Controllers
+namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
 {
     public class PurchasableProductListController : Commerce.XA.Feature.Catalog.Controllers.CatalogController
     {
