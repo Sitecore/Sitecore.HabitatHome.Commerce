@@ -72,8 +72,8 @@ Assuming you have the default installation settings:
 
     deploy-commerce-engine.ps1 -Boostrap -Initialize
 
-> if you have made any changes to your settings, review the deploy-engine-commerce.ps1 script and override / modify the parameters as required 
+> if you have made any changes to your settings, review the deploy-engine-commerce.ps1 script and override / modify the parameters as required.
 
 
 # Contribute or Issues
-Please post any issues on Slack Community [#demo-sites](https://sitecorechat.slack.com/messages/habitathome/) channel or create an issue on [GitHub](https://github.com/Sitecore/Sitecore.HabitatHome.Commerce/issues). Contributions are always welcome!
+Please post any issues on Slack Community [#habitathome](https://sitecorechat.slack.com/messages/habitathome/) channel or create an issue on [GitHub](https://github.com/Sitecore/Sitecore.HabitatHome.Commerce/issues). Contributions are always welcome!
