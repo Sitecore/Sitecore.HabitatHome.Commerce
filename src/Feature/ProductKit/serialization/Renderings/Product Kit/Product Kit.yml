@@ -13,7 +13,7 @@ SharedFields:
   Value: ProductKit
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.ProductKit.Controllers.ProductKitController, Sitecore.Feature.ProductKit
+  Value: Sitecore.HabitatHome.Feature.ProductKit.Controllers.ProductKitController, Sitecore.HabitatHome.Feature.ProductKit
 Languages:
 - Language: en
   Versions:

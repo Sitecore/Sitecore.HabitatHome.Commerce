@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Sitecore.Commerce.XA.Foundation.Common;
-using Sitecore.Commerce.XA.Foundation.Connect;
-using Sitecore.Feature.Catalog.Models;
+﻿using System.Collections.Generic;
+using Sitecore.Commerce.Entities.Inventory;
+using Sitecore.Commerce.XA.Feature.Catalog;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
+using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
-using Sitecore.Commerce.XA.Foundation.Common.Search;
-using Sitecore.Commerce.XA.Foundation.Connect.Managers;
-using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
-using Sitecore.Diagnostics;
-using Sitecore.Data.Items;
-using Sitecore.Commerce.XA.Foundation.Connect.Entities;
-using Sitecore.Commerce.XA.Feature.Catalog.MockData;
 using Sitecore.Commerce.XA.Foundation.Common.Repositories;
-using Sitecore.Commerce.XA.Feature.Catalog;
-using Sitecore.Commerce.Entities.Inventory;
+using Sitecore.Commerce.XA.Foundation.Common.Search;
+using Sitecore.Commerce.XA.Foundation.Connect;
+using Sitecore.Commerce.XA.Foundation.Connect.Entities;
+using Sitecore.Commerce.XA.Foundation.Connect.Managers;
+using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using Sitecore.HabitatHome.Feature.Catalog.Models;
 
-namespace Sitecore.Feature.Catalog.Repositories
+namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
 {
     public class PurchasableProductListRepository : ProductListRepository, IPurchasableProductListRepository
     {                                                             

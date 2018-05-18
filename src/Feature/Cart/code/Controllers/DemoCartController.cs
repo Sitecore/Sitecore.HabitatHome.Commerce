@@ -6,7 +6,7 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using System.Web.Mvc;
 
-namespace Sitecore.Feature.Cart.Controllers
+namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class DemoCartController : CartController
     {

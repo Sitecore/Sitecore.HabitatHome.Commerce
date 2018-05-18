@@ -9,7 +9,7 @@ using Sitecore.Commerce.XA.Foundation.Connect.Providers;
 using Sitecore.Owin.Authentication.Pipelines.CookieAuthentication.SignIn;
 using System;              
 
-namespace Sitecore.Feature.Customers.Pipelines.SignIn
+namespace Sitecore.HabitatHome.Feature.Customers.Pipelines.SignIn
 {
     public class RegisterCommerceCustomer : SignInProcessor
     {
@@ -52,7 +52,7 @@ namespace Sitecore.Feature.Customers.Pipelines.SignIn
             catch (Exception ex)
             {
                 // log error
-                Sitecore.Diagnostics.Log.Error(string.Format("Failed to create a customer for external user login {0}", args.User.UserName), this);
+                Sitecore.Diagnostics.Log.Error($"Failed to create a customer for external user login {args.User.UserName}. {ex.Message}", this);
             }    
         }
     }

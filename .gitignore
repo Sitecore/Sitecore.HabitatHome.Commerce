@@ -24,12 +24,13 @@ vars.user.cmd
 node_modules/
 settings.user.ps1
 *.log
-*.zip
 /install/Deploy-*
 /install/assets/Commerce
 /install/assets/Downloads
 configuration-x*0.json
 /install/deploy/*
+license.xml
+lib/Modules/*
 
 # Hedgehog Team Development for Sitecore
 *.scproj.user

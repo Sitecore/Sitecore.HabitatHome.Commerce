@@ -4,7 +4,7 @@ using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data.Items;
 
-namespace Sitecore.Foundation.Search.ComputedFields
+namespace Sitecore.HabitatHome.Foundation.Search.ComputedFields
 {
     public class ProductTags : AbstractComputedIndexField
     {

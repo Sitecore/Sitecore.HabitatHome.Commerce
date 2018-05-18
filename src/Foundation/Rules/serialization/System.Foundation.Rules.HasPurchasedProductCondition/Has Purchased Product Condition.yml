@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
   Hint: Type
-  Value: Sitecore.Foundation.Rules.Conditions.HasPurchasedProductCondition, Sitecore.Foundation.Rules
+  Value: Sitecore.HabitatHome.Foundation.Rules.Conditions.HasPurchasedProductCondition, Sitecore.HabitatHome.Foundation.Rules
 Languages:
 - Language: en
   Versions:

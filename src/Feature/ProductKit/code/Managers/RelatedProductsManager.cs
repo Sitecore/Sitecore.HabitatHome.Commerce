@@ -8,7 +8,7 @@ using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
-using Sitecore.Feature.ProductKit.Models.JsonResults;
+using Sitecore.HabitatHome.Feature.ProductKit.Models.JsonResults;
 using Sitecore.Links;
 using Sitecore.Resources.Media;
 using System;
@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Feature.ProductKit.Managers
+namespace Sitecore.HabitatHome.Feature.ProductKit.Managers
 {
     public class RelatedProductsManager : IRelatedProductsManager
     {

@@ -10,10 +10,10 @@ SharedFields:
   Value: Office/32x32/new_package.png
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: ProductKit
+  Value: ProductBundle
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.ProductKit.Controllers.ProductKitController, Sitecore.Feature.ProductKit
+  Value: Sitecore.HabitatHome.Feature.ProductBundle.Controllers.ProductBundleController, Sitecore.HabitatHome.Feature.ProductBundle
 Languages:
 - Language: en
   Versions:

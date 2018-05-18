@@ -1,26 +1,22 @@
-﻿using Sitecore.Commerce.Core.Commands;
-using Sitecore.Commerce.Engine.Connect.Entities;
-using Sitecore.Commerce.Entities.Carts;
-using Sitecore.Commerce.Pipelines;
-using Sitecore.Commerce.ServiceProxy;
-using Sitecore.Diagnostics;
-using System;
-using Sitecore.Commerce.Engine.Connect.Pipelines;
-using Sitecore.Commerce.Services;
-using Sitecore.Commerce.Entities.WishLists;
-using Sitecore.Commerce.Services.WishLists;
-using Sitecore.Commerce.Engine.Connect.Pipelines.Arguments;
-using Sitecore.Feature.WishLists.Pipelines.Arguments;
-using Sitecore.Commerce.Core;
-using System.Linq;
+﻿using System;
 using System.Collections.Generic;
-using Sitecore.Commerce.Plugin.Carts;
+using System.Linq;
+using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Core.Commands;
+using Sitecore.Commerce.Engine.Connect.Entities;
+using Sitecore.Commerce.Engine.Connect.Pipelines;
+using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Entities.Prices;
-
-using Sitecore.Data;
+using Sitecore.Commerce.Entities.WishLists;
+using Sitecore.Commerce.Pipelines;
+using Sitecore.Commerce.Plugin.Carts;
 using Sitecore.Commerce.Plugin.Catalog;
+using Sitecore.Commerce.ServiceProxy;
+using Sitecore.Commerce.Services;
+using Sitecore.Data;
+using Sitecore.Diagnostics;
 
-namespace Sitecore.Feature.WishLists.Pipelines
+namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {
     public class WishListProcessor : PipelineProcessor
     {

@@ -18,7 +18,7 @@ Param(
 
 Function Start-CommerceEngineCompile {
 	
-    $engineSolutionName = "Habitat.Commerce.Engine.sln"
+    $engineSolutionName = "HabitatHome.Commerce.Engine.sln"
     if (Test-Path $publishFolder) {
         Remove-Item $publishFolder -Recurse -Force
     }

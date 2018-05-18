@@ -2,7 +2,7 @@
 using Sitecore.Data.Items;
 using Sitecore.Links;
 
-namespace Sitecore.Foundation.Catalog.Pipelines
+namespace Sitecore.HabitatHome.Foundation.Catalog.Pipelines
 {
     public class CatalogLinkProvider : Commerce.XA.Foundation.Catalog.Pipelines.CatalogLinkProvider 
     {

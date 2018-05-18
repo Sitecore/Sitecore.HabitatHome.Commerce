@@ -1,74 +1,79 @@
 # Introduction 
-The instructions in this README will guide you through the installation process of the Habitat Home Commerce Demo. 
+HabitatHome Commerce Demo and the tools and processes in it is a Sitecore&reg; solution example built using Sitecore Experience Accelerator&trade; (SXA) on Sitecore Experience Platform&trade; (XP) and Sitecore Experience Commerce&trade; (XC) following the Helix architecture principles.
 
-There is a dependency on **Sitecore.Habitat** and **Sitecore.Habitat.Home** which will be detailed below.
+# Important Notice
 
+### License
+Please read the LICENSE carefully prior to using the code in this repository
+ 
+### Support
+
+The code, samples and/or solutions provided in this repository are ***unsupported by Sitecore PSS***. Support is provided on a best-effort basis via GitHub issues or [Slack #demo-sites](https://sitecorechat.slack.com/messages/habitathome/) (see end of README for additional information).
+
+It is assumed that you already have a working instance of Sitecore XP **and** Sitecore XC  and all prerequisites prior to installing the demo. Support for **product installation** issues should be directed to relevant Community channels or through regular Sitecore support channels. 
+
+### Warranty
+
+The code, samples and/or solutions provided in this repository are for example purposes only and **without warranty (expressed or implied)**. The code has not been extensively tested and is not guaranteed to be bug free.  
 
 # Getting Started
-This guide assumes you've cloned and deployed both Sitecore.Habitat and Sitecore.Habitat.Home. See the README.md file in the Sitecore.Habitat repository.
 
-**Assumption**: the configuration file used to deploy Sitecore.Habitat still exists. It is required during the installation process.
+## Prerequisites
+
+### Sitecore Version
+
+Prior to attempting the demo installation, ensure you have a working **Sitecore XC 9.0.1** instance. Detailed installation instructions can be found at [doc.sitecore.com](http://commercesdn.sitecore.net/SitecoreXC_9.0/Installation-Guide/Sitecore-XC-9.0_Installation_Guide(On-Prem).pdf).
+
+You do not need to install the Storefront Theme
 
 **Clone this repository**
 
 ## Custom Install - before you start
 
-If you do **not want to use the default settings**, you need to adjust the appropriate values in the following files in the project:
+If you do **not want to use the default settings**, you need to adjust the appropriate values in the following files:
 
-Create a user version of the following files
-
-**Sitecore.Habitat.Commerce**
-`/gulp-config.user.js` 
-`/publishsettings.user.targets` 
-`/TDSGlobal.config.user` (only if using TDS)
-`src\Project\Habitat.Commerce.Website\code\App_Config\Include\Project\z.Habitat.Commerce.WebSite.DevSettings.user.config`
+`/gulp-config.js` 
+`/publishsettings.targets` 
+`src\Project\HabitatHome\code\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
 
 ## Installation
 **All installation instructions assume using PowerShell 5.1 in administrative mode.**
 ### 1 Clone the Repository
 Clone the Sitecore.Habitat.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.Habitat.Commerce`**. 
-`git clone https://sitecoredst.visualstudio.com/Demo/_git/Sitecore.Habitat.Commerce` or 
-`git clone ssh://sitecoredst@vs-ssh.visualstudio.com:22/Demo/_ssh/Sitecore.Habitat.Commerce`
 
-### 2 Prerequisites
+`git clone https://github.com/Sitecore/Sitecore.HabitatHome.Commerce.git` or 
+`git clone git@github.com:Sitecore/Sitecore.HabitatHome.Commerce.git`
 
-*Most* prerequisites, if not already installed for Sitecore.Habitat are automatically downloaded and installed. 
-
-### 3 Preparing Configuration file
-Make a copy of `set-installation-overrides.ps1.example` and remove the .example extension
-
-`cd install`
-`Copy-Item set-installation-overrides.ps1.example set-installation-overrides.ps1`
-
-Edit set-installation-overrides.ps1 to suit your installation needs.
-
-### 4 Generate configuration file
-Execute the following commands to generate a configuration file (`configuration-xc0.ps1`)
-
-`.\set-installation-defaults.ps1`
-You can optionally pass in the XPConfigurationFile parameter if you don't use the default path or the default configuration file name:
- `set-installation-defaults.ps1 -XPConfigurationFile <path-to-file>`
-
-Now run your overrides file
-`.\set-installation-overrides.ps1`
-
-### 5 Publish the Commerce Engine and Identity Server
-From Sitecore.Habitat.Commerce, execute the following to publish the Habitat Home Commerce Engine and Identity Server
-`dotnet publish .\Habitat.Commerce.Engine.sln -o c:\projects\sitecore.habitat.commerce\install\assets\resources\publish\Habitat.Commerce.Engine`
-`dotnet publish .\Habitat.Commerce.IdentityServer.sln -o c:\projects\sitecore.habitat.commerce\install\assets\resources\publish\Habitat.Commerce.IdentityServer`
   
-### 6 Install Commerce
-Start the installation process
-`install-xc0.ps1`
+### 2 Deploy Solution
+From the root of the solution
 
-### 7 Give the CSFndRuntimeUser permission to your webroot
-Browse to the root of the IIS (by default c:\inetpub\wwwroot) and give the Application Pool user read/write permissions.
-Using Windows Explorer, navigate to c:\inetpub\wwwroot and in the Windows Security dialog, add <your-computer-name>\CSFndRuntimeUser with read/write permisisons
-
-### 8 Deploy Solution
-Navigate back to the root of the repository (*c:\projects\sitecore.habitat.commerce*)
 `npm install`
-`node_modules\.bin\gulp`
+`node_modules\.bin\gulp initial`
+> gulp **initial** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the default gulp task (gulp with no parameters). 
+### 3 Deploy Engine
 
-## Issues / Need Help
-Please post on Teams - Sitecore Demo (Help and Discussions channel) if you encounter any issues.
+The next step will deploy Habitat Home's custom Commerce Engine with its relevant plugin and load the catalog, inventory and promotions.
+
+The script is provided as an example and should be reviewed to understand its behavior prior to its execution. In summary, the script:
+
+- Compiles and publishes the engine to a temporary location (default .\publishTemp)
+- Makes changes to the configuration files to correctly set the certificate thumbprint, hostnames, etc)
+- Stops IIS
+- Creates a backup of the engine folders
+- Copies the published and modified engine files to the webroot
+- Starts IIS 
+- Bootstraps the environment
+- Cleans the environment (** erases all Commerce-related *data*)
+- Initializes Environment (imports demo catalog, promotions, inventory, etc)
+
+
+Assuming you have the default installation settings:
+
+    deploy-commerce-engine.ps1 -Boostrap -Initialize
+
+> if you have made any changes to your settings, review the deploy-engine-commerce.ps1 script and override / modify the parameters as required.
+
+
+# Contribute or Issues
+Please post any issues on Slack Community [#habitathome](https://sitecorechat.slack.com/messages/habitathome/) channel or create an issue on [GitHub](https://github.com/Sitecore/Sitecore.HabitatHome.Commerce/issues). Contributions are always welcome!

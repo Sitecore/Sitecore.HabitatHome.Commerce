@@ -1,11 +1,11 @@
-﻿using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
+﻿using System.Collections.Generic;
+using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Repositories;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
-using System.Collections.Generic;
 
-namespace Sitecore.Feature.Catalog.Models
+namespace Sitecore.HabitatHome.Feature.Catalog.Models
 {
     public class PurchasableProductListJsonResult : ProductListJsonResult
     {                                                                                           
@@ -15,7 +15,7 @@ namespace Sitecore.Feature.Catalog.Models
         {
         }
 
-        public void Initialize(BaseCommerceModelRepository repository, List<ProductEntity> productEntityList, bool initializeAsMock = false, string searchKeyword = "")
+        public new void Initialize(BaseCommerceModelRepository repository, List<ProductEntity> productEntityList, bool initializeAsMock = false, string searchKeyword = "")
         {
             base.Initialize(repository, productEntityList, initializeAsMock, searchKeyword);
 

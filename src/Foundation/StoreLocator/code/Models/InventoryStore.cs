@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Dynamic;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Web;
 
-namespace Sitecore.Foundation.Commerce.StoreLocator.Models
+namespace Sitecore.HabitatHome.Foundation.StoreLocator.Models
 {
     public class InventoryStore
     {

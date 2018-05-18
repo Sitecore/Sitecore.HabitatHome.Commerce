@@ -1,7 +1,7 @@
 ﻿using Sitecore.Commerce.XA.Foundation.Connect;
-using Sitecore.Feature.Catalog.Models;        
+using Sitecore.HabitatHome.Feature.Catalog.Models;
 
-namespace Sitecore.Feature.Catalog.Repositories
+namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
 {
     public interface IPurchasableProductListRepository
     {                                                                                        
