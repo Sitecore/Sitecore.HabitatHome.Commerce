@@ -149,6 +149,7 @@
     <Content Include="Views\Cart\ShoppingCartLines.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
+    <Content Include="Views\Commerce\Checkout\Billing.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,7 +158,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.config" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DemoCartController.cs" />
@@ -183,7 +186,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3810</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

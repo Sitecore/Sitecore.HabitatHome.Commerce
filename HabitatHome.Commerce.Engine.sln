@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{09EC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.Engine", "src\Project\HabitatHome\engine\Sitecore.Commerce.Engine.csproj", "{0DD50A79-D39F-4457-AE39-762DC1C72CC8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Foundation.Entitlements.Engine", "src\Foundation\Entitlements\engine\Sitecore.HabitatHome.Foundation.Entitlements.Engine.csproj", "{D18851CC-14DC-4654-97DA-842D97AADC78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{0DD50A79-D39F-4457-AE39-762DC1C72CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DD50A79-D39F-4457-AE39-762DC1C72CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DD50A79-D39F-4457-AE39-762DC1C72CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18851CC-14DC-4654-97DA-842D97AADC78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18851CC-14DC-4654-97DA-842D97AADC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18851CC-14DC-4654-97DA-842D97AADC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18851CC-14DC-4654-97DA-842D97AADC78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -111,6 +117,7 @@ Global
 		{AB3E742A-83B2-4F02-8C81-968ED07D68E2} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
 		{EE3307D9-5A68-4197-858D-46AFBB9ABB0B} = {B57BB723-79CB-42CA-8E57-064ED22E2357}
 		{0DD50A79-D39F-4457-AE39-762DC1C72CC8} = {09EC139C-CB45-4793-B9CA-53F6157C5F72}
+		{D18851CC-14DC-4654-97DA-842D97AADC78} = {B57BB723-79CB-42CA-8E57-064ED22E2357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32813392-1C11-4D75-BF11-1ECBEF674669}
