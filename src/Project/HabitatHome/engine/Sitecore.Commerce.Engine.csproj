@@ -28,6 +28,7 @@
     <ProjectReference Include="..\..\..\Feature\WishLists\engine\Sitecore.HabitatHome.Feature.Wishlists.Engine.csproj" />
     <ProjectReference Include="..\..\..\Foundation\Commerce\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
     <ProjectReference Include="..\..\..\Foundation\Commerce\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
+    <ProjectReference Include="..\..\..\Foundation\Entitlements\engine\Sitecore.HabitatHome.Foundation.Entitlements.Engine.csproj" />
     <ProjectReference Include="..\..\..\Foundation\Payments\engine\Sitecore.HabitatHome.Foundation.Payments.Engine.csproj" />
     <ProjectReference Include="..\..\..\Foundation\Rules\engine\Sitecore.HabitatHome.Foundation.Rules.Engine.csproj" />
   </ItemGroup>

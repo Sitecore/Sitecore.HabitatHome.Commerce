@@ -1,8 +1,8 @@
 ﻿---
 ID: "aaac8366-e48e-4898-97f1-c00967fbf9a5"
-Parent: "d3829de5-375d-47e6-a40e-badbf5ba0cc2"
+Parent: "c84d326f-7236-49dc-8144-287ca699db58"
 Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Presentation/Styles/Custom/social-links"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Presentation/Styles/Custom/Footer/social-links"
 DB: master
 SharedFields:
 - ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"

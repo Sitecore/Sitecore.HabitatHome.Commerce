@@ -1,20 +1,16 @@
 ﻿---
-ID: "6d43d8d9-6159-4c76-9886-e72e2cf69135"
-Parent: "d3829de5-375d-47e6-a40e-badbf5ba0cc2"
+ID: "10887df1-7e9c-4d9c-bda7-0f291f806c76"
+Parent: "c84d326f-7236-49dc-8144-287ca699db58"
 Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Presentation/Styles/Custom/home-carousel"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Styles/Custom/Footer/copyrights
 DB: master
 SharedFields:
 - ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
   Hint: Value
-  Value: "home-carousel"
-- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
-  Hint: Allowed Renderings
-  Type: TreelistEx
-  Value: "{5A21C781-8E74-4DD0-8261-8CCDA1BF0454}"
+  Value: copyrights
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 1100
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -22,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171109T161334Z
+      Value: 20171109T164451Z
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -46,7 +42,7 @@ Languages:
       Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171109T161334Z
+      Value: 20171109T164451Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 

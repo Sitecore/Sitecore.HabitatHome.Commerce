@@ -24,6 +24,7 @@ gulp.task("default",
         config.runCleanBuilds = true;
         return runSequence(
             "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
@@ -38,39 +39,42 @@ gulp.task("quick-deploy",
         config.runCleanBuilds = true;
         return runSequence(
             "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
-            "Apply-Xml-Transform",     
-            "Publish-Transforms",       
+            "Apply-Xml-Transform",
+            "Publish-Transforms",
             callback);
     });
 
 gulp.task("initial",
-        function (callback) {
-            config.runCleanBuilds = true;
-            return runSequence(
-                "Copy-Sitecore-Lib",
-                "Nuget-Restore",
-                "Publish-All-Projects",
-                "Apply-Xml-Transform",
-                "Publish-Transforms",
-                "Sync-Unicorn",
-                "Deploy-EXM-Campaigns",
-                "Rebuild-Core-Index",
-                "Rebuild-Master-Index",
-                "Rebuild-Web-Index",
-                callback);
-        });
+    function (callback) {
+        config.runCleanBuilds = true;
+        return runSequence(
+            "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
+            "Nuget-Restore",
+            "Publish-All-Projects",
+            "Apply-Xml-Transform",
+            "Publish-Transforms",
+            "Sync-Unicorn",
+            "Deploy-EXM-Campaigns",
+            "Rebuild-Core-Index",
+            "Rebuild-Master-Index",
+            "Rebuild-Web-Index",
+            callback);
+    });
 
 gulp.task("publish",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
             "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
-            "Apply-Xml-Transform",    
-            "Publish-Transforms",      
+            "Apply-Xml-Transform",
+            "Publish-Transforms",
             callback);
     });
 
@@ -82,9 +86,25 @@ gulp.task("Copy-Sitecore-Lib", function (callback) {
 
     fs.statSync(config.sitecoreLibraries);
     var sxa = config.sitecoreLibraries + "/**/Sitecore.XA.*";
-    var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";    
+    var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
     gulp.src(sxa).pipe(gulp.dest("./lib/Modules/SXA"));
     return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
+});
+
+gulp.task("Dotnet-Restore", function (callback) {
+    var solution = config.solutionName + ".sln";
+    var cmd = "dotnet restore .\\" + solution;
+    var options = { maxBuffer: Infinity };
+    console.log("cmd: " + cmd);
+    return exec(cmd, options, function (err, stdout, stderr) {
+        if (err) {
+            console.error("exec error: " + err);
+            throw err;
+        }
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        callback();
+    });
 });
 
 gulp.task("Nuget-Restore",
@@ -92,7 +112,7 @@ gulp.task("Nuget-Restore",
         var solution = "./" + config.solutionName + ".sln";
         return gulp.src(solution).pipe(nugetRestore());
     });
-          
+
 gulp.task("Publish-All-Projects",
     function (callback) {
         return runSequence(

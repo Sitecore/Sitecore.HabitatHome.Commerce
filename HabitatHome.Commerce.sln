@@ -100,6 +100,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.HabitatHome.Commer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.Engine", "src\Project\HabitatHome\engine\Sitecore.Commerce.Engine.csproj", "{A4ED1519-D011-4AFB-A257-A18AE8DB40EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entitlements", "Entitlements", "{514751C5-E086-4A24-91B1-6A5A2F6C5502}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Foundation.Entitlements.Engine", "src\Foundation\Entitlements\engine\Sitecore.HabitatHome.Foundation.Entitlements.Engine.csproj", "{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Customers.CsMigration", "src\Foundation\Commerce\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj", "{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "src\Foundation\Commerce\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj", "{D8413C13-271A-49AB-84C0-76558357320D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -188,6 +196,18 @@ Global
 		{B3375668-929C-496B-99BA-DD011B7C6FD2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4ED1519-D011-4AFB-A257-A18AE8DB40EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4ED1519-D011-4AFB-A257-A18AE8DB40EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8413C13-271A-49AB-84C0-76558357320D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8413C13-271A-49AB-84C0-76558357320D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8413C13-271A-49AB-84C0-76558357320D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8413C13-271A-49AB-84C0-76558357320D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -234,6 +254,10 @@ Global
 		{2AAD31B6-3AB0-4772-9E60-3B21C6E5666F} = {D446ABE2-B64E-43B2-A270-A209C3CA54B1}
 		{B3375668-929C-496B-99BA-DD011B7C6FD2} = {EC07E32B-7A0D-4C4D-941D-43DAC3AE2601}
 		{A4ED1519-D011-4AFB-A257-A18AE8DB40EA} = {EC07E32B-7A0D-4C4D-941D-43DAC3AE2601}
+		{514751C5-E086-4A24-91B1-6A5A2F6C5502} = {1B6FFBEA-35BD-4381-A2BE-4FA54E3940E1}
+		{211FA38D-E422-4EEA-BBBF-6C1AE5FE6437} = {514751C5-E086-4A24-91B1-6A5A2F6C5502}
+		{A0CE704F-4EF0-45F7-B7BF-03E3DE31F139} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
+		{D8413C13-271A-49AB-84C0-76558357320D} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}
