@@ -10,7 +10,7 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$publishFolder = (Join-Path $PSScriptRoot "publishTemp"),
+    [string]$publishFolder = (Join-Path $PWD "publishTemp"),
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish
