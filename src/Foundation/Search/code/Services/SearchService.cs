@@ -10,7 +10,7 @@ using Sitecore.XA.Foundation.Search.Services;
 using Sitecore.XA.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.XA.Foundation.Search;
 
-namespace Sitecore.Foundation.Search.Services
+namespace Sitecore.HabitatHome.Foundation.Search.Services
 {
     public class SearchService : XA.Foundation.Search.Services.SearchService, ISearchService
     {                  
@@ -52,9 +52,7 @@ namespace Sitecore.Foundation.Search.Services
                             expression = expression.Or(i => i.RawPath == item.ID.ToSearchID());
                         }
                     }        
-                }
-
-                //todo: add products as a separate field?
+                }                                            
             }
             return expression;
         }                                                          

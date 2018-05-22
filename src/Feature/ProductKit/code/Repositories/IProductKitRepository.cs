@@ -3,13 +3,13 @@ using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
-using Sitecore.Feature.ProductKit.Models.JsonResults;
+using Sitecore.HabitatHome.Feature.ProductKit.Models.JsonResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Feature.ProductKit.Repositories
+namespace Sitecore.HabitatHome.Feature.ProductKit.Repositories
 {
     public interface IProductKitRepository
     {

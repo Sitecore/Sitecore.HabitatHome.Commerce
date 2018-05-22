@@ -1,15 +1,9 @@
-﻿using Sitecore.Commerce.Pipelines;
-using Sitecore.Commerce.Services;
-using Sitecore.Diagnostics;
-using System;
-using Sitecore.Commerce.Engine.Connect.Pipelines;
-using Sitecore.Commerce.Entities.WishLists;
+﻿using System;
+using Sitecore.Commerce.Pipelines;
 using Sitecore.Commerce.Services.WishLists;
-using Sitecore.Commerce.Engine.Connect.Pipelines.Arguments;
-using Sitecore.Feature.WishLists.Pipelines.Arguments;
+using Sitecore.Diagnostics;
 
-
-namespace Sitecore.Feature.WishLists.Pipelines
+namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {
     public class GetWishList : WishListProcessor
     {

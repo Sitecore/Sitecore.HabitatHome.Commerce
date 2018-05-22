@@ -1,11 +1,8 @@
-﻿using Sitecore.Analytics;
-using Sitecore.Foundation.Commerce.StoreLocator.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
+using Sitecore.Analytics;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Models;
 
-namespace Sitecore.Foundation.Commerce.StoreLocator.Utilities
+namespace Sitecore.HabitatHome.Foundation.StoreLocator.Utilities
 {
     public class GeoUtility
     {

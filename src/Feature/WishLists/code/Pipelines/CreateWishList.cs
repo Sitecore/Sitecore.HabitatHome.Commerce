@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Sitecore.Feature.WishLists.Pipelines
+﻿namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {
     public class CreateWishList
     {

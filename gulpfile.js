@@ -23,6 +23,8 @@ gulp.task("default",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
@@ -36,66 +38,78 @@ gulp.task("quick-deploy",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
-            "Apply-Xml-Transform",     
-            "Publish-Transforms",       
+            "Apply-Xml-Transform",
+            "Publish-Transforms",
             callback);
     });
 
 gulp.task("initial",
-        function (callback) {
-            config.runCleanBuilds = true;
-            return runSequence(
-                "Nuget-Restore",
-                "Publish-All-Projects",
-                "Apply-Xml-Transform",
-                "Publish-Transforms",
-                "Sync-Unicorn",
-                "Deploy-EXM-Campaigns",
-                "Rebuild-Core-Index",
-                "Rebuild-Master-Index",
-                "Rebuild-Web-Index",
-                callback);
-        });
+    function (callback) {
+        config.runCleanBuilds = true;
+        return runSequence(
+            "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
+            "Nuget-Restore",
+            "Publish-All-Projects",
+            "Apply-Xml-Transform",
+            "Publish-Transforms",
+            "Sync-Unicorn",
+            "Deploy-EXM-Campaigns",
+            "Rebuild-Core-Index",
+            "Rebuild-Master-Index",
+            "Rebuild-Web-Index",
+            callback);
+    });
 
 gulp.task("publish",
     function (callback) {
         config.runCleanBuilds = true;
         return runSequence(
+            "Copy-Sitecore-Lib",
+            "Dotnet-Restore",
             "Nuget-Restore",
             "Publish-All-Projects",
-            "Apply-Xml-Transform",    
-            "Publish-Transforms",      
-            callback);
-    });
-
-gulp.task("tds",
-    function (callback) {
-        config.runCleanBuilds = true;
-        return runSequence(
-            "Nuget-Restore-TDS",
             "Apply-Xml-Transform",
             "Publish-Transforms",
-            "TDS-Build",
-            "Deploy-EXM-Campaigns",
             callback);
     });
-
 
 /*****************************
   Initial setup
 *****************************/
+gulp.task("Copy-Sitecore-Lib", function (callback) {
+    console.log("Copying Sitecore SXA Libraries");
+
+    fs.statSync(config.sitecoreLibraries);
+    var sxa = config.sitecoreLibraries + "/**/Sitecore.XA.*";
+    var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
+    gulp.src(sxa).pipe(gulp.dest("./lib/Modules/SXA"));
+    return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
+});
+
+gulp.task("Dotnet-Restore", function (callback) {
+    var solution = config.solutionName + ".sln";
+    var cmd = "dotnet restore .\\" + solution;
+    var options = { maxBuffer: Infinity };
+    console.log("cmd: " + cmd);
+    return exec(cmd, options, function (err, stdout, stderr) {
+        if (err) {
+            console.error("exec error: " + err);
+            throw err;
+        }
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        callback();
+    });
+});
 
 gulp.task("Nuget-Restore",
     function (callback) {
         var solution = "./" + config.solutionName + ".sln";
-        return gulp.src(solution).pipe(nugetRestore());
-    });
-
-gulp.task("Nuget-Restore-TDS",
-    function (callback) {
-        var solution = "./" + config.solutionName + ".TDS.sln";
         return gulp.src(solution).pipe(nugetRestore());
     });
 
@@ -184,33 +198,6 @@ gulp.task("Build-Solution",
             }));
     });
 
-
-gulp.task("TDS-Build",
-    function () {
-        var targets = ["Build"];
-        if (config.runCleanBuilds) {
-            targets = ["Clean", "Build"];
-        }
-
-        var solution = "./" + config.solutionName + ".TDS.sln";
-        return gulp.src(solution)
-            .pipe(msbuild({
-                targets: targets,
-                configuration: config.buildConfiguration,
-                logCommand: false,
-                verbosity: config.buildVerbosity,
-                stdout: true,
-                errorOnFail: true,
-                maxcpucount: config.buildMaxCpuCount,
-                nodeReuse: false,
-                toolsVersion: config.buildToolsVersion,
-                properties: {
-                    Platform: config.buildPlatform
-                }
-            }));
-    });
-
-
 /*****************************
   Publish
 *****************************/
@@ -240,6 +227,7 @@ var publishStream = function (stream, dest) {
             }
         }));
 };
+
 var publishProjects = function (location, dest) {
     dest = dest || config.websiteRoot;
 
@@ -249,68 +237,21 @@ var publishProjects = function (location, dest) {
             return publishStream(stream, dest);
         }));
 };
+
 gulp.task("Publish-Foundation-Projects",
     function () {
         return publishProjects("./src/Foundation");
     });
+
 gulp.task("Publish-Feature-Projects",
     function () {
         return publishProjects("./src/Feature");
     });
 
-
 gulp.task("Publish-Project-Projects",
     function () {
         return publishProjects("./src/Project");
     });
-
-gulp.task("CE~default", function (callback) {
-    config.runCleanBuilds = true;
-    return runSequence(
-        "CE-Nuget-Restore",
-        "CE-Publish-CommerceEngine-Authoring",
-        "CE-Publish-CommerceEngine-Ops",
-        "CE-Publish-CommerceEngine-Minions",
-        "CE-Publish-CommerceEngine-Shops",
-        callback);
-});
-
-gulp.task("CE-Nuget-Restore", function (callback) {
-    var solution = "./" + config.commerceEngineSolutionName + ".sln";
-    return gulp.src(solution).pipe(nugetRestore());
-});
-
-gulp.task("CE-Publish-CommerceEngine-Authoring", function (callback) {
-    publishCommerceEngine(config.commerceAuthoringRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Ops", function (callback) {
-    publishCommerceEngine(config.commerceOpsRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Minions", function (callback) {
-    publishCommerceEngine(config.commerceMinionsRoot, callback);
-});
-
-gulp.task("CE-Publish-CommerceEngine-Shops", function (callback) {
-    publishCommerceEngine(config.commerceShopsRoot, callback);
-});
-
-var publishCommerceEngine = function (dest, callback) {
-    var solution = config.commerceEngineSolutionName + ".sln";
-    var cmd = "dotnet publish .\\" + solution + " -o " + dest
-    var options = { maxBuffer: Infinity };
-    console.log("cmd: " + cmd);
-    return exec(cmd, options, function (err, stdout, stderr) {
-        if (err) {
-            console.error("exec error: " + err);
-            throw err;
-        }
-        console.log("stdout: " + stdout);
-        console.log("stderr: " + stderr);
-        callback();
-    });
-};
 
 gulp.task("Deploy-EXM-Campaigns",
     function () {

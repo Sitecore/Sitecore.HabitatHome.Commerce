@@ -1,16 +1,13 @@
-﻿using Sitecore.Commerce.Entities.WishLists;
+﻿using System.Collections.Generic;
+using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Services.WishLists;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace Sitecore.Foundation.Commerce.WishLists.Managers
+namespace Sitecore.HabitatHome.Foundation.WishLists.Managers
 {
     public interface IWishListManager
     {

@@ -4,7 +4,7 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.DependencyInjection;
 using Sitecore.Diagnostics;
-using Sitecore.Feature.ProductKit.Repositories;
+using Sitecore.HabitatHome.Feature.ProductKit.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.Web.Mvc;
 using System.Web.UI;
 
-namespace Sitecore.Feature.ProductKit.Controllers
+namespace Sitecore.HabitatHome.Feature.ProductKit.Controllers
 {
     public class ProductKitController : BaseCommerceStandardController
     {
@@ -32,25 +32,17 @@ namespace Sitecore.Feature.ProductKit.Controllers
 
         public ActionResult ProductKit()
         {
-            return (ActionResult)this.View("~/Views/ProductKit/ProductKit.cshtml", this.ProductKitRepository.GetProductKitRenderingModel(_visitorContext));
+            return View("~/Views/ProductKit/ProductKit.cshtml", this.ProductKitRepository.GetProductKitRenderingModel(_visitorContext));
         }
 
         [AllowAnonymous]
-        [HttpPost]
-        //[OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
+        [HttpPost]                                                                
         public JsonResult GetRelatedProducts(string pid)
         {
-            JsonResult baseJsonResult;            
-            try
-            {
-                dynamic relatedProducts = this.ProductKitRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, pid);
-                baseJsonResult = this.Json(relatedProducts);
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-            return this.Json((object)baseJsonResult);
+            dynamic relatedProducts = this.ProductKitRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, pid);
+            JsonResult baseJsonResult = this.Json(relatedProducts);
+
+            return this.Json(baseJsonResult);
         }
     }
 }

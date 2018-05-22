@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Sitecore.Foundation.Commerce.StoreLocator
+﻿namespace Sitecore.HabitatHome.Foundation.StoreLocator
 {
     public static class StoreLocatorConstants
     {

@@ -1,0 +1,14 @@
+﻿---
+ID: "05970616-b961-447b-937d-8c459b19c82f"
+Parent: "474a2a52-9bd6-438d-bcda-675065d602b5"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Wishlists
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T174051Z

@@ -1,0 +1,21 @@
+﻿---
+ID: "3d560991-bb78-4146-96c6-3a836bf6d14d"
+Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/add-to-wishlist-component"
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "29d49264-d5aa-419f-bbd6-49252ad0cb4f"
+  Value: ICAgIEBpbXBvcnQgJy4uLy4uL2luZGV4JzsNCi5jeGEtYWRkLXRvLXdpc2hsaXN0LWNvbXBvbmVudCB7DQogICAgYnV0dG9uIHsNCiAgICAgICAgYm9yZGVyOiAycHggc29saWQgIzBlOTA5ZjsNCiAgICAgICAgZm9udC1zaXplOiAxNHB4ICFpbXBvcnRhbnQ7DQogICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7DQogICAgICAgIHRleHQtYWxpZ246IGNlbnRlciAhaW1wb3J0YW50Ow0KICAgICAgICBiYWNrZ3JvdW5kOiAjMGU5MDlmOw0KICAgICAgICBjb2xvcjogI2ZmZiAhaW1wb3J0YW50Ow0KICAgICAgICB0ZXh0LXNoYWRvdzogbm9uZTsNCiAgICAgICAgYm94LXNoYWRvdzogbm9uZTsNCiAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICAgICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIGJvcmRlci1yYWRpdXM6IDA7DQogICAgICAgIG1pbi1oZWlnaHQ6IDQycHg7DQogICAgICAgIGhlaWdodDogNDJweDsNCiAgICAgICAgcGFkZGluZzogOHB4IDI1cHggOHB4IDI1cHg7DQogICAgICAgIG1pbi13aWR0aDogMTUwcHg7DQoNCiAgICB9DQp9
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 543
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20180511T160444:636616514841903544Z"

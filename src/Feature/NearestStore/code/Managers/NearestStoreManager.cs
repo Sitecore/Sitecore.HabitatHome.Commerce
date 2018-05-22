@@ -1,23 +1,12 @@
-﻿using Sitecore.Diagnostics;
-using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
-using System.Web.UI;
+﻿using System.Collections.Generic;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
 using Sitecore.Commerce.Engine.Connect;
 using Sitecore.Configuration;
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Http;
-using Newtonsoft.Json;
-using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
-using System.Web.Helpers;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Script.Serialization;
-using System;
-using Sitecore.Foundation.Commerce.StoreLocator.Managers;
-using Sitecore.Foundation.Commerce.StoreLocator.Models;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Managers;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Models;
 
-namespace Sitecore.Feature.NearestStore.Managers
+namespace Sitecore.HabitatHome.Feature.NearestStore.Managers
 {
     public class NearestStoreManager
     {

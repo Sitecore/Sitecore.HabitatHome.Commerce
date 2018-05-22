@@ -1,0 +1,178 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions              
+@using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderLines.DataSourceFields
+
+@model Sitecore.HabitatHome.Feature.Orders.Models.OrderLinesViewModel
+
+<div @Html.Sxa().Component("cxa-orderdetailslines-component", Model.Attributes) ) data-cxa-component-class="OrderLines" data-cxa-component-initialized="false" data-cxa-component-model="OrderLinesViewModel" data-cxa-component-type="component">
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            <p>@Model.ErrorMessage</p>
+        </div>
+    }
+    else
+    {
+        <div class="component-content">
+
+            <div class="order-lines-header">
+                <h3 title="@Model.YourProductsHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.YourProductsHeader, Html.Sitecore().CurrentItem)</h3>
+            </div>
+
+            <div class="order-lines">
+                <table class="products-table" data-orderId="@Model.OrderId">
+                    <thead>
+                        <tr class="order-header">
+                            <th colspan="2">@Html.Sitecore().Field("Product Details Label", Html.Sitecore().CurrentItem)</th>
+                            <th>@Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem)</th>
+                            <th>@Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem)</th>
+                            <th>@Html.Sitecore().Field("Total Label", Html.Sitecore().CurrentItem)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var cartLine in Model.Lines)
+                        {
+                            <tr>
+                                <td class="product-image">
+                                    <img src="@cartLine.ImageUrl" alt="a" pid="image" />
+                                </td>
+                                <td class="cart-info">
+                                    <a href="@cartLine.ProductUrl"><h4>@cartLine.ProductDisplayName</h4></a>
+                                    <div class="product-variants">
+                                        @if (!string.IsNullOrEmpty(cartLine.ColorInformation))
+                                        {
+                                            <div class="color-information">
+                                                <span class="variant-label">
+                                                    @Model.VariantLabels["Color"]
+                                                </span>
+                                                <span class="variant-information @cartLine.ColorInformation">
+                                                    @cartLine.ColorInformation
+                                                </span>
+                                            </div>
+                                        }
+                                        @if (!string.IsNullOrEmpty(cartLine.SizeInformation))
+                                        {
+                                            <div class="size-information">
+                                                <span class="variant-label">
+                                                    @Model.VariantLabels["Size"]
+                                                </span>
+                                                <span class="variant-information">
+                                                    @cartLine.SizeInformation
+                                                </span>
+                                            </div>
+                                        }
+                                        @if (!string.IsNullOrEmpty(cartLine.StyleInformation))
+                                        {
+                                            <div class="style-information">
+                                                <span class="variant-label">
+                                                    @Model.VariantLabels["Style"]
+                                                </span>
+                                                <span class="variant-information">
+                                                    @cartLine.StyleInformation
+                                                </span>
+                                            </div>
+                                        }
+                                    </div>
+                                    @if (!string.IsNullOrEmpty(cartLine.ShippingMethodName))
+                                    {
+                                        <p class="cart-delivery">
+                                            <span>
+                                                @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
+                                            </span>
+
+                                            @if ((bool)Model.StoreOrder)
+                                            {
+                                                <span class="shippingMethodName">
+                                                    Pick up at @Model.StoreName
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="shippingMethodName">
+                                                    @cartLine.ShippingMethodName<br />
+
+                                                </span>
+
+
+                                                <div class="field-link">
+                                                    <span class="address-label">Tracking #:</span>
+
+                                                    <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
+
+                                                </div>
+                                            }
+                                        </p>
+                                    }
+                                    @if (cartLine.Address != null)
+                                    {
+                                        <div class="cart-delivery">
+                                            <span class="address-label">Address:</span>
+                                            <ul class="lineShippingAddress">
+                                                <li>
+                                                    <span class="lineShippingAddressLine">
+                                                        @cartLine.Address.Address1,
+                                                    </span>
+                                                    <span class="lineShippingAddressCity">
+                                                        @cartLine.Address.City
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="lineShippingAddressState">@cartLine.Address.State, </span>
+                                                    <span class="lineShippingAddressZipCode">@cartLine.Address.ZipPostalCode</span>
+                                                </li>
+                                                <li class="lineShippingAddressCountry">
+                                                    <span>@cartLine.Address.Country</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        if (!string.IsNullOrEmpty(cartLine.ElectronicDeliveryEmail))
+                                        {
+                                            <p class="cart-email">@cartLine.ElectronicDeliveryEmail</p>
+                                        }
+                                    }
+
+                                </td>
+
+                                <td class="unit-price">
+                                    <span class="price-amount">@cartLine.PriceText</span>
+                                    @if (@cartLine.DiscountOfferNames.Any())
+                                    {
+                                        <span>
+                                            <span>@Html.Sitecore().Field(ComponentDataSource.DiscountLabelText, Html.Sitecore().CurrentItem): </span>
+                                            <span class="savings">@string.Join(", ", cartLine.DiscountOfferNames)</span>
+                                        </span>
+                                    }
+                                </td>
+                                <td class="product-quantity">@cartLine.QuantityText</td>
+                                <td class="line-total">
+                                    <h4 class="total-amount">@cartLine.TotalText</h4>
+                                    @if (@cartLine.LineDiscount > 0)
+                                    {
+                                        <span class="savings">
+                                            <span>@Html.Sitecore().Field(ComponentDataSource.DiscountLabelText, Html.Sitecore().CurrentItem) </span>
+                                            <span class="discount">@cartLine.LineDiscountText)</span>
+                                        </span>
+                                    }
+                                </td>
+                                <td class="reorder">
+                                    <div class="reorder-button">
+                                        <button type="submit" class="add-to-cart-btn" data-bind="attr: {'productId': @cartLine.ProductId, 'variantId': @cartLine.ProductVariantId, 'quantity': @cartLine.Quantity }, click: addItemToCart">
+                                            <span class="initial-label">Add to cart</span>
+                                            <span class="loading-label" style="display:none;">Adding to cart...</span>
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    }
+</div>

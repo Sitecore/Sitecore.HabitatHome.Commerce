@@ -1,20 +1,17 @@
-﻿using Sitecore.Commerce.Core;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Engine.Connect.Pipelines.Arguments;
 using Sitecore.Commerce.Entities;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Entities.Prices;
-using Sitecore.Commerce.Plugin.Carts;
-using Sitecore.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
-using Sitecore.Commerce.Engine.Connect.Pipelines;
-using Sitecore.Feature.WishLists.Pipelines.Arguments;
 using Sitecore.Commerce.Entities.WishLists;
-using Sitecore.Data;
+using Sitecore.Commerce.Plugin.Carts;
 using Sitecore.Commerce.Plugin.Catalog;
+using Sitecore.Data;
+using Sitecore.Diagnostics;
 
-
-namespace Sitecore.Feature.WishLists.Pipelines
+namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {
 
     public class TranslateCartToWishListEntity // : TranslateODataEntityToEntity<TranslateCartToEntityRequest, TranslateCartToWishListEntityResult, Sitecore.Commerce.Plugin.Carts.Cart, WishList>

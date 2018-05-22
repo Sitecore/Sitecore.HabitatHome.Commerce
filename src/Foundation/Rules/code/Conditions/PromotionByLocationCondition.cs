@@ -1,12 +1,12 @@
-﻿using Sitecore.Foundation.Commerce.StoreLocator.Managers;
-using Sitecore.Rules;
+﻿using Sitecore.Rules;
 using Sitecore.Rules.Conditions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.HabitatHome.Foundation.StoreLocator.Managers;
 
-namespace Sitecore.Foundation.Rules.Conditions
+namespace Sitecore.HabitatHome.Foundation.Rules.Conditions
 {
     public class PromotionByLocationCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {
