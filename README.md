@@ -39,7 +39,7 @@ If you do **not want to use the default settings**, you need to adjust the appro
 ## Installation
 **All installation instructions assume using PowerShell 5.1 in administrative mode.**
 ### 1 Clone the Repository
-Clone the Sitecore.Habitat.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.Habitat.Commerce`**. 
+Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
 
 `git clone https://github.com/Sitecore/Sitecore.HabitatHome.Commerce.git` or 
 `git clone git@github.com:Sitecore/Sitecore.HabitatHome.Commerce.git`
