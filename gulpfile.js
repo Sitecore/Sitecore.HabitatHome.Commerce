@@ -132,7 +132,7 @@ gulp.task("Apply-Xml-Transform",
         ];
         return gulp.src(layerPathFilters)
             .pipe(foreach(function (stream, file) {
-                var fileToTransform = file.path.replace(/.+code\\(.+)\.xdt/, "$1");
+                var fileToTransform = file.path.replace(/.+website\\(.+)\.xdt/, "$1");
                 util.log("Applying configuration transform: " + file.path);
                 return gulp.src("./scripts/applytransform.targets")
                     .pipe(msbuild({
@@ -168,7 +168,7 @@ gulp.task("Sync-Unicorn",
 
 gulp.task("Publish-Transforms",
     function () {
-        return gulp.src("./src/**/code/**/*.xdt")
+        return gulp.src("./src/**/website/**/*.xdt")
             .pipe(gulp.dest(config.websiteRoot + "/temp/transforms"));
     });
 
@@ -232,7 +232,7 @@ var publishProjects = function (location, dest) {
     dest = dest || config.websiteRoot;
 
     console.log("publish to " + dest + " folder");
-    return gulp.src([location + "/**/code/*.csproj"])
+    return gulp.src([location + "/**/website/*.csproj"])
         .pipe(foreach(function (stream, file) {
             return publishStream(stream, dest);
         }));
