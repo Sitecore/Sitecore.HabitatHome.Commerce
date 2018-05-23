@@ -10,6 +10,7 @@ var debug = require("gulp-debug");
 var exec = require("child_process").exec;
 var util = require("gulp-util");
 var get = require("simple-get");
+let {clean, restore, build, test, pack, publish, run} = require('gulp-dotnet-cli');
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -91,20 +92,9 @@ gulp.task("Copy-Sitecore-Lib", function (callback) {
     return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
 });
 
-gulp.task("Dotnet-Restore", function (callback) {
-    var solution = config.solutionName + ".sln";
-    var cmd = "dotnet restore .\\" + solution;
-    var options = { maxBuffer: Infinity };
-    console.log("cmd: " + cmd);
-    return exec(cmd, options, function (err, stdout, stderr) {
-        if (err) {
-            console.error("exec error: " + err);
-            throw err;
-        }
-        console.log("stdout: " + stdout);
-        console.log("stderr: " + stderr);
-        callback();
-    });
+gulp.task("Dotnet-Restore", ()=>{
+    return gulp.src('**/engine/*.csproj', {read: false})
+            .pipe(restore());
 });
 
 gulp.task("Nuget-Restore",
