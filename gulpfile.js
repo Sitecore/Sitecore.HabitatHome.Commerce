@@ -10,7 +10,7 @@ var debug = require("gulp-debug");
 var exec = require("child_process").exec;
 var util = require("gulp-util");
 var get = require("simple-get");
-let {clean, restore, build, test, pack, publish, run} = require('gulp-dotnet-cli');
+let { clean, restore, build, test, pack, publish, run } = require('gulp-dotnet-cli');
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
     config = require("./gulp-config.user.js")();
@@ -92,9 +92,13 @@ gulp.task("Copy-Sitecore-Lib", function (callback) {
     return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
 });
 
-gulp.task("Dotnet-Restore", ()=>{
-    return gulp.src('**/engine/*.csproj', {read: false})
-            .pipe(restore());
+gulp.task("Dotnet-Restore", () => {
+    var restoreProjects = [
+        '**/engine/*.csproj',
+        './src/Foundation/Commerce/website/Sitecore.Commerce.ServiceProxy/Sitecore.Commerce.ServiceProxy.csproj'
+    ];
+    return gulp.src(restoreProjects, { read: false })
+        .pipe(restore());
 });
 
 gulp.task("Nuget-Restore",
