@@ -1,0 +1,20 @@
+﻿---
+ID: "a4e8194b-b29f-4235-9a89-5fdbae6f47bd"
+Parent: "8c493533-993a-4b16-b4cf-18baeb245340"
+Template: "5dd201a0-5b3d-4e82-8cca-608d5905c3a1"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Commerce Terms/Shipping/Pickup From Store
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180402T214212Z
+    - ID: "290defd0-7b9a-4541-a326-87c44bee5309"
+      Hint: Value
+      Value: Pickup From Store
+    - ID: "4b1331ac-a540-448c-884a-9f6cdc067842"
+      Hint: Description
+      Value: Pickup From Store

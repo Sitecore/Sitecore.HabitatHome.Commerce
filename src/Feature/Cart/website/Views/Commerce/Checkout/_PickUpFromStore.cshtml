@@ -1,0 +1,49 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2016 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+@{
+    var deliveryPage = Html.Sitecore().CurrentItem;
+    var viewButtonLabel = Html.Sitecore().Field("View Options Button Label", deliveryPage);
+    var viewButtonLoadingLabel = deliveryPage["View Options Button In-Progress Label"];
+    var availableShippingOptionsLabel = Html.Sitecore().Field("Available Shipping Options Header", deliveryPage);
+}
+<div class="shipall-addresses-title">
+    <h3>Pick Up From Store</h3>
+</div>
+<div> 
+    <div class="shipall-options-items">
+        <div data-bind="foreach: {data: cart().cartLines, as: 'cartLine' }">
+            <!-- ko if: $index() === 0 -->
+            <div class="shipall-options-item" data-bind="foreach: linePickUpStores">
+                <div class="shipping-option">
+                    <!-- ko if: ZeroInventory -->
+                    <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
+                    <!--/ko-->
+                    <!-- ko ifnot: ZeroInventory -->
+                    <!-- ko if: $index() === 0 -->
+                    <input type="radio" class="pickupStoreSelection" style="position: absolute;opacity: 0;cursor: pointer;top: 15px;z-index: 1;" data-bind="attr: {name: 'pickUpOptions', value: $root.pickUpStoreId, pvalue: InventoryStoreId, id: InventoryStoreId, checked: function(model){ $root.setPickUpStore(model)}, checkMe:$root.pickUpStoreId}" checked="checked">
+                    <!-- /ko -->
+                    <!-- ko if: $index() !== 0 -->
+                    <input type="radio" class="pickupStoreSelection" style="position: absolute;opacity: 0;cursor: pointer;top: 15px;z-index: 1;" data-bind="attr: {name: 'pickUpOptions', value: $root.pickUpStoreId, pvalue: InventoryStoreId, id: InventoryStoreId, checked: function(model){ $root.setPickUpStore(model)}, checkMe:$root.pickUpStoreId}">
+                    <!-- /ko -->
+                    <label data-bind="text: DisplayName, attr: {'for': InventoryStoreId}"></label>
+                    <!--/ko-->
+                </div>
+
+            </div>
+            <!-- /ko -->
+            <span class="pickupUnavailable" style="display:none;">There are items in your cart that are not available for pickup at the stores nearest to you.</span>
+
+        </div>
+        
+
+    </div>
+</div>

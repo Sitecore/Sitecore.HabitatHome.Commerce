@@ -11,5 +11,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Entities
         public string Zip  { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
+        public string StateCode { get; set; }
+        public string CountryCode { get; set; }
     }
 }
