@@ -89,8 +89,12 @@
     </div>
     <div class="shipall-options-items">
         <div class="shipall-options-item" data-bind="foreach: shippingMethods, attr:{id:'shippingMethodsContainer-'+ externalCartLineId}">
+
+            <!--ko ifnot:  description == 'Pickup From Store'-->
             <input type="radio" data-bind="attr: {'name': 'shippingMethodId-' + $parent.externalCartLineId ,'id': 'method-' + description + $parent.externalCartLineId, 'data-name':description, pvalue: id}, checkMe: $parent.shippingMethod, event: {change: $parent.selectShippingMethod}">
             <label data-bind="text: description, attr: {'for': 'method-' + description + $parent.externalCartLineId}"></label>
+            <!--/ko-->
         </div>
     </div>
 </div>
+

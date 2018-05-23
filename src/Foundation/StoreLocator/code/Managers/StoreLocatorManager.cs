@@ -51,7 +51,12 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
                     newStore.Id = store["Id"];
                     newStore.InventoryStoreId = store["InventoryStoreId"];
                     newStore.DisplayName = store["DisplayName"];
+                    newStore.Address = store["Address"];
+                    newStore.City = store["City"];
+                    newStore.State = store["StateCode"];
+                    newStore.Country = store["CountryCode"];
                     newStore.Distance = store["Distance"];
+                    newStore.Zip = store["Zip"];
                     storeList.Add(new InventoryStore(newStore));
                 }
                 string storeJson = new JavaScriptSerializer().Serialize(storeList.GetRange(0, 2));
@@ -80,7 +85,11 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
                 newStore.InventoryStoreId = store.InventoryStoreId;
                 newStore.DisplayName = store.DisplayName;
                 newStore.Distance = store.Distance;
-
+                newStore.Address = store.Address;
+                newStore.City = store.City;
+                newStore.State = store.State;
+                newStore.Country = store.Country;
+                newStore.Zip = store.Zip;
                 storeList.Add(new InventoryStore(newStore));
             }
             return storeList.Take(2);
