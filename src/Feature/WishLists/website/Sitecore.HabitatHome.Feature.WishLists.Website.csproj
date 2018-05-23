@@ -178,8 +178,8 @@
     <Compile Include="Repositories\WishListLinesRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\Commerce\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj">
-      <Project>{f5606e7f-821d-41ad-9091-71787c643d63}</Project>
+    <ProjectReference Include="..\..\..\Foundation\Commerce\website\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj">
+      <Project>{0f78ab49-26e0-4db8-b654-7878edef546d}</Project>
       <Name>Sitecore.Commerce.ServiceProxy</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\WishLists\website\Sitecore.HabitatHome.Foundation.WishLists.Website.csproj">
