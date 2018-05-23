@@ -1,0 +1,25 @@
+﻿---
+ID: "3817f8d5-994b-4fbc-8bbe-4c342ec7553a"
+Parent: "eda9d296-26b7-433e-ab7e-8f795854b417"
+Template: "7cc3185b-6def-4d8e-bf12-d981dfd2b614"
+Path: /sitecore/Commerce/Commerce Control Panel/Shared Settings/Fulfillment Options/Ship items
+DB: master
+SharedFields:
+- ID: "ef1e0a0b-ac9a-4171-9cbc-00da3d85250a"
+  Hint: Fulfillment Option Type
+  Value: "{0C80137C-132B-4C0D-8476-4BCABDAFE9F7}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Ship items
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170308T092925Z
+    - ID: "f311c61a-08dd-411a-b280-42e335ec6118"
+      Hint: Title
+      Value: Ship items
