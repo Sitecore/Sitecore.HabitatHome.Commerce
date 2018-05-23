@@ -31,9 +31,9 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
         }
 
         public IEnumerable<InventoryStore> SaveNearestStores()
-        {            
+        {
             UserLocation userLocation = GeoUtility.GetUserLocation();
-            Assert.IsNotNull((object)userLocation, nameof(userLocation));
+            Assert.IsNotNull(userLocation, nameof(userLocation));
 
             List<InventoryStore> storeList = new List<InventoryStore>();
             var ceConfig = (CommerceEngineConfiguration)Factory.CreateObject("commerceEngineConfiguration", true);
@@ -59,9 +59,9 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
                     newStore.Zip = store["Zip"];
                     storeList.Add(new InventoryStore(newStore));
                 }
-                string storeJson = new JavaScriptSerializer().Serialize(storeList.GetRange(0, 2));
-                HttpCookie storesCookie = new HttpCookie(StoreLocatorConstants.STORE_COOKIES_KEY, storeJson)
 
+                string storeJson = new JavaScriptSerializer().Serialize(storeList.Take(2));
+                HttpCookie storesCookie = new HttpCookie(StoreLocatorConstants.STORE_COOKIES_KEY, storeJson)
                 {
                     Expires = DateTime.Now.AddHours(1)
                 };
@@ -71,33 +71,39 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
             {
                 return null;
             }
+
             return storeList.Take(2);
         }
+
         public IEnumerable<InventoryStore> GetSavedStores()
         {
             List<InventoryStore> storeList = new List<InventoryStore>();
             HttpCookie storesCookie = HttpContext.Current.Request.Cookies[StoreLocatorConstants.STORE_COOKIES_KEY];
-            dynamic savedStores = JsonConvert.DeserializeObject(storesCookie.Value);
-            foreach (var store in savedStores)
+            if (storesCookie != null)
             {
-                dynamic newStore = new System.Dynamic.ExpandoObject();
-                newStore.Id = store.Id;
-                newStore.InventoryStoreId = store.InventoryStoreId;
-                newStore.DisplayName = store.DisplayName;
-                newStore.Distance = store.Distance;
-                newStore.Address = store.Address;
-                newStore.City = store.City;
-                newStore.State = store.State;
-                newStore.Country = store.Country;
-                newStore.Zip = store.Zip;
-                storeList.Add(new InventoryStore(newStore));
+                dynamic savedStores = JsonConvert.DeserializeObject(storesCookie.Value);
+                foreach (var store in savedStores)
+                {
+                    dynamic newStore = new System.Dynamic.ExpandoObject();
+                    newStore.Id = store.Id;
+                    newStore.InventoryStoreId = store.InventoryStoreId;
+                    newStore.DisplayName = store.DisplayName;
+                    newStore.Distance = store.Distance;
+                    newStore.Address = store.Address;
+                    newStore.City = store.City;
+                    newStore.State = store.State;
+                    newStore.Country = store.Country;
+                    newStore.Zip = store.Zip;
+                    storeList.Add(new InventoryStore(newStore));
+                }
             }
+
             return storeList.Take(2);
-        }       
+        }
 
         private HttpClient GetClient(CommerceEngineConfiguration config)
         {
-            var httpClient = new HttpClient()
+            var httpClient = new HttpClient
             {
                 BaseAddress = new System.Uri(config.ShopsServiceUrl)
             };
@@ -108,10 +114,12 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
 
             string certificate = config.GetCertificate();
             if (certificate != null)
+            {
                 httpClient.DefaultRequestHeaders.Add(config.CertificateHeaderName, certificate);
-            httpClient.Timeout = new System.TimeSpan(0, 0, 600);
-            return httpClient;
+            }
 
+            httpClient.Timeout = new System.TimeSpan(0, 0, 600);
+            return httpClient;                  
         }
     }
 }
