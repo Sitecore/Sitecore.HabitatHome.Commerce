@@ -1,0 +1,25 @@
+﻿---
+ID: "7e8bc583-9d0c-4ef2-9cfb-782bd741e15d"
+Parent: "0563a7d2-1468-4448-be8e-f6751c4aca09"
+Template: "389ac363-2868-4180-8a70-8ce1c57d2223"
+Path: /sitecore/Commerce/Commerce Control Panel/Shared Settings/Fulfillment Option Types/Pickup From Store
+DB: master
+SharedFields:
+- ID: "b282baad-f8eb-4fd6-a42d-88a6714426db"
+  Hint: Type ID
+  Value: 2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161206T105433Z
+    - ID: "349b8cb1-a03b-41f9-bba3-0f92df4f21ea"
+      Hint: Name
+      Value: Pickup From Store
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
