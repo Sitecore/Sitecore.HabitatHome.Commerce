@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Sitecore Commerce Sample Plugin Template</Description>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Sitecore</Authors>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>$(PackageTags);Commerce;Sample;Plugin</PackageTags>
+    <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Policies\SamplePolicy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Sitecore.Commerce.Core">
+      <Version>2.1.6</Version>
+    </PackageReference>
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ConfigureServiceApiBlock.cs" />
+    <Content Include="ConfigureSitecore.cs" />
+    <Content Include="Controllers\CommandsController.cs" />
+    <Content Include="Entities\SampleEntity.cs" />
+    <Content Include="Models\SampleModel.cs" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <Reference Include="System.Transactions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Device" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Policies\" />
+  </ItemGroup>
+</Project>

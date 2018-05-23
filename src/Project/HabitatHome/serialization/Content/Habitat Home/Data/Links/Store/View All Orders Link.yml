@@ -1,0 +1,22 @@
+﻿---
+ID: "a4e635c0-d5d8-460b-b938-19724e72405f"
+Parent: "929091a1-8170-4aa1-a7e5-06f056f6b7bd"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Links/Store/View All Orders Link
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180326T023933Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="View All" anchor="" linktype="internal" class="" title="" target="|Custom" querystring="" id="{7838C70C-65D5-454D-833C-89AD71DEADBF}" />

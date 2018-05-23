@@ -1,0 +1,14 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@{
+    if (Sitecore.Context.IsLoggedIn)
+    {
+        <div id="AddToWishList" class="component cxa-add-to-wishlist-component">
+            <button class="btn" data-bind="click: function(data, event){$root.AddItemToWishList(data, event)}">
+                <i class="fa"></i>
+                <span>Add to My Wish List</span>
+            </button>
+        </div>
+    }
+}

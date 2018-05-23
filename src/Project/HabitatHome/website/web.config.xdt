@@ -1,0 +1,39 @@
+﻿<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    
+      <runtime>
+        <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+
+          <dependentAssembly xdt:Transform="RemoveAll"
+                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Client'))">
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="RemoveAll"
+                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Core'))">
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="RemoveAll"
+                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Edm'))">
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="RemoveAll"
+                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.Spatial'))">
+          </dependentAssembly>
+          
+          <dependentAssembly xdt:Transform="Insert">
+            <assemblyIdentity name="Microsoft.OData.Client" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="Insert">
+            <assemblyIdentity name="Microsoft.OData.Core" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="Insert">
+            <assemblyIdentity name="Microsoft.OData.Edm" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
+          </dependentAssembly>
+          <dependentAssembly xdt:Transform="Insert">
+            <assemblyIdentity name="Microsoft.Spatial" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
+          </dependentAssembly>          
+        </assemblyBinding>
+      </runtime>
+    
+
+  </configuration>

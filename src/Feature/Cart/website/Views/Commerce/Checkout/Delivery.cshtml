@@ -1,0 +1,70 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2016 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Cart.Models
+@model DeliveryRenderingModel
+
+<div @Html.Sxa().Component("cxa-checkoutdelivery-component", Model.Attributes)>
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        @Model.ErrorMessage
+    }
+    else
+    {
+        var continueShoppingLabel = Html.Sitecore().Field("Previous Button Label", Html.Sitecore().CurrentItem);
+        var toBillingLabel = Html.Sitecore().Field("Next Button Label", Html.Sitecore().CurrentItem);
+        var processing = @Html.Sitecore().CurrentItem["Next Button In-progress Label"];
+        var selectDeliveryFirstMessage = @Html.Sitecore().CurrentItem["Select Delivery First Message"];
+
+    <div class="component-content">
+        <div class="delivery-form">
+            <div class="delivery-form-header">
+                <p>@Html.Sitecore().Field("Delivery Preferences Header", Html.Sitecore().CurrentItem)</p>
+            </div>
+            <div class="delivery-form-option">
+                <select id="orderShippingPreference" data-bind="foreach: orderShippingOptions, value: selectedShippingOption">
+                    <!-- ko if: $index() == 0 -->
+                    <option value="0">@Html.Sitecore().Field("Delivery Option Hint Text", Html.Sitecore().CurrentItem)</option>
+                    <!-- /ko -->
+                    <option data-bind="text: Name, value: ShippingOptionType.Value"></option>
+                </select>
+            </div>
+        </div>
+        <div class="shipall-section" data-bind="visible: $root.isShipAll" style="display:none;">
+            @Html.Partial("~/Views/Commerce/Checkout/_ShipAll.cshtml")
+        </div>
+        <div class="shipbymail-section" data-bind="visible: $root.isShipToEmail" style="display:none;">
+            @Html.Partial("~/Views/Commerce/Checkout/_SendByEmail.cshtml")
+        </div>
+        <div class="delivery-options" data-bind="visible: $root.isShipItems" style="display:none;">
+            @Html.Partial("~/Views/Commerce/Checkout/_PickDeliveryByItem.cshtml")
+        </div>
+        <div class="shipall-section" data-bind="visible: $root.isPickUp" style="display:none;">
+            @Html.Partial("~/Views/Commerce/Checkout/_PickUpFromStore.cshtml")
+        </div>
+        <div class="buttons-row">
+            <a class="btn-delivery-prev" href="@Model.PreviousPageLink">@continueShoppingLabel</a>
+            <button class="btn-delivery-next" id="ToBillingButton" data-loading-text="@processing" data-bind="enable: enableToBilling, click: goToNextPageClick">@toBillingLabel</button>
+        </div>
+    </div>
+
+        <input type="hidden" id="deliveryMethodSet" />
+
+        <div class="delivery-data">
+            <div class="message-data">
+                <input type="hidden" id="SelectDeliveryFirstMessage" value="@selectDeliveryFirstMessage" />
+                <input type="hidden" id="DeliveryItemPath" value="@Model.DeliveryItemPath" />
+            </div>
+        </div>
+    }
+</div>

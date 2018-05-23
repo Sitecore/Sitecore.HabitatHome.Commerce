@@ -1,0 +1,30 @@
+﻿---
+ID: "ddbe0326-db12-45e2-a089-49f697896953"
+Parent: "c3897449-08c0-4883-bc6a-207af64531a1"
+Template: "1340f5ec-0efe-4f68-9972-4d6229f89ad0"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Top Bar Links/Top Bar Links
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{080E1659-14B0-47F6-BE1D-61078A90610E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152402Z
+    - ID: "48b894a4-5875-4f70-9cf2-20560e6d8df9"
+      Hint: Profile Edit Page Link
+      Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: 

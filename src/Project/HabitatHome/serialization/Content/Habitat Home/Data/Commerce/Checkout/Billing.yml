@@ -1,0 +1,29 @@
+﻿---
+ID: "db1cc358-376a-40d8-8fa8-657b6226720f"
+Parent: "6c346c07-69d0-4757-90db-27c28f115157"
+Template: "5580f871-81dd-4abc-9cb4-bdf177f8c835"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Billing
+DB: master
+BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8F0BAA3A-E9DD-4625-8EA8-725B0B337CBC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152359Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "885fdd76-fca3-4fe7-90fd-71d8d3ea8076"
+      Hint: Taxes Label
+      Value: Tax
+    - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
+      Hint: Billing Name Label
+      Value: Name

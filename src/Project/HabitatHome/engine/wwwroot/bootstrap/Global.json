@@ -1,0 +1,77 @@
+﻿{
+  "$type": "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
+  "Components": {
+    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
+    "$values": []
+  },
+  "DateCreated": "2015-04-20T23:14:12.4908676Z",
+  "DateDeleted": "0001-01-01T00:00:00",
+  "DateUpdated": "2015-04-20T23:14:12.4908676Z",
+  "EntityProviderName": "EntityProvider_SQL",
+  "Id": "GlobalEnvironment",
+  "ArtifactStoreId": "{6be385f1-93dc-4299-9dd4-934f6ba42eaa}",
+  "IndexProviderName": "IndexProvider_SQL",
+  "IsDeleted": false,
+  "IsPersisted": false,
+  "ListMemberships": {
+    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, mscorlib]], mscorlib",
+    "$values": [
+      "Environments",
+      "AllEntities"
+    ]
+  },
+  "Name": "GlobalEnvironment",
+  "NameSpace": "Sitecore.Commerce",
+  "Policies": {
+    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.BusinessUsers.EnvironmentBusinessToolsPolicy,Sitecore.Commerce.Plugin.BusinessUsers",
+        "EnvironmentList": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "HabitatAuthoring",
+            "HabitatShops"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
+        "PolicyId": "Global",
+        "AllowAdmin": true,
+        "Database": "habitat_Global",
+        "EffectiveDate": "0001-01-01T00:00:00",
+        "IsVisible": false,
+        "Password": "",
+        "Server": ".",
+        "TrustedConnection": true,
+        "UserName": "",
+        "View": "EntityStoreSqlPolicy"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.DeploymentPolicy, Sitecore.Commerce.Core",
+        "DeploymentId": "Deployment01",
+        "DeploymentVersion": "1.0.0",
+        "ParentNodeId": "Hub01"
+      },
+      {
+        "$type": "Plugin.Sample.Upgrade.MigrationSqlPolicy, Plugin.Sample.Upgrade",
+        "ArtifactStoreId": "6BE385F1-93DC-4299-9DD4-934F6BA42EAA",
+        "SourceStoreSqlPolicy": {
+          "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
+          "PolicyId": "Global",
+          "AllowAdmin": true,
+          "Database": "habitat_Global",
+          "EffectiveDate": "0001-01-01T00:00:00",
+          "IsVisible": false,
+          "Password": "",
+          "Server": "",
+          "TrustedConnection": true,
+          "UserName": "",
+          "View": "EntityStoreSqlPolicy"
+        }
+      }
+    ]
+  },
+  "SortOrder": 0
+}

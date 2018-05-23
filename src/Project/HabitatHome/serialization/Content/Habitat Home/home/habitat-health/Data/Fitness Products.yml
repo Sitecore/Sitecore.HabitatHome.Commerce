@@ -1,0 +1,14 @@
+﻿---
+ID: "5e7475a0-9639-499d-9dab-d38087a0973f"
+Parent: "d10a78d5-557f-43cf-9d8e-9a9dd0ed7658"
+Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/Fitness Products"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180323T213218Z

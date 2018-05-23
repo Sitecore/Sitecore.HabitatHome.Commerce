@@ -1,0 +1,82 @@
+﻿@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@using Sitecore.Commerce.XA.Feature.Account
+@using Sitecore.Commerce.XA.Feature.Account.Models
+@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderHistory.DataSourceFields
+
+@model OrderHistoryRenderingModel
+
+
+<div @Html.Sxa().Component("cxa-orderhistory-component", Model.Attributes) data-cxa-component-class="OrderHistory" data-cxa-component-initialized="false" data-cxa-component-model="OrdersViewModel" data-cxa-component-type="component">
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            <p>@Model.ErrorMessage</p>
+        </div>
+    }
+    else
+    {
+        <div class="component-content">
+            <div class="order-history-list">
+                <h1>Online Orders</h1>
+                <br />
+                <table data-bind="visible: orders().length">
+                    <thead>
+                        <tr>
+                            <td title="@Model.OrderIdColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.OrdersIdColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td title="@Model.OrderStatusColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.OrderStatusColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td title="@Model.DateColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.DateColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td class="view-order-details"></td>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: orders()">
+                        <!--ko ifnot: status() == 'StoreOrder' -->
+
+                        <tr>
+                            <td class="order-id"  width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
+                            <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
+                            <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
+                            <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>
+                        </tr>
+                        <!--/ko-->
+                    </tbody>
+                </table>
+                <div class="component divider col-xs-12">
+                    <div class="component-content">
+                        <hr>
+                    </div>
+                </div>
+                <h1>
+                    In Store Orders
+                </h1>
+                <br />
+                <table data-bind="visible: orders().length">
+                    <thead>
+                        <tr>
+                            <td title="@Model.OrderIdColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.OrdersIdColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td title="@Model.OrderStatusColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.OrderStatusColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td title="@Model.DateColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.DateColumnHeaderText, Html.Sitecore().CurrentItem)</td>
+                            <td class="view-order-details"></td>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: orders()">
+                        <!--ko if: status() == 'StoreOrder' -->
+
+                        <tr>
+                            <td class="order-id" width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
+                            <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
+                            <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
+                            <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>
+                        </tr>
+                        <!--/ko-->
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,59 @@
+﻿
+@{
+    var selectDeliveryOptionsHeader = Html.Sitecore().Field("Select Option per Item Header", Html.Sitecore().CurrentItem);
+    var deliveryOptionLabel = @Html.Sitecore().Field("Delivery Option Hint Text", Html.Sitecore().CurrentItem);
+    var openDeliveryInfoLabel = Html.Sitecore().Field("Open Delivery Info Text", Html.Sitecore().CurrentItem);
+    var closeDeliveryInfoLabel = Html.Sitecore().Field("Close Delivery Info Text", Html.Sitecore().CurrentItem);
+    var deliverySelectedLabel = Html.Sitecore().Field("Delivery Selected Label", Html.Sitecore().CurrentItem);
+    var variantLabel = Html.Sitecore().Field("Variant Label", Html.Sitecore().CurrentItem);
+}
+<div class="delivery-option-header">
+    <h1>@selectDeliveryOptionsHeader</h1>
+</div>
+<div class="delivery-option-item" data-bind="foreach: {data: cart().cartLines, as: 'cartLine' }">
+    <div class="delivery-item-header">
+        <div class="product-image-info">
+            <div class="product-image">
+                <img alt="a" data-bind="attr:{ src:image }" />
+            </div>
+            <div class="product-info">
+                <h5 data-bind="text:displayName"></h5>
+            </div>
+            <div class="unfloat"></div>
+        </div>
+        <div class="ship-option-select">
+            <select data-bind="foreach: shippingOptions, attr: { id:'lineShippingPreference-'+ externalCartLineId }, value: selectedShippingOption">
+                <!-- ko if: $index() == 0 -->
+                <option value="0">@deliveryOptionLabel</option>
+                <!-- /ko -->
+                <option data-bind="text: Name, value: ShippingOptionType.Value"></option>
+           
+            </select>
+        </div>
+    </div>
+    <div class="delivery-item-content" data-bind="attr: { id:'AccordionContent-'+ externalCartLineId }, visible: showShipOptionContent()">
+        <div data-bind="attr: { id:'ShipAll-'+ externalCartLineId }, visible: isLineShipAll" class="shipall-section">
+            @Html.Partial("~/Views/Commerce/Checkout/_ByItem_ShipAll.cshtml")
+        </div>
+        <div data-bind="attr: { id:'Email-'+ externalCartLineId }, visible: isLineShipToEmail" class="shipbymail-section">
+            @Html.Partial("~/Views/Commerce/Checkout/_ByItem_SendByEmail.cshtml")
+        </div>
+        <div data-bind="attr: { id:'Pickup-'+ externalCartLineId }, visible: isLinePickUp" class="shipall-section">
+            @Html.Partial("~/Views/Commerce/Checkout/_ByItem_PickUpFromStore.cshtml")
+        </div>
+        <div class="unfloat"></div>
+    </div>
+    <div class="delivery-item-status">
+        <strong>@deliverySelectedLabel:</strong>
+        <span class="delivery-content" data-bind="attr: { id: 'selectedDeliveryLabel-'+ externalCartLineId }, text: selectedShippingOptionName"></span>
+        <div class="change-delivery" data-bind="attr: { id: 'changeDelivery-'+ externalCartLineId }">
+            <div class="open-sign" data-bind="visible: !showShipOptionContent(), click: toggleShipContent">
+                <a><span class="icon-plus"></span> @openDeliveryInfoLabel</a>
+            </div>
+            <div class="close-sign" data-bind="visible: showShipOptionContent(), click: toggleShipContent">
+                <a><span class="icon-minus"></span> @closeDeliveryInfoLabel</a>
+            </div>
+        </div>
+    </div>
+    <div class="unfloat"></div>
+</div>

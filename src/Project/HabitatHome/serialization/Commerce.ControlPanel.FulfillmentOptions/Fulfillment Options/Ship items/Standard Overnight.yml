@@ -1,0 +1,25 @@
+﻿---
+ID: "d5930340-c1dd-482c-b972-50a9250bb7a6"
+Parent: "3817f8d5-994b-4fbc-8bbe-4c342ec7553a"
+Template: "79c4bb54-df7d-4825-bfa7-32ff9b051299"
+Path: /sitecore/Commerce/Commerce Control Panel/Shared Settings/Fulfillment Options/Ship items/Standard Overnight
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Standard Overnight
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19110ebd-4668-429d-9237-e8dfe81c09a8"
+      Hint: Title
+      Value: Standard Overnight
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170308T093102Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

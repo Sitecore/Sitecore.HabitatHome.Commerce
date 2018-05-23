@@ -1,0 +1,57 @@
+﻿---
+ID: "de829bc4-9894-42e4-b8f0-34b6d65fb60b"
+Parent: "8c4c09fa-c2ae-4c0f-9b8b-3b341d36e8b8"
+Template: "9f54e3d8-1bba-4442-84e1-f0528b780ecc"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Commerce/Commerce Metadata
+DB: master
+BranchID: "5cfe5120-4808-405a-8337-4975bdeeeb64"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "commerce-metadata"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4B235A1D-E9DB-40EE-B4F3-4EAFA424D688}"
+              p:before="*"
+              s:id="{D2EB2C0D-5453-4430-B4C4-B98F26F21447}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="head" />
+            <r
+              uid="{C89D0A86-C87C-4445-AD09-B81D30910A22}"
+              p:after="r[@uid='{4B235A1D-E9DB-40EE-B4F3-4EAFA424D688}']"
+              s:id="{432E53A1-E676-4A07-92BC-A3EF517A5811}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="body-top" />
+            <r
+              uid="{C42E728E-1195-444A-9EA8-E51EF0E6D45A}"
+              p:after="*[1=2]"
+              s:id="{B761C521-23CC-4F51-8340-15F5483BE921}"
+              s:par=""
+              s:ph="body-top" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180220T165232Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
+      Hint: Base Partial Design
+      Value: "{B3946082-2776-4ADA-8A18-B1845263161F}"

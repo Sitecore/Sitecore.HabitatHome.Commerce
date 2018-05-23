@@ -1,0 +1,12 @@
+﻿{
+  "AppSettings": {
+    "AntiForgeryEnabled":  false
+  },
+  "Serilog": {
+    "WriteTo": [
+      {
+        "Name": "LiterateConsole"
+      }
+    ]
+  }
+}

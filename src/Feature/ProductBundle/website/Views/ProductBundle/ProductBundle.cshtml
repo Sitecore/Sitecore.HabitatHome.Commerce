@@ -1,0 +1,68 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.Mvc
+@using Sitecore.Data.Items
+@model CatalogItemRenderingModel
+@{
+    Item currentItem = Html.Sitecore().CurrentItem;
+    Item relatedProduct = Model.CatalogItem;
+    bool hasTag = relatedProduct["Tags"] != null && !String.IsNullOrEmpty(relatedProduct["Tags"]) ? relatedProduct["Tags"].Split('|').Any(t => t.ToLower() == "bundle") : false;
+}
+@if (hasTag)
+{
+<div id="divProductBundle" class="component cxa-product-bundle-component">
+    <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
+    <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
+
+    <div class="component-content">
+        <b>
+            <label class="product-bundle-header">Select Products to Include in Bundle</label>
+        </b>
+
+        <hr />
+        <!-- ko foreach: RelatedProductsList -->
+        <div class="related-product">
+            <div class="row">
+                
+                    <div class="col-xs-1">
+
+                        <div class="cxa-addresseditor-component">                    
+                                <div class="address-edit-section">                             
+                                        <input type="checkbox" class="product-bundle-item" data-bind="attr:{id:ProductId, checked:'checked', value:ProductId }" />                            
+                                </div> 
+                        </div>
+                       
+                    </div>
+           
+                    <div class="col-xs-4">
+                        <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-7">
+                        <a data-bind="attr:{href: ProductUrl}">
+                            <b><label class="product-name" data-bind="text: DisplayName"></label></b>
+                        </a>
+                            <p class="description small" data-bind="text: Description"></p><br/>
+
+                            <div data-bind="foreach: VariantOptions">
+
+                                <div data-bind="attr:{ class: 'product-variant-name'}" style="margin-bottom:10px;">
+                                    <label data-bind="attr:{for: $parent.ProductId + '-' + Label}, text: Label"></label>
+                                    <select data-bind="attr:{id: $parent.ProductId + '-' + Label, class: 'variant-option-select-' + $parent.ProductId}">
+                                        <!-- ko foreach: Options -->
+                                        <option data-bind="value: VariantId, text: DisplayName"></option>
+                                        <!--/ko-->
+                                    </select>
+                                </div>         
+                            </div>
+                    </div>
+
+          
+            </div>
+        </div>
+        <hr />
+        <!--/ko-->
+    </div>
+</div>
+}

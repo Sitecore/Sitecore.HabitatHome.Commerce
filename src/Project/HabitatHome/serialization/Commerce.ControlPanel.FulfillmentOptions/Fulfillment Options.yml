@@ -1,0 +1,14 @@
+﻿---
+ID: "eda9d296-26b7-433e-ab7e-8f795854b417"
+Parent: "bec7a22d-95bd-49d9-9715-5a2307110139"
+Template: "310b1cbc-e05d-4b95-8e2a-d2e9bda1bf0d"
+Path: /sitecore/Commerce/Commerce Control Panel/Shared Settings/Fulfillment Options
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150826T195901Z

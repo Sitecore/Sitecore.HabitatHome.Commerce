@@ -1,0 +1,24 @@
+﻿---
+ID: "094748be-4f62-43be-a4f8-95cd04e2643c"
+Parent: "1a276777-ec63-41ae-a762-1b108d455479"
+Template: "f7561ffc-c0d8-477f-b53d-2703a4060be1"
+Path: /sitecore/content/Habitat Sites/Habitat Home/home/gaming/Data/Category Subnavigation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180215T111915Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: カテゴリー サブナビゲーション
+  Versions:

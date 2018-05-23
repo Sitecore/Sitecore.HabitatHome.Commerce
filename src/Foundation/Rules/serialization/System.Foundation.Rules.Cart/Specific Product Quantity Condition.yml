@@ -1,0 +1,28 @@
+﻿---
+ID: "9d3b7b5b-48ba-4b54-a522-166ffdeac33d"
+Parent: "9643f053-9a0c-4815-a6f8-a69192d3fca5"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: /sitecore/system/Settings/Rules/Definitions/Elements/CommerceConnect Conditional Renderings/Specific Product Quantity Condition
+DB: master
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: Sitecore.HabitatHome.Foundation.Rules.Conditions.SpecificProductQuantityCondition,Sitecore.HabitatHome.Foundation.Rules
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130613T230208Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "where the quantity of product [ProductId,,defaultValue=&validationText=Please enter a valid product code.,product id] in user's cart [operatorid,Operator,,compares to] [ProductQuantity,PositiveInteger,defaultValue=&validationText=Please enter a valid positive integer value.,specific value]"

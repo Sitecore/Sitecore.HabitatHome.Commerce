@@ -1,0 +1,36 @@
+﻿---
+ID: "4caf1bde-c68c-44c9-83b0-5989ffae168e"
+Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
+Template: "762364a6-3ccb-43d2-9acb-c889db0f7fcf"
+Path: "/sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Country-Region Configuration"
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "6d8c6738-20ec-4ca0-b9ee-dc6b64ca224f"
+  Hint: "Countries-Regions"
+  Type: Multilist
+  Value: |
+    {9E9E8CB4-B03D-4650-9388-2F73CD0AD28F}
+    {60D23160-C39D-4B72-89DB-489CCB57276A}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F974A4BD-5F0D-4EE5-8A0E-AC55D19B7306}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Country-Region Configuration"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

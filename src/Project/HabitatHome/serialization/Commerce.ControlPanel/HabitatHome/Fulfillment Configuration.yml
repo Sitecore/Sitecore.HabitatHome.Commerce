@@ -1,0 +1,42 @@
+﻿---
+ID: "f1d656c8-2611-4e55-80ce-59fdc18f61e6"
+Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
+Template: "a2a80c92-826a-4928-beed-6e46fff31919"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Fulfillment Configuration
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "0452eb98-bc28-4fd8-a3b4-533f26c62705"
+  Hint: Fulfillment Options
+  Type: Multilist
+  Value: |
+    {3878B502-85AC-41B5-9203-E0F8712A854B}
+    {3817F8D5-994B-4FBC-8BBE-4C342EC7553A}
+    {2FB0128E-FBBD-4FCE-9197-F000D8D39F5C}
+    {F5FFD037-BE2A-42A1-8FB1-8156CD6B3031}
+- ID: "769b63db-453f-44e6-aa90-cbc916e47f7d"
+  Hint: Allow items to be delivered Individually
+  Type: Checkbox
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6E94CE45-F54F-4002-9B41-A08EC788C583}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Fulfillment Configuration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191237Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

@@ -1,0 +1,42 @@
+﻿---
+ID: "974dcbb1-796b-41af-bd27-a96f38cb89b1"
+Parent: "95626b2b-0291-48bc-acf2-6d037ec4aa03"
+Template: "26336120-b85f-4bf2-a988-290c7b3328fc"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Page Designs/Commerce/Habitat Home Store Page
+DB: master
+BranchID: "5db503c1-e507-44f6-8302-c16744553392"
+SharedFields:
+- ID: "7b487159-e180-4846-be49-e196e4c3a2b3"
+  Hint: Page Design Theme
+  Value: "{C93E1FAF-D37E-4D73-8502-99557466041C}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" />
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+      Hint: PartialDesigns
+      Value: "{A64B037F-449B-4EAB-B9F4-E5C9C8E28725}|{ACF349A6-E08F-4C3F-BB86-A86F5C003E7A}|{0F4A411E-1B6C-41FD-9DED-6C9825DA1FB4}|{47190973-2196-4887-AD63-4E0424C2CDCA}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180201T152522Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
