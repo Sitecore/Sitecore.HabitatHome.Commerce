@@ -1,0 +1,14 @@
+﻿---
+ID: "e49762fe-fa9c-40f3-b372-b017f73e77d0"
+Parent: "143ea204-3259-4213-a557-e025b3cd2bc5"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/system/Marketing Control Panel/Automation Plans/2018/05/21
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180521T230403Z

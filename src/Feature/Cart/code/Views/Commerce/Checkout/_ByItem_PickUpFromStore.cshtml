@@ -1,0 +1,27 @@
+﻿<div class="shipall-addresses-title">
+    <h3>Pick Up From Store</h3>
+</div>
+
+<div class="pickup-options" data-bind="attr: { id: 'pickUpFromStoreContainer'+ externalCartLineId }, with: shippingAddress">
+    <div class="shipall-options-items">
+
+        <div class="shipall-options-item" data-bind="foreach: cartLine.linePickUpStores">
+            <div class="shipping-option">
+                <!-- ko if: ZeroInventory -->
+                <label>Not available in the <span data-bind="text: DisplayName"></span></label><br />
+                <!--/ko-->
+                <!-- ko ifnot: ZeroInventory -->
+                <!-- ko if: $index() === 0 -->
+                <input type="radio" class="pickupStoreSelection" style="position: absolute;opacity: 0;cursor: pointer;top: 15px;z-index: 1;"  data-bind="attr: {name: 'pickUpOptions-'+ cartLine.externalCartLineId, pvalue: InventoryStoreId, id: InventoryStoreId + '-' + cartLine.externalCartLineId}" checked="checked">
+                <!-- /ko -->
+                <!-- ko if: $index() !== 0 -->
+                <input type="radio" class="pickupStoreSelection" style="position: absolute;opacity: 0;cursor: pointer;top: 15px;z-index: 1;" data-bind="attr: {name: 'pickUpOptions-'+  cartLine.externalCartLineId, pvalue: InventoryStoreId, id: InventoryStoreId + '-' + cartLine.externalCartLineId, 'data-attr-storename': InventoryStoreId}">
+                <!-- /ko -->
+                <label data-bind="text: DisplayName, click: function(model){ $root.setPickUpStore(model)}, attr: {'for': InventoryStoreId + '-' + cartLine.externalCartLineId}"></label>
+                <!--/ko-->
+            </div>
+
+        </div>
+
+    </div>
+</div>

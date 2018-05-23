@@ -65,7 +65,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                 Address = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Address,
                 Longitude = x.Longitude,
                 Latitude = x.Latitude, Name = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Name ,
-                City = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().City , Zip = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().ZipCode
+                City = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().City , Zip = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().ZipCode, StateCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().StateCode, CountryCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().CountryCode
             }));
 
             return stores;

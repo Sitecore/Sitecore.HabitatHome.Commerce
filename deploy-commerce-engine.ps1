@@ -10,7 +10,7 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$publishFolder = (Join-Path $PSScriptRoot "publishTemp"),
+    [string]$publishFolder = (Join-Path $PWD "publishTemp"),
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish
@@ -73,7 +73,7 @@ Function Publish-CommerceEngine {
             Remove-Item $engineWebRootBackup -Recurse -Force
         }
         
-        Rename-Item $engineWebRoot -NewName $engineWebRootBackup -ErrorAction SilentlyContinue
+        Rename-Item $engineWebRoot -NewName $engineWebRootBackup 
         Get-ChildItem $engineWebRoot -Recurse | ForEach-Object {Remove-Item $_.FullName -Recurse}
         Copy-Item -Path "$publishFolder" -Destination $engineWebRoot -Container -Recurse -Force
     }

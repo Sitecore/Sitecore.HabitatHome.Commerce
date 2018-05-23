@@ -11,12 +11,22 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Models
         public string DisplayName { get; set; }
         public double Distance { get; set; }
         public int InventoryAmount { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+        public string Zip { get; set; }
         public InventoryStore(dynamic result)
         {
             this.Id = result.Id;
             this.InventoryStoreId = result.InventoryStoreId;
             this.DisplayName = result.DisplayName;
             this.Distance = result.Distance;
+            this.Address = result.Address;
+            this.City = result.City;
+            this.Country = result.Country;
+            this.Zip = result.Zip;
+            this.State = result.State;
 
         }
         public dynamic GetViewModel()
@@ -29,6 +39,11 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Models
             model.InventoryAmount = this.InventoryAmount;
             model.ZeroInventory = this.InventoryAmount == 0;
             model.Limited = this.InventoryAmount < 6 && this.InventoryAmount != 0 ? true : false;
+            model.Address = this.Address;
+            model.City = this.City;
+            model.Zip = this.Zip;
+            model.State = this.State;           
+            model.Country = this.Country;
             return model;
         }
         private string GetDisplayName(string StoreId)

@@ -32,7 +32,7 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Utilities
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
 
             return ul;
