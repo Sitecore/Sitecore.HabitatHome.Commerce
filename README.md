@@ -50,7 +50,11 @@ From the root of the solution
 
 `npm install`
 `node_modules\.bin\gulp initial`
+
+> if using Visual Studio task runner, please see [this workaround](https://stackoverflow.com/questions/45580456/visual-studio-task-runner-error-with-es6)
+
 > gulp **initial** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the default gulp task (gulp with no parameters). 
+
 ### 3 Deploy Engine
 
 The next step will deploy Habitat Home's custom Commerce Engine with its relevant plugin and load the catalog, inventory and promotions.
