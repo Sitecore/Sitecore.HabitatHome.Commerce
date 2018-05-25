@@ -18,6 +18,8 @@ The code, samples and/or solutions provided in this repository are for example p
 
 # Getting Started
 
+**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Content. See the README.md file in the [Sitecore.HabitatHome.Content](https://github.com/sitecore/sitecore.habitathome.content) repository.**
+
 ## Prerequisites
 
 ### Sitecore Version
@@ -34,25 +36,29 @@ If you do **not want to use the default settings**, you need to adjust the appro
 
 `/gulp-config.js` 
 `/publishsettings.targets` 
-`src\Project\HabitatHome\code\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
+`src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
+
+Note: If you've already deployed the HabitatHome Content demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
+you would need to also customize the settings in the HabitatHome Content demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
+See README.md in Sitecore.HabitatHome.Content for custom settings.
 
 ## Installation
 **All installation instructions assume using PowerShell 5.1 in administrative mode.**
+
 ### 1 Clone the Repository
 Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
 
 `git clone https://github.com/Sitecore/Sitecore.HabitatHome.Commerce.git` or 
 `git clone git@github.com:Sitecore/Sitecore.HabitatHome.Commerce.git`
-
   
 ### 2 Deploy Solution
-From the root of the solution
+Note: If you have not yet done so, deploy the base HabitatHome.Content solution. See README.md in Sitecore.HabitatHome.Content
+You can run the `quick-deploy` gulp task from the root of the HabitatHome.Content solution for a quicker deploy that excludes post deploy actions or Unicorn synchronization.
+
+To deploy the HabitatHome.Commerce solution, from the root of the solution
 
 `npm install`
 `node_modules\.bin\gulp initial`
-
-> if using Visual Studio task runner, please see [this workaround](https://stackoverflow.com/questions/45580456/visual-studio-task-runner-error-with-es6)
-
 > gulp **initial** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the default gulp task (gulp with no parameters). 
 
 ### 3 Deploy Engine
