@@ -18,8 +18,6 @@ The code, samples and/or solutions provided in this repository are for example p
 
 # Getting Started
 
-**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Content. See the README.md file in the [Sitecore.HabitatHome.Content](https://github.com/sitecore/sitecore.habitathome.content) repository.**
-
 ## Prerequisites
 
 ### Sitecore Version
@@ -28,9 +26,15 @@ Prior to attempting the demo installation, ensure you have a working **Sitecore 
 
 You do not need to install the Storefront Theme
 
-**Clone this repository**
+### Sitecore.HabitatHome.Content
 
-## Custom Install - before you start
+**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Content.** See the README.md file in the [Sitecore.HabitatHome.Content](https://github.com/sitecore/sitecore.habitathome.content) repository.
+
+
+## Installation
+**All installation instructions assume using PowerShell 5.1 in administrative mode.**
+
+### Custom Install - before you start
 
 If you do **not want to use the default settings**, you need to adjust the appropriate values in the following files:
 
@@ -40,10 +44,8 @@ If you do **not want to use the default settings**, you need to adjust the appro
 
 Note: If you've already deployed the HabitatHome Content demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
 you would need to also customize the settings in the HabitatHome Content demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
-See README.md in Sitecore.HabitatHome.Content for custom settings.
 
-## Installation
-**All installation instructions assume using PowerShell 5.1 in administrative mode.**
+See README.md in Sitecore.HabitatHome.Content for custom settings.
 
 ### 1 Clone the Repository
 Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
