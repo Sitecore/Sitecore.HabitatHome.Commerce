@@ -94,7 +94,7 @@ Function Get-IdServerToken {
     $body = @{
         password   = "$adminPassword"
         grant_type = 'password'
-        username   = ("sitecore\{0}" -f $adminUser)
+        username   = ("{0}" -f $adminUser)
         client_id  = 'postman-api'
         scope      = 'openid EngineAPI postman_api'
     }
