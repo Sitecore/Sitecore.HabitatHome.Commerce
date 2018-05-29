@@ -47,6 +47,7 @@ you would need to also customize the settings in the HabitatHome Content demo an
 
 See README.md in Sitecore.HabitatHome.Content for custom settings.
 
+
 ### 1 Clone the Repository
 Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
 
