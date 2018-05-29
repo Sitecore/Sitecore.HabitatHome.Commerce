@@ -38,14 +38,15 @@ You do not need to install the Storefront Theme
 
 If you do **not want to use the default settings**, you need to adjust the appropriate values in the following files:
 
-`/gulp-config.js` 
-`/publishsettings.targets` 
-`src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
+* `/gulp-config.js` 
+* `/publishsettings.targets` 
+* `src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
 
 Note: If you've already deployed the HabitatHome Content demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
 you would need to also customize the settings in the HabitatHome Content demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
 
 See README.md in Sitecore.HabitatHome.Content for custom settings.
+
 
 ### 1 Clone the Repository
 Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
@@ -66,6 +67,11 @@ To deploy the HabitatHome.Commerce solution, from the root of the solution
 ### 3 Deploy Engine
 
 The next step will deploy Habitat Home's custom Commerce Engine with its relevant plugin and load the catalog, inventory and promotions.
+
+_Notes:_
+* If you want to use your own engine suffix rather than `habitat`, you need to update it in `deploy-commerce-engine.ps1`
+* If you want to use your own databases rather than `habitat_Global`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\bootstrap\Global.json`
+* If you want to use your own databases rather than `habitat_SharedEnvironments`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json`
 
 The script is provided as an example and should be reviewed to understand its behavior prior to its execution. In summary, the script:
 
