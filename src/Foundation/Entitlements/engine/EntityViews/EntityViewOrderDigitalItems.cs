@@ -23,6 +23,7 @@ namespace Sitecore.HabitatHome.Foundation.Entitlements.Engine
     using Sitecore.Commerce.Plugin.Entitlements;
     using Sitecore.Commerce.Plugin.Orders;
     using Sitecore.Commerce.Plugin.Carts;
+    using Sitecore.Commerce.Plugin.Management;
 
     /// <summary>
     /// Defines a block which populates an EntityView for a list of Coupons with the View named Public Coupons.
@@ -76,8 +77,12 @@ namespace Sitecore.HabitatHome.Foundation.Entitlements.Engine
                         var entitlementLine = orderEntitlementsComponent.Entitlements.FirstOrDefault(p => p.EntityTarget == entitlement.Id);
                         var orderLine = order.Lines.First(p => p.Id == entitlementLine?.ItemTarget);
                         var cartProductComponent = orderLine.GetComponent<CartProductComponent>();
-
                         var imageId = cartProductComponent.Image.SitecoreId.Replace("-", "").Replace("{", "").Replace("}", "");
+
+                        SitecoreConnectionPolicy connectionPolicy = context.GetPolicy<SitecoreConnectionPolicy>();
+                        GlobalImagePolicy globalPolicy = context.GetPolicy<GlobalImagePolicy>();
+                        var siteProtocol = connectionPolicy.Protocol;
+                        var siteHost = connectionPolicy.Host;
 
                         var properties = new List<ViewProperty>
                         {
@@ -86,7 +91,7 @@ namespace Sitecore.HabitatHome.Foundation.Entitlements.Engine
                                 Name = "Image",
                                 IsHidden = false,
                                 IsRequired = false,
-                                RawValue = $"<img alt='This is the alternate' height=50 width=50 src='http://sxa.storefront.com/-/media/{imageId}.ashx'/>",
+                                RawValue = $"<img alt='This is the alternate' height=50 width=50 src='{siteProtocol}://{siteHost}/-/media/{imageId}.ashx'/>",
                                 UiType = "Html",
                                 OriginalType = "Html"
                             },
