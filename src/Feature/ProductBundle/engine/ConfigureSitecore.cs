@@ -39,7 +39,7 @@ namespace Sitecore.HabitatHome.Feature.ProductBundle.Engine
              //           })
 
                .ConfigurePipeline<IAddCartLinePipeline>(builder => builder.Add<AddToCartBundlesBlock>().After<AddCartLineBlock>())
-               .ConfigurePipeline<IGetCartPipeline>(builder => builder.Add<HideCartLineBundlesBlock>().After<GetCartBlock>())
+               //.ConfigurePipeline<IGetCartPipeline>(builder => builder.Add<HideCartLineBundlesBlock>().After<GetCartBlock>())
                .ConfigurePipeline<IRemoveCartLinePipeline>(builder => builder.Add<RemoveCartLineBundlesBlock>().Before<RemoveCartLineBlock>())
                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<ConfigureServiceApiBlock>()));
 
