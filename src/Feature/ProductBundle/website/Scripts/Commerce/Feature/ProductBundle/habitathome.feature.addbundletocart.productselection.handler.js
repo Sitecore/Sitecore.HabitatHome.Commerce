@@ -81,12 +81,16 @@ $('form#AddBundleForm').submit(function (e) {
     $('input:checkbox.product-bundle-item').each(function () {
         if (this.checked) {
             var optSelect = $('.variant-option-select-' + $(this).attr('id'));
-            console.log($(this).attr('id'));
-            console.log($(optSelect));
-            console.log($(optSelect).val());
+            
             var baseProductId = $(this).val();
-            if (optSelect.val() != null && optSelect.val() != 'unidentified')
+            if (optSelect != null && optSelect.val() != null && optSelect.val() != 'unidentified')
                 baseProductId = $(this).val() + "|" + $(optSelect).val();
+
+            var inpQuantity = $('#inp-quantity-' + $(this).attr('id'));
+
+            if (inpQuantity != null && inpQuantity.val() >= 1)
+                baseProductId += '&Quantity=' + inpQuantity.val();
+
             variantIds += baseProductId + ',';
         }        
     });

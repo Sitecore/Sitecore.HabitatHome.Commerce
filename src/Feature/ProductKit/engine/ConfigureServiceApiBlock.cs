@@ -10,7 +10,6 @@ using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Core.Commands;
 using Sitecore.Framework.Conditions;
 using Sitecore.Framework.Pipelines;
-using Sitecore.HabitatHome.Feature.ProductKit.Engine.Entities;
 
 namespace Sitecore.HabitatHome.Feature.ProductKit.Engine
 {
@@ -43,11 +42,7 @@ namespace Sitecore.HabitatHome.Feature.ProductKit.Engine
         {
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
 
-            // Add the entities
-            modelBuilder.AddEntityType(typeof(SampleEntity));
-
-            // Add the entity sets
-            modelBuilder.EntitySet<SampleEntity>("Sample");
+           
 
             // Add complex types
 

@@ -18,7 +18,7 @@
 
     <div class="component-content">
         <b>
-            <label class="product-bundle-header">Select Products to Include in Bundle</label>
+            <label class="product-bundle-header">Selected products to include in bundle</label>
         </b>
 
         <hr />
@@ -43,23 +43,29 @@
                         <a data-bind="attr:{href: ProductUrl}">
                             <b><label class="product-name" data-bind="text: DisplayName"></label></b>
                         </a>
-                            <p class="description small" data-bind="text: Description"></p><br/>
+                        <p class="description small" data-bind="text: Description"></p><br />
+                        <div class="product-bundle-quantity">
+                            <label data-bind="attr:{for: 'inp-quantity-' + ProductId}, text: 'Quantity: '"></label>
+                            <input type="number" min="1" value="1" class="inp-quantity" data-bind="attr:{id:'inp-quantity-' + ProductId}" />
+                        </div>
+                        
+
 
                             <div data-bind="foreach: VariantOptions">
 
-                                <div data-bind="attr:{ class: 'product-variant-name'}" style="margin-bottom:10px;">
+                                <div data-bind="attr:{ class: 'product-variant-name'}">
                                     <label data-bind="attr:{for: $parent.ProductId + '-' + Label}, text: Label"></label>
                                     <select data-bind="attr:{id: $parent.ProductId + '-' + Label, class: 'variant-option-select-' + $parent.ProductId}">
                                         <!-- ko foreach: Options -->
                                         <option data-bind="value: VariantId, text: DisplayName"></option>
                                         <!--/ko-->
                                     </select>
-                                </div>         
+                                </div>
                             </div>
-                    </div>
+                        </div>
 
-          
-            </div>
+
+                    </div>
         </div>
         <hr />
         <!--/ko-->

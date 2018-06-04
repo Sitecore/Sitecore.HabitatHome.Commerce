@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Feature\Catalog\engine\Sitecore.HabitatHome.Feature.Catalog.Engine.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Marketplace\engine\Sitecore.HabitatHome.Feature.EBay.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\NearestStore\engine\Sitecore.HabitatHome.Feature.NearestStore.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\Orders\engine\Sitecore.HabitatHome.Feature.Orders.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\ProductBundle\engine\Sitecore.HabitatHome.Feature.ProductBundle.Engine.csproj" />

@@ -1,0 +1,20 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.HabitatHome.Feature.ActivePromotion.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.Data.Items;
+@using Sitecore.Mvc
+@model  ActivePromotionRenderingModel
+
+@if (Model.HasActivePromotions)
+{
+    foreach (var promo in Model.ActivePromotions)
+    {
+        <div class="ActivePromotion component promo container theme-container col-xs-12" @Html.Sxa().Component("cxa-activepromotion-component", Model.ProductItemRenderingModel.Attributes)>
+            <div class="component-content">
+               @promo.DisplayCartText
+            </div>
+        </div>
+    }
+}
