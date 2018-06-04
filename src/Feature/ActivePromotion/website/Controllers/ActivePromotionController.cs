@@ -26,8 +26,6 @@ namespace Sitecore.HabitatHome.Feature.ActivePromotion.Controllers
         private readonly IActivePromotionRepository _activePromotionRepository;
         private readonly IVisitorContext _visitorContext;
 
-        [HttpGet]
-        [Authorize]
         public ActionResult ActivePromotion()
         {
 
