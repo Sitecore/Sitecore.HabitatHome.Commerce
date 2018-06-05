@@ -26,7 +26,7 @@ function DeliveryDataViewModel() {
     self.pickUpStoreId = ko.observable("");
     self.store = ko.observable(new NewPickupStore({ "ExternalId": "0" }));
     self.storeDeliveryMethod = ko.observable("");
-   
+
     self.emailDeliveryMethod = ko.observable("");
     self.orderShippingOptions = ko.observableArray();
 
@@ -93,7 +93,7 @@ function DeliveryDataViewModel() {
                     else if (this.isLineShipAll()) {
                         isValid.push(this.shippingMethod.isValid() && this.shippingAddress.isValid());
                     }
-                    else if (this.isLinePickUp()) {    
+                    else if (this.isLinePickUp()) {
                         var inpPickUpStore = $('input[name=pickUpOptions]:checked');
                         if (inpPickUpStore.length) {
                             var storeObject = ko.contextFor(inpPickUpStore.parents()[0]);
@@ -109,11 +109,11 @@ function DeliveryDataViewModel() {
             if (self.isPickUp()) {
                 console.log("ispickuup");
                 var inpPickUpStore = $('input[name=pickUpOptions]:checked');
-                if (inpPickUpStore.length) {                    
+                if (inpPickUpStore.length) {
                     var storeObject = ko.contextFor(inpPickUpStore.parents()[0]);
                     return (storeObject.$data.Address1 != null);
-                }               
-                
+                }
+
             }
         },
         write: function (value) {
@@ -134,14 +134,14 @@ function DeliveryDataViewModel() {
     };
 
     self.getShippingMethods = function () {
-        if (self.shippingAddress() && self.shippingAddress.errors().length === 0) {            
+        if (self.shippingAddress() && self.shippingAddress.errors().length === 0) {
             $("#orderGetShippingMethods").button('loading');
             var party = ko.toJS(self.shippingAddress());
-       
+
             var data = { ShippingAddress: party, ShippingPreferenceType: self.selectedShippingOption(), Lines: null };
-      
+
             AjaxService.Post("/api/cxa/checkout/GetShippingMethods", data, function (data, success, sender) {
-       
+
                 if (data.Success && success) {
                     self.setShippingMethods(data.ShippingMethods);
                 }
@@ -161,7 +161,7 @@ function DeliveryDataViewModel() {
 
             if (v.Description == "Pickup From Store") {
                 self.pickupMethod(new method(v.Description, v.ExternalId));
-   
+
             }
             else {
                 self.shippingMethods.push(new method(v.Description, v.ExternalId));
@@ -234,7 +234,7 @@ function DeliveryDataViewModel() {
 
     self.handleEditMode = function (data) {
         if (self.cart().shipments != null && self.cart().shipments.length > 0) {
-          
+
             if (self.cart().shipments.length == 1) {
                 self.handleEditModeShipAll(data);
             }
@@ -277,9 +277,9 @@ function DeliveryDataViewModel() {
                 }
 
                 AjaxService.Post("api/cxa/Delivery/GetCurrentCart", "", function (data, success, sender) {
-                    if (success) {                        
+                    if (success) {
                         $.each(data.Data, function () {
-                            var exId;var prodId;var varId;
+                            var exId; var prodId; var varId;
                             $(this).map(function (i, b) {
                                 if ((b['Key'] == 'ExternalCartLineId'))
                                     exId = b['Value'];
@@ -306,7 +306,7 @@ function DeliveryDataViewModel() {
             }
         }
         )
-        
+
     };
 
     self.GetInventory = function (cartLine, productId, variantId) {
@@ -326,7 +326,7 @@ function DeliveryDataViewModel() {
                     storesList.push(newStore);
                 });
                 cartLine.linePickUpStores(storesList);
-    
+
             }
         })
     }
@@ -347,17 +347,17 @@ function DeliveryDataViewModel() {
                 if (result.Data.length > 0) {
                     $.each(result.Data, function (index, value) {
                         var newStore = new NewPickupStore(value);
-             
+
                         storesList.push(newStore);
                     });
                     cartLine.linePickUpStores(storesList);
                 }
             }
         });
-    }   
+    }
 
     self.setPickUpStore = function (model) {
-                
+
         self.pickUpStoreId = model.InventoryStoreId;
         self.store(model);
 
@@ -391,7 +391,7 @@ function DeliveryDataViewModel() {
                 "PartyID": partyId
             });
             var data = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
-          
+
             AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(data), function (data, success, sender) {
                 if (success && data.Success) {
                     window.location.href = data.NextPageLink;
@@ -399,7 +399,7 @@ function DeliveryDataViewModel() {
                 $("#ToBillingButton").button('reset');
             }, $(this));
         }
-        
+
         else if (orderShippingPreference === 2) {
             var inpName = 'pickUpOptions';
             var inpPickUpStore = $('input[name=' + inpName + ']:checked');
@@ -424,13 +424,13 @@ function DeliveryDataViewModel() {
             storeshippingAddress.isPrimary = false;
             storeshippingAddress.fullAddress = self.store().Address1 + " " + self.store().City + " " + self.store().State + " " + self.store().Zip + " " + self.store().Country;
             storeshippingAddress.detailsUrl = "";
-            
+
             var party = ko.toJS(storeshippingAddress);
-            
+
             var data = { ShippingAddress: party, ShippingPreferenceType: self.selectedShippingOption(), Lines: null };
-            
+
             AjaxService.Post("/api/cxa/checkout/GetShippingMethods", data, function (data, success, sender) {
-                if (data.Success && success) {                   
+                if (data.Success && success) {
                     self.setShippingMethods(data.ShippingMethods);
                     var partyId = self.shippingAddress().externalId();
                     parties.push({
@@ -442,16 +442,16 @@ function DeliveryDataViewModel() {
                         "ZipPostalCode": self.store().Zip,
                         "ExternalId": partyId,
                         "PartyId": partyId
-                    });                   
+                    });
                     shipping.push({
                         "ShippingMethodID": self.pickupMethod().id,
                         "ShippingMethodName": self.pickupMethod().description,
                         "ShippingPreferenceType": 1,
                         "PartyID": partyId
                     });
-                   
+
                     var shipData = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
-           
+
                     AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(shipData), function (data, success, sender) {
                         if (success && data.Success) {
                             window.location.href = data.NextPageLink;
@@ -460,9 +460,9 @@ function DeliveryDataViewModel() {
                     }, $(this));
 
                 }
-            });        
-                
-            
+            });
+
+
         }
 
         else if (orderShippingPreference === 4) {
@@ -471,7 +471,7 @@ function DeliveryDataViewModel() {
                 var lineId = this.externalCartLineId;
 
                 if (lineDeliveryPreference === 1) {
-                  
+
                     var partyId = this.shippingAddress().externalId();
                     parties.push({
                         "Name": this.shippingAddress().name(),
@@ -512,10 +512,10 @@ function DeliveryDataViewModel() {
                     var storeObject = ko.contextFor(inpPickUpStore.parents()[0]);
 
                     if (storeObject == null) {
-    
+
                         $('#ToBillingButton').attr('disabled');
                     }
-             
+
                     var storeName = storeObject.$data.InventoryStoreId;
                     var address1 = storeObject.$data.Address1;
                     var city = storeObject.$data.City;
@@ -542,7 +542,7 @@ function DeliveryDataViewModel() {
                     AjaxService.Post("/api/cxa/checkout/GetShippingMethods", data, function (data, success, sender) {
                         if (data.Success && success) {
                             self.setShippingMethods(data.ShippingMethods);
-                 
+
                             var inpName = 'pickUpOptions';
                             var inpPickUpStore = $('input[name=' + inpName + ']:checked');
                             var storeObject = ko.contextFor(inpPickUpStore.parents()[0]);
@@ -566,19 +566,9 @@ function DeliveryDataViewModel() {
                                 "PartyID": partyId,
                                 "LineIDs": [lineId]
                             });
-
-                            var shipData = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
-                            
-                            AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(shipData), function (data, success, sender) {
-                                if (success && data.Success) {
-                                    window.location.href = data.NextPageLink;
-                                }
-                                $("#ToBillingButton").button('reset');
-                            }, $(this));
-
                         }
-                    });             
-                    
+                    });
+
                 }
             });
         }
@@ -592,18 +582,6 @@ function DeliveryDataViewModel() {
             });
 
             var data = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
-          
-            AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(data), function (data, success, sender) {
-                if (success && data.Success) {
-                    window.location.href = data.NextPageLink;
-                }
-
-                $("#ToBillingButton").button('reset');
-            }, $(this));
-        }
-
-        if (orderShippingPreference != 2 && orderShippingPreference != 4) {
-            var data = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
 
             AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(data), function (data, success, sender) {
                 if (success && data.Success) {
@@ -613,10 +591,20 @@ function DeliveryDataViewModel() {
                 $("#ToBillingButton").button('reset');
             }, $(this));
         }
+
+        var data = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
+
+        AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(data), function (data, success, sender) {
+            if (success && data.Success) {
+                window.location.href = data.NextPageLink;
+            }
+
+            $("#ToBillingButton").button('reset');
+        }, $(this));
         return false;
     }
 
-    
+
 }
 
 ko.bindingHandlers.checkMe = {
@@ -680,8 +668,8 @@ function GetInventory(ServiceRequest) {
 }
 
 function NewPickupStore(data) {
-    self = this;    
-    $(data).map(function (i, b) {   
+    self = this;
+    $(data).map(function (i, b) {
         if ((b['Key'] == 'Id'))
             self.Id = b['Value'];
         if ((b['Key'] == 'ExternalId'))
@@ -707,7 +695,7 @@ function NewPickupStore(data) {
         if ((b['Key'] == 'Zip'))
             self.Zip = b["Value"];
         if ((b['Key'] == 'State'))
-            self.State = b["Value"];        
+            self.State = b["Value"];
         if ((b['Key'] == 'Country'))
             self.Country = b["Value"];
     })
