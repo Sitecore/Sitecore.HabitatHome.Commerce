@@ -114,15 +114,8 @@ Languages:
               s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1=%7B88064982-2F4B-4F08-802C-9438C91412D9%7D&amp;Styles2=%7BD096404C-2546-40E5-8011-01326BFA1BE7%7D&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BFB140AEF-DE33-4088-9F1D-406C6BA32A8E%7D&amp;ColumnWidth2=%7BFB140AEF-DE33-4088-9F1D-406C6BA32A8E%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
               s:ph="/main" />
             <r
-              uid="{B321B0B8-BD8D-4384-9813-B3F31A463F29}"
-              p:after="r[@uid='{337A5544-89EB-450A-8DD0-634EB8BA97B9}']"
-              s:ds=""
-              s:id="{958D6FFB-6715-46CA-9670-683D422D2B58}"
-              s:par=""
-              s:ph="/main" />
-            <r
               uid="{B151B4B4-DF47-44E7-95B5-9A1F789FD20B}"
-              p:after="r[@uid='{B321B0B8-BD8D-4384-9813-B3F31A463F29}']"
+              p:after="r[@uid='{337A5544-89EB-450A-8DD0-634EB8BA97B9}']"
               s:ds="{6238B3BB-E9C4-4AFB-B445-BE302466691E}"
               s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B4AA37DA1-3A7B-4DAA-A226-A82B450BB966%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
@@ -188,6 +181,12 @@ Languages:
       Hint: Title
       Value: Product Details
 - Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+- Language: "fr-FR"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
