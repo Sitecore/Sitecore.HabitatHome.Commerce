@@ -8,7 +8,7 @@ Please read the LICENSE carefully prior to using the code in this repository
  
 ### Support
 
-The code, samples and/or solutions provided in this repository are ***unsupported by Sitecore PSS***. Support is provided on a best-effort basis via GitHub issues or [Slack #demo-sites](https://sitecorechat.slack.com/messages/habitathome/) (see end of README for additional information).
+The code, samples and/or solutions provided in this repository are ***unsupported by Sitecore PSS***. Support is provided on a best-effort basis via GitHub issues or [Slack #habitathome](https://sitecorechat.slack.com/messages/habitathome/) (see end of README for additional information).
 
 It is assumed that you already have a working instance of Sitecore XP **and** Sitecore XC  and all prerequisites prior to installing the demo. Support for **product installation** issues should be directed to relevant Community channels or through regular Sitecore support channels. 
 
@@ -17,6 +17,8 @@ It is assumed that you already have a working instance of Sitecore XP **and** Si
 The code, samples and/or solutions provided in this repository are for example purposes only and **without warranty (expressed or implied)**. The code has not been extensively tested and is not guaranteed to be bug free.  
 
 # Getting Started
+
+**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Content. See the README.md file in the [Sitecore.HabitatHome.Content](https://github.com/sitecore/sitecore.habitathome.content) repository.**
 
 ## Prerequisites
 
@@ -34,23 +36,31 @@ If you do **not want to use the default settings**, you need to adjust the appro
 
 `/gulp-config.js` 
 `/publishsettings.targets` 
-`src\Project\HabitatHome\code\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
+`src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.WebSite.DevSettings.config`
+
+Note: If you've already deployed the HabitatHome Content demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
+you would need to also customize the settings in the HabitatHome Content demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
+See README.md in Sitecore.HabitatHome.Content for custom settings.
 
 ## Installation
 **All installation instructions assume using PowerShell 5.1 in administrative mode.**
+
 ### 1 Clone the Repository
 Clone the Sitecore.HabitatHome.Commerce repository locally - default settings assume **`C:\Projects\Sitecore.HabitatHome.Commerce`**. 
 
 `git clone https://github.com/Sitecore/Sitecore.HabitatHome.Commerce.git` or 
 `git clone git@github.com:Sitecore/Sitecore.HabitatHome.Commerce.git`
-
   
 ### 2 Deploy Solution
-From the root of the solution
+Note: If you have not yet done so, deploy the base HabitatHome.Content solution. See README.md in Sitecore.HabitatHome.Content
+You can run the `quick-deploy` gulp task from the root of the HabitatHome.Content solution for a quicker deploy that excludes post deploy actions or Unicorn synchronization.
+
+To deploy the HabitatHome.Commerce solution, from the root of the solution
 
 `npm install`
 `node_modules\.bin\gulp initial`
 > gulp **initial** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the default gulp task (gulp with no parameters). 
+
 ### 3 Deploy Engine
 
 The next step will deploy Habitat Home's custom Commerce Engine with its relevant plugin and load the catalog, inventory and promotions.

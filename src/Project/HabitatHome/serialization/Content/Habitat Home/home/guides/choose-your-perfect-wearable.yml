@@ -14,6 +14,44 @@ SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{89F9D1B1-2719-4930-9A7E-CBCBFE3F3C58}"
+          p:before="*"
+          s:ds="local:/Data/Hero - Perfect Wearable"
+          s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:ph="/main/sxa-content-container/container-1" />
+        <r
+          uid="{D5C1A844-3812-484C-BB6D-DFD238B883E7}"
+          p:after="r[@uid='{89F9D1B1-2719-4930-9A7E-CBCBFE3F3C58}']"
+          s:ds="{6238B3BB-E9C4-4AFB-B445-BE302466691E}"
+          s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:ph="/main/sxa-article-content/container-1/column-2-1" />
+        <r
+          uid="{B19B6E22-6E62-4A76-B481-204DC416A907}"
+          p:after="r[@uid='{D5C1A844-3812-484C-BB6D-DFD238B883E7}']"
+          s:ds="{4D30B785-2CD0-44C1-94F5-E16E84244EA2}"
+          s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/main/sxa-article-content/container-1/column-1-1" />
+        <r
+          uid="{99496185-5995-4131-9EBC-4B77C8A3B027}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+          s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=1"
+          s:ph="/main/sxa-article-content/container-1" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Fields:
@@ -23,43 +61,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{89F9D1B1-2719-4930-9A7E-CBCBFE3F3C58}"
-              p:before="*"
-              s:ds="local:/Data/Hero - Perfect Wearable"
-              s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
-              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
-              s:ph="/main/sxa-content-container/container-1" />
-            <r
-              uid="{D5C1A844-3812-484C-BB6D-DFD238B883E7}"
-              p:after="r[@uid='{89F9D1B1-2719-4930-9A7E-CBCBFE3F3C58}']"
-              s:ds="{6238B3BB-E9C4-4AFB-B445-BE302466691E}"
-              s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
-              s:ph="/main/sxa-article-content/container-1/column-2-1" />
-            <r
-              uid="{B19B6E22-6E62-4A76-B481-204DC416A907}"
-              p:after="r[@uid='{D5C1A844-3812-484C-BB6D-DFD238B883E7}']"
-              s:ds="{4D30B785-2CD0-44C1-94F5-E16E84244EA2}"
-              s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
-              s:ph="/main/sxa-article-content/container-1/column-1-1" />
-            <r
-              uid="{99496185-5995-4131-9EBC-4B77C8A3B027}"
-              p:after="*[1=2]"
-              s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
-              s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=1"
-              s:ph="/main/sxa-article-content/container-1" />
-          </d>
-        </r>
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
@@ -91,7 +92,7 @@ Languages:
       Value: Choose the Best
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Summary
-      Value: When it comes to wearable fitness technology, one size does not fit all. Find the best wearable for your lifestyle and goal.&nbsp;
+      Value: <p>When it comes to wearable fitness technology, one size does not fit all. Find the best wearable for your lifestyle and goal.&nbsp;</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Choose Your Perfect Wearable

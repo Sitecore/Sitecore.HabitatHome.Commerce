@@ -148,7 +148,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" height="" hspace="" width="" alt="home theater hero" vspace="" />
+        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" height="" hspace="" width="" alt="home theater hero" vspace="" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171112T204932Z
@@ -221,7 +221,7 @@ Languages:
       Value: 20171112T204932Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
@@ -332,7 +332,7 @@ Languages:
       Value: 20180321T104449Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |

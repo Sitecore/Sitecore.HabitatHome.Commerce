@@ -39,6 +39,7 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.1.6" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.1.4" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Entitlements" Version="2.1.3" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.1.4" />
   </ItemGroup>
 
 </Project>
