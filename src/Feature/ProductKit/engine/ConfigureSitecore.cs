@@ -32,12 +32,6 @@ namespace Sitecore.HabitatHome.Feature.ProductKit.Engine
 
             services.Sitecore().Pipelines(config => config
 
-               //.AddPipeline<ISamplePipeline, SamplePipeline>(
-               //       configure =>
-               //           {
-               //               configure.Add<SampleBlock>();
-               //           })
-
                .ConfigurePipeline<IAddCartLinePipeline>(builder => builder.Add<AddToCartKitsBlock>().After<AddCartLineBlock>())
 
                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<ConfigureServiceApiBlock>()));

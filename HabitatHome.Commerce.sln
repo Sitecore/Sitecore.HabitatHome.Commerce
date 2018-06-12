@@ -116,6 +116,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "src\Foundation\Commerce\website\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{0F78AB49-26E0-4DB8-B654-7878EDEF546D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ActivePromotion", "ActivePromotion", "{054C0EDB-3E7C-4CF6-8B85-7D6F55397147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.HabitatHome.Feature.ActivePromotion.Website", "src\Feature\ActivePromotion\website\Sitecore.HabitatHome.Feature.ActivePromotion.Website.csproj", "{EFF50A81-0722-4537-892D-F0522495BFD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Promotions", "Promotions", "{F11F18D0-C25F-4130-8320-DDE62AA33EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.HabitatHome.Foundation.Promotions.Website", "src\Foundation\Promotions\website\Sitecore.HabitatHome.Foundation.Promotions.Website.csproj", "{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -220,6 +228,14 @@ Global
 		{0F78AB49-26E0-4DB8-B654-7878EDEF546D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F78AB49-26E0-4DB8-B654-7878EDEF546D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F78AB49-26E0-4DB8-B654-7878EDEF546D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF50A81-0722-4537-892D-F0522495BFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF50A81-0722-4537-892D-F0522495BFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF50A81-0722-4537-892D-F0522495BFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF50A81-0722-4537-892D-F0522495BFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -274,6 +290,10 @@ Global
 		{4CDE6F12-6BBA-48BE-B967-30EAB5BCE229} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
 		{BB866539-286D-4CC7-99FA-CF1FC2750B47} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
 		{0F78AB49-26E0-4DB8-B654-7878EDEF546D} = {B5F21741-0DE5-41E3-BB6B-BD7362D1691F}
+		{054C0EDB-3E7C-4CF6-8B85-7D6F55397147} = {05829E0F-331A-44AF-BEB8-3AD54EE35694}
+		{EFF50A81-0722-4537-892D-F0522495BFD6} = {054C0EDB-3E7C-4CF6-8B85-7D6F55397147}
+		{F11F18D0-C25F-4130-8320-DDE62AA33EDB} = {1B6FFBEA-35BD-4381-A2BE-4FA54E3940E1}
+		{A5FE2C5D-8A6F-4ACF-9F4F-03B7F8F7F94F} = {F11F18D0-C25F-4130-8320-DDE62AA33EDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {092E4BB9-63E2-476F-91D9-389412140FC4}
