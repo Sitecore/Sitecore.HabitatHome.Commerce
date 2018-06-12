@@ -81,7 +81,7 @@ Languages:
               p:after="*[1=2]"
               s:ds=""
               s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-              s:par="DynamicPlaceholderId=1"
+              s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7BD07A2386-28ED-4B2E-A4E6-F85E0ABE980F%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
               s:ph="main" />
           </d>
         </r>
@@ -111,3 +111,9 @@ Languages:
     Value: Order Confirmation
   Versions:
   - Version: 1
+- Language: "fr-FR"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Order Confirmation
+  Versions:

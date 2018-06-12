@@ -82,6 +82,8 @@ namespace Sitecore.HabitatHome.Feature.ProductBundle.Engine.Pipelines.Blocks
                             existingLine.Comments += relProd.FriendlyId + ',' + relProd.DisplayName + ',' + listPrice + '|';  
                         }
                     }
+
+                    cart.Lines.Remove(existingLine);
                 }
             }
             return cart;
