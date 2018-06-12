@@ -10,6 +10,34 @@
     <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Commands\**" />
+    <Compile Remove="Components\**" />
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Pipelines\Arguments\**" />
+    <Compile Remove="Policies\**" />
+    <EmbeddedResource Remove="Commands\**" />
+    <EmbeddedResource Remove="Components\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Pipelines\Arguments\**" />
+    <EmbeddedResource Remove="Policies\**" />
+    <None Remove="Commands\**" />
+    <None Remove="Components\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Models\**" />
+    <None Remove="Pipelines\Arguments\**" />
+    <None Remove="Policies\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pipelines\Blocks\SampleBlock.cs" />
+    <Compile Remove="Pipelines\ISamplePipeline.cs" />
+    <Compile Remove="Pipelines\SamplePipeline.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Sitecore.Commerce.Core">
@@ -22,17 +50,6 @@
   <ItemGroup>
     <Content Include="ConfigureServiceApiBlock.cs" />
     <Content Include="ConfigureSitecore.cs" />
-    <Content Include="Commands\SampleCommand.cs" />
-    <Content Include="Components\SampleComponent.cs" />
-    <Content Include="Controllers\CommandsController.cs" />
-    <Content Include="Controllers\SampleController.cs" />
-    <Content Include="Entities\SampleEntity.cs" />
-    <Content Include="Models\SampleModel.cs" />
-    <Content Include="Pipelines\Arguments\SampleArgument.cs" />
-    <Content Include="Pipelines\Blocks\SampleBlock.cs" />
-    <Content Include="Pipelines\ISamplePipeline.cs" />
-    <Content Include="Pipelines\SamplePipeline.cs" />
-    <Content Include="Policies\SamplePolicy.cs" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

@@ -55,23 +55,31 @@ namespace Sitecore.HabitatHome.Feature.ProductBundle.Controllers
                 if (relatedVariantIds.Any())
                 {
                     foreach (string relatedVariantId in relatedVariantIds.Where(id => !String.IsNullOrEmpty(id)))
-                    {                       
-
-                        var bundleProduct = _searchManager.GetProduct(relatedVariantId.Contains('|') ? relatedVariantId.Split('|')[0] : relatedVariantId, addToCart_CatalogName);
+                    {
                         string bundleProductId = relatedVariantId;
+                        Decimal bundleProductQuantity = 1;
+                        if(relatedVariantId.Contains('&'))
+                        {
+                            bundleProductId = relatedVariantId.Split('&')[0];
+                            bundleProductQuantity = Decimal.Parse(relatedVariantId.Split('&')[1].Split('=')[1]);
+                        }
+
+                        var bundleProduct = _searchManager.GetProduct(bundleProductId.Contains('|') ? bundleProductId.Split('|')[0] : bundleProductId, addToCart_CatalogName);
+
+                        string bundleBaseProductId = bundleProductId;
                         string bundleVariantId = "-1";
 
                         if (bundleProduct.HasChildren)
                         {
                             bundleVariantId = bundleProduct.Children[0].Name;
                         }
-                        if (relatedVariantId.Contains('|'))
+                        if (bundleProductId.Contains('|'))
                         {
-                            bundleProductId = relatedVariantId.Split('|')[0];
-                            bundleVariantId = relatedVariantId.Split('|')[1];
+                            bundleBaseProductId = bundleProductId.Split('|')[0];
+                            bundleVariantId = bundleProductId.Split('|')[1];
                         }
 
-                        baseJsonResult = this.AddToCartRepository.AddLineItemsToCart(this.StorefrontContext, this.VisitorContext, addToCart_CatalogName, bundleProductId, bundleVariantId, quantity);
+                        baseJsonResult = this.AddToCartRepository.AddLineItemsToCart(this.StorefrontContext, this.VisitorContext, addToCart_CatalogName, bundleBaseProductId, bundleVariantId, bundleProductQuantity);
                     }
                 }                
                 
