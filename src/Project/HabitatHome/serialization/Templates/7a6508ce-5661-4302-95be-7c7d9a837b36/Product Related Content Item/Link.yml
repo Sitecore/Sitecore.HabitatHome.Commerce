@@ -1,0 +1,21 @@
+﻿---
+ID: "5deac1bc-4330-4a3f-9dc4-17b1c6d278e4"
+Parent: "c7778672-5c93-45c9-8805-294468c99360"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Product Related Content/Product Related Content Item/Product Related Content Item/Link
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180605T170831Z

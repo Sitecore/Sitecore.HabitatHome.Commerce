@@ -1,0 +1,38 @@
+﻿---
+ID: "1e40f7d5-58db-469d-a2f9-6b736c9b5418"
+Parent: "3d294dee-b749-4686-98c5-6e955c496cef"
+Template: "7a6508ce-5661-4302-95be-7c7d9a837b36"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Related Content/6042183/How To Video
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180605T173133Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5deac1bc-4330-4a3f-9dc4-17b1c6d278e4"
+      Hint: Link
+      Value: |
+        <link text="How To Videos" linktype="external" url="https://youtu.be/Sn3NHjHI91A" anchor="" target="" />
+    - ID: "5e924008-6aec-4b94-9d17-505861d606a6"
+      Hint: Tags
+      Value: Installation,bundles,games
+    - ID: "7986e751-b6de-4e21-98ee-dc3fb9cdceb2"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{828C0990-DC46-43A4-8C65-5BA5002B69DC}" />
+    - ID: "7dbb70d2-3a14-492e-9e2b-e43ba2aeec3e"
+      Hint: ContentType
+      Value: YouTube Video
+    - ID: "9e20ea35-0652-4f9b-ba1c-39822df72cff"
+      Hint: Title
+      Value: How To Video
+    - ID: "c67d042e-b484-4f1c-940b-5daf29af13f8"
+      Hint: Description
+      Value: This is a description for the how to video.
