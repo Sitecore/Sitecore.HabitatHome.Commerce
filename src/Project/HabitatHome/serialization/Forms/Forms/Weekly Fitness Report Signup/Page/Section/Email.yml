@@ -24,7 +24,7 @@ SharedFields:
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "90c4f94c-ec2c-4ee4-b4c8-f3e29cbe630e"
   Hint: Allow Save
   Type: Checkbox
@@ -34,7 +34,7 @@ SharedFields:
   Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 200
 - ID: "d99833ea-238a-4505-90ef-c69bf3eba946"
   Hint: Is Tracking Enabled
   Type: Checkbox
@@ -49,10 +49,10 @@ Languages:
       Value: 20180321T175941Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: "Email:"
+      Value: Email
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
-      Value: Please enter your email address.
+      Value: 
     - ID: "b775bca9-2605-4d60-b367-a0c354be2504"
       Hint: Default Value
       Value: 
