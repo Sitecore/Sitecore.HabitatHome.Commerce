@@ -95,14 +95,31 @@
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Feature.Navigation">
+      <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Feature.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.IoC, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.IoC.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator">
       <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.Multisite.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc">
       <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.RenderingVariants">
+      <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
       <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions">
+      <HintPath>..\..\..\..\lib\Modules\SXA\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
@@ -141,6 +158,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.Serialization.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.config" />
+    <Content Include="App_Config\Include\z.Feature.Overrides\Feature.Catalog.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\Commerce\Feature\Catalog\cxa.feature.catalog.productprice.model.js" />
     <Content Include="Scripts\Commerce\Feature\Catalog\habitathome.feature.productlist.js" />
@@ -161,8 +179,11 @@
     <Compile Include="Models\PurchasableProductListJsonResult.cs" />
     <Compile Include="Models\PurchasableProductSummaryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BreadcrumbRepository.cs" />
+    <Compile Include="Repositories\FakeBreadcrumbRepository.cs" />
     <Compile Include="Repositories\IPurchasableProductListRepository.cs" />
     <Compile Include="Repositories\PurchasableProductListRepository.cs" />
+    <Compile Include="ServiceCollection\RegisterCatalogServices.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

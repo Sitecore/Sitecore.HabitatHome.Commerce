@@ -9,6 +9,15 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Office/16x16/element.png
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Type: Checklist
+  Value: |
+    {E0A2A027-0932-4878-A7D6-0416D5263EFB}
+    {61BD64D6-809E-40AE-9297-2724A19329B3}
+    {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
+    {500AE4C0-FA7B-463F-8149-EFFF7F044101}
+    {A0E7FF57-6994-4B09-AA21-104239628D5A}
 - ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
   Hint: __Tracking
   Type: Tracking
@@ -43,8 +52,15 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{86EC009D-C8D1-4F73-9F50-A3605856688A}"
+              uid="{AD9FD1F9-8E5F-4952-BE69-ED692034DF5C}"
               p:before="*"
+              s:ds=""
+              s:id="{BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;BreadcrumbRoot&amp;Separator=%3E&amp;IsNavigation&amp;Filter=%7BE0A2A027-0932-4878-A7D6-0416D5263EFB%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/column-1-2" />
+            <r
+              uid="{86EC009D-C8D1-4F73-9F50-A3605856688A}"
+              p:after="r[@uid='{AD9FD1F9-8E5F-4952-BE69-ED692034DF5C}']"
               s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
               s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
