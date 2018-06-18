@@ -1,8 +1,8 @@
 ﻿---
-ID: "ff03bf85-5897-47e3-b058-7366443ea376"
+ID: "4c90317c-b9ba-4e42-817d-60a089a531de"
 Parent: "3209696f-f313-44b8-bdcf-cb1543f7592a"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Guides Promos/Promo - 10 Stretches To Use At Home"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Guides Promos/Promo - Best Wearable in Fitness Tech"
 DB: master
 Languages:
 - Language: en
@@ -11,28 +11,25 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: <p>Work Smarter, Not Harder</p>
+      Value: <p>Best Wearable Around</p>
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" />
+        <image mediaid="{89937E4D-7B49-496B-B159-F60434A6E242}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180314T194329Z
+      Value: 20180611T203057Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "832d3c97-5c05-49bf-89ef-9c29d30345e7"
-      Hint: PromoText3
-      Value: <p>Smart Home Gym</p>
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: Lorem ipsum dolor sit amet consectetur adipiscing elit, condimentum platea primis aenean volutpat tristique interdum vestibulum, ridiculus facilisi sed dui libero urna. Diam et class quis eu sem fames fermentum&nbsp;
+      Value: <p>Any fitness need or desire can be met through our wide variety of wearable fitness tech.&nbsp;</p>
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link linktype="internal" text="Smart Home Checklist" querystring="" target="" id="{0A419FC1-C98F-400F-A6A8-8A70562A0A6E}" />
+        <link linktype="internal" text="Read More" querystring="" target="" id="{4D30B785-2CD0-44C1-94F5-E16E84244EA2}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

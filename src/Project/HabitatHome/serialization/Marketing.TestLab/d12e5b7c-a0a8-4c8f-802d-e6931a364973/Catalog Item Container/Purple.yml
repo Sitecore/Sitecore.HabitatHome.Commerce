@@ -1,0 +1,28 @@
+﻿---
+ID: "7465fd97-98f0-4bd2-bde6-5352d900de7f"
+Parent: "09eaa90d-21c1-491d-a3f4-15d5b382f2da"
+Template: "6d00d695-0cab-47d7-8929-a03ea002eb19"
+Path: "/sitecore/system/Marketing Control Panel/Test Lab/2018/06/06/19/03/new-fitness-tracker F5DCC292AAEC4467AD477F2C72179F5F/Catalog Item Container/Purple"
+DB: master
+SharedFields:
+- ID: "77c2a8f6-ab1c-40b7-be7b-ebcb615b770a"
+  Hint: Datasource
+  Value: "{689B9F9B-9111-8F78-824E-D948572FCBAA}"
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 97
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: Purple
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180606T172911Z
