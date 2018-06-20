@@ -59,7 +59,7 @@ SharedFields:
           uid="{C56FF29E-B1DC-494C-9168-4DA7099D53D1}"
           p:after="*[1=2]"
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="DynamicPlaceholderId=5&amp;GridParameters&amp;BackgroundImage&amp;Styles={7390C99D-8055-4E89-9C82-84CA91700184}&amp;Reset Caching Options"
+          s:par="DynamicPlaceholderId=5&amp;GridParameters&amp;BackgroundImage&amp;Styles={7390C99D-8055-4E89-9C82-84CA91700184}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options"
           s:ph="/main/sxa-content-container/container-1" />
       </d>
     </r>
@@ -80,7 +80,7 @@ Languages:
       Value: 20180612T142516Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Sample with Form
@@ -97,8 +97,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180612T152353Z
+      Value: 20180620T061328Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: "sample-with-form"
