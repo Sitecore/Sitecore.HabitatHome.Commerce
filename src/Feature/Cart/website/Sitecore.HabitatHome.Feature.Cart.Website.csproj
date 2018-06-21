@@ -156,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Cart.config" />
+    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.billing.model.js" />
     <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.delivery.js" />
     <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.delivery.model.js" />
     <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.deliverycart.model.js" />

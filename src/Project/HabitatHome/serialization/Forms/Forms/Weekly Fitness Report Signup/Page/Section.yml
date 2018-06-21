@@ -10,7 +10,7 @@ SharedFields:
   Value: "{447AA745-6D29-4B65-A5A3-8173AA8AF548}"
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
-  Value: "field-group-inline"
+  Value: "field-group"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200

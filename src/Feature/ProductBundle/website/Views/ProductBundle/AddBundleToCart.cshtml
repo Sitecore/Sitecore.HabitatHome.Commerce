@@ -9,106 +9,133 @@
 @using Sitecore.Data.Items
 @using Sitecore.Commerce.XA.Foundation.Common;
 @model CatalogItemRenderingModel
-@{
+
+@if (!Sitecore.Context.PageMode.IsExperienceEditor)
+{
 
     Item relatedProduct = Model.CatalogItem;
     bool isBundle = relatedProduct["Tags"] != null && !String.IsNullOrEmpty(relatedProduct["Tags"]) ? relatedProduct["Tags"].Split('|').Any(t => t.ToLower() == "bundle") : false;
-}
-@if (isBundle)
-{
-    <div @Html.Sxa().Component("cxa-addtocart-component", Model.Attributes) data-cxa-component-class="AddToCartForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
-        @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
-        {
-            <div class="error-message">
-                @Model.ErrorMessage
-            </div>
-        }
-        else
-        {
-            if (Model == null)
+
+    if (isBundle)
+    {
+        <div @Html.Sxa().Component("cxa-addtocart-component", Model.Attributes) data-cxa-component-class="AddToCartForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
+            @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
             {
-                return;
+                <div class="error-message">
+                    @Model.ErrorMessage
+                </div>
             }
-
-            var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
-            var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
-            var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
-
-            <div class="component-content">
-                @using (Ajax.BeginForm("AddBundleCartLine", "AddBundleToCart", null, new AjaxOptions { OnSuccess = "AddToCartForm.OnSuccess", HttpMethod = "Post" }, new { id = "AddBundleForm" }))
+            else
+            {
+                if (Model == null)
                 {
-                    @Html.ValidationSummary(true)
-                    @Html.Hidden("addtocart_productid", Model.ProductId)
-                    @Html.Hidden("addtocart_variantid", string.Empty)
-                    @Html.Hidden("addtocart_catalogname", Model.CatalogName)
-                    @Html.Hidden("addtocart_relatedvariantids", string.Empty)
-                    @Html.AntiForgeryToken()
-
-                    <div class="add-to-cart-qty">
-                        <label class="quantity-label">@quantityLabel</label>
-                        <div class="quantity-input">
-                            <button type="button" class="decrease" style="display:none"></button>
-                            @Html.TextBoxFor(model => model.Quantity, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
-                            <button type="button" class="increase" style="display:none"></button>
-                        </div>
-                    </div>
-                    @Html.ValidationMessageFor(model => model.Quantity)
-                    <div class="add-to-cart-button">
-                        <button type="submit" class="add-to-cart-btn" data-loading-text="@addingToCartLabel" disabled="disabled">
-                            Add Bundle To Cart
-                        </button>
-                    </div>
+                    return;
                 }
-            </div>
-        }
-    </div>
+
+                var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
+                var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
+                var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
+
+                <div class="component-content">
+                    @using (Ajax.BeginForm("AddBundleCartLine", "AddBundleToCart", null, new AjaxOptions { OnSuccess = "AddToCartForm.OnSuccess", HttpMethod = "Post" }, new { id = "AddBundleForm" }))
+                    {
+                        @Html.ValidationSummary(true)
+                        @Html.Hidden("addtocart_productid", Model.ProductId)
+                        @Html.Hidden("addtocart_variantid", string.Empty)
+                        @Html.Hidden("addtocart_catalogname", Model.CatalogName)
+                        @Html.Hidden("addtocart_relatedvariantids", string.Empty)
+                        @Html.AntiForgeryToken()
+
+                        <div class="add-to-cart-qty">
+                            <label class="quantity-label">@quantityLabel</label>
+                            <div class="quantity-input">
+                                <button type="button" class="decrease" style="display:none"></button>
+                                @Html.TextBoxFor(model => model.Quantity, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
+                                <button type="button" class="increase" style="display:none"></button>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Quantity)
+                        <div class="add-to-cart-button">
+                            <button type="submit" class="add-to-cart-btn" data-loading-text="@addingToCartLabel" disabled="disabled">
+                                Add Bundle To Cart
+                            </button>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div @Html.Sxa().Component("cxa-addtocart-component", Model.Attributes) data-cxa-component-class="AddToCartForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
+            @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+            {
+                <div class="error-message">
+                    @Model.ErrorMessage
+                </div>
+            }
+            else
+            {
+                if (Model == null)
+                {
+                    return;
+                }
+
+                var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
+                var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
+                var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
+
+                <div class="component-content">
+                    @using (Ajax.BeginForm("AddCartLine", "Cart", null, new AjaxOptions { OnSuccess = "AddToCartForm.OnSuccess", HttpMethod = "Post" }))
+                    {
+                        @Html.ValidationSummary(true)
+                        @Html.Hidden("addtocart_productid", Model.ProductId)
+                        @Html.Hidden("addtocart_variantid", string.Empty)
+                        @Html.Hidden("addtocart_catalogname", Model.CatalogName)
+                        @Html.AntiForgeryToken()
+
+                        <div class="add-to-cart-qty">
+                            <label class="quantity-label">@quantityLabel</label>
+                            <div class="quantity-input">
+                                <button type="button" class="decrease" style="display:none"></button>
+                                @Html.TextBoxFor(model => model.Quantity, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
+                                <button type="button" class="increase" style="display:none"></button>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Quantity)
+                        <div class="add-to-cart-button">
+                            <button type="submit" class="add-to-cart-btn" data-loading-text="@addingToCartLabel" disabled="disabled">
+                                @addToCartLabel
+                            </button>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
 }
 else
 {
-
+    var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
+    var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
+    var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
     <div @Html.Sxa().Component("cxa-addtocart-component", Model.Attributes) data-cxa-component-class="AddToCartForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
-        @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
-        {
-            <div class="error-message">
-                @Model.ErrorMessage
-            </div>
-        }
-        else
-        {
-            if (Model == null)
-            {
-                return;
-            }
-
-            var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
-            var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
-            var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
-
+        
             <div class="component-content">
-                @using (Ajax.BeginForm("AddCartLine", "Cart", null, new AjaxOptions { OnSuccess = "AddToCartForm.OnSuccess", HttpMethod = "Post" }))
-                {
-                    @Html.ValidationSummary(true)
-                    @Html.Hidden("addtocart_productid", Model.ProductId)
-                    @Html.Hidden("addtocart_variantid", string.Empty)
-                    @Html.Hidden("addtocart_catalogname", Model.CatalogName)
-                    @Html.AntiForgeryToken()
-
-                    <div class="add-to-cart-qty">
-                        <label class="quantity-label">@quantityLabel</label>
-                        <div class="quantity-input">
-                            <button type="button" class="decrease" style="display:none"></button>
-                            @Html.TextBoxFor(model => model.Quantity, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
-                            <button type="button" class="increase" style="display:none"></button>
-                        </div>
+                <div class="add-to-cart-qty">
+                    <label class="quantity-label">@quantityLabel</label>
+                    <div class="quantity-input">
+                        <button type="button" class="decrease" style="display:none"></button>
+                        @Html.TextBoxFor(model => model.Quantity, new { @type = "number", @min = "1", @max = "100", @required = "required", @Value = "1", @class = "add-to-cart-qty-input" })
+                        <button type="button" class="increase" style="display:none"></button>
                     </div>
-                    @Html.ValidationMessageFor(model => model.Quantity)
-                    <div class="add-to-cart-button">
-                        <button type="submit" class="add-to-cart-btn" data-loading-text="@addingToCartLabel" disabled="disabled">
-                            @addToCartLabel
-                        </button>
-                    </div>
-                }
+                </div>
+                <div class="add-to-cart-button">
+                    <button type="submit" class="add-to-cart-btn" data-loading-text="@addingToCartLabel" disabled="disabled">
+                        @addToCartLabel
+                    </button>
+                </div>
             </div>
-        }
     </div>
-}
+        }
+    

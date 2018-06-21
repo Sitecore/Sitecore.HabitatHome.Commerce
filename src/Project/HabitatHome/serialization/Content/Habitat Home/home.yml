@@ -243,6 +243,321 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4CDADFC1-A6CC-494F-AE9E-FDBCFDE6BCA3}"
+              p:before="*"
+              s:ds="local:/Data/Fitness Products"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Product List&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Product Lists=43243E9E-160C-4930-8698-A9138CDFC95D"
+              s:ph="/main/sxa-content-container/container-1/container-9" />
+            <r
+              uid="{CF360A7E-54D7-4253-83A5-8931C14F0BD7}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="56C3BC02BAEE40F6ACA83B891E0F1D73"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{934BBC18-A440-4E65-8089-6EA668D59330}"
+                    s:name="Fitness">
+                    <conditions>
+                      <or
+                        uid="7F144A18EA474B50BF31442DDE7B7B69">
+                        <condition
+                          uid="9C51FA41E53E437DB1E4A925B765DB25"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                        <condition
+                          uid="73319AB69B86455EA555409A1ACAA51F"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="4D826C1FB15F4574AE7C7CAD962EE225"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{FF03BF85-5897-47E3-B058-7366443EA376}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="9A2650C4D98E4172879D181EBD3836E7"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{1C0F3249-32A1-475D-8E69-8B2111ED267D}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{F70150C0-5E7A-4665-AE38-C6C05376BFE4}">
+                    <conditions>
+                      <or
+                        uid="4F091204432345BD8AE5393B495C7DB0">
+                        <p:d />
+                      </or>
+                      <or
+                        uid="17EF2EF0804A4C758D88DE3EA053CC19">
+                        <or
+                          uid="383CAB6FFE4147198F305B2B287F2583">
+                          <condition
+                            uid="55ECB7D0BEE447619E090666244F016B"
+                            s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                            s:ProfileName="Topic Interest Category"
+                            s:PatternName="Smart and Connected" />
+                          <condition
+                            uid="15FF3EDA8D994A5CAC714C935806B66F"
+                            s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                            s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                            s:ExpectedAncestorTaxonId="{50299169-5B02-4EA6-BF5E-7D66B91BFF6D}" />
+                        </or>
+                        <condition
+                          uid="83C050AB3DE7474E995B01DF21394A36"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{E9629A44-8F25-45D9-B94C-6D213EFF382D}"
+                          s:CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
+                      </or>
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}"
+              s:par="GridParameters={08B60EE1-3F06-4C49-9449-E7420AFE5A2F}&amp;Styles={6D43D8D9-6159-4C76-9886-E72E2CF69135}&amp;Navigation={848DFE42-2B13-430E-A0B9-89CE25730A06}&amp;Transition={D4B706CC-7EEC-4DB9-A87D-123B29803490}&amp;Timeout=6000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" />
+            <r
+              uid="{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{132717A6-B6C7-4508-9DF3-8CCB5D1D164F}"
+                    p:before="*"
+                    s:name="Fitness Trainer Finder">
+                    <conditions>
+                      <or
+                        uid="406C8869A39E4B8695376CD32E8AB528">
+                        <or
+                          uid="A99E414BA53F4F38910E76E175028B64">
+                          <condition
+                            uid="26784871AED6448AB2C72CD787560124"
+                            s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                            s:ProfileName="Topic Interest Category"
+                            s:PatternName="Fitness" />
+                          <condition
+                            uid="4C2A55F2780F4F019990A50D119A4436"
+                            s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                            s:ProfileName="Topic Interest Category"
+                            s:PatternName="Fitness" />
+                        </or>
+                        <condition
+                          uid="3A140F4DCF9B40F790CCF22AA4B3DA24"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="CACD70812B9B4DF3993000031EBF837A"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="local:/Data/Trainer Finder Promo" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{75829464-687D-4799-AC69-832D3328FBB6}"
+                    s:name="Content Finder Complete" />
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{EAFC5BB0-593D-49D3-BDA6-AECA23262FD5}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{955DDE5C-00D8-4B9F-BC49-913DF38054E1}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1" />
+            <r
+              uid="{6B1C256F-3488-4908-BB96-B7746E471A36}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{6C751E5D-2801-40F5-A338-C246E4078FB0}"
+                    p:before="*"
+                    s:name="Mobile Hide">
+                    <conditions>
+                      <condition
+                        uid="4585F4F4A6BD4684B82E890992D8D009"
+                        s:id="{659CC5E0-6356-44DD-B562-6C590525121C}"
+                        s:Value="{15FB4B13-691C-4BBD-8904-6CEC99CA18C4}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="477FCD08BA304BDCBD502276B82CD4AF"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{5CF7D70B-2033-4B01-8E8A-3CF73C9E7368}"
+                    p:after="rule[@uid='{6C751E5D-2801-40F5-A338-C246E4078FB0}']"
+                    s:name="Fitness">
+                    <conditions>
+                      <or
+                        uid="736AAFAEDFD44C4098952A91DBDF62D4">
+                        <condition
+                          uid="5DB39CE170284D519EC7E1AEED586973"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                        <condition
+                          uid="7F00002BB3BB40EEA8018F1E329D44E7"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Fitness" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="5A803B112B484319A6AAF5FDDE64C474"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{6E4D27E7-877A-42CD-BC87-F21133F4E7D4}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{0A13F1A6-2A45-4D6B-A843-3AB210194F4D}">
+                    <conditions>
+                      <condition
+                        uid="2810FE36FBF84577BE44661A766DFC36">
+                        <p:d />
+                      </condition>
+                      <or
+                        uid="C73FF78057D54DD18E7F977DB11998AF">
+                        <or
+                          uid="A0ECEC2840A941EDB3B6D9683C9C9E0F">
+                          <condition
+                            uid="2810FE36FBF84577BE44661A766DFC36"
+                            s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                            s:ProfileName="Topic Interest Category"
+                            s:PatternName="Smart and Connected" />
+                          <condition
+                            uid="33571AC57B4E4BFF8E30F6BB5C8921CB"
+                            s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                            s:ExpectedAncestorTaxonId="{E9629A44-8F25-45D9-B94C-6D213EFF382D}"
+                            s:CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
+                        </or>
+                        <condition
+                          uid="B1A7ABD86E7D40FA88046F1C64DED264"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{50299169-5B02-4EA6-BF5E-7D66B91BFF6D}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      </or>
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{253493AA-5C42-4CAF-A33C-7D63A6BE791E}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{5FD5E0EE-2054-4DB8-96F7-7CD0D717D8E1}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{197D1CF1-D544-4A23-A62E-51C60888D8B8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{B73D7923-D7C9-4EA7-B277-C1D7E21289FC}"
+                    s:name="Mobile Hide">
+                    <conditions>
+                      <condition
+                        uid="F38DBCF441AC41468F6BF1BF06019C09"
+                        s:id="{659CC5E0-6356-44DD-B562-6C590525121C}"
+                        s:Value="{15FB4B13-691C-4BBD-8904-6CEC99CA18C4}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="C16BD44C9F754F4AB9CD3DF21D045A72"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="665DA652E9FE4D2D8F02921B3428C516"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{AEC52C7D-27E3-4FAE-BA26-5986E998D5B4}"
+              p:after="r[@uid='{253493AA-5C42-4CAF-A33C-7D63A6BE791E}']"
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
+              s:ph="/main/sxa-content-container/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="197FF2FA53B242DF97FAB4FD97D0125F"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{9749980A-8AB6-4A87-8582-5E25A501D2A2}"
+              p:after="*[1=2]"
+              s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45645D8F-56A4-460A-B5FB-51709FEFCE52}|{62BB4AA0-351C-43D1-A474-9F52EA6ECF07}|{3D258225-9410-4FAF-A516-43490258337D}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="B63A93F6888140CAB24BACF003A48421"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
     - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
       Hint: Page Design
       Value: 
@@ -375,6 +690,17 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Habitat Home
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180618T150905Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
