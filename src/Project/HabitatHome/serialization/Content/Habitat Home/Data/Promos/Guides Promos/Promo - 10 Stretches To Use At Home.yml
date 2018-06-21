@@ -15,7 +15,7 @@ Languages:
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{52ECB3D0-45C5-4B0F-AB81-196651A7A8D3}" />
+        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180314T194329Z
@@ -25,7 +25,22 @@ Languages:
         sitecore\admin
     - ID: "832d3c97-5c05-49bf-89ef-9c29d30345e7"
       Hint: PromoText3
-      Value: Build the home gym of your dreams
+      Value: <p>Smart Home Gym</p>
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: Lorem ipsum dolor sit amet consectetur adipiscing elit, condimentum platea primis aenean volutpat tristique interdum vestibulum, ridiculus facilisi sed dui libero urna. Diam et class quis eu sem fames fermentum cursus, tempor dictumst cubilia urna faucibus aptent. Libero arcu vitae mi curae maecenas magnis eros sociosqu velit ut, duis accumsan consequat cum parturient metus senectus potenti integer, porta vulputate aliquam cursus erat tempus nulla massa gravida.
+      Value: Lorem ipsum dolor sit amet consectetur adipiscing elit, condimentum platea primis aenean volutpat tristique interdum vestibulum, ridiculus facilisi sed dui libero urna. Diam et class quis eu sem fames fermentum&nbsp;
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="Smart Home Checklist" querystring="" target="" id="{0A419FC1-C98F-400F-A6A8-8A70562A0A6E}" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180618T150900Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

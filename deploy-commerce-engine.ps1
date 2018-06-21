@@ -8,7 +8,7 @@ Param(
     [string[]] $engines = @("CommerceAuthoring", "CommerceMinions", "CommerceOps", "CommerceShops"),
     [string]$engineSuffix = "habitat",
     [string]$CommerceOpsPort = "5000",
-    [string]$adminUser = "admin",
+    [string]$adminUser = "sitecore\admin",
     [string]$adminPassword = "b",
     [string]$publishFolder = (Join-Path $PWD "publishTemp"),
     [switch]$Initialize,
@@ -94,7 +94,7 @@ Function Get-IdServerToken {
     $body = @{
         password   = "$adminPassword"
         grant_type = 'password'
-        username   = ("sitecore\{0}" -f $adminUser)
+        username   = ("{0}" -f $adminUser)
         client_id  = 'postman-api'
         scope      = 'openid EngineAPI postman_api'
     }
