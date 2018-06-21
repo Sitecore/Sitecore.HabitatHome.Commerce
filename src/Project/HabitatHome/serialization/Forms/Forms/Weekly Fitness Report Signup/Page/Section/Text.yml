@@ -16,7 +16,7 @@ SharedFields:
   Value: "btn-next"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 300
 - ID: "d842af43-e220-48d7-9714-6eb2381d2b0c"
   Hint: Navigation Step
   Value: 0

@@ -65,7 +65,7 @@
           "EffectiveDate": "0001-01-01T00:00:00",
           "IsVisible": false,
           "Password": "",
-          "Server": ".",
+          "Server": "",
           "TrustedConnection": true,
           "UserName": "",
           "View": "EntityStoreSqlPolicy"

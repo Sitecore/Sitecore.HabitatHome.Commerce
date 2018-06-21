@@ -15,20 +15,7 @@ SharedFields:
     <ruleset>
       <rule
         uid="{2EFDC6AD-9F36-43DE-82A7-3851AFD80C1C}">
-        <conditions>
-          <or
-            uid="618EEF892C2A4BD787FDF0539FD0121F">
-            <condition
-              id="{659CC5E0-6356-44DD-B562-6C590525121C}"
-              uid="D75F364C90474BFC8081415DB67414BB"
-              Value="{B8E0B251-233D-4FA9-9DF9-5D38450E00D9}" />
-            <condition
-              id="{B5429D19-5CF6-4BD9-BC0B-F0B323C4306D}"
-              uid="EB62AA82B371402E8021D15F2012A0E4"
-              operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}"
-              value="master" />
-          </or>
-        </conditions>
+        <conditions />
       </rule>
     </ruleset>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
