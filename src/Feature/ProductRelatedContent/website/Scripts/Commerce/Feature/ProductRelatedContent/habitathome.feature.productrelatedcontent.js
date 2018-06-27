@@ -1,21 +1,24 @@
 ﻿var ProductRelatedContentViewModel = function () {
     var self = this;
     self.ErrorMessage = ko.observable("");
-    self.ProductId = ko.observable("");    
+    self.ProductId = ko.observable(""); 
+    self.ProductListId = ko.observable(""); 
     self.RelatedProductsList = ko.observable([]);
     self.CrossSellProductsList = ko.observable([]);
     self.UpSellProductsList = ko.observable([]);
     self.ProductDocumentsList = ko.observable([]);
 
-    self.InitializeViewModel = function (productID) {         
+    self.InitializeViewModel = function (productID, productListID) {         
         self.ProductId = productID;
+        self.ProductListId = productListID;
         self.GetRelatedProducts();    
         self.GetProductDocuments();
     }
 
     self.GetRelatedProducts = function () {
         var ServiceRequest = new Object();       
-        ServiceRequest.ProductId = self.ProductId;          
+        ServiceRequest.ProductId = self.ProductId;  
+        ServiceRequest.ProductListId = self.ProductListId;  
         var relatedPromise = GetRelatedProducts(ServiceRequest).done(function (result) {
             if (result.Errors != null & result.Errors != "undefined") {
                 self.ErrorMessage(data.Errors[0]);
@@ -82,6 +85,7 @@
     self.GetProductDocuments = function () {
         var ServiceRequest = new Object();
         ServiceRequest.ProductId = self.ProductId;
+
         var promise = GetProductDocuments(ServiceRequest).done(function (result) {
             if (result.Errors != null & result.Errors != "undefined") {
                 self.ErrorMessage(data.Errors[0]);
@@ -119,7 +123,7 @@ function AssociatedDocument(data) {
 }
 //Promise Functions
 function GetRelatedProducts(ServiceRequest) {
-    var url = "/api/cxa/ProductRelatedContent/GetRelatedProducts?pid=" + ServiceRequest.ProductId;   
+    var url = "/api/cxa/ProductRelatedContent/GetRelatedProducts?pid=" + ServiceRequest.ProductId + "&plid=" + ServiceRequest.ProductListId;   
     $('.loader').show();
     var ajaxRequest = $.ajax({
         type: 'POST',
@@ -187,8 +191,9 @@ function InitializeProductRelatedContentWidget() {
     ProductRelatedContentController = new ProductRelatedContentViewModel();
     if ($("#divProductRelatedContent").length > 0) {
         ko.applyBindings(ProductRelatedContentController, document.getElementById("divProductRelatedContent"));  
-        var productID = $("#variant-component-product-id").val();        
-        ProductRelatedContentController.InitializeViewModel(productID);        
+        var productID = $("#variant-component-product-id").val();
+        var productListID = $("#personalized-product-list").val();
+        ProductRelatedContentController.InitializeViewModel(productID, productListID);        
     }    
 }
 function setEqualHeight(columns) {

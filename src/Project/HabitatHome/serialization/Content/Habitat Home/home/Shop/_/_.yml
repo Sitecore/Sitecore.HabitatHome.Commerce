@@ -52,15 +52,8 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{AD9FD1F9-8E5F-4952-BE69-ED692034DF5C}"
-              p:before="*"
-              s:ds=""
-              s:id="{BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;BreadcrumbRoot&amp;Separator=%3E&amp;IsNavigation&amp;Filter=%7BE0A2A027-0932-4878-A7D6-0416D5263EFB%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
-              s:ph="/main/column-1-2" />
-            <r
               uid="{86EC009D-C8D1-4F73-9F50-A3605856688A}"
-              p:after="r[@uid='{AD9FD1F9-8E5F-4952-BE69-ED692034DF5C}']"
+              p:before="*"
               s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
               s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
@@ -80,8 +73,49 @@ Languages:
             <r
               uid="{EBEAD964-B993-451C-AFAA-9EFB84873E90}"
               p:after="r[@uid='{79D525BF-E289-4B68-8CC9-DEDB7EF45D80}']"
+              s:ds=""
               s:id="{C1F44E19-5B84-4B2C-9386-8D189476028D}"
-              s:ph="/main/column-1-2" />
+              s:par="GridParameters=%7B22138ACE-6737-4031-9552-60D587D38D9E%7D%7C%7B5D87E990-D33A-4613-BE6D-0D0235197254%7D%7C%7B1864351A-0EDC-4650-95C0-7AB675D646AF%7D%7C%7B2A09D451-70CD-4A11-868C-3C56B6A7749C%7D&amp;Show No Result Message&amp;Use Lazy Loading&amp;Max Page Size=12"
+              s:ph="/main/column-1-2">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{1B7CEC7E-92B7-404E-9716-52A4CA15BAB9}"
+                    s:name="Related Products - Foodie">
+                    <conditions>
+                      <or
+                        uid="E9DC64EDEA904A558F9B372268F29659">
+                        <condition
+                          uid="A525C4CFC7A6456CA78744C047B7BFC0"
+                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        <condition
+                          uid="4F43779E2C6E44CA97AB947FF766448D"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Cooking" />
+                      </or>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="9A7C2FDB896348C2AC1AEE183601AD35"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{E3A70BD6-DADC-43CA-9941-EEC8F3E02B93}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="829239AE5C3D47DD9C83D6EF1D45D4CF"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
             <r
               uid="{62FB9058-126D-491B-B693-ED9A43DA577B}"
               p:after="r[@uid='{EBEAD964-B993-451C-AFAA-9EFB84873E90}']"

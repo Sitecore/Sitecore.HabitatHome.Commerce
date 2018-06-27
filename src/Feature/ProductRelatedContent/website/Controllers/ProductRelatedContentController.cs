@@ -32,9 +32,9 @@ namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public JsonResult GetRelatedProducts(string pid)
+        public JsonResult GetRelatedProducts(string pid, string plid)
         {
-            dynamic relatedProducts = _productRelatedContentRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, _visitorContext, pid);
+            dynamic relatedProducts = _productRelatedContentRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, _visitorContext, pid, plid);
             JsonResult baseJsonResult = this.Json(relatedProducts);
             return this.Json(baseJsonResult);
         }
