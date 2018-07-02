@@ -1,0 +1,28 @@
+﻿---
+ID: "1facaf1f-b89d-46be-af55-94ed21c4a764"
+Parent: "7ecceced-1878-48b5-ab63-5a65206d329f"
+Template: "6d00d695-0cab-47d7-8929-a03ea002eb19"
+Path: "/sitecore/system/Marketing Control Panel/Test Lab/2018/06/27/15/39/minnow-kid-tablet 1533960E8F864619A84F940139095514/Catalog Item Container/Orange"
+DB: master
+SharedFields:
+- ID: "77c2a8f6-ab1c-40b7-be7b-ebcb615b770a"
+  Hint: Datasource
+  Value: "{545D0B00-C0CF-6551-EC92-37C02DBB3FFB}"
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 99
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: Orange
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180627T153542Z

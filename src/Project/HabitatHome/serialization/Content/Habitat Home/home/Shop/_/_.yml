@@ -210,13 +210,6 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{7FDAD893-FA7F-43B1-9BFB-EB8250B88562}"
-              p:after="r[@uid='{B151B4B4-DF47-44E7-95B5-9A1F789FD20B}']"
-              s:ds="{856116A0-1B54-41CD-B414-8EEEF78ACFC0}"
-              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists&amp;Use Lazy Loading=1&amp;Max Page Size=4"
-              s:ph="main" />
-            <r
               uid="{A578ADD3-16BD-4989-B0F3-9CEB8D58E270}"
               p:after="*[1=2]"
               s:ds=""

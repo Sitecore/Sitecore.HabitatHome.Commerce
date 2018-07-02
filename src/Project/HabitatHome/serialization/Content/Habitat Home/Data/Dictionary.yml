@@ -14,6 +14,9 @@ SharedFields:
   Value: |
     {6D1CD897-1936-4A3A-A511-289A94C2A7B1}
     {267D9AC7-5D85-4E9D-AF89-99AB296CC218}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: da
   Fields:
