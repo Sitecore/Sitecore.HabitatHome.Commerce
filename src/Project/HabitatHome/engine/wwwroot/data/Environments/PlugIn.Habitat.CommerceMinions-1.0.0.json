@@ -64,6 +64,10 @@
         "PolicySetId": "Entity-PolicySet-ControllerMethodRolesPolicySet"
       },
       {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-SitecoreCatalogIndexingPolicySet"
+      },
+      {
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
         "ListToWatch": "Orders",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.FullIndexMinion, Sitecore.Commerce.Plugin.Search",
@@ -95,6 +99,14 @@
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
         "WakeupInterval": "00:05:00",
         "ListToWatch": "DeletedCustomersIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "DeletedCatalogItemsIndex",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
         "ItemsPerBatch": 10,
         "SleepBetweenBatches": 500
@@ -266,6 +278,22 @@
         "WakeupInterval": "00:05:00",
         "ListToWatch": "SettleSalesActivities",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.SettleSalesActivitiesMinion, Sitecore.Commerce.Plugin.Orders",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "PurgeCategories",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Catalog.PurgeCategoriesMinion, Sitecore.Commerce.Plugin.Catalog",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "PurgeCatalogs",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Catalog.PurgeCatalogsMinion, Sitecore.Commerce.Plugin.Catalog",
         "ItemsPerBatch": 10,
         "SleepBetweenBatches": 500
       },

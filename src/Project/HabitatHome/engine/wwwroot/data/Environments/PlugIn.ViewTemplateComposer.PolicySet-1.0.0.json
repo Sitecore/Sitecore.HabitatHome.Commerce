@@ -1,0 +1,29 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-ViewTemplateComposer",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "ViewTemplateComposer",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Composer.ComposerTemplateAllowLinkEntitiesPolicy, Sitecore.Commerce.Plugin.Composer",
+        "EntityTypes": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+            "Sitecore.Commerce.Plugin.Catalog.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.Category",
+            "Sitecore.Commerce.Plugin.Promotions.PromotionBook",
+            "Sitecore.Commerce.Plugin.Promotions.Promotion",
+            "Sitecore.Commerce.Plugin.Pricing.PriceBook",
+            "Sitecore.Commerce.Plugin.Pricing.PriceCard",
+            "Sitecore.Commerce.Plugin.Customers.Customer",
+            "Sitecore.Commerce.Plugin.Orders.Order"
+          ]
+        }
+      }
+    ]
+  }
+}

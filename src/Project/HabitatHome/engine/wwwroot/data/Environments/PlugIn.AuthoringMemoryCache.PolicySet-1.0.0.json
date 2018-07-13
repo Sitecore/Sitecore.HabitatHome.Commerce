@@ -5,132 +5,157 @@
   "IsPersisted": false,
   "Name": "AuthoringMemoryCachePolicySet",
   "Policies": {
-      "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-      "$values": [
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Content.ContentPath",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Content.ContentItem",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Core.CommerceEnvironment",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "*",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Returns.ReturnMerchandiseAuthorization",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Customers.Customer",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Orders.Order",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Orders.SalesActivity",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Journaling.JournalEntry",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Fulfillment.Shipment",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Carts.Cart",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.GiftCards.GiftCard",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.ManagedLists.ManagedList",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Core.EntityIndex",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Promotions.Promotion",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Coupons.Coupon",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Pricing.PriceCard",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Core.NegativeCache",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Core.LocalizationEntity",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.Inventory.InventoryInformation",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
-          "EntityFullName": "Sitecore.Commerce.Plugin.CacheWatcher.CacheTrackingEntity",
-          "AllowCaching": false
-        },
-        {
-          "$type": "Sitecore.Commerce.Plugin.Catalog.CatalogCachePolicy, Sitecore.Commerce.Plugin.Catalog",
-          "AllowCaching": false
-        }
-      ]
-    }
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Management.ManagementCachePolicy, Sitecore.Commerce.Plugin.Management",
+        "CurrencySetsCacheName": "CurrencySets",
+        "FulfillmentCacheName": "Fulfillment",
+        "PaymentsCacheName": "Payments",
+        "CountriesCacheName": "Countries",
+        "ItemsCollectionCacheName": "ItemsCollection",
+        "ItemsCacheName": "Items",
+        "Expiration": 21600000,
+        "AllowCaching": true
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.CatalogCachePolicy, Sitecore.Commerce.Plugin.Catalog",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Content.ContentPath",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Content.ContentItem",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Core.CommerceEnvironment",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "*",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Returns.ReturnMerchandiseAuthorization",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Customers.Customer",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Orders.Order",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Orders.SalesActivity",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Journaling.JournalEntry",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Fulfillment.Shipment",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Carts.Cart",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.GiftCards.GiftCard",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.ManagedLists.ManagedList",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Core.EntityIndex",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Promotions.Promotion",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Coupons.Coupon",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.RelationshipDefinition",
+        "AllowCaching": true,
+        "Priority": "Normal",
+        "Expiration": 1200000,
+        "CacheAsEntity": true,
+        "HasNegativeCaching": false,
+        "CacheName": "RelationshipDefinitions"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Pricing.PriceCard",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Core.NegativeCache",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Core.LocalizationEntity",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Inventory.InventoryInformation",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.CacheWatcher.CacheTrackingEntity",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.CatalogCachePolicy, Sitecore.Commerce.Plugin.Catalog",
+        "AllowCaching": false
+      }
+    ]
   }
+}

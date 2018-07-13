@@ -10,12 +10,14 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Diagnostics;
 using Sitecore.HabitatHome.Feature.ProductRelatedContent.Repositories;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Controllers
 {
     public class ProductRelatedContentController : BaseCommerceStandardController
     {
-        public ProductRelatedContentController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IProductRelatedContentRepository productRelatedContentRepository) : base(storefrontContext)
+        public ProductRelatedContentController(IContext context, IStorefrontContext storefrontContext, IVisitorContext visitorContext, IProductRelatedContentRepository productRelatedContentRepository) 
+            : base(storefrontContext, context)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            

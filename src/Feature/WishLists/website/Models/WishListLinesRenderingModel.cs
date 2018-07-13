@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using Sitecore.Commerce.XA.Foundation.Common;
+using System.Collections.Generic;               
+using Sitecore.Commerce.XA.Foundation.Common.Context;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;

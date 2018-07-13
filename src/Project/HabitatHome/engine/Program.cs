@@ -4,17 +4,17 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using System.IO;
-using System.Net;    
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Serilog;
-
 namespace Sitecore.Commerce.Engine
 {
+    using System;
+    using System.IO;
+    using System.Net;
+    using Microsoft.AspNetCore;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Serilog;
+
     /// <summary>
     /// Defines the program class
     /// </summary>
@@ -40,6 +40,11 @@ namespace Sitecore.Commerce.Engine
             }
         }
 
+        /// <summary>
+        /// Builds the web host.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
+        /// <returns>A <see cref="IWebHost"/></returns>
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
@@ -77,7 +82,7 @@ namespace Sitecore.Commerce.Engine
 
                         if (File.Exists(Path.Combine(hostingEnvironment.ContentRootPath, pfxPath)))
                         {
-                            options.Listen(IPAddress.Loopback, port, listenOptions =>
+                            options.Listen(IPAddress.Any, port, listenOptions =>
                             {
                                 listenOptions.UseHttps(pfxPath, pfxPassword);
                             });

@@ -1,4 +1,5 @@
 ﻿using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
@@ -10,8 +11,8 @@ namespace Sitecore.HabitatHome.Feature.ProductBundle.Controllers
 {
     public class ProductBundleController : BaseCommerceStandardController
     {
-        public ProductBundleController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IProductBundleRepository productBundleRepository)
-            : base(storefrontContext)
+        public ProductBundleController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IProductBundleRepository productBundleRepository, IContext context)
+            : base(storefrontContext, context)
         {
             Assert.ArgumentNotNull(storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));

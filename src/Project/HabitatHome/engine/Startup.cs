@@ -4,38 +4,41 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.ApplicationInsights;
-using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.DataProtection.XmlEncryption;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.OData.Builder;
-using Microsoft.AspNetCore.OData.Extensions;
-using Microsoft.AspNetCore.OData.Routing;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json.Serialization;
-using Serilog;
-using Serilog.Events;
-using Sitecore.Commerce.Core;
-using Sitecore.Commerce.Core.Commands;
-using Sitecore.Commerce.Core.Logging;
-using Sitecore.Commerce.Provider.FileSystem;
-using Sitecore.Framework.Diagnostics;
-using Sitecore.Framework.Rules;
-
-
 namespace Sitecore.Commerce.Engine
 {
+    using System;
+    using System.IO;
+    using System.Threading.Tasks;
+
+    using Microsoft.ApplicationInsights;
+    using Microsoft.ApplicationInsights.Extensibility;
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.DataProtection;
+    using Microsoft.AspNetCore.DataProtection.XmlEncryption;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.OData.Builder;
+    using Microsoft.AspNetCore.OData.Extensions;
+    using Microsoft.AspNetCore.OData.Routing;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+
+    using Newtonsoft.Json.Serialization;
+
+    using Serilog;
+    using Serilog.Events;
+
+    using Core;
+    using Core.Commands;
+    using Core.Logging;
+    using Provider.FileSystem;
+    using Framework.Diagnostics;
+    using Framework.Rules;
+
+    using System.Collections.Generic;
+
     /// <summary>
     /// Defines the engine startup.
     /// </summary>
@@ -46,6 +49,7 @@ namespace Sitecore.Commerce.Engine
         private readonly IHostingEnvironment _hostEnv;
         private volatile CommerceEnvironment _environment;
         private volatile NodeContext _nodeContext;
+        private readonly TelemetryClient _telemetryClient;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Startup"/> class.
@@ -67,6 +71,12 @@ namespace Sitecore.Commerce.Engine
             {
                 fileSize = 100000000;
             }
+
+          
+            var appInsightsInstrumentationKey = this.Configuration.GetSection("ApplicationInsights:InstrumentationKey").Value;
+
+            _telemetryClient = !string.IsNullOrWhiteSpace(appInsightsInstrumentationKey) ? new TelemetryClient { InstrumentationKey = appInsightsInstrumentationKey } : new TelemetryClient();
+
 
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(this.Configuration)
@@ -109,7 +119,7 @@ namespace Sitecore.Commerce.Engine
         public void ConfigureServices(IServiceCollection services)
         {
             var logger = services.BuildServiceProvider().GetService<ILogger<Startup>>();
-            this._nodeContext = new NodeContext(logger, new TelemetryClient())
+            this._nodeContext = new NodeContext(logger, _telemetryClient)
             {
                 CorrelationId = this._nodeInstanceId,
                 ConnectionId = "Node_Global",
@@ -135,9 +145,7 @@ namespace Sitecore.Commerce.Engine
             services.Configure<CertificatesSettings>(this.Configuration.GetSection("Certificates"));
             services.Configure<List<string>>(Configuration.GetSection("AppSettings:AllowedOrigins"));
 
-            TelemetryConfiguration.Active.DisableTelemetry = true;
-
-            services.Add(new ServiceDescriptor(typeof(TelemetryClient), typeof(TelemetryClient), ServiceLifetime.Singleton));
+            services.AddSingleton(_telemetryClient);
 
             Log.Information("BootStrapping Application ...");
             services.Sitecore()
@@ -176,14 +184,13 @@ namespace Sitecore.Commerce.Engine
             });
 
             var antiForgeryEnabledSetting = this.Configuration.GetSection("AppSettings:AntiForgeryEnabled").Value;
-            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && System.Convert.ToBoolean(antiForgeryEnabledSetting);
+            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting);
             if(this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
            
             services.AddMvc()
                     .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
-                                                                                                     
-            services.ConfigureCartPipelines();
 
+            services.ConfigureCartPipelines();
             this._nodeContext.AddObject(services);
         }
 
@@ -265,10 +272,15 @@ namespace Sitecore.Commerce.Engine
             model = contextOpsResult.GetEdmModel();
             app.UseRouter(new ODataRoute("CommerceOps", model));
 
+            var appInsightsSettings = applicationInsightsSettings.Value;
+            if (!(appInsightsSettings.TelemetryEnabled &&
+                    !string.IsNullOrWhiteSpace(appInsightsSettings.InstrumentationKey)))
+            {
+                TelemetryConfiguration.Active.DisableTelemetry = true;
+            }
+
             if (loggingSettings.Value != null && loggingSettings.Value.ApplicationInsightsLoggingEnabled)
             {
-                var appInsightsSettings = applicationInsightsSettings.Value;
-                appInsightsSettings.DeveloperMode = this._hostEnv.IsDevelopment();
                 loggerFactory.AddApplicationInsights(appInsightsSettings);
             }          
         }

@@ -31,6 +31,18 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-ViewTemplateComposer"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-PluginPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-ValidationPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-ShopsMemoryCachePolicySet"
       },
       {
@@ -95,496 +107,8 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.EntityViews.ActionsRolesPolicy, Sitecore.Commerce.Plugin.Views",
-        "Roles": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "PriceSnapshotDetails",
-              "Action": "RequestSnapshotApproval",
-              "Role": "sitecore\\Pricer",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "PriceSnapshotDetails",
-              "Action": "RequestSnapshotApproval",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "PriceSnapshotDetails",
-              "Action": "RejectSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "PriceSnapshotDetails",
-              "Action": "ApproveSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "PriceSnapshotDetails",
-              "Action": "RetractSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetSnapshotApprovalStatus",
-              "Action": "RequestSnapshotApproval",
-              "Role": "sitecore\\Pricer",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetSnapshotApprovalStatus",
-              "Action": "RequestSnapshotApproval",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetSnapshotApprovalStatus",
-              "Action": "RejectSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetSnapshotApprovalStatus",
-              "Action": "ApproveSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetSnapshotApprovalStatus",
-              "Action": "RetractSnapshot",
-              "Role": "sitecore\\Pricer Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "RequestPromotionApproval",
-              "Role": "sitecore\\Promotioner",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "RequestPromotionApproval",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "RejectPromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "ApprovePromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "RetractPromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "Details",
-              "Action": "DisablePromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "RequestPromotionApproval",
-              "Role": "sitecore\\Promotioner",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "RequestPromotionApproval",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "RejectPromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "ApprovePromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "RetractPromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            },
-            {
-              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
-              "View": "SetPromotionApprovalStatus",
-              "Action": "DisablePromotion",
-              "Role": "sitecore\\Promotioner Manager",
-              "AdditionalProperties": {
-                "$type": "Sitecore.Commerce.Core.PropertiesModel, Sitecore.Commerce.Core",
-                "Properties": {
-                  "$type": "System.Collections.Concurrent.ConcurrentDictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib"
-                },
-                "Name": "",
-                "Policies": {
-                  "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                  "$values": []
-                }
-              },
-              "Name": "",
-              "Policies": {
-                "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": []
-              }
-            }
-          ]
-        }
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-AccessByRolesPolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.GlobalEnvironmentPolicy, Sitecore.Commerce.Core",
@@ -633,318 +157,47 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Coupons.Coupon",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
+        "$type": "Sitecore.Commerce.Plugin.Customers.CustomerPropertiesPolicy, Sitecore.Commerce.Plugin.Customers",
+        "PreviewProperties": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
+            "FirstName",
+            "LastName",
+			"UserName",
+            "Email",
+            "AccountStatus",
+            "Language"
           ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Pricing.PriceBook",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
+        },
+        "DetailsProperties": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "FriendlyId",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
+            "AccountNumber",
+            "FirstName",
+            "LastName",
+			"UserName",
+            "Email",
+            "AccountStatus",
+            "PhoneNumber",
+            "Language"
           ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Pricing.PriceCard",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
+        },
+        "AddressDetailsProperties": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Promotions.Promotion",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Promotions.PromotionBook",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "FriendlyId",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Inventory.InventorySet",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "MaxLength": 50,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "ProductId",
-              "MinLength": 1,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.RelationshipDefinition",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Name",
-              "MinLength": 1,
-              "MaxLength": 50,
-              "RegexValidator": "^[\\w\\s]*$",
-              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Plugin.Promotions.GlobalPromotionsPolicy, Sitecore.Commerce.Plugin.Promotions",
-        "MaxPromotionNameLength": "50",
-        "MaxPromotionBookNameLength": "50",
-        "PromotionsRequireApproval": "true"
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Core.Party",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "AddressName",
-              "MaxLength": 100,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "City",
-              "MaxLength": 100,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "PhoneNumber",
-              "MaxLength": 20
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Email",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "State",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "StateCode",
-              "MaxLength": 20,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Organization",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "FirstName",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "LastName",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Country",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "CountryCode",
-              "MaxLength": 20,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Address1",
-              "MaxLength": 100,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Address2",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "ZipPostalCode",
-              "MaxLength": 20,
-              "MinLength": 1
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Customers.Customer",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "AccountNumber",
-              "MaxLength": 100,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "AccountStatus",
-              "MaxLength": 100,
-              "MinLength": 1
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Email",
-              "MaxLength": 100,
-              "MinLength": 1,
-              "RegexValidator": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-              "RegexValidatorErrorCode": "Customer_EmailValidationError"
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Password",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "FirstName",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "LastName",
-              "MaxLength": 100
-            },
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "Language",
-              "MaxLength": 100
-            }
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.ValidationPolicy, Sitecore.Commerce.Core",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Customers.CustomerDetailsComponent",
-        "Models": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [
-            {
-              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "PhoneNumber",
-              "MaxLength": 20
-            }
+            "AddressName",
+            "FirstName",
+            "LastName",
+            "Country",
+            "CountryCode",
+            "State",
+            "StateCode",
+            "City",
+            "Address1",
+            "Address2",
+            "ZipPostalCode",
+            "IsPrimary",
+            "PhoneNumber"
           ]
         }
       },
@@ -955,6 +208,12 @@
       {
         "$type": "Sitecore.Commerce.Plugin.Carts.RollupCartLinesPolicy, Sitecore.Commerce.Plugin.Carts",
         "Rollup": true
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Promotions.GlobalPromotionsPolicy, Sitecore.Commerce.Plugin.Promotions",
+        "MaxPromotionNameLength": "50",
+        "MaxPromotionBookNameLength": "50",
+        "PromotionsRequireApproval": "true"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Journaling.EntityJournalingPolicy, Sitecore.Commerce.Plugin.Journaling",

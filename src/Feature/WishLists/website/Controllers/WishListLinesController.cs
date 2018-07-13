@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Web.UI;
-using Sitecore.Commerce.XA.Feature.Cart.Repositories;
-using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Feature.Cart.Repositories;   
+using Sitecore.Commerce.XA.Foundation.Common.Context;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -21,7 +22,8 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
         public IModelProvider ModelProvider { get; protected set; }
         public IAddToCartRepository AddToCartRepository { get; protected set; }
 
-        public WishListLinesController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IAddToCartRepository addToCartRepository, IWishListLinesRepository wishListLinesRepository) : base(storefrontContext)
+        public WishListLinesController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IAddToCartRepository addToCartRepository, IWishListLinesRepository wishListLinesRepository, IContext context) 
+            : base(storefrontContext, context)
         {
 
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));

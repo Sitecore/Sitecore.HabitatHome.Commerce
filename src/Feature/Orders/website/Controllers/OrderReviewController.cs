@@ -1,6 +1,8 @@
 ﻿using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Attributes;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Diagnostics;
@@ -10,7 +12,8 @@ namespace Sitecore.HabitatHome.Feature.Orders.Controllers
 {
     public class OrderReviewController : BaseCommerceStandardController
     {
-        public OrderReviewController(IStorefrontContext storefrontContext, IReviewRepository reviewRepository, IVisitorContext visitorContext) : base(storefrontContext)
+        public OrderReviewController(IStorefrontContext storefrontContext, IReviewRepository reviewRepository, IVisitorContext visitorContext, IContext context) 
+            : base(storefrontContext, context)
         {
             Assert.ArgumentNotNull((object)reviewRepository, nameof(reviewRepository));            
             this.ReviewRepository = reviewRepository;
