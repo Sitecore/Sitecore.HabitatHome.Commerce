@@ -1,4 +1,7 @@
-let { build, publish } = require("gulp-dotnet-cli");
+let {
+    build,
+    publish
+} = require("gulp-dotnet-cli");
 let gulp = require("gulp");
 let fs = require("fs");
 let del = require("del");
@@ -37,7 +40,8 @@ gulp.task('Publish-Website-Projects',
     gulp.series(
         "Publish-Foundation-Projects",
         "Publish-Feature-Projects",
-        "Publish-Project-Projects", function (done) {
+        "Publish-Project-Projects",
+        function (done) {
             done();
         }));
 
@@ -106,17 +110,78 @@ gulp.task("Rebuild-Web-Index",
         });
     });
 
-gulp.task("default",
-    function (callback) {
-        return gulp.series(
-            "Copy-Sitecore-Lib",
-            "Publish-Website-Projects",
-            "Apply-Xml-Transform",
-            "Publish-Transforms",
-            "Sync-Unicorn",
-            "Deploy-EXM-Campaigns",
-            callback);
+    gulp.task("Copy-Sitecore-Lib", function (callback) {
+        console.log("Copying Sitecore Commerce XA Libraries");
+    
+        fs.statSync(config.sitecoreLibraries);
+        var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
+        return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
     });
+    
+
+
+    gulp.task("Apply-Xml-Transform",
+    function () {
+        var layerPathFilters = [
+            "./src/Foundation/**/*.xdt", "./src/Feature/**/*.xdt", "./src/Project/**/*.xdt",
+            "!./src/**/obj/**/*.xdt", "!./src/**/bin/**/*.xdt", "!./src/**/packages/**/*.xdt"
+        ];
+        return gulp.src(layerPathFilters)
+            .pipe(flatmap(function (stream, file) {
+                var fileToTransform = file.path.replace(/.+website\\(.+)\.xdt/, "$1");
+                debug("Applying configuration transform: " + file.path);
+                return gulp.src("./scripts/applytransform.targets")
+                    .pipe(msbuild({
+                        targets: ["ApplyTransform"],
+                        configuration: config.buildConfiguration,
+                        logCommand: false,
+                        verbosity: config.buildVerbosity,
+                        stdout: true,
+                        errorOnFail: true,
+                        maxcpucount: config.buildMaxCpuCount,
+                        nodeReuse: false,
+                        toolsVersion: config.buildToolsVersion,
+                        properties: {
+                            Platform: config.buildPlatform,
+                            WebConfigToTransform: config.websiteRoot,
+                            TransformFile: file.path,
+                            FileToTransform: fileToTransform
+                        }
+                    }));
+            }));
+    });
+
+gulp.task("Sync-Unicorn",
+    function (callback) {
+        var options = {};
+        options.siteHostName = habitat.getSiteUrl();
+        options.authenticationConfigFile = config.websiteRoot + "/App_config/Include/Unicorn.SharedSecret.config";
+        options.maxBuffer = Infinity;
+
+        unicorn(function () {
+            return callback();
+        }, options);
+    });
+
+
+gulp.task("Publish-Transforms",
+    function () {
+        return gulp.src("./src/**/website/**/*.xdt")
+            .pipe(gulp.dest(config.websiteRoot + "/temp/transforms"));
+    });
+
+
+gulp.task("default",
+    gulp.series(
+        "Copy-Sitecore-Lib",
+        "Publish-Website-Projects",
+        "Apply-Xml-Transform",
+        "Publish-Transforms",
+        "Sync-Unicorn",
+        "Deploy-EXM-Campaigns",
+        function (done) {
+            done();
+        }));
 
 gulp.task("quick-deploy",
     function (callback) {
@@ -157,62 +222,8 @@ gulp.task("publish",
 /*****************************
   Initial setup
 *****************************/
-gulp.task("Copy-Sitecore-Lib", function (callback) {
-    console.log("Copying Sitecore Commerce XA Libraries");
-
-    fs.statSync(config.sitecoreLibraries);
-    var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
-    return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
-});
 
 
-gulp.task("Apply-Xml-Transform",
-    function () {
-        var layerPathFilters = [
-            "./src/Foundation/**/*.xdt", "./src/Feature/**/*.xdt", "./src/Project/**/*.xdt",
-            "!./src/**/obj/**/*.xdt", "!./src/**/bin/**/*.xdt", "!./src/**/packages/**/*.xdt"
-        ];
-        return gulp.src(layerPathFilters)
-            .pipe(flatmap(function (stream, file) {
-                var fileToTransform = file.path.replace(/.+website\\(.+)\.xdt/, "$1");
-                util.log("Applying configuration transform: " + file.path);
-                return gulp.src("./scripts/applytransform.targets")
-                    .pipe(msbuild({
-                        targets: ["ApplyTransform"],
-                        configuration: config.buildConfiguration,
-                        logCommand: false,
-                        verbosity: config.buildVerbosity,
-                        stdout: true,
-                        errorOnFail: true,
-                        maxcpucount: config.buildMaxCpuCount,
-                        nodeReuse: false,
-                        toolsVersion: config.buildToolsVersion,
-                        properties: {
-                            Platform: config.buildPlatform,
-                            WebConfigToTransform: config.websiteRoot,
-                            TransformFile: file.path,
-                            FileToTransform: fileToTransform
-                        }
-                    }));
-            }));
-    });
-
-gulp.task("Sync-Unicorn",
-    function (callback) {
-        var options = {};
-        options.siteHostName = habitat.getSiteUrl();
-        options.authenticationConfigFile = config.websiteRoot + "/App_config/Include/Unicorn.SharedSecret.config";
-        options.maxBuffer = Infinity;
-
-        unicorn(function () { return callback(); }, options);
-    });
-
-
-gulp.task("Publish-Transforms",
-    function () {
-        return gulp.src("./src/**/website/**/*.xdt")
-            .pipe(gulp.dest(config.websiteRoot + "/temp/transforms"));
-    });
 
 //*****************************
 //  Publish
@@ -220,7 +231,11 @@ gulp.task("Publish-Transforms",
 
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
-    return gulp.src([location + "/**/Website/**/*.csproj"])
+    var layerPathFilters = [
+        location + "/**/Website/**/*.csproj", "!" + location + "/**/Website/**/*WishLists*.csproj"
+    ];
+    return gulp.src(layerPathFilters)
+        .pipe(debug())
         .pipe(flatmap(function (stream, file) {
             return publishStream(stream);
         }));
@@ -231,7 +246,9 @@ var publishStream = function (stream) {
     var targets = ["Build"];
 
     return stream
-        .pipe(debug({ title: "Building project:" }))
+        .pipe(debug({
+            title: "Building project:"
+        }))
         .pipe(msbuild({
             targets: targets,
             configuration: config.buildConfiguration,
