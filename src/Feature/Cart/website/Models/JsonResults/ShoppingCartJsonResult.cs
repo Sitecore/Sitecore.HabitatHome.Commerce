@@ -3,6 +3,7 @@ using Sitecore.Commerce.Entities;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.XA.Feature.Cart.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -17,8 +18,8 @@ namespace Sitecore.HabitatHome.Feature.Cart.Models.JsonResults
 {
     public class ShoppingCartJsonResult : BaseJsonResult
     {
-        public ShoppingCartJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider)
-          : base(storefrontContext)
+        public ShoppingCartJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, IContext context)
+          : base(context, storefrontContext)
         {
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;

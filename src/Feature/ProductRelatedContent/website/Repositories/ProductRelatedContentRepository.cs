@@ -3,6 +3,7 @@ using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;
 using Sitecore.Commerce.XA.Foundation.Common.Search;
@@ -23,7 +24,8 @@ namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Repositories
 {
     public class ProductRelatedContentRepository : BaseCatalogRepository, IProductRelatedContentRepository
     {
-        public ProductRelatedContentRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IVariantDefinitionProvider variantDefinitionProvider, IProductRelatedContentManager productRelatedContentManager) : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager)
+        public ProductRelatedContentRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IContext context, IVariantDefinitionProvider variantDefinitionProvider, IProductRelatedContentManager productRelatedContentManager) 
+            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager, context)
         {
             _productRelatedContentManager = productRelatedContentManager;
         }
@@ -122,7 +124,6 @@ namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Repositories
                 });
             }));
             return productDocuments;
-        }
-        
+        }                       
     }
 }

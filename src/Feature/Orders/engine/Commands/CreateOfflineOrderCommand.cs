@@ -24,17 +24,17 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Commands
             CreateOfflineOrderCommand createOrderCommand = this;
             Order result = (Order)null;            
             Order order;
+
             using (CommandActivity.Start(commerceContext, (CommerceCommand)createOrderCommand))
             {
-               
-                Func<Task> func = await createOrderCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
-                {                                    
-                   
+                await createOrderCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                {                                           
                     Order order2 = await createOrderCommand._createOfflineOrderPipeline.Run(arg, commerceContext.GetPipelineContextOptions());                    
                     result = order2;
                 }));
                 order = result;
             }
+
             return order;
         }
     }

@@ -37,7 +37,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Commands
             List<InventorySet> sets = new List<InventorySet>();
             using (CommandActivity.Start(commerceContext, (CommerceCommand)createStoreInventoryCommand))
             {
-                Func<Task> func = await createStoreInventoryCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                await createStoreInventoryCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
                 {
 
                     CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();

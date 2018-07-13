@@ -8,6 +8,7 @@ using Sitecore.Commerce.XA.Feature.Cart.Models;
 using Sitecore.Commerce.XA.Feature.Cart.Models.JsonResults;
 using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;
 using Sitecore.Commerce.XA.Foundation.Connect;
@@ -47,7 +48,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Repositories
         public virtual OrderReviewDataJsonResult GetReviewData(IVisitorContext visitorContext)
         {
             OrderReviewDataJsonResult model = this.ModelProvider.GetModel<OrderReviewDataJsonResult>();
-            if (!Context.PageMode.IsExperienceEditor)
+            if (!Sitecore.Context.PageMode.IsExperienceEditor)
             {
                 try
                 {

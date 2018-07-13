@@ -1,5 +1,6 @@
 ﻿using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
@@ -16,8 +17,8 @@ namespace Sitecore.HabitatHome.Feature.Cart.Models.JsonResults
         public string Comments { get; set; }
         public List<dynamic> RelatedKitProducts { get; set; }
         public List<dynamic> RelatedBundleProducts { get; set; }
-        public ShoppingCartLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager)
-      : base(storefrontContext, modelProvider, searchManager)
+        public ShoppingCartLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager, IContext context)
+            : base(storefrontContext, modelProvider, searchManager, context)
         {
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;

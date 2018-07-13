@@ -2,6 +2,7 @@
 using System.Linq;
 using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
@@ -11,7 +12,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Models
 {
     public class PurchasableProductSummaryViewModel : ProductSummaryViewModel
     {
-        public PurchasableProductSummaryViewModel(IStorefrontContext storefrontContext, IItemTypeProvider itemTypeProvider, IModelProvider modelProvider, IVariantDefinitionProvider variantDefinitionProvider, ISiteContext siteContext) : base(storefrontContext, itemTypeProvider, modelProvider, variantDefinitionProvider, siteContext)
+        public PurchasableProductSummaryViewModel(IStorefrontContext storefrontContext, IItemTypeProvider itemTypeProvider, IModelProvider modelProvider, IVariantDefinitionProvider variantDefinitionProvider, ISiteContext siteContext) 
+            : base(storefrontContext, itemTypeProvider, modelProvider, variantDefinitionProvider, siteContext)
         {
         }
 
