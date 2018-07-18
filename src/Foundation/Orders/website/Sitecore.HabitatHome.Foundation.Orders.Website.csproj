@@ -46,7 +46,7 @@
     <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.8" />
     <PackageReference Include="Microsoft.Net.Compilers" Version="2.4.0" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="11.2.83" />
-    <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="2.1.54" />
+    <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="2.2.86" />
     <PackageReference Include="Sitecore.Kernel.NoReferences" Version="9.0.180604" />
     <PackageReference Include="Sitecore.XConnect.Client.Configuration.NoReferences" Version="9.0.180604" />
     <PackageReference Include="Sitecore.XConnect.Client.NoReferences" Version="9.0.180604" />
