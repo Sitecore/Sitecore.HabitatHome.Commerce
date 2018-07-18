@@ -190,7 +190,7 @@ gulp.task("quick-deploy",
             "Publish-Website-Projects",
             "Apply-Xml-Transform",
             "Publish-Transforms",
-            callback);
+            callback)();
     });
 
 gulp.task("initial",
@@ -205,7 +205,7 @@ gulp.task("initial",
             "Rebuild-Core-Index",
             "Rebuild-Master-Index",
             "Rebuild-Web-Index",
-            callback);
+            callback)();
     });
 
 gulp.task("publish",
@@ -216,7 +216,7 @@ gulp.task("publish",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
             "Publish-Transforms",
-            callback);
+            callback)();
     });
 
 /*****************************
