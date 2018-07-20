@@ -4,22 +4,19 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Sitecore.Commerce.ServiceProxy
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading;
+using Microsoft.OData.Client;
+using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Core.Commands;
+using Sitecore.Commerce.Engine;
+using Sitecore.Commerce.ServiceProxy.Exceptions;
+
+namespace Sitecore.HabitatHome.Foundation.Commerce.ServiceProxy.Website
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using System.Threading;
-
-    using Core.Commands;
-
-    using Microsoft.OData.Client;
-
-    using Sitecore.Commerce.Core;
-    using Sitecore.Commerce.Engine;
-    using Sitecore.Commerce.ServiceProxy.Exceptions;
-
     /// <summary>
     /// Defines the proxy.
     /// </summary>

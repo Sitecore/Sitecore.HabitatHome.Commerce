@@ -255,7 +255,7 @@ Languages:
       Value: |
         <image mediaid="{C6ADB45D-5FC3-4801-9DDA-9AB2E4BD7090}" alt="smart home checklist thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         <p>Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions in its newest whitepaper.</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
@@ -369,7 +369,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions in its newest whitepaper.
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
@@ -458,7 +458,7 @@ Languages:
       Value: |
         <image mediaid="{C6ADB45D-5FC3-4801-9DDA-9AB2E4BD7090}" alt="smart home checklist thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>接続された家は、私たちの生活をより快適にし、家庭をよりエネルギー効率的にすることを目指しています。 スマート・アプライアンスやマットレス・カバーからスイッチや電球まで、幅広い製品がありますが、どこから始めますか？ ハビタットには、最新のホワイトペーパーに「スマートな」提案がいくつかあります。</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl

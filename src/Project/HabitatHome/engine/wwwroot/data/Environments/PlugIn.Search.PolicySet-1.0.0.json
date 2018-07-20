@@ -103,6 +103,15 @@
             "IsFacetable": false,
             "IsRetrievable": true
           },
+          "EntityVersion": {
+            "TypeName": "System.Int32",
+            "IsKey": false,
+            "IsSearchable": false,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
           "SitecoreId": {
             "TypeName": "System.String",
             "IsKey": true,

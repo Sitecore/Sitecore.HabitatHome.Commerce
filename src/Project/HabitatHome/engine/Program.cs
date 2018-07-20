@@ -64,6 +64,7 @@ namespace Sitecore.Commerce.Engine
                 {
                     var configuration =
                         options.ApplicationServices.GetRequiredService<IConfiguration>();
+                    options.Limits.MinResponseDataRate = null;
 
                     var useHttps = configuration.GetValue("AppSettings:UseHttpsInKestrel", false);
                     if (useHttps)

@@ -1,0 +1,28 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "ArtifactStoreId": "A7517FEB-E4E2-4BA8-900A-988681BBA957",
+  "Id": "Entity-PolicySet-WorkflowPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "WorkflowPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Workflow.WorkflowPolicy, Sitecore.Commerce.Plugin.Workflow",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
+        "WorkflowId": "Entity-Workflow-DefaultCommerceWorkflow"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Workflow.WorkflowPolicy, Sitecore.Commerce.Plugin.Workflow",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
+        "WorkflowId": "Entity-Workflow-DefaultCommerceWorkflow"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Workflow.WorkflowPolicy, Sitecore.Commerce.Plugin.Workflow",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+        "WorkflowId": "Entity-Workflow-DefaultCommerceWorkflow"
+      }
+    ]
+  }
+}

@@ -266,7 +266,7 @@
             },
             {
               "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-              "Name": "UserName",
+              "Name": "LoginName",
               "MaxLength": 100,
               "MinLength": 1
             },

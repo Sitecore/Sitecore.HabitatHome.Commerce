@@ -30,6 +30,10 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
+        "$type": "Sitecore.Commerce.Plugin.Carts.CalculateCartPolicy, Sitecore.Commerce.Plugin.Carts",
+        "AlwaysCalculate": true
+      },
+      {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-ViewTemplateComposer"
       },
@@ -51,8 +55,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SearchMediaItemsPolicy, Sitecore.Commerce.Plugin.Management",
-        "MediaItemsSearchId": "7E1319C9-FA87-4D78-93CE-202815F0F1EA",
-        "PageSize": 10
+        "ODataItemServiceApiKey": "34905B27-5F55-4DF8-B866-B60A1571D2D5"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -73,6 +76,14 @@
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-RelationshipsPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-WorkflowPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-VersioningPolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -201,6 +212,8 @@
             "AccountNumber",
             "FirstName",
             "LastName",
+            "LoginName",
+            "Domain",
             "UserName",
             "Email",
             "AccountStatus",
@@ -225,7 +238,8 @@
             "IsPrimary",
             "PhoneNumber"
           ]
-        }
+        },
+        "Domains": [ "Storefront", "extranet", "CommerceUsers" ] 
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.CustomersRemovePolicy, Sitecore.Commerce.Plugin.Customers",
@@ -508,6 +522,9 @@
             "Size"
           ]
         }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.IgnorePublishedPolicy, Sitecore.Commerce.Core"
       }
     ]
   }

@@ -246,6 +246,16 @@
             },
             {
               "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddEntityVersion",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "PromoteToNextState",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
               "View": "ComposerDashboard",
               "Role": "sitecore\\Commerce Administrator"
             },

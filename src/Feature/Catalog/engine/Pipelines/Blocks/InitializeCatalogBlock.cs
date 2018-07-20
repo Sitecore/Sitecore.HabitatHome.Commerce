@@ -1,4 +1,10 @@
-﻿using System.IO;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2017
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Internal;

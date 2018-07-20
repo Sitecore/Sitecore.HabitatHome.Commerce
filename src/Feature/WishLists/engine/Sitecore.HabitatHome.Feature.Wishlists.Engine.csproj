@@ -10,9 +10,6 @@
     <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="Policies\SamplePolicy.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Sitecore.Commerce.Core">
@@ -26,16 +23,7 @@
   <ItemGroup>
     <Content Include="ConfigureServiceApiBlock.cs" />
     <Content Include="ConfigureSitecore.cs" />
-    <Content Include="Commands\SampleCommand.cs" />
-    <Content Include="Components\SampleComponent.cs" />
     <Content Include="Controllers\CommandsController.cs" />
-    <Content Include="Controllers\SampleController.cs" />
-    <Content Include="Entities\SampleEntity.cs" />
-    <Content Include="Models\SampleModel.cs" />
-    <Content Include="Pipelines\Arguments\SampleArgument.cs" />
-    <Content Include="Pipelines\Blocks\SampleBlock.cs" />
-    <Content Include="Pipelines\ISamplePipeline.cs" />
-    <Content Include="Pipelines\SamplePipeline.cs" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -56,9 +44,5 @@
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
     <Reference Include="System.Transactions" />
     <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Policies\" />
   </ItemGroup>
 </Project>

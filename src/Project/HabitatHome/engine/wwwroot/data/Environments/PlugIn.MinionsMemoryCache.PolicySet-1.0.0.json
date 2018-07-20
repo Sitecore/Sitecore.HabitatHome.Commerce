@@ -71,6 +71,11 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Core.CommerceEntity",
+        "AllowCaching": false
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Returns.ReturnMerchandiseAuthorization",
         "AllowCaching": false
       },

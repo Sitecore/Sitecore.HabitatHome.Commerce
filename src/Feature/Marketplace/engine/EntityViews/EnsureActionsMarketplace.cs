@@ -47,7 +47,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
         {
             Condition.Requires(entityView).IsNotNull($"{this.Name}: The argument cannot be null");
 
-            var pluginPolicy = context.GetPolicy<PluginPolicy>();
+            var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
 
             var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
 

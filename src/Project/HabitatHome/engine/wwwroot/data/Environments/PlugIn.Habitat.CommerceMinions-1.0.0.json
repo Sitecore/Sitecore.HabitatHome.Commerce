@@ -32,6 +32,10 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
+        "$type": "Sitecore.Commerce.Plugin.Carts.CalculateCartPolicy, Sitecore.Commerce.Plugin.Carts",
+        "AlwaysCalculate": true
+      },
+      {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-MinionsMemoryCachePolicySet"
       },
@@ -513,6 +517,9 @@
         "$type": "Sitecore.Commerce.Core.TransactionsPolicy, Sitecore.Commerce.Core",
         "TransactionalityEnabled": true,
         "TransactionTimeOut": 180
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.IgnorePublishedPolicy, Sitecore.Commerce.Core"
       }
     ]
   }

@@ -183,7 +183,7 @@ Languages:
       Value: |
         <image mediaid="{02C21C81-5FE3-483E-8EE1-E49D8D8E0B2D}" height="" hspace="" width="" alt="home theater nav thumbnail" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>Keep yourself limber and experience the benefits of stretching, which include increased flexibility and improvements to your circulation</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
@@ -288,7 +288,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         <p>Autrefois consid&eacute;r&eacute;s comme un luxe, les cin&eacute;mas maison ont connu une popularit&eacute; croissante au cours des cinq derni&egrave;res ann&eacute;es.</p>
         <p>Les experts en recherche de Habitat Home pr&eacute;voient que le march&eacute; du cin&eacute;ma maison conna&icirc;tra une croissance annuelle de huit pour cent, avec des ventes de plus de 28 milliards de dollars d'ici 2020.</p>
@@ -358,7 +358,7 @@ Languages:
       Value: |
         <image mediaid="{02C21C81-5FE3-483E-8EE1-E49D8D8E0B2D}" alt="home theater nav thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         <p>かつて贅沢と見なされれていたホームシアターは過去5年間で人気が高まっています。</p>
         <p>Habitat のリサーチ・エキスパートは、ホームシアター市場が年間8％成長し、2020年までに売上高が280億ドルを超えると予測しています。</p>
