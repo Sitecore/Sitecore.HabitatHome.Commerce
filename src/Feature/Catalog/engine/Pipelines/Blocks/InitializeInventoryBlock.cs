@@ -1,4 +1,10 @@
-﻿using System.IO;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2017
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Internal;
@@ -9,6 +15,15 @@ using Sitecore.Framework.Pipelines;
 
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    /// <summary>
+    /// Ensure Habitat inventory has been loaded.
+    /// </summary>
+    /// <seealso>
+    ///     <cref>
+    ///         Sitecore.Framework.Pipelines.PipelineBlock{System.String, System.String,
+    ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
+    ///     </cref>
+    /// </seealso>
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.InitializeCatalogBlock)]
     public class InitializeInventoryBlock : PipelineBlock<string, string, CommercePipelineExecutionContext>
     {

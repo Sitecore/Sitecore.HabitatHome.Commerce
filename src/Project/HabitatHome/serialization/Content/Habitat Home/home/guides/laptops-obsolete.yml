@@ -158,7 +158,7 @@ Languages:
       Value: |
         <image mediaid="{2B51B501-B5A4-435D-95C8-8B74140AEEDC}" alt="laptops obsolete thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>Not all that many years ago, just about everyone wanted a desktop or laptop computer to access the Internet. Now, our smartphones act as miniature computers, giving us the ability to email, talk, text, share, and browse the Internet. Meanwhile, tablets bridge the gap between the two, offering larger screens and the option of an attachable keyboard. </p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
@@ -272,7 +272,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>Il n'y a pas si longtemps, &agrave; peu pr&egrave;s tout le monde voulait un ordinateur de bureau ou un ordinateur portable pour acc&eacute;der &agrave; Internet. Maintenant, nos t&eacute;l&eacute;phones intelligents agissent comme des ordinateurs miniatures, nous donnant la possibilit&eacute; d'envoyer des courriels, parler, envoyer des texto, partager et naviguer sur Internet. Pendant ce temps, les tablettes comblent le foss&eacute; entre les deux, offrant de plus grands &eacute;crans et l'option d'un clavier en accessoire.</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl
@@ -349,7 +349,7 @@ Languages:
       Value: |
         <image mediaid="{2B51B501-B5A4-435D-95C8-8B74140AEEDC}" alt="laptops obsolete thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>何年も前から、デスクトップやラップトップコンピュータがインターネットにアクセスすることを望んでいた人はほとんどいませんでした。 現在、スマートフォンは小型コンピュータとして機能し、電子メール、会話、テキスト、共有、ブラウズをインターネットに提供します。 一方で、タブレットは2つの間の隙間を埋めるため、大きなスクリーンと取り付け可能なキーボードのオプションを提供します。 </p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title

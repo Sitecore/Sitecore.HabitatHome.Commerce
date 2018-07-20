@@ -173,7 +173,7 @@ Languages:
       Value: |
         <image mediaid="{5C1251F2-1854-4DA4-A979-C68170F12468}" alt="must have mobile thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>When you're traveling for business, you need to stay connected and productive at all times.&nbsp;To maintain productivity on the road, Habitat recommends the following essential mobile devices and accessories.</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl
@@ -295,7 +295,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>Lorsque vous faites des voyages d'affaires, vous devez rester connect&eacute; et productif en tout temps. Pour maintenir la productivit&eacute; sur la route, Habitat Home recommande les appareils et accessoires mobiles essentiels suivants.</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl
@@ -389,7 +389,7 @@ Languages:
       Value: |
         <image mediaid="{5C1251F2-1854-4DA4-A979-C68170F12468}" alt="must have mobile thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>ビジネスのために旅行するときは、常に接続して生産性を維持する必要があります。&nbsp; 移動中の生産性を維持するため、Habitatは次の必須のモバイルデバイスとアクセサリを推奨します。</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl

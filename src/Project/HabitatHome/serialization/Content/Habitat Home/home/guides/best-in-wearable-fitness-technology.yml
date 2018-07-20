@@ -186,7 +186,7 @@ Languages:
       Value: |
         <image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" alt="Wearable technology product" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed.&nbsp;</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
@@ -272,7 +272,7 @@ Languages:
       Value: |
         <image mediaid="{42EBDC45-C036-49DE-997F-402A0DCD840D}" alt="Fitness Tracker" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: With the right equipment, every goal is within reach. The latest in wearable fitness technology can help you succeed.&nbsp;
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title

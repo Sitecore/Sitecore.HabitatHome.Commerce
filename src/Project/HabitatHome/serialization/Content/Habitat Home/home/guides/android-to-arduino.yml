@@ -237,7 +237,7 @@ Languages:
       Hint: OpenGraphTitle
       Value: Home Automation with Android and Arduino
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: "<p>Have you always dreamed of automating your home? Do you want to control the lights, fans, and appliances from your smartphone?Our DIY home automation project outlined in this article will show you how to automate your home using an Android smartphone and Arduino.&nbsp;</p>"
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl
@@ -343,7 +343,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: "Avez-vous toujours r&ecirc;v&eacute; d'automatiser votre maison? Voulez-vous contr&ocirc;ler les lumi&egrave;res, les ventilateurs et les appareils de votre t&eacute;l&eacute;phone intelligent? Peut-&ecirc;tre que vous voulez simplement un didacticiel au sujet des appareils branch&eacute;s et commencer avec eux? Notre projet domotique d&eacute;crit dans cet article vous montrera comment automatiser votre maison en utilisant un t&eacute;l&eacute;phone intelligent Android et un module Arduino."
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl
@@ -415,7 +415,7 @@ Languages:
       Hint: OpenGraphTitle
       Value: Android と Arduino のホームオートメーション
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: あなたはいつも自宅を自動化することを夢見てきましたか？ あなたはスマートフォンからライト、ファン、アプライアンスをコントロールしたいですか？この記事で概説しているDIYのホームオートメーションプロジェクトでは、AndroidスマートフォンとArduinoを使って自宅を自動化する方法を紹介します。&nbsp;
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl

@@ -6,7 +6,7 @@ Param(
     [string]$identityServerHost = "localhost:5050",
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("CommerceAuthoring", "CommerceMinions", "CommerceOps", "CommerceShops"),
-    [string]$engineSuffix = "habitat",
+    [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "sitecore\admin",
     [string]$adminPassword = "b",

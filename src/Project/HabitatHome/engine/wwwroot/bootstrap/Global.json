@@ -39,7 +39,7 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
         "PolicyId": "Global",
         "AllowAdmin": true,
-        "Database": "habitat_Global",
+        "Database": "habitathome_Global",
         "EffectiveDate": "0001-01-01T00:00:00",
         "IsVisible": false,
         "Password": "",
@@ -67,53 +67,7 @@
         "AuthorizedRoles": [
           "sitecore\\Commerce Business User"
         ]
-      },
-      {
-        "$type": "Plugin.Sample.Upgrade.MigrationPolicy, Plugin.Sample.Upgrade",
-        "DefaultEnvironmentName": "AdventureWorksAuthoring",
-        "SqlPolicySetName": "SqlPolicySet",
-        "ReviewOnly": false,
-        "ListsToMigrate": {
-          "*orders*": null,
-          "carts": null,
-          "giftcards": null,
-          "order-*-salesactivity": null,
-          "completedrmas": null,
-          "journalentries*": null,
-          "coupons": null,
-          "entitlements": null,
-          "managedlists": null,
-          "pricebooks*": null,
-          "pricecards": null,
-          "privatecoupongroups": null,
-          "promotionbooks*": null,
-          "promotions": null,
-          "promotions-*-coupons": null,
-          "promotion-*-publiccoupons": null,
-          "promotion-*-privatecoupongroups": null,
-          "promotion-*-unallocatedcoupons": null,
-          "salesactivities": null,
-          "settledsalesactivities": null,
-          "sellableitems": 0
-        }
-      },
-      {
-        "$type": "Plugin.Sample.Upgrade.MigrationSqlPolicy, Plugin.Sample.Upgrade",
-        "ArtifactStoreId": "6BE385F1-93DC-4299-9DD4-934F6BA42EAA",
-        "SourceStoreSqlPolicy": {
-          "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
-          "PolicyId": "Global",
-          "AllowAdmin": true,
-          "Database": "habitat_Global",
-          "EffectiveDate": "0001-01-01T00:00:00",
-          "IsVisible": false,
-          "Password": "",
-          "Server": "",
-          "TrustedConnection": true,
-          "UserName": "",
-          "View": "EntityStoreSqlPolicy"
-        }
-      },
+      },         
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
         "Host": "habitathome.dev.local",

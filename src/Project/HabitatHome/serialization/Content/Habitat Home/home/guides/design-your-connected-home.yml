@@ -245,7 +245,7 @@ Languages:
       Value: |
         <image mediaid="{0F50A67E-B439-436D-A5D8-5DEF0B7A6BB7}" alt="connected home thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         <p>Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions.</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
@@ -371,7 +371,7 @@ Languages:
       Hint: __Valid from
       Value: 
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: |
         <p>Les maisons connect&eacute;es visent &agrave; rendre nos vies plus confortables et nos maisons plus &eacute;conomes en &eacute;nergie. Avec une telle gamme de produits intelligents disponibles tels les &eacute;lectrom&eacute;nagers, les commutateurs et ampoules, par o&ugrave; commencer? Habitat Home a quelques suggestions "intelligentes".</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
@@ -471,7 +471,7 @@ Languages:
       Value: |
         <image mediaid="{0F50A67E-B439-436D-A5D8-5DEF0B7A6BB7}" alt="connected home thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
-      Hint: Summary
+      Hint: Introduction
       Value: <p>コネクテッドホームは、私たちの生活をより快適にし、家庭をよりエネルギー効率的にすることを目指しています。 スマート・アプライアンスやマットレス・カバーからスイッチや電球まで、幅広い製品がありますが、どこから始めますか？ ハビタットには「スマートな」提案がいくつかあります。</p>
     - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
       Hint: OpenGraphImageUrl

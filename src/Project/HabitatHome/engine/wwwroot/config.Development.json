@@ -12,7 +12,12 @@
     },
     "WriteTo": [
       {
-        "Name": "LiterateConsole"
+        "Name": "Async",
+        "Args": {
+          "configure": [{
+            "Name": "LiterateConsole"
+          }]
+        }
       }
     ]
   }

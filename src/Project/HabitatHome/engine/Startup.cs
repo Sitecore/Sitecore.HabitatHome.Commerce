@@ -7,6 +7,7 @@
 namespace Sitecore.Commerce.Engine
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Threading.Tasks;
 
@@ -30,17 +31,15 @@ namespace Sitecore.Commerce.Engine
     using Serilog;
     using Serilog.Events;
 
-    using Core;
-    using Core.Commands;
-    using Core.Logging;
-    using Provider.FileSystem;
-    using Framework.Diagnostics;
-    using Framework.Rules;
-
-    using System.Collections.Generic;
+    using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.Core.Commands;
+    using Sitecore.Commerce.Core.Logging;
+    using Sitecore.Commerce.Provider.FileSystem;
+    using Sitecore.Framework.Diagnostics;
+    using Sitecore.Framework.Rules;
 
     /// <summary>
-    /// Defines the engine startup.
+    /// Defines the commerce engine startup.
     /// </summary>
     public class Startup
     {
@@ -64,31 +63,34 @@ namespace Sitecore.Commerce.Engine
         {
             this._hostEnv = hostEnv;
             this._serviceProvider = serviceProvider;
-            
+
             this.Configuration = configuration;
-
-            if (!long.TryParse(this.Configuration.GetSection("Serilog:FileSizeLimitBytes").Value, out var fileSize))
-            {
-                fileSize = 100000000;
-            }
-
-          
+            
             var appInsightsInstrumentationKey = this.Configuration.GetSection("ApplicationInsights:InstrumentationKey").Value;
-
             _telemetryClient = !string.IsNullOrWhiteSpace(appInsightsInstrumentationKey) ? new TelemetryClient { InstrumentationKey = appInsightsInstrumentationKey } : new TelemetryClient();
 
+            if (bool.TryParse(this.Configuration.GetSection("Logging:SerilogLoggingEnabled")?.Value, out var serilogEnabled))
+            {
+                if (serilogEnabled)
+                {
+                    if (!long.TryParse(this.Configuration.GetSection("Serilog:FileSizeLimitBytes").Value, out var fileSize))
+                    {
+                        fileSize = 100000000;
+                    }
 
-            Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(this.Configuration)
-                .Enrich.FromLogContext()
-                .Enrich.With(new ScLogEnricher())
-                .WriteTo.File(
-                    $@"{Path.Combine(this._hostEnv.WebRootPath, "logs")}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{this._nodeInstanceId}.txt",
-                    this.GetSerilogLogLevel(),
-                    "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
-                    fileSizeLimitBytes: fileSize,
-                    rollOnFileSizeLimit: true)
-                .CreateLogger();
+                    Log.Logger = new LoggerConfiguration()
+                                 .ReadFrom.Configuration(this.Configuration)
+                                 .Enrich.FromLogContext()
+                                 .Enrich.With(new ScLogEnricher())
+                                 .WriteTo.Async(a => a.File(
+                                     $@"{Path.Combine(this._hostEnv.WebRootPath, "logs")}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{this._nodeInstanceId}.txt",
+                                     this.GetSerilogLogLevel(),
+                                     "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
+                                     fileSizeLimitBytes: fileSize,
+                                     rollOnFileSizeLimit: true), bufferSize: 500)
+                                 .CreateLogger();
+                }
+            }
         }
 
         /// <summary>
@@ -155,7 +157,9 @@ namespace Sitecore.Commerce.Engine
                     .ConfigureCaches("GlobalEnvironment.*", "GlobalEnvironment"))
                 .Rules();
             services.Add(new ServiceDescriptor(typeof(IRuleBuilderInit), typeof(RuleBuilder), ServiceLifetime.Transient));
-            services.Sitecore().BootstrapProduction(this._serviceProvider);
+            services.Sitecore()
+                .BootstrapProduction(this._serviceProvider)
+                .ConfigureCommercePipelines();
 
             services.AddOData();
             services.AddCors();
@@ -185,12 +189,11 @@ namespace Sitecore.Commerce.Engine
 
             var antiForgeryEnabledSetting = this.Configuration.GetSection("AppSettings:AntiForgeryEnabled").Value;
             this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting);
-            if(this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
-           
+            if (this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+
             services.AddMvc()
                     .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
-            services.ConfigureCartPipelines();
             this._nodeContext.AddObject(services);
         }
 
@@ -241,7 +244,7 @@ namespace Sitecore.Commerce.Engine
                     .AllowAnyMethod());
 
             app.UseAuthentication();
-            
+
             Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.GetPipelineContextOptions())).Wait();
 
             var environmentName = this.Configuration.GetSection("AppSettings:EnvironmentName").Value;
@@ -282,7 +285,7 @@ namespace Sitecore.Commerce.Engine
             if (loggingSettings.Value != null && loggingSettings.Value.ApplicationInsightsLoggingEnabled)
             {
                 loggerFactory.AddApplicationInsights(appInsightsSettings);
-            }          
+            }
         }
 
         /// <summary>

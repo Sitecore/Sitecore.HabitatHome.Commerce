@@ -35,7 +35,8 @@
       "System": "Warning",
       "Microsoft": "Warning"
     },
-    "ApplicationInsightsLoggingEnabled": false
+    "ApplicationInsightsLoggingEnabled": false,
+    "SerilogLoggingEnabled": true
   },
   "Serilog": {
     "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
