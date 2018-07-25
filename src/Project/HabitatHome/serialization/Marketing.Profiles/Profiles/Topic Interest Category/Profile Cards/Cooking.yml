@@ -14,11 +14,7 @@ SharedFields:
         <key name="Newest and Coolest" value="0" />
         <key name="Reliability" value="0" />
         <key name="Smart and Connected" value="0" />
-        <key name="Children" value="0" />
-        <key name="Cleaning" value="0" />
         <key name="Cooking" value="10" />
-        <key name="Entertainment" value="0" />
-        <key name="Safety" value="0" />
       </profile>
     </tracking>
 Languages:
@@ -33,14 +29,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180316T181655Z
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180711T175157Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

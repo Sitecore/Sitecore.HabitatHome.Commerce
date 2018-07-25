@@ -81,8 +81,14 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{99496185-5995-4131-9EBC-4B77C8A3B027}"
+          uid="{561B26D1-ED8E-4A60-9FC1-C082E4A1C3CE}"
           p:before="*"
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ph="/main/sxa-article-content/author-1-" />
+        <r
+          uid="{99496185-5995-4131-9EBC-4B77C8A3B027}"
+          p:after="r[@uid='{561B26D1-ED8E-4A60-9FC1-C082E4A1C3CE}']"
           s:ds=""
           s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
           s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth2={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=1"
@@ -159,25 +165,3 @@ Languages:
     Hint: __Display name
     Value: Choose Your Perfect Wearable
   Versions:
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180628T032943Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180625T182313Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

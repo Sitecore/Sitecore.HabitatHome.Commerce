@@ -35,6 +35,12 @@ SharedFields:
   Value: |
     ar|sitecore\Analytics Testing|pe|+item:create|pd|^*|+item:write|+item:read|+item:rename|+item:delete|+item:create|
 Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Testlaboratorium
+  Versions:
 - Language: en
   Versions:
   - Version: 1

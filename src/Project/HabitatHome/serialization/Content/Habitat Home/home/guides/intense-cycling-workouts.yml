@@ -107,8 +107,14 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{D253855E-4A13-4221-81D4-546E3AE5456B}"
+          uid="{16B220CB-ECA5-46D3-A226-051A8274A1BC}"
           p:before="*"
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+          s:ph="/main/sxa-article-content/author-1-" />
+        <r
+          uid="{D253855E-4A13-4221-81D4-546E3AE5456B}"
+          p:after="r[@uid='{16B220CB-ECA5-46D3-A226-051A8274A1BC}']"
           s:ds="{60D4A835-8064-8348-7CDF-0BAB67141B11}"
           s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
           s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=4"
@@ -244,25 +250,3 @@ Languages:
     Hint: __Display name
     Value: Intense Cycling Workouts
   Versions:
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180628T032948Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180625T182325Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

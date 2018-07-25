@@ -9,6 +9,10 @@ SharedFields:
   Hint: Compatible Renderings
   Type: TreelistEx
   Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{84B8F758-E44C-4D63-99EF-C5FC8807C915}" />
 - ID: "e1d5adba-8348-4127-9bb6-455936653839"
   Hint: CssClass
   Value: "product-item"
@@ -68,14 +72,3 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180625T181855Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous

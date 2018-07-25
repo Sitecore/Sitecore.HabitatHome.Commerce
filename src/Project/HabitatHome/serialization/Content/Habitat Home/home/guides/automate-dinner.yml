@@ -20,49 +20,6 @@ SharedFields:
   Value: |
     <tracking>
       <profile
-        id="538a727f-87c6-4249-810d-0a90ee6ae6db"
-        name="Target Room Category"
-        presets="kitchen|100||">
-        <key
-          name="Bedroom"
-          value="0" />
-        <key
-          name="Kitchen"
-          value="10" />
-        <key
-          name="Laundry"
-          value="0" />
-        <key
-          name="Living Space"
-          value="0" />
-        <key
-          name="Office"
-          value="0" />
-        <key
-          name="Theater"
-          value="0" />
-      </profile>
-      <profile
-        id="552dd90f-a527-438e-ac33-32d236244123"
-        name="Topic Interest Category"
-        presets="cooking|75||smart and connected|25||">
-        <key
-          name="Fitness"
-          value="0" />
-        <key
-          name="Newest and Coolest"
-          value="0" />
-        <key
-          name="Reliability"
-          value="0" />
-        <key
-          name="Smart and Connected"
-          value="2.5" />
-        <key
-          name="Cooking"
-          value="0" />
-      </profile>
-      <profile
         id="54d63273-947a-4927-b21a-0022625315e1"
         name="Electronics Category"
         presets="appliances|100||">
@@ -94,6 +51,58 @@ SharedFields:
           name="TVs"
           value="0" />
       </profile>
+      <profile
+        id="538a727f-87c6-4249-810d-0a90ee6ae6db"
+        name="Target Room Category"
+        presets="kitchen|100||">
+        <key
+          name="Bedroom"
+          value="0" />
+        <key
+          name="Kitchen"
+          value="10" />
+        <key
+          name="Laundry"
+          value="0" />
+        <key
+          name="Living Space"
+          value="0" />
+        <key
+          name="Office"
+          value="0" />
+        <key
+          name="Theater"
+          value="0" />
+      </profile>
+      <profile
+        id="552dd90f-a527-438e-ac33-32d236244123"
+        name="Topic Interest Category"
+        presets="foodie|100||">
+        <key
+          name="Child Safety"
+          value="0" />
+        <key
+          name="Energy Savings"
+          value="0" />
+        <key
+          name="Fitness"
+          value="0" />
+        <key
+          name="Foodie"
+          value="10" />
+        <key
+          name="Newest and Coolest"
+          value="0" />
+        <key
+          name="Overclocking"
+          value="0" />
+        <key
+          name="Reliability"
+          value="0" />
+        <key
+          name="Smart and Connected"
+          value="0" />
+      </profile>
     </tracking>
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
@@ -104,54 +113,11 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{8DA76943-9A3C-44E4-A144-2143FE2CC5AB}"
+          uid="{593E4EF2-CE73-41AE-BDC2-87F2AAEFEA61}"
           p:before="*"
-          s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
-          s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22/column-2-3" />
-        <r
-          uid="{355E0D36-0674-4277-8142-B69FA58C337A}"
-          p:after="r[@uid='{8DA76943-9A3C-44E4-A144-2143FE2CC5AB}']"
-          s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22/column-2-3" />
-        <r
-          uid="{6FBD8816-0A46-4746-97D4-3A322B9CFFB6}"
-          p:after="r[@uid='{355E0D36-0674-4277-8142-B69FA58C337A}']"
-          s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
-          s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22/column-2-3" />
-        <r
-          uid="{79040B81-F520-49C8-BDF8-D970C7CA20BE}"
-          p:after="r[@uid='{6FBD8816-0A46-4746-97D4-3A322B9CFFB6}']"
-          s:ds="{82F5250C-1122-43BD-A5BD-6959376CFFC3}"
-          s:id="{B79DF484-3464-441A-811C-DC1BFEED8CA1}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22/column-2-3" />
-        <r
-          uid="{D70456B1-1108-4B94-9C74-1351E1AC3408}"
-          p:after="r[@uid='{79040B81-F520-49C8-BDF8-D970C7CA20BE}']"
-          s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22/column-1-3" />
-        <r
-          uid="{75C931FD-ACBE-4B50-A991-512896CF75B6}"
-          p:after="r[@uid='{D70456B1-1108-4B94-9C74-1351E1AC3408}']"
-          s:cnd=""
-          s:ds=""
-          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
-          s:mvt=""
-          s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=3"
-          s:ph="/main/sxa-article-content/container-1/container-1/Container-22" />
-        <r
-          uid="{F603DFB4-F73B-45A9-81CA-908A60D1C194}"
-          p:after="r[@uid='{75C931FD-ACBE-4B50-A991-512896CF75B6}']"
-          s:ds="{A9509AA4-9850-5DC7-91AA-6FD8845EE96E}"
-          s:id="{A4946E81-2A46-48D6-988D-81033CC7044B}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;DynamicPlaceholderId=2"
-          s:ph="/main/sxa-article-content/container-1/container-1" />
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/main/sxa-article-content/author-1-" />
         <r
           uid="{68992D6D-03E8-450C-B1DF-2AB41371DFB4}"
           p:after="*[1=2]"
@@ -219,7 +185,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180628T032950Z
+      Value: 20180628T022845Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

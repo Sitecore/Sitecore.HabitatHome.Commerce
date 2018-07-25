@@ -93,8 +93,14 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{5F9AAF8F-68B8-4E3F-86F9-DEBC5D25D5DB}"
+          uid="{DF5412EF-090B-4592-BAF8-E23B7DE8DBBF}"
           p:before="*"
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
+          s:ph="/main/sxa-article-content/author-1-" />
+        <r
+          uid="{5F9AAF8F-68B8-4E3F-86F9-DEBC5D25D5DB}"
+          p:after="r[@uid='{DF5412EF-090B-4592-BAF8-E23B7DE8DBBF}']"
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage&amp;Styles={DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8"
           s:ph="/main/sxa-recommended-content/container-1" />
@@ -221,10 +227,9 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: The Best Child Proof Tablets Around
-- Language: "ja-JP"
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: The Best Child Proof Tablets Around
   Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180711T173737Z

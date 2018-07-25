@@ -81,8 +81,14 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{4AACF56A-384C-4C85-AA47-2A80FA7EBF6B}"
+          uid="{C405DA98-8025-4984-B765-A7E6AD43106D}"
           p:before="*"
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
+          s:ph="/main/sxa-article-content/author-1-" />
+        <r
+          uid="{4AACF56A-384C-4C85-AA47-2A80FA7EBF6B}"
+          p:after="r[@uid='{C405DA98-8025-4984-B765-A7E6AD43106D}']"
           s:ds="local:/Data/Text 3"
           s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
@@ -207,40 +213,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{4AACF56A-384C-4C85-AA47-2A80FA7EBF6B}"
-              s:par="" />
-            <r
-              uid="{7B88D053-7433-49B3-B3B2-CC2165CE5CAA}"
-              s:par="" />
-            <r
-              uid="{F27E6074-78DC-4090-8054-977BA8530943}"
-              s:par="" />
-            <r
-              uid="{5D6D60F2-4864-42A1-9407-073DC0C0B0C2}"
-              s:par="" />
-            <r
-              uid="{468C5377-5E82-4585-AF29-35A4F5F581F0}"
-              s:par="" />
-            <r
-              uid="{D34AAF30-2833-4034-A2A3-E75EC0B9BBF4}"
-              s:par="" />
-            <r
-              uid="{97DE1FA1-907A-435A-9EC2-0A4D5E62B3DE}"
-              s:par="EnabledPlaceholders=1%2c2&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;DynamicPlaceholderId=7" />
-            <r
-              uid="{1F25D62B-72C8-4387-B257-37A8ECDC45CC}"
-              s:par="DynamicPlaceholderId=8" />
-          </d>
-        </r>
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
@@ -386,25 +358,3 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Best In Wearable Fitness Tech
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180628T032925Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180625T182314Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
