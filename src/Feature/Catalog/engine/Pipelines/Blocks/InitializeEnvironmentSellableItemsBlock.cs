@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2017
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
@@ -10,6 +16,15 @@ using Sitecore.Framework.Pipelines;
 
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    /// <summary>
+    /// Defines a block which bootstraps sellable items the Habitat sample environment.
+    /// </summary>
+    /// <seealso>
+    ///     <cref>
+    ///         Sitecore.Framework.Pipelines.PipelineBlock{System.String, System.String,
+    ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
+    ///     </cref>
+    /// </seealso>
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.InitializeSellableItemsBlock)]
     public class InitializeEnvironmentSellableItemsBlock : PipelineBlock<string, string, CommercePipelineExecutionContext>
     {

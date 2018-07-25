@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.UI;
-using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
@@ -12,8 +12,8 @@ namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class ShoppingCartLinesController : BaseCommerceStandardController
     {
-        public ShoppingCartLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, ISearchManager searchManager, IShoppingCartLinesRepository shoppingCartLinesRepository)
-      : base(storefrontContext)
+        public ShoppingCartLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, ISearchManager searchManager, IShoppingCartLinesRepository shoppingCartLinesRepository, IContext context)
+            : base(storefrontContext, context)
         {
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
             Assert.ArgumentNotNull((object)searchManager, nameof(searchManager));

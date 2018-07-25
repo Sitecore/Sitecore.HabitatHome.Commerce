@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Script.Serialization;
-using Sitecore.Commerce.Entities.WishLists;
-using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.Entities.WishLists;   
+using Sitecore.Commerce.XA.Foundation.Common.Context;            
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Diagnostics;
@@ -10,8 +10,8 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
 {
     public class WishListJsonResult : BaseJsonResult
     {
-        public WishListJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider)
-      : base(storefrontContext)
+        public WishListJsonResult(IContext context, IStorefrontContext storefrontContext, IModelProvider modelProvider)
+      : base(context, storefrontContext)
         {
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;

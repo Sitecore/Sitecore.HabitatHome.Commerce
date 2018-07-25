@@ -13,12 +13,14 @@ using Sitecore.HabitatHome.Feature.ProductBundle.Managers;
 using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.ProductBundle.Repositories
 {
     public class ProductBundleRepository : BaseCatalogRepository, IProductBundleRepository
     {
-        public ProductBundleRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IRelatedProductsManager relatedProductsManager, IVariantDefinitionProvider variantDefinitionProvider) : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager)
+        public ProductBundleRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IRelatedProductsManager relatedProductsManager, IVariantDefinitionProvider variantDefinitionProvider, IContext context) 
+            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager, context)
         {
             this.RelatedProductsManager = relatedProductsManager;
         }

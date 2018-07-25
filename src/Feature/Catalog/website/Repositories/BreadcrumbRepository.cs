@@ -3,8 +3,8 @@ using Sitecore.Data.Items;
 using Sitecore.XA.Feature.Navigation.Models;           
 using Sitecore.XA.Foundation.Mvc.Repositories.Base;
 using System.Collections.Generic;
-using System.Linq;
-using Sitecore.Commerce.XA.Foundation.Common;
+using System.Linq;                                  
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
 {
@@ -65,9 +65,9 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
         {                         
             IEnumerable<BreadcrumbRenderingModel> breadcrumb;
 
-            Item rootItem = Context.Database.GetItem(Rendering.Parameters[Sitecore.XA.Feature.Navigation.Constants.BreadcrumbRoot] ?? string.Empty);
+            Item rootItem = Sitecore.Context.Database.GetItem(Rendering.Parameters[Sitecore.XA.Feature.Navigation.Constants.BreadcrumbRoot] ?? string.Empty);
             
-            Item commerceRootItem = Context.Database.GetItem(_storefrontContext.CurrentStorefront.GetStartNavigationCategory());
+            Item commerceRootItem = Sitecore.Context.Database.GetItem(_storefrontContext.CurrentStorefront.GetStartNavigationCategory());
             if (_siteContext.IsCategory || _siteContext.IsProduct)
             {
                 // It's a catalog item so we need to concatenate the ancestors for the catalog with the ancestors on the site itself                                
@@ -91,7 +91,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
             if (!breadcrumbModels.Any())
             {
                 var fakeNav = Enumerable.Empty<BreadcrumbRenderingModel>();
-                if (Context.PageMode.IsExperienceEditor)
+                if (Sitecore.Context.PageMode.IsExperienceEditor)
                 {
                     fakeNav = new FakeBreadcrumbRepository().GetBreadcrumbItems(null, null);
                 }

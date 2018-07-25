@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Script.Serialization;
-using Sitecore.Commerce.Entities.WishLists;
-using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.Entities.WishLists;      
+using Sitecore.Commerce.XA.Foundation.Common.Context;             
 using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -16,8 +16,8 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
 {
     public class WishListLineJsonResult : BaseJsonResult
     {
-        public WishListLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager)
-      : base(storefrontContext)
+        public WishListLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager, IContext context)
+            : base(context, storefrontContext)
         {
             Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
             Assert.ArgumentNotNull((object)searchManager, nameof(searchManager));
@@ -65,10 +65,8 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
             this.Quantity = listLine.Quantity.ToString((IFormatProvider)Context.Language.CultureInfo);
             this.LinePrice = listLine.Product.Price.Amount.ToCurrency();
             this.LineTotal = this.LinePrice;
-            this.DisplayName = listLine.Product.ProductName;
-            var productItem = this.SearchManager.GetProduct(listLine.Product.SitecoreProductItemId.ToString(), this.StorefrontContext.CurrentStorefront.Catalog);
-            var prodId = this.ProductId.Split('|')[0];
-            var productItem2 = this.SearchManager.GetProduct(prodId, this.StorefrontContext.CurrentStorefront.Catalog);
+            this.DisplayName = listLine.Product.ProductName;            
+            var prodId = this.ProductId.Split('|')[0];            
             var imageId = listLine.Product.GetPropertyValue("Image").ToString();
             this.SetImageUrl(imageId);
             this.SetLink(prodId);     

@@ -5,6 +5,7 @@ using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using Sitecore.Commerce.Engine.Connect;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Configuration;
 using Sitecore.Data.Items;

@@ -4,8 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Services;
 using Sitecore.Commerce.Services.Carts;
-using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
-using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Feature.Catalog.Repositories;   
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
@@ -33,14 +33,16 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
             IProductListPageInfoRepository productListPageInfoRepository,
             IProductListItemsPerPageRepository productListItemsPerPageRepository,
             ICatalogItemContainerRepository catalogItemContainerRepository,
-            ICartManager cartManager,
-            IVisitorContext visitorContext,
-            IStorefrontContext storefrontContext, ISiteContext siteContext, IPurchasableProductListRepository purchasableProductListRepository)
+            ICartManager cartManager, IVisitorContext visitorContext, 
+            IVisitedCategoryPageRepository visitedCategoryPageRepository, IVisitedProductDetailsPageRepository visitedProductDetailsPageRepository, 
+            ISearchInitiatedRepository searchInitiatedRepository, IStorefrontContext storefrontContext, 
+            ISiteContext siteContext, IContext context, IPurchasableProductListRepository purchasableProductListRepository)
             : base(modelProvider, productListHeaderRepository, productListRepository, promotedProductsRepository,
-                productInformationRepository, productImagesRepository, productInventoryRepository,
-                productPriceRepository, productVariantsRepository, productListPagerRepository, productFacetsRepository,
-                productListSortingRepository, productListPageInfoRepository, productListItemsPerPageRepository,
-                catalogItemContainerRepository, storefrontContext, siteContext)
+                productInformationRepository, productImagesRepository, productInventoryRepository, productPriceRepository,
+                productVariantsRepository, productListPagerRepository, productFacetsRepository, productListSortingRepository, 
+                productListPageInfoRepository, productListItemsPerPageRepository, catalogItemContainerRepository,
+                visitedCategoryPageRepository,  visitedProductDetailsPageRepository,  searchInitiatedRepository, 
+                storefrontContext, siteContext, context) 
         {
             _cartManager = cartManager;
             _visitorContext = visitorContext;
@@ -48,9 +50,9 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
         }
               
         [HttpPost]                                                                   
-        public JsonResult AddCartLine(string productId, string variantId, string quantity = "1.0")
+        public JsonResult AddCartLine(IContext context,string productId, string variantId, string quantity = "1.0")
         {   
-            BaseJsonResult model = new BaseJsonResult(StorefrontContext);
+            BaseJsonResult model = new BaseJsonResult(context,StorefrontContext);
             CommerceStorefront currentStorefront = StorefrontContext.CurrentStorefront;
             ManagerResponse<CartResult, Cart> currentCart = _cartManager.GetCurrentCart(_visitorContext, StorefrontContext, false);
             if (!currentCart.ServiceProviderResult.Success || currentCart.Result == null)

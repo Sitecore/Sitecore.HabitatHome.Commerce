@@ -4,6 +4,7 @@ using Sitecore.Commerce.Services.Carts;
 using Sitecore.Commerce.XA.Feature.Cart.Models;
 using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
@@ -15,7 +16,7 @@ namespace Sitecore.HabitatHome.Feature.Cart.Repositories
     public class ShoppingCartLinesRepository : BaseCartRepository, IShoppingCartLinesRepository
     {
         public ShoppingCartLinesRepository(IModelProvider modelProvider, ICartManager cartManager, ISiteContext siteContext, IStorefrontContext storefrontContext, ISearchManager searchManager)
-      : base(modelProvider, cartManager, siteContext)
+            : base(modelProvider, cartManager, siteContext)
         {
             this.SearchManager = searchManager;
             this.StorefrontContext = storefrontContext;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Commerce.CustomModels.Outcomes;
+using Sitecore.Commerce.OutcomeData;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 

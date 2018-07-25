@@ -1,14 +1,14 @@
 Param(
-    
+
     [string]$siteName = "habitathome.dev.local",
-    [string]$certificateName = "habitathome.dev.local",
+    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
     [string]$engineHostName = "localhost",
     [string]$identityServerHost = "localhost:5050",
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("CommerceAuthoring", "CommerceMinions", "CommerceOps", "CommerceShops"),
-    [string]$engineSuffix = "habitat",
+    [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
-    [string]$adminUser = "sitecore\admin",
+    [string]$adminUser = "admin",
     [string]$adminPassword = "b",
     [string]$publishFolder = (Join-Path $PWD "publishTemp"),
     [switch]$Initialize,
@@ -17,7 +17,7 @@ Param(
 )
 
 Function Start-CommerceEngineCompile {
-	
+
     $engineSolutionName = "HabitatHome.Commerce.Engine.sln"
     if (Test-Path $publishFolder) {
         Remove-Item $publishFolder -Recurse -Force
@@ -28,12 +28,12 @@ Function Start-CommerceEngineCompile {
 }
 Function  Start-CommerceEnginePepare {
     Write-Host ("Customizing configuration values") -ForegroundColor Green
-	
+
     #   Modify config.json
-    $pathToJson = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\config.json") 
-    
+    $pathToJson = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\config.json")
+
     $config = Get-Content $pathToJson -Raw | ConvertFrom-Json
-  
+
     $certPrefix = "CN="
     $fullCertificateName = $certPrefix + $certificateName
 
@@ -42,13 +42,14 @@ Function  Start-CommerceEnginePepare {
     $certificateNode.Thumbprint = $thumbprint.Thumbprint
 
     $appSettings = $config.AppSettings
+    $appSettings.EnvironmentName = "HabitatAuthoring"
     $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('localhost', $engineHostName)
     $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('habitathome.dev.local', $siteName)
     $appSettings.SitecoreIdentityServerUrl = ("https://{0}" -f $identityServerHost)
     $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
-    
+
     #   Modify PlugIn.Content.PolicySet
-    $pathToContentPolicySet = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\data\environments\PlugIn.Content.PolicySet-1.0.0.json") 
+    $pathToContentPolicySet = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\data\environments\PlugIn.Content.PolicySet-1.0.0.json")
     $contentPolicySet = Get-Content $pathToContentPolicySet -Raw | ConvertFrom-Json
     $contentPolicySet.Policies.'$values'[0].Host = $siteName
     $contentPolicySet.Policies.'$values'[0].username = $adminUser
@@ -58,7 +59,7 @@ Function  Start-CommerceEnginePepare {
 Function Publish-CommerceEngine {
     Write-Host ("Deploying Commerce Engine") -ForegroundColor Green
     IISRESET /STOP
-    
+
     foreach ($engine in $engines) {
         Write-Host ("Copying to {0}" -f $engine) -ForegroundColor Green
         if ($engineSuffix.length -gt 0) {
@@ -68,60 +69,59 @@ Function Publish-CommerceEngine {
             $engineWebRoot = (Join-Path $webRoot ("{0}" -f $engine) )
         }
         $engineWebRootBackup = ("{0}_backup" -f $engineWebRoot)
-        
+
         if (Test-Path $engineWebRootBackup -PathType Container) {
             Remove-Item $engineWebRootBackup -Recurse -Force
         }
-        
-        Rename-Item $engineWebRoot -NewName $engineWebRootBackup 
+
+        Rename-Item $engineWebRoot -NewName $engineWebRootBackup
         Get-ChildItem $engineWebRoot -Recurse | ForEach-Object {Remove-Item $_.FullName -Recurse}
         Copy-Item -Path "$publishFolder" -Destination $engineWebRoot -Container -Recurse -Force
     }
-    
+
 
     IISRESET /START
 
     Start-Sleep 10
 }
 Function Get-IdServerToken {
-  
     $UrlIdentityServerGetToken = ("https://{0}/connect/token" -f $identityServerHost)
- 
+
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Content-Type", 'application/x-www-form-urlencoded')
     $headers.Add("Accept", 'application/json')
-    
+
     $body = @{
         password   = "$adminPassword"
         grant_type = 'password'
-        username   = ("{0}" -f $adminUser)
+        username   = ("sitecore\{0}" -f $adminUser)
         client_id  = 'postman-api'
         scope      = 'openid EngineAPI postman_api'
     }
     Write-Host "Getting Identity Token From Sitecore.IdentityServer" -ForegroundColor Green
     $response = Invoke-RestMethod $UrlIdentityServerGetToken -Method Post -Body $body -Headers $headers
- 
+
     $sitecoreIdToken = "Bearer {0}" -f $response.access_token
- 
+
     $global:sitecoreIdToken = $sitecoreIdToken
 }
 Function CleanEnvironment {
     Write-Host "Cleaning Environments" -ForegroundColor Green
     $initializeParam = "/commerceops/CleanEnvironment()"
     $initializeUrl = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, $initializeParam)
-    
+
     $Environments = @("HabitatAuthoring")
-    
+
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     Write-Host $global:sitecoreIdToken
     $headers.Add("Authorization", $global:sitecoreIdToken);
-  
+
     foreach ($env in $Environments) {
         Write-Host "Cleaning $($env) ..." -ForegroundColor Yellow
         $body = @{
             environment = $env
         }
-    
+
         $result = Invoke-RestMethod $initializeUrl -TimeoutSec 1200 -Method Post -Headers $headers -Body ($body | ConvertTo-Json) -ContentType "application/json"
         if ($result.ResponseCode -eq "Ok") {
             Write-Host "Cleaning for $($env) completed successfully" -ForegroundColor Green
@@ -133,12 +133,11 @@ Function CleanEnvironment {
     }
 }
 Function BootStrapCommerceServices {
-    
+
     Write-Host "BootStrapping Commerce Services: $($urlCommerceShopsServicesBootstrap)" -ForegroundColor Green
-	
+
     $UrlCommerceShopsServicesBootstrap = ("https://{0}:{1}/commerceops/Bootstrap()" -f $engineHostName, $CommerceOpsPort)
-	
-    
+
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken)
     Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
@@ -148,10 +147,10 @@ Function InitializeCommerceServices {
     Write-Host "Initializing Environments" -ForegroundColor Green
     $initializeParam = "/commerceops/InitializeEnvironment(environment='envNameValue')"
     $UrlInitializeEnvironment = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, $initializeParam)
-    $UrlCheckCommandStatus = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, "/commerceops/CheckCommandStatus(taskId=taskIdValue)") 
-    
+    $UrlCheckCommandStatus = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
+
     $Environments = @("HabitatAuthoring")
-    
+
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken);
 
@@ -181,7 +180,7 @@ Function InitializeCommerceServices {
         Write-Host "Initialization for $($env) completed ..." -ForegroundColor Green
     }
 
-    Write-Host "Initialization completed ..." -ForegroundColor Green 
+    Write-Host "Initialization completed ..." -ForegroundColor Green
 }
 if ($DeployOnly) {
 
@@ -192,7 +191,7 @@ if (!($SkipPublish)) {
     Publish-CommerceEngine
 }
 if ($Bootstrap -or $Initialize) {
-    Get-IdServerToken   
+    Get-IdServerToken
 }
 
 if ($Bootstrap) {

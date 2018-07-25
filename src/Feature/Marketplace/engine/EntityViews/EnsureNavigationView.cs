@@ -46,15 +46,15 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 return entityView;
             }
 
-            var pluginPolicy = context.GetPolicy<PluginPolicy>();
+            var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
 
             var userPluginOptions = await this._commerceCommander.Command<PluginCommander>()
                 .CurrentUserSettings(context.CommerceContext, this._commerceCommander);
             if (userPluginOptions.EnabledPlugins.Contains("Sitecore.HabitatHome.Feature.Ebay.Engine"))
             {
-                if (userPluginOptions.HasPolicy<PluginPolicy>())
+                if (userPluginOptions.HasPolicy<Policies.PluginPolicy>())
                 {
-                    pluginPolicy = userPluginOptions.GetPolicy<PluginPolicy>();
+                    pluginPolicy = userPluginOptions.GetPolicy<Policies.PluginPolicy>();
                 }
                 else
                 {

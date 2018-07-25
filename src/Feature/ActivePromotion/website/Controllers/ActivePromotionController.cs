@@ -11,12 +11,14 @@ using Sitecore.Diagnostics;
 using Sitecore.HabitatHome.Feature.ActivePromotion.Repositories;
 using Sitecore.Commerce.Plugin.Promotions;
 using Sitecore.Commerce.Core.Commands;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.ActivePromotion.Controllers
 {
     public class ActivePromotionController : BaseCommerceStandardController
     {
-        public ActivePromotionController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IActivePromotionRepository activePromotionRepository) : base(storefrontContext)
+        public ActivePromotionController(IContext context, IStorefrontContext storefrontContext, IVisitorContext visitorContext, IActivePromotionRepository activePromotionRepository) : 
+            base(storefrontContext, context)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            
