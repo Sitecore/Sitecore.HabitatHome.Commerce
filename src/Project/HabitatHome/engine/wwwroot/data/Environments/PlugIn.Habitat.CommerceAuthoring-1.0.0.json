@@ -126,24 +126,6 @@
         }
       },
       {
-        "$type": "Plugin.Sample.Customers.CsMigration.ProfilesSqlPolicy, Plugin.Sample.Customers.CsMigration",
-        "Server": ".",
-        "Database": "SXAStorefrontSite_profiles",
-        "TrustedConnection": true,
-        "UserName": "",
-        "Password": ""
-      },
-      {
-        "$type": "Plugin.Sample.Customers.CsMigration.ProfilePropertiesMappingPolicy, Plugin.Sample.Customers.CsMigration",
-        "UserProperties": {
-          "GeneralInfo.language": "Language",
-          "GeneralInfo.tel_number": "PhoneNumber"
-        },
-        "AddressProperties": {
-          "ProfileSystem.user_id_changed_by": "ChangedBy"
-        }
-      },
-      {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-AccessByRolesPolicySet"
       },

@@ -1,0 +1,33 @@
+﻿---
+ID: "29fd4755-2fe8-4a2a-9fa3-691f31977d23"
+Parent: "1bbe8ae8-3127-46c4-b6c4-d1c902d009f6"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/watch-out-on-tablets/Data/Fuzzy Headphones details link"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180620T185947Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Details" querystring="" target="" id="{D1E88149-088D-2081-D67F-FEE1E4451602}" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T173742Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

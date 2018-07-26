@@ -1,0 +1,30 @@
+﻿---
+ID: "0ea4b329-07c9-434b-a2b8-d95659943ea8"
+Parent: "e0790be4-9429-4f3e-9b52-5e65a9d6ea03"
+Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Running Types/Pattern Cards/Getting Started Runner
+DB: master
+SharedFields:
+- ID: "6da71ad3-5849-4482-9317-d21390e5a348"
+  Hint: Pattern
+  Value: |
+    <tracking>
+      <profile id="cb14aa6f-6b2e-4970-87ee-28af1c6d8376" name="Running Types">
+        <key name="Advanced" value="0" />
+        <key name="Beginner" value="10" />
+        <key name="Intermediate" value="0" />
+        <key name="Master" value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Fields:
+  - ID: "fe732790-2ddb-4657-a882-c2fce1fbf0c9"
+    Hint: Name
+    Value: Getting Started Runner
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T175334Z

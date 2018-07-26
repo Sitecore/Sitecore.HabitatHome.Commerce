@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Script.Serialization;
 using Sitecore.Commerce.Entities.WishLists;   
-using Sitecore.Commerce.XA.Foundation.Common.Context;
-using Sitecore.Commerce.XA.Foundation.Common.Context;
+using Sitecore.Commerce.XA.Foundation.Common.Context;            
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Diagnostics;

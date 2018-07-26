@@ -14,7 +14,7 @@ namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Repositories
     public interface IProductRelatedContentRepository
     {
         CatalogItemRenderingModel GetProductRelatedContentRenderingModel(IVisitorContext visitorContext);
-        IEnumerable<RelatedProductJsonResult> GetRelatedProducts(IModelProvider modelProvider, IStorefrontContext storefrontContext, IVisitorContext visitorContext, string productId);
+        IEnumerable<RelatedProductJsonResult> GetRelatedProducts(IModelProvider modelProvider, IStorefrontContext storefrontContext, IVisitorContext visitorContext, string productId, string productListId);
         IEnumerable<RelatedProductJsonResult> GetCrossSellProducts(IModelProvider modelProvider, IStorefrontContext storefrontContext, IVisitorContext visitorContext, string productId);
         IEnumerable<RelatedProductJsonResult> GetUpSellProducts(IModelProvider modelProvider, IStorefrontContext storefrontContext, IVisitorContext visitorContext, string productId);
         IEnumerable<ProductDocumentJsonResult> GetProductDocuments(IModelProvider modelProvider, IStorefrontContext storefrontContext, IVisitorContext visitorContext, string productId);

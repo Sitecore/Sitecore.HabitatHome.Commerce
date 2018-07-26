@@ -1,0 +1,33 @@
+﻿---
+ID: "bfda4a20-78aa-45e8-acfe-d2dde5bc3918"
+Parent: "f23b5a5b-aa4b-4f29-b980-bb14ac53b64f"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/the-best-child-proof-tablets-around/Data/Minnows 8gb wifi link"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180620T175306Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Details" querystring="" target="" id="{0A7610A5-FC05-1BA9-C874-B9EECD55A339}" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T173738Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

@@ -10,11 +10,11 @@ using Sitecore.Commerce.Entities.Prices;
 using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Pipelines;
 using Sitecore.Commerce.Plugin.Carts;
-using Sitecore.Commerce.Plugin.Catalog;
-using Sitecore.Commerce.ServiceProxy;
+using Sitecore.Commerce.Plugin.Catalog;     
 using Sitecore.Commerce.Services;
 using Sitecore.Data;
-using Sitecore.Diagnostics;
+using Sitecore.Diagnostics;                                           
+using Sitecore.Commerce.ServiceProxy;
 
 namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {

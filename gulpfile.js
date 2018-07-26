@@ -13,7 +13,7 @@ var msbuild = require("gulp-msbuild");
 let flatmap = require("gulp-flatmap");
 var debug = require("gulp-debug");
 //var util = require("gulp-util");
-//var get = require("simple-get");
+var get = require("simple-get");
 
 var config;
 if (fs.existsSync("./gulp-config.user.js")) {
@@ -50,9 +50,9 @@ gulp.task("Deploy-EXM-Campaigns",
     function () {
         console.log("Deploying EXM Campaigns");
 
-        var url = config.instanceUrl + "utilities/deployemailcampaigns.aspx?apiKey=97CC4FC13A814081BF6961A3E2128C5B";
-        console.log("Deploying EXM Campaigns at " + url);
-        get({
+        const url = config.instanceUrl + "utilities/deployemailcampaigns.aspx?apiKey=97CC4FC13A814081BF6961A3E2128C5B";
+        console.log(`Deploying EXM Campaigns at ${url}`);
+        return get({
             url: url,
             "rejectUnauthorized": false
         }, function (err, res) {
@@ -66,9 +66,9 @@ gulp.task("Rebuild-Core-Index",
     function () {
         console.log("Rebuilding Index Core");
 
-        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_core_index";
+        const url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_core_index";
 
-        get({
+        return get({
             url: url,
             "rejectUnauthorized": false
         }, function (err, res) {
@@ -82,9 +82,9 @@ gulp.task("Rebuild-Master-Index",
     function () {
         console.log("Rebuilding Index Master");
 
-        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_master_index";
+        const url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_master_index";
 
-        get({
+        return get({
             url: url,
             "rejectUnauthorized": false
         }, function (err, res) {
@@ -98,9 +98,9 @@ gulp.task("Rebuild-Web-Index",
     function () {
         console.log("Rebuilding Index Web");
 
-        var url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_web_index";
+        const url = config.instanceUrl + "utilities/indexrebuild.aspx?index=sitecore_web_index";
 
-        get({
+       return  get({
             url: url,
             "rejectUnauthorized": false
         }, function (err, res) {
@@ -110,26 +110,26 @@ gulp.task("Rebuild-Web-Index",
         });
     });
 
-    gulp.task("Copy-Sitecore-Lib", function (callback) {
-        console.log("Copying Sitecore Commerce XA Libraries");
-    
-        fs.statSync(config.sitecoreLibraries);
-        var commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
-        return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
-    });
-    
+gulp.task("Copy-Sitecore-Lib", function (callback) {
+    console.log("Copying Sitecore Commerce XA Libraries");
+
+    fs.statSync(config.sitecoreLibraries);
+    const commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
+    return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
+});
 
 
-    gulp.task("Apply-Xml-Transform",
+
+gulp.task("Apply-Xml-Transform",
     function () {
-        var layerPathFilters = [
+        const layerPathFilters = [
             "./src/Foundation/**/*.xdt", "./src/Feature/**/*.xdt", "./src/Project/**/*.xdt",
             "!./src/**/obj/**/*.xdt", "!./src/**/bin/**/*.xdt", "!./src/**/packages/**/*.xdt"
         ];
         return gulp.src(layerPathFilters)
             .pipe(flatmap(function (stream, file) {
-                var fileToTransform = file.path.replace(/.+website\\(.+)\.xdt/, "$1");
-                debug("Applying configuration transform: " + file.path);
+                const fileToTransform = file.path.replace(/.+website\\(.+)\.xdt/, "$1");
+                debug(`Applying configuration transform: ${file.path}`);
                 return gulp.src("./scripts/applytransform.targets")
                     .pipe(msbuild({
                         targets: ["ApplyTransform"],
@@ -153,7 +153,7 @@ gulp.task("Rebuild-Web-Index",
 
 gulp.task("Sync-Unicorn",
     function (callback) {
-        var options = {};
+        const options = {};
         options.siteHostName = habitat.getSiteUrl();
         options.authenticationConfigFile = config.websiteRoot + "/App_config/Include/Unicorn.SharedSecret.config";
         options.maxBuffer = Infinity;
@@ -184,40 +184,39 @@ gulp.task("default",
         }));
 
 gulp.task("quick-deploy",
-    function (callback) {
-        return gulp.series(
-            "Copy-Sitecore-Lib",
-            "Publish-Website-Projects",
-            "Apply-Xml-Transform",
-            "Publish-Transforms",
-            callback)();
-    });
+    gulp.series(
+        "Copy-Sitecore-Lib",
+        "Publish-Website-Projects",
+        "Apply-Xml-Transform",
+        "Publish-Transforms",
+        function (done) {
+            done();
+        }));
 
 gulp.task("initial",
-    function (callback) {
-        return gulp.series(
-            "Copy-Sitecore-Lib",
-            "Publish-Website-Projects",
-            "Apply-Xml-Transform",
-            "Publish-Transforms",
-            "Sync-Unicorn",
-            "Deploy-EXM-Campaigns",
-            "Rebuild-Core-Index",
-            "Rebuild-Master-Index",
-            "Rebuild-Web-Index",
-            callback)();
-    });
+    gulp.series(
+        "Copy-Sitecore-Lib",
+        "Publish-Website-Projects",
+        "Apply-Xml-Transform",
+        "Publish-Transforms",
+        "Sync-Unicorn",
+        "Deploy-EXM-Campaigns",
+        "Rebuild-Core-Index",
+        "Rebuild-Master-Index",
+        "Rebuild-Web-Index",
+        function (done) {
+            done();
+        }));
 
 gulp.task("publish",
-    function (callback) {
-        config.runCleanBuilds = true;
-        return gulp.series(
-            "Copy-Sitecore-Lib",
-            "Publish-All-Projects",
-            "Apply-Xml-Transform",
-            "Publish-Transforms",
-            callback)();
-    });
+    gulp.series(
+        "Copy-Sitecore-Lib",
+        "Publish-Website-Projects",
+        "Apply-Xml-Transform",
+        "Publish-Transforms",
+        function (done) {
+            done();
+        }));
 
 /*****************************
   Initial setup
@@ -231,7 +230,7 @@ gulp.task("publish",
 
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
-    var layerPathFilters = [
+    const layerPathFilters = [
         location + "/**/Website/**/*.csproj", "!" + location + "/**/Website/**/*WishLists*.csproj"
     ];
     return gulp.src(layerPathFilters)
@@ -243,7 +242,7 @@ var publishProjects = function (location) {
 
 
 var publishStream = function (stream) {
-    var targets = ["Build"];
+    const targets = ["Build"];
 
     return stream
         .pipe(debug({

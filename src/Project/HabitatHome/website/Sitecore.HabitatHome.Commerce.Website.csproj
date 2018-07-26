@@ -83,9 +83,9 @@
     <Content Include="App_Config\Include\Project\HabitatHome.Website.Serialization.config" />
     <Content Include="App_Config\Include\Project\HabitatHome.Website.config" />
     <Content Include="App_Config\Include\Project\z.HabitatHome.Commerce.Website.DevSettings.config" />
-    <Content Include="web.config.xdt">
+    <None Include="web.config.xdt">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
