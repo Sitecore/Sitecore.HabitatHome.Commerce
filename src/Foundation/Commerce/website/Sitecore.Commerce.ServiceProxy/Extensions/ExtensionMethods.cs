@@ -4,8 +4,6 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using Sitecore.HabitatHome.Foundation.Commerce.ServiceProxy.Website;
-
 namespace Sitecore.Commerce.ServiceProxy.Extensions
 {
     using System;

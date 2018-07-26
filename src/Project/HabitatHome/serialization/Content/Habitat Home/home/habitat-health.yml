@@ -101,16 +101,17 @@ Languages:
                     </actions>
                     <conditions>
                       <or
-                        uid="9D80CB26D2DE4CD48B7968BF86308BB1">
-                        <condition
-                          uid="E0247277EB1246A3A0F0B539168676D8"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="1893F3ED10B14CBEBADF5191FFD19F90">
                         <condition
                           uid="B4C5E093A2B14824920AC5A9A5B68E9E"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="2CBF0CAD966C4277ADDF06774133C7EA"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                       </or>
                     </conditions>
                   </rule>
@@ -119,16 +120,17 @@ Languages:
                     s:name="Hero - Fitness">
                     <conditions>
                       <or
-                        uid="A42A8DE790464281B17001699CBF11D9">
-                        <condition
-                          uid="712493F5119A40DEBA5D5C378C159DF3"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="C3B657D5CB2C4E19B009F334606A9C6D">
                         <condition
                           uid="11267AD14C944DAF9CA99E6721A677B8"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="9B9CD6AE929D4C33A999E93E10AC073F"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                       </or>
                     </conditions>
                     <actions>
@@ -165,16 +167,17 @@ Languages:
                     s:name="Fitness">
                     <conditions>
                       <or
-                        uid="28340F5BA59A4F4C8565E7BACCFC8AB4">
-                        <condition
-                          uid="6D1B6BBB07764EF08930CFE300DF74B7"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="7F5707C952944A4086A0CF11EA07CD90">
                         <condition
                           uid="BC10F16C504D4CB7B3BC01F88942F37F"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                       </or>
                     </conditions>
                     <actions>
@@ -189,16 +192,17 @@ Languages:
                     s:name="Foodie">
                     <conditions>
                       <or
-                        uid="EFF12D26AC704DA494E832DAFC4B84E5">
-                        <condition
-                          uid="757434508EA84E09A0D715BC5C9F221B"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="4D18B944CA274C4EB428EE48529D897C">
                         <condition
                           uid="EF54D122670F4DBAB8DE4FC433F9D445"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="FC03F6759CC7404B8204575A3062D01F"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                       </or>
                     </conditions>
                     <actions>
@@ -235,16 +239,17 @@ Languages:
                     s:name="Social - Foodie">
                     <conditions>
                       <or
-                        uid="6205D5BFE72143CA84D5CCE5E882066D">
-                        <condition
-                          uid="5857751A93AD4AC8A3AAB7ACF7D94F38"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="BB340C64C58544749E7F37CC03FC2E07">
                         <condition
                           uid="AA31BE03096F4E698396B76480DCF5B7"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="99AB5D046A43498185EFBF35AA642B01"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                       </or>
                     </conditions>
                     <actions>
@@ -338,16 +343,17 @@ Languages:
                     s:name="SHOW Foodie Feast">
                     <conditions>
                       <or
-                        uid="609F91FEABF342B6A8AF6A17C5A3F384">
-                        <condition
-                          uid="77F4F6C9F7E2479A8E97020AF5C3CF5C"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="E2CC4BBBAC3B4B55B0B57D4DA8B78A72">
                         <condition
                           uid="94C65C74BA114ADE8C29CF629948665D"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="B52A75B5430247038C40617FE24848FA"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                       </or>
                     </conditions>
                   </rule>
@@ -382,16 +388,17 @@ Languages:
                     s:name="Search - Fitness">
                     <conditions>
                       <or
-                        uid="B4FFBC06C64A4633BF5BE6EE6C2AC8EB">
-                        <condition
-                          uid="31DEDCCB4E684D6BB07A8245888E2D77"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="6AF243B1894E4D5AB6AD7EE55A48001B">
                         <condition
                           uid="C436EF2B29D649368D088919C79E6B4F"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="6354D33527E64D0A8DB7DD28E8995F27"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                       </or>
                     </conditions>
                     <actions>
@@ -427,16 +434,17 @@ Languages:
                     s:name="Show For Foodie">
                     <conditions>
                       <or
-                        uid="FD8183455F1C49589DD8F89188CFCEE2">
-                        <condition
-                          uid="5C5F71F1E81945FBA837B35021949396"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="04606F10AB9D41AEBFAC5842C55A75A7">
                         <condition
                           uid="A0E06DD5C62F4E95A6D157BD93E478F5"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="CA58A0A77E574D94B76FFBFC91CC4574"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                       </or>
                     </conditions>
                   </rule>
@@ -510,16 +518,17 @@ Languages:
                     s:name="Social - Foodie">
                     <conditions>
                       <or
-                        uid="C85C42C132C6407AA79A10FCA3173BA7">
-                        <condition
-                          uid="A4D76A057CE14007957761E644D82608"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="F0457885C1CC4DFDBA25151E289DECB6">
                         <condition
                           uid="722C5B911F944943A0DD75B7D4FB4C49"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="581FB4DCB7CA4782923D3E40C01ED2AE"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>
@@ -534,16 +543,17 @@ Languages:
                     s:name="Search - Fitness">
                     <conditions>
                       <or
-                        uid="8897EF77FA454D7E9C901AE4F637751A">
-                        <condition
-                          uid="0125E34790E0482481F50F1741A01092"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="5E77FE909AF141D398F63E43F657BF81">
                         <condition
                           uid="777969FA39C14AAF9EA6FCDA5CD51131"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="E2FD870A7AA64291B176B86BECA88A6A"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>
@@ -683,10 +693,19 @@ Languages:
                     uid="{016C10C2-2313-4922-8500-C5DC90DABEF9}"
                     s:name="Social - Foodie">
                     <conditions>
-                      <condition
-                        uid="279B0DF388F7439F9BE69BD07292FB5D"
-                        s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                        s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                      <or
+                        uid="978265EDFD8C4B74BAE165FE95D7D07F">
+                        <condition
+                          uid="CAD1A53A7A39444091BD1A110D3C9560"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                        <condition
+                          uid="4C27D222FFFA405097C2E356FDEC784A"
+                          s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                          s:ProfileName="Topic Interest Category"
+                          s:PatternName="Cooking" />
+                      </or>
                     </conditions>
                     <actions>
                       <action
@@ -735,16 +754,17 @@ Languages:
                     s:name="Foodie">
                     <conditions>
                       <or
-                        uid="EBA08E943D154DC481F4EC3DBE168928">
-                        <condition
-                          uid="682259D534004457BD17F79FDB9A69E4"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="BA475E28771B43108825C5F1CBD6DFD1">
                         <condition
                           uid="B8BE4BA6CA8D4524BA55FE39115CD680"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="CF9230EB171441368AB40D6F2FA9ACFA"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>
@@ -759,16 +779,17 @@ Languages:
                     s:name="Search - Fitness">
                     <conditions>
                       <or
-                        uid="E7D2767D45634424993F89FA659C47F2">
-                        <condition
-                          uid="C84D847D71934E24AA35B171987B23F8"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="7495A12CF7DD4C039CD87DE7EC6BAB1B">
                         <condition
                           uid="BD9D7D2AE6A84BBBB7141A591E8C5ED2"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="DE4784808EBE4F8E81960F3093D4377E"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>
@@ -810,16 +831,17 @@ Languages:
                     s:name="Foodie">
                     <conditions>
                       <or
-                        uid="CC4F396587794CDDAEBAFA7E8DCED7A6">
-                        <condition
-                          uid="2820A14E670C4D898F637EB5F8E25D83"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                        uid="EC7D2E953B1949E39E7F24DCA299D6C2">
                         <condition
                           uid="50625FD0116E4C04AB720B627DE3E562"
                           s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Frank Foodie" />
+                          s:PatternName="Cooking" />
+                        <condition
+                          uid="1E0DC91F725D4701A414E12828F21AF2"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>
@@ -834,16 +856,17 @@ Languages:
                     s:name="Search - Fitness">
                     <conditions>
                       <or
-                        uid="24FF534EC08A45608C674F3027569E8B">
-                        <condition
-                          uid="63640021A6FB48908828ED03CF21FE66"
-                          s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                          s:CampaignId="{0292C2AA-99EE-4010-86B9-1B862BBA99CA}" />
+                        uid="4A030A414FEF43E98791CCC54388E5E8">
                         <condition
                           uid="D726B1A189584C92A1524644D9FF69F4"
                           s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                           s:ProfileName="Topic Interest Category"
-                          s:PatternName="Francine Fitness" />
+                          s:PatternName="Fitness" />
+                        <condition
+                          uid="5E3D6C3F2036420F989EABD6947E3753"
+                          s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                          s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                          s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       </or>
                     </conditions>
                     <actions>

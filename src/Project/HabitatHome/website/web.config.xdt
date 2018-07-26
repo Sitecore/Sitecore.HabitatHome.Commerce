@@ -41,5 +41,9 @@
         </assemblyBinding>
     </runtime>
 
+    <system.web xdt:Transform="InsertIfMissing">
+        <sessionState timeout="20" xdt:Transform="Replace"/>
+    </system.web>
+
 
 </configuration>

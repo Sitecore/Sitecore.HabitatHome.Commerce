@@ -8,6 +8,9 @@ SharedFields:
 - ID: "0e23bb51-c071-41b5-9d83-ac410b89b85a"
   Hint: Parameters
   Value: producttags_sm
+- ID: "8a3ac1b8-8cc1-4dd4-8766-9803f1601741"
+  Hint: Minimum Number of Items
+  Value: 4
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200

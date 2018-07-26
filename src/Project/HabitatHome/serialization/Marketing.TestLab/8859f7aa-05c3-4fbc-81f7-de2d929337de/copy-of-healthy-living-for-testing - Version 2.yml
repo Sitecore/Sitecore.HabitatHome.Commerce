@@ -1,0 +1,36 @@
+﻿---
+ID: "5710adda-c9fd-461d-943f-38a5d6f054c8"
+Parent: "8859f7aa-05c3-4fbc-81f7-de2d929337de"
+Template: "1c7896ce-1723-4e58-9bc6-f319be39d6bf"
+Path: "/sitecore/system/Marketing Control Panel/Test Lab/2018/06/28/16/58/copy-of-healthy-living-for-testing 87C5C6A3B01D42E6BE11E9B56B14A2EF/Version/copy-of-healthy-living-for-testing - Version 2"
+DB: master
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: "copy-of-healthy-living-for-testing - Version 2"
+- ID: "cbe25853-2a04-4393-8440-109781f10379"
+  Hint: Datasource
+  Value: "sitecore://{1ED8F8F1-DD86-467C-AFFD-3ACFDD3C3633}?lang=en&ver=2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180628T165829Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T175315Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

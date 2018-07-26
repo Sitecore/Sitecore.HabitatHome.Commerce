@@ -47,7 +47,7 @@
     <PackageReference Include="Microsoft.Net.Compilers" Version="2.4.0" />
     <PackageReference Include="Microsoft.OData.Core" Version="7.3.1" />
     <PackageReference Include="Microsoft.OData.Edm" Version="7.3.1" />
-    <PackageReference Include="Microsoft.Spatial" Version="7.4.4" />
+    <PackageReference Include="Microsoft.Spatial" Version="7.3.1" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="11.2.83" />
     <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="2.2.86" />

@@ -5,11 +5,33 @@
 @using Sitecore.HabitatHome.Feature.ProductRelatedContent.Models
 @using Sitecore.Mvc
 @using Sitecore.Data.Items
+@using Sitecore.Mvc.Extensions
+@using Sitecore.Mvc.Presentation
 @model  CatalogItemRenderingModel
+@{ 
+    Rendering rendering = RenderingContext.CurrentOrNull.ValueOrDefault(context => context.Rendering);
+    string dsId = !String.IsNullOrEmpty(rendering.DataSource) ? rendering.Item.ID.ToString() : String.Empty;
+    var deskTopCols = rendering.Parameters["GridParameters"];
 
+    var dtCols = deskTopCols.Split('|');
+    Item mobileGridItem = dtCols.Count() > 0 ? Sitecore.Context.Database.GetItem(dtCols[0]) : null;
+    Item tabletGridItem = dtCols.Count() > 1 ? Sitecore.Context.Database.GetItem(dtCols[1]) : null;
+    Item desktopGridItem = dtCols.Count() > 2 ? Sitecore.Context.Database.GetItem(dtCols[2]) : null;
+    Item largeGridItem = dtCols.Count() > 3 ? Sitecore.Context.Database.GetItem(dtCols[3]) : null;
+
+    string mobileClass = mobileGridItem != null ? mobileGridItem["Class"] : "";
+    string tabletClass = tabletGridItem != null ? tabletGridItem["Class"] : "";
+    string desktopClass = desktopGridItem != null ? desktopGridItem["Class"] : "";
+    string largeClass = largeGridItem != null ? largeGridItem["Class"] : "";
+
+
+
+}
 <div id="divProductRelatedContent" class="component cxa-product-related-content-component">
     <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
     <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
+    <input type="hidden" value="@dsId" id="personalized-product-list" />
+
     <div class="component-content related-content-tabs" style="display:none;">
 
         <ul class="nav nav-tabs" role="tablist">
@@ -23,10 +45,10 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="relatedProducts" data-bind="visible:RelatedProductsList().length > 0 || CrossSellProductsList().length > 0 || UpSellProductsList().length > 0">
-                <div data-bind="visible:RelatedProductsList().length > 0" class="related-products-list">
-               
+                <div data-bind="visible:RelatedProductsList().length > 0" class="related-products-list" style="margin-top:15px;">
+
                     <div class="row" data-bind="foreach:RelatedProductsList">
-                        <div class="col-xs-12 col-md-4 related-content-product">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product">
                             <div style="padding:10px;">
                                 <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
                                 <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
@@ -36,11 +58,11 @@
                     </div>
                     <hr />
                 </div>
-                <div data-bind="visible:CrossSellProductsList().length > 0" class="related-products-list">
-       
+                <div data-bind="visible:CrossSellProductsList().length > 0" class="related-products-list"style="margin-top:15px;">
+
                     <label><b>Don't forget about these products</b></label>
                     <div class="row" data-bind="foreach:CrossSellProductsList">
-                        <div class="col-xs-12 col-md-4 related-content-product-cross">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product-cross">
                             <div style="padding:10px;">
                                 <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
                                 <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
@@ -51,12 +73,12 @@
                     <hr />
                 </div>
 
-                <div data-bind="visible:UpSellProductsList().length > 0" class="related-products-list">
-                
+                <div data-bind="visible:UpSellProductsList().length > 0" class="related-products-list" style="margin-top:15px;">
+
                     <label><b>Be sure to add these products</b></label>
 
                     <div class="row" data-bind="foreach:UpSellProductsList">
-                        <div class="col-xs-12 col-md-4 related-content-product-up">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product-up">
                             <div style="padding:10px;">
                                 <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
                                 <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
