@@ -69,6 +69,23 @@ Languages:
                 boost="50" />
             </actions>
           </rule>
+          <rule
+            uid="{1B16A2D5-C74A-4B53-98E0-1F59BB98D999}">
+            <conditions>
+              <condition
+                id="{61C016A2-5210-4F1D-A663-BDA18BE487F6}"
+                uid="D18900C885724D728CCBFB233616E168"
+                fieldname="_templatename"
+                operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}"
+                value="Commerce Product" />
+            </conditions>
+            <actions>
+              <action
+                id="{9A00D97A-E3A8-4011-B519-FEB70E80EA54}"
+                uid="8E8341D338AA4CFEABAC860F7B7BA557"
+                boost="200" />
+            </actions>
+          </rule>
         </ruleset>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created

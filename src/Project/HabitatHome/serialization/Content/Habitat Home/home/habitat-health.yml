@@ -896,6 +896,22 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7BE3A70BD6-DADC-43CA-9941-EEC8F3E02B93%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
+            <r
+              uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180315T020621Z
