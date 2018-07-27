@@ -20,7 +20,7 @@ SharedFields:
   Value: "{79902BF1-F289-4B38-A8A1-9DAD2E65AC01}"
 - ID: "8e0dd914-9afb-4d45-bf8b-7ff5d6e5337e"
   Hint: HostName
-  Value: qa.habitathomedemo.com
+  Value: habitathome.dev.local
 - ID: "a7803a5d-cd03-4eda-abed-1d9af4bf6660"
   Hint: Database
   Value: web
