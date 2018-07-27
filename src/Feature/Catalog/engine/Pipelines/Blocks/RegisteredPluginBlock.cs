@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2017
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Sitecore.Commerce.Core;
@@ -6,6 +12,16 @@ using Sitecore.Framework.Pipelines;
 
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    /// <summary>
+    /// Defines the registered plugin block.
+    /// </summary>
+    /// <seealso>
+    ///     <cref>
+    ///         Sitecore.Framework.Pipelines.PipelineBlock{System.Collections.Generic.IEnumerable{Sitecore.Commerce.Core.RegisteredPluginModel},
+    ///         System.Collections.Generic.IEnumerable{Sitecore.Commerce.Core.RegisteredPluginModel},
+    ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
+    ///     </cref>
+    /// </seealso>
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.RegisteredPluginBlock)]
     public class RegisteredPluginBlock : PipelineBlock<IEnumerable<RegisteredPluginModel>, IEnumerable<RegisteredPluginModel>, CommercePipelineExecutionContext>
     {

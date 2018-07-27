@@ -109,12 +109,22 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-.*Catalog.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
         "RegularExpression": "^List-Products-.*?$",
         "TableName": "CatalogLists"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
         "RegularExpression": "^List-Category.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-.*Category.*?$",
         "TableName": "CatalogLists"
       },
       {
@@ -129,8 +139,19 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-.*SellableItem.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
         "RegularExpression": "^List-RelationshipType.*?$",
         "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-Entity-Workflow.*?$",
+        "TableName": "CommerceLists",
+        "HasVersionedEntities": true
       },
       {
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
@@ -241,6 +262,16 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
         "RegularExpression": "RelationshipDefinition-.*?$",
         "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-CustomRelationshipDefinitions.*?$",
+        "TableName": "CatalogLists"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "^List-DefaultRelationshipDefinitions.*?$",
+        "TableName": "CatalogLists"
       }
     ]
   }

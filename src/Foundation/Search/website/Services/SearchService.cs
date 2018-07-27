@@ -14,10 +14,10 @@ namespace Sitecore.HabitatHome.Foundation.Search.Services
 {
     public class SearchService : XA.Foundation.Search.Services.SearchService, ISearchService
     {                  
-        public new IQueryable<ContentPage> GetQuery(string query, string scope, string language, Coordinates center, string site, out string indexName)
+        public new IQueryable<ContentPage> GetQuery(string query, string scope, string language, Coordinates center, string site, string itemId, out string indexName)
         {
-            language = Context.Language.Name;
-            return base.GetQuery(query, scope, language, center, site, out indexName);
+            language = Sitecore.Context.Language.Name;
+            return base.GetQuery(query, scope, language, center, site, itemId, out indexName);
         }
 
         protected override Expression<Func<ContentPage, bool>> PageOrMediaPredicate(string siteName)

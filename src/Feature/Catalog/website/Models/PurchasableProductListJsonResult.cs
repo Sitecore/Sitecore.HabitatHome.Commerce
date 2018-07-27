@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Sitecore.Commerce.XA.Feature.Catalog.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Repositories;
 using Sitecore.Commerce.XA.Foundation.Connect.Entities;
@@ -11,7 +12,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Models
     {                                                                                           
         public List<PurchasableProductSummaryViewModel> PurchasableChildProducts { get; protected set; }
 
-        public PurchasableProductListJsonResult(IModelProvider modelProvider, IStorefrontContext storefrontContext) : base(modelProvider, storefrontContext)
+        public PurchasableProductListJsonResult(IModelProvider modelProvider, IStorefrontContext storefrontContext, IContext context) 
+            : base(modelProvider, storefrontContext, context)
         {
         }
 

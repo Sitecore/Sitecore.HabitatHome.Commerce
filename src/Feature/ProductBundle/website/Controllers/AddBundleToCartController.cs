@@ -7,6 +7,7 @@ using Sitecore.Commerce.XA.Feature.Cart.Controllers;
 using Sitecore.Commerce.XA.Feature.Cart.Models;
 using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
@@ -23,8 +24,8 @@ namespace Sitecore.HabitatHome.Feature.ProductBundle.Controllers
         private readonly ISearchManager _searchManager;
         private readonly IVisitorContext _visitorContext;
 
-        public AddBundleToCartController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IAddToCartRepository addToCartRepository, IMinicartRepository minicartRepository, IPromotionCodesRepository promotionCodesRepository, IShoppingCartLinesRepository shoppingCartLinesRepository, IShoppingCartTotalRepository shoppingCartTotalRepository, IVisitorContext visitorContext, ISiteContext siteContext, IProductBundleRepository productBundleRepository, ISearchManager searchManager, IProductBundleRepository productBundleRepository1)
-            : base(storefrontContext, modelProvider, addToCartRepository, minicartRepository, promotionCodesRepository, shoppingCartLinesRepository, shoppingCartTotalRepository, visitorContext)
+        public AddBundleToCartController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IAddToCartRepository addToCartRepository, IMinicartRepository minicartRepository, IPromotionCodesRepository promotionCodesRepository, IShoppingCartLinesRepository shoppingCartLinesRepository, IShoppingCartTotalRepository shoppingCartTotalRepository, IVisitorContext visitorContext, ISiteContext siteContext, IProductBundleRepository productBundleRepository, ISearchManager searchManager, IProductBundleRepository productBundleRepository1, IContext context)
+            : base(storefrontContext, modelProvider, addToCartRepository, minicartRepository, promotionCodesRepository, shoppingCartLinesRepository, shoppingCartTotalRepository, visitorContext, context)
         {
             Assert.ArgumentNotNull(productBundleRepository, nameof(productBundleRepository));
                                                                          

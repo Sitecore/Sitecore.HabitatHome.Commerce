@@ -10,12 +10,14 @@ using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Diagnostics;
 using Sitecore.HabitatHome.Feature.ProductRelatedContent.Repositories;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Controllers
 {
     public class ProductRelatedContentController : BaseCommerceStandardController
     {
-        public ProductRelatedContentController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IProductRelatedContentRepository productRelatedContentRepository) : base(storefrontContext)
+        public ProductRelatedContentController(IContext context, IStorefrontContext storefrontContext, IVisitorContext visitorContext, IProductRelatedContentRepository productRelatedContentRepository) 
+            : base(storefrontContext, context)
         {
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
             Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            
@@ -32,9 +34,9 @@ namespace Sitecore.HabitatHome.Feature.ProductRelatedContent.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public JsonResult GetRelatedProducts(string pid)
+        public JsonResult GetRelatedProducts(string pid, string plid)
         {
-            dynamic relatedProducts = _productRelatedContentRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, _visitorContext, pid);
+            dynamic relatedProducts = _productRelatedContentRepository.GetRelatedProducts(this.ModelProvider, this.StorefrontContext, _visitorContext, pid, plid);
             JsonResult baseJsonResult = this.Json(relatedProducts);
             return this.Json(baseJsonResult);
         }

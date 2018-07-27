@@ -7,8 +7,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Sitecore.Commerce.Core;
-using Sitecore.Commerce.EntityViews;
-using Sitecore.Commerce.Plugin.BusinessUsers;
+using Sitecore.Commerce.EntityViews;            
 using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Framework.Conditions;
 using Sitecore.Framework.Pipelines;
@@ -48,7 +47,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
         {
             Condition.Requires(entityView).IsNotNull($"{this.Name}: The argument cannot be null");
 
-            var pluginPolicy = context.GetPolicy<PluginPolicy>();
+            var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
 
             var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
 

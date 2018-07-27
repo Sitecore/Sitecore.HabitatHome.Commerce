@@ -13,13 +13,14 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using System.Web.UI;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class DeliveryController : BaseCommerceStandardController
     {
-        public DeliveryController(IStorefrontContext storefrontContext, IDeliveryRepository deliveryRepository, IVisitorContext visitorContext, IShoppingCartLinesRepository shoppingCartLinesRepository, ISearchManager searchManager)
-          : base(storefrontContext)
+        public DeliveryController(IContext context, IStorefrontContext storefrontContext, IDeliveryRepository deliveryRepository, IVisitorContext visitorContext, IShoppingCartLinesRepository shoppingCartLinesRepository, ISearchManager searchManager)
+          : base(storefrontContext, context)
         {            
             Assert.ArgumentNotNull((object)deliveryRepository, nameof(deliveryRepository));
             Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));

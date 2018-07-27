@@ -28,6 +28,8 @@ Prior to attempting the demo installation, ensure you have a working **Sitecore 
 
 You do not need to install the Storefront Theme
 
+*IMPORTANT: Publish site after installation*
+
 **Clone this repository**
 
 ## Custom Install - before you start

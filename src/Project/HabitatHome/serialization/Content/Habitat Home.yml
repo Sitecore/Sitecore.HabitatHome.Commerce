@@ -6,7 +6,7 @@ Path: /sitecore/content/Habitat Sites/Habitat Home
 DB: master
 SharedFields:
 - ID: "1230d2cb-4948-4d43-8a3b-b39978f6f1b3"
-  Hint: Features
+  Hint: Modules
   Type: Treelist
   Value: |
     {076B3907-3E2B-492C-88FB-4626FFDB075F}

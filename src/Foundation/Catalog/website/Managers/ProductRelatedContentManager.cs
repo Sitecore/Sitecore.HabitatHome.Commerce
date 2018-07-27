@@ -1,5 +1,4 @@
-﻿using Sitecore.Commerce.XA.Foundation.Common;
-using Sitecore.Commerce.XA.Foundation.Common.Models;
+﻿using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -7,7 +6,7 @@ using Sitecore.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using Sitecore.Commerce.XA.Foundation.Common.Context;   
 
 namespace Sitecore.HabitatHome.Foundation.Catalog.Managers
 {

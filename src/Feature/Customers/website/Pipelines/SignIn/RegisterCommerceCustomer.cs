@@ -2,7 +2,8 @@
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Services.Customers;
 using Sitecore.Commerce.XA.Foundation.Common;
-using Sitecore.Commerce.XA.Foundation.Common.Extensions;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
+using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Commerce.XA.Foundation.Connect.Providers;

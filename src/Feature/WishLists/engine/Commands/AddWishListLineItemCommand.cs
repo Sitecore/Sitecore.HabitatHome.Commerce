@@ -32,7 +32,7 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Commands
 
             using (CommandActivity.Start(commerceContext, (CommerceCommand)addCartLineCommand))
             {
-                Func<Task> func = await addCartLineCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                await addCartLineCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
                 {
                     FindEntityArgument findEntityArgument = new FindEntityArgument(typeof(Cart), wishlistId, true);
                     var context = commerceContext.GetPipelineContextOptions();

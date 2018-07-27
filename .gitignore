@@ -23,3 +23,5 @@ packages/
 license.xml
 lib/Modules/*
 *.dll
+*.bak
+publishTemp/*

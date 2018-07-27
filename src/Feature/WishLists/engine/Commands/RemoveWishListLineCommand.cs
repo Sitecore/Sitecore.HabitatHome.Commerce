@@ -61,13 +61,13 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Commands
                     return cart;
                 }
                
-                Func<Task> func = await removeCartLineCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                await removeCartLineCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
                 {
-
                     var cartResult = await this._pipeline.Run(new CartLineArgument(cart, line), (IPipelineExecutionContextOptions)context).ConfigureAwait(false);
        
                     result = cartResult;
                 }));
+
                 return result;
             }
             finally

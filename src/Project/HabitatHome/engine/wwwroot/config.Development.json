@@ -3,9 +3,21 @@
     "AntiForgeryEnabled":  false
   },
   "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Information",
+        "System": "Information"
+      }
+    },
     "WriteTo": [
       {
-        "Name": "LiterateConsole"
+        "Name": "Async",
+        "Args": {
+          "configure": [{
+            "Name": "LiterateConsole"
+          }]
+        }
       }
     ]
   }

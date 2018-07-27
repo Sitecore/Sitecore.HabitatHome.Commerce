@@ -9,7 +9,7 @@ using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Plugin.Carts;
 using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Data;
-using Sitecore.Diagnostics;
+using Sitecore.Diagnostics;                         
 
 namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
 {

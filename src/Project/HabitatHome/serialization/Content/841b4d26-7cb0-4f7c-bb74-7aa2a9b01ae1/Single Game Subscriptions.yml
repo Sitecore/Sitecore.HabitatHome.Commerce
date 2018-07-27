@@ -72,3 +72,9 @@ Languages:
       Hint: Link
       Value: |
         <link text="Abonnement de jeu-vidéo" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9307E44A-9397-4D0A-8E55-9A0152E3520C}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: シングルゲーム サブスクリプション
+  Versions:
