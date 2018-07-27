@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DeliveryController.cs" />
+    <Compile Include="Controllers\DemoCartController.cs" />
     <Compile Include="Controllers\GiftCardBalanceController.cs" />
     <Compile Include="Controllers\ShoppingCartLinesController.cs" />
     <Compile Include="Managers\GiftCardBalanceManager.cs" />
