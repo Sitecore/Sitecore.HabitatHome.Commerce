@@ -17,18 +17,18 @@ SharedFields:
 - ID: "3d08db46-2267-41b0-bc52-be69fd618633"
   Hint: Cacheable
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "6c0c64a9-b969-44e9-9eb8-47bc54ec77c6"
   Hint: VaryByUrlPath
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "94069f66-609c-48b0-8281-521c30fb269d"
   Hint: Open Properties after Add
   Value: 
 - ID: "abb0f612-25e3-413c-8fe2-c1ac4c3d6f5e"
   Hint: VaryByCurrency
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:./ancestor::*[@@templatename='Site']/Data/Commerce/Catalog"
@@ -41,7 +41,7 @@ SharedFields:
 - ID: "f3e7e552-d7c8-469b-a150-69e4e14ab35c"
   Hint: ClearOnIndexUpdate
   Type: Checkbox
-  Value: 0
+  Value: 1
 Languages:
 - Language: en
   Versions:
