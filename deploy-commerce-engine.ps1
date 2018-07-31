@@ -5,7 +5,7 @@ Param(
     [string]$engineHostName = "localhost",
     [string]$identityServerHost = "localhost:5050",
     [string]$webRoot = "C:\inetpub\wwwroot",
-    [string[]] $engines = @("CommerceAuthoring", "CommerceMinions", "CommerceOps", "CommerceShops"),
+    [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
@@ -16,57 +16,74 @@ Param(
     [switch]$SkipPublish
 )
 
-Function Start-CommerceEngineCompile {
+Function Start-CommerceEngineCompile ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {
 
     $engineSolutionName = "HabitatHome.Commerce.Engine.sln"
     if (Test-Path $publishFolder) {
         Remove-Item $publishFolder -Recurse -Force
     }
-    Write-Host ("Compiling and Publishing Engine to {0}" -f $publishFolder) -ForegroundColor Green
-    dotnet publish $engineSolutionName -o $publishFolder
+    Write-Host ("Compiling and Publishing Engine to {0}" -f $basePublishPath) -ForegroundColor Green
+    dotnet publish $engineSolutionName -o $basePublishPath
 
 }
-Function  Start-CommerceEnginePepare {
-    Write-Host ("Customizing configuration values") -ForegroundColor Green
-
-    #   Modify config.json
-    $pathToJson = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\config.json")
-
-    $config = Get-Content $pathToJson -Raw | ConvertFrom-Json
-
+Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {
+   
     $certPrefix = "CN="
     $fullCertificateName = $certPrefix + $certificateName
 
     $thumbprint = Get-ChildItem -path cert:\LocalMachine\my | Where-Object {$_.Subject -like $fullCertificateName} | Select-Object Thumbprint
+  
+  
+    $pathToJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\config.json")
+
+    $config = Get-Content $pathToJson -Raw | ConvertFrom-Json
+   
     $certificateNode = $config.Certificates.Certificates[0]
     $certificateNode.Thumbprint = $thumbprint.Thumbprint
 
     $appSettings = $config.AppSettings
-    $appSettings.EnvironmentName = "HabitatAuthoring"
     $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('localhost', $engineHostName)
     $appSettings.allowedOrigins = $appSettings.allowedOrigins.replace('habitathome.dev.local', $siteName)
     $appSettings.SitecoreIdentityServerUrl = ("https://{0}" -f $identityServerHost)
     $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
 
     #   Modify PlugIn.Content.PolicySet
-    $pathToContentPolicySet = $(Join-Path -Path $publishFolder -ChildPath "wwwroot\data\environments\PlugIn.Content.PolicySet-1.0.0.json")
+    $pathToContentPolicySet = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\data\environments\PlugIn.Content.PolicySet-1.0.0.json")
     $contentPolicySet = Get-Content $pathToContentPolicySet -Raw | ConvertFrom-Json
     $contentPolicySet.Policies.'$values'[0].Host = $siteName
     $contentPolicySet.Policies.'$values'[0].username = $adminUser
     $contentPolicySet.Policies.'$values'[0].password = $adminPassword
     $contentPolicySet | ConvertTo-Json -Depth 10 -Compress | Set-Content $pathToContentPolicySet
+
+
+    foreach ($engine in $engines) {
+        Write-Host ("Customizing configuration values for {0}" -f $engine) -ForegroundColor Green
+        $engineFullName = ("Commerce{0}" -f $engine)
+        $environmentName = ("Habitat{0}" -f $engine)
+        $enginePath = Join-Path $publishFolder $engineFullName
+        Copy-Item $basePublishPath $enginePath -Recurse -Force
+        $pathToJson = $(Join-Path -Path $enginePath -ChildPath "wwwroot\config.json")
+        $config = Get-Content $pathToJson -Raw | ConvertFrom-Json
+        $appSettings = $config.AppSettings
+
+        $appSettings.EnvironmentName = $environmentName
+        $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
+
+    }
 }
 Function Publish-CommerceEngine {
     Write-Host ("Deploying Commerce Engine") -ForegroundColor Green
     IISRESET /STOP
 
     foreach ($engine in $engines) {
-        Write-Host ("Copying to {0}" -f $engine) -ForegroundColor Green
+        $engineFullName = ("Commerce{0}" -f $engine)
+        $enginePath = Join-Path $publishFolder $engineFullName
+        Write-Host ("Copying to {0}" -f $engineWebRoot) -ForegroundColor Green
         if ($engineSuffix.length -gt 0) {
-            $engineWebRoot = (Join-Path $webRoot ("{0}_{1}" -f $engine, $engineSuffix) )
+            $engineWebRoot = Join-Path $webRoot  $($engineFullName +  "_" + $engineSuffix)
         }
         else {
-            $engineWebRoot = (Join-Path $webRoot ("{0}" -f $engine) )
+            $engineWebRoot = [System.IO.Path]::Combine($webRoot, $engineFullName)
         }
         $engineWebRootBackup = ("{0}_backup" -f $engineWebRoot)
 
@@ -76,7 +93,7 @@ Function Publish-CommerceEngine {
 
         Rename-Item $engineWebRoot -NewName $engineWebRootBackup
         Get-ChildItem $engineWebRoot -Recurse | ForEach-Object {Remove-Item $_.FullName -Recurse}
-        Copy-Item -Path "$publishFolder" -Destination $engineWebRoot -Container -Recurse -Force
+        Copy-Item -Path "$enginePath" -Destination $engineWebRoot -Container -Recurse -Force
     }
 
 
