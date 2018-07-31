@@ -93,7 +93,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:05:00",
+        "WakeupInterval": "00:03:00",
         "ListToWatch": "CustomersIndex",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.IncrementalIndexMinion, Sitecore.Commerce.Plugin.Search",
         "ItemsPerBatch": 10,
@@ -101,7 +101,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:05:00",
+        "WakeupInterval": "00:03:00",
         "ListToWatch": "DeletedCustomersIndex",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
         "ItemsPerBatch": 10,
@@ -109,7 +109,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:05:00",
+        "WakeupInterval": "00:03:00",
         "ListToWatch": "DeletedCatalogItemsIndex",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
         "ItemsPerBatch": 10,
@@ -123,7 +123,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:05:00",
+        "WakeupInterval": "00:03:00",
         "ListToWatch": "CatalogItemsIndex",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.IncrementalIndexMinion, Sitecore.Commerce.Plugin.Search",
         "ItemsPerBatch": 10,
