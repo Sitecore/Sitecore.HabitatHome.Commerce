@@ -1,0 +1,388 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-AccessByRolesPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "AccessByRolesPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [      
+      {
+        "$type": "Sitecore.Commerce.EntityViews.ActionsRolesPolicy, Sitecore.Commerce.Plugin.Views",
+        "Roles": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PriceSnapshotDetails",
+              "Action": "RequestSnapshotApproval",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PriceSnapshotDetails",
+              "Action": "RejectSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PriceSnapshotDetails",
+              "Action": "ApproveSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PriceSnapshotDetails",
+              "Action": "RetractSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetSnapshotApprovalStatus",
+              "Action": "RequestSnapshotApproval",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetSnapshotApprovalStatus",
+              "Action": "RejectSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetSnapshotApprovalStatus",
+              "Action": "ApproveSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetSnapshotApprovalStatus",
+              "Action": "RetractSnapshot",
+              "Role": "sitecore\\Pricer Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Details",
+              "Action": "RequestPromotionApproval",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Details",
+              "Action": "RejectPromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Details",
+              "Action": "ApprovePromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Details",
+              "Action": "RetractPromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Details",
+              "Action": "DisablePromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetPromotionApprovalStatus",
+              "Action": "RequestPromotionApproval",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetPromotionApprovalStatus",
+              "Action": "RejectPromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetPromotionApprovalStatus",
+              "Action": "ApprovePromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetPromotionApprovalStatus",
+              "Action": "RetractPromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "SetPromotionApprovalStatus",
+              "Action": "DisablePromotion",
+              "Role": "sitecore\\Promotioner Manager"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "EditView",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "RemoveView",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "MakeTemplate",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "AddProperty",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "RemoveProperty",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "AddMinMaxPropertyConstraint",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "AddSelectionOptionPropertyConstraint",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Master",
+              "Action": "AddChildView",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "Master",
+              "Action": "AddChildViewFromTemplate",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "ComposerTemplates",
+              "Action": "ClearTemplates",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "ComposerTemplates",
+              "Action": "RemoveTemplate",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "ComposerTemplates",
+              "Action": "ManageTemplateTags",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "ComposerTemplates",
+              "Action": "LinkTemplateToEntities",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddCatalog",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "",
+              "Action": "AddInventorySet",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddCoupon",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddPromotionBook",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddPriceBook",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddCustomer",
+              "Role": "sitecore\\Customer Service Representative"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddRelationshipDefinition",
+              "Role": "sitecore\\Relationship Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AssociateEntity",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "DisassociateEntity",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "AddEntityVersion",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "Action": "PromoteToNextState",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "ComposerDashboard",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "MerchandisingDashboard",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "InventoryDashboard",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "RelationshipsDashboard",
+              "Role": "sitecore\\Relationship Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PromotionsDashboard",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "PricingDashboard",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "OrdersDashboard",
+              "Role": "sitecore\\Customer Service Representative"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "OrdersList-*",
+              "Role": "sitecore\\Customer Service Representative"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "RelationshipDefinitions",
+              "Role": "sitecore\\Relationship Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "View": "CustomersDashboard",
+              "Action": "",
+              "Role": "sitecore\\Customer Service Representative"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Catalog.Catalog",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Catalog.Category",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Inventory.InventorySet",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Inventory.InventoryInformation",
+              "Role": "sitecore\\Merchandiser"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Composer.ComposerTemplate",
+              "Role": "sitecore\\Commerce Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Catalog.RelationshipDefinition",
+              "Role": "sitecore\\Relationship Administrator"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Promotions.Promotion",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Promotions.PromotionBook",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Coupons.Coupon",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Coupons.PrivateCouponGroup",
+              "Role": "sitecore\\Promotioner"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Pricing.PriceBook",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Pricing.PriceCard",
+              "Role": "sitecore\\Pricer"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Customers.Customer",
+              "Role": "sitecore\\Customer Service Representative"
+            },
+            {
+              "$type": "Sitecore.Commerce.EntityViews.ActionRoleModel, Sitecore.Commerce.Plugin.Views",
+              "EntityType": "Sitecore.Commerce.Plugin.Orders.Order",
+              "Role": "sitecore\\Customer Service Representative"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

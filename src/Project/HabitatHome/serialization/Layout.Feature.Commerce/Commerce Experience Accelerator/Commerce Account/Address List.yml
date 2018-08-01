@@ -25,7 +25,7 @@ SharedFields:
   Value: AddressList
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Commerce.XA.Feature.Account.Controllers.AccountController, Sitecore.Commerce.XA.Feature.Account
+  Value: Sitecore.Commerce.XA.Feature.Account.Controllers.AccountAddressController, Sitecore.Commerce.XA.Feature.Account
 Languages:
 - Language: en
   Fields:

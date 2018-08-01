@@ -18,8 +18,8 @@
 
   <ItemGroup>
     <PackageReference Include="eBay" Version="3.1027.0" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.1.5" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.1.4" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.26" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Management" Version="2.2.9" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

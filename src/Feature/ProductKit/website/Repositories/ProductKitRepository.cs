@@ -12,12 +12,14 @@ using Sitecore.HabitatHome.Feature.ProductKit.Models.JsonResults;
 using Sitecore.HabitatHome.Feature.ProductKit.Managers;
 using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 
 namespace Sitecore.HabitatHome.Feature.ProductKit.Repositories
 {
     public class ProductKitRepository : BaseCatalogRepository, IProductKitRepository
     {
-        public ProductKitRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IRelatedProductsManager relatedProductsManager) : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager)
+        public ProductKitRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IRelatedProductsManager relatedProductsManager, IContext context) 
+            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, catalogUrlManager, context)
         {
             this.RelatedProductsManager = relatedProductsManager;
         }

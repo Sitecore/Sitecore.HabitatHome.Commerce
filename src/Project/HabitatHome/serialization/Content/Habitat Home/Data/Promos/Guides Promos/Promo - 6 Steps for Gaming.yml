@@ -4,6 +4,10 @@ Parent: "3209696f-f313-44b8-bdcf-cb1543f7592a"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Guides Promos/Promo - 6 Steps for Gaming"
 DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
 Languages:
 - Language: en
   Versions:
@@ -11,7 +15,7 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: <p>6 Steps for Gaming</p>
+      Value: <p>6 Steps for Modern Day Gaming</p>
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
@@ -19,6 +23,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171122T215140Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4FDD1979-B09E-41FB-AD96-4434F050A74B}"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -107,6 +114,17 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180618T150901Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

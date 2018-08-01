@@ -5,6 +5,7 @@ using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Services;
 using Sitecore.Commerce.Services.Carts;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -21,9 +22,11 @@ namespace Sitecore.HabitatHome.Feature.Orders.Controllers
         private readonly ICartManager _cartManager;      
         private readonly IVisitorContext _visitorContext;
         private readonly IOrderLinesRepository _orderLinesRepository;
-        private readonly IModelProvider _modelProvider;                
+        private readonly IModelProvider _modelProvider;
+        private readonly IContext _context;
 
-        public OrderLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IOrderLinesRepository orderLinesRepository, IModelProvider modelProvider, ICartManager cartManager) : base(storefrontContext)
+        public OrderLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, IOrderLinesRepository orderLinesRepository, IModelProvider modelProvider, ICartManager cartManager, IContext context) 
+            : base(storefrontContext, context)
         {
             Assert.IsNotNull(storefrontContext, nameof(storefrontContext));
             Assert.IsNotNull(visitorContext, nameof(visitorContext));
@@ -31,7 +34,8 @@ namespace Sitecore.HabitatHome.Feature.Orders.Controllers
             _orderLinesRepository = orderLinesRepository;
             _modelProvider = modelProvider;
             _visitorContext = visitorContext;
-            _cartManager = cartManager;                   
+            _cartManager = cartManager;
+            _context = context;
         }
 
         [HttpGet]
@@ -47,7 +51,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Controllers
         [HttpPost]
         public JsonResult ReorderItem(string productId, string variantId, string quantity)
         {
-            BaseJsonResult model = new BaseJsonResult(StorefrontContext);
+            BaseJsonResult model = new BaseJsonResult(_context, StorefrontContext);
             CommerceStorefront currentStorefront = StorefrontContext.CurrentStorefront;
             ManagerResponse<CartResult, Cart> currentCart = _cartManager.GetCurrentCart(_visitorContext, StorefrontContext, false);
             if (!currentCart.ServiceProviderResult.Success || currentCart.Result == null)

@@ -1,14 +1,29 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="InitializeEnvironmentPricingBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2017
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;             
+using Microsoft.Extensions.Logging;       
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Pricing;
-using Sitecore.Framework.Pipelines;
+using Sitecore.Framework.Pipelines;      
 
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
-{
+{                                            
+    /// <summary>
+    /// Defines a block which initializes pricing.
+    /// </summary>
+    /// <seealso>
+    ///     <cref>
+    ///         Sitecore.Framework.Pipelines.PipelineBlock{System.String, System.String,
+    ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
+    ///     </cref>
+    /// </seealso>
     [PipelineDisplayName(HabitatHomeConstants.Pipelines.Blocks.InitializePricingBlock)]
     public class InitializeEnvironmentPricingBlock : PipelineBlock<string, string, CommercePipelineExecutionContext>
     {
@@ -257,7 +272,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             card = await this._addPriceTierPipeline.Run(new PriceCardSnapshotTierArgument(card, firstSnapshot, new PriceTier("CAD", 5, 201M)), context);
 
             // TAGS CARD FIRST SNAPSHOT TAGS
-            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("Habitat")), context);    
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("Habitat")), context);
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("Habitat 2")), context);
             card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, firstSnapshot, new Tag("common")), context);
 
             // TAGS CARD SECOND SNAPSHOT
@@ -271,7 +287,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             card = await this._addPriceTierPipeline.Run(new PriceCardSnapshotTierArgument(card, secondSnapshot, new PriceTier("CAD", 5, 151M)), context);
 
             // TAGS CARD SECOND SNAPSHOT TAGS
-            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("Habitat variants")), context);   
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("Habitat variants")), context);
+            card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("Habitat variants 2")), context);
             card = await this._addPriceSnapshotTagPipeline.Run(new PriceCardSnapshotTagArgument(card, secondSnapshot, new Tag("common")), context);
 
             // TAGS CARD APPROVAl COMPONENT

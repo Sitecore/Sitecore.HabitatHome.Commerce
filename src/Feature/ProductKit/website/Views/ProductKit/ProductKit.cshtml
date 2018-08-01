@@ -5,43 +5,46 @@
 @using Sitecore.Mvc
 @using Sitecore.Data.Items
 @model CatalogItemRenderingModel
-@{
+
+@if (!Sitecore.Context.PageMode.IsExperienceEditor)
+{
     Item currentItem = Html.Sitecore().CurrentItem;
     Item relatedProduct = Model.CatalogItem;
     bool hasTag = relatedProduct["Tags"] != null && !String.IsNullOrEmpty(relatedProduct["Tags"]) ? relatedProduct["Tags"].Split('|').Any(t => t.ToLower() == "kit") : false;
-}
-@if (hasTag)
-{
-<div id="divProductKit" class="component cxa-product-kit-component">
-    <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
-    <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
 
-    <div class="component-content">
-        <b>
-            <label class="product-kit-header">Products Included in Kit</label>
-        </b>
+    if (hasTag)
+    {
+        <div id="divProductKit" class="component cxa-product-kit-component">
+            <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
+            <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
 
-        <hr />
-        <!-- ko foreach: RelatedProductsList -->
-        <div class="related-product">
-            <div class="row">
-                <a data-bind="attr:{href: ProductUrl}">
+            <div class="component-content">
+                <b>
+                    <label class="product-kit-header">Products Included in Kit</label>
+                </b>
 
-                    <div class="col-xs-4">
-                        <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                <hr />
+                <!-- ko foreach: RelatedProductsList -->
+                <div class="related-product">
+                    <div class="row">
+                        <a data-bind="attr:{href: ProductUrl}">
+
+                            <div class="col-xs-4">
+                                <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                            </div>
+                            <div class="col-xs-8">
+                                <b><label class="product-name" data-bind="text: DisplayName"></label></b>
+                                <p class="description small" data-bind="text: Description"></p>
+                            </div>
+
+                        </a>
                     </div>
-                    <div class="col-xs-8">
-                        <b><label class="product-name" data-bind="text: DisplayName"></label></b>
-                        <p class="description small" data-bind="text: Description"></p>
-                    </div>
-
-                </a>
+                </div>
+                <hr />
+                <!--/ko-->
             </div>
+
+
         </div>
-        <hr />
-        <!--/ko-->
-    </div>
-
-
-</div>
+    }
 }
