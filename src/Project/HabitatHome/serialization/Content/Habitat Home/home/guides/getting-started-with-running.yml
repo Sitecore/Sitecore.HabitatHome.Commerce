@@ -1,0 +1,56 @@
+﻿---
+ID: "47de0ce9-cadc-4a46-be50-f52d222c1141"
+Parent: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
+Template: "14807d83-9671-4d70-b0f4-f54012f2bfb8"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/getting-started-with-running"
+DB: master
+SharedFields:
+- ID: "4d71857f-c77d-44fa-8899-c671a0458d7f"
+  Hint: Publish Date
+  Value: 20180711T173800Z
+- ID: "7bd35dcd-61bb-42e0-8bf5-07803af6eede"
+  Hint: Author
+  Value: "{F42349A2-F790-4A33-A5AE-440172603407}"
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Getting Started With Running
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{65A2C342-F3C1-4565-A236-C88C58CB1CF1}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T173817Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Getting Started With Running
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in consequat ante, in malesuada tortor. In gravida aliquam dolor, blandit posuere mauris lobortis ac. Nullam nec rhoncus nisi, vitae sagittis nibh. Phasellus vehicula magna vitae iaculis tempus. Integer ultricies sapien quis odio congue, vel faucibus dolor semper. Donec id nulla sed massa maximus porta. Vivamus id ante eget neque imperdiet luctus id id eros.</p>
+        <p>Vestibulum at est eget leo scelerisque tempor a vel nulla. Nullam viverra mi in aliquet varius. Etiam hendrerit ullamcorper sagittis. Aenean in ligula lobortis, ultrices urna eget, auctor elit. Sed vel felis eget est feugiat vehicula. Sed a purus tortor. Proin cursus quam at nisl luctus, ac tincidunt felis gravida. Suspendisse volutpat leo lacus, non pretium ipsum molestie ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "87241a2b-d20a-4624-a439-07f4d9afea6e"
+      Hint: Additional Content
+      Value: <p>Suspendisse sed odio vehicula, imperdiet quam non, finibus ipsum. Pellentesque lobortis consequat velit a pulvinar. Aliquam erat volutpat. Aliquam erat volutpat. Donec elementum, ligula in commodo volutpat, lacus sem dictum mauris, ac congue felis quam at odio. Etiam convallis euismod dignissim. Morbi a velit sagittis, pellentesque nisi eget, faucibus ligula. Aliquam sed metus a neque consequat vestibulum vitae at urna. Curabitur et libero quam. Duis nec viverra orci. Aenean pulvinar eleifend metus, sit amet ultricies sapien maximus vitae. Fusce rutrum, nulla vel pretium laoreet, massa ipsum ultrices ipsum, vitae imperdiet est lorem eget diam. Nam eros mi, pretium id augue non, elementum blandit arcu.</p>
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Introduction
+      Value: "<p>Running is the best way to get into fitness and explore the world. Burn all the excess calories while exploring the unknown. The best way to get into running is to find a place to run to! The rest of this blog will walk through different tips and tricks to getting started.</p>"
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Getting Started With Running

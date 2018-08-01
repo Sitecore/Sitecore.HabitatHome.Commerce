@@ -1,8 +1,11 @@
-module.exports = function () {
+module.exports = function() {
     var sitesRoot = "C:\\inetpub\\wwwroot";
-    var instanceRoot = sitesRoot + "\\habitat.dev.local";
+    var siteName = "habitathome.dev.local";
+    var webroot = "C:\\inetpub\\wwwroot";
+    var instanceRoot = sitesRoot + "\\habitathome.dev.local";
     var config = {
-        instanceUrl: "https://habitat.dev.local/",
+        sitecoreRoot: instanceRoot,
+        instanceUrl: "https://habitathome.dev.local/",
         websiteRoot: instanceRoot + "\\",
         sitecoreLibraries: instanceRoot + "\\bin",
         solutionName: "HabitatHome.Commerce",
@@ -12,7 +15,7 @@ module.exports = function () {
         buildVerbosity: "minimal",
         buildPlatform: "Any CPU",
         publishPlatform: "AnyCpu",
-        runCleanBuilds: false
+        runCleanBuilds: true
     };
     return config;
-}
+};

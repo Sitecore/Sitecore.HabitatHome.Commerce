@@ -2,6 +2,7 @@
 using Sitecore.Commerce.Services.Orders;
 using Sitecore.Commerce.XA.Feature.Account.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
@@ -12,8 +13,8 @@ namespace Sitecore.HabitatHome.Feature.Orders.Repositories
 {
     public class OrderLinesRepository : BaseAccountRepository, IOrderLinesRepository
     {
-        public OrderLinesRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, IOrderManager orderManager)
-          : base(modelProvider, storefrontContext)
+        public OrderLinesRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, IOrderManager orderManager, IContext context)
+          : base(modelProvider, storefrontContext, context)
         {
             Assert.IsNotNull(orderManager, nameof(orderManager));
             this.OrderManager = orderManager;

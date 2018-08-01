@@ -17,31 +17,34 @@
       "https://habitathome.dev.local"
     ],
     "AntiForgeryEnabled": false,
-    "UseHttpsInKestrel": true,  
+    "UseHttpsInKestrel": true,
     "SslPort": 5000,
     "SslPfxPath": "wwwroot/localhost.pfx",
     "SslPfxPassword": "sitecore"
   },
   "ApplicationInsights": {
     "InstrumentationKey": "",
-    "MinimumLevel": "Information"
+    "MinimumLevel": "Warning",
+    "DeveloperMode": true,
+    "TelemetryEnabled": false
   },
   "Logging": {
     "IncludeScopes": false,
     "LogLevel": {
-      "Default": "Information",
+      "Default": "Warning",
       "System": "Warning",
       "Microsoft": "Warning"
     },
-    "ApplicationInsightsLoggingEnabled": false
+    "ApplicationInsightsLoggingEnabled": false,
+    "SerilogLoggingEnabled": true
   },
   "Serilog": {
     "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
     "MinimumLevel": {
-      "Default": "Information",
+      "Default": "Warning",
       "Override": {
-        "Microsoft": "Information",
-        "System": "Information"
+        "Microsoft": "Warning",
+        "System": "Warning"
       }
     },
     "FileSizeLimitBytes": 100000000

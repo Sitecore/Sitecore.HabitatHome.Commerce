@@ -1,6 +1,7 @@
 ﻿//using Sitecore.Commerce.XA.Feature.Catalog.Models.ProductLists;
 using Sitecore.Commerce.XA.Foundation.CommerceEngine.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Entities;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Providers;

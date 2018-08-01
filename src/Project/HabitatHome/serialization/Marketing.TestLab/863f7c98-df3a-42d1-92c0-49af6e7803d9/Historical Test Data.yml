@@ -1,0 +1,49 @@
+﻿---
+ID: "55e63814-ee2e-4a92-b6d2-e86debd423bd"
+Parent: "863f7c98-df3a-42d1-92c0-49af6e7803d9"
+Template: "e4100ba5-a3ca-440f-bac2-c0cb325333c7"
+Path: "/sitecore/system/Marketing Control Panel/Test Lab/2018/06/27/18/20/copy-of-healthy-living-for-testing DEBEAC2DF796474D9B37A965481A48B2/Historical Test Data"
+DB: master
+SharedFields:
+- ID: "21451789-dc09-4487-b724-ac4db1675ab5"
+  Hint: Test Score
+  Value: 0
+- ID: "3b463a5f-4c43-4322-9f1a-e1685bece08e"
+  Hint: Is Test Canceled
+  Type: Checkbox
+  Value: 1
+- ID: "52fdd49c-d0e7-43ab-94b2-522dfafd53e3"
+  Hint: End Date
+  Value: "27-Jun-2018"
+- ID: "6fdbf936-0180-4ccd-9893-985df171ab68"
+  Hint: Experiences
+  Value: 2
+- ID: "9978eaa4-6d9d-432b-b156-28fb98d97239"
+  Hint: Effect
+  Value: 0
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "ab130771-65e6-47d9-aca1-febf2d6b2aed"
+  Hint: Test Duration
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180627T182447Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T175316Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

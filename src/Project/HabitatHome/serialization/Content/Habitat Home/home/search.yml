@@ -55,7 +55,7 @@ SharedFields:
           p:after="r[@uid='{19676BAC-80A5-45BE-945C-1B6AA3F3C6E6}']"
           s:ds="{55BC9CDF-0EAB-46C6-9ED0-CC777F963E67}"
           s:id="{FAE0D244-55C1-4F1B-8ED5-590C9F131CEE}"
-          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;FieldNames=%7BE71C2404-3B50-42DB-B31D-13A33DFBE4BB%7D&amp;Styles&amp;Reset Caching Options&amp;Scope&amp;PageSize=5&amp;DefaultLanguageFilter=%7B04C9B082-DE71-4035-8D16-737BF024FDE6%7D&amp;DefaultSortOrder=%7BA4DD774E-DEE7-4CA3-A841-62EC7FA5865F%7D&amp;RenderingIdentifier"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;FieldNames=%7BE71C2404-3B50-42DB-B31D-13A33DFBE4BB%7D&amp;Styles&amp;Reset Caching Options&amp;Scope=%7B4B7D7655-0E79-4CDE-B966-88FEC5ED009F%7D&amp;PageSize=5&amp;DefaultLanguageFilter=%7B04C9B082-DE71-4035-8D16-737BF024FDE6%7D&amp;DefaultSortOrder&amp;AutoFireSearchWhenNoCriteriaSet=1&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-2-1" />
         <r
           uid="{862E8C4C-464D-49C9-99BA-89054E0A3924}"
@@ -76,21 +76,21 @@ SharedFields:
           p:after="r[@uid='{F1C23385-49CB-4438-B3FC-773689980106}']"
           s:ds="{5F02E9FD-179D-44C5-A980-69E3E6272465}"
           s:id="{2B2EC80B-13E2-445D-BA1A-8B8F037DED66}"
-          s:par="SortOrder=SortByCount&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=1&amp;HighlightBehaviour=2&amp;CollapseOnSelection=1&amp;MultiSelection&amp;RenderingIdentifier"
+          s:par="SortOrder=SortByCount&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=1&amp;HighlightBehaviour=2&amp;CollapseOnSelection=1&amp;MultiSelection=1&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
           uid="{8E90C7CC-206E-4CA8-BBC9-E63F7040B13F}"
           p:after="r[@uid='{C6F6BFE0-283E-4A6C-BF0C-7F255443B3ED}']"
           s:ds="{EF274CAE-3E38-4C13-AA00-05C3AB3AB9B8}"
           s:id="{2B2EC80B-13E2-445D-BA1A-8B8F037DED66}"
-          s:par="SortOrder=SortByCount&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=2&amp;HighlightBehaviour=1&amp;CollapseOnSelection=1&amp;MultiSelection&amp;RenderingIdentifier"
+          s:par="SortOrder=SortByCount&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=2&amp;HighlightBehaviour=1&amp;CollapseOnSelection=1&amp;MultiSelection=1&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
           uid="{B9DFDDFE-B02E-4776-9756-795137B9CE77}"
           p:after="r[@uid='{8E90C7CC-206E-4CA8-BBC9-E63F7040B13F}']"
           s:ds="{4EF11ED8-9EAE-42CF-962A-093CCF7AF7E0}"
           s:id="{2B2EC80B-13E2-445D-BA1A-8B8F037DED66}"
-          s:par="SortOrder=SortByNames&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=2&amp;HighlightBehaviour=1&amp;CollapseOnSelection=1&amp;MultiSelection&amp;RenderingIdentifier"
+          s:par="SortOrder=SortByNames&amp;GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;SearchSignature&amp;Styles&amp;Reset Caching Options&amp;HighlightThreshold=2&amp;HighlightBehaviour=1&amp;CollapseOnSelection=1&amp;MultiSelection=1&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
           uid="{C0A94854-5D0C-4D6B-9C45-DE03A5D5E65E}"
@@ -158,7 +158,7 @@ Languages:
       Value: 20171128T154553Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
@@ -244,7 +244,7 @@ Languages:
       Value: 20180321T104500Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: 検索

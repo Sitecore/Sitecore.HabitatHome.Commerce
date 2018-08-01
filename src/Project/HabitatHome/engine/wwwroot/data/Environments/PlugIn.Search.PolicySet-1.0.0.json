@@ -27,7 +27,7 @@
         "Name": "CatalogItemsScope",
         "IncrementalListName": "CatalogItemsIndex",
         "FullListName": "CatalogItems",
-        "DeletedListName": "",
+        "DeletedListName": "DeletedCatalogItemsIndex",
         "EntityTypeNames": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
@@ -98,6 +98,15 @@
             "TypeName": "System.String",
             "IsKey": false,
             "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "EntityVersion": {
+            "TypeName": "System.Int32",
+            "IsKey": false,
+            "IsSearchable": false,
             "IsFilterable": false,
             "IsSortable": false,
             "IsFacetable": false,
@@ -193,6 +202,15 @@
           "EntityId": {
             "TypeName": "System.String",
             "IsKey": true,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
+          "UserName": {
+            "TypeName": "System.String",
+            "IsKey": false,
             "IsSearchable": true,
             "IsFilterable": false,
             "IsSortable": false,

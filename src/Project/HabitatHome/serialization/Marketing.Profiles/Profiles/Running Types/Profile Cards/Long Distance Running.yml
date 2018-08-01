@@ -1,0 +1,30 @@
+﻿---
+ID: "6caa261b-ea52-4f94-8957-36f6f306d8fe"
+Parent: "b472ecc6-b3cd-4590-b0a4-10cbdbeccf57"
+Template: "0fc09ea4-8d87-4b0e-a5c9-8076ae863d9c"
+Path: /sitecore/system/Marketing Control Panel/Profiles/Running Types/Profile Cards/Long Distance Running
+DB: master
+SharedFields:
+- ID: "85970ab7-22ea-4206-be86-c0167178860b"
+  Hint: Profile Card Value
+  Value: |
+    <tracking>
+      <profile id="cb14aa6f-6b2e-4970-87ee-28af1c6d8376" name="Running Types">
+        <key name="Advanced" value="10" />
+        <key name="Beginner" value="0" />
+        <key name="Intermediate" value="0" />
+        <key name="Master" value="0" />
+      </profile>
+    </tracking>
+Languages:
+- Language: en
+  Fields:
+  - ID: "a26fc256-1db0-44aa-ba3d-1c830bf882a2"
+    Hint: Name
+    Value: Long Distance Running
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180711T175054Z

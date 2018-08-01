@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Sitecore.Commerce.CustomModels.Outcomes;
+using Sitecore.Commerce.CustomModels.Outcomes;  
 
 namespace Sitecore.HabitatHome.Foundation.Orders.Managers
 { 

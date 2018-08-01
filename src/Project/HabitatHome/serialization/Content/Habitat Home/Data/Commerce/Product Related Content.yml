@@ -1,0 +1,14 @@
+﻿---
+ID: "0b0b79e2-238b-4250-adaa-0f655e8ec470"
+Parent: "046748ba-3697-4d42-83e6-f34712c33a78"
+Template: "b491d043-fac0-4742-97ea-b8d5aaab19bc"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Related Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180605T173034Z

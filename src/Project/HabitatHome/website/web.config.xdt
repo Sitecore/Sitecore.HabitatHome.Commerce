@@ -1,39 +1,49 @@
 ﻿<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-    
-      <runtime>
+
+    <runtime>
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
 
-          <dependentAssembly xdt:Transform="RemoveAll"
-                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Client'))">
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="RemoveAll"
-                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Core'))">
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="RemoveAll"
-                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Edm'))">
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="RemoveAll"
-                   xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.Spatial'))">
-          </dependentAssembly>
-          
-          <dependentAssembly xdt:Transform="Insert">
-            <assemblyIdentity name="Microsoft.OData.Client" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
-            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="Insert">
-            <assemblyIdentity name="Microsoft.OData.Core" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
-            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="Insert">
-            <assemblyIdentity name="Microsoft.OData.Edm" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
-            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
-          </dependentAssembly>
-          <dependentAssembly xdt:Transform="Insert">
-            <assemblyIdentity name="Microsoft.Spatial" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
-            <bindingRedirect oldVersion="6.0.0.0-7.4.4.20330" newVersion="7.4.4.20330" xmlns="urn:schemas-microsoft-com:asm.v1" />
-          </dependentAssembly>          
-        </assemblyBinding>
-      </runtime>
-    
+            <dependentAssembly xdt:Transform="RemoveAll"
+                     xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Client'))">
+            </dependentAssembly>
+            <dependentAssembly xdt:Transform="RemoveAll"
+                     xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Core'))">
+            </dependentAssembly>
+            <dependentAssembly xdt:Transform="RemoveAll"
+                     xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.OData.Edm'))">
+            </dependentAssembly>
+            <dependentAssembly xdt:Transform="RemoveAll"
+                     xdt:Locator="Condition(starts-with(./_defaultNamespace:assemblyIdentity/@name,'Microsoft.Spatial'))">
+            </dependentAssembly>
 
-  </configuration>
+            <dependentAssembly name="Microsoft.OData.Client" xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="Insert">
+                <assemblyIdentity name="Microsoft.OData.Client" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <codeBase version="6.15.0.0" href="ceconnectbin/Microsoft.OData.Client.dll" />
+            </dependentAssembly>
+            <dependentAssembly name="Microsoft.OData.Edm" xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="Insert">
+                <assemblyIdentity name="Microsoft.OData.Edm" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />                
+                <bindingRedirect oldVersion="7.0.0.0-7.2.0.0" newVersion="7.3.1.10814" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <codeBase version="6.15.0.0" href="ceconnectbin/Microsoft.OData.Edm.dll"/>
+                <codeBase version="7.3.1.10814" href="bin/Microsoft.OData.Edm.dll"/>
+            </dependentAssembly>
+            <dependentAssembly name="Microsoft.OData.Core" xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="Insert">
+                <assemblyIdentity name="Microsoft.OData.Core" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <bindingRedirect oldVersion="7.0.0.0-7.2.0.0" newVersion="7.3.1.10814" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <codeBase version="6.15.0.0" href="ceconnectbin/Microsoft.OData.Core.dll"/>
+                <codeBase version="7.3.1.10814" href="bin/Microsoft.OData.Core.dll"/>
+            </dependentAssembly>
+            <dependentAssembly name="Microsoft.Spatial" xmlns="urn:schemas-microsoft-com:asm.v1" xdt:Transform="Insert">
+                <assemblyIdentity name="Microsoft.Spatial" publicKeyToken="31bf3856ad364e35" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <bindingRedirect oldVersion="7.0.0.0-7.2.0.0" newVersion="7.3.1.10814" xmlns="urn:schemas-microsoft-com:asm.v1" />
+                <codeBase version="6.15.0.0" href="ceconnectbin/Microsoft.Spatial.dll"/>
+                <codeBase version="7.3.1.10814" href="bin/Microsoft.Spatial.dll"/>
+            </dependentAssembly>
+        </assemblyBinding>
+    </runtime>
+
+    <system.web xdt:Transform="InsertIfMissing">
+        <sessionState timeout="20" xdt:Transform="Replace"/>
+    </system.web>
+
+
+</configuration>

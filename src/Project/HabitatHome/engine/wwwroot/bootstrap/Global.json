@@ -39,7 +39,7 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
         "PolicyId": "Global",
         "AllowAdmin": true,
-        "Database": "habitat_Global",
+        "Database": "habitathome_Global",
         "EffectiveDate": "0001-01-01T00:00:00",
         "IsVisible": false,
         "Password": "",
@@ -55,21 +55,29 @@
         "ParentNodeId": "Hub01"
       },
       {
-        "$type": "Plugin.Sample.Upgrade.MigrationSqlPolicy, Plugin.Sample.Upgrade",
-        "ArtifactStoreId": "6BE385F1-93DC-4299-9DD4-934F6BA42EAA",
-        "SourceStoreSqlPolicy": {
-          "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
-          "PolicyId": "Global",
-          "AllowAdmin": true,
-          "Database": "habitat_Global",
-          "EffectiveDate": "0001-01-01T00:00:00",
-          "IsVisible": false,
-          "Password": "",
-          "Server": ".",
-          "TrustedConnection": true,
-          "UserName": "",
-          "View": "EntityStoreSqlPolicy"
-        }
+        "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
+        "ControllerMethodRegularExpression": "/commerceops/",
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
+        "ControllerMethodRegularExpression": "/api/",
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
+      },         
+      {
+        "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
+        "Host": "habitathome.dev.local",
+        "SitecoreDatabase": "master",
+        "UserName": "admin",
+        "Domain": "sitecore",
+        "Password": "b",
+        "ConnectionLeaseTimeout": 60000,
+        "AuthRequestUrl": "sitecore/api/ssc/auth/login",
+        "Protocol": "https"
       }
     ]
   },

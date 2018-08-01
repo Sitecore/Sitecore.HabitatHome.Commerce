@@ -31,6 +31,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine
                             d =>
                             {
                                 d.Add<InitializeCatalogBlock>()
+                                    .Add<InitializeEnvironmentSellableItemsBlock>()
                                     .Add<InitializeInventoryBlock>()
                                     .Add<InitializeEnvironmentPricingBlock>()
                                     .Add<InitializeEnvironmentPromotionsBlock>();

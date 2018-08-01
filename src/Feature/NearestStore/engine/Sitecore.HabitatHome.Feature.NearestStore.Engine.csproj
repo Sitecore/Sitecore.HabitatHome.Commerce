@@ -17,17 +17,15 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
     <PackageReference Include="Sitecore.Commerce.Core">
-      <Version>2.1.6</Version>
+      <Version>2.2.29</Version>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.1.5" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.26" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="ConfigureServiceApiBlock.cs" />
     <Content Include="ConfigureSitecore.cs" />
     <Content Include="Controllers\CommandsController.cs" />
-    <Content Include="Entities\SampleEntity.cs" />
-    <Content Include="Models\SampleModel.cs" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

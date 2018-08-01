@@ -1,6 +1,7 @@
 ﻿using Sitecore.Commerce.Entities.Products;
 using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.HabitatHome.Feature.ProductBundle.Models.JsonResults;

@@ -1,0 +1,115 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.HabitatHome.Feature.ProductRelatedContent.Models
+@using Sitecore.Mvc
+@using Sitecore.Data.Items
+@using Sitecore.Mvc.Extensions
+@using Sitecore.Mvc.Presentation
+@model  CatalogItemRenderingModel
+@{ 
+    Rendering rendering = RenderingContext.CurrentOrNull.ValueOrDefault(context => context.Rendering);
+    string dsId = !String.IsNullOrEmpty(rendering.DataSource) ? rendering.Item.ID.ToString() : String.Empty;
+    var deskTopCols = rendering.Parameters["GridParameters"];
+
+    var dtCols = deskTopCols.Split('|');
+    Item mobileGridItem = dtCols.Count() > 0 ? Sitecore.Context.Database.GetItem(dtCols[0]) : null;
+    Item tabletGridItem = dtCols.Count() > 1 ? Sitecore.Context.Database.GetItem(dtCols[1]) : null;
+    Item desktopGridItem = dtCols.Count() > 2 ? Sitecore.Context.Database.GetItem(dtCols[2]) : null;
+    Item largeGridItem = dtCols.Count() > 3 ? Sitecore.Context.Database.GetItem(dtCols[3]) : null;
+
+    string mobileClass = mobileGridItem != null ? mobileGridItem["Class"] : "";
+    string tabletClass = tabletGridItem != null ? tabletGridItem["Class"] : "";
+    string desktopClass = desktopGridItem != null ? desktopGridItem["Class"] : "";
+    string largeClass = largeGridItem != null ? largeGridItem["Class"] : "";
+
+
+
+}
+<div id="divProductRelatedContent" class="component cxa-product-related-content-component">
+    <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
+    <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
+    <input type="hidden" value="@dsId" id="personalized-product-list" />
+
+    <div class="component-content related-content-tabs" style="display:none;">
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" data-bind="visible:RelatedProductsList().length > 0 || CrossSellProductsList().length > 0 || UpSellProductsList().length > 0" class="active"><a href="#relatedProducts" aria-controls="relatedProducts" role="tab" data-toggle="tab">Related Products</a></li>
+
+            <li role="presentation" data-bind="visible:ProductDocumentsList().length > 0"><a href="#productDocumentation" aria-controls="productDocumentation" role="tab" data-toggle="tab">Product Documentation</a></li>
+
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="relatedProducts" data-bind="visible:RelatedProductsList().length > 0 || CrossSellProductsList().length > 0 || UpSellProductsList().length > 0">
+                <div data-bind="visible:RelatedProductsList().length > 0" class="related-products-list" style="margin-top:15px;">
+
+                    <div class="row" data-bind="foreach:RelatedProductsList">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product">
+                            <div style="padding:10px;">
+                                <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                                <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
+                                <span class="related-product-price" data-bind="text: Price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div data-bind="visible:CrossSellProductsList().length > 0" class="related-products-list"style="margin-top:15px;">
+
+                    <label><b>Don't forget about these products</b></label>
+                    <div class="row" data-bind="foreach:CrossSellProductsList">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product-cross">
+                            <div style="padding:10px;">
+                                <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                                <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
+                                <span class="related-product-price" data-bind="text: Price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div data-bind="visible:UpSellProductsList().length > 0" class="related-products-list" style="margin-top:15px;">
+
+                    <label><b>Be sure to add these products</b></label>
+
+                    <div class="row" data-bind="foreach:UpSellProductsList">
+                        <div class="@mobileClass @tabletClass @desktopClass @largeClass related-content-product-up">
+                            <div style="padding:10px;">
+                                <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                                <h3 class="product-name"> <a data-bind="attr:{href: ProductUrl}"><span data-bind="text: DisplayName"></span></a></h3>
+                                <span class="related-product-price" data-bind="text: Price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="productDocumentation" data-bind="visible:ProductDocumentsList().length > 0">
+                <div class="row" data-bind="foreach:ProductDocumentsList">
+                    <div class="col-xs-12 related-content-document">
+                        <div class="row" style="padding:10px;">
+                            <div class=".hidden-sm-down col-md-4">
+                                <img data-bind="attr:{src: ImageUrl}" class="img-responsive" />
+                            </div>
+                            <div class="col-xs-12 col-md-8">
+                                <h3 class="product-name"> <a data-bind="attr:{href: DocumentUrl}" target="_blank"><span data-bind="text: DocumentName"></span></a></h3>
+                                <span class="related-product-content-description" data-bind="text: Description"></span><br />
+                                <span class="small related-product-content-type" data-bind="text: DocumentType"></span>
+
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

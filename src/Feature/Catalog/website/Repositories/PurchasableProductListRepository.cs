@@ -4,6 +4,7 @@ using Sitecore.Commerce.XA.Feature.Catalog;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common.Search;
@@ -20,8 +21,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
     {                                                             
         private readonly IStorefrontContext _storefrontContext;
 
-        public PurchasableProductListRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, IInventoryManager inventoryManager, ICatalogUrlManager catalogUrlManager) 
-            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, inventoryManager, catalogUrlManager)
+        public PurchasableProductListRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, IInventoryManager inventoryManager, ICatalogUrlManager catalogUrlManager, IContext context) 
+            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, inventoryManager, catalogUrlManager,context)
         {                                            
             _storefrontContext = storefrontContext;
         }
@@ -54,7 +55,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
                 List<ProductEntity> productEntityList = this.AdjustProductPriceAndStockStatus(visitorContext, childProducts, item);
                 productListJsonResult.Initialize(this, productEntityList, false, searchKeyword);
             }
-            else if (Context.PageMode.IsExperienceEditor)
+            else if (Sitecore.Context.PageMode.IsExperienceEditor)
             {
                 productListJsonResult = InitializeMockData(this, productListJsonResult);
             }
@@ -67,7 +68,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
             model.Initialize(repository, productEntities, true, "");
             foreach (PurchasableProductSummaryViewModel product in model.ChildProducts)
             {
-                MediaItem item = Context.Database.GetItem(CatalogFeatureConstants.MockDataItems.MockProductId);
+                MediaItem item = Sitecore.Context.Database.GetItem(CatalogFeatureConstants.MockDataItems.MockProductId);
                 product.Images.Add(item);
                 product.DisplayName = "Lorem ipsum";
                 product.Description = "Lorem ipsum";
