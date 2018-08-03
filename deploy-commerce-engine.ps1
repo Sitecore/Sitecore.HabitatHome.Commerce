@@ -6,6 +6,8 @@ Param(
     [string]$identityServerHost = "localhost:5050",
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
+    [string]$BizFxPathName = "SitecoreBizFxhabitathome",
+    [string]$IdentityServerPathName = "SitecoreIdentityServer",
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
@@ -70,6 +72,26 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
         $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
 
     }
+
+    # Modify IdentityServer AppSettings based on new engine hostname
+    $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json")
+    $idServerSettings = $idServerJson | Get-Content $pathToJson -Raw | ConvertFrom-Json)
+    $client = $idServerSettings | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
+   
+    $client.RedirectUris = @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
+    $client.PostLogoutRedirectUris =  @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
+    $client.AllowedCorsOrigins =  @(("https://{0}:4200/" -f $engineHostName),("https://{0}:4200"-f $engineHostName))
+
+    $idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
+
+    #Modify BizFx to match new hostname
+    $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json")
+    $bizFxSettings = $bizFxJson | Get-Content $pathToJson -Raw | ConvertFrom-Json)
+    $bizFxSettings.BizFxUri = ("https://{0}:4200"-f $engineHostName)
+    $bizFxSettings.IdentityServerUri = $identityServerHost
+    $bizFxSettings.EngineUri =  ("https://{0}:5000"-f $engineHostName)
+    $bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
+
 }
 Function Publish-CommerceEngine {
     Write-Host ("Deploying Commerce Engine") -ForegroundColor Green
@@ -80,7 +102,7 @@ Function Publish-CommerceEngine {
         $enginePath = Join-Path $publishFolder $engineFullName
         Write-Host ("Copying to {0}" -f $engineWebRoot) -ForegroundColor Green
         if ($engineSuffix.length -gt 0) {
-            $engineWebRoot = Join-Path $webRoot  $($engineFullName +  "_" + $engineSuffix)
+            $engineWebRoot = Join-Path $webRoot  $($engineFullName + "_" + $engineSuffix)
         }
         else {
             $engineWebRoot = [System.IO.Path]::Combine($webRoot, $engineFullName)
