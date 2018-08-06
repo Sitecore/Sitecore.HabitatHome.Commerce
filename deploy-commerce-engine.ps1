@@ -74,9 +74,9 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
     }
 
     # Modify IdentityServer AppSettings based on new engine hostname
-    $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json")
-    $idServerSettings = $idServerJson | Get-Content $pathToJson -Raw | ConvertFrom-Json)
-    $client = $idServerSettings | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
+    $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
+    $idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
+    $client = $idServerSettings.AppSettings.Clients | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
    
     $client.RedirectUris = @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
     $client.PostLogoutRedirectUris =  @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
@@ -85,8 +85,8 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
     $idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
 
     #Modify BizFx to match new hostname
-    $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json")
-    $bizFxSettings = $bizFxJson | Get-Content $pathToJson -Raw | ConvertFrom-Json)
+    $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
+    $bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
     $bizFxSettings.BizFxUri = ("https://{0}:4200"-f $engineHostName)
     $bizFxSettings.IdentityServerUri = $identityServerHost
     $bizFxSettings.EngineUri =  ("https://{0}:5000"-f $engineHostName)
