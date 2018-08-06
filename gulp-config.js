@@ -1,7 +1,5 @@
 module.exports = function() {
     var sitesRoot = "C:\\inetpub\\wwwroot";
-    var siteName = "habitathome.dev.local";
-    var webroot = "C:\\inetpub\\wwwroot";
     var instanceRoot = sitesRoot + "\\habitathome.dev.local";
     var config = {
         sitecoreRoot: instanceRoot,
