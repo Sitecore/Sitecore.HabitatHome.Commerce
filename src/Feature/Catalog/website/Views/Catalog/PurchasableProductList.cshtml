@@ -9,12 +9,13 @@
 @{
     var currentItem = Html.Sitecore().CurrentItem;
     var loadMoreProductsText = Html.Sitecore().Field("Show More Products Text", currentItem);
+	var loadMoreProductsTooltip = Html.Sitecore().Field("Show More Products Tooltip", currentItem);
     var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem);
     var addToCartLabel = Html.Sitecore().Field("Add to Cart Button Label", Html.Sitecore().CurrentItem);
     var addingToCartLabel = Html.Sitecore().CurrentItem["Add to Cart Button In-progress Label"];
 }
 
-<div @Html.Sxa().Component("cxa-productlist-component", Model.Attributes) data-cxa-component-class="PurchasableProductList" data-cxa-component-initialized="false" data-cxa-component-type="component">
+<div data-bind="style: {display: 'block'}" style="display: none" @Html.Sxa().Component("cxa-productlist-component", Model.Attributes) data-cxa-component-class="PurchasableProductList" data-cxa-component-initialized="false" data-cxa-component-type="component">
     <input type="hidden" name="currentCatalogItemId" value="@Model.CurrentCatalogItemId" data-bind="value: currentCatalogItemId" />
     <input type="hidden" name="useLazyLoading" value="@Model.UseLazyLoading" data-bind="value: useLazyLoading" />
     <input type="hidden" name="maxPageSize" value="@Model.MaxPageSize" data-bind="value: maxPageSize" />
@@ -81,11 +82,13 @@
                             <div class="savings"></div>
                             <div></div>
                             <!-- /ko -->
+
                             <!-- ko if: StockStatus -->
-                            <div data-bind="text: StockStatusName, attr:{class: StockStatusName + ' product-stock-status'}"></div>
+                            <div data-bind="text: StockStatus ? StockStatus.Name : '', attr:{class: (StockStatus ? StockStatusName : '') + ' product-stock-status'}"></div>
 
                             <!-- ko if: StockAvailabilityDate -->
-                            <div class="product-stock-availability-date" data-bind="text: '/' + StockAvailabilityDate"></div>
+                            <!-- TODO: Style the stock availability date -->
+                            @*<div class="product-stock-availability-date" data-bind="text: '/' + StockAvailabilityDate"></div>*@
                             <!-- /ko -->
                             <!-- ko ifnot: StockAvailabilityDate -->
                             <div class="product-stock-availability-date"></div>
