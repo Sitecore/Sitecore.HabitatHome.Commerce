@@ -25,3 +25,4 @@ lib/Modules/*
 *.dll
 *.bak
 publishTemp/*
+/.github
