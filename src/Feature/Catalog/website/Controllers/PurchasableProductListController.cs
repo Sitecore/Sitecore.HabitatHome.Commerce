@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Web.Mvc;
+using System.Web.UI;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Entities.Carts;
 using Sitecore.Commerce.Services;
 using Sitecore.Commerce.Services.Carts;
-using Sitecore.Commerce.XA.Feature.Catalog.Repositories;   
+using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
+using Sitecore.Commerce.XA.Foundation.Common.Attributes;
 using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -48,11 +51,11 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
             _visitorContext = visitorContext;
             _purchasableProductListRepository = purchasableProductListRepository;
         }
-              
-        [HttpPost]                                                                   
-        public JsonResult AddCartLine(IContext context,string productId, string variantId, string quantity = "1.0")
+
+        [ValidateHttpPostHandler, AllowAnonymous, HttpPost, OutputCache(NoStore = true, Location = OutputCacheLocation.None), ValidateAntiForgeryToken]
+        public JsonResult AddCartLine(string productId, string variantId, string quantity = "1.0")
         {   
-            BaseJsonResult model = new BaseJsonResult(context,StorefrontContext);
+            BaseJsonResult model = new BaseJsonResult(SitecoreContext,StorefrontContext);
             CommerceStorefront currentStorefront = StorefrontContext.CurrentStorefront;
             ManagerResponse<CartResult, Cart> currentCart = _cartManager.GetCurrentCart(_visitorContext, StorefrontContext, false);
             if (!currentCart.ServiceProviderResult.Success || currentCart.Result == null)
