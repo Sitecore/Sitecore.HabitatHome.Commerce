@@ -1,9 +1,10 @@
 Param(
-
     [string]$siteName = "habitathome.dev.local",
-    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
     [string]$engineHostName = "localhost",
     [string]$identityServerHost = "localhost:5050",
+    [switch]$Initialize,
+    [switch]$Bootstrap,
+    [switch]$SkipPublish,
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$BizFxPathName = "SitecoreBizFxhabitathome",
@@ -12,10 +13,8 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$publishFolder = (Join-Path $PWD "publishTemp"),
-    [switch]$Initialize,
-    [switch]$Bootstrap,
-    [switch]$SkipPublish
+    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
+    [string]$publishFolder = (Join-Path $PWD "publishTemp")
 )
 
 Function Start-CommerceEngineCompile ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {
