@@ -73,6 +73,7 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
 
     }
 
+    Write-Host "Modifying Identity Server configuration" -ForegroundColor Green 
     # Modify IdentityServer AppSettings based on new engine hostname
     $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
     $idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
@@ -84,11 +85,12 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
 
     $idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
 
+    Write-Host "Modifying BizFx (Business Tools) configuration" -ForegroundColor Green
     #Modify BizFx to match new hostname
     $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
     $bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
     $bizFxSettings.BizFxUri = ("https://{0}:4200"-f $engineHostName)
-    $bizFxSettings.IdentityServerUri = $identityServerHost
+    $bizFxSettings.IdentityServerUri = ("https://{0}" -f $identityServerHost)
     $bizFxSettings.EngineUri =  ("https://{0}:5000"-f $engineHostName)
     $bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
 
