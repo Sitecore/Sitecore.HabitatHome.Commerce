@@ -231,7 +231,7 @@ gulp.task("publish",
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
     const layerPathFilters = [
-        location + "/**/Website/**/*.csproj", "!" + location + "/**/Website/**/*WishLists*.csproj"
+        location + "/**/Website/**/*.csproj"
     ];
     return gulp.src(layerPathFilters)
         .pipe(debug())
