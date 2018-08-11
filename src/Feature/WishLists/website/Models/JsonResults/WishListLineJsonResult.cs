@@ -19,8 +19,8 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
         public WishListLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager, IContext context)
             : base(context, storefrontContext)
         {
-            Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
-            Assert.ArgumentNotNull((object)searchManager, nameof(searchManager));
+            Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));
+            Assert.ArgumentNotNull(searchManager, nameof(searchManager));
             this.ModelProvider = modelProvider;
             this.SearchManager = searchManager;
         }
@@ -62,7 +62,7 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
         {
             this.ExternalWishListLineId = listLine.ExternalId;
             this.ProductId = listLine.Product.ProductId;
-            this.Quantity = listLine.Quantity.ToString((IFormatProvider)Context.Language.CultureInfo);
+            this.Quantity = listLine.Quantity.ToString(Context.Language.CultureInfo);
             this.LinePrice = listLine.Product.Price.Amount.ToCurrency();
             this.LineTotal = this.LinePrice;
             this.DisplayName = listLine.Product.ProductName;            
@@ -74,7 +74,16 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
 
         public virtual void SetLink(string productId)
         {
-            this.ProductUrl = productId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId, StringComparison.OrdinalIgnoreCase) ? this.StorefrontContext.CurrentStorefront.GiftCardPageLink : LinkManager.GetDynamicUrl(this.SearchManager.GetProduct(productId, this.StorefrontContext.CurrentStorefront.Catalog));
+            if (productId.Equals(this.StorefrontContext.CurrentStorefront.GiftCardProductId,
+                StringComparison.OrdinalIgnoreCase))
+            {
+                this.ProductUrl = this.StorefrontContext.CurrentStorefront.GiftCardPageLink;
+            }
+            else
+            {
+                var product = this.SearchManager.GetProduct(productId, this.StorefrontContext.CurrentStorefront.Catalog);
+                this.ProductUrl = product != null ? LinkManager.GetDynamicUrl(product) : string.Empty;
+            } 
         }
         public virtual void SetImageUrl(string imageId)
         {
