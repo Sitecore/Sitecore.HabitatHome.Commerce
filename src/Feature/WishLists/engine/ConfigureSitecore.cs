@@ -40,7 +40,8 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine
                         {
                             configure.Add<ValidateSellableItemBlock>();
                             configure.Add<AddWishListLineBlock>();
-                            configure.Add<AddContactBlock>()
+                            configure.Add<PopulateCartLineItemsBlock>();
+                            configure.Add<AddContactBlock>()        
                            .Add<ICalculateCartLinesPipeline>()
                            .Add<ICalculateCartPipeline>();
                             configure.Add<PersistCartBlock>();
