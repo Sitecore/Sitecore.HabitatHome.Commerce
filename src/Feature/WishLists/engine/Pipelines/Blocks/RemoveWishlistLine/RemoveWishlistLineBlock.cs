@@ -11,27 +11,25 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.RemoveW
 {
     [PipelineDisplayName("Wishlists.AddWishListLineItemBlock")]
     public class RemoveWishlistLineBlock : PipelineBlock<CartLineArgument, Cart, CommercePipelineExecutionContext>
-    {
+    {                      
         public override async Task<Cart> Run(CartLineArgument arg, CommercePipelineExecutionContext context)
         {
-            Condition.Requires<CartLineArgument>(arg).IsNotNull<CartLineArgument>("The argument can not be null");
-            Condition.Requires<Cart>(arg.Cart).IsNotNull<Cart>("The cart can not be null");
-            Condition.Requires<CartLineComponent>(arg.Line).IsNotNull<CartLineComponent>("The lines can not be null");
+            Condition.Requires(arg).IsNotNull("The argument can not be null");
+            Condition.Requires(arg.Cart).IsNotNull("The cart can not be null");
+            Condition.Requires(arg.Line).IsNotNull("The lines can not be null");
+
             Cart cart = arg.Cart;
-            List<CartLineComponent> lines = cart.Lines.ToList<CartLineComponent>();
-            CartLineComponent existingLine = lines.FirstOrDefault<CartLineComponent>((Func<CartLineComponent, bool>)(l => l.Id.Equals(arg.Line.Id, StringComparison.OrdinalIgnoreCase)));
+            List<CartLineComponent> lines = cart.Lines.ToList();
+            CartLineComponent existingLine = lines.FirstOrDefault(l => l.Id.Equals(arg.Line.Id, StringComparison.OrdinalIgnoreCase));
+
             if (existingLine != null)
             {
-                string str = await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Information, (string)null, (object[])null, string.Format("Removed Line '{0}' from Cart '{1}'.", (object)existingLine.Id, (object)cart.Id));
+                string str = await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Information, null, null, $"Removed Line '{existingLine.Id}' from Wishlist '{cart.Id}'.");
                 lines.Remove(existingLine);
             }
-            cart.Lines = (IList<CartLineComponent>)lines;
-            return cart;
-        }
 
-        public RemoveWishlistLineBlock()
-          : base((string)null)
-        {
+            cart.Lines = lines;
+            return cart;
         }
     }
 }

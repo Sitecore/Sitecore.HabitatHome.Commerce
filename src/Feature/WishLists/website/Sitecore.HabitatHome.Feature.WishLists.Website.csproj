@@ -128,11 +128,8 @@
     <Compile Include="Models\JsonResults\WishListLineJsonResult.cs" />
     <Compile Include="Models\WishListLinesRenderingModel.cs" />
     <Compile Include="Pipelines\AddWishListLine.cs" />
-    <Compile Include="Pipelines\Arguments\TranslateCartToWishListEntityResult.cs" />
-    <Compile Include="Pipelines\CreateWishList.cs" />
     <Compile Include="Pipelines\GetWishList.cs" />
     <Compile Include="Pipelines\RemoveWishListLine.cs" />
-    <Compile Include="Pipelines\TranslateCartToWishListEntity.cs" />
     <Compile Include="Pipelines\WishListProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IWishListLinesRepository.cs" />

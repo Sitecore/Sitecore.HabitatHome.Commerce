@@ -14,30 +14,28 @@ using Sitecore.HabitatHome.Feature.WishLists.Repositories;
 namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
 {
     public class WishListLinesController : BaseCommerceStandardController
-    {
-        
-        protected IWishListLinesRepository WishListLinesRepository { get; set; }
-        public IVisitorContext VisitorContext { get; protected set; }
-        public IModelProvider ModelProvider { get; protected set; }
-        public IAddToCartRepository AddToCartRepository { get; protected set; }
+    {              
+        private readonly IWishListLinesRepository _wishListLinesRepository;
+        private readonly IVisitorContext _visitorContext;
+        private readonly IModelProvider _modelProvider;
+        private readonly IAddToCartRepository _addToCartRepository;
 
         public WishListLinesController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IVisitorContext visitorContext, IAddToCartRepository addToCartRepository, IWishListLinesRepository wishListLinesRepository, IContext context) 
             : base(storefrontContext, context)
-        {
+        {                                
+            Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));
+            Assert.ArgumentNotNull(visitorContext, nameof(visitorContext));
 
-            Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
-
-            this.ModelProvider = modelProvider;
-            this.VisitorContext = visitorContext;
-            this.WishListLinesRepository = wishListLinesRepository;
-            this.AddToCartRepository = addToCartRepository;
+            _modelProvider = modelProvider;
+            _visitorContext = visitorContext;
+            _wishListLinesRepository = wishListLinesRepository;
+            _addToCartRepository = addToCartRepository;
         }
 
         [HttpGet]
         public ActionResult WishListLines()
         {
-            return (ActionResult)this.View("~/Views/Wishlists/WishListLines.cshtml", (object)this.WishListLinesRepository.GetWishListLinesModel()); ;
+            return View("~/Views/Wishlists/WishListLines.cshtml", _wishListLinesRepository.GetWishListLinesModel());
         }
 
         [AllowAnonymous]
@@ -47,16 +45,15 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
         {
             BaseJsonResult baseJsonResult;
             try
-            {
-                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
-                baseJsonResult = this.WishListLinesRepository.GetWishList(this.StorefrontContext, this.VisitorContext);
+            {                                                                               
+                baseJsonResult = _wishListLinesRepository.GetWishList(StorefrontContext, _visitorContext);
             }
             catch (Exception ex)
             {
-                baseJsonResult = this.ModelProvider.GetModel<BaseJsonResult>();
+                baseJsonResult = _modelProvider.GetModel<BaseJsonResult>();
                 baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
             }
-            return this.Json(baseJsonResult);
+            return Json(baseJsonResult);
         }
 
         [AllowAnonymous]
@@ -67,18 +64,17 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
             BaseJsonResult baseJsonResult;
             try
             {
-                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
-                baseJsonResult = this.WishListLinesRepository.AddWishListLine(this.StorefrontContext, this.VisitorContext, catalogName, productId, variantId, quantity);
+                string catalogName = StorefrontContext.CurrentStorefront.Catalog;
+                baseJsonResult = _wishListLinesRepository.AddWishListLine(StorefrontContext, _visitorContext, catalogName, productId, variantId, quantity);
             }
             catch (Exception ex)
             {
-                baseJsonResult = this.ModelProvider.GetModel<BaseJsonResult>();
+                baseJsonResult = _modelProvider.GetModel<BaseJsonResult>();
                 baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
             }
-            return this.Json(baseJsonResult);
+            return Json(baseJsonResult);
         }
-
-
+                    
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
@@ -87,16 +83,15 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
             BaseJsonResult baseJsonResult;
             try
             {
-                List<string> ids = new List<string>();
-                ids.Add(lineIds);
-                baseJsonResult = this.WishListLinesRepository.RemoveWishListLines(this.StorefrontContext, this.VisitorContext, ids);
+                List<string> ids = new List<string> {lineIds};
+                baseJsonResult = _wishListLinesRepository.RemoveWishListLines(StorefrontContext, _visitorContext, ids);
             }
             catch (Exception ex)
             {
-                baseJsonResult = this.ModelProvider.GetModel<BaseJsonResult>();
+                baseJsonResult = _modelProvider.GetModel<BaseJsonResult>();
                 baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
             }
-            return this.Json(baseJsonResult);
+            return Json(baseJsonResult);
         }
 
         [AllowAnonymous]
@@ -107,15 +102,15 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Controllers
             BaseJsonResult baseJsonResult;
             try
             {
-                string catalogName = this.StorefrontContext.CurrentStorefront.Catalog;
-                baseJsonResult = this.AddToCartRepository.AddLineItemsToCart(this.StorefrontContext, this.VisitorContext, catalogName, productId, variantId, quantity);
+                string catalogName = StorefrontContext.CurrentStorefront.Catalog;
+                baseJsonResult = _addToCartRepository.AddLineItemsToCart(StorefrontContext, _visitorContext, catalogName, productId, variantId, quantity);
             }
             catch (Exception ex)
             {
-                baseJsonResult = this.ModelProvider.GetModel<BaseJsonResult>();
+                baseJsonResult = _modelProvider.GetModel<BaseJsonResult>();
                 baseJsonResult.SetErrors(nameof(AddWishListLine), ex);
             }
-            return this.Json(baseJsonResult);
+            return Json(baseJsonResult);
         } 
     }
 }

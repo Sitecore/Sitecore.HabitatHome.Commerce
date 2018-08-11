@@ -6,7 +6,7 @@ using Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Arguments;
 namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines
 {
     [PipelineDisplayName("pipelines:getWishlist")]
-    public interface IGetWishlistPipeline : IPipeline<GetWishListArgument, WishList, CommercePipelineExecutionContext>, IPipelineBlock<GetWishListArgument, WishList, CommercePipelineExecutionContext>, IPipelineBlock, IPipeline
+    public interface IGetWishlistPipeline : IPipeline<GetWishListArgument, WishList, CommercePipelineExecutionContext>
     {
     }   
 }
