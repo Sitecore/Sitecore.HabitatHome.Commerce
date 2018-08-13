@@ -11,11 +11,12 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
     public class WishListJsonResult : BaseJsonResult
     {
         public WishListJsonResult(IContext context, IStorefrontContext storefrontContext, IModelProvider modelProvider)
-      : base(context, storefrontContext)
+            : base(context, storefrontContext)
         {
-            Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
+            Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;
         }
+
         [ScriptIgnore]
         public IModelProvider ModelProvider { get; set; }
 
@@ -25,6 +26,7 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
         public string UserId { get; set; }
         public bool IsFavorite { get; set; }
         public List<WishListLineJsonResult> Lines { get; set; }     
+
         public virtual void Initialize(WishList wishList)
         {
             this.ShopName = wishList.ShopName;
@@ -33,6 +35,7 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Models.JsonResults
             this.UserId = wishList.UserId;
             this.IsFavorite = wishList.IsFavorite;
             this.Lines = new List<WishListLineJsonResult>();
+
             foreach (WishListLine line in wishList.Lines)
             {
                 WishListLineJsonResult model = this.ModelProvider.GetModel<WishListLineJsonResult>();

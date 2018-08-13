@@ -41,34 +41,17 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine
         public override Task<ODataConventionModelBuilder> Run(ODataConventionModelBuilder modelBuilder, CommercePipelineExecutionContext context)
         {
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
+                                                                  
+            ActionConfiguration addWishlistItemAction = modelBuilder.Action("AddWishListLineItem");            
+            addWishlistItemAction.Parameter<string>("wishlistId");            
+            addWishlistItemAction.Parameter<string>("itemId");            
+            addWishlistItemAction.Parameter<System.Decimal>("quantity");     
+            addWishlistItemAction.ReturnsFromEntitySet<CommerceCommand>("Commands");
 
-            // Add the entities
-            //modelBuilder.AddEntityType(typeof(SampleEntity));
-
-            // Add the entity sets
-            //modelBuilder.EntitySet<SampleEntity>("Sample");
-
-            // Add complex types
-
-            // Add unbound functions
-
-            // Add unbound actions
-            //var configuration = modelBuilder.Action("SampleCommand");
-            //configuration.Parameter<string>("Id");
-            //configuration.ReturnsFromEntitySet<CommerceCommand>("Commands");
-
-
-            ActionConfiguration actionConfiguration2 = modelBuilder.Action("AddWishListLineItem");            
-            actionConfiguration2.Parameter<string>("wishlistId");            
-            actionConfiguration2.Parameter<string>("itemId");            
-            actionConfiguration2.Parameter<System.Decimal>("quantity");
-            //string entitySetName2 = "Commands";
-            actionConfiguration2.ReturnsFromEntitySet<CommerceCommand>("Commands");
-
-            ActionConfiguration actionConfiguration3 = modelBuilder.Action("RemoveWishListLineItem");            
-            actionConfiguration3.Parameter<string>("wishlistId");            
-            actionConfiguration3.Parameter<string>("cartLineId");            
-            actionConfiguration3.ReturnsFromEntitySet<CommerceCommand>("Commands");
+            ActionConfiguration removeWishlitItemAction = modelBuilder.Action("RemoveWishListLineItem");            
+            removeWishlitItemAction.Parameter<string>("wishlistId");            
+            removeWishlitItemAction.Parameter<string>("cartLineId");            
+            removeWishlitItemAction.ReturnsFromEntitySet<CommerceCommand>("Commands");
 
             return Task.FromResult(modelBuilder);
         }

@@ -1,0 +1,14 @@
+﻿<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">         
+    <!-- We are disabling Federated Authentication in the XC demo temporarily 
+         due to issues with engine authentication -->
+    <system.webServer>
+        <modules>
+            <remove name="FormsAuthentication" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+        </modules>
+    </system.webServer>
+    <system.web>
+        <authentication mode="Forms" xdt:Transform="Replace">
+            <forms name=".ASPXAUTH" cookieless="UseCookies" loginUrl="Sitecore/login" />
+        </authentication>
+    </system.web>
+</configuration>

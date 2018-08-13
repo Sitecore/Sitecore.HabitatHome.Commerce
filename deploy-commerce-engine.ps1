@@ -1,9 +1,10 @@
 Param(
-
     [string]$siteName = "habitathome.dev.local",
-    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
     [string]$engineHostName = "localhost",
     [string]$identityServerHost = "localhost:5050",
+    [switch]$Initialize,
+    [switch]$Bootstrap,
+    [switch]$SkipPublish,
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$BizFxPathName = "SitecoreBizFxhabitathome",
@@ -12,10 +13,8 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$publishFolder = (Join-Path $PWD "publishTemp"),
-    [switch]$Initialize,
-    [switch]$Bootstrap,
-    [switch]$SkipPublish
+    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
+    [string]$publishFolder = (Join-Path $PWD "publishTemp")
 )
 
 Function Start-CommerceEngineCompile ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {
@@ -35,7 +34,10 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
 
     $thumbprint = Get-ChildItem -path cert:\LocalMachine\my | Where-Object {$_.Subject -like $fullCertificateName} | Select-Object Thumbprint
   
-  
+    $pathToGlobalJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\bootstrap\Global.json")
+    $global = Get-Content $pathToGlobalJson -Raw | ConvertFrom-Json
+    $global.Policies.'$values'[5].Host = $siteName
+    $global | ConvertTo-Json -Depth 10 -Compress | set-Content $pathToGlobalJson
     $pathToJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\config.json")
 
     $config = Get-Content $pathToJson -Raw | ConvertFrom-Json
@@ -73,23 +75,25 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
 
     }
 
+    Write-Host "Modifying Identity Server configuration" -ForegroundColor Green 
     # Modify IdentityServer AppSettings based on new engine hostname
     $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
     $idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
     $client = $idServerSettings.AppSettings.Clients | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
    
-    $client.RedirectUris = @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
-    $client.PostLogoutRedirectUris =  @(("https://{0}:4200" -f $engineHostName),("https://{0}:4200/?"-f $engineHostName))
-    $client.AllowedCorsOrigins =  @(("https://{0}:4200/" -f $engineHostName),("https://{0}:4200"-f $engineHostName))
+    $client.RedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
+    $client.PostLogoutRedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
+    $client.AllowedCorsOrigins = @(("https://{0}:4200/" -f $engineHostName), ("https://{0}:4200" -f $engineHostName))
 
     $idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
 
+    Write-Host "Modifying BizFx (Business Tools) configuration" -ForegroundColor Green
     #Modify BizFx to match new hostname
     $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
     $bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
-    $bizFxSettings.BizFxUri = ("https://{0}:4200"-f $engineHostName)
-    $bizFxSettings.IdentityServerUri = $identityServerHost
-    $bizFxSettings.EngineUri =  ("https://{0}:5000"-f $engineHostName)
+    $bizFxSettings.BizFxUri = ("https://{0}:4200" -f $engineHostName)
+    $bizFxSettings.IdentityServerUri = ("https://{0}" -f $identityServerHost)
+    $bizFxSettings.EngineUri = ("https://{0}:5000" -f $engineHostName)
     $bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
 
 }
@@ -100,13 +104,14 @@ Function Publish-CommerceEngine {
     foreach ($engine in $engines) {
         $engineFullName = ("Commerce{0}" -f $engine)
         $enginePath = Join-Path $publishFolder $engineFullName
-        Write-Host ("Copying to {0}" -f $engineWebRoot) -ForegroundColor Green
+        
         if ($engineSuffix.length -gt 0) {
             $engineWebRoot = Join-Path $webRoot  $($engineFullName + "_" + $engineSuffix)
         }
         else {
             $engineWebRoot = [System.IO.Path]::Combine($webRoot, $engineFullName)
         }
+        Write-Host ("Copying to {0}" -f $engineWebRoot) -ForegroundColor Green
         $engineWebRootBackup = ("{0}_backup" -f $engineWebRoot)
 
         if (Test-Path $engineWebRootBackup -PathType Container) {

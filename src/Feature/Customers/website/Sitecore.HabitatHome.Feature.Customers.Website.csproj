@@ -86,6 +86,9 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Customers.config" />
     <None Include="App_Config\Security\Domains.config.xdt" />
+    <Content Include="web.config.xdt">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

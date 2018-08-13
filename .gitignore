@@ -25,3 +25,4 @@ lib/Modules/*
 *.dll
 *sc-internal*
 lib/LocalRepository/*
+publishTemp/
