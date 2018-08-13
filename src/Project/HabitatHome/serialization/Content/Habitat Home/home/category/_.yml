@@ -52,7 +52,7 @@ SharedFields:
                   <condition
                     uid="40BCBA2270FE4454B134C6A7BBD8FCEF"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Vacuums" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Vacuums" />
                 </conditions>
                 <actions>
                   <action
@@ -74,7 +74,7 @@ SharedFields:
                   <condition
                     uid="460343F72DEC49C6AEAE332D7F71DF47"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Ranges" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Ranges" />
                 </conditions>
               </rule>
               <rule
@@ -90,7 +90,7 @@ SharedFields:
                   <condition
                     uid="E1110AAD426C46B282DBAF64059CAF4D"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Microwaves" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Microwaves" />
                 </conditions>
               </rule>
               <rule
@@ -106,7 +106,7 @@ SharedFields:
                   <condition
                     uid="48E5246B8CED459EB90FB7FBC41A3E8F"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Laundry" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Laundry" />
                 </conditions>
               </rule>
               <rule
@@ -122,7 +122,7 @@ SharedFields:
                   <condition
                     uid="C87167DEDD9847FB9ED360818BA3E482"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Small Appliances" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Small Appliances" />
                 </conditions>
               </rule>
               <rule
@@ -138,7 +138,7 @@ SharedFields:
                   <condition
                     uid="339BFCBB7BD8467780CBC01C87F45836"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Coffee Makers" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Coffee Makers" />
                 </conditions>
               </rule>
               <rule
@@ -154,7 +154,7 @@ SharedFields:
                   <condition
                     uid="08DCFB7AB5CD496985C2CAE37150B83E"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Refrigerators" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Refrigerators" />
                 </conditions>
               </rule>
               <rule
@@ -164,7 +164,7 @@ SharedFields:
                   <condition
                     uid="91F01D1C201841F5BF4C87D6CAAE6B68"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Accessories" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Accessories" />
                 </conditions>
                 <actions>
                   <action
@@ -186,7 +186,7 @@ SharedFields:
                   <condition
                     uid="5CB7E5AB0AC14478BCC397A2A3D33A4D"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Warranties and Installations" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Appliances/Habitat_Master-Warranties and Installations" />
                 </conditions>
               </rule>
               <rule
@@ -202,7 +202,7 @@ SharedFields:
                   <condition
                     uid="BD317A5D8E7B45BE917A15C33645EA10"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Smart Sports Equipment" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Smart Sports Equipment" />
                 </conditions>
               </rule>
               <rule
@@ -218,7 +218,7 @@ SharedFields:
                   <condition
                     uid="30972CA43CDD4070AC8A3FA8BB2C3487"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets" />
                 </conditions>
               </rule>
               <rule
@@ -234,7 +234,7 @@ SharedFields:
                   <condition
                     uid="532C5AF810884393B671C200CE607E62"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Connected home/Habitat_Master-Thermostats" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Connected home/Habitat_Master-Thermostats" />
                 </conditions>
               </rule>
               <rule
@@ -250,7 +250,7 @@ SharedFields:
                   <condition
                     uid="1594E16ABBAB4813A0593CDC7C00363C"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-Laptops" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-Laptops" />
                 </conditions>
               </rule>
               <rule
@@ -266,7 +266,7 @@ SharedFields:
                   <condition
                     uid="5D20E33CDAB24803AFDC0FFE282B4ED3"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-2 in 1" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-2 in 1" />
                 </conditions>
               </rule>
               <rule
@@ -282,7 +282,7 @@ SharedFields:
                   <condition
                     uid="B4842807C19E4E868FCD15E592508EB8"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-All In One" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-All In One" />
                 </conditions>
               </rule>
               <rule
@@ -304,21 +304,21 @@ SharedFields:
                         <condition
                           uid="1A345F6116BE450CA88769000A4A8A2B"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receiver Packages" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receiver Packages" />
                         <condition
                           uid="610DCF9D34E6411B9C88DC1571B75826"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
                       </or>
                       <condition
                         uid="26BE181F3AC844E5A04C7F0CC4ABBEC0"
                         s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
+                        s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Audio Receivers" />
                     </or>
                     <condition
                       uid="53FD1AD1B418492283D4FBA581266CF9"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Speakers" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Car Speakers" />
                   </or>
                 </conditions>
               </rule>
@@ -341,21 +341,21 @@ SharedFields:
                         <condition
                           uid="458F9987253446F8A48D2D5181647D5B"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Consoles" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Consoles" />
                         <condition
                           uid="30680CA93B6742FE851C7DB155B40019"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-NextCube Accessories" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-NextCube Accessories" />
                       </or>
                       <condition
                         uid="711C5E317BEF4FCC9F574569DFA94BBB"
                         s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Multigame Subscriptions" />
+                        s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Multigame Subscriptions" />
                     </or>
                     <condition
                       uid="6D5EC7C8E1F14A639B3076C091E7B48A"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Single Game Subscriptions" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Gaming/Habitat_Master-Single Game Subscriptions" />
                   </or>
                 </conditions>
               </rule>
@@ -382,31 +382,31 @@ SharedFields:
                             <condition
                               uid="2D9AFEF314824D1D87D61BDFBA1C0079"
                               s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                              s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Speakers" />
+                              s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Speakers" />
                             <condition
                               uid="7024352F16D54E61A40007B5EE8F03A1"
                               s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                              s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Amplifiers" />
+                              s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Amplifiers" />
                           </or>
                           <condition
                             uid="44F0BE96A6454E6ABB569D6556536433"
                             s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                            s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Bluetooth Speakers" />
+                            s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Bluetooth Speakers" />
                         </or>
                         <condition
                           uid="BA37FD04658445A083F2967CB5ED7DB7"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Computer Speakers" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Computer Speakers" />
                       </or>
                       <condition
                         uid="FE3D8D6F989447FE8C594F6EA655945E"
                         s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Home Audio" />
+                        s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Home Audio" />
                     </or>
                     <condition
                       uid="DA2CF47406A446998C66E4E6D448CD0F"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Soundbars" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Audio/Habitat_Master-Soundbars" />
                   </or>
                 </conditions>
               </rule>
@@ -423,7 +423,7 @@ SharedFields:
                   <condition
                     uid="32F5835C9C3D49598A16732EAEE7294C"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Home Theater" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Home Theater" />
                 </conditions>
               </rule>
               <rule
@@ -439,7 +439,7 @@ SharedFields:
                   <condition
                     uid="40D3C7FFCF48426CBD57D598AA0D3248"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Digital Subscriptions" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Digital Subscriptions" />
                 </conditions>
               </rule>
               <rule
@@ -455,7 +455,7 @@ SharedFields:
                   <condition
                     uid="D2476E03409E4A80A9C2FBEF8888C695"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Electric Shaver" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Electric Shaver" />
                 </conditions>
               </rule>
               <rule
@@ -473,11 +473,11 @@ SharedFields:
                     <condition
                       uid="3C81C605039D4900A4206ADC54A91F5C"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Women s Shavers" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Women s Shavers" />
                     <condition
                       uid="26812917B9FE44EEA7646F7E5BA952A9"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Electric Tooth Brushes" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Electric Tooth Brushes" />
                   </or>
                 </conditions>
               </rule>
@@ -494,7 +494,7 @@ SharedFields:
                   <condition
                     uid="264C5F71D38446C283DD92A615C6B184"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Smart Sports Equipment" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Smart Sports Equipment" />
                 </conditions>
               </rule>
               <rule
@@ -504,7 +504,7 @@ SharedFields:
                   <condition
                     uid="6EDF17D56A864956AC8A60893F0C979A"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Fitness Activity Trackers" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Health  Beauty and Fitness/Habitat_Master-Fitness Activity Trackers" />
                 </conditions>
                 <actions>
                   <action
@@ -520,8 +520,8 @@ SharedFields:
                   <condition
                     uid="9DACE60617754EECB7CB98C38A69C6EB"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Televisions"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Televisions" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Televisions"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Televisions" />
                 </conditions>
                 <actions>
                   <action
@@ -543,21 +543,21 @@ SharedFields:
                         <condition
                           uid="38BD4D5095BC45EF8F99F381216B4B87"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Accessories" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Accessories" />
                         <condition
                           uid="C1D37D8AECF84B999B98C0327C90AD01"
                           s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                          s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphones" />
+                          s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphones" />
                       </or>
                       <condition
                         uid="4F9DD9B72F194AF59B60FD0F0E46F028"
                         s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                        s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Cases" />
+                        s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Smartphone Cases" />
                     </or>
                     <condition
                       uid="7E4B1AAE5C5B4E7FAA6CB0377227D03C"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Other Phones" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Phones/Habitat_Master-Other Phones" />
                   </or>
                 </conditions>
                 <actions>
@@ -574,8 +574,8 @@ SharedFields:
                   <condition
                     uid="CEE23BF0626243049E60DB86AB06A24E"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Health  Beauty and Fitness" />
                 </conditions>
                 <actions>
                   <action
@@ -591,8 +591,8 @@ SharedFields:
                   <condition
                     uid="CE4092FD151E4E18A9188DF246C488F6"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Gaming"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Gaming" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Gaming"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Gaming" />
                 </conditions>
                 <actions>
                   <action
@@ -608,7 +608,7 @@ SharedFields:
                   <condition
                     uid="496E7D30159744188D489BF33DBEE480"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Connected home" />
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Connected home" />
                 </conditions>
                 <actions>
                   <action
@@ -626,12 +626,12 @@ SharedFields:
                     <condition
                       uid="9C8996EAEB7B4B09AF977DD85030091C"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets" />
+                      s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets"
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Computers and Tablets" />
                     <condition
                       uid="8BB0922B7E8148399410309190C9DEA9"
                       s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                      s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-Tablets" />
+                      s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Departments/Habitat_Master-Computers and Tablets/Habitat_Master-Tablets" />
                   </or>
                 </conditions>
                 <actions>
@@ -648,8 +648,8 @@ SharedFields:
                   <condition
                     uid="39A6EDFAA5A9472E97A167E363BF0B22"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Cameras"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Cameras" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Cameras"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Cameras" />
                 </conditions>
                 <actions>
                   <action
@@ -665,8 +665,8 @@ SharedFields:
                   <condition
                     uid="90C86DCDE86045FC9AB3CCD428406441"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Audio"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Audio" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Audio"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Audio" />
                 </conditions>
                 <actions>
                   <action
@@ -682,8 +682,8 @@ SharedFields:
                   <condition
                     uid="F52DE4DED27D49DDB1A1FBE8FB5CDB0A"
                     s:id="{9F104E38-5D05-415F-A37C-45AC73AF03AF}"
-                    s:CategoryId="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Appliances"
-                    s:CategoryPath="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master/Habitat_Master-Appliances" />
+                    s:CategoryId="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Appliances"
+                    s:CategoryPath="/sitecore/content/Habitat Sites/Habitat Home/home/Catalogs/Habitat_Master/Habitat_Master-Appliances" />
                 </conditions>
                 <actions>
                   <action
