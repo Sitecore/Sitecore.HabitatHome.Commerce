@@ -1,16 +1,9 @@
-﻿
-using Sitecore.Commerce.XA.Feature.Cart.Models;
-using Sitecore.Commerce.XA.Feature.Cart.Models.InputModels;
-using Sitecore.Commerce.XA.Feature.Cart.Repositories;
-using Sitecore.Commerce.XA.Foundation.Common;
+﻿using Sitecore.Commerce.XA.Feature.Cart.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
-using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
 using Sitecore.HabitatHome.Feature.Cart.Managers;
-using System;
-using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using System.Web.UI;
 using Sitecore.Commerce.XA.Foundation.Common.Context;
@@ -18,33 +11,27 @@ using Sitecore.Commerce.XA.Foundation.Common.Context;
 namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class DeliveryController : BaseCommerceStandardController
-    {
-        public DeliveryController(IContext context, IStorefrontContext storefrontContext, IDeliveryRepository deliveryRepository, IVisitorContext visitorContext, IShoppingCartLinesRepository shoppingCartLinesRepository, ISearchManager searchManager)
+    {             
+        private readonly IDeliveryRepository _deliveryRepository;                   
+        private readonly IVisitorContext _visitorContext;
+        private readonly ISearchManager _searchManager;
+
+        public DeliveryController(IContext context, IStorefrontContext storefrontContext, IDeliveryRepository deliveryRepository, IVisitorContext visitorContext, ISearchManager searchManager)
           : base(storefrontContext, context)
         {            
-            Assert.ArgumentNotNull((object)deliveryRepository, nameof(deliveryRepository));
-            Assert.ArgumentNotNull((object)storefrontContext, nameof(storefrontContext));
-            Assert.ArgumentNotNull((object)deliveryRepository, nameof(deliveryRepository));
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));            
-            this.VisitorContext = visitorContext;
-            this.DeliveryRepository = deliveryRepository;
-            this.ShoppingCartLinesRepository = shoppingCartLinesRepository;
-            this.SearchManager = searchManager;
+            Assert.ArgumentNotNull(deliveryRepository, nameof(deliveryRepository));
+            Assert.ArgumentNotNull(storefrontContext, nameof(storefrontContext));
+            Assert.ArgumentNotNull(visitorContext, nameof(visitorContext));            
+            _visitorContext = visitorContext;
+            _deliveryRepository = deliveryRepository;
+            _searchManager = searchManager;
         }
-
-        public IShoppingCartLinesRepository ShoppingCartLinesRepository { get; protected set; }
-
-
-        public IDeliveryRepository DeliveryRepository { get; protected set; }
-        
-        public IVisitorContext VisitorContext { get; protected set; }
-        public ISearchManager SearchManager { get; set; }
 
         [AllowAnonymous]
         [HttpGet]
         public ActionResult Delivery()
         {
-            return (ActionResult)this.View("~/Views/Commerce/Checkout/Delivery.cshtml", (object)this.DeliveryRepository.GetDeliveryRenderingModel(this.Rendering));
+            return View("~/Views/Commerce/Checkout/Delivery.cshtml", _deliveryRepository.GetDeliveryRenderingModel(this.Rendering));
         }
 
         [AllowAnonymous]
@@ -52,14 +39,13 @@ namespace Sitecore.HabitatHome.Feature.Cart.Controllers
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
         public JsonResult GetCurrentCart(string cartID)
         {
-            JsonResult baseJsonResult;
-            ShoppingCartLinesManager cartManager = new ShoppingCartLinesManager(this.StorefrontContext, this.SearchManager);
-            string shopName = this.StorefrontContext.CurrentStorefront.ShopName;
-            string cartId = $"Default{this.VisitorContext.UserId}" + shopName;
+            ShoppingCartLinesManager cartManager = new ShoppingCartLinesManager(StorefrontContext, _searchManager);
+            string shopName = StorefrontContext.CurrentStorefront.ShopName;
+            string cartId = $"Default{_visitorContext.UserId}" + shopName;
 
             dynamic cartModel = cartManager.GetCurrentCartLines(cartId);
-            baseJsonResult = this.Json(cartModel);
-            return this.Json((object)baseJsonResult);
+            JsonResult baseJsonResult = this.Json(cartModel);
+            return this.Json(baseJsonResult);
         }
     }
 }

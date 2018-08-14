@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using Sitecore.Commerce.Entities.WishLists;
 using Sitecore.Commerce.Services.WishLists;      
-using Sitecore.Commerce.XA.Foundation.Common.Context;
-using Sitecore.Commerce.XA.Foundation.Common.Context;
+using Sitecore.Commerce.XA.Foundation.Common.Context;      
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Arguments;

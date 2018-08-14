@@ -11,44 +11,44 @@ using Sitecore.HabitatHome.Feature.Cart.Repositories;
 namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class ShoppingCartLinesController : BaseCommerceStandardController
-    {
+    {             
+        private readonly ISearchManager _searchManager;
+        private readonly IShoppingCartLinesRepository _shoppingCartLinesRepository;
+        private readonly IVisitorContext _visitorContext;
+
         public ShoppingCartLinesController(IStorefrontContext storefrontContext, IVisitorContext visitorContext, ISearchManager searchManager, IShoppingCartLinesRepository shoppingCartLinesRepository, IContext context)
             : base(storefrontContext, context)
         {
-            Assert.ArgumentNotNull((object)visitorContext, nameof(visitorContext));
-            Assert.ArgumentNotNull((object)searchManager, nameof(searchManager));
-            Assert.ArgumentNotNull((object)shoppingCartLinesRepository, nameof(shoppingCartLinesRepository));
-            this.ShoppingCartLinesRepository = shoppingCartLinesRepository;
-            this.VisitorContext = visitorContext;
-            this.SearchManager = searchManager;
+            Assert.ArgumentNotNull(visitorContext, nameof(visitorContext));
+            Assert.ArgumentNotNull(searchManager, nameof(searchManager));
+            Assert.ArgumentNotNull(shoppingCartLinesRepository, nameof(shoppingCartLinesRepository));
+            _shoppingCartLinesRepository = shoppingCartLinesRepository;
+            _visitorContext = visitorContext;
+            _searchManager = searchManager;
         }
-        public ISearchManager SearchManager { get; set; }
-        public IShoppingCartLinesRepository ShoppingCartLinesRepository { get; protected set; }
-        public IVisitorContext VisitorContext { get; protected set; }
 
         [HttpGet]
         public ActionResult ShoppingCartLines()
         {
-            return (ActionResult)this.View("~/Views/Cart/ShoppingCartLines.cshtml", (object)this.ShoppingCartLinesRepository.GetShoppingCartLinesModel());
+            return View("~/Views/Cart/ShoppingCartLines.cshtml", _shoppingCartLinesRepository.GetShoppingCartLinesModel());
         }
         public JsonResult GetShoppingCartLines()
         {            
-            return this.Json((object)this.ShoppingCartLinesRepository.GetCurrentShoppingCart(this.StorefrontContext, this.VisitorContext));
+            return Json(_shoppingCartLinesRepository.GetCurrentShoppingCart(StorefrontContext, _visitorContext));
         }
 
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public JsonResult GetCurrentCartLines(string cartID)
+        public JsonResult GetCurrentCartLines()
         {
-            JsonResult baseJsonResult;
-            ShoppingCartLinesManager cartManager = new ShoppingCartLinesManager(this.StorefrontContext, this.SearchManager);
-            string shopName = this.StorefrontContext.CurrentStorefront.ShopName;
-            string cartId = $"Default{this.VisitorContext.UserId}" + shopName;
+            ShoppingCartLinesManager cartManager = new ShoppingCartLinesManager(StorefrontContext, _searchManager);
+            string shopName = StorefrontContext.CurrentStorefront.ShopName;
+            string cartId = $"Default{_visitorContext.UserId}" + shopName;
 
             dynamic cartModel = cartManager.GetCurrentCartLines(cartId);
-            baseJsonResult = this.Json(cartModel);
-            return this.Json((object)baseJsonResult);
-        }
+            JsonResult baseJsonResult = this.Json(cartModel);
+            return Json(baseJsonResult);
+        }              
     }
 }

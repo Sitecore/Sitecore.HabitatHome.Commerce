@@ -22,4 +22,4 @@ Languages:
         sitecore\admin
     - ID: "af321234-4eb9-4ef5-9197-65903351939c"
       Hint: Text
-      Value: "when the current url is of the [CategoryPath,Tree,root=/sitecore/Content/Habitat Sites/Habitat Home/Home/Product Catalog&selection=Commerce/Catalog/Commerce Category&resulttype=path,specified] category"
+      Value: "when the current url is of the [CategoryPath,Tree,root=/sitecore/Content/Habitat Sites/Habitat Home/Home/Catalogs&selection=Commerce/Catalog/Commerce Category&resulttype=path,specified] category"
