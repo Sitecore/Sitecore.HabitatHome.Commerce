@@ -37,6 +37,8 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
     $pathToGlobalJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\bootstrap\Global.json")
     $global = Get-Content $pathToGlobalJson -Raw | ConvertFrom-Json
     $global.Policies.'$values'[5].Host = $siteName
+	$global.Policies.'$values'[5].UserName = $adminUser
+	$global.Policies.'$values'[5].Password = $adminPassword
     $global | ConvertTo-Json -Depth 10 -Compress | set-Content $pathToGlobalJson
     $pathToJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\config.json")
 
@@ -148,6 +150,7 @@ Function Get-IdServerToken {
     $sitecoreIdToken = "Bearer {0}" -f $response.access_token
 
     $global:sitecoreIdToken = $sitecoreIdToken
+	Write-Host $global:sitecoreIdToken
 }
 Function CleanEnvironment {
     Write-Host "Cleaning Environments" -ForegroundColor Green
@@ -157,7 +160,7 @@ Function CleanEnvironment {
     $Environments = @("HabitatAuthoring")
 
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-    Write-Host $global:sitecoreIdToken
+    
     $headers.Add("Authorization", $global:sitecoreIdToken);
 
     foreach ($env in $Environments) {
