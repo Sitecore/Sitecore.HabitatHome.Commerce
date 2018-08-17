@@ -3,7 +3,7 @@ Username: |
   sitecore\minnie
 Email: minnie.m@demo.com
 Comment: Demo Content Author
-Created: "2018-07-12T21:05:21.0000000Z"
+Created: "2018-07-24T17:41:25.0000000Z"
 IsApproved: True
 Properties:
 - Key: |
@@ -24,11 +24,11 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: digestcredentialhash
-  Value: f9e90214eaf9c127129ac77a8fe3b6b1
+  Value: 0b165976f14a292f1d64110b0baae124
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: da183b2793965f9667539952d4e01951
+  Value: a51bb6b00d056d103ab1c30130fda284
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:
