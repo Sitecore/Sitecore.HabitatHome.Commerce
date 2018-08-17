@@ -3,7 +3,7 @@ Username: |
   sitecore\pete
 Email: pete.p@demo.com
 Comment: Demo Content Approver and Publisher
-Created: "2018-07-12T21:05:21.0000000Z"
+Created: "2018-07-24T17:41:25.0000000Z"
 IsApproved: True
 Properties:
 - Key: FullName
@@ -23,11 +23,11 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: digestcredentialhash
-  Value: 029c8d361db8ccef80bab9d96bd5e6de
+  Value: 4f68ca24b838ee1443be5c263b502925
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: c8c6d3b7f3228733cf9ea0677b1b4831
+  Value: 5ea030cb718604bac44b6b4f0e41e861
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:
