@@ -191,6 +191,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Utilities
         public string OrderConfirmationId { get; set; }
         public string OrderPlacedDate { get; set; }
         public string Email { get; set; }
+        public string Domain { get; set; }
         public string Language { get; set; }
         public string Status { get; set; }
         public string CurrencyCode { get; set; }

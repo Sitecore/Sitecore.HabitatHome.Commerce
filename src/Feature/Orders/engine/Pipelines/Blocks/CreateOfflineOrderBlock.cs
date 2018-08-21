@@ -24,62 +24,53 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
 {
     [PipelineDisplayName("Orders.block.ImportStoreOrder")]
     public class CreateOfflineOrderBlock : PipelineBlock<OfflineStoreOrderArgument, Order, CommercePipelineExecutionContext>
-    {
-        private readonly IDeleteEntityPipeline deletePipeline;
-        private readonly TelemetryClient telemetryClient;
-        private readonly PerformanceCounterCommand performanceCounterCommand;
-        private readonly IFindEntityPipeline findEntityPipeline;
-        private readonly IGetEntityFromCachePipeline getEntityFromCachePipeline;
+    {                                                               
+        private readonly TelemetryClient _telemetryClient;
+        private readonly PerformanceCounterCommand _performanceCounterCommand;
+        private readonly IFindEntityPipeline _findEntityPipeline;                   
         
-
-
-        public CreateOfflineOrderBlock(IGetEntityFromCachePipeline getEntityFromCachePipeline, IDeleteEntityPipeline deleteEntityPipeline, TelemetryClient telemetryClient, PerformanceCounterCommand performanceCounterCommand, IFindEntityPipeline findEntityPipeline)
-          : base((string)null)
-        {
-            this.deletePipeline = deleteEntityPipeline;
-            this.telemetryClient = telemetryClient;
-            this.performanceCounterCommand = performanceCounterCommand;
-            this.findEntityPipeline = findEntityPipeline;
-            this.getEntityFromCachePipeline = getEntityFromCachePipeline;
+        public CreateOfflineOrderBlock(TelemetryClient telemetryClient, PerformanceCounterCommand performanceCounterCommand, IFindEntityPipeline findEntityPipeline)
+        {                                                   
+            _telemetryClient = telemetryClient;
+            _performanceCounterCommand = performanceCounterCommand;
+            _findEntityPipeline = findEntityPipeline;                     
         }
-
-
+                                                 
         public override async Task<Order> Run(OfflineStoreOrderArgument arg, CommercePipelineExecutionContext context)
         {
             CreateOfflineOrderBlock createOrderBlock = this;            
-            Condition.Requires<OfflineStoreOrderArgument>(arg).IsNotNull<OfflineStoreOrderArgument>(string.Format("{0}: arg can not be null", (object)(createOrderBlock.Name)));
+            Condition.Requires(arg).IsNotNull($"{createOrderBlock.Name}: arg can not be null");
             
             CommercePipelineExecutionContext executionContext;
             if (string.IsNullOrEmpty(arg.Email))
             {
                 executionContext = context;
-                executionContext.Abort(await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Error, "EmailIsRequired", new object[1], "Can not create order, email address is required."), (object)context);
+                executionContext.Abort(await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Error, "EmailIsRequired", new object[1], "Can not create order, email address is required."), context);
                 executionContext = (CommercePipelineExecutionContext)null;
                 return (Order)null;
             }
-            //Cart cart = arg.Cart;
-            if (arg.Lines.Count() == 0)
+
+            if (!arg.Lines.Any())
             {
                 executionContext = context;
                 CommerceContext commerceContext = context.CommerceContext;
                 string error = context.GetPolicy<KnownResultCodes>().Error;
                 string commerceTermKey = "OrderHasNoLines";                
-                string defaultMessage = string.Format("Can not create order, cart  has no lines");
-                executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, null, defaultMessage), (object)context);
+                string defaultMessage = "Can not create order, cart  has no lines";
+                executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, null, defaultMessage), context);
                 executionContext = (CommercePipelineExecutionContext)null;
                 return (Order)null;
             }            
 
             // Find contact using email
             string email = arg.Email;
-            //var customer = context.CommerceContext.GetEntities<Customer>().Where(x => x.Email.ToLower() == email.ToLower()).FirstOrDefault();
             ContactComponent contactComponent = new ContactComponent();
-            EntityIndex entityIndex = await createOrderBlock.findEntityPipeline.Run(new FindEntityArgument(typeof(EntityIndex), string.Format("{0}{1}", (object)EntityIndex.IndexPrefix<Customer>("Id"), arg.Email), false), context) as EntityIndex;
+            EntityIndex entityIndex = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(EntityIndex), string.Format("{0}{1}\\{2}", EntityIndex.IndexPrefix<Customer>("Id"), arg.Domain, arg.Email)), context) as EntityIndex;
 
             if (entityIndex != null)
             {
                 var customerEntityId = entityIndex.EntityId;
-                Customer entityCustomer = await createOrderBlock.findEntityPipeline.Run(new FindEntityArgument(typeof(Customer), customerEntityId, false), context) as Customer;
+                Customer entityCustomer = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(Customer), customerEntityId), context) as Customer;
                 if (entityCustomer != null)
                 {
                     contactComponent.IsRegistered = true;
@@ -89,15 +80,8 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
                 }
             }
 
-            contactComponent.Email = email;
-
-
-
-
-
-
-            KnownOrderListsPolicy policy1 = context.GetPolicy<KnownOrderListsPolicy>();
-            GlobalOrderPolicy policy2 = context.GetPolicy<GlobalOrderPolicy>();
+            contactComponent.Email = email;                   
+            KnownOrderListsPolicy policy1 = context.GetPolicy<KnownOrderListsPolicy>();      
             string orderId = string.Format("{0}{1:N}", (object)CommerceEntity.IdPrefix<Order>(), (object)Guid.NewGuid());
             Order storeOrder = new Order();
 
@@ -111,7 +95,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
             foreach(var line in arg.Lines)
             {
                 var items = line.ItemId.Split('|');
-                CommerceEntity entity = await createOrderBlock.findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), "Entity-SellableItem-" + (items.Count() > 2 ? items[1] : line.ItemId), false), context);
+                CommerceEntity entity = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), "Entity-SellableItem-" + (items.Count() > 2 ? items[1] : line.ItemId), false), context);
                 CartLineComponent lineComponent = new CartLineComponent
                 {
                     ItemId = line.ItemId,
@@ -273,13 +257,13 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
                 }
               };
 
-            createOrderBlock.telemetryClient.TrackEvent("OrderCreated", (IDictionary<string, string>)null, (IDictionary<string, double>)dictionary);
+            createOrderBlock._telemetryClient.TrackEvent("OrderCreated", (IDictionary<string, string>)null, (IDictionary<string, double>)dictionary);
             int int32 = Convert.ToInt32(Math.Round(order.Totals.GrandTotal.Amount, 0));
 
             if (context.GetPolicy<PerformancePolicy>().WriteCounters)
             {
-                int num1 = await createOrderBlock.performanceCounterCommand.IncrementBy("SitecoreCommerceMetrics", "MetricCount", string.Format("Orders.GrandTotal.{0}", (object)order.Totals.GrandTotal.CurrencyCode), (long)int32, context.CommerceContext) ? 1 : 0;
-                int num2 = await createOrderBlock.performanceCounterCommand.Increment("SitecoreCommerceMetrics", "MetricCount", "Orders.Count", context.CommerceContext) ? 1 : 0;
+                int num1 = await createOrderBlock._performanceCounterCommand.IncrementBy("SitecoreCommerceMetrics", "MetricCount", string.Format("Orders.GrandTotal.{0}", (object)order.Totals.GrandTotal.CurrencyCode), (long)int32, context.CommerceContext) ? 1 : 0;
+                int num2 = await createOrderBlock._performanceCounterCommand.Increment("SitecoreCommerceMetrics", "MetricCount", "Orders.Count", context.CommerceContext) ? 1 : 0;
             }
             return order;
         }

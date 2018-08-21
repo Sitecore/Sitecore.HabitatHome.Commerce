@@ -42,12 +42,13 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Controllers
         [HttpPut]
         [Route("CreateOfflineOrder()")]
         public async Task<string> CreateOfflineOrder([FromBody] ODataActionParameters value)
-        {
-            //var id = value["Id"].ToString();
+        {                                              
             var command = this.Command<CreateOfflineOrderCommand>();
 
             if (!value.ContainsKey("Order"))
-                return "Bad Request, Cannot Find Order key"; 
+            {
+                return "Bad Request, Cannot Find Order key";
+            } 
 
             var inputArgs = JsonConvert.DeserializeObject<OfflineStoreOrderArgument>(value["Order"].ToString());
 
