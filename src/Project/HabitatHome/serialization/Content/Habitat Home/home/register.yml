@@ -44,7 +44,7 @@ SharedFields:
           uid="{B52CB16B-6400-4872-9C47-83411631A533}"
           p:after="r[@uid='{A91FD2E7-189C-45D6-99F0-BA2F2F4572E1}']"
           s:ds="{9966060E-4400-436F-9A2B-59DEE9AF88D8}"
-          s:id="{8088A650-0910-4CE0-802A-3D5E757F1254}"
+          s:id="{9BC48EF9-7745-461F-AB14-2DBE277F012E}"
           s:par="GridParameters"
           s:ph="/main/sxa-content-container/container-1/container-1" />
         <r
