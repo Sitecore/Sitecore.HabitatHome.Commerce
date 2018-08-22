@@ -21,6 +21,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\..\Feature\Catalog\engine\Sitecore.HabitatHome.Feature.Catalog.Engine.csproj" />
+        <ProjectReference Include="..\..\..\Feature\Marketplace\engine\Sitecore.HabitatHome.Feature.EBay.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\NearestStore\engine\Sitecore.HabitatHome.Feature.NearestStore.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\Orders\engine\Sitecore.HabitatHome.Feature.Orders.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\ProductBundle\engine\Sitecore.HabitatHome.Feature.ProductBundle.Engine.csproj" />
@@ -28,6 +29,7 @@
         <ProjectReference Include="..\..\..\Feature\WishLists\engine\Sitecore.HabitatHome.Feature.Wishlists.Engine.csproj" />
         <ProjectReference Include="..\..\..\Foundation\Entitlements\engine\Sitecore.HabitatHome.Foundation.Entitlements.Engine.csproj" />
         <ProjectReference Include="..\..\..\Foundation\Payments\engine\Sitecore.HabitatHome.Foundation.Payments.Engine.csproj" />
+        <ProjectReference Include="..\..\..\Foundation\PluginEnhancements\engine\Sitecore.HabitatHome.Foundation.PluginEnhancements.Engine.csproj" />
         <ProjectReference Include="..\..\..\Foundation\Rules\engine\Sitecore.HabitatHome.Foundation.Rules.Engine.csproj" />
     </ItemGroup>
 
