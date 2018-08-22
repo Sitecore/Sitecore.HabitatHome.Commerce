@@ -10,15 +10,8 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Entities
     {
         public WishList()
         {
-            this.Lines = (IList<CartLineComponent>)new List<CartLineComponent>();
-            this.Components = (IList<Component>)new List<Component>();
-            //this.Adjustments = (IList<AwardedAdjustment>)new List<AwardedAdjustment>();
-            //this.Totals = new Totals()
-            //{
-            //    SubTotal = new Money(Decimal.Zero),
-            //    AdjustmentsTotal = new Money(Decimal.Zero),
-            //    GrandTotal = new Money(Decimal.Zero)
-            //};
+            this.Lines = new List<CartLineComponent>();
+            this.Components = new List<Component>();          
         }
 
         public WishList(string id)
@@ -35,11 +28,6 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Entities
         public int ItemCount { get; set; }        
 
         [Contained]
-        public IList<CartLineComponent> Lines { get; set; }
-
-        //public Totals Totals { get; set; }
-
-        //[Contained]
-        //public IList<AwardedAdjustment> Adjustments { get; set; }
+        public IList<CartLineComponent> Lines { get; set; }                 
     }
 }

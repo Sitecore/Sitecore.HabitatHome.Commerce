@@ -18,9 +18,8 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.GetWish
         private readonly IFindEntityPipeline _findEntityPipeline;
 
         public GetWishListBlock(IFindEntityPipeline findEntityPipeline)
-        : base((string)null)
         {
-            this._findEntityPipeline = findEntityPipeline;
+            _findEntityPipeline = findEntityPipeline;
         }
 
         public override async Task<WishList> Run(GetWishListArgument arg, CommercePipelineExecutionContext context)
@@ -30,27 +29,30 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.GetWish
             Condition.Requires<string>(arg.WishListId).IsNotNullOrEmpty("The WishListId can not be null or empty");
             List<WishList> objects = context.CommerceContext.GetObjects<WishList>();
 
-            if (objects.Any<WishList>() && objects.FirstOrDefault<WishList>((Func<WishList, bool>)(p => p.Id == arg.WishListId)) != null)
+            if (objects.Any() && objects.FirstOrDefault(p => p.Id == arg.WishListId) != null)
             {                
-                context.Logger.LogWarning(string.Format("{0}.AlreadyLoaded: CartId:{1}", getWishListBlock.Name, (object)arg), Array.Empty<object>());
+                context.Logger.LogWarning($"{getWishListBlock.Name}.AlreadyLoaded: CartId:{arg}", Array.Empty<object>());
             }
 
             WishList wishlist = await getWishListBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(WishList), arg.WishListId, true), context).ConfigureAwait(false) as WishList;
             if (wishlist == null || wishlist.IsPersisted)
+            {
                 return wishlist;
+            }
+
             wishlist.Id = arg.WishListId;
             wishlist.Name = arg.WishListName;
             wishlist.ShopName = arg.ShopName;
             wishlist.CustomerId = arg.ShopperId;
-            wishlist.SetComponent((Component)new ListMembershipsComponent()
+            wishlist.SetComponent(new ListMembershipsComponent()
             {
-                Memberships = (IList<string>)new List<string>()
+                Memberships = new List<string>
                 {
-                  CommerceEntity.ListName<WishList>()
+                    CommerceEntity.ListName<WishList>()
                 }
             });
-            return  wishlist;
-        }
 
+            return  wishlist;
+        }            
     }
 }

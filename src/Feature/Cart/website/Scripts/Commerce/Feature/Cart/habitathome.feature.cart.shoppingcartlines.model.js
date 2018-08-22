@@ -30,17 +30,16 @@ function CartLinesViewModel(data) {
             }
         });
     };
-    self.addItemToWishList = function (item, event) {    
+    self.addItemToWishList = function (item, event) {
         $(event.currentTarget).find(".fa").addClass("fa-spinner");
         $(event.currentTarget).find(".fa").addClass("fa-spin");
-        var lineItemId = item.externalCartLineId;      
+        var lineItemId = item.externalCartLineId;
         var sender = event.currentTarget;
-
-        var cartID = self.cart().id;
-        AjaxService.Post("api/cxa/ShoppingCartLines/GetCurrentCartLines", cartID, function (data, success, sender) {
+                                        
+        AjaxService.Post("api/cxa/ShoppingCartLines/GetCurrentCartLines", {}, function (data, success, sender) {
             if (success) {
                 $.each(data.Data, function () {
-                    var exId;var prodId;var varId;
+                    var exId; var prodId; var varId;
                     $(this).map(function (i, b) {
                         if ((b['Key'] == 'ExternalCartLineId'))
                             exId = b['Value'];
@@ -48,47 +47,46 @@ function CartLinesViewModel(data) {
                             prodId = b['Value'];
                         if ((b['Key'] == 'VariantId'))
                             varId = b['Value'];
-                    })        
+                    })
                     if (lineItemId === exId) {
                         AjaxService.Post("/api/cxa/wishlistlines/AddWishListLine", { productId: prodId, variantId: varId, quantity: item.quantity }, function (data, success, sender) {
                             if (success && data.Success) {
-                                self.removeItem(item, event);                                
+                                self.removeItem(item, event);
                             }
                         });
                     }
                 });
             }
-        })        
-    };
-    self.increaseQuantity = function (item) {
-        item.quantity = Number(item.quantity) + 1;
-        self.updateQuantity(item);
+        })
     }
-    self.decreaseQuantity = function (item) {
-        item.quantity = Number(item.quantity) - 1;
-        self.updateQuantity(item);
-    }
+};
 
-    self.quntityUpdating = ko.observable(false || (CXAApplication.RunningMode === RunningModes.ExperienceEditor));
-
-
-    self.updateQuantity = function (item) {
-        if (CXAApplication.RunningMode === RunningModes.Normal) {
-            self.quntityUpdating(true);
-            var model = self;
-            AjaxService.Post("/api/cxa/cart/UpdateCartLineQuantity", { quantity: item.quantity, lineNumber: item.externalCartLineId }, function (data, success, self) {
-                if (success && data.Success) {
-                    CartContext.TriggerCartUpdateEvent();
-                    model.quntityUpdating(false);
-                }
-
-            });
-        }
-
-    };
+self.increaseQuantity = function (item) {
+    item.quantity = Number(item.quantity) + 1;
+    self.updateQuantity(item);
+}
+self.decreaseQuantity = function (item) {
+    item.quantity = Number(item.quantity) - 1;
+    self.updateQuantity(item);
 }
 
+self.quntityUpdating = ko.observable(false || (CXAApplication.RunningMode === RunningModes.ExperienceEditor));
 
+
+self.updateQuantity = function (item) {
+    if (CXAApplication.RunningMode === RunningModes.Normal) {
+        self.quntityUpdating(true);
+        var model = self;
+        AjaxService.Post("/api/cxa/cart/UpdateCartLineQuantity", { quantity: item.quantity, lineNumber: item.externalCartLineId }, function (data, success, self) {
+            if (success && data.Success) {
+                CartContext.TriggerCartUpdateEvent();
+                model.quntityUpdating(false);
+            }
+
+        });
+    }
+
+};                       
 
 function ShoppingCartLineItemData(cartData, line, cart) {
     var self = this;
@@ -383,7 +381,7 @@ function ShoppingCartViewModel(data, userAddresses) {
                     }
                 }
             }
-            if (this.IsKit == true) {               
+            if (this.IsKit == true) {
                 var relatedProductList = [];
                 if (this.RelatedKitProducts.length > 0) {
                     $.each(this.RelatedKitProducts, function (index, value) {
