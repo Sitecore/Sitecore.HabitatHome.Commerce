@@ -86,7 +86,7 @@ The script is provided as an example and should be reviewed to understand its be
 
 Assuming you have the default installation settings:
 
-    deploy-commerce-engine.ps1 -Boostrap -Initialize
+    deploy-commerce-engine.ps1 -Bootstrap -Initialize
 
 > if you have made any changes to your settings, review the deploy-engine-commerce.ps1 script and override / modify the parameters as required.
 
