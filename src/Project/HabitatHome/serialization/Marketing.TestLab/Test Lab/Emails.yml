@@ -19,12 +19,6 @@ SharedFields:
   Value: |
     ar|sitecore\EXM users|pd|+item:delete|^*|+item:create|+item:read|+item:write|pe|+item:delete|^*|+item:create|+item:read|+item:write|ar|sitecore\EXM Advanced users|pd|+item:delete|+item:create|^*|+item:read|+item:write|pe|+item:delete|+item:create|^*|+item:read|+item:write|
 Languages:
-- Language: da
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Email
-  Versions:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
