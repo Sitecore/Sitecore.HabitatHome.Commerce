@@ -7,7 +7,7 @@ Param(
     [switch]$SkipPublish,
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
-    [string]$BizFxPathName = "SitecoreBizFxhabitathome",
+    [string]$BizFxPathName = "SitecoreBizFx_habitathome",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
