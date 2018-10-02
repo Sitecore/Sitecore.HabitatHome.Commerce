@@ -8,7 +8,7 @@ Param(
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$BizFxPathName = "SitecoreBizFx_habitathome",
-    [string]$IdentityServerPathName = "SitecoreIdentityServer",
+    [string]$IdentityServerPathName = "SitecoreIdentityServer_habitathome",
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
