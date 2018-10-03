@@ -60,8 +60,6 @@ To deploy the **HabitatHome.Commerce** solution, from the root of the solution
 
 _Notes:_
 
-- If the error occurs while Unicorn publishing to web, just simply re-sync by the following command
-    `.\build.ps1 -Target Initial-From-Sync-Unicorn`
 - Build target **Initial** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the **Default** Cake build target: `.\build.ps1` (without target specification).
 
 ### 3 Deploy Engine
