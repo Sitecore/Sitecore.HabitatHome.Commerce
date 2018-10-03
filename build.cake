@@ -55,24 +55,16 @@ Task("Initial")
 .IsDependentOn("Apply-Xml-Transform")
 .IsDependentOn("Modify-Unicorn-Source-Folder")
 .IsDependentOn("Publish-Transforms")
-.IsDependentOn("Initial-From-Sync-Unicorn");
-
-
-Task("Publish")
-.WithCriteria(configuration != null)
-.IsDependentOn("Clean")
-.IsDependentOn("Copy-Sitecore-Lib")
-.IsDependentOn("Publish-Website-Projects")
-.IsDependentOn("Apply-Xml-Transform")
-.IsDependentOn("Modify-Unicorn-Source-Folder")
-.IsDependentOn("Publish-Transforms");
+.IsDependentOn("Sync-Unicorn")
+.IsDependentOn("Deploy-EXM-Campaigns")
+.IsDependentOn("Rebuild-Core-Index")
+.IsDependentOn("Rebuild-Master-Index")
+.IsDependentOn("Rebuild-Web-Index");
 
 
 /*===============================================
 ================= SUB TASKS =====================
 ===============================================*/
-
-
 
 Task("Clean").Does(() => {
     CleanDirectories($"{configuration.SourceFolder}/**/obj");
@@ -82,6 +74,7 @@ Task("Clean").Does(() => {
 Task("Copy-Sitecore-Lib").Does(() => {
     cakeConsole.WriteLine("Copying Sitecore Commerce XA Libraries");
     var commerceLibraries = GetFiles($"{configuration.SitecoreLibrariesPath}\\**\\Sitecore.Commerce.XA.*").Select(x => x.FullPath).ToList();
+    CreateFolderIfNotExist(configuration.SitecoreLibModuleCommerce);
     CopyFiles(commerceLibraries, configuration.SitecoreLibModuleCommerce, preserveFolderStructure: true);
 });
 
@@ -120,7 +113,7 @@ Task("Apply-Xml-Transform").Does(() => {
 Task("Publish-Transforms").Does(() => {
     var destination = $@"{configuration.WebsiteRoot}\temp\transforms";
 
-    CreateFolder(destination);
+    CreateFolderIfNotExist(destination);
 
     try
     {
@@ -174,13 +167,6 @@ Task("Deploy-EXM-Campaigns").Does(() => {
 
     Information(responseBody);
 });
-
-Task("Initial-From-Sync-Unicorn")
-.IsDependentOn("Sync-Unicorn")
-.IsDependentOn("Deploy-EXM-Campaigns")
-.IsDependentOn("Rebuild-Core-Index")
-.IsDependentOn("Rebuild-Master-Index")
-.IsDependentOn("Rebuild-Web-Index");
 
 Task("Rebuild-Core-Index").Does(() => {
     RebuildIndex("sitecore_core_index");

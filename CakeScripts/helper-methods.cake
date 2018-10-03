@@ -100,7 +100,7 @@ public MSBuildSettings InitializeMSBuildSettings(MSBuildSettings settings)
     return settings;
 }
 
-public void CreateFolder(string folderPath)
+public void CreateFolderIfNotExist(string folderPath)
 {
     if (!DirectoryExists(folderPath))
     {
