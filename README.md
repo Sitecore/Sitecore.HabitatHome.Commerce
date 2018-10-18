@@ -18,7 +18,7 @@ The code, samples and/or solutions provided in this repository are for example p
 
 # Getting Started
 
-**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Content. See the README.md file in the [Sitecore.HabitatHome.Content](https://github.com/sitecore/sitecore.habitathome.content) repository.**
+**This guide assumes you've cloned and deployed Sitecore.HabitatHome.Platform. See the README.md file in the [Sitecore.HabitatHome.Platform](https://github.com/sitecore/sitecore.habitathome.platform) repository.**
 
 ## Prerequisites
 
@@ -37,9 +37,9 @@ You do not need to install the Storefront Theme
 If you do **not want to use the default settings**, you need to adjust the appropriate values in the `/cake-config.json` file.
 
 
-Note: If you've already deployed the HabitatHome Content demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
-you would need to also customize the settings in the HabitatHome Content demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
-See README.md in Sitecore.HabitatHome.Content for custom settings.
+Note: If you've already deployed the HabitatHome Platform demo, and you wish to run the HabitatHome Commerce demo in a new instance by customizing these sttings,
+you would need to also customize the settings in the HabitatHome Platform demo and deploy it to the new instance **before** deploying HabitatHome Commerce. 
+See README.md in Sitecore.HabitatHome.Platform for custom settings.
 
 ## Installation
 **All installation instructions assume using PowerShell 5.1 in administrative mode.**
@@ -51,8 +51,8 @@ Clone the Sitecore.HabitatHome.Commerce repository locally - default settings as
 `git clone git@github.com:Sitecore/Sitecore.HabitatHome.Commerce.git`
   
 ### 2 Deploy Solution
-Note: If you have not yet done so, deploy the base HabitatHome.Content solution. See README.md in Sitecore.HabitatHome.Content
-You can run the `Quick-Deploy` gulp task from the root of the HabitatHome.Content solution for a quicker deploy that excludes post deploy actions or Unicorn synchronization.
+Note: If you have not yet done so, deploy the base HabitatHome.Platform solution. See README.md in Sitecore.HabitatHome.Platform
+You can run the `Quick-Deploy` gulp task from the root of the HabitatHome.Platform solution for a quicker deploy that excludes post deploy actions or Unicorn synchronization.
 
 To deploy the **HabitatHome.Commerce** solution, from the root of the solution
 
