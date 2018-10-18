@@ -22,6 +22,11 @@ packages/
 *.log
 license.xml
 lib/Modules/*
+lib/Support/*
 *.dll
 *sc-internal*
 publishTemp/
+
+tools/*
+!tools/packages.config
+cake-config.user.json
