@@ -1,0 +1,27 @@
+﻿---
+ID: "9c04b2d6-0c91-45f7-b12d-6a1562ff1bfb"
+Parent: "99a8b0a8-b4a8-41c8-b97e-4f2cd6aa27de"
+Template: "643a85f5-c9f1-4836-b17b-35ade22d03d3"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Heros/Home/Default Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180808T205624Z
+    - ID: "440b5413-5322-4166-9fbe-580f70973751"
+      Hint: HeroTitle
+      Value: Home Design to Help You Live Well, Simply
+    - ID: "9c385368-a554-4a92-9a8d-37f3ef3a09f4"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{751A24EF-79B8-41DD-A34E-B1B22E89BE6D}" ></image>
+    - ID: "af73cf76-4e8a-46b0-9403-bcea092724ef"
+      Hint: HeroSupertitle
+      Value: 
+    - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
+      Hint: HeroText
+      Value: &nbsp;

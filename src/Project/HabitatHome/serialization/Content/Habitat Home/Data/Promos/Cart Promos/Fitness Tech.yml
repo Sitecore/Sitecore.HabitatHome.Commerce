@@ -1,0 +1,29 @@
+﻿---
+ID: "14faefeb-dfe3-42dd-bb21-9781acba4ba6"
+Parent: "d89d69f9-915e-43af-8b06-625f11b6d6af"
+Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Cart Promos/Fitness Tech
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: "What to do with that Free $100 Gift Card?&nbsp; Checkout our latest Fitness Tech Gear."
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{B8CD0674-1886-470F-9B58-77CBA03BDF43}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180504T044612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
+      Hint: PromoLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E2976897-B231-4F6E-9C8C-7AD1E22FB72B}" />

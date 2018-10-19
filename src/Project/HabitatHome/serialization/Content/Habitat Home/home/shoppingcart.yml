@@ -25,12 +25,15 @@ SharedFields:
     {D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}
     {500AE4C0-FA7B-463F-8149-EFFF7F044101}
     {A0E7FF57-6994-4B09-AA21-104239628D5A}
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 700
 - ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
   Hint: __Default workflow
-  Value: 
+  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -65,8 +68,48 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{37141A9A-8879-4C7C-8F7C-3620CB14DA68}"
+              uid="{47FAF19B-5106-421E-AD03-92A1E611D2FA}"
               p:before="*"
+              s:ds="{BBEDD348-FCEB-4AB1-BDE1-9A4F9A4E54A5}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters=%257B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%257D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+              s:ph="/main/container-1">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{2F5EA967-FEC3-4142-A468-C3F44131653E}"
+                    s:name="Free GC">
+                    <conditions>
+                      <condition
+                        uid="C2A5320A8F534EBDA629B5A49CBBB26A"
+                        s:id="{9D3B7B5B-48BA-4B54-A522-166FFDEAC33D}"
+                        s:ProductId="8042104"
+                        s:operatorid="{066602E2-ED1D-44C2-A698-7ED27FD3A2CC}"
+                        s:ProductQuantity="1" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="2FB91AC2387047D5A8C590C2697BA1C8"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{FBB7BBA3-1081-4A14-8BB8-15EA764F6907}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="2396F119130243CD8C59DC97EB6C1F89"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{37141A9A-8879-4C7C-8F7C-3620CB14DA68}"
+              p:after="r[@uid='{47FAF19B-5106-421E-AD03-92A1E611D2FA}']"
               s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
               s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Current Step=Cart"
@@ -116,7 +159,7 @@ Languages:
       Value: 20180204T191324Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: 
+      Value: "{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Cart
@@ -127,3 +170,18 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Shopping Cart
+  - Version: 2
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180829T211818Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20180829T211818Z

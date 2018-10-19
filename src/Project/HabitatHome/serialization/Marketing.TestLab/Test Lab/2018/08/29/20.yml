@@ -1,0 +1,14 @@
+﻿---
+ID: "c8cdbdfd-5c12-43a1-837f-5a7c11d06353"
+Parent: "1e399d24-20ba-49bb-be5f-ac95728d4087"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2018/08/29/20
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180829T204559Z

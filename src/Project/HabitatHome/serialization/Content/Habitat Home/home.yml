@@ -252,15 +252,17 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{4CDADFC1-A6CC-494F-AE9E-FDBCFDE6BCA3}"
+              uid="{8392E209-85A9-4D3F-A2FB-309BF4086CCD}"
               p:before="*"
-              s:ds="local:/Data/Fitness Products"
-              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4"
-              s:ph="/main/sxa-content-container/container-1/container-9" />
+              s:ds="{A97D27FA-7718-427B-A05D-41B2B28E2591}"
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:mvt="{1BC39696-3D4B-4A17-B956-AB76307FE3CF}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BF414A716-6088-4281-A446-87EE974AB933%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=10"
+              s:ph="/main/sxa-content-container/container-1/container-3/column-3-1" />
             <r
               uid="{CF360A7E-54D7-4253-83A5-8931C14F0BD7}"
-              s:par="GridParameters=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;FieldNames=%7BF414A716-6088-4281-A446-87EE974AB933%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8">
+              s:par="GridParameters=%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D&amp;FieldNames=%7BF414A716-6088-4281-A446-87EE974AB933%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8&amp;Reset Caching Options"
+              s:ph="/main/sxa-content-container/container-1/container-3/column-1-1">
               <rls>
                 <ruleset>
                   <rule
@@ -276,6 +278,13 @@ Languages:
                 </ruleset>
               </rls>
             </r>
+            <r
+              uid="{4CDADFC1-A6CC-494F-AE9E-FDBCFDE6BCA3}"
+              p:after="r[@uid='{CF360A7E-54D7-4253-83A5-8931C14F0BD7}']"
+              s:ds="local:/Data/Fitness Products"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+              s:ph="/main/sxa-content-container/container-1/container-9" />
             <r
               uid="{E875CFCE-4C80-4EEB-928C-AFAEB7464C8E}"
               s:par="GridParameters=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;FieldNames=%7BF414A716-6088-4281-A446-87EE974AB933%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7">
@@ -321,7 +330,7 @@ Languages:
             </r>
             <r
               uid="{60937992-F1F1-4E25-A284-81DD3BDD6BBE}"
-              s:par="SplitterSize=2&amp;EnabledPlaceholders=2%2C3&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1" />
+              s:par="SplitterSize=2&amp;EnabledPlaceholders=2%2C3%2C1&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D&amp;ColumnWidth3=%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1&amp;Reset Caching Options" />
             <r
               uid="{E1FA64CF-6A5A-4364-9830-C32D63D64B58}"
               s:par="GridParameters&amp;FieldNames=%7B37AF3984-2F68-47EC-BAFB-B7A831F910CA%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4" />
@@ -364,13 +373,80 @@ Languages:
               </rls>
             </r>
             <r
+              uid="{F0D732F5-0FE5-42A7-8006-4DFEBF378BB1}">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{62FA4BFE-FEF7-46F1-B303-929192C95FDF}"
+                    p:before="*"
+                    s:name="Known">
+                    <conditions>
+                      <condition
+                        uid="54C294CBE57F4FFE8BC66703EC0F25D6"
+                        s:id="{9A4BEB4B-4B0F-4392-A798-124CEC8AADA4}"
+                        s:rulesid="{104FA096-073C-4EAF-A153-7E0CCEA52B37}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="A7766C3735BE4B25937555D69EDA91E7"
+                        s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}"
+                        s:RenderingItem="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}" />
+                      <action
+                        uid="859B9993225B4C92BBAE909DC74A0ED6"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{12B2BE9B-A22D-4B2B-BDD3-872C352694B0}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{FA11E9F8-E2E3-4D6A-8608-D617014C3D15}"
+                    p:after="rule[@uid='{62FA4BFE-FEF7-46F1-B303-929192C95FDF}']"
+                    s:name="Anonymous">
+                    <conditions>
+                      <condition
+                        uid="9E5BB4A6F0744AF5B521929CE7E576AD"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="AFF6E7FCABCF435D9577FCBFD5F86FDF"
+                        s:id="{7B578B65-BD2F-4C7C-9A24-DAE3E98B4F23}"
+                        s:RenderingItem="{3C84ED23-7591-45E0-8850-1AE96D1342B1}" />
+                      <action
+                        uid="8425611D2981444E850249D8D9A32133"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{AD7510D4-DCF3-4619-840F-CAA0D38E4946}" />
+                    </actions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
               uid="{91549E4E-85B9-46BB-B903-99BFBF5FEA4C}"
               s:par="GridParameters&amp;FieldNames=%7B960FD30E-BD7B-4E17-920D-4D331117839C%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5">
               <rls>
                 <ruleset>
                   <rule
-                    uid="{132717A6-B6C7-4508-9DF3-8CCB5D1D164F}"
+                    uid="{FA63D598-F4FB-4362-BE65-217C2CFCF6EA}"
                     p:before="*"
+                    s:name="Known">
+                    <conditions>
+                      <condition
+                        uid="E419D984C4854BAA92567C3F6D921591"
+                        s:id="{9A4BEB4B-4B0F-4392-A798-124CEC8AADA4}"
+                        s:rulesid="{104FA096-073C-4EAF-A153-7E0CCEA52B37}" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="EFE688C1120141A8B5A917FE8F9BA970"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{140FB2E7-E2A9-4C0E-BB09-A846B79853ED}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{132717A6-B6C7-4508-9DF3-8CCB5D1D164F}"
+                    p:after="rule[@uid='{FA63D598-F4FB-4362-BE65-217C2CFCF6EA}']"
                     s:name="Fitness Trainer Finder">
                     <conditions>
                       <or

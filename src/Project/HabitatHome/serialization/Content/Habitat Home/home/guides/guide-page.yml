@@ -1,0 +1,54 @@
+﻿---
+ID: "e6d7efa7-5c39-4eed-b5bb-912f7b23232d"
+Parent: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
+Template: "14807d83-9671-4d70-b0f4-f54012f2bfb8"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/guide-page"
+DB: master
+BranchID: "cc8a8c28-8d50-4d3e-871b-06816d1f73c4"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{B92947D7-F9D5-4781-8796-5B17A7B5FBF7}"
+          s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
+          s:par="GridParameters&amp;FieldNames=%7BBF7D50EF-E4FD-480C-8AE5-14321119114C%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="/main/sxa-article-content/author-1-" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C378D422-7669-49FE-A21D-AF2EC8C57A87}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Guide Page
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180830T230850Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Guide Page
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minnie
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Guide Page

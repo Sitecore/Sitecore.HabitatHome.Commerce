@@ -156,6 +156,30 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{935A81B5-2CA9-408E-BC12-3F82C7FA5803}"
+              p:after="r[@uid='{0E4CA240-23C7-4113-BA2D-608BF005638F}']"
+              s:ds="{856116A0-1B54-41CD-B414-8EEEF78ACFC0}"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters=%257B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%257D&amp;Product List&amp;Relationship Type=%7BEA35B8FE-57BB-41C1-9DB0-7E99E13AEF83%7D&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+              s:ph="/main/sxa-content-container/container-1" />
+            <r
+              uid="{D1EDF085-4DE6-44AB-B7A4-B8C041CA195C}"
+              p:after="r[@uid='{935A81B5-2CA9-408E-BC12-3F82C7FA5803}']"
+              s:ds="{279239AE-082D-4945-8C58-159CA2A4240E}"
+              s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+              s:par="GridParameters=%257B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%257D&amp;Product List&amp;Relationship Type=%7BEA35B8FE-57BB-41C1-9DB0-7E99E13AEF83%7D&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+              s:ph="/main/sxa-content-container/container-1" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180709T132534Z

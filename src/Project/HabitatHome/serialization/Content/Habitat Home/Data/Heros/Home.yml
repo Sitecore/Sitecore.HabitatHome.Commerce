@@ -1,0 +1,14 @@
+﻿---
+ID: "99a8b0a8-b4a8-41c8-b97e-4f2cd6aa27de"
+Parent: "dea8d1cd-d2df-4009-88b4-97d6cd53e3a5"
+Template: "81135769-7593-4ada-a4cb-72404f74a921"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Heros/Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180808T205614Z

@@ -6,8 +6,23 @@ Comment: Demo Administrator
 Created: "2018-07-24T17:41:25.0000000Z"
 IsApproved: True
 Properties:
+- Key: |
+    /sitecore\demoadmin/Panes/PF1FB8A769C0EFCBB3F7FA57C84E92E39
+  Value: visible
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\demoadmin/Sections/F1FB8A769C0EFCBB3F7FA57C84E92E39_4BAC7271621C564351A20779AD15F9A5_section/Collapsed
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\demoadmin/Sections/F1FB8A769C0EFCBB3F7FA57C84E92E39_DDD197D1C4224E0E5B9EB4D46CAAB51B_section/Collapsed
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
 - Key: FullName
-  Value: Demo Administrator
+  Value: Merchandiser
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: IsAdministrator
@@ -24,6 +39,10 @@ Properties:
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
   Value: a7389bf47c9d7be29d1741462b97861d
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: sc_RssSalt
+  Value: hnN18KrN0H6VLyzKig3lfw==
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:

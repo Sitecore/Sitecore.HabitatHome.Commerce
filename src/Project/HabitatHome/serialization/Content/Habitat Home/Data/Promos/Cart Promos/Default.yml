@@ -1,0 +1,25 @@
+﻿---
+ID: "bbedd348-fceb-4ab1-bde1-9a4f9a4e54a5"
+Parent: "d89d69f9-915e-43af-8b06-625f11b6d6af"
+Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Cart Promos/Default
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: Achieve Your Goals From Your Comfort Zone
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{580ED437-7A14-463D-A81A-0F94FCAA7A92}" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180504T034517Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,28 @@
+﻿---
+ID: "4f0d33fe-821c-4455-bf5b-3d22460eca82"
+Parent: "1bc39696-3d4b-4a17-b956-ab76307fe3cf"
+Template: "6d00d695-0cab-47d7-8929-a03ea002eb19"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2018/08/29/20/45/home 2C49F283528F4F8E92ED04A4973E5BE7/Promo/Dollar
+DB: master
+SharedFields:
+- ID: "77c2a8f6-ab1c-40b7-be7b-ebcb615b770a"
+  Hint: Datasource
+  Value: "{8B6B8C09-2E19-4ECB-BAED-487812ED71EB}"
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 99
+- ID: "c5230c52-c652-435b-8b1d-b6c96a96330d"
+  Hint: Name
+  Value: Dollar
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180829T185307Z

@@ -1,0 +1,25 @@
+﻿---
+ID: "1bc39696-3d4b-4a17-b956-ab76307fe3cf"
+Parent: "88905b42-c897-4452-b27a-7eeb4316af0f"
+Template: "72296cfa-6354-47ad-901a-17f1651e9505"
+Path: /sitecore/system/Marketing Control Panel/Test Lab/2018/08/29/20/45/home 2C49F283528F4F8E92ED04A4973E5BE7/Promo
+DB: master
+SharedFields:
+- ID: "4549eb29-846c-4682-80b6-fd2cba0c1c51"
+  Hint: Original Value
+  Value: "{D724661C-1917-4792-843E-90B2C91421C7}"
+- ID: "895e3a86-982b-409a-aa41-0bc1fe4f4d36"
+  Hint: Name
+  Value: Promo
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180829T185305Z

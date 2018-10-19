@@ -1,0 +1,28 @@
+﻿---
+ID: "ad7510d4-dcf3-4619-840f-caa0d38e4946"
+Parent: "90b066fd-fef1-439e-9a88-7e395021ec33"
+Template: "ade9eff4-da78-4e26-9248-b01bd93eae95"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Videos/Stationary Bike
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180808T192131Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "75562c38-22f6-4b63-af7a-daf44f0730f1"
+      Hint: MovieDescription
+      Value: |
+        <p><a href="https://habitathome.dev.local/shop/SmartSportsEquipment%3dhabitat_master-smart%20sports%20equipment/HabitatStrivaStationaryBikewithWifi%3d8042104?sc_trk=Striva Bike Selected">Get this Bike Now!</a></p>
+    - ID: "c4a0614e-5a4a-4ecf-b49b-b0d82e5eee7e"
+      Hint: MovieCaption
+      Value: "You know you want it!"
+    - ID: "c7abdb60-3f28-4d17-b457-2056710e384f"
+      Hint: YoutubeMovie
+      Value: "https://www.youtube.com/watch?v=4Hl1WAGKjMc"
