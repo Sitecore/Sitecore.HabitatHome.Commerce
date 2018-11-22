@@ -1,0 +1,40 @@
+﻿---
+ID: "20064741-f39e-437a-9301-d035bca352e0"
+Parent: "fbefea07-da28-48d4-9527-6ab943a5414e"
+Template: "94fd1606-139e-46ee-86ff-bc5bf3c79804"
+Path: "/sitecore/system/Marketing Control Panel/Campaigns/Habitat Home/Google Paid Ad  Microwave-20064741-f39e-437a-9301-d035bca352e0"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{689E2994-4656-4C58-9112-7826CB46EE69}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Google Paid Ad | Microwave
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f47d1b4-bcb4-4f7f-9065-6ecb46aab9a1"
+      Hint: Title
+      Value: Google Paid Ad | Microwave
+    - ID: "13f24114-c29b-4acb-a39b-445cce2ed60c"
+      Hint: Campaign facet 2
+      Value: "5d5d8c9b-637e-4fe6-bbfa-1de93056907a"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181117T041533Z
+    - ID: "336ba862-e974-4cd6-be4d-4bfdd78994e1"
+      Hint: Campaign facet 3
+      Value: "67ba62fe-7f1a-4ba1-b244-79160a0893c4"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}"
+    - ID: "4c1bf83b-06e2-4b07-ad16-0e65d95e356e"
+      Hint: Channel
+      Value: "67150678-b200-44bb-bbae-1d7b901d0860"
