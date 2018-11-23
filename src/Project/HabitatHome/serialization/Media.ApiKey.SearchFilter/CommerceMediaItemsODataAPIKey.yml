@@ -1,0 +1,39 @@
+﻿---
+ID: "34905b27-5f55-4df8-b866-b60a1571d2d5"
+Parent: "59b41b5f-e22e-460b-941e-fb64fe8da8fc"
+Template: "e642ef3a-acf4-4238-b847-ce504c1e9780"
+Path: /sitecore/system/Settings/Services/API Keys/CommerceMediaItemsODataAPIKey
+DB: core
+SharedFields:
+- ID: "1e7a5aa7-a27d-46fa-bd93-1bfe3c04efe2"
+  Hint: Impersonation User
+  Value: |
+    sitecore\ServicesAPI
+- ID: "3f6ae238-af94-4e0a-a5d6-0e0c3ba683a3"
+  Hint: Search Filter
+  Value: "(Fields/any(f: (f/Name eq 'Extension' and (f/Value eq 'png' or f/Value eq 'jpg' or f/Value eq 'gif'))) and Language eq 'en' and (contains(Path, '/images/adventure') or contains(Path, '/images/habitat') or contains(Path, '/project')))"
+- ID: "780c8e48-fe03-4a73-90dc-9bb5296b95d7"
+  Hint: CORS Origins
+  Value: 
+- ID: "99ba91ec-f0d3-4372-b638-67c2402a2484"
+  Hint: AllowedControllers
+  Value: *
+- ID: "e124e067-45db-42c5-8ff6-33aca5d96b72"
+  Hint: Database
+  Value: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Commerce Media Items OData API Key
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180604T193306Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
