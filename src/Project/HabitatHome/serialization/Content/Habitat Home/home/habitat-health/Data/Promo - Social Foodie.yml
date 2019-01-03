@@ -25,8 +25,19 @@ Languages:
         sitecore\admin
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: <p>Humble brag, but our healthy meal guides are pretty legit. You can’t go wrong with meal ideas, recipe links, all of the ingredients you would&nbsp; ever need.</p>
+      Value: <p>Humble brag, but our healthy meal guides are pretty legit. You can’t go wrong with meal ideas, recipe links, all of the ingredients you would need to follow it exactly and the prep list.&nbsp;</p><p><br /></p><p>Boost your energy, drop pounds, and feel happier than ever with these diet tweaks.</p>
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
         <link linktype="internal" text="Read More" querystring="" target="" id="{B5684B40-75E9-4FE6-912F-2D1C8D761AF2}" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190102T203021Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous

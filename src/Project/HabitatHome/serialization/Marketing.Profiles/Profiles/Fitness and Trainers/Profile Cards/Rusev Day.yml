@@ -10,8 +10,8 @@ SharedFields:
   Value: |
     <tracking>
       <profile id="2a7fc1aa-5734-42d1-82a5-63683208c3f4" name="Fitness and Trainers">
-        <key name="Cardio" value="0" />
-        <key name="High Intensity" value="10" />
+        <key name="Cardio" value="10" />
+        <key name="High Intensity" value="0" />
         <key name="Weight" value="10" />
         <key name="Workout Length" value="3" />
         <key name="Yoga" value="2" />
@@ -29,6 +29,17 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180320T163026Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190102T191304Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: "ja-JP"
   Versions:
   - Version: 1

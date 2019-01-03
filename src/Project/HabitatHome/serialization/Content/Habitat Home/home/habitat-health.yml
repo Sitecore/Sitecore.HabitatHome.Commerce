@@ -96,12 +96,20 @@ SharedFields:
                 </actions>
                 <conditions>
                   <or
-                    uid="1893F3ED10B14CBEBADF5191FFD19F90">
-                    <condition
-                      uid="B4C5E093A2B14824920AC5A9A5B68E9E"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="204993D75A124E878A5907B436F73A38">
+                    <or
+                      uid="E6056DBC60874EDE9E74FF460BF0674D">
+                      <condition
+                        uid="B4C5E093A2B14824920AC5A9A5B68E9E"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="37A41D694CB747E4A66A3C68D686FB09"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="2CBF0CAD966C4277ADDF06774133C7EA"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -115,12 +123,20 @@ SharedFields:
                 s:name="Hero - Fitness">
                 <conditions>
                   <or
-                    uid="C3B657D5CB2C4E19B009F334606A9C6D">
-                    <condition
-                      uid="11267AD14C944DAF9CA99E6721A677B8"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="F3DD5B01170B495C8AF00BE694854D5B">
+                    <or
+                      uid="217194F686F34FD2ADCEDD554F14BFF1">
+                      <condition
+                        uid="11267AD14C944DAF9CA99E6721A677B8"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="F05BC2A129CC462EA15E627AE9AC844F"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="9B9CD6AE929D4C33A999E93E10AC073F"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -162,12 +178,20 @@ SharedFields:
                 s:name="Fitness">
                 <conditions>
                   <or
-                    uid="7F5707C952944A4086A0CF11EA07CD90">
-                    <condition
-                      uid="BC10F16C504D4CB7B3BC01F88942F37F"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="59C9A097239546ACA8269AAB891BB026">
+                    <or
+                      uid="610568E0D0CE40D99865F2A3974C693A">
+                      <condition
+                        uid="BC10F16C504D4CB7B3BC01F88942F37F"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="158387FB143C40DDBAD36CCEFF47AD5B"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -234,12 +258,20 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="BB340C64C58544749E7F37CC03FC2E07">
-                    <condition
-                      uid="AA31BE03096F4E698396B76480DCF5B7"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="5ECBDB291B9444B783C5F0D3AD6FAB05">
+                    <or
+                      uid="834071B8E5944C5E9F1CA779F555E958">
+                      <condition
+                        uid="AA31BE03096F4E698396B76480DCF5B7"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="2D56DC4BE1F04C5DA482B7F6E8293D5B"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="99AB5D046A43498185EFBF35AA642B01"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -338,12 +370,20 @@ SharedFields:
                 s:name="SHOW Foodie Feast">
                 <conditions>
                   <or
-                    uid="E2CC4BBBAC3B4B55B0B57D4DA8B78A72">
-                    <condition
-                      uid="94C65C74BA114ADE8C29CF629948665D"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="D362251EB1CB4B718E92359843C8EC95">
+                    <or
+                      uid="ACD2C15CBB564D8393B44286B7AD74D9">
+                      <condition
+                        uid="94C65C74BA114ADE8C29CF629948665D"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="E96DA604066C4EF4B475DDD663031521"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="B52A75B5430247038C40617FE24848FA"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -383,12 +423,20 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="6AF243B1894E4D5AB6AD7EE55A48001B">
-                    <condition
-                      uid="C436EF2B29D649368D088919C79E6B4F"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="29086DCF181E41D187A3B765E140D6F1">
+                    <or
+                      uid="78B412DE56A443A68499AED1E58970A9">
+                      <condition
+                        uid="C436EF2B29D649368D088919C79E6B4F"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="5AEC0E37366D4E258EF2AD55B7159E40"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="6354D33527E64D0A8DB7DD28E8995F27"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -429,12 +477,20 @@ SharedFields:
                 s:name="Show For Foodie">
                 <conditions>
                   <or
-                    uid="04606F10AB9D41AEBFAC5842C55A75A7">
-                    <condition
-                      uid="A0E06DD5C62F4E95A6D157BD93E478F5"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="BB2C92489EDD41AA8A71FF42DA38CE85">
+                    <or
+                      uid="9CDC4B854A3C4AFB96842D809D8E764A">
+                      <condition
+                        uid="A0E06DD5C62F4E95A6D157BD93E478F5"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="476E6CD4175748C2BB838BA3DDDDE992"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="CA58A0A77E574D94B76FFBFC91CC4574"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -513,12 +569,20 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="F0457885C1CC4DFDBA25151E289DECB6">
-                    <condition
-                      uid="722C5B911F944943A0DD75B7D4FB4C49"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="9B725805E5184F8B83CD1118701F096A">
+                    <or
+                      uid="CFB01B2172F343E09FF4D0DFC8C97EA5">
+                      <condition
+                        uid="722C5B911F944943A0DD75B7D4FB4C49"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="BE005AF7DE2A4181B29A3FDD3C0AB275"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="581FB4DCB7CA4782923D3E40C01ED2AE"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -538,12 +602,20 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="5E77FE909AF141D398F63E43F657BF81">
-                    <condition
-                      uid="777969FA39C14AAF9EA6FCDA5CD51131"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="350B426B118B4E9F9E85EB811449AF5F">
+                    <or
+                      uid="264976BF4A4245BFA33BD981A2DA9489">
+                      <condition
+                        uid="777969FA39C14AAF9EA6FCDA5CD51131"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="B26832ABC50A48C4BBE0074B084EEF4D"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="E2FD870A7AA64291B176B86BECA88A6A"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -644,16 +716,24 @@ SharedFields:
                 s:name="HIDE for Foodie">
                 <conditions>
                   <or
-                    uid="01FB980182D941B8995DCBE908A32E46">
-                    <condition
-                      uid="108067A414984F6A984F4D2C4EF5FE36"
-                      s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
-                      s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                    uid="ADA587BFFF954BFFBA8A1AF1C0CC50D3">
+                    <or
+                      uid="F190A7C02F744840846545763EE6E644">
+                      <condition
+                        uid="108067A414984F6A984F4D2C4EF5FE36"
+                        s:id="{D379525C-4DE6-4738-89ED-60CC0B8F91E5}"
+                        s:CampaignId="{86F4B51D-01D8-4372-889A-2DEAC430E01D}" />
+                      <condition
+                        uid="90081207E7EA45A9A3EAA589EEFAD8C6"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="0918613E301D470C9317314EFE861216"
                       s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
                       s:ProfileName="Topic Interest Category"
-                      s:PatternName="Frank Foodie" />
+                      s:PatternName="Cooking" />
                   </or>
                 </conditions>
                 <actions>
@@ -689,12 +769,20 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="978265EDFD8C4B74BAE165FE95D7D07F">
-                    <condition
-                      uid="CAD1A53A7A39444091BD1A110D3C9560"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                    uid="4F888202916741BF874A19F50F846C6D">
+                    <or
+                      uid="F45632842F6342ABB8F80A6715D14963">
+                      <condition
+                        uid="CAD1A53A7A39444091BD1A110D3C9560"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      <condition
+                        uid="919B0B4501884FF3BC0B25CD2144F99B"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="4C27D222FFFA405097C2E356FDEC784A"
                       s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
@@ -749,12 +837,20 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="BA475E28771B43108825C5F1CBD6DFD1">
-                    <condition
-                      uid="B8BE4BA6CA8D4524BA55FE39115CD680"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="21F4A729943D4C9FB8ACC8193F976AC9">
+                    <or
+                      uid="7658C51336C74CBDAA4882A8C161F99C">
+                      <condition
+                        uid="B8BE4BA6CA8D4524BA55FE39115CD680"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="5EF300052EC445D9940BB1159FF3AE11"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="CF9230EB171441368AB40D6F2FA9ACFA"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -774,12 +870,20 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="7495A12CF7DD4C039CD87DE7EC6BAB1B">
-                    <condition
-                      uid="BD9D7D2AE6A84BBBB7141A591E8C5ED2"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="9A33E2C8798048E4A86AA1BC384DB879">
+                    <or
+                      uid="3101B61F1D8C426A9BFB8D9A63A7BE9C">
+                      <condition
+                        uid="BD9D7D2AE6A84BBBB7141A591E8C5ED2"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="EDD92B7D44B841D7AF9A974D2910B3CF"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="DE4784808EBE4F8E81960F3093D4377E"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -826,12 +930,20 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="EC7D2E953B1949E39E7F24DCA299D6C2">
-                    <condition
-                      uid="50625FD0116E4C04AB720B627DE3E562"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                    uid="6358385F825F450586E9EB7F87B22935">
+                    <or
+                      uid="22A6A0989EE64F629E38305B946084B3">
+                      <condition
+                        uid="50625FD0116E4C04AB720B627DE3E562"
+                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="5DBDB901EBF34ED1AEC714996F4DD5BA"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                    </or>
                     <condition
                       uid="1E0DC91F725D4701A414E12828F21AF2"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -851,12 +963,20 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="4A030A414FEF43E98791CCC54388E5E8">
-                    <condition
-                      uid="D726B1A189584C92A1524644D9FF69F4"
-                      s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Fitness" />
+                    uid="3597E6E5C664464694820CF9765BF5F1">
+                    <or
+                      uid="FF3A66FC114B4C52B7015C95D884429E">
+                      <condition
+                        uid="D726B1A189584C92A1524644D9FF69F4"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                      <condition
+                        uid="0F9702A50410450AA6E7450697289A61"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Fitness" />
+                    </or>
                     <condition
                       uid="5E3D6C3F2036420F989EABD6947E3753"
                       s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -914,9 +1034,6 @@ Languages:
             <r
               uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
-            <r
-              uid="{5B548513-9243-4460-93B2-B58566281362}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7BD5E01C6B-D0E9-49C4-9D61-97687DC5DE12%7D%22%20%2F%3E&amp;Styles=%7B45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B%7D%7C%7BF5947911-00C7-4F00-84F4-3D748376BB32%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=19" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
