@@ -3,7 +3,7 @@
     <Description>Sitecore Commerce Sample Plugin Template</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Authors>Sitecore</Authors>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <PackageTags>$(PackageTags);Commerce;Sample;Plugin</PackageTags>
     <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
     <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
@@ -40,11 +40,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core">
-      <Version>2.2.29</Version>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.2.11" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.2.46" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0.*" />
   </ItemGroup>
 
   <ItemGroup>

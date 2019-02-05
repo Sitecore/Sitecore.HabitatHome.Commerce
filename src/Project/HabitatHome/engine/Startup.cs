@@ -10,7 +10,6 @@ namespace Sitecore.Commerce.Engine
     using System.Collections.Generic;
     using System.IO;
     using System.Threading.Tasks;
-
     using Microsoft.ApplicationInsights;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -25,15 +24,13 @@ namespace Sitecore.Commerce.Engine
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;
-
     using Newtonsoft.Json.Serialization;
-
     using Serilog;
     using Serilog.Events;
-
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Core.Commands;
     using Sitecore.Commerce.Core.Logging;
+    using Sitecore.Commerce.Plugin.SQL;
     using Sitecore.Commerce.Provider.FileSystem;
     using Sitecore.Framework.Diagnostics;
     using Sitecore.Framework.Rules;
@@ -43,7 +40,7 @@ namespace Sitecore.Commerce.Engine
     /// </summary>
     public class Startup
     {
-        private readonly string _nodeInstanceId = Guid.NewGuid().ToString("N");
+        private readonly string _nodeInstanceId = Guid.NewGuid().ToString("N", System.Globalization.CultureInfo.InvariantCulture);
         private readonly IServiceProvider _serviceProvider;
         private readonly IHostingEnvironment _hostEnv;
         private volatile CommerceEnvironment _environment;
@@ -65,7 +62,7 @@ namespace Sitecore.Commerce.Engine
             this._serviceProvider = serviceProvider;
 
             this.Configuration = configuration;
-            
+
             var appInsightsInstrumentationKey = this.Configuration.GetSection("ApplicationInsights:InstrumentationKey").Value;
             _telemetryClient = !string.IsNullOrWhiteSpace(appInsightsInstrumentationKey) ? new TelemetryClient { InstrumentationKey = appInsightsInstrumentationKey } : new TelemetryClient();
 
@@ -85,7 +82,7 @@ namespace Sitecore.Commerce.Engine
                                  .WriteTo.Async(a => a.File(
                                      $@"{Path.Combine(this._hostEnv.WebRootPath, "logs")}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{this._nodeInstanceId}.txt",
                                      this.GetSerilogLogLevel(),
-                                     "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
+                                     "{ThreadId:D5} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
                                      fileSizeLimitBytes: fileSize,
                                      rollOnFileSizeLimit: true), bufferSize: 500)
                                  .CreateLogger();
@@ -149,7 +146,7 @@ namespace Sitecore.Commerce.Engine
 
             services.AddSingleton(_telemetryClient);
 
-            Log.Information("BootStrapping Application ...");
+            Log.Information("Bootstrapping Application ...");
             services.Sitecore()
                 .Eventing()
                 .Caching(config => config
@@ -164,13 +161,14 @@ namespace Sitecore.Commerce.Engine
             services.AddOData();
             services.AddCors();
             services.AddMvcCore(options => options.InputFormatters.Add(new ODataFormInputFormatter())).AddJsonFormatters();
+            services.AddHttpContextAccessor();
             services.AddWebEncoders();
             services.AddDistributedMemoryCache();
             services.AddAuthentication(options =>
-                {
-                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
                 .AddIdentityServerAuthentication(options =>
                 {
                     options.Authority = this.Configuration.GetSection("AppSettings:SitecoreIdentityServerUrl").Value;
@@ -188,11 +186,11 @@ namespace Sitecore.Commerce.Engine
             });
 
             var antiForgeryEnabledSetting = this.Configuration.GetSection("AppSettings:AntiForgeryEnabled").Value;
-            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting);
+            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting, System.Globalization.CultureInfo.InvariantCulture);
             if (this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
 
             services.AddMvc()
-                    .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+                .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             this._nodeContext.AddObject(services);
         }
@@ -210,6 +208,7 @@ namespace Sitecore.Commerce.Engine
         /// <param name="applicationInsightsSettings">The application insights settings.</param>
         /// <param name="certificatesSettings">The certificates settings.</param>
         /// <param name="allowedOriginsOptions"></param>
+        /// <param name="getDatabaseVersionCommand">Command to get DB version</param>
         public void Configure(
             IApplicationBuilder app,
             IConfigureServiceApiPipeline configureServiceApiPipeline,
@@ -220,8 +219,25 @@ namespace Sitecore.Commerce.Engine
             IOptions<LoggingSettings> loggingSettings,
             IOptions<ApplicationInsightsSettings> applicationInsightsSettings,
             IOptions<CertificatesSettings> certificatesSettings,
-            IOptions<List<string>> allowedOriginsOptions)
+            IOptions<List<string>> allowedOriginsOptions,
+            GetDatabaseVersionCommand getDatabaseVersionCommand)
         {
+            // TODO: Check if we can move this code to a better place, this code checks Database version against Core required version
+            // Get the core required database version from config policy
+            var coreRequiredDbVersion = string.Empty;
+            if (this.StartupEnvironment.HasPolicy<Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy>())
+            {
+                coreRequiredDbVersion = this.StartupEnvironment.GetPolicy<Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy>().Version;
+            }
+            // Get the db version
+            var dbVersion = Task.Run(() => getDatabaseVersionCommand.Process(this._nodeContext)).Result;
+            // Check versions
+            if (string.IsNullOrEmpty(dbVersion) || string.IsNullOrEmpty(coreRequiredDbVersion) || !string.Equals(coreRequiredDbVersion, dbVersion, StringComparison.Ordinal))
+            {
+                throw new CommerceException($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
+            }
+            Log.Information($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
+
             app.UseDiagnostics();
             app.UseStaticFiles();
 
@@ -245,39 +261,37 @@ namespace Sitecore.Commerce.Engine
 
             app.UseAuthentication();
 
-            Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.GetPipelineContextOptions())).Wait();
+            Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.PipelineContextOptions)).Wait();
 
             var environmentName = this.Configuration.GetSection("AppSettings:EnvironmentName").Value;
             if (!string.IsNullOrEmpty(environmentName))
             {
                 this._nodeContext.AddDataMessage("EnvironmentStartup", $"StartEnvironment={environmentName}");
-                Task.Run(() => startEnvironmentPipeline.Run(environmentName, this._nodeContext.GetPipelineContextOptions())).Wait();
+                Task.Run(() => startEnvironmentPipeline.Run(environmentName, this._nodeContext.PipelineContextOptions)).Wait();
             }
 
             // Initialize plugins OData contexts
             app.InitializeODataBuilder();
-            var modelBuilder = new ODataConventionModelBuilder();
 
-            // Run the pipeline to configure the plugin's OData context
-            var contextResult = Task.Run(() => configureServiceApiPipeline.Run(modelBuilder, this._nodeContext.GetPipelineContextOptions())).Result;
+            // Run the pipeline to configure the plugins OData context
+            var contextResult = Task.Run(() => configureServiceApiPipeline.Run(new ODataConventionModelBuilder(), this._nodeContext.PipelineContextOptions)).Result;
             contextResult.Namespace = "Sitecore.Commerce.Engine";
 
             // Get the model and register the ODataRoute
-            var model = contextResult.GetEdmModel();
-            app.UseRouter(new ODataRoute("Api", model));
+            var apiModel = contextResult.GetEdmModel();
+            app.UseRouter(new ODataRoute("Api", apiModel));
 
             // Register the bootstrap context for the engine
-            modelBuilder = new ODataConventionModelBuilder();
-            var contextOpsResult = Task.Run(() => configureOpsServiceApiPipeline.Run(modelBuilder, this._nodeContext.GetPipelineContextOptions())).Result;
+            var contextOpsResult = Task.Run(() => configureOpsServiceApiPipeline.Run(new ODataConventionModelBuilder(), this._nodeContext.PipelineContextOptions)).Result;
             contextOpsResult.Namespace = "Sitecore.Commerce.Engine";
 
             // Get the model and register the ODataRoute
-            model = contextOpsResult.GetEdmModel();
-            app.UseRouter(new ODataRoute("CommerceOps", model));
+            var opsModel = contextOpsResult.GetEdmModel();
+            app.UseRouter(new ODataRoute("CommerceOps", opsModel));
 
             var appInsightsSettings = applicationInsightsSettings.Value;
             if (!(appInsightsSettings.TelemetryEnabled &&
-                    !string.IsNullOrWhiteSpace(appInsightsSettings.InstrumentationKey)))
+                  !string.IsNullOrWhiteSpace(appInsightsSettings.InstrumentationKey)))
             {
                 TelemetryConfiguration.Active.DisableTelemetry = true;
             }
@@ -286,6 +300,8 @@ namespace Sitecore.Commerce.Engine
             {
                 loggerFactory.AddApplicationInsights(appInsightsSettings);
             }
+
+            this._nodeContext.PipelineTraceLoggingEnabled = loggingSettings.Value.PipelineTraceLoggingEnabled;
         }
 
         /// <summary>
@@ -376,11 +392,12 @@ namespace Sitecore.Commerce.Engine
         private CommerceEnvironment GetGlobalEnvironment(EntitySerializerCommand serializer)
         {
             CommerceEnvironment environment;
+            var bootstrapProviderFolderPath = String.Concat(Path.Combine(this._hostEnv.WebRootPath, "Bootstrap"), Path.DirectorySeparatorChar);
 
-            Log.Information($"Loading Global Environment using Filesystem Provider from: {this._hostEnv.WebRootPath} s\\Bootstrap\\");
+            Log.Information($"Loading Global Environment using Filesystem Provider from: {bootstrapProviderFolderPath}");
 
             // Use the default File System provider to setup the environment
-            this._nodeContext.BootstrapProviderPath = this._hostEnv.WebRootPath + @"\Bootstrap\";
+            this._nodeContext.BootstrapProviderPath = bootstrapProviderFolderPath;
             var bootstrapProvider = new FileSystemEntityProvider(this._nodeContext.BootstrapProviderPath, serializer);
 
             var bootstrapFile = this.Configuration.GetSection("AppSettings:BootStrapFile").Value;
@@ -404,7 +421,7 @@ namespace Sitecore.Commerce.Engine
             this._nodeContext.BootstrapEnvironmentPath = bootstrapFile;
 
             this._nodeContext.GlobalEnvironmentName = environment.Name;
-            this._nodeContext.AddDataMessage("NodeStartup", $"Status='Started',GlobalEnvironmentName='{_nodeContext.GlobalEnvironmentName}'");
+            this._nodeContext.AddDataMessage("NodeStartup", $"Status='Started, GlobalEnvironmentName='{_nodeContext.GlobalEnvironmentName}'");
 
             if (this.Configuration.GetSection("AppSettings:BootStrapFile").Value != null)
             {

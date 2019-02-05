@@ -5,7 +5,7 @@
     <Copyright>Â© 2017 Sitecore Corporation A/S. All rights reserved. SitecoreÂ® is a registered trademark of Sitecore Corporation A/S.</Copyright>
     <VersionPrefix>0.0.1</VersionPrefix>
     <Authors>Sitecore</Authors>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <AssemblyName>Plugin.Sample.Plugin.Enhancements</AssemblyName>
     <PackageId>Plugin.Sample.Plugin.Enhancements</PackageId>
     <PackageTags>Sitecore;Commerce;Plugin;Sample;Example</PackageTags>
@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="3.0.*" />
   </ItemGroup>
 
 </Project>
