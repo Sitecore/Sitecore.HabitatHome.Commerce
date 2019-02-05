@@ -199,10 +199,6 @@
             "Environment.Habitat.Catalog-1.0"
           ]
         }
-      }
-      {
-        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
