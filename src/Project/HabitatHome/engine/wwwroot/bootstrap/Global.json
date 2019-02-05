@@ -46,7 +46,8 @@
         "Server": ".",
         "TrustedConnection": true,
         "UserName": "",
-        "View": "EntityStoreSqlPolicy"
+        "View": "EntityStoreSqlPolicy",
+        "Version": "9.1.0"
       },
       {
         "$type": "Sitecore.Commerce.Core.DeploymentPolicy, Sitecore.Commerce.Core",
@@ -67,7 +68,7 @@
         "AuthorizedRoles": [
           "sitecore\\Commerce Business User"
         ]
-      },         
+      },
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
         "Host": "habitathome.dev.local",

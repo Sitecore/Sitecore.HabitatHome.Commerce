@@ -30,6 +30,77 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
+        "$type": "Sitecore.Commerce.Plugin.Orders.KnownOrderListsPolicy, Sitecore.Commerce.Plugin.Orders",
+        "OrderDashboardLists": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "Orders",
+              "Value": "list_style_bullets"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "PendingOrders",
+              "Value": "anchor"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "PendingOrders1",
+              "Value": "anchor"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "PendingOrders2",
+              "Value": "anchor"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "OnHoldOrders",
+              "Value": "hand_stop2"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "WaitingForAvailabilityOrders",
+              "Value": "hourglass"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "ReleasedOrders",
+              "Value": "arrow_right"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "CompletedOrders",
+              "Value": "signal_flag_checkered"
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.KeyValueString, Sitecore.Commerce.Core",
+              "Key": "ProblemOrders",
+              "Value": "sign_warning"
+            }
+        ]},
+        "CustomerOrders": "Orders-ByCustomer-{0}",
+        "Orders": "Orders",
+        "PendingOrders": "PendingOrders",
+        "OnHoldOrders": "OnHoldOrders",
+        "ProblemOrders": "ProblemOrders",
+        "ReleasedOrders": "ReleasedOrders",
+        "CompletedOrders": "CompletedOrders",
+        "CancelledOrders": "CancelledOrders",
+        "OrdersIndex": "OrdersIndex",
+        "FraudOrders": "FraudOrders",
+        "ShippedOrders": "ShippedOrders",
+        "AnonymousOrders": "AnonymousOrders",
+        "AuthenticatedOrders": "AuthenticatedOrders",
+        "SalesCharges": "SalesCharges",
+        "SalesCredits": "SalesCredits",
+        "OrderSalesActivities": "Order-{0}-SalesActivity",
+        "SettleSalesActivities": "SettleSalesActivities",
+        "SettledSalesActivities": "SettledSalesActivities",
+        "ProblemSalesActivities": "ProblemSalesActivities"
+      },
+      {
         "$type": "Sitecore.Commerce.Plugin.Carts.CalculateCartPolicy, Sitecore.Commerce.Plugin.Carts",
         "AlwaysCalculate": true
       },
@@ -87,6 +158,10 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-CatalogPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-SqlPolicySet"
       },
       {
@@ -124,6 +199,10 @@
             "Environment.Habitat.Catalog-1.0"
           ]
         }
+      }
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-BraintreePolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -221,7 +300,7 @@
             "PhoneNumber"
           ]
         },
-        "Domains": [ "Storefront", "extranet", "CommerceUsers" ] 
+        "Domains": [ "Storefront", "extranet", "CommerceUsers" ]
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.CustomersRemovePolicy, Sitecore.Commerce.Plugin.Customers",

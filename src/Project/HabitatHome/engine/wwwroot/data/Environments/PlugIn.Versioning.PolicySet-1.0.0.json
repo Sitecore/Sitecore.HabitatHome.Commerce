@@ -1,6 +1,5 @@
 {
-  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-  "ArtifactStoreId": "A7517FEB-E4E2-4BA8-900A-988681BBA957",
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core", 
   "Id": "Entity-PolicySet-VersioningPolicySet",
   "Version": 1,
   "IsPersisted": false,
@@ -21,7 +20,7 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem"
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.EntityVersions.EntityVersionsActionsPolicy, Sitecore.Commerce.Plugin.EntityVersions",        
+        "$type": "Sitecore.Commerce.Plugin.EntityVersions.EntityVersionsActionsPolicy, Sitecore.Commerce.Plugin.EntityVersions",
         "AllowedActions": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
@@ -32,10 +31,12 @@
             "DeleteCategory",
             "AddSellableItem",
             "DeleteSellableItem",
+            "AddBundle",
             "AssociateCategoryToCategoryOrCatalog",
             "AssociateSellableItemToCatalog",
             "AssociateSellableItemToCategory",
-            "DisassociateItem"
+            "DisassociateItem",
+            "MakePurchasable"
           ]
         }
       }

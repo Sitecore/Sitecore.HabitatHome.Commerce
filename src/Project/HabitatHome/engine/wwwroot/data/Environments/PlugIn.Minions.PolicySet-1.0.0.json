@@ -1,0 +1,229 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "Id": "Entity-PolicySet-MinionsPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "MinionsPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "24:00:00",
+        "ListToWatch": "Carts",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Carts.PurgeCartsMinion, Sitecore.Commerce.Plugin.Carts",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "ListToWatch": "Orders",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.FullIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Orders.Order, Sitecore.Commerce.Plugin.Orders"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "OrdersIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.IncrementalIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Orders.Order, Sitecore.Commerce.Plugin.Orders"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "ListToWatch": "Customers",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.FullIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Customers.Customer, Sitecore.Commerce.Plugin.Customers"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "CustomersIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.IncrementalIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Customers.Customer, Sitecore.Commerce.Plugin.Customers"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "DeletedCustomersIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Customers.Customer, Sitecore.Commerce.Plugin.Customers"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "DeletedCatalogItemsIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.DeleteIndexDocumentsMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalogs, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "ListToWatch": "CatalogItems",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.FullIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalogs, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "CatalogItemsIndex",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Search.IncrementalIndexMinion, Sitecore.Commerce.Plugin.Search",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Catalogs, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:03:00",
+        "ListToWatch": "",
+        "FullyQualifiedName": "Sitecore.Commerce.Core.NodeHeartBeatMinion, Sitecore.Commerce.Core",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionBossPolicy, Sitecore.Commerce.Core",
+        "Children": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core]], mscorlib",
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+              "WakeupInterval": "00:05:00",
+              "ListToWatch": "PendingOrders.1",
+              "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.PendingOrdersMinion, Sitecore.Commerce.Plugin.Orders",
+              "ItemsPerBatch": 10,
+              "SleepBetweenBatches": 500
+            },
+            {
+              "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+              "WakeupInterval": "00:05:00",
+              "ListToWatch": "PendingOrders.2",
+              "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.PendingOrdersMinion, Sitecore.Commerce.Plugin.Orders",
+              "ItemsPerBatch": 10,
+              "SleepBetweenBatches": 500
+            }
+          ]
+        },
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "PendingOrders",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.PendingOrdersMinionBoss, Sitecore.Commerce.Plugin.Orders",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "ReleasedOrders",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.ReleasedOrdersMinion, Sitecore.Commerce.Plugin.Orders",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Orders.Order, Sitecore.Commerce.Plugin.Orders"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "SettleSalesActivities",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.SettleSalesActivitiesMinion, Sitecore.Commerce.Plugin.Orders",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500,
+        "Entities": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Orders.Order, Sitecore.Commerce.Plugin.Orders"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "WaitingForAvailabilityOrders",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.DelayedAvailability.WaitingForAvailabilityOrdersMinion, Sitecore.Commerce.Plugin.Orders.DelayedAvailability",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "RefundPendingRmas",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Returns.RefundRmasMinion, Sitecore.Commerce.Plugin.Returns",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "PurgeCategories",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Catalog.PurgeCategoriesMinion, Sitecore.Commerce.Plugin.Catalog",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:05:00",
+        "ListToWatch": "PurgeCatalogs",
+        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Catalog.PurgeCatalogsMinion, Sitecore.Commerce.Plugin.Catalog",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
+      }
+    ]
+  }
+}
