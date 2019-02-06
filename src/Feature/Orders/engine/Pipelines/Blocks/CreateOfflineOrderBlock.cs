@@ -45,9 +45,9 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
             if (string.IsNullOrEmpty(arg.Email))
             {
                 executionContext = context;
-                executionContext.Abort(await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Error, "EmailIsRequired", new object[1], "Can not create order, email address is required."), context);
-                executionContext = (CommercePipelineExecutionContext)null;
-                return (Order)null;
+                executionContext.Abort(await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Error, "EmailIsRequired", new object[1], "Can not create order, email address is required.").ConfigureAwait(false), context);
+                executionContext = null;
+                return null;
             }
 
             if (!arg.Lines.Any())
@@ -57,20 +57,27 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
                 string error = context.GetPolicy<KnownResultCodes>().Error;
                 string commerceTermKey = "OrderHasNoLines";                
                 string defaultMessage = "Can not create order, cart  has no lines";
-                executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, null, defaultMessage), context);
-                executionContext = (CommercePipelineExecutionContext)null;
-                return (Order)null;
+                executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, null, defaultMessage).ConfigureAwait(false), context);
+                executionContext = null;
+                return null;
             }            
 
             // Find contact using email
             string email = arg.Email;
             ContactComponent contactComponent = new ContactComponent();
-            EntityIndex entityIndex = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(EntityIndex), string.Format("{0}{1}\\{2}", EntityIndex.IndexPrefix<Customer>("Id"), arg.Domain, arg.Email)), context) as EntityIndex;
+            EntityIndex entityIndex = await createOrderBlock._findEntityPipeline
+                .Run(new FindEntityArgument(typeof(EntityIndex), string.Format("{0}{1}\\{2}", EntityIndex.IndexPrefix<Customer>("Id"), arg.Domain, arg.Email)), context)
+                .ConfigureAwait(false)
+                as EntityIndex;
 
             if (entityIndex != null)
             {
                 var customerEntityId = entityIndex.EntityId;
-                Customer entityCustomer = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(Customer), customerEntityId), context) as Customer;
+                Customer entityCustomer = await createOrderBlock._findEntityPipeline
+                    .Run(new FindEntityArgument(typeof(Customer), customerEntityId), context)
+                    .ConfigureAwait(false)
+                    as Customer;
+
                 if (entityCustomer != null)
                 {
                     contactComponent.IsRegistered = true;
@@ -82,20 +89,29 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
 
             contactComponent.Email = email;                   
             KnownOrderListsPolicy policy1 = context.GetPolicy<KnownOrderListsPolicy>();      
-            string orderId = string.Format("{0}{1:N}", (object)CommerceEntity.IdPrefix<Order>(), (object)Guid.NewGuid());
+            string orderId = string.Format("{0}{1:N}", CommerceEntity.IdPrefix<Order>(), Guid.NewGuid());
             Order storeOrder = new Order();
 
             storeOrder.Components = new List<Component>();
             storeOrder.Id = orderId;
 
-            Totals totals = new Totals() { GrandTotal = new Money(arg.CurrencyCode, arg.GrandTotal), SubTotal = new Money(arg.CurrencyCode, arg.SubTotal), AdjustmentsTotal = new Money(arg.CurrencyCode, arg.Discount), PaymentsTotal = new Money(arg.CurrencyCode, arg.GrandTotal) };
+            Totals totals = new Totals() {
+                GrandTotal = new Money(arg.CurrencyCode, arg.GrandTotal),
+                SubTotal = new Money(arg.CurrencyCode, arg.SubTotal),
+                AdjustmentsTotal = new Money(arg.CurrencyCode, arg.Discount),
+                PaymentsTotal = new Money(arg.CurrencyCode, arg.GrandTotal)
+            };
+
             storeOrder.Totals = totals;
             IList<CartLineComponent> lines = new List<CartLineComponent>();
 
             foreach(var line in arg.Lines)
             {
                 var items = line.ItemId.Split('|');
-                CommerceEntity entity = await createOrderBlock._findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), "Entity-SellableItem-" + (items.Count() > 2 ? items[1] : line.ItemId), false), context);
+                CommerceEntity entity = await createOrderBlock._findEntityPipeline
+                    .Run(new FindEntityArgument(typeof(SellableItem), "Entity-SellableItem-" + (items.Count() > 2 ? items[1] : line.ItemId), false), context)
+                    .ConfigureAwait(false);
+
                 CartLineComponent lineComponent = new CartLineComponent
                 {
                     ItemId = line.ItemId,
@@ -103,21 +119,32 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
                     Totals = new Totals() { SubTotal = new Money(arg.CurrencyCode, line.SubTotal), GrandTotal = new Money(arg.CurrencyCode, line.SubTotal) },
                     UnitListPrice = new Money() { CurrencyCode = arg.CurrencyCode, Amount = line.UnitListPrice },
                     Id = Guid.NewGuid().ToString("N"),                    
-                    Policies = new List<Policy>()
+                    //Policies = new List<Policy>() //todo: determine if this is required
                 };
                 lineComponent.Policies.Add(new PurchaseOptionMoneyPolicy() { PolicyId = "c24f0ed4f2f1449b8a488403b6bf368a", SellPrice = new Money() { CurrencyCode = arg.CurrencyCode, Amount = line.SubTotal } });
 
-                if ((entity is SellableItem))
+                if (entity is SellableItem)
                 {
                     SellableItem sellableItem = entity as SellableItem;
-                    lineComponent.ChildComponents.Add(new CartProductComponent() { DisplayName = line.ProductName, Id = items.Count() > 2 ? items[1] : line.ItemId, Image = new Image() { ImageName = line.ProductName, AltText = line.ProductName, Height = 50, Width = 50, SitecoreId = sellableItem.GetComponent<ImagesComponent>().Images.FirstOrDefault() } });
+                    lineComponent.ChildComponents.Add(new CartProductComponent()
+                    {
+                        DisplayName = line.ProductName,
+                        Id = items.Count() > 2 ? items[1] : line.ItemId,
+                        Image = new Image()
+                        {
+                            ImageName = line.ProductName,
+                            AltText = line.ProductName,
+                            Height = 50, Width = 50,
+                            SitecoreId = sellableItem.GetComponent<ImagesComponent>().Images.FirstOrDefault()
+                        }
+                    });
                 }
                 // if it has a variant
 
                 if (items.Count() > 2)
                 {
                     // Set VariantionId
-                    lineComponent.ChildComponents.Add(new Sitecore.Commerce.Plugin.Catalog.ItemVariationSelectedComponent() { VariationId = items[2] });
+                    lineComponent.ChildComponents.Add(new ItemVariationSelectedComponent() { VariationId = items[2] });
                 }
 
                 lines.Add(lineComponent);
@@ -221,7 +248,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
             string str3 = contactComponent.IsRegistered ? policy1.AuthenticatedOrders : policy1.AnonymousOrders;
             ListMembershipsComponent membershipsComponent1 = new ListMembershipsComponent()
             {
-                Memberships = (IList<string>)new List<string>()
+                Memberships = new List<string>()
                     {
                       CommerceEntity.ListName<Order>(),
                       str3
@@ -230,20 +257,20 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
 
 
             if (contactComponent.IsRegistered && !string.IsNullOrEmpty(contactComponent.CustomerId))
-                membershipsComponent1.Memberships.Add(string.Format(context.GetPolicy<KnownOrderListsPolicy>().CustomerOrders, (object)contactComponent.CustomerId));
-            order.SetComponent((Component)membershipsComponent1);
+                membershipsComponent1.Memberships.Add(string.Format(context.GetPolicy<KnownOrderListsPolicy>().CustomerOrders, contactComponent.CustomerId));
+            order.SetComponent(membershipsComponent1);
 
 
             Order order2 = order;
             TransientListMembershipsComponent membershipsComponent2 = new TransientListMembershipsComponent();
-            membershipsComponent2.Memberships = (IList<string>)new List<string>()
+            membershipsComponent2.Memberships = new List<string>()
               {
                 policy1.PendingOrders
               };
                      
 
-            context.Logger.LogInformation(string.Format("Offline Orders.ImportOrder: OrderId={0}|GrandTotal={1} {2}", (object)orderId, (object)order.Totals.GrandTotal.CurrencyCode, (object)order.Totals.GrandTotal.Amount), Array.Empty<object>());
-            context.CommerceContext.AddModel((Model)new CreatedOrder()
+            context.Logger.LogInformation(string.Format("Offline Orders.ImportOrder: OrderId={0}|GrandTotal={1} {2}", orderId, order.Totals.GrandTotal.CurrencyCode, order.Totals.GrandTotal.Amount), Array.Empty<object>());
+            context.CommerceContext.AddModel(new CreatedOrder()
             {
                 OrderId = orderId
             });
@@ -257,13 +284,13 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
                 }
               };
 
-            createOrderBlock._telemetryClient.TrackEvent("OrderCreated", (IDictionary<string, string>)null, (IDictionary<string, double>)dictionary);
-            int int32 = Convert.ToInt32(Math.Round(order.Totals.GrandTotal.Amount, 0));
+            createOrderBlock._telemetryClient.TrackEvent("OrderCreated", null, dictionary);
+            int orderTotal = Convert.ToInt32(Math.Round(order.Totals.GrandTotal.Amount, 0));
 
             if (context.GetPolicy<PerformancePolicy>().WriteCounters)
             {
-                int num1 = await createOrderBlock._performanceCounterCommand.IncrementBy("SitecoreCommerceMetrics", "MetricCount", string.Format("Orders.GrandTotal.{0}", (object)order.Totals.GrandTotal.CurrencyCode), (long)int32, context.CommerceContext) ? 1 : 0;
-                int num2 = await createOrderBlock._performanceCounterCommand.Increment("SitecoreCommerceMetrics", "MetricCount", "Orders.Count", context.CommerceContext) ? 1 : 0;
+                int num1 = await createOrderBlock._performanceCounterCommand.IncrementBy("SitecoreCommerceMetrics", "MetricCount", string.Format("Orders.GrandTotal.{0}", order.Totals.GrandTotal.CurrencyCode), orderTotal, context.CommerceContext).ConfigureAwait(false) ? 1 : 0;
+                int num2 = await createOrderBlock._performanceCounterCommand.Increment("SitecoreCommerceMetrics", "MetricCount", "Orders.Count", context.CommerceContext).ConfigureAwait(false) ? 1 : 0;
             }
             return order;
         }

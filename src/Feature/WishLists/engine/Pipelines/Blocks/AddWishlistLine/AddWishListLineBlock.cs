@@ -42,12 +42,12 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.AddWish
             Decimal quantity = arg.Line.Quantity;
             CartLineComponent existingLine = cart.Lines.FirstOrDefault(l => l.ItemId.Equals(arg.Line.ItemId, StringComparison.Ordinal));
 
-            bool isValidQuantity = await lineQuantityPolicy.IsValid(quantity, context.CommerceContext);
+            bool isValidQuantity = await lineQuantityPolicy.IsValid(quantity, context.CommerceContext).ConfigureAwait(false);
             if (isValidQuantity)
             {
                 if (existingLine != null)
                 {
-                    isValidQuantity = await lineQuantityPolicy.IsValid(quantity + existingLine.Quantity, context.CommerceContext);
+                    isValidQuantity = await lineQuantityPolicy.IsValid(quantity + existingLine.Quantity, context.CommerceContext).ConfigureAwait(false);
                 }                           
             }       
 
@@ -99,8 +99,8 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.AddWish
                 arg.Line.ItemId
             };
             string defaultMessage = $"Expecting a CatalogId and a ProductId in the ItemId: {arg.Line.ItemId}.";
-            executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, args, defaultMessage), context);
-            executionContext = (CommercePipelineExecutionContext)null;
+            executionContext.Abort(await commerceContext.AddMessage(error, commerceTermKey, args, defaultMessage).ConfigureAwait(false), context);
+            executionContext = null;
             return cart;
         }
     }

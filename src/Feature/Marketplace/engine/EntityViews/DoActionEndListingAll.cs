@@ -66,29 +66,29 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 {
                     var category = foundEntity.Entity as Category;
 
-                    var listName = $"{CatalogConstants.Relationships.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
+                    var listName = $"{CatalogConstants.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
 
                     ebayListedSellableItems = await this._commerceCommander.Command<ListCommander>()
-                    .GetListItems<SellableItem>(context.CommerceContext, listName, 0, 100);
+                    .GetListItems<SellableItem>(context.CommerceContext, listName, 0, 100).ConfigureAwait(false);
                 }
                 else
                 {
                     ebayListedSellableItems = await this._commerceCommander.Command<ListCommander>()
-                .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Listed", 0, 100);
+                .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Listed", 0, 100).ConfigureAwait(false);
                 }
 
                     
 
                 foreach(var listedItem in ebayListedSellableItems)
                 {
-                    var endListingResult = await this._commerceCommander.Command<EbayCommand>().EndItemListing(context.CommerceContext, listedItem, "Incorrect");
+                    var endListingResult = await this._commerceCommander.Command<EbayCommand>().EndItemListing(context.CommerceContext, listedItem, "Incorrect").ConfigureAwait(false);
                 }
 
             }
             catch (Exception ex)
             {
                 context.Logger.LogError($"Ebay.DoActionEndItem.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "DoActionEndListingAll.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "DoActionEndListingAll.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
 
             return entityView;

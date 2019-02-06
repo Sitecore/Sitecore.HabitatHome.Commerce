@@ -1,19 +1,19 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-2019
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http.Internal;
-using Sitecore.Commerce.Core;
-using Sitecore.Commerce.Plugin.Catalog;
-using Sitecore.Framework.Pipelines;
-
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    using System.IO;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http.Internal;
+    using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.Plugin.Catalog;
+    using Sitecore.Framework.Pipelines;
+
     /// <summary>
     /// Ensure Habitat Home catalog has been loaded.
     /// </summary>
@@ -62,7 +62,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
 
-                await this._importCatalogsCommand.Process(context.CommerceContext, file, CatalogConstants.ImportMode.Replace, 10);
+                await this._importCatalogsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 10).ConfigureAwait(false);
             }
 
             return arg;

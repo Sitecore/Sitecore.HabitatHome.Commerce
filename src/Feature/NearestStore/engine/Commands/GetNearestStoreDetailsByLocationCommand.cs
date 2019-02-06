@@ -17,20 +17,17 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Commands
         public GetNearestStoreDetailsByLocationCommand(IGetNearestStoreDetailsByLocationPipeline getNearestStoreDetailsByLocationPipeline, IServiceProvider serviceProvider)
         : base(serviceProvider)
         {
-            this._getNearestStoreDetailsByLocationPipeline = getNearestStoreDetailsByLocationPipeline;
-           
+            this._getNearestStoreDetailsByLocationPipeline = getNearestStoreDetailsByLocationPipeline;           
         }
 
         public async Task<List<NearestStoreLocation>> Process(CommerceContext commerceContext, GetNearestStoreDetailsByLocationArgument inputArgumentList)
         {
             GetNearestStoreDetailsByLocationCommand getNearestStoreDetailsByLocationCommand = this;
-            CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
-
-            //InventorySet result = (InventorySet)null;            
+ 
             List<NearestStoreLocation> sets = new List<NearestStoreLocation>();
-            using (CommandActivity.Start(commerceContext, (CommerceCommand)getNearestStoreDetailsByLocationCommand))
+            using (CommandActivity.Start(commerceContext, getNearestStoreDetailsByLocationCommand))
             {
-                sets = await getNearestStoreDetailsByLocationCommand._getNearestStoreDetailsByLocationPipeline.Run(inputArgumentList, pipelineContextOptions);                     
+                sets = await getNearestStoreDetailsByLocationCommand._getNearestStoreDetailsByLocationPipeline.Run(inputArgumentList, commerceContext.PipelineContextOptions).ConfigureAwait(false);                     
             }
 
             return sets;

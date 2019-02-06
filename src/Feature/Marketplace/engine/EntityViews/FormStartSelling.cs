@@ -50,7 +50,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             //var pluginPolicy = context.GetPolicy<PluginPolicy>();
 
-            var inventorySets = await this._commerceCommander.Command<GetInventorySetsCommand>().Process(context.CommerceContext);
+            var inventorySets = await this._commerceCommander.Command<GetInventorySetsCommand>().Process(context.CommerceContext).ConfigureAwait(false);
 
 
             var inventoryAvailable = 0;
@@ -58,7 +58,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             if (sellableItem == null)
             {
-                sellableItem = await this._commerceCommander.GetEntity<SellableItem>(context.CommerceContext, entityView.ItemId);
+                sellableItem = await this._commerceCommander.GetEntity<SellableItem>(context.CommerceContext, entityView.ItemId).ConfigureAwait(false);
             }
 
             entityView.Properties.Add(

@@ -131,7 +131,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Pipelines.Blocks
             catch(Exception ex)
             {
                 context.Logger.LogError($"Ebay.PrepareItemVariationsBlock.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "PrepareItemVariationsBlock.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "PrepareItemVariationsBlock.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
             return item;
         }

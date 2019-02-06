@@ -13,8 +13,8 @@ namespace Sitecore.HabitatHome.Foundation.Rules.Engine.Conditions
         public IRuleValue<string> StoreName { get; set; }
 
         public bool Evaluate(IRuleExecutionContext context)
-
         {
+            //todo: evaluate whether this custom condition is still necessary in 9.1
             string targetItemId = this.TargetItemId.Yield(context);
             string storeName = this.StoreName.Yield(context);
             CommerceContext commerceContext = context.Fact<CommerceContext>((string)null);

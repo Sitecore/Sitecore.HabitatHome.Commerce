@@ -29,7 +29,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
             GetNearestStoreDetailsByLocationBlock getNearestStoreDetailsByLocationBlock = this;
 
-            FindEntitiesInListArgument entitiesInListArgument = await getNearestStoreDetailsByLocationBlock._findEntitiesInListPipeline.Run(new FindEntitiesInListArgument(typeof(InventorySet), string.Format("{0}", (object)CommerceEntity.ListName<InventorySet>()), 0, int.MaxValue), context);
+            FindEntitiesInListArgument entitiesInListArgument = await getNearestStoreDetailsByLocationBlock._findEntitiesInListPipeline.Run(new FindEntitiesInListArgument(typeof(InventorySet), string.Format("{0}", (object)CommerceEntity.ListName<InventorySet>()), 0, int.MaxValue), context).ConfigureAwait(false);
 
             if (entitiesInListArgument != null)
             {

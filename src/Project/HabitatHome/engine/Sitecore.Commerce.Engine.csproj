@@ -24,8 +24,6 @@
         <ProjectReference Include="..\..\..\Feature\Marketplace\engine\Sitecore.HabitatHome.Feature.EBay.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\NearestStore\engine\Sitecore.HabitatHome.Feature.NearestStore.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\Orders\engine\Sitecore.HabitatHome.Feature.Orders.Engine.csproj" />
-        <ProjectReference Include="..\..\..\Feature\ProductBundle\engine\Sitecore.HabitatHome.Feature.ProductBundle.Engine.csproj" />
-        <ProjectReference Include="..\..\..\Feature\ProductKit\engine\Sitecore.HabitatHome.Feature.ProductKit.Engine.csproj" />
         <ProjectReference Include="..\..\..\Feature\WishLists\engine\Sitecore.HabitatHome.Feature.Wishlists.Engine.csproj" />
         <ProjectReference Include="..\..\..\Foundation\Entitlements\engine\Sitecore.HabitatHome.Foundation.Entitlements.Engine.csproj" />
         <ProjectReference Include="..\..\..\Foundation\Payments\engine\Sitecore.HabitatHome.Foundation.Payments.Engine.csproj" />
@@ -56,6 +54,8 @@
       <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="3.0.*" />
       <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="3.0.*" />
       <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="3.0.*" />
+      <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="3.0.*" />
+      <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="3.0.*" />
         
     </ItemGroup>
     <ItemGroup>
@@ -73,12 +73,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>NU1603</NoWarn>
+    <NoWarn>NU1603,NU1605</NoWarn>
     <WarningsAsErrors />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>NU1603</NoWarn>
+    <NoWarn>NU1603,NU1605</NoWarn>
     <WarningsAsErrors />
   </PropertyGroup>
 </Project>

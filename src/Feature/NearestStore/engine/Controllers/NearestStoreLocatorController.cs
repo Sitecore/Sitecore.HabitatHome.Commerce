@@ -24,15 +24,16 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Controllers
         {
             NearestStoreLocatorController nearestStoreLocatorController = this;
             if (!nearestStoreLocatorController.ModelState.IsValid || string.IsNullOrEmpty(id))
-                return (IActionResult)nearestStoreLocatorController.NotFound();
-            //id = id.EnsurePrefix(CommerceEntity.IdPrefix<InventoryInformation>());
+            {
+                return nearestStoreLocatorController.NotFound();
+            }
 
             var input = id.Split('|');
 
             var args = new GetNearestStoreDetailsByLocationArgument() { Latitude = Convert.ToDouble(input[0]), Longitude = Convert.ToDouble(input[1]) };
 
             var result = await nearestStoreLocatorController.Command<GetNearestStoreDetailsByLocationCommand>().Process(nearestStoreLocatorController.CurrentContext, args);
-            return result != null ? (IActionResult)new ObjectResult((object)result) : (IActionResult)nearestStoreLocatorController.NotFound();
+            return result != null ? new ObjectResult(result) : (IActionResult)nearestStoreLocatorController.NotFound();
         }
 
     }

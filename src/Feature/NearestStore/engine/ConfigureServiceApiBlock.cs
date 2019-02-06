@@ -25,7 +25,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine
     ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("SamplePluginConfigureServiceApiBlock")]
+    [PipelineDisplayName("HabitatHome.Feature.NearestStore.ConfigureServiceApiBlock")]
     public class ConfigureServiceApiBlock : PipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
         /// <summary>
@@ -43,19 +43,6 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine
         public override Task<ODataConventionModelBuilder> Run(ODataConventionModelBuilder modelBuilder, CommercePipelineExecutionContext context)
         {
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
-
-            // Add the entities
-            //modelBuilder.AddEntityType(typeof(SampleEntity));
-
-            // Add the entity sets
-            //modelBuilder.EntitySet<SampleEntity>("Sample");
-
-            // Add complex types
-
-            // Add unbound functions
-
-            // Add unbound actions
-
 
             modelBuilder.AddEntityType(typeof(NearestStoreLocation));            
             modelBuilder.EntitySet<NearestStoreLocation>("NearestStoreLocator");            
