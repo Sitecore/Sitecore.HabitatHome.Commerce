@@ -45,6 +45,7 @@
 
       <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="3.0.*" />
       <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="3.0.*" />
+      <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="3.0.*" />
       <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="3.0.*" />
 
       <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="3.0.*" />
