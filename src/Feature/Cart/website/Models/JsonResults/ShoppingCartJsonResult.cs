@@ -60,6 +60,7 @@ namespace Sitecore.HabitatHome.Feature.Cart.Models.JsonResults
 
         public virtual void Initialize(Sitecore.Commerce.Entities.Carts.Cart cart, dynamic cartLineList)
         {
+            //todo: the entire feature for which this modificaiton was added needs to be re-evaluated against 9.1 and the code updated
             List<dynamic> expandedCartLines = (List<dynamic>)cartLineList;
             this.Email = cart.Email;
             this.TaxTotal = cart.Total.TaxTotal.Amount.ToCurrency();
@@ -71,7 +72,8 @@ namespace Sitecore.HabitatHome.Feature.Cart.Models.JsonResults
             {
                 ShoppingCartLineJsonResult model = this.ModelProvider.GetModel<ShoppingCartLineJsonResult>();
                 
-                model.Initialize(line);
+                //todo: these should not be null, replace with real params
+                model.Initialize(line, null, null);
 
                 dynamic expandedCartLine = expandedCartLines.Where(l => l.ExternalCartLineId == line.ExternalCartLineId).FirstOrDefault();
                 if (expandedCartLine != null)
