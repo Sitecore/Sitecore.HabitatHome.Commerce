@@ -1,19 +1,19 @@
 Param(
     [string]$siteName = "habitathome.dev.local",
     [string]$engineHostName = "localhost",
-    [string]$identityServerHost = "localhost:5050",
+    [string]$identityServerHost = "IdentityServer.habitathome.dev.local",
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish,
-    [string]$webRoot = "C:\inetpub\wwwroot",
+    [string]$webRoot = "E:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
-    [string]$BizFxPathName = "SitecoreBizFxhabitathome",
+    [string]$BizFxPathName = "SitecoreBizFx_habitathome.dev.local",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$certificateName = "habitathome.dev.local.xConnect.Client",
+    [string]$certificateName = "Commerce Engine SSL certificate",
     [string]$publishFolder = (Join-Path $PWD "publishTemp")
 )
 
@@ -27,12 +27,8 @@ Function Start-CommerceEngineCompile ( [string] $basePublishPath = $(Join-Path $
     dotnet publish $engineSolutionName -o $basePublishPath
 
 }
-Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {
-   
-    $certPrefix = "CN="
-    $fullCertificateName = $certPrefix + $certificateName
-
-    $thumbprint = Get-ChildItem -path cert:\LocalMachine\my | Where-Object {$_.Subject -like $fullCertificateName} | Select-Object Thumbprint
+Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $publishFolder "engine") ) {   
+    $thumbprint = Get-ChildItem -path cert:\LocalMachine\my | Where-Object {$_.FriendlyName -like $certificateName} | Select-Object Thumbprint
   
     $pathToGlobalJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\bootstrap\Global.json")
     $global = Get-Content $pathToGlobalJson -Raw | ConvertFrom-Json
@@ -77,26 +73,26 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
 
     }
 
-    Write-Host "Modifying Identity Server configuration" -ForegroundColor Green 
+    # Write-Host "Modifying Identity Server configuration" -ForegroundColor Green 
     # Modify IdentityServer AppSettings based on new engine hostname
-    $idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
-    $idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
-    $client = $idServerSettings.AppSettings.Clients | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
+    #$idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
+    #$idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
+    #$client = $idServerSettings.AppSettings.Clients | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
    
-    $client.RedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
-    $client.PostLogoutRedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
-    $client.AllowedCorsOrigins = @(("https://{0}:4200/" -f $engineHostName), ("https://{0}:4200" -f $engineHostName))
+    #$client.RedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
+    #$client.PostLogoutRedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
+    #$client.AllowedCorsOrigins = @(("https://{0}:4200/" -f $engineHostName), ("https://{0}:4200" -f $engineHostName))
 
-    $idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
+    #$idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
 
-    Write-Host "Modifying BizFx (Business Tools) configuration" -ForegroundColor Green
+    # Write-Host "Modifying BizFx (Business Tools) configuration" -ForegroundColor Green
     #Modify BizFx to match new hostname
-    $bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
-    $bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
-    $bizFxSettings.BizFxUri = ("https://{0}:4200" -f $engineHostName)
-    $bizFxSettings.IdentityServerUri = ("https://{0}" -f $identityServerHost)
-    $bizFxSettings.EngineUri = ("https://{0}:5000" -f $engineHostName)
-    $bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
+    #$bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
+    #$bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
+    #$bizFxSettings.BizFxUri = ("https://{0}:4200" -f $engineHostName)
+    #$bizFxSettings.IdentityServerUri = ("https://{0}" -f $identityServerHost)
+    #$bizFxSettings.EngineUri = ("https://{0}:5000" -f $engineHostName)
+    #$bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
 
 }
 Function Publish-CommerceEngine {
@@ -157,7 +153,7 @@ Function CleanEnvironment {
     $initializeParam = "/commerceops/CleanEnvironment()"
     $initializeUrl = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, $initializeParam)
 
-    $Environments = @("HabitatAuthoring")
+    $Environments = @("HabitatAuthoring", "HabitatMinions")
 
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     
@@ -190,22 +186,31 @@ Function BootStrapCommerceServices {
     Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
     Write-Host "Commerce Services BootStrapping completed" -ForegroundColor Green
 }
+
 Function InitializeCommerceServices {
     Write-Host "Initializing Environments" -ForegroundColor Green
-    $initializeParam = "/commerceops/InitializeEnvironment(environment='envNameValue')"
+    $initializeParam = "/commerceops/InitializeEnvironment()"
     $UrlInitializeEnvironment = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, $initializeParam)
     $UrlCheckCommandStatus = ("https://{0}:{1}{2}" -f $engineHostName, $CommerceOpsPort, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
 
-    $Environments = @("HabitatAuthoring")
+	Write-Host $UrlInitializeEnvironment
+	
+    $Environments = @("HabitatAuthoring", "HabitatMinions")
 
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken);
 
     foreach ($env in $Environments) {
+	
         Write-Host "Initializing $($env) ..." -ForegroundColor Yellow
 
-        $initializeUrl = $UrlInitializeEnvironment -replace "envNameValue", $env
-        $result = Invoke-RestMethod $initializeUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
+        $initializeUrl = $UrlInitializeEnvironment
+
+        $payload = @{
+            "environment" = $env;
+        }
+
+        $result = Invoke-RestMethod $initializeUrl -TimeoutSec 1200 -Method POST -Body ($payload|ConvertTo-Json) -Headers $headers -ContentType "application/json"
         $checkUrl = $UrlCheckCommandStatus -replace "taskIdValue", $result.TaskId
 
         $sw = [system.diagnostics.stopwatch]::StartNew()

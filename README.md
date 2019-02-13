@@ -69,8 +69,8 @@ The next step will deploy Habitat Home's custom Commerce Engine with its relevan
 
 _Notes:_
 * If you want to use your own engine suffix rather than `habitat`, you need to update it in `deploy-commerce-engine.ps1`
-* If you want to use your own databases rather than `habitat_Global`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\bootstrap\Global.json`
-* If you want to use your own databases rather than `habitat_SharedEnvironments`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json`
+* If you want to use your own databases rather than `habitathome_Global`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\bootstrap\Global.json`
+* If you want to use your own databases rather than `habitathome_SharedEnvironments`, you need to update it in `\src\Project\HabitatHome\engine\wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json`
 The script is provided as an example and should be reviewed to understand its behavior prior to its execution. In summary, the script:
 
 - Compiles and publishes the engine to a temporary location (default .\publishTemp)

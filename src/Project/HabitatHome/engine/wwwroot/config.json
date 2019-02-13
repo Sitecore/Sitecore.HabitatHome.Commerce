@@ -3,7 +3,7 @@
     "SiteTitle": "Sitecore Commerce Engine",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
-    "EnvironmentName": "HabitatMinions",
+    "EnvironmentName": "HabitatAuthoring",
     "EncryptionProtectionType": "Machine",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
@@ -12,11 +12,9 @@
     "AllowedOrigins": [
       "https://localhost:4200",
       "http://localhost:4200",
-      "http://sxa.storefront.com",
-      "https://habitat.dev.local",
       "https://habitathome.dev.local"
     ],
-    "AntiForgeryEnabled": true,
+    "AntiForgeryEnabled": false,
     "UseHttpsInKestrel": true,
     "SslPort": 5000,
     "SslPfxPath": "wwwroot/localhost.pfx",
@@ -24,7 +22,7 @@
   },
   "ApplicationInsights": {
     "InstrumentationKey": "",
-    "MinimumLevel": "Warning",
+    "MinimumLevel": "Information",
     "DeveloperMode": true,
     "TelemetryEnabled": false
   },
