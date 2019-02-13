@@ -13,7 +13,6 @@ using Sitecore.Commerce.XA.Foundation.Common.Attributes;
 using Sitecore.Commerce.XA.Foundation.Common.Context;           
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
-using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.HabitatHome.Feature.Customers.Models;
 
@@ -21,8 +20,8 @@ namespace Sitecore.HabitatHome.Feature.Customers.Controllers
 {
     public class CustomersController : AccountController
     {
-        public CustomersController(ILoginRepository loginRepository, IRegistrationRepository registrationRepository, IForgotPasswordRepository forgotPasswordRepository, IChangePasswordRepository changePasswordRepository, IAccountManager accountManager, IStorefrontContext storefrontContext, IVisitorContext visitorContext, IModelProvider modelProvider, IContext sitecoreContext) 
-            : base(loginRepository, registrationRepository, forgotPasswordRepository, changePasswordRepository, accountManager,storefrontContext, visitorContext, modelProvider, sitecoreContext)
+        public CustomersController(ILoginRepository loginRepository, IRegistrationRepository registrationRepository, IForgotPasswordRepository forgotPasswordRepository, IChangePasswordRepository changePasswordRepository, IAccountManager accountManager, IStorefrontContext storefrontContext, IModelProvider modelProvider, IContext sitecoreContext, IRegisterUserRepository registerUserRepository, ILoginUserRepository loginUserRepository) 
+            : base(loginRepository, registrationRepository, forgotPasswordRepository, changePasswordRepository, accountManager, storefrontContext, modelProvider, sitecoreContext, registerUserRepository, loginUserRepository)
         {
         }
                                                                                
@@ -48,7 +47,7 @@ namespace Sitecore.HabitatHome.Feature.Customers.Controllers
                 }
                 else
                 {                                              
-                    ManagerResponse<CreateUserResult, CommerceUser> managerResponse = AccountManager.RegisterUser(StorefrontContext, UpdateUserName(inputModel.UserName), inputModel.Password, inputModel.UserName);
+                    ManagerResponse<CreateUserResult, CommerceUser> managerResponse = AccountManager.RegisterUser(StorefrontContext, inputModel.UserName, inputModel.Password, inputModel.UserName);
                     if (managerResponse.ServiceProviderResult.Success && managerResponse.Result != null)
                     {
                         registrationBaseJsonResult.Initialize(managerResponse.Result);
