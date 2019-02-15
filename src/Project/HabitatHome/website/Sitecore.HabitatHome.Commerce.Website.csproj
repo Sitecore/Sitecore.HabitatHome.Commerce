@@ -44,21 +44,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.8" />
-    <PackageReference Include="Microsoft.Net.Compilers" Version="2.4.0" />
-    <PackageReference Include="Microsoft.OData.Core">
-      <Version>7.3.1</Version>
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.10.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.OData.Edm">
-      <Version>7.3.1</Version>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.Connect.Core">
-      <Version>11.2.83</Version>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Kernel.NoReferences" Version="9.0.180604" />
-    <PackageReference Include="Sitecore.Logging.NoReferences" Version="9.0.180604" />
-    <PackageReference Include="Sitecore.Update.NoReferences" Version="9.0.180604" />
-    <PackageReference Include="Sitecore.Zip.NoReferences" Version="9.0.180604" />
+    <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
+    <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -77,7 +69,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Project\HabitatHome.Website.Serialization.config" />
+    <Content Include="App_Config\Include\Project\HabitatHome.Website.Serialization.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Project\HabitatHome.Website.config" />
     <Content Include="App_Config\Include\Project\z.HabitatHome.Commerce.Website.DevSettings.config" />
     <None Include="web.config.xdt">

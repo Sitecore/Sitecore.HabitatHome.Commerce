@@ -44,8 +44,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.7" />
-    <PackageReference Include="Microsoft.Net.Compilers" Version="2.1.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.3" />
+    <PackageReference Include="Microsoft.Net.Compilers" Version="2.10.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
     <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
     <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
