@@ -1,0 +1,131 @@
+    @import '../../index';
+    .cxa-orderdetailslines-component {
+        padding-top: $padding;
+        table {
+            thead {
+                tr {
+                    th {
+                        padding-bottom: 3px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        vertical-align: middle;
+                        padding-top: 1.5%;
+                        padding-bottom: 1.5%;
+                    }
+                    .product-image {
+                        vertical-align: top;
+                        min-width: 100px;
+                        min-height: 100px;
+                        width: 100px;
+                        img {
+                            width: 72px;
+                            height: 72px;
+                        }
+                    }
+                    .cart-info {
+                        width: 40%;
+                        vertical-align: top;
+                        text-align: left;
+                        .cart-delivery {
+                            margin-bottom: 0;
+                        }
+                        .product-variant {
+                            margin-bottom: 12px;
+                        }
+                        .address-label {
+                            margin-right: 10px;
+                        }
+                        .shippingMethodName {
+                            margin-left: 10px;
+                        }
+                        .lineShippingAddress {
+                            display: inline;
+                            li {
+                                display: inline;
+                            }
+                            li:not(:last-child) {
+                                &:after {
+                                    content: ','
+                                }
+                            }
+                        }
+                    }
+                    .unit-price {
+                        .price-amount {
+                            display: block;
+                        }
+                        vertical-align: middle;
+                    }
+                    .product-quantity {
+                        vertical-align: middle;
+                    }
+                    .line-total {
+                        text-align: right;
+                    }
+                    .reorder {
+                        .reorder-button {
+                            margin-left: 15px;
+                            text-align: right;
+
+                            .add-to-cart-btn {
+                                border: 2px solid $primary-color;
+                                font-size: 14px !important;
+                                font-weight: 400;
+                                height: 34px;
+                                text-align: center !important;
+                                background: $primary-color;
+                                color: $primary-background-color !important;
+                                text-shadow: none;
+                                box-shadow: none;
+                                padding: 4px 15px 4px 15px;
+                                display: inline-block;
+                                cursor: pointer;
+                                border-radius: 0;
+                                min-height: 42px;
+                                height: 42px;
+                                min-width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cxa-orderdetailslines-component {
+        .cart-info {
+            h4 {
+                font-size: $font-size-medium;
+                font-weight: 600;
+            }
+            .product-color {
+                font-weight: 600;
+            }
+        }
+        .cart-delivery {
+            span,
+            li {
+                font-size: 12px;
+            }
+        }
+        .shippingMethodName,
+        .price-amount {
+            font-weight: 600;
+        }
+        .discount {
+            color: $error-second-color;
+        }
+        table {
+            td,
+            th {
+                @include form-seperator();
+            }
+            th {
+                padding-bottom: 0;
+            }
+        }
+    }

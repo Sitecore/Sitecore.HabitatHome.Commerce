@@ -1,0 +1,27 @@
+@import '../../index';
+
+.cxa-profileview-component {
+    margin-top: 35px;
+    .profile-id {
+        text-align: left;
+    }
+    .edit-profile-text {
+        display: inline-block;
+        text-align: right;        
+    }
+    .profile-view-title{
+        display:none;
+    }
+    .edit-profile-text {
+        display: inline-block;
+        text-align: right; 
+        @include link();        
+    }
+    .profile-name-section{
+        span{
+            font-size: 14px;
+            font-weight: 600;
+            color: $heading-color;
+        }
+    }
+}

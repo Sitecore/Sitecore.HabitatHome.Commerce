@@ -1,0 +1,45 @@
+@import '../../index';
+
+.component.cxa-register-component{
+    //max-width: 500px;
+    //margin: 0 auto;
+
+    .registeration-form{
+        form {
+            @include vertical-form-layout();
+            label {
+                @include required-sign();
+            }
+            .register-buttons {
+                @include row-of-elements-wide-apart();
+                button {
+                    order: 2;
+                    margin-bottom: 0;
+                    min-width:205px;
+                }
+                a {
+                    order: 1;
+                    margin-right: $margin;
+                    min-width:205px;
+                }
+            }
+        }
+        .register-buttons{
+            #registerButton{
+                @include primary-button-filled();
+                @include large-height();
+            }
+            a{
+                text-transform: uppercase;
+                @include secondary-button-line();
+                @include large-height();
+                display: flex;
+                /* justify-content: center; */
+                justify-content: center;
+                align-items: center;
+            }
+
+            margin-top: 2em;
+        }
+    }
+}
