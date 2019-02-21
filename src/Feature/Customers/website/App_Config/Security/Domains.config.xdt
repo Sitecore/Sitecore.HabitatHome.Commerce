@@ -1,5 +1,4 @@
 ﻿
 <domains  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-    <domain name="default" xdt:Transform="Replace" xdt:Locator="Match(name)" isDefault="true" />
     <domain name="CommerceUsers" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
 </domains>
