@@ -62,13 +62,13 @@
     <PackageReference Include="Sitecore.XA.Foundation.MarkupDecorator" Version="4.8.1.*" />
     <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="4.8.1.*" />
     <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.1.*" />
-    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Catalog" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Catalog" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.XA.Feature.Catalog" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Feature.Catalog" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
     <PackageReference Include="System.Net.Http" Version="4.3.3" />

@@ -54,7 +54,7 @@
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
     <PackageReference Include="Sitecore.Kernel" Version="12.0.1-*" />
     <PackageReference Include="Sitecore.XConnect" Version="2.0.1-*" />
-    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
   </ItemGroup>

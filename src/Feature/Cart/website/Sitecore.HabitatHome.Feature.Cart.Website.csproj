@@ -68,13 +68,13 @@
     <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.0" />
-    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Sitecore.Commerce.XA.Feature.Cart" Version="2.1.0-*">
+    <PackageReference Include="Sitecore.Commerce.XA.Feature.Cart" Version="3.0.*">
       <ExcludeAssets>contentFiles</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
