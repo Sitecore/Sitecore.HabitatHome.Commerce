@@ -66,7 +66,7 @@
     <PackageReference Include="Sitecore.Analytics" Version="12.0.1-*" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
     <PackageReference Include="Sitecore.Kernel" Version="12.0.1-*" />
-    <PackageReference Include="Sitecore.Owin.Authentication" Version="2.0.0-*" />
+    <PackageReference Include="Sitecore.Owin.Authentication" Version="2.0.1-*" />
     <PackageReference Include="Sitecore.XA.Foundation.MarkupDecorator" Version="4.8.1.*" />
     <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="4.8.1.*" />
     <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.1.*" />
