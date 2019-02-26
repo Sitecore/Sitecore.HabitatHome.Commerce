@@ -59,10 +59,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
     <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
-    <PackageReference Include="Sitecore.Mvc" Version="3.0.0-*" />
-    <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="4.8.0.*" />
-    <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.0.*" />
+    <PackageReference Include="Sitecore.Kernel" Version="12.0.1-*" />
+    <PackageReference Include="Sitecore.Mvc" Version="3.0.1-*" />
+    <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="4.8.1.*" />
+    <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.1.*" />
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />

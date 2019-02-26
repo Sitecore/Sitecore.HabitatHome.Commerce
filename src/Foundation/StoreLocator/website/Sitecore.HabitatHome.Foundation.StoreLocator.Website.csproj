@@ -53,7 +53,7 @@
     <PackageReference Include="Sitecore.Analytics" Version="12.0.0-*" />
     <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
     <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
+    <PackageReference Include="Sitecore.Kernel" Version="12.0.1-*" />
     <PackageReference Include="System.Net.Http" Version="4.3.3" />
     <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
