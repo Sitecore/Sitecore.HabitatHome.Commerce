@@ -8,6 +8,7 @@
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <AssemblyName>Sitecore.HabitatHome.Feature.Catalog.Engine</AssemblyName>
     <RootNamespace>Sitecore.HabitatHome.Feature.Catalog.Engine</RootNamespace>
+    <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
 
   <ItemGroup>    
@@ -24,6 +25,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Local|AnyCPU'">
     <NoWarn>NU1603</NoWarn>
     <WarningsAsErrors />
   </PropertyGroup>

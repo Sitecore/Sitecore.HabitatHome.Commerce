@@ -21,7 +21,7 @@ packages/
 *.user.targets
 *.log
 license.xml
-lib/Modules/*
+lib/*
 *.dll
 *.bak
 publishTemp/*

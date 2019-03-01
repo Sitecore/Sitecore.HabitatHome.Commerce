@@ -95,11 +95,11 @@ gulp.task("Rebuild-Web-Index",
     });
 
 gulp.task("Copy-Sitecore-Lib", function (callback) {
-    console.log("Copying Sitecore Commerce XA Libraries");
+    console.log("Copying Sitecore Libraries");
 
     fs.statSync(config.sitecoreLibraries);
-    const commerce = config.sitecoreLibraries + "/**/Sitecore.Commerce.XA.*";
-    return gulp.src(commerce).pipe(gulp.dest("./lib/Modules/Commerce"));
+    const commerce = config.sitecoreLibraries + "/**/Sitecore.*";
+    return gulp.src(commerce).pipe(gulp.dest("./lib"));
 });
 
 

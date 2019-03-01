@@ -7,11 +7,16 @@
     <PackageTags>$(PackageTags);Commerce;Service Proxy</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <Version>2.3.0</Version>
+    <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
   
    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
+  
+   <PropertyGroup Condition="'$(Configuration)'=='Local'">
+     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
