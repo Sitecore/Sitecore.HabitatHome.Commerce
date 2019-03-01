@@ -8,7 +8,7 @@ BranchID: "11fb6401-0d14-40be-851c-662853e8f0a9"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
-  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+  Value: 
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{8F58D1FB-4C05-4FA5-8DFE-6A0B4DD7A029}"

@@ -233,3 +233,39 @@ Languages:
     Hint: __Display name
     Value: The Best Child Proof Tablets Around
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{25A8A26A-9C9F-4163-B44E-616A68DE5F0E}" alt="Child friendly tablets" height="" width="" hspace="" vspace=""></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180620T171623Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: The Best Child Proof Tablets Around
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis nisl vitae erat molestie scelerisque. Curabitur arcu ex, aliquam quis nisi a, tincidunt blandit tellus. Praesent sem purus, maximus non tortor sed, congue semper eros. Sed porta urna libero, a ultricies tortor faucibus sed. Sed suscipit tempus arcu nec egestas. Mauris mattis, felis a ultrices porttitor, libero risus viverra eros, non venenatis augue nisl eu felis. Curabitur sit amet nisl urna.</p>
+        <p>Pellentesque semper efficitur risus, eget hendrerit purus consectetur ac. Pellentesque id metus at lectus rhoncus semper. Pellentesque eget risus libero. Nulla facilisi. Aenean bibendum consectetur felis a blandit. In sed lacus tellus. Phasellus aliquam ligula neque, vel ultricies nibh pellentesque sit amet. Nullam volutpat quis odio nec dictum. In hac habitasse platea dictumst. Nulla facilisi. Quisque iaculis tempor enim, sed scelerisque risus tincidunt id. Nullam arcu risus, cursus eu nisi sed, accumsan malesuada mi.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
+      Hint: Subtitle
+      Value: Child Safe Tablets
+    - ID: "87241a2b-d20a-4624-a439-07f4d9afea6e"
+      Hint: Additional Content
+      Value: <p>Pellentesque semper efficitur risus, eget hendrerit purus consectetur ac. Pellentesque id metus at lectus rhoncus semper. Pellentesque eget risus libero. Nulla facilisi. Aenean bibendum consectetur felis a blandit. In sed lacus tellus. Phasellus aliquam ligula neque, vel ultricies nibh pellentesque sit amet. Nullam volutpat quis odio nec dictum. In hac habitasse platea dictumst. Nulla facilisi. Quisque iaculis tempor enim, sed scelerisque risus tincidunt id. Nullam arcu risus, cursus eu nisi sed, accumsan malesuada mi.</p>
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Introduction
+      Value: "The world can be a scary place but with Habitat Child proof tablets, parents have unprecedented protection of their most important thing - their family. Read about the different benefits within the Habitat line of child friendly tablets.&nbsp;"
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: The Best Child Proof Tablets Around

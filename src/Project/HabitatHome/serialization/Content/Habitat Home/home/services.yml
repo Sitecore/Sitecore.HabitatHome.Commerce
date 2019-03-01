@@ -139,10 +139,6 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
     - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
       Hint: Navigation Secondary Promotions
       Type: Treelist
@@ -157,6 +153,3 @@ Languages:
         {281076EC-4D19-4EF9-97B8-DFBB77B319FB}
         {F753DBAC-A0CB-4FFE-8953-5C1124D32479}
         {292595C9-5D69-4C82-B67E-8132352E9B5F}
-    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
-      Hint: Title
-      Value: Services

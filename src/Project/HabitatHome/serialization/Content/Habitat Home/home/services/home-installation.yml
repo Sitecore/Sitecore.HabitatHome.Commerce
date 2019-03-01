@@ -9,6 +9,9 @@ SharedFields:
   Hint: NavigationFilter
   Type: Checklist
   Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
   Value: "{A076B3E0-6D6F-4308-B1DC-20DC506D55AD}"
@@ -184,12 +187,6 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: 
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171122T230158Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
@@ -217,24 +214,12 @@ Languages:
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: 
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
     - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
       Hint: MetaKeywords
       Value: 
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
-    - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
-      Hint: Navigation Secondary Promotions
-      Type: Treelist
-      Value: |
-        {E3997F9D-A407-46E2-B1B6-14D4F45DF6E7}
-        {075F332C-47E5-4E14-BED3-8E31FFDD79F3}
-        {61F04A7E-A193-4ADE-B85C-5D74F7EA5E8A}
-        {71F235E3-1DCB-444E-83C7-90497D743527}
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: 
@@ -248,21 +233,10 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
-      Hint: Navigation Image
-      Value: |
-        <image mediaid="{38CE6C57-0F9E-4651-8F43-E2E2388FCA9E}" alt="smart home thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
       Value: 0
-    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
-      Hint: Navigation Promotions
-      Type: Treelist
-      Value: |
-        {2C130256-1FC7-419C-ACD3-5DC6C3DF5544}
-        {61A70B28-6CBE-4209-977C-96FA291695E7}
-        {CC532D30-6ACC-43E6-A155-6EE99DA5E538}
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 

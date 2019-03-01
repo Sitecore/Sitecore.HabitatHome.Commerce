@@ -6,6 +6,9 @@ Path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/billing
 DB: master
 BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -58,9 +61,6 @@ Languages:
               s:ph="main" />
           </d>
         </r>
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180204T191320Z

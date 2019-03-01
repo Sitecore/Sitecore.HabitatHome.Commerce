@@ -3129,12 +3129,6 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
-    - ID: "1d1f11dc-b6f5-4db3-b26a-7ae5aac5c07b"
-      Hint: Referrer
-      Value: Bing
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171205T152350Z
     - ID: "268ef40b-81f5-4842-8adf-f2c57606c067"
       Hint: Longitude
       Value: 
@@ -3144,9 +3138,6 @@ Languages:
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
-    - ID: "594baf13-3763-4c7d-86b1-b9bb46a86359"
-      Hint: Url
-      Value: www.bing.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -19,6 +19,13 @@ SharedFields:
     {FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}
     {7D98DBB3-4D8A-4FD9-9722-029200EC82BE}
     {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Type: Checklist
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -91,9 +98,6 @@ Languages:
               s:ph="main" />
           </d>
         </r>
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180326T022354Z
