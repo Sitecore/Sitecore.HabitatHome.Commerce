@@ -13,7 +13,7 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$certificateName = "Commerce Engine SSL certificate",
+    [string]$certificateName = "habitathomestorefront.engine",
     [string]$publishFolder = (Join-Path $PWD "publishTemp")
 )
 
