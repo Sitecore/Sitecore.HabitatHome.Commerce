@@ -88,6 +88,10 @@ Languages:
       Value: |
         extranet\Anonymous
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 子供の安全
   Versions:
   - Version: 1
     Fields:
@@ -100,7 +104,7 @@ Languages:
         sitecore\admin
     - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
       Hint: Pattern Card
-      Value: 
+      Value: "{A31EC626-56A0-41D8-A023-C4FE73638F4E}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "child-safety"

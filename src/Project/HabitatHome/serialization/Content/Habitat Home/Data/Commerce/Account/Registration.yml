@@ -21,3 +21,26 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182614Z
+    - ID: "4dd3330d-6ade-4791-8d19-c193ebb09aec"
+      Hint: Password Label
+      Value: "?????"
+    - ID: "5a666691-bbd1-4bdd-be59-e8e4491bf7a2"
+      Hint: Email Address Label
+      Value: "E??? ????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "70a114a4-ce07-4487-8a7d-8901ec5a9c13"
+      Hint: Email Address Hint Text
+      Value: "E??? ????"
+    - ID: "e6741721-2708-491b-8993-68835f19382d"
+      Hint: Password Hint Text
+      Value: "?????"

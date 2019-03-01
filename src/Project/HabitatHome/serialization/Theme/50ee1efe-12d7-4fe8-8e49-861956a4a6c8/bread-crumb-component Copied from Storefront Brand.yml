@@ -1,0 +1,31 @@
+﻿---
+ID: "671f2209-cf82-4322-80ee-d04aef9b037c"
+Parent: "50ee1efe-12d7-4fe8-8e49-861956a4a6c8"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/sxa/bread-crumb-component Copied from Storefront Branded Extension"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/1B01C78F043C475A8B288E2EFA47A8BB.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "6d724a16-9620-4d4a-9613-eb5c69708b19"
+  Value: QGltcG9ydCAnLi4vLi4vbWl4aW5zL2luZGV4JzsNCkBpbXBvcnQgJy4uLy4uL2Jhc2UvaW5kZXgnOw0KLmNvbXBvbmVudC5icmVhZGNydW1iIHsNCiAgICBwYWRkaW5nLWxlZnQ6IDA7DQogICAgYmFja2dyb3VuZC1jb2xvcjogJHNlY29uZGFyeS1iYWNrZ3JvdW5kLWNvbG9yOw0KICAgIG1hcmdpbi10b3A6IDVweDsNCiAgICBtYXJnaW4tYm90dG9tOiAwOw0KICAgIG5hdiBvbCB7DQogICAgICAgIEBpbmNsdWRlIHJvdy1vZi1lbGVtZW50cy1wYWNrZWQoZmFsc2UsICR0b3Atb3ItbGVmdCwgJHBhY2tlZC1lbGVtZW50cy1tYXJnaW4pOw0KICAgICAgICBsaSB7DQogICAgICAgICAgICBAaW5jbHVkZSByb3ctb2YtZWxlbWVudHMtcGFja2VkKGZhbHNlLCAkdG9wLW9yLWxlZnQsICRwYWNrZWQtZWxlbWVudHMtbWFyZ2luKTsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogJGZvbnQtc2l6ZS1iYXNlOw0KICAgICAgICB9DQogICAgfQ0KfQ==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 472
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100946Z

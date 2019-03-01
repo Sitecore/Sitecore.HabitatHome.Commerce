@@ -27,3 +27,20 @@ Languages:
     - ID: "8464020e-1c40-4765-bb1b-207e259584da"
       Hint: Title Message
       Value: "Do you have a discount code?"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02e7a203-64f1-4a7e-bd8e-32429358a433"
+      Hint: Promotion Code Input Label
+      Value: "??????? ??????"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182615Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8464020e-1c40-4765-bb1b-207e259584da"
+      Hint: Title Message
+      Value: "??????? ???????????"

@@ -24,3 +24,20 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "17c1910d-014e-4047-bfca-63de7435fec1"
+      Hint: Status Label
+      Value: "??????"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "a2d507c1-9e01-4ede-86cd-7106c1abf84a"
+      Hint: Confirmation Number Label
+      Value: "??????"

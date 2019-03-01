@@ -5,6 +5,42 @@ Template: "79c4bb54-df7d-4825-bfa7-32ff9b051299"
 Path: /sitecore/Commerce/Commerce Control Panel/Shared Settings/Fulfillment Options/Ship items/Ground
 DB: master
 Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Landtransport
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19110ebd-4668-429d-9237-e8dfe81c09a8"
+      Hint: Title
+      Value: Landtransport
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180517T102404Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Grund
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19110ebd-4668-429d-9237-e8dfe81c09a8"
+      Hint: Title
+      Value: Grund
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180517T101744Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -29,3 +65,15 @@ Languages:
     Hint: __Display name
     Value: 陸送
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "19110ebd-4668-429d-9237-e8dfe81c09a8"
+      Hint: Title
+      Value: 陸送
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180517T103220Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

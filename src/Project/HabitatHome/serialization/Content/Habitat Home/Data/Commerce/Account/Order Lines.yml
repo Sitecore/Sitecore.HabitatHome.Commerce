@@ -14,6 +14,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: "{0} Bundle of {1} items"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180201T152355Z
@@ -27,3 +30,38 @@ Languages:
     - ID: "fd3be299-5255-4b17-95f2-d09237bc8ffc"
       Hint: Order Lines Header Label
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: "{0} Bundle of {1} items"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: "??"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "696f4f6c-5006-433e-b97c-65a44156794d"
+      Hint: Unit Price Label
+      Value: "??"
+    - ID: "712e89d5-f394-474b-a1bc-f69885f20dca"
+      Hint: Order Lines Header Tooltip
+      Value: "??????"
+    - ID: "d451f65c-72b3-41b2-beb3-2aaf0ce444d8"
+      Hint: Quantity Label
+      Value: "??"
+    - ID: "e87c39da-194b-420b-b6ee-e150b7cd2422"
+      Hint: Total Label
+      Value: "??"
+    - ID: "f1f0fbd1-dc6c-444d-9414-988f3e9a08f4"
+      Hint: Product Details Label
+      Value: "?????"
+    - ID: "fccc41bc-8b79-49ad-b5ea-eec9e8b51624"
+      Hint: Order Lines Discount Label
+      Value: "??"

@@ -1,0 +1,31 @@
+﻿---
+ID: "9c492f4f-cda2-4b2f-89aa-f3c02f8fecc7"
+Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/product-list-itemsonpage-component Copied from Storefront Branded Extension"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/85641115273D40E683FD2C2E4D8CFBCE.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "2dc0bdc3-b8df-4e89-83ac-58a99b6bce3b"
+  Value: IEBpbXBvcnQgJy4uLy4uL2luZGV4JzsNCiAuY3hhLXByb2R1Y3RsaXN0aXRlbXNvbnBhZ2UtY29tcG9uZW50IHsNCiAgICBwYWRkaW5nLWxlZnQ6IDlweDsNCiAgICAgLnByb2R1Y3RsaXN0LWhlYWRlci1zZWN0aW9uIHsNCiAgICAgICAgIEBpbmNsdWRlIHJvdy1vZi1lbGVtZW50cy13aWRlLWFwYXJ0KGZhbHNlLCAkY2VudGVyKTsNCiAgICAgICAgIC5yZXN1bHRzLWNvbnRhaW5lciB7DQogICAgICAgICAgICAgQGluY2x1ZGUgcm93LW9mLWVsZW1lbnRzLXBhY2tlZChmYWxzZSwgJGNlbnRlciwgJHBhY2tlZC1lbGVtZW50cy1tYXJnaW4pOw0KICAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAyMnB4Ow0KICAgICAgICAgICAgIHNlbGVjdCB7DQogICAgICAgICAgICAgICAgIHdpZHRoOiAxMjBweDsNCiAgICAgICAgICAgICB9DQogICAgICAgICAgICAgc3BhbiB7DQogICAgICAgICAgICAgICAgY29sb3I6ICRzZWNvbmRhcnktdGV4dC1jb2xvcjsNCiAgICAgICAgICAgIH0NCiAgICAgICAgIH0NCiAgICAgfQ0KICAgICBtYXJnaW4tYm90dG9tOiAkbWFyZ2luKjI7DQogfQ0K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 552
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100939Z

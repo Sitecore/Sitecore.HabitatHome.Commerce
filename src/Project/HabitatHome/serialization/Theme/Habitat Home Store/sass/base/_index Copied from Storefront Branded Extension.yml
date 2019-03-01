@@ -1,0 +1,31 @@
+﻿---
+ID: "9556da78-c885-4fa8-b039-9b572fe3b516"
+Parent: "695aed50-d843-4352-be84-1be12abc3914"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/base/_index Copied from Storefront Branded Extension
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/BA78CD3C3B304BCCB15B80D70983D96B.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "ab77cb98-227c-4e4e-ae8c-6019294d5c0f"
+  Value: QGltcG9ydCAnY29sb3JzJzsNCkBpbXBvcnQgInR5cG9ncmFwaHkiOw0KQGltcG9ydCAic2N4YS1pY29ucyI7DQpAaW1wb3J0ICJtZWFzdXJlbWVudHMiOw==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 88
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100931Z

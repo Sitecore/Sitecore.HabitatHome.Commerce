@@ -8,7 +8,7 @@ BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/platform_truck_box.png
+  Value: 
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
@@ -21,10 +21,9 @@ SharedFields:
     {CC128D4F-D8FE-47B4-8723-52802309A995}
     {313D26A8-5C05-4DD8-9F31-8C66FF91A312}
     {3E0536C9-93D4-4A72-9333-600A577D79AB}
-    {B491D043-FAC0-4742-97EA-B8D5AAAB19BC}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 500
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{CF226117-C592-4011-B4F9-FED1AE228EF6}"
@@ -40,3 +39,14 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

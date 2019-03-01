@@ -84,6 +84,10 @@ Languages:
       Value: |
         extranet\Anonymous
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: テレビ、オーディオ
   Versions:
   - Version: 1
     Fields:
@@ -96,7 +100,7 @@ Languages:
         sitecore\admin
     - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
       Hint: Pattern Card
-      Value: 
+      Value: "{CDCADE11-E1F4-4792-8FA3-9F95C6954772}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "tv-audio"

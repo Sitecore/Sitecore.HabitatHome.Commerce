@@ -1,0 +1,31 @@
+﻿---
+ID: "a76a364b-007c-4b80-96c6-4dc2164fc6d0"
+Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/register-component Copied from Storefront Branded Extension"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/DE169DB720C246FA887DCB1854BEC75B.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "76f99a81-c71e-4fcd-acc7-b452298c7c2d"
+  Value: QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KLmNvbXBvbmVudC5jeGEtcmVnaXN0ZXItY29tcG9uZW50IHsNCiAgICAucmVnaXN0ZXJhdGlvbi1mb3JtIHsNCiAgICAgICAgZm9ybSB7DQogICAgICAgICAgICBAaW5jbHVkZSB2ZXJ0aWNhbC1mb3JtLWxheW91dCgpOw0KICAgICAgICAgICAgbGFiZWwgew0KICAgICAgICAgICAgICAgIEBpbmNsdWRlIHJlcXVpcmVkLXNpZ24oKTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgICAgIC5yZWdpc3Rlci1idXR0b25zIHsNCiAgICAgICAgICAgICAgICBAaW5jbHVkZSByb3ctb2YtZWxlbWVudHMtd2lkZS1hcGFydCgpOw0KICAgICAgICAgICAgICAgIGJ1dHRvbiB7DQogICAgICAgICAgICAgICAgICAgIEBpbmNsdWRlIHByaW1hcnktYnV0dG9uLWZpbGxlZCgpOw0KICAgICAgICAgICAgICAgICAgICBAaW5jbHVkZSBsYXJnZS1oZWlnaHQoKTsNCiAgICAgICAgICAgICAgICAgICAgb3JkZXI6IDI7DQogICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDA7DQogICAgICAgICAgICAgICAgICAgIHdpZHRoOiA0OCU7DQogICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDhweDsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgYSB7DQogICAgICAgICAgICAgICAgICAgIEBpbmNsdWRlIHByaW1hcnktYnV0dG9uLWxpbmUoKTsNCiAgICAgICAgICAgICAgICAgICAgQGluY2x1ZGUgbGFyZ2UtaGVpZ2h0KCk7DQogICAgICAgICAgICAgICAgICAgIG9yZGVyOiAxOw0KICAgICAgICAgICAgICAgICAgICB3aWR0aDogNDglOw0KICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiA4cHg7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgfQ0KfQ==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 874
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100942Z

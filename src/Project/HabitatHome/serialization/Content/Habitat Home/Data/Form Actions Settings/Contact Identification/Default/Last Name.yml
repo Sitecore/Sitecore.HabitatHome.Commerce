@@ -17,9 +17,12 @@ Languages:
       Value: LastName
     - ID: "a9258cff-e39c-4c69-8a69-9e35d9a853d4"
       Hint: FacetKey
-      Type: Treelist
       Value: "{0A826D28-B06F-45DD-BAD7-5ED5677A9F2D}"
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 姓
   Versions:
   - Version: 1
     Fields:
@@ -35,5 +38,4 @@ Languages:
         sitecore\admin
     - ID: "a9258cff-e39c-4c69-8a69-9e35d9a853d4"
       Hint: FacetKey
-      Type: Treelist
       Value: "{0A826D28-B06F-45DD-BAD7-5ED5677A9F2D}"

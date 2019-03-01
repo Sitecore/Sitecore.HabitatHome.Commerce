@@ -21,3 +21,38 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
+      Hint: No Order Message
+      Value: You have not placed an order yet
+    - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
+      Hint: Date Column Header Tooltip
+      Value: "???"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "51a46c67-8cbe-4d03-9fea-e26b4a39857b"
+      Hint: Order ID Column Header Tooltip
+      Value: "????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6f4e84a8-8730-43a2-8680-8819f2c12851"
+      Hint: Order Status Column Header
+      Value: "??"
+    - ID: "ab988154-668e-4d6a-a02d-980612465467"
+      Hint: Date Column Header
+      Value: "??"
+    - ID: "f4c9d3fe-6e22-4d57-bdef-29f50e2159af"
+      Hint: Order ID Column Header
+      Value: "????"
+    - ID: "f70d4927-a5a2-4988-8adc-3801babed7ca"
+      Hint: Order Status Column Header Tooltip
+      Value: "????????"
+    - ID: "fe199c3f-d55c-4eeb-b3b6-ed482bc031d7"
+      Hint: Order Details Column Header Tooltip
+      Value: "???????????????"

@@ -33,3 +33,22 @@ Languages:
         {E90FE3F9-0148-4A7F-A1DC-D4E2C31572E5}
         {83FA951D-DB46-4C0D-87D4-B65D2DE93B63}
         {797CA136-3EDA-4CFF-82C5-49F9A38641A2}
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182619Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: |
+        {8422D672-AC58-47F2-8926-46682BAADB73}
+        {E90FE3F9-0148-4A7F-A1DC-D4E2C31572E5}
+        {83FA951D-DB46-4C0D-87D4-B65D2DE93B63}
+        {797CA136-3EDA-4CFF-82C5-49F9A38641A2}

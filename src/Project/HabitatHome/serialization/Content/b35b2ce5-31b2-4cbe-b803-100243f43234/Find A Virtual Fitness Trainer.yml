@@ -26,6 +26,10 @@ Languages:
       Value: |
         <link text="Find A Virtual Fitness Trainer" anchor="" linktype="internal" class="" title=""  querystring="" id="{3B26DAB2-CD1D-4E12-8FF8-FB8603213B8D}" />
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: フィットネストレーナーを見つける
   Versions:
   - Version: 1
     Fields:

@@ -30,3 +30,20 @@ Languages:
     - ID: "e1b656c5-052f-44eb-9093-0f2c0bffba4c"
       Hint: Show More Products Tooltip
       Value: Show more products
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182616Z
+    - ID: "31770082-97cd-4e48-b322-1a3d11c4587a"
+      Hint: Show More Products Text
+      Value: "?????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e1b656c5-052f-44eb-9093-0f2c0bffba4c"
+      Hint: Show More Products Tooltip
+      Value: "????????"
