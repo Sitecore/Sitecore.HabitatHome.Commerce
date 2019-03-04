@@ -12,6 +12,7 @@
     "AllowedOrigins": [
       "https://localhost:4200",
       "http://localhost:4200",
+      "https://bizfx.habitathome.dev.local",
       "https://habitathome.dev.local"
     ],
     "AntiForgeryEnabled": false,
