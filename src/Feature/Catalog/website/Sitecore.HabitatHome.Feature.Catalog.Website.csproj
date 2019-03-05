@@ -160,9 +160,6 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.Serialization.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Catalog.config" />
-    <Content Include="Scripts\Commerce\Feature\Catalog\cxa.feature.catalog.productprice.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Catalog\habitathome.feature.productlist.js" />
-    <Content Include="Scripts\Commerce\Feature\Catalog\habitathome.feature.productlist.model.js" />
     <Content Include="Views\Catalog\PurchasableProductList.cshtml" />
     <Content Include="App_Config\Include\z.Feature.Overrides\Feature.Catalog.config" />
     <None Include="Web.Debug.config">

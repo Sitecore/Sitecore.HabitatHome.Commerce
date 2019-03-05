@@ -146,7 +146,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.NearestStore.Serialization.config" />
-    <Content Include="Scripts\Commerce\Feature\NearestStore\habitathome.feature.neareststores.js" />
     <Content Include="Utilities\InventoryUpload.aspx" />
     <Content Include="Views\NearestStore\NearestStore.cshtml" />
     <None Include="Web.Debug.config">

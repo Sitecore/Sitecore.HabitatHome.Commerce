@@ -137,9 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Y.Commerce.Engine\z.HabitatHome.Commerce.Connect.Wishlist.config" />
-    <Content Include="Scripts\Commerce\Feature\Wishlists\habitathome.feature.wishlist.addtowishlist.js" />
-    <Content Include="Scripts\Commerce\Feature\Wishlists\habitathome.feature.wishlist.lines.js" />
-    <Content Include="Scripts\Commerce\Feature\Wishlists\habitathome.feature.wishlist.lines.model.js" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Wishlists.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Wishlists.Serialization.config" />
     <Content Include="Views\Wishlists\WishListLines.cshtml" />

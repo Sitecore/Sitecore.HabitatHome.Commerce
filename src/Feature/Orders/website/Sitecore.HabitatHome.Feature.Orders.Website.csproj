@@ -151,10 +151,6 @@
     <Content Include="App_Config\Include\Feature.Overrides\Commerce\Feature.Orders.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Scripts\Commerce\Feature\Orders\habitathome.feature.orders.orderlines.js" />
-    <Content Include="Scripts\Commerce\Feature\Orders\habitathome.feature.orders.orderlines.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Orders\habitathome.feature.orders.review.js" />
-    <Content Include="Scripts\Commerce\Feature\Orders\habitathome.feature.orders.review.model.js" />
     <Content Include="Utilities\UploadOrder.aspx" />
     <Content Include="Views\Orders\OrderHistory.cshtml" />
     <Content Include="Views\Orders\OrderReview.cshtml" />
@@ -167,7 +163,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\Commerce\Feature\Orders\habitathome.feature.orders.orderhistory.js" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

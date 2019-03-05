@@ -138,7 +138,6 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductRelatedContent.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductRelatedContent.Serialization.config" />
-    <Content Include="Scripts\Commerce\Feature\ProductRelatedContent\habitathome.feature.productrelatedcontent.js" />
     <Content Include="Views\ProductRelatedContent\ProductRelatedContent.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>

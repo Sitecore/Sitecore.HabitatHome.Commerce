@@ -131,14 +131,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Feature.Cart.config" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.billing.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.delivery.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.delivery.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.deliverycart.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.shoppingcartlines.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.shoppingcartlines.model.js" />
-    <Content Include="Scripts\Commerce\Feature\Cart\habitathome.feature.cart.giftcardbalance.js" />
     <Content Include="App_Config\Include\Feature.Overrides\Commerce\Feature.Cart.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.Cart.Serialization.config" />
     <Content Include="App_Config\Include\Y.Commerce.Engine\z.HabitatHome.Commerce.Connect.Shipping.config" />
