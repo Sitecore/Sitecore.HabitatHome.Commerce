@@ -1,0 +1,18 @@
+@import '../../index';
+.component.cxa-login-component {
+    padding: 0;
+    form {
+        @include vertical-form-layout();
+        @include form-primary-style();
+        .login-submit {
+            padding-right: 5px;
+            button {
+                @include align-element($bottom-or-right);
+                @include primary-button-filled();
+                @include large-height();
+                width: 50%;
+                align-self: flex-start;
+            }
+        }
+    }
+}

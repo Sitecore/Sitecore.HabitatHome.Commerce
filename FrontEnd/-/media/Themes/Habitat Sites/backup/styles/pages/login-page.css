@@ -1,0 +1,86 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.login-page .component.container {
+  /* 
+         * Left side
+        */
+  /* 
+         * Right side
+        */
+}
+
+.login-page .component.container .main-title {
+  margin-bottom: 8px;
+}
+
+.login-page .component.container .component.link.large-height.primary-button-line {
+  margin-top: -57px;
+  padding-left: 5px;
+  padding-right: 0;
+  float: right;
+}
+
+.login-page .component.container .component.link.large-height.primary-button-line a {
+  width: 100%;
+  font-weight: normal;
+  color: #0e909f;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.login-page .component.container .component.link.large-height.primary-button-line a:hover, .login-page .component.container .component.link.large-height.primary-button-line a:active {
+  color: #fff !important;
+}
+
+.login-page .component.container .col-md-5 .component.divider {
+  margin: 5px 0;
+}
+
+@media (max-width: 991px) {
+  .login-page .component.container .col-md-5 .component.divider {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .login-page .component.container .col-md-5 {
+    padding: 0;
+  }
+}
+
+.login-page .component.container .col-md-7 img {
+  margin-bottom: 15px !important;
+}
+
+@media (max-width: 991px) {
+  .login-page .component.container .col-md-7 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .login-page .component.container .col-md-7 a {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 10px;
+    min-height: 35px;
+    height: 35px;
+    padding: 5px 25px 5px 25px;
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../mixins/index';
+@import '../../base/index';
+.container-rounded {
+    @include rounded-container();
+}
+
+.no-margin {
+    @include no-margin();
+}
+
+.no-padding {
+    @include no-padding();
+}
+
+.sidebar-and-main-splitter {
+    @include sidebar-and-main-splitter();
+}
+
+.box-shadow {
+    img {
+        @include box-shadow();
+    }
+}
+
+.primary-button-line {
+    a,
+    button {
+        @include primary-button-line();
+    }
+}
+
+.primary-button-filled {
+    a,
+    button {
+        @include primary-button-filled();
+    }
+}
+
+.secondary-button-line {
+    a,
+    button {
+        @include secondary-button-line();
+        color: $teriary-text-color !important;
+        &:hover,
+        &:active {
+            color: $light !important;
+        }
+    }
+}
+
+.secondary-button-filled {
+    a,
+    button {
+        @include secondary-button-filled();
+    }
+}
+
+.main-title {
+    .component-content {
+        @include main-title();
+        span {
+            @include main-title();
+        }
+    }
+}
+
+.secondary-title {
+    .component-content {
+        @include secondary-title();
+        span {
+            @include secondary-title();
+        }
+    }
+}
+
+.large-height {
+    a,
+    button {
+        @include large-height(); //Need to fix the large-height() function in later time.
+        padding: 9px 25px 9px 25px;
+    }
+}
+
+main {
+    .no-border {
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+}

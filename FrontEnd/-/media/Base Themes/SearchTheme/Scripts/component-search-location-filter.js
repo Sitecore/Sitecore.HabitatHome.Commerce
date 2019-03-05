@@ -75,16 +75,18 @@
         initialize: function () {
             var inst = this,
                 dataProperties = this.$el.data(),
-                $textBox = this.$el.find(".location-search-box-input");
+                $textBox = this.$el.find(".location-search-box-input"),
+                signatures = dataProperties.properties.searchResultsSignature.split(',');
 
             if (dataProperties.properties.searchResultsSignature === null) {
                 dataProperties.properties.searchResultsSignature = "";
             }
 
-            this.model.set({dataProperties: dataProperties.properties});
-            this.model.set({sig: dataProperties.properties.searchResultsSignature.split(',')});
-            this.model.set({queryParams : {maxResults : dataProperties.p, text : ""}});
+            this.model.set({ dataProperties: dataProperties.properties });
+            this.model.set({ sig: signatures});
+            this.model.set({ queryParams: { maxResults: dataProperties.p, text: "" } });
             this.model.initAutocompleteEngine();
+
             var autocompleteEngine = this.model.get("searchEngine");
 
             if(autocompleteEngine){
@@ -105,20 +107,24 @@
                 });
             }
 
-
             this.addressLookup();
+
+            XA.component.search.vent.on("hashChanged", function(hash) {
+                var address = hash[signatures.length > 0 && signatures[0] !== "" ? signatures[0] + "_a" : "a"];
+                if (typeof address !== "undefined" && address !== null && address !== "") {
+                    $textBox.val(address);
+                }
+            });
         },
         events: {
             "click .location-search-box-button": "addressLookup",
             "keypress .location-search-box-input": "searchTextChanges",
             "keyup .location-search-box-input" : "autocomplete"
         },
-
         addressLookup: function(e){
-            var properties = this.model.get("dataProperties"),
-                $textBox = this.$el.find(".location-search-box-input.tt-input"),
+            var properties = this.model.get("dataProperties"),                
                 lookupQuery = {
-                    text : $textBox.length !== 0 ? $textBox.val() : this.$el.find(".location-search-box-input").val(),
+                    text : this.getAddress(),
                     maxResults : 1
                 },
                 hashObj;
@@ -151,7 +157,25 @@
                 }
             }
         },
+        getAddress: function() {
+            var $textBox = this.$el.find(".location-search-box-input.tt-input"),
+                text = $textBox.length !== 0 ? $textBox.val() : this.$el.find(".location-search-box-input").val(),
+                hash = queryModel.parseHashParameters(window.location.hash),
+                signatures = this.model.get("sig"),
+                address;
 
+            if (text === "" || typeof text === "undefined") {
+                address = hash[signatures.length > 0 && signatures[0] !== "" ? signatures[0] + "_a" : "a"];
+                if (address !== "") {
+                    text = address;
+                }
+                if (typeof text === "undefined") {
+                    text = "";
+                }
+            }
+
+            return text;
+        },
         autocomplete : function(args){
             var $textBox,
                 queryParams,
@@ -161,7 +185,6 @@
             if (args.keyCode === 13) {
                 return;
             }
-
 
             $textBox = this.$el.find(".location-search-box-input.tt-input");
 
@@ -182,18 +205,23 @@
         translateUserLocation: function(lookupQuery) {
             var that = this,
                 properties = this.model.get("dataProperties"),
+                text = typeof lookupQuery.text !== "undefined" ? lookupQuery.text : lookupQuery,
+                $textBox = this.$el.find(".location-search-box-input.tt-input"),
                 hashObj = {};
 
-            if (lookupQuery === "") {
+            if (text === "") {
                 return;
             }
-            mapsConnector.addressLookup({ text: lookupQuery }, function(data) {
+            mapsConnector.addressLookup({ text: text }, function(data) {
                 hashObj = that.createHashObject(data[0] + "|" + data[1], properties.f + ",Ascending");
                 that.updateHash(hashObj, properties);
             }, function () {
-                console.error("Error while getting '" + lookupQuery + "' location");
+                console.error("Error while getting '" + text + "' location");
             });
-            that.$el.find(".location-search-box-input.tt-input").blur();
+            $textBox.blur();
+            if ($textBox.val() === "") {
+                $textBox.val(text);
+            }
         },
         detectLocation: function() {
             var properties = this.model.get("dataProperties"),
@@ -220,16 +248,27 @@
         },
         updateHash: function (params, properties) {
             var sig = this.model.get("sig"),
+                signature,
                 searchModels = typeof XA.component.search !== "undefined" ? XA.component.search.results.searchResultModels : [],
+                $textBox = this.$el.find(".location-search-box-input.tt-input"),
+                text = $textBox.length !== 0 ? $textBox.val() : this.$el.find(".location-search-box-input").val(),
                 i, j;
 
             //clear load more offset in each of search results with the same signature when location is changes
             //at the moment this is needed to clear offset but should be handle in search service in the future
             for (i = 0; i < searchModels.length; i++) {
-                for (j = 0; j < sig.length; j++) {    
-                    if (searchModels[i].get("dataProperties").sig === sig[j]) {
+                for (j = 0; j < sig.length; j++) {
+                    signature = sig[j];
+                    if (searchModels[i].get("dataProperties").sig === signature) {
                         searchModels[i].set("loadMoreOffset", 0);
                     }
+                }
+            }
+
+            if (text !== null && text !== "") {
+                for (i = 0; i < sig.length; i++) {
+                    signature = sig[i];
+                    params[signature !== "" ? signature + "_a" : "a"] = text;
                 }
             }
 

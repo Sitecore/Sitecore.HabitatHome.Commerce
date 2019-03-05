@@ -1,0 +1,29 @@
+@import '../../index';
+.component.cxa-register-component {
+    .registeration-form {
+        form {
+            @include vertical-form-layout();
+            label {
+                @include required-sign();
+            }
+            .register-buttons {
+                @include row-of-elements-wide-apart();
+                button {
+                    @include primary-button-filled();
+                    @include large-height();
+                    order: 2;
+                    margin-bottom: 0;
+                    width: 48%;
+                    padding: 8px;
+                }
+                a {
+                    @include primary-button-line();
+                    @include large-height();
+                    order: 1;
+                    width: 48%;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}

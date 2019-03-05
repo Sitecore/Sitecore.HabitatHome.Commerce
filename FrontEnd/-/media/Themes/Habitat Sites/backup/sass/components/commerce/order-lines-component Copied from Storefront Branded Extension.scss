@@ -1,0 +1,122 @@
+@import "../../index";
+.cxa-orderdetailslines-component {
+    padding-top: $padding;
+    table {
+        @include cart-lines-table();
+        tbody {
+            tr {
+                td {
+                    padding-top: $margin;
+                    padding-bottom: $margin;
+                }
+                &.subline-row {
+                    td {
+                        .product-image {
+                            margin-left: $standardSpacing;
+                            align-self: flex-start;
+                        }
+                        .cart-info {
+                            align-self: flex-start;
+                        }
+                    }
+                }
+                .product-image {
+                    width: 72px;
+                    height: 72px;
+                    img {
+                        display: block;
+                        width: 72px;
+                        height: 72px;
+                    }
+                }
+                .cart-info {
+                    width: 40%;
+                    padding-left: $standardSpacing;
+                    text-align: left;
+                    .cart-delivery {
+                        margin-bottom: 0;
+                        + .cart-delivery {
+                            margin-top: 5px;
+                        }
+                    }
+                    .product-variants {
+                        margin-top: $margin / 2;
+                        .product-variant {
+                            .variant-information {
+                                font-weight: 600;
+                            }
+                            + .product-variant {
+                                margin-top: $margin / 2;
+                            }
+                        }
+                        + .cart-delivery {
+                            margin-top: $margin;
+                        }
+                    }
+                    .address-label {
+                        margin-right: 13px;
+                    }
+                    .shippingMethodName {
+                        margin-left: 10px;
+                        font-weight: 600;
+                    }
+                    .lineShippingAddress {
+                        display: inline;
+                        li {
+                            display: inline;
+                        }
+                        li:not(:last-child) {
+                            &:after {
+                                content: ",";
+                            }
+                        }
+                    }
+                }
+                .unit-price {
+                    .price-amount {
+                        display: block;
+                    }
+                }
+                .product-quantity {
+                    text-align: center;
+                }
+                .line-total {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+.cxa-orderdetailslines-component {
+    .cart-info {
+        h4 {
+            font-size: $font-size-medium;
+            font-weight: 600;
+        }
+        .product-color {
+            font-weight: 600;
+        }
+    }
+    .cart-delivery {
+        span,
+        li {
+            font-size: 12px;
+        }
+    }
+    .shippingMethodName,
+    .price-amount {
+        font-weight: 600;
+    }
+    .discount {
+        color: $error-second-color;
+    }
+    table {
+        td,
+        th {
+            @include form-seperator();
+        }
+        th {
+            padding-bottom: 0;
+        }
+    }
+}

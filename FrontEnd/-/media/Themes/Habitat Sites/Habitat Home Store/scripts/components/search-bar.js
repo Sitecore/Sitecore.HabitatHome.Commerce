@@ -1,32 +1,31 @@
-$(document).ready(function () {
-    var searchForm = $('#SearchForm');
-    var toggleSearch = $('.toggle-search-bar');
-
-    $(toggleSearch).mouseleave(function (e) {
-        hideSearchForm(e);
-    });
-
-    $(searchForm).mouseleave(function (e) {
-        hideSearchForm(e);
-    });
-
-    function hideSearchForm(target) {
-        var eleClassName = target.relatedTarget.className;
-
-        if (eleClassName != 'search-textbox') {
-            $(searchForm).removeClass('active');
-        } else {
-            target.preventDefault();
-        }
-    }
-
-    $(toggleSearch).click(function (e) {
-        $(searchForm).toggleClass('active');
-    });
-
-    $(searchForm).find(':submit').click(function (event) {
-        event.preventDefault();
+$(document).ready(function() {
+    if (isMobile()) {
+      var $searchForm = $('#SearchForm');
+      var $toggleSearch = $('.toggle-search-bar');
+  
+      function targetExitedBoundary(target) {
+        const isSearchBar = $toggleSearch.is($(target));
+        const isSearchBarDescendant = $searchForm.has(target).length;
+        return !(isSearchBar || isSearchBarDescendant);
+      }
+  
+      $(window)
+        .off('touchend.searchBar')
+        .on('touchend.searchBar', function(e) {
+          if (targetExitedBoundary(e.target)) {
+            $searchForm.removeClass('active');
+          }
+        });
+  
+      $toggleSearch.off('touchend').on('touchend', function() {
+        $searchForm.toggleClass('active');
+      });
+  
+      $searchForm.find(':submit').click(function(e) {
+        e.preventDefault();
         $(this).attr('disabled', 'disabled');
-        $(searchForm).submit();
-    });
-});
+        $searchForm.submit();
+      });
+    }
+  });
+  

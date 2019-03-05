@@ -1,0 +1,119 @@
+@import '../base/index';
+@import 'layouts';
+@mixin horizontal-form-layout($number-of-columns:-1, $space-between-columns:0) {
+    @include row($apart-equal-spaces-between, $top-or-left, $apart-equal-spaces-between, $space-between-columns, true);
+    @if ($number-of-columns > 0) {
+        >* {
+            flex-basis: ($form-available-width-for-controls/$number-of-columns);
+        }
+    }
+    >div {
+        @include column-of-elements-packed(false, $top-or-left, $packed-elements-margin);
+        margin-bottom: $form-margin-between-lines;
+        input[type="text"] {
+            width: 100%;
+        }
+        input[type="password"] {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+    }
+    input[type='radio']+label {
+        margin-right: $packed-elements-margin;
+    }
+    input[type='checkbox']+label {
+        margin-right: $packed-elements-margin;
+    }
+}
+
+@mixin vertical-form-layout($number-of-rows:-1, $space-between-lines:0) {
+    height: 100%;
+    width: 100%;
+    input::placeholder {
+        opacity: 0.7;
+        font-weight: 400;
+    }
+    input::-ms-input-placeholder {
+        opacity: 0.7;
+        font-weight: 400;
+    }
+    input:-ms-input-placeholder {
+        opacity: 0.7;
+        font-weight: 400;
+    }
+    @include column($apart-equal-spaces-between, $top-or-left, $apart-equal-spaces-between, $space-between-lines, true);
+    @if ($number-of-rows > 0) {
+        >* {
+            flex-basis: ($form-available-height-for-controls/$number-of-rows);
+        }
+    }
+    >* {
+        width: 100%;
+    }
+    >div {
+        @include column-of-elements-packed(false, $top-or-left, $packed-elements-margin);
+        margin-bottom: $form-margin-between-lines;
+        input[type="text"] {
+            width: 100%;
+        }
+        input[type="password"] {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+    }
+    >div>label {
+        margin-right: $packed-elements-margin;
+    }
+    input[type='radio']+label {
+        margin-right: $packed-elements-margin;
+    }
+    input[type='checkbox']+label {
+        margin-right: $packed-elements-margin;
+    }
+}
+
+@mixin form-seperator() {
+    border-bottom: 1px solid lighten($border-color, 15%);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+@mixin form-section() {
+    width: 100%;
+    margin-top: 15px;
+    @include form-seperator();
+    h4 {
+        margin-bottom: $margin;
+    }
+}
+
+@mixin form-primary-style() {
+    input[type='text'] {
+        @include text-input();
+    }
+    input[type='password'] {
+        @include text-input();
+    }
+    input[type='radio'] {
+        @include radio-button();
+    }
+    input[type='checkbox'] {
+        @include checkbox();
+    }
+    select {
+        @include dropdown-list()
+    }
+    label {
+        @include label();
+    }
+}
+
+@mixin required-sign() {
+    &:after {
+        content: '*';
+    }
+}

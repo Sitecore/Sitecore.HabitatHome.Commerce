@@ -55,11 +55,12 @@ XA.component.search.facet.daterange = (function ($, document) {
                 fromDatePastDays = this.model.get('dataProperties').fromDatePastDays,
                 toDateFutureDays = this.model.get('dataProperties').toDateFutureDays,
                 fromDateVisible = this.model.get('dataProperties').fromDateVisible,
-                toDateVisible = this.model.get('dataProperties').toDateVisible,                
+                toDateVisible = this.model.get('dataProperties').toDateVisible,
                 $fromDate = this.$el.find('.startDate'),
                 $toDate = this.$el.find('.endDate'),
                 hashObj = queryModel.parseHashParameters(window.location.hash),
                 sig = this.model.get('sig'),
+                lang = $("html").attr("lang")?$("html").attr("lang"): "",
                 dates, i;
 
             if (toDateFormat) {
@@ -76,6 +77,7 @@ XA.component.search.facet.daterange = (function ($, document) {
                     changeYear: fromDateMonthsShown,
                     minDate: fromDatePastDays ? (fromDateDefaultOffset != '' ? -1 * fromDateDefaultOffset : new Date(1900, 1 , 1)) : new Date()
                 });
+                $xa.datepicker.setDefaults($xa.datepicker.regional[lang]);
             }
         
             if (toDateVisible) {
@@ -85,6 +87,7 @@ XA.component.search.facet.daterange = (function ($, document) {
                     changeYear: toDateMonthsShown,
                     maxDate: toDateFutureDays ? (toDateDefaultOffset != '' ? toDateDefaultOffset : new Date(2100, 1 , 1)) : new Date()
                 });
+                $xa.datepicker.setDefaults($xa.datepicker.regional[lang]);
             }
 
             for (i = 0; i < sig.length; i++) {

@@ -1,0 +1,20 @@
+@import '../../index';
+.cxa-orderdetailsheader-component {
+    .order-header-lines {
+        height: 50px;
+        @include row-of-elements-wide-apart(false,$center);
+        justify-content: space-around;
+        background-color: #038acd;
+        p {
+            span{
+                color: $light;
+                font-size: $font-size-base;
+                font-weight: normal;    
+            }         
+            .value{
+                font-weight: 600;
+            }
+        }
+    }
+    
+}

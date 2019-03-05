@@ -1,0 +1,67 @@
+@import '../../index';
+@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+
+.cxa-productlistitemsonpage-component,
+.cxa-productlistitemsperpage-component {
+    font-weight: bold;
+
+    .productlist-header-section {
+       @include respond-to(mobile-large) {
+           justify-content: flex-end !important;
+       }
+   }
+
+    .results-container{        
+       position: relative;
+
+       span {
+           color: #000 !important;       
+       }        
+
+       &:after {
+           content:"\f078";
+           font-family: FontAwesome;
+           color: #000;
+           //padding: 12px 8px;
+           position: absolute; 
+           right: 10px; 
+           top: 50%;
+           transform: translateY(-50%);
+           z-index: 10;
+           text-align: center;
+           pointer-events: none;
+       }
+    }
+
+    .change-pagesize {
+       font-weight: normal;
+       width: 12em;
+       height: 2.5625em;
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       -o-appearance: none; 
+       background-attachment: scroll;
+       background-color: transparent;
+       background-image: none;
+       background-position: 0% 0%;
+       background-repeat: repeat;
+       color: #000;
+       background-color: #fff;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: normal;
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+       width: auto;
+       height: 41px;
+       max-width: 100%;
+       border: 1px solid #d8d9d5;
+       border-radius: 0;
+       outline: none;
+       padding-left: 10px;
+       padding-right: 35px;
+       padding: 0 2em 0 0.9375em;
+       position: relative;
+    }
+}

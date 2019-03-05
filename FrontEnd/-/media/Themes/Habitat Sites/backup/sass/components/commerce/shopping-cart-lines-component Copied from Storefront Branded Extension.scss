@@ -1,0 +1,153 @@
+@import "../../index";
+
+.cxa-shoppingcartlines-component {
+    table {
+        @include cart-lines-table();
+        thead tr th {
+            border-bottom: 1px solid lighten($border-color, 15%);
+            &:not(:first-child) {
+                padding-left: $standardSpacing;
+            }
+        }
+        tbody tr td {
+            border-bottom: 1px solid lighten($border-color, 15%);
+            vertical-align: middle;
+        }
+    }
+    .shoppingcart-price,
+    .shoppingcart-quantity,
+    .shoppingcart-total,
+    .shoppingcart-delete {
+        padding-left: $standardSpacing;
+    }
+    .shoppingcart-image {
+        width: 100px;
+        height: 100px;
+        vertical-align: top;
+    }
+    .shoppingcart-info {
+        padding-left: $standardSpacing;
+        vertical-align: top;
+        a {
+            h5 {
+                margin-top: 0;
+                margin-bottom: 7px;
+                font-size: $font-size-medium;
+                font-family: "Open Sans" !important;
+                font-weight: 600;
+            }
+        }
+        .variant-information + .variant-information {
+            margin-top: $margin / 2;
+        }
+        .variant-value {
+            font-weight: bold;
+        }
+    }
+    .shoppingcart-price {
+        .price {
+            font-weight: 600;
+        }
+    }
+    .shoppingcart-quantity {
+        text-align: center;
+        div {
+            @include numeric-input-group();
+        }
+    }
+    .shoppingcart-total {
+        text-align: right;
+        .total {
+            font-size: $font-size-large;
+            font-weight: 600;
+            color: $heading-color;
+        }
+        .shoppingcart-total-saving {
+            color: $error-second-color;
+        }
+    }
+    .shoppingcart-delete {
+        a {
+            span {
+                &:before {
+                    @include sc-icon($scxa-delete-copy);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .shoppingcart-delivery {
+        margin-bottom: 0;
+        span,
+        li {
+            font-size: 12px;
+        }
+        .shippingMethodName {
+            font-weight: 600;
+        }
+        .lineShippingAddress {
+            display: inline;
+            li {
+                display: inline;
+            }
+            li:not(:last-child) {
+                span:after {
+                    content: ",";
+                }
+            }
+        }
+    }
+    .subline-row {
+        td:first-child {
+            padding-left: calc(
+                100px + #{$standardSpacing}
+            ); // image size + standard spacing
+        }
+        .shoppingcart-image {
+            width: 72px;
+            height: 72px;
+            align-self: flex-start;
+        }
+        .shoppingcart-info {
+            align-self: flex-start;
+        }
+    }
+    &.compact-cart {
+        table tbody {
+            display: flex;
+            flex-flow: column nowrap;
+            tr {
+                @include horizontal-form-layout();
+                .shoppingcart-image {
+                    width: 80px;
+                    min-width: 80px;
+                    min-height: 80px;
+                    border: none;
+                    padding-bottom: 0;
+                }
+                .shoppingcart-info {
+                    flex-basis: 70%;
+                    a {
+                        h5 {
+                            max-width: 100%;
+                        }
+                    }
+                    border: none;
+                    padding-bottom: 0;
+                }
+                .shoppingcart-total {
+                    @include vertical-form-layout();
+                    @include align-elements($bottom-or-right);
+                    width: 100%;
+                    height: auto;
+                    align-self: flex-end;
+                    padding-top: 0;
+                    > span,
+                    p {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

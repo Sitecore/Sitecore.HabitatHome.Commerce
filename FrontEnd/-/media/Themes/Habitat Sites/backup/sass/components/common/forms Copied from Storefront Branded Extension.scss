@@ -1,0 +1,44 @@
+@import '../../mixins/index';
+@import '../../base/index';
+form {
+    label {
+        @include label();
+    }
+    font-weight:600;
+}
+
+select {
+    @include dropdown-list();
+}
+
+@-moz-document url-prefix() {
+    select {
+        border-right: none;
+    }
+}
+
+input[type='text'] {
+    @include text-input();
+    margin-bottom: 0;
+}
+input[type='password'] {
+    @include text-input();
+}
+
+input[type="checkbox"] {
+    @include checkbox();
+}
+
+input[type="radio"] {
+    @include radio-button();
+}
+textarea{
+    @include text-input();
+}
+.field-validation-error {
+    span{
+        color: $validation-error-color;
+        font-weight:normal;
+        font-size: 13px;
+    }
+}

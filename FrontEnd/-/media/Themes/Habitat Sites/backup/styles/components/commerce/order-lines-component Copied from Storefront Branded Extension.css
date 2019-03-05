@@ -1,0 +1,234 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-orderdetailslines-component {
+  padding-top: 10px;
+}
+
+.cxa-orderdetailslines-component table thead tr th {
+  padding-bottom: 10px;
+}
+
+.cxa-orderdetailslines-component table tbody tr td {
+  vertical-align: top;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row .flex-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row .flex-container > div:nth-child(1) {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  text-align: left;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row .flex-container > div:nth-child(1) img {
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row .flex-container > div:nth-child(2) {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row .flex-container > div:nth-child(3) {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:first-child {
+  vertical-align: middle;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:first-child img {
+  width: 72px;
+  height: 72px;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:nth-child(2) {
+  width: 45%;
+  vertical-align: top;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:nth-child(2) h5 {
+  max-width: 87%;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:nth-child(3) {
+  width: 15%;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:nth-child(4) {
+  width: 17.5%;
+}
+
+.cxa-orderdetailslines-component table tbody tr.mainline > td:nth-child(5) {
+  width: 17.5%;
+}
+
+.cxa-orderdetailslines-component table tbody tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row td .product-image {
+  margin-left: 20px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-orderdetailslines-component table tbody tr.subline-row td .cart-info {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.cxa-orderdetailslines-component table tbody tr .product-image {
+  width: 72px;
+  height: 72px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .product-image img {
+  display: block;
+  width: 72px;
+  height: 72px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info {
+  width: 40%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .cart-delivery {
+  margin-bottom: 0;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .cart-delivery + .cart-delivery {
+  margin-top: 5px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .product-variants {
+  margin-top: 7.5px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .product-variants .product-variant .variant-information {
+  font-weight: 600;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .product-variants .product-variant + .product-variant {
+  margin-top: 7.5px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .product-variants + .cart-delivery {
+  margin-top: 15px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .address-label {
+  margin-right: 13px;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .shippingMethodName {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .lineShippingAddress {
+  display: inline;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .lineShippingAddress li {
+  display: inline;
+}
+
+.cxa-orderdetailslines-component table tbody tr .cart-info .lineShippingAddress li:not(:last-child):after {
+  content: ",";
+}
+
+.cxa-orderdetailslines-component table tbody tr .unit-price .price-amount {
+  display: block;
+}
+
+.cxa-orderdetailslines-component table tbody tr .product-quantity {
+  text-align: center;
+}
+
+.cxa-orderdetailslines-component table tbody tr .line-total {
+  text-align: right;
+}
+
+.cxa-orderdetailslines-component .cart-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cxa-orderdetailslines-component .cart-info .product-color {
+  font-weight: 600;
+}
+
+.cxa-orderdetailslines-component .cart-delivery span,
+.cxa-orderdetailslines-component .cart-delivery li {
+  font-size: 12px;
+}
+
+.cxa-orderdetailslines-component .shippingMethodName,
+.cxa-orderdetailslines-component .price-amount {
+  font-weight: 600;
+}
+
+.cxa-orderdetailslines-component .discount {
+  color: #DE5248;
+}
+
+.cxa-orderdetailslines-component table td,
+.cxa-orderdetailslines-component table th {
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.cxa-orderdetailslines-component table th {
+  padding-bottom: 0;
+}

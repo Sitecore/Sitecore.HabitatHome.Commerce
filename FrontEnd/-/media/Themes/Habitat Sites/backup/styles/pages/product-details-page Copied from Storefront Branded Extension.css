@@ -1,0 +1,75 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+@media (max-width: 991px) {
+  .product-details-page .product-images {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-details-page .product-images ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 25px;
+  }
+}
+
+.product-details-page .product-list {
+  margin: 30px 0 45px 0;
+}
+
+.product-details-page .product-list > ul {
+  margin-left: -0.8em;
+}
+
+.product-details-page > .component.column-splitter > div:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 991px) {
+  .product-details-page > .component.column-splitter > div:first-child {
+    padding: 0;
+  }
+}
+
+.product-details-page .container-rounded {
+  padding: 40px 40px 31px 40px;
+  height: 100%;
+  min-height: 441px;
+}
+
+@media (max-width: 991px) {
+  .product-details-page .container-rounded {
+    padding: 30px;
+  }
+}
+
+.product-details-page .container-rounded .product-info .product-name {
+  margin-bottom: 10px;
+}
+
+.product-details-page .container-rounded .product-info .product-name h1 {
+  margin-top: 0;
+  line-height: 125%;
+  font-weight: 500;
+  color: #383c41;
+  font-family: 'KievitPro' !important;
+}

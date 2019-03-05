@@ -1,0 +1,248 @@
+@import '../../index';
+.component.cxa-checkoutbilling-component {
+    .component-content {
+        @include column-of-elements-wide-apart(false, $top-or-left);
+        >* {
+            width: 100%;
+        }
+    }
+    .contact-info-section {
+        @include form-section();
+        .contact-info-form {
+            @include horizontal-form-layout(2);
+        }
+    }
+    .apply-credit-card-toggle {
+        display: block;
+        margin-bottom: $margin;
+    }
+    .credit-card-payment-section {
+        .credit-card-payment-form {
+            @include column-of-elements-wide-apart(false, $top-or-left);
+            .payment-method {
+                @include horizontal-form-layout(2);
+                @include align-elements($top-or-left);
+                width: 100%;
+                .payment-amount {
+                    @include vertical-form-layout();
+                    .validate-payment-btn {
+                        @include align-element($bottom-or-right);
+                    }
+                }
+                .show-payment {
+                    width: 100%;
+                }
+            }
+        }
+        .billing-paycard-container,
+        .billing-address-container {
+            @include form-section();
+            @include vertical-form-layout();
+            .billing-addresss-details {
+                @include horizontal-form-layout(2);
+            }
+        }
+    }
+    .apply-gift-card-toggle {
+        display: block;
+        margin-bottom: $margin;
+    }
+    .apply-gift-card-section {
+        @include form-section();
+        @include column-of-elements-wide-apart(false, $top-or-left);
+        .apply-gif-card-content {
+            @include vertical-form-layout();
+            .apply-gif-card-balance {
+                
+                @include row-of-elements-packed(false, $bottom-or-right, 10px);
+                .payment-method-id-textbox {
+                    width: 355px;
+                    @include respond-to($xs) {
+                        width: 100%;
+                    }
+                }
+            }
+            .apply-gif-card-amount {
+                @include row-of-elements-packed(false, $bottom-or-right, 10px);
+                .payment-amount-textbox {
+                    width: 355px;
+                    @include respond-to($xs) {
+                        width: 100%;
+                    }
+                }
+                .payment {
+                    @include row-of-elements-packed(false, $top-or-left, $margin/3);
+                }
+                @include form-seperator();
+            }
+            .giftcard-status {
+                @include row-of-elements-packed(false, $bottom-or-right,10px);
+                .applied-gift-card-info {
+                    @include row-of-elements-packed(false, $bottom-or-right);
+                }
+            }
+        }
+    }
+    .billing-summary {
+        @include form-section();
+        @include horizontal-form-layout(2);
+        @include align-elements($top-or-left);
+        .billing-payment-summary {
+            @include vertical-form-layout();
+            @include align-elements($top-or-left);
+            .payment-summary {
+                @include row-of-elements-wide-apart(false, $center);
+                margin-bottom: 24px;
+            }
+        }
+        .billing-total-summary {
+            @include vertical-form-layout();
+            @include align-elements($top-or-left);
+            .order-summary {
+                @include row-of-elements-wide-apart(false, $center);
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .buttons-row {
+        @include form-section();
+        @include row-of-elements-wide-apart(false, $center);
+        margin-bottom: $margin;
+    }
+}
+
+.component.cxa-checkoutbilling-component {
+    h4 {
+        @include secondary-title();
+    }
+    .billing-discount{
+        color: $error-second-color !important;
+    }
+    .contact-info-form {
+        @include form-primary-style();
+    }
+    .apply-credit-card-toggle {
+        @include link();
+        &:before {
+            @include sc-icon($scxa-down);
+            font-size: $font-size-xsmall;
+        }
+    }
+    .apply-credit-card-toggle.open {
+        &:before {
+            @include sc-icon($scxa-up);
+            font-size: $font-size-xsmall;
+        }
+    }
+    .credit-card-payment-section {
+        .payment-amount {
+            @include form-primary-style();
+            .validate-payment-btn {
+                @include primary-button-filled();
+                @include large-height();
+            }
+        }
+        .billing-paycard-container,
+        .billing-address-container {
+            .billing-addresss-details {
+                @include form-primary-style();
+            }
+        }
+    }
+    .apply-gift-card-toggle {
+        @include link();
+        &:before {
+            @include sc-icon($scxa-down);
+            font-size: $font-size-xsmall;
+        }
+    }
+    .apply-gift-card-toggle.open {
+        &:before {
+            @include sc-icon($scxa-up);
+            font-size: $font-size-xsmall;
+        }
+    }
+    .apply-gift-card-section {
+        .apply-gif-card-content {
+            .apply-gif-card-balance {
+                @include form-primary-style();
+                .payment-get-balance {
+                    button {
+                        @include primary-button-line();
+                    }
+                    span {
+                        @include highlighted-text();
+                    }
+                }
+            }
+            .apply-gif-card-amount {
+                @include form-primary-style();
+                .payment {
+                    .apply-full-amount-btn {
+                        @include primary-button-line();
+                    }
+                    .gift-card-payment-btn {
+                        @include primary-button-filled();
+                    }
+                }
+            }
+            .giftcard-status {
+                .applied-gift-card-info {
+                    >span:first-child {
+                        display: none;
+                    }
+                    .giftcard-payment-number,
+                    .giftcard-aplied-amount {
+                        @include text-input();
+                        background-color: $secondary-background-color;
+                        width: 175px;
+                        @include respond-to($xs) {
+                            width: 100%;
+                        }
+                    }
+                    .giftcard-payment-number+span {
+                        display: none;
+                    }
+                }
+                .remove-gift-card-link {
+                    @include error-button-line();
+                    width: 120px;
+                }
+            }
+        }
+    }
+    .billing-summary {
+        .payment-total {
+            @include highlighted-text();
+        }
+        .billing-payment-summary {
+            .payment-summary {
+                >div {
+                    >span {
+                        @include highlighted-text();
+                    }
+                }
+            }
+        }
+        .billing-total-summary {
+            .order-summary {
+                >span:last-child {
+                    @include highlighted-text();
+                }
+            }
+            .order-summary-discount {
+                color: $error-second-color;
+            }
+        }
+    }
+    .buttons-row {
+        .previous-button {
+            @include primary-button-line();
+            @include large-height();
+        }
+        .to-confirm-button {
+            @include primary-button-filled();
+            @include large-height();
+        }
+    }
+}

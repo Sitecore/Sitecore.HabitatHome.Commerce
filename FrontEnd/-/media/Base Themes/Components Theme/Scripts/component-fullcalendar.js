@@ -145,17 +145,19 @@ XA.component.calendar = (function($) {
                 tooltipContent = "<span class='description'>" + event.eventDescription + "</span>" +
                     "<span class='link'>" + event.eventLink + "</span>";
             }
-            $tooltip = $("<div class='calendar-tooltip'><div class='arrow'>" +
+            $tooltip = $("<div style='border-radius:5px;border:1px solid #000;position:absolute;z-index:999; paading:5px;background:#FFF' class='calendar-tooltip'><div class='arrow'>" +
                 "</div><div class='events'>" + tooltipContent + "</div></div>");
+
+            $tooltip.css({
+                "left": $(this).offset().left// + $(this).width() / 2 - 80
+            });
+            $tooltip.css({
+                "top": $(this).offset().top - $(this).height() // / 2 + 5
+            });
             $("body").append($tooltip);
 
 
-            $tooltip.css({
-                "left": $(this).offset().left + $(this).width() / 2 - 80
-            });
-            $tooltip.css({
-                "top": $(this).offset().top + $(this).height() / 2 + 5
-            });
+           
 
             var timeout;
             $(this).unbind("mouseleave");

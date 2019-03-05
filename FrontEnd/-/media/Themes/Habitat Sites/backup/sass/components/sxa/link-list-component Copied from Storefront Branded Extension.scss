@@ -1,0 +1,9 @@
+@import '../../base/index';
+
+.component.link-list{
+    h3{
+        padding-bottom: $padding*1.5;
+        font-size: $font-size-medium;
+        font-weight:bold;
+    }
+}

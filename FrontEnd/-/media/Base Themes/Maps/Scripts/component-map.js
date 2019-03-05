@@ -90,6 +90,7 @@
                 XA.component.search.vent.on("internal-results-loaded", this.updateDynamicPoiList.bind(this));
                 XA.component.search.vent.on("my-location-coordinates-changed", this.changeMyLocation.bind(this));
                 XA.component.search.vent.on("internal-my-location-coordinates-changed", this.changeMyLocation.bind(this));
+                XA.component.search.vent.on("hashChanged", this.hashChanged.bind(this));
             }
 
             if (hash.hasOwnProperty(param) && hash[param] !== "") {
@@ -157,6 +158,18 @@
             var sig = this.get("dataProperties").searchResultsSignature;
             if (sig === myLocationData.sig) {
                 this.set("myLocation", myLocationData.coordinates);
+            }
+        },
+        hashChanged: function (hash) {
+            var sig = this.get("dataProperties").searchResultsSignature,
+                location = hash[sig !== "" ? sig + "_g" : "g"],
+                parts;
+
+            if (sig === myLocationData.sig && typeof location !== "undefined" && location !== null && location !== "") {
+                parts = location.split("|");
+                if (parts.length > 1) {
+                    this.set("myLocation", [parts[0], parts[1]]);
+                }
             }
         }
     });

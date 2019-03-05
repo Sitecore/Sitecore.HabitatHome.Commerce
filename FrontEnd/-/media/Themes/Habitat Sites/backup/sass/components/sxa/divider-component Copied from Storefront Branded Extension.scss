@@ -1,0 +1,11 @@
+@import '../../base/index';
+@import '../../mixins/index';
+.component.divider {
+    padding-left: 0;
+    padding-right: 0;
+    .component-content {
+        hr {
+            color: lighten($border-color, 15%);
+        }
+    }
+}

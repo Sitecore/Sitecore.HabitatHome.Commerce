@@ -1,0 +1,680 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.component.cxa-checkoutconfirm-component .component-content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > * {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div input[type="text"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div input[type="password"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div select {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .component-content > div > label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .component-content input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .component-content input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .component-content h4 {
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary {
+  line-height: 2.5;
+  width: 100%;
+  margin-top: 15px;
+  border-bottom: 1px solid #e2e3e5;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary h4 {
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary .order-information-label {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > * {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .component.cxa-checkoutconfirm-component .checkout-footer-pane {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .component.cxa-checkoutconfirm-component .checkout-footer-pane > * {
+    width: 89.4%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > * {
+  -ms-flex-preferred-size: 44.7%;
+  flex-basis: 44.7%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div input[type="text"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div input[type="password"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane > div select {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > * {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div input[type="text"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div input[type="password"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div select {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses > div > label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > * {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div > * {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div > *:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div > *:not(:first-child) {
+  margin-top: 0;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div input[type="text"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div input[type="password"] {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div select {
+  width: 100%;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods > div > label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods input[type='radio'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .checkout-footer-pane .payment-methods input[type='checkbox'] + label {
+  margin-right: 3px;
+}
+
+.component.cxa-checkoutconfirm-component .buttons-row {
+  margin-bottom: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-bottom: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .buttons-row > * {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.component.cxa-checkoutconfirm-component .buttons-row > * {
+  margin: 0;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-products-container {
+  display: none;
+}
+
+.component.cxa-checkoutconfirm-component .order-total-label {
+  display: none;
+}
+
+.component.cxa-checkoutconfirm-component .payment-methods h4 {
+  margin-bottom: 15px !important;
+  font-weight: bold;
+}
+
+.component.cxa-checkoutconfirm-component .footer-shipping-address-pane h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.component.cxa-checkoutconfirm-component .gift-cards {
+  margin-top: 15px;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div {
+  border-bottom: 1px solid #e2e3e5;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div span:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #383c41;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary > div:last-child {
+  border-bottom: none;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary .confirm-totals-total > span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #383c41;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-total-summary .confirm-totals-total .confirm-total {
+  color: #0e909f;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a {
+  border: 2px solid #0e909f;
+  background: #fff;
+  color: #0e909f;
+  font-size: 14px;
+  font-weight: 600;
+  height: 34px;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 4px 25px 4px 25px;
+  border-radius: 4px;
+  min-height: 42px;
+  height: 42px;
+  padding: 8px 25px 8px 25px;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:active, .component.cxa-checkoutconfirm-component .confirm-prev a:hover {
+  background: #0d8896;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:active {
+  background: #0c7783;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:disabled, .component.cxa-checkoutconfirm-component .confirm-prev a.disabled, .component.cxa-checkoutconfirm-component .confirm-prev a[disabled],
+fieldset[disabled] .component.cxa-checkoutconfirm-component .confirm-prev a {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:hover span {
+  color: #fff;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-prev a:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button {
+  border: 2px solid #0e909f;
+  font-size: 14px !important;
+  font-weight: 400;
+  height: 34px;
+  text-align: center !important;
+  background: #0e909f;
+  color: #fff !important;
+  text-shadow: none;
+  box-shadow: none;
+  padding: 4px 25px 4px 25px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  min-height: 42px;
+  height: 42px;
+  padding: 8px 25px 8px 25px;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button:active, .component.cxa-checkoutconfirm-component .confirm-next button:hover {
+  background: #0d8896 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button:active {
+  background: #0c7783 !important;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button:disabled, .component.cxa-checkoutconfirm-component .confirm-next button.disabled, .component.cxa-checkoutconfirm-component .confirm-next button[disabled],
+fieldset[disabled] .component.cxa-checkoutconfirm-component .confirm-next button {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button:hover {
+  color: #fff;
+  background-color: #0a6f7b;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button:active {
+  color: #fff;
+  background-color: #064b53;
+}
+
+.component.cxa-checkoutconfirm-component .confirm-next button span {
+  color: #fff;
+}
+
+.component.cxa-checkoutconfirm-component .edit-shipping-address-link {
+  color: #0088cc;
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.component.cxa-checkoutconfirm-component .edit-shipping-address-link:hover {
+  color: #0e909f;
+}
+
+.component.cxa-checkoutconfirm-component .edit-billing-address-link {
+  color: #0088cc;
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.component.cxa-checkoutconfirm-component .edit-billing-address-link:hover {
+  color: #0e909f;
+}
+
+.component.cxa-checkoutconfirm-component .edit-payment-method-link {
+  color: #0088cc;
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.component.cxa-checkoutconfirm-component .edit-payment-method-link:hover {
+  color: #0e909f;
+}

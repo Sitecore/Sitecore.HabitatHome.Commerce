@@ -1,0 +1,67 @@
+/* breakpoints */
+.order-confirmation-page {
+  font-size: 16px;
+}
+
+.order-confirmation-page h1 {
+  color: #0e909f;
+  font-size: 52px;
+  line-height: 56px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .order-confirmation-page h1 {
+    font-size: 32px;
+  }
+}
+
+.order-confirmation-page .article-content .component-content {
+  padding: 0;
+}
+
+.order-confirmation-page .order-confirmation-component {
+  padding: 100px 15% 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .order-confirmation-page .order-confirmation-component {
+    padding: 0 2em;
+  }
+}
+
+.cxa-checkoutorderconfirmation-component .order-number {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 1em 0 2em;
+  width: 100%;
+}
+
+.cxa-checkoutorderconfirmation-component .order-number > span {
+  display: block;
+  color: #0e909f;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  border-top: 1px solid #e2e3e5;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+
+.cxa-checkoutorderconfirmation-component .order-status {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 1em 0 2em;
+  width: 100%;
+}
+
+.cxa-checkoutorderconfirmation-component .order-status > span {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: normal;
+  border-top: 1px solid #e2e3e5;
+  padding-top: 10px;
+  margin-top: 5px;
+}

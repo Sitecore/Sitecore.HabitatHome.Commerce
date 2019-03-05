@@ -1,0 +1,7 @@
+main .component.container {
+  max-width: 1140px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 106px;
+}

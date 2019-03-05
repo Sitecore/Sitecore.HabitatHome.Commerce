@@ -1035,7 +1035,7 @@ XA.component.carousels = (function($) {
         var self = this,
             $wrapper = this.slider.context.$wrapper,
             hammer = new Hammer($wrapper[0]);
-            hammer.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+        hammer.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
         hammer.on("swipeleft", function(e) {
             self.slider.context.owner.onChangeCurrentSlide(e, 1, self.slider.context);
@@ -1071,8 +1071,8 @@ XA.component.carousels = (function($) {
                 component = component.find(".carousel-inner"),
                 id = component.attr("data-id"),
                 self = component.eq(0),
-                querySlideIndex = Number.parseInt(XA.queryString.getQueryParam(component.closest('.component.carousel').attr("id") || "carousel")),
-                validQueryParam = typeof querySlideIndex !== "undefined" && !Number.isNaN(querySlideIndex) && querySlideIndex < component.find(".sxa-numbers").length,
+                querySlideIndex = parseInt(XA.queryString.getQueryParam(component.closest('.component.carousel').attr("id") || "carousel")),
+                validQueryParam = typeof querySlideIndex !== "undefined" && !isNaN(querySlideIndex) && querySlideIndex < component.find(".sxa-numbers").length,
                 context, settings, $currentSlide, $slides;
 
             if (properties) {

@@ -1,0 +1,51 @@
+@import '../../../Habitat Home/sass/abstracts/_mixins.scss';
+ 
+.product-list-col {
+    @include respond-to(mobile-large) {
+        width: 100%;
+        padding: 0 50px !important;
+    }
+}
+
+.product-list {
+    .photo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        height: 293px;
+    }
+
+}
+
+.row.column-splitter > div.subcategorynavigation-col {
+    padding-right: 20px;
+
+    @include respond-to(mobile-large) {
+        padding: 0 35px;
+    }
+}
+
+.row.column-splitter > div.subcategory-listing-col {
+    @include respond-to(mobile-large) {
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-top: 30px;
+
+        .cxa-productlistsorting-component {
+            margin-bottom: 8px;
+        }
+
+        .cxa-productlistpageinfo-component {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .cxa-productlistitemsperpage-component {
+            margin-top: 6px; 
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

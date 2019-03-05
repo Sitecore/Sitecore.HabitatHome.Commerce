@@ -1,0 +1,71 @@
+@import "../../index";
+$input-width: 300px;
+$button-width: 180px;
+.cxa-shoppingcartpromotion-component {
+    margin-top: $margin * 2;
+    .component-content {
+        > .cart-promotion-title {
+            margin-bottom: 0 !important;
+        }
+        .promotion-code-remove > a,
+        .add-promo-code-button {
+            min-width: $button-width;
+            display: inline-block;
+            text-align: center;
+            margin-left: 15px;
+            &:hover span,
+            &:active span {
+                color: $light;
+            }
+        }
+        .promo-code-input,
+        .added-promotion-code {
+            width: $input-width;
+            display: inline-block;
+        }
+        @include vertical-form-layout(0, 10px);
+        @include align-elements($packed-toward-start);
+        .cart-promotion-form {
+            @include row-of-elements-packed(false, false, 15px);
+            @include align-elements($top-or-left);
+        }
+        .promo-code-input-label,
+        .added-promo-code-label {
+            display: none;
+        }
+        .promotion-code-remove > a {
+            @include error-button-line();
+        }
+        .add-promo-code-button {
+            @include primary-button-line();
+        }
+        .cart-promotion-form {
+            @include form-section();
+            margin-bottom: 0;
+            padding-bottom: $margin * 2;
+            .promotion-code {
+                margin-bottom: 0;
+            }
+        }
+        .added-promotion-code {
+            @include text-input();
+            font-weight: 600;
+            background-color: $secondary-background-color;
+        }
+        .added-promotion-codes {
+            @include form-section();
+            width: 100%;
+            margin-top: $margin * 2;
+            margin-bottom: 0;
+            padding-bottom: $margin * 2;
+            table {
+                width: auto;
+                tr {
+                    + tr .promotion-code-title {
+                        padding-top: $standardSpacing;
+                    }
+                }
+            }
+        }
+    }
+}

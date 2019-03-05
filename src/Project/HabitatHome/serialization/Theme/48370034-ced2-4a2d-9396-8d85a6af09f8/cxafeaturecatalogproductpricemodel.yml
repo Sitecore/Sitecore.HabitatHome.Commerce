@@ -1,0 +1,35 @@
+﻿---
+ID: "ec993d9f-6379-45e7-9768-239d4987dc22"
+Parent: "48370034-ced2-4a2d-9396-8d85a6af09f8"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/Catalog/cxafeaturecatalogproductpricemodel
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/EC993D9F637945E79768239D4987DC22.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "a28aab1c-76d4-4572-8693-9091b1d4dd37"
+  Value: 77u/Ly8gLS0tLS0gUHJpY2UgSW5mb3JtYXRpb24gVmlldyBNb2RlbCAtLS0tLQ0KdmFyIFByaWNlSW5mb1ZpZXdNb2RlbCA9IGZ1bmN0aW9uICgpIHsNCiAgICBzZWxmID0gdGhpczsNCg0KICAgIHNlbGYucHJpY2VCZWZvcmUgPSBrby5vYnNlcnZhYmxlKCk7DQogICAgc2VsZi5wcmljZU5vdyA9IGtvLm9ic2VydmFibGUoKTsNCiAgICBzZWxmLnNhdmluZ3NNZXNzYWdlID0ga28ub2JzZXJ2YWJsZSgpOw0KDQogICAgc2VsZi5zd2l0Y2hJbmZvID0gZnVuY3Rpb24gKHByaWNlQmVmb3JlLCBwcmljZU5vdywgaXNPblNhbGUsIHNhdmluZ3NNZXNzYWdlKSB7DQogICAgICAgIHNlbGYgPSB0aGlzOw0KICAgICAgICBzZWxmLnByaWNlTm93KHByaWNlTm93KTsNCiAgICAgICAgc2VsZi5wcmljZUJlZm9yZShwcmljZUJlZm9yZSk7DQogICAgICAgIHNlbGYuc2F2aW5nc01lc3NhZ2Uoc2F2aW5nc01lc3NhZ2UpOw0KDQogICAgICAgIC8vaXNPblNhbGUgaXMgc29tZXRpbWVzIGEgc3RyaW5nIGFuZCBzb21ldGltZXMgYSBib29sZWFuIC0gDQogICAgICAgIC8vaWYgKCFpc09uU2FsZSkgew0KICAgICAgICBpZiAoaXNPblNhbGUgPT09ICJmYWxzZSIgfHwgIWlzT25TYWxlKSB7DQogICAgICAgICAgICAkKCIucHJpY2Utbm93LWJlZm9yZSIpLmhpZGUoKTsNCiAgICAgICAgICAgICQoIi5wcmljZS1vbmx5Iikuc2hvdygpOw0KICAgICAgICB9DQogICAgICAgIGVsc2Ugew0KICAgICAgICAgICAgJCgiLnByaWNlLW5vdy1iZWZvcmUiKS5zaG93KCk7DQogICAgICAgICAgICAkKCIucHJpY2Utb25seSIpLmhpZGUoKTsNCiAgICAgICAgfQ0KICAgIH07DQp9DQo=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 821
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190305T182634Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
