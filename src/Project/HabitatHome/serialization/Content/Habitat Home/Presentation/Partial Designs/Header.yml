@@ -124,7 +124,7 @@ SharedFields:
           p:after="r[@uid='{94232655-12E6-457C-815B-7EC2EF599C72}']"
           s:ds="{D6625F50-9BBE-4F36-8FC1-4ACACCC3E325}"
           s:id="{04B9A10C-2092-4E29-BDA3-79571F5F19FC}"
-          s:par="GridParameters&amp;View Cart Link&amp;Checkout Link&amp;Hide Checkout Button"
+          s:par="GridParameters&amp;View Cart Link=%7B4A137C93-84C9-4232-B468-AE11590FC93B%7D&amp;Checkout Link=%7B0BAEC103-B372-44E9-9199-F30D4A40A3ED%7D&amp;Hide Checkout Button"
           s:ph="/header/container-1/container-2/column-2-3/container-5" />
         <r
           uid="{FC490707-808A-4454-9D96-6D9EEC423E56}"
