@@ -1,0 +1,26 @@
+﻿---
+ID: "9241219a-8f66-4662-aefe-7bb19fb29b6d"
+Parent: "17a81478-c700-40d1-838d-b39c2081758d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Catalog/Commerce Category
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/barrels.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {F570E8B5-163F-4DE0-A28E-C27EB798AC4E}
+    {DDA02EB6-5CB5-4AB8-B609-0F11835F4579}
+    {4C4FD207-A9F7-443D-B32A-50AA33523661}
+    {2B249AA3-A7BE-4A0D-A34A-8947B0DDE6F8}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190306T163927Z

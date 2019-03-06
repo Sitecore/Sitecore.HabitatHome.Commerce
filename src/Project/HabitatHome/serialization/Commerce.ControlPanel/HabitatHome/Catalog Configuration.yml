@@ -25,6 +25,10 @@ SharedFields:
 - ID: "fc9c3c29-7a69-4088-8c89-22fb3d493a9a"
   Hint: GiftCardProductId
   Value: 
+- ID: "fdd0d6ae-bccd-4cd9-a078-3103d720d2e7"
+  Hint: Use Direct Navigation
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Fields:
