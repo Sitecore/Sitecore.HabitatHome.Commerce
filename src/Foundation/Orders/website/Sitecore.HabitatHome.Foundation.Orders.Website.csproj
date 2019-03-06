@@ -74,8 +74,8 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.12" />
+        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.30" />
         <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
         <PackageReference Include="Sitecore.XConnect.Client.Configuration" Version="2.0.0-*" />
         <PackageReference Include="Sitecore.XConnect.Client" Version="2.0.0-*" />

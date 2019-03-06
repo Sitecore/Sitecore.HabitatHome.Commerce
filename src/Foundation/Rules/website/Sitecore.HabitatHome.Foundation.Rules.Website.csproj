@@ -70,10 +70,10 @@
       <ItemGroup>
         <PackageReference Include="Sitecore.Analytics" Version="12.0.0-*" />
         <PackageReference Include="Sitecore.Analytics.Model" Version="12.0.0-*" />
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.12" />
         <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
         <PackageReference Include="Sitecore.XConnect" Version="2.0.0-*" />
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.162">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
       </ItemGroup>

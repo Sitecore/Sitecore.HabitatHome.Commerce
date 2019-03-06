@@ -62,12 +62,12 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.12" />
         <PackageReference Include="Sitecore.Kernel" Version="12.0.0-*" />
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.162">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.0.162">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
       </ItemGroup>
@@ -97,7 +97,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Commerce\Foundation.WishLists.config" />
+    <Content Include="App_Config\Include\Foundation\Commerce\Foundation.WishLists.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
