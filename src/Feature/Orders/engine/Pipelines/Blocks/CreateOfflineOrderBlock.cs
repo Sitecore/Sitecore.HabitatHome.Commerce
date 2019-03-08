@@ -280,12 +280,12 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Pipelines.Blocks
               {
                 {
                   "GrandTotal",
-                  Convert.ToDouble(order.Totals.GrandTotal.Amount)
+                  Convert.ToDouble(order.Totals.GrandTotal.Amount, System.Globalization.CultureInfo.InvariantCulture)
                 }
               };
 
             createOrderBlock._telemetryClient.TrackEvent("OrderCreated", null, dictionary);
-            int orderTotal = Convert.ToInt32(Math.Round(order.Totals.GrandTotal.Amount, 0));
+            int orderTotal = Convert.ToInt32(Math.Round(order.Totals.GrandTotal.Amount, 0), System.Globalization.CultureInfo.InvariantCulture);
 
             if (context.GetPolicy<PerformancePolicy>().WriteCounters)
             {

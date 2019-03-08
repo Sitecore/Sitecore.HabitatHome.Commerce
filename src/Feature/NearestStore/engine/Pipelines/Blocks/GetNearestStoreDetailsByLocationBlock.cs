@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Device.Location;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Inventory;
 using Sitecore.Framework.Pipelines;
@@ -25,6 +26,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
         public override async Task<List<NearestStoreLocation>> Run(GetNearestStoreDetailsByLocationArgument locationInfo, CommercePipelineExecutionContext context)
         {
+            List<NearestStoreLocation> stores = new List<NearestStoreLocation>();
             List<InventorySet> inventorySets = new List<InventorySet>();
 
             GetNearestStoreDetailsByLocationBlock getNearestStoreDetailsByLocationBlock = this;
@@ -44,29 +46,37 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                     }));
             }
 
-            var storeComponents = inventorySets.Select(x => x.GetComponent<StoreDetailsComponent>());
+            if (inventorySets.Any())
+            {
+                var storeComponents = inventorySets.Select(x => x.GetComponent<StoreDetailsComponent>());
 
-            storeComponents = storeComponents.Where(x => x.Lat != null).ToList();
+                storeComponents = storeComponents.Where(x => x.Lat != null).ToList();
 
-            List<Locations> locations = new List<Locations>();
-            locations.AddRange(storeComponents.Select(x => x != null ? new Locations() { City = x.City, Latitude = Convert.ToDouble(x.Lat), Longitude = Convert.ToDouble(x.Long) } : new Locations()));
+                List<Locations> locations = new List<Locations>();
+                locations.AddRange(storeComponents.Select(x => x != null ? new Locations() { City = x.City, Latitude = Convert.ToDouble(x.Lat, System.Globalization.CultureInfo.InvariantCulture), Longitude = Convert.ToDouble(x.Long, System.Globalization.CultureInfo.InvariantCulture) } : new Locations()));
 
-            var coord = new GeoCoordinate(locationInfo.Latitude, locationInfo.Longitude);
-
-
-            var nearestStoresinOrder = locations.Select(x => new GeoCoordinate(x.Latitude, x.Longitude))
-                                   .OrderBy(x => x.GetDistanceTo(coord)).Select(z => new Locations { Distance = z.GetDistanceTo(coord), Latitude = z.Latitude, Longitude = z.Longitude }).ToList();
+                var coord = new GeoCoordinate(locationInfo.Latitude, locationInfo.Longitude);
 
 
-            List<NearestStoreLocation> stores = new List<NearestStoreLocation>();
+                var nearestStoresinOrder = locations.Select(x => new GeoCoordinate(x.Latitude, x.Longitude))
+                                       .OrderBy(x => x.GetDistanceTo(coord)).Select(z => new Locations { Distance = z.GetDistanceTo(coord), Latitude = z.Latitude, Longitude = z.Longitude }).ToList();
+                
+                context.Logger.LogInformation("GetNearestStoreDetailsByLocationBlock: nearestStores found: " + nearestStoresinOrder.Count());
 
-
-            stores.AddRange(nearestStoresinOrder.Select(x => new NearestStoreLocation() { Distance = x.Distance, InventoryStoreId = GetStoreId(x.Latitude, x.Longitude, inventorySets),
-                Address = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Address,
-                Longitude = x.Longitude,
-                Latitude = x.Latitude, Name = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Name ,
-                City = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().City , Zip = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().ZipCode, StateCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().StateCode, CountryCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().CountryCode
-            }));
+                stores.AddRange(nearestStoresinOrder.Select(x => new NearestStoreLocation()
+                {
+                    Distance = x.Distance,
+                    InventoryStoreId = GetStoreId(x.Latitude, x.Longitude, inventorySets),
+                    Address = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Address,
+                    Longitude = x.Longitude,
+                    Latitude = x.Latitude,
+                    Name = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().Name,
+                    City = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().City,
+                    Zip = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().ZipCode,
+                    StateCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().StateCode,
+                    CountryCode = GetStoreDetails(x.Latitude, x.Longitude, inventorySets).GetComponent<StoreDetailsComponent>().CountryCode
+                }));
+            }
 
             return stores;
         }
