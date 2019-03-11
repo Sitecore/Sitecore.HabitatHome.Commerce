@@ -1,7 +1,0 @@
-@import "../../mixins/index";
-.component.link {
-    padding: 0;
-    a {
-        @include link();
-    }
-}
