@@ -17,12 +17,7 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
-.cxa-productlistitemsonpage-component,
-.cxa-productlistitemsperpage-component {
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-productlistitemsonpage-component .productlist-header-section,
   .cxa-productlistitemsperpage-component .productlist-header-section {
     -webkit-box-pack: end !important;
@@ -36,16 +31,10 @@
   position: relative;
 }
 
-.cxa-productlistitemsonpage-component .results-container span,
-.cxa-productlistitemsperpage-component .results-container span {
-  color: #000 !important;
-}
-
 .cxa-productlistitemsonpage-component .results-container:after,
 .cxa-productlistitemsperpage-component .results-container:after {
   content: "\f078";
   font-family: FontAwesome;
-  color: #000;
   position: absolute;
   right: 10px;
   top: 50%;

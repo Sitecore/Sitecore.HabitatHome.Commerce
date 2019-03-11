@@ -105,7 +105,7 @@
   margin: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list ul, .component.cxa-promoted-products-component .product-list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -247,7 +247,7 @@
   margin-left: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list .product-info, .component.cxa-promoted-products-component .product-list .product-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -634,7 +634,7 @@
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -643,7 +643,7 @@
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1024px) {
   .component.cxa-promoted-products-component .product-list > ul > li {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -651,7 +651,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-promoted-products-component .product-list > ul > li {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;

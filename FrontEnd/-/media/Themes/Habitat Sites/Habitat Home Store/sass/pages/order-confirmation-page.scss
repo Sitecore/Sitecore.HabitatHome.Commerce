@@ -1,4 +1,4 @@
-@import '../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../abstracts/_mixins.scss';
 
 .order-confirmation-page {
     font-size: 16px;
@@ -14,13 +14,6 @@
             font-size: 32px
         }
     }
-
-    .article-content {
-        .component-content {
-            padding: 0;
-        }
-    }
-
     .order-confirmation-component {
         padding: 100px 15% 100px;
 

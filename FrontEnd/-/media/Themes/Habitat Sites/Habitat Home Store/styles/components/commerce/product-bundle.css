@@ -18,7 +18,6 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 .cxa-productbundle-component {
-  padding: 20px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -125,10 +124,6 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.cxa-productbundle-component .bundle-group .bundle-group-body-container .group-variant-section .group-variant-selection + .group-variant-selection {
-  margin-top: 20px;
 }
 
 .cxa-productbundle-component .bundle-group .bundle-group-body-container .group-variant-section .group-variant-selection .group-variant-label {

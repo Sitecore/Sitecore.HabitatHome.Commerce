@@ -21,7 +21,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-productlistsorting-component .productlist-header-section {
     text-align: right;
   }

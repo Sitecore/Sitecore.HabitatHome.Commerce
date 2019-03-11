@@ -18,6 +18,7 @@
 /*------------------------ Page Layouts -------------------------------*/
 .component.cxa-checkoutreview-component {
   font-size: 14px;
+  padding: 2em;
 }
 
 .component.cxa-checkoutreview-component .component-content {

@@ -88,7 +88,7 @@
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .contact-info-section .contact-info-form {
     width: 100%;
   }
@@ -570,13 +570,13 @@
   margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance > * {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-method {
     width: 100%;
   }
@@ -590,7 +590,7 @@
   margin-right: 0.5em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-method-id-textbox {
     width: 100%;
   }
@@ -611,13 +611,13 @@
   margin-right: 0.5em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment-amount-textbox {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -629,7 +629,7 @@
   margin-right: 0.5em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment button {
     width: 50%;
   }
@@ -1107,7 +1107,7 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .billing-summary {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1161,7 +1161,7 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component {
     padding: 0 2em;
   }
@@ -2378,7 +2378,7 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
   font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2402,7 +2402,7 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
   align-items: flex-end;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2419,7 +2419,7 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment button {
     margin-right: 0.25em;
     height: auto;

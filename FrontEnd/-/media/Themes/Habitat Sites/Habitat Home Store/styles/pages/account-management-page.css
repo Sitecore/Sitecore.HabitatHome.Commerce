@@ -16,34 +16,6 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
-.account-management-page {
-  /*
-    #content {
-        .component.image.file-type-icon-media-link {
-            margin-top: $margin;
-            display: inline-block;
-            max-width: 72px;
-            img {
-                border-radius: 100px;
-            }
-        }
-        .component.link {
-            padding: 0;
-        }
-        .component.link a {
-            width: 100%;
-            float: left;
-            color: $primary-text-color;
-            border: none;
-            &:after {
-                float: right;
-                margin-left: auto;
-                @include sc-icon($scxa-forward);
-            }
-        }
-    }*/
-}
-
 .account-management-page .account-summary {
   padding-bottom: 5em;
 }
@@ -71,20 +43,9 @@
   border-bottom: 0;
 }
 
-.account-management-page .account-summary .logout a:hover,
-.account-management-page .account-summary .link-list > .component-content li a:hover {
-  border-bottom: 0;
-  color: #141919;
-}
-
 .account-management-page .account-summary .logout a:before,
 .account-management-page .account-summary .link-list > .component-content li a:before {
   content: '';
-}
-
-.account-management-page .account-summary .logout.active a,
-.account-management-page .account-summary .link-list > .component-content li.active a {
-  color: #0e909f;
 }
 
 .account-management-page .account-summary .rich-text {

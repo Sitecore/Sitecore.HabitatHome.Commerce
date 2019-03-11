@@ -24,20 +24,9 @@
                 font-weight: bold;
                 border-bottom: 0;
         
-                &:hover {
-                    border-bottom: 0;
-                    color: $dark;
-                }
-        
                 &:before {
                     content: '';
                 }                
-            }
-   
-            &.active {
-                a {
-                    color: $primary-color;
-                }
             }
         } 
 
@@ -65,34 +54,5 @@
         .edit-profile-text{
             display: none;
         }
-        .edit-profile-button {            
-            
-        }
-    }
-
-    /*
-    #content {
-        .component.image.file-type-icon-media-link {
-            margin-top: $margin;
-            display: inline-block;
-            max-width: 72px;
-            img {
-                border-radius: 100px;
-            }
-        }
-        .component.link {
-            padding: 0;
-        }
-        .component.link a {
-            width: 100%;
-            float: left;
-            color: $primary-text-color;
-            border: none;
-            &:after {
-                float: right;
-                margin-left: auto;
-                @include sc-icon($scxa-forward);
-            }
-        }
-    }*/
+    }  
 }

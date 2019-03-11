@@ -7,7 +7,10 @@ DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/A5BEEA20DC2045B4B894E0CA5C2E4726.ashx?h=16&thn=1&w=16"
+  Value: Applications/16x16/folder.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 Languages:
 - Language: en
   Versions:

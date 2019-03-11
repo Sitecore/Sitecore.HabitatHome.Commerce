@@ -635,7 +635,7 @@
   text-transform: capitalize;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .shipbymail-section > * {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -646,7 +646,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component {
     padding: 0 2em;
   }
@@ -699,14 +699,14 @@
   color: #383c41;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .delivery-form {
     width: 100%;
     margin: 0 0 30px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .addrss-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -744,14 +744,14 @@
   font-weight: 100;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .delivery-option-item .delivery-item-header .ship-option-select > * {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .delivery-option-item .delivery-item-content .address-form > div {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -789,7 +789,7 @@
   flex-basis: 66%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .shipall-section > div {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -814,7 +814,7 @@
   padding-left: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutdelivery-component .shipall-section .shipall-options {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;

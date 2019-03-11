@@ -43,7 +43,7 @@
   padding: 0 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-details-page .row.column-splitter > div.product-detail-image-col,
   .product-details-page .row.column-splitter > div.product-detail-info-col {
     width: auto;
@@ -76,13 +76,13 @@
   border-radius: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-details-page .cxa-addtocart-component form {
     display: block;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-details-page .cxa-addtocart-component .add-to-cart-button {
     margin: 0 auto;
   }
@@ -92,13 +92,13 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-details-page .cxa-addtocart-component .component-content .add-to-cart-qty label {
     margin: 40px auto 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-details-page .cxa-addtocart-component .quantity-input {
     margin: 0 auto;
   }

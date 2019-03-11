@@ -1,5 +1,5 @@
 ﻿---
-ID: "ba7a491e-007e-459d-a24c-e371743dd27a"
+ID: "993c6a9b-952f-49d5-bf6f-69c3788e9308"
 Parent: "695aed50-d843-4352-be84-1be12abc3914"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/base/_typography
@@ -7,10 +7,10 @@ DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/5183367FFAF6467A8C6F343A519E7B30.ashx?h=16&thn=1&w=16"
+  Value: "-/media/993C6A9B952F49D5BF6F69C3788E9308.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "a88d271e-66de-44da-b406-77a72acbef97"
+  BlobID: "879c906e-cda3-46f1-be72-23e62b5f2349"
   Value: QGltcG9ydCAnLi4vZnVuY3Rpb25zL2luZGV4JzsNCiRicm93c2VyLWNvbnRleHQ6IDE0Ow0KJGZvbnQtZmFtaWx5OiAiT3BlbiBTYW5zIixzYW5zLXNlcmlmOw0KJGhlYWRlci1mb250LWZhbWlseTogIk9wZW4gU2FucyIsc2Fucy1zZXJpZjsNCiRpY29uLWZvbnQtZmFtaWx5OiAiR2x5cGhpY29ucyBIYWxmbGluZ3MiOw0KJGZvbnQtc2l6ZS1iYXNlOiAgICAgICAgICAxNHB4ICFkZWZhdWx0Ow0KJGZvbnQtc2l6ZS14bGFyZ2U6ICAgICAgICAgY2VpbCgoJGZvbnQtc2l6ZS1iYXNlICogMS40MikpICFkZWZhdWx0OyAvLyB+MThweA0KJGZvbnQtc2l6ZS1sYXJnZTogICAgICAgICBjZWlsKCgkZm9udC1zaXplLWJhc2UgKiAxLjI1KSkgIWRlZmF1bHQ7IC8vIH4xOHB4DQokZm9udC1zaXplLW1lZGl1bTogICAgICAgIGNlaWwoKCRmb250LXNpemUtYmFzZSAqIDEuMTQpKSAhZGVmYXVsdDsgLy8gfjE2cHgNCiRmb250LXNpemUtc21hbGw6ICAgICAgICAgY2VpbCgoJGZvbnQtc2l6ZS1iYXNlICogMC44NSkpICFkZWZhdWx0OyAvLyB+MTJweA0KJGZvbnQtc2l6ZS14c21hbGw6ICAgICAgICBjZWlsKCgkZm9udC1zaXplLWJhc2UgKiAwLjcxKSkgIWRlZmF1bHQ7IC8vIH4xMHB4DQokZm9udC1zaXplLXh4c21hbGw6ICAgICAgICBjZWlsKCgkZm9udC1zaXplLWJhc2UgKiAwLjU3KSkgIWRlZmF1bHQ7IC8vIH44cHgNCg0KJGZvbnQtc2l6ZS1oMTogICAgICAgICAgICBmbG9vcigoJGZvbnQtc2l6ZS1iYXNlICogMi42KSkgIWRlZmF1bHQ7IC8vIH4zNnB4DQokZm9udC1zaXplLWgyOiAgICAgICAgICAgIGZsb29yKCgkZm9udC1zaXplLWJhc2UgKiAyLjE1KSkgIWRlZmF1bHQ7IC8vIH4zMHB4DQokZm9udC1zaXplLWgzOiAgICAgICAgICAgIGNlaWwoKCRmb250LXNpemUtYmFzZSAqIDEuNykpICFkZWZhdWx0OyAvLyB+MjRweA0KJGZvbnQtc2l6ZS1oNDogICAgICAgICAgICBjZWlsKCgkZm9udC1zaXplLWJhc2UgKiAxLjI1KSkgIWRlZmF1bHQ7IC8vIH4xOHB4DQokZm9udC1zaXplLWg1OiAgICAgICAgICAgICRmb250LXNpemUtYmFzZSAhZGVmYXVsdDsNCiRmb250LXNpemUtaDY6ICAgICAgICAgICAgY2VpbCgoJGZvbnQtc2l6ZS1iYXNlICogMC44NSkpICFkZWZhdWx0OyAvLyB+MTJweA0KDQokZm9udC1mYW1pbHk6ICJPcGVuIFNhbnMiLHNhbnMtc2VyaWY7DQokaGVhZGVyLWZvbnQtZmFtaWx5OiAiT3BlbiBTYW5zIixzYW5zLXNlcmlmOw0KJGljb24tZm9udC1mYW1pbHk6ICJTQ0NYQUlDT05TIjsNCg==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
@@ -22,10 +22,43 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160221Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171120T100932Z
+      Value: 20190311T160221Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160222Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160222Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

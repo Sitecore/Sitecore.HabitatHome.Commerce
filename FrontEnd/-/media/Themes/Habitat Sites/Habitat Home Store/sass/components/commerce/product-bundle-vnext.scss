@@ -1,7 +1,7 @@
 @import '../../index';
 
 .cxa-productbundle-vnext-component {
-    padding: $standardSpacing;
+    //padding: $standardSpacing;
     background: $light;
     border-radius: $border-radius;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@
                 flex-direction: column;
                 .group-variant-selection {
                     + .group-variant-selection {
-                        margin-top: $standardSpacing;
+                        //margin-top: $standardSpacing;
                     }
                     .group-variant-label {
                         width: 100%;

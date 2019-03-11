@@ -39,7 +39,7 @@
   margin-bottom: 0.5em;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1024px) {
   .cxa-productinformation-component .component-content .product-name h1 {
     font-size: 52px;
   }

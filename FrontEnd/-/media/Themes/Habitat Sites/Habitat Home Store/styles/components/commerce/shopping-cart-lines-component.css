@@ -18,7 +18,7 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-shoppingcartlines-component {
     padding: 0 2em;
   }
@@ -329,7 +329,7 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   border-bottom: 1px solid #e2e3e5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-shoppingcartlines-component th {
     display: none;
   }

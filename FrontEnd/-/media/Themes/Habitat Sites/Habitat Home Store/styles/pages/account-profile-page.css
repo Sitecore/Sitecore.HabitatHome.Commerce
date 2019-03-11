@@ -22,7 +22,7 @@
   bottom: 22px;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .account-profile-page .back-to-account-management {
     position: relative;
     right: 0;
@@ -30,14 +30,14 @@
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .account-profile-page .divider {
     opacity: 0;
     height: 0;
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .account-profile-page .component.link.position-right {
     display: -webkit-box;
     display: -ms-flexbox;

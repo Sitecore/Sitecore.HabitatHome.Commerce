@@ -87,7 +87,7 @@
   margin: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -229,7 +229,7 @@
   margin-left: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list .product-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

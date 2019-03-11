@@ -1,6 +1,6 @@
 @import '../../index';
 @import './product-list-component';
-@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../../abstracts/_mixins.scss';
 
 .component.cxa-promoted-products-component {
     @extend .component.cxa-productlist-component;

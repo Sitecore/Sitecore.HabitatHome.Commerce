@@ -39,7 +39,7 @@
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .product-items-block .row [class*='col-'] {
     width: 100% !important;
     float: none !important;
