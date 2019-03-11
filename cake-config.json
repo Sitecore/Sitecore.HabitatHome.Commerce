@@ -1,9 +1,9 @@
 {
-    "WebsiteRoot": "C:\\inetpub\\wwwroot\\habitathome.dev.local",
+    "WebsiteRoot": "E:\\inetpub\\wwwroot\\habitathome.dev.local",
     "InstanceUrl": "https://habitathome.dev.local/",
     "SolutionName": "HabitatHome.Commerce.sln",
-    "ProjectFolder": "C:\\Projects\\Sitecore.HabitatHome.Commerce",
-    "BuildConfiguration": "Debug",
+    "ProjectFolder": "E:\\Projects\\Sitecore.HabitatHome.Commerce",
+    "BuildConfiguration": "Local",
     "BuildToolVersions": "VS2017",
     "RunCleanBuilds": false,
     "MessageStatisticsApiKey": "97CC4FC13A814081BF6961A3E2128C5B"

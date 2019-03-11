@@ -11,13 +11,36 @@
     <Configurations>Debug;Release;Local</Configurations>
   </PropertyGroup>
 
-  <ItemGroup>    
-    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="3.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.*" />
-  </ItemGroup>
+  <Choose>
+    <When Condition=" '$(Configuration)'=='Local' ">
+      <ItemGroup>
+        <Reference Include="Sitecore.Commerce.Plugin.Coupons">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Coupons.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Customers">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Customers.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Fulfillment">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Fulfillment.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.GiftCards">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.GiftCards.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Inventory">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Inventory.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.*" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>NU1603</NoWarn>

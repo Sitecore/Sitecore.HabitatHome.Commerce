@@ -27,3 +27,5 @@ lib/*
 publishTemp/*
 /.github
 *.log.*.txt
+tools/*
+!tools/packages.config

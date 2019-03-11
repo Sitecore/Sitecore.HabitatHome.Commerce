@@ -32,6 +32,67 @@
         <ProjectReference Include="..\..\..\Foundation\Rules\engine\Sitecore.HabitatHome.Foundation.Rules.Engine.csproj" />
     </ItemGroup>
 
+ <Choose>
+    <When Condition=" '$(Configuration)'=='Local' ">
+      <ItemGroup>
+        <Reference Include="Sitecore.Commerce.Plugin.CacheWatcher">
+          <HintPath>..\..\..\..\lib\SSitecore.Commerce.Plugin.CacheWatcher.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Composer">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Composer.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Journaling">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Journaling.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.FileSystem">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.FileSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Search.Azure">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Search.Azure.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Search.Solr">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Search.Solr.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Plugin.Orders.DelayedAvailability.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.FaultInjection">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.FaultInjection.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.Content">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.Content.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.Workflow">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.Workflow.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.Tax">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.Tax.dll</HintPath>
+        </Reference>
+        <Reference Include="Sitecore.Commerce.Provider.SQL">
+          <HintPath>..\..\..\..\lib\Sitecore.Commerce.Provider.SQL.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="3.0.*" />
+
+        <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="3.0.*" />
+
+        <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="3.0.*" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
     <ItemGroup>
       <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
 
@@ -42,24 +103,9 @@
       <PackageReference Include="Serilog.Settings.Configuration" Version="3.0.*" />
       <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.*" />
       <PackageReference Include="Serilog.Sinks.File" Version="4.0.*" />
-      <PackageReference Include="Serilog.Sinks.Async" Version="1.3.*" />
-
-      <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="3.0.*" />
-
-      <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="3.0.*" />
-
-      <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="3.0.*" />
-      <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="3.0.*" />
-        
+      <PackageReference Include="Serilog.Sinks.Async" Version="1.3.*" />        
     </ItemGroup>
+
     <ItemGroup>
         <Folder Include="wwwroot\data\Catalogs\" />
     </ItemGroup>

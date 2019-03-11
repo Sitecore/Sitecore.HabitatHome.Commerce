@@ -72,10 +72,10 @@ Task("Clean").Does(() => {
 });
 
 Task("Copy-Sitecore-Lib").Does(() => {
-    cakeConsole.WriteLine("Copying Sitecore Commerce XA Libraries");
-    var commerceLibraries = GetFiles($"{configuration.SitecoreLibrariesPath}\\**\\Sitecore.Commerce.XA.*").Select(x => x.FullPath).ToList();
-    CreateFolderIfNotExist(configuration.SitecoreLibModuleCommerce);
-    CopyFiles(commerceLibraries, configuration.SitecoreLibModuleCommerce, preserveFolderStructure: true);
+    cakeConsole.WriteLine("Copying Sitecore Libraries");
+    var commerceLibraries = GetFiles($"{configuration.SitecoreLibrariesPath}\\**\\Sitecore.*").Select(x => x.FullPath).ToList();
+    CreateFolderIfNotExist(configuration.SitecoreLib);
+    CopyFiles(commerceLibraries, configuration.SitecoreLib, preserveFolderStructure: true);
 });
 
 Task("Publish-Website-Projects")

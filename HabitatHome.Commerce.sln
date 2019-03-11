@@ -6,12 +6,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		build.cake = build.cake
+		cake-config.json = cake-config.json
 		deploy-commerce-engine.ps1 = deploy-commerce-engine.ps1
-		gulp-config.js = gulp-config.js
-		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
-		package.json = package.json
-		publishsettings.targets = publishsettings.targets
 		README.md = README.md
 		src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.Website.DevSettings.config = src\Project\HabitatHome\website\App_Config\Include\Project\z.HabitatHome.Commerce.Website.DevSettings.config
 	EndProjectSection
