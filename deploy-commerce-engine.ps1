@@ -5,7 +5,7 @@ Param(
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish,
-    [string]$webRoot = "E:\inetpub\wwwroot",
+    [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$BizFxPathName = "SitecoreBizFx_habitathome.dev.local",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
