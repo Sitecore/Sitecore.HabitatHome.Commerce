@@ -1,33 +1,13 @@
 ﻿---
-ID: "e96bc273-f94f-4694-9ebd-0efec82fcddf"
-Parent: "25368f73-e153-4bd9-9cdc-943e882045d8"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Available Renderings/Page Content
+ID: "50e6b7a6-2322-490d-ac29-502a1f81682e"
+Parent: "bb8c3977-325c-4a10-b64e-c0cb60ded7d4"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/data-protection/Data"
 DB: master
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
-  Type: TreelistEx
-  Value: |
-    {99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}
-    {8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}
-    {2E991AA4-4B08-43D2-AD2B-17C11E69A499}
-    {390954AF-B5B3-4A61-928E-0FF2E1E78F94}
-    {6DDA07A9-18D3-47A0-AB74-DF54956DD5F1}
-    {51C13F03-8364-4F61-B860-2EC6CA7439B3}
-    {F0DE3E5B-F5E0-4299-B3A2-59C234B985C3}
-    {87182F78-4399-4896-8D59-9D6A45282F8A}
-    {DCEE78E1-1843-4456-A13A-F10A12191630}
-    {76891D2D-6653-483F-AE86-A77FE6E96AC6}
-    {809FDBFF-892F-40F5-BD5D-97A021C711C1}
-    {EB2E4FFD-2761-4653-B052-26A64D385227}
-    {E441A637-F081-4FB7-8780-04DFE9419FEE}
-    {6DCB5CDF-9E06-40F8-9068-DBCACEB8DA22}
-    {162AB463-0CE1-4295-8F7E-2E2E969984ED}
-    {36C5441C-3AE0-40E8-993A-183A8BF14576}
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{CA286DD9-63AC-4509-AC4D-DA339B936AFA}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 Languages:
 - Language: en
   Versions:
@@ -35,11 +15,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171027T191649Z
+      Value: 20171212T120102Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\admin
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -63,7 +43,7 @@ Languages:
       Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171027T191649Z
+      Value: 20171212T120102Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
@@ -73,7 +53,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\admin
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
@@ -88,3 +68,18 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: データ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180321T104454Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

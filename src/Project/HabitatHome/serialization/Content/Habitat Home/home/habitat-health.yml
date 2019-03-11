@@ -914,6 +914,9 @@ Languages:
             <r
               uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
               s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
+            <r
+              uid="{5B548513-9243-4460-93B2-B58566281362}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7BD5E01C6B-D0E9-49C4-9D61-97687DC5DE12%7D%22%20%2F%3E&amp;Styles=%7B45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B%7D%7C%7BF5947911-00C7-4F00-84F4-3D748376BB32%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=19" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
