@@ -229,12 +229,12 @@ $promoted-color: #f6a623;
           border-color: #B1B3AC;
           opacity: 0.8;
         }
-    }
+    } 
 }
 
 .component.cxa-productlist-component {
     .product-list {
-        &>ul {
+        &>ul { 
             >li {
                 min-height: 387px;
                 .product-summary {

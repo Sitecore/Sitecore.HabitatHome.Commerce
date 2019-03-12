@@ -43,7 +43,7 @@ SharedFields:
           p:after="r[@uid='{7A80968F-05F3-4C28-A87D-6BB794F3F9B6}']"
           s:ds="local:/Data/Order Confirmation - Note Message"
           s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
-          s:par="FieldNames=%7b7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7d"
+          s:par="FieldNames=%7B7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7D&amp;GridParameters&amp;Styles=%7B28C65397-7759-49B0-B39F-AFBC6F5D508A%7D"
           s:ph="/main/container-1" />
         <r
           uid="{DF95A546-2F2C-45DB-B1E2-43F3668E3458}"

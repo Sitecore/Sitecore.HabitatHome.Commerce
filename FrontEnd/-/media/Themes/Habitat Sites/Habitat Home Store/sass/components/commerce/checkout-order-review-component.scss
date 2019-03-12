@@ -3,6 +3,7 @@
 .component.cxa-checkoutreview-component {
     font-size: 14px;
     padding: 2em;
+    margin-bottom: 15px;
 
     .component-content {
         @include vertical-form-layout();

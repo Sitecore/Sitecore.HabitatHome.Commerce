@@ -2,6 +2,7 @@
 @import '../../abstracts/_mixins.scss';
 
 .component.cxa-checkoutdelivery-component {
+    margin-bottom: 15px;
     .buttons-row {
         @include form-section();
         @include row-of-elements-wide-apart(false, $center);

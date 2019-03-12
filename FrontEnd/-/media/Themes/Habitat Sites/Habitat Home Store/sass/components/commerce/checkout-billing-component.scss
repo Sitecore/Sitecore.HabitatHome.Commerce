@@ -1,7 +1,9 @@
 @import '../../index';
 @import '../../abstracts/_mixins.scss';
 
-.component.cxa-checkoutbilling-component {
+.component.cxa-checkoutbilling-component {    
+    margin-bottom: 15px;
+
     .component-content {
         @include column-of-elements-wide-apart(false, $top-or-left);
         >* {
@@ -11,7 +13,6 @@
     .contact-info-section {
         @include form-section();
         .contact-info-form {
-            //@include horizontal-form-layout(2);
             display: flex; 
             flex-flow: column;
             flex-direction: column;
@@ -70,9 +71,7 @@
     }
     .apply-gift-card-section {
         @include form-section();
-        //@include column-of-elements-wide-apart(false, $top-or-left);
         .apply-gif-card-content {
-            //@include vertical-form-layout();
             button {
                 margin: 0;
             }

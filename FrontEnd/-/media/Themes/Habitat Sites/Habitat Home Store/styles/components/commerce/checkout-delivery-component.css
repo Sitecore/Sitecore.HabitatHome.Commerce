@@ -17,6 +17,10 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
+.component.cxa-checkoutdelivery-component {
+  margin-bottom: 15px;
+}
+
 .component.cxa-checkoutdelivery-component .buttons-row {
   width: 100%;
   margin-top: 15px;
