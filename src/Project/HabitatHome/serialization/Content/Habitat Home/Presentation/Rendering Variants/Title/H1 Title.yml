@@ -1,8 +1,8 @@
 ﻿---
-ID: "5029756d-5d2f-4c09-89f4-ba8bafa680ab"
+ID: "d49d80a9-a728-49b4-9f34-8455ef3b7a88"
 Parent: "14fdeda5-4e30-4230-9822-d095c7ffb866"
 Template: "fb3e3034-33f8-4ce8-be98-dd05010f4c22"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Title/Default
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Title/H1 Title
 DB: master
 SharedFields:
 - ID: "087c0553-9162-41f5-98d3-87eb0d80edbb"

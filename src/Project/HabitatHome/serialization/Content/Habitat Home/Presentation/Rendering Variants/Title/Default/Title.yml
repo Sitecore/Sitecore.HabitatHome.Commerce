@@ -1,6 +1,6 @@
 ﻿---
-ID: "037e0462-e94e-4426-acfe-914a84e0afc2"
-Parent: "d49d80a9-a728-49b4-9f34-8455ef3b7a88"
+ID: "16a0108a-22c1-4885-b200-fc0550b97637"
+Parent: "5029756d-5d2f-4c09-89f4-ba8bafa680ab"
 Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Title/Default/Title
 DB: master
@@ -8,6 +8,9 @@ SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"
   Hint: FieldName
   Value: Title
+- ID: "db805bdc-8eec-4238-b174-2427b6f1f077"
+  Hint: Tag
+  Value: "{18C8C889-C723-452A-970C-7CE4D41EE371}"
 - ID: "dcb05e5e-7151-4226-a3b0-108c5e2f05b5"
   Hint: IsLink
   Type: Checkbox

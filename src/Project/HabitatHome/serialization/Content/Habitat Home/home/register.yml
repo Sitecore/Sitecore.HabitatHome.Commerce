@@ -1,7 +1,7 @@
 ﻿---
 ID: "5c3f13dc-0069-47fc-97f6-f4fc1dc5d6b7"
 Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
-Template: "bd74a392-dacd-4c23-853a-d520762b33a1"
+Template: "67a3063b-3801-4c53-8762-acfa1cd75113"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/register
 DB: master
 SharedFields:
@@ -41,7 +41,7 @@ SharedFields:
           p:after="r[@uid='{B52CB16B-6400-4872-9C47-83411631A533}']"
           s:ds=""
           s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+          s:par="GridParameters&amp;FieldNames=%7BD49D80A9-A728-49B4-9F34-8455EF3B7A88%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1" />
         <r
           uid="{83954C0B-85D1-4EDE-8047-F2867453EF22}"
