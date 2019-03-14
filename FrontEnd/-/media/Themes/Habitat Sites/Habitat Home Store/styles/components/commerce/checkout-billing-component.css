@@ -1173,15 +1173,15 @@
 
 .component.cxa-checkoutbilling-component h4 {
   font-size: 24px;
-  color: #0e909f;
+  color: #1d8c96;
   padding-bottom: 1em;
-  border-bottom: 1px solid #e2e3e5;
+  border-bottom: 1px solid #d2d2d2;
   margin: 1em 0 0.5em;
   text-transform: capitalize;
 }
 
 .component.cxa-checkoutbilling-component label {
-  color: #141919 !important;
+  color: #000 !important;
 }
 
 .component.cxa-checkoutbilling-component input, .component.cxa-checkoutbilling-component select {
@@ -1636,8 +1636,8 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 }
 
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount .validate-payment-btn {
-  background-color: #0e909f;
-  color: white;
+  background-color: #1d8c96;
+  color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
@@ -2152,14 +2152,12 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance .payment-get-balance button {
-  background-color: white;
-  color: #141919;
+  background-color: #fff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   height: 34px;
   padding: 0 20px;
-  border: 1px solid #141919;
   margin: 0;
 }
 
@@ -2436,18 +2434,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
   }
 }
 
-.component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .apply-full-amount-btn {
-  background-color: white;
-  color: #141919;
-  border: 1px solid #141919;
-}
-
-.component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount .payment .gift-card-payment-btn {
-  background-color: #0e909f;
-  color: white;
-  border: 1px solid #0e909f;
-}
-
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .applied-gift-card-info > span:first-child {
   display: none;
 }
@@ -2590,14 +2576,14 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .buttons-row .previous-button {
-  background-color: white;
-  color: #141919;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .component.cxa-checkoutbilling-component .buttons-row .previous-button:before {
@@ -2607,8 +2593,8 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 }
 
 .component.cxa-checkoutbilling-component .buttons-row .to-confirm-button {
-  color: white;
-  background-color: #0e909f;
+  color: #fff;
+  background-color: #1d8c96;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

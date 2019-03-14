@@ -489,7 +489,6 @@
   text-transform: none;
   border: 1px solid #141919;
   color: #141919;
-  text-decoration: none;
 }
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:after, .component.cxa-promoted-products-component .product-list .product-info .product-category a:after {
@@ -503,7 +502,6 @@
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:hover, .component.cxa-promoted-products-component .product-list .product-info .product-category a:hover {
   color: #141919;
-  text-decoration: none;
 }
 
 .productlistsorting-component select {

@@ -43,11 +43,11 @@
         max-height: $control-large-height;
         min-height: $control-large-height;
         display: inline-block !important;
-        border: solid 2px $border-color;
+        //border: solid 2px $border-color;
     }
     button {
         @include secondary-button-line();
-        border: solid 2px $border-color;        
+        //border: solid 2px $border-color;        
     }
     input {
         order: 2;
