@@ -1,27 +1,29 @@
 ﻿---
-ID: "6690d370-ff90-4415-8921-4f93d8aa3864"
+ID: "69bda05c-4df5-41d2-92d1-248268ca0a46"
 Parent: "4444ea0a-226f-4247-aef3-4b1df40fd620"
 Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Title
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Title
 DB: master
 SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"
   Hint: FieldName
-  Value: Title
+  Value: __Display Name
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "field-title"
 - ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
   Hint: EnableRule
   Type: Rules
   Value: |
     <ruleset>
       <rule
-        uid="{D20E85C6-7837-480E-90A9-2A5FD93C8DFE}">
+        uid="{24DB3534-2B6A-4610-93C9-11FF46907F92}">
         <conditions>
           <condition
-            id="{61C016A2-5210-4F1D-A663-BDA18BE487F6}"
-            uid="78D8031B76E741F2BD7D2180DA43E372"
-            fieldname="Title"
-            operatorid="{A6AC5A6B-F409-48B0-ACE7-C3E8C5EC6406}"
-            value="$name" />
+            id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+            uid="298308A48A5D4CE7A63545D8ECFFCADC"
+            operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}"
+            value="Habitat_Master" />
         </conditions>
       </rule>
     </ruleset>
