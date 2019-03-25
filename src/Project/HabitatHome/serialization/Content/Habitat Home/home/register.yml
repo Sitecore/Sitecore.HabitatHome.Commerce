@@ -20,7 +20,7 @@ SharedFields:
   Value: 2800
 - ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
   Hint: Body Css Class
-  Value: "register-page"
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -30,31 +30,46 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{B52CB16B-6400-4872-9C47-83411631A533}"
+          uid="{33B9682F-A87A-4FDE-A4E3-31D518DB5FF6}"
           p:before="*"
+          s:ds="local:/Data/Register Promo"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B960FD30E-BD7B-4E17-920D-4D331117839C%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/main/sxa-content-container/container-1/container-1/column-2-1" />
+        <r
+          uid="{3810399B-CFD0-4FA5-994E-2A34F3B51643}"
+          p:after="r[@uid='{33B9682F-A87A-4FDE-A4E3-31D518DB5FF6}']"
           s:ds="{9966060E-4400-436F-9A2B-59DEE9AF88D8}"
           s:id="{9BC48EF9-7745-461F-AB14-2DBE277F012E}"
           s:par="GridParameters"
-          s:ph="/main/sxa-content-container/container-1/container-1/container-2" />
+          s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
         <r
-          uid="{A91FD2E7-189C-45D6-99F0-BA2F2F4572E1}"
-          p:after="r[@uid='{B52CB16B-6400-4872-9C47-83411631A533}']"
+          uid="{74D00E8F-08CE-4A7B-BB41-6AB64C26CEDD}"
+          p:after="r[@uid='{3810399B-CFD0-4FA5-994E-2A34F3B51643}']"
+          s:ds=""
+          s:id="{0534FEFB-9A67-457B-8AA8-3255BA39CB2F}"
+          s:par=""
+          s:ph="/main/sxa-content-container/container-1/container-1/column-1-1" />
+        <r
+          uid="{04FB28D9-4468-430B-A054-A919810AE058}"
+          p:after="r[@uid='{74D00E8F-08CE-4A7B-BB41-6AB64C26CEDD}']"
           s:ds=""
           s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
-          s:par="GridParameters&amp;FieldNames=%7BD49D80A9-A728-49B4-9F34-8455EF3B7A88%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/sxa-content-container/container-1/container-1" />
         <r
-          uid="{83954C0B-85D1-4EDE-8047-F2867453EF22}"
-          p:after="r[@uid='{A91FD2E7-189C-45D6-99F0-BA2F2F4572E1}']"
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters&amp;BackgroundImage&amp;Styles={0CC74E1D-658E-460C-8D9F-DB5C73E078FD}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          uid="{8FA6D8A4-90DC-4C4D-A1D9-E77EED57D2B6}"
+          p:after="r[@uid='{04FB28D9-4468-430B-A054-A919810AE058}']"
+          s:ds=""
+          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+          s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1=%7B6497A627-77A0-4E6D-8785-9FC1AAEE5D5C%7D&amp;Styles2=%7B39A47BCC-8205-42B5-B897-1048070FE5DB%7D&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=1"
           s:ph="/main/sxa-content-container/container-1/container-1" />
         <r
-          uid="{2A7EA3D0-C956-47D3-998D-7249AB6E7CA3}"
+          uid="{AE8B84AB-2874-4182-BC35-AA029B641627}"
           p:after="*[1=2]"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:par="GridParameters=%7B1E34DFC6-3B3F-4AC0-AC85-6B8F577C6587%7D%7C%7B0186BC56-3141-43D6-BDA0-B595C3A79BF0%7D&amp;BackgroundImage&amp;Styles=%7B09FB530A-31C0-4644-B3A4-A5DEBA744EDB%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="/main/sxa-content-container/container-1" />
       </d>
     </r>

@@ -21,6 +21,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "eb4450c2-135d-4105-a72e-1bab7659cf86"
+      Hint: Create Account Button Label
+      Value: Create account
 - Language: "ja-JP"
   Versions:
   - Version: 1
