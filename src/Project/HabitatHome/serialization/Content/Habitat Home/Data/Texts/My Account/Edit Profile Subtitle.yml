@@ -1,8 +1,8 @@
 ﻿---
-ID: "aed2cdf3-56e1-42dc-980a-a507ebe60dad"
-Parent: "4beeb5f2-88e2-42ae-a61a-9b8810aa5f58"
+ID: "597b5b8b-8df5-4680-938a-f602047c8d4b"
+Parent: "d17238b4-fe12-4f93-9257-184467208cbe"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/Data/Address Book Subtitle
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Texts/My Account/Edit Profile Subtitle
 DB: master
 Languages:
 - Language: en
@@ -11,11 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20180326T014959Z
+      Value: 20190325T155522Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
+        sitecore\Admin
     - ID: "b3635965-6786-457c-9dee-28de73c0a331"
       Hint: Text
-      Value: <h4>Address book</h4>
+      Value: <h4>Edit Your Profile</h4>

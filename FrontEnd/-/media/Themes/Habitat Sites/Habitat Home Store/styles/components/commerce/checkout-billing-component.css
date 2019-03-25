@@ -1194,7 +1194,6 @@
 
 .component.cxa-checkoutbilling-component .contact-info-form input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1226,7 +1225,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .contact-info-form i
 
 .component.cxa-checkoutbilling-component .contact-info-form input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1259,7 +1257,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .contact-info-form i
 .component.cxa-checkoutbilling-component .contact-info-form input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1315,7 +1312,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .contact-info-form i
 .component.cxa-checkoutbilling-component .contact-info-form input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1365,7 +1361,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .contact-info-form i
 
 .component.cxa-checkoutbilling-component .contact-info-form select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1429,7 +1424,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .contact-info-form s
 
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1461,7 +1455,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1494,7 +1487,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1550,7 +1542,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1600,7 +1591,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 
 .component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1648,7 +1638,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-paycard-container .billing-addresss-details input[type='text'],
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-address-container .billing-addresss-details input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1689,7 +1678,6 @@ fieldset[disabled]
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-paycard-container .billing-addresss-details input[type='password'],
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-address-container .billing-addresss-details input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1731,7 +1719,6 @@ fieldset[disabled]
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-address-container .billing-addresss-details input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1800,7 +1787,6 @@ fieldset[disabled]
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-address-container .billing-addresss-details input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1863,7 +1849,6 @@ fieldset[disabled]
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-paycard-container .billing-addresss-details select,
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-address-container .billing-addresss-details select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1936,7 +1921,6 @@ fieldset[disabled]
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -1968,7 +1952,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2001,7 +1984,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2057,7 +2039,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2107,7 +2088,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-balance select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2174,7 +2154,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2206,7 +2185,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2239,7 +2217,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2295,7 +2272,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2345,7 +2321,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .apply-gif-card-amount select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -2441,7 +2416,6 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .apply-gift-card-sec
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .applied-gift-card-info .giftcard-payment-number,
 .component.cxa-checkoutbilling-component .apply-gift-card-section .apply-gif-card-content .giftcard-status .applied-gift-card-info .giftcard-aplied-amount {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;

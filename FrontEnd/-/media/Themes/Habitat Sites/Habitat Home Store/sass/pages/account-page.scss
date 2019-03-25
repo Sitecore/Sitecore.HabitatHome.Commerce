@@ -1,9 +1,16 @@
-@import '../index'; 
-.account-management-page {
+@import '../abstracts/mixins'; 
+
 
     .account-summary {
         padding-bottom: 5em;
-        
+
+        .field-title {
+            color: $brand-primary;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 1em 0 0.5em 0;
+        }
+
         .link-list h3 {
             border: 0;
         }
@@ -23,12 +30,16 @@
                 display: block;
                 font-weight: bold;
                 border-bottom: 0;
+                font-size: $font-normal;
         
                 &:before {
                     content: '';
-                }                
-            }
+                }
+            }            
         } 
+        .link-list > .component-content ul{
+            margin-bottom: 0px;
+        }
 
         .rich-text {
             margin: 0;
@@ -55,4 +66,3 @@
             display: none;
         }
     }  
-}

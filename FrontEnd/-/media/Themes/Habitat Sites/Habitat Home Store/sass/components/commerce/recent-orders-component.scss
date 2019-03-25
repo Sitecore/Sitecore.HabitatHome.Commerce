@@ -9,10 +9,6 @@
         a {
             display: inline-block;
         }
-        h4,
-        h4 span {
-            @include secondary-title();
-        }
     }
     .view-all-orders-link {
         &:before {

@@ -1,8 +1,8 @@
 ﻿---
-ID: "f92392d2-3008-4617-8356-b3fd1da44e40"
+ID: "b65a6ee9-e1f1-498d-a5c9-0788b462d7fb"
 Parent: "1a4422bd-dd8c-4ad1-bdf3-0a2dac18e296"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/Data/Side Navigation/Your Orders
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/My Account Side Navigation/Address Book
 DB: master
 Languages:
 - Language: en
@@ -19,4 +19,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Your Orders" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7838C70C-65D5-454D-833C-89AD71DEADBF}" />
+        <link text="Address Book" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{96D6FC4E-D7F4-4380-A9A1-EF6C77C5D2C1}" />

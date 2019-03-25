@@ -1,6 +1,5 @@
 @mixin control() {
     height: $control-normal-height;
-    border-radius: $border-radius;
     background-color: $light;
     color: $secondary-text-color;
     border: solid 1px $border-color;

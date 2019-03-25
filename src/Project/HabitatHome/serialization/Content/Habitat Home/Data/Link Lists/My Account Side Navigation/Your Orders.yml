@@ -1,8 +1,8 @@
 ﻿---
-ID: "a685f5e6-e189-4836-b1e4-9c53dd2757d4"
-Parent: "efbb48e4-5cd1-4382-bbb8-3d673d31561c"
+ID: "f92392d2-3008-4617-8356-b3fd1da44e40"
+Parent: "1a4422bd-dd8c-4ad1-bdf3-0a2dac18e296"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/data-protection/Data/Side Navigation/Your Orders"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/My Account Side Navigation/Your Orders
 DB: master
 Languages:
 - Language: en

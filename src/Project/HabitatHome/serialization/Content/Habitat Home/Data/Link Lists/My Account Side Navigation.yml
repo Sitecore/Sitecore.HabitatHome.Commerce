@@ -1,13 +1,13 @@
 ﻿---
 ID: "1a4422bd-dd8c-4ad1-bdf3-0a2dac18e296"
-Parent: "4beeb5f2-88e2-42ae-a61a-9b8810aa5f58"
+Parent: "da595171-a7e3-4b6c-964f-b36eeaa42e19"
 Template: "f7561ffc-c0d8-477f-b53d-2703a4060be1"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/Data/Side Navigation
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/My Account Side Navigation
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 50
+  Value: 200
 Languages:
 - Language: en
   Versions:

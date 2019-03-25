@@ -16,10 +16,6 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
-.cxa-profileeditor-component {
-  padding: 0;
-}
-
 .cxa-profileeditor-component form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +32,10 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.cxa-profileeditor-component form input {
+  background-color: #fff;
 }
 
 .cxa-profileeditor-component form > * {
