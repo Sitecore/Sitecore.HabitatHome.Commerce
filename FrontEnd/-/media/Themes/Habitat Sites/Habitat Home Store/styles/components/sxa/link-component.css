@@ -1,7 +1,13 @@
-/* @import '../../mixins/index';
-.component.link{
-    padding-left:0;
-    a{
-        @include link();
-    }
-} */
+/* breakpoints */
+.component.link .link-button a {
+  font-weight: 700;
+  color: #141919;
+  border: 1px solid #141919;
+  padding: 1.28571em 3em;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.component.link .link-button a:before {
+  content: none;
+}
