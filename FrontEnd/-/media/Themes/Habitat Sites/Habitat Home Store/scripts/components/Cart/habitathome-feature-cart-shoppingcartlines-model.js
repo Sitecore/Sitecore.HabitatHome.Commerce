@@ -25,7 +25,7 @@ function CartLinesViewModel(data) {
         var lineItemId = item.externalCartLineId;
         var sender = event.currentTarget;
         AjaxService.Post("/api/cxa/cart/RemoveShoppingCartLine", { lineNumber: lineItemId }, function (data, success, sender) {
-            if (success && data.Success) {
+            if (success && data.Success) { 
                 CartContext.TriggerCartUpdateEvent();
             }
         });

@@ -41,7 +41,7 @@
                             <td class="cart-info">
                                 <a href="@cartLine.ProductUrl"><h4>@cartLine.ProductDisplayName</h4></a>
                                 <div class="product-variants">
-                                    @foreach(var property in cartLine.Properties)
+                                    @foreach (var property in cartLine.Properties)
                                     {
                                         <div class="product-variant">
                                             <span class="variant-label">
@@ -61,13 +61,13 @@
                                             @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
                                         </span>
                                          @if ((bool)Model.StoreOrder)
-                                            {
+                                         {
                                                 <span class="shippingMethodName">
                                                     Pick up at @Model.StoreName
                                                 </span>
-                                            }
-                                            else
-                                            {
+                                         }
+                                         else
+                                         {
                                                 <span class="shippingMethodName">
                                                     @cartLine.ShippingMethodName<br />
 
@@ -80,7 +80,7 @@
                                                     <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
 
                                                 </div>
-                                            }
+                                         }
                                     </p>
                                 }
                                 @if (cartLine.Address != null)

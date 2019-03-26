@@ -135,19 +135,6 @@
                                 }
                             </td>
                             }
-                            else
-                            {
-                                if (Sitecore.Context.IsLoggedIn)
-                                {
-                                    <td>
-                                    <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
-                                        <i class="fa"></i>
-                                        <span>Move to My Wish List</span>
-                                    </button>   
-                                    </td>
-                                }
-
-                            }
 
                         </tr>
                     @if (Model.DisplaySubLines)
