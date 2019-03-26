@@ -61,21 +61,21 @@ SharedFields:
           uid="{A2B3CF40-5D59-4D1D-94D1-6BF1001ADC05}"
           p:before="*"
           s:id="{0FA50A16-13DF-4722-9357-C7D157638ACA}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:par="DynamicPlaceholderId=4&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0"
           s:ph="/main/sxa-article-content/author-1-" />
         <r
           uid="{A4A00EAF-C779-48A6-A9E5-917924CC455D}"
           p:after="r[@uid='{A2B3CF40-5D59-4D1D-94D1-6BF1001ADC05}']"
           s:ds="{7128D032-83F5-48CF-A27A-59A6AB00E982}"
           s:id="{00E2C7CF-2247-4596-B878-E6BB3850A77F}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:par="DynamicPlaceholderId=3&amp;GridParameters=%7b113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7d"
           s:ph="/main/sxa-recommended-content/container-1" />
         <r
           uid="{A287189C-D6B9-4414-9958-70626DF4F0CE}"
           p:after="r[@uid='{A4A00EAF-C779-48A6-A9E5-917924CC455D}']"
           s:ds="local:/Data/Smart Home Whitepaper"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="Caching=0|0|0|0|0|0|0|0&amp;FieldNames={837DA9F8-E307-4615-9B66-7F3B97E1470B}&amp;DynamicPlaceholderId=2"
+          s:par="DynamicPlaceholderId=2&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FieldNames=%7bF8C8F184-053D-4947-840B-A96495DB434C%7d"
           s:ph="/main/sxa-article-content/container-1">
           <rls>
             <ruleset>
