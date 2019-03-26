@@ -17,17 +17,17 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
         l="{411E4948-E7F2-4D86-BEAD-451F79D83BCF}">
         <r
-          uid="{D26E6B1B-1108-4238-AAA4-85C65E22093C}"
           ds=""
           id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
           par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
-          ph="section-content" />
+          ph="section-content"
+          uid="{D26E6B1B-1108-4238-AAA4-85C65E22093C}" />
         <r
-          uid="{E84563C1-E7DE-432E-8BEF-06C21F338C2D}"
           ds="/sitecore/content/Habitat Sites/Habitat Home/home/guides/sheet-pan-jambalaya"
           id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
-          ph="/section-content/column-2-2">
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          ph="/section-content/column-2-2"
+          uid="{E84563C1-E7DE-432E-8BEF-06C21F338C2D}">
           <rls>
             <ruleset>
               <rule
@@ -176,11 +176,11 @@ SharedFields:
           </rls>
         </r>
         <r
-          uid="{4EF9A41F-3AE5-4367-9514-D2A39B2E418F}"
           ds="/sitecore/content/Habitat Sites/Habitat Home/home/guides/design-your-connected-home"
           id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
-          ph="/section-content/column-1-2">
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          ph="/section-content/column-1-2"
+          uid="{4EF9A41F-3AE5-4367-9514-D2A39B2E418F}">
           <rls>
             <ruleset>
               <rule
