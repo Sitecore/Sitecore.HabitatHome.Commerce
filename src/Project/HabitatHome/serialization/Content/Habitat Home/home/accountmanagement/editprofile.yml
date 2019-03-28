@@ -35,32 +35,19 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{B0C23381-DC60-43F4-B2A7-DE0FF1B9C777}"
+          uid="{2262C302-E706-44E8-915F-868324829B03}"
           p:before="*"
-          s:ds=""
-          s:id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles=724F117C-4B46-40F4-A6BB-204740BE97EB&amp;Reset Caching Options&amp;RenderingIdentifier"
-          s:ph="/main/container-1" />
-        <r
-          uid="{C76C0AC8-7CA1-4A5C-876D-BB02BBFC54F4}"
-          p:after="r[@uid='{B0C23381-DC60-43F4-B2A7-DE0FF1B9C777}']"
-          s:id="{5B9272A5-E147-4C16-B9F7-41CCDCB4CB5D}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles&amp;RenderingIdentifier"
-          s:ph="/main/container-1" />
+          s:ds="{597B5B8B-8DF5-4680-938A-F602047C8D4B}"
+          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="/main/sxa-account-page/container-1/column-2-2" />
         <r
           uid="{0AABED3E-D5D5-400D-AA87-C07D98B28515}"
-          p:after="r[@uid='{C76C0AC8-7CA1-4A5C-876D-BB02BBFC54F4}']"
+          p:after="*[1=2]"
           s:ds="{9793D695-1448-4B41-9B04-44651DE0FC58}"
           s:id="{845BE183-8C33-443A-A396-257B87BBC2BE}"
           s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Save Changes Redirect Link=%7BC8121F23-0CED-4828-8F8B-994D27F1CC7E%7D&amp;Cancel Redirect Link=%7BC8121F23-0CED-4828-8F8B-994D27F1CC7E%7D"
-          s:ph="/main/container-1" />
-        <r
-          uid="{74CA54BF-3B43-4C78-9C1A-E8C6C7030AE2}"
-          p:after="*[1=2]"
-          s:ds=""
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
-          s:ph="main" />
+          s:ph="/main/sxa-account-page/container-1/column-2-2" />
       </d>
     </r>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

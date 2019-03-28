@@ -17,17 +17,17 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
         l="{411E4948-E7F2-4D86-BEAD-451F79D83BCF}">
         <r
-          uid="{D26E6B1B-1108-4238-AAA4-85C65E22093C}"
           ds=""
           id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
           par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
-          ph="section-content" />
+          ph="section-content"
+          uid="{D26E6B1B-1108-4238-AAA4-85C65E22093C}" />
         <r
-          uid="{E84563C1-E7DE-432E-8BEF-06C21F338C2D}"
           ds="/sitecore/content/Habitat Sites/Habitat Home/home/guides/sheet-pan-jambalaya"
           id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
-          ph="/section-content/column-2-2">
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          ph="/section-content/column-2-2"
+          uid="{E84563C1-E7DE-432E-8BEF-06C21F338C2D}">
           <rls>
             <ruleset>
               <rule
@@ -35,25 +35,24 @@ SharedFields:
                 name="Fitness">
                 <conditions>
                   <or
-                    uid="25093568C72E47C4B8E238FEE0255730">
+                    uid="78C54B460390489AB8825596D3436750">
                     <or
-                      uid="2A801344D84E482F9B5138AE2EB66139">
+                      uid="6993B13B532E4BFFA7C0FD0C41255CFF">
                       <condition
                         uid="DF85B8B5837A473EA45302B3004AA1B6"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
                         CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       <condition
-                        uid="B7664699FC5D4F06B3F8A9045D3933B4"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="BE935392CB47452DBB3A84A9ACDD4B55"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Topic Interest Category"
                         PatternName="Fitness" />
                     </or>
                     <condition
-                      uid="BE935392CB47452DBB3A84A9ACDD4B55"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Topic Interest Category"
-                      PatternName="Fitness" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="67641F5A8E27430D8F4E6CAF159ADF87"
+                      PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -68,25 +67,24 @@ SharedFields:
                 name="Gaming">
                 <conditions>
                   <or
-                    uid="A9A2FEDA45164B0AAD18A4ADB147992F">
+                    uid="C22EF3DF31D4428CA0077DD7699201B0">
                     <or
-                      uid="A6B04BAC87274B9AAFA6DAE8FC450DEF">
+                      uid="6C85CDA9FE6E427D92D0611B50E63FDA">
                       <condition
                         uid="58CD8F60DF6F4B6A82DF491367C2AA9C"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{43CF5A42-2D0C-4E82-BAB6-03E996E4097C}"
                         CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
                       <condition
-                        uid="A97405895F004408A9BAC0E54BFE5D4D"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="A42789D1871441ED8B59E6DBF34D128A"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Electronics Category"
                         PatternName="Games" />
                     </or>
                     <condition
-                      uid="A42789D1871441ED8B59E6DBF34D128A"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Electronics Category"
-                      PatternName="Games" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="87E58A97DB484804BFF6FF47B25AF697"
+                      PatternList="{7C0D0B32-E1B3-4969-890F-3793C1CFDB6A}" />
                   </or>
                 </conditions>
                 <actions>
@@ -101,25 +99,24 @@ SharedFields:
                 name="Home Theater">
                 <conditions>
                   <or
-                    uid="4868BE1C0A7C4590BC98AAE12BF7FC92">
+                    uid="3A486999368E47DEA54B13B50CDCC2C3">
                     <or
-                      uid="D20E7E1AFDF545AE99C682D8AE11F13D">
+                      uid="B09DD98A159A4479A1BD67DAF6AE5536">
                       <condition
                         uid="F8FC8423D03448B2AD113E219E27B288"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{67AFC2F1-234A-4AD5-9075-36C61BBFEBAE}"
                         CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
                       <condition
-                        uid="4BBF33B7E9574F8F83154EB19565E94B"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="B3C429A2E2B1432F80A1B14EBBEC3A40"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Electronics Category"
                         PatternName="Home Cinema" />
                     </or>
                     <condition
-                      uid="B3C429A2E2B1432F80A1B14EBBEC3A40"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Electronics Category"
-                      PatternName="Home Cinema" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="B8420C2F6CDF4D38800B64186611652A"
+                      PatternList="{CDCADE11-E1F4-4792-8FA3-9F95C6954772}" />
                   </or>
                 </conditions>
                 <actions>
@@ -134,25 +131,24 @@ SharedFields:
                 name="Smart and Connected">
                 <conditions>
                   <or
-                    uid="39168AC31EC24964AAA2A54628A8BEB1">
+                    uid="37D998E87D6E46F0B51EF1D714816EBA">
                     <or
-                      uid="9DAEC3E8407442DBB50AE157CB070E7E">
+                      uid="9B389263E49D43F78ADA11C469925F20">
                       <condition
                         uid="83C2D07355114FC69FFEB07B0931FCA5"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{C26DAD2C-26F2-413D-93C4-9CA8C99CC930}"
                         CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       <condition
-                        uid="66FFCDE390424A4C9610CB3A82B6333C"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="B25E9439BE8E4B09AD41B4DA7D1417FB"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Topic Interest Category"
                         PatternName="Smart and Connected" />
                     </or>
                     <condition
-                      uid="B25E9439BE8E4B09AD41B4DA7D1417FB"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Topic Interest Category"
-                      PatternName="Smart and Connected" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="321614152DED44A48FB864118403C4BF"
+                      PatternList="{F79D6476-4E33-4FCB-B7E7-7A8D983B8F22}" />
                   </or>
                 </conditions>
                 <actions>
@@ -176,11 +172,11 @@ SharedFields:
           </rls>
         </r>
         <r
-          uid="{4EF9A41F-3AE5-4367-9514-D2A39B2E418F}"
           ds="/sitecore/content/Habitat Sites/Habitat Home/home/guides/design-your-connected-home"
           id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
-          ph="/section-content/column-1-2">
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options=1&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          ph="/section-content/column-1-2"
+          uid="{4EF9A41F-3AE5-4367-9514-D2A39B2E418F}">
           <rls>
             <ruleset>
               <rule
@@ -188,25 +184,24 @@ SharedFields:
                 name="Fitness">
                 <conditions>
                   <or
-                    uid="880FE601F7434A7998AF8890071FF48B">
+                    uid="55BE2CBDA5B44FEF9B54DB49A41977E7">
                     <or
-                      uid="F42E065A8EE84900885CE9081D7FAD14">
+                      uid="1F762BAD87B04E7BA0A1412908FF2143">
                       <condition
                         uid="10FC59960C3C4280BAFFD504562E233B"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
                         CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       <condition
-                        uid="995C967642E349768882E7D413B7FD98"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="BE60FDF29D1444B48ACD3C281E58B555"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Topic Interest Category"
                         PatternName="Fitness" />
                     </or>
                     <condition
-                      uid="BE60FDF29D1444B48ACD3C281E58B555"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Topic Interest Category"
-                      PatternName="Fitness" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="792D046D38BB43B099C27342BC743559"
+                      PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -221,25 +216,24 @@ SharedFields:
                 name="Foodie">
                 <conditions>
                   <or
-                    uid="8009372434284910AC4FEA7A7F1CF906">
+                    uid="C51E5986617041E39F8F7A9179EBAC6C">
                     <or
-                      uid="5B1F20A939B648EB893CBC500A12B61F">
+                      uid="D31687E12BBC4E72967C2114D7C3FAF1">
                       <condition
                         uid="B15FCF8D79244AEE997292ACCB3343BE"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
                         CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                       <condition
-                        uid="334FF1E66AF84023835A858C36C58E5F"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="C8AF0C6C5DD746FB9284C5306810342C"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Topic Interest Category"
                         PatternName="Cooking" />
                     </or>
                     <condition
-                      uid="C8AF0C6C5DD746FB9284C5306810342C"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Topic Interest Category"
-                      PatternName="Cooking" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="41C8755C0B74483BB293645DA4141257"
+                      PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -254,25 +248,24 @@ SharedFields:
                 name="Gaming">
                 <conditions>
                   <or
-                    uid="8C604EF8A8DD442CA9439F471DD8141F">
+                    uid="56546299172140379BB6CCA3C5A7918A">
                     <or
-                      uid="762A07C504AE4C13842C404F015751A8">
+                      uid="89FE35371DCB467EABE268A0F5512426">
                       <condition
                         uid="2AA42830191F4334B3C2149E23482F44"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{43CF5A42-2D0C-4E82-BAB6-03E996E4097C}"
                         CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
                       <condition
-                        uid="364984F244AE4B44A953CE6ED5C1C47C"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="A3A83D544E2E44FCB12B52620EE7B801"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Electronics Category"
                         PatternName="Games" />
                     </or>
                     <condition
-                      uid="A3A83D544E2E44FCB12B52620EE7B801"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Electronics Category"
-                      PatternName="Games" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="B9F9F06A149F475E878F2888C214E557"
+                      PatternList="{7C0D0B32-E1B3-4969-890F-3793C1CFDB6A}" />
                   </or>
                 </conditions>
                 <actions>
@@ -287,32 +280,31 @@ SharedFields:
                 name="Home Theater">
                 <conditions>
                   <or
-                    uid="10C800C1E39440359C5070F2C1F496AE">
+                    uid="44F107AF77424CBC8F99490B9DBC70B3">
                     <or
-                      uid="A5F61925A6F1455E927D1B2B6A3DA880">
+                      uid="C86E67BCAF5C4CDDA94E20EB0F1C6AC0">
                       <condition
                         uid="76A2141EDC2D4ED8A38FCA9656BDF97B"
                         id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
                         ExpectedAncestorTaxonId="{67AFC2F1-234A-4AD5-9075-36C61BBFEBAE}"
                         CustomFieldId="{13F24114-C29B-4ACB-A39B-445CCE2ED60C}" />
                       <condition
-                        uid="A70588A573D14098B750DAEB49BA78B6"
-                        id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                        uid="03D498603ED04AC79B448537020FBA4E"
+                        id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         ProfileName="Electronics Category"
                         PatternName="Home Cinema" />
                     </or>
                     <condition
-                      uid="03D498603ED04AC79B448537020FBA4E"
-                      id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      ProfileName="Electronics Category"
-                      PatternName="Home Cinema" />
+                      id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      uid="26BC22D7B5314A6BB173442EC8A50B4E"
+                      PatternList="{CDCADE11-E1F4-4792-8FA3-9F95C6954772}" />
                   </or>
                 </conditions>
                 <actions>
                   <action
                     uid="2964B55787884305B0F35AEBEDD5AB3C"
                     id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
-                    DataSource="{9FDEAA6E-709B-4082-ABCF-B740DC80EEFE}" />
+                    DataSource="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}" />
                 </actions>
               </rule>
               <rule

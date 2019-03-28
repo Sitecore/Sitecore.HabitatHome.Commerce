@@ -111,7 +111,6 @@
 
 .component.cxa-login-component form input[type='text'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -143,7 +142,6 @@ fieldset[disabled] .component.cxa-login-component form input[type='text'] {
 
 .component.cxa-login-component form input[type='password'] {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -176,7 +174,6 @@ fieldset[disabled] .component.cxa-login-component form input[type='password'] {
 .component.cxa-login-component form input[type='radio'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -232,7 +229,6 @@ fieldset[disabled] .component.cxa-login-component form input[type='radio'] {
 .component.cxa-login-component form input[type='checkbox'] {
   -webkit-appearance: none;
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;
@@ -282,7 +278,6 @@ fieldset[disabled] .component.cxa-login-component form input[type='checkbox'] {
 
 .component.cxa-login-component form select {
   height: 34px;
-  border-radius: 4px;
   background-color: #fff;
   color: #747a83;
   border: solid 1px #b9bcc1;

@@ -23,7 +23,7 @@ Languages:
     - ID: "9c385368-a554-4a92-9a8d-37f3ef3a09f4"
       Hint: HeroImage
       Value: |
-        <image mediaid="{31661F63-632A-43C8-A15F-5C428B4FBF6F}" />
+        <image mediaid="{B8CD0674-1886-470F-9B58-77CBA03BDF43}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

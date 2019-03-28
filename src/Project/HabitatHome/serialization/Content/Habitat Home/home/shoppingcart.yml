@@ -49,7 +49,7 @@ SharedFields:
           p:after="r[@uid='{37141A9A-8879-4C7C-8F7C-3620CB14DA68}']"
           s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
           s:id="{1EF188EF-3257-4A36-ABE1-15E74FFE6E92}"
-          s:par=""
+          s:par="Display Table Header=1&amp;Display Delete Button=1&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information&amp;Display Sublines=1&amp;GridParameters&amp;Styles"
           s:ph="/main/container-1" />
         <r
           uid="{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}"

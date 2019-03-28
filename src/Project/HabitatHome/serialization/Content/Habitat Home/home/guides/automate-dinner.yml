@@ -187,7 +187,7 @@ Languages:
         <p>Proin tristique sed neque quis fringilla. Quisque erat orci, eleifend nec odio eu, volutpat finibus arcu. Maecenas ac tellus vel sem tincidunt imperdiet quis sit amet ipsum. Aenean rutrum elementum purus, accumsan feugiat ligula accumsan nec. Vivamus ac massa efficitur diam pretium venenatis. Ut ultrices bibendum ex, vitae tempor nulla. Duis aliquam, lectus quis tincidunt fringilla, dui dolor porta risus, ac iaculis ante odio sed magna. Fusce pretium nisi et ante porta, at malesuada turpis dignissim. In id risus sit amet turpis eleifend rutrum. Suspendisse dapibus neque nibh. Etiam rhoncus nisl et nulla tincidunt tristique.</p>
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Introduction
-      Value: "<p>Some times we get so busy we forget to eat! Well automate your meals with connected cooking appliances to always have a quality meal, no matter how busy.</p>"
+      Value: "<p>Sometimes we get so busy we forget to eat! Automate your meals with connected cooking appliances to always have a quality meal.</p>"
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Automate Dinner

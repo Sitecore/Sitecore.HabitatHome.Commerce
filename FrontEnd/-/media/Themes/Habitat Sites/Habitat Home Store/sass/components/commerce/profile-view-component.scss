@@ -17,11 +17,7 @@
         text-align: right; 
         @include link();        
     }
-    .profile-name-section{
-        span{
-            font-size: 14px;
-            font-weight: 600;
-            color: $heading-color;
-        }
+    .profile-view-title {
+        display: none;
     }
 }

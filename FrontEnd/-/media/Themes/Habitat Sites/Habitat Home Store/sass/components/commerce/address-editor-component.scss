@@ -1,16 +1,11 @@
 @import '../../index';
 .cxa-addresseditor-component {
-    a,
-    button {
-        min-height: $control-large-height;
-    }
-    a {
-        padding-top: 8px;
-    }
+    padding-left:15px;
     .address-edit-section {
+        clear:both;        
         @include horizontal-form-layout(3);
         .set-primary {
-            margin-top: 15px;
+            margin-top: 15px; 
             @include row-of-elements-packed(false, false, 10px);
         }
         @include form-primary-style();
@@ -25,6 +20,7 @@
         }
     }
     .address-selector-section {
+        clear:both;
         @include horizontal-form-layout(3);
         margin-bottom: 15px;
         @include form-primary-style();
@@ -49,22 +45,16 @@
         }
         .save-addresss-button {
             order: 4;
-            @include primary-button-filled();
         }
         .delete-address-button {
             order: 2;
-            @include error-button-line();
         }
         .cancel-edit-button {
             order: 3;
             @include primary-button-line();
-            padding-top: 8px;
         }
         .back-to-my-account {
-            order: 1;
-            @include push-element-to-left();
-            @include secondary-button-line();
-            padding-top: 8px;
+            display: none;
         }
         @include respond-to($md) {
             width: 100%;

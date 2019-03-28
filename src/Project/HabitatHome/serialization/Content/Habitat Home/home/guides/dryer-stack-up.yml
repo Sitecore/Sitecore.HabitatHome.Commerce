@@ -130,14 +130,14 @@ SharedFields:
           p:after="r[@uid='{851693FF-1CC5-49C5-A27B-E63271BFBC03}']"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="DynamicPlaceholderId=2&amp;BackgroundImage=&lt;image mediaid=&quot;{4F832EF4-CF4E-4A61-A577-5F722E01DC97}&quot; /&gt;&amp;lt;image mediaid&amp;quot;{4F832EF4-CF4E-4A61-A577-5F722E01DC97}&amp;quot; /&amp;gt;&amp;GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7B37959667-EE0C-4E0F-8A37-5687BB143510%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
           s:ph="/main/sxa-article-content/container-1" />
         <r
           uid="{C95F089A-273E-4AB8-B6BC-C2CE2300B01C}"
           p:after="*[1=2]"
           s:ds="local:/Data/Promo - Dryer Whitepaper"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="Caching=0|0|0|0|0|0|0|0&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;DynamicPlaceholderId=3&amp;GridParameters&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options"
+          s:par="GridParameters&amp;FieldNames=%7B3CE8F6E1-8BDC-445A-8472-D5952EE65E03%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
           s:ph="/main/sxa-article-content/container-1/container-2" />
       </d>
     </r>

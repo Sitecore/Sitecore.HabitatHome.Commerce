@@ -2,9 +2,20 @@
 ID: "f5ae4302-393f-4d6e-8f5b-24bd314d64ca"
 Parent: "97837ac1-9549-47c5-a9aa-10d768b4f78e"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Trainer Finder/Excercise Question Settings/Aerobics
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Excercise Question Settings/Aerobics
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143016Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -21,7 +32,7 @@ Languages:
       Value: "{492B455A-0F97-4C07-A49A-F3550EFF1910}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: aerobics
+      Value: Aerobics
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -86,14 +97,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190301T182624Z
+      Value: 20180324T011934Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\Admin
+        extranet\Anonymous
     - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
       Hint: Pattern Card
-      Value: "{492B455A-0F97-4C07-A49A-F3550EFF1910}"
+      Value: "{2EE35284-F6AE-44DD-9881-97B44A5D2186}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: aerobics
+      Value: Aerobics

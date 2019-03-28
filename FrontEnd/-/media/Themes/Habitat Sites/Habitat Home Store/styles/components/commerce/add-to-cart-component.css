@@ -17,6 +17,7 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
+/* breakpoints */
 .cxa-addtocart-component .component-content {
   width: 100%;
   display: inline-block;
@@ -100,7 +101,6 @@
   max-height: 42px;
   min-height: 42px;
   display: inline-block !important;
-  border: solid 2px #b9bcc1;
 }
 
 .cxa-addtocart-component .quantity-input button {
@@ -116,7 +116,6 @@
   display: inline-block;
   padding: 4px 25px 4px 25px;
   border-radius: 0;
-  border: solid 2px #b9bcc1;
 }
 
 .cxa-addtocart-component .quantity-input button:active, .cxa-addtocart-component .quantity-input button:hover {
@@ -316,4 +315,51 @@ fieldset[disabled] .cxa-addtocart-component .add-to-cart-btn {
 
 .cxa-addtocart-component form > div > * {
   margin: 0;
+}
+
+.cxa-addtocart-component .quantity-input button.decrease,
+.cxa-addtocart-component .quantity-input button.increase,
+.cxa-addtocart-component .quantity-input input,
+.cxa-addtocart-component .quantity-input button {
+  border: 1px solid #141919;
+  border-radius: 0;
+  background-color: white !important;
+}
+
+@media only screen and (max-width: 786px) {
+  .cxa-addtocart-component form {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .cxa-addtocart-component .add-to-cart-button {
+    margin: 0 auto;
+  }
+  .cxa-addtocart-component .add-to-cart-button .add-to-cart-btn {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .cxa-addtocart-component .add-to-cart-qty label {
+    margin: 40px auto 0;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .cxa-addtocart-component .quantity-input {
+    margin: 0 auto;
+  }
+}
+
+.cxa-addtocart-component .quantity-input input {
+  border-left: 0;
+  border-right: 0;
+}
+
+.cxa-addtocart-component .add-to-cart-btn {
+  border-radius: 0;
+  text-transform: uppercase;
 }

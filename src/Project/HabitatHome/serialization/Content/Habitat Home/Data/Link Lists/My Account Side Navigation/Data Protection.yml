@@ -1,0 +1,26 @@
+﻿---
+ID: "04f8741e-aeaa-4287-9fb5-485513c3954b"
+Parent: "1a4422bd-dd8c-4ad1-bdf3-0a2dac18e296"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/My Account Side Navigation/Data Protection
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181005T153434Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\commerceadmin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link id="{BB8C3977-325C-4A10-B64E-C0CB60DED7D4}" querystring="" linktype="internal" text="Data Protection" anchor="" url="/Habitat Sites/Habitat Home/home/accountmanagement/data-protection" title="" class="" target="" />

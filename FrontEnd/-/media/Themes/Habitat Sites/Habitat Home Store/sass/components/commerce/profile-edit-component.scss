@@ -1,7 +1,10 @@
 @import '../../index';
 .cxa-profileeditor-component {
-    padding: 0;
     form {
+        input {
+            background-color: $light;
+        }
+        
         @include horizontal-form-layout(2);
         .profileeditor-buttons-section {
             flex: 0 1 100%;

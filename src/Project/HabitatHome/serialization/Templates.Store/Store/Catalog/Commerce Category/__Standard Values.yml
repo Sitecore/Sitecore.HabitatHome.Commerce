@@ -11,6 +11,12 @@ SharedFields:
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
   Value: "{8D31696A-6D7C-437D-ADAE-DA83E9FBC02D}"
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{F1FB8A76-9C0E-FCBB-3F7F-A57C84E92E39}"
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: "category-page"
 Languages:
 - Language: en
   Versions:

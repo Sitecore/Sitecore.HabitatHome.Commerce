@@ -176,9 +176,9 @@
 }
 
 .component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button button {
-  background-color: Transparent;
+  background-color: Transparent !important;
   background-repeat: no-repeat;
-  border: none;
+  border: none !important;
   cursor: pointer;
   overflow: hidden;
 }
@@ -471,6 +471,7 @@
   text-transform: none;
   border: 1px solid #141919;
   color: #141919;
+  text-decoration: none;
 }
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:after {
@@ -484,6 +485,7 @@
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:hover {
   color: #141919;
+  text-decoration: none;
 }
 
 .productlistsorting-component select {

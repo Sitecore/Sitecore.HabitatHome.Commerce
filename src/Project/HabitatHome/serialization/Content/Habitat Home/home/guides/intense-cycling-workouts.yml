@@ -140,8 +140,15 @@ SharedFields:
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/sxa-article-content/container-1/container-3/Container-24/column-2-6" />
         <r
-          uid="{5C86A814-4160-4693-802C-68C26685C1FA}"
+          uid="{BA6F04C5-5AE8-4F54-96AF-3DD07FD48783}"
           p:after="r[@uid='{B70C16A5-664B-4068-B67D-9327E0A034A9}']"
+          s:ds="{E679D02C-76B3-4B37-ADF1-7F8E510FC44E}"
+          s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+          s:ph="/main/sxa-article-content/container-1/container-3/Container-24/column-2-6" />
+        <r
+          uid="{5C86A814-4160-4693-802C-68C26685C1FA}"
+          p:after="r[@uid='{BA6F04C5-5AE8-4F54-96AF-3DD07FD48783}']"
           s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
           s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
@@ -172,13 +179,14 @@ SharedFields:
           p:after="r[@uid='{55F6884A-6C19-48C2-BAB0-E686AE3BEA9C}']"
           s:ds="{B2A42E1E-1558-4D77-8796-05D47CF27DC2}"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:par="GridParameters&amp;FieldNames=%7B3CE8F6E1-8BDC-445A-8472-D5952EE65E03%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
           s:ph="/main/sxa-recommended-content/container-1/container-1" />
         <r
           uid="{0E98BD35-3DB0-4A48-9A29-9BD9647C2288}"
           p:after="*[1=2]"
+          s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage=&lt;image mediaid=&quot;{34510C0D-20F1-4BA1-B14E-D475292196A8}&quot; /&gt;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1&amp;Personalization&amp;Tests"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage&amp;Styles=%7B37959667-EE0C-4E0F-8A37-5687BB143510%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="/main/sxa-recommended-content/container-1" />
       </d>
     </r>
@@ -210,7 +218,7 @@ Languages:
       Value: Intense Cycling Workouts
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
-      Value: "<p>Chocolate pudding bonbon pudding. Carrot cake carrot cake wafer sesame snaps tootsie roll. Wafer jelly marzipan sweet roll liquorice dragée jelly beans cotton candy. Jelly-o candy canes dragée fruitcake lollipop tootsie roll. Gummi bears tiramisu brownie candy biscuit chocolate cake cookie. Cupcake chocolate cake candy canes. Pastry gummies tiramisu dessert jelly. Tart fruitcake pastry danish pie fruitcake cake muffin liquorice. Jelly beans chocolate cake caramels jelly candy canes chupa chups liquorice marzipan gummi bears. Dessert sweet roll cookie pudding cheesecake liquorice brownie caramels. Sweet gingerbread cupcake. Brownie jelly-o jelly-o. Caramels powder lemon drops. Dragée cheesecake dessert halvah candy oat cake jelly candy canes.</p>"
+      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in consequat ante, in malesuada tortor. In gravida aliquam dolor, blandit posuere mauris lobortis ac. Nullam nec rhoncus nisi, vitae sagittis nibh. Phasellus vehicula magna vitae iaculis tempus. Integer ultricies sapien quis odio congue, vel faucibus dolor semper. Donec id nulla sed massa maximus porta. Vivamus id ante eget neque imperdiet luctus id id eros.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -220,7 +228,12 @@ Languages:
       Value: Smart Gym
     - ID: "87241a2b-d20a-4624-a439-07f4d9afea6e"
       Hint: Additional Content
-      Value: "<p>Gummies lollipop bonbon. Icing tootsie roll pastry gummi bears jelly beans toffee sweet jelly. Carrot cake sesame snaps cake cake sweet sweet macaroon wafer. Macaroon marshmallow toffee sweet pastry. Cupcake cheesecake macaroon cookie gummi bears cake. Jelly beans pastry gummies soufflé donut cotton candy. Toffee cookie cotton candy caramels jelly candy canes. Powder croissant sweet roll. Chocolate bar sweet roll danish lollipop pudding marshmallow lollipop marshmallow sweet. Sesame snaps candy canes apple pie pudding sweet roll sesame snaps cookie cookie. Dragée chupa chups pastry sugar plum topping lemon drops liquorice. Ice cream sugar plum wafer macaroon lollipop danish croissant sweet roll. Jelly-o chocolate caramels muffin fruitcake sweet roll sesame snaps cookie.<br /></p><p>Cupcake ice cream cotton candy biscuit chocolate bar dessert. Marshmallow chocolate chocolate bar ice cream dessert apple pie carrot cake powder. Candy carrot cake bear claw brownie jelly oat cake tiramisu sweet roll muffin. Jelly beans oat cake jelly-o cotton candy chocolate cake halvah pie powder cheesecake. Pastry chocolate cake pudding topping. Chupa chups chocolate bar topping tiramisu. Candy canes marshmallow cheesecake icing chocolate chocolate bar icing liquorice. Gingerbread cupcake muffin cheesecake jujubes icing. Biscuit toffee cupcake muffin. Bear claw gummies ice cream sesame snaps apple pie. Marzipan dragée tiramisu jelly jelly caramels toffee. Dessert toffee lollipop cheesecake cake cake marzipan.<br /></p>"
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in consequat ante, in malesuada tortor. In gravida aliquam dolor, blandit posuere mauris lobortis ac. Nullam nec rhoncus nisi, vitae sagittis nibh. Phasellus vehicula magna vitae iaculis tempus. Integer ultricies sapien quis odio congue, vel faucibus dolor semper. Donec id nulla sed massa maximus porta. Vivamus id ante eget neque imperdiet luctus id id eros.<br />
+        <br />
+        Vestibulum at est eget leo scelerisque tempor a vel nulla. Nullam viverra mi in aliquet varius. Etiam hendrerit ullamcorper sagittis. Aenean in ligula lobortis, ultrices urna eget, auctor elit. Sed vel felis eget est feugiat vehicula. Sed a purus tortor. Proin cursus quam at nisl luctus, ac tincidunt felis gravida. Suspendisse volutpat leo lacus, non pretium ipsum molestie ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br />
+        <br />
+        Suspendisse sed odio vehicula, imperdiet quam non, finibus ipsum. Pellentesque lobortis consequat velit a pulvinar. Aliquam erat volutpat. Aliquam erat volutpat. Donec elementum, ligula in commodo volutpat, lacus sem dictum mauris, ac congue felis quam at odio. Etiam convallis euismod dignissim. Morbi a velit sagittis, pellentesque nisi eget, faucibus ligula. Aliquam sed metus a neque consequat vestibulum vitae at urna. Curabitur et libero quam. Duis nec viverra orci. Aenean pulvinar eleifend metus, sit amet ultricies sapien maximus vitae. Fusce rutrum, nulla vel pretium laoreet, massa ipsum ultrices ipsum, vitae imperdiet est lorem eget diam. Nam eros mi, pretium id augue non, elementum blandit arcu.</p>
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |

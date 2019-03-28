@@ -1,11 +1,13 @@
 @import '../../index';
 
-.component.cxa-register-component{
-    //max-width: 500px;
-    //margin: 0 auto;
+.component.cxa-register-component {
 
     .registeration-form{
         form {
+            input {
+                background-color: $light;
+            }
+            
             @include vertical-form-layout();
             label {
                 @include required-sign();

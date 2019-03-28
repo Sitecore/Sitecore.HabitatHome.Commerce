@@ -22,9 +22,9 @@ SharedFields:
         <r
           uid="{14B77B4F-3C0C-421C-8D98-2E9F6BFD12D0}"
           p:before="*"
-          s:ds="{FD0957B2-03EF-4E37-B594-ECB50B3E0F28}"
+          s:ds="{9BE164EF-7142-4497-85CA-FB53F509516C}"
           s:id="{C4222625-2637-43FE-82D7-341009A277CA}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
           s:ph="/main/sxa-content-container/container-1/Container-25/column-2-6" />
         <r
           uid="{F62865CE-A792-49EF-8E24-A4D7F36F1AE0}"

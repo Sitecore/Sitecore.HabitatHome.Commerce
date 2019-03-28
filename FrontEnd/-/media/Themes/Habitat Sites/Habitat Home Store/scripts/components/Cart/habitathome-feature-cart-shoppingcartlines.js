@@ -36,12 +36,58 @@
         ko.applyBindings(component.Model, component.RootElement);
 
         for (var i = 0; i < 5; i++) {
+
+            if (i === 4) {
+                component.Model.cart().cartLines.push({
+                    displayName: "Lorem ipsum dolor sit amet, id dicant",
+                    productUrl: "javascript:vid(0)",
+                    discountOfferNames: ["mediocritatem no mei(25%)"],
+                    quantity: "1",
+                    linePrice: "0.00 USD",
+                    lineTotal: "0.00 USD",
+                    lineItemDiscount: "0.00 USD",
+                    externalCartLineId: i,
+                    image: productImage,
+                    shippingMethodName: "Etiam rhoncus",
+                    address: {
+                        Address1: "Mauris eget lacus sed dolor viverra",
+                        City: "Etiam",
+                        State: "In gravida",
+                        ZipPostalCode: "99999",
+                        Country: "Nam pulvinar"
+                    },
+                    properties: [{ label: "Lorem:", value:"ipsum"}],
+                    sublines: [
+                        {
+                            displayName: "Lorem ipsum dolor sit amet, id dicant",
+                            productUrl: "javascript:vid(0)",
+                            discountOfferNames: ["mediocritatem no mei(25%)"],
+                            quantity: "1",
+                            linePrice: "0.00 USD",
+                            lineTotal: "0.00 USD",
+                            lineItemDiscount: "0.00 USD",
+                            externalCartLineId: i,
+                            properties: [{ label: "Lorem:", value: "ipsum" }],
+                            image: productImage
+                        },
+                        {
+                            displayName: "Lorem ipsum dolor sit amet, id dicant",
+                            productUrl: "javascript:vid(0)",
+                            discountOfferNames: ["mediocritatem no mei(25%)"],
+                            quantity: "1",
+                            linePrice: "0.00 USD",
+                            lineTotal: "0.00 USD",
+                            lineItemDiscount: "0.00 USD",
+                            externalCartLineId: i,
+                            properties: [{ label: "Lorem:", value: "ipsum" }],
+                            image: productImage
+                        }
+                    ]
+                });
+                break;
+            }
             component.Model.cart().cartLines.push({
                 displayName: "Lorem ipsum dolor sit amet, id dicant",
-                colorInformation: "Soleat",
-                sizeInformation: "dolor",
-                styleInformation: "sit",
-                giftCardAmountInformation: "$25",
                 productUrl: "javascript:vid(0)",
                 discountOfferNames: ["mediocritatem no mei(25%)"],
                 quantity: "1",
@@ -49,9 +95,21 @@
                 lineTotal: "0.00 USD",
                 lineItemDiscount: "0.00 USD",
                 externalCartLineId: i,
-                image: productImage
+                image: productImage,
+                shippingMethodName: "Etiam rhoncus",
+                address: {
+                    Address1: "Mauris eget lacus sed dolor viverra",
+                    City: "Etiam",
+                    State: "In gravida",
+                    ZipPostalCode: "99999",
+                    Country: "Nam pulvinar"
+                },
+                properties: [{ label: "Lorem:", value: "ipsum" }],
+                sublines : []
             });
         }
+
+
         function getMiniProductMockImage() {
             var imageSrc = "";
             var pageExtension = getCurrentPageExtension();
