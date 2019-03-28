@@ -60,25 +60,24 @@ SharedFields:
                 s:name="SHOW Foodie Feast">
                 <conditions>
                   <or
-                    uid="D362251EB1CB4B718E92359843C8EC95">
+                    uid="8A5EA1E0300F41E4A1F788EEEAED7B0E">
                     <or
-                      uid="ACD2C15CBB564D8393B44286B7AD74D9">
-                      <condition
-                        uid="94C65C74BA114ADE8C29CF629948665D"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="DAEE7A8A2A274CB3BC35396E790FAA30">
                       <condition
                         uid="E96DA604066C4EF4B475DDD663031521"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="B52A75B5430247038C40617FE24848FA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="B52A75B5430247038C40617FE24848FA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="052868F66D364FB88B5280B0031BCA0B"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
               </rule>
@@ -160,25 +159,24 @@ SharedFields:
                 </actions>
                 <conditions>
                   <or
-                    uid="204993D75A124E878A5907B436F73A38">
+                    uid="3F93F53DC3A948FF85EA3EEC3F491FAC">
                     <or
-                      uid="E6056DBC60874EDE9E74FF460BF0674D">
-                      <condition
-                        uid="B4C5E093A2B14824920AC5A9A5B68E9E"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="FEF7685C8B2A4124AD4CD44F8795B8A2">
                       <condition
                         uid="37A41D694CB747E4A66A3C68D686FB09"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="2CBF0CAD966C4277ADDF06774133C7EA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="2CBF0CAD966C4277ADDF06774133C7EA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="15F3CEE62EFA4307A4116C1FE48B8A5B"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
               </rule>
@@ -187,25 +185,24 @@ SharedFields:
                 s:name="Hero - Fitness">
                 <conditions>
                   <or
-                    uid="F3DD5B01170B495C8AF00BE694854D5B">
+                    uid="E9699DEFA8164F1A9FB3E46913790D92">
                     <or
-                      uid="217194F686F34FD2ADCEDD554F14BFF1">
-                      <condition
-                        uid="11267AD14C944DAF9CA99E6721A677B8"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="C22EBF0891E3418BAA4F1234C9B7FB02">
                       <condition
                         uid="F05BC2A129CC462EA15E627AE9AC844F"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="9B9CD6AE929D4C33A999E93E10AC073F"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="9B9CD6AE929D4C33A999E93E10AC073F"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="DDEE152A30364D589275BA13CF0C39E2"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -242,25 +239,24 @@ SharedFields:
                 s:name="Fitness">
                 <conditions>
                   <or
-                    uid="59C9A097239546ACA8269AAB891BB026">
+                    uid="5D3B786CA53D4F4ABE9826D7BE1F2260">
                     <or
-                      uid="610568E0D0CE40D99865F2A3974C693A">
-                      <condition
-                        uid="BC10F16C504D4CB7B3BC01F88942F37F"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="AC917144A75E4EFBB22958E3344900CD">
                       <condition
                         uid="158387FB143C40DDBAD36CCEFF47AD5B"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="126411EBA5DA499BA87146B9808C4D58"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -275,17 +271,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="4D18B944CA274C4EB428EE48529D897C">
+                    uid="9B3E36A26F8A4DD2A4E22FF61D1BA5F2">
+                    <or
+                      uid="A6B7398E25A143A39BD60EA6F5245222">
+                      <condition
+                        uid="FC03F6759CC7404B8204575A3062D01F"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      <condition
+                        uid="68516449A87B47BCB4674473A1497FDF"
+                        s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                        s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
+                    </or>
                     <condition
-                      uid="EF54D122670F4DBAB8DE4FC433F9D445"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                      uid="5A89C5B697744663BDDF34253EC59795"
+                      s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                       s:ProfileName="Topic Interest Category"
                       s:PatternName="Cooking" />
-                    <condition
-                      uid="FC03F6759CC7404B8204575A3062D01F"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                   </or>
                 </conditions>
                 <actions>
@@ -322,25 +325,24 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="5ECBDB291B9444B783C5F0D3AD6FAB05">
+                    uid="C336E9E3D84B46F6894879E5B0962789">
                     <or
-                      uid="834071B8E5944C5E9F1CA779F555E958">
-                      <condition
-                        uid="AA31BE03096F4E698396B76480DCF5B7"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="9B25C5316470423AA7A196F73E9C7BD4">
                       <condition
                         uid="2D56DC4BE1F04C5DA482B7F6E8293D5B"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="99AB5D046A43498185EFBF35AA642B01"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="99AB5D046A43498185EFBF35AA642B01"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="A7AF1FD105CC4CD4887981C8C5AF0F70"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -383,25 +385,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="29086DCF181E41D187A3B765E140D6F1">
+                    uid="86FBCAF6D483486491CA27E8BC7AAD62">
                     <or
-                      uid="78B412DE56A443A68499AED1E58970A9">
-                      <condition
-                        uid="C436EF2B29D649368D088919C79E6B4F"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="ACD0710E0FD84E36A877CC2012335720">
                       <condition
                         uid="5AEC0E37366D4E258EF2AD55B7159E40"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="6354D33527E64D0A8DB7DD28E8995F27"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="6354D33527E64D0A8DB7DD28E8995F27"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="F265E1BCFDF64D2D8CDF574E290488F3"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -437,25 +438,24 @@ SharedFields:
                 s:name="Show For Foodie">
                 <conditions>
                   <or
-                    uid="BB2C92489EDD41AA8A71FF42DA38CE85">
+                    uid="DCAC49D45BB148AA91FC95F022F5A315">
                     <or
-                      uid="9CDC4B854A3C4AFB96842D809D8E764A">
-                      <condition
-                        uid="A0E06DD5C62F4E95A6D157BD93E478F5"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="6C85B79990C6454699A7E8047FCD8F6C">
                       <condition
                         uid="476E6CD4175748C2BB838BA3DDDDE992"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="CA58A0A77E574D94B76FFBFC91CC4574"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="CA58A0A77E574D94B76FFBFC91CC4574"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="578CC80E39CC48C394FD54CF9808A4C1"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
               </rule>
@@ -729,9 +729,9 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="4F888202916741BF874A19F50F846C6D">
+                    uid="DEB1E4ECBE2B46BD8452B81BAA03AF49">
                     <or
-                      uid="F45632842F6342ABB8F80A6715D14963">
+                      uid="EA2EB09E5C1545978AA601B7C9874F14">
                       <condition
                         uid="CAD1A53A7A39444091BD1A110D3C9560"
                         s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -744,10 +744,9 @@ SharedFields:
                         s:PatternName="Cooking" />
                     </or>
                     <condition
-                      uid="4C27D222FFFA405097C2E356FDEC784A"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                      uid="41DD83BA443D48B89148670C9EBA125C"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -797,25 +796,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="21F4A729943D4C9FB8ACC8193F976AC9">
+                    uid="57E7C855E30B43D8920899A31F81EF4D">
                     <or
-                      uid="7658C51336C74CBDAA4882A8C161F99C">
-                      <condition
-                        uid="B8BE4BA6CA8D4524BA55FE39115CD680"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="01098394B0094CB4A92DB35B258D6520">
                       <condition
                         uid="5EF300052EC445D9940BB1159FF3AE11"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="CF9230EB171441368AB40D6F2FA9ACFA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="CF9230EB171441368AB40D6F2FA9ACFA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="F8A5EE805DB84BB2B42381E00E74C853"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -830,25 +828,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="9A33E2C8798048E4A86AA1BC384DB879">
+                    uid="CAEA04AD657342BAACC2AB09ED52E78F">
                     <or
-                      uid="3101B61F1D8C426A9BFB8D9A63A7BE9C">
-                      <condition
-                        uid="BD9D7D2AE6A84BBBB7141A591E8C5ED2"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="436A98CD0C354CEE862F34C05AE61712">
                       <condition
                         uid="EDD92B7D44B841D7AF9A974D2910B3CF"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="DE4784808EBE4F8E81960F3093D4377E"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="DE4784808EBE4F8E81960F3093D4377E"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="5954060285304B4AA8735BC48DCD29A5"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -890,25 +887,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="6358385F825F450586E9EB7F87B22935">
+                    uid="3B8D1444BAAB4FEAA550BFEFA4349EAB">
                     <or
-                      uid="22A6A0989EE64F629E38305B946084B3">
-                      <condition
-                        uid="50625FD0116E4C04AB720B627DE3E562"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="98531B11D80D46BB8554F931ECFFF3A5">
                       <condition
                         uid="5DBDB901EBF34ED1AEC714996F4DD5BA"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="1E0DC91F725D4701A414E12828F21AF2"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="1E0DC91F725D4701A414E12828F21AF2"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="3447292E6E664F01B2C16C5C2CE05291"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -923,25 +919,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="3597E6E5C664464694820CF9765BF5F1">
+                    uid="B2F193DEEB6149639FF17C6B17888A5E">
                     <or
-                      uid="FF3A66FC114B4C52B7015C95D884429E">
+                      uid="1865B1260C1B462DBE149064515BFCB4">
                       <condition
                         uid="D726B1A189584C92A1524644D9FF69F4"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
                       <condition
-                        uid="0F9702A50410450AA6E7450697289A61"
-                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                        uid="5E3D6C3F2036420F989EABD6947E3753"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="5E3D6C3F2036420F989EABD6947E3753"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="E2966880EA6146F6A78661D752AB2C56"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>

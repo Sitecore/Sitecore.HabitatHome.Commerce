@@ -140,8 +140,15 @@ SharedFields:
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/sxa-article-content/container-1/container-3/Container-24/column-2-6" />
         <r
-          uid="{5C86A814-4160-4693-802C-68C26685C1FA}"
+          uid="{BA6F04C5-5AE8-4F54-96AF-3DD07FD48783}"
           p:after="r[@uid='{B70C16A5-664B-4068-B67D-9327E0A034A9}']"
+          s:ds="{E679D02C-76B3-4B37-ADF1-7F8E510FC44E}"
+          s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+          s:ph="/main/sxa-article-content/container-1/container-3/Container-24/column-2-6" />
+        <r
+          uid="{5C86A814-4160-4693-802C-68C26685C1FA}"
+          p:after="r[@uid='{BA6F04C5-5AE8-4F54-96AF-3DD07FD48783}']"
           s:ds="{17426A3E-78CA-4F99-813E-E8911E1EABEC}"
           s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
