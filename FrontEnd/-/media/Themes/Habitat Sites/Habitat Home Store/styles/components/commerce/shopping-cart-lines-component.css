@@ -18,7 +18,7 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-shoppingcartlines-component {
     padding: 0 2em;
   }
@@ -143,7 +143,6 @@
   max-height: 42px;
   min-height: 42px;
   display: inline-block !important;
-  border: solid 2px #b9bcc1;
 }
 
 .cxa-shoppingcartlines-component .shoppingcart-quantity div button {
@@ -159,7 +158,6 @@
   display: inline-block;
   padding: 4px 25px 4px 25px;
   border-radius: 0;
-  border: solid 2px #b9bcc1;
 }
 
 .cxa-shoppingcartlines-component .shoppingcart-quantity div button:active, .cxa-shoppingcartlines-component .shoppingcart-quantity div button:hover {
@@ -257,6 +255,7 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   color: #141919;
   border: 1px solid #141919;
   border-radius: 0;
+  background-color: white !important;
 }
 
 .cxa-shoppingcartlines-component .shoppingcart-quantity div input {
@@ -329,7 +328,7 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   border-bottom: 1px solid #e2e3e5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .cxa-shoppingcartlines-component th {
     display: none;
   }

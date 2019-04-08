@@ -86,7 +86,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Pipelines.Blocks
                                 newVariation.StartPrice = new AmountType
                                 {
                                     currencyID = CurrencyCodeType.USD,
-                                    Value = System.Convert.ToDouble(listPrice.Amount)
+                                    Value = System.Convert.ToDouble(listPrice.Amount, System.Globalization.CultureInfo.InvariantCulture)
                                 };
 
                                 newVariation.SKU = variationComponent.Id;

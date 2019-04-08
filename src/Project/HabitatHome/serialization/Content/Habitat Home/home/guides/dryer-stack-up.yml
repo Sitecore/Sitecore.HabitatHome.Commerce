@@ -5,6 +5,9 @@ Template: "14807d83-9671-4d70-b0f4-f54012f2bfb8"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/dryer-stack-up"
 DB: master
 SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
 - ID: "4d71857f-c77d-44fa-8899-c671a0458d7f"
   Hint: Publish Date
   Value: 20171129T214400Z
@@ -127,14 +130,14 @@ SharedFields:
           p:after="r[@uid='{851693FF-1CC5-49C5-A27B-E63271BFBC03}']"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="DynamicPlaceholderId=2&amp;BackgroundImage=&lt;image mediaid=&quot;{4F832EF4-CF4E-4A61-A577-5F722E01DC97}&quot; /&gt;&amp;lt;image mediaid&amp;quot;{4F832EF4-CF4E-4A61-A577-5F722E01DC97}&amp;quot; /&amp;gt;&amp;GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7B37959667-EE0C-4E0F-8A37-5687BB143510%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
           s:ph="/main/sxa-article-content/container-1" />
         <r
           uid="{C95F089A-273E-4AB8-B6BC-C2CE2300B01C}"
           p:after="*[1=2]"
           s:ds="local:/Data/Promo - Dryer Whitepaper"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="Caching=0|0|0|0|0|0|0|0&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;DynamicPlaceholderId=3&amp;GridParameters&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options"
+          s:par="GridParameters&amp;FieldNames=%7B3CE8F6E1-8BDC-445A-8472-D5952EE65E03%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
           s:ph="/main/sxa-article-content/container-1/container-2" />
       </d>
     </r>
@@ -286,49 +289,27 @@ Languages:
       Hint: Image
       Value: |
         <image mediaid="{4F3BDCA5-4B83-4C3F-BDF3-6D5BF616FF12}" alt="Does-your-dryer-stack-up" height="" width="" hspace="" vspace="" />
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: 
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171129T212932Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
-    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
-      Hint: TwitterTitle
-      Value: "How does your dryer stack up? See our guide to dryer efficiency before you start shopping."
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: 
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
-    - ID: "4d263b95-322f-4003-adbd-70920facf823"
-      Hint: TwitterDescription
-      Value: "Dryers have come a long way from the noisy, ugly, cubes of laundry days past. These days, you'll find bigger, bolder, more energy-efficient machines boasting game-changing smart features, entirely new levels of functionality, and designs so attractive, you'll feel guilty stashing them in the basement."
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Comparaison sécheuse
-    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
-      Hint: MetaDescription
-      Value: "Dryers have come a long way from the noisy, ugly, cubes of laundry days past. These days, you'll find bigger, bolder, more energy-efficient machines boasting game-changing smart features, entirely new levels of functionality, and designs so attractive, you'll feel guilty stashing them in the basement."
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
         Les sécheuses laides et bruyantes en forme de cube sont choses du passé. Ces jours-ci, vous trouverez des machines plus grandes, plus audacieuses, plus écoénergétiques, dotées de fonctionnalités intelligentes, de nouveaux niveaux de fonctionnalité et de designs si attrayants que vous vous sentirez coupable de les planquer au sous-sol.<div><span style="font-size: 20px;">&nbsp;</span><br /></div>
         <div>
         		En d'autres termes, c'est un bon moment pour mettre à niveau, ou même acheter votre premier sécheuse (je vous regarde, junkies de buanderies). Armé de la bonne information, vous serez en mesure de faire un achat qui vous fera sentir encore mieux que de mettre une paire de chaussettes fraîchement sortie d'une sécheuse toute chaude.</div>
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
-      Hint: MetaKeywords
-      Value: dryer efficiency, dryer buying guide, laundry room, upgrade dryer, best dryer 2018, electric or gas dryer
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 

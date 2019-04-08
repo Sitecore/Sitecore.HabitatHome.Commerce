@@ -32,14 +32,12 @@
 }
 
 .cxa-productinformation-component .component-content .product-name h1 {
-  font-size: 34px;
   margin-top: 0;
   line-height: 1.01;
-  color: #1d8c96;
   margin-bottom: 0.5em;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1024px) {
   .cxa-productinformation-component .component-content .product-name h1 {
     font-size: 52px;
   }
@@ -50,11 +48,13 @@
 }
 
 .cxa-productinformation-component .component-content .product-description {
-  font-size: 20px;
   border-top: 1px solid #d8d9d5;
   border-bottom: 1px solid #d8d9d5;
   padding: 1.5em 0;
   margin-bottom: 1.5em;
+  color: #747474;
+  font-size: 1.25em;
+  line-height: 1.6;
 }
 
 .cxa-productinformation-component .component-content .product-description h6 {

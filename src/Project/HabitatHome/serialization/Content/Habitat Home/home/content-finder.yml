@@ -9,6 +9,9 @@ SharedFields:
   Hint: NavigationFilter
   Type: Checklist
   Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
   Value: "{A076B3E0-6D6F-4308-B1DC-20DC506D55AD}"
@@ -32,27 +35,27 @@ SharedFields:
           s:ds="{0518CA75-37DC-492B-B512-EBC65EEDFEB1}"
           s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           s:par=""
-          s:ph="/main/sxa-content-container/container-1/container-/sitecoreFormsWrapper-2" />
+          s:ph="/main/sxa-content-container/container-1/container-4/sitecoreFormsWrapper-2" />
         <r
           uid="{10813A4F-6CCF-4D7F-A7E3-FB37E775DD9B}"
           p:after="r[@uid='{42CC1746-5F1B-415D-9C1F-36DE5EC0ECF9}']"
           s:ds=""
           s:id="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;Styles=%7BD839E403-F6A6-481C-B360-C796575CFEED%7D%7C%7BC6EC5467-7E4D-4B22-B72B-63E933C8B482%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
-          s:ph="/main/sxa-content-container/container-1/container-" />
+          s:ph="/main/sxa-content-container/container-1/container-4" />
         <r
           uid="{1BE80D1B-7A59-4A0E-8D13-1CD711116F5B}"
           p:after="r[@uid='{10813A4F-6CCF-4D7F-A7E3-FB37E775DD9B}']"
           s:ds="local:/Data/Hero"
           s:id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
-          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7BC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7BC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
           s:ph="/main/sxa-content-container/container-1" />
         <r
           uid="{502DEE5C-F6CB-485E-B83F-A49530530CF5}"
           p:after="*[1=2]"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
           s:ph="/main/sxa-content-container/container-1" />
       </d>
     </r>
@@ -65,9 +68,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171115T192356Z
@@ -122,12 +122,6 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171115T192356Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{4FDD1979-B09E-41FB-AD96-4434F050A74B}"
@@ -137,10 +131,6 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
-    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
-      Hint: StickyNotes
-      Value: |
-        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -153,13 +143,6 @@ Languages:
     - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
       Hint: MetaDescription
       Value: 
-    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
-      Hint: Content
-      Value: <p>Answer a few easy questions to get a curated selection of guides and other great content to help you with your next project.</p>
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
     - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
       Hint: MetaKeywords
       Value: 
@@ -179,10 +162,6 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
-      Hint: Navigation Image
-      Value: |
-        <image mediaid="{F88A8EF4-CD5A-4037-93D7-6A6C07CFAA5E}" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
@@ -210,9 +189,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180321T104456Z

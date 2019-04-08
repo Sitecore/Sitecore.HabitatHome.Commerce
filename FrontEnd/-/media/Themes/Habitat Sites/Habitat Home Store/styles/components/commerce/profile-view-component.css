@@ -44,8 +44,6 @@
   color: #0e909f;
 }
 
-.cxa-profileview-component .profile-name-section span {
-  font-size: 14px;
-  font-weight: 600;
-  color: #383c41;
+.cxa-profileview-component .profile-view-title {
+  display: none;
 }

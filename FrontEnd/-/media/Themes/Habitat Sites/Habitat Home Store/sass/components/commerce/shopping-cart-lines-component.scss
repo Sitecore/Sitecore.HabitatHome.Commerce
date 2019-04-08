@@ -1,5 +1,5 @@
 @import '../../index';
-@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../../abstracts/_mixins.scss';
 
 .cxa-shoppingcartlines-component {   
     @include respond-to(mobile-large) {
@@ -19,6 +19,7 @@
             color: #141919;  
             border: 1px solid #141919;           
             border-radius: 0;
+            background-color: white !important;
         } 
         input {
             -moz-appearance: textfield;

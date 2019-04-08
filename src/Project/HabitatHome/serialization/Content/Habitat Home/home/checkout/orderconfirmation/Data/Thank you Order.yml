@@ -27,4 +27,4 @@ Languages:
         sitecore\virtualssuser
     - ID: "b3635965-6786-457c-9dee-28de73c0a331"
       Hint: Text
-      Value: <h1>Thank you for your order</h1>
+      Value: "<h1>Thank you for your order!</h1>"

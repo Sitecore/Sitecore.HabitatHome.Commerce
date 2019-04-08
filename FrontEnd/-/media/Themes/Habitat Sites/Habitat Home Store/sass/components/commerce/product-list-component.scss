@@ -63,9 +63,9 @@ $promoted-color: #f6a623;
                     right: 15px;
                     position: absolute;
                     button {
-                        background-color: Transparent;
+                        background-color: Transparent !important;
                         background-repeat:no-repeat;
-                        border: none;
+                        border: none !important;
                         cursor:pointer;
                         overflow: hidden; 
                     }
@@ -194,6 +194,7 @@ $promoted-color: #f6a623;
                     text-transform: none;
                     border: 1px solid rgb(20, 25, 25);
                     color: rgb(20, 25, 25);
+                    text-decoration: none;
 
                     &:after {
                         font-family: FontAwesome;
@@ -206,6 +207,7 @@ $promoted-color: #f6a623;
 
                     &:hover {
                         color: rgb(20, 25, 25);
+                        text-decoration: none;
                     }
                 }
             }
@@ -229,12 +231,12 @@ $promoted-color: #f6a623;
           border-color: #B1B3AC;
           opacity: 0.8;
         }
-    }
+    } 
 }
 
 .component.cxa-productlist-component {
     .product-list {
-        &>ul {
+        &>ul { 
             >li {
                 min-height: 387px;
                 .product-summary {

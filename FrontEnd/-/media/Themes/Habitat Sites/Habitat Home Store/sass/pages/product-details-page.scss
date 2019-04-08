@@ -1,17 +1,16 @@
 @import '../base/index';
-@import '../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../abstracts/_mixins.scss';
 
 .product-details-page{
         
-    main{
-        padding-top: 165px;
+    main{        
         .component.column-splitter{
             margin-left:auto;
             margin-right:auto;    
                     
             .container-rounded{
                 padding: 40px 40px 31px 40px;
-                height: 100%;
+                height: 100%; 
                 .product-info{
                     .product-name {
                         margin-bottom: 10px;

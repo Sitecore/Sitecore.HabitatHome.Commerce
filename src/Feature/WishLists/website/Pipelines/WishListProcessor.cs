@@ -99,11 +99,11 @@ namespace Sitecore.HabitatHome.Feature.WishLists.Pipelines
                             product.SetPropertyValue("Size", string.IsNullOrEmpty(productComponent.Size) ? null : productComponent.Size);
                             product.SetPropertyValue("Style", string.IsNullOrEmpty(productComponent.Style) ? null : productComponent.Style);
 
-                            if (!string.IsNullOrEmpty(productComponent.ExternalId) &&
-                                ID.TryParse(productComponent.ExternalId, out var result))
-                            {
-                                product.SitecoreProductItemId = result.ToGuid();
-                            }               
+                            //if (!string.IsNullOrEmpty(productComponent.ExternalId) &&
+                            //    ID.TryParse(productComponent.ExternalId, out var result))
+                            //{
+                            //    product.SitecoreProductItemId = result.ToGuid();
+                            //}               
 
                             ItemVariationSelectedComponent selectedComponent = lineItem.CartLineComponents.OfType<ItemVariationSelectedComponent>().FirstOrDefault();
                             if (selectedComponent != null)

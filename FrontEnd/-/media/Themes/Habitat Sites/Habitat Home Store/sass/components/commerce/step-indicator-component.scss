@@ -1,8 +1,9 @@
-@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../../abstracts/_mixins.scss';
 
 .cxa-stepindicator-component {
     width: 100%;
     margin-bottom: 30px;
+    margin-top: 50px;
 
     @include respond-to(mobile-large) {
         padding: 0 2em;

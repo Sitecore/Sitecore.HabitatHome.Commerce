@@ -1,5 +1,5 @@
 ﻿---
-ID: "ef33e94d-3f71-473f-8b1f-b2bf22dc5f43"
+ID: "4b4d70c0-803f-4839-81cd-ee5c9243a2f1"
 Parent: "fb459858-b02c-4a6c-ac26-bc1ca7911049"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/components/sxa/link-component"
@@ -7,14 +7,14 @@ DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/EF33E94D3F71473F8B1FB2BF22DC5F43.ashx?h=16&thn=1&w=16"
+  Value: "-/media/4B4D70C0803F483981CDEE5C9243A2F1.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "f21d8273-d62f-4166-a684-0b4a2fd79c05"
-  Value: LyogQGltcG9ydCAnLi4vLi4vbWl4aW5zL2luZGV4JzsNCi5jb21wb25lbnQubGlua3sNCiAgICBwYWRkaW5nLWxlZnQ6MDsNCiAgICBhew0KICAgICAgICBAaW5jbHVkZSBsaW5rKCk7DQogICAgfQ0KfSAqLwo=
+  BlobID: "5b71d81a-0f8e-471b-83e0-666d6b26d7d0"
+  Value: LyogYnJlYWtwb2ludHMgKi8KLmNvbXBvbmVudC5saW5rIC5saW5rLWJ1dHRvbiBhIHsKICBmb250LXdlaWdodDogNzAwOwogIGNvbG9yOiAjMTQxOTE5OwogIGJvcmRlcjogMXB4IHNvbGlkICMxNDE5MTk7CiAgcGFkZGluZzogMS4yODU3MWVtIDNlbTsKICBib3JkZXItcmFkaXVzOiAwOwogIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7Cn0KCi5jb21wb25lbnQubGluayAubGluay1idXR0b24gYTpiZWZvcmUgewogIGNvbnRlbnQ6IG5vbmU7Cn0K
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
-  Value: 119
+  Value: 255
 - ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
   Hint: Mime Type
   Value: text/css
@@ -28,4 +28,26 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171120T095752Z
+      Value: 20190326T193848Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T193848Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T193848Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

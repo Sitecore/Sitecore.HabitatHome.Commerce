@@ -56,22 +56,6 @@
   display: inline-block;
 }
 
-.cxa-recentorders-component .header h4,
-.cxa-recentorders-component .header h4 span {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  color: #383c41;
-  font-weight: 600;
-}
-
-.cxa-recentorders-component .header h4 span,
-.cxa-recentorders-component .header h4 span span {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  color: #383c41;
-  font-weight: 600;
-}
-
 .cxa-recentorders-component .view-all-orders-link:before {
   display: inline-block;
   margin-right: 15px;

@@ -100,13 +100,14 @@ XA.component.search.url = (function ($, document) {
 
             return url;
         },
-        createMultiFacetUrl: function (dataProp, facetList, sig) {
+        createMultiFacetUrl: function (dataProp, facetList, sig, itemId) {
             var url = this.setEndpoint(dataProp.endpoint);
 
             url += "?f=" + facetList.join(',').toLowerCase();
             url += (dataProp.s) ? "&s=" + dataProp.s : "";
             url += (dataProp.l) ? "&l=" + dataProp.l : "";
             url += (dataProp.q) ? "&q=" + encodeURIComponent(dataProp.q) : "";
+            url += itemId ? "&itemid=" + itemId : "";
 
             url += this.getFacetParams(dataProp, sig);
 
@@ -163,7 +164,7 @@ XA.component.search.url = (function ($, document) {
                 if (specialParams.indexOf(clearParamName) !== -1) {
                     paramValue = typeof dataProp[param] !== "undefined" ? dataProp[param] : "";
                     if (searchResultsSignature === paramSignature) {
-                        url += "&" + clearParamName + "=" + paramValue;
+                        url += "&" + clearParamName + "=" + encodeURIComponent(paramValue);
                     }
                 }
             }

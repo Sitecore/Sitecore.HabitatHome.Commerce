@@ -36,6 +36,10 @@
   flex-flow: column wrap;
 }
 
+.component.cxa-register-component .registeration-form form input {
+  background-color: #fff;
+}
+
 .component.cxa-register-component .registeration-form form > * {
   -ms-flex-item-align: start;
   align-self: flex-start;

@@ -2,9 +2,20 @@
 ID: "cefc3046-e2be-41f6-9bfe-7f6a7eeebb0d"
 Parent: "97837ac1-9549-47c5-a9aa-10d768b4f78e"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Trainer Finder/Excercise Question Settings/Yoga
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Excercise Question Settings/Yoga
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143026Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -21,7 +32,7 @@ Languages:
       Value: "{13BEB09C-9F4D-4FD0-85D8-6567BF3EC81E}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: yoga
+      Value: Yoga
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -76,3 +87,24 @@ Languages:
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "child-safety"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ヨガ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180324T011938Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
+      Hint: Pattern Card
+      Value: "{0D501EBA-ABBE-4FE5-9CBC-1161D8C60037}"
+    - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
+      Hint: Mapped Value
+      Value: Yoga

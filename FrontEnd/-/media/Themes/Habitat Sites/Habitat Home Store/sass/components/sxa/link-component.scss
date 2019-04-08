@@ -1,7 +1,16 @@
-/* @import '../../mixins/index';
-.component.link{
-    padding-left:0;
-    a{
-        @include link();
-    }
-} */
+@import '../../abstracts/_mixins.scss';
+
+.component.link {
+    .link-button a {
+        font-weight: 700;
+        color: $bg-charcoal-dark;
+        border: 1px solid $bg-charcoal-dark;
+        padding: 1.28571em 3em;
+        border-radius: 0;
+        text-transform: uppercase;
+
+        &:before {
+            content: none;
+        }
+    } 
+}

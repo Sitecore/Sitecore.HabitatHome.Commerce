@@ -27,3 +27,20 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03e9d642-754b-4fd7-9208-916fae7fe7e7"
+      Hint: Order Total Header
+      Value: "????"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182615Z
+    - ID: "2f777a53-15c1-4bbb-bc15-4c0f286d67f1"
+      Hint: VAT Label
+      Value: "?"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -3224,9 +3224,6 @@ Languages:
     - ID: "1d1f11dc-b6f5-4db3-b26a-7ae5aac5c07b"
       Hint: Referrer
       Value: 
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171110T151210Z
     - ID: "268ef40b-81f5-4842-8adf-f2c57606c067"
       Hint: Longitude
       Value: 
@@ -6426,9 +6423,6 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "b39a3f51-b73b-49ff-ab72-10fe43d486db"
-      Hint: City
-      Value: 
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
@@ -6447,9 +6441,6 @@ Languages:
       Value: 
     - ID: "e03f86ee-69f5-4704-8e2f-ee3ef6845589"
       Hint: ISP
-      Value: 
-    - ID: "eb60b94d-1ea5-4ebc-94d4-534c82e80f1a"
-      Hint: Country
       Value: 
     - ID: "f7b5df32-d5ab-4911-82e0-1ad8e1e279bd"
       Hint: Latitude

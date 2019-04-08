@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/16x16/scroll.png
 - ID: "13f89250-ad6b-4548-882e-118a12c18094"
   Hint: Parameters Template
-  Value: "{FF75632A-03ED-4D31-B42A-1EEE45E5147F}"
+  Value: "{A8319D9F-A76A-426F-B0D3-AA8DC38A7E4D}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/Commerce Experience Accelerator/Cart/Datasource/Shopping Cart Lines

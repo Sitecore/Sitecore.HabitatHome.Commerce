@@ -19,6 +19,7 @@
 /*------------------------ Page Layouts -------------------------------*/
 .cxa-orderhistory-component table {
   line-height: 2.5;
+  padding-left: 15px;
 }
 
 .cxa-orderhistory-component .order-id a {

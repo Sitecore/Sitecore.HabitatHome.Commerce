@@ -105,7 +105,7 @@
   margin: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list ul, .component.cxa-promoted-products-component .product-list ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -194,9 +194,9 @@
 }
 
 .component.cxa-productlist-component .product-list .product-summary .photo .add-to-cart-button button, .component.cxa-promoted-products-component .product-list .product-summary .photo .add-to-cart-button button {
-  background-color: Transparent;
+  background-color: Transparent !important;
   background-repeat: no-repeat;
-  border: none;
+  border: none !important;
   cursor: pointer;
   overflow: hidden;
 }
@@ -247,7 +247,7 @@
   margin-left: 0;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 991px) {
   .component.cxa-productlist-component .product-list .product-info, .component.cxa-promoted-products-component .product-list .product-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -489,6 +489,7 @@
   text-transform: none;
   border: 1px solid #141919;
   color: #141919;
+  text-decoration: none;
 }
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:after, .component.cxa-promoted-products-component .product-list .product-info .product-category a:after {
@@ -502,6 +503,7 @@
 
 .component.cxa-productlist-component .product-list .product-info .product-category a:hover, .component.cxa-promoted-products-component .product-list .product-info .product-category a:hover {
   color: #141919;
+  text-decoration: none;
 }
 
 .productlistsorting-component select {
@@ -615,10 +617,12 @@
 .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a {
   position: relative;
   padding-right: 20px;
+  text-decoration: none;
 }
 
 .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a:active, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a:hover, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a:focus {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a span:active, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a span:hover, .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info .product-category a span:focus {
@@ -634,7 +638,7 @@
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-promoted-products-component .product-list > ul > li .product-summary .product-info {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -643,7 +647,7 @@
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1024px) {
   .component.cxa-promoted-products-component .product-list > ul > li {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -651,7 +655,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-promoted-products-component .product-list > ul > li {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;

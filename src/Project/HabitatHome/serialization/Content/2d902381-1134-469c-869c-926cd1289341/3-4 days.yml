@@ -2,9 +2,20 @@
 ID: "d9b62e32-3218-48c0-847f-1b19b1c598a6"
 Parent: "2d902381-1134-469c-869c-926cd1289341"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Trainer Finder/Days Question Settings/3-4 days"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Days Question Settings/3-4 days"
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143034Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -17,7 +28,7 @@ Languages:
       Value: "{FF6A8672-457B-4D6C-9255-31C875FC6E3B}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: "three-four-days"
+      Value: "3-4 days"
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -72,3 +83,24 @@ Languages:
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: kitchen
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "3-4 日"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180324T011938Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
+      Hint: Pattern Card
+      Value: "{FF6A8672-457B-4D6C-9255-31C875FC6E3B}"
+    - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
+      Hint: Mapped Value
+      Value: "3-4 days"

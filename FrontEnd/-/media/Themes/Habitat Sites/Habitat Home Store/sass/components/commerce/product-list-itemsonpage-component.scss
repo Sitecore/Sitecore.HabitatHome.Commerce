@@ -1,9 +1,8 @@
 @import '../../index';
-@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../../abstracts/_mixins.scss';
 
 .cxa-productlistitemsonpage-component,
 .cxa-productlistitemsperpage-component {
-    font-weight: bold;
 
     .productlist-header-section {
        @include respond-to(mobile-large) {
@@ -12,17 +11,11 @@
    }
 
     .results-container{        
-       position: relative;
-
-       span {
-           color: #000 !important;       
-       }        
+       position: relative;      
 
        &:after {
            content:"\f078";
            font-family: FontAwesome;
-           color: #000;
-           //padding: 12px 8px;
            position: absolute; 
            right: 10px; 
            top: 50%;

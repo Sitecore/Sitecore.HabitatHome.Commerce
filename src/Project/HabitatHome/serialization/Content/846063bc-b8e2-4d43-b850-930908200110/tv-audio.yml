@@ -2,9 +2,20 @@
 ID: "8a0ca08e-dadc-4803-8cc8-a099c6870e04"
 Parent: "846063bc-b8e2-4d43-b850-930908200110"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Content Finder/Products Question Settings/tv-audio"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Content Finder/Products Question Settings/tv-audio"
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143051Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -68,22 +79,15 @@ Languages:
       Value: 
     - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
       Hint: Pattern Card
-      Value: 
+      Value: "{3133DB52-B2C6-4F60-B7A4-8F096695443F}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "tv-audio"
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180522T191256Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: テレビ、オーディオ
   Versions:
   - Version: 1
     Fields:
@@ -96,7 +100,7 @@ Languages:
         sitecore\admin
     - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
       Hint: Pattern Card
-      Value: 
+      Value: "{CDCADE11-E1F4-4792-8FA3-9F95C6954772}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "tv-audio"

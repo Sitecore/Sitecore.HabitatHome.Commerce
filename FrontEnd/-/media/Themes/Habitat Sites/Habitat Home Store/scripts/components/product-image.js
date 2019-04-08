@@ -1,16 +1,44 @@
 $(function(){
-    var list = $('.product-images li');
-    list.first().addClass('active');
+    var productImagesComponents = $('.cxa-productimages-component');
 
-    list.click(function(e){
-        $('.product-images li').removeClass('active');
-        e.preventDefault();
-        $(this).addClass('active');
-        
-        if(list.length > 1){
-            var imageSrc = $(this).find('a').attr('href');
-            $(".product-image").find("img").attr('src', imageSrc);
-        }
-        
+    productImagesComponents.each(function(){
+        var component = $(this);
+        var list = component.find('.product-images li');
+        list.first().addClass('active');
+    
+        list.click(function(e){
+            list.removeClass('active');
+            e.preventDefault();
+            $(this).addClass('active');
+            
+            if(list.length > 1){
+                var imageSrc = $(this).find('a').attr('href');
+                var isCreativeExchangeVersion = (getCurrentPageExtension() === 'html');
+    
+                if(isCreativeExchangeVersion){
+                    var linkChunks = imageSrc.split('/');
+                    var imageNameWithPrefix = linkChunks.pop().split('.')[0];
+                    if(imageNameWithPrefix){
+                        var imageNameParts = imageNameWithPrefix.split('-');
+                        if(imageNameParts.length >=2){
+                            var imageName = imageNameWithPrefix.split('-')[0];
+                            imageSrc = imageSrc.replace(imageNameWithPrefix,imageName);
+                        }
+                    }
+                }
+    
+                component.find(".product-image").find("img").attr('src', imageSrc);
+            }
+            
+            function getCurrentPageExtension() {
+                var pageExtensiponWithQueryString = window.location.href.split(".").pop();
+                if (pageExtensiponWithQueryString && pageExtensiponWithQueryString.length >= 4) {
+                    var pageExtension = pageExtensiponWithQueryString.substr(0, 4);
+                    return pageExtension;
+                }
+                return "";
+            }
+        });
     });
+    
 });

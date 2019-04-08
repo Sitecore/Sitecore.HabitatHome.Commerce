@@ -30,3 +30,20 @@ Languages:
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: Total
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: "????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: "??"

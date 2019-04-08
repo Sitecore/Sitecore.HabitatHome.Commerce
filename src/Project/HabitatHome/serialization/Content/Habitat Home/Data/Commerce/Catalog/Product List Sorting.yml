@@ -21,3 +21,23 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182616Z
+    - ID: "338c3d13-6af3-4dd5-ac7c-a188bf07c66b"
+      Hint: Sort by
+      Value: "???????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "5e2b46ab-d32d-4232-a2e4-1cb846632bdf"
+      Hint: Descending
+      Value: "(??)"
+    - ID: "6c404797-66f1-4d3d-ae89-866195c9dffd"
+      Hint: Ascending
+      Value: "(??)"

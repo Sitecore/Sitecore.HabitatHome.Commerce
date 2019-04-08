@@ -1,8 +1,10 @@
 @import '../../index';
-@import '../../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../../abstracts/_mixins.scss';
 
 .component.cxa-checkoutconfirm-component {
     font-size: 14px;
+    margin-bottom: 15px;
+    
     .component-content {
         @include vertical-form-layout();
         h4{

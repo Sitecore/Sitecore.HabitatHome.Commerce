@@ -1,7 +1,10 @@
     @import '../../index';
-    .cxa-addtocart-component {
+    @import '../../base/index';
+    @import '../../abstracts/_mixins.scss';
+
+    .cxa-addtocart-component { 
         .component-content {
-            width: 100%;
+            width: 100%; 
             display: inline-block;
             .add-to-cart-qty {
                 label {
@@ -12,7 +15,7 @@
                 margin-left: 5px;
             }
         }
-        .quantity-input {
+        .quantity-input { 
             @include numeric-input-group();
         }
         .add-to-cart-btn {
@@ -22,5 +25,52 @@
         }
         form {
             @include row-of-elements-packed(false, $bottom-or-right, $packed-elements-margin);
+        }
+        .quantity-input button.decrease,
+        .quantity-input button.increase,
+        .quantity-input input, 
+        .quantity-input button {
+            border: 1px solid #141919;
+            border-radius: 0;
+            background-color:white !important;
+        }
+      
+        form {
+            @include respond-to(mobile-large) {
+                display: block;
+            }
+        }
+    
+        .add-to-cart-button {
+            @include respond-to(mobile-large) {
+                margin: 0 auto;           
+    
+                .add-to-cart-btn {
+                    margin: 20px auto;   
+                    width: 100%;
+                }
+            }
+        }
+    
+        .add-to-cart-qty label {
+            @include respond-to(mobile-large) {
+                margin: 40px auto 0;           
+            }
+        }
+    
+        .quantity-input {
+            @include respond-to(mobile-large) {
+                margin: 0 auto;           
+            }
+        }
+    
+        .quantity-input input {
+            border-left: 0;
+            border-right: 0;
+        }
+    
+        .add-to-cart-btn {
+            border-radius: 0;
+            text-transform: uppercase;
         }
     }

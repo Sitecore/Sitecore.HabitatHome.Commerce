@@ -11,21 +11,17 @@
   text-align: left;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .order-confirmation-page h1 {
     font-size: 32px;
   }
-}
-
-.order-confirmation-page .article-content .component-content {
-  padding: 0;
 }
 
 .order-confirmation-page .order-confirmation-component {
   padding: 100px 15% 100px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .order-confirmation-page .order-confirmation-component {
     padding: 0 2em;
   }

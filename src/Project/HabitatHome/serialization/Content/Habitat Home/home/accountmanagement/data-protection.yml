@@ -1,0 +1,75 @@
+﻿---
+ID: "bb8c3977-325c-4a10-b64e-c0cb60ded7d4"
+Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
+Template: "cb5e16df-b01c-44a0-a4d6-c99235acf860"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/data-protection"
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: 
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{28EF4319-C1B1-4D9C-934A-D1EF55FEF200}"
+          p:before="*"
+          s:ds="{9568373C-0FFD-48AC-9FFF-39985E9F9486}"
+          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/main/sxa-account-page/container-1/column-2-2" />
+        <r
+          uid="{C047B2B0-06AF-45BA-AA94-409A7E186A70}"
+          p:after="r[@uid='{28EF4319-C1B1-4D9C-934A-D1EF55FEF200}']"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="GridParameters=%7BFB140AEF-DE33-4088-9F1D-406C6BA32A8E%7D&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="/main/sxa-account-page/container-1/column-2-2" />
+        <r
+          uid="{9C80FF23-1997-421F-B97E-104881048758}"
+          p:after="r[@uid='{C047B2B0-06AF-45BA-AA94-409A7E186A70}']"
+          s:ds=""
+          s:id="{9DC3DEF7-62CC-458A-96F3-CCF49E1283FB}"
+          s:par=""
+          s:ph="/main/sxa-account-page/container-1/column-2-2/container-1" />
+        <r
+          uid="{1E80E64B-9BB0-4968-9C79-6ADD13CF6134}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{36C5441C-3AE0-40E8-993A-183A8BF14576}"
+          s:par="Add New Address Link&amp;Show Address List Header&amp;Number of Addresses to Show=5&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+          s:ph="/main/sxa-account-page/container-1/column-2-2/container-1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Data Protection
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181005T152105Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Data Protection
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\commerceadmin
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Data Protection

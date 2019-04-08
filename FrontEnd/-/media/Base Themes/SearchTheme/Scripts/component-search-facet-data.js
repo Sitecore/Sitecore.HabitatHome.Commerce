@@ -40,7 +40,9 @@ XA.component.search.facet.data = (function ($, document) {
                 data = facetRequestData.data,
                 requestData,
                 language,
-                scope;
+                scope,
+                searchModel,
+                itemId;
 
             for (var signature in data) {
                 if (data.hasOwnProperty(signature)) {
@@ -49,6 +51,9 @@ XA.component.search.facet.data = (function ($, document) {
                     //get scope settings form Search Results rendering
                     scope = this.getSearchResultsScope(signature);
 
+                    searchModel = this.getSearchResultsModelBySignature(signature),
+                    itemId = searchModel.get('dataProperties').itemid;
+
                     //make one request for data for facet controls with all hash params
                     if (data[signature].normalFiltering.length > 0) {
                         requestData = $.extend({ endpoint: facetRequestData.endpoint, s: scope, l: language}, hashObj);
@@ -56,7 +61,7 @@ XA.component.search.facet.data = (function ($, document) {
                             callback: function (data) {
                                 XA.component.search.vent.trigger("facet-data-filtered", data);
                             },
-                            url: XA.component.search.url.createMultiFacetUrl(requestData, data[signature].normalFiltering, signature)
+                            url: XA.component.search.url.createMultiFacetUrl(requestData, data[signature].normalFiltering, signature, itemId)
                         });
                     }
 
@@ -76,7 +81,7 @@ XA.component.search.facet.data = (function ($, document) {
                                 callback: function (data) {
                                     XA.component.search.vent.trigger("facet-data-partial-filtered", data);
                                 },
-                                url: XA.component.search.url.createMultiFacetUrl(requestData, [facetName], signature)
+                                url: XA.component.search.url.createMultiFacetUrl(requestData, [facetName], signature, itemId)
                             });
                         });
                     }

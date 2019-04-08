@@ -1,4 +1,4 @@
-@import '../../../Habitat Home/sass/abstracts/_mixins.scss';
+@import '../abstracts/_mixins.scss';
  
 .product-list-col {
     @include respond-to(mobile-large) {

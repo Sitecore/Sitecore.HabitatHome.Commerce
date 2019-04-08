@@ -1,14 +1,10 @@
-//@import "../../mixins/index";
-@import "../../../../Habitat Home/sass/abstracts/_mixins.scss";
+@import "../../abstracts/_mixins.scss";
 
 .product-items-block {
     margin-bottom: 100px;
 
     .catalog-item-container {
         padding: 0 1em;
-        .component-content{
-            //@include clearfix;    
-        }    
 
         .cxa-productimages-component {
             padding: 0;
@@ -50,4 +46,8 @@
             padding: 0.5em;
         }
     }   
+}
+
+.catalog-item-container {
+    margin-top: 20px;
 }

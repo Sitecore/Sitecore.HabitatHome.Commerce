@@ -1,0 +1,27 @@
+﻿---
+ID: "96504acd-2a42-4c10-b789-acc2f4e61f60"
+Parent: "530d57a8-d1ca-4613-907d-eb9972c8d016"
+Template: "56b86fa3-4906-437f-9036-78f570b077f9"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Header Container/Selected Variant Preview/Selected Variant Group/Name
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "c35b2285-b4a8-406f-a91c-24a60391dc12"
+  Hint: DataAttributes
+  Value: "data-bind=text%3A%20key"
+- ID: "e33ae5c3-e5ac-4331-89b1-1c92b4a88595"
+  Hint: Tag
+  Value: "{E8E2C26D-2F96-4A9C-9C17-D095E6CE46CC}"
+- ID: "e4e43d78-4b7f-4281-8742-ebeddcb6e737"
+  Hint: Property
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181127T023400Z

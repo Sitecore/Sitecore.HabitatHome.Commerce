@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "6fd695e7-7f6d-4ca5-8b49-a829e5950ae9"
   Hint: __Subitems Sorting
-  Value: "{44D1A0D2-E17B-4DAA-ADDF-53F2E8F58525}"
+  Value: 
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{6DD509C7-87DB-42F0-8C87-6BE471CA3278}"
@@ -77,3 +77,12 @@ Languages:
     Hint: __Display name
     Value: データ
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

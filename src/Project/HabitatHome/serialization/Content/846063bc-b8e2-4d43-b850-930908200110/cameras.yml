@@ -2,9 +2,20 @@
 ID: "8ae07b45-296e-4cb1-97f4-0d114d05821d"
 Parent: "846063bc-b8e2-4d43-b850-930908200110"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Content Finder/Products Question Settings/cameras
+Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Content Finder/Products Question Settings/cameras
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143047Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -73,6 +84,10 @@ Languages:
       Hint: Mapped Value
       Value: cameras
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: カメラ
   Versions:
   - Version: 1
     Fields:

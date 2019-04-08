@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 3200
 Languages:
 - Language: en
   Versions:
@@ -28,6 +28,10 @@ Languages:
       Value: |
         extranet\Anonymous
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: スニペット
   Versions:
   - Version: 1
     Fields:

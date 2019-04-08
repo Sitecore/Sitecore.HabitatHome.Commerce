@@ -26,7 +26,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{65A2C342-F3C1-4565-A236-C88C58CB1CF1}" />
+        <image mediaid="{B8CD0674-1886-470F-9B58-77CBA03BDF43}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180711T173817Z
@@ -54,3 +54,9 @@ Languages:
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Getting Started With Running
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Getting Started With Running
+  Versions:

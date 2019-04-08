@@ -15,20 +15,20 @@
 @using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods
 @using Sitecore.Commerce.XA.Feature.Cart.Models
 @using Sitecore.Mvc
+@using ComponentDataSource = Sitecore.Commerce.XA.Feature.Cart.CartFeatureConstants.ShoppingCart.DataSourceFields;
+
 @model ShoppingCartLinesRenderingModel
 @{
     var currentItem = Html.Sitecore().CurrentItem;
-    var productDetailsLabel = Html.Sitecore().Field("Product Details Label", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.ProductDetailsTooltip } } });
-    var unitPriceLabel = Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.UnitPriceTooltip } } });
-    var quantityLabel = Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.QuantityTooltip } } });
-    var totalLabel = Html.Sitecore().Field("Total Label", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.ProductTotalTooltip } } });
+    var productDetailsLabel = Html.Sitecore().Field(ComponentDataSource.ProductDetailsLabel, Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.ProductDetailsTooltip } } });
+    var unitPriceLabel = Html.Sitecore().Field(ComponentDataSource.UnitPriceLabel, Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.UnitPriceTooltip } } });
+    var quantityLabel = Html.Sitecore().Field(ComponentDataSource.QuantityLabel, Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.QuantityTooltip } } });
+    var totalLabel = Html.Sitecore().Field(ComponentDataSource.TotalLabel, Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @Model.ProductTotalTooltip } } });
+    var discountLabel = currentItem[ComponentDataSource.DiscountLabel];
+    var savingsLabel = currentItem[ComponentDataSource.SavingLabel];
+    var deliveryLabel = currentItem[ComponentDataSource.DeliveryLabel];
+    var addressLabel = currentItem[ComponentDataSource.AddressLabel];
 
-    var giftCardAmountLabel = Model.VariantLabels["Gift Card Amount"];
-    var colorLabel = Model.VariantLabels["Color"];
-    var sizeLabel = Model.VariantLabels["Size"];
-    var styleLabel = Model.VariantLabels["Style"];
-    var discountLabel = currentItem["Discount Label"]; // Html.Sitecore().Field("Discount Label", Html.Sitecore().CurrentItem);
-    var savingsLabel = currentItem["Saving Label"]; // Html.Sitecore().Field("Savings Label", Html.Sitecore().CurrentItem);
 }
 <div @Html.Sxa().Component("cxa-shoppingcartlines-component", Model.Attributes) data-cxa-component-class="CartLines" data-cxa-component-initialized="false" data-cxa-component-model="CartLinesViewModel" data-cxa-component-type="component">
     @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
@@ -42,88 +42,130 @@
         <div class="component-content" data-bind="with: cart">
             <div class="shopping-cart-lines">
                 <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" title="@Model.ProductDetailsTooltip">@productDetailsLabel</th>
-                            <th title="@Model.UnitPriceTooltip">@unitPriceLabel</th>
-                            <th title="@Model.QuantityTooltip">@quantityLabel</th>
-                            <th title="@Model.ProductTotalTooltip" class="total-header">@totalLabel</th>
-                            <th class="delete-row">&nbsp;</th>
-                        </tr>
-                    </thead>
+                    @if (Model.DisplayTableHeader)
+                    {
+                        <thead>
+                            <tr>
+                                <th colspan="2" title="@Model.ProductDetailsTooltip">@productDetailsLabel</th>
+                                <th title="@Model.UnitPriceTooltip">@unitPriceLabel</th>
+                                <th title="@Model.QuantityTooltip">@quantityLabel</th>
+                                <th title="@Model.ProductTotalTooltip" class="total-header">@totalLabel</th>
+                                <th class="delete-row">&nbsp;</th>
+                            </tr>
+                        </thead>
+                    }
                     <tbody data-bind="foreach: cartLines">
-                        
                         <tr>
                             <td class="shoppingcart-image">
-                                <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt=" " pid="image" /></a>
+                                <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image" /></a>
                             </td>
                             <td class="shoppingcart-info">
                                 <a data-bind="attr:{'href' : productUrl}">
                                     <h5 class="displayName" data-bind="text: displayName"></h5>
                                 </a>
-                                <div class="variant-information">
-                                    <div class="color-information" data-bind="visible: colorInformation">
-                                        <span class="variant-label">@colorLabel</span>
-                                        <span class="variant-value" data-bind="text: colorInformation, css: colorInformation"></span>
-                                    </div>
-                                    <div class="size-information" data-bind="visible: sizeInformation">
-                                        <span class="variant-label">@sizeLabel</span>
-                                        <span class="variant-value" data-bind="text: sizeInformation"></span>
-                                    </div>
-                                    <div class="style-information" data-bind="visible: styleInformation">
-                                        <span class="variant-label">@styleLabel</span>
-                                        <span class="variant-value" data-bind="text: styleInformation"></span>
-                                    </div>
-                                    <div class="gift-card-amount-information" data-bind="visible: giftCardAmountInformation">
-                                        <span class="variant-label">@giftCardAmountLabel</span>
-                                        <span class="variant-value" data-bind="text: giftCardAmountInformation"></span>
-                                    </div>
-
-                                </div>
-                                <div class="related-product-information" style="padding-left:25px">
-                                    <div data-bind="foreach: relatedKitProducts">
-                                        <span data-bind="text: DisplayName" class="small"></span><br />
+                                <div class="product-variant-information" data-bind="foreach: properties">
+                                    <div class="variant-information">
+                                        <span class="variant-label" data-bind="text: label"></span>
+                                        <span class="variant-value" data-bind="text: value"></span>
                                     </div>
                                 </div>
-                                <div class="related-product-information" style="padding-left:25px">
-                                    <div data-bind="foreach: relatedBundleProducts">
-                                        <span data-bind="text: DisplayName" class="small"></span> <span data-bind="text: ProductPrice" class="small"></span><br />
+                                @if (Model.DisplayShippingInformation)
+                                {
+                                    <p class="shoppingcart-delivery" data-bind="if: shippingMethodName">
+                                        <span>@deliveryLabel</span>
+                                        <span class="shippingMethodName" data-bind="text: shippingMethodName"></span>
+                                    </p>
+                                    <div class="shoppingcart-delivery" data-bind="if: address">
+                                        <span>@addressLabel</span>
+                                        <ul class="lineShippingAddress">
+                                            <li>
+                                                <span data-bind="text: address.Address1"></span>
+                                                <span data-bind="text: address.City"></span>
+                                            </li>
+                                            <li>
+                                                <span data-bind="text: address.State"></span>
+                                                <span data-bind="text: address.ZipPostalCode"></span>
+                                            </li>
+                                            <li>
+                                                <span data-bind="text: address.Country"></span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-
+                                }
                             </td>
-                            <td class="shoppingcart-price">
-                                <span class="price" data-bind="text: linePrice"></span>
-                                <p data-bind="visible: discountOfferNames.length > 0">
-                                    <span>@discountLabel</span>
-                                    <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
-                                </p>
-                            </td>
-                            <td class="shoppingcart-quantity">
-                                <div>
-                                    <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display:none"></button>
-                                    <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating">
-                                    <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display:none"></button>
-                                </div>
-                            </td>
+                            @if (Model.DisplayUnitPriceColumn)
+                            {
+                                <td class="shoppingcart-price">
+                                    <span class="price" data-bind="text: linePrice"></span>
+                                    <p data-bind="visible: discountOfferNames.length > 0">
+                                        <span>@discountLabel</span>
+                                        <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
+                                    </p>
+                                </td>
+                            }
+                            @if (Model.DisplayQuantityColumn)
+                            {
+                                <td class="shoppingcart-quantity">
+                                    <div>
+                                        <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display: none"></button>
+                                        <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating">
+                                        <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display: none"></button>
+                                    </div>
+                                </td>
+                            }
                             <td class="shoppingcart-total">
                                 <span class="total" data-bind="text: lineTotal"></span>
                                 <p data-bind="visible: discountOfferNames.length > 0">
                                     <span>@savingsLabel</span>
                                     <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
                                 </p>
-                            </td>                            
-                            <td class="shoppingcart-delete" style="text-align:center;">
-                                <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a><br />
+                            </td>
+                            @if (Model.DisplayDeleteButtonColumn)
+                            {
+                            <td class="shoppingcart-delete">
+                                <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}">
+                                    <span data-bind="click: $parents[1].removeItem"></span>
+                                </a>
                                 @if (Sitecore.Context.IsLoggedIn)
                                 {
-                                <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
-                                    <i class="fa"></i>
-                                    <span>Move to My Wish List</span>
-                                </button>
+                                    <button class="btn" style="margin:20px 0px 0px; background-color:#50a1ab; color:#fff;" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                        <i class="fa"></i>
+                                        <span>Move to My Wish List</span>
+                                    </button>
                                 }
                             </td>
+                            }
+
                         </tr>
+                    @if (Model.DisplaySubLines)
+                    {
+                        <!-- ko foreach: sublines -->
+                        <tr class="subline-row">
+                            <td colspan="3">
+                                <div class="flex-container">
+                                    <div class="shoppingcart-image td">
+                                        <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image"/></a>
+                                    </div>
+                                    <div class="shoppingcart-info td">
+                                        <a data-bind="attr:{'href' : productUrl}">
+                                            <h5 class="displayName" data-bind="text: displayName"></h5>
+                                        </a>
+                                        <div class="product-variant-information" data-bind="foreach: properties">
+                                            <div class="variant-information">
+                                                <span class="variant-label" data-bind="text: label"></span>
+                                                <span class="variant-value" data-bind="text: value"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td colspan="1" class="shoppingcart-quantity td">
+                                <text>@quantityLabel: </text> <lable class="quantity" data-bind="text: quantity"/>
+                            </td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <!-- /ko -->
+                    }
                     </tbody>
                 </table>
             </div>

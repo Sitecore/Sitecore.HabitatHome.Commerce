@@ -24,3 +24,83 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01a84314-bbff-4a8d-bc77-f05049f785f7"
+      Hint: Product Details Header
+      Value: "?????"
+    - ID: "15deee21-97b9-4b0e-a089-e78a2ac6f8b9"
+      Hint: Shipping Cost Label
+      Value: "??"
+    - ID: "161bd054-8d77-4e31-901b-8be71af30948"
+      Hint: Edit Payment Methods Text
+      Value: "????????"
+    - ID: "20b0a545-b3b4-458a-8f92-c9d84af6d431"
+      Hint: Shipping Address Header
+      Value: "?????"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182617Z
+    - ID: "2b6252fa-7878-4f18-8ec0-0c9eba2191c7"
+      Hint: Payment Methods Header
+      Value: "?????"
+    - ID: "336ce5b8-2852-4e70-bd46-841a44461f2a"
+      Hint: "Next Button In-Progress Label"
+      Value: "???..."
+    - ID: "369efce9-b982-4261-a28e-c8d7ac7b06cd"
+      Hint: Taxes Label
+      Value: "???"
+    - ID: "4c2fa1c2-e2a2-498e-9606-264f22f0b45c"
+      Hint: Order Information Header
+      Value: "????"
+    - ID: "50917b7d-2af4-4ffb-80a3-2d6be166619c"
+      Hint: Billing Address Header
+      Value: "??????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "726e50a5-d112-4ba7-afb6-e916cbe3fd5a"
+      Hint: Unit Price Header
+      Value: "??"
+    - ID: "75804796-80a9-4165-b297-47022956ab55"
+      Hint: Next Button Label
+      Value: "?????"
+    - ID: "918481e9-6622-4878-9559-50441413c24a"
+      Hint: Variant Label
+      Value: "?????"
+    - ID: "95ba4b7d-b78f-41e9-91bd-dc556eb143ef"
+      Hint: Quantity Header
+      Value: "??"
+    - ID: "a8344352-0b64-4d39-af8a-923df6ac19d7"
+      Hint: Edit Shipping Address Text
+      Value: "????????"
+    - ID: "aa46b5b7-a08b-4fbc-91ff-24db0b85b5d2"
+      Hint: Subtotal Label
+      Value: "??"
+    - ID: "b4d813b6-3145-4965-8d72-6f2436b0f407"
+      Hint: Previous Button Label
+      Value: "?????"
+    - ID: "bdccfef3-787c-4e21-a0a4-db19f6d65e6a"
+      Hint: Total Header
+      Value: "??"
+    - ID: "c21d066e-5b38-4ea9-a4a6-38c4b34e8b3e"
+      Hint: Savings Label
+      Value: "??"
+    - ID: "e2585533-00e3-408c-bf30-13ef5e1d350e"
+      Hint: Discount Label
+      Value: "??"
+    - ID: "e43aae63-313c-433f-b2fa-77b71b34d498"
+      Hint: Credit Card Label
+      Value: "????? ???"
+    - ID: "e879b1fa-0ee9-4b3b-b067-7f9af9740e87"
+      Hint: Edit Billing Address Text
+      Value: "?????????"
+    - ID: "e880861c-ae2b-426a-a628-aad139cbcb74"
+      Hint: Delivery Label
+      Value: "??:"
+    - ID: "f7912817-6731-48b0-92e1-aa8313fe6f1f"
+      Hint: Gift Cards Header
+      Value: "??? ???"

@@ -29,7 +29,7 @@ export default function(file) {
     setTimeout(function() {
         request.get({
             url: url,
-            "rejectUnauthorized": false
+            "rejectUnauthorized": false,
         }, function(err, httpResponse, body) {
             try {
                 var response = JSON.parse(body);

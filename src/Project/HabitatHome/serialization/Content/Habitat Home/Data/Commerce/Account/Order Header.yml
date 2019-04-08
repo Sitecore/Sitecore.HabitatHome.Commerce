@@ -21,3 +21,32 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "2d3280b4-2daf-4682-ab42-9d495e2fecbe"
+      Hint: Order Status Label Tooltip
+      Value: "????????"
+    - ID: "4bc3e098-7c7c-4dbf-ab82-45fad2147005"
+      Hint: Order Date Label Text
+      Value: "???"
+    - ID: "517de6bc-678e-474b-bf5e-b813c1ab48ed"
+      Hint: Order ID Label Text
+      Value: "????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "755b4187-2374-4574-a51e-834541823644"
+      Hint: Order ID Label Tooltip
+      Value: "???????"
+    - ID: "7cdcbf0e-0845-4981-8b8d-908b87c7742d"
+      Hint: Order Status Label Text
+      Value: "????????"
+    - ID: "7ec67164-8b46-441a-b7b2-27949332958f"
+      Hint: Order Date Label Tooltip
+      Value: "???"

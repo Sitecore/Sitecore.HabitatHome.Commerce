@@ -11,7 +11,7 @@
 
 
 <div @Html.Sxa().Component("cxa-orderhistory-component", Model.Attributes) data-cxa-component-class="OrderHistory" data-cxa-component-initialized="false" data-cxa-component-model="OrdersViewModel" data-cxa-component-type="component">
-    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         <div class="error-message">
             <p>@Model.ErrorMessage</p>
@@ -21,9 +21,7 @@
     {
         <div class="component-content">
             <div class="order-history-list">
-                <h1>Online Orders</h1>
-                <br />
-                <table data-bind="visible: orders().length">
+                <table>
                     <thead>
                         <tr>
                             <td title="@Model.OrderIdColumnHeaderTooltip">@Html.Sitecore().Field(ComponentDataSource.OrdersIdColumnHeaderText, Html.Sitecore().CurrentItem)</td>
@@ -32,11 +30,16 @@
                             <td class="view-order-details"></td>
                         </tr>
                     </thead>
+                    <tbody data-bind="visible: !(orders().length)">
+                        <tr>
+                            <td colspan="4" class="text-center">@Html.Sitecore().CurrentItem["No Order Message"]</td>
+                        </tr>
+                    </tbody>
                     <tbody data-bind="foreach: orders()">
                         <!--ko ifnot: status() == 'StoreOrder' -->
-
+                        
                         <tr>
-                            <td class="order-id"  width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
+                            <td class="order-id"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
                             <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
                             <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
                             <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>
@@ -44,15 +47,9 @@
                         <!--/ko-->
                     </tbody>
                 </table>
-                <div class="component divider col-xs-12">
-                    <div class="component-content">
-                        <hr>
-                    </div>
-                </div>
-                <h1>
-                    In Store Orders
-                </h1>
-                <br />
+
+                @Html.Sitecore().Placeholder("order-history-divider")
+
                 <table data-bind="visible: orders().length">
                     <thead>
                         <tr>

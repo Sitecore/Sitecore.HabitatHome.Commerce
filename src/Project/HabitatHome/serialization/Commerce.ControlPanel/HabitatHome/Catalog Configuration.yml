@@ -9,10 +9,13 @@ SharedFields:
 - ID: "00a621a0-d2d1-4cf0-831f-36da2e8d2a91"
   Hint: Start Navigation Category
   Value: "{B893C063-6238-ED57-700D-72862C56038D}"
+- ID: "453f14e4-1045-4e50-be74-dd0a89ee764a"
+  Hint: ExcludeCategoriesFromSearchResults
+  Type: Checkbox
+  Value: 1
 - ID: "48420f58-f1df-4b80-8386-b62aa84e9b57"
   Hint: Gift Card Page Link
-  Value: |
-    <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
+  Value: 
 - ID: "d7cad4b2-7027-4d9b-a813-747105fd50c8"
   Hint: Catalog
   Value: "{59DDADC1-9B88-727E-9E14-3F6CF321AE0F}"
@@ -21,7 +24,11 @@ SharedFields:
   Value: "{50E69E44-1425-4502-9589-4031F47DCD4F}"
 - ID: "fc9c3c29-7a69-4088-8c89-22fb3d493a9a"
   Hint: GiftCardProductId
-  Value: 6042986
+  Value: 
+- ID: "fdd0d6ae-bccd-4cd9-a078-3103d720d2e7"
+  Hint: Use Direct Navigation
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Fields:

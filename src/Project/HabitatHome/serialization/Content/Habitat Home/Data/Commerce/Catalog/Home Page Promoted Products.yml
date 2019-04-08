@@ -30,3 +30,20 @@ Languages:
     - ID: "f2f7d133-2be5-4080-a4bb-dd533e858756"
       Hint: Show More Products Text
       Value: Show more
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182615Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "705673ce-882a-4249-b2ec-8f465e458670"
+      Hint: Show More Products Tooltip
+      Value: さらに商品を表示
+    - ID: "f2f7d133-2be5-4080-a4bb-dd533e858756"
+      Hint: Show More Products Text
+      Value: さらに表示

@@ -149,7 +149,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 var listPricingPolicy = sellableItem.GetPolicy<ListPricingPolicy>();
                 var listPrice = listPricingPolicy.Prices.FirstOrDefault();
 
-                item.StartPrice = new AmountType { currencyID = CurrencyCodeType.USD, Value = System.Convert.ToDouble(listPrice.Amount) };
+                item.StartPrice = new AmountType { currencyID = CurrencyCodeType.USD, Value = System.Convert.ToDouble(listPrice.Amount, System.Globalization.CultureInfo.InvariantCulture) };
 
                 item.ConditionID = 1000;  //new
 

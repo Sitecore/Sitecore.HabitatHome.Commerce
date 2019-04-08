@@ -19,6 +19,7 @@
 /* breakpoints */
 .component.cxa-checkoutconfirm-component {
   font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .component.cxa-checkoutconfirm-component .component-content {
@@ -194,7 +195,7 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutconfirm-component .checkout-footer-pane {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -217,7 +218,7 @@
   margin-right: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutconfirm-component .checkout-footer-pane .addresses {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -305,7 +306,7 @@
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   .component.cxa-checkoutconfirm-component {
     padding: 0 2em;
   }

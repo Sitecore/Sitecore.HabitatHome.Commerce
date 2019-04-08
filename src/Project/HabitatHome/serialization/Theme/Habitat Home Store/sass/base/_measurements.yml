@@ -1,5 +1,5 @@
 ﻿---
-ID: "5f7309a6-9f93-4463-8641-056fafbb5cb0"
+ID: "0991489b-f2ff-4bfc-a75f-4cce0905d579"
 Parent: "695aed50-d843-4352-be84-1be12abc3914"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/base/_measurements
@@ -7,10 +7,10 @@ DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/44BA3C1CC2E14F92938412B02E54A374.ashx?h=16&thn=1&w=16"
+  Value: "-/media/0991489BF2FF4BFCA75F4CCE0905D579.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "234ada7a-cd74-4eec-8015-86cb6697509b"
+  BlobID: "9d559229-29e3-47cc-90f7-ba864eae089a"
   Value: JG1haW4tY29udGFpbmVyLXdpZHRoOiAxMTQwcHg7DQokY29udGFpbmVyV2lkdGg6IDExNzBweDsNCg0KJG1hcmdpbjogMTVweDsNCiRwYWRkaW5nOiAxMHB4Ow0KDQokYm9yZGVyLXJhZGl1cyA6IDRweDsNCiRjb250cm9sLW5vcm1hbC1oZWlnaHQ6IDM0cHg7DQokY29udHJvbC1sYXJnZS1oZWlnaHQ6IDQycHg7DQokZm9ybS1tYXJnaW4tYmV0d2Vlbi1saW5lcyA6ICRtYXJnaW47DQokZm9ybS1zZWN0aW9uLW1hcmdpbjogJG1hcmdpbjsNCiRwYWNrZWQtZWxlbWVudHMtbWFyZ2luOiAzcHg7DQokaGVhZGVySWNvblJpZ2h0OiAwOw0KJGNoZWNrb3V0LXBhZ2UtcmlnaHQtcGFuZS1tYXgtd2lkdGg6IDczMHB4Ow==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
@@ -22,10 +22,43 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160221Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171120T100931Z
+      Value: 20190311T160220Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160222Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160221Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

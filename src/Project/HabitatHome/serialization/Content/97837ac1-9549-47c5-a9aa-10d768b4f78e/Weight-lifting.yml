@@ -2,9 +2,20 @@
 ID: "e59c4a8d-5f26-40f0-8274-e79f88965517"
 Parent: "97837ac1-9549-47c5-a9aa-10d768b4f78e"
 Template: "4fded342-b304-42f7-8091-ae3eb660ba4c"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Form Actions Settings/Trainer Finder/Excercise Question Settings/Weight-lifting"
+Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Excercise Question Settings/Weight-lifting"
 DB: master
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T143021Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1
@@ -17,7 +28,7 @@ Languages:
       Value: "{B762A1F5-06ED-4B42-B768-FF536441BEA7}"
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
-      Value: "weight-lifting"
+      Value: Weight Lifting
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -72,3 +83,24 @@ Languages:
     - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
       Hint: Mapped Value
       Value: "over-clocking"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ウェイトリフティング
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180324T011935Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "e30632b3-b1c5-494e-8eb2-5c323fe80c5e"
+      Hint: Pattern Card
+      Value: "{C139230C-7B22-4418-A13D-CFD6FFF5B35E}"
+    - ID: "ecb328c3-8f41-4c0b-8fdf-a01096146f3b"
+      Hint: Mapped Value
+      Value: Weight Lifting

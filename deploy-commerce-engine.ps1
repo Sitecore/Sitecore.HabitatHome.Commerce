@@ -5,7 +5,7 @@ Param(
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish,
-    [string]$webRoot = "E:\inetpub\wwwroot",
+    [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
     [string]$BizFxPathName = "SitecoreBizFx_habitathome.dev.local",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
@@ -13,7 +13,7 @@ Param(
     [string]$CommerceOpsPort = "5000",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
-    [string]$certificateName = "Commerce Engine SSL certificate",
+    [string]$certificateName = "habitathomestorefront.engine",
     [string]$publishFolder = (Join-Path $PWD "publishTemp")
 )
 

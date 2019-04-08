@@ -5,6 +5,9 @@ Template: "14807d83-9671-4d70-b0f4-f54012f2bfb8"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/kitchen-appliances"
 DB: master
 SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
 - ID: "4d71857f-c77d-44fa-8899-c671a0458d7f"
   Hint: Publish Date
   Value: 20171113T155600Z
@@ -147,33 +150,24 @@ Languages:
       Value: |
         <p>It's a given at any party: everyone gravitates to the kitchen. In addition to creating an inviting space with a contemporary look and feel, you also want modern appliances that conserve energy and save you time. That way, you can spend more time enjoying your company and less time hovering over the stove.</p>
         <p>For gorgeous kitchen that makes mealtime easy and fun, incorporate these design trends into your next remodel.</p>
-        <ol>
-            <li><p><strong>Hidden appliances</strong></p>
-            <p>Hidden appliances blend seamlessly into your design scheme, creating a smooth, uncluttered look. Refrigerators and even small appliances hide behind doors that match your pantry doors. You can also build appliances into a custom cabinetry design. With a concealed look, appliances become part of the overall design rather than a stainless steel interruption.</p></li>
-            
-            <li><p><strong>Warming drawers</strong></p>
-            <p>With a warming drawer, late arrivals can enjoy their meal fresh and warm, as if they were right on time. </p>
-            <p>Find warming drawers as standalone items or incorporated into the latest ovens. The Habitat Centerpiece 30-inch Dual Door Electric Range features a warming drawer as well as dual doors. Cook at two different temperatures and keep your dishes warm for later.</p>
-            <p>Slow-cook warming drawers, which fit under your oven, combine the versatility of a slow-cooker with the luxury of a warming drawer. You can cook the pot roast and keep it heated until the last guest arrives.</p>
-            </li>
-            <li><p><strong>Professional quality ranges</strong></p>
-            <p>Anyone who loves to cook loves the control of a freestanding gas range. A professional gas range not only delivers gourmet results, it also makes a grand statement in your kitchen.</p>
-            <p>With the Habitat Centerpiece 5.8 Cubic Foot Dual Door Gas Range, you can cook at two different temperatures&mdash;ideal for multicourse meals. And with five burners, you have more than enough space to prepare a glaze, saut&eacute; vegetables, and boil a pot of tea.</p>
-            </li>
-            <li><p><strong>Wine storage</strong></p>
-            <p>For the benefits of a wine cellar without the construction, consider a wine cooler. High-end wine coolers let you set the perfect temperature for storing wine, while LED lighting lets you display prized vintages. At Habitat, we have 34- and 48-bottle models that fit easily into your modern kitchen. Stainless finish, wood shelves, and tempered glass doors compliment modern kitchen designs. </p>
-            </li>
-            <li><p><strong>Tuxedo kitchens</strong></p>
-            <p>Classic black and white never go out of style, and the tuxedo kitchen's yin-yang contrast is very much in right now. Mix white cabinets with black countertops, or install white cabinets above and black cabinets below. Appliances&mdash;in either black or white of course!&mdash; complete the look.</p>
-            </li>
-            <li><p><strong>Smart appliances</strong></p>
-            <p>Our kitchens are becoming smarter than we are. Some smart ovens will send a text or tweet when they finish cooking your dinner. You can also adjust cooking time and temperature via a smartphone app. </p>
-            <p>Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator with Ice Maker and Wifi connects to your home network. You can control its settings or see how much orange juice you have left using the Helix Viva mobile app.  </p>
-            </li>
-            <li><p><strong>Undermount and trough sinks</strong></p>
-            <p>Sinks don't have to drop into your kitchen ensemble anymore. Pair an undermount sink with a natural stone countertop for a seamless, modern look. A trough sink works well for avid chefs and kitchen designs that command a clean, industrial look.</p>
-            </li>
-        </ol>
+        <p><strong>1. Hidden appliances</strong></p>
+        <p>Hidden appliances blend seamlessly into your design scheme, creating a smooth, uncluttered look. Refrigerators and even small appliances hide behind doors that match your pantry doors. You can also build appliances into a custom cabinetry design. With a concealed look, appliances become part of the overall design rather than a stainless steel interruption.</p>
+        <p><strong>2. Warming drawers</strong></p>
+        <p>With a warming drawer, late arrivals can enjoy their meal fresh and warm, as if they were right on time. </p>
+        <p>Find warming drawers as standalone items or incorporated into the latest ovens. The Habitat Centerpiece 30-inch Dual Door Electric Range features a warming drawer as well as dual doors. Cook at two different temperatures and keep your dishes warm for later.</p>
+        <p>Slow-cook warming drawers, which fit under your oven, combine the versatility of a slow-cooker with the luxury of a warming drawer. You can cook the pot roast and keep it heated until the last guest arrives.</p>
+        <p><strong>3. Professional quality ranges</strong></p>
+        <p>Anyone who loves to cook loves the control of a freestanding gas range. A professional gas range not only delivers gourmet results, it also makes a grand statement in your kitchen.</p>
+        <p>With the Habitat Centerpiece 5.8 Cubic Foot Dual Door Gas Range, you can cook at two different temperatures—ideal for multicourse meals. And with five burners, you have more than enough space to prepare a glaze, sauté vegetables, and boil a pot of tea.</p>
+        <p><strong>4. Wine storage</strong></p>
+        <p>For the benefits of a wine cellar without the construction, consider a wine cooler. High-end wine coolers let you set the perfect temperature for storing wine, while LED lighting lets you display prized vintages. At Habitat, we have 34- and 48-bottle models that fit easily into your modern kitchen. Stainless finish, wood shelves, and tempered glass doors compliment modern kitchen designs. </p>
+        <p><strong>5. Tuxedo kitchens</strong></p>
+        <p>Classic black and white never go out of style, and the tuxedo kitchen's yin-yang contrast is very much in right now. Mix white cabinets with black countertops, or install white cabinets above and black cabinets below. Appliances—in either black or white of course!— complete the look.</p>
+        <p><strong>6. Smart appliances</strong></p>
+        <p>Our kitchens are becoming smarter than we are. Some smart ovens will send a text or tweet when they finish cooking your dinner. You can also adjust cooking time and temperature via a smartphone app. </p>
+        <p>Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator with Ice Maker and Wifi connects to your home network. You can control its settings or see how much orange juice you have left using the Helix Viva mobile app.  </p>
+        <p><strong>7. Undermount and trough sinks</strong></p>
+        <p>Sinks don't have to drop into your kitchen ensemble anymore. Pair an undermount sink with a natural stone countertop for a seamless, modern look. A trough sink works well for avid chefs and kitchen designs that command a clean, industrial look.</p>
         <p>The kitchen is the heart of the home. Let Habitat help you incorporate innovative design ideas and appliances for a luxury kitchen you can't wait to show off.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
@@ -219,16 +213,6 @@ Languages:
               s:par="Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FieldNames=%7bC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7d&amp;DynamicPlaceholderId=1" />
           </d>
         </r>
-    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
-      Hint: Image
-      Value: |
-        <image mediaid="{5F6109A3-88C1-411D-8705-61DFB9C19605}" alt="kitchen appliances hero" height="" width="" hspace="" vspace="" />
-    - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
-      Hint: Page Design
-      Value: 
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20171112T204905Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
@@ -238,10 +222,6 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
-    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
-      Hint: StickyNotes
-      Value: |
-        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -294,10 +274,6 @@ Languages:
             </li>
         </ol>
         <p>The kitchen is the heart of the home. Let Habitat help you incorporate innovative design ideas and appliances for a luxury kitchen you can't wait to show off.</p>
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
     - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
       Hint: MetaKeywords
       Value: 
@@ -317,10 +293,6 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
-      Hint: Navigation Image
-      Value: |
-        <image mediaid="{2595EB80-663F-4DA6-8D0C-A7F3A337174D}" alt="kitchen appliances nav thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox

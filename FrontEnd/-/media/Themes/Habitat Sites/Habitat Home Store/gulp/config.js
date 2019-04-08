@@ -8,7 +8,7 @@ export default {
     sassSourceMap: false,
     // Please configure
     serverOptions: {
-        server: 'https://habitathome.dev.local',
+        server: 'https://habitathome.dev.local', //need to be changed
         removeScriptPath: '/-/script/v2/master/RemoveMedia',
         uploadScriptPath: '/sitecore modules/PowerShell/Services/RemoteScriptCall.ashx',
         updateTemplatePath: '/-/script/v2/master/ChangeTemplate',
@@ -130,7 +130,19 @@ export default {
         'promo': 'component-promo.scss',
         'richtext': 'component-richtext-content.scss',
         'tabs': 'component-tabs.scss',
-        'file-list': 'component-file-list.scss'
+        'file-list': 'component-file-list.scss',
+        'file-list': 'component-file-list.scss',
+        'media-link': 'component-media-link.scss',
+        'search': 'component-search-other.scss',
+        'galleria': 'component-galleria.scss',
+        'archive': 'component-archive.scss',
+        'field-editor': 'component-field-editor.scss',
+        'map': 'component-map.scss',
+        'page-content': 'component-richtext-content.scss',
+        'page-list': 'component-page-list.scss',
+        'tag-cloud': 'component-tag-cloud.scss',
+        'tag-list': 'component-tag-list.scss',
+        'title': 'component-title.scss'
     },
 
     loginQuestions: [{
@@ -148,7 +160,7 @@ export default {
     ],
 
 
-    user: { login: 'sitecore\\admin', password: 'b' },
+    user: { login: '', password: '' },
 
     init: function() {
         extend(this.serverOptions, configUtils.getConf().serverOptions);

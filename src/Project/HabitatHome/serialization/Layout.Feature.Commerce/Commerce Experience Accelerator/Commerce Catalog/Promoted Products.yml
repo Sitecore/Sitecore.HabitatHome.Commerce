@@ -32,7 +32,7 @@ SharedFields:
   Value: 0
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog
+  Value: /sitecore/content/Sitecore/Storefront/Data/Commerce/Catalog
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: PromotedProducts

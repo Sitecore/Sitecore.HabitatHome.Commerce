@@ -24,3 +24,50 @@ Languages:
     - ID: "ee04b789-94f6-4633-80e8-aae3da0ed5c9"
       Hint: View All Orders Text
       Value: View All Orders
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b64aa73-8529-4cae-a182-7d4071f9c3b8"
+      Hint: Order Details Column Header Tooltip
+      Value: "???????????????"
+    - ID: "251b0fbd-f16e-402d-ab68-8fe27cb56b92"
+      Hint: Date Column Header
+      Value: "??"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "374b7a69-a0fc-435d-890e-b20c49c8f624"
+      Hint: No Order Message
+      Value: You have not placed an order in the last 30 days
+    - ID: "39ede8e7-7ba7-4d8a-bdd7-c5d438391924"
+      Hint: Date Column Header Tooltip
+      Value: "???"
+    - ID: "474ce772-2fc2-47c3-8238-c81e6b71bb2f"
+      Hint: Order Status Column Header
+      Value: "??"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6d9cfefa-a68a-4e93-b7bd-30234889ecb2"
+      Hint: View All Orders Tooltip
+      Value: "???????????????"
+    - ID: "71185c51-88c2-4e28-b1a4-2738aa05b57a"
+      Hint: Order ID Column Header Tooltip
+      Value: "????"
+    - ID: "91d15d22-956c-4cf6-9c12-8d15e1ad8796"
+      Hint: Recent Orders Header Label
+      Value: "?????"
+    - ID: "9bdce726-04e4-4102-8e80-c634ba602f05"
+      Hint: Order ID Column Header
+      Value: "????"
+    - ID: "ae860896-9745-4a7c-b71e-f936ff71bd91"
+      Hint: Order Status Column Header Tooltip
+      Value: "??"
+    - ID: "ee04b789-94f6-4633-80e8-aae3da0ed5c9"
+      Hint: View All Orders Text
+      Value: "????????"
+    - ID: "ffc07126-39a5-42bb-b6a1-33f9bdaca3ad"
+      Hint: Recent Orders Tooltip
+      Value: "??30??????"

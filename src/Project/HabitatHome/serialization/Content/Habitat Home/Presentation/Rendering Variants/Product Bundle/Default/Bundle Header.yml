@@ -1,0 +1,28 @@
+﻿---
+ID: "e5635a41-dea4-4c63-96a9-5883cefec433"
+Parent: "4365279a-3b9a-47db-9874-ec6c8d165cd1"
+Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
+Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Header
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "bea2740e-90d1-4b16-bd1d-7a7cc8605d2d"
+  Hint: CssClass
+  Value: "bundle-header"
+- ID: "c35b2285-b4a8-406f-a91c-24a60391dc12"
+  Hint: DataAttributes
+  Value: "data-catalog-name=%40%28CatalogName%29&data-bundle-id=%40%28BundleId%29&data-bundle-list-price=%40%28ListPrice%29&data-bundle-adjusted-price=%40%28AdjustedPrice%29&data-bundle-is-on-sale=%40%28IsOnSale%29&data-bundle-savings-percentage=-%20Save%20up%20to%20&data-bundle-error-message=An%20invalid%20variant%20combination%20has%20been%20selected."
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181127T020528Z

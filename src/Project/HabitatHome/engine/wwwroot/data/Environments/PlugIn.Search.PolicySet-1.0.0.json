@@ -9,22 +9,22 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "OrdersScope",
+        "SearchScopeName": "habitathomeOrdersScope",
         "ViewName": "OrdersDashboard"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "CustomersScope",
+        "SearchScopeName": "habitathomeCustomersScope",
         "ViewName": "CustomersDashboard"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "CatalogItemsScope",
+        "SearchScopeName": "habitathomeCatalogItemsScope",
         "ViewName": "MerchandisingDashboard"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-        "Name": "CatalogItemsScope",
+        "Name": "habitathomeCatalogItemsScope",
         "IncrementalListName": "CatalogItemsIndex",
         "FullListName": "CatalogItems",
         "DeletedListName": "DeletedCatalogItemsIndex",
@@ -48,7 +48,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-        "Name": "CustomersScope",
+        "Name": "habitathomeCustomersScope",
         "IncrementalListName": "CustomersIndex",
         "FullListName": "Customers",
         "DeletedListName": "DeletedCustomersIndex",
@@ -70,7 +70,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-        "Name": "OrdersScope",
+        "Name": "habitathomeOrdersScope",
         "IncrementalListName": "OrdersIndex",
         "FullListName": "Orders",
         "DeletedListName": "DeletedOrdersIndex",
@@ -92,7 +92,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "CatalogItemsScope",
+        "SearchScopeName": "habitathomeCatalogItemsScope",
         "Properties": {
           "EntityId": {
             "TypeName": "System.String",
@@ -197,7 +197,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "CustomersScope",
+        "SearchScopeName": "habitathomeCustomersScope",
         "Properties": {
           "EntityId": {
             "TypeName": "System.String",
@@ -284,7 +284,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-        "SearchScopeName": "OrdersScope",
+        "SearchScopeName": "habitathomeOrdersScope",
         "Properties": {
           "EntityId": {
             "TypeName": "System.String",

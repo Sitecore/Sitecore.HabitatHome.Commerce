@@ -20,15 +20,15 @@ SharedFields:
         uid="{5B12266C-1EED-4E3B-B389-C9B9D6170860}">
         <conditions>
           <or
-            uid="820553C1A75B4B9CB06C98FEF25E5E86">
+            uid="49D41B4F141D4A228E7CDAD265828B67">
             <condition
               id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
               uid="2A51F7DE997F4D7A8331CFB5F7F0CC82"
-              templateid="{225F8638-2611-4841-9B89-19A5440A1DA1}" />
+              templateid="{63842356-2202-46C3-AB72-17E79EF4CA2D}" />
             <condition
               id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
               uid="1AE324E9810241C58534BC680EEAD127"
-              templateid="{C92E6CD7-7F14-46E7-BBF5-29CE31262EF4}" />
+              templateid="{2526FABE-B1A6-461E-A42A-CBB108DB1190}" />
           </or>
         </conditions>
       </rule>
@@ -44,3 +44,14 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180502T163559Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190314T132925Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous
