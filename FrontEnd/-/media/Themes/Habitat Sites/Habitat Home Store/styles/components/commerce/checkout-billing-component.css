@@ -19,7 +19,7 @@
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
 .component.cxa-checkoutbilling-component {
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .component.cxa-checkoutbilling-component .component-content {
@@ -1633,6 +1633,15 @@ fieldset[disabled] .component.cxa-checkoutbilling-component .credit-card-payment
   line-height: 18px;
   height: 34px;
   padding: 0 20px;
+}
+
+.component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount .validate-payment-btn.disabled {
+  background-color: #aaa !important;
+}
+
+.component.cxa-checkoutbilling-component .credit-card-payment-section .payment-amount .validate-payment-btn.disabled.valid:after {
+  content: "\f00c";
+  font-family: FontAwesome;
 }
 
 .component.cxa-checkoutbilling-component .credit-card-payment-section .billing-paycard-container .billing-addresss-details input[type='text'],

@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/DD75FA0B46B646C79719287FED9E2B0E.ashx?h=16&thn=1&w=16"
+  Value: 
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
   BlobID: "20eabc93-90e6-48c6-9a3c-3a4832aa5888"
