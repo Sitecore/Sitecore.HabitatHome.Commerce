@@ -4,7 +4,6 @@ Parent: "0baec103-b372-44e9-9199-f30d4a40a3ed"
 Template: "4c1bcc14-84f2-4e5c-9522-dd8afea17947"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/review
 DB: master
-BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
@@ -29,14 +28,14 @@ SharedFields:
           p:after="r[@uid='{8AEF0C98-5E0F-4064-BD58-C3B010C11391}']"
           s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
           s:id="{1EF188EF-3257-4A36-ABE1-15E74FFE6E92}"
-          s:par="GridParameters"
+          s:par="Display Table Header=1&amp;Display Delete Button&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information=1&amp;Display Sublines=1&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles"
           s:ph="/main/container-1" />
         <r
           uid="{58E19DCA-B4F4-4317-85FC-A4A1E795D8B2}"
           p:after="r[@uid='{50E8A8D7-E6D1-4AFF-95A7-07720DCF8E35}']"
           s:ds="{3CC6B88D-912B-49D4-BF25-21231246E773}"
           s:id="{3B0AD192-08B9-4D54-94F2-A1B727CB65D9}"
-          s:par="Billing Page Url=%7B61AB8488-C4AA-4674-BA41-857CF39A72B4%7D&amp;Delivery Page Url=%7BC19C709A-A181-4795-8DDA-00EA317F5386%7D&amp;GridParameters"
+          s:par="Billing Page Url=%7B61AB8488-C4AA-4674-BA41-857CF39A72B4%7D&amp;Delivery Page Url=%7BC19C709A-A181-4795-8DDA-00EA317F5386%7D&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
           s:ph="/main/container-1" />
         <r
           uid="{F8271785-BE1D-4C86-A31E-96F584AB6BE0}"

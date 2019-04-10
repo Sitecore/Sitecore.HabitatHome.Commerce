@@ -2,11 +2,11 @@
 
 .component.cxa-checkoutreview-component {
     font-size: 14px;
-    padding: 2em;
+    padding-top: 2em;
     margin-bottom: 15px;
 
     .component-content {
-        @include vertical-form-layout();
+        @include vertical-form-layout(); 
         h4 {
             margin-bottom: 15px;
         }

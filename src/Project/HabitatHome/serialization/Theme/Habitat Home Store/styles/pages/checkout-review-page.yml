@@ -1,20 +1,20 @@
 ﻿---
-ID: "4b4d70c0-803f-4839-81cd-ee5c9243a2f1"
-Parent: "fb459858-b02c-4a6c-ac26-bc1ca7911049"
+ID: "c5692d21-523e-46b1-9cc8-df7f0312f4e4"
+Parent: "a5beea20-dc20-45b4-b894-e0ca5c2e4726"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/components/sxa/link-component"
+Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/pages/checkout-review-page"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/4B4D70C0803F483981CDEE5C9243A2F1.ashx?h=16&thn=1&w=16"
+  Value: "-/media/C5692D21523E46B19CC8DF7F0312F4E4.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "3b7df57b-50d7-4d80-8ef9-c5760229a250"
-  Value: LyogYnJlYWtwb2ludHMgKi8KLmNvbXBvbmVudC5saW5rIC5saW5rLWJ1dHRvbiBhIHsKICBmb250LXdlaWdodDogNzAwOwogIGNvbG9yOiAjMTQxOTE5OwogIGJvcmRlcjogMXB4IHNvbGlkICMxNDE5MTk7CiAgcGFkZGluZzogMS4yODU3MWVtIDNlbTsKICBib3JkZXItcmFkaXVzOiAwOwogIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7Cn0KCi5jb21wb25lbnQubGluayAubGluay1idXR0b24gYTpiZWZvcmUgewogIGNvbnRlbnQ6IG5vbmU7Cn0K
+  BlobID: "27a0300e-b47a-4269-916e-a055e8e08b98"
+  Value: LyogYnJlYWtwb2ludHMgKi8KLmNoZWNrb3V0LXJldmlldy1wYWdlIC5jeGEtc2hvcHBpbmdjYXJ0bGluZXMtY29tcG9uZW50IC5zaG9wcGluZ2NhcnQtcXVhbnRpdHkgYnV0dG9uLmRlY3JlYXNlLCAuY2hlY2tvdXQtcmV2aWV3LXBhZ2UgLmN4YS1zaG9wcGluZ2NhcnRsaW5lcy1jb21wb25lbnQgLnNob3BwaW5nY2FydC1xdWFudGl0eSBidXR0b24uaW5jcmVhc2UgewogIGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsKfQo=
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
-  Value: 255
+  Value: 239
 - ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
   Hint: Mime Type
   Value: text/css
@@ -28,14 +28,18 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190326T193848Z
+      Value: 20190410T210144Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: "fr-CA"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190326T193848Z
+      Value: 20190410T210144Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -46,7 +50,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190326T193848Z
+      Value: 20190410T210144Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

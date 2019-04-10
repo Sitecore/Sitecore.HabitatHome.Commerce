@@ -4,7 +4,6 @@ Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
 Template: "19855ed8-05c2-4595-b240-743831c3a2c7"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/shoppingcart
 DB: master
-BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
@@ -49,14 +48,14 @@ SharedFields:
           p:after="r[@uid='{37141A9A-8879-4C7C-8F7C-3620CB14DA68}']"
           s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
           s:id="{1EF188EF-3257-4A36-ABE1-15E74FFE6E92}"
-          s:par="Display Table Header=1&amp;Display Delete Button=1&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information&amp;Display Sublines=1&amp;GridParameters&amp;Styles"
+          s:par="Display Table Header=1&amp;Display Delete Button=1&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information&amp;Display Sublines=1&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles"
           s:ph="/main/container-1" />
         <r
           uid="{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}"
           p:after="r[@uid='{242E7AAB-16C1-4D65-A0D5-7C310C812C18}']"
           s:ds="{8CD9D2A6-E00B-4A5F-8345-778B957A1095}"
           s:id="{AB1E2893-6556-49D5-9095-B7AAF09B8BEF}"
-          s:par=""
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
           s:ph="/main/container-1" />
         <r
           uid="{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}"
