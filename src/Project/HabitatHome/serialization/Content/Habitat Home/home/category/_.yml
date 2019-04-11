@@ -4,7 +4,6 @@ Parent: "a1874e15-32cf-40dc-99d0-43991e3bb5f2"
 Template: "cd0b1c23-ffd4-4336-8d3f-eaeea1911eb2"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/category/*
 DB: master
-BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
@@ -733,25 +732,32 @@ SharedFields:
           s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
           s:ph="main" />
         <r
-          uid="{E82D91D8-1401-4332-86B4-3C8EC115E6A6}"
+          uid="{28E09852-144E-47AC-831B-1734574C4070}"
           p:after="r[@uid='{2BC91643-B819-4794-9AB9-7AD6BDABA329}']"
-          s:ds="{F23358E9-C734-4BE2-BE47-A469758A8699}"
-          s:id="{EA89C258-F47F-4A76-A9E2-DF450985B897}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B968D2D51-1E55-4D75-9679-528029D8A2E8%7D%7C%7B8636EB85-386A-42BA-AA14-D5F592867741%7D%7C%7B689708EA-D282-4A39-9F6F-6F95F428942F%7D"
+          s:ds="{BD8047AA-3B4A-4B4C-9FF9-2A64FB9B5243}"
+          s:id="{29E9F4F9-F2AC-4AB1-80E5-EBB3CFF7E9F2}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Search Page Link"
           s:ph="/main/container-3/column-2-2" />
         <r
           uid="{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}"
-          p:after="r[@uid='{E82D91D8-1401-4332-86B4-3C8EC115E6A6}']"
+          p:after="r[@uid='{28E09852-144E-47AC-831B-1734574C4070}']"
           s:ds="{BBE422B1-5B81-4F46-A445-A672967BE9D9}"
           s:id="{C1DE5434-8570-46CB-BF87-FC33DBDFD89E}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B5D87E990-D33A-4613-BE6D-0D0235197254%7D%7C%7B1864351A-0EDC-4650-95C0-7AB675D646AF%7D%7C%7B2A09D451-70CD-4A11-868C-3C56B6A7749C%7D"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D"
+          s:ph="/main/container-3/column-2-2" />
+        <r
+          uid="{E82D91D8-1401-4332-86B4-3C8EC115E6A6}"
+          p:after="r[@uid='{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}']"
+          s:ds="{F23358E9-C734-4BE2-BE47-A469758A8699}"
+          s:id="{EA89C258-F47F-4A76-A9E2-DF450985B897}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D"
           s:ph="/main/container-3/column-2-2" />
         <r
           uid="{55F6562F-CB97-4370-B0B4-901A06DB0686}"
-          p:after="r[@uid='{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}']"
+          p:after="r[@uid='{E82D91D8-1401-4332-86B4-3C8EC115E6A6}']"
           s:ds="{1F414CAF-AB86-4423-95C5-64A154539DE3}"
           s:id="{9CA5EB05-780A-438F-AABE-18B09C97D5FD}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D%7C%7B2DAC5C5F-3B64-4A60-9A98-262F32C05800%7D%7C%7BBC2E9EFE-9CAA-4B85-9310-D503C36485ED%7D&amp;Results per Page Values=12%7C18%7C24%7C30"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7B4D4B771B-9954-430E-AEE1-E76C54BD50C3%7D&amp;Results per Page Values=12%7C18%7C24%7C30"
           s:ph="/main/container-3/column-2-2" />
         <r
           uid="{115257A3-5BA5-41A2-AEF9-7FBB5DA81C73}"

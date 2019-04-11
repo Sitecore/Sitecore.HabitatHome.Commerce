@@ -1,13 +1,17 @@
 @mixin text-Input() {
-    height: 34px;
+    height: 41px;
     padding: $padding/2 $padding;
     line-height: 1.42857143;
     background-color: $light;
     background-image: none;
-    border: 1px solid rgba($secondary-text-color, 0.7);
+    color: $dark;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid $border-color;
     &:focus{
         outline: none;
     }
+       font-weight: normal;
 }
 
 @mixin numeric-input-button($increase) {

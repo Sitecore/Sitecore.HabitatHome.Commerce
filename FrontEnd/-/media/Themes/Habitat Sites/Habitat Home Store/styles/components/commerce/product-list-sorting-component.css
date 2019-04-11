@@ -18,7 +18,8 @@
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
 .cxa-productlistsorting-component {
-  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 786px) {
@@ -60,7 +61,7 @@
   background-position: 0% 0%;
   background-repeat: repeat;
   color: #000;
-  background-color: #fff;
+  background-color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
@@ -70,7 +71,7 @@
   width: auto;
   height: 41px;
   max-width: 100%;
-  border: 1px solid #d8d9d5;
+  border: 1px solid #b9bcc1;
   border-radius: 0;
   outline: none;
   padding-left: 10px;

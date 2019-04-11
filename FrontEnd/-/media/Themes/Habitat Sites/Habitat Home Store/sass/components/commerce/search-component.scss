@@ -1,5 +1,7 @@
 @import '../../index';
 .cxa-searchbar-component {
+    margin-bottom: 1em;
+     
     .component-content {
         form {
             width: 100%;
@@ -7,72 +9,29 @@
         .search-input-section {
             @include row-of-elements-packed(false);
             input {
-                border-radius: 4px 0px 0px 4px;
                 width: 100%;
             }
             .search-button {
-                width: 34px;
-                height: 34px;
+                width: 41px;
+                height: 41px;
                 padding: 0;
                 margin: 0;
                 border-left: none;
                 box-shadow: none;
-                border-radius: 0px $border-radius $border-radius 0px;
                 border: 1px solid;
             }
         }
     }
 }
 
-
-/* Responsive  */
-
 .cxa-searchbar-component {
-    @include respond-to($mdPlus) {
         .toggle-search-bar {
             display: none;
         }
-    }
-    @include respond-to($sm) {
-        .toggle-search-bar {
-            display: inline-block;
-        }
-        #SearchForm {
-            display: none;
-        }
-        #SearchForm.active {
-            display: inline-flex;
-            position: absolute;
-            top: 78%;
-            left: 5%;
-            z-index: 120;
-            width: 97%;
-            >div {
-                width: 92%;
-            }
-        }
-    }
 }
 
 .component.cxa-searchbar-component {
     .component-content {
-        .toggle-search-bar {
-            color: rgba($secondary-text-color, 0.8);
-            padding: 2px 7px;
-            border-radius: 150px;
-            border: 2px solid;
-            &:before {
-                @include sc-icon($scxa-search);
-                font-size: $font-size-small;
-            }
-            &:active,
-            &:hover {
-                background: $primary-color !important;
-                color: $light;
-                border-color: $primary-color;
-                @include transition();
-            }
-        }
         .search-input-section {
             input {
                 @include text-Input();

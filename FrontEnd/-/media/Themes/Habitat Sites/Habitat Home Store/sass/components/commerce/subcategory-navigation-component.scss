@@ -3,7 +3,7 @@
     @include sidebarTitle();
     span {
         &:first-letter {
-            text-transform: uppercase;
+            text-transform: uppercase; 
         }
     }
     cursor: pointer;
@@ -33,7 +33,7 @@
     }
 }
 
-.component.cxa-subcategorynavigation-component {
+.component.cxa-subcategorynavigation-component { 
     @include sidebar();
     .subcategories-title {
         @include sidebarTitleLocal();
@@ -53,6 +53,6 @@
 
 .component.cxa-subcategorynavigation-component {
     box-shadow: 0 0 transparent;
-    border: 1px solid rgb(20, 25, 25);
+    border: 1px solid $border-color;
     border-radius: 0;
 }

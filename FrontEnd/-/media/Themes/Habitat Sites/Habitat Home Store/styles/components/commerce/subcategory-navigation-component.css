@@ -111,7 +111,7 @@
 }
 
 .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a span, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a {
-  font-size: 13px;
+  font-size: 14px;
   color: #747a83;
 }
 
@@ -156,6 +156,6 @@
 
 .component.cxa-subcategorynavigation-component {
   box-shadow: 0 0 transparent;
-  border: 1px solid #141919;
+  border: 1px solid #b9bcc1;
   border-radius: 0;
 }

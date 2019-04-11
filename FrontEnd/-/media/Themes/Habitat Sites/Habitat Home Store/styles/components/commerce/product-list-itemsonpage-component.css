@@ -17,6 +17,12 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
+.cxa-productlistitemsonpage-component,
+.cxa-productlistitemsperpage-component {
+  font-size: 14px;
+  text-align: right;
+}
+
 @media only screen and (max-width: 786px) {
   .cxa-productlistitemsonpage-component .productlist-header-section,
   .cxa-productlistitemsperpage-component .productlist-header-section {
@@ -35,6 +41,7 @@
 .cxa-productlistitemsperpage-component .results-container:after {
   content: "\f078";
   font-family: FontAwesome;
+  color: #000;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -70,7 +77,7 @@
   width: auto;
   height: 41px;
   max-width: 100%;
-  border: 1px solid #d8d9d5;
+  border: 1px solid #b9bcc1;
   border-radius: 0;
   outline: none;
   padding-left: 10px;

@@ -17,6 +17,10 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
+.cxa-searchbar-component {
+  margin-bottom: 1em;
+}
+
 .cxa-searchbar-component .component-content form {
   width: 100%;
 }
@@ -78,81 +82,34 @@
 }
 
 .cxa-searchbar-component .component-content .search-input-section input {
-  border-radius: 4px 0px 0px 4px;
   width: 100%;
 }
 
 .cxa-searchbar-component .component-content .search-input-section .search-button {
-  width: 34px;
-  height: 34px;
+  width: 41px;
+  height: 41px;
   padding: 0;
   margin: 0;
   border-left: none;
   box-shadow: none;
-  border-radius: 0px 4px 4px 0px;
   border: 1px solid;
 }
 
-/* Responsive  */
-@media (min-width: 768px) {
-  .cxa-searchbar-component .toggle-search-bar {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .cxa-searchbar-component .toggle-search-bar {
-    display: inline-block;
-  }
-  .cxa-searchbar-component #SearchForm {
-    display: none;
-  }
-  .cxa-searchbar-component #SearchForm.active {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: absolute;
-    top: 78%;
-    left: 5%;
-    z-index: 120;
-    width: 97%;
-  }
-  .cxa-searchbar-component #SearchForm.active > div {
-    width: 92%;
-  }
-}
-
-.component.cxa-searchbar-component .component-content .toggle-search-bar {
-  color: rgba(116, 122, 131, 0.8);
-  padding: 2px 7px;
-  border-radius: 150px;
-  border: 2px solid;
-}
-
-.component.cxa-searchbar-component .component-content .toggle-search-bar:before {
-  display: inline-block;
-  font-family: "SCCXAICONS";
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  content: "";
-  font-size: 12px;
-}
-
-.component.cxa-searchbar-component .component-content .toggle-search-bar:active, .component.cxa-searchbar-component .component-content .toggle-search-bar:hover {
-  background: #0e909f !important;
-  color: #fff;
-  border-color: #0e909f;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.cxa-searchbar-component .toggle-search-bar {
+  display: none;
 }
 
 .component.cxa-searchbar-component .component-content .search-input-section input {
-  height: 34px;
+  height: 41px;
   padding: 5px 10px;
   line-height: 1.42857143;
   background-color: #fff;
   background-image: none;
-  border: 1px solid rgba(116, 122, 131, 0.7);
+  color: #141919;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #b9bcc1;
+  font-weight: normal;
 }
 
 .component.cxa-searchbar-component .component-content .search-input-section input:focus {

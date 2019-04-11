@@ -2,8 +2,6 @@
 @import '../../abstracts/_mixins.scss';
 
 .cxa-productlistpageinfo-component {
-    margin-top: 10px;
-    margin-bottom: 10px;
 
     .productlist-header-section {   
         
@@ -15,8 +13,8 @@
             display: inline-block;
             vertical-align: middle;
             height: 2.5625em;        
-            color: #000;        
-            font-size: 16px;
+            color: $bg-black;        
+            font-size: $font-normal;
             font-weight: 400;
             line-height: normal;
             width: auto;

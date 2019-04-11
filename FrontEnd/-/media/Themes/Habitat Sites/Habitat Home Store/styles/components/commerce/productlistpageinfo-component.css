@@ -17,11 +17,6 @@
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
 /* breakpoints */
-.cxa-productlistpageinfo-component {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 @media only screen and (max-width: 786px) {
   .cxa-productlistpageinfo-component .productlist-header-section {
     text-align: right;
@@ -33,7 +28,7 @@
   vertical-align: middle;
   height: 2.5625em;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
   width: auto;
