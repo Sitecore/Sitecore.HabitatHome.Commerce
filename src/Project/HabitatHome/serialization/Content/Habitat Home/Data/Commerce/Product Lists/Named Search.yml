@@ -4,7 +4,6 @@ Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
 Template: "5878f58e-eacf-40a7-913e-019840a1c502"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Named Search
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

@@ -4,7 +4,6 @@ Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "fe489c3e-29d8-47f7-86da-c441d3f6e0e5"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/addressbook
 DB: master
-BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon

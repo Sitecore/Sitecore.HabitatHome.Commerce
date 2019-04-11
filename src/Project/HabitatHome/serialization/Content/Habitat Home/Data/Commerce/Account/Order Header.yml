@@ -4,7 +4,6 @@ Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "39195ca1-14e1-407a-804e-c8b5ff875d23"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Header
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

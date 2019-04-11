@@ -4,7 +4,6 @@ Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "754e313e-2ccb-4a01-8d18-f37f62a60b2f"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Login
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder

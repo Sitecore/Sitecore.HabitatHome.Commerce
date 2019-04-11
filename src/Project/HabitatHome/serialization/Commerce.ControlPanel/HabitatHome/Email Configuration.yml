@@ -4,7 +4,6 @@ Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
 Template: "8753e14e-8ce5-4be3-8e63-486c7ee87702"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Email Configuration
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "c3c59a8c-a79f-43ec-b332-cdbef8e4d19e"
   Hint: From Email Address

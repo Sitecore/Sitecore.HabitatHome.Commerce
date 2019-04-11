@@ -4,7 +4,6 @@ Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "13299a4c-9fca-4ec9-b936-90eb48afc316"
 Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/mywishlist
 DB: master
-BranchID: "82d1ab06-4382-4fda-a382-e9cdee6abd80"
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
@@ -86,6 +85,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
-    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
-      Hint: Title
-      Value: My Wish List

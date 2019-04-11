@@ -4,7 +4,6 @@ Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "a2f1eb5f-126e-49ef-91ba-b40420b7928a"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Address List
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow

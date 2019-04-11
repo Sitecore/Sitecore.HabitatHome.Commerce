@@ -4,7 +4,6 @@ Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
 Template: "c2786e73-44c7-43be-954b-1b35aeba4bd0"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example"
 DB: master
-BranchID: "11fb6401-0d14-40be-851c-662853e8f0a9"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
@@ -26,6 +25,12 @@ SharedFields:
           par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
           ph="/main/sxa-content-container/container-1/Container-212/column-2-13"
           uid="{8672E5C4-1423-40DF-888A-CE9FC36E95DC}" />
+        <r
+          id="{32C08A8F-1576-4DED-905D-DDAB77466027}"
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+          ph="/main/sxa-content-container/container-1/Container-212/column-2-13"
+          uid="{098DB995-220A-44FA-991A-6C3BD5272A80}"
+          ds="" />
         <r
           ds="{82F5250C-1122-43BD-A5BD-6959376CFFC3}"
           id="{B79DF484-3464-441A-811C-DC1BFEED8CA1}"

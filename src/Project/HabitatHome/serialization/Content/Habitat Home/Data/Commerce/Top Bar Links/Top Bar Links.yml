@@ -4,7 +4,6 @@ Parent: "c3897449-08c0-4883-bc6a-207af64531a1"
 Template: "1340f5ec-0efe-4f68-9972-4d6229f89ad0"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Top Bar Links/Top Bar Links
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

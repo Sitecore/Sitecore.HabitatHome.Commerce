@@ -4,7 +4,6 @@ Parent: "99a2d449-7cc0-4fac-b516-db2176898898"
 Template: "59190273-fdcc-4048-9537-7edbdf94b22d"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

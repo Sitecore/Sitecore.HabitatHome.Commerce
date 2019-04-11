@@ -4,7 +4,6 @@ Parent: "6c346c07-69d0-4757-90db-27c28f115157"
 Template: "c4c5b2ed-8336-4d9c-bce7-4000efc50347"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Step Indicator
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

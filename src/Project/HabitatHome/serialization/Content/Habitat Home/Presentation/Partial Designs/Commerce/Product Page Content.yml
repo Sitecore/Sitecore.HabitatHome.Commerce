@@ -4,7 +4,6 @@ Parent: "8c4c09fa-c2ae-4c0f-9b8b-3b341d36e8b8"
 Template: "bf680756-b2fa-4cae-8b69-ee361080616f"
 Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Commerce/Product Page Content
 DB: master
-BranchID: "5cfe5120-4808-405a-8337-4975bdeeeb64"
 SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature

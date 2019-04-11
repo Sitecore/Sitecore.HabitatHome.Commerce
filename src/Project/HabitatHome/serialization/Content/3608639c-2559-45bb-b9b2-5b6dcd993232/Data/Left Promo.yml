@@ -4,7 +4,6 @@ Parent: "00b0fb8a-0fd1-4d84-b261-218965bda9a1"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Two Column Promos/Data/Left Promo"
 DB: master
-BranchID: "11fb6401-0d14-40be-851c-662853e8f0a9"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator

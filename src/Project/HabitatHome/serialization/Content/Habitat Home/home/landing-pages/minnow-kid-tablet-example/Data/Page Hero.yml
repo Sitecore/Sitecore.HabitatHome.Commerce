@@ -4,7 +4,6 @@ Parent: "b75ca56f-2f89-4c2c-bf82-ff72817e2105"
 Template: "643a85f5-c9f1-4836-b17b-35ade22d03d3"
 Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Page Hero"
 DB: master
-BranchID: "11fb6401-0d14-40be-851c-662853e8f0a9"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
