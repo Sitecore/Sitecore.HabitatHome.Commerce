@@ -2,3 +2,8 @@
 .checkout-review-page .cxa-shoppingcartlines-component .shoppingcart-quantity button.decrease, .checkout-review-page .cxa-shoppingcartlines-component .shoppingcart-quantity button.increase {
   display: none !important;
 }
+
+.checkout-review-page .cxa-shoppingcartlines-component .shoppingcart-quantity input.quantity {
+  pointer-events: none;
+  border: 0px;
+}

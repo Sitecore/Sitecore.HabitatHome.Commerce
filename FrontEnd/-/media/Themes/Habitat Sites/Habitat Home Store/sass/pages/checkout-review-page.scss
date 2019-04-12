@@ -6,6 +6,11 @@
         .shoppingcart-quantity {
             button.decrease, button.increase {
                 display: none !important;
+            } 
+
+            input.quantity {
+                pointer-events: none;
+                border: 0px;
             }
         }
     }
