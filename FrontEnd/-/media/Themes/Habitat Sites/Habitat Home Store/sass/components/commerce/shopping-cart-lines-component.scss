@@ -6,10 +6,28 @@
         padding: 0 2em;
     }
     table {
-        @include cart-lines-table();
+        @include cart-lines-table(); 
         th {
             font-weight: bold;
             font-size: 20px;
+        }
+        tr {
+            
+            &.subline-row {              
+
+                td {
+                    padding-left: 50px;
+                }
+                
+                .shoppingcart-image {
+                    float: left;
+                    width: 30%;
+                }
+                .shoppingcart-info {
+                    float: left;
+                    width: 70%;
+                }
+            }
         }
     }
     .shoppingcart-quantity div {
@@ -44,6 +62,7 @@
         }
     }
     .shoppingcart-delete {
+        text-align: right;
         a {
             color: #141919;
             span {
@@ -53,6 +72,11 @@
                     font-size: 18px;
                 }
             }
+        }
+
+        .add-to-wishlist {            
+            margin:20px 0px 0px 10px;
+            color: $text-white;
         }
     }
     .shoppingcart-info {

@@ -68,9 +68,27 @@
   width: 17.5%;
 }
 
+.cxa-shoppingcartlines-component table tbody tr .subline-row td {
+  height: 50px;
+}
+
 .cxa-shoppingcartlines-component table th {
   font-weight: bold;
   font-size: 20px;
+}
+
+.cxa-shoppingcartlines-component table tr.subline-row td {
+  padding-left: 50px;
+}
+
+.cxa-shoppingcartlines-component table tr.subline-row .shoppingcart-image {
+  float: left;
+  width: 30%;
+}
+
+.cxa-shoppingcartlines-component table tr.subline-row .shoppingcart-info {
+  float: left;
+  width: 70%;
 }
 
 .cxa-shoppingcartlines-component .shoppingcart-quantity div {
@@ -282,6 +300,10 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   content: '\f067';
 }
 
+.cxa-shoppingcartlines-component .shoppingcart-delete {
+  text-align: right;
+}
+
 .cxa-shoppingcartlines-component .shoppingcart-delete a {
   color: #141919;
 }
@@ -290,6 +312,11 @@ fieldset[disabled] .cxa-shoppingcartlines-component .shoppingcart-quantity div b
   font-family: FontAwesome;
   content: '\f00d';
   font-size: 18px;
+}
+
+.cxa-shoppingcartlines-component .shoppingcart-delete .add-to-wishlist {
+  margin: 20px 0px 0px 10px;
+  color: #fff;
 }
 
 .cxa-shoppingcartlines-component .shoppingcart-info a h5 {

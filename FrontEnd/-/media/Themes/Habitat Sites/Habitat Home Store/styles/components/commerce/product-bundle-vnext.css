@@ -17,16 +17,14 @@
 /*------------------------------------------------------Rows -------------------------------------*/
 /*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
 /*------------------------ Page Layouts -------------------------------*/
+/* breakpoints */
 .cxa-productbundle-vnext-component {
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .cxa-productbundle-vnext-component .bundle-title {
   padding: 10px 0;
   line-height: 150%;
-  font-family: 'KievitPro' !important;
   font-weight: bold !important;
 }
 
@@ -86,11 +84,9 @@
 
 .cxa-productbundle-vnext-component .bundle-group .bundle-group-header-container .bundle-group-header .bundle-group-product-name span {
   line-height: 30px;
-  font-size: 16px;
-  font-family: 'KievitPro' !important;
+  font-size: 14px;
   font-weight: 300;
-  color: #383c41;
-  opacity: 0.8;
+  color: #747474;
 }
 
 .cxa-productbundle-vnext-component .bundle-group .bundle-group-header-container .bundle-group-header .bundle-group-header-separator:before, .cxa-productbundle-vnext-component .bundle-group .bundle-group-header-container .bundle-group-header .bundle-group-header-separator:after {
@@ -177,11 +173,11 @@
 
 .cxa-productbundle-vnext-component .bundle-group .product-link {
   font-weight: 500;
-  color: #0e909f;
+  color: #1d8c96;
   text-decoration: none;
 }
 
 .cxa-productbundle-vnext-component .bundle-groups-container > *:not(:last-child),
 .cxa-productbundle-vnext-component .bundle-header {
-  border-bottom: 1px solid #e4e7ec;
+  border-bottom: 1px solid #d2d2d2;
 }

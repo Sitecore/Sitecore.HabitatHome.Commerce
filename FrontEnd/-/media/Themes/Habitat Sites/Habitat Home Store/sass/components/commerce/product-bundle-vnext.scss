@@ -1,14 +1,12 @@
 @import '../../index';
+@import '../../abstracts/_mixins.scss';
 
 .cxa-productbundle-vnext-component {
-    //padding: $standardSpacing;
-    background: $light;
-    border-radius: $border-radius;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 0;
+    
     .bundle-title {
         padding: $padding 0;
         line-height: 150%;
-        font-family: 'KievitPro' !important;
         font-weight: bold !important;
     }
     .bundle-group {
@@ -57,11 +55,9 @@
                     padding-right: $margin + 30px; // .collapse-arrow right + .collapse-arrow icon size
                     span {
                         line-height: 30px;
-                        font-size: 16px;
-                        font-family: 'KievitPro' !important;
+                        font-size: $font-normal;
                         font-weight: 300;
-                        color: $heading-color;
-                        opacity: 0.8;
+                        color:$text-basic;
                     }
                 }
                 .bundle-group-header-separator {
@@ -110,9 +106,6 @@
                 display: flex;
                 flex-direction: column;
                 .group-variant-selection {
-                    + .group-variant-selection {
-                        //margin-top: $standardSpacing;
-                    }
                     .group-variant-label {
                         width: 100%;
                         line-height: 25px;
@@ -129,12 +122,12 @@
         }
         .product-link {
             font-weight: 500;
-            color: $primary-color;
+            color: $brand-primary;
             text-decoration: none;
         }
     }
     .bundle-groups-container > *:not(:last-child),
     .bundle-header {
-        border-bottom: 1px solid #e4e7ec;
+        border-bottom: 1px solid $border-gray;
     }
 }

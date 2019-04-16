@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "07211f80-7ffc-4df4-a4de-c8956f391850"
       Hint: Text
-      Value: Bundle
+      Value: "Included in Bundle:"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20181207T074235Z

@@ -736,7 +736,7 @@ SharedFields:
           p:after="r[@uid='{2BC91643-B819-4794-9AB9-7AD6BDABA329}']"
           s:ds="{BD8047AA-3B4A-4B4C-9FF9-2A64FB9B5243}"
           s:id="{29E9F4F9-F2AC-4AB1-80E5-EBB3CFF7E9F2}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Search Page Link"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Search Page Link=%7B3373D727-5D26-4F47-81A5-F63BD2706ADA%7D"
           s:ph="/main/container-3/column-2-2" />
         <r
           uid="{F4B675C6-FCD2-4A1A-A4AB-B2D316D08651}"

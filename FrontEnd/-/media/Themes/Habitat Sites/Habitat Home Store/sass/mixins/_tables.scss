@@ -46,6 +46,12 @@
             > td:nth-child(5){
                 width: 17.5%;
             }
+
+            & .subline-row {
+                td {
+                    height: 50px;
+                }
+            }
         }
     }
 }
