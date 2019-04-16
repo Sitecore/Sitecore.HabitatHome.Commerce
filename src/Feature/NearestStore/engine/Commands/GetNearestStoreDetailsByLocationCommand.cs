@@ -25,7 +25,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Commands
         {
             GetNearestStoreDetailsByLocationCommand getNearestStoreDetailsByLocationCommand = this;
 
-            commerceContext.Logger.LogInformation("GetNearestStoreDetailsByLocationCommand: Latitude" + inputArgumentList.Latitude + " - Longitude " + inputArgumentList.Longitude);
+            commerceContext.Logger.LogInformation("GetNearestStoreDetailsByLocationCommand: Latitude " + inputArgumentList.Latitude + " - Longitude " + inputArgumentList.Longitude);
 
             List<NearestStoreLocation> sets = new List<NearestStoreLocation>();
             using (CommandActivity.Start(commerceContext, getNearestStoreDetailsByLocationCommand))

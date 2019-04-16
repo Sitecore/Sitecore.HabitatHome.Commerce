@@ -35,7 +35,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Controllers
            
             var args = new GetNearestStoreDetailsByLocationArgument() { Latitude = Convert.ToDouble(input[0], System.Globalization.CultureInfo.InvariantCulture), Longitude = Convert.ToDouble(input[1], System.Globalization.CultureInfo.InvariantCulture) };
             
-            nearestStoreLocatorController.CurrentContext.Logger.LogInformation("NearestStoreLocatorController Converted: Latitude" + args.Latitude + " - Longitude " + args.Longitude);
+            nearestStoreLocatorController.CurrentContext.Logger.LogInformation("NearestStoreLocatorController Converted: Latitude " + args.Latitude + " - Longitude " + args.Longitude);
 
             var result = await nearestStoreLocatorController.Command<GetNearestStoreDetailsByLocationCommand>().Process(nearestStoreLocatorController.CurrentContext, args);
             return result != null ? new ObjectResult(result) : (IActionResult)nearestStoreLocatorController.NotFound();

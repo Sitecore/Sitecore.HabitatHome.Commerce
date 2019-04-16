@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Device.Location;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
@@ -83,12 +84,12 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
         private InventorySet GetStoreDetails(double latitude, double longitude, List<InventorySet> inventorySets)
         {
-            return inventorySets.Where(x => x.GetComponent<StoreDetailsComponent>().Lat == Convert.ToString(latitude)).FirstOrDefault();            
+            return inventorySets.Where(x => x.GetComponent<StoreDetailsComponent>().Lat == Convert.ToString(latitude, CultureInfo.InvariantCulture)).FirstOrDefault();            
         }
 
         private string GetStoreId(double latitude, double longitude, List<InventorySet> inventorySets)
         {
-            return inventorySets.Where(x => x.GetComponent<StoreDetailsComponent>().Lat == Convert.ToString(latitude)).FirstOrDefault().FriendlyId;
+            return inventorySets.Where(x => x.GetComponent<StoreDetailsComponent>().Lat == Convert.ToString(latitude, CultureInfo.InvariantCulture)).FirstOrDefault().FriendlyId;
         }
     }
 
