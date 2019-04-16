@@ -12,6 +12,16 @@ SharedFields:
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
   Value: 543
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3463CD0F-C755-4F99-9377-5BA5BCAF9FEF}" />
 Languages:
 - Language: en
   Versions:
