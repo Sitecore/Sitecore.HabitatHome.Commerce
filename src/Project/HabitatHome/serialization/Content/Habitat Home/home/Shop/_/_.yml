@@ -69,8 +69,15 @@ SharedFields:
           s:par="GridParameters=%7b113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7d"
           s:ph="/main/sxa-content-container/container-1/column-2-4" />
         <r
-          uid="{62FB9058-126D-491B-B693-ED9A43DA577B}"
+          uid="{E295DCC7-BF4A-4804-B141-25AF75EDE105}"
           p:after="r[@uid='{86EC009D-C8D1-4F73-9F50-A3605856688A}']"
+          s:ds="{8F4104BA-9CCD-47F0-8F53-6FCD694138DD}"
+          s:id="{64B12137-C6CE-423D-B29C-9BD7EAD1D76E}"
+          s:par="GridParameters"
+          s:ph="/main/sxa-content-container/container-1/column-2-4" />
+        <r
+          uid="{62FB9058-126D-491B-B693-ED9A43DA577B}"
+          p:after="r[@uid='{E295DCC7-BF4A-4804-B141-25AF75EDE105}']"
           s:ds="{82F5250C-1122-43BD-A5BD-6959376CFFC3}"
           s:id="{B79DF484-3464-441A-811C-DC1BFEED8CA1}"
           s:par=""

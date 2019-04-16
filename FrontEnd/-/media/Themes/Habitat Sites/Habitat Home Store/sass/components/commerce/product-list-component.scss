@@ -132,6 +132,8 @@ $promoted-color: #f6a623;
                 background-color: #424C5F;
                 margin-right: 5px;
                 flex-basis: 51%;
+                width: 50%;
+                text-overflow: ellipsis;
             }
             .product-rating {
                 width: 33%;

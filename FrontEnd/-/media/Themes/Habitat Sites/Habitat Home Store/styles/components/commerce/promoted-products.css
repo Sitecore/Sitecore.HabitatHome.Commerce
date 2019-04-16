@@ -355,6 +355,8 @@
   margin-right: 5px;
   -ms-flex-preferred-size: 51%;
   flex-basis: 51%;
+  width: 50%;
+  text-overflow: ellipsis;
 }
 
 .component.cxa-productlist-component .product-list .product-info .product-rating, .component.cxa-promoted-products-component .product-list .product-info .product-rating {
