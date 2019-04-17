@@ -1,7 +1,7 @@
 Param(
     [string]$siteName = "habitathome.dev.local",
     [string]$engineHostName = "localhost",
-    [string]$identityServerHost = "IdentityServer.habitathome.dev.local",
+    [string]$identityServerHost = "identityserver-habitathome.dev.local",
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish,
