@@ -2,7 +2,7 @@
 ID: "a5d5822a-4e16-49d8-9c33-fcf069017883"
 Parent: "d0f7493b-e13d-44e6-92ed-1981e2f0c22f"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/Orders/habitathome-feature-orders-orderlines"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/Orders/habitathome-feature-orders-orderlines"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: js
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190311T184246Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

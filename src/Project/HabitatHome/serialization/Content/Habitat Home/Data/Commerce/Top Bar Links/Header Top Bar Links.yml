@@ -2,7 +2,7 @@
 ID: "91ab9232-89ee-4136-9bc2-dfbaf482c940"
 Parent: "c3897449-08c0-4883-bc6a-207af64531a1"
 Template: "1340f5ec-0efe-4f68-9972-4d6229f89ad0"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Top Bar Links/Header Top Bar Links
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Top Bar Links/Header Top Bar Links
 DB: master
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

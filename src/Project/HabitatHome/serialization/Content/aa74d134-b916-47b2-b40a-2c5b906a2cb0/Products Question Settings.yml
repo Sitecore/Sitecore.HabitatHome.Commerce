@@ -2,24 +2,13 @@
 ID: "846063bc-b8e2-4d43-b850-930908200110"
 Parent: "aa74d134-b916-47b2-b40a-2c5b906a2cb0"
 Template: "5996ae17-2739-49f0-a1c8-c5edbe3f0025"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Content Finder/Products Question Settings
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Forms/Form Actions Settings/Content Finder/Products Question Settings
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190326T142901Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1

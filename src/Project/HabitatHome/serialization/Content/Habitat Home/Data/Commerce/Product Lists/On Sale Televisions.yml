@@ -2,7 +2,7 @@
 ID: "0a28a36b-3136-423f-946b-142135c10565"
 Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
 Template: "5878f58e-eacf-40a7-913e-019840a1c502"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/On Sale Televisions
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Product Lists/On Sale Televisions
 DB: master
 SharedFields:
 - ID: "ac51462c-8a8d-493b-9492-34d1f26f20f1"

@@ -2,7 +2,7 @@
 ID: "1b3998bb-0cd8-41a5-8f9a-b7c8455dead5"
 Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "d2919305-81d1-4fe2-b219-061879275996"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Address Editor
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Account/Address Editor
 DB: master
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

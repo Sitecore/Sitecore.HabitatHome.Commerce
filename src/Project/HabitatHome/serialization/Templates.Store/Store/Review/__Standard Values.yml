@@ -2,7 +2,7 @@
 ID: "736a0661-da79-486d-8cc0-f17c1a829090"
 Parent: "4c1bcc14-84f2-4e5c-9522-dd8afea17947"
 Template: "4c1bcc14-84f2-4e5c-9522-dd8afea17947"
-Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Review/__Standard Values
+Path: /sitecore/templates/Project/Habitat SXA Sites/Habitat Home/Store/Review/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"

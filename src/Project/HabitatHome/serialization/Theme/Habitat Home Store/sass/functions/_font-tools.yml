@@ -2,7 +2,7 @@
 ID: "22a9e7b8-dac8-4018-8a1b-c1dcaa62e64b"
 Parent: "79648c46-f2d9-46c3-bd0c-53cecdb30986"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/functions/_font-tools"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/functions/_font-tools"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

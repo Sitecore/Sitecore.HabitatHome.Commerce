@@ -2,7 +2,7 @@
 ID: "6500eb0f-fb51-4117-93f8-3af1f4314500"
 Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/add-to-cart-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/components/commerce/add-to-cart-component"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

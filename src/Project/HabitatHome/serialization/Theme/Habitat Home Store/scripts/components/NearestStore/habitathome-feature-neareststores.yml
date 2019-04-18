@@ -2,7 +2,7 @@
 ID: "93ec5df0-c59c-42a3-b07e-ccc7ece36c4c"
 Parent: "f7bdf217-0dae-414e-83a6-2c58c669b722"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/NearestStore/habitathome-feature-neareststores"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/NearestStore/habitathome-feature-neareststores"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: js
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190311T184221Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

@@ -2,7 +2,7 @@
 ID: "32a0cbd6-e199-4d43-8387-4468bf7130b5"
 Parent: "046748ba-3697-4d42-83e6-f34712c33a78"
 Template: "cc128d4f-d8fe-47b4-8723-52802309a995"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Search Bar
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Search Bar
 DB: master
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

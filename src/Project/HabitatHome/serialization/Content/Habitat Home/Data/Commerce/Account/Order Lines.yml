@@ -2,7 +2,7 @@
 ID: "73498bff-9834-4ae9-b365-18b90efb8a6e"
 Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "9b901ea7-7073-4ed9-b884-ee0e37621a56"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Lines
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Account/Order Lines
 DB: master
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

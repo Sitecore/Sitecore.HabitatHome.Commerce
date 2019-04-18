@@ -2,7 +2,7 @@
 ID: "3d560991-bb78-4146-96c6-3a836bf6d14d"
 Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/add-to-wishlist-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/components/commerce/add-to-wishlist-component"
 DB: master
 SharedFields:
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"

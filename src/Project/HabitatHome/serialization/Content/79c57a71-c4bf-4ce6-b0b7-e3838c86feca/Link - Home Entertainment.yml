@@ -2,7 +2,7 @@
 ID: "fa9993cb-65ba-4c60-90b6-94c110a0b61d"
 Parent: "79c57a71-c4bf-4ce6-b0b7-e3838c86feca"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Link List - Home Entertainment/Link - Home Entertainment"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/Data/Link Lists/Link List - Home Entertainment/Link - Home Entertainment"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

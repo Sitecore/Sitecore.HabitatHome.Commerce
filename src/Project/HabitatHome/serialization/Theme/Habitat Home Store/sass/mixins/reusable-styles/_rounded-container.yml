@@ -2,7 +2,7 @@
 ID: "9ac2eab3-8b83-4bed-8057-4c3ff6aa2d6f"
 Parent: "e93d0f1a-8f61-4bf4-b786-4096c5c5762a"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/mixins/reusable-styles/_rounded-container"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/mixins/reusable-styles/_rounded-container"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

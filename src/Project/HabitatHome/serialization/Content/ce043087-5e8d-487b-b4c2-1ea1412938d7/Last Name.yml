@@ -2,20 +2,9 @@
 ID: "bb453210-8580-4ae5-9827-9dfd58c599ea"
 Parent: "ce043087-5e8d-487b-b4c2-1ea1412938d7"
 Template: "44e9b708-77ad-4933-b8ca-c4ca15918b76"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Contact Identification/Default/Last Name
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Forms/Form Actions Settings/Contact Identification/Default/Last Name
 DB: master
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190326T142844Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1

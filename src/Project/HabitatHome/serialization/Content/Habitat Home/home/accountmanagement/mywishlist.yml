@@ -2,7 +2,7 @@
 ID: "4dfecde7-f8bf-44b5-9f76-77a5b5526ae8"
 Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "13299a4c-9fca-4ec9-b936-90eb48afc316"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/mywishlist
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/accountmanagement/mywishlist
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"

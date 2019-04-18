@@ -2,7 +2,7 @@
 ID: "f53d32ad-c786-45db-9c49-d72cdad20970"
 Parent: "ead66b75-97b8-4bb7-8e22-94fedbda140d"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/sub-category-navigation-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/sub-category-navigation-component"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -2,7 +2,7 @@
 ID: "17426a3e-78ca-4f99-813e-e8911e1eabec"
 Parent: "d3cb4d5b-b5a1-441c-a226-b9a6b64b8ff8"
 Template: "b5028e2e-0f2c-440c-8488-7ac1dc2e1bcb"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Cart/Add To Cart
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Cart/Add To Cart
 DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"

@@ -2,7 +2,7 @@
 ID: "96d6fc4e-d7f4-4380-a9a1-ef6c77c5d2c1"
 Parent: "c8121f23-0ced-4828-8f8b-994d27f1cc7e"
 Template: "fe489c3e-29d8-47f7-86da-c441d3f6e0e5"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/accountmanagement/addressbook
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/accountmanagement/addressbook
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

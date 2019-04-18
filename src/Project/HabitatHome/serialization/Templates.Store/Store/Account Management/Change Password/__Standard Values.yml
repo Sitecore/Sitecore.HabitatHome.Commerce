@@ -2,7 +2,7 @@
 ID: "f74c7b9e-c131-498e-b644-0d6242b655e6"
 Parent: "85f9c9c0-59a1-422e-abdc-7a3a44a40eb9"
 Template: "85f9c9c0-59a1-422e-abdc-7a3a44a40eb9"
-Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Account Management/Change Password/__Standard Values
+Path: /sitecore/templates/Project/Habitat SXA Sites/Habitat Home/Store/Account Management/Change Password/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"

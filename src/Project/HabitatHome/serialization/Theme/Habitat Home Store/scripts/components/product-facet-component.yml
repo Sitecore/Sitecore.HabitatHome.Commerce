@@ -2,7 +2,7 @@
 ID: "f83161f6-1a84-4ee1-b1dc-bf132ad5e4b6"
 Parent: "ead66b75-97b8-4bb7-8e22-94fedbda140d"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/product-facet-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/product-facet-component"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

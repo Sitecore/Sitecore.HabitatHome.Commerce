@@ -2,7 +2,7 @@
 ID: "1a22186d-23a8-4b38-9d1f-f4ed5f9a6e82"
 Parent: "50ee1efe-12d7-4fe8-8e49-861956a4a6c8"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/sxa/hero-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/components/sxa/hero-component"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

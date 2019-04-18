@@ -2,7 +2,7 @@
 ID: "e89ba025-f05d-4869-996b-6690b34d4801"
 Parent: "adc80d6f-61ca-4478-a709-e2aa60afcfec"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/components/common/reusable-styles"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/styles/components/common/reusable-styles"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

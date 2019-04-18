@@ -2,20 +2,9 @@
 ID: "2d902381-1134-469c-869c-926cd1289341"
 Parent: "0d9663f2-a449-4a08-a2f6-31fce64aeb31"
 Template: "5996ae17-2739-49f0-a1c8-c5edbe3f0025"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Days Question Settings
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Forms/Form Actions Settings/Trainer Finder/Days Question Settings
 DB: master
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190326T142831Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1

@@ -2,7 +2,7 @@
 ID: "139e1bbd-8261-452c-a27a-a576b997161a"
 Parent: "ef27a5f1-60c7-4036-bf68-c57b29ef9ccc"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/common/validations
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/components/common/validations
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

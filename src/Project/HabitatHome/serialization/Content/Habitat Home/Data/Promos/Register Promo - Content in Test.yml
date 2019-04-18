@@ -2,20 +2,9 @@
 ID: "d65b20ee-9c48-4859-8e9c-104b03bda694"
 Parent: "006c1e3c-51c2-4bb5-b212-c6280f436889"
 Template: "f07cbe89-73ae-4de6-9217-2570260cac6e"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Register Promo - Content in Test"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/Data/Promos/Register Promo - Content in Test"
 DB: master
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190325T210654Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1

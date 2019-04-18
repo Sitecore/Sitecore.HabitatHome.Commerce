@@ -2,7 +2,7 @@
 ID: "fbe9d369-d426-4baa-b495-77f6d9f9a2c0"
 Parent: "25368f73-e153-4bd9-9cdc-943e882045d8"
 Template: "bf70a40b-6d0e-4639-9862-24bb8946094b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Available Renderings/Accessibility
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Available Renderings/Accessibility
 DB: master
 SharedFields:
 - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"

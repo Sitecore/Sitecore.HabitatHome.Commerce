@@ -2,7 +2,7 @@
 ID: "87027faa-bfb5-410e-b416-755c5aa23713"
 Parent: "d945648c-0bfc-488b-8a02-99bb2935ee3e"
 Template: "5cb59bb6-2424-4b11-90a7-69aae8ef88c1"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Body Container/Group Variant Section/Product Variants/Group Variant Selection/Group Variant Select/Options
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Body Container/Group Variant Section/Product Variants/Group Variant Selection/Group Variant Select/Options
 DB: master
 SharedFields:
 - ID: "a7a885b0-c308-4b1c-b5dc-f998889acdf9"

@@ -2,7 +2,7 @@
 ID: "49da3919-6962-482f-8636-d450132811b9"
 Parent: "181711d0-6740-496d-9a41-2f1045b8c604"
 Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Author Teaser/Article Author/Author Wrapper/Author Bio/Bio
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Author Teaser/Article Author/Author Wrapper/Author Bio/Bio
 DB: master
 SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"

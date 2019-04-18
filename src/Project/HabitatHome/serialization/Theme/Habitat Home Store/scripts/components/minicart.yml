@@ -2,7 +2,7 @@
 ID: "55febbc1-b733-4335-800d-a01609891e46"
 Parent: "ead66b75-97b8-4bb7-8e22-94fedbda140d"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/scripts/components/minicart
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/minicart
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

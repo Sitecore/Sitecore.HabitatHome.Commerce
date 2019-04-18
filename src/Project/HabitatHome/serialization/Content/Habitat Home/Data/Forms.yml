@@ -2,24 +2,13 @@
 ID: "a5f044bd-4086-4bbb-a7e4-488479b419ab"
 Parent: "bcac3ce9-b605-4aa4-b7c8-fdfb33e7c986"
 Template: "7f9d1a45-f31e-4714-ac66-1e300ae1b792"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Forms
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Forms
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 900
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190326T142743Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        CommerceUsers\Anonymous
 - Language: en
   Versions:
   - Version: 1

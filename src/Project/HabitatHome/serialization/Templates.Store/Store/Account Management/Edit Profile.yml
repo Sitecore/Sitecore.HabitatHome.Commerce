@@ -2,7 +2,7 @@
 ID: "e4b94adc-6ce8-45d7-a0fd-c38147e63ac6"
 Parent: "208bd4b3-d964-4580-b951-27ede8203dd9"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat Sites/Habitat Home/Store/Account Management/Edit Profile
+Path: /sitecore/templates/Project/Habitat SXA Sites/Habitat Home/Store/Account Management/Edit Profile
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

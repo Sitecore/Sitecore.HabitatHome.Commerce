@@ -2,7 +2,7 @@
 ID: "00b0fb8a-0fd1-4d84-b261-218965bda9a1"
 Parent: "3608639c-2559-45bb-b9b2-5b6dcd993232"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Two Column Promos/Data"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Two Column Promos/Data"
 DB: master
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

@@ -2,7 +2,7 @@
 ID: "07dfbcde-a7d9-4345-ae7c-924925ef3a91"
 Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
 Template: "c2786e73-44c7-43be-954b-1b35aeba4bd0"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/habitat-home-health"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/habitat-home-health"
 DB: master
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"

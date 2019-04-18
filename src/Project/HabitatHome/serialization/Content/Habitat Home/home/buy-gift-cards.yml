@@ -2,7 +2,7 @@
 ID: "2349477d-5c4d-4102-8f57-d869fd65c090"
 Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
 Template: "a8359172-32a7-47ee-9c1a-35cc46148ce6"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/buy-gift-cards"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/buy-gift-cards"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
