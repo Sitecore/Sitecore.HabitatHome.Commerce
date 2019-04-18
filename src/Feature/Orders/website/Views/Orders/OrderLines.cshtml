@@ -136,7 +136,7 @@
                                 </td>
                                 <td class="reorder">
                                     <div class="reorder-button">
-                                        <button type="submit" class="add-to-cart-btn" data-bind="attr: {'productId': @cartLine.ProductId, 'variantId': @cartLine.ProductVariantId, 'quantity': @cartLine.Quantity }, click: addItemToCart">
+                                        <button type="submit" class="add-to-cart-btn" data-bind="attr: {'productId': '@cartLine.ProductId', 'variantId': '@cartLine.ProductVariantId', 'quantity': '@cartLine.Quantity' }, click: addItemToCart">
                                             <span class="initial-label">Add to cart</span>
                                             <span class="loading-label" style="display:none;">Adding to cart...</span>
                                         </button>
