@@ -122,9 +122,12 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190423T164044Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{4FDD1979-B09E-41FB-AD96-4434F050A74B}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
@@ -143,6 +146,10 @@ Languages:
     - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
       Hint: MetaDescription
       Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
       Hint: MetaKeywords
       Value: 

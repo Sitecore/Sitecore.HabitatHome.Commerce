@@ -24,8 +24,15 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{D13C9ED0-2890-492A-A7EC-F54D1736ECB7}"
+          uid="{8CDA982E-B5D8-4F4D-80A8-686ECF2AA307}"
           p:before="*"
+          s:ds="{39A77A15-B405-4CD8-BCFC-F44E84ABC526}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B6C6DCD16-6835-4C2B-BC30-B19AF38AAB21%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
+          s:ph="/main/sxa-content-container/container-1/container-3/column-2-4" />
+        <r
+          uid="{D13C9ED0-2890-492A-A7EC-F54D1736ECB7}"
+          p:after="r[@uid='{8CDA982E-B5D8-4F4D-80A8-686ECF2AA307}']"
           s:ds="{CD5572D3-B6FC-4A9A-89B6-36E4EC0E1B0E}"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B6C6DCD16-6835-4C2B-BC30-B19AF38AAB21%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
@@ -138,7 +145,7 @@ Languages:
       Value: 20180807T045355Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
       Hint: Navigation Secondary Promotions
       Type: Treelist
