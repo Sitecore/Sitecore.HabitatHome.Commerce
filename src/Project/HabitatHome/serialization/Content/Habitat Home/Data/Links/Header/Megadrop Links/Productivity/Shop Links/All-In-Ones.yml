@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="All-In-Ones" linktype="rel" url="/shop/All-In-One" anchor="" />
+        <link text="All-In-Ones" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{64F0B62E-2B0B-C80F-97E5-626DB9D3C6DF}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Car Audio" linktype="rel" url="/shop/Car-Audio-Receiver-Packages" anchor="" />
+        <link text="Car Audio" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{CDE0BF20-688E-6452-2B7F-4D672A8E1707}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

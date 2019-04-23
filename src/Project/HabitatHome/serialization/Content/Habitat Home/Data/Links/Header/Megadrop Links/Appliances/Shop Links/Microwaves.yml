@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Microwaves" linktype="rel" url="/shop/Microwaves" anchor="" />
+        <link text="Microwaves" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{1304D651-CF23-6C72-FA89-8941A3C9FFF4}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

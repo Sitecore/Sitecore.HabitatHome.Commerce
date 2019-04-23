@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Home Gym" linktype="rel" url="/shop/Smart-Sports-Equipment" anchor="" />
+        <link text="Home Gym" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{56E3457D-B331-5CBB-D9EC-FD203ACF1C67}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

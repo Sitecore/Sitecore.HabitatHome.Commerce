@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Men's Gooming" linktype="rel" url="/shop/Electric-Shaver" anchor="" />
+        <link text="Men's Grooming" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A63CB0D6-7A96-0B2F-9661-A2E553426FE3}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

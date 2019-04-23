@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Cameras" linktype="rel" url="/shop/cameras" anchor="" />
+        <link text="Cameras" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E9F2E3A7-0575-0632-B67E-5E65092230C3}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

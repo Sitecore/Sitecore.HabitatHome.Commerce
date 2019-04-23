@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Laundry" linktype="rel" url="/shop/Laundry" anchor="" />
+        <link text="Laundry" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{AE2351DB-A247-E039-DBBF-5C6E7D2B032F}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Women's Beauty" linktype="rel" url="/shop/Women-s-Shavers" anchor="" />
+        <link text="Women's Beauty" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B52C9C73-FD59-42AE-CCEE-9CBEB8DE56FE}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

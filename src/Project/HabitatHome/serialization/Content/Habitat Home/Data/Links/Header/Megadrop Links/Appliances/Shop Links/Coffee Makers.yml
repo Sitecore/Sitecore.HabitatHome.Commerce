@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Coffee Makers" linktype="rel" url="/shop/coffee-makers" anchor="" />
+        <link text="Coffee Makers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{59704F14-85AE-65FB-D605-AB312736759D}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Refrigerators" linktype="rel" url="/shop/Refrigerators" anchor="" />
+        <link text="Refrigerators" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{440C1CD5-20C1-E0D1-3319-9766112ED9CA}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

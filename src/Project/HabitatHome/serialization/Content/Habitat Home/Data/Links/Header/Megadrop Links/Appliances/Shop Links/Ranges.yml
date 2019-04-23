@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Ranges" linktype="rel" url="/shop/ranges" anchor="" />
+        <link text="Ranges" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7E7736A-B442-8ED5-F5D2-F4A0D588E65A}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

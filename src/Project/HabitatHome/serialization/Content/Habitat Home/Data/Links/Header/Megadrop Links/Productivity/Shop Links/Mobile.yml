@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Mobile" linktype="rel" url="/shop/Smartphones" anchor="" />
+        <link text="Mobile" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{C2BFAF91-7825-4846-0AD3-0479CDF7B607}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Fitness Subscriptions" linktype="rel" url="/shop/Digital-Subscriptions" anchor="" />
+        <link text="Fitness Subscriptions" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9F7B4376-1BE2-BD1E-A25D-E16643463FE4}" />
 - Language: "fr-CA"
   Versions:
   - Version: 1

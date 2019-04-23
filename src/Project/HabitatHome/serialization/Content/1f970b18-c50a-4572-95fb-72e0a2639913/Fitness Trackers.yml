@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Fitness Trackers" linktype="rel" url="/shop/fitness-activity-trackers" anchor="" />
+        <link text="Fitness Trackers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E2976897-B231-4F6E-9C8C-7AD1E22FB72B}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

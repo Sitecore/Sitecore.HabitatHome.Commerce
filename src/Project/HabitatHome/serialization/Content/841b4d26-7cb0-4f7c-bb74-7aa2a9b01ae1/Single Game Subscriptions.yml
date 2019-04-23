@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Single Game Subscriptions" linktype="rel" url="/shop/Single-Game-Subscriptions" anchor="" />
+        <link text="Single Game Subscriptions" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7199CB3B-5AA3-BC42-5D1B-1ACCF315D932}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
