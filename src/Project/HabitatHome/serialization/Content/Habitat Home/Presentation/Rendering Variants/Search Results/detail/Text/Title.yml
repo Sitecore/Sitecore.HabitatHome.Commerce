@@ -2,12 +2,29 @@
 ID: "6690d370-ff90-4415-8921-4f93d8aa3864"
 Parent: "4444ea0a-226f-4247-aef3-4b1df40fd620"
 Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Title
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Title
 DB: master
 SharedFields:
 - ID: "4753764c-c05a-4623-841b-97f85135241c"
   Hint: FieldName
   Value: Title
+- ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
+  Hint: EnableRule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{D20E85C6-7837-480E-90A9-2A5FD93C8DFE}">
+        <conditions>
+          <condition
+            id="{61C016A2-5210-4F1D-A663-BDA18BE487F6}"
+            uid="78D8031B76E741F2BD7D2180DA43E372"
+            fieldname="Title"
+            operatorid="{A6AC5A6B-F409-48B0-ACE7-C3E8C5EC6406}"
+            value="$name" />
+        </conditions>
+      </rule>
+    </ruleset>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200

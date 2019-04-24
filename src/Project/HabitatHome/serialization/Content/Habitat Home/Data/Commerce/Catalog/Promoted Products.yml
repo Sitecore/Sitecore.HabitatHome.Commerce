@@ -2,9 +2,8 @@
 ID: "856116a0-1b54-41cd-b414-8eeef78acfc0"
 Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
 Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog/Promoted Products
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Catalog/Promoted Products
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -30,3 +29,29 @@ Languages:
     - ID: "f2f7d133-2be5-4080-a4bb-dd533e858756"
       Hint: Show More Products Text
       Value: Show more
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182616Z
+    - ID: "35cde6e8-54e0-42ac-a8e5-d01a4bc552a5"
+      Hint: Category
+      Value: "?????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "705673ce-882a-4249-b2ec-8f465e458670"
+      Hint: Show More Products Tooltip
+      Value: "????????"
+    - ID: "e3cd10ec-06b9-4723-bcaa-ffe03e59a502"
+      Hint: Product Page Link Text
+      Value: "??"
+    - ID: "f2f7d133-2be5-4080-a4bb-dd533e858756"
+      Hint: Show More Products Text
+      Value: "?????"
+    - ID: "f36baa6a-d3ac-47a5-a157-1bf076dd0907"
+      Hint: Save Percent Lead
+      Value: "????"

@@ -1,0 +1,18 @@
+﻿---
+ID: "8f4104ba-9ccd-47f0-8f53-6fcd694138dd"
+Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
+Template: "b5748c6f-878f-4d14-8441-031d624c4289"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Catalog/Product Bundle
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190326T204749Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

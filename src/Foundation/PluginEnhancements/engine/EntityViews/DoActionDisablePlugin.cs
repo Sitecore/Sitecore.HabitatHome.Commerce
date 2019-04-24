@@ -56,11 +56,11 @@ namespace Sitecore.HabitatHome.Foundation.PluginEnhancements.Engine.EntityViews
             {
                 var pluginName = entityView.Action.Replace("Roles.DisablePlugin.", "");
 
-                var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander);
+                var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander).ConfigureAwait(false);
 
                 userPluginOptions.EnabledPlugins.Remove(pluginName);
 
-                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, userPluginOptions);
+                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, userPluginOptions).ConfigureAwait(false);
             }
             catch (Exception ex)
             {

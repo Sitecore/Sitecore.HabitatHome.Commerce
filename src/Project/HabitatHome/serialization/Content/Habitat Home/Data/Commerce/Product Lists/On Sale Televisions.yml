@@ -2,13 +2,15 @@
 ID: "0a28a36b-3136-423f-946b-142135c10565"
 Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
 Template: "5878f58e-eacf-40a7-913e-019840a1c502"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/On Sale Televisions
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Product Lists/On Sale Televisions
 DB: master
-BranchID: "1cb30959-65a7-4d64-97ad-c60adaf3f741"
 SharedFields:
 - ID: "ac51462c-8a8d-493b-9492-34d1f26f20f1"
   Hint: __Default Bucket Query
-  Value: "+location:{9C13FB93-C115-34EA-E2A1-6D4F315591ED};commercesearchitemtype:sellableitem;onsale:true"
+  Value: "+location:{9C13FB93-C115-34EA-E2A1-6D4F315591ED};commercesearchitemtype:sellableitem"
+- ID: "c7815f60-96e1-40cb-bb06-b5f833f73b61"
+  Hint: __Persistent Bucket Filter
+  Value: "language:english"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{43B83C8B-FEA2-4E49-BF8D-26BBE2A856F9}"
@@ -27,3 +29,17 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1daeee0a-8265-4bbd-a8c0-cca9ec4632bf"
+      Hint: Title
+      Value: テレビのセール中
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182618Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

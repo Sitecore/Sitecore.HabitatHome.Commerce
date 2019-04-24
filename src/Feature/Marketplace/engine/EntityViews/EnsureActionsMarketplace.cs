@@ -49,11 +49,11 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
 
-            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
+            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
 
             if (entityView.Name == "MarketplacesDashboard")
             {
-                var businessUser = await this._commerceCommander.Command<BusinessUserCommander>().CurrentBusinessUser(context.CommerceContext);
+                var businessUser = await this._commerceCommander.Command<BusinessUserCommander>().CurrentBusinessUser(context.CommerceContext).ConfigureAwait(false);
                 var ebayView = entityView.ChildViews.FirstOrDefault(p => p.Name == "EbayMarketplace");
                 if (ebayView != null)
                 {

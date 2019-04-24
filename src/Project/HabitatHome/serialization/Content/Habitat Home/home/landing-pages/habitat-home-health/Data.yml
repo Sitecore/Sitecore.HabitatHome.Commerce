@@ -2,7 +2,7 @@
 ID: "299c2d90-d81b-40ed-8bc8-66f12f1d6f07"
 Parent: "07dfbcde-a7d9-4345-ae7c-924925ef3a91"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/habitat-home-health/Data"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/habitat-home-health/Data"
 DB: master
 Languages:
 - Language: en

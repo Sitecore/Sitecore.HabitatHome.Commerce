@@ -2,7 +2,7 @@
 ID: "1c6d35b4-8383-41f7-bb66-abcefc9c1232"
 Parent: "a62873a5-8b54-4d84-b73b-c8dc4f211e65"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Sam Smarts/Smart Home Promo 2
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Sam Smarts/Smart Home Promo 2
 DB: master
 Languages:
 - Language: en
@@ -11,11 +11,11 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: Your Smart Home Checklist
+      Value: "How Does Your Dryer Stack Up?"
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{E59F1330-6FD3-47DC-B708-9B34296D7314}" />
+        <image mediaid="{4F3BDCA5-4B83-4C3F-BDF3-6D5BF616FF12}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180109T164220Z
@@ -25,12 +25,11 @@ Languages:
         sitecore\admin
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: |
-        <span style="background-color: #ffffff;">Connected homes aim to make our homes more energy efficient. Where do you start?&nbsp;</span>
+      Value: "Does your dryer stack up to the best in the market? Make sure you have the best dryer for your smart home.&nbsp;"
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{0A419FC1-C98F-400F-A6A8-8A70562A0A6E}" />
+        <link text="Read More" anchor="" linktype="internal" class="" title=""  querystring="" id="{08F3EC30-C863-4E8A-86D0-8BB5B72B05C4}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

@@ -46,25 +46,31 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Controllers
         [Route("CreateStoreInventory()")]
         public async Task<IActionResult> CreateStoreInventory([FromBody] ODataActionParameters value)
         {
-
             if (!value.ContainsKey("Stores") || !(value["Stores"] is JArray))
-                return (IActionResult)new BadRequestObjectResult((object)value);
+            {
+                return new BadRequestObjectResult(value);
+            }
 
             if (!value.ContainsKey("ProductsToAssociate") || !(value["ProductsToAssociate"] is JArray))
-                return (IActionResult)new BadRequestObjectResult((object)value);
+            {
+                return new BadRequestObjectResult(value);
+            }
+
             JArray jarray = (JArray)value["Stores"];
             JArray jarrayProducts = (JArray)value["ProductsToAssociate"];
-
           
-            var storeInfos =  jarray != null ? jarray.ToObject<IEnumerable<StoreDetailsModel>>() : (IEnumerable<StoreDetailsModel>)null;
-            var productsToAssociate = jarrayProducts != null ? jarrayProducts.ToObject<IEnumerable<string>>() : (IEnumerable<string>)null;
+            var storeInfos =  jarray != null ? jarray.ToObject<IEnumerable<StoreDetailsModel>>() : null;
+            var productsToAssociate = jarrayProducts != null ? jarrayProducts.ToObject<IEnumerable<string>>() : null;
 
             string catalogName = null;
+
             // You need to have catalog mentioned if you are not providing a list of products to update inventory.
             if(productsToAssociate == null || string.IsNullOrEmpty(productsToAssociate.FirstOrDefault()))
             {
                 if (!value.ContainsKey("Catalog"))
-                    return (IActionResult)new BadRequestObjectResult((object)value);
+                {
+                    return new BadRequestObjectResult(value);
+                }
 
                 catalogName = Convert.ToString(value["Catalog"]);
             }
@@ -75,7 +81,6 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Controllers
             {
                 var storeName = Regex.Replace(store.StoreName, "[^0-9a-zA-Z]+", "");
                 CreateStoreInventorySetArgument arg = new CreateStoreInventorySetArgument(storeName, store.StoreName, store.StoreName);
-
 
                 // Default to US if no country code provided
                 if(string.IsNullOrEmpty(store.Country))
@@ -95,14 +100,13 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Controllers
 
                 args.Add(arg);
             }
-
-
+            
             var command = this.Command<CreateStoreInventoryCommand>();
-            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList(), catalogName);
+            var result = await command.Process(this.CurrentContext, args, productsToAssociate.ToList(), catalogName).ConfigureAwait(false);
 
             if(result == null)
             {
-                return (IActionResult)new BadRequestObjectResult((object)value);
+                return new BadRequestObjectResult(value);
             }
 
             return new ObjectResult(command);

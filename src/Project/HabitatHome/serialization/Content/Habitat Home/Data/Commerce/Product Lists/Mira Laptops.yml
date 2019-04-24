@@ -2,9 +2,8 @@
 ID: "81f43bc0-be37-4724-9808-36afd9df9906"
 Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
 Template: "5878f58e-eacf-40a7-913e-019840a1c502"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Mira Laptops
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Product Lists/Mira Laptops
 DB: master
-BranchID: "1cb30959-65a7-4d64-97ad-c60adaf3f741"
 SharedFields:
 - ID: "ac51462c-8a8d-493b-9492-34d1f26f20f1"
   Hint: __Default Bucket Query
@@ -27,3 +26,17 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1daeee0a-8265-4bbd-a8c0-cca9ec4632bf"
+      Hint: Title
+      Value: Mira ラップトップ
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182618Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -2,9 +2,8 @@
 ID: "f23358e9-c734-4be2-be47-a469758a8699"
 Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
 Template: "247b66f8-62f6-49ba-b397-84f34f2f88ef"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog/Product List Sorting
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Catalog/Product List Sorting
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -21,3 +20,23 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182616Z
+    - ID: "338c3d13-6af3-4dd5-ac7c-a188bf07c66b"
+      Hint: Sort by
+      Value: "???????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "5e2b46ab-d32d-4232-a2e4-1cb846632bdf"
+      Hint: Descending
+      Value: "(??)"
+    - ID: "6c404797-66f1-4d3d-ae89-866195c9dffd"
+      Hint: Ascending
+      Value: "(??)"

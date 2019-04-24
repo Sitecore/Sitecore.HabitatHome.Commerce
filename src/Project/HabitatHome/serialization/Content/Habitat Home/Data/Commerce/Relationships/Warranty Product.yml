@@ -2,41 +2,13 @@
 ID: "a941f33a-df31-465a-872b-e92415daf533"
 Parent: "8cccf6a4-215f-467b-ae12-c8d173a6d24a"
 Template: "524a3c7b-95a7-4083-b03a-31b8761a8c0e"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Relationships/Warranty Product
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Relationships/Warranty Product
 DB: master
 SharedFields:
 - ID: "997d2f9d-71b3-415c-8bf0-17d9cfa2990c"
   Hint: Field Name
   Value: "{02D81C24-A9F0-4DD5-82C7-52C9F47EEE6F}"
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "05342f3a-7e7b-47f2-9624-d992b30823dd"
-      Hint: Relation Title
-      Value: Garantiprodukt
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180511T083306Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
-- Language: "de-DE"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "05342f3a-7e7b-47f2-9624-d992b30823dd"
-      Hint: Relation Title
-      Value: Produktgewährleistung
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180511T085107Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
 - Language: en
   Versions:
   - Version: 1
@@ -47,17 +19,6 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180212T052624Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180727T194947Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

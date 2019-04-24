@@ -21,8 +21,11 @@ packages/
 *.user.targets
 *.log
 license.xml
-lib/Modules/*
+lib/*
 *.dll
 *.bak
 publishTemp/*
 /.github
+*.log.*.txt
+tools/*
+!tools/packages.config

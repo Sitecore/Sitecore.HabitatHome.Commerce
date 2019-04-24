@@ -216,7 +216,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                         {
                             if (!string.IsNullOrEmpty(ebayItemComponent.EbayId))
                             {
-                                var ebayItem = await this._commerceCommander.Command<EbayCommand>().GetItem(context.CommerceContext, ebayItemComponent.EbayId);
+                                var ebayItem = await this._commerceCommander.Command<EbayCommand>().GetItem(context.CommerceContext, ebayItemComponent.EbayId).ConfigureAwait(false);
                                 childView.Properties.Add(
                                 new ViewProperty
                                 {
@@ -339,7 +339,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             catch (Exception ex)
             {
                 context.Logger.LogError($"Ebay.DoActionEndItem.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "ItemEbayExtensions.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "ItemEbayExtensions.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
             return entityView;
             

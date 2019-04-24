@@ -3,17 +3,16 @@
     "SiteTitle": "Sitecore Commerce Engine",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
-    "EnvironmentName": "HabitatMinions",
+    "EnvironmentName": "HabitatAuthoring",
     "EncryptionProtectionType": "Machine",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
-    "SitecoreIdentityServerUrl": "https://localhost:5050",
+    "SitecoreIdentityServerUrl": "https://identityServer.habitathome.dev.local",
     "AllowedOrigins": [
       "https://localhost:4200",
       "http://localhost:4200",
-      "http://sxa.storefront.com",
-      "https://habitat.dev.local",
+      "https://bizfx.habitathome.dev.local",
       "https://habitathome.dev.local"
     ],
     "AntiForgeryEnabled": false,
@@ -24,7 +23,7 @@
   },
   "ApplicationInsights": {
     "InstrumentationKey": "",
-    "MinimumLevel": "Warning",
+    "MinimumLevel": "Information",
     "DeveloperMode": true,
     "TelemetryEnabled": false
   },
@@ -36,6 +35,7 @@
       "Microsoft": "Warning"
     },
     "ApplicationInsightsLoggingEnabled": false,
+    "PipelineTraceLoggingEnabled": false,
     "SerilogLoggingEnabled": true
   },
   "Serilog": {
@@ -52,11 +52,11 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "F1D8349D784BF672B99103C1C204A57556DD263A",
+        "Thumbprint": "434947B07E07ABEB02405CBCE54C83F20AE0141F",
         "DefaultRoles": [
           "sitecore\\QA",
           "sitecore\\Commerce Business User"
-        ] 
+        ]
       }
     ],
     "CertificateHeaderName": "X-CommerceEngineCert"

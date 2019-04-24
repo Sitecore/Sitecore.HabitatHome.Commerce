@@ -2,10 +2,12 @@
 ID: "6ac1a349-d945-4147-ae5c-e7f94756da81"
 Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "a2f1eb5f-126e-49ef-91ba-b40420b7928a"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Address List
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Account/Address List
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{FE48300B-C0FB-4F14-9F99-A47527AD9E30}"
@@ -17,7 +19,24 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180201T152356Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182614Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ebc2f66b-30ce-4608-8d2a-787452a1652e"
+      Hint: Address Header
+      Value: "????"

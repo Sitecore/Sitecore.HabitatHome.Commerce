@@ -2,12 +2,15 @@
 ID: "a5beea20-dc20-45b4-b894-e0ca5c2e4726"
 Parent: "2b056b9d-9332-407e-82f8-9c4bf8438cb0"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/styles/pages
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/styles/pages
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/A5BEEA20DC2045B4B894E0CA5C2E4726.ashx?h=16&thn=1&w=16"
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 Languages:
 - Language: en
   Versions:

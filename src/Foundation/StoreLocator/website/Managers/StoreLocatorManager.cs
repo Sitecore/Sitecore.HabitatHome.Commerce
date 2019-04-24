@@ -69,7 +69,7 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Managers
             }
             else
             {
-                return null;
+                return Enumerable.Empty<InventoryStore>();
             }
 
             return storeList.Take(2);

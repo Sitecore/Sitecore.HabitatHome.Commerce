@@ -1,0 +1,83 @@
+@import '../../index';
+@import '../../abstracts/_mixins.scss';
+
+.cxa-productlistsorting-component {
+    font-size: $font-normal;
+    text-align: right;
+
+    .productlist-header-section {
+        @include respond-to(mobile-large) {
+            text-align: right;
+        }
+    }
+
+    .Sort-By-container {
+       display: inline-block;
+       position: relative;
+
+       &:after {
+           content:"\f078";
+           font-family: FontAwesome;
+           color: $bg-black;
+           position: absolute; 
+           right: 10px; 
+           top: 50%;
+           transform: translateY(-50%);
+           z-index: 10;
+           text-align: center;
+           pointer-events: none;
+       }
+    }
+
+    .sort-dropdown {
+       font-weight: normal;
+       width: 12em;
+       height: 2.5625em;
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       -o-appearance: none; 
+       background-attachment: scroll;
+       background-color: transparent;
+       background-image: none;
+       background-position: 0% 0%;
+       background-repeat: repeat;
+       color: $bg-black;
+       background-color: $bg-basic-color;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: normal;
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+       width: auto;
+       height: 41px;
+       max-width: 100%;
+       border: 1px solid $bg-silver;
+       border-radius: 0;
+       outline: none;
+       padding-left: 10px;
+       padding-right: 35px;
+       padding: 0 2em 0 0.9375em;
+       position: relative;
+    }
+}
+
+/*
+.cxa-productlistsorting-component {
+   padding:0px;
+   .productlist-header-section {
+       //@include row-of-elements-wide-apart(false, $center);
+       .Sort-By-container {
+           //@include row-of-elements-packed(false, $center, $packed-elements-margin);
+           line-height: 22px;
+           select {
+               width: 240px;
+           }
+           span {
+               color: $secondary-text-color;
+           }
+       }
+   }
+   margin-bottom: $margin*2;
+}
+*/

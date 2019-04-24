@@ -1,0 +1,41 @@
+@import '../../index';
+@import '../../abstracts/_mixins.scss';
+
+.cxa-productinformation-component {
+    padding: 0;
+    margin: 0 0 10px 0;
+    .component-content {
+        text-align: left;
+        margin-top: 0;
+        .product-name {
+            margin-bottom: 10px;
+            h1 {
+                margin-top: 0;
+                line-height: 1.01;
+                margin-bottom: 0.5em;
+
+                @include respond-to(desktop) {
+                    font-size: 52px; 
+                }
+            }  
+        }
+        .product-number {
+            display: none;
+        }
+        .product-description {
+            border-top: 1px solid #d8d9d5;
+            border-bottom: 1px solid #d8d9d5;
+            padding: 1.5em 0;
+            margin-bottom: 1.5em;            
+            color: $text-basic;
+            font-size: 1.25em;
+            line-height: 1.6;
+
+            h6 {
+                display: none;
+            }
+
+
+        }
+    }
+}

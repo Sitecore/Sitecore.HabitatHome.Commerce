@@ -2,12 +2,12 @@
 ID: "ae62ac29-0f67-4790-b215-3d6b759a8144"
 Parent: "c93e1faf-d37e-4d73-8502-99557466041c"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulpfilebabel
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulpfilebabel
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/DD75FA0B46B646C79719287FED9E2B0E.ashx?h=16&thn=1&w=16"
+  Value: 
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
   BlobID: "20eabc93-90e6-48c6-9a3c-3a4832aa5888"

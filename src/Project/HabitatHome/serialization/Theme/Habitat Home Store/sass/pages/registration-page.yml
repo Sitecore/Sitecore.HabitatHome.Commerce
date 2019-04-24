@@ -1,0 +1,42 @@
+﻿---
+ID: "e2939490-cf50-48c8-a675-85d81dcb42a2"
+Parent: "56937795-46ba-42bc-aa0a-54a600e48de6"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/pages/registration-page"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/67B88C7231E04B7EB42D305E444840E1.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "628e94b9-2376-46c5-bdfb-d25241f00dd6"
+  Value: QGltcG9ydCAnLi4vaW5kZXgnOw0KLnJlZ2lzdHJhdGlvbi1wYWdlIHsNCiAgICAuY29tcG9uZW50LmNvbHVtbi1zcGxpdHRlciB7DQogICAgICAgIC5jb2wtbWQtNSB7DQogICAgICAgICAgICBAaW5jbHVkZSByZXNwb25kLXRvKCRtZCkgew0KICAgICAgICAgICAgICAgIHBhZGRpbmc6IDA7DQogICAgICAgICAgICB9DQogICAgICAgIH0NCiAgICAgICAgLmNvbC1tZC03IHsNCiAgICAgICAgICAgIEBpbmNsdWRlIHJlc3BvbmQtdG8oJG1kKSB7DQogICAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCn0=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 320
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180312T040959Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180312T041023Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,21 +1,21 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+// <copyright file="InitializeEnvironmentSellableItemsBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2019
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using Sitecore.Commerce.Core;
-using Sitecore.Commerce.Plugin.Availability;
-using Sitecore.Commerce.Plugin.Catalog;
-using Sitecore.Commerce.Plugin.Pricing;
-using Sitecore.Framework.Pipelines;
-
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
+    using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.Plugin.Availability;
+    using Sitecore.Commerce.Plugin.Catalog;
+    using Sitecore.Commerce.Plugin.Pricing;
+    using Sitecore.Framework.Pipelines;
+
     /// <summary>
     /// Defines a block which bootstraps sellable items the Habitat sample environment.
     /// </summary>
@@ -70,11 +70,11 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 
             context.Logger.LogInformation($"{this.Name}.InitializingArtifactSet: ArtifactSet={artifactSet}");
 
-            await this.BootstrapAppliances(context);
-            await this.BootstrapAudio(context);
-            await this.BootstrapCameras(context);
-            await this.BootstrapComputers(context);
-            await this.BootstrapGiftCards(context);
+            await this.BootstrapAppliances(context).ConfigureAwait(false);
+            await this.BootstrapAudio(context).ConfigureAwait(false);
+            await this.BootstrapCameras(context).ConfigureAwait(false);
+            await this.BootstrapComputers(context).ConfigureAwait(false);
+            await this.BootstrapGiftCards(context).ConfigureAwait(false);
 
             return arg;
         }
@@ -86,48 +86,56 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         /// <returns>A <see cref="Task"/></returns>
         private async Task BootstrapAppliances(CommercePipelineExecutionContext context)
         {
-            var item = new SellableItem
-            {
-                Components = new List<Component>
-                {               
+            var item = new SellableItem(new List<Component>
+                {
                     new ItemVariationsComponent
                     {
                         ChildComponents = new List<Component>
                         {
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(new List<Money>
+                                {
+                                    new Money("USD", 3029.99M),
+                                    new Money("CAD", 3030.99M)
+                                })
+                            })
                             {
                                 Id = "56042591",
-                                Name = "Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator w/ Ice Maker and Wifi (Stainless)",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 3029.99M), new Money("CAD", 3030.99M) })
-                                },
+                                Name =
+                                    "Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator w/ Ice Maker and Wifi (Stainless)",
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
                                 }
                             },
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(new List<Money>
+                                {
+                                    new Money("USD", 3029.99M),
+                                    new Money("CAD", 3030.99M)
+                                })
+                            })
                             {
                                 Id = "56042592",
                                 Name = "Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator w/ Ice Maker and Wifi (Black)",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 3029.99M), new Money("CAD", 3030.99M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
                                 }
                             },
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(new List<Money>
+                                {
+                                    new Money("USD", 3029.99M),
+                                    new Money("CAD", 3030.99M)
+                                })
+                            })
                             {
                                 Id = "56042593",
                                 Name = "Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator w/ Ice Maker and Wifi (White)",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 3029.99M), new Money("CAD", 3030.99M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
@@ -136,11 +144,15 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }
                     }
                 },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 2302.79M), new Money("CAD", 2303.79M) }) },
+                new List<Policy>
+                {
+                    new ListPricingPolicy(new List<Money> {new Money("USD", 2302.79M), new Money("CAD", 2303.79M)})
+                })
+            {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042591",
                 Name = "Habitat Viva 4-Door 34.0 Cubic Foot Refrigerator with Ice Maker and Wifi"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -150,22 +162,22 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         /// <returns>A <see cref="Task"/></returns>
         private async Task BootstrapAudio(CommercePipelineExecutionContext context)
         {
-            var item = new SellableItem
-            {
-                Components = new List<Component>
-                {                     
+            var item = new SellableItem(new List<Component>
+                {
+
                     new ItemVariationsComponent
                     {
                         ChildComponents = new List<Component>
                         {
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(
+                                    new List<Money> {new Money("USD", 423.99M), new Money("CAD", 424.99M)})
+                            })
                             {
                                 Id = "56042122",
-                                Name = "XSound 7” CD DVD, In-Dash Receiver, 3-Way Speakers, and HabitatPro Installation",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 423.99M), new Money("CAD", 424.99M) })
-                                },
+                                Name =
+                                    "XSound 7” CD DVD, In-Dash Receiver, 3-Way Speakers, and HabitatPro Installation",
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
@@ -174,11 +186,16 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }
                     }
                 },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 423.99M), new Money("CAD", 424.99M) }) },
+                new List<Policy>
+                {
+                    new ListPricingPolicy(new List<Money> {new Money("USD", 423.99M), new Money("CAD", 424.99M)})
+                })
+            {
+
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042122",
                 Name = "XSound 7” CD DVD, In-Dash Receiver, 3-Way Speakers, and HabitatPro Installation"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -188,35 +205,33 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         /// <returns>a <see cref="Task"/></returns>
         private async Task BootstrapCameras(CommercePipelineExecutionContext context)
         {
-            var item = new SellableItem
-            {
-                Components = new List<Component>
-                {          
+            var item = new SellableItem(new List<Component>
+                {
                     new ItemVariationsComponent
                     {
                         ChildComponents = new List<Component>
                         {
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(
+                                    new List<Money> {new Money("USD", 189.99M), new Money("CAD", 190.99M)})
+                            })
                             {
                                 Id = "57042124",
                                 Name = "Optix HD Mini Action Camcorder with Remote (White)",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 189.99M), new Money("CAD", 190.99M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
                                 }
                             },
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(
+                                    new List<Money> {new Money("USD", 189.99M), new Money("CAD", 190.99M)})
+                            })
                             {
                                 Id = "57042125",
                                 Name = "Optix HD Mini Action Camcorder with Remote (Orange)",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 189.99M), new Money("CAD", 190.99M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
@@ -225,11 +240,15 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }
                     }
                 },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 117.79M), new Money("CAD", 118.79M) }) },
+                new List<Policy>
+                {
+                    new ListPricingPolicy(new List<Money> {new Money("USD", 117.79M), new Money("CAD", 118.79M)})
+                })
+            {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}7042124",
                 Name = "Optix HD Mini Action Camcorder with Remote"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -239,22 +258,20 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         /// <returns>A <see cref="Task"/></returns>
         private async Task BootstrapComputers(CommercePipelineExecutionContext context)
         {
-            var item = new SellableItem
-            {
-                Components = new List<Component>
-                {          
+            var item = new SellableItem(new List<Component>
+                {
                     new ItemVariationsComponent
                     {
                         ChildComponents = new List<Component>
                         {
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(
+                                    new List<Money> {new Money("USD", 429.00M), new Money("CAD", 430.00M)})
+                            })
                             {
                                 Id = "56042179",
                                 Name = "Mira 15.6 Laptop—4GB Memory, 1TB Hard Drive",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 429.00M), new Money("CAD", 430.00M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
@@ -263,58 +280,67 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }
                     }
                 },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 429.00M), new Money("CAD", 430.00M) }) },
+                new List<Policy>
+                {
+                    new ListPricingPolicy(new List<Money> {new Money("USD", 429.00M), new Money("CAD", 430.00M)})
+                })
+            {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042179",
                 Name = "Mira 15.6 Laptop—4GB Memory, 1TB Hard Drive"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
 
-            item = new SellableItem
+            item = new SellableItem(new List<Component>
             {
-                Components = new List<Component>
-                {            
-                    new ItemVariationsComponent
+                new ItemVariationsComponent
+                {
+                    ChildComponents = new List<Component>
                     {
-                        ChildComponents = new List<Component>
+                        new ItemVariationComponent(new List<Policy>
                         {
-                            new ItemVariationComponent
+                            new ListPricingPolicy(new List<Money>
                             {
-                                Id = "56042190",
-                                Name = "Fusion 13.3” 2-in-1—8GB Memory, 256GB Hard Drive",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 989.00M), new Money("CAD", 990.00M) })
-                                },
-                                ChildComponents = new List<Component>
-                                {
-                                    //new PhysicalItemComponent()
-                                }
+                                new Money("USD", 989.00M),
+                                new Money("CAD", 990.00M)
+                            })
+                        })
+                        {
+                            Id = "56042190",
+                            Name = "Fusion 13.3” 2-in-1—8GB Memory, 256GB Hard Drive",
+                            ChildComponents = new List<Component>
+                            {
+                                //new PhysicalItemComponent()
                             }
                         }
                     }
-                },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 989.00M), new Money("CAD", 990.00M) }) },
+                }
+            }, new List<Policy>
+            {
+                new ListPricingPolicy(new List<Money> {new Money("USD", 989.00M), new Money("CAD", 990.00M)})
+            })
+            {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042190",
                 Name = "Fusion 13.3” 2-in-1—8GB Memory, 256GB Hard Drive"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
 
-            item = new SellableItem
-            {
-                Components = new List<Component>
-                {             
+            item = new SellableItem(new List<Component>
+                {
                     new ItemVariationsComponent
                     {
                         ChildComponents = new List<Component>
                         {
-                            new ItemVariationComponent
+                            new ItemVariationComponent(new List<Policy>
+                            {
+                                new ListPricingPolicy(new List<Money>
+                                {
+                                    new Money("USD", 289.00M),
+                                    new Money("CAD", 290.00M)
+                                })
+                            })
                             {
                                 Id = "56042178",
                                 Name = "Mira 15.6 Laptop—4GB Memory, 500GB Hard Drive",
-                                Policies = new List<Policy>
-                                {
-                                    new ListPricingPolicy(new List<Money> { new Money("USD", 289.00M), new Money("CAD", 290.00M) })
-                                },
                                 ChildComponents = new List<Component>
                                 {
                                     //new PhysicalItemComponent()
@@ -323,11 +349,15 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }
                     }
                 },
-                Policies = new List<Policy> { new ListPricingPolicy(new List<Money> { new Money("USD", 289.00M), new Money("CAD", 290.00M) }) },
+                new List<Policy>
+                {
+                    new ListPricingPolicy(new List<Money> {new Money("USD", 289.00M), new Money("CAD", 290.00M)})
+                })
+            {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042178",
                 Name = "Mira 15.6 Laptop—4GB Memory, 500GB Hard Drive"
             };
-            await UpsertSellableItem(item, context);
+            await UpsertSellableItem(item, context).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -337,81 +367,71 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         /// <returns>A <see cref="Task"/></returns>
         private async Task BootstrapGiftCards(CommercePipelineExecutionContext context)
         {
-            var giftCardSellableItem = new SellableItem
+            var giftCardSellableItem = new SellableItem(new List<Component>(), new List<Policy>
+            {
+                new AvailabilityAlwaysPolicy()
+            })
             {
                 Id = $"{CommerceEntity.IdPrefix<SellableItem>()}GiftCardV2",
                 ProductId = "DefaultGiftCardV2",
-                Name = "Default GiftCard V2",
-                Policies = new List<Policy>
-                {
-                    new AvailabilityAlwaysPolicy()
-                },
+                Name = "Default GiftCard V2"
                 //Components = new List<Component>
                 //{
                 //    new ListMembershipsComponent { Memberships = new List<string> { CommerceEntity.ListName<SellableItem>() } }
                 //}
             };
 
-            await UpsertSellableItem(giftCardSellableItem, context);
+            await UpsertSellableItem(giftCardSellableItem, context).ConfigureAwait(false);
 
-            var giftCard = new SellableItem
+            var giftCard = new SellableItem(new List<Component>
             {
-                Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042986",
-                ProductId = "GiftCard",
-                Name = "Default GiftCard",
-                Policies = new List<Policy>
+                new ItemVariationsComponent
                 {
-                    new AvailabilityAlwaysPolicy()
-                },
-                Components = new List<Component>
-                {
-                    //new ListMembershipsComponent
-                    //{
-                    //    Memberships = new List<string> {CommerceEntity.ListName<SellableItem>()}
-                    //},
-                    new ItemVariationsComponent
+                    ChildComponents = new List<Component>
                     {
-                        ChildComponents = new List<Component>
+                        new ItemVariationComponent(new List<Policy>
                         {
-                            new ItemVariationComponent
-                            {
-                                Id = "56042986",
-                                Name = "Gift Card",
-                                Policies = new List<Policy>
-                                {
-                                    new AvailabilityAlwaysPolicy(),
-                                    new ListPricingPolicy(
-                                        new List<Money> {new Money("USD", 25M), new Money("CAD", 26M)})
-                                }
-                            },
-                            new ItemVariationComponent
-                            {
-                                Id = "56042987",
-                                Name = "Gift Card",
-                                Policies = new List<Policy>
-                                {
-                                    new AvailabilityAlwaysPolicy(),
-                                    new ListPricingPolicy(
-                                        new List<Money> {new Money("USD", 50M), new Money("CAD", 51M)})
-                                }
-                            },
-                            new ItemVariationComponent
-                            {
-                                Id = "56042988",
-                                Name = "Gift Card",
-                                Policies = new List<Policy>
-                                {
-                                    new AvailabilityAlwaysPolicy(),
-                                    new ListPricingPolicy(
-                                        new List<Money> {new Money("USD", 100M), new Money("CAD", 101M)})
-                                }
-                            }
+                            new AvailabilityAlwaysPolicy(),
+                            new ListPricingPolicy(
+                                new List<Money> {new Money("USD", 25M), new Money("CAD", 26M)})
+                        })
+                        {
+                            Id = "56042986",
+                            Name = "Gift Card"
+                        },
+                        new ItemVariationComponent(new List<Policy>
+                        {
+                            new AvailabilityAlwaysPolicy(),
+                            new ListPricingPolicy(
+                                new List<Money> {new Money("USD", 50M), new Money("CAD", 51M)})
+                        })
+                        {
+                            Id = "56042987",
+                            Name = "Gift Card"
+                        },
+                        new ItemVariationComponent(new List<Policy>
+                        {
+                            new AvailabilityAlwaysPolicy(),
+                            new ListPricingPolicy(
+                                new List<Money> {new Money("USD", 100M), new Money("CAD", 101M)})
+                        })
+                        {
+                            Id = "56042988",
+                            Name = "Gift Card"
                         }
                     }
                 }
+            }, new List<Policy>
+            {
+                new AvailabilityAlwaysPolicy()
+            })
+            {
+                Id = $"{CommerceEntity.IdPrefix<SellableItem>()}6042986",
+                ProductId = "GiftCard",
+                Name = "Default GiftCard"
             };
 
-            await UpsertSellableItem(giftCard, context);
+            await UpsertSellableItem(giftCard, context).ConfigureAwait(false);
         }
 
         private async Task UpsertSellableItem(SellableItem item, CommercePipelineExecutionContext context)
@@ -426,10 +446,15 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                 item.FriendlyId = item.Id.SimplifyEntityName();
             }
 
-            var entity = await _findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), item.Id), context);
+            if (string.IsNullOrEmpty(item.SitecoreId))
+            {
+                item.SitecoreId = GuidUtils.GetDeterministicGuidString(item.Id);
+            }
+
+            var entity = await _findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), item.Id), context).ConfigureAwait(false);
             if (entity == null)
             {
-                await _persistEntityPipeline.Run(new PersistEntityArgument(item), context);
+                await _persistEntityPipeline.Run(new PersistEntityArgument(item), context).ConfigureAwait(false);
                 return;
             }
 
@@ -481,7 +506,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                 }
             }
 
-            await _persistEntityPipeline.Run(new PersistEntityArgument(existingSellableItem), context);
+            await _persistEntityPipeline.Run(new PersistEntityArgument(existingSellableItem), context).ConfigureAwait(false);
         }
     }
 }

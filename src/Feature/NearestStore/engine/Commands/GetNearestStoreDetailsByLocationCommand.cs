@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Core.Commands;
+using Microsoft.Extensions.Logging;
 using Sitecore.HabitatHome.Feature.NearestStore.Engine.Entities;
 using Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines;
 using Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Arguments;
@@ -17,20 +18,19 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Commands
         public GetNearestStoreDetailsByLocationCommand(IGetNearestStoreDetailsByLocationPipeline getNearestStoreDetailsByLocationPipeline, IServiceProvider serviceProvider)
         : base(serviceProvider)
         {
-            this._getNearestStoreDetailsByLocationPipeline = getNearestStoreDetailsByLocationPipeline;
-           
+            this._getNearestStoreDetailsByLocationPipeline = getNearestStoreDetailsByLocationPipeline;           
         }
 
         public async Task<List<NearestStoreLocation>> Process(CommerceContext commerceContext, GetNearestStoreDetailsByLocationArgument inputArgumentList)
         {
             GetNearestStoreDetailsByLocationCommand getNearestStoreDetailsByLocationCommand = this;
-            CommercePipelineExecutionContextOptions pipelineContextOptions = commerceContext.GetPipelineContextOptions();
 
-            //InventorySet result = (InventorySet)null;            
+            commerceContext.Logger.LogInformation("GetNearestStoreDetailsByLocationCommand: Latitude " + inputArgumentList.Latitude + " - Longitude " + inputArgumentList.Longitude);
+
             List<NearestStoreLocation> sets = new List<NearestStoreLocation>();
-            using (CommandActivity.Start(commerceContext, (CommerceCommand)getNearestStoreDetailsByLocationCommand))
+            using (CommandActivity.Start(commerceContext, getNearestStoreDetailsByLocationCommand))
             {
-                sets = await getNearestStoreDetailsByLocationCommand._getNearestStoreDetailsByLocationPipeline.Run(inputArgumentList, pipelineContextOptions);                     
+                sets = await getNearestStoreDetailsByLocationCommand._getNearestStoreDetailsByLocationPipeline.Run(inputArgumentList, commerceContext.PipelineContextOptions).ConfigureAwait(false);                     
             }
 
             return sets;

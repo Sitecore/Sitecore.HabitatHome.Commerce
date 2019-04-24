@@ -23,7 +23,7 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine
     ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("SamplePluginConfigureServiceApiBlock")]
+    [PipelineDisplayName("HabitatHome.Feature.Wishlists.ConfigureServiceApiBlock")]
     public class ConfigureServiceApiBlock : PipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
         /// <summary>

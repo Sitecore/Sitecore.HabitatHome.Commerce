@@ -1,0 +1,11 @@
+@import '../../index';
+@import '../../abstracts/_mixins.scss';
+
+.breadcrumb {
+    padding-left: 0;
+    font-size: $font-normal;
+}
+
+.breadcrumb-item:last-child > .separator {
+    display: none;
+}

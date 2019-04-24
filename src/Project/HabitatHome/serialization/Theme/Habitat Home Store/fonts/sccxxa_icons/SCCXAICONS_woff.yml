@@ -1,8 +1,8 @@
 ﻿---
-ID: "5fbd7db5-db10-4753-baa1-3ba3bd6b2053"
-Parent: "897d41ae-bdd6-419f-8c9a-da891e89723c"
+ID: "88284176-d166-4db1-9f97-45329a156a24"
+Parent: "b65acf6c-cae8-4ce2-9113-083eb333a4dc"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/fonts/sccxxa_icons/SCCXAICONS_woff
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/fonts/sccxxa_icons/SCCXAICONS_woff
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

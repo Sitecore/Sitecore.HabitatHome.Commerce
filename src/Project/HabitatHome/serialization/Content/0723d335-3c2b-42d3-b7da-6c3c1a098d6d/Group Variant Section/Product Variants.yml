@@ -1,0 +1,22 @@
+﻿---
+ID: "9c1127f6-7f1d-44bb-8f13-a1f3fdc765bf"
+Parent: "4c032717-43d5-43ee-b3df-72b59626bb7d"
+Template: "5cb59bb6-2424-4b11-90a7-69aae8ef88c1"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Body Container/Group Variant Section/Product Variants
+DB: master
+SharedFields:
+- ID: "a7a885b0-c308-4b1c-b5dc-f998889acdf9"
+  Hint: Pass Through Field
+  Value: VariantSelections
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181127T024229Z

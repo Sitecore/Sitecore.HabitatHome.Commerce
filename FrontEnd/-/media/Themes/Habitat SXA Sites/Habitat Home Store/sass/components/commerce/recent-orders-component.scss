@@ -1,0 +1,35 @@
+@import '../../index';
+.cxa-recentorders-component {
+    width: 100%;
+    .header {
+        @include row-of-elements-wide-apart(false, $top-or-left);
+        border-bottom: 1px solid lighten($border-color, 20);
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        a {
+            display: inline-block;
+        }
+    }
+    .view-all-orders-link {
+        &:before {
+            display: inline-block;
+            margin-right: $margin;
+            @include sc-icon($scxa-richtextbulletedlist);
+        }
+    }
+    .order-id {
+        a {
+            @include link();
+        }
+    }
+    .recent-orders-list {
+        .view-order-details-button {
+            &:before {
+                @include sc-icon($scxa-preview-copy);
+            }
+        }
+    }
+    table {
+        line-height: 2.5;
+    }
+}
