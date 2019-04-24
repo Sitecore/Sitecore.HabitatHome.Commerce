@@ -4,6 +4,11 @@ Parent: "aec79d1a-0712-4f81-9cd9-ae2dd57bcaac"
 Template: "ad8537df-06bb-4dd3-b044-0cd5c181a219"
 Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Links/Header/Megadrop Links/Habitat Health
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:

@@ -9,6 +9,10 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{6E59BA7F-0622-4DD3-829F-9C4FD2A81F02}" />
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
