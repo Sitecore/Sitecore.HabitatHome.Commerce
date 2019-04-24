@@ -177,19 +177,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{376D97DD-2A13-4B53-9B18-87DC54146243}"
-              s:par="GridParameters&amp;SearchSignature&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;TargetSignature&amp;Scope=%7BC26085F3-0410-4F0A-938D-C21777313F64%7D&amp;MaxPredictiveResultsCount=5&amp;SearchResultPage=%7B74A89460-3E7A-4A64-887A-2D766706ACAE%7D&amp;SearchTextBoxVisible=1&amp;SuggestionsMode=ShowSearchResults&amp;RenderingIdentifier" />
-          </d>
-        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180212T215049Z
