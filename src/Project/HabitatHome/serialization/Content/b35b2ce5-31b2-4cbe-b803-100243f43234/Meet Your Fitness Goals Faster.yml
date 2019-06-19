@@ -2,8 +2,13 @@
 ID: "88f70ada-0f91-4787-ad21-f613264dd685"
 Parent: "b35b2ce5-31b2-4cbe-b803-100243f43234"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Links/Header/Megadrop Links/Habitat Health/Meet Your Fitness Goals Faster
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Links/Header/Megadrop Links/Habitat Health/Meet Your Fitness Goals Faster
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
@@ -21,6 +26,10 @@ Languages:
       Value: |
         <link text="Meet Your Fitness Goals Faster" anchor="" linktype="internal" class="" title=""  querystring="" id="{055766BE-D42E-4E94-B53B-3F6D223EC3D5}" />
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: フィットネスゴールを見つける
   Versions:
   - Version: 1
     Fields:

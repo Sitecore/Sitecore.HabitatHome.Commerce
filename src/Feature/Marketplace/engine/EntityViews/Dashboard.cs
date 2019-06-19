@@ -8,7 +8,6 @@ using Sitecore.HabitatHome.Feature.EBay.Engine.Commands;
 using Sitecore.HabitatHome.Feature.EBay.Engine.Components;
 using Sitecore.HabitatHome.Feature.EBay.Engine.Entities;
 using Sitecore.HabitatHome.Feature.EBay.Engine.Policies;
-using PluginPolicy = Sitecore.Commerce.Plugin.BusinessUsers.PluginPolicy;
 
 namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 {
@@ -49,12 +48,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 return entityView;
             }
 
-            var pluginPolicy = context.GetPolicy<PluginPolicy>();
+            var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
             var marketplaceDisplayPolicy = context.GetPolicy<MarketplaceDisplayPolicy>();
-
-            //var businessUser = await this._commerceCommander.Command<BusinessUserCommander>().CurrentBusinessUser(context.CommerceContext);
-
-            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
+            
+            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
             if (!ebayConfig.IsPersisted)
             {
                 ebayConfig.Id = "Entity-EbayConfigEntity-Global";
@@ -63,9 +60,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             entityView.UiHint = "Flat";
             entityView.Icon = pluginPolicy.Icon;
             entityView.DisplayName = "Marketplaces";
-
-
-
+            
             var ebayMarketplaceView = new EntityView
             {
                 Name = "EbayMarketplace",
@@ -75,8 +70,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 ItemId = "",
             };
             entityView.ChildViews.Add(ebayMarketplaceView);
-
-            
 
             ebayMarketplaceView.Properties.Add(
                 new ViewProperty
@@ -92,17 +85,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             var ebayGlobalConfigComponent = ebayConfig.GetComponent<EbayGlobalConfigComponent>();
             if (ebayGlobalConfigComponent != null)
             {
-                //ebayMarketplaceView.Properties.Add(
-                //    new ViewProperty
-                //    {
-                //        Name = "InventorySet",
-                //        DisplayName = "Inventory Set",
-                //        IsHidden = false,
-                //        IsReadOnly = true,
-                //        IsRequired = false,
-                //        RawValue = ebayGlobalConfigComponent.InventorySet
-                //    });
-
                 ebayMarketplaceView.Properties.Add(
                     new ViewProperty
                     {
@@ -141,15 +123,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                             IsRequired = false,
                             RawValue = ebayTime
                         });
-
-
             }
-
-
-
+                       
             var ebayPendingSellableItems = await this._commerceCommander.Command<ListCommander>()
-                            .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Pending", 0, 10);
-
+                            .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Pending", 0, 10).ConfigureAwait(false);
 
             var ebayPendingSellableItemsView = new EntityView
             {
@@ -187,10 +164,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                     pathsView1.Properties
                         .Add(new ViewProperty { Name = "EbayId", RawValue = ebayItemComponent.EbayId });
                 }
-            }
-
-            
-
+            }                
 
             var listedItemsView = new EntityView
             {
@@ -205,7 +179,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             //await this.SetListMetadata(pathsView, "Ebay_Listed", "PaginateCategorySellableItemList", context);
 
             var ebayListedSellableItems = await this._commerceCommander.Command<ListCommander>()
-                .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Listed", 0, 100);
+                .GetListItems<SellableItem>(context.CommerceContext, "Ebay_Listed", 0, 100).ConfigureAwait(false);
 
             foreach (var sellableItem in ebayListedSellableItems)
             {
@@ -234,11 +208,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                         .Add(new ViewProperty { Name = "EbayId", RawValue = ebayItemComponent.EbayId });
                 }
             }
-
-
-
             
-
             return entityView;
         }
     }

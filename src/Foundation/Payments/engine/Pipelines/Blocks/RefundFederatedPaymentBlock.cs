@@ -68,7 +68,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                         context.GetPolicy<KnownResultCodes>().ValidationError,
                         "InvalidOrderState",
                         new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
-                        invalidOrderStateMessage);
+                        invalidOrderStateMessage).ConfigureAwait(false);
                 return null;
             }
 

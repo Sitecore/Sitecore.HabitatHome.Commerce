@@ -1,0 +1,15 @@
+@import '../index';
+.registration-page {
+    .component.column-splitter {
+        .col-md-5 {
+            @include respond-to($md) {
+                padding: 0;
+            }
+        }
+        .col-md-7 {
+            @include respond-to($md) {
+                display: none;
+            }
+        }
+    }
+}

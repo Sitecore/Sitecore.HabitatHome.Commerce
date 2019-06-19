@@ -1,0 +1,24 @@
+﻿---
+ID: "ad02bc95-c819-4261-8f87-7051a2f86692"
+Parent: "acec693b-1e44-46b0-99e7-8a6738d36f4c"
+Template: "7c02e9f5-54b5-4ef4-bd10-f4c5d448a48c"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Header Container/Bundle Group Header/Bundle Group Product Name/Unit of Measure
+DB: master
+SharedFields:
+- ID: "1aa68c0b-eb67-4575-9ca8-1689c2aff091"
+  Hint: Tag
+  Value: "{E8E2C26D-2F96-4A9C-9C17-D095E6CE46CC}"
+- ID: "8414031e-7b85-426c-8516-84d6223a1208"
+  Hint: CssClass
+  Value: "bundle-group-header-uom"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07211f80-7ffc-4df4-a4de-c8956f391850"
+      Hint: Text
+      Value: pcs
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181203T031346Z

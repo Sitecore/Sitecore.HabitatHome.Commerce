@@ -58,7 +58,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                 return arg;
             }
 
-            var order = await this._getOrderCommand.Process(context.CommerceContext, arg.Order.EntityTarget);
+            var order = await this._getOrderCommand.Process(context.CommerceContext, arg.Order.EntityTarget).ConfigureAwait(false);
             if (order == null || !order.HasComponent<FederatedPaymentComponent>())
             {
                 return arg;
@@ -68,7 +68,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
             var payment = arg.GetComponent<FederatedPaymentComponent>();
             orderPayment.TransactionStatus = payment.TransactionStatus;
 
-            await this._persistEntityPipeline.Run(new PersistEntityArgument(order), context);
+            await this._persistEntityPipeline.Run(new PersistEntityArgument(order), context).ConfigureAwait(false);
 
             return arg;
         }

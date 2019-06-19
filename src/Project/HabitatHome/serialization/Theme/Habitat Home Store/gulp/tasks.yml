@@ -2,7 +2,7 @@
 ID: "b4a26495-8b8d-401a-871d-0c120b680710"
 Parent: "da255b83-d35e-403e-82da-58bdcc30f123"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/tasks
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulp/tasks
 DB: master
 Languages:
 - Language: en

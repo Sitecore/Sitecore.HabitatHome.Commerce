@@ -52,7 +52,8 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                     context.GetPolicy<KnownResultCodes>().Error,
                     "InvalidOrMissingPropertyValue",
                     new object[] { "TransactionId" },
-                    "Invalid or missing value for property 'TransactionId'.");
+                    "Invalid or missing value for property 'TransactionId'.")
+                    .ConfigureAwait(false);
                 return salesActivity;
             }
 

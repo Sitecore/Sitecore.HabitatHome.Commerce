@@ -19,10 +19,10 @@ SharedFields:
   Value: "query:./ancestor::*[@@templatename='Site']/Data/Commerce/Cart"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: AddToDemoCart
+  Value: AddToCart
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.HabitatHome.Feature.Cart.Controllers.DemoCartController, Sitecore.HabitatHome.Feature.Cart
+  Value: Sitecore.Commerce.XA.Feature.Cart.Controllers.CartController, Sitecore.Commerce.XA.Feature.Cart
 Languages:
 - Language: en
   Fields:
@@ -39,3 +39,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "??????"
+  Versions:

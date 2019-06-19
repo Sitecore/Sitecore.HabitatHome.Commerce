@@ -1,16 +1,16 @@
 ﻿---
-ID: "0d8e7f39-3385-4dfa-a657-387dd68c4c10"
+ID: "a189d6fd-05a0-435a-beef-1019b1f98548"
 Parent: "695aed50-d843-4352-be84-1be12abc3914"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/base/_index
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/base/_index
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/BA78CD3C3B304BCCB15B80D70983D96B.ashx?h=16&thn=1&w=16"
+  Value: "-/media/A189D6FD05A0435ABEEF1019B1F98548.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "d61f482f-7bf8-4a07-9420-67384623b10a"
+  BlobID: "f9ac2377-2d41-484a-b0f3-cd33c4f40f02"
   Value: QGltcG9ydCAnY29sb3JzJzsNCkBpbXBvcnQgInR5cG9ncmFwaHkiOw0KQGltcG9ydCAic2N4YS1pY29ucyI7DQpAaW1wb3J0ICJtZWFzdXJlbWVudHMiOw==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
@@ -28,4 +28,26 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171120T100931Z
+      Value: 20190311T160219Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160221Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T160221Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

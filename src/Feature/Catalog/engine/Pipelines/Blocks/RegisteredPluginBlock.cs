@@ -1,17 +1,17 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+// <copyright file="RegisteredPluginBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2019
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Sitecore.Commerce.Core;
-using Sitecore.Framework.Pipelines;
-
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Sitecore.Commerce.Core;
+    using Sitecore.Framework.Pipelines;
+
     /// <summary>
     /// Defines the registered plugin block.
     /// </summary>

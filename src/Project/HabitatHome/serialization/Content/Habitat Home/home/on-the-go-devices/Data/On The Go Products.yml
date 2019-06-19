@@ -2,7 +2,7 @@
 ID: "ea0d805d-10ca-42fb-b1d2-f57d6660df6e"
 Parent: "ee5fbc10-6443-48ca-82c2-0eae4c513be2"
 Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/on-the-go-devices/Data/On The Go Products"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/on-the-go-devices/Data/On The Go Products"
 DB: master
 Languages:
 - Language: en

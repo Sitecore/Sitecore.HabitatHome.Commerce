@@ -2,12 +2,12 @@
 ID: "c01ae95a-408f-4f69-9e4f-fcf929ce7fb2"
 Parent: "bcac3ce9-b605-4aa4-b7c8-fdfb33e7c986"
 Template: "8ca8b80d-a1ad-4b45-9f08-8839357e71d4"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/POIs
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/POIs
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 2700
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{8DEB61BE-C617-4353-A998-50FA85B69D81}"

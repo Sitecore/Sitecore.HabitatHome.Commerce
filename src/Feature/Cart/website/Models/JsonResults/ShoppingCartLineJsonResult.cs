@@ -1,7 +1,9 @@
 ﻿using Sitecore.Commerce.Entities.Carts;
+using Sitecore.Commerce.XA.Feature.Cart.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
+using Sitecore.Commerce.XA.Foundation.Common.Providers;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Diagnostics;
 using System;
@@ -10,23 +12,26 @@ using System.Linq;
 
 namespace Sitecore.HabitatHome.Feature.Cart.Models.JsonResults
 {
-    public class ShoppingCartLineJsonResult : Sitecore.Commerce.XA.Foundation.CommerceEngine.Models.JsonResults.CartLineJsonResult
+    public class ShoppingCartLineJsonResult : CartLineJsonResult
     {
         public bool IsKit { get; set; }
         public bool IsBundle { get; set; }
         public string Comments { get; set; }
         public List<dynamic> RelatedKitProducts { get; set; }
         public List<dynamic> RelatedBundleProducts { get; set; }
-        public ShoppingCartLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager, IContext context)
-            : base(storefrontContext, modelProvider, searchManager, context)
+
+        public ShoppingCartLineJsonResult(IStorefrontContext storefrontContext, IModelProvider modelProvider, ISearchManager searchManager, IContext context, ICurrencyFormatter currencyFormatter)
+            : base(storefrontContext, modelProvider, searchManager, context, currencyFormatter)
         {
-            Assert.ArgumentNotNull((object)modelProvider, nameof(modelProvider));
+            Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));
             this.ModelProvider = modelProvider;
         }
-        public override void Initialize(CartLine cartLine)
+
+        public override void Initialize(CartLine cartLine, ShippingInfo shippingInfo, Sitecore.Commerce.Entities.Party party)
         {
-            base.Initialize(cartLine);
+            base.Initialize(cartLine, shippingInfo, party);
         }
+
         public void SetProductType(dynamic expandedCartLine)
         {
             this.IsKit = expandedCartLine.IsKit;

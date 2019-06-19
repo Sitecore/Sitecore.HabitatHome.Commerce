@@ -2,7 +2,7 @@
 ID: "7e6b66e0-3929-4081-b004-ed04ed0eaa2d"
 Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
 Template: "c2786e73-44c7-43be-954b-1b35aeba4bd0"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/sample"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/sample"
 DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
@@ -19,23 +19,25 @@ SharedFields:
         <r
           ds="local:/Data/Page Hero"
           id="{6BCF8D8E-0A28-4844-BFB4-96C852BAD2DC}"
-          par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           ph="/main/sxa-content-container/container-1"
           uid="{7DFCF9D1-9E8A-48D3-A97B-B14654888C89}" />
         <r
+          ds=""
           id="{99A633FC-B9A9-44A0-B78A-BCBB08DD02C9}"
-          par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames&amp;Styles={31A54599-7CA6-4FAE-A51E-120E7BF08FAC}&amp;Reset Caching Options&amp;RenderingIdentifier"
+          par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7BD49D80A9-A728-49B4-9F34-8455EF3B7A88%7D&amp;Styles=%7B31A54599-7CA6-4FAE-A51E-120E7BF08FAC%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
           ph="/main/sxa-content-container/container-1"
           uid="{D2B41184-B2CD-4074-AE79-4DADF108989B}" />
         <r
+          ds=""
           id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}"
-          par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;FieldNames&amp;Styles={31A54599-7CA6-4FAE-A51E-120E7BF08FAC}&amp;Reset Caching Options&amp;RenderingIdentifier"
+          par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames&amp;Styles=%7B31A54599-7CA6-4FAE-A51E-120E7BF08FAC%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
           ph="/main/sxa-content-container/container-1"
           uid="{B1AF712D-53D8-4A98-801A-B1CC9C37D77E}" />
         <r
           ds="local:/Data/Two Column Promos"
           id="{00E2C7CF-2247-4596-B878-E6BB3850A77F}"
-          par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
           ph="/main/sxa-content-container/container-1"
           uid="{092AFF21-AC7C-4408-A763-EAE59D19B9FC}" />
       </d>

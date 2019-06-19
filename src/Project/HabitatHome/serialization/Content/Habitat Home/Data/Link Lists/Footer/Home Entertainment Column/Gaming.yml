@@ -2,7 +2,7 @@
 ID: "1e3beb47-77d7-40a3-a23a-8af53c44576d"
 Parent: "4306db59-ecdb-4528-b258-89e9c8635a27"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Link Lists/Footer/Home Entertainment Column/Gaming
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Link Lists/Footer/Home Entertainment Column/Gaming
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -82,3 +82,16 @@ Languages:
     Hint: __Display name
     Value: ヘッドフォン
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182641Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="Gaming" anchor="" linktype="internal" class="" title=""  querystring="" id="{9307E44A-9397-4D0A-8E55-9A0152E3520C}" />

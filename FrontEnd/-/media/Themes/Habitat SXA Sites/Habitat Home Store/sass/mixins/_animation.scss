@@ -1,0 +1,3 @@
+@mixin transition($time: 0.3s, $ele: all){
+     transition: $ele $time;
+}

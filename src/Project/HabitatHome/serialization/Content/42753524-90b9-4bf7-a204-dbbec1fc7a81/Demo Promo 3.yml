@@ -2,7 +2,7 @@
 ID: "500dd560-f86e-413b-8517-aeda522307b1"
 Parent: "42753524-90b9-4bf7-a204-dbbec1fc7a81"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Default/Demo Promo 3
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Default/Demo Promo 3
 DB: master
 Languages:
 - Language: en
@@ -11,11 +11,11 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: Choose Your Perfect Wearable
+      Value: 7 Kitchen Appliance Trends You Need to Follow
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{B8CD0674-1886-470F-9B58-77CBA03BDF43}" ></image>
+        <image mediaid="{5F6109A3-88C1-411D-8705-61DFB9C19605}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171124T144302Z
@@ -31,12 +31,11 @@ Languages:
       Value: 
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: |
-        <span style="background-color: #ffffff;">With wearable fitness technology, one size does not fit all. Find the best wearable for your goals and lifestyle.</span>
+      Value: Learn what modern appliances conserve energy and save you time
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link linktype="internal" text="Read More" querystring="" target="" id="{CB96DF66-E22F-4906-9ABE-E0403794D485}" />
+        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B324AA9A-4053-4B7E-97A2-8133988E4371}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

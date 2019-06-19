@@ -2,9 +2,8 @@
 ID: "54fc2bd2-c0e3-43a5-b83b-00f7a8097833"
 Parent: "535a44b6-ed45-4517-b4b8-9c3a06d34f28"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/orderconfirmation/Data/Thank you Order
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/checkout/orderconfirmation/Data/Thank you Order
 DB: master
-BranchID: "f4debfdc-2d8f-4c56-8876-c4af7de0ce00"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -27,4 +26,4 @@ Languages:
         sitecore\virtualssuser
     - ID: "b3635965-6786-457c-9dee-28de73c0a331"
       Hint: Text
-      Value: <h1>Thank you for your order</h1>
+      Value: "<h1>Thank you for your order!</h1>"

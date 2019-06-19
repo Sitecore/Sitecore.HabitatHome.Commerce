@@ -14,6 +14,7 @@ using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Arguments;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
+using Sitecore.Commerce.XA.Foundation.Common;
 using Sitecore.DependencyInjection;
 using Sitecore.HabitatHome.Feature.Catalog.Models;
 using Sitecore.HabitatHome.Feature.Catalog.Repositories;
@@ -26,26 +27,12 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
         private readonly IVisitorContext _visitorContext;
         private readonly IPurchasableProductListRepository _purchasableProductListRepository;
 
-        public PurchasableProductListController(IModelProvider modelProvider, IProductListHeaderRepository productListHeaderRepository,
-            IProductListRepository productListRepository, IPromotedProductsRepository promotedProductsRepository,
-            IProductInformationRepository productInformationRepository,
-            IProductImagesRepository productImagesRepository, IProductInventoryRepository productInventoryRepository,
-            IProductPriceRepository productPriceRepository, IProductVariantsRepository productVariantsRepository,
-            IProductListPagerRepository productListPagerRepository, IProductFacetsRepository productFacetsRepository,
-            IProductListSortingRepository productListSortingRepository,
-            IProductListPageInfoRepository productListPageInfoRepository,
-            IProductListItemsPerPageRepository productListItemsPerPageRepository,
-            ICatalogItemContainerRepository catalogItemContainerRepository,
-            ICartManager cartManager, IVisitorContext visitorContext, 
-            IVisitedCategoryPageRepository visitedCategoryPageRepository, IVisitedProductDetailsPageRepository visitedProductDetailsPageRepository, 
-            ISearchInitiatedRepository searchInitiatedRepository, IStorefrontContext storefrontContext, 
-            ISiteContext siteContext, IContext context, IPurchasableProductListRepository purchasableProductListRepository)
-            : base(modelProvider, productListHeaderRepository, productListRepository, promotedProductsRepository,
-                productInformationRepository, productImagesRepository, productInventoryRepository, productPriceRepository,
-                productVariantsRepository, productListPagerRepository, productFacetsRepository, productListSortingRepository, 
-                productListPageInfoRepository, productListItemsPerPageRepository, catalogItemContainerRepository,
-                visitedCategoryPageRepository,  visitedProductDetailsPageRepository,  searchInitiatedRepository, 
-                storefrontContext, siteContext, context) 
+        public PurchasableProductListController(IModelProvider modelProvider, IProductListHeaderRepository productListHeaderRepository, IProductListRepository productListRepository, IPromotedProductsRepository promotedProductsRepository, IProductInformationRepository productInformationRepository, IProductImagesRepository productImagesRepository, IProductInventoryRepository productInventoryRepository, IProductPriceRepository productPriceRepository, IProductVariantsRepository productVariantsRepository, IProductBundleRepository productBundleRepository, IProductListPagerRepository productListPagerRepository, IProductFacetsRepository productFacetsRepository, IProductListSortingRepository productListSortingRepository, IProductListPageInfoRepository productListPageInfoRepository, IProductListItemsPerPageRepository productListItemsPerPageRepository, ICatalogItemContainerRepository catalogItemContainerRepository, IVisitedCategoryPageRepository visitedCategoryPageRepository, IVisitedProductDetailsPageRepository visitedProductDetailsPageRepository, ISearchInitiatedRepository searchInitiatedRepository, IStorefrontContext storefrontContext, ISiteContext siteContext, IContext sitecoreContext, IPurchasableProductListRepository purchasableProductListRepository, ICartManager cartManager, IVisitorContext visitorContext)
+            : base(modelProvider, productListHeaderRepository, productListRepository, promotedProductsRepository, productInformationRepository, 
+                  productImagesRepository, productInventoryRepository, productPriceRepository, productVariantsRepository, productBundleRepository,
+                  productListPagerRepository, productFacetsRepository, productListSortingRepository, productListPageInfoRepository,
+                  productListItemsPerPageRepository, catalogItemContainerRepository, visitedCategoryPageRepository, visitedProductDetailsPageRepository, 
+                  searchInitiatedRepository, storefrontContext, siteContext, sitecoreContext) 
         {
             _cartManager = cartManager;
             _visitorContext = visitorContext;
@@ -89,7 +76,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Controllers
         }                                                                      
 
         [HttpPost, ValidateAntiForgeryToken]
-        public JsonResult GetPurchasableProductList([Bind(Prefix = "q")] string searchKeyword, [Bind(Prefix = "pg")] int? pageNumber, [Bind(Prefix = "f")] string facetValues, [Bind(Prefix = "s")] string sortField, [Bind(Prefix = "ps")] int? pageSize, [Bind(Prefix = "sd")] Sitecore.Commerce.XA.Foundation.Common.Constants.SortDirection? sortDirection, [Bind(Prefix = "cci")] string currentCatalogItemId, [Bind(Prefix = "ci")] string currentItemId)
+        public JsonResult GetPurchasableProductList([Bind(Prefix = "q")] string searchKeyword, [Bind(Prefix = "pg")] int? pageNumber, [Bind(Prefix = "f")] string facetValues, [Bind(Prefix = "s")] string sortField, [Bind(Prefix = "ps")] int? pageSize, [Bind(Prefix = "sd")] SortDirection? sortDirection, [Bind(Prefix = "cci")] string currentCatalogItemId, [Bind(Prefix = "ci")] string currentItemId)
         {
             IVisitorContext service = ServiceLocator.ServiceProvider.GetService<IVisitorContext>();
             PurchasableProductListJsonResult productListJsonResult = _purchasableProductListRepository.GetPurchasableProductListJsonResult(service, currentItemId, currentCatalogItemId, searchKeyword, pageNumber, facetValues, sortField, pageSize, sortDirection);

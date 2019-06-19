@@ -4,7 +4,6 @@ Parent: "c44568ae-eab7-4ba7-8752-29e6bdfe73f2"
 Template: "59e0ae1a-6a2a-4c7b-931a-5def873b9df6"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Currencies Display Adjustments/USD
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "2ba6f36e-ba91-41a9-a252-2358456799f1"
   Hint: Currency Number Format

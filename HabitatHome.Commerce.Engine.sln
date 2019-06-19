@@ -13,15 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Feature.Catalog.Engine", "src\Feature\Catalog\engine\Sitecore.HabitatHome.Feature.Catalog.Engine.csproj", "{DA03CAF5-148F-40B3-B438-08A3F708E3B0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Feature.ProductBundle.Engine", "src\Feature\ProductBundle\engine\Sitecore.HabitatHome.Feature.ProductBundle.Engine.csproj", "{25290003-61D0-4EF5-9D02-00E808DA76B6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Foundation.Rules.Engine", "src\Foundation\Rules\engine\Sitecore.HabitatHome.Foundation.Rules.Engine.csproj", "{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{4783F423-986A-4DE3-830B-837A6CD74DBF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{B57BB723-79CB-42CA-8E57-064ED22E2357}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Feature.ProductKit.Engine", "src\Feature\ProductKit\engine\Sitecore.HabitatHome.Feature.ProductKit.Engine.csproj", "{515997D7-4386-4F2D-990D-FFDF2149E9FD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.HabitatHome.Feature.NearestStore.Engine", "src\Feature\NearestStore\engine\Sitecore.HabitatHome.Feature.NearestStore.Engine.csproj", "{FA2FE0F3-E359-4C78-982C-1146AE3F17EA}"
 EndProject
@@ -51,18 +47,10 @@ Global
 		{DA03CAF5-148F-40B3-B438-08A3F708E3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA03CAF5-148F-40B3-B438-08A3F708E3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA03CAF5-148F-40B3-B438-08A3F708E3B0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25290003-61D0-4EF5-9D02-00E808DA76B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25290003-61D0-4EF5-9D02-00E808DA76B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25290003-61D0-4EF5-9D02-00E808DA76B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25290003-61D0-4EF5-9D02-00E808DA76B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{515997D7-4386-4F2D-990D-FFDF2149E9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{515997D7-4386-4F2D-990D-FFDF2149E9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{515997D7-4386-4F2D-990D-FFDF2149E9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{515997D7-4386-4F2D-990D-FFDF2149E9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA2FE0F3-E359-4C78-982C-1146AE3F17EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA2FE0F3-E359-4C78-982C-1146AE3F17EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA2FE0F3-E359-4C78-982C-1146AE3F17EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -101,9 +89,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DA03CAF5-148F-40B3-B438-08A3F708E3B0} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
-		{25290003-61D0-4EF5-9D02-00E808DA76B6} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
 		{924BBD98-B2F0-4DDB-A60A-C2069EAA1D99} = {B57BB723-79CB-42CA-8E57-064ED22E2357}
-		{515997D7-4386-4F2D-990D-FFDF2149E9FD} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
 		{FA2FE0F3-E359-4C78-982C-1146AE3F17EA} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
 		{827BBF1A-BB90-4559-BBC2-5EAD6A6B5D1E} = {4783F423-986A-4DE3-830B-837A6CD74DBF}
 		{AB3E742A-83B2-4F02-8C81-968ED07D68E2} = {4783F423-986A-4DE3-830B-837A6CD74DBF}

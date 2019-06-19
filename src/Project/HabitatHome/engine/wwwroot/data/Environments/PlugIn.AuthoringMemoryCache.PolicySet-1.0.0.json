@@ -20,7 +20,8 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.CatalogCachePolicy, Sitecore.Commerce.Plugin.Catalog",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
@@ -105,12 +106,14 @@
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
@@ -125,7 +128,8 @@
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
@@ -140,12 +144,14 @@
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Core.LocalizationEntity",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Inventory.InventoryInformation",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
@@ -153,8 +159,14 @@
         "AllowCaching": false
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.Catalog.CatalogCachePolicy, Sitecore.Commerce.Plugin.Catalog",
-        "AllowCaching": false
+        "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
+        "EntityFullName": "Sitecore.Commerce.Plugin.Workflow.Workflow",
+        "AllowCaching": true,
+        "Priority": "Normal",
+        "Expiration": 86400000,
+        "CacheAsEntity": true,
+        "HasNegativeCaching": false,
+        "CacheName": "Workflows"
       }
     ]
   }

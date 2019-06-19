@@ -49,7 +49,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
 
-            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
+            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
 
             if (ebayConfig.HasComponent<EbayBusinessUserComponent>())
             {

@@ -12,13 +12,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Composer.ComposerTemplate",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MaxLength": 50,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MaxLength": 50,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -26,7 +28,8 @@
         "TypeFullName": "Sitecore.Commerce.Core.Party",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
+          "$values": [
+            {
               "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
               "Name": "AddressName",
               "MaxLength": 100,
@@ -110,13 +113,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Coupons.Coupon",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -124,13 +129,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Pricing.PriceBook",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "FriendlyId",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "FriendlyId",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -138,13 +145,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Pricing.PriceCard",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -152,13 +161,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Promotions.Promotion",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -166,13 +177,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Promotions.PromotionBook",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "FriendlyId",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "FriendlyId",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -180,14 +193,16 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Inventory.InventorySet",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "MaxLength": 50,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "MaxLength": 50,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -195,13 +210,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -209,13 +226,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -223,13 +242,15 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "ProductId",
-            "MinLength": 1,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "ProductId",
+              "MinLength": 1,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -237,14 +258,16 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.RelationshipDefinition",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "Name",
-            "MinLength": 1,
-            "MaxLength": 50,
-            "RegexValidator": "^[\\w\\s]*$",
-            "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "Name",
+              "MinLength": 1,
+              "MaxLength": 50,
+              "RegexValidator": "^[\\w\\s]*$",
+              "RegexValidatorErrorCode": "AlphanumericOnly_NameValidationError"
+            }
+          ]
         }
       },
       {
@@ -252,7 +275,8 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Customers.Customer",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
+          "$values": [
+            {
               "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
               "Name": "AccountNumber",
               "MaxLength": 100,
@@ -305,11 +329,13 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Customers.CustomerDetailsComponent",
         "Models": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Model, Sitecore.Commerce.Core]], mscorlib",
-          "$values": [{
-            "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
-            "Name": "PhoneNumber",
-            "MaxLength": 20
-          }]
+          "$values": [
+            {
+              "$type": "Sitecore.Commerce.Core.ValidationAttributes, Sitecore.Commerce.Core",
+              "Name": "PhoneNumber",
+              "MaxLength": 20
+            }
+          ]
         }
       }
     ]

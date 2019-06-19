@@ -14,16 +14,19 @@ namespace Sitecore.HabitatHome.Foundation.Rules.Engine.Conditions
     [EntityIdentifier("CurrentShopperHasPurchaseItemCondition")]
     public class CurrentShopperHasPurchaseItemCondition : CartTargetItemId, ICustomerCondition
     {
-       
         private readonly FindEntitiesInListCommand _getEntitFindEntitiesInListCommand;
 
         public CurrentShopperHasPurchaseItemCondition(FindEntitiesInListCommand findEntitiesInListCommand)
         {
             this._getEntitFindEntitiesInListCommand = findEntitiesInListCommand;
         }
+
         public IRuleValue<string> CurrentItemInCartId { get; set; }
+
         public bool Evaluate(IRuleExecutionContext context)
         {
+            //todo: evaluate whether this custom condition is still necessary in 9.1
+
             //itemId = ID to check in purchase order history
             //itemInCartItemId = Item in cart to check in order history to give discount
             //If customer has purchased itemId and has not purchased itemInCartItemId this rule returns true

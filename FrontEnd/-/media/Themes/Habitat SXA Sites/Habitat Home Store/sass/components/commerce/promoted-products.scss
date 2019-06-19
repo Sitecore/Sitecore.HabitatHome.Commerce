@@ -1,0 +1,82 @@
+@import '../../index';
+@import './product-list-component';
+@import '../../abstracts/_mixins.scss';
+
+.component.cxa-promoted-products-component {
+    @extend .component.cxa-productlist-component;
+    .product-list{
+        .title{
+            font-size: $font-size-xlarge;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: bold;
+        }
+        .load-more-btn{
+            display: none;
+        }
+        &>ul{
+            flex-direction: row wrap !important;
+
+            >li{
+                max-width: inherit;
+                width: 50%;
+                flex-basis: 50%;
+                margin-right: 0;
+
+                .product-summary{
+                    .product-info{
+                        .product-category {
+                            a {                                
+                                position: relative;
+                                padding-right: 20px;
+                                text-decoration: none;
+
+                                &:active,
+                                &:hover,
+                                &:focus {
+                                    opacity: 0.7;
+                                    text-decoration: none;
+                                } 
+
+                                span{                                     
+
+                                    &:active,
+                                    &:hover,
+                                    &:focus {
+                                        text-decoration: none;
+                                    }
+                                }
+
+                                &:after {
+                                    position: absolute;
+                                    right: 5px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                        flex-flow: row wrap !important;
+                        @include respond-to(mobile-large) {
+                            flex-flow: row wrap !important;
+                        }  
+                    }                 
+                }                
+
+                @include respond-to(desktop) {
+                    flex-basis: 25%;
+                    width: 25%;
+                }
+
+                @include respond-to(mobile-large) {
+                    flex-basis: 100%;
+                    width: 100%;
+                    margin: 2em 0;
+                }
+            }
+
+            @include respond-to(mobile) {
+                
+            }
+        }
+    }
+} 

@@ -2,9 +2,8 @@
 ID: "db1cc358-376a-40d8-8fa8-657b6226720f"
 Parent: "6c346c07-69d0-4757-90db-27c28f115157"
 Template: "5580f871-81dd-4abc-9cb4-bdf177f8c835"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Billing
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Checkout/Billing
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -27,3 +26,23 @@ Languages:
     - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
       Hint: Billing Name Label
       Value: Name
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "936800f9-906a-416a-8163-cf258a52f382"
+      Hint: Email Address Label
+      Value: "E??? ????"
+    - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
+      Hint: Billing Name Label
+      Value: "??"
+    - ID: "a1f13965-b2bf-44d0-a0e6-55d2435c0846"
+      Hint: Billing Information Header
+      Value: Billing information

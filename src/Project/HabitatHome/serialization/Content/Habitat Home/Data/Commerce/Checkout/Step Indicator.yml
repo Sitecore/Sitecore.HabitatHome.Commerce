@@ -2,9 +2,8 @@
 ID: "9637dea0-77c6-4906-bc29-410066ffcccf"
 Parent: "6c346c07-69d0-4757-90db-27c28f115157"
 Template: "c4c5b2ed-8336-4d9c-bce7-4000efc50347"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Step Indicator
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Checkout/Step Indicator
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -25,3 +24,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Fields:
+  - ID: "a1ae012c-3162-439b-aecc-e30d9241cae0"
+    Hint: Step Name and Labels
+    Value: Cart=Cart&Delivery=Delivery&Billing=Billing&Review=Review
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

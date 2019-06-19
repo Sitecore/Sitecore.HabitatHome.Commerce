@@ -1,0 +1,64 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/* breakpoints */
+.cxa-product-bundle-component {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.cxa-product-bundle-component .component-content {
+  text-align: left;
+  margin-top: 0;
+}
+
+.cxa-product-bundle-component .component-content .product-bundle-header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6b717b !important;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+
+.cxa-product-bundle-component .component-content .related-product {
+  font-size: 13px;
+  color: #747a83;
+}
+
+.cxa-product-bundle-component .component-content .related-product .product-name {
+  margin-bottom: 5px;
+  color: #747a83;
+  cursor: pointer;
+}
+
+.cxa-product-bundle-component .component-content .related-product .product-bundle-quantity {
+  margin-bottom: 10px;
+}
+
+.cxa-product-bundle-component .component-content .related-product .inp-quantity {
+  max-width: 43px;
+  padding: 0px 2px;
+}
+
+.cxa-product-bundle-component .component-content .related-product .product-variant-name {
+  margin-bottom: 10px;
+}

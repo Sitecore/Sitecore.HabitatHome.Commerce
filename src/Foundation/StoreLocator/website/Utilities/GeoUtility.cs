@@ -18,9 +18,12 @@ namespace Sitecore.HabitatHome.Foundation.StoreLocator.Utilities
                 var tracker = Sitecore.Analytics.Tracker.Current;
                 var userData = tracker.Interaction;
 
+                // setting defaults for tests
+                ul.Latitude ="33.7512130";
+                ul.Longitude = "-117.8387910";
+
                 if (userData.HasGeoIpData)
                 {
-
                     ul.Latitude = userData.GeoData.Latitude != null ? userData.GeoData.Latitude.ToString() : "33.7512130";
                     ul.Longitude = userData.GeoData.Longitude != null ? userData.GeoData.Longitude.ToString() : "-117.8387910";
                 }

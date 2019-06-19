@@ -67,7 +67,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 {
                     sellableItemId = entityView.ItemId;
                 }
-                var sellableItem = await this._commerceCommander.GetEntity<SellableItem>(context.CommerceContext, sellableItemId);
+                var sellableItem = await this._commerceCommander.GetEntity<SellableItem>(context.CommerceContext, sellableItemId).ConfigureAwait(false);
 
                 if (sellableItem.HasComponent<EbayItemComponent>())
                 {
@@ -81,7 +81,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             catch (Exception ex)
             {
                 context.Logger.LogError($"Ebay.DoActionEndItem.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "DocActionEndItem.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "DocActionEndItem.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
 
             return entityView;

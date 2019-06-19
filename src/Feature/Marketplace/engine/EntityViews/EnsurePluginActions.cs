@@ -45,7 +45,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
             var actionsPolicy = entityView.GetPolicy<ActionsPolicy>();
 
-            var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander);
+            var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander).ConfigureAwait(false);
 
             if (userPluginOptions.EnabledPlugins.Contains("Sitecore.HabitatHome.Feature.Ebay.Engine"))
             {

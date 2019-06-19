@@ -1,0 +1,17 @@
+@import '../../index';
+.cxa-orderhistory-component {
+    table {
+        line-height: 2.5;
+        padding-left: 15px;
+    }
+    .order-id {
+        a {
+            @include link();
+        }
+    }
+    .view-order-details-button {
+        &:before {
+            @include sc-icon($scxa-preview-copy);
+        }
+    }
+}

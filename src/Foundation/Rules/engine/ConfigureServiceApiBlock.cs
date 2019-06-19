@@ -22,7 +22,7 @@ namespace Sitecore.HabitatHome.Foundation.Rules.Engine
     ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("SamplePluginConfigureServiceApiBlock")]
+    [PipelineDisplayName("HabitatHome.Foundation.Rules.ConfigureServiceApiBlock")]
     public class ConfigureServiceApiBlock : PipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
         /// <summary>

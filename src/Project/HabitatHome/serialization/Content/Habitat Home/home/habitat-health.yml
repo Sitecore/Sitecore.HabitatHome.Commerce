@@ -2,7 +2,7 @@
 ID: "055766be-d42e-4e94-b53b-3f6d223ec3d5"
 Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
 Template: "69dd5f28-429f-46b6-b55c-9da3500a7369"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/habitat-health"
 DB: master
 SharedFields:
 - ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
@@ -29,25 +29,88 @@ SharedFields:
           s:key="/main/sxa-content-container/container-1/container-11"
           s:md="/sitecore/content/Habitat Sites/Habitat Home/home/habitat-health/Data/container- trainer" />
         <r
-          uid="{79236A15-7C25-4CF2-ACE2-FE6869DEEEDB}"
+          uid="{05B7145C-3B80-48C3-BADB-D5078F12E1AE}"
           p:after="p[@uid='{8F07E7AE-AEDE-46D5-B17B-2E6C7B6B5300}']"
-          s:ds="local:/Data/Foodie Feast Thank You"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=20"
-          s:ph="/main/sxa-content-container/container-1/container-19" />
+          s:id="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles=%7B460B5E75-23EF-430C-94C4-F86DB2DB5EDF%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=12"
+          s:ph="/main/sxa-content-container/container-1/container-19">
+          <rls>
+            <ruleset>
+              <rule
+                uid="{45C2ADD6-6E2E-4FAB-B00B-56EF68828AD6}"
+                s:name="HIDE Foodie Feast Sign Up ">
+                <actions>
+                  <action
+                    uid="B26B1B4C03EC404F98C93D792F0CC12D"
+                    s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                </actions>
+                <conditions>
+                  <condition
+                    uid="4F3ADE7574D54613A28CA64FDF228B5C"
+                    s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
+                    s:GoalId="{2A2EBECC-D066-4FBC-8701-BBA74AAC9F2E}"
+                    s:NumberOfElapsedDaysOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                    s:NumberOfElapsedDays="1"
+                    s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
+                    s:NumberOfPastInteractions="1" />
+                </conditions>
+              </rule>
+              <rule
+                uid="{583EB11D-84FA-4FAD-BE65-0D19281334FB}"
+                s:name="SHOW Foodie Feast">
+                <conditions>
+                  <or
+                    uid="8A5EA1E0300F41E4A1F788EEEAED7B0E">
+                    <or
+                      uid="DAEE7A8A2A274CB3BC35396E790FAA30">
+                      <condition
+                        uid="E96DA604066C4EF4B475DDD663031521"
+                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
+                        s:ProfileName="Topic Interest Category"
+                        s:PatternName="Cooking" />
+                      <condition
+                        uid="B52A75B5430247038C40617FE24848FA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                    </or>
+                    <condition
+                      uid="052868F66D364FB88B5280B0031BCA0B"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
+                  </or>
+                </conditions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                s:name="Default">
+                <conditions>
+                  <condition
+                    uid="FBE9E5C3D32248FBA0FB2809BA27582B"
+                    s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                </conditions>
+                <actions>
+                  <action
+                    uid="4AB0E2D5A370483EA64F440E1335D079"
+                    s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                </actions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
           uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
-          p:after="r[@uid='{79236A15-7C25-4CF2-ACE2-FE6869DEEEDB}']"
+          p:after="r[@uid='{05B7145C-3B80-48C3-BADB-D5078F12E1AE}']"
           s:ds="local:/Data/Foodie Products"
           s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists=E3A70BD6-DADC-43CA-9941-EEC8F3E02B93&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7BE3A70BD6-DADC-43CA-9941-EEC8F3E02B93%7D&amp;Relationship Type=%7BEA35B8FE-57BB-41C1-9DB0-7E99E13AEF83%7D&amp;Use Lazy Loading=1&amp;Max Page Size=4"
           s:ph="/main/sxa-content-container/container-1/container-14" />
         <r
           uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
           p:after="r[@uid='{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}']"
           s:ds="local:/Data/Fitness Products"
           s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
-          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product Lists=43243E9E-160C-4930-8698-A9138CDFC95D&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type=%7BEA35B8FE-57BB-41C1-9DB0-7E99E13AEF83%7D&amp;Use Lazy Loading=1&amp;Max Page Size=4"
           s:ph="/main/sxa-content-container/container-1/container-18">
           <rls>
             <ruleset>
@@ -75,7 +138,7 @@ SharedFields:
           s:ds="{2C290562-9A28-4FF5-AF78-907C74D83D8E}"
           s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
           s:par=""
-          s:ph="/main/sxa-content-container/container-1/sitecoreFormsWrapper-12" />
+          s:ph="/main/sxa-content-container/container-1/container-19/sitecoreFormsWrapper-12" />
         <r
           uid="{CE607538-624F-43DE-A3B5-635D2151A804}"
           p:after="r[@uid='{4E745665-EE15-4652-8CF0-6EEFCA029C08}']"
@@ -96,25 +159,24 @@ SharedFields:
                 </actions>
                 <conditions>
                   <or
-                    uid="204993D75A124E878A5907B436F73A38">
+                    uid="3F93F53DC3A948FF85EA3EEC3F491FAC">
                     <or
-                      uid="E6056DBC60874EDE9E74FF460BF0674D">
-                      <condition
-                        uid="B4C5E093A2B14824920AC5A9A5B68E9E"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="FEF7685C8B2A4124AD4CD44F8795B8A2">
                       <condition
                         uid="37A41D694CB747E4A66A3C68D686FB09"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="2CBF0CAD966C4277ADDF06774133C7EA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="2CBF0CAD966C4277ADDF06774133C7EA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="15F3CEE62EFA4307A4116C1FE48B8A5B"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
               </rule>
@@ -123,25 +185,24 @@ SharedFields:
                 s:name="Hero - Fitness">
                 <conditions>
                   <or
-                    uid="F3DD5B01170B495C8AF00BE694854D5B">
+                    uid="E9699DEFA8164F1A9FB3E46913790D92">
                     <or
-                      uid="217194F686F34FD2ADCEDD554F14BFF1">
-                      <condition
-                        uid="11267AD14C944DAF9CA99E6721A677B8"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="C22EBF0891E3418BAA4F1234C9B7FB02">
                       <condition
                         uid="F05BC2A129CC462EA15E627AE9AC844F"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="9B9CD6AE929D4C33A999E93E10AC073F"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="9B9CD6AE929D4C33A999E93E10AC073F"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="DDEE152A30364D589275BA13CF0C39E2"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -178,25 +239,24 @@ SharedFields:
                 s:name="Fitness">
                 <conditions>
                   <or
-                    uid="59C9A097239546ACA8269AAB891BB026">
+                    uid="5D3B786CA53D4F4ABE9826D7BE1F2260">
                     <or
-                      uid="610568E0D0CE40D99865F2A3974C693A">
-                      <condition
-                        uid="BC10F16C504D4CB7B3BC01F88942F37F"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="AC917144A75E4EFBB22958E3344900CD">
                       <condition
                         uid="158387FB143C40DDBAD36CCEFF47AD5B"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="B3EDBE402DD74ED6A8C031D4EE4D14D2"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="126411EBA5DA499BA87146B9808C4D58"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -211,17 +271,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="4D18B944CA274C4EB428EE48529D897C">
+                    uid="9B3E36A26F8A4DD2A4E22FF61D1BA5F2">
+                    <or
+                      uid="A6B7398E25A143A39BD60EA6F5245222">
+                      <condition
+                        uid="FC03F6759CC7404B8204575A3062D01F"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      <condition
+                        uid="68516449A87B47BCB4674473A1497FDF"
+                        s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                        s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
+                    </or>
                     <condition
-                      uid="EF54D122670F4DBAB8DE4FC433F9D445"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
+                      uid="5A89C5B697744663BDDF34253EC59795"
+                      s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                       s:ProfileName="Topic Interest Category"
                       s:PatternName="Cooking" />
-                    <condition
-                      uid="FC03F6759CC7404B8204575A3062D01F"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                   </or>
                 </conditions>
                 <actions>
@@ -249,7 +316,7 @@ SharedFields:
           p:after="r[@uid='{7CBDDD4D-859B-42E8-A640-6214C4188A84}']"
           s:ds="local:/Data/Promo - Smart Health"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BF8C8F184-053D-4947-840B-A96495DB434C%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
           s:ph="/main/sxa-content-container/container-1">
           <rls>
             <ruleset>
@@ -258,25 +325,24 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="5ECBDB291B9444B783C5F0D3AD6FAB05">
+                    uid="C336E9E3D84B46F6894879E5B0962789">
                     <or
-                      uid="834071B8E5944C5E9F1CA779F555E958">
-                      <condition
-                        uid="AA31BE03096F4E698396B76480DCF5B7"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="9B25C5316470423AA7A196F73E9C7BD4">
                       <condition
                         uid="2D56DC4BE1F04C5DA482B7F6E8293D5B"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="99AB5D046A43498185EFBF35AA642B01"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="99AB5D046A43498185EFBF35AA642B01"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="A7AF1FD105CC4CD4887981C8C5AF0F70"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -300,121 +366,17 @@ SharedFields:
           </rls>
         </r>
         <r
-          uid="{5B548513-9243-4460-93B2-B58566281362}"
+          uid="{0895086E-5D4D-4862-A739-C474FA03BD6B}"
           p:after="r[@uid='{807D306C-5F71-40F4-9F38-AC9D1B521239}']"
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;BackgroundImage=%3Cimage mediaid=&quot;{D5B98824-B2DC-4319-9DC8-49F4FF0D86F7}&quot; %3E;&amp;Styles={45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B}|{F5947911-00C7-4F00-84F4-3D748376BB32}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=19"
-          s:ph="/main/sxa-content-container/container-1">
-          <rls>
-            <ruleset>
-              <rule
-                uid="{141C9951-BA8C-4C86-ACBB-D71CCE926956}"
-                s:name="Show when Foodie Feast Complete">
-                <conditions>
-                  <condition
-                    uid="36B84E3A82DB43D4BC66E3F61679A02D"
-                    s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
-                    s:GoalId="{2A2EBECC-D066-4FBC-8701-BBA74AAC9F2E}"
-                    s:NumberOfElapsedDaysOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                    s:NumberOfElapsedDays="1"
-                    s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                    s:NumberOfPastInteractions="1" />
-                </conditions>
-              </rule>
-              <rule
-                uid="{00000000-0000-0000-0000-000000000000}"
-                s:name="Default">
-                <conditions>
-                  <condition
-                    uid="10DB598999B845628B9DA2887D6FC759"
-                    s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                </conditions>
-                <actions>
-                  <action
-                    uid="658C82732E31422E87F7795F9F95B04A"
-                    s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
-                </actions>
-              </rule>
-            </ruleset>
-          </rls>
-        </r>
-        <r
-          uid="{05B7145C-3B80-48C3-BADB-D5078F12E1AE}"
-          p:after="r[@uid='{5B548513-9243-4460-93B2-B58566281362}']"
-          s:id="{6AB4EE29-CB78-4DCE-A316-3E6C3D5513F5}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={460B5E75-23EF-430C-94C4-F86DB2DB5EDF}&amp;RenderingIdentifier&amp;DynamicPlaceholderId=12"
-          s:ph="/main/sxa-content-container/container-1">
-          <rls>
-            <ruleset>
-              <rule
-                uid="{45C2ADD6-6E2E-4FAB-B00B-56EF68828AD6}"
-                s:name="HIDE Foodie Feast Sign Up ">
-                <actions>
-                  <action
-                    uid="B26B1B4C03EC404F98C93D792F0CC12D"
-                    s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
-                </actions>
-                <conditions>
-                  <condition
-                    uid="4F3ADE7574D54613A28CA64FDF228B5C"
-                    s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
-                    s:GoalId="{2A2EBECC-D066-4FBC-8701-BBA74AAC9F2E}"
-                    s:NumberOfElapsedDaysOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                    s:NumberOfElapsedDays="1"
-                    s:NumberOfPastInteractionsOperatorId="{814EF7D0-1639-44FD-AEEF-735B5AC14425}"
-                    s:NumberOfPastInteractions="1" />
-                </conditions>
-              </rule>
-              <rule
-                uid="{583EB11D-84FA-4FAD-BE65-0D19281334FB}"
-                s:name="SHOW Foodie Feast">
-                <conditions>
-                  <or
-                    uid="D362251EB1CB4B718E92359843C8EC95">
-                    <or
-                      uid="ACD2C15CBB564D8393B44286B7AD74D9">
-                      <condition
-                        uid="94C65C74BA114ADE8C29CF629948665D"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
-                      <condition
-                        uid="E96DA604066C4EF4B475DDD663031521"
-                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
-                    </or>
-                    <condition
-                      uid="B52A75B5430247038C40617FE24848FA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
-                  </or>
-                </conditions>
-              </rule>
-              <rule
-                uid="{00000000-0000-0000-0000-000000000000}"
-                s:name="Default">
-                <conditions>
-                  <condition
-                    uid="FBE9E5C3D32248FBA0FB2809BA27582B"
-                    s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
-                </conditions>
-                <actions>
-                  <action
-                    uid="4AB0E2D5A370483EA64F440E1335D079"
-                    s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
-                </actions>
-              </rule>
-            </ruleset>
-          </rls>
-        </r>
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7BD5E01C6B-D0E9-49C4-9D61-97687DC5DE12%7D%22%20%2F%3E&amp;Styles=%7BB32CF8A3-6E9B-4D8B-992C-91B8C667FFFA%7D%7C%7B92D5AED9-B973-47FF-9C9B-6621CEFCE400%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=19"
+          s:ph="/main/sxa-content-container/container-1" />
         <r
           uid="{B950B0FF-8581-45FB-BC08-0CA25414C611}"
-          p:after="r[@uid='{05B7145C-3B80-48C3-BADB-D5078F12E1AE}']"
+          p:after="r[@uid='{0895086E-5D4D-4862-A739-C474FA03BD6B}']"
           s:ds="local:/Data/Promo - Healthy Kitchen"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={837DA9F8-E307-4615-9B66-7F3B97E1470B}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B184DC7A4-FDBB-446F-94BE-30B44B12C2AD%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
           s:ph="/main/sxa-content-container/container-1">
           <rls>
             <ruleset>
@@ -423,25 +385,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="29086DCF181E41D187A3B765E140D6F1">
+                    uid="86FBCAF6D483486491CA27E8BC7AAD62">
                     <or
-                      uid="78B412DE56A443A68499AED1E58970A9">
-                      <condition
-                        uid="C436EF2B29D649368D088919C79E6B4F"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="ACD0710E0FD84E36A877CC2012335720">
                       <condition
                         uid="5AEC0E37366D4E258EF2AD55B7159E40"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="6354D33527E64D0A8DB7DD28E8995F27"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
                     </or>
                     <condition
-                      uid="6354D33527E64D0A8DB7DD28E8995F27"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}" />
+                      uid="F265E1BCFDF64D2D8CDF574E290488F3"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -477,25 +438,24 @@ SharedFields:
                 s:name="Show For Foodie">
                 <conditions>
                   <or
-                    uid="BB2C92489EDD41AA8A71FF42DA38CE85">
+                    uid="DCAC49D45BB148AA91FC95F022F5A315">
                     <or
-                      uid="9CDC4B854A3C4AFB96842D809D8E764A">
-                      <condition
-                        uid="A0E06DD5C62F4E95A6D157BD93E478F5"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="6C85B79990C6454699A7E8047FCD8F6C">
                       <condition
                         uid="476E6CD4175748C2BB838BA3DDDDE992"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="CA58A0A77E574D94B76FFBFC91CC4574"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
                     </or>
                     <condition
-                      uid="CA58A0A77E574D94B76FFBFC91CC4574"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}" />
+                      uid="578CC80E39CC48C394FD54CF9808A4C1"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
               </rule>
@@ -560,7 +520,7 @@ SharedFields:
           p:after="r[@uid='{47413929-4892-48C8-AAD7-29472C6BB44F}']"
           s:ds="local:/Data/Promo - Healthy Home Tools"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={960FD30E-BD7B-4E17-920D-4D331117839C}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7BF8C8F184-053D-4947-840B-A96495DB434C%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
           s:ph="/main/sxa-content-container/container-1">
           <rls>
             <ruleset>
@@ -648,7 +608,7 @@ SharedFields:
           p:after="r[@uid='{8E2E788A-E650-444F-9A84-FA47DC476BE8}']"
           s:ds="local:/Data/Promo - New Trainer"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={837DA9F8-E307-4615-9B66-7F3B97E1470B}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=13"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B184DC7A4-FDBB-446F-94BE-30B44B12C2AD%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=13"
           s:ph="/main/sxa-content-container/container-1">
           <rls>
             <ruleset>
@@ -688,7 +648,7 @@ SharedFields:
           p:after="r[@uid='{A540AD71-F883-4E13-966F-B407058520E7}']"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage=%3Cimage%20mediaid%3D%22%7BD590210C-4B80-4014-B82E-3DD16DB7331C%7D%22%20%2F%3E&amp;Styles=%7B45D6B71F-C87D-4CFA-8DEA-94BCACC1AE8B%7D%7C%7BF5947911-00C7-4F00-84F4-3D748376BB32%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage&amp;Styles=%7B37959667-EE0C-4E0F-8A37-5687BB143510%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=11"
           s:ph="/main/sxa-content-container/container-1">
           <rls>
             <ruleset>
@@ -760,7 +720,7 @@ SharedFields:
           p:after="r[@uid='{7317C239-24E6-498C-BB50-DBA7187E7FB0}']"
           s:ds="local:/Data/Promo - Trainer"
           s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
-          s:par="GridParameters&amp;FieldNames={37AF3984-2F68-47EC-BAFB-B7A831F910CA}&amp;Styles={80F76F3C-6196-45EF-8383-8E25D5955C04}|{DF262DBA-9499-4F97-A9C9-B7885C140ED8}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
+          s:par="GridParameters&amp;FieldNames=%7B3CE8F6E1-8BDC-445A-8472-D5952EE65E03%7D&amp;Styles=%7B80F76F3C-6196-45EF-8383-8E25D5955C04%7D%7C%7BDF262DBA-9499-4F97-A9C9-B7885C140ED8%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
           s:ph="/main/sxa-content-container/container-1/container-11">
           <rls>
             <ruleset>
@@ -769,9 +729,9 @@ SharedFields:
                 s:name="Social - Foodie">
                 <conditions>
                   <or
-                    uid="4F888202916741BF874A19F50F846C6D">
+                    uid="DEB1E4ECBE2B46BD8452B81BAA03AF49">
                     <or
-                      uid="F45632842F6342ABB8F80A6715D14963">
+                      uid="EA2EB09E5C1545978AA601B7C9874F14">
                       <condition
                         uid="CAD1A53A7A39444091BD1A110D3C9560"
                         s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
@@ -784,10 +744,9 @@ SharedFields:
                         s:PatternName="Cooking" />
                     </or>
                     <condition
-                      uid="4C27D222FFFA405097C2E356FDEC784A"
-                      s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                      uid="41DD83BA443D48B89148670C9EBA125C"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -815,20 +774,20 @@ SharedFields:
           p:after="r[@uid='{EFA2EB26-5BCA-4D7F-A607-805347DFE054}']"
           s:ds=""
           s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
-          s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles={45645D8F-56A4-460A-B5FB-51709FEFCE52}|{3D258225-9410-4FAF-A516-43490258337D}&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+          s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;BackgroundImage&amp;Styles=%7BB32CF8A3-6E9B-4D8B-992C-91B8C667FFFA%7D%7C%7B9CB76B6C-2B77-4728-8508-CF7041C7B69C%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
           s:ph="/main/sxa-content-container/container-1" />
         <r
           uid="{326CFC73-5A94-4202-AE7D-BF7396761FFC}"
           p:after="r[@uid='{133BCAF3-C1E2-4728-B435-2866E3456D27}']"
           s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
-          s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=8"
+          s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth2=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D%7C%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=8"
           s:ph="/main/sxa-content-container/container-1/container-7" />
         <r
           uid="{6193009E-B1D0-4708-AEEF-334B46A9C08A}"
           p:after="r[@uid='{326CFC73-5A94-4202-AE7D-BF7396761FFC}']"
           s:ds="{B5684B40-75E9-4FE6-912F-2D1C8D761AF2}"
           s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          s:par="GridParameters={F6DC722E-15DB-4826-920B-ACCFDA772432}&amp;FieldNames={3E6E7D0C-2472-4157-B4C8-F920504A4196}&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
           s:ph="/main/sxa-content-container/container-1/container-7/column-1-8">
           <rls>
             <ruleset>
@@ -837,25 +796,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="21F4A729943D4C9FB8ACC8193F976AC9">
+                    uid="57E7C855E30B43D8920899A31F81EF4D">
                     <or
-                      uid="7658C51336C74CBDAA4882A8C161F99C">
-                      <condition
-                        uid="B8BE4BA6CA8D4524BA55FE39115CD680"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="01098394B0094CB4A92DB35B258D6520">
                       <condition
                         uid="5EF300052EC445D9940BB1159FF3AE11"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="CF9230EB171441368AB40D6F2FA9ACFA"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="CF9230EB171441368AB40D6F2FA9ACFA"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="F8A5EE805DB84BB2B42381E00E74C853"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -870,25 +828,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="9A33E2C8798048E4A86AA1BC384DB879">
+                    uid="CAEA04AD657342BAACC2AB09ED52E78F">
                     <or
-                      uid="3101B61F1D8C426A9BFB8D9A63A7BE9C">
-                      <condition
-                        uid="BD9D7D2AE6A84BBBB7141A591E8C5ED2"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                      uid="436A98CD0C354CEE862F34C05AE61712">
                       <condition
                         uid="EDD92B7D44B841D7AF9A974D2910B3CF"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
+                      <condition
+                        uid="DE4784808EBE4F8E81960F3093D4377E"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="DE4784808EBE4F8E81960F3093D4377E"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="5954060285304B4AA8735BC48DCD29A5"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -921,7 +878,7 @@ SharedFields:
           p:after="*[1=2]"
           s:ds="{10F66202-C76C-40F9-8247-66328B96338E}"
           s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
-          s:par="GridParameters=%7BF6DC722E-15DB-4826-920B-ACCFDA772432%7D&amp;FieldNames=%7B3E6E7D0C-2472-4157-B4C8-F920504A4196%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=10"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=10"
           s:ph="/main/sxa-content-container/container-1/container-7/column-2-8">
           <rls>
             <ruleset>
@@ -930,25 +887,24 @@ SharedFields:
                 s:name="Foodie">
                 <conditions>
                   <or
-                    uid="6358385F825F450586E9EB7F87B22935">
+                    uid="3B8D1444BAAB4FEAA550BFEFA4349EAB">
                     <or
-                      uid="22A6A0989EE64F629E38305B946084B3">
-                      <condition
-                        uid="50625FD0116E4C04AB720B627DE3E562"
-                        s:id="{6426B5B4-83E9-4E24-BA97-43293A10B47D}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Cooking" />
+                      uid="98531B11D80D46BB8554F931ECFFF3A5">
                       <condition
                         uid="5DBDB901EBF34ED1AEC714996F4DD5BA"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Cooking" />
+                      <condition
+                        uid="1E0DC91F725D4701A414E12828F21AF2"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="1E0DC91F725D4701A414E12828F21AF2"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{67BA62FE-7F1A-4BA1-B244-79160A0893C4}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="3447292E6E664F01B2C16C5C2CE05291"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{B7A02EED-A729-42B0-978B-2C6EF479FC8F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -963,25 +919,24 @@ SharedFields:
                 s:name="Search - Fitness">
                 <conditions>
                   <or
-                    uid="3597E6E5C664464694820CF9765BF5F1">
+                    uid="B2F193DEEB6149639FF17C6B17888A5E">
                     <or
-                      uid="FF3A66FC114B4C52B7015C95D884429E">
+                      uid="1865B1260C1B462DBE149064515BFCB4">
                       <condition
                         uid="D726B1A189584C92A1524644D9FF69F4"
                         s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
                         s:ProfileName="Topic Interest Category"
                         s:PatternName="Fitness" />
                       <condition
-                        uid="0F9702A50410450AA6E7450697289A61"
-                        s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                        s:ProfileName="Topic Interest Category"
-                        s:PatternName="Fitness" />
+                        uid="5E3D6C3F2036420F989EABD6947E3753"
+                        s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
+                        s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
+                        s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
                     </or>
                     <condition
-                      uid="5E3D6C3F2036420F989EABD6947E3753"
-                      s:id="{A0CDF81A-7727-4418-B331-E1AEC80EFAB0}"
-                      s:ExpectedAncestorTaxonId="{AE285F4B-3E9D-4DBC-968C-364EF5854205}"
-                      s:CustomFieldId="{336BA862-E974-4CD6-BE4D-4BFDD78994E1}" />
+                      uid="E2966880EA6146F6A78661D752AB2C56"
+                      s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
+                      s:PatternList="{753836A7-AEA0-4572-89E7-0DBC55A631FD}" />
                   </or>
                 </conditions>
                 <actions>
@@ -1020,22 +975,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{7EF71C93-57B9-4FFE-A7E2-01EAFA7DD3D9}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7BE3A70BD6-DADC-43CA-9941-EEC8F3E02B93%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
-            <r
-              uid="{8F8B9454-9605-46C8-9D4F-64F82F080000}"
-              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Product List=%7B43243E9E-160C-4930-8698-A9138CDFC95D%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4" />
-          </d>
-        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180315T020621Z
@@ -1082,32 +1021,6 @@ Languages:
     Hint: __Display name
     Value: Habitat Health
   Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180807T045146Z
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{FF509B64-B6D4-4FB7-9718-C4218B992740}"
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
-      Hint: Title
-      Value: "habitat-health"
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180330T210750Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -1115,7 +1028,13 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180327T014950Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Habitat Health
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Habitat Health

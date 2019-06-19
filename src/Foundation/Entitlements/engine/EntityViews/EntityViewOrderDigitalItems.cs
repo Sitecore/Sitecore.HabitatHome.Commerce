@@ -11,15 +11,11 @@ namespace Sitecore.HabitatHome.Foundation.Entitlements.Engine
     using System.Threading.Tasks;
     using System.Collections.Generic;
 
-    using Microsoft.Extensions.Logging;
-
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.EntityViews;
     using Sitecore.Framework.Conditions;
     using Sitecore.Framework.Pipelines;
 
-    //using Sitecore.Commerce.Plugin.DigitalItems;
-    using Sitecore.Commerce.Plugin.Customers;
     using Sitecore.Commerce.Plugin.Entitlements;
     using Sitecore.Commerce.Plugin.Orders;
     using Sitecore.Commerce.Plugin.Carts;
@@ -70,9 +66,9 @@ namespace Sitecore.HabitatHome.Foundation.Entitlements.Engine
                     foreach (var entityViewChild in orderEntitlementsView.ChildViews.OfType<EntityView>())
                     {
                         var entitlement = await _commerceCommander
-                                .GetEntity<Entitlement>(context.CommerceContext, entityViewChild.ItemId);
+                                .GetEntity<Entitlement>(context.CommerceContext, entityViewChild.ItemId).ConfigureAwait(false);
 
-                        var order = await _commerceCommander.GetEntity<Order>(context.CommerceContext, entitlement.Order.EntityTarget);
+                        var order = await _commerceCommander.GetEntity<Order>(context.CommerceContext, entitlement.Order.EntityTarget).ConfigureAwait(false);
                         var orderEntitlementsComponent = order.GetComponent<EntitlementsComponent>();
                         var entitlementLine = orderEntitlementsComponent.Entitlements.FirstOrDefault(p => p.EntityTarget == entitlement.Id);
                         var orderLine = order.Lines.First(p => p.Id == entitlementLine?.ItemTarget);

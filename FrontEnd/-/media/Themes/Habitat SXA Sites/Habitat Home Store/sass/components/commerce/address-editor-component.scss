@@ -1,0 +1,69 @@
+@import '../../index';
+.cxa-addresseditor-component {
+    padding-left:15px;
+    .address-edit-section {
+        clear:both;        
+        @include horizontal-form-layout(3);
+        .set-primary {
+            margin-top: 15px; 
+            @include row-of-elements-packed(false, false, 10px);
+        }
+        @include form-primary-style();
+        @include respond-to($md) {
+            width: 100%;
+            display: block;
+        }
+        &>* {
+            @include respond-to($md) {
+                width: 100%;
+            }
+        }
+    }
+    .address-selector-section {
+        clear:both;
+        @include horizontal-form-layout(3);
+        margin-bottom: 15px;
+        @include form-primary-style();
+        &>* {
+            @include respond-to($md) {
+                width: 100%;
+            }
+        }
+    }
+    .set-primary {
+        label {
+            align-self: center !important;
+        }
+    }
+    .address-buttons-section {
+        margin-top: 30px;
+        @include row-of-elements-packed(true, false, 15px);
+        @include justify-elements($packed-toward-end);
+        a,
+        button {
+            margin-top: $margin;
+        }
+        .save-addresss-button {
+            order: 4;
+        }
+        .delete-address-button {
+            order: 2;
+        }
+        .cancel-edit-button {
+            order: 3;
+            @include primary-button-line();
+        }
+        .back-to-my-account {
+            display: none;
+        }
+        @include respond-to($md) {
+            width: 100%;
+            display: block;
+        }
+        &>* {
+            @include respond-to($md) {
+                width: 100% !important;
+            }
+        }
+    }
+}
