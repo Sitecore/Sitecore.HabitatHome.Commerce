@@ -24,7 +24,7 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Pipelines.Blocks.RemoveW
 
             if (existingLine != null)
             {
-                string str = await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Information, null, null, $"Removed Line '{existingLine.Id}' from Wishlist '{cart.Id}'.");
+                string str = await context.CommerceContext.AddMessage(context.GetPolicy<KnownResultCodes>().Information, null, null, $"Removed Line '{existingLine.Id}' from Wishlist '{cart.Id}'.").ConfigureAwait(false);
                 lines.Remove(existingLine);
             }
 

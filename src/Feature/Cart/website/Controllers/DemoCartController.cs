@@ -2,7 +2,6 @@
 using Sitecore.Commerce.XA.Feature.Cart.Models;
 using Sitecore.Commerce.XA.Feature.Cart.Repositories;  
 using Sitecore.Commerce.XA.Foundation.Common.Models;
-using Sitecore.Commerce.XA.Foundation.Connect;
 using System.Web.Mvc;
 using System.Web.SessionState;
 using Sitecore.Commerce.XA.Foundation.Common.Attributes;
@@ -12,8 +11,8 @@ namespace Sitecore.HabitatHome.Feature.Cart.Controllers
 {
     public class DemoCartController : CartController
     {
-        public DemoCartController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IAddToCartRepository addToCartRepository, IMinicartRepository minicartRepository, IPromotionCodesRepository promotionCodesRepository, IShoppingCartLinesRepository shoppingCartLinesRepository, IShoppingCartTotalRepository shoppingCartTotalRepository, IVisitorContext visitorContext, IContext context)
-            : base(storefrontContext, modelProvider, addToCartRepository, minicartRepository, promotionCodesRepository, shoppingCartLinesRepository, shoppingCartTotalRepository, visitorContext, context)
+        public DemoCartController(IStorefrontContext storefrontContext, IModelProvider modelProvider, IAddToCartRepository addToCartRepository, IMinicartRepository minicartRepository, IPromotionCodesRepository promotionCodesRepository, IShoppingCartLinesRepository shoppingCartLinesRepository, IShoppingCartTotalRepository shoppingCartTotalRepository, IContext sitecoreContext)
+            : base(storefrontContext, modelProvider, addToCartRepository, minicartRepository, promotionCodesRepository, shoppingCartLinesRepository, shoppingCartTotalRepository, sitecoreContext)
         {
 
         }
@@ -21,6 +20,7 @@ namespace Sitecore.HabitatHome.Feature.Cart.Controllers
         [StorefrontSessionState(SessionStateBehavior.ReadOnly)]
         public ActionResult AddToDemoCart()
         {
+            //todo: it should be tested whether this override is still required in 9.1
             AddToCartRenderingModel addToCartModel = AddToCartRepository.GetAddToCartModel();
 
             // CatalogName appears to always be empty when the model is returned from the repository

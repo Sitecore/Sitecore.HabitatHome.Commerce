@@ -1,0 +1,52 @@
+/* breakpoints */
+.product-items-block {
+  margin-bottom: 100px;
+}
+
+.product-items-block .catalog-item-container {
+  padding: 0 1em;
+}
+
+.product-items-block .catalog-item-container .cxa-productimages-component {
+  padding: 0;
+}
+
+.product-items-block .catalog-item-container .product-image {
+  padding: 0;
+}
+
+.product-items-block .catalog-item-container .product-images {
+  display: none;
+}
+
+.product-items-block .catalog-item-container .cxa-productinformation-component .component-content .product-name h1 {
+  font-size: 20px;
+  margin: 1.5em 0;
+}
+
+.product-items-block .catalog-item-container .product-description {
+  font-size: 16px !important;
+  border-top: 0 !important;
+  margin-bottom: 0;
+}
+
+.product-items-block .catalog-item-container .cxa-addtocart-component .add-to-cart-button {
+  margin-left: 0;
+}
+
+.product-items-block .catalog-item-container .cxa-addtocart-component form {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 786px) {
+  .product-items-block .row [class*='col-'] {
+    width: 100% !important;
+    float: none !important;
+    padding: 0.5em;
+  }
+}
+
+.catalog-item-container {
+  margin-top: 20px;
+}

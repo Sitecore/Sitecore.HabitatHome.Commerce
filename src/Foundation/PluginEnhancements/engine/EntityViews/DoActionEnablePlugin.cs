@@ -31,18 +31,7 @@ namespace Sitecore.HabitatHome.Foundation.PluginEnhancements.Engine.EntityViews
             this._commerceCommander = commerceCommander;
         }
 
-        /// <summary>
-        /// The run.
-        /// </summary>
-        /// <param name="entityView">
-        /// The argument.
-        /// </param>
-        /// <param name="context">
-        /// The context.
-        /// </param>
-        /// <returns>
-        /// The <see cref="EntityView"/>.
-        /// </returns>
+
         public override async Task<EntityView> Run(EntityView entityView, CommercePipelineExecutionContext context)
         {
 
@@ -56,11 +45,11 @@ namespace Sitecore.HabitatHome.Foundation.PluginEnhancements.Engine.EntityViews
             {
                 var pluginName = entityView.Action.Replace("Roles.EnablePlugin.", "");
 
-                var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander);
+                var userPluginOptions = await this._commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, this._commerceCommander).ConfigureAwait(false);
 
                 userPluginOptions.EnabledPlugins.Add(pluginName);
 
-                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, userPluginOptions);
+                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, userPluginOptions).ConfigureAwait(false);
             }
             catch (Exception ex)
             {

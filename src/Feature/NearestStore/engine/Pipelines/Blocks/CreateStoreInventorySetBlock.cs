@@ -34,9 +34,8 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                 CommercePipelineExecutionContext executionContext = context;
                 CommerceContext commerceContext = context.CommerceContext;
                 string validationError = context.GetPolicy<KnownResultCodes>().ValidationError;
-                //string commerceTermKey = "InventorySetNameAlreadyInUse";
-                object[] args = new object[1] { (object)arg.Name };
-                string defaultMessage = string.Format("Inventory set name {0} is already in use.", (object)arg.Name);                
+                object[] args = new object[1] { arg.Name };
+                string defaultMessage = string.Format("Inventory set name {0} is already in use.", arg.Name);                
                 return new InventorySet() { Id = CommerceEntity.IdPrefix<InventorySet>() + arg.Name };
             }
 
@@ -69,13 +68,13 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
             inventorySet.SetComponent(storeDetailsComponent);            
 
-            PersistEntityArgument persistEntityArgument = await inventorySetBlock._persistEntityPipeline.Run(new PersistEntityArgument(inventorySet), context);
+            PersistEntityArgument persistEntityArgument = await inventorySetBlock._persistEntityPipeline.Run(new PersistEntityArgument(inventorySet), context).ConfigureAwait(false);
             context.CommerceContext.AddEntity(inventorySet);
-            ListEntitiesArgument entitiesArgument1 = new ListEntitiesArgument((IEnumerable<string>)new string[1]
+            ListEntitiesArgument entitiesArgument1 = new ListEntitiesArgument(new string[1]
             {
                 inventorySet.Id
             }, CommerceEntity.ListName<InventorySet>());
-            ListEntitiesArgument entitiesArgument2 = await inventorySetBlock._addListEntitiesPipeline.Run(entitiesArgument1, context);
+            ListEntitiesArgument entitiesArgument2 = await inventorySetBlock._addListEntitiesPipeline.Run(entitiesArgument1, context).ConfigureAwait(false);
             return inventorySet;            
         }
     }

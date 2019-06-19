@@ -2,7 +2,7 @@
 ID: "02a9d951-ddd5-4cc6-962b-6ebdb24d1b3b"
 Parent: "b4a26495-8b8d-401a-871d-0c120b680710"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/tasks/watchSass
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulp/tasks/watchSass
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

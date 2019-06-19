@@ -17,7 +17,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": true
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
@@ -29,7 +30,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.SellableItem, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": false
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
@@ -41,7 +43,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": true
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
@@ -53,7 +56,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.Category, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": false
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
@@ -65,7 +69,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.Catalog, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": true
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Catalog.SitecoreCatalogIndexingPolicy, Sitecore.Commerce.Plugin.Catalog",
@@ -77,7 +82,8 @@
           "$values": [
             "Sitecore.Commerce.Plugin.Catalog.Catalog, Sitecore.Commerce.Plugin.Catalog"
           ]
-        }
+        },
+        "IsMasterIndex": false
       }
     ]
   }

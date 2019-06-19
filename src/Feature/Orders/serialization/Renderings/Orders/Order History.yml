@@ -2,7 +2,7 @@
 ID: "6e6cf518-4676-4319-a3ec-3f579e81705d"
 Parent: "d76c5adf-82db-4bc4-b20b-3e0f326ee167"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Orders/Order History
+Path: /sitecore/layout/Renderings/Feature/Habitat Home/Orders/Order History
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

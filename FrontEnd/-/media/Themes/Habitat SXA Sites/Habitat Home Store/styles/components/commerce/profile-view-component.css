@@ -1,0 +1,49 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-profileview-component {
+  margin-top: 35px;
+}
+
+.cxa-profileview-component .profile-id {
+  text-align: left;
+}
+
+.cxa-profileview-component .edit-profile-text {
+  display: inline-block;
+  text-align: right;
+}
+
+.cxa-profileview-component .profile-view-title {
+  display: none;
+}
+
+.cxa-profileview-component .edit-profile-text {
+  display: inline-block;
+  text-align: right;
+  color: #0088cc;
+  font-size: 14px;
+}
+
+.cxa-profileview-component .edit-profile-text:hover {
+  color: #0e909f;
+}
+
+.cxa-profileview-component .profile-view-title {
+  display: none;
+}

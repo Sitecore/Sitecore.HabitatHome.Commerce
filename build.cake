@@ -72,10 +72,10 @@ Task("Clean").Does(() => {
 });
 
 Task("Copy-Sitecore-Lib").Does(() => {
-    cakeConsole.WriteLine("Copying Sitecore Commerce XA Libraries");
-    var commerceLibraries = GetFiles($"{configuration.SitecoreLibrariesPath}\\**\\Sitecore.Commerce.XA.*").Select(x => x.FullPath).ToList();
-    CreateFolderIfNotExist(configuration.SitecoreLibModuleCommerce);
-    CopyFiles(commerceLibraries, configuration.SitecoreLibModuleCommerce, preserveFolderStructure: true);
+    cakeConsole.WriteLine("Copying Sitecore Libraries");
+    var commerceLibraries = GetFiles($"{configuration.SitecoreLibrariesPath}\\**\\Sitecore.*").Select(x => x.FullPath).ToList();
+    CreateFolderIfNotExist(configuration.SitecoreLib);
+    CopyFiles(commerceLibraries, configuration.SitecoreLib, preserveFolderStructure: true);
 });
 
 Task("Publish-Website-Projects")
@@ -146,7 +146,7 @@ Task("Sync-Unicorn").Does(() => {
     var unicornUrl = configuration.InstanceUrl + "unicorn.aspx";
     Information("Sync Unicorn items from url: " + unicornUrl);
 
-    var authenticationFile = new FilePath($"{configuration.WebsiteRoot}/App_config/Include/Unicorn.SharedSecret.config");
+    var authenticationFile = new FilePath($"{configuration.WebsiteRoot}/App_config/Include/Unicorn/Unicorn.zSharedSecret.config");
     var xPath = "/configuration/sitecore/unicorn/authenticationProvider/SharedSecret";
 
     string sharedSecret = XmlPeek(authenticationFile, xPath);

@@ -68,9 +68,10 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
             Item rootItem = Sitecore.Context.Database.GetItem(Rendering.Parameters[Sitecore.XA.Feature.Navigation.Constants.BreadcrumbRoot] ?? string.Empty);
             
             Item commerceRootItem = Sitecore.Context.Database.GetItem(_storefrontContext.CurrentStorefront.GetStartNavigationCategory());
-            if (_siteContext.IsCategory || _siteContext.IsProduct)
+            if ((_siteContext.IsCategory || _siteContext.IsProduct) && IsWildCardItem(Sitecore.Context.Item))
             {
-                // It's a catalog item so we need to concatenate the ancestors for the catalog with the ancestors on the site itself                                
+                // It's a catalog item so we need to concatenate the ancestors for the catalog with the ancestors on the site itself  
+                // we are only doing this when using wild card item navigation, no need to concatenate when using direct catalog navigation
                 breadcrumb = GetBreadcrumbItems(CurrentItem, rootItem)
                     .Concat(GetBreadcrumbItems(_siteContext.CurrentCatalogItem, commerceRootItem))
                     .Where(a => a.Item.ID != commerceRootItem.ID);              
@@ -104,6 +105,11 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
             }
 
             return model;
+        }
+
+        private bool IsWildCardItem(Item item)
+        {
+            return item.Name == "*";
         }
     }
 }

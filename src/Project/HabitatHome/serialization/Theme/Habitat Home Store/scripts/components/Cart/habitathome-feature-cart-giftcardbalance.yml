@@ -1,0 +1,53 @@
+﻿---
+ID: "c6883710-6d20-41c2-8fa0-04d81c257492"
+Parent: "28d0286e-5ee1-4be0-9aee-41d76fa2f651"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/scripts/components/Cart/habitathome-feature-cart-giftcardbalance"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/C68837106D2041C28FA004D81C257492.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "66f6deec-57be-42de-ba91-9e237a56af3e"
+  Value: 77u/ZnVuY3Rpb24gSW5pdGlhbGl6ZUdpZnRDYXJkV2lkZ2V0KCkgew0KICAgICQoJy5nZXQtYmFsYW5jZS1idG4nKS5jbGljayhmdW5jdGlvbiAoKSB7DQogICAgICAgICQoJy5naWZ0LWNhcmQtYmFsYW5jZScpLnNob3coKTsgICAgICAgIA0KICAgIH0pOw0KfQ0KDQoNCiQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uICgpIHsNCiAgICBJbml0aWFsaXplR2lmdENhcmRXaWRnZXQoKTsNCn0pOw==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 223
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/x-javascript"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: js
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T183750Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T183751Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190311T183751Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

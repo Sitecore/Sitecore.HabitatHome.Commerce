@@ -2,9 +2,8 @@
 ID: "e1d396f3-4685-435c-a009-10aeef1af9f8"
 Parent: "f7829e6c-7957-4e54-9644-787873ff8ad6"
 Template: "9d1cafc5-e4e6-45d4-bad1-c8a0fe542499"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Account/Order Totals
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Account/Order Totals
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -30,3 +29,20 @@ Languages:
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: Total
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182613Z
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: "????"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: "??"

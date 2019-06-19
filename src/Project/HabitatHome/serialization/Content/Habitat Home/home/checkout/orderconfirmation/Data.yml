@@ -2,7 +2,7 @@
 ID: "535a44b6-ed45-4517-b4b8-9c3a06d34f28"
 Parent: "aef8f5b9-c3ca-4ad3-9450-531bd97642cc"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/checkout/orderconfirmation/Data
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/checkout/orderconfirmation/Data
 DB: master
 Languages:
 - Language: en

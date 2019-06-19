@@ -1,0 +1,57 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.account-profile-page .back-to-account-management {
+  position: absolute;
+  right: 0.3%;
+  bottom: 22px;
+}
+
+@media (max-width: 991px) {
+  .account-profile-page .back-to-account-management {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .account-profile-page .divider {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .account-profile-page .component.link.position-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .account-profile-page .component.link.position-right a {
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    width: 100%;
+  }
+}

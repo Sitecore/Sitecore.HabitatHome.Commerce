@@ -4,7 +4,6 @@ Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
 Template: "9bb44636-1bd5-410c-86cb-b53663944cc3"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Storefront Configuration
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "0e4e60f6-cb5a-4971-9b9b-8f438a15213d"
   Hint: Enforce SSL

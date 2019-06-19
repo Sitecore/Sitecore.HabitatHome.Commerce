@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Sitecore.Commerce.Entities.Inventory;
 using Sitecore.Commerce.XA.Feature.Catalog;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
@@ -27,7 +28,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
             _storefrontContext = storefrontContext;
         }
 
-        public PurchasableProductListJsonResult GetPurchasableProductListJsonResult(IVisitorContext visitorContext, string currentItemId, string currentCatalogItemId, string searchKeyword, int? pageNumber, string facetValues, string sortField, int? pageSize, Commerce.XA.Foundation.Common.Constants.SortDirection? sortDirection)
+        public PurchasableProductListJsonResult GetPurchasableProductListJsonResult(IVisitorContext visitorContext, string currentItemId, string currentCatalogItemId, string searchKeyword, int? pageNumber, string facetValues, string sortField, int? pageSize, SortDirection? sortDirection)
         {
             Assert.ArgumentNotNull(visitorContext, "visitorContext");
             PurchasableProductListJsonResult productListJsonResult = base.ModelProvider.GetModel<PurchasableProductListJsonResult>();
@@ -52,7 +53,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
                 this.UpdateOptionsWithFacets(categorySearchInformation.RequiredFacets, facetValues, commerceSearchOptions);
                 this.UpdateOptionsWithSorting(sortField, sortDirection, commerceSearchOptions);
                 SearchResults childProducts = base.GetChildProducts(commerceSearchOptions, item);
-                List<ProductEntity> productEntityList = this.AdjustProductPriceAndStockStatus(visitorContext, childProducts, item);
+                List<ProductEntity> productEntityList = this.AdjustProductPriceAndStockStatus(visitorContext, childProducts, item).ToList();
                 productListJsonResult.Initialize(this, productEntityList, false, searchKeyword);
             }
             else if (Sitecore.Context.PageMode.IsExperienceEditor)

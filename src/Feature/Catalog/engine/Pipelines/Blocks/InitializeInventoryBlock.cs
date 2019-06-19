@@ -1,20 +1,23 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="InitializeCatalogBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+// <copyright file="InitializeInventoryBlock.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2019
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http.Internal;
-using Sitecore.Commerce.Core;
-using Sitecore.Commerce.Plugin.Catalog;
-using Sitecore.Commerce.Plugin.Inventory;
-using Sitecore.Framework.Pipelines;
-
 namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
+    using System.Threading.Tasks;
+
+    using Sitecore.Commerce.Core;
+    using Sitecore.Commerce.Plugin.Catalog;
+    using Sitecore.Framework.Pipelines;
+    using Sitecore.Commerce.Plugin.Inventory;
+
+    using System.IO;
+
+    using Microsoft.AspNetCore.Http.Internal;
+    using Microsoft.AspNetCore.Hosting;
+
     /// <summary>
     /// Ensure Habitat inventory has been loaded.
     /// </summary>
@@ -69,7 +72,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             using (var stream = new FileStream(this.GetPath("Habitat_Inventory.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
-                await this.ImportInventorySetsCommand.Process(context.CommerceContext, file, CatalogConstants.ImportMode.Replace, 10);
+                await this.ImportInventorySetsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 10).ConfigureAwait(false);
             }
 
             return arg;

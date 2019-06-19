@@ -2,7 +2,7 @@
 ID: "987434ac-cb20-44e1-bb93-ab6eeb479092"
 Parent: "ccc93859-7295-4776-b013-842a7b484932"
 Template: "be2a1204-f7ba-4be3-933d-190c97496700"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Settings
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Settings
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
@@ -41,10 +41,8 @@ SharedFields:
   Hint: Themes
   Type: Treelist
   Value: |
-    {FE579EA5-4FF1-47D4-A514-6EA5EEE9AB01}
-    {24A18569-AC94-4C12-8BC1-97E6A1319C01}
     {C93E1FAF-D37E-4D73-8502-99557466041C}
-    {3F46272C-F3B8-4913-8C00-3816B436A4D3}
+    {E99B315F-8C89-4419-A84F-BE1005EF2DDC}
 - ID: "e81e1f9e-8b87-495b-9cb7-84a2a23133be"
   Hint: MediaLibrary
   Value: "{EEA2A34F-00DA-4635-9988-0D951B753C89}"
@@ -59,9 +57,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "202eaae4-33b3-4db1-9170-4de88a27e7cd"
-      Hint: User Profile
-      Value: "{BCBF635A-9C02-4EFE-85FB-19358FAEAAB2}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171027T190505Z
@@ -69,18 +64,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
-    - ID: "81b370b0-9ea6-435d-be15-fcffb1cec57f"
-      Hint: Register Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/register
-    - ID: "b8937bfd-64c0-4abe-8e64-b328ea3f1ea1"
-      Hint: After Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home
-    - ID: "e90c6342-5bc9-4011-a3c5-eed1fca7eb7c"
-      Hint: Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/login
-    - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
-      Hint: Register Outcome
-      Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -102,9 +85,6 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
-    - ID: "202eaae4-33b3-4db1-9170-4de88a27e7cd"
-      Hint: User Profile
-      Value: "{BCBF635A-9C02-4EFE-85FB-19358FAEAAB2}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171027T190505Z
@@ -125,25 +105,10 @@ Languages:
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
-    - ID: "7deb567c-87fa-48ce-9adc-8f35e05dde91"
-      Hint: Interests Folder
-      Value: 
-    - ID: "81b370b0-9ea6-435d-be15-fcffb1cec57f"
-      Hint: Register Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/register
-    - ID: "927f708e-ab61-44ab-ab09-2a1a23e07e05"
-      Hint: Forgot Password Page
-      Value: 
     - ID: "a14f1b0c-4384-49ec-8790-28a440f3670c"
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
-    - ID: "a98f8b72-64aa-4a9c-90db-92f7aead55ad"
-      Hint: Accounts Details Page
-      Value: 
-    - ID: "b8937bfd-64c0-4abe-8e64-b328ea3f1ea1"
-      Hint: After Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
@@ -151,18 +116,6 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
-    - ID: "ce693119-c97f-48fd-8154-27c4930ca7db"
-      Hint: Title
-      Value: 
-    - ID: "e90c6342-5bc9-4011-a3c5-eed1fca7eb7c"
-      Hint: Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/login
-    - ID: "f2f9cc39-fda5-4a19-82da-d03699d8f1be"
-      Hint: Forgot Password Email Template
-      Value: 
-    - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
-      Hint: Register Outcome
-      Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -171,9 +124,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "202eaae4-33b3-4db1-9170-4de88a27e7cd"
-      Hint: User Profile
-      Value: "{BCBF635A-9C02-4EFE-85FB-19358FAEAAB2}"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180321T104536Z
@@ -181,15 +131,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "81b370b0-9ea6-435d-be15-fcffb1cec57f"
-      Hint: Register Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/register
-    - ID: "b8937bfd-64c0-4abe-8e64-b328ea3f1ea1"
-      Hint: After Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home
-    - ID: "e90c6342-5bc9-4011-a3c5-eed1fca7eb7c"
-      Hint: Login Page
-      Value: /sitecore/content/Habitat Sites/Habitat Home/Home/login
-    - ID: "f48206df-d2eb-4df2-9ac0-18a2e9c31f29"
-      Hint: Register Outcome
-      Value: "{52054874-4767-47DC-8099-8C08BFA307AA}"

@@ -2,7 +2,7 @@
 ID: "486b2794-f028-40cf-b33f-01046e16e4f9"
 Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
 Template: "39ba527d-0d56-47c5-9217-7168dc4a8d65"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Catalog/Product Inventory - Gift Card"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Catalog/Product Inventory - Gift Card"
 DB: master
 Languages:
 - Language: en
@@ -16,3 +16,14 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182616Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

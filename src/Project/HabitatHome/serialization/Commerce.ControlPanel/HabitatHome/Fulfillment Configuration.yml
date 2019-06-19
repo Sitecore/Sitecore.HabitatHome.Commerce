@@ -4,7 +4,6 @@ Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
 Template: "a2a80c92-826a-4928-beed-6e46fff31919"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Fulfillment Configuration
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "0452eb98-bc28-4fd8-a3b4-533f26c62705"
   Hint: Fulfillment Options

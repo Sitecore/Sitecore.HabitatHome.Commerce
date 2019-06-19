@@ -1,0 +1,17 @@
+@import '../abstracts/_mixins.scss';
+
+.checkout-review-page {
+    
+    .cxa-shoppingcartlines-component {
+        .shoppingcart-quantity {
+            button.decrease, button.increase {
+                display: none !important;
+            } 
+
+            input.quantity {
+                pointer-events: none;
+                border: 0px;
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@ The code, samples and/or solutions provided in this repository are for example p
 
 ### Sitecore Version
 
-Prior to attempting the demo installation, ensure you have a working **Sitecore XC 9.0.2** instance. Detailed installation instructions can be found at [doc.sitecore.com](http://commercesdn.sitecore.net/SitecoreXC_9.0/Installation-Guide/9.0.2/SitecoreXC-9.0_Installation_Guide(On-Prem).pdf).
+Prior to attempting the demo installation, ensure you have a working **Sitecore XC 9.1.0** instance. Detailed installation instructions can be found at [doc.sitecore.com](http://commercesdn.sitecore.net/SitecoreXC_9.1/Sitecore_XC-9.1_Installation_Guide_for_On-Prem.pdf).
 
 You do not need to install the Storefront Theme
 

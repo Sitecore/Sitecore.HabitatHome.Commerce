@@ -1,0 +1,22 @@
+@import '../../index';
+.cxa-productfacets-component {
+    padding: $padding * 2;
+    margin-bottom: $margin;
+    @include sidebar();
+    .component-content {
+        ul{
+            padding-top: $padding/2;
+            line-height:1;
+            margin-bottom: 40px;
+        }
+        .facet-title {
+            &:after{
+                float:right;
+            }
+            @include sidebarTitle();
+        }
+        ul {
+            @include sidebarList();
+        }
+    }
+}

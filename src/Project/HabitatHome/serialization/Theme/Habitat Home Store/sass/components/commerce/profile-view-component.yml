@@ -2,19 +2,19 @@
 ID: "3f823dc0-69e5-4768-b23f-5cde2530ace4"
 Parent: "3ef3a3ec-1015-472e-9fd4-6246f11c0338"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: "/sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/components/commerce/profile-view-component"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/components/commerce/profile-view-component"
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/B219A09B7DB243A5BEB71157CB327EAB.ashx?h=16&thn=1&w=16"
+  Value: "-/media/3F823DC069E54768B23F5CDE2530ACE4.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "e6d3ccb0-92c0-4dc6-b1cc-03d0b82a4627"
-  Value: QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KDQouY3hhLXByb2ZpbGV2aWV3LWNvbXBvbmVudCB7DQogICAgbWFyZ2luLXRvcDogMzVweDsNCiAgICAucHJvZmlsZS1pZCB7DQogICAgICAgIHRleHQtYWxpZ246IGxlZnQ7DQogICAgfQ0KICAgIC5lZGl0LXByb2ZpbGUtdGV4dCB7DQogICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsNCiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7ICAgICAgICANCiAgICB9DQogICAgLnByb2ZpbGUtdmlldy10aXRsZXsNCiAgICAgICAgZGlzcGxheTpub25lOw0KICAgIH0NCiAgICAuZWRpdC1wcm9maWxlLXRleHQgew0KICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogICAgICAgIHRleHQtYWxpZ246IHJpZ2h0OyANCiAgICAgICAgQGluY2x1ZGUgbGluaygpOyAgICAgICAgDQogICAgfQ0KICAgIC5wcm9maWxlLW5hbWUtc2VjdGlvbnsNCiAgICAgICAgc3BhbnsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDsNCiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7DQogICAgICAgICAgICBjb2xvcjogJGhlYWRpbmctY29sb3I7DQogICAgICAgIH0NCiAgICB9DQp9DQo=
+  BlobID: "40d7685b-577a-4525-8d18-9d5e85615c07"
+  Value: QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KDQouY3hhLXByb2ZpbGV2aWV3LWNvbXBvbmVudCB7DQogICAgbWFyZ2luLXRvcDogMzVweDsNCiAgICAucHJvZmlsZS1pZCB7DQogICAgICAgIHRleHQtYWxpZ246IGxlZnQ7DQogICAgfQ0KICAgIC5lZGl0LXByb2ZpbGUtdGV4dCB7DQogICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsNCiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7ICAgICAgICANCiAgICB9DQogICAgLnByb2ZpbGUtdmlldy10aXRsZXsNCiAgICAgICAgZGlzcGxheTpub25lOw0KICAgIH0NCiAgICAuZWRpdC1wcm9maWxlLXRleHQgew0KICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQogICAgICAgIHRleHQtYWxpZ246IHJpZ2h0OyANCiAgICAgICAgQGluY2x1ZGUgbGluaygpOyAgICAgICAgDQogICAgfQ0KICAgIC5wcm9maWxlLXZpZXctdGl0bGUgew0KICAgICAgICBkaXNwbGF5OiBub25lOw0KICAgIH0NCn0NCg==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
-  Value: 578
+  Value: 478
 - ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
   Hint: Mime Type
   Value: "application/octet-stream"

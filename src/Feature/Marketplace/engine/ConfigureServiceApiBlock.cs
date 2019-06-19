@@ -41,21 +41,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine
         {
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
 
-            // Add the entities
-            //modelBuilder.AddEntityType(typeof(SampleEntity));
-
-            // Add the entity sets
-           // modelBuilder.EntitySet<SampleEntity>("Sample");
-
-            // Add complex types
-
-            // Add unbound functions
-
-            // Add unbound actions
-            //var configuration = modelBuilder.Action("SampleCommand");
-            //configuration.Parameter<string>("Id");
-            //configuration.ReturnsFromEntitySet<CommerceCommand>("Commands");
-
             return Task.FromResult(modelBuilder);
         }
     }

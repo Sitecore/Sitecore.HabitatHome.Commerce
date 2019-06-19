@@ -2,9 +2,8 @@
 ID: "d6625f50-9bbe-4f36-8fc1-4acaccc3e325"
 Parent: "d3cb4d5b-b5a1-441c-a226-b9a6b64b8ff8"
 Template: "e63729f6-401e-4fd2-bcdc-7c73a065b01d"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Cart/Minicart
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Cart/Minicart
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -21,3 +20,32 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04a5bf5d-64f6-4972-8a2c-9c796513de89"
+      Hint: Top Text Label
+      Value: "??????"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182615Z
+    - ID: "3343efba-1a9a-405b-9086-636b0013ca41"
+      Hint: Total Label
+      Value: "??"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6171de17-bfaf-4ee0-bb70-a0aaaf9e6781"
+      Hint: View Cart Link Text
+      Value: "??????"
+    - ID: "9caa41e4-1c41-4bd9-a11c-e38d5c6559ad"
+      Hint: Checkout Link Tooltip
+      Value: "???????????"
+    - ID: "ae0b13f0-5609-4de7-ba95-a0197c745b10"
+      Hint: Checkout Link Text
+      Value: "?????"
+    - ID: "be6edbb0-6852-4447-9aec-49bee132c087"
+      Hint: View Cart Link Tooltip
+      Value: "????????????"

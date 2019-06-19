@@ -2,7 +2,7 @@
 ID: "1ef188ef-3257-4a36-abe1-15e74ffe6e92"
 Parent: "2977bcf5-bc01-4b6d-8b7a-6c757e0dce69"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Cart/Shopping Cart Lines
+Path: /sitecore/layout/Renderings/Feature/Habitat Home/Cart/Shopping Cart Lines
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/16x16/scroll.png
 - ID: "13f89250-ad6b-4548-882e-118a12c18094"
   Hint: Parameters Template
-  Value: "{FF75632A-03ED-4D31-B42A-1EEE45E5147F}"
+  Value: "{A8319D9F-A76A-426F-B0D3-AA8DC38A7E4D}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/Commerce Experience Accelerator/Cart/Datasource/Shopping Cart Lines

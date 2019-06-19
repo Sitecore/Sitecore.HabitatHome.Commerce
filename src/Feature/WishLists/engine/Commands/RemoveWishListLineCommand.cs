@@ -35,38 +35,38 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Commands
             Activity activity;
            
             
-            Cart result = (Cart)null;
-            activity = CommandActivity.Start(commerceContext, (CommerceCommand)removeCartLineCommand);
+            Cart result = null;
+            activity = CommandActivity.Start(commerceContext, removeCartLineCommand);
             
             try
             {
-                CommercePipelineExecutionContextOptions context = commerceContext.GetPipelineContextOptions();
+                CommercePipelineExecutionContextOptions context = commerceContext.PipelineContextOptions;
                 FindEntityArgument findEntityArgument = new FindEntityArgument(typeof(Cart), wishlistId, false);
-                Cart cart = await removeCartLineCommand._getPipeline.Run(findEntityArgument, (IPipelineExecutionContextOptions)context).ConfigureAwait(false) as Cart;
+                Cart cart = await removeCartLineCommand._getPipeline.Run(findEntityArgument, context).ConfigureAwait(false) as Cart;
                 if (cart == null)
                 {
                     string str = await context.CommerceContext.AddMessage(commerceContext.GetPolicy<KnownResultCodes>().ValidationError, "EntityNotFound", new object[1]
                     {
-                    (object) wishlistId
-                    }, string.Format("Entity {0} was not found.", (object)wishlistId));
+                     wishlistId
+                    }, string.Format("Entity {0} was not found.", wishlistId)).ConfigureAwait(false);
                     
                     return null;
                 }
-                if (cart.Lines.FirstOrDefault<CartLineComponent>((Func<CartLineComponent, bool>)(c => c.Id == line.Id)) == null)
+                if (cart.Lines.FirstOrDefault((c => c.Id == line.Id)) == null)
                 {
                     string str = await context.CommerceContext.AddMessage(commerceContext.GetPolicy<KnownResultCodes>().ValidationError, "CartLineNotFound", new object[1]
                     {
-                        (object) line.Id
-                    }, string.Format("Wishlist line {0} was not found", (object)line.Id));
+                       line.Id
+                    }, string.Format("Wishlist line {0} was not found", line.Id)).ConfigureAwait(false);
                     return cart;
                 }
                
-                await removeCartLineCommand.PerformTransaction(commerceContext, (Func<Task>)(async () =>
+                await removeCartLineCommand.PerformTransaction(commerceContext, async () =>
                 {
                     var cartResult = await this._pipeline.Run(new CartLineArgument(cart, line), (IPipelineExecutionContextOptions)context).ConfigureAwait(false);
        
                     result = cartResult;
-                }));
+                });
 
                 return result;
             }

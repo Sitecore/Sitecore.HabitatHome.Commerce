@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-messagesummary-component {
+  margin-top: 0;
+}
+
+.cxa-messagesummary-component .info-message-section table {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cxa-messagesummary-component .info-message-section table tr {
+  margin-bottom: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 4px 0;
+  display: block;
+}
+
+.cxa-messagesummary-component .info-message-section table tr p {
+  margin-left: 32px;
+}
+
+.cxa-messagesummary-component .info-message-section table tr table {
+  margin: 0;
+}
+
+.cxa-messagesummary-component .info-message-section table tr td {
+  padding: 10px;
+}
+
+.cxa-messagesummary-component .info-message-section table {
+  background: none;
+}
+
+.cxa-messagesummary-component .info-message-section table tr {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2F89CE;
+  border: 1px solid #2a7bb9;
+}
+
+.cxa-messagesummary-component .info-message-section table tr table {
+  background: none;
+}
+
+.cxa-messagesummary-component .info-message-section table tr p {
+  color: #fff;
+}
+
+.cxa-messagesummary-component .info-message-section table tr:before {
+  font-family: FontAwesome;
+  color: #fff;
+  height: 100%;
+  font-size: 19px;
+  display: inline-block;
+  font-family: "SCCXAICONS";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 14px;
+  margin: 9px 14px;
+  position: absolute;
+}
+
+.cxa-messagesummary-component .warning-message-section table {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr {
+  margin-bottom: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 4px 0;
+  display: block;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr p {
+  margin-left: 32px;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr table {
+  margin: 0;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr td {
+  padding: 10px;
+}
+
+.cxa-messagesummary-component .warning-message-section table {
+  background: none;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: #E5A84F;
+  border: 1px solid #e29d39;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr table {
+  background: none;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr p {
+  color: #fff;
+}
+
+.cxa-messagesummary-component .warning-message-section table tr:before {
+  font-family: FontAwesome;
+  color: #fff;
+  height: 100%;
+  font-size: 19px;
+  display: inline-block;
+  font-family: "SCCXAICONS";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 14px;
+  margin: 9px 14px;
+  position: absolute;
+}
+
+.cxa-messagesummary-component .error-message-section table {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cxa-messagesummary-component .error-message-section table tr {
+  margin-bottom: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 4px 0;
+  display: block;
+}
+
+.cxa-messagesummary-component .error-message-section table tr p {
+  margin-left: 32px;
+}
+
+.cxa-messagesummary-component .error-message-section table tr table {
+  margin: 0;
+}
+
+.cxa-messagesummary-component .error-message-section table tr td {
+  padding: 10px;
+}
+
+.cxa-messagesummary-component .error-message-section table {
+  background: none;
+}
+
+.cxa-messagesummary-component .error-message-section table tr {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: #DE5248;
+  border: 1px solid #da3e32;
+}
+
+.cxa-messagesummary-component .error-message-section table tr table {
+  background: none;
+}
+
+.cxa-messagesummary-component .error-message-section table tr p {
+  color: #fff;
+}
+
+.cxa-messagesummary-component .error-message-section table tr:before {
+  font-family: FontAwesome;
+  color: #fff;
+  height: 100%;
+  font-size: 19px;
+  display: inline-block;
+  font-family: "SCCXAICONS";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 14px;
+  margin: 9px 14px;
+  position: absolute;
+}

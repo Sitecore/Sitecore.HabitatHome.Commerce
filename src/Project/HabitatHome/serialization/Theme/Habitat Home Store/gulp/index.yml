@@ -2,7 +2,7 @@
 ID: "2724deaa-f8b1-4c2e-8ce8-cf0355c5cfe5"
 Parent: "da255b83-d35e-403e-82da-58bdcc30f123"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/index
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulp/index
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

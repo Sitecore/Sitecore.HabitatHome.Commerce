@@ -2,7 +2,7 @@
 ID: "8851eb25-db09-4899-abe1-fb6f9aeb4678"
 Parent: "b4a26495-8b8d-401a-871d-0c120b680710"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/gulp/tasks/sprites
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulp/tasks/sprites
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

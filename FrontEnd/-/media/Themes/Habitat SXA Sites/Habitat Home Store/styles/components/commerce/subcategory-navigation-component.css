@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+.cxa-subcategorynavigation-component {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.cxa-subcategorynavigation-component .subcategories-title {
+  cursor: pointer;
+}
+
+.cxa-subcategorynavigation-component .subcategories-title:after {
+  float: right;
+  color: #141919;
+}
+
+.cxa-subcategorynavigation-component .subcategory-navigation {
+  margin: 0;
+  position: relative;
+}
+
+.cxa-subcategorynavigation-component ul li {
+  display: block;
+}
+
+.cxa-subcategorynavigation-component ul li a {
+  display: block;
+}
+
+.component.cxa-subcategorynavigation-component {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 4px;
+  padding-bottom: 8px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategories-title {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6b717b !important;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #141919 !important;
+}
+
+.component.cxa-subcategorynavigation-component .subcategories-title:after {
+  display: inline-block;
+  font-family: "SCCXAICONS";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 8px;
+  color: #747a83;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategories-title:first-letter {
+  text-transform: uppercase;
+}
+
+.component.cxa-subcategorynavigation-component .subcategories-title span:first-letter {
+  text-transform: uppercase;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation {
+  margin: 0;
+  position: relative;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul {
+  margin: 0;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li {
+  padding: 2px 0px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li.active {
+  font-weight: bold;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li:last-child {
+  margin-bottom: 4px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li a {
+  line-height: 23px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li a span, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a {
+  font-size: 14px;
+  color: #747a83;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation ul li a span:hover, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a span:active, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a span:focus, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a:hover, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a:active, .component.cxa-subcategorynavigation-component .subcategory-navigation ul li a:focus {
+  background: none;
+  color: #0e909f;
+  text-decoration: none;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation h4 {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6b717b !important;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation h4:after {
+  display: inline-block;
+  font-family: "SCCXAICONS";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 8px;
+  color: #747a83;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation h4:first-letter {
+  text-transform: uppercase;
+}
+
+.component.cxa-subcategorynavigation-component .subcategory-navigation h4 span:first-letter {
+  text-transform: uppercase;
+}
+
+.component.cxa-subcategorynavigation-component {
+  box-shadow: 0 0 transparent;
+  border: 1px solid #b9bcc1;
+  border-radius: 0;
+}

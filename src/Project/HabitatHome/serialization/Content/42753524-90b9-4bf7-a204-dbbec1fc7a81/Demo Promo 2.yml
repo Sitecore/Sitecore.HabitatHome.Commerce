@@ -2,7 +2,7 @@
 ID: "df188c32-bf83-49b8-857a-ac74d5e1df09"
 Parent: "42753524-90b9-4bf7-a204-dbbec1fc7a81"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Default/Demo Promo 2
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Partial Designs/Recommended Content/Data/Default/Demo Promo 2
 DB: master
 Languages:
 - Language: en
@@ -11,11 +11,11 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: Importance of Stretching
+      Value: 6 Steps for Modern Gaming
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{A7C5267D-4B44-4A50-B1E2-994E9CD5E327}" height="" hspace="" width="" alt="Modern Gaming" vspace=""></image>
+        <image mediaid="{EE675D1C-5190-4B35-B9C6-EAAF8BCFA404}" alt="Modern Gaming" height="" width="" hspace="" vspace=""></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171124T144252Z
@@ -31,12 +31,11 @@ Languages:
       Value: 
     - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
       Hint: PromoText2
-      Value: |
-        <span style="background-color: #ffffff; color: #313131;">Better posture, fewer aches and pains, greater confidence, and a cheerier outlook on life.</span>
+      Value: Learn how to step your game up with these 6 steps to modern gaming.&nbsp;
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7FFDAD1C-50A6-4CE7-81C5-259DCD6D1FC1}" />
+        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

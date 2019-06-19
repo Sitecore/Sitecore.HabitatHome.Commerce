@@ -4,7 +4,6 @@ Parent: "2f395077-da43-4935-b85c-29ae53a62f50"
 Template: "2c7e608f-5450-4f6c-a990-b53526e7d35f"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/HabitatHome/Payment Configuration
 DB: master
-BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder

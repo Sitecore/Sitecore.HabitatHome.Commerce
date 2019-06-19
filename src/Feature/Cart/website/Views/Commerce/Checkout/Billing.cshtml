@@ -12,7 +12,6 @@
 @using System.Web.Mvc.Html
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
-@using Sitecore.Commerce.XA.Foundation.Common.Models
 @using Sitecore.Commerce.XA.Feature.Cart.Models
 @using Sitecore.Mvc
 @model BillingRenderingModel
@@ -88,6 +87,8 @@
         var subtotalLabel = Html.Sitecore().Field("Subtotal Label", currentItem);
         var shippingCostLabel = Html.Sitecore().Field("Shipping Cost Label", currentItem);
 
+        var billingInformationLabel = Html.Sitecore().Field("Billing Information Header", currentItem);
+
         <div id="component-content">
             @using (Html.BeginForm())
             {
@@ -108,12 +109,11 @@
                     </div>
                 </div>
 
-
                 <a href="#" class="apply-credit-card-toggle ccpayment">
                     <span class="credit-card-toggle-icon"></span>@applyCreditCardLabel
                 </a>
                 <div class="credit-card-payment-section" style="display: none">
-                    <h4 class="credit-card-payment-header">Billing Information</h4>
+                    <h4 class="credit-card-payment-header">@billingInformationLabel</h4>
                     <div class="credit-card-payment-form">
                         <div class="billing-paycard-container" style="display: none" data-bind="visible: payFederatedPayment(), with: creditCardPayment">
                             <div class="payment-method" data-bind="visible: $parent.payFederatedPayment() && !displayExistingPaymentMessage()">
@@ -140,15 +140,25 @@
                         <div class="billing-address-container" data-bind="with: billingAddress">
                             <h4 class="billing-address-header">@billingAddressHeaderLabel</h4>
                             <div class="billing-address-dropdown">
-                                <select class="select-billing-address" data-bind="foreach: $root.userAddresses, value: $parent.selectedBillingAddress, enable: $parent.creditCardEnable" title="@sameAsShipping">
-                                    <!-- ko if: externalId() === 'UseShipping' && $root.isShipAll -->
-                                    <option data-bind="attr:{ value:externalId }, text: fullAddress"></option>
-                                    <!-- /ko -->
-                                    <!-- ko if: externalId() !== 'UseShipping' -->
-                                    <option data-bind="attr:{ value:externalId }, text: fullAddress"></option>
-                                    <!-- /ko -->
-                                </select>
-                            </div>
+
+                                <select class="select-billing-address" data-bind="template: { name: 'select-billing-address-template', foreach: $root.userAddresses, as:'address'}, value: $parent.selectedBillingAddress,enable: $parent.creditCardEnable" title="@sameAsShipping"></select>
+
+                                @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+                                {
+                                    <script type="text/html" id="select-billing-address-template">
+                                        <!-- ko if: externalId() === 'UseShipping' && $root.isShipAll -->
+                                        <option data-bind="attr:{ value:externalId }, text: fullAddress"></option>
+                                        <!-- /ko -->
+                                        <!-- ko if: externalId() !== 'UseShipping' -->
+                                        <option data-bind="attr:{ value:externalId }, text: fullAddress"></option>
+                                        <!-- /ko -->
+                                    </script>
+                                }
+                                else
+                                {
+                                    <script type="text/html" id="select-billing-address-template"></script>
+                                }
+</div>
                             <div class="billing-addresss-details">
                                 <input type="hidden" id="billingAddress-ExternalId" data-bind="value: externalId" />
                                 <div class="address-name">
@@ -201,12 +211,8 @@
                                 <input type="text" class="payment-method-id-textbox" id="giftCardPayment_PaymentMethodID" placeholder="@cardNumberLabelPlaceholder" data-bind="value: giftCardNumber, valueUpdate: 'afterkeydown'">
                             </div>
                             <div class="payment-get-balance">
+                                <span data-bind="text: formattedBalance"></span>
                                 <button type="button" class="get-balance-btn" data-loading-text="@gettingBalanceLabel" data-bind="click: getBalance, enable: giftCardNumber().length > 0">@getBalanceButtonLabel</button>
-                            </div>
-                        </div>
-                        <div class="gift-card-balance" style="display:none;" data-attr="visible:formattedBalance ">
-                            <div class="payment-total">
-                                Balance: <span data-bind="text: formattedBalance"></span>
                             </div>
                         </div>
                         <div class="apply-gif-card-amount">
@@ -219,7 +225,6 @@
                                 <button type="button" class="gift-card-payment-btn" data-bind="enable: enableAddCard, click: addCard">@addGiftCardButtonLabel</button>
                             </div>
                         </div>
-
                         <div class="giftcard-status" style="display: none;" data-bind="visible: isAdded">
                             <!-- Only appears if a card has been added -->
                             <div class="applied-gift-card-info">
@@ -227,69 +232,68 @@
                                 <span class="giftcard-payment-number" data-bind="text: giftCardNumber"></span>
                                 <span> / </span>
                                 <span class="giftcard-aplied-amount" data-bind="text: giftCardAmount"><span data-bind="text: $root.currencyCode"></span></span>
-
                             </div>
                             <div class="delete-applied-card">
                                 <a href="#" class="remove-gift-card-link" data-bind="click: removeCard">@removeLabel</a>
                             </div>
                         </div>
                     </div>
-                        </div>
+                </div>
 
-                        <div class="billing-summary">
-                            <div class="billing-payment-summary">
-                                <div class="payment-info-header"><h4>@paymentInfoHeaderLabel</h4></div>
-                                <div class="payment-summary order-summary-giftcard" data-bind="visible: $root.giftCardPayment().isAdded">
-                                    <span>@giftCardLabel:</span>
-                                    <div>
-                                        <span class="billing-giftcard-amount" data-bind="text: formatCurrency($root.giftCardPayment().giftCardAmountRawValue, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
-                                        <span data-bind="text: $root.currencyCode"></span>
-                                    </div>
-                                </div>
-                                <div class="payment-summary order-summary-creditcard" data-bind="visible: $root.creditCardPayment().isAdded">
-                                    <span>@creditCardLabel:</span>
-                                    <div>
-                                        <span id="billing-creditcard-amount" data-bind="text: formatCurrency($root.creditCardPayment().creditCardAmount, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
-                                        <span data-bind="text: $root.currencyCode"></span>
-                                    </div>
-                                </div>
-                                <div class="payment-summary order-summary-payment-total">
-                                    <span>@paymentTotalLabel:</span>
-                                    <span class="payment-total" data-bind="text: formatCurrency($root.paymentTotal(), 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"><span data-bind="text: $root.currencyCode"></span></span>
-                                </div>
-                            </div>
-                            <div class="billing-total-summary">
-                                <div class="order-information-header"><h4>@orderInformationLabel</h4></div>
-                                <div class="order-summary order-summary-subtotal">
-                                    <span>@subtotalLabel:</span>
-                                    <span class="billing-subTotal" data-bind="text: cart().subTotal"></span>
-                                </div>
-                                <div class="order-summary order-summary-shipping-cost">
-                                    <span>@shippingCostLabel:<span id="billingShippingCostLabel"></span></span>
-                                    <span class="billing-shipping-cost" data-bind="text: cart().shippingTotal"></span>
-                                </div>
-                                <div class="order-summary order-summary-tax-total">
-                                    <span>@taxesLabel:</span>
-                                    <span class="billing-tax-total" data-bind="text: cart().taxTotal"></span>
-                                </div>
-                                <div class="order-summary order-summary-discount">
-                                    <span>@savingsLabel:</span>
-                                    <span class="billing-discount" data-bind="text: cart().discount"></span>
-                                </div>
-                                <div class="order-summary order-summary-total">
-                                    <span>@totalLabel:</span>
-                                    <span class="billing-order-total" data-bind="text: cart().total"></span>
-                                </div>
+                <div class="billing-summary">
+                    <div class="billing-payment-summary">
+                        <div class="payment-info-header"><h4>@paymentInfoHeaderLabel</h4></div>
+                        <div class="payment-summary order-summary-giftcard" data-bind="visible: $root.giftCardPayment().isAdded">
+                            <span>@giftCardLabel</span>
+                            <div>
+                                <span class="billing-giftcard-amount" data-bind="text: formatCurrency($root.giftCardPayment().giftCardAmountRawValue, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span data-bind="text: $root.currencyCode"></span>
                             </div>
                         </div>
-
-                        <div class="buttons-row">
-                            <a class="previous-button" href="@prevButtonLink">@prevButtonLabel</a>
-                            <button class="to-confirm-button" data-loading-text="@processing" data-bind="enable: enableToConfirm, click: goToNextPageClick">@nextvButtonLabel</button>
+                        <div class="payment-summary order-summary-creditcard" data-bind="visible: $root.creditCardPayment().isAdded">
+                            <span>@creditCardLabel</span>
+                            <div>
+                                <span id="billing-creditcard-amount" data-bind="text: formatCurrency($root.creditCardPayment().creditCardAmount, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span data-bind="text: $root.currencyCode"></span>
+                            </div>
                         </div>
-
-                        }
+                        <div class="payment-summary order-summary-payment-total">
+                            <span>@paymentTotalLabel</span>
+                            <span class="payment-total" data-bind="text: formatCurrency($root.paymentTotal(), 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"><span data-bind="text: $root.currencyCode"></span></span>
+                        </div>
                     </div>
+                    <div class="billing-total-summary">
+                        <div class="order-information-header"><h4>@orderInformationLabel</h4></div>
+                        <div class="order-summary order-summary-subtotal">
+                            <span>@subtotalLabel</span>
+                            <span class="billing-subTotal" data-bind="text: cart().subTotal"></span>
+                        </div>
+                        <div class="order-summary order-summary-discount">
+                            <span>@savingsLabel</span>
+                            <span class="billing-discount" data-bind="text: cart().discount"></span>
+                        </div>
+                        <div class="order-summary order-summary-shipping-cost">
+                            <span>@shippingCostLabel<span id="billingShippingCostLabel"></span></span>
+                            <span class="billing-shipping-cost" data-bind="text: cart().shippingTotal"></span>
+                        </div>
+                        <div class="order-summary order-summary-tax-total">
+                            <span>@taxesLabel</span>
+                            <span class="billing-tax-total" data-bind="text: cart().taxTotal"></span>
+                        </div>
+                        <div class="order-summary order-summary-total">
+                            <span>@totalLabel</span>
+                            <span class="billing-order-total" data-bind="text: cart().total"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-row">
+                    <a class="previous-button" href="@prevButtonLink">@prevButtonLabel</a>
+                    <button class="to-confirm-button" data-loading-text="@processing" data-bind="enable: enableToConfirm, click: goToNextPageClick">@nextvButtonLabel</button>
+                </div>
+
+            }
+        </div>
 
         <div class="hidden">
             <input type="hidden" id="EmailsMustMatchMessage" value="@emailMustMatchMessage" />

@@ -37,7 +37,7 @@ namespace Sitecore.HabitatHome.Foundation.PluginEnhancements.Engine.Commands
         {
             var userPluginOptionsId = $"Entity-UserPluginOptions-{commerceContext.CurrentCsrId().Replace("\\", "|")}";
 
-            var userPluginOptions = await commerceCommander.GetEntity<UserPluginOptions>(commerceContext, userPluginOptionsId, true);
+            var userPluginOptions = await commerceCommander.GetEntity<UserPluginOptions>(commerceContext, userPluginOptionsId, true).ConfigureAwait(false);
             if (!userPluginOptions.IsPersisted)
             {
                 userPluginOptions.Id = userPluginOptionsId;

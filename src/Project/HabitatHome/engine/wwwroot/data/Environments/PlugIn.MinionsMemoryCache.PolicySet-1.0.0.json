@@ -117,7 +117,8 @@
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Core.LocalizationEntity",
-        "AllowCaching": false
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
@@ -172,42 +173,26 @@
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
-        "AllowCaching": true,
-        "Priority": "Normal",
-        "Expiration": 21600000,
-        "CacheAsEntity": true,
-        "HasNegativeCaching": false,
-        "CacheName": "EntityCache"
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
-        "AllowCaching": true,
-        "Priority": "Normal",
-        "Expiration": 7200000,
-        "CacheAsEntity": true,
-        "HasNegativeCaching": false,
-        "CacheName": "EntityCache"
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.RelationshipDefinition",
-        "AllowCaching": true,
-        "Priority": "Normal",
-        "Expiration": 86400000,
-        "CacheAsEntity": true,
-        "HasNegativeCaching": false,
-        "CacheName": "RelationshipDefinitions"
+        "AllowCaching": false,
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",
         "EntityFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
         "AllowCaching": false,
-        "Priority": "Normal",
-        "Expiration": 7200000,
-        "CacheAsEntity": true,
-        "HasNegativeCaching": true,
-        "CacheName": "EntityCache"
+        "RefreshCache": true
       },
       {
         "$type": "Sitecore.Commerce.Core.Caching.EntityMemoryCachingPolicy, Sitecore.Commerce.Core",

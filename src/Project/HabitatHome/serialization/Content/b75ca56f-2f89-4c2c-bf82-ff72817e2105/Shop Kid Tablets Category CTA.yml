@@ -2,7 +2,7 @@
 ID: "fe920093-10b7-4b22-bf14-b0c43e8706c8"
 Parent: "b75ca56f-2f89-4c2c-bf82-ff72817e2105"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Shop Kid Tablets Category CTA"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/minnow-kid-tablet-example/Data/Shop Kid Tablets Category CTA"
 DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"

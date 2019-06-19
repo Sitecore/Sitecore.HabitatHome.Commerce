@@ -24,40 +24,12 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine
     ///         Sitecore.Commerce.Core.CommercePipelineExecutionContext}
     ///     </cref>
     /// </seealso>
-    [PipelineDisplayName("SamplePluginConfigureServiceApiBlock")]
+    [PipelineDisplayName("HabitatHome.Feature.Orders.ConfigureServiceApiBlock")]
     public class ConfigureServiceApiBlock : PipelineBlock<ODataConventionModelBuilder, ODataConventionModelBuilder, CommercePipelineExecutionContext>
     {
-        /// <summary>
-        /// The execute.
-        /// </summary>
-        /// <param name="modelBuilder">
-        /// The argument.
-        /// </param>
-        /// <param name="context">
-        /// The context.
-        /// </param>
-        /// <returns>
-        /// The <see cref="ODataConventionModelBuilder"/>.
-        /// </returns>
         public override Task<ODataConventionModelBuilder> Run(ODataConventionModelBuilder modelBuilder, CommercePipelineExecutionContext context)
         {
             Condition.Requires(modelBuilder).IsNotNull($"{this.Name}: The argument cannot be null.");
-
-            //// Add the entities
-            //modelBuilder.AddEntityType(typeof(SampleEntity));
-
-            //// Add the entity sets
-            //modelBuilder.EntitySet<SampleEntity>("Sample");
-
-            // Add complex types
-
-            // Add unbound functions
-
-            //Add unbound actions
-            //var configuration = modelBuilder.Action("SampleCommand");
-            //configuration.Parameter<string>("Id");
-            //configuration.ReturnsFromEntitySet<CommerceCommand>("Commands");
-
 
             var configuration = modelBuilder.Action("CreateOfflineOrder");
             configuration.Parameter<ImportOrderModel>("Order");

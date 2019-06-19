@@ -2,7 +2,7 @@
 ID: "5642860e-1982-4d30-ac40-a9d4c709eb03"
 Parent: "f9ecdcca-4936-4c32-b2df-508c9e3285d5"
 Template: "7c02e9f5-54b5-4ef4-bd10-f4c5d448a48c"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels/Category
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels/Category
 DB: master
 SharedFields:
 - ID: "1aa68c0b-eb67-4575-9ca8-1689c2aff091"
@@ -22,7 +22,7 @@ SharedFields:
           <condition
             id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
             uid="2A51F7DE997F4D7A8331CFB5F7F0CC82"
-            templateid="{4C4FD207-A9F7-443D-B32A-50AA33523661}" />
+            templateid="{9241219A-8F66-4662-AEFE-7BB19FB29B6D}" />
         </conditions>
       </rule>
     </ruleset>
@@ -37,3 +37,14 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180502T163559Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190314T132925Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous

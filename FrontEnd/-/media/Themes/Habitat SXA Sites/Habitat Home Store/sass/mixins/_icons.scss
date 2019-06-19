@@ -1,0 +1,9 @@
+@mixin icon($icon-font, $icon:'') {
+    display: inline-block;
+    font-family: $icon-font;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    @if($icon != '') {
+        content: $icon
+    }
+}

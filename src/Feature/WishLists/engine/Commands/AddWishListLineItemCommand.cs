@@ -33,15 +33,14 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Commands
                 await addCartLineCommand.PerformTransaction(commerceContext, async () =>
                 {
                     FindEntityArgument findEntityArgument = new FindEntityArgument(typeof(Cart), wishlistId, true);
-                    CommercePipelineExecutionContextOptions context = commerceContext.GetPipelineContextOptions();
 
-                    Cart cart = await _getPipeline.Run(findEntityArgument, commerceContext.GetPipelineContextOptions()).ConfigureAwait(false) as Cart;
+                    Cart cart = await _getPipeline.Run(findEntityArgument, commerceContext.PipelineContextOptions).ConfigureAwait(false) as Cart;
                     if (cart == null)
                     {            
-                        string str = await context.CommerceContext.AddMessage(commerceContext.GetPolicy<KnownResultCodes>().ValidationError, "EntityNotFound", new object[1]
+                        string str = await commerceContext.PipelineContextOptions.CommerceContext.AddMessage(commerceContext.GetPolicy<KnownResultCodes>().ValidationError, "EntityNotFound", new object[1]
                         {
                             wishlistId
-                        }, $"Entity {wishlistId} was not found.");
+                        }, $"Entity {wishlistId} was not found.").ConfigureAwait(false);
                     }
                     else
                     {
@@ -62,9 +61,9 @@ namespace Sitecore.HabitatHome.Feature.Wishlists.Engine.Commands
                         }
 
 
-                        result = await _addWishListLineItemPipeline.Run(new CartLineArgument(cart, line), context);
+                        result = await _addWishListLineItemPipeline.Run(new CartLineArgument(cart, line), commerceContext.PipelineContextOptions).ConfigureAwait(false);
                     }
-                });
+                }).ConfigureAwait(false);
             }
 
             return result;                
