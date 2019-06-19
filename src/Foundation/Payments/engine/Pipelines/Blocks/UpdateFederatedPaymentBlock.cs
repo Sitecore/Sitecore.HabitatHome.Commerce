@@ -62,7 +62,8 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                         context.GetPolicy<KnownResultCodes>().ValidationError,
                         "InvalidOrderState",
                         new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
-                        invalidOrderStateMessage),
+                        invalidOrderStateMessage)
+                        .ConfigureAwait(false),
                     context);
             }
 
@@ -80,7 +81,8 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                         context.GetPolicy<KnownResultCodes>().Error,
                         "InvalidOrMissingPropertyValue",
                         new object[] { "PaymentMethodNonce" },
-                        "Invalid or missing value for property 'PaymentMethodNonce'."),
+                        "Invalid or missing value for property 'PaymentMethodNonce'.")
+                        .ConfigureAwait(false),
                     context);
 
                 return arg;
@@ -101,7 +103,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
 
                 context.Logger.LogInformation($"{this.Name} - Void Payment succeeded:{ orderPayment.Id }");
                 orderPayment.TransactionStatus = "settled";
-                await this.GenerateSalesActivity(order, orderPayment, context);
+                await this.GenerateSalesActivity(order, orderPayment, context).ConfigureAwait(false);
             }
 
             payment.TransactionId = Guid.NewGuid().ToString();

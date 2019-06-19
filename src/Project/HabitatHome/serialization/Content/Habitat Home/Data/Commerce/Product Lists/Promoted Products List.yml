@@ -2,9 +2,8 @@
 ID: "9511ed7d-11c4-4f03-a747-0dd94aad7589"
 Parent: "e1b36626-2fb2-45a8-aec5-7e47c7f88c0d"
 Template: "091b84a9-0a36-46f6-bf5c-09a536ebbf79"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Product Lists/Promoted Products List
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Product Lists/Promoted Products List
 DB: master
-BranchID: "1cb30959-65a7-4d64-97ad-c60adaf3f741"
 SharedFields:
 - ID: "84ae61a2-ad10-42e5-9954-220fed6ee9a5"
   Hint: Products List
@@ -38,3 +37,17 @@ Languages:
     - ID: "89c0a60e-6b17-4921-afec-6482a13c7f9e"
       Hint: Title
       Value: Promoted Products
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182618Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "89c0a60e-6b17-4921-afec-6482a13c7f9e"
+      Hint: Title
+      Value: プロモーション商品

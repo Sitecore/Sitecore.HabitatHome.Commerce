@@ -35,7 +35,7 @@ public class Configuration
     public MSBuildToolVersion MSBuildToolVersion => this._msBuildToolVersion;
     public string BuildTargets => this.RunCleanBuilds ? "Clean;Build" : "Build";
     public string SitecoreLibrariesPath => $"{WebsiteRoot}\\bin";
-    public string SitecoreLibModuleCommerce => $"{ProjectFolder}\\lib\\Modules\\Commerce";
+    public string SitecoreLib => $"{ProjectFolder}\\lib";
 }
 
 public void PublishProjects(string rootFolder, string websiteRoot)

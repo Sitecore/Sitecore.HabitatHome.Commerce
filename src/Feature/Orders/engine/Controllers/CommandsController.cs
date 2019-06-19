@@ -55,7 +55,7 @@ namespace Sitecore.HabitatHome.Feature.Orders.Engine.Controllers
             var storeName = Regex.Replace(inputArgs.StoreDetails.Name, "[^0-9a-zA-Z]+", "");
             inputArgs.ShopName = storeName;
 
-            var result = await command.Process(this.CurrentContext, inputArgs);
+            var result = await command.Process(this.CurrentContext, inputArgs).ConfigureAwait(false);
 
             return JsonConvert.SerializeObject(result);            
         }

@@ -2,15 +2,15 @@
 ID: "82231316-1310-45ab-868c-900d577d57f7"
 Parent: "f811f090-28e3-474a-aac1-a80d14e05011"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
-Path: /sitecore/media library/Themes/Habitat Sites/Habitat Home Store/sass/_index
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/sass/_index
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: "-/media/E88C82672FA248619A8C3796D07D0E2B.ashx?h=16&thn=1&w=16"
+  Value: "-/media/82231316131045AB868C900D577D57F7.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "84b7fb3c-f5ae-4348-95a3-5030adfa6af4"
+  BlobID: "57a6d9ed-8c0e-4be3-b3a6-d3b9857b6438"
   Value: QGltcG9ydCAiYmFzZS9pbmRleCI7DQpAaW1wb3J0ICJtaXhpbnMvaW5kZXgiOw==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size

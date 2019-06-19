@@ -2,7 +2,7 @@
 ID: "cce2ce77-85a9-4f90-8d6f-eda9e93c6101"
 Parent: "20ac4bde-1535-453e-bb5b-1b3e081bea3d"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: /sitecore/content/Habitat Sites/Habitat Home/home/support/Data/Support Text
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/support/Data/Support Text
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
       Hint: PromoText
-      Value: Our Commitment to You
+      Value: <p>Our Commitment to You</p>
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |

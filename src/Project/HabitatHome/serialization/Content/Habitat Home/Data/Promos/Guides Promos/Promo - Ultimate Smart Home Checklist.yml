@@ -2,7 +2,7 @@
 ID: "13f51703-7567-4c86-9fe6-ef801ae108c3"
 Parent: "3209696f-f313-44b8-bdcf-cb1543f7592a"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/Data/Promos/Guides Promos/Promo - Ultimate Smart Home Checklist"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/Data/Promos/Guides Promos/Promo - Ultimate Smart Home Checklist"
 DB: master
 Languages:
 - Language: en
@@ -103,17 +103,6 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
-- Language: "fr-FR"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180618T150900Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        extranet\Anonymous
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

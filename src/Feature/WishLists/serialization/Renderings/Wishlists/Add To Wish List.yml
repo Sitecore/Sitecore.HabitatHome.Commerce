@@ -2,7 +2,7 @@
 ID: "e47e2cd3-d700-43c9-bddd-b262963a52a4"
 Parent: "05970616-b961-447b-937d-8c459b19c82f"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Habitat Sites/Wishlists/Add To Wish List
+Path: /sitecore/layout/Renderings/Feature/Habitat Home/Wishlists/Add To Wish List
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -1,0 +1,33 @@
+@import '../index';
+
+.account-profile-page {
+    .back-to-account-management {
+        position: absolute;
+        right: 0.3%;
+        bottom: 22px;
+        @include respond-to($md) {
+            position: relative;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .divider{
+        @include respond-to($md) {
+            opacity: 0;
+            height: 0;
+        }
+    }
+    .component.link.position-right {
+        @include respond-to($md) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            a {
+                position: relative;
+                bottom: inherit;
+                right: inherit;
+                width: 100%;
+            }
+        }
+    }
+}

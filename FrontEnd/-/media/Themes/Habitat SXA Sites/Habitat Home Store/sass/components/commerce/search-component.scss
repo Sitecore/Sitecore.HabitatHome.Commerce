@@ -1,0 +1,55 @@
+@import '../../index';
+.cxa-searchbar-component {
+    margin-bottom: 1em;
+     
+    .component-content {
+        form {
+            width: 100%;
+        }
+        .search-input-section {
+            @include row-of-elements-packed(false);
+            input {
+                width: 100%;
+            }
+            .search-button {
+                width: 41px;
+                height: 41px;
+                padding: 0;
+                margin: 0;
+                border-left: none;
+                box-shadow: none;
+                border: 1px solid;
+            }
+        }
+    }
+}
+
+.cxa-searchbar-component {
+        .toggle-search-bar {
+            display: none;
+        }
+}
+
+.component.cxa-searchbar-component {
+    .component-content {
+        .search-input-section {
+            input {
+                @include text-Input();
+            }
+            .search-button {
+                background: $light;
+                @include transition();
+                @include sc-icon();
+                border-color: rgba($secondary-text-color, 0.8);
+                span:before {
+                    @include sc-icon($scxa-search);
+                    font-size: $font-size-base;
+                }
+                &:active {
+                    opacity: 0.8;
+                    @include transition();
+                }
+            }
+        }
+    }
+}

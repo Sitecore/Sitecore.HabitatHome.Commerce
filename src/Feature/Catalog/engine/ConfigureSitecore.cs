@@ -34,7 +34,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine
                                     .Add<InitializeEnvironmentSellableItemsBlock>()
                                     .Add<InitializeInventoryBlock>()
                                     .Add<InitializeEnvironmentPricingBlock>()
-                                    .Add<InitializeEnvironmentPromotionsBlock>();
+                                    .Add<InitializeEnvironmentPromotionsBlock>()
+                                    .Add<InitializeEnvironmentBundlesBlock>();
                             })
                         .ConfigurePipeline<IRunningPluginsPipeline>(c =>
                         {

@@ -1,0 +1,23 @@
+﻿---
+ID: "b083d381-7014-410b-a9d5-fe8f7f877612"
+Parent: "b491d043-fac0-4742-97ea-b8d5aaab19bc"
+Template: "b491d043-fac0-4742-97ea-b8d5aaab19bc"
+Path: /sitecore/templates/Project/Habitat SXA Sites/Habitat Home/Store/Product Related Content/Product Related Content Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{74C56D93-C404-4B0E-8560-214F62E41E72}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180605T172900Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

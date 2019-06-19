@@ -1,0 +1,50 @@
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/*justification types*/
+/* alignment types */
+/*----------------------------------Columns -------------------------------------------------------------------------*/
+/*------------------------------------------------------Rows -------------------------------------*/
+/*------------------------------------------ Forms and Layout Tools------------------------------------------------------------*/
+/*------------------------ Page Layouts -------------------------------*/
+/* breakpoints */
+.cxa-product-kit-component {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.cxa-product-kit-component .component-content {
+  text-align: left;
+  margin-top: 0;
+}
+
+.cxa-product-kit-component .component-content .product-kit-header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6b717b !important;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+
+.cxa-product-kit-component .component-content .related-product {
+  font-size: 13px;
+  color: #747a83;
+}
+
+.cxa-product-kit-component .component-content .related-product .product-name {
+  margin-bottom: 5px;
+  color: #747a83;
+}

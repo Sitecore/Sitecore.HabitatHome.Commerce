@@ -1,0 +1,33 @@
+@import '../../index';
+@import '../../abstracts/_mixins.scss';
+
+.cxa-productlistpageinfo-component {
+
+    .productlist-header-section {   
+        
+        @include respond-to(mobile-large) {
+            text-align: right;
+        }        
+
+        .showing-amount {
+            display: inline-block;
+            vertical-align: middle;
+            height: 2.5625em;        
+            color: $bg-black;        
+            font-size: $font-normal;
+            font-weight: 400;
+            line-height: normal;
+            width: auto;
+            height: 41px;
+            line-height: 41px;
+            position: relative;
+        }
+
+        h6 {
+            font-size: inherit;
+            vertical-align: middle;
+            font-weight: inherit;
+            display: inline-block;         
+        }
+    }
+}

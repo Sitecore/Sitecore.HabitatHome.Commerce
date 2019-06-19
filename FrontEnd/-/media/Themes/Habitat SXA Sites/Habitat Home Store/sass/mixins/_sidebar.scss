@@ -1,0 +1,55 @@
+@import '../base/index';
+@import 'tools';
+@mixin sidebar() {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: $light;
+    border-radius: 4px;
+    padding-bottom: 8px;
+}
+
+@mixin sidebarList() {
+    margin: 0;
+
+    li {
+        padding: 2px 0px;
+        &.active {
+            font-weight: bold;
+        }
+        &:last-child{
+            margin-bottom: 4px;
+        }
+        a {
+            line-height: 23px;
+            span, & {
+                font-size: $font-size-base;
+                color: $secondary-text-color;
+                &:hover,
+                &:active,
+                &:focus {
+                    background: none;
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@mixin sidebarTitle() {
+    cursor: pointer;
+    @include noSelect();
+    color: $primary-text-color !important;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    font-size: $font-size-medium;
+    &:after {
+        @include sc-icon($scxa-switch);
+        font-size: $font-size-xxsmall;
+        color: $secondary-text-color;
+        font-weight: normal;
+        margin-top: 5px;
+    }
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}

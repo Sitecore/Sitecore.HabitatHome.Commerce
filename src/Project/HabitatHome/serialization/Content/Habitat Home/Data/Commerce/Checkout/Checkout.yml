@@ -2,9 +2,8 @@
 ID: "410d76dd-61e1-4a6c-a696-ec44fcd3140d"
 Parent: "6c346c07-69d0-4757-90db-27c28f115157"
 Template: "9d5ae6f7-b2e7-4139-90e9-9567e77fcd7b"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Commerce/Checkout/Checkout
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Checkout/Checkout
 DB: master
-BranchID: "31ce8c90-ef91-4185-9bb1-85f3a10cecc0"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
@@ -21,3 +20,14 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

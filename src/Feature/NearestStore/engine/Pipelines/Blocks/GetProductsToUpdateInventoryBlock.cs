@@ -55,18 +55,18 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
             List<string> productIds = new List<string>();        
 
 
-            string cacheKey = string.Format("{0}|{1}|{2}", (object)context.CommerceContext.Environment.Name, (object)context.CommerceContext.CurrentLanguage(), (object)(context.CommerceContext.CurrentShopName() ?? ""));
-            ProductCachePolicy cachePolicy = context.GetPolicy<ProductCachePolicy>();
-            ICache cache = (ICache)null;
-            List<SellableItem> sellableItems = (List<SellableItem>)null;
+            string cacheKey = string.Format("{0}|{1}|{2}", context.CommerceContext.Environment.Name, context.CommerceContext.CurrentLanguage(), context.CommerceContext.CurrentShopName() ?? "");
+            CatalogCachePolicy cachePolicy = context.GetPolicy<CatalogCachePolicy>();
+            ICache cache = null;
+            List<SellableItem> sellableItems = null;
             if (cachePolicy.AllowCaching)
             {
                 IGetEnvironmentCachePipeline cachePipeline = getProductsToUpdateInventoryBlock._cachePipeline;
                 EnvironmentCacheArgument environmentCacheArgument = new EnvironmentCacheArgument();
                 environmentCacheArgument.CacheName = cachePolicy.CatalogsCacheName;
                 CommercePipelineExecutionContext context1 = context;
-                cache = await cachePipeline.Run(environmentCacheArgument, context1);
-                sellableItems = await cache.Get(cacheKey) as List<SellableItem>;
+                cache = await cachePipeline.Run(environmentCacheArgument, context1).ConfigureAwait(false);
+                sellableItems = await cache.Get(cacheKey).ConfigureAwait(false) as List<SellableItem>;
                 if (sellableItems != null)
                 {
                     foreach(var item in sellableItems)
@@ -79,15 +79,15 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
             {
                 sellableItems = new List<SellableItem>();
                 FindEntitiesInListArgument entitiesInListArgument = new FindEntitiesInListArgument(typeof(SellableItem), string.Format("{0}", (object)CommerceEntity.ListName<SellableItem>()), 0, int.MaxValue);
-                foreach (CommerceEntity commerceEntity in (await getProductsToUpdateInventoryBlock._findEntitiesInListPipeline.Run(entitiesInListArgument, (IPipelineExecutionContextOptions)context.ContextOptions)).List.Items)
+                foreach (CommerceEntity commerceEntity in (await getProductsToUpdateInventoryBlock._findEntitiesInListPipeline.Run(entitiesInListArgument, context.ContextOptions).ConfigureAwait(false)).List.Items)
                 {
-                    await GetProductId(context, getProductsToUpdateInventoryBlock, catalogSitecoreId, productIds, commerceEntity as SellableItem);
+                    await GetProductId(context, getProductsToUpdateInventoryBlock, catalogSitecoreId, productIds, commerceEntity as SellableItem).ConfigureAwait(false);
                 }
 
                 if (cachePolicy.AllowCaching)
                 {
                     if (cache != null)
-                        await cache.Set(cacheKey, (ICachable)new Cachable<List<SellableItem>>(sellableItems, 1L), cachePolicy.GetCacheEntryOptions());
+                        await cache.Set(cacheKey, new Cachable<List<SellableItem>>(sellableItems, 1L), cachePolicy.GetCacheEntryOptions()).ConfigureAwait(false);
                 }
             }
 
@@ -110,8 +110,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                     {
                         foreach (ItemVariationComponent variant in variants.ChildComponents)
                         {
-                            var variantData = (ItemVariationComponent)variant;
-                            //listOfVariants.Add(variantData.Id);
+                            var variantData = variant;
                             productIds.Add($"{item.Id}|{variantData.Id}");
                         }                        
                     }
@@ -120,8 +119,6 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                         productIds.Add($"{item.Id}");
                     }
                 }
-
-
             }
         }
     }

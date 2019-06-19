@@ -68,18 +68,18 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                     sellableItemId = entityView.ItemId;
                 }
                 var sellableItem = await this._commerceCommander
-                    .GetEntity<SellableItem>(context.CommerceContext, sellableItemId);
+                    .GetEntity<SellableItem>(context.CommerceContext, sellableItemId).ConfigureAwait(false);
 
                 var ebayItem = await this._commerceCommander.Command<EbayCommand>()
-                    .AddItem(context.CommerceContext, sellableItem);
+                    .AddItem(context.CommerceContext, sellableItem).ConfigureAwait(false);
 
-                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, sellableItem);
+                var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, sellableItem).ConfigureAwait(false);
 
             }
             catch (Exception ex)
             {
                 context.Logger.LogError($"Ebay.DoActionSyncItem.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "DoActionFixSyncItem.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "DoActionFixSyncItem.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
 
             return entityView;

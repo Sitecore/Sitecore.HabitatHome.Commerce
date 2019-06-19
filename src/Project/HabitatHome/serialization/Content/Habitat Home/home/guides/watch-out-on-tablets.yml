@@ -2,7 +2,7 @@
 ID: "d489e11b-3849-4f08-8611-86188f87fc86"
 Parent: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
 Template: "14807d83-9671-4d70-b0f4-f54012f2bfb8"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/guides/watch-out-on-tablets"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/guides/watch-out-on-tablets"
 DB: master
 SharedFields:
 - ID: "4d71857f-c77d-44fa-8899-c671a0458d7f"
@@ -196,7 +196,7 @@ Languages:
       Value: Child Safe Tablets
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Introduction
-      Value: Your children need to look cool and be connected. The Habitat Kid Tablets connect your children to the wonders of the internet while protecting them from dangers that may be lurking in dark corners.&nbsp;
+      Value: <p>Your children need to look cool and be connected. The Habitat Kid Tablets connect your children to the wonders of the internet while protecting them from dangers that may be lurking in dark corners.&nbsp;</p>
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: What To Watch Out For On Tablets
@@ -206,3 +206,40 @@ Languages:
     Hint: __Display name
     Value: Watch Out On Tablets
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{B2AA390D-8807-4109-AE89-A29E40BEB6BD}" alt="child on tablet" height="" width="" hspace="" vspace="" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180620T184653Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Watch Out On Tablets
+    - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
+      Hint: Content
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis pretium massa. Sed ac ex arcu. Ut mattis orci vitae enim lacinia blandit. Etiam cursus, ex et pulvinar tristique, odio tellus tempor magna, quis efficitur orci nisi eu neque. Etiam eu ex leo. Cras justo arcu, volutpat eleifend neque tempus, sodales sagittis massa. Aliquam ac risus vitae erat lacinia consectetur. Praesent rutrum nibh feugiat tortor placerat gravida. Etiam gravida eros nec nisl varius, sed tincidunt lorem rutrum. Curabitur et sodales nisl. Vivamus ac tortor ut leo varius interdum varius in risus. Sed ullamcorper ex enim, quis sollicitudin tortor rutrum in. Morbi commodo sem at sodales egestas. Vestibulum consequat volutpat massa. Vivamus nunc dui, sodales ac arcu at, interdum placerat mauris. Proin condimentum id magna sit amet laoreet.
+        Nunc aliquam est tellus, in pretium justo iaculis sit amet. </p>
+        <p>Maecenas condimentum suscipit mollis. In quis urna non mi lobortis imperdiet vel non tellus. Nam eros dui, ullamcorper vitae lorem ac, laoreet rhoncus tellus. Suspendisse maximus ante et aliquam egestas. Aliquam varius lacinia vehicula. Nulla facilisi. Morbi augue orci, pharetra sit amet consectetur quis, egestas non purus. Mauris sapien tortor, scelerisque nec aliquet ac, fermentum sodales orci. Nullam posuere tincidunt augue at vehicula. Phasellus metus sapien, volutpat id odio feugiat, condimentum hendrerit est. Duis auctor rhoncus tristique. Sed placerat vestibulum vestibulum. Praesent a laoreet velit.
+        Sed dapibus, nibh sed venenatis ultrices, sapien enim convallis odio, et mollis nunc leo id nisl. Pellentesque tincidunt porta neque, ac lobortis quam consequat vitae. Aliquam quis augue sit amet risus congue fermentum et in neque. Aenean laoreet sem leo, at condimentum tellus malesuada eu. Donec fermentum erat in odio pulvinar, a sagittis tortor lobortis. Duis volutpat dolor sed pulvinar lacinia. Nulla at est commodo, accumsan lorem eget, mollis purus. </p>
+        <p>Quisque ut semper dolor. Fusce tempor feugiat augue, at gravida turpis varius id. Aliquam semper ultrices enim, eu placerat sem porta at. Morbi posuere mi vel erat malesuada, eu fermentum tellus tempor. Donec sit amet lectus turpis. Aliquam erat volutpat. Nam pharetra aliquet lacus at lacinia. Morbi blandit in sem sed finibus.
+        Curabitur consequat euismod dui in facilisis. Vestibulum venenatis, justo quis mollis porta, lorem urna placerat turpis, sed pharetra ipsum turpis quis erat. Aliquam imperdiet dapibus dui. Quisque nec tempus tellus, at dignissim sapien. Pellentesque sollicitudin, lorem ut vehicula eleifend, sapien ligula dictum lorem, lacinia porttitor nulla ex vel purus. Etiam accumsan, risus eu ultricies venenatis, ligula tellus elementum nulla, vitae mattis orci erat vitae ipsum. Suspendisse consectetur faucibus neque vitae elementum. In blandit finibus magna gravida cursus. Vivamus diam lorem, iaculis ac vehicula id, hendrerit blandit metus. Morbi sodales nisi augue, eget ornare nulla interdum sit amet. Nullam rhoncus facilisis lorem, eu vulputate nisi luctus vitae. Phasellus condimentum volutpat sollicitudin. In scelerisque sit amet ex nec lacinia. Duis ac massa pretium, lobortis metus quis, facilisis neque.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
+      Hint: Subtitle
+      Value: Child Safe Tablets
+    - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
+      Hint: Introduction
+      Value: Your children need to look cool and be connected. The Habitat Kid Tablets connect your children to the wonders of the internet while protecting them from dangers that may be lurking in dark corners.&nbsp;
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: What To Watch Out For On Tablets

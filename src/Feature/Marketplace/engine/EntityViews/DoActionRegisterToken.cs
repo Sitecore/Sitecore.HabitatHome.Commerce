@@ -62,7 +62,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
                 //var businessUser = await this._commerceCommander.Command<BusinessUserCommander>().CurrentBusinessUser(context.CommerceContext);
 
-                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
+                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
                 if (!ebayConfig.IsPersisted)
                 {
                     ebayConfig.Id = "Entity-EbayConfigEntity-Global";
@@ -75,13 +75,13 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 ebayConfigComponent.EbayToken = ebayToken;
 
                 //var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, businessUser);
-                var persistEbayConfigResult = await this._commerceCommander.PersistEntity(context.CommerceContext, ebayConfig);
+                var persistEbayConfigResult = await this._commerceCommander.PersistEntity(context.CommerceContext, ebayConfig).ConfigureAwait(false);
 
             }
             catch (Exception ex)
             {
                 context.Logger.LogError($"Catalog.DoActionRegisterToken.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "DoActionRegisterToken.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "DoActionRegisterToken.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
 
             return entityView;

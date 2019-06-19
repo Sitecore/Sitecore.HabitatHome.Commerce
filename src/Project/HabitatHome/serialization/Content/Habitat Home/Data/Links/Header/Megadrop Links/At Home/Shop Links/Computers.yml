@@ -2,7 +2,7 @@
 ID: "61f04a7e-a193-4ade-b85c-5d74f7ea5e8a"
 Parent: "08732dfa-5ee3-4101-abd6-787ded3452b2"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Data/Links/Header/Megadrop Links/At Home/Shop Links/Computers
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Links/Header/Megadrop Links/At Home/Shop Links/Computers
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Computers" linktype="rel" url="/shop/Computers-and-Tablets" anchor="" />
+        <link text="Computers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{994EC8CB-FE90-5071-A631-4458B1E83DB3}" />
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"

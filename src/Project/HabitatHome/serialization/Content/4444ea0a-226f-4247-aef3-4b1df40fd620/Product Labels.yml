@@ -2,7 +2,7 @@
 ID: "f9ecdcca-4936-4c32-b2df-508c9e3285d5"
 Parent: "4444ea0a-226f-4247-aef3-4b1df40fd620"
 Template: "aca5c9a3-cda0-49b6-893f-1d4a7cb595b0"
-Path: /sitecore/content/Habitat Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Search Results/detail/Text/Product Labels
 DB: master
 SharedFields:
 - ID: "9649a336-0dc1-4133-89ed-6d76beb4c32e"
@@ -17,7 +17,7 @@ SharedFields:
             id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
             uid="46B3FB5FE49E4C5D8DF93C8D791FD69A"
             operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}"
-            value="/sitecore/Commerce/Catalog Management/Catalogs/Habitat_Master" />
+            value="Habitat_Master" />
         </conditions>
       </rule>
     </ruleset>
@@ -83,3 +83,14 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190314T132924Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        CommerceUsers\Anonymous

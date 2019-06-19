@@ -63,7 +63,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                         context.GetPolicy<KnownResultCodes>().ValidationError,
                         "InvalidOrderState",
                         new object[] { expectedStatuses, order.Status },
-                        invalidOrderStateMessage),
+                        invalidOrderStateMessage).ConfigureAwait(false),
                     context);
                 return arg;
             }
@@ -126,7 +126,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
             salesActivities.Add(new EntityReference { EntityTarget = salesActivity.Id });
             order.SalesActivity = salesActivities;
 
-            await this._persistPipeline.Run(new PersistEntityArgument(salesActivity), context);
+            await this._persistPipeline.Run(new PersistEntityArgument(salesActivity), context).ConfigureAwait(false);
         }
     }
 }

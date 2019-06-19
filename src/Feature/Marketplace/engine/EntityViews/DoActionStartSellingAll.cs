@@ -69,10 +69,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                     //this._commerceCommander.Command<Sell>
                     var category = foundEntity.Entity as Category;
 
-                    var listName = $"{CatalogConstants.Relationships.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
+                    var listName = $"{CatalogConstants.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
 
                     var sellableItems = await this._commerceCommander.Command<ListCommander>()
-                            .GetListItems<SellableItem>(context.CommerceContext, listName, 0,10);
+                            .GetListItems<SellableItem>(context.CommerceContext, listName, 0,10).ConfigureAwait(false);
 
                     foreach(var sellableItem in sellableItems)
                     {
@@ -87,22 +87,22 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                                 {
                                     try
                                     {
-                                        var result = await this._commerceCommander.Command<EbayCommand>().RelistItem(context.CommerceContext, sellableItem);
+                                        var result = await this._commerceCommander.Command<EbayCommand>().RelistItem(context.CommerceContext, sellableItem).ConfigureAwait(false);
                                     }
                                     catch (Exception ex)
                                     {
                                         context.Logger.LogError($"Ebay.DoActionStartSelling.Exception: Message={ex.Message}");
-                                        await context.CommerceContext.AddMessage("Error", "DoActionStartSelling.Run.Exception", new Object[] { ex }, ex.Message);
+                                        await context.CommerceContext.AddMessage("Error", "DoActionStartSelling.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
                                     }
                                 }
                                 else
                                 {
-                                    var ebayItem = await this._commerceCommander.Command<EbayCommand>().AddItem(context.CommerceContext, sellableItem);
+                                    var ebayItem = await this._commerceCommander.Command<EbayCommand>().AddItem(context.CommerceContext, sellableItem).ConfigureAwait(false);
                                 }
                             }
                             else
                             {
-                                var ebayItem = await this._commerceCommander.Command<EbayCommand>().AddItem(context.CommerceContext, sellableItem);
+                                var ebayItem = await this._commerceCommander.Command<EbayCommand>().AddItem(context.CommerceContext, sellableItem).ConfigureAwait(false);
                             }
                             
                         }
@@ -112,7 +112,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                             ebayItemComponent.Status = "Pending";
                             sellableItem.GetComponent<TransientListMembershipsComponent>().Memberships.Add("Ebay_Pending");
                         }
-                        var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, sellableItem);
+                        var persistResult = await this._commerceCommander.PersistEntity(context.CommerceContext, sellableItem).ConfigureAwait(false);
                     }
                     //var sellableItemIds = category.ChildrenSellableItemList.Split("|".ToCharArray());
                     //foreach(var sellableItemId1 in sellableItemIds)
@@ -150,7 +150,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             catch (Exception ex)
             {
                 context.Logger.LogError($"Catalog.DoActionStartSellingAll.Exception: Message={ex.Message}");
-                await context.CommerceContext.AddMessage("Error", "DoActionStartSelling.Run.Exception", new Object[] { ex }, ex.Message);
+                await context.CommerceContext.AddMessage("Error", "DoActionStartSelling.Run.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
             }
 
             return entityView;

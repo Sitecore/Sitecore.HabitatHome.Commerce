@@ -2,7 +2,7 @@
 ID: "f930ad7a-353a-4a5b-bffd-fca119ac2f8e"
 Parent: "87754526-7924-4cfc-b399-7dff13adb0b0"
 Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
-Path: "/sitecore/content/Habitat Sites/Habitat Home/home/Data/Promo - Content Finder"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/Data/Promo - Content Finder"
 DB: master
 Languages:
 - Language: en
@@ -126,4 +126,4 @@ Languages:
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link linktype="internal" text="Start Here" querystring="" target="" id="{4FE83372-F5BF-417E-A969-5B35D50DC993}" />
+        <link text="開始" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{4FE83372-F5BF-417E-A969-5B35D50DC993}" />

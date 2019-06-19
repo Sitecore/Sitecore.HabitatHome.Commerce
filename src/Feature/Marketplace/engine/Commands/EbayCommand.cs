@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="SampleCommand.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+// <copyright file="EbayCommand.cs" company="Sitecore Corporation">
+//   Copyright (c) Sitecore Corporation 1999-2019
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -33,67 +33,39 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
     {
         private readonly IPrepareEbayItemPipeline _pipeline;
         private readonly CommerceCommander _commerceCommander;
+        private static ApiContext apiContext; 
 
-        //Instantiate and set properties in ApiContext
-        private static ApiContext apiContext; // = GetApiContext();
-
-
-        /// <inheritdoc />
-        /// <summary>
-        /// Initializes a new instance of the <see cref="T:Sitecore.Commerce.Plugin.Sample.SampleCommand" /> class.
-        /// </summary>
-        /// <param name="pipeline">
-        /// The pipeline.
-        /// </param>
-        /// <param name="commerceCommander">The <see cref="CommerceCommander"/> is a gateway object to resolving and executing other Commerce Commands and other control points.</param>
-        /// <param name="serviceProvider">The service provider</param>
         public EbayCommand(IPrepareEbayItemPipeline pipeline, CommerceCommander commerceCommander, IServiceProvider serviceProvider) : base(serviceProvider)
         {
             this._pipeline = pipeline;
             this._commerceCommander = commerceCommander;
         }
-
-
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
+        
         public async Task<bool> PublishPending(CommerceContext commerceContext)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
             {
-
                 try
                 {
                     var entityViewArgument = this._commerceCommander.Command<ViewCommander>().CurrentEntityViewArgument(commerceContext);
 
                     var ebayPendingSellableItems = await this._commerceCommander.Command<ListCommander>()
-                                .GetListItems<SellableItem>(commerceContext, "Ebay_Pending", 0, 10);
+                                .GetListItems<SellableItem>(commerceContext, "Ebay_Pending", 0, 10).ConfigureAwait(false);
 
                     foreach (var sellableItem in ebayPendingSellableItems)
                     {
-                        //var ebayItem = await this._commerceCommander.Command<EbayCommand>().PrepareItem(commerceContext, sellableItem);
-
-
-
                         var ebayItemComponent = sellableItem.GetComponent<EbayItemComponent>();
-                        //ebayItemComponent.Name = "EbayItemComponent";
-
+                     
                         var ebayItem = await this._commerceCommander.Command<EbayCommand>().AddItem(commerceContext, sellableItem);
                         ebayItem.ListingDuration = "Days_10";
                         ebayItemComponent.EbayId = ebayItem.ItemID;
                         ebayItemComponent.Status = "Listed";
                         sellableItem.GetComponent<TransientListMembershipsComponent>().Memberships.Add("Ebay_Listed");
 
-                        var persistResult = await this._commerceCommander.PersistEntity(commerceContext, sellableItem);
+                        var persistResult = await this._commerceCommander.PersistEntity(commerceContext, sellableItem).ConfigureAwait(false);
 
                         var listRemoveResult = await this._commerceCommander.Command<ListCommander>()
-                            .RemoveItemsFromList(commerceContext, "Ebay_Pending", new List<String>() { sellableItem.Id });
+                            .RemoveItemsFromList(commerceContext, "Ebay_Pending", new List<String>() { sellableItem.Id }).ConfigureAwait(false);
 
                     }
                 }
@@ -101,24 +73,11 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 {
                     commerceContext.Logger.LogError($"Ebay.PublishPendingCommand.Exception: Message={ex.Message}");
                 }
-
-
+                
                 return true;
             }
         }
 
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="sellableItem">
-        /// The sellableItem for the command
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
         public async Task<ItemType> AddItem(CommerceContext commerceContext, SellableItem sellableItem)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
@@ -128,9 +87,9 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 try
                 {
                     //Instantiate the call wrapper class
-                    var apiCall = new AddFixedPriceItemCall(await GetEbayContext(commerceContext));
+                    var apiCall = new AddFixedPriceItemCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
 
-                    var item = await PrepareItem(commerceContext, sellableItem);
+                    var item = await PrepareItem(commerceContext, sellableItem).ConfigureAwait(false);
 
                     //Send the call to eBay and get the results
                     FeeTypeCollection feeTypeCollection = apiCall.AddFixedPriceItem(item);
@@ -145,7 +104,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                     ebayItemComponent.EbayId = item.ItemID;
                     ebayItemComponent.Status = "Listed";
                     sellableItem.GetComponent<TransientListMembershipsComponent>().Memberships.Add("Ebay_Listed");
-                    await commerceContext.AddMessage("Info", "EbayCommand.AddItem", new Object[] { item.ItemID }, $"Item Listed:{item.ItemID}");
+                    await commerceContext.AddMessage("Info", "EbayCommand.AddItem", new []{ item.ItemID }, $"Item Listed:{item.ItemID}").ConfigureAwait(false);
 
                     return item;
                 }
@@ -155,7 +114,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                     {
                         var existingId = ex.Message.Substring(ex.Message.IndexOf("(") + 1);
                         existingId = existingId.Substring(0, existingId.IndexOf(")"));
-                        await commerceContext.AddMessage("Warn", "EbayCommand.AddItem", new Object[] { existingId }, $"ExistingId:{existingId}-ComponentId:{ebayItemComponent.EbayId}");
+                        await commerceContext.AddMessage("Warn", "EbayCommand.AddItem", new [] { existingId }, $"ExistingId:{existingId}-ComponentId:{ebayItemComponent.EbayId}").ConfigureAwait(false);
 
                         ebayItemComponent.EbayId = existingId;
                         ebayItemComponent.Status = "Listed";
@@ -165,7 +124,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                     else
                     {
                         commerceContext.Logger.LogError($"Ebay.AddItem.Exception: Message={ex.Message}");
-                        await commerceContext.AddMessage("Error", "Ebay.AddItem.Exception", new Object[] { ex }, ex.Message);
+                        await commerceContext.AddMessage("Error", "Ebay.AddItem.Exception", new [] { ex }, ex.Message).ConfigureAwait(false);
 
                         ebayItemComponent.History.Add(new HistoryEntryModel { EventMessage = $"Error-{ex.Message}", EventUser = commerceContext.CurrentCsrId() });
                     }
@@ -174,37 +133,23 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
             }
         }
 
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="sellableItem">
-        /// The sellableItem for the command
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
         public async Task<ItemType> PrepareItem(CommerceContext commerceContext, SellableItem sellableItem)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
             {
                 //Instantiate the call wrapper class
-                var apiCall = new AddFixedPriceItemCall(await GetEbayContext(commerceContext));
+                var apiCall = new AddFixedPriceItemCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
 
-                var item = await this._commerceCommander.Pipeline<IPrepareEbayItemPipeline>().Run(sellableItem, commerceContext.GetPipelineContextOptions());
-
-
+                var item = await this._commerceCommander.Pipeline<IPrepareEbayItemPipeline>().Run(sellableItem, commerceContext.PipelineContextOptions).ConfigureAwait(false);
+                
                 item.Description = sellableItem.Description;
                 item.Title = sellableItem.DisplayName;
                 item.SubTitle = "Test Item";
 
-
                 var listPricingPolicy = sellableItem.GetPolicy<ListPricingPolicy>();
                 var listPrice = listPricingPolicy.Prices.FirstOrDefault();
 
-                item.StartPrice = new AmountType { currencyID = CurrencyCodeType.USD, Value = System.Convert.ToDouble(listPrice.Amount) };
+                item.StartPrice = new AmountType { currencyID = CurrencyCodeType.USD, Value = System.Convert.ToDouble(listPrice.Amount, System.Globalization.CultureInfo.InvariantCulture) };
 
                 item.ConditionID = 1000;  //new
 
@@ -262,23 +207,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
             }
         }
 
-
-
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="sellableItem">
-        /// The sellableItem for the command
-        /// </param>
-        /// <param name="reason">
-        /// The reason for the command
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
         public async Task<bool> EndItemListing(CommerceContext commerceContext, SellableItem sellableItem, string reason)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
@@ -287,7 +215,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
 
                 try
                 {
-                    var apiCall = new eBay.Service.Call.EndItemCall(await GetEbayContext(commerceContext));
+                    var apiCall = new EndItemCall(await GetEbayContext(commerceContext));
 
                     if (sellableItem.HasComponent<EbayItemComponent>())
                     {
@@ -334,11 +262,8 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                                 //Call Ebay and End the Item Listing
                                 try
                                 {
-
                                     apiCall.EndItem(ebayItemComponent.EbayId, reasonCodeType);
                                     ebayItemComponent.Status = "Ended";
-
-
                                 }
                                 catch (Exception ex)
                                 {
@@ -351,7 +276,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                                     else
                                     {
                                         commerceContext.Logger.LogError(ex, $"EbayCommand.EndItemListing.Exception: Message={ex.Message}");
-                                        await commerceContext.AddMessage("Error", "EbayCommand.EndItemListing", new Object[] { ex }, ex.Message);
+                                        await commerceContext.AddMessage("Error", "EbayCommand.EndItemListing", new [] { ex }, ex.Message).ConfigureAwait(false);
                                     }
                                 }
                             }
@@ -363,11 +288,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
 
                         sellableItem.GetComponent<TransientListMembershipsComponent>().Memberships.Add("Ebay_Ended");
 
-
-                        var persistResult = await this._commerceCommander.PersistEntity(commerceContext, sellableItem);
+                        var persistResult = await this._commerceCommander.PersistEntity(commerceContext, sellableItem).ConfigureAwait(false);
 
                         var listRemoveResult = await this._commerceCommander.Command<ListCommander>()
-                            .RemoveItemsFromList(commerceContext, "Ebay_Listed", new List<String>() { sellableItem.Id });
+                            .RemoveItemsFromList(commerceContext, "Ebay_Listed", new List<String>() { sellableItem.Id }).ConfigureAwait(false);
 
                     }
 
@@ -375,35 +299,19 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 catch (Exception ex)
                 {
                     commerceContext.Logger.LogError($"Ebay.EndItemListing.Exception: Message={ex.Message}");
-                    await commerceContext.AddMessage("Error", "Ebay.EndItemListing.Exception", new Object[] { ex }, ex.Message);
+                    await commerceContext.AddMessage("Error", "Ebay.EndItemListing.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
                 }
-
-
 
                 return true;
             }
         }
 
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="sellableItem">
-        /// The sellableItem for the command
-        /// </param>
-        /// <returns>
-        /// The <see cref="ItemType"/>.
-        /// </returns>
         public async Task<ItemType> RelistItem(CommerceContext commerceContext, SellableItem sellableItem)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
             {
-
-
                 //Instantiate the call wrapper class
-                var apiCall = new eBay.Service.Call.RelistItemCall(await GetEbayContext(commerceContext));
+                var apiCall = new RelistItemCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
 
                 if (sellableItem.HasComponent<EbayItemComponent>())
                 {
@@ -411,7 +319,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
 
                     try
                     {
-
                         var item = await PrepareItem(commerceContext, sellableItem);
                         item.ItemID = ebayItemComponent.EbayId;
 
@@ -441,7 +348,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                         {
                             var existingId = ex.Message.Substring(ex.Message.IndexOf("(") + 1);
                             existingId = existingId.Substring(0, existingId.IndexOf(")"));
-                            await commerceContext.AddMessage("Warn", "Ebay.RelistItem", new Object[] { }, $"ExistingId:{existingId}-ComponentId:{ebayItemComponent.EbayId}");
+                            await commerceContext.AddMessage("Warn", "Ebay.RelistItem", new Object[] { }, $"ExistingId:{existingId}-ComponentId:{ebayItemComponent.EbayId}").ConfigureAwait(false);
                             ebayItemComponent.EbayId = existingId;
                             ebayItemComponent.Status = "Listed";
                             sellableItem.GetComponent<TransientListMembershipsComponent>().Memberships.Add("Ebay_Listed");
@@ -449,41 +356,26 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                         else
                         {
                             commerceContext.Logger.LogError($"Ebay.RelistItem.Exception: Message={ex.Message}");
-                            await commerceContext.AddMessage("Error", "Ebay.RelistItem.Exception", new Object[] { ex }, ex.Message);
+                            await commerceContext.AddMessage("Error", "Ebay.RelistItem.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
                         }
                     }
                 }
                 else
                 {
                     commerceContext.Logger.LogError($"EbayCommand.RelistItem.Exception: Message=ebayCommand.RelistItem.NoEbayItemComponent");
-                    await commerceContext.AddMessage("Error", "Ebay.RelistItem.Exception", new Object[] { }, "ebayCommand.RelistItem.NoEbayItemComponent");
+                    await commerceContext.AddMessage("Error", "Ebay.RelistItem.Exception", new Object[] { }, "ebayCommand.RelistItem.NoEbayItemComponent").ConfigureAwait(false);
                 }
 
                 return new ItemType();
-
             }
         }
 
-
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="itemId">
-        /// The itemId for the command
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
         public async Task<ItemType> GetItem(CommerceContext commerceContext, string itemId)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
             {
-
                 //Instantiate the call wrapper class
-                var apiCall = new GetItemCall(await GetEbayContext(commerceContext));
+                var apiCall = new GetItemCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
 
                 try
                 {
@@ -491,10 +383,8 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                     return result;
                 }
                 catch (Exception ex)
-                {
-                    var ex2 = ex;
-                    //commerceContext.LogException("GetItem", ex);
-                    await commerceContext.AddMessage("Warn", "Ebay.GetItem.Exception", new Object[] { ex }, ex.Message);
+                {                    
+                    await commerceContext.AddMessage("Warn", "Ebay.GetItem.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
                 }
                 return new ItemType();
             }
@@ -513,18 +403,14 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
         public async Task<DateTime> GetEbayTime(CommerceContext commerceContext)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
-            {
-                //var arg = new SampleArgument(parameter);
-                //var result = await this._pipeline.Run(arg, new CommercePipelineExecutionContextOptions(commerceContext));
-
+            {                
                 //Instantiate the call wrapper class
-                GeteBayOfficialTimeCall apiCall = new GeteBayOfficialTimeCall(await GetEbayContext(commerceContext));
+                GeteBayOfficialTimeCall apiCall = new GeteBayOfficialTimeCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
 
                 //Send the call to eBay and get the results
                 try
                 {
-
-                    var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true);
+                    var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
 
                     if (ebayConfig.HasComponent<EbayBusinessUserComponent>())
                     {
@@ -534,49 +420,30 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                             DateTime officialTime = apiCall.GeteBayOfficialTime();
                             return officialTime;
                         }
-
                     }    
                 }
                 catch(Exception ex)
                 {
                     commerceContext.Logger.LogError($"Ebay.GetEbayTime.Exception: Message={ex.Message}");
-                    await commerceContext.AddMessage("Error", "Ebay.GetEbayTime.Exception", new Object[] { ex }, ex.Message);
+                    await commerceContext.AddMessage("Error", "Ebay.GetEbayTime.Exception", new Object[] { ex }, ex.Message).ConfigureAwait(false);
                 }
+
                 //Handle the result returned
                 //Console.WriteLine("eBay official Time: " + officialTime);
-
-
+                
                 return new DateTime();
             }
         }
 
-        /// <summary>
-        /// The process of the command
-        /// </summary>
-        /// <param name="commerceContext">
-        /// The commerce context
-        /// </param>
-        /// <param name="query">
-        /// The Query
-        /// </param>
-        /// <returns>
-        /// The <see cref="Task"/>.
-        /// </returns>
         public async Task<SuggestedCategoryTypeCollection> GetSuggestedCategories(CommerceContext commerceContext, string query)
         {
             using (var activity = CommandActivity.Start(commerceContext, this))
             {
                 try
                 {
-                    var getSuggestedCategories = new eBay.Service.Call.GetSuggestedCategoriesCall(await GetEbayContext(commerceContext));
+                    var getSuggestedCategories = new GetSuggestedCategoriesCall(await GetEbayContext(commerceContext).ConfigureAwait(false));
                     var result = getSuggestedCategories.GetSuggestedCategories(query);
-
-                    //Instantiate the call wrapper class
-                    //var apiCall = new eBay.Service.Call.GetCategoriesCall(); // GeteBayOfficialTimeCall(await GetEbayContext(commerceContext));
-
-                    //Send the call to eBay and get the results
-                   // var officialTime = apiCall.GetCategories();
-
+                    
                     return result;
                 }
                 catch (Exception ex)
@@ -603,7 +470,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
             else
             {
                 apiContext = new ApiContext();
-                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true);
+                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
 
                 if (ebayConfig.HasComponent<EbayBusinessUserComponent>())
                 {
@@ -626,9 +493,8 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 apiContext.Site = SiteCodeType.US;
 
                 return apiContext;
-            } // else
-
-        } //GetEbayContext
+            } 
+        } 
 
     }
 }
