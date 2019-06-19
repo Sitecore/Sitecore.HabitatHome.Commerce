@@ -8,19 +8,7 @@ SharedFields:
 - ID: "6da71ad3-5849-4482-9317-d21390e5a348"
   Hint: Pattern
   Value: |
-    <tracking>
-      <profile id="54d63273-947a-4927-b21a-0022625315e1" name="Electronics Category">
-        <key name="Appliances" value="10" />
-        <key name="Audio" value="0" />
-        <key name="Cameras" value="0" />
-        <key name="Computers" value="0" />
-        <key name="Fitness Tech" value="0" />
-        <key name="Games" value="0" />
-        <key name="Phones" value="0" />
-        <key name="Tablets" value="0" />
-        <key name="TVs" value="0" />
-      </profile>
-    </tracking>
+    <tracking><profile id="{54d63273-947a-4927-b21a-0022625315e1}" name=""><key id="{a3386b92-a365-40aa-9963-e0cd9ce22c92}" name="Appliances" value="10" /><key id="{04382b04-5a9e-4fe6-a8f5-d6f99bd49404}" name="Audio" value="0" /><key id="{7ed287de-8452-41b8-99fa-72abb17b8d6b}" name="Cameras" value="0" /><key id="{5a10bb21-2cad-4b03-a6d9-517795b1a2ae}" name="Computers" value="0" /><key id="{439a4ea2-cff5-4358-927c-14c49c83f93c}" name="Fitness Tech" value="0" /><key id="{630a9e94-a897-412c-ab5f-0441fd3c9af8}" name="Games" value="0" /><key id="{e480f240-edc0-4666-92b8-981b134271ca}" name="Phones" value="0" /><key id="{13534804-7082-433b-b936-b366272881b3}" name="Tablets" value="0" /><key id="{1f3e8650-f8fb-4d88-ae8d-ad4af4e9f25f}" name="TVs" value="0" /></profile></tracking>
 Languages:
 - Language: en
   Fields:
