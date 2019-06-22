@@ -10,7 +10,7 @@ Param(
     [string]$BizFxPathName = "SitecoreBizFx_habitathome.dev.local",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
     [string]$engineSuffix = "habitathome",
-    [string]$CommerceOpsPort = "5000",
+    [string]$CommerceOpsPort = "5015",
     [string]$adminUser = "admin",
     [string]$adminPassword = "b",
     [string]$certificateName = "habitathomestorefront.engine",
