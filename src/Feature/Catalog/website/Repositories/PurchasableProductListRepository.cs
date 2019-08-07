@@ -2,6 +2,7 @@
 using System.Linq;
 using Sitecore.Commerce.Entities.Inventory;
 using Sitecore.Commerce.XA.Feature.Catalog;
+using Sitecore.Commerce.XA.Feature.Catalog.Cache;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
 using Sitecore.Commerce.XA.Foundation.Common;
@@ -22,8 +23,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Repositories
     {                                                             
         private readonly IStorefrontContext _storefrontContext;
 
-        public PurchasableProductListRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, IInventoryManager inventoryManager, ICatalogUrlManager catalogUrlManager, IContext context) 
-            : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, inventoryManager, catalogUrlManager,context)
+        public PurchasableProductListRepository(IModelProvider modelProvider, IStorefrontContext storefrontContext, ISiteContext siteContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, IInventoryManager inventoryManager, ICatalogUrlManager catalogUrlManager, IContext context, IProductListCacheProvider productListCacheProvider, IBulkManager bulkManager)
+        : base(modelProvider, storefrontContext, siteContext, searchInformation, searchManager, catalogManager, inventoryManager, catalogUrlManager, context, productListCacheProvider, bulkManager)
         {                                            
             _storefrontContext = storefrontContext;
         }

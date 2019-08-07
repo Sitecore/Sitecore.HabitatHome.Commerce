@@ -68,12 +68,12 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Analytics" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.Analytics.Model" Version="9.1.1-*" />
+        <PackageReference Include="Sitecore.Analytics" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.Analytics.Model" Version="9.2.0-*" />
         <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.XConnect" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.*">
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.XConnect" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
       </ItemGroup>
@@ -84,6 +84,9 @@
     <PackageReference Include="Microsoft.Net.Compilers" Version="2.10.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.OData.Core">
+      <Version>7.5.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

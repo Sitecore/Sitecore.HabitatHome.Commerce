@@ -56,8 +56,8 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="13.0.*" />
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
       </ItemGroup>
     </Otherwise>
   </Choose>
