@@ -15,8 +15,7 @@
         "Domain": "sitecore",
         "Password": "b",
         "ConnectionLeaseTimeout": 60000,
-        "AuthRequestUrl": "sitecore/api/ssc/auth/login",
-        "Protocol": "https"
+        "AuthRequestUrl": "sitecore/api/ssc/auth/login"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Content.DefaultContentPathsPolicy, Sitecore.Commerce.Plugin.Content",

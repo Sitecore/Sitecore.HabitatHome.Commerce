@@ -49,7 +49,7 @@
             "Properties": [
               "Color",
               "Size",
-              "Style",              
+              "Style",
               "DisambiguatingDescription"
             ],
             "ActionView": "DisplayProperties",

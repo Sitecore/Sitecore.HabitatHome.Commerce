@@ -47,7 +47,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             try
             {
-                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true);
+                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", new int?(), true);
 
                 if (ebayConfig.HasComponent<EbayBusinessUserComponent>()) {
                     var ebayConfigComponent = ebayConfig.GetComponent<EbayBusinessUserComponent>();
@@ -64,10 +64,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                                 var sellableItemViewItemAsEntityView = sellableItemViewItem as EntityView;
 
                                 var sellableItemId = (sellableItemViewItemAsEntityView).ItemId;
-                                var foundEntity = context.CommerceContext.GetObjects<FoundEntity>().FirstOrDefault(p => p.EntityId == sellableItemId);
+                                var foundEntity = context.CommerceContext.GetObjects<CommerceEntity>().FirstOrDefault(p => p.Id == sellableItemId);
                                 if (foundEntity != null)
                                 {
-                                    var sellableItem = foundEntity.Entity as SellableItem;
+                                    var sellableItem = foundEntity as SellableItem;
                                     if (sellableItem.HasComponent<EbayItemComponent>())
                                     {
                                         var ebayItemComponent = sellableItem.GetComponent<EbayItemComponent>();

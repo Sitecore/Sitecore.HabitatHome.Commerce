@@ -59,12 +59,12 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             {
                 var entityViewArgument = this._commerceCommander.Command<ViewCommander>().CurrentEntityViewArgument(context.CommerceContext);
                 //var reason = entityView.Properties.First(p => p.Name == "Reason").Value ?? "";
-                var foundEntity = context.CommerceContext.GetObjects<FoundEntity>().FirstOrDefault(p => p.EntityId == entityView.EntityId);
+                var foundEntity = context.CommerceContext.GetObjects<CommerceEntity>().FirstOrDefault(p => p.Id == entityView.EntityId);
 
                 IEnumerable<SellableItem> ebayListedSellableItems = new List<SellableItem>();
                 if (entityView.EntityId.Contains("Entity-Category-"))
                 {
-                    var category = foundEntity.Entity as Category;
+                    var category = foundEntity as Category;
 
                     var listName = $"{CatalogConstants.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
 

@@ -1,4 +1,4 @@
-﻿{
+{
   "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
   "Id": "Entity-PolicySet-ControllerMethodRolesPolicySet",
   "Version": 1,

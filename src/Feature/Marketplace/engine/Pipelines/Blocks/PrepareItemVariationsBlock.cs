@@ -59,10 +59,10 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Pipelines.Blocks
                 //    Location = "Dallas, TX",
                 //    Quantity = 10
                 //};
-                var foundEntity = context.CommerceContext.GetObjects<FoundEntity>().FirstOrDefault(p => p.Entity is SellableItem) ;
+                var foundEntity = context.CommerceContext.GetObjects<CommerceEntity>().FirstOrDefault(p => p is SellableItem) ;
                 if (foundEntity != null)
                 {
-                    var sellableItem = foundEntity.Entity as SellableItem;
+                    var sellableItem = foundEntity as SellableItem;
                     if (sellableItem.HasComponent<ItemVariationsComponent>())
                     {
                         //This item has variations

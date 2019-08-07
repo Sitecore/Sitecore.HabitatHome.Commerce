@@ -101,7 +101,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
 
             if (existingPayment.Amount.Amount == paymentToRefund.Amount.Amount)
             {
-                order.Components.Remove(existingPayment);
+                order.RemoveComponents(existingPayment);
             }
             else
             {
@@ -134,7 +134,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                 ActivityAmount = new Money(existingPayment.Amount.CurrencyCode, paymentToRefund.Amount.Amount * -1),
                 Customer = new EntityReference
                 {
-                    EntityTarget = order.Components.OfType<ContactComponent>().FirstOrDefault()?.CustomerId
+                    EntityTarget = order.EntityComponents.OfType<ContactComponent>().FirstOrDefault()?.CustomerId
                 },
                 Order = new EntityReference
                 {

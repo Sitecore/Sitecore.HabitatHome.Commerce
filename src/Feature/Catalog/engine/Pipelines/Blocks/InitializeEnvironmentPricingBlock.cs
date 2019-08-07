@@ -10,6 +10,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Plugin.Pricing;
@@ -300,7 +301,18 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         }
 
         private async Task AssociateCatalogToBook(string bookName, string catalogName, CommercePipelineExecutionContext context)
-        {
+        { 
+            // To persist entities conventionally and to prevent any race conditions, create a separate CommercePipelineExecutionContext object and CommerceContext object.
+            var pipelineExecutionContext = new CommercePipelineExecutionContext(new CommerceContext(context.CommerceContext.Logger, context.CommerceContext.TelemetryClient)
+            {
+                GlobalEnvironment = context.CommerceContext.GlobalEnvironment,
+                Environment = context.CommerceContext.Environment,
+                Headers = new HeaderDictionary(context.CommerceContext.Headers.ToDictionary(x => x.Key, y => y.Value)) // Clone current context headers by shallow copy.
+            }.PipelineContextOptions, context.CommerceContext.Logger);
+
+            // To persist entities conventionally, remove policy keys in the newly created CommerceContext object.
+            pipelineExecutionContext.CommerceContext.RemoveHeader(CoreConstants.PolicyKeys);
+
             var arg = new CatalogAndBookArgument(bookName, catalogName);
             await _associateCatalogToBookPipeline.Run(arg, context).ConfigureAwait(false);
         }

@@ -128,14 +128,6 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:03:00",
-        "ListToWatch": "",
-        "FullyQualifiedName": "Sitecore.Commerce.Core.NodeHeartBeatMinion, Sitecore.Commerce.Core",
-        "ItemsPerBatch": 10,
-        "SleepBetweenBatches": 500
-      },
-      {
         "$type": "Sitecore.Commerce.Core.MinionBossPolicy, Sitecore.Commerce.Core",
         "Children": {
           "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core]], mscorlib",
@@ -169,20 +161,6 @@
         "WakeupInterval": "00:05:00",
         "ListToWatch": "ReleasedOrders",
         "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.ReleasedOrdersMinion, Sitecore.Commerce.Plugin.Orders",
-        "ItemsPerBatch": 10,
-        "SleepBetweenBatches": 500,
-        "Entities": {
-          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [
-            "Sitecore.Commerce.Plugin.Orders.Order, Sitecore.Commerce.Plugin.Orders"
-          ]
-        }
-      },
-      {
-        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:05:00",
-        "ListToWatch": "SettleSalesActivities",
-        "FullyQualifiedName": "Sitecore.Commerce.Plugin.Orders.SettleSalesActivitiesMinion, Sitecore.Commerce.Plugin.Orders",
         "ItemsPerBatch": 10,
         "SleepBetweenBatches": 500,
         "Entities": {

@@ -9,10 +9,13 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Plugin.Search.Solr.SolrSearchPolicy, Sitecore.Commerce.Plugin.Search.Solr",
-        "SolrUrl": "https://localhost:8721/solr",
+        "SolrUrl": "https://localhost:8750/solr",
         "ConnectionTimeout": -1,
         "SolrDateTimeFormatString": "yyyy-MM-dd'T'HH:mm:ss.FFF'Z'",
-        "IsSolrCloud": false
+        "IsSolrCloud": false,
+        "UseSolrAuthentication": false,
+        "SolrUserName": "",
+        "SolrPassword": ""
       }
     ]
   }

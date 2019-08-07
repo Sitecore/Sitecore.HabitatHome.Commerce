@@ -3,25 +3,19 @@
   "ArtifactStoreId": "78A1EA61-1F37-42A7-AC89-9A3F46D60CA5",
   "Components": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [{
-      "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
-      "Memberships": {
-        "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-        "$values": ["CommerceEnvironments"]
-      },
-      "Id": "efe49ff743d34b649fffcof293615cd9",
-      "Policies": {
-        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-        "$values": []
-      },
-      "ChildComponents": {
-        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-        "$values": []
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
+        "Memberships": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "CommerceEnvironments"
+          ]
+        },
+        "Id": "efe49ff743d34b649fffcof293615cd9"
       }
-    }]
+    ]
   },
-  "DateCreated": "2016-09-23T18:04:08.1660038Z",
-  "DateUpdated": "2016-09-23T18:04:08.1760227Z",
   "Id": "Entity-CommerceEnvironment-HabitatShops",
   "Version": 1,
   "IsPersisted": false,
@@ -79,7 +73,8 @@
               "Key": "ProblemOrders",
               "Value": "sign_warning"
             }
-        ]},
+          ]
+        },
         "CustomerOrders": "Orders-ByCustomer-{0}",
         "Orders": "Orders",
         "PendingOrders": "PendingOrders",
@@ -114,7 +109,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-ShopsMemoryCachePolicySet"
+        "PolicySetId": "Entity-PolicySet-CachingPolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -197,7 +192,12 @@
         "$type": "Sitecore.Commerce.Core.GlobalEnvironmentPolicy, Sitecore.Commerce.Core",
         "Languages": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "en", "de-DE", "ja-JP", "fr-FR" ]
+          "$values": [
+            "en",
+            "de-DE",
+            "ja-JP",
+            "fr-FR"
+          ]
         },
         "DefaultCurrency": "USD",
         "DefaultCountry": {
@@ -285,7 +285,11 @@
             "PhoneNumber"
           ]
         },
-        "Domains": [ "Storefront", "extranet", "CommerceUsers" ]
+        "Domains": [
+          "Storefront",
+          "extranet",
+          "CommerceUsers"
+        ]
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.CustomersRemovePolicy, Sitecore.Commerce.Plugin.Customers",
@@ -335,14 +339,6 @@
         }
       },
       {
-        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
-        "WakeupInterval": "00:00:01",
-        "ListToWatch": "",
-        "FullyQualifiedName": "Sitecore.Commerce.Core.NodeHeartBeatMinion, Sitecore.Commerce.Core",
-        "ItemsPerBatch": 10,
-        "SleepBetweenBatches": 500
-      },
-      {
         "$type": "Sitecore.Commerce.Core.ListNamePolicy, Sitecore.Commerce.Core",
         "Prefix": "List",
         "Suffix": "ByDate",
@@ -362,21 +358,28 @@
         "$type": "Sitecore.Commerce.Plugin.Orders.OnHoldOrdersPolicy, Sitecore.Commerce.Plugin.Orders",
         "AllowHoldStatuses": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "Pending", "Problem" ]
+          "$values": [
+            "Pending",
+            "Problem"
+          ]
         }
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Orders.CancelOrdersPolicy, Sitecore.Commerce.Plugin.Orders",
         "AllowCancelStatuses": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "Pending", "Problem", "OnHold" ]
+          "$values": [
+            "Pending",
+            "Problem",
+            "OnHold"
+          ]
         }
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Inventory.GlobalInventoryPolicy, Sitecore.Commerce.Plugin.Inventory",
         "CheckStockLevel": true,
         "SubtractStockOnOrder": true,
-        "DefaultAllocationDateAvailable": "0001-01-01T00:00:00+00:00"
+        "DefaultAllocationDateAvailable": "0001-01-01T00:00:00-05:00"
       },
       {
         "$type": "Sitecore.Commerce.Core.GlobalCurrencyPolicy, Sitecore.Commerce.Core",

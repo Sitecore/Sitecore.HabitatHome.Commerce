@@ -47,7 +47,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
 
             var entityViewArgument = this._commerceCommander.Command<ViewCommander>().CurrentEntityViewArgument(context.CommerceContext);
 
-            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
+            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", new int?(), true).ConfigureAwait(false);
 
             var ebayGlobalConfigComponent = ebayConfig.GetComponent<EbayGlobalConfigComponent>();
 

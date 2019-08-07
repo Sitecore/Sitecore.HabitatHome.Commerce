@@ -51,7 +51,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
             var pluginPolicy = context.GetPolicy<Policies.PluginPolicy>();
             var marketplaceDisplayPolicy = context.GetPolicy<MarketplaceDisplayPolicy>();
             
-            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
+            var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(context.CommerceContext, "Entity-EbayConfigEntity-Global", new int?(), true).ConfigureAwait(false);
             if (!ebayConfig.IsPersisted)
             {
                 ebayConfig.Id = "Entity-EbayConfigEntity-Global";

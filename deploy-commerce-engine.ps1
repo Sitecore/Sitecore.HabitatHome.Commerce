@@ -1,13 +1,13 @@
 Param(
     [string]$siteName = "habitathome.dev.local",
     [string]$engineHostName = "localhost",
-    [string]$identityServerHost = "identityserver-habitathome.dev.local",
+    [string]$identityServerHost = "habitathome-identityserver.dev.local",
     [switch]$Initialize,
     [switch]$Bootstrap,
     [switch]$SkipPublish,
     [string]$webRoot = "C:\inetpub\wwwroot",
     [string[]] $engines = @("Authoring", "Minions", "Ops", "Shops"),
-    [string]$BizFxPathName = "SitecoreBizFx_habitathome.dev.local",
+    [string]$BizFxPathName = "habitathome-SitecoreBizFx.dev.local",
     [string]$IdentityServerPathName = "SitecoreIdentityServer",
     [string]$engineSuffix = "habitathome",
     [string]$CommerceOpsPort = "5000",
@@ -32,9 +32,9 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
   
     $pathToGlobalJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\bootstrap\Global.json")
     $global = Get-Content $pathToGlobalJson -Raw | ConvertFrom-Json
-    $global.Policies.'$values'[5].Host = $siteName
-	$global.Policies.'$values'[5].UserName = $adminUser
-	$global.Policies.'$values'[5].Password = $adminPassword
+    $global.Policies.'$values'[6].Host = $siteName
+	$global.Policies.'$values'[6].UserName = $adminUser
+	$global.Policies.'$values'[6].Password = $adminPassword
     $global | ConvertTo-Json -Depth 10 -Compress | set-Content $pathToGlobalJson
     $pathToJson = $(Join-Path -Path $basePublishPath -ChildPath "wwwroot\config.json")
 
@@ -72,28 +72,6 @@ Function  Start-CommerceEnginePepare ( [string] $basePublishPath = $(Join-Path $
         $config | ConvertTo-Json -Depth 10 -Compress | set-content $pathToJson
 
     }
-
-    # Write-Host "Modifying Identity Server configuration" -ForegroundColor Green 
-    # Modify IdentityServer AppSettings based on new engine hostname
-    #$idServerJson = $([System.IO.Path]::Combine($webRoot, $IdentityServerPathName, "wwwroot\appSettings.json"))
-    #$idServerSettings = Get-Content $idServerJson -Raw | ConvertFrom-Json
-    #$client = $idServerSettings.AppSettings.Clients | Where-Object {$_.ClientId -eq "CommerceBusinessTools"}
-   
-    #$client.RedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
-    #$client.PostLogoutRedirectUris = @(("https://{0}:4200" -f $engineHostName), ("https://{0}:4200/?" -f $engineHostName))
-    #$client.AllowedCorsOrigins = @(("https://{0}:4200/" -f $engineHostName), ("https://{0}:4200" -f $engineHostName))
-
-    #$idServerSettings | ConvertTo-Json -Depth 10 -Compress | set-content $idServerJson
-
-    # Write-Host "Modifying BizFx (Business Tools) configuration" -ForegroundColor Green
-    #Modify BizFx to match new hostname
-    #$bizFxJson = $([System.IO.Path]::Combine($webRoot, $BizFxPathName, "assets\config.json"))
-    #$bizFxSettings = Get-Content $bizFxJson -Raw | ConvertFrom-Json
-    #$bizFxSettings.BizFxUri = ("https://{0}:4200" -f $engineHostName)
-    #$bizFxSettings.IdentityServerUri = ("https://{0}" -f $identityServerHost)
-    #$bizFxSettings.EngineUri = ("https://{0}:5000" -f $engineHostName)
-    #$bizFxSettings | ConvertTo-Json -Depth 10 -Compress | set-content $bizFxJson
-
 }
 Function Publish-CommerceEngine {
     Write-Host ("Deploying Commerce Engine") -ForegroundColor Green

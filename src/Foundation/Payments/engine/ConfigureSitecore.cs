@@ -4,16 +4,18 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Commerce.Plugin.Payments;
+using Sitecore.Commerce.Plugin.FaultInjection;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
-using Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks;
 using GetClientTokenBlock = Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks.GetClientTokenBlock;
 using RegisteredPluginBlock = Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks.RegisteredPluginBlock;
+using Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks;
 
 namespace Sitecore.HabitatHome.Foundation.Payments.Engine
 {
@@ -48,21 +50,16 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine
                 {
                     d.Add<UpdateFederatedPaymentBlock>().After<ValidateOnHoldOrderBlock>();
                 })
-                .ConfigurePipeline<ISettleSalesActivityPipeline>(d =>
-                {
-                    d.Add<SettleFederatedPaymentBlock>().After<ValidateSalesActivityBlock>()
-                     .Add<UpdateOrderAfterFederatedPaymentSettlementBlock>().After<SettleFederatedPaymentBlock>();
-                })               
                 .ConfigurePipeline<IRefundPaymentsPipeline>(d =>
                 {
                     d.Add<RefundFederatedPaymentBlock>().Before<PersistOrderBlock>();
-                })               
+                })
                 .ConfigurePipeline<ICancelOrderPipeline>(d =>
                 {
                     d.Add<VoidCancelOrderFederatedPaymentBlock>().After<GetPendingOrderBlock>();
                 })
-
-                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); }));
+                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
+                .ConfigurePipeline<IReleasedOrdersMinionPipeline>(c => { c.Add<SettleOrderSalesActivitiesBlock>().After<SettlePaymentFaultBlock>(); }));
 
             services.RegisterAllCommands(assembly);
         }
