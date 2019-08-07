@@ -6258,3 +6258,9 @@ Languages:
     - ID: "f7b5df32-d5ab-4911-82e0-1ad8e1e279bd"
       Hint: Latitude
       Value: 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bing Smart Home Design
+  Versions:

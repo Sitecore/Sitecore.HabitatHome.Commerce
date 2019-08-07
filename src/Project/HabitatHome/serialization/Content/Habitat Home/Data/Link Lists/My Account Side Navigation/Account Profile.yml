@@ -20,3 +20,9 @@ Languages:
       Hint: Link
       Value: |
         <link text="Account Profile" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{ED673E80-64F4-479F-BFA4-6E4C94539D17}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: アカウントプロファイル
+  Versions:

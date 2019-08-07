@@ -22,7 +22,6 @@ SharedFields:
     </ruleset>
 - ID: "f9926e84-399e-4070-b2ed-a31f6f542bdd"
   Hint: IsLink
-  Type: Checkbox
   Value: 1
 Languages:
 - Language: en

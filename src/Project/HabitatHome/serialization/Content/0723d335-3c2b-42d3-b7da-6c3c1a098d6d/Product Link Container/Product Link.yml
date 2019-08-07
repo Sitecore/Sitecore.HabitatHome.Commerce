@@ -22,8 +22,7 @@ SharedFields:
   Value: href=%40%28ProductLink%29
 - ID: "f9926e84-399e-4070-b2ed-a31f6f542bdd"
   Hint: IsLink
-  Type: Checkbox
-  Value: 0
+  Value: 
 Languages:
 - Language: en
   Versions:

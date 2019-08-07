@@ -31,3 +31,9 @@ Languages:
       Hint: PromoLink
       Value: |
         <link linktype="internal" text="Buy A Gift card" querystring="" target="" id="{0751298F-6306-4CF3-AABB-38CA24C1585B}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - ギフトカード"
+  Versions:

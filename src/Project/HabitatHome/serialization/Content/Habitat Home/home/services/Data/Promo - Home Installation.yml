@@ -30,3 +30,9 @@ Languages:
       Hint: PromoLink
       Value: |
         <link linktype="internal" text="Schedule Now" querystring="" target="" id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "プロモ - ホームインストレーション"
+  Versions:

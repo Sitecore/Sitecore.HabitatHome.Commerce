@@ -11,7 +11,9 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{2FA513FA-E25E-491E-927E-5363D206B41B}"
+  Value: |
+    {2FA513FA-E25E-491E-927E-5363D206B41B}
+    {9B6DFD34-7101-4BD5-BBFD-3E23CA8A2CAC}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 350

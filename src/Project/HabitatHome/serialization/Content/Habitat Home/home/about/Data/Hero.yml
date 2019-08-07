@@ -23,3 +23,9 @@ Languages:
     - ID: "af73cf76-4e8a-46b0-9403-bcea092724ef"
       Hint: HeroSupertitle
       Value: About Habitat
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Habitat について
+  Versions:

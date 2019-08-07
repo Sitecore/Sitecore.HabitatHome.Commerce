@@ -5,15 +5,15 @@ Template: "1e6a5a9f-0bf0-4efb-9f63-f0f43957887e"
 Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home
 DB: master
 SharedFields:
-- ID: "182c3780-07f9-4586-8a1d-92c9d9bacc8f"
-  Hint: Control Panel Configuration
-  Value: "{2F395077-DA43-4935-B85C-29AE53A62F50}"
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
   Value: "{91F1292D-FCE1-4B76-867A-9F6E048CDC78}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{87754526-7924-4CFC-B399-7DFF13ADB0B0}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
