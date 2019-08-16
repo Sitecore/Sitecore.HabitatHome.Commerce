@@ -146,6 +146,10 @@ Function CleanEnvironment {
         $result = Invoke-RestMethod $initializeUrl -TimeoutSec 1200 -Method Post -Headers $headers -Body ($body | ConvertTo-Json) -ContentType "application/json"
         if ($result.ResponseCode -eq "Ok") {
             Write-Host "Cleaning for $($env) completed successfully" -ForegroundColor Green
+			
+			Write-Host "Flushing Redis caches..."
+			Invoke-Command -ScriptBlock { redis-cli flushall }
+			Write-Host "Flushing Redis caches completed."
         }
         else {
             Write-Host "Cleaning for $($env) failed" -ForegroundColor Red
