@@ -69,15 +69,19 @@
             <div class="confirm-total-summary">
                 <h4 class="order-information-label">@orderInformationLabel</h4>
                 <div class="confirm-totals-subtotal">
-                    <span>@subtotalLabel:</span>
+                    <span>@subtotalLabel </span>
                     <span class="confirm-subTotal" data-bind="text: cart().subTotal"></span>
                 </div>
+                <div class="confirm-totals-savings">
+                    <span>@savingsLabel </span>
+                    <span class="confirm-discountTotal" data-bind="text: cart().discount"></span>
+                </div>
                 <div class="confirm-totals-shipping">
-                    <span>@shippingCostLabel: <span id="billingShippingCostLabel"></span></span>
+                    <span>@shippingCostLabel <span id="billingShippingCostLabel"></span></span>
                     <span class="confirm-shippingTotal" data-bind="text: cart().shippingTotal"></span>
                 </div>
                 <div class="confirm-totals-tax">
-                    <span>@taxesLabel :</span>
+                    <span>@taxesLabel </span>
                     <span class="confirm-taxTotal" data-bind="text: cart().taxTotal"></span>
                 </div>
                 <div class="confirm-totals-savings">
@@ -97,7 +101,7 @@
                     <span class="confirm-discountTotal" data-bind="text: cart().discount"></span>
                 </div>
                 <div class="confirm-totals-total">
-                    <span>@totalLabel :</span>
+                    <span>@totalLabel </span>
                     <span class="confirm-total" data-bind="text: cart().total"></span>
                 </div>
             </div>
@@ -154,7 +158,7 @@
                                 <span class="confirm-creditCardExpMonth" data-bind="text: expirationMonth"></span> - <span id="confirm-creditCardExpYear" data-bind="text: expirationYear"></span>
                             </li>
                             <li class="confirm-creditCardAmount">
-                                <span data-bind="text: formatCurrency(creditCardAmount(), 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span data-bind="text: formatCurrency(creditCardAmount(), { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })"></span>
                                 <span data-bind="text: $root.currencyCode"></span>
                             </li>
                         </ul>
@@ -164,7 +168,7 @@
                         <ul class="gift-cards" data-bind="with: giftCardPayment" id="confirm-giftCardContainer">
                             <li class="confirm-giftCardNumber" data-bind="text: giftCardNumber"></li>
                             <li class="confirm-giftCardAmount">
-                                <span data-bind="text: formatCurrency(giftCardAmount(), 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span data-bind="text: formatCurrency(giftCardAmount(), { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })"></span>
                                 <span data-bind="text: $root.currencyCode"></span>
                             </li>
                         </ul>
@@ -185,10 +189,10 @@
                 <button class="confirm-next-button" data-loading-text="@processing" data-bind="enable: enableToConfirm, click: goToNextPageClick">@nextvButtonLabel</button>
             </div>
         </div>
+          
 
-
-        <div class="confirm-data">
-            <input type="hidden" id="ConfirmItemPath" value="@Model.DeliveryItemPath" />
-        </div>
+            <div class="confirm-data">
+                <input type="hidden" id="ConfirmItemPath" value="@Model.DeliveryItemPath" />
+            </div>
     }
 </div>

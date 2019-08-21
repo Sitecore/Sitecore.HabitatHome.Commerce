@@ -1,7 +1,17 @@
-﻿
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2016 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
 @{
     var selectDeliveryOptionsHeader = Html.Sitecore().Field("Select Option per Item Header", Html.Sitecore().CurrentItem);
-    var deliveryOptionLabel = @Html.Sitecore().Field("Delivery Option Hint Text", Html.Sitecore().CurrentItem);
+    var deliveryOptionLabel = Html.Sitecore().CurrentItem["Delivery Option Hint Text"];
     var openDeliveryInfoLabel = Html.Sitecore().Field("Open Delivery Info Text", Html.Sitecore().CurrentItem);
     var closeDeliveryInfoLabel = Html.Sitecore().Field("Close Delivery Info Text", Html.Sitecore().CurrentItem);
     var deliverySelectedLabel = Html.Sitecore().Field("Delivery Selected Label", Html.Sitecore().CurrentItem);
@@ -10,7 +20,7 @@
 <div class="delivery-option-header">
     <h1>@selectDeliveryOptionsHeader</h1>
 </div>
-<div class="delivery-option-item" data-bind="foreach: {data: cart().cartLines, as: 'cartLine' }">
+<div class="delivery-option-item" data-bind="foreach: cart().cartLines">
     <div class="delivery-item-header">
         <div class="product-image-info">
             <div class="product-image">
@@ -22,13 +32,18 @@
             <div class="unfloat"></div>
         </div>
         <div class="ship-option-select">
-            <select data-bind="foreach: shippingOptions, attr: { id:'lineShippingPreference-'+ externalCartLineId }, value: selectedShippingOption">
+            <select data-bind="template: { name: 'pickByItem-ship-option-select-template', foreach: shippingOptions, as:'shipOption'}, attr: { id:'lineShippingPreference-'+ externalCartLineId }, value: selectedShippingOption"></select>
+            <script type="text/html" id="pickByItem-ship-option-select-template">
+                @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+                {
                 <!-- ko if: $index() == 0 -->
                 <option value="0">@deliveryOptionLabel</option>
-                <!-- /ko -->
-                <option data-bind="text: Name, value: ShippingOptionType.Value"></option>
-           
-            </select>
+ <!-- /ko -->
+ <!-- ko if: ShippingOptionType.Value != 4 -->
+                <option data-bind="text: shipOption.Name, value: shipOption.ShippingOptionType.Value"></option>
+ <!-- /ko -->
+                }
+            </script>
         </div>
     </div>
     <div class="delivery-item-content" data-bind="attr: { id:'AccordionContent-'+ externalCartLineId }, visible: showShipOptionContent()">

@@ -122,50 +122,50 @@
                             </td>
                             @if (Model.DisplayDeleteButtonColumn)
                             {
-                            <td class="shoppingcart-delete">
-                                <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}">
-                                    <span data-bind="click: $parents[1].removeItem"></span>
-                                </a>
-                                @if (Sitecore.Context.IsLoggedIn)
-                                {
-                                    <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
-                                        <i class="fa"></i>
-                                        <span>Move to My Wish List</span>
-                                    </button>
-                                }
-                            </td>
-                            }
+                                <td class="shoppingcart-delete">
+                                    <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
 
+                                    <!-- customization -->
+                                    @if (Sitecore.Context.IsLoggedIn)
+                                    {
+                                        <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                            <i class="fa"></i>
+                                            <span>Move to My Wish List</span>
+                                        </button>
+                                    }
+                                    <!--end customization -->
+                                </td>
+                            }
                         </tr>
-                    @if (Model.DisplaySubLines)
-                    {
-                        <!-- ko foreach: sublines -->
-                        <tr class="subline-row">
-                            <td colspan="3">
-                                <div class="flex-container">
-                                    <div class="shoppingcart-image td">
-                                        <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image"/></a>
-                                    </div>
-                                    <div class="shoppingcart-info td">
-                                        <a data-bind="attr:{'href' : productUrl}">
-                                            <h5 class="displayName" data-bind="text: displayName"></h5>
-                                        </a>
-                                        <div class="product-variant-information" data-bind="foreach: properties">
-                                            <div class="variant-information">
-                                                <span class="variant-label" data-bind="text: label"></span>
-                                                <span class="variant-value" data-bind="text: value"></span>
+                        @if (Model.DisplaySubLines)
+                        {
+                            <!-- ko foreach: sublines -->
+                            <tr class="subline-row">
+                                <td colspan="3">
+                                    <div class="flex-container">
+                                        <div class="shoppingcart-image td">
+                                            <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image" /></a>
+                                        </div>
+                                        <div class="shoppingcart-info td">
+                                            <a data-bind="attr:{'href' : productUrl}">
+                                                <h5 class="displayName" data-bind="text: displayName"></h5>
+                                            </a>
+                                            <div class="product-variant-information" data-bind="foreach: properties">
+                                                <div class="variant-information">
+                                                    <span class="variant-label" data-bind="text: label"></span>
+                                                    <span class="variant-value" data-bind="text: value"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td colspan="1" class="shoppingcart-quantity td">
-                                <text>@quantityLabel: </text> <lable class="quantity" data-bind="text: quantity"/>
-                            </td>
-                            <td colspan="2"></td>
-                        </tr>
-                        <!-- /ko -->
-                    }
+                                </td>
+                                <td colspan="1" class="shoppingcart-quantity td">
+                                    <text>@quantityLabel: </text> <lable class="quantity" data-bind="text: quantity" />
+                                </td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <!-- /ko -->
+                        }
                     </tbody>
                 </table>
             </div>

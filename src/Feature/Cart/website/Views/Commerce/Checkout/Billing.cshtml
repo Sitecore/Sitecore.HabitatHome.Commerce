@@ -123,7 +123,7 @@
                                 <div class="payment-amount">
                                     <div class="show-payment">
                                         <label for="creditCardPayment_Amount">@paymentAmountLabel *</label>
-                                        <input type="text" class="form-control" name="amount" id="creditCardPayment_Amount" data-bind="value: formatCurrency(creditCardAmount, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)" disabled>
+                                        <input type="text" class="form-control" name="amount" id="creditCardPayment_Amount" data-bind="value: formatCurrency(creditCardAmount, { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })" disabled>
                                     </div>
                                     <button class="validate-payment-btn" type="submit">@validatePaymentLabel</button>
                                 </div>
@@ -246,20 +246,20 @@
                         <div class="payment-summary order-summary-giftcard" data-bind="visible: $root.giftCardPayment().isAdded">
                             <span>@giftCardLabel</span>
                             <div>
-                                <span class="billing-giftcard-amount" data-bind="text: formatCurrency($root.giftCardPayment().giftCardAmountRawValue, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span class="billing-giftcard-amount" data-bind="text: formatCurrency($root.giftCardPayment().giftCardAmountRawValue, { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })"></span>
                                 <span data-bind="text: $root.currencyCode"></span>
                             </div>
                         </div>
                         <div class="payment-summary order-summary-creditcard" data-bind="visible: $root.creditCardPayment().isAdded">
                             <span>@creditCardLabel</span>
                             <div>
-                                <span id="billing-creditcard-amount" data-bind="text: formatCurrency($root.creditCardPayment().creditCardAmount, 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"></span>
+                                <span id="billing-creditcard-amount" data-bind="text: formatCurrency($root.creditCardPayment().creditCardAmount, { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })"></span>
                                 <span data-bind="text: $root.currencyCode"></span>
                             </div>
                         </div>
                         <div class="payment-summary order-summary-payment-total">
                             <span>@paymentTotalLabel</span>
-                            <span class="payment-total" data-bind="text: formatCurrency($root.paymentTotal(), 2, '@Model.CurrencyDecimalSeparator', '@Model.CurrencySymbol', '@Model.CurrencyGroupSeparator', @Model.CurrencySymbolPosition)"><span data-bind="text: $root.currencyCode"></span></span>
+                            <span class="payment-total" data-bind="text: formatCurrency($root.paymentTotal(), { precision: 2, decimalSeparator: '@Model.CurrencyDecimalSeparator', symbol: '@Model.CurrencySymbol', groupSeparator: '@Model.CurrencyGroupSeparator', symbolPosition: @Model.CurrencySymbolPosition })"><span data-bind="text: $root.currencyCode"></span></span>
                         </div>
                     </div>
                     <div class="billing-total-summary">
