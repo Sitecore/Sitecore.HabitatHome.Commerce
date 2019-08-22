@@ -8,7 +8,7 @@
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
-    "SitecoreIdentityServerUrl": "https://identityServer.habitathome.dev.local",
+    "SitecoreIdentityServerUrl": "https://habitathome-identityserver.dev.local",
     "AllowedOrigins": [
       "https://localhost:4200",
       "http://localhost:4200",
@@ -52,7 +52,7 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "434947B07E07ABEB02405CBCE54C83F20AE0141F",
+        "Thumbprint": "BF0D0806497BF327B6D5293F5B28A38F62F62922",
         "DefaultRoles": [
           "sitecore\\QA",
           "sitecore\\Commerce Business User"

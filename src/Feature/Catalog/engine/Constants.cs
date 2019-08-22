@@ -12,6 +12,7 @@
                 public const string InitializePricingBlock = "Habitat.block.InitializeEnvironmentPricing";
                 public const string InitializePromotionsBlock = "Habitat.block.InitializeEnvironmentPromotions";
                 public const string InitializeBundlesBlock = "Habitat.block.InitializeBundles";
+                public const string PopulateLineItemProductBlock = "Habitat.block.PopulateLineItemProductBlock";
             }
         }
     }
