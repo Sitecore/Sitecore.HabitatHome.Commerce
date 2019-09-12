@@ -301,7 +301,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
         }
 
         private async Task AssociateCatalogToBook(string bookName, string catalogName, CommercePipelineExecutionContext context)
-        { 
+        {
             // To persist entities conventionally and to prevent any race conditions, create a separate CommercePipelineExecutionContext object and CommerceContext object.
             var pipelineExecutionContext = new CommercePipelineExecutionContext(new CommerceContext(context.CommerceContext.Logger, context.CommerceContext.TelemetryClient)
             {
@@ -314,7 +314,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             pipelineExecutionContext.CommerceContext.RemoveHeader(CoreConstants.PolicyKeys);
 
             var arg = new CatalogAndBookArgument(bookName, catalogName);
-            await _associateCatalogToBookPipeline.Run(arg, context).ConfigureAwait(false);
+            await _associateCatalogToBookPipeline.Run(arg, pipelineExecutionContext).ConfigureAwait(false);
         }
     }
 }
