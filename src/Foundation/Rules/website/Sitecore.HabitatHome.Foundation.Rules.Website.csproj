@@ -70,7 +70,7 @@
       <ItemGroup>
         <PackageReference Include="Sitecore.Analytics" Version="9.2.0-*" />
         <PackageReference Include="Sitecore.Analytics.Model" Version="9.2.0-*" />
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="13.0.*" />
         <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
         <PackageReference Include="Sitecore.XConnect" Version="9.2.0-*" />
         <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
