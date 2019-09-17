@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>The Sitecore Commerce Habitat Plugin Sample.</Description>
@@ -33,12 +33,11 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="4.0.*" />
       </ItemGroup>
     </Otherwise>
   </Choose>
