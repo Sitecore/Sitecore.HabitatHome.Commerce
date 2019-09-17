@@ -142,6 +142,7 @@
     <Content Include="Views\Commerce\Checkout\_ByItem_PickUpFromStore.cshtml" />
     <Content Include="Views\Commerce\Checkout\_PickDeliveryByItem.cshtml" />
     <Content Include="Views\Commerce\Checkout\_PickUpFromStore.cshtml" />
+    <Content Include="App_Config\Include\Y.Commerce.Engine\z.HabitatHome.Commerce.Connect.Carts.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -164,6 +165,7 @@
     <Compile Include="Models\JsonResults\ShoppingCartJsonResult.cs" />
     <Compile Include="Models\JsonResults\ShoppingCartLineJsonResult.cs" />
     <Compile Include="Pipelines\GetAllShipmentOptions.cs" />
+    <Compile Include="Pipelines\TranslateCartLineToEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IShoppingCartLinesRepository.cs" />
     <Compile Include="Repositories\ShoppingCartLinesRepository.cs" />
