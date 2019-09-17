@@ -1,161 +1,156 @@
-﻿//-----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Copyright 2016 Sitecore Corporation A/S
-// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file 
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 // except in compliance with the License. You may obtain a copy of the License at
 //       http://www.apache.org/licenses/LICENSE-2.0
 //
-// Unless required by applicable law or agreed to in writing, software distributed under the 
-// License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
-// either express or implied. See the License for the specific language governing permissions 
+// Unless required by applicable law or agreed to in writing, software distributed under the
+// License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+// either express or implied. See the License for the specific language governing permissions
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
 
 var defaultCountryCode = "USA";
 
 function AddressEditorViewModel(data, accountPageUrl, addressId, rootElementRef) {
-    var states = function ($element, text) { $($element).button(text); }
-    var InitModel = function (data, reset) {
-        if (!data) {
-            return;
-        }
+  var self = this;
+  var states = function ($element, text) { $($element).button(text); };
 
-        if (reset) {
-            self.addresses.removeAll();
-            self.countries.removeAll();
-        }
+  function CountryStateViewModel(name, code) {
+    this.name = name;
+    this.code = code;
+  }
 
-        if (data.Addresses) {
-            $.each(data.Addresses, function () {
-                self.addresses.push(new AddressEditorItemViewModel(this));
-            });
-        }
+  function AddressEditorItemViewModel(address) {
+    let self = this;
 
-        if (data.Countries) {
-            $.each(data.Countries, function (code, name) {
-                self.countries.push(new CountryStateViewModel(name, code));
-            });
-        }
+    self.externalId = address ? ko.observable(address.ExternalId) : ko.observable();
+    self.partyId = address ? ko.observable(address.ExternalId) : ko.observable();
+    self.name = address ? ko.validatedObservable(address.Name).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
+    self.address1 = address ? ko.validatedObservable(address.Address1).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
+    self.city = address ? ko.validatedObservable(address.City).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
+    self.state = address ? ko.validatedObservable(address.State).extend({ required: false }) : ko.validatedObservable().extend({ required: false });
+    self.zipPostalCode = address ? ko.validatedObservable(address.ZipPostalCode).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
+    self.country = address ? ko.validatedObservable(address.Country).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
+    self.isPrimary = address ? ko.observable(address.IsPrimary) : ko.observable();
+    self.fullAddress = address ? ko.observable(address.FullAddress) : ko.observable();
+
+    self.states = ko.observableArray();
+
+    self.country.subscribe(function (countryCode) {
+      self.states.removeAll();
+    });
+  }
+
+  var InitModel = function (data, reset) {
+    if (!data) {
+      return;
     }
 
-    var EnableButtons = function (enable) {
-        self.enableDelete(enable);
-        self.enableSave(enable);
-        self.enableCancel(enable);
+    if (reset) {
+      self.addresses.removeAll();
+      self.countries.removeAll();
     }
 
-    ////////////////////////////////////////////////////// INNER PRIVATE MODELS ////////////////////////////////////////////////////>>
-    function CountryStateViewModel(name, code) {
-        this.name = name;
-        this.code = code;
-    };
-
-    function AddressEditorItemViewModel(address) {
-        var self = this;
-
-        var populate = (address != null);
-
-        self.externalId = populate ? ko.observable(address.ExternalId) : ko.observable();
-        self.partyId = populate ? ko.observable(address.ExternalId) : ko.observable();
-        self.name = populate ? ko.validatedObservable(address.Name).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
-        self.address1 = populate ? ko.validatedObservable(address.Address1).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
-        self.city = populate ? ko.validatedObservable(address.City).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
-        self.state = populate ? ko.validatedObservable(address.State).extend({ required: false }) : ko.validatedObservable().extend({ required: false });
-        self.zipPostalCode = populate ? ko.validatedObservable(address.ZipPostalCode).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
-        self.country = populate ? ko.validatedObservable(address.Country).extend({ required: true }) : ko.validatedObservable().extend({ required: true });
-        self.isPrimary = populate ? ko.observable(address.IsPrimary) : ko.observable();
-        self.fullAddress = populate ? ko.observable(address.FullAddress) : ko.observable();
-
-        self.states = ko.observableArray();
-
-        self.country.subscribe(function (countryCode) {
-            self.states.removeAll();
-        });
+    if (data.Addresses) {
+      $.each(data.Addresses, function () {
+        self.addresses.push(new AddressEditorItemViewModel(this));
+      });
     }
-    ////////////////////////////////////////////////////// INNER PRIVATE MODELS ////////////////////////////////////////////////////<<
 
-    var self = this;
+    if (data.Countries) {
+      $.each(data.Countries, function (code, name) {
+        self.countries.push(new CountryStateViewModel(name, code));
+      });
+    }
+  };
 
-    self.accountPageUrl = accountPageUrl;
-    self.rootElement = $(rootElementRef);
+  var EnableButtons = function (enable) {
+    self.enableDelete(enable);
+    self.enableSave(enable);
+    self.enableCancel(enable);
+  };
 
-    self.addresses = ko.observableArray();
-    self.countries = ko.observableArray();
+  // //////////////////////////////////////////////////// INNER PRIVATE MODELS ////////////////////////////////////////////////////
+  self = this;
 
-    InitModel(data);
+  self.accountPageUrl = accountPageUrl;
+  self.rootElement = $(rootElementRef);
 
-    self.showLoader = ko.observable(true);
-    self.enableDelete = ko.observable(false);
-    self.enableSave = ko.observable(true);
-    self.enableCancel = ko.observable(true);
+  self.addresses = ko.observableArray();
+  self.countries = ko.observableArray();
 
-    self.address = ko.validatedObservable(new AddressEditorItemViewModel());
-    self.selectedAddress = ko.observable();
+  InitModel(data);
 
-    self.selectedAddress.subscribe(function (externalId) {
-        var address = ko.utils.arrayFirst(this.addresses(), function (a) {
-            if (a.externalId() === externalId) {
-                return a;
-            }
+  self.showLoader = ko.observable(true);
+  self.enableDelete = ko.observable(false);
+  self.enableSave = ko.observable(true);
+  self.enableCancel = ko.observable(true);
 
-            return null;
-        });
+  self.address = ko.validatedObservable(new AddressEditorItemViewModel());
+  self.selectedAddress = ko.observable();
 
-        if (address) {
-            self.address(address);
-            self.enableDelete(true);
+  self.selectedAddress.subscribe(function (externalId) {
+    var address = ko.utils.arrayFirst(this.addresses(), function (a) {
+      if (a.externalId() === externalId) {
+        return a;
+      }
+
+      return null;
+    });
+
+    if (address) {
+      self.address(address);
+      self.enableDelete(true);
+    } else {
+      self.address(new AddressEditorItemViewModel());
+      self.enableDelete(false);
+    }
+  }.bind(this));
+
+  if (addressId) {
+    self.selectedAddress(addressId);
+  }
+
+  self.saveAddress = function () {
+    if (self.address.errors().length === 0) {
+      states(self.rootElement.find("#saveAddress"), 'loading');
+      EnableButtons(false);
+
+      var address = JSON.parse(ko.toJSON(self.address));
+
+      AjaxService.Post("/api/cxa/AccountAddress/AddressEditorModify", address, function (data, success, sender) {
+        if (data.Success) {
+          self.reload(data);
+          states(self.rootElement.find("#saveAddress"), 'reset');
         } else {
-            self.address(new AddressEditorItemViewModel());
-            self.enableDelete(false);
+          self.enableSave(true);
         }
-    }.bind(this));
-
-    if (addressId) {
-        self.selectedAddress(addressId);
+      });
+    } else {
+      self.address.errors.showAllMessages();
+      self.rootElement.find('#addressBook-Name').focus();
     }
+  };
 
-    self.saveAddress = function () {
+  self.deleteAddress = function () {
+    states(self.rootElement.find("#deleteAddress"), "loading");
+    EnableButtons(false);
 
-        if (self.address.errors().length === 0) {
-            states(self.rootElement.find("#saveAddress"), 'loading');
-            EnableButtons(false);
+    AjaxService.Post("/api/cxa/AccountAddress/AddressEditorDelete", { addressId: self.address().externalId() }, function (data, success, sender) {
+      self.reload(data);
+      states(self.rootElement.find("#deleteAddress"), "reset");
+    });
+  };
 
-            var address = JSON.parse(ko.toJSON(self.address));
+  self.reload = function (data) {
+    InitModel(data, true);
 
-            AjaxService.Post("/api/cxa/AccountAddress/AddressEditorModify", address, function (data, success, sender) {
-                if (data.Success) {
-                    self.reload(data);
-                    states(self.rootElement.find("#saveAddress"), 'reset');
-                }
-                else {
-                    self.enableSave(true);
-                }
-            });
+    self.selectedAddress("");
+    self.address(new AddressEditorItemViewModel());
 
-        }
-        else {
-            self.address.errors.showAllMessages();
-            self.rootElement.find('#addressBook-Name').focus();
-        }
-    }
-
-    self.deleteAddress = function () {
-        states(self.rootElement.find("#deleteAddress"), "loading");
-        EnableButtons(false);
-
-        AjaxService.Post("/api/cxa/AccountAddress/AddressEditorDelete", { addressId: self.address().externalId() }, function (data, success, sender) {
-            self.reload(data);
-            states(self.rootElement.find("#deleteAddress"), "reset");
-        });
-    }
-
-    self.reload = function (data) {
-        InitModel(data, true);
-
-        self.selectedAddress("");
-        self.address(new AddressEditorItemViewModel());
-
-        self.enableDelete(false);
-        self.enableSave(true);
-        self.enableCancel(true);
-    }
+    self.enableDelete(false);
+    self.enableSave(true);
+    self.enableCancel(true);
+  };
 }

@@ -4,7 +4,7 @@ Copyright © 2017 Javan Makhmali
  */
 (function () { }).call(this),
     function () {
-        if (document.querySelector('body').getAttribute('class').indexOf('on-page-editor') > -1) {
+    if (document.querySelector('body').getAttribute('class') && document.querySelector('body').getAttribute('class').indexOf('on-page-editor') > -1) {
             return;
         }
         var t, e, n, r, u, o, i, a, s, l, c, d;

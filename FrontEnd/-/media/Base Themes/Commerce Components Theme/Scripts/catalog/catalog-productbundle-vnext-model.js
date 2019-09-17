@@ -1,10 +1,10 @@
-var BundleVariant = function(key, value) {
+var BundleVariant = function (key, value) {
   var variant = this;
   variant.key = key;
   variant.value = value;
 };
 
-var BundleVariantCombination = function(variantCombinationEL) {
+var BundleVariantCombination = function (variantCombinationEL) {
   var variantCombination = this;
   var $variantCombination = $(variantCombinationEL);
 
@@ -12,7 +12,7 @@ var BundleVariantCombination = function(variantCombinationEL) {
   variantCombination.variants = ko.observableArray();
 
   function setup() {
-    $variantCombination.find('.bundle-variant-combination-value').each(function() {
+    $variantCombination.find('.bundle-variant-combination-value').each(function () {
       var key = this.getAttribute('data-variant-key');
       var value = this.getAttribute('data-variant-value');
       variantCombination.variants.push(new BundleVariant(key, value));
@@ -28,7 +28,7 @@ BundleVariantCombination.prototype = {
    *
    * @returns {boolean} true if variant combination is a empty, false otherwise
    */
-  isEmptyVariant: function() {
+  isEmptyVariant: function () {
     return this.variants().length === 0;
   },
 
@@ -39,7 +39,7 @@ BundleVariantCombination.prototype = {
    * @param {string} value2 - the second value to be compared
    * @returns {boolean} true if both values matches, false otherwise
    */
-  isSameValue: function(value1, value2) {
+  isSameValue: function (value1, value2) {
     return value1.toUpperCase() === value2.toUpperCase();
   },
 
@@ -50,10 +50,10 @@ BundleVariantCombination.prototype = {
    * @param {Object[]} variants - the variant combinations to be verify
    * @returns {boolean} true if variants provided is a valid combinations, false otherwise
    */
-  isValidVariants: function(variants) {
+  isValidVariants: function (variants) {
     var variantCombination = this;
-    return variantCombination.variants().every(function(validVariant) {
-      return variants.some(function(variant) {
+    return variantCombination.variants().every(function (validVariant) {
+      return variants.some(function (variant) {
         return (
           variantCombination.isSameValue(variant.key, validVariant.key) &&
           variantCombination.isSameValue(variant.value, validVariant.value)
@@ -63,7 +63,7 @@ BundleVariantCombination.prototype = {
   }
 };
 
-var BundleGroupVNext = function(vm, bundleGroupEL) {
+var BundleGroupVNext = function (vm, bundleGroupEL) {
   var bundleGroup = this;
 
   bundleGroup.vm = vm;
@@ -74,13 +74,13 @@ var BundleGroupVNext = function(vm, bundleGroupEL) {
   bundleGroup.variantCombinations = [];
   bundleGroup.isNoVariant = ko.observable(false);
   bundleGroup.isFixedVariant = ko.observable(false);
-  bundleGroup.isMultiVariant = ko.pureComputed(function() {
+  bundleGroup.isMultiVariant = ko.pureComputed(function () {
     return !(bundleGroup.isNoVariant() || bundleGroup.isFixedVariant());
   });
   bundleGroup.isValidSelection = ko.observable(true);
   bundleGroup.selectedVariantsId = ko.observable('');
   bundleGroup.selectedVariants = ko.observable('');
-  bundleGroup.setArrowClass = ko.pureComputed(function() {
+  bundleGroup.setArrowClass = ko.pureComputed(function () {
     return bundleGroup.isMultiVariant() ? 'collapse-arrow' : '';
   });
 
@@ -96,9 +96,9 @@ BundleGroupVNext.prototype = {
   /**
    * Create bundle variant combination data from markup
    */
-  createBundleVariantCombination: function() {
+  createBundleVariantCombination: function () {
     var bundleGroup = this;
-    bundleGroup.$bundleGroup.find('.bundle-variant-combination').each(function() {
+    bundleGroup.$bundleGroup.find('.bundle-variant-combination').each(function () {
       bundleGroup.variantCombinations.push(new BundleVariantCombination(this));
     });
   },
@@ -106,7 +106,7 @@ BundleGroupVNext.prototype = {
   /**
    * Update variant type indicators and assign default variant to bundle group.
    */
-  prepareVariantCombination: function() {
+  prepareVariantCombination: function () {
     var defaultVariantCombination = this.variantCombinations[0];
     if (this.variantCombinations.length === 1) {
       if (defaultVariantCombination.isEmptyVariant()) {
@@ -127,7 +127,7 @@ BundleGroupVNext.prototype = {
    * @param {object} bundleGroupHeaderEL - DOM element that is triggering the event
    * @param {object} e - event triggered
    */
-  toggleBundleGroupBody: function(bundleGroupHeaderEL, e) {
+  toggleBundleGroupBody: function (bundleGroupHeaderEL, e) {
     if (this.isMultiVariant()) {
       var $bundleGroup = $(e.currentTarget).closest('.bundle-group');
       var bundleGroupBodyIsVisible = $bundleGroup.hasClass('active');
@@ -145,7 +145,7 @@ BundleGroupVNext.prototype = {
    *
    * @param {object} $bundleGroup - targeted bundle group jQuery object
    */
-  hideBundleGroupBody: function($bundleGroup) {
+  hideBundleGroupBody: function ($bundleGroup) {
     $bundleGroup
       .removeClass('active')
       .find('.bundle-group-body-container')
@@ -157,7 +157,7 @@ BundleGroupVNext.prototype = {
    *
    * @param {object} $bundleGroup - targeted bundle group jQuery object
    */
-  showBundleGroupBody: function($bundleGroup) {
+  showBundleGroupBody: function ($bundleGroup) {
     $bundleGroup
       .siblings('.bundle-group')
       .removeClass('active')
@@ -174,7 +174,7 @@ BundleGroupVNext.prototype = {
    * Event handler for variant selection changes. Manages the bundle group validation flag
    * and selected variants information.
    */
-  onVariantSelectionChanged: function() {
+  onVariantSelectionChanged: function () {
     MessageContext.ClearAllMessages();
 
     var bundleGroup = this;
@@ -193,7 +193,7 @@ BundleGroupVNext.prototype = {
       bundleGroup.selectedVariants([]);
 
       MessageContext.PublishError('productinformation', bundleGroup.vm.bundleErrorMessage);
-      ProductSelectionContext.SelectedProductInvalid(bundleGroup, null);
+      ProductSelectionContext.SelectedProductInvalid(bundleGroup);
     }
   },
 
@@ -202,9 +202,9 @@ BundleGroupVNext.prototype = {
    *
    * @returns {Object[]} array of key-value pair objects from the variants selected
    */
-  getVariantSelections: function() {
+  getVariantSelections: function () {
     var variantSelections = [];
-    this.$bundleGroup.find('.group-variant-section .group-variant-selection').each(function() {
+    this.$bundleGroup.find('.group-variant-section .group-variant-selection').each(function () {
       var $selection = $(this).find('.group-variant-select');
       variantSelections.push({
         key: $selection.attr('data-variant-key'),
@@ -219,9 +219,9 @@ BundleGroupVNext.prototype = {
    *
    * @param {Object []} variants - the selected variants
    */
-  getVariantId: function(variants) {
+  getVariantId: function (variants) {
     var variantId = null;
-    this.variantCombinations.some(function(variantCombination) {
+    this.variantCombinations.some(function (variantCombination) {
       var isValidVariant = variantCombination.isValidVariants(variants);
       if (isValidVariant) {
         variantId = variantCombination.variantId;
@@ -256,12 +256,11 @@ ProductBundleVNextViewModel.prototype = {
   /**
    * Prepare the data needed for product bundle
    */
-  prepareBundle: function() {
+  prepareBundle: function () {
     var $bundleGroups = this.$componentRoot.find('.bundle-group');
     if ($bundleGroups.length) {
       this.createBundleGroup($bundleGroups);
       this.prepareBundleSelection();
-      this.prepareBundlePrice();
     }
   },
 
@@ -270,9 +269,9 @@ ProductBundleVNextViewModel.prototype = {
    *
    * @param {object} $bundleGroups - the target bundle group markup
    */
-  createBundleGroup: function($bundleGroups) {
+  createBundleGroup: function ($bundleGroups) {
     var vm = this;
-    $bundleGroups.each(function() {
+    $bundleGroups.each(function () {
       vm.bundleGroups.push(new BundleGroupVNext(vm, this));
     });
   },
@@ -280,14 +279,14 @@ ProductBundleVNextViewModel.prototype = {
   /**
    * Prepare the bundle data needed for adding into cart.
    */
-  prepareBundleSelection: function() {
+  prepareBundleSelection: function () {
     if (this.isValidProductBundle()) {
       var bundleSelection = new BundleSelection();
 
       bundleSelection.catalogName = this.catalogName;
       bundleSelection.productId = this.bundleId;
 
-      this.bundleGroups().forEach(function(bundleGroup) {
+      this.bundleGroups().forEach(function (bundleGroup) {
         var bundledItem = new BundleItemSelection();
 
         bundledItem.catalogName = bundleSelection.catalogName;
@@ -297,8 +296,8 @@ ProductBundleVNextViewModel.prototype = {
         bundleSelection.addBundleItemSelection(bundledItem);
       });
 
-      ProductSelectionContext.SelectedProductValid(this, null);
-      ProductSelectionContext.SelectedBundleProduct(this, bundleSelection, null);
+      ProductSelectionContext.SelectedProductValid(this);
+      ProductSelectionContext.SelectedBundleProduct(this, bundleSelection);
     }
   },
 
@@ -307,29 +306,13 @@ ProductBundleVNextViewModel.prototype = {
    *
    * @returns {boolean} true if bundle is valid, false otherwise
    */
-  isValidProductBundle: function() {
+  isValidProductBundle: function () {
     var bundleGroups = this.bundleGroups();
     return (
       bundleGroups.length &&
-      bundleGroups.every(function(bundleGroup) {
+      bundleGroups.every(function (bundleGroup) {
         return bundleGroup.isValidSelection();
       })
     );
-  },
-
-  /**
-   * Prepare the pricing data to be display.
-   */
-  prepareBundlePrice: function() {
-    var listPrice = this.$bundleHeader.attr('data-bundle-list-price');
-    var adjustedPrice = this.$bundleHeader.attr('data-bundle-adjusted-price');
-    var isOnSale = this.$bundleHeader.attr('data-bundle-is-on-sale');
-    var savingsMessage = this.$bundleHeader.attr('data-bundle-savings-percentage');
-    var data = {
-      productId: this.bundleId,
-      sourceProductVarianElement: this.component.RootElement
-    };
-
-    ProductPriceContext.SetPrice(this, listPrice, adjustedPrice, isOnSale === 'true', savingsMessage, data);
   }
 };

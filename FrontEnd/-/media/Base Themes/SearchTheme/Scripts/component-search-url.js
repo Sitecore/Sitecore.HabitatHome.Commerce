@@ -106,7 +106,6 @@ XA.component.search.url = (function ($, document) {
             url += "?f=" + facetList.join(',').toLowerCase();
             url += (dataProp.s) ? "&s=" + dataProp.s : "";
             url += (dataProp.l) ? "&l=" + dataProp.l : "";
-            url += (dataProp.q) ? "&q=" + encodeURIComponent(dataProp.q) : "";
             url += itemId ? "&itemid=" + itemId : "";
 
             url += this.getFacetParams(dataProp, sig);
@@ -142,7 +141,7 @@ XA.component.search.url = (function ($, document) {
                     clearFacetName = facet.substring(facet.indexOf('_') + 1);
                     facetSignature = facet.substr(0, facet.indexOf('_'));
                     if (searchResultsSignature === facetSignature && specialParams.indexOf(clearFacetName) === -1) {
-                        url += "&" + clearFacetName + "=" + encodeURI(clearIdData(dataProp[facet]));
+                        url += "&" + clearFacetName + "=" + encodeURIComponent(clearIdData(dataProp[facet]));
                     }
                 }
             }
@@ -182,8 +181,8 @@ XA.component.search.url = (function ($, document) {
             return url;
         },
         createSiteUrl: function(url, siteName) {
-            if (typeof siteName !== "undefined" && siteName != null && siteName != "") {
-                return url + "&site=" + siteName;
+            if (typeof siteName !== "undefined" && siteName !== null && siteName !== "") {
+                return url + "&sc_site=" + siteName;
             }
             return url;
         },

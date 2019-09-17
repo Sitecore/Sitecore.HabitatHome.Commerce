@@ -1,330 +1,328 @@
-﻿function LineItemShippingMethod(id, description) {
-    var self = this;
+// -----------------------------------------------------------------------
+// Copyright 2016 Sitecore Corporation A/S
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+// except in compliance with the License. You may obtain a copy of the License at
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software distributed under the
+// License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+// either express or implied. See the License for the specific language governing permissions
+// and limitations under the License.
+// -------------------------------------------------------------------------------------------
 
-    self.id = id;
-    self.description = description;
+function LineItemShippingMethod(id, description) {
+  var self = this;
+
+  self.id = id;
+  self.description = description;
 }
 
 function ShipmentData(data) {
-    self = this;
+  var self = this;
 
-    self.partyId = data.PartyID;
-    self.lineIds = data.LineIDs;
-    self.shippingMethodId = data.ShippingMethodId;
-    self.shippingMethodName = data.ShippingMethodName;
+  self.partyId = data.PartyID;
+  self.lineIds = data.LineIDs;
+  self.shippingMethodId = data.ShippingMethodId;
+  self.shippingMethodName = data.ShippingMethodName;
 }
 
 function LineItemData(cartData, line, cart) {
-    var self = this;
+  var self = this;
 
-    self.cart = cart;
-    // lines //
-    self.image = line.Image;
-    self.displayName = line.DisplayName;
-    self.sublines = ko.observableArray();
-    if (line != null) {
-        $(line.SubLines).each(function () {
-            var lineItem = new LineItemData(cartData, this, null);
-            self.sublines.push(lineItem);
-        });
+  self.cart = cart;
+  // lines //
+  self.image = line.Image;
+  self.displayName = line.DisplayName;
+  self.sublines = ko.observableArray();
+  if (line && line.SubLines) {
+    $(line.SubLines).each(function () {
+      var lineItem = new LineItemData(cartData, this, null);
+      self.sublines.push(lineItem);
+    });
+  }
+
+  self.colorInformation = line.ColorInformation;
+  self.sizeInformation = line.SizeInformation;
+  self.styleInformation = line.StyleInformation;
+  self.giftCardAmountInformation = line.GiftCardAmountInformation;
+  self.properties = [];
+  var props = line.Properties || {};
+  Object.keys(props).forEach(function (key, index) {
+    if (props[key]) {
+      self.properties.push({
+        label: key,
+        value: props[key]
+      });
     }
+  });
 
-    // TODO: Schema specific
-    self.colorInformation = line.ColorInformation;
-    self.sizeInformation = line.SizeInformation;
-    self.styleInformation = line.StyleInformation;
-    self.giftCardAmountInformation = line.GiftCardAmountInformation;
-    self.properties = [];
-    var props = line.Properties || {};
-    Object.keys(props).forEach(function(key, index) {
-        if (props[key]) {
-            self.properties.push({
-                label: key,
-                value: props[key]
-            });
-        }
+  self.lineItemDiscount = line.LineDiscount;
+  self.quantity = line.Quantity;
+  self.linePrice = line.LinePrice;
+  self.lineTotal = line.LineTotal;
+  self.externalCartLineId = line.ExternalCartLineId;
+  self.productUrl = line.ProductUrl;
+  self.discountOfferNames = line.DiscountOfferNames;
+  self.shippingMethodName = line.ShippingMethodName;
+  self.address = line.Address;
+  self.shouldShowSavings = ko.observable(self.lineItemDiscount !== "$0.00");
+  self.shouldShowDiscountOffers = ko.observable(self.discountOfferNames.length > 0);
+
+  // shipping //
+  self.selectedShippingOption = ko.observable('0');
+
+  self.isLineShipAll = ko.observable(cartData && cartData.Shipments && cartData.Shipments.length > 1);
+  self.isLineShipToEmail = ko.observable(false);
+  self.showShipOptionContent = ko.observable(false);
+  self.selectedShippingOptionName = ko.observable($('#SelectDeliveryFirstMessage').val());
+  self.toggleShipContent = function () {
+    self.showShipOptionContent(!self.showShipOptionContent());
+  };
+
+  self.selectedShippingOption.subscribe(function (option) {
+    self.isLineShipAll(option === 1);
+    self.isLineShipToEmail(option === 3);
+    self.showShipOptionContent(option !== 0);
+
+    var match = ko.utils.arrayFirst(self.shippingOptions(), function (o) {
+      return o.ShippingOptionType.Value === option;
     });
 
-    self.lineItemDiscount = line.LineDiscount;
-    self.quantity = line.Quantity;
-    self.linePrice = line.LinePrice;
-    self.lineTotal = line.LineTotal;
-    self.externalCartLineId = line.ExternalCartLineId;
-    self.productUrl = line.ProductUrl;
-    self.discountOfferNames = line.DiscountOfferNames;
-    self.shippingMethodName = line.ShippingMethodName;
-    self.address = line.Address;
-    self.shouldShowSavings = ko.observable(self.lineItemDiscount !== "$0.00" ? true : false);
-    self.shouldShowDiscountOffers = ko.observable(self.discountOfferNames.length > 0 ? true : false);
+    if (match) {
+      self.selectedShippingOptionName(match.Name);
+    }
+  }.bind(this));
 
-    // shipping //
-    self.selectedShippingOption = ko.observable('0');
+  self.shippingMethods = ko.observableArray();
+  self.shippingMethod = ko.validatedObservable().extend({ required: true });
+  self.selectShippingMethod = function (shippingMethod) {
+    if (shippingMethodsArray.indexOf(self.externalCartLineId) === -1) {
+      shippingMethodsArray.push(self.externalCartLineId);
+    }
+  };
 
-    self.isLineShipAll = ko.observable(cartData.Shipments != null && cartData.Shipments.length > 1);
-    self.isLineShipToEmail = ko.observable(false);
-    self.showShipOptionContent = ko.observable(false);
-    self.selectedShippingOptionName = ko.observable($('#SelectDeliveryFirstMessage').val());
-    self.toggleShipContent = function () {
-        self.showShipOptionContent(!self.showShipOptionContent());
-    };
+  self.shippingAddress = ko.validatedObservable(new AddressViewModel({ "ExternalId": self.externalCartLineId }));
+  self.selectedShippingAddress = ko.observable("UseOther");
+  self.selectedShippingAddress.subscribe(function (id) {
+    var match = ko.utils.arrayFirst(self.cart.userAddresses(), function (a) {
+      if (a.externalId() === id && id !== "UseOther") {
+        return a;
+      }
 
-    self.selectedShippingOption.subscribe(function (option) {
-        self.isLineShipAll(option === 1);
-        self.isLineShipToEmail(option === 3);
-        self.showShipOptionContent(option !== 0);
+      return null;
+    });
 
-        var match = ko.utils.arrayFirst(self.shippingOptions(), function (o) {
-            return o.ShippingOptionType.Value === option;
-        });
+    self.shippingMethod("");
+    self.shippingMethods.removeAll();
+    if (match) {
+      var newAddress = match.clone();
+      var newId = self.cart.getUniqueAddressId().toString();
+      newAddress.externalId(newId);
+      newAddress.partyId(newId);
+      self.shippingAddress(newAddress);
+    } else {
+      self.shippingAddress(new AddressViewModel({ "ExternalId": self.externalCartLineId }));
+    }
+  }.bind(this));
+  self.shippingAddressFieldChanged = function () {
+    var index = shippingMethodsArray.indexOf(self.externalCartLineId);
+    if (index !== -1) {
+      shippingMethodsArray.splice(index, 1);
+    }
+    self.shippingMethod("");
+    self.shippingMethods.removeAll();
+  };
 
-        if (match != null) {
-            self.selectedShippingOptionName(match.Name);
-        }
-    }.bind(this));
+  self.shippingEmail = ko.validatedObservable("").extend({ required: true, email: true });
+  self.shippingEmail.subscribe(function (email) {
+    var index = shippingMethodsArray.indexOf(self.externalCartLineId);
+    if (email.trim().length > 0 && index === -1) {
+      shippingMethodsArray.push(self.externalCartLineId);
+    } else if (email.trim().length === 0 && index !== -1) {
+      shippingMethodsArray.splice(index, 1);
+    }
+  }.bind(this));
+  self.shippingEmailContent = ko.observable("");
 
-    self.shippingMethods = ko.observableArray();
-    self.shippingMethod = ko.validatedObservable().extend({ required: true });
-    self.selectShippingMethod = function (shippingMethod) {
-        if (shippingMethodsArray.indexOf(self.externalCartLineId) === -1) {
-            shippingMethodsArray.push(self.externalCartLineId);
-        }
-    };
+  self.shippingOptions = ko.observableArray();
+  if (line.ShippingOptions) {
+    $(line.ShippingOptions).each(function () {
+      self.shippingOptions.push(this);
+    });
 
-    self.shippingAddress = ko.validatedObservable(new AddressViewModel({ "ExternalId": self.externalCartLineId }));
-    self.selectedShippingAddress = ko.observable("UseOther");
-    self.selectedShippingAddress.subscribe(function (id) {
-        var match = ko.utils.arrayFirst(self.cart.userAddresses(), function (a) {
-            if (a.externalId() === id && id !== "UseOther") {
-                return a;
+    // Handle edit mode.
+    if (line.ShippingOptions && line.ShippingOptions.length > 0) {
+      var shippingOption = line.ShippingOptions[0];
+      if (shippingOption && shippingOption.ShippingOptionType) {
+        self.selectedShippingOption(shippingOption.ShippingOptionType.Value);
+      }
+    }
+  }
+
+  self.handleEditMode = function (data) {
+    if (data && data.Cart && data.Cart.Shipments && data.Cart.Shipments.length > 0) {
+      selectedShippingOption = self.selectedShippingOption();
+
+      $(data.Cart.Shipments).each(function () {
+        var shipment = this;
+        if (shipment.LineIDs) {
+          foundLineId = ko.utils.arrayFirst(shipment.LineIDs, function (a) {
+            if (a === self.externalCartLineId) {
+              return a;
             }
 
             return null;
-        });
+          });
 
-        self.shippingMethod("");
-        self.shippingMethods.removeAll();
-        if (match != null) {
-            var newAddress = match.clone();
-            var newId = self.cart.getUniqueAddressId().toString();
-            newAddress.externalId(newId);
-            newAddress.partyId(newId);
-            self.shippingAddress(newAddress);
-        } else {
-            self.shippingAddress(new AddressViewModel({ "ExternalId": self.externalCartLineId }));
-        }
-    }.bind(this));
-    self.shippingAddressFieldChanged = function () {
-        var index = shippingMethodsArray.indexOf(self.externalCartLineId);
-        if (index !== -1) {
-            shippingMethodsArray.splice(index, 1);
-        }
-        self.shippingMethod("");
-        self.shippingMethods.removeAll();
-    };
-    
-    self.shippingEmail = ko.validatedObservable("").extend({ required: true, email: true });
-    self.shippingEmail.subscribe(function (email) {
-        var index = shippingMethodsArray.indexOf(self.externalCartLineId);
-        if (email.trim().length > 0 && index === -1) {
-            shippingMethodsArray.push(self.externalCartLineId);
-        }
-        else if (email.trim().length === 0 && index !== -1) {
-            shippingMethodsArray.splice(index, 1);
-        }
+          if (foundLineId) {
+            // ShipToAddress
+            if (selectedShippingOption === "1" && shipment.ShipmentEditModel) {
+              self.shippingMethods.removeAll();
+              $.each(shipment.ShipmentEditModel.ShippingMethods, function (i, v) {
+                self.shippingMethods.push(new method(v.Description, v.ExternalId, v.Name));
+              });
 
-    }.bind(this));
-    self.shippingEmailContent = ko.observable("");
-
-    self.shippingOptions = ko.observableArray();
-    if (line.ShippingOptions !== null) {
-        $(line.ShippingOptions).each(function () {
-            self.shippingOptions.push(this);
-        });
-
-        // Handle edit mode.
-        if (line.ShippingOptions != null && line.ShippingOptions.length > 0) {
-            var shippingOption = line.ShippingOptions[0];
-            if (shippingOption != null) {
-                if (shippingOption.ShippingOptionType != null) {
-                    self.selectedShippingOption(shippingOption.ShippingOptionType.Value);
-                }
-            }
-        }
-    }
-
-    self.handleEditMode = function (data) {
-        if (data.Cart.Shipments != null && data.Cart.Shipments.length > 0) {
-            selectedShippingOption = self.selectedShippingOption();
-
-            $(data.Cart.Shipments).each(function () {
-                var shipment = this;
-                var foundShipment = null;
-                if (shipment.LineIDs != null) {
-
-                    foundLineId = ko.utils.arrayFirst(shipment.LineIDs, function (a) {
-                        if (a === self.externalCartLineId) {
-                            return a;
-                        }
-
-                        return null;
-                    });
-
-                    if (foundLineId != null) {
-
-                        // ShipToAddress
-                        if (selectedShippingOption == "1") {
-                            if (shipment.ShipmentEditModel != null) {
-                                var methods = "";
-                                self.shippingMethods.removeAll();
-                                $.each(shipment.ShipmentEditModel.ShippingMethods, function (i, v) {
-                                    self.shippingMethods.push(new method(v.Description, v.ExternalId, v.Name));
-                                });
-
-                                var sm = ko.utils.arrayFirst(self.shippingMethods(), function (a) {
-                                    if (a.description === shipment.ShippingMethodName) {
-                                        return a;
-                                    }
-
-                                    return null;
-                                });
-
-                                if (sm != null) {
-                                    self.shippingMethod(sm);
-                                }
-                            }
-                        }
-
-                        // Email
-                        if (selectedShippingOption == '3') {
-                            self.shippingEmail(shipment.Email);
-                            self.shippingEmailContent(shipment.EmailContent);
-                        }
-                    }
-                }
-            });
-
-            if (selectedShippingOption == "1") {
-                self.isLineShipAll(true);
-                self.isLineShipToEmail(false);
-            }
-
-            if (selectedShippingOption == '3') {
-                self.isLineShipToEmail(true);
-                self.isLineShipAll(false);
-            }
-
-            self.showShipOptionContent(true);
-        }
-    }
-}
-
-function CartViewModel(data, userAddresses) {
-    var self = this;
-
-    self.cartLines = ko.observableArray();
-    self.userAddresses = ko.observableArray();
-    if (userAddresses != null) {
-        self.userAddresses(userAddresses);
-    }
-
-    self.getUniqueAddressId = function () {
-
-        var newId = 10;
-        for (i = 10 ; i < 1000 ; i++) {
-            var match = ko.utils.arrayFirst(self.cartLines(), function (a) {
-                if (a.shippingAddress() != null && a.shippingAddress().externalId() === i.toString()) {
-                    return a;
+              var sm = ko.utils.arrayFirst(self.shippingMethods(), function (a) {
+                if (a.description === shipment.ShippingMethodName) {
+                  return a;
                 }
 
                 return null;
-            });
+              });
 
-            if (match == null) {
-                newId = i;
-                break;
+              if (sm) {
+                self.shippingMethod(sm);
+              }
             }
+
+            // Email
+            if (selectedShippingOption === '3') {
+              self.shippingEmail(shipment.Email);
+              self.shippingEmailContent(shipment.EmailContent);
+            }
+          }
+        }
+      });
+
+      if (selectedShippingOption === "1") {
+        self.isLineShipAll(true);
+        self.isLineShipToEmail(false);
+      }
+
+      if (selectedShippingOption === '3') {
+        self.isLineShipToEmail(true);
+        self.isLineShipAll(false);
+      }
+
+      self.showShipOptionContent(true);
+    }
+  };
+}
+
+function CartViewModel(data, userAddresses) {
+  var self = this;
+
+  self.cartLines = ko.observableArray();
+  self.userAddresses = ko.observableArray();
+  if (userAddresses) {
+    self.userAddresses(userAddresses);
+  }
+
+  self.getUniqueAddressId = function () {
+    var newId = 10;
+    for (let i = 10; i < 1000; i++) {
+      var match = ko.utils.arrayFirst(self.cartLines(), function (a) {
+        if (a.shippingAddress() && a.shippingAddress().externalId() === i.toString()) {
+          return a;
         }
 
-        return newId;
+        return null;
+      });
+
+      if (match === null) {
+        newId = i;
+        break;
+      }
     }
 
-    //existing promo codes
-    self.promoCodes = ko.observableArray();
-    if (data != null) {
-        $(data.PromoCodes).each(function () {
-            self.promoCodes.push(this);
-        });
-    }
+    return newId;
+  };
 
-    //promo code input
-    self.promoCode = ko.observable();
-    self.hasPromoCode = ko.computed(function () {
-        return self.promoCode();
+  // existing promo codes
+  self.promoCodes = ko.observableArray();
+  if (data && data.PromoCodes) {
+    $(data.PromoCodes).each(function () {
+      self.promoCodes.push(this);
     });
+  }
 
-    self.subTotal = ko.observable(data != null ? data.Subtotal : 0);
-    self.taxTotal = ko.observable(data != null ? data.TaxTotal : 0);
-    self.total = ko.observable(data != null ? data.Total : 0);
-    self.totalAmount = ko.observable(data != null ? data.TotalAmount : 0);
-    self.discount = ko.observable(data != null ? data.Discount : 0);
-    self.shippingTotal = ko.observable(data != null ? data.ShippingTotal : 0);
-    self.isLineShipAll = data != null && data.Shipments != null && data.Shipments.length > 1;
+  // promo code input
+  self.promoCode = ko.observable();
+  self.hasPromoCode = ko.computed(function () {
+    return self.promoCode();
+  });
 
-    self.shipments = [];
-    if (data != null) {
-        $(data.Shipments).each(function () {
-            self.shipments.push(new ShipmentData(this));
-        });
-    }
+  self.subTotal = ko.observable(data ? data.Subtotal : 0);
+  self.taxTotal = ko.observable(data ? data.TaxTotal : 0);
+  self.total = ko.observable(data ? data.Total : 0);
+  self.totalAmount = ko.observable(data ? data.TotalAmount : 0);
+  self.discount = ko.observable(data ? data.Discount : 0);
+  self.shippingTotal = ko.observable(data ? data.ShippingTotal : 0);
+  self.isLineShipAll = data && data.Shipments && data.Shipments.length > 1;
 
-    self.parties = [];
-    if (data != null) {
-        $(data.Parties).each(function () {
-            self.parties.push(new AddressViewModel(this));
-        });
-    }
+  self.shipments = [];
+  if (data && data.Shipments) {
+    $(data.Shipments).each(function () {
+      self.shipments.push(new ShipmentData(this));
+    });
+  }
 
-    if (data != null) {
-        $(data.Lines).each(function () {
-            var lineItem = new LineItemData(data, this, self);
+  self.parties = [];
+  if (data && data.Parties) {
+    $(data.Parties).each(function () {
+      self.parties.push(new AddressViewModel(this));
+    });
+  }
 
-            if (self.isLineShipAll) {
-                var shipment = ko.utils.arrayFirst(self.shipments, function (a) {
-                    if (a.lineIds != null && a.lineIds.length > 0) {
-                        var found = ko.utils.arrayFirst(a.lineIds, function (l) {
-                            if (l === lineItem.externalCartLineId) {
-                                return l;
-                            }
-                        })
+  if (data && data.Lines) {
+    $(data.Lines).each(function () {
+      var lineItem = new LineItemData(data, this, self);
 
-                        if (found != null) {
-                            return this;
-                        }
+      if (self.isLineShipAll) {
+        var shipment = ko.utils.arrayFirst(self.shipments, function (a) {
+          if (a.lineIds && a.lineIds.length > 0) {
+            var found = ko.utils.arrayFirst(a.lineIds, function (l) {
+              return l === lineItem.externalCartLineId ? l : null;
+            });
 
-                        return null;
-                    }
-
-                    return null;
-                });
-
-                if (shipment != null) {
-                    lineItem.shippingMethod(new LineItemShippingMethod(shipment.shippingMethodId, shipment.shippingMethodName))
-
-                    var party = ko.utils.arrayFirst(self.parties, function (a) {
-                        if (a.externalId() === shipment.partyId) {
-                            return a;
-                        }
-
-                        return null;
-                    });
-
-                    if (party != null) {
-                        lineItem.shippingAddress(party);
-                    }
-                }
+            if (found) {
+              return this;
             }
 
-            self.cartLines.push(lineItem);
+            return null;
+          }
+
+          return null;
         });
-    }
+
+        if (shipment) {
+          lineItem.shippingMethod(new LineItemShippingMethod(shipment.shippingMethodId, shipment.shippingMethodName));
+
+          var party = ko.utils.arrayFirst(self.parties, function (a) {
+            if (a.externalId() === shipment.partyId) {
+              return a;
+            }
+
+            return null;
+          });
+
+          if (party) {
+            lineItem.shippingAddress(party);
+          }
+        }
+      }
+
+      self.cartLines.push(lineItem);
+    });
+  }
 }
