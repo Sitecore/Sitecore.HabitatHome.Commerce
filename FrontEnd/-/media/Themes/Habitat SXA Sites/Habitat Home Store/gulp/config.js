@@ -130,19 +130,7 @@ export default {
         'promo': 'component-promo.scss',
         'richtext': 'component-richtext-content.scss',
         'tabs': 'component-tabs.scss',
-        'file-list': 'component-file-list.scss',
-        'file-list': 'component-file-list.scss',
-        'media-link': 'component-media-link.scss',
-        'search': 'component-search-other.scss',
-        'galleria': 'component-galleria.scss',
-        'archive': 'component-archive.scss',
-        'field-editor': 'component-field-editor.scss',
-        'map': 'component-map.scss',
-        'page-content': 'component-richtext-content.scss',
-        'page-list': 'component-page-list.scss',
-        'tag-cloud': 'component-tag-cloud.scss',
-        'tag-list': 'component-tag-list.scss',
-        'title': 'component-title.scss'
+        'file-list': 'component-file-list.scss'
     },
 
     loginQuestions: [{
