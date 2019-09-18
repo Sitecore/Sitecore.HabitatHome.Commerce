@@ -43,43 +43,46 @@
     </div>
     <div class="shipall-addresses" data-bind="visible: $root.isAuthenticated">
         <label data-bind="attr: { for:'ShippingAddressSelect-'+ $parent.externalCartLineId }">@chooseAddressLabel</label>
-        <select data-bind="foreach: $root.userAddresses, value: $parent.selectedShippingAddress, attr: { id:'ShippingAddressSelect-'+ $parent.externalCartLineId }" title="@addressLabel" title2="@otherAddressLabel">
-            <!-- ko if: externalId() != 'UseShipping' -->
-            <option data-bind="attr:{ value:externalId }, text: fullAddress"></option>
+        <select data-bind="template: { name: 'byItem-shipall-addresses-template', foreach: $root.userAddresses, as:'address'}, value: $parent.selectedShippingAddress" title="@addressLabel" title2="@otherAddressLabel"></select>
+    </div>
+    <script type="text/html" id="byItem-shipall-addresses-template">
+        @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+        <!-- ko if: address.externalId() != 'UseShipping' -->
+        <option data-bind="attr:{ value: address.externalId }, text: address.fullAddress"></option>
+        <!-- /ko -->
+        }
+    </script>
+        <div class="shipall-name">
+            <label data-bind="attr:{for:'ShipAllItemsInput-Name-'+ $parent.externalCartLineId}">@shippingNameLabel<span class="required">*</span></label>
+            <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Name-'+ $parent.externalCartLineId}, value: name, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@shippingNameLabelPlaceholder">
+        </div>
+        <div class="shipall-city">
+            <label data-bind="attr:{for:'ShipAllItemsInput-City-'+ $parent.externalCartLineId}">@cityLabel<span class="required">*</span> </label>
+            <input type="text" data-bind="attr:{id:'ShipAllItemsInput-City-'+ $parent.externalCartLineId}, value: city, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@cityLabelPlaceholder">
+        </div>
+
+        <div class="shipall-country">
+            <label data-bind="attr:{for:'ShipAllItemsInput-Country-'+ $parent.externalCartLineId}">@countryLabel<span class="required">*</span></label>
+            <select data-bind="attr:{id:'ShipAllItemsInput-Country-'+ $parent.externalCartLineId}, options: $root.countries, optionsText:'country', optionsValue:'code', value: country, event: {change: $parent.shippingAddressFieldChanged}"></select>
+        </div>
+        <div class="shipall-state">
+            <label data-bind="attr:{for:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}">@stateLabel</label>
+            <!-- ko if: states == 'undefined' -->
+            <select data-bind="attr:{id:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}, options: $root.states, optionsText:'name', optionsValue:'code', value: state, event: {change: $parent.shippingAddressFieldChanged}"></select>
             <!-- /ko -->
-        </select>
-    </div>
-
-    <div class="shipall-name">
-        <label data-bind="attr:{for:'ShipAllItemsInput-Name-'+ $parent.externalCartLineId}">@shippingNameLabel<span class="required">*</span></label>
-        <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Name-'+ $parent.externalCartLineId}, value: name, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@shippingNameLabelPlaceholder">
-    </div>
-    <div class="shipall-city">
-        <label data-bind="attr:{for:'ShipAllItemsInput-City-'+ $parent.externalCartLineId}">@cityLabel<span class="required">*</span> </label>
-        <input type="text" data-bind="attr:{id:'ShipAllItemsInput-City-'+ $parent.externalCartLineId}, value: city, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@cityLabelPlaceholder">
-    </div>
-
-    <div class="shipall-country">
-        <label data-bind="attr:{for:'ShipAllItemsInput-Country-'+ $parent.externalCartLineId}">@countryLabel<span class="required">*</span></label>
-        <select data-bind="attr:{id:'ShipAllItemsInput-Country-'+ $parent.externalCartLineId}, options: $root.countries, optionsText:'country', optionsValue:'code', value: country, event: {change: $parent.shippingAddressFieldChanged}"></select>
-    </div>
-    <div class="shipall-state">
-        <label data-bind="attr:{for:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}">@stateLabel</label>
-        <!-- ko if: states == 'undefined' -->
-        <select data-bind="attr:{id:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}, options: $root.states, optionsText:'name', optionsValue:'code', value: state, event: {change: $parent.shippingAddressFieldChanged}"></select>
-        <!-- /ko -->
-        <!-- ko if: states != 'undefined' -->
-        <input type="text" data-bind="attr:{id:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}, value: state, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@stateLabelPlaceholder">
-        <!-- /ko -->
-    </div>
-    <div class="shipall-address">
-        <label data-bind="attr:{for:'ShipAllItemsInput-Address-'+ $parent.externalCartLineId}">@address1Label</label>
-        <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Address-'+ $parent.externalCartLineId}, value: address1, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@address1LabelPlaceholder">
-    </div>
-    <div class="shipall-zipcode">
-        <label data-bind="attr:{for:'ShipAllItemsInput-Zipcode-'+ $parent.externalCartLineId}">@zipcodeLabel</label>
-        <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Zipcode-'+ $parent.externalCartLineId}, value: zipPostalCode, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@zipcodeLabelPlaceholder">
-    </div>
+            <!-- ko if: states != 'undefined' -->
+            <input type="text" data-bind="attr:{id:'ShipAllItemsInput-State-'+ $parent.externalCartLineId}, value: state, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@stateLabelPlaceholder">
+            <!-- /ko -->
+        </div>
+        <div class="shipall-address">
+            <label data-bind="attr:{for:'ShipAllItemsInput-Address-'+ $parent.externalCartLineId}">@address1Label</label>
+            <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Address-'+ $parent.externalCartLineId}, value: address1, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@address1LabelPlaceholder">
+        </div>
+        <div class="shipall-zipcode">
+            <label data-bind="attr:{for:'ShipAllItemsInput-Zipcode-'+ $parent.externalCartLineId}">@zipcodeLabel</label>
+            <input type="text" data-bind="attr:{id:'ShipAllItemsInput-Zipcode-'+ $parent.externalCartLineId}, value: zipPostalCode, event: {change: $parent.shippingAddressFieldChanged}" placeholder="@zipcodeLabelPlaceholder">
+        </div>
     <input type="text" data-bind="attr:{id:'ShipAllItemsInput-ExternalId-'+ $parent.externalCartLineId}, value: externalId" style="visibility: hidden; display: none;" />
 </div>
 <div class="shipall-options" data-bind="attr:{id:'shipAllOptionsContainer'+ externalCartLineId}">
@@ -89,12 +92,12 @@
     </div>
     <div class="shipall-options-items">
         <div class="shipall-options-item" data-bind="foreach: shippingMethods, attr:{id:'shippingMethodsContainer-'+ externalCartLineId}">
-
+            <!-- HabitatHome customization -->
             <!--ko ifnot:  description == 'Pickup From Store'-->
             <input type="radio" data-bind="attr: {'name': 'shippingMethodId-' + $parent.externalCartLineId ,'id': 'method-' + description + $parent.externalCartLineId, 'data-name':description, pvalue: id}, checkMe: $parent.shippingMethod, event: {change: $parent.selectShippingMethod}">
             <label data-bind="text: description, attr: {'for': 'method-' + description + $parent.externalCartLineId}"></label>
             <!--/ko-->
+            <!-- end HabitatHome customization -->
         </div>
     </div>
 </div>
-

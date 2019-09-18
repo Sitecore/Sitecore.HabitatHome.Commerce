@@ -53,9 +53,11 @@
         <div data-bind="attr: { id:'Email-'+ externalCartLineId }, visible: isLineShipToEmail" class="shipbymail-section">
             @Html.Partial("~/Views/Commerce/Checkout/_ByItem_SendByEmail.cshtml")
         </div>
+        <!-- HabitatHome customization -->
         <div data-bind="attr: { id:'Pickup-'+ externalCartLineId }, visible: isLinePickUp" class="shipall-section">
             @Html.Partial("~/Views/Commerce/Checkout/_ByItem_PickUpFromStore.cshtml")
         </div>
+        <!-- end HabitatHome customization -->
         <div class="unfloat"></div>
     </div>
     <div class="delivery-item-status">

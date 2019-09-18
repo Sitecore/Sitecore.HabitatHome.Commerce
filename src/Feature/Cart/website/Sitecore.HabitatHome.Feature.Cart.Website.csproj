@@ -137,7 +137,6 @@
     <Content Include="Views\Cart\ShoppingCartLines.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
-    <Content Include="Views\Commerce\Checkout\Billing.cshtml" />
     <Content Include="Views\Commerce\Checkout\Delivery.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_PickUpFromStore.cshtml" />
     <Content Include="Views\Commerce\Checkout\_PickDeliveryByItem.cshtml" />

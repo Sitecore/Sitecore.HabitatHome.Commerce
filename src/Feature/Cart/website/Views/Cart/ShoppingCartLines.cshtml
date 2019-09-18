@@ -55,117 +55,117 @@
                         </thead>
                     }
                     <tbody data-bind="foreach: cartLines">
-                        <tr>
-                            <td class="shoppingcart-image">
-                                <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image" /></a>
-                            </td>
-                            <td class="shoppingcart-info">
-                                <a data-bind="attr:{'href' : productUrl}">
-                                    <h5 class="displayName" data-bind="text: displayName"></h5>
-                                </a>
-                                <div class="product-variant-information" data-bind="foreach: properties">
-                                    <div class="variant-information">
-                                        <span class="variant-label" data-bind="text: label"></span>
-                                        <span class="variant-value" data-bind="text: value"></span>
-                                    </div>
+                    <tr>
+                        <td class="shoppingcart-image">
+                            <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image" /></a>
+                        </td>
+                        <td class="shoppingcart-info">
+                            <a data-bind="attr:{'href' : productUrl}">
+                                <h5 class="displayName" data-bind="text: displayName"></h5>
+                            </a>
+                            <div class="product-variant-information" data-bind="foreach: properties">
+                                <div class="variant-information">
+                                    <span class="variant-label" data-bind="text: label"></span>
+                                    <span class="variant-value" data-bind="text: value"></span>
                                 </div>
-                                @if (Model.DisplayShippingInformation)
-                                {
-                                    <p class="shoppingcart-delivery" data-bind="if: shippingMethodName">
-                                        <span>@deliveryLabel</span>
-                                        <span class="shippingMethodName" data-bind="text: shippingMethodName"></span>
-                                    </p>
-                                    <div class="shoppingcart-delivery" data-bind="if: address">
-                                        <span>@addressLabel</span>
-                                        <ul class="lineShippingAddress">
-                                            <li>
-                                                <span data-bind="text: address.Address1"></span>
-                                                <span data-bind="text: address.City"></span>
-                                            </li>
-                                            <li>
-                                                <span data-bind="text: address.State"></span>
-                                                <span data-bind="text: address.ZipPostalCode"></span>
-                                            </li>
-                                            <li>
-                                                <span data-bind="text: address.Country"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                }
-                            </td>
-                            @if (Model.DisplayUnitPriceColumn)
+                            </div>
+                            @if (Model.DisplayShippingInformation)
                             {
-                                <td class="shoppingcart-price">
-                                    <span class="price" data-bind="text: linePrice"></span>
-                                    <p data-bind="visible: discountOfferNames.length > 0">
-                                        <span>@discountLabel</span>
-                                        <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
-                                    </p>
-                                </td>
+                                <p class="shoppingcart-delivery" data-bind="if: shippingMethodName">
+                                    <span>@deliveryLabel</span>
+                                    <span class="shippingMethodName" data-bind="text: shippingMethodName"></span>
+                                </p>
+                                <div class="shoppingcart-delivery" data-bind="if: address">
+                                    <span>@addressLabel</span>
+                                    <ul class="lineShippingAddress">
+                                        <li>
+                                            <span data-bind="text: address.Address1"></span>
+                                            <span data-bind="text: address.City"></span>
+                                        </li>
+                                        <li>
+                                            <span data-bind="text: address.State"></span>
+                                            <span data-bind="text: address.ZipPostalCode"></span>
+                                        </li>
+                                        <li>
+                                            <span data-bind="text: address.Country"></span>
+                                        </li>
+                                    </ul>
+                                </div>
                             }
-                            @if (Model.DisplayQuantityColumn)
-                            {
-                                <td class="shoppingcart-quantity">
-                                    <div>
-                                        <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display: none"></button>
-                                        <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating">
-                                        <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display: none"></button>
-                                    </div>
-                                </td>
-                            }
-                            <td class="shoppingcart-total">
-                                <span class="total" data-bind="text: lineTotal"></span>
+                        </td>
+                        @if (Model.DisplayUnitPriceColumn)
+                        {
+                            <td class="shoppingcart-price">
+                                <span class="price" data-bind="text: linePrice"></span>
                                 <p data-bind="visible: discountOfferNames.length > 0">
-                                    <span>@savingsLabel</span>
-                                    <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
+                                    <span>@discountLabel</span>
+                                    <span data-bind="text: discountOfferNames" class="shoppingcart-saving"></span>
                                 </p>
                             </td>
-                            @if (Model.DisplayDeleteButtonColumn)
-                            {
-                                <td class="shoppingcart-delete">
-                                    <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
-
-                                    <!-- customization -->
-                                    @if (Sitecore.Context.IsLoggedIn)
-                                    {
-                                        <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
-                                            <i class="fa"></i>
-                                            <span>Move to My Wish List</span>
-                                        </button>
-                                    }
-                                    <!--end customization -->
-                                </td>
-                            }
-                        </tr>
-                        @if (Model.DisplaySubLines)
+                        }
+                        @if (Model.DisplayQuantityColumn)
                         {
-                            <!-- ko foreach: sublines -->
-                            <tr class="subline-row">
-                                <td colspan="3">
-                                    <div class="flex-container">
-                                        <div class="shoppingcart-image td">
-                                            <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image" /></a>
-                                        </div>
-                                        <div class="shoppingcart-info td">
-                                            <a data-bind="attr:{'href' : productUrl}">
-                                                <h5 class="displayName" data-bind="text: displayName"></h5>
-                                            </a>
-                                            <div class="product-variant-information" data-bind="foreach: properties">
-                                                <div class="variant-information">
-                                                    <span class="variant-label" data-bind="text: label"></span>
-                                                    <span class="variant-value" data-bind="text: value"></span>
-                                                </div>
+                            <td class="shoppingcart-quantity">
+                                <div>
+                                    <button class="decrease" data-bind="event: { click: $parents[1].decreaseQuantity }, disable: $parents[1].quntityUpdating" style="display: none"></button>
+                                    <input class="quantity" min="1" type="number" placeholder="1" data-bind="event: { change: $parents[1].updateQuantity }, value: quantity, valueUpdate: 'input', fireChange:true, attr: {'data-ajax-lineitemid': externalCartLineId}, disable: $parents[1].quntityUpdating">
+                                    <button class="increase" data-bind="event: { click: $parents[1].increaseQuantity } , disable: $parents[1].quntityUpdating" style="display: none"></button>
+                                </div>
+                            </td>
+                        }
+                        <td class="shoppingcart-total">
+                            <span class="total" data-bind="text: lineTotal"></span>
+                            <p data-bind="visible: discountOfferNames.length > 0">
+                                <span>@savingsLabel</span>
+                                <span data-bind="text: lineItemDiscount" class="shoppingcart-total-saving"></span>
+                            </p>
+                        </td>
+                        @if (Model.DisplayDeleteButtonColumn)
+                        {
+                            <td class="shoppingcart-delete">
+                                <a class="remove-line" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}"><span data-bind="click: $parents[1].removeItem"></span></a>
+
+                                <!-- HabitatHome customization -->
+                                @if (Sitecore.Context.IsLoggedIn)
+                                {
+                                    <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                        <i class="fa"></i>
+                                        <span>Move to My Wish List</span>
+                                    </button>
+                                }
+                                <!-- end HabitatHome customization -->
+                            </td>
+                        }
+                    </tr>
+                    @if (Model.DisplaySubLines)
+                    {
+                        <!-- ko foreach: sublines -->
+                        <tr class="subline-row">
+                            <td colspan="3">
+                                <div class="flex-container">
+                                    <div class="shoppingcart-image td">
+                                        <a data-bind="attr:{'href' : productUrl}"><img data-bind="attr: {src: image}" alt="" pid="image"/></a>
+                                    </div>
+                                    <div class="shoppingcart-info td">
+                                        <a data-bind="attr:{'href' : productUrl}">
+                                            <h5 class="displayName" data-bind="text: displayName"></h5>
+                                        </a>
+                                        <div class="product-variant-information" data-bind="foreach: properties">
+                                            <div class="variant-information">
+                                                <span class="variant-label" data-bind="text: label"></span>
+                                                <span class="variant-value" data-bind="text: value"></span>
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td colspan="1" class="shoppingcart-quantity td">
-                                    <text>@quantityLabel: </text> <lable class="quantity" data-bind="text: quantity" />
-                                </td>
-                                <td colspan="2"></td>
-                            </tr>
-                            <!-- /ko -->
-                        }
+                                </div>
+                            </td>
+                            <td colspan="1" class="shoppingcart-quantity td">
+                                <text>@quantityLabel: </text> <lable class="quantity" data-bind="text: quantity"/>
+                            </td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <!-- /ko -->
+                    }
                     </tbody>
                 </table>
             </div>

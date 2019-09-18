@@ -54,9 +54,11 @@
         <div class="delivery-options" data-bind="visible: $root.isShipItems" style="display:none;">
             @Html.Partial("~/Views/Commerce/Checkout/_PickDeliveryByItem.cshtml")
         </div>
+        <!-- HabitatHome customization -->
         <div class="shipall-section" data-bind="visible: $root.isPickUp" style="display:none;">
             @Html.Partial("~/Views/Commerce/Checkout/_PickUpFromStore.cshtml")
         </div>
+        <!-- end HabitatHome customization -->
         <div class="buttons-row">
             <a class="btn-delivery-prev" href="@Model.PreviousPageLink">@continueShoppingLabel</a>
             <button class="btn-delivery-next" id="ToBillingButton" data-loading-text="@processing" data-bind="enable: enableToBilling, click: goToNextPageClick">@toBillingLabel</button>

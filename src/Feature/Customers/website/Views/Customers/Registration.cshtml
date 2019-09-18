@@ -5,8 +5,10 @@
 @model Sitecore.Commerce.XA.Feature.Account.Models.RegistrationUserRenderingModel
 
 @{
+    <!-- HabitatHome customization -->
     if (Model != null)
     {
+    <!-- end HabitatHome customization -->
         var registering = @Html.Sitecore().CurrentItem["Create Account Button In-progress Label"];
 
 <div @Html.Sxa().Component("cxa-register-component", Model.Attributes)>
@@ -19,12 +21,16 @@
     else
     {
         <div class="registeration-form" data-cxa-component-class="RegistrationForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
+            <!-- HabitatHome customization -->
             @using (Ajax.BeginRouteForm("RootApiRoutes", new { action = "ExtendedRegistration", controller = "Customers" }, new AjaxOptions { OnBegin = "RegistrationForm.OnBegin", OnSuccess = "RegistrationForm.OnSuccess", OnComplete = "RegistrationForm.OnComplete", HttpMethod = "Post" }, new { @id = "RegisterForm" }))
             {
-
+            <!-- end HabitatHome customization -->
+                @*<h1>@System.Web.Mvc.UrlHelper.GenerateUrl("RootsApiRoutes", null, null,
+                        new System.Web.Routing.RouteValueDictionary(new {action = "Registration", controller = "Account", }), Ajax.RouteCollection, Ajax.ViewContext.RequestContext, false);</h1>*@
                 @Html.AntiForgeryToken()
                 @Html.ValidationSummary(true)
 
+                <!-- HabitatHome customization -->
                 <div class="register-firstname">
                     <label for="FirstName">@Html.Sitecore().Field("First Name Label", Html.Sitecore().CurrentItem)</label>
                     @Html.TextBoxFor(m => m.FirstName,
@@ -51,6 +57,7 @@
                                   })
                     @Html.ValidationMessageFor(m => m.LastName)
                 </div>
+                <!-- end HabitatHome customization -->
 
                 <div class="register-username">
                     <label for="UserName">@Html.Sitecore().Field("Email Address Label", Html.Sitecore().CurrentItem)</label>
@@ -109,5 +116,7 @@
         </div>
     }
 </div>
-        }
+<!-- HabitatHome customization -->
     }
+}
+<!-- end HabitatHome customization -->

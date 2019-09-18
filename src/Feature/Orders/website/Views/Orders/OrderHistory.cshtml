@@ -6,9 +6,7 @@
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
 @using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderHistory.DataSourceFields
-
 @model OrderHistoryRenderingModel
-
 
 <div @Html.Sxa().Component("cxa-orderhistory-component", Model.Attributes) data-cxa-component-class="OrderHistory" data-cxa-component-initialized="false" data-cxa-component-model="OrdersViewModel" data-cxa-component-type="component">
     @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
@@ -35,19 +33,23 @@
                             <td colspan="4" class="text-center">@Html.Sitecore().CurrentItem["No Order Message"]</td>
                         </tr>
                     </tbody>
+                    <!-- HabitatHome customization -->
                     <tbody data-bind="foreach: orders()">
                         <!--ko ifnot: status() == 'StoreOrder' -->
-                        
+                    <!-- end HabitatHome customization -->
                         <tr>
                             <td class="order-id"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
                             <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
                             <td class="order-date"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderDate"></a></td>
                             <td><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }"><span class="view-order-details-button"></span></a></td>
                         </tr>
+                        <!-- HabitatHome customization -->
                         <!--/ko-->
+                        <!-- end HabitatHome customization -->
                     </tbody>
                 </table>
 
+                <!-- HabitatHome customization -->
                 @Html.Sitecore().Placeholder("order-history-divider")
 
                 <table data-bind="visible: orders().length">
@@ -61,7 +63,6 @@
                     </thead>
                     <tbody data-bind="foreach: orders()">
                         <!--ko if: status() == 'StoreOrder' -->
-
                         <tr>
                             <td class="order-id" width="50%"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: orderId"></a></td>
                             <td class="order-status"><a data-bind="attr:{ href: '@Model.OrderDetailsLink' +'?id=' + externalId() }, text: status"></a></td>
@@ -71,8 +72,7 @@
                         <!--/ko-->
                     </tbody>
                 </table>
-
-
+                <!-- end HabitatHome customization -->
             </div>
         </div>
     }

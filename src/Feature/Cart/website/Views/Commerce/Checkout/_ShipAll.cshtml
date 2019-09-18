@@ -95,8 +95,10 @@
     <div class="shipall-options-items">
         <div class="shipall-options-item" data-bind="foreach: shippingMethods">
             <div class="shipping-option">
+                <!-- HabitatHome customization -->
                 <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id, id: id}, checkMe: $root.shippingMethod">
                 <label data-bind="text: description, attr: {'for': id}"></label>
+                <!-- end HabitatHome customization -->
             </div>
         </div>
     </div>

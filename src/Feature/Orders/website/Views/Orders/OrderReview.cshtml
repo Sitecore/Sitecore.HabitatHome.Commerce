@@ -14,7 +14,9 @@
 @using Sitecore.Commerce.XA.Feature.Cart.Models
 @model ReviewRenderingModel
 
+<!-- HabitatHome customization -->
 <div @Html.Sxa().Component("cxa-checkoutreview-component", Model.Attributes)>
+<!-- end HabitatHome customization -->
     @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         @Model.ErrorMessage
@@ -63,11 +65,11 @@
         var deliveryPageLocation = Model.DeliveryPageLocation;
         var billingPageLocation = Model.BillingPageLocation;
 
-       
+        <!-- HabitatHome customization: Removed div class="component-content" -->
         <div class="order-total-label"><h4>@orderTotalLabel</h4></div>
         <div class="order-confirm-totals">
             <div class="confirm-total-summary">
-                <h4 class="order-information-label">@orderInformationLabel</h4>
+                <h4 class="order-information-label" >@orderInformationLabel</h4>
                 <div class="confirm-totals-subtotal">
                     <span>@subtotalLabel </span>
                     <span class="confirm-subTotal" data-bind="text: cart().subTotal"></span>
@@ -84,6 +86,7 @@
                     <span>@taxesLabel </span>
                     <span class="confirm-taxTotal" data-bind="text: cart().taxTotal"></span>
                 </div>
+                <!-- HabitatHome customization -->
                 <div class="confirm-totals-savings">
                     <span>Benefits applied :</span><br />
                     <div class="confirm-discountTotal">
@@ -95,11 +98,11 @@
                     </ul>
                     </div>
                 </div>
-               
                 <div class="confirm-totals-savings">
                     <span>@savingsLabel :</span>
                     <span class="confirm-discountTotal" data-bind="text: cart().discount"></span>
                 </div>
+                <!-- end HabitatHome customization -->
                 <div class="confirm-totals-total">
                     <span>@totalLabel </span>
                     <span class="confirm-total" data-bind="text: cart().total"></span>
