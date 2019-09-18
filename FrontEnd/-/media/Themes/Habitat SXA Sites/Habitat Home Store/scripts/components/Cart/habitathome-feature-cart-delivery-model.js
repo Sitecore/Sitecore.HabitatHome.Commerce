@@ -16,11 +16,6 @@ var method = null;
 
 function DeliveryDataViewModel() {
   var self = this;
-  // HabitatHome customization
-  var modelCartLines;
-  //self.cart = ko.observable("");
-  // end HabitatHome customization
-
   var Country = function (name, code) {
     this.country = name;
     this.code = code;
@@ -532,9 +527,7 @@ function DeliveryDataViewModel() {
 
       // HabitatHome customization
       // self.cart(new CartViewModel(data.Cart, self.userAddresses()));
-      var deliveryCartModel = new DeliveryCartViewModel(data.Cart, self.userAddresses());
-      self.cart(deliveryCartModel);
-      modelCartLines = self.cart().cartLines();
+      self.cart(new DeliveryCartViewModel(data.Cart, self.userAddresses()));
       // end HabitatHome customization
 
       if (data.OrderShippingOptions) {
@@ -915,7 +908,6 @@ function DeliveryDataViewModel() {
         "PartyID": partyId
       });
     } else if (orderShippingPreference === 2) {
-      var storeId = self.store().externalId();
       // HabitatHome customization
       var inpName = 'pickUpOptions';
       var inpPickUpStore = $('input[name=' + inpName + ']:checked');
@@ -954,16 +946,24 @@ function DeliveryDataViewModel() {
             "City": self.store().City,
             "State": self.store().State,
             "ZipPostalCode": self.store().Zip,
-            "ExternalId": storeId,
+            "ExternalId": partyId,
             "PartyId": partyId
           });
 
           shipping.push({
-            "ShippingMethodID": self.shipToStoreDeliveryMethod().ExternalId,
-            "ShippingMethodName": self.shipToStoreDeliveryMethod().Name,
-            "ShippingPreferenceType": orderShippingPreference,
-            "PartyID": storeId
+            "ShippingMethodID": self.pickupMethod().id,
+            "ShippingMethodName": self.pickupMethod().description,
+            "ShippingPreferenceType": 1,
+            "PartyID": partyId
           });
+
+          var shipData = '{"DeliveryItemPath": "' + $("#DeliveryItemPath").val() + '", "OrderShippingPreferenceType": "' + orderShippingPreference + '", "ShippingMethods":' + JSON.stringify(shipping) + ', "ShippingAddresses":' + JSON.stringify(parties) + '}';
+          AjaxService.Post("/api/cxa/checkout/SetShippingMethods", JSON.parse(shipData), function (data, success, sender) {
+              if (success && data.Success) {
+                  window.location.href = data.NextPageLink;
+              }
+              $("#ToBillingButton").button('reset');
+          }, $(this));
         }
       });
       // end HabitatHome customization

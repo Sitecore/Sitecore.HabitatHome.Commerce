@@ -20,7 +20,9 @@
 <div class="delivery-option-header">
     <h1>@selectDeliveryOptionsHeader</h1>
 </div>
-<div class="delivery-option-item" data-bind="foreach: cart().cartLines">
+<!-- HabitatHome customization -->
+<div class="delivery-option-item" data-bind="foreach: {data: cart().cartLines, as: 'cartLine' }">
+<!-- end HabitatHome customization -->
     <div class="delivery-item-header">
         <div class="product-image-info">
             <div class="product-image">

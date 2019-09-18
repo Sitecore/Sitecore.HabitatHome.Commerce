@@ -317,7 +317,9 @@ function DeliveryCartViewModel(data, userAddresses) {
 
   if (data && data.Lines) {
     $(data.Lines).each(function () {
+      // HabitatHome customization
       var lineItem = new DeliveryCartLineItemData(data, this, self);
+      // end HabitatHome customization
 
       if (self.isLineShipAll) {
         var shipment = ko.utils.arrayFirst(self.shipments, function (a) {
