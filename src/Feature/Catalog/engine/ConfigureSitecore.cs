@@ -40,7 +40,12 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine
                         .ConfigurePipeline<IRunningPluginsPipeline>(c =>
                         {
                             c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>();
-                        }));
+                        })
+                        .ConfigurePipeline<Sitecore.Commerce.Plugin.Carts.IPopulateLineItemPipeline>(c =>
+                        {
+                            c.Add<PopulateLineItemProductBlock>().After<Sitecore.Commerce.Plugin.Catalog.PopulateLineItemProductBlock>();
+                        })
+                        );
         }
     }
 }
