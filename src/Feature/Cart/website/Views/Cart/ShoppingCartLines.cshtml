@@ -128,7 +128,7 @@
                                 <!-- HabitatHome customization -->
                                 @if (Sitecore.Context.IsLoggedIn)
                                 {
-                                    <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList">
+                                    <button class="btn add-to-wishlist" data-bind="attr: {'data-ajax-lineitemid': externalCartLineId}, click: $parents[1].addItemToWishList, visible: sublines().length === 0">
                                         <i class="fa"></i>
                                         <span>Move to My Wish List</span>
                                     </button>

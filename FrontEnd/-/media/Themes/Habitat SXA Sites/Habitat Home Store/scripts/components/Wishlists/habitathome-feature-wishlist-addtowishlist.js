@@ -25,21 +25,31 @@
     }
 }
 
-function InitializeAddToWishListButoon() {
+function InitializeAddToWishListButton() {
+    var addToWishListSections = $("#AddToWishList");
+    if (addToWishListSections.length === 0) {
+        return;
+    }
+
+    var isBundle = $("#addtocart_isbundle").val() === "1";
+    if (isBundle) {
+        addToWishListSections.hide();
+        return;
+    }
 
     AddToWishListVMController = new AddToWishListViewModel();
-    if ($("#AddToWishList").length > 0) {
+    ko.applyBindings(AddToWishListVMController, document.getElementById("AddToWishList"));
 
-        ko.applyBindings(AddToWishListVMController, document.getElementById("AddToWishList"));
-        var productID = $("#addtocart_productid").val();
-        var variantID = ($("#addtocart_variantid").val() != "" ? $("#addtocart_variantid").val() : $(".valid-variant-combo").children(":first").attr("id"));
+    var productID = $("#addtocart_productid").val();
+    var variantID = ($("#addtocart_variantid").val() != "" ? $("#addtocart_variantid").val() : $(".valid-variant-combo").children(":first").attr("id"));
 
-        AddToWishListVMController.InitializeViewModel(productID, variantID);
-        $("#variantColor").on('change', function () {
-            AddToWishListVMController.UpdateVariant($("#addtocart_variantid").val());
-        });
-    }
+    AddToWishListVMController.InitializeViewModel(productID, variantID);
+
+    $("#variantColor").on('change', function () {
+        AddToWishListVMController.UpdateVariant($("#addtocart_variantid").val());
+    });
 }
+
 $(document).ready(function () {
-    InitializeAddToWishListButoon();
+    InitializeAddToWishListButton();
 });
