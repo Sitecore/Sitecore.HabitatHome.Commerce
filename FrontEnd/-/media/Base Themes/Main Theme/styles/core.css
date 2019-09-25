@@ -32,3 +32,34 @@
     margin-right: 0;
 }
 /*Bootstrap 4 fixes end*/
+
+/*background image stretch mode*/
+.component.sc-background-image-stretch {
+    background-size: 100% 100%;
+}
+
+.component.sc-background-image-stretch-vertically {
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+.component.sc-background-image-stretch-horizontally {
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.component.sc-background-image-tile {
+    background-repeat: repeat;
+}
+
+.component.sc-background-image-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.component.sc-background-image-fixed {
+    background-attachment: fixed;
+}
+/*End of background image stretch mode*/

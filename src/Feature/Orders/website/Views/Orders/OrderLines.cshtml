@@ -5,7 +5,9 @@
 
 @model Sitecore.HabitatHome.Feature.Orders.Models.OrderLinesViewModel
 
+<!-- HabitatHome customization -->
 <div @Html.Sxa().Component("cxa-orderdetailslines-component", Model.Attributes) data-cxa-component-class="OrderLines" data-cxa-component-initialized="false" data-cxa-component-model="OrderLinesViewModel" data-cxa-component-type="component">
+<!-- HabitatHome customization -->
     @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         <div class="error-message">
@@ -28,7 +30,9 @@
                             <th>@Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem)</th>
                             <th class="product-quantity-header">@Html.Sitecore().Field("Quantity Label", Html.Sitecore().CurrentItem)</th>
                             <th class="line-total-header">@Html.Sitecore().Field("Total Label", Html.Sitecore().CurrentItem)</th>
+                            <!-- HabitatHome customization -->
                             <th></th>
+                            <!-- end HabitatHome customization -->
                         </tr>
                     </thead>
                     <tbody>
@@ -41,7 +45,7 @@
                             <td class="cart-info">
                                 <a href="@cartLine.ProductUrl"><h4>@cartLine.ProductDisplayName</h4></a>
                                 <div class="product-variants">
-                                    @foreach (var property in cartLine.Properties)
+                                    @foreach(var property in cartLine.Properties)
                                     {
                                         <div class="product-variant">
                                             <span class="variant-label">
@@ -60,27 +64,24 @@
                                         <span>
                                             @Html.Sitecore().Field(ComponentDataSource.DeliveryLabelText, Html.Sitecore().CurrentItem):
                                         </span>
-                                         @if ((bool)Model.StoreOrder)
-                                         {
-                                                <span class="shippingMethodName">
-                                                    Pick up at @Model.StoreName
-                                                </span>
-                                         }
-                                         else
-                                         {
-                                                <span class="shippingMethodName">
-                                                    @cartLine.ShippingMethodName<br />
-
-                                                </span>
-
-
-                                                <div class="field-link">
-                                                    <span class="address-label">Tracking #:</span>
-
-                                                    <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
-
-                                                </div>
-                                         }
+                                        <!-- HabitatHome customization -->
+                                        @if ((bool)Model.StoreOrder)
+                                        {
+                                            <span class="shippingMethodName">
+                                                Pick up at @Model.StoreName
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="shippingMethodName">
+                                                @cartLine.ShippingMethodName<br />
+                                            </span>
+                                            <div class="field-link">
+                                                <span class="address-label">Tracking #:</span>
+                                                <a href="https://www.fedex.com/apps/fedextrack/?tracknumbers=@Model.TrackingNumber" target="_blank">@Model.TrackingNumber</a>
+                                            </div>
+                                        }
+                                        <!-- end HabitatHome customization -->
                                     </p>
                                 }
                                 @if (cartLine.Address != null)
@@ -134,6 +135,7 @@
                                         </span>
                                     }
                                 </td>
+                                <!-- HabitatHome customization -->
                                 <td class="reorder">
                                     <div class="reorder-button">
                                         <button type="submit" class="add-to-cart-btn" data-bind="attr: {'productId': '@cartLine.ProductId', 'variantId': '@cartLine.ProductVariantId', 'quantity': '@cartLine.Quantity' }, click: addItemToCart">
@@ -141,8 +143,8 @@
                                             <span class="loading-label" style="display:none;">Adding to cart...</span>
                                         </button>
                                     </div>
-
                                 </td>
+                                <!-- end HabitatHome customization -->
                             </tr>
                             foreach (var subLine in cartLine.SubLines)
                             {

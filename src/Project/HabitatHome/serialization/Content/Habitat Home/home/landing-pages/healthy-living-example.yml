@@ -8,6 +8,9 @@ SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: 
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{E9CDF91C-A7DC-4CB2-90E2-88C3F0CC924D}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -111,6 +114,10 @@ Languages:
     Value: Healthy Living Example
   Versions:
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Healthy Living Example
   Versions:
   - Version: 1
     Fields:

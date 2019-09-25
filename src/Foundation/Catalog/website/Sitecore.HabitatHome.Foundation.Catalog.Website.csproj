@@ -65,15 +65,15 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Catalog" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Catalog" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
       </ItemGroup>
@@ -84,6 +84,9 @@
     <PackageReference Include="Microsoft.Net.Compilers" Version="2.10.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.OData.Core">
+      <Version>7.5.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

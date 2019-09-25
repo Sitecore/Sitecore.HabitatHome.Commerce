@@ -128,7 +128,7 @@ namespace Sitecore.HabitatHome.Foundation.Payments.Engine.Pipelines.Blocks
                 ActivityAmount = new Money(payment.Amount.CurrencyCode, 0),
                 Customer = new EntityReference
                 {
-                    EntityTarget = order.Components.OfType<ContactComponent>().FirstOrDefault()?.CustomerId
+                    EntityTarget = order.EntityComponents.OfType<ContactComponent>().FirstOrDefault()?.CustomerId
                 },
                 Order = new EntityReference
                 {

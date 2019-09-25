@@ -20,7 +20,7 @@
     <input type="hidden" name="useLazyLoading" value="@Model.UseLazyLoading" data-bind="value: useLazyLoading" />
     <input type="hidden" name="maxPageSize" value="@Model.MaxPageSize" data-bind="value: maxPageSize" />
     <input type="hidden" name="currentItemId" value="@currentItem.ID" data-bind="value: currentItemId" />
-    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
         <div class="error-message">
             @Model.ErrorMessage
@@ -64,6 +64,7 @@
                             <!-- ko ifnot: Brand-->
                             <div class="product-brand">&nbsp;</div>
                             <!-- /ko -->
+
                             <!-- ko ifnot: IsCategory-->
                             <!-- ko if: DisplayStartingFrom -->
                             <div class="lowest-variant-price" data-bind="html: PriceStartingFromText"></div>
@@ -94,20 +95,11 @@
                             <div class="product-stock-availability-date"></div>
                             <!-- /ko -->
                             <!-- /ko -->
+
                             <!-- ko ifnot: StockStatus -->
                             <div class="product-stock-status">&nbsp;</div>
                             <div class="price-stock"></div>
                             <!-- /ko -->
-
-                            <div class="product-rating">
-                                <ul>
-                                    <li data-bind="css:{'rated' : CustomerAverageRating>= 1}"><span class="icon-star"></span></li>
-                                    <li data-bind="css:{'rated' : CustomerAverageRating>= 2}"><span class="icon-star"></span></li>
-                                    <li data-bind="css:{'rated' : CustomerAverageRating>= 3}"><span class="icon-star"></span></li>
-                                    <li data-bind="css:{'rated' : CustomerAverageRating>= 4}"><span class="icon-star"></span></li>
-                                    <li data-bind="css:{'rated' : CustomerAverageRating>= 5}"><span class="icon-star"></span></li>
-                                </ul>
-                            </div>
 
                             <!-- ko if:IsOnSale -->
                             <div class="product-category on-sale">
@@ -116,6 +108,7 @@
                                 </a>
                             </div>
                             <!-- /ko -->
+
                             <!-- ko ifnot: IsOnSale -->
                             <div class="product-category">
                                 <a data-bind="attr:{href: Link}">
@@ -124,6 +117,7 @@
                             </div>
                             <!-- /ko -->
                             <!-- /ko -->
+
                             <!-- ko if: IsCategory-->
                             <!-- ko if: IsOnSale-->
                             <div class="product-category on-sale">

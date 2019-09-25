@@ -1,57 +1,54 @@
-//-----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Copyright 2016 Sitecore Corporation A/S
-// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file 
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 // except in compliance with the License. You may obtain a copy of the License at
 //       http://www.apache.org/licenses/LICENSE-2.0
 //
-// Unless required by applicable law or agreed to in writing, software distributed under the 
-// License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
-// either express or implied. See the License for the specific language governing permissions 
+// Unless required by applicable law or agreed to in writing, software distributed under the
+// License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+// either express or implied. See the License for the specific language governing permissions
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
 
 (function (root, factory) {
-    'use strict';
-    if (typeof define === 'function' && define.amd) {
-        // use AMD define funtion to support AMD modules if in use
-        define(['exports'], factory);
-
-    } else if (typeof exports === 'object') {
-        // to support CommonJS
-        factory(exports);
-    }
-    var LoginForm = {}
-    root.LoginForm = LoginForm;
-    factory(LoginForm);
-
+  'use strict';
+  if (typeof define === 'function' && define.amd) {
+    // use AMD define funtion to support AMD modules if in use
+    define(['exports'], factory);
+  } else if (typeof exports === 'object') {
+    // to support CommonJS
+    factory(exports);
+  }
+  var LoginForm = {};
+  root.LoginForm = LoginForm;
+  factory(LoginForm);
 }(this, function (element) {
-    var GetReturnUrl = function () {
-        returnUrl = $(LoginForm.RootElement).data("return-url");
+  var GetReturnUrl = function () {
+    returnUrl = $(LoginForm.RootElement).data("return-url");
 
-        if (!returnUrl) {
-            returnUrl = "/";
-        }
-
-        return returnUrl;
+    if (!returnUrl) {
+      returnUrl = "/";
     }
 
-    LoginForm.OnSuccess = function (data) {
-        if (data && data.Success) {
-            CXAApplication.Goto(GetReturnUrl());
-        }
+    return returnUrl;
+  };
+
+  LoginForm.OnSuccess = function (data) {
+    if (data && data.Success) {
+      CartContext.DeleteCachedCartCount();
+      CXAApplication.Goto(GetReturnUrl());
     }
+  };
 
-    LoginForm.Init = function (element) {
-        var form = new CXAForm(element);
-        form.Init(LoginForm);
+  LoginForm.Init = function (element) {
+    var form = new CXAForm(element);
+    form.Init(LoginForm);
 
-        //Only enable form if we are not in experience editor mode
-        if (CXAApplication.IsExperienceEditorMode() === false) {
-            form.Enable();
-        }
-        else {
-            form.EnableInDesignEditing();
-        }
+    // Only enable form if we are not in experience editor mode
+    if (CXAApplication.IsExperienceEditorMode() === false) {
+      form.Enable();
+    } else {
+      form.EnableInDesignEditing();
     }
-
+  };
 }));

@@ -170,7 +170,7 @@
             }
         },
         getEndpointAndSearch: function() {
-            if (typeof (XA.component.map.getSearchEndpoint()) !== 'undefined') {
+            if (XA.component.map && typeof (XA.component.map.getSearchEndpoint()) !== 'undefined') {
                 this.getSearchData();
             } else {
                 setTimeout(this.getEndpointAndSearch.bind(this), 100);

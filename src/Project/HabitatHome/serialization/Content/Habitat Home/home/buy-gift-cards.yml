@@ -31,6 +31,9 @@ SharedFields:
 - ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
   Hint: __Default workflow
   Value: 
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{E9FF70CB-483A-43D3-9B18-154347AF43FF}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

@@ -4,7 +4,7 @@
     "SolutionName": "HabitatHome.Commerce.sln",
     "ProjectFolder": "C:\\Projects\\Sitecore.HabitatHome.Commerce",
     "BuildConfiguration": "Debug",
-    "BuildToolVersions": "VS2017",
+    "BuildToolVersions": "VS2019",
     "RunCleanBuilds": false,
     "MessageStatisticsApiKey": "97CC4FC13A814081BF6961A3E2128C5B"
   }

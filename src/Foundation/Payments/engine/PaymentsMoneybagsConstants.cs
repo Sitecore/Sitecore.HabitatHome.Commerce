@@ -64,6 +64,11 @@
                 /// The registered plugin block name.
                 /// </summary>
                 public const string RegisteredPluginBlock = "PaymentsMoneybags.block.RegisteredPlugin";
+
+                /// <summary>
+                /// Settle order sales activities block name.
+                /// </summary>
+                public const string SettleOrderSalesActivitiesBlock = "PaymentsMoneybags.block.SettleOrderSalesActivities";
             }
         }
     }

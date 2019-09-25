@@ -9,16 +9,20 @@ SharedFields:
   Hint: __Renderings
   Type: layout
   Value: |
-    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
       <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{B8AB7438-FF88-41A2-B0FD-493FB644E1B2}">
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          ds=""
-          id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}"
-          par="FieldNames=%7B7C5FEDFB-F002-4136-99B0-5ED23040938B%7D&amp;Styles&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
-          ph="section-content"
-          uid="{0708F505-F091-48C3-9168-5A74CE73334D}" />
+          uid="{CB7B1C66-77F9-45E4-9AA3-12AC3E1EDF5A}">
+          <p:d />
+        </r>
+        <r
+          uid="{E3BA803A-9423-432D-8B85-CA2D5EFFA2D2}"
+          s:ds=""
+          s:id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B7C5FEDFB-F002-4136-99B0-5ED23040938B%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="section-content" />
       </d>
     </r>
 Languages:
@@ -45,7 +49,7 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Yum" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9EBC92C7-BFFD-4271-BD7B-BA1FA27A8825}" />
+        <link text="Yum" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{14CD7D35-4268-4C34-A3B3-3F44C6521937}" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -69,7 +73,7 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Électroménagers" anchor="" linktype="internal" class="" title=""  querystring="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />
+        <link text="Électroménagers" anchor="" linktype="internal" class="" title=""  querystring="" id="{14CD7D35-4268-4C34-A3B3-3F44C6521937}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -97,4 +101,4 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Yum" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9EBC92C7-BFFD-4271-BD7B-BA1FA27A8825}" />
+        <link text="Yum" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{14CD7D35-4268-4C34-A3B3-3F44C6521937}" />

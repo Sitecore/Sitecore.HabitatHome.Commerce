@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="CommerceServiceQuerySingleException.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-2018
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 

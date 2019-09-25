@@ -1,15 +1,40 @@
 /* global mejs:false */
+/**
+ * Component Playlist
+ * @module Playlist
+ * @param  {jQuery} $ Instance of jQuery
+ * @return {Object} List of Playlist component methods
+ */
 XA.component.playlist = (function($) {
-
+    /**
+     * In this object stored all public api methods
+     * @type {Object.<Methods>}
+     * @memberOf module:Playlist
+     * */
     var api = {};
-
+    /**
+     * This class used by [Playlist]{@link module:Playlist} module
+     * @class Playlist
+     * @memberOf module:Playlist
+     * @param {jQuery} playlist Root DOM element of playlist component wrapped by jQuery
+     * @param {Object} properties Properties setted in data attribute
+     */
     function Playlist(playlist, properties) {
         this.properties = properties;
         this.playlist = playlist;
         this.activeVideo = 0;
         this.playlistItems = 0;
     }
-
+    /**
+     * Create new source element, seted up it with type & src. Created element
+     * append to Video container(take it from videoContainer parameter)
+     * @method
+     * @alias createNewSources
+     * @memberOf module:Playlist.Playlist
+     * @param {$OrderedList} source takes from properties.sources[itemIndex].src - 
+     * source of playlist element
+     * @param {$OrderedList} videoContainer container where source should be added
+     */
     Playlist.prototype.createNewSources = function(source, videoContainer) {
         var newSource;
 
@@ -28,8 +53,8 @@ XA.component.playlist = (function($) {
             }
 
             newSource.attr({
-                "type": type,
-                "src": path
+                type: type,
+                src: path
             });
 
             return newSource;
@@ -45,6 +70,16 @@ XA.component.playlist = (function($) {
             videoContainer.find("video").append(newSource);
         }
     };
+    /**
+     * Replace source of each video element under play list component.
+     * After replacing it reinitialized video component by calling 
+     * [XA.component.video.initVideoFromPlaylist]{@link module:Video.initVideoFromPlaylist}
+     * @name replaceSource
+     * @function
+     * @param {number} itemIndex position of active video in video list
+     * @param {boolean} loadFromEvent
+     * @memberOf module:Playlist.Playlist
+     */
 
     Playlist.prototype.replaceSource = function(itemIndex, loadFromEvent) {
         var inst = this,
@@ -59,15 +94,18 @@ XA.component.playlist = (function($) {
             videoContainer = $(this);
             videoId = inst.properties.playlistId;
 
-            if ((videoContainer.is(videoId) && (newSrc.length))) {
+            if (videoContainer.is(videoId) && newSrc.length) {
                 videoContainer.addClass("show");
 
                 sources = videoContainer.find("source");
                 sources.remove();
                 inst.createNewSources(newSrc, videoContainer);
-                videoContainer.find("video").attr({
-                    src: ""
-                }).show();
+                videoContainer
+                    .find("video")
+                    .attr({
+                        src: ""
+                    })
+                    .show();
 
                 var autoplayVideo = false;
                 if (loadFromEvent) {
@@ -89,23 +127,38 @@ XA.component.playlist = (function($) {
                 videoClone = videoContainer.find("video").clone();
                 videoContainerHeight = videoContainer.height();
                 videoContainer.css({
-                    "height": videoContainerHeight
+                    height: videoContainerHeight
                 });
 
                 var id = videoContainer.find(".mejs-container").attr("id");
                 if (id) {
                     $("#" + id).remove();
                     delete mejs.players[id];
-                    videoContainer.find(".component-content").append(videoClone);
+                    videoContainer
+                        .find(".component-content")
+                        .append(videoClone);
                 }
 
-                XA.component.video.initVideoFromPlaylist(videoContainer, inst.playlist);
+                XA.component.video.initVideoFromPlaylist(
+                    videoContainer,
+                    inst.playlist
+                );
                 videoContainer.css({
-                    "height": "auto"
+                    height: "auto"
                 });
             }
         });
     };
+
+    /**
+     * Inititalise videos under component. On call and on
+     * [change-video]{@link module:Playlist.Playlist#change-video} event
+     * calls [replaceSource]{@link module:Playlist.Playlist.replaceSource}
+     * @name loadPlaylistVideo
+     * @function
+     * @listeners module:Playlist.Playlist#change-video
+     * @memberOf module:Playlist.Playlist
+     */
 
     Playlist.prototype.loadPlaylistVideo = function() {
         var inst = this,
@@ -118,7 +171,7 @@ XA.component.playlist = (function($) {
             activeListItem = playlistItems.eq(inst.activeVideo);
             activeListItem.addClass("active");
             activeListItem.siblings().removeClass("active");
-        }
+        };
 
         loadVideoFromPlaylist();
         $(inst.playlist).on("change-video", function(event, properties) {
@@ -135,10 +188,9 @@ XA.component.playlist = (function($) {
                 } else {
                     inst.activeVideo++;
                     if (inst.activeVideo === inst.playlistItems) {
-
                         if (inst.properties.repeatAfterAll) {
                             inst.activeVideo = 0;
-                            loadNewVideo = true
+                            loadNewVideo = true;
                         } else {
                             inst.activeVideo = inst.playlistItems - 1;
                         }
@@ -146,10 +198,9 @@ XA.component.playlist = (function($) {
                         loadNewVideo = true;
                     }
                 }
-
             } else {
                 if (inst.properties.playNext) {
-                    if ((inst.activeVideo + 1) <= inst.playlistItems) {
+                    if (inst.activeVideo + 1 <= inst.playlistItems) {
                         inst.activeVideo++;
 
                         if (inst.activeVideo === inst.playlistItems) {
@@ -171,13 +222,18 @@ XA.component.playlist = (function($) {
             }
         });
     };
-
+    /**
+     * Attach events to playlist-section and nav items
+     * @name attachEvents
+     * @function
+     * @fires module:Playlist.Playlist#change-video
+     * @memberOf module:Playlist.Playlist
+     */
     Playlist.prototype.attachEvents = function() {
         var inst = this,
             link = $(inst.playlist).find(".playlist-section"),
             navItems = $(inst.playlist).find(".playlist-nav a"),
             playlistItem;
-
         link.on("click", function(event) {
             event.preventDefault();
 
@@ -196,16 +252,38 @@ XA.component.playlist = (function($) {
             event.preventDefault();
             var properties = {};
 
-            if ($(this).parent().hasClass("playlist-prev")) {
+            if (
+                $(this)
+                    .parent()
+                    .hasClass("playlist-prev")
+            ) {
                 properties.back = true;
             }
-
+            /**
+             * Change video event fires when user click
+             * on a ".playlist-nav a" element.
+             *
+             * @event module:Playlist.Playlist#change-video
+             * @type {object}
+             * @property {Object} properties - Indicates whether playlist has back button
+             */
             $(inst.playlist).trigger("change-video", properties);
         });
-
     };
-
-    api.initInstance=function(component,prop) {
+    /**
+     * For each playlist component create new instance of
+     * ["Playlist"]{@link  module:Playlist.Playlist} and call
+     * ["loadPlaylistVideo"]{@link  module:Playlist.Playlist.loadPlaylistVideo},
+     * ["attachEvents"]{@link  module:Playlist.Playlist.attachEvents}
+     * methods
+     * @memberOf module:Playlist
+     * @method
+     * @param {jQuery} component Root DOM element of playlist component wrapped by jQuery
+     * @param {Object} prop Properties setted in data attribute
+     *  of playlist component
+     * @alias module:Playlist.initInstance
+     */
+    api.initInstance = function(component, prop) {
         var playlist;
         $(prop.playlistId).addClass("initialized"); //prevent video init in component-video.js
         if (prop.sources.length) {
@@ -213,20 +291,27 @@ XA.component.playlist = (function($) {
             playlist.loadPlaylistVideo();
             playlist.attachEvents();
         }
-    }
-
+    };
+    /**
+     * Find all not initialized yet
+     * Playlist components and in a loop for each of them
+     * run ["initInstance"]{@link module:Playlist.initInstance}
+     * method.
+     * @memberOf module:Playlist
+     * @alias module:Playlist.init
+     */
     api.init = function() {
         var playlists = $(".playlist.component:not(.initialized)"),
             properties;
 
         playlists.each(function() {
             properties = $(this).data("properties");
-            api.initInstance(this,properties);
+            api.initInstance(this, properties);
             $(this).addClass("initialized");
         });
     };
 
     return api;
-}(jQuery, document));
+})(jQuery, document);
 
 XA.register("playlist", XA.component.playlist);

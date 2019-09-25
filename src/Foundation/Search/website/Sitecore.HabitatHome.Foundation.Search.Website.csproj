@@ -68,12 +68,12 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.ContentSearch" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.XA.Foundation.Multisite" Version="4.8.1.*" />
-        <PackageReference Include="Sitecore.XA.Foundation.Search" Version="4.8.1.*" />
-        <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.1.*" />
+        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.ContentSearch" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.XA.Foundation.Multisite" Version="5.9.0.*" />
+        <PackageReference Include="Sitecore.XA.Foundation.Search" Version="5.9.0.*" />
+        <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="5.9.0.*" />
       </ItemGroup>
     </Otherwise>
   </Choose>

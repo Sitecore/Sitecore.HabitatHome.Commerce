@@ -1,32 +1,20 @@
 {
   "AppSettings": {
-    "SiteTitle": "Sitecore Commerce Engine",
+    "SiteTitle": "CommerceAuthoring_habitathome",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
-    "EnvironmentName": "HabitatAuthoring",
+    "EnvironmentName": "habitathomeAuthoring",
     "EncryptionProtectionType": "Machine",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
-    "SitecoreIdentityServerUrl": "https://identityServer.habitathome.dev.local",
-    "AllowedOrigins": [
-      "https://localhost:4200",
-      "http://localhost:4200",
-      "https://bizfx.habitathome.dev.local",
-      "https://habitathome.dev.local"
-    ],
+    "SitecoreIdentityServerUrl": "https://habitathome-identityserver.dev.local",
+    "AllowedOrigins": [ "https://localhost:4200", "https://bizfx.habitathome.dev.local", "https://habitathome.dev.local" ],
     "AntiForgeryEnabled": false,
-    "UseHttpsInKestrel": true,
-    "SslPort": 5000,
-    "SslPfxPath": "wwwroot/localhost.pfx",
-    "SslPfxPassword": "sitecore"
+    "CommerceServicesHostPostfix": "habitathome.dev.local",
+    "UseHttpsInKestrel": false
   },
-  "ApplicationInsights": {
-    "InstrumentationKey": "",
-    "MinimumLevel": "Information",
-    "DeveloperMode": true,
-    "TelemetryEnabled": false
-  },
+  "ApplicationInsights": { "InstrumentationKey": "" },
   "Logging": {
     "IncludeScopes": false,
     "LogLevel": {
@@ -34,12 +22,11 @@
       "System": "Warning",
       "Microsoft": "Warning"
     },
-    "ApplicationInsightsLoggingEnabled": false,
     "PipelineTraceLoggingEnabled": false,
     "SerilogLoggingEnabled": true
   },
   "Serilog": {
-    "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
+    "Using": [ "Serilog.Sinks.Literate", "Serilog.Sinks.File", "Serilog.Sinks.ApplicationInsights" ],
     "MinimumLevel": {
       "Default": "Warning",
       "Override": {
@@ -47,18 +34,46 @@
         "System": "Warning"
       }
     },
+    "WriteTo": [
+      {
+        "Name": "ApplicationInsights",
+        "Args": {
+          "restrictedToMinimumLevel": "Warning",
+          "telemetryConverter": "Serilog.Sinks.ApplicationInsights.Sinks.ApplicationInsights.TelemetryConverters.TraceTelemetryConverter, Serilog.Sinks.ApplicationInsights"
+        }
+      }
+    ],
     "FileSizeLimitBytes": 100000000
   },
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "434947B07E07ABEB02405CBCE54C83F20AE0141F",
-        "DefaultRoles": [
-          "sitecore\\QA",
-          "sitecore\\Commerce Business User"
-        ]
+        "Thumbprint": "26B7E60A9731BE04A3E5A4FD6EEA5DF109D61B18",
+        "DefaultRoles": [ "sitecore\\QA", "sitecore\\Commerce Business User" ]
       }
     ],
     "CertificateHeaderName": "X-CommerceEngineCert"
-  } 
+  },
+  "Caching": {
+    "Memory": {
+      "Enabled": false,
+      "CacheStoreName": "Commerce-Memory-Store"
+    },
+    "Redis": {
+      "Enabled": true,
+      "CacheStoreName": "Commerce-Redis-Store",
+      "Options": {
+        "Configuration": "localhost",
+        "InstanceName": "Redis"
+      }
+    }
+  },
+  "Compression": {
+    "Enabled": true,
+    "ResponseCompressionOptions": {
+      "EnableForHttps": true,
+      "MimeTypes": [ "text/plain", "text/css", "application/javascript", "text/html", "application/xml", "text/xml", "application/json", "text/json", "application/wasm" ]
+    },
+    "GzipCompressionProviderOptions": { "Level": "Fastest" }
+  }
 }

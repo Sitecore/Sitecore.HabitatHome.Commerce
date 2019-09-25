@@ -1,0 +1,14 @@
+﻿---
+ID: "d0049954-7095-4e40-a00e-f813f1ebe1fc"
+Parent: "7eda2f15-9386-4476-b13a-ede1c54c3980"
+Template: "a7190817-579e-4cbe-a16f-e60782ce3bbf"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Settings/Commerce/Cart Configuration
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T182842Z

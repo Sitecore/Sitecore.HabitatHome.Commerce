@@ -33,11 +33,11 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="4.0.*" />
       </ItemGroup>
     </Otherwise>
   </Choose>

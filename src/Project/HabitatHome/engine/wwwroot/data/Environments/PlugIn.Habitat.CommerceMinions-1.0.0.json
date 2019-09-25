@@ -8,29 +8,21 @@
         "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
         "Memberships": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "CommerceEnvironments" ]
+          "$values": [
+            "CommerceEnvironments"
+          ]
         },
-        "Id": "efe49ff743d34b649fffcof293615cd9",
-        "Policies": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-          "$values": []
-        },
-        "ChildComponents": {
-          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-          "$values": []
-        }
+        "Id": "efe49ff743d34b649fffcof293615cd9"
       }
     ]
   },
-  "DateCreated": "2016-09-23T18:04:08.1660038Z",
-  "DateUpdated": "2016-09-23T18:04:08.1760227Z",
   "Id": "Entity-CommerceEnvironment-HabitatMinions",
   "Version": 1,
   "IsPersisted": false,
   "Name": "HabitatMinions",
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [ 
+    "$values": [
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
         "PolicySetId": "Entity-PolicySet-MinionsPolicySet"
@@ -46,7 +38,11 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
-        "PolicySetId": "Entity-PolicySet-MinionsMemoryCachePolicySet"
+        "PolicySetId": "Entity-PolicySet-CachingPolicySet"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
+        "PolicySetId": "Entity-PolicySet-VersioningPolicySet"
       },
       {
         "$type": "Sitecore.Commerce.Core.PolicySetPolicy, Sitecore.Commerce.Core",
@@ -88,7 +84,12 @@
         "$type": "Sitecore.Commerce.Core.GlobalEnvironmentPolicy, Sitecore.Commerce.Core",
         "Languages": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "en", "de-DE", "ja-JP", "fr-FR" ]
+          "$values": [
+            "en",
+            "de-DE",
+            "ja-JP",
+            "fr-FR"
+          ]
         },
         "DefaultCurrency": "USD",
         "DefaultCountry": {
@@ -187,21 +188,28 @@
         "$type": "Sitecore.Commerce.Plugin.Orders.OnHoldOrdersPolicy, Sitecore.Commerce.Plugin.Orders",
         "AllowHoldStatuses": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "Pending", "Problem" ]
+          "$values": [
+            "Pending",
+            "Problem"
+          ]
         }
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Orders.CancelOrdersPolicy, Sitecore.Commerce.Plugin.Orders",
         "AllowCancelStatuses": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [ "Pending", "Problem", "OnHold" ]
+          "$values": [
+            "Pending",
+            "Problem",
+            "OnHold"
+          ]
         }
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Inventory.GlobalInventoryPolicy, Sitecore.Commerce.Plugin.Inventory",
         "CheckStockLevel": true,
         "SubtractStockOnOrder": true,
-        "DefaultAllocationDateAvailable": "0001-01-01T00:00:00+00:00"
+        "DefaultAllocationDateAvailable": "0001-01-01T00:00:00-05:00"
       },
       {
         "$type": "Sitecore.Commerce.Core.GlobalCurrencyPolicy, Sitecore.Commerce.Core",

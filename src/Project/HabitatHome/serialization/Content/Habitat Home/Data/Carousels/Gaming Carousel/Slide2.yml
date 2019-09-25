@@ -48,7 +48,7 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{3CB47CDB-B003-4F4E-890F-2A7B37AEEBF2}" />
+        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426}" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -72,7 +72,7 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Lire maintenant" anchor="" linktype="internal" class="" title=""  querystring="" id="{C9D2D5F3-E258-4483-AF1C-CE18B7857BEA}" />
+        <link text="Lire maintenant" anchor="" linktype="internal" class="" title=""  querystring="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426} />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -98,4 +98,4 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{3CB47CDB-B003-4F4E-890F-2A7B37AEEBF2}" />
+        <link text="Read More" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{D279E21C-5EBA-4C90-ADB5-03FF1A5D4426}" />

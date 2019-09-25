@@ -29,3 +29,4 @@ publishTemp/*
 *.log.*.txt
 tools/*
 !tools/packages.config
+/FrontEnd/-/media/Project

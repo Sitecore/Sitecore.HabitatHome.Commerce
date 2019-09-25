@@ -1,0 +1,65 @@
+﻿---
+ID: "3720b130-7765-4105-b8b0-b510d0199652"
+Parent: "fa1005b0-6c96-4c5a-93df-cdf668081c6d"
+Template: "fcd285da-9ab2-4c8d-b185-5a7487a9ba1b"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Commerce Navigation/Default/Navigation Link
+DB: master
+BranchID: "de3cdf1f-5d97-4c56-b213-94c2754261c6"
+SharedFields:
+- ID: "4753764c-c05a-4623-841b-97f85135241c"
+  Hint: FieldName
+  Value: __Display name
+- ID: "7495124d-09b5-4cb3-b4a6-fe77a95827da"
+  Hint: CssClass
+  Value: "navigation-link"
+- ID: "dcb05e5e-7151-4226-a3b0-108c5e2f05b5"
+  Hint: IsLink
+  Value: 1
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3CCF3804-687D-46A5-BE3D-920E6D4E0EA7}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190417T092345Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190417T092316Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190417T092156Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190417T092331Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

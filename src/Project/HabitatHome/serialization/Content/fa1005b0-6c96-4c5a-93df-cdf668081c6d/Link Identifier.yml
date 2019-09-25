@@ -1,0 +1,43 @@
+﻿---
+ID: "2f420c59-dade-49b9-8bd4-6976cc00dd50"
+Parent: "fa1005b0-6c96-4c5a-93df-cdf668081c6d"
+Template: "6eca12e9-f4d5-4f6e-9c3c-6df716bc593b"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Rendering Variants/Commerce Navigation/Default/Link Identifier
+DB: master
+SharedFields:
+- ID: "34400b24-5666-4295-bbc2-b87c2020aa6d"
+  Hint: LinkAttributes
+  Value: 
+- ID: "3a4dd4df-8d32-405f-831a-39f87a550085"
+  Hint: Token
+  Value: $id
+- ID: "a9ac9fba-2873-4395-b016-ff8717d67784"
+  Hint: IsLink
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-150"
+- ID: "c35b2285-b4a8-406f-a91c-24a60391dc12"
+  Hint: DataAttributes
+  Value: 
+- ID: "e36ec18e-5a30-4f2e-8ae4-24ac2dbc6202"
+  Hint: CssClass
+  Value: "hidden navigation-link-id"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190613T074919Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b6038067-9832-418f-b04f-c7ea5731dd5b"
+      Hint: Prefix
+      Value: 
+    - ID: "d362349b-906a-4a6a-bf7f-d81fc60c3baf"
+      Hint: Suffix
+      Value: 

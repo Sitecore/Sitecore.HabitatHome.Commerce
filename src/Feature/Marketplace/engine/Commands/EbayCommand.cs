@@ -410,7 +410,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
                 //Send the call to eBay and get the results
                 try
                 {
-                    var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
+                    var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", new int?(), true).ConfigureAwait(false);
 
                     if (ebayConfig.HasComponent<EbayBusinessUserComponent>())
                     {
@@ -470,7 +470,7 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Commands
             else
             {
                 apiContext = new ApiContext();
-                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", true).ConfigureAwait(false);
+                var ebayConfig = await this._commerceCommander.GetEntity<EbayConfigEntity>(commerceContext, "Entity-EbayConfigEntity-Global", new int?(), true).ConfigureAwait(false);
 
                 if (ebayConfig.HasComponent<EbayBusinessUserComponent>())
                 {

@@ -63,11 +63,11 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.EntityViews
                 var immediateListing = entityView.Properties.First(p => p.Name == "ImmediateListing").Value ?? "";
                 var isImmediateListing = System.Convert.ToBoolean(immediateListing);
 
-                var foundEntity = context.CommerceContext.GetObjects<FoundEntity>().FirstOrDefault(p => p.EntityId == entityView.EntityId);
+                var foundEntity = context.CommerceContext.GetObjects<CommerceEntity>().FirstOrDefault(p => p.Id == entityView.EntityId);
                 if (foundEntity != null)
                 {
                     //this._commerceCommander.Command<Sell>
-                    var category = foundEntity.Entity as Category;
+                    var category = foundEntity as Category;
 
                     var listName = $"{CatalogConstants.CategoryToSellableItem}-{category.Id.SimplifyEntityName()}";
 

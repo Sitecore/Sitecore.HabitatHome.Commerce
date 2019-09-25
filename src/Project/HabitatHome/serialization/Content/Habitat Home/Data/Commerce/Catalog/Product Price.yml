@@ -1,0 +1,14 @@
+﻿---
+ID: "1751771f-e9e5-4687-a6f1-43320fbd96e1"
+Parent: "464a6510-b173-46d8-a763-d4573f6e8256"
+Template: "bde8211c-1f68-4648-aa76-6e7bd4e9e394"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Catalog/Product Price
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T182840Z

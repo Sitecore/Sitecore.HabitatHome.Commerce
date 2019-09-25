@@ -235,6 +235,13 @@ Languages:
               s:par="Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FieldNames=%7bC7A7E725-BC84-45AE-AD50-0659F9AB7F98%7d&amp;DynamicPlaceholderId=1" />
           </d>
         </r>
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{03DA35E8-4E53-4311-AB1E-4118519CF0FE}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190424T192757Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
@@ -270,6 +277,10 @@ Languages:
         <p><strong>Appareils électroménagers</strong></p>
         <p>Si vous voulez vous plonger complètement dans la philosophie de la maison branchée, remplacez vos appareils «stupides» par des versions branchées. La gamme d'appareils Viva d'Habitat comprend des réfrigérateurs qui vérifient l'inventaire et vous permettent de contrôler les paramètres à partir de votre téléphone intelligents. Dites à votre aspirateur intelligent Habitat Dwell de nettoyer le plancher du salon et commandez à votre laveuse intelligente Habitat Gleam de démarrer un nouveau cycle, tout en regardant votre émission de télé préférée.</p>
         <p>Des ampoules aux réfrigérateurs, les appareils intelligents travaillent ensemble pour vous faciliter la vie. Laissez Habitat Home vous aider à concevoir votre maison branchée en fonction de votre budget et de votre style de vie.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 

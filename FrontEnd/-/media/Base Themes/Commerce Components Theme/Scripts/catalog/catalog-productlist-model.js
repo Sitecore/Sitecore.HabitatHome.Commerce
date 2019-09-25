@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Copyright 2016 Sitecore Corporation A/S
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 // except in compliance with the License. You may obtain a copy of the License at
@@ -22,57 +22,16 @@ function ProductListViewModel() {
   self.isPageReady = ko.observable(false);
   self.canLoadMoreProducts = ko.observable(true);
 
-    self.loadProducts = function (component) {
-    var params = self.loadingParameters();
-    AjaxService.Post('/api/cxa/Catalog/GetProductList', params, function(
-      data,
-      success,
-      sender
-    ) {
-      if (success && data && data.Success) {
-        addMoreProducts(data);
-      }
-        else if (component.InExperienceEditorMode) {
-            $(".product-list").html("<p>Product List</p>");
-        }
-    });
-  };
-  self.loadMoreProducts = function() {
-    self.isShowMoreProducts(true);
-    self.loadProducts();
-  };
-  self.loadingParameters = function() {
-    var params = {};
+  function getQueryStringParamValue(queryPam) {
+    var queryParamValue = new Uri(window.location.href).getQueryParamValue(
+      queryPam
+    );
 
-    // SearchKeyword
-    params.q = getQueryStringParamValue('q');
-
-    // Page number
-    params.pg = getPageNumber();
-
-    // Facets
-    params.f = getQueryStringParamValue('f');
-
-    // Sort
-    params.s = getQueryStringParamValue('s');
-
-    // Page size
-    params.ps = getQueryStringParamValue('ps') || self.maxPageSize() || 12;
-
-    // Sort direction
-    params.sd = getQueryStringParamValue('sd') || 'Asc';
-
-    // Current Catalog Item Id
-    params.cci = self.currentCatalogItemId();
-
-    // Current Item Id
-    params.ci = self.currentItemId();
-
-    return params;
-  };
+    return queryParamValue;
+  }
 
   function addMoreProducts(data) {
-    $(data.ChildProducts).each(function() {
+    $(data.ChildProducts).each(function () {
       self.products.push(this);
     });
 
@@ -101,12 +60,53 @@ function ProductListViewModel() {
     return pageNumber;
   }
 
-  function getQueryStringParamValue(queryPam) {
-    var url = window.location.href;
-    var queryPamValue = new Uri(window.location.href).getQueryParamValue(
-      queryPam
-    );
+  self.loadProducts = function (component) {
+    var params = self.loadingParameters();
+    AjaxService.Post('/api/cxa/Catalog/GetProductList', params, function (
+      data,
+      success,
+      sender
+    ) {
+      if (success && data && data.Success) {
+        addMoreProducts(data);
+      } else if (component.InExperienceEditorMode) {
+        $(".product-list").html("<p>Product List</p>");
+      }
+    });
+  };
 
-    return queryPamValue;
-  }
+  self.loadMoreProducts = function () {
+    self.isShowMoreProducts(true);
+    self.loadProducts();
+  };
+
+  self.loadingParameters = function () {
+    var params = {};
+
+    // SearchKeyword
+    params.q = getQueryStringParamValue('q');
+
+    // Page number
+    params.pg = getPageNumber();
+
+    // Facets
+    params.f = getQueryStringParamValue('f');
+
+    // Sort
+    params.s = getQueryStringParamValue('s');
+
+    // Page size
+    params.ps = getQueryStringParamValue('ps') || self.maxPageSize() || 12;
+
+    // Sort direction
+    params.sd = getQueryStringParamValue('sd') || 'Asc';
+
+    // Current Catalog Item Id
+    params.cci = self.currentCatalogItemId();
+
+    // Current Item Id
+    params.ci = self.currentItemId();
+
+    return params;
+  };
 }

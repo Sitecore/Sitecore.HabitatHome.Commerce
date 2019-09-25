@@ -1,5 +1,5 @@
 {
-  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core", 
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
   "Id": "Entity-PolicySet-VersioningPolicySet",
   "Version": 1,
   "IsPersisted": false,
@@ -8,16 +8,24 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
-        "$type": "Sitecore.Commerce.Plugin.EntityVersions.VersioningPolicy, Sitecore.Commerce.Plugin.EntityVersions",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog"
+        "$type": "Sitecore.Commerce.Core.VersioningPolicy, Sitecore.Commerce.Core",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Catalog",
+        "EntityIdPrefix":  "Entity-Catalog-"
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.EntityVersions.VersioningPolicy, Sitecore.Commerce.Plugin.EntityVersions",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Category"
+        "$type": "Sitecore.Commerce.Core.VersioningPolicy, Sitecore.Commerce.Core",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.Category",
+        "EntityIdPrefix": "Entity-Category-"
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.EntityVersions.VersioningPolicy, Sitecore.Commerce.Plugin.EntityVersions",
-        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem"
+        "$type": "Sitecore.Commerce.Core.VersioningPolicy, Sitecore.Commerce.Core",
+        "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+        "EntityIdPrefix": "Entity-SellableItem-"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.VersioningPolicy, Sitecore.Commerce.Core",
+        "TypeFullName": "Sitecore.Commerce.Core.LocalizationEntity",
+        "EntityIdPrefix": "Entity-LocalizationEntity-"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.EntityVersions.EntityVersionsActionsPolicy, Sitecore.Commerce.Plugin.EntityVersions",

@@ -9,7 +9,7 @@
 // and limitations under the License.
 // -------------------------------------------------------------------------------------------
 
-(function(root, factory) {
+(function (root, factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {
     // use AMD define funtion to support AMD modules if in use
@@ -21,21 +21,21 @@
 
   // browser global variable
   root.ProductBundleVNext = factory;
-})(this, function(element) {
+})(this, function (element) {
   'use strict';
   var component = new Component(element);
   component.Name = 'CXA/Feature/ProductBundleVNext';
 
-  component.InExperienceEditorMode = function() {
+  component.InExperienceEditorMode = function () {
     component.Visual.Disable();
   };
 
-  component.Init = function() {
+  component.Init = function () {
     component.model = new ProductBundleVNextViewModel(component);
 
     var bundleGroups = component.model.bundleGroups();
     if (bundleGroups.length) {
-      bundleGroups.forEach(function(bundleGroup) {
+      bundleGroups.forEach(function (bundleGroup) {
         ko.applyBindings(bundleGroup, bundleGroup.bundleGroupEL);
       });
     }

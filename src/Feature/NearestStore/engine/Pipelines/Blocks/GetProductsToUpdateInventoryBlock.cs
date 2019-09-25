@@ -12,15 +12,14 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
     public class GetProductsToUpdateInventoryBlock : PipelineBlock<string, List<string>, CommercePipelineExecutionContext>
     {
         private readonly IFindEntitiesInListPipeline _findEntitiesInListPipeline;
-        private readonly IGetEnvironmentCachePipeline _cachePipeline;
+        private readonly CommerceCommander _commerceCommander;
         private readonly IFindEntityPipeline _findEntityPipeline;
 
 
-        public GetProductsToUpdateInventoryBlock(IFindEntityPipeline findEntityPipeline, IGetEnvironmentCachePipeline cachePipeline, IFindEntitiesInListPipeline findEntitiesPipeline)
+        public GetProductsToUpdateInventoryBlock(IFindEntityPipeline findEntityPipeline, CommerceCommander commerceCommander, IFindEntitiesInListPipeline findEntitiesPipeline)
       : base((string)null)
         {
-           
-            this._cachePipeline = cachePipeline;
+            this._commerceCommander = commerceCommander;
             this._findEntitiesInListPipeline = findEntitiesPipeline;
             this._findEntityPipeline = findEntityPipeline;
         }
@@ -54,26 +53,21 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
             List<string> productIds = new List<string>();        
 
-
             string cacheKey = string.Format("{0}|{1}|{2}", context.CommerceContext.Environment.Name, context.CommerceContext.CurrentLanguage(), context.CommerceContext.CurrentShopName() ?? "");
             CatalogCachePolicy cachePolicy = context.GetPolicy<CatalogCachePolicy>();
-            ICache cache = null;
-            List<SellableItem> sellableItems = null;
+            
+            IList<SellableItem> sellableItems = null;
             if (cachePolicy.AllowCaching)
             {
-                IGetEnvironmentCachePipeline cachePipeline = getProductsToUpdateInventoryBlock._cachePipeline;
-                EnvironmentCacheArgument environmentCacheArgument = new EnvironmentCacheArgument();
-                environmentCacheArgument.CacheName = cachePolicy.CatalogsCacheName;
-                CommercePipelineExecutionContext context1 = context;
-                cache = await cachePipeline.Run(environmentCacheArgument, context1).ConfigureAwait(false);
-                sellableItems = await cache.Get(cacheKey).ConfigureAwait(false) as List<SellableItem>;
-                if (sellableItems != null)
+                sellableItems = await _commerceCommander.GetCacheEntry<IList<SellableItem>>(context.CommerceContext, cachePolicy.CacheName, cacheKey).ConfigureAwait(false);                                
+            }
+
+            if (sellableItems != null)
+            {
+                foreach (var item in sellableItems)
                 {
-                    foreach(var item in sellableItems)
-                    {
-                        await GetProductId(context, getProductsToUpdateInventoryBlock, catalogSitecoreId, productIds, item);                       
-                    }
-                }                    
+                    await GetProductId(context, getProductsToUpdateInventoryBlock, catalogSitecoreId, productIds, item);
+                }
             }
             else
             {
@@ -86,8 +80,7 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
 
                 if (cachePolicy.AllowCaching)
                 {
-                    if (cache != null)
-                        await cache.Set(cacheKey, new Cachable<List<SellableItem>>(sellableItems, 1L), cachePolicy.GetCacheEntryOptions()).ConfigureAwait(false);
+                    await _commerceCommander.SetCacheEntry<IList<SellableItem>>(context.CommerceContext, cachePolicy.CacheName, cacheKey, (ICachable)new Cachable<IList<SellableItem>>(sellableItems, 1L), cachePolicy.GetCacheEntryOptions()).ConfigureAwait(false);
                 }
             }
 

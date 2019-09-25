@@ -18,7 +18,7 @@
 <div class="shipall-addresses-title">
     <h3>Pick Up From Store</h3>
 </div>
-<div> 
+<div>
     <div class="shipall-options-items">
         <div data-bind="foreach: {data: cart().cartLines, as: 'cartLine' }">
             <!-- ko if: $index() === 0 -->
@@ -37,13 +37,9 @@
                     <label data-bind="text: DisplayName, attr: {'for': InventoryStoreId}"></label>
                     <!--/ko-->
                 </div>
-
             </div>
             <!-- /ko -->
             <span class="pickupUnavailable" style="display:none;">There are items in your cart that are not available for pickup at the stores nearest to you.</span>
-
         </div>
-        
-
     </div>
 </div>

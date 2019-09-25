@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Copyright 2016 Sitecore Corporation A/S
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 // except in compliance with the License. You may obtain a copy of the License at
@@ -25,9 +25,28 @@ function PromotedProductsViewModel() {
   self.relationshipId = ko.observable();
   self.canLoadMoreProducts = ko.observable(false);
 
-  self.loadProducts = function() {
+  function addProductList(data) {
+    $(data.ProductsList).each(function () {
+      self.productsList.push(this);
+    });
+
+    self.listTitle(data.ListTitle);
+    self.canLoadMoreProducts(
+      data.ProductsList && data.ProductsList.length >= (self.maxPageSize() || 4)
+    );
+  }
+
+  function getPageNumber() {
+    var pageNumber = self.pageNumber();
+    // Increment the page number so that the next call for loadMoreProducts will load the next page
+    self.pageNumber(self.pageNumber() + 1);
+    return pageNumber;
+  }
+
+
+  self.loadProducts = function () {
     var params = self.loadingParameters();
-    AjaxService.Post('/api/cxa/Catalog/GetPromotedProducts', params, function(
+    AjaxService.Post('/api/cxa/Catalog/GetPromotedProducts', params, function (
       data,
       success,
       sender
@@ -38,7 +57,7 @@ function PromotedProductsViewModel() {
     });
   };
 
-  self.loadingParameters = function() {
+  self.loadingParameters = function () {
     var params = {};
 
     // Page number
@@ -61,22 +80,4 @@ function PromotedProductsViewModel() {
 
     return params;
   };
-
-  function addProductList(data) {
-    $(data.ProductsList).each(function() {
-      self.productsList.push(this);
-    });
-
-    self.listTitle(data.ListTitle);
-    self.canLoadMoreProducts(
-      data.ProductsList && data.ProductsList.length >= (self.maxPageSize() || 4)
-    );
-  }
-
-  function getPageNumber() {
-    var pageNumber = self.pageNumber();
-    // Increment the page number so that the next call for loadMoreProducts will load the next page
-    self.pageNumber(self.pageNumber() + 1);
-    return pageNumber;
-  }
 }

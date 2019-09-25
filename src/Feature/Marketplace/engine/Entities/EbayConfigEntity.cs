@@ -22,7 +22,6 @@ namespace Sitecore.HabitatHome.Feature.EBay.Engine.Entities
         /// </summary>
         public EbayConfigEntity()
         {
-            this.Components = new List<Component>();
             this.DateCreated = DateTime.UtcNow;
             this.DateUpdated = this.DateCreated;
         }

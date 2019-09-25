@@ -6,7 +6,7 @@
   "Name": "AccessByRolesPolicySet",
   "Policies": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [      
+    "$values": [
       {
         "$type": "Sitecore.Commerce.EntityViews.ActionsRolesPolicy, Sitecore.Commerce.Plugin.Views",
         "Roles": {
