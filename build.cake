@@ -140,7 +140,21 @@ Task("Modify-Unicorn-Source-Folder").Does(() => {
 	XmlPoke(zzzDevSettingsFile, sourceFolderXPath, directoryPath, xmlSetting);
 });
 
-Task("Sync-Unicorn").Does(() => {
+Task("Turn-On-Unicorn").Does(() => {
+	var webConfigFile = File($"{configuration.WebsiteRoot}/web.config");
+	var xmlSetting = new XmlPokeSettings {
+		Namespaces = new Dictionary<string, string> {
+			{"patch", @"http://www.sitecore.net/xmlconfig/"}
+		}
+	};
+
+	var unicornAppSettingXPath = "configuration/appSettings/add[@key='unicorn:define']/@value";
+	XmlPoke(webConfigFile, unicornAppSettingXPath, "On", xmlSetting);
+});
+
+Task("Sync-Unicorn")
+.IsDependentOn("Turn-On-Unicorn")
+.Does(() => {
 	var unicornUrl = configuration.InstanceUrl + "unicorn.aspx";
 	Information("Sync Unicorn items from url: " + unicornUrl);
 
