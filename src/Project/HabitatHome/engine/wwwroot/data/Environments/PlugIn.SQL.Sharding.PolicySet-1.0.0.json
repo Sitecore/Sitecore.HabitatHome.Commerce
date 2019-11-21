@@ -306,7 +306,8 @@
             "^List-PriceBookToCatalog.*?$",
             "^List-PromotionBookToCatalog.*?$",
             "^List-InventorySetToCatalog.*?$",
-            "^List-Relationship.*?$"
+            "^List-Relationship.*?$",
+            "^List-.*Product.*?$"
           ]
         },
         "TableName": "RelationshipLists"

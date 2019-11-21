@@ -13,7 +13,6 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Managers
 {
     public class PromotionsManager : IPromotionsManager
     {
-        
         public IEnumerable<Promotion> GetActivePromotions(string productId)
         {
             List<Promotion> allPromos = GetAllPromotions().ToList();
@@ -48,7 +47,9 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Managers
                             {
                                 string propValue = prop["Value"];
                                 if (propValue.Contains(productId) && !activePromos.Contains(promo))
+                                {
                                     activePromos.Add(promo);
+                                }
                             }
                         }
                     }
@@ -56,6 +57,7 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Managers
             }
             return activePromos;
         }
+
         public IEnumerable<Promotion> GetAllPromotions()
         {
             List<Promotion> allPromotions = new List<Promotion>();
@@ -71,16 +73,21 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Managers
                 foreach (var promotion in resultList["value"])
                 {
                     Promotion returnedPromotion = new Promotion();
-                    returnedPromotion.Id = promotion["Id"].ToString(); 
+                    returnedPromotion.Id = promotion["Id"].ToString();
+                    returnedPromotion.DisplayText = promotion["DisplayText"].ToString();
                     returnedPromotion.DisplayCartText = promotion["DisplayCartText"].ToString();
                     DateTime validFrom = new DateTime();
                     DateTime validTo = new DateTime();
 
                     if (DateTime.TryParse(promotion["ValidFrom"].ToString(), out validFrom))
+                    {
                         returnedPromotion.ValidFrom = validFrom;
+                    }
                     if (DateTime.TryParse(promotion["ValidTo"].ToString(), out validTo))
+                    {
                         returnedPromotion.ValidTo = validTo;
-                    
+                    }
+
                     var promoPolicyList = promotion["Policies"].ToArray().ToList();
                     promoPolicyList.ForEach((Action<JToken>)(policy =>
                     {
@@ -95,7 +102,7 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Managers
                             var benefits = policy["Benefits"].ToArray();
                             returnedPromotion.Benefits.AddRange(benefits);
                         }
-                    }));                    
+                    }));
 
                     allPromotions.Add(returnedPromotion);
                 }

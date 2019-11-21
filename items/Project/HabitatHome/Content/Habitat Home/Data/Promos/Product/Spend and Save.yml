@@ -1,0 +1,28 @@
+﻿---
+ID: "d2a373ab-939e-4edd-9b33-84eb86554a3f"
+Parent: "a619299d-d3ee-4a2f-b93e-e878a9923cf8"
+Template: "324733cf-afec-4281-9a18-03b6cfc4e535"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Promos/Product/Spend and Save
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14023dd5-30e7-4e3c-bf31-d835f3a87410"
+      Hint: PromoText
+      Value: <p>Spend $300 and save 5%</p>
+    - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{AF47206A-1B7F-4644-AE1D-55016A9744A1}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190824T002103Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b59adc09-32a3-46f2-aede-b0c633979263"
+      Hint: PromoText2
+      Value: <p><strong>with coupon HABITAT</strong></p>

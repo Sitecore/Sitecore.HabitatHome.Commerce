@@ -1,0 +1,224 @@
+﻿---
+ID: "4a137c93-84c9-4232-b468-ae11590fc93b"
+Parent: "10083ca0-5093-4d67-99db-2579abb421d3"
+Template: "19855ed8-05c2-4595-b240-743831c3a2c7"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/shoppingcart
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {2FA513FA-E25E-491E-927E-5363D206B41B}
+    {CB32CE1B-1A05-4D3E-94A2-B349858386AB}
+    {CE7D72F3-4574-4C94-9FD9-2E77360043A4}
+    {FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}
+    {7D98DBB3-4D8A-4FD9-9722-029200EC82BE}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Type: Checklist
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: 
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{E0490D57-B6E1-471E-AC3A-76D585B88562}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{37141A9A-8879-4C7C-8F7C-3620CB14DA68}"
+          p:before="*"
+          s:ds="{9637DEA0-77C6-4906-BC29-410066FFCCCF}"
+          s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
+          s:par="Current Step=Cart&amp;GridParameters=%7b113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7d&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0"
+          s:ph="/main/container-1" />
+        <r
+          uid="{242E7AAB-16C1-4D65-A0D5-7C310C812C18}"
+          p:after="r[@uid='{37141A9A-8879-4C7C-8F7C-3620CB14DA68}']"
+          s:ds="{D8A3B33A-D48A-44A8-9741-D846BDC551F6}"
+          s:id="{1EF188EF-3257-4A36-ABE1-15E74FFE6E92}"
+          s:par="Display Table Header=1&amp;Display Delete Button=1&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information&amp;Display Sublines=1&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles"
+          s:ph="/main/container-1" />
+        <r
+          uid="{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}"
+          p:after="r[@uid='{242E7AAB-16C1-4D65-A0D5-7C310C812C18}']"
+          s:ds="{8CD9D2A6-E00B-4A5F-8345-778B957A1095}"
+          s:id="{AB1E2893-6556-49D5-9095-B7AAF09B8BEF}"
+          s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
+          s:ph="/main/container-1" />
+        <r
+          uid="{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}"
+          p:after="r[@uid='{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}']"
+          s:ds="{4C95BC54-FE4E-40ED-B857-09C1D8D1972D}"
+          s:id="{062251D0-4C83-43BE-8119-B33DAF14DF2F}"
+          s:par="GridParameters=%7b113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7d%7c%7bF2FCE948-4F77-44AF-A188-B2030061F793%7d%7c%7b08B60EE1-3F06-4C49-9449-E7420AFE5A2F%7d%7c%7b3EBE0FCB-B055-4BFD-8C61-5FD42C9A8E9D%7d"
+          s:ph="/main/container-1" />
+        <r
+          uid="{5128720C-BB91-4B94-BBB7-65AAF2D61430}"
+          p:after="r[@uid='{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}']"
+          s:ds="{26C7F4CE-48A2-4446-9A27-2264C2821EFA}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="Styles=%7b3C908B90-0068-44CF-B1B4-C362CA0207DB%7d&amp;FieldNames=%7bA3785E6D-6488-4787-9449-4D187E4C30DE%7d"
+          s:ph="/main/container-1" />
+        <r
+          uid="{A17DE5E9-A2CA-4DCB-BC17-79F4811196FF}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="Styles=AB7C8234-8878-4042-9A65-99B8559E364B&amp;DynamicPlaceholderId=1"
+          s:ph="main" />
+      </d>
+      <d
+        id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}">
+        <p:d />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6B2E1BB1-C610-475B-973D-86C86CE40F0D}"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Shopping Cart
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B952212B-F14F-4D1C-B836-3A74E12F3430}"
+              p:before="*"
+              s:ds="local:/Data/HTML Code 1"
+              s:id="{6DDA07A9-18D3-47A0-AB74-DF54956DD5F1}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
+              s:ph="/main/container-1" />
+            <r
+              uid="{FD92C8DB-4041-490A-95AD-70657ECE05F0}"
+              p:after="r[@uid='{B952212B-F14F-4D1C-B836-3A74E12F3430}']"
+              s:ds=""
+              s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B184DC7A4-FDBB-446F-94BE-30B44B12C2AD%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+              s:ph="/main/container-1/container-4">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{639366C0-E7F5-4315-BC1B-DAFA4D481413}"
+                    s:name="Spend and Save">
+                    <conditions>
+                      <and
+                        uid="FE3FABE4198C45598645C7DD2A4CBAB4">
+                        <condition
+                          uid="EC4F60E10E89458A948E6B89471A2B28"
+                          s:id="{F534DDB9-D2C7-44B5-AA28-3E03878F4A58}"
+                          s:TotalProductQuantity="1"
+                          s:operatorid="{814EF7D0-1639-44FD-AEEF-735B5AC14425}" />
+                        <and
+                          uid="23038319DEC347C28431E20B4928C6CE">
+                          <condition
+                            uid="0267D52A709B40A79A2E6BA9C74480FF"
+                            s:id="{A5C43381-DA2F-4C22-AB76-A1A3483590AF}"
+                            s:CartTotal="1000"
+                            s:operatorid="{E362A3A4-E230-4A40-A7C4-FC42767E908F}" />
+                          <condition
+                            uid="F7F447CC0D244B5582F87D6E31A3B510"
+                            s:id="{0476801D-E746-4C1B-BCBE-D53A1A4BF1CF}"
+                            s:except="true"
+                            s:CouponCode="habitat" />
+                        </and>
+                      </and>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="53F2E52E2BAD4C1B8FE987D7BD2CBCCE"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{D2A373AB-939E-4EDD-9B33-84EB86554A3F}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{20D68AD7-3772-4865-8767-7A99F0AF9587}"
+                    s:name="Better with a Soundbar">
+                    <conditions>
+                      <and
+                        uid="F69BA5CB7D0844B982E6DC9D7B4361BB">
+                        <condition
+                          uid="EA62B505CD1745CEB7773697BB835C3E"
+                          s:id="{FC785AEF-353A-4AAD-9708-BFB0F2105011}"
+                          s:ProductType="Television" />
+                        <condition
+                          uid="5E91E0835C904B3EBEFD69FF4697545A"
+                          s:id="{FC785AEF-353A-4AAD-9708-BFB0F2105011}"
+                          s:except="true"
+                          s:ProductType="Soundbar" />
+                      </and>
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="65A9A19016354DAC99038EE4DFBF1584"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="{EF42783C-889A-45CC-A223-36A7F458F3C4}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="D847BA599346464CA5536FFD217814E2"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{57B4E00E-5347-4506-853A-F87114B4798F}"
+              p:after="r[@uid='{FD92C8DB-4041-490A-95AD-70657ECE05F0}']"
+              s:ds=""
+              s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+              s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;BackgroundImage&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier=Shoppingcart-Promo-Slim&amp;DynamicPlaceholderId=4"
+              s:ph="/main/container-1" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191324Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Shopping Cart

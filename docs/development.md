@@ -61,3 +61,33 @@ When updating one of those dependencies, the site should be re-exported using Cr
    1. Run `npm install -g gulp-cli`
    2. Run `npm install` (This will also create the `gulpfile.babel.js` file which is git ignored)
 6. To run the gulp tasks run `gulp`. This will watch the local folders and copy the files in the Sitecore media library.
+
+## Upgrading Sitecore Experience Commerce
+
+When upgrading the engine project to a new version of Sitecore Experience Commerce, pay extra attentention to the following customizations we have that differs from the out of the box files:
+
+- `PlugIn.SQL.Sharding.PolicySet-1.0.0.json`: The `RelationshipLists` table `ListShardingPolicy` was modified to add the `"^List-.*Product.*?$"` value at the end of the list. This is required to view the upSellProducts, crossSellProducts, installationProducts, RelatedProducts, TrainingProducts, and WarrantyProduct in the Business Tools and for the export catalog call to export these relationships.
+
+    ```json
+    {
+      ...
+      "Policies": {
+        ...
+        "$values": [
+          ...
+          {
+            "$type": "Sitecore.Commerce.Plugin.SQL.ListShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+            "Expressions": {
+              "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+              "$values": [
+                ...
+                "^List-.*Product.*?$"
+              ]
+            },
+            "TableName": "RelationshipLists"
+          }
+          ...
+        ]
+      }
+    }
+    ```

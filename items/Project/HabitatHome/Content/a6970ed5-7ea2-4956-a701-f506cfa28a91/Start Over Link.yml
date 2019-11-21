@@ -1,0 +1,28 @@
+﻿---
+ID: "4a52615a-44a9-4126-af01-1c033fd727bc"
+Parent: "a6970ed5-7ea2-4956-a701-f506cfa28a91"
+Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Partial Designs/Recommended Content And Product/Data/Start Over Link
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171121T154852Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="Start Over" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{EE9BC5DD-2C27-4A8A-AC80-2AF3AC4E7296}" />
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:

@@ -1,0 +1,28 @@
+﻿---
+ID: "c19ba3cd-6290-4c68-9a5d-2008a16fdbef"
+Parent: "b1d01a70-e9bb-43a9-bc5e-b34442e5ab85"
+Template: "d4c7f5f9-8977-4e0c-b6ce-28ae8e0753e2"
+Path: /sitecore/client/Applications/Launchpad/PageSettings/Buttons/Commerce/BusinessTools
+DB: core
+SharedFields:
+- ID: "044e3fdb-22ae-4e6c-b50e-2abdfbabd338"
+  Hint: Link
+  Value: "https://bizfx.habitathome.dev.local"
+- ID: "d25b56d4-23b6-4462-be25-b6a6d7f38e13"
+  Hint: Icon
+  Value: /sitecore/shell/client/Applications/Commerce/Assets/Icons/48x48/commerce_icon.png
+- ID: "dc0c067b-8d1a-4aca-9852-e6b29139a63d"
+  Hint: OpenNewTab
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20190923T224542:637048755423181515Z"
+    - ID: "aa4a4643-5bfc-45a7-b9d9-5183a5211d99"
+      Hint: Text
+      Value: Business Tools

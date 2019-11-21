@@ -1,0 +1,35 @@
+﻿---
+ID: "b6fc4391-4149-413f-a4e6-d89008d5cf0a"
+Parent: "d6a2fb7a-f09e-4dbc-bda4-233534cc1eb4"
+Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/guides/Nine things to know before you buy a TV/Data/Text 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T232802Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: |
+        <p><strong>Display types</strong></p>
+        <p>One of the first things you’ll want to do is narrow down what type of&nbsp;TV&nbsp;you want. There are LCD TVs, LED TVs, OLED TVs, and plasma TVs to chose from.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p style="margin-left: 40px;"><strong>LCD:</strong>&nbsp;Liquid Crystal Displays are common to find, and often are the cheapest option. They’re energy efficient and usually have good color. In general, they are more basic but can get the job done. However, if you’re trying to do high frame-rate gaming, they might not be the best choice.</p>
+        <p style="margin-left: 40px;"><strong>LED:</strong>&nbsp;TVs branded as LED are actually just LCD TVs that use LEDs as a backlight for the liquid crystals in the display. If a TV&nbsp;has “local dimming,” it will have an advantage when it comes to contrast ratio, which is a plus. More so, LED TVs&nbsp;are less power hungry than standard LCDs and plasma.</p>
+        <p style="margin-left: 40px;"><strong>OLED</strong>:&nbsp;Organic Light Emitting Diode TVs actually&nbsp;<em>are</em>&nbsp;different from LCD TVs. OLED TVs use colored LED lights to create the image, so they save on power, though not always as much as LED TVs. They do manage to create a high-quality image, and a bright one at that, so they may be best for those planning on watching TV a lot during brighter hours, when glare could otherwise be a problem.</p>
+        <p><strong>Contrast ratio</strong></p>
+        <p>Many companies determine the contrast ratio of their TVs very differently. The contrast ratio is simply the difference in brightness between the darkest black and whitest white the TV can produce.</p>
+        <p>Your best bet is to check out an external review site that tests contrast ratios. Otherwise, be sure to view the TV in a dark place, as ambient light will make it hard to tell how dark the TV’s blacks can get. If you know you might not have time to do all that while browsing, just pay attention to when a contrast ratio is advertised as “true” or “native” as opposed to “dynamic.” The true or native contrast ratios are more likely to give you numbers within reason, which means you’ll be able to compare the figure to that of other TVs.</p>
+        <p><strong>Refresh rate</strong></p>
+        <p>The refresh rate of your TV is the number of times the image on the screen is refreshed per second. It’s measured in hertz, so you might see 60Hz, 120Hz, or even 144Hz listed on the box. Fortunately, you can trust this number a lot more than you could trust the contrast ratio. Higher refresh rates create a smoother flow between images and reduce motion blur, which is handy if you watch a lot of action movies. High refresh rates can also be good for gaming.</p>
+        <p><strong>Inputs</strong></p>
+        <p>The TVs you look at may have more input options than you will ever know what to do with. What’s important is that you know what you will be trying to connect to your TV. If the TV has a coaxial F connector, you don’t need to worry about it&nbsp;if you only plan on plugging things in via HMDI and it has plenty of those.</p>
+        <p>To input a signal from a computer, modern game console, or Blu-ray players, you’ll probably want HDMI or DisplayPort inputs. If you feel the need to connect an old VCR or DVD player, you’ll want to make sure it has analog composite inputs. For a cable box, look for a coaxial cable input. Also, if you’re planning to connect a device that uses HDCP (High-bandwidth Digital Content Protection), like many Blu-ray players, you’ll want to make sure that the TV you buy also uses HDCP.</p>
+        <p>Understanding all of these details a little better should make it a lot easier for you to know what you’re getting when picking out a TV to complete your home theater, gaming system, or just that empty space on your man-cave wall.</p>

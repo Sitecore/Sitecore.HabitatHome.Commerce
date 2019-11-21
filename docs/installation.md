@@ -50,6 +50,16 @@ To deploy the **HabitatHome.Commerce** solution, from the root of the solution
 
 Note: Build target **`Initial`** only needs to be executed successfully during the initial deployment. Subsequent deployments can be made by running the **`Default`** Cake build target: `.\build.ps1` (without target specification).
 
+### Set Custom Hostnames (optional)
+
+If you set custom hostnames for this deployement, you need to set them in some Sitecore items after deployment.
+
+Master database:
+- `/sitecore/content/Habitat SXA Sites/Habitat Home/Settings/Site Grouping/Habitat Home`: Set the Sitecore website hostname in the "Host Name" field.
+
+Core database:
+- `/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Commerce/BusinessTools`: Set the commerce business tools URL in  the "Link" field.
+
 ### Deploy Engine
 
 The next step will deploy Habitat Home's custom Commerce Engine with its relevant plugin and load the catalog, inventory and promotions.
@@ -75,6 +85,13 @@ The script is provided as an example and should be reviewed to understand its be
 If you have made any changes to your settings, review the `deploy-engine-commerce.ps1` script and override / modify the parameters as required.
 
 `.\deploy-commerce-engine.ps1 -Bootstrap -Initialize`
+
+### Rebuild Indexes
+
+Rebuild:
+
+- sitecore_master_index (For media selector dialog to display media)
+- sitecore_web_index (For product listing pages to start displaying products)
 
 ### Publish Site
 

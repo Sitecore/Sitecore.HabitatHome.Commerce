@@ -1,0 +1,69 @@
+﻿---
+ID: "3076093e-75ae-45cc-a3c9-dc3ef1d45011"
+Parent: "d6a2fb7a-f09e-4dbc-bda4-233534cc1eb4"
+Template: "2ad23d55-aecd-43dd-ae0d-72d2ebcba60f"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/guides/Nine things to know before you buy a TV/Data/HTML Code 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "24cce27c-05db-4473-a1ed-e69b1725ff1c"
+      Hint: HtmlCode
+      Value: |
+        <style>
+        #Guides-CommerceComponents .rich-text a:hover {
+            color: #25b4c1;
+            text-decoration: underline;
+        }
+        #Guides-CommerceComponents .rich-text a {
+            color: #1d8c96;
+            text-decoration: none;
+        }
+        #Guides-CommerceComponents {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10em;
+        max-width: 1500px;
+        width: auto;
+        }
+        #Guides-CommerceComponents .cxa-productlist-component{
+        padding-right: 0px;
+        padding-left: 0px;
+        }
+        #Guides-CommerceComponents .link a{
+        display: inline-block;
+        min-width: 150px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 16px;
+        padding: .1875em .3125em;
+        font-weight: 300;
+        text-transform: none;
+        border: 1px solid #141919;
+        color: #141919;
+        text-decoration: none;
+        }
+        #Guides-CommerceComponents .link a::before{
+        display: none;   
+        }
+        #Guides-CommerceComponents .link a::after{
+        font-family: FontAwesome;
+        content: '';
+        font-size: 20px;
+        vertical-align: middle;
+        font-weight: bold;
+        margin-left: 4px;
+        }
+        #Guides-CommerceComponents .product-list .load-more-btn {
+        display: block;  
+        }
+        </style>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190803T054534Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

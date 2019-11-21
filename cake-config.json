@@ -3,6 +3,7 @@
     "InstanceUrl": "https://habitathome.dev.local/",
     "SolutionName": "HabitatHome.Commerce.sln",
     "ProjectFolder": "C:\\Projects\\Sitecore.HabitatHome.Commerce",
+    "UnicornSerializationFolder": "C:\\Projects\\Sitecore.HabitatHome.Commerce\\items",
     "BuildConfiguration": "Debug",
     "BuildToolVersions": "VS2019",
     "RunCleanBuilds": false,

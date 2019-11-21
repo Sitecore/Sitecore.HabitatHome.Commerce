@@ -25,6 +25,15 @@
                 }
             }
         }
+        .ActivePromotion{
+            margin: 0 auto 2em auto;
+            display:table;
+            
+            .component-content{
+                display:inline-block;
+                background-color:transparent;
+            }
+        }
         @media (min-width: 768px) {
             .component.column-splitter {
               width: 750px;

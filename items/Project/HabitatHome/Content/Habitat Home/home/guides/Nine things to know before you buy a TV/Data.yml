@@ -1,0 +1,14 @@
+﻿---
+ID: "d6a2fb7a-f09e-4dbc-bda4-233534cc1eb4"
+Parent: "974f8c4a-269a-4afa-a440-b00ef6a4406b"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/guides/Nine things to know before you buy a TV/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190803T054534Z
