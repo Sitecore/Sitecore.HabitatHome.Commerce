@@ -55,5 +55,4 @@ Languages:
         <image mediaid="{A0D6F761-0D73-4814-9157-4DC3417A4CB8}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">Even the simplest appliances make a big impact. Habitat Dwell steam mops and vacuums eliminate dirt, dust, and allergens for a healthier home. Ten- and 12-speed mixers give you the perfect dough every time.</span>
+      Value: "Even the simplest appliances make a big impact. Habitat Dwell steam mops and vacuums eliminate dirt, dust, and allergens for a healthier home. Ten- and 12-speed mixers give you the perfect dough every time."

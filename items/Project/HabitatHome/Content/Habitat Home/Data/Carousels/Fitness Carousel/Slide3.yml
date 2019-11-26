@@ -69,7 +69,7 @@ Languages:
     - ID: "b31d5ddd-1eda-4b22-b97d-ff71fc8e72bc"
       Hint: SlideLink
       Value: |
-        <link text="Électroménagers" anchor="" linktype="internal" class="" title=""  querystring="" id="{7FFDAD1C-50A6-4CE7-81C5-259DCD6D1FC1}" />
+        <link text="Lire plus" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7FFDAD1C-50A6-4CE7-81C5-259DCD6D1FC1}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1

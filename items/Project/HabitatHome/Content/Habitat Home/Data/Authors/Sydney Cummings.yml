@@ -32,7 +32,7 @@ Languages:
     Fields:
     - ID: "1db08bff-1f9b-4d32-810a-7a8327e04537"
       Hint: Author Name
-      Value: Sydney Cummings
+      Value: シドニー クミング
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190301T182613Z
@@ -42,8 +42,8 @@ Languages:
         sitecore\Admin
     - ID: "6cc5da3d-3e19-4ea4-b748-c0125341859f"
       Hint: Author Bio
-      Value: Sydney is a personal trainer and fitness coach in the Charlotte North Carolina area. She is a Women's Health Action hero and the go to for all your training needs.&nbsp;
+      Value: シドニーはシャーロットノースカロライナ地区のパーソナルトレーナーとフィットネスコーチです。彼女は女性の健康行動のヒーローであり、あなたの訓練の必要性に応えます。
     - ID: "e9baf418-31e2-415e-b168-6109e5dbf2ef"
       Hint: Author Image
       Value: |
-        <image mediaid="{4F106EE2-D598-45BD-AAC2-A4C569CCC38C}" ></image>
+        <image mediaid="{4F106EE2-D598-45BD-AAC2-A4C569CCC38C}" alt="シドニー クミング" height="" width="" hspace="" vspace="" />

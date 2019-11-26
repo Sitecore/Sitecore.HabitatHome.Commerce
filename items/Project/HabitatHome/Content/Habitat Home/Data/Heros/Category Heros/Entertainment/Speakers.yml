@@ -47,7 +47,7 @@ Languages:
       Value: 20190301T182629Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Supreme Sound Starts Here
+      Value: 素晴らしい音はここから
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -58,4 +58,4 @@ Languages:
         <image mediaid="{C1337CD2-E12D-4DA5-BBA3-49877678023B}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: Sleek design and easy setup make the Habitat speaker line a home theater win.
+      Value: <p>スタイリッシュなデザインとセットアップが簡単なため、Habitatスピーカーラインはホームシアターに勝利します。</p>

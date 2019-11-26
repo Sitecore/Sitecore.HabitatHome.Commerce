@@ -51,7 +51,7 @@ Languages:
       Value: 20190301T182627Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Upgrade Your Grooming Routine
+      Value: グルーミングルーチンをアップグレードする
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,4 +62,4 @@ Languages:
         <image mediaid="{69BAA908-6A3E-42F7-9645-E2C81F96959A}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: Stock up on the essential grooming and skincare products you need.
+      Value: あなたが必要とする必須のグルーミングとスキンケア製品を購入しましょう。

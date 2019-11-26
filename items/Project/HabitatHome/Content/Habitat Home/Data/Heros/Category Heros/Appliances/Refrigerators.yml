@@ -55,5 +55,4 @@ Languages:
         <image mediaid="{30A64D3F-28F5-48BF-873F-4937087C5607}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <p><span style="color: #141919;">Helix Viva refrigerators connect to your home network via our mobile app. Display family photos, keep track of food inventory, and control temperature with the push of a button.&nbsp;</span></p>
+      Value: Helix Viva refrigerators connect to your home network via our mobile app. Display family photos, keep track of food inventory, and control temperature with the push of a button.

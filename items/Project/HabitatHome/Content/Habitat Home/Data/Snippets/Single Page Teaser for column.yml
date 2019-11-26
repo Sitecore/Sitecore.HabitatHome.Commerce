@@ -5,6 +5,9 @@ Template: "2b35e65c-137a-4641-b683-d223ca7cfac0"
 Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Snippets/Single Page Teaser for column
 DB: master
 SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
 - ID: "c80e6f3c-5bcd-426b-b1eb-6d10672e985d"
   Hint: Data Source Selection Behavior
   Value: AskUser
@@ -18,8 +21,8 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{D44182C7-844C-4572-82F2-EDFD4E72556D}"
-          s:ds="{8A33684A-7711-4445-A119-BD1EFEC890B6}"
           s:id="{162AB463-0CE1-4295-8F7E-2E2E969984ED}"
+          s:ds="{8A33684A-7711-4445-A119-BD1EFEC890B6}"
           s:par="GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D&amp;FieldNames=%7B27992E19-7C79-40E3-B861-85CA324956C9%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="section-content">
           <rls>
@@ -38,8 +41,8 @@ SharedFields:
                     <condition
                       uid="81FDA6940996478CBF7D4284C0F891D7"
                       s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Cooking" />
+                      s:PatternName="Cooking"
+                      s:ProfileName="Topic Interest Category" />
                   </or>
                 </conditions>
                 <actions>
@@ -72,6 +75,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180627T122904Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

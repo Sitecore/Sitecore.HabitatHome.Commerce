@@ -48,7 +48,7 @@ Languages:
       Value: 20190301T182636Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Treat someone special to a Habitat Gift Card
+      Value: ハビタットのギフトカードに特別な人を扱う
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{627AA15D-190C-46CA-88BB-EBD598E6063F}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span>Give your friends, family, and colleagues a gift they'll always remember: a Habitat Gift Card. Available in any amount, a gift card gives your loved one a taste of Habitat: stylish products with advanced technology, "smart" features, and seamless design. It's the gift of living well, simply.&nbsp;</span>
+      Value: <p>あなたの友人、家族、同僚に、いつも覚えている贈り物、ハビタットギフトカードをプレゼントしてください。どんな金額でもご利用いただけます。ギフトカードは、愛する人にハビタットの味を提供します。高度なテクノロジーを備えたスタイリッシュな製品、スマートな機能、シームレスなデザインです。それは簡単にうまく生きる贈り物です。</p>

@@ -71,7 +71,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Aspirateurs" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />
+        <link text="Aspirateurs" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{324A7088-1ADF-3390-23E5-463C6D80B047}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -90,4 +90,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="掃除機" querystring="" target="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />
+        <link text="掃除機" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{324A7088-1ADF-3390-23E5-463C6D80B047}" />

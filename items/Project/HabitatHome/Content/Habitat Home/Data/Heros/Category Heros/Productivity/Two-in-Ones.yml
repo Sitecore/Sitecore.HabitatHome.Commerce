@@ -47,7 +47,7 @@ Languages:
       Value: 20190301T182631Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Touch. Type. Go.
+      Value: タッチ、タイプ、ゴー
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -58,4 +58,4 @@ Languages:
         <image mediaid="{D641BFA2-6363-4D6C-A218-37526BA785A0}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: "Touchscreens and attachable keyboards mean easy navigation and efficient word processing. Front and rear cameras and an easy-to-use stylus let you create, play, and work from anywhere."
+      Value: <p>タッチスクリーンとアタッチ可能なキーボードは、簡単なナビゲーションと効率的なワープロを意味します。フロントとリアのカメラと使いやすいスタイラスにより、どこからでも作成、再生、作業ができます。</p>

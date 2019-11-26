@@ -53,7 +53,7 @@ Languages:
     - ID: "9c385368-a554-4a92-9a8d-37f3ef3a09f4"
       Hint: HeroImage
       Value: |
-        <image mediaid="{955DDE5C-00D8-4B9F-BC49-913DF38054E1}" ></image>
+        <image mediaid="{955DDE5C-00D8-4B9F-BC49-913DF38054E1}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: "<p>Whether you need a space-saving soundbar or a 7.1 surround system, Habitat Aura brings out the best in your movies, TV shows, and music. Elegant designs compliment your home.</p>"
+      Value: <p>スペースを節約できるサウンドバーや7.1サラウンドシステムが必要な場合でも、Habitat Auraは映画、テレビ番組、音楽を最高に引き出します。エレガントなデザインはあなたの家を褒める。</p>

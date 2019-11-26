@@ -75,7 +75,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Réfrigérateurs" anchor="" linktype="internal" class="" title=""  querystring="" id="{07556862-A5A2-460A-8D8A-8DA86D405585}" />
+        <link text="Fitness Trackers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{055766BE-D42E-4E94-B53B-3F6D223EC3D5}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

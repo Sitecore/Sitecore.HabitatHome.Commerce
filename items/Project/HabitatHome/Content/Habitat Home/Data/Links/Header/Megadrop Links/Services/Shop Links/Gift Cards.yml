@@ -38,7 +38,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Gift Cards" linktype="rel" url="/shop/Gift-Cards" anchor="" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2756E34F-FA94-26DF-DFA4-BA3A90E52CFF}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -53,4 +53,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Gift Cards" linktype="rel" url="/shop/Gift-Cards" anchor="" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2756E34F-FA94-26DF-DFA4-BA3A90E52CFF}" />

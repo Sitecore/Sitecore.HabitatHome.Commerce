@@ -75,7 +75,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Récepteurs" anchor="" linktype="internal" class="" title=""  querystring="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
+        <link text="Récepteurs" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A0860C27-2A32-841F-7014-75B163B9471E}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -94,4 +94,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="レシーバーとアンプ" querystring="" target="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
+        <link text="レシーバーとアンプ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A0860C27-2A32-841F-7014-75B163B9471E}" />

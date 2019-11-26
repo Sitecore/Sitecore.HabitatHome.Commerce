@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{C6C42CB9-0CC4-4859-92C1-FB90C45E6776}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">Ultra-high performance, expanded storage, and a generous display. You won't accept anything less. Habitat Spark desktop computers deliver, and with an attractive price point that fits your budget.&nbsp;</span>
+      Value: "Ultra-high performance, expanded storage, and a generous display. You won't accept anything less. Habitat Spark desktop computers deliver, and with an attractive price point that fits your budget."

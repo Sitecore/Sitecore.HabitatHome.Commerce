@@ -22,7 +22,7 @@ Languages:
         sitecore\virtualssuser
     - ID: "6d6e0783-1423-4834-ab27-74312e8b6754"
       Hint: Title
-      Value: Page Size
+      Value: Results per page
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -57,6 +57,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "6d6e0783-1423-4834-ab27-74312e8b6754"
+      Hint: Title
+      Value: Results per page
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 

@@ -71,7 +71,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Aide" anchor="" linktype="internal" class="" title=""  querystring="" id="{FD27A69C-2AFD-461D-8C59-73554C376648}" />
+        <link text="Aide" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -90,4 +90,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Gift Cards" anchor="" linktype="internal" class="" title=""  querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
+        <link text="ギフトカード" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2349477D-5C4D-4102-8F57-D869FD65C090}" />
