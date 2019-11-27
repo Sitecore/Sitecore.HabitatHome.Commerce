@@ -19,7 +19,7 @@ Languages:
     - ID: "18f9beb8-0116-40fd-b47e-fd0a2327d7e0"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{E7E63D9E-C6BC-4166-8163-EBFB566C190B}" ></image>
+        <image mediaid="{E7E63D9E-C6BC-4166-8163-EBFB566C190B}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171121T231205Z
@@ -94,7 +94,7 @@ Languages:
     - ID: "b8c1a9d2-de76-4519-aff4-1442525f32b0"
       Hint: PromoLink
       Value: |
-        <link id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" querystring="" target="" text="Shop all Headphones" url="/Habitat Sites/Habitat Home/home" linktype="internal" />
+        <link linktype="internal" text="Shop all Headphones" querystring="" target="" id="{10083CA0-5093-4D67-99DB-2579ABB421D3}" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox

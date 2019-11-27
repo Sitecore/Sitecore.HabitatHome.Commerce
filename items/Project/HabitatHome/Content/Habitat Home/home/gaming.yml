@@ -172,10 +172,16 @@ Languages:
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Gaming
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: Open up your true gaming potential with our choose your own Habitat Subscription Game.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: gaming, consoles, accessories, subscription, Habitat Subscriptions
     - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
       Hint: Navigation Secondary Promotions
       Type: Treelist
@@ -207,7 +213,7 @@ Languages:
         <image mediaid="{052C5881-CB06-47AE-BDC5-64B04ADA1F1F}" />
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
-      Value: Television and Audio
+      Value: Gaming
 - Language: "fr-CA"
   Fields:
   - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
@@ -262,6 +268,14 @@ Languages:
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
+    - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
+      Hint: Navigation Secondary Promotions
+      Type: Treelist
+      Value: |
+        {AD302F66-90D2-4569-8C5B-8142DED3DDFF}
+        {29E97246-3642-4183-B074-617E0C0F1B43}
+        {F4B9697E-B57C-4B7E-BB72-82C8B36F8E1B}
+        {2E2E8F62-0BC7-4980-8562-020B80AE810A}
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: 
@@ -275,10 +289,21 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{052C5881-CB06-47AE-BDC5-64B04ADA1F1F}" alt="gaming thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
       Value: 0
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {B2765EA1-DB11-4718-9836-2E110312664C}
+        {4A5E8969-48A4-4B8B-BAFD-1392CE8A2956}
+        {4AD77913-F656-41F1-AA26-7EC6D7F658B0}
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
@@ -291,6 +316,9 @@ Languages:
     - ID: "de457091-0989-414e-addf-59db0ddb6690"
       Hint: TwitterImage
       Value: 
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Television and Audio
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
