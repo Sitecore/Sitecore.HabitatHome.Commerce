@@ -20,7 +20,7 @@ SharedFields:
   Value: "{166285C6-BFEC-4BDC-A3AA-CAB623EE27D2}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{B9BF1AC8-FF4D-4285-A8F6-2EED02405122}|{56EF61C0-E9CF-4670-8287-5A5BCFCB4A3A}|{8C261FDD-B80E-4C87-972F-ACEEBEED524D}|{1E3E82D8-FC29-45F2-BB97-27821F933A47}|{4E5557D7-B881-41E9-90F1-E80E101538CB}|{6C4BCF02-0F81-412F-9A42-5475866E3049}|{B0A62EA1-F33E-42EE-B5F7-D04E153D0FD6}|{885632A4-FFFE-47F0-803B-1F716C5BAE33}|{DB31FD66-3968-40AC-9D32-9306866A6B05}|{18D35A1F-FD41-451D-9193-1B415962216F}|{40DC3511-4F76-4EDE-9F39-4F936786DDE4}|{38AB59C8-04D8-4767-9DC0-E859523EE09D}|{478CF7B7-C25F-457F-BFCB-C2B0DFB0BD9A}|{E0286B0A-70C0-4455-BECA-C7C64DF02E4E}|{00A90052-856D-409F-BB5E-5F366EC171D2}|{DE300F00-5309-4941-8407-AEF7D9A0CC11}|{46DFBDE2-60E5-4096-9222-DADB89853EB8}|{75588863-EE39-481C-97CB-C05D74C70078}|{6F181125-7A68-4B38-A160-737C29BC4D6A}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -120,7 +120,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{03DA35E8-4E53-4311-AB1E-4118519CF0FE}" alt="connected home hero" height="" width="" hspace="" vspace="" />
+        <image mediaid="{03DA35E8-4E53-4311-AB1E-4118519CF0FE}" alt="connected home hero" height="" width="" hspace="" vspace="" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20171112T204245Z
@@ -150,6 +150,27 @@ Languages:
       Value: |
         <p>Your smartphone wakes you up with a gentle song. Your blinds automatically open and your coffeepot brews a perfect cup, timed so that it's ready as soon as you emerge from the shower. As you leave for work, your lights automatically click off, your thermostat adjusts, and your security system kicks in. All this activity, and you didn't lift a finger.</p>
         <p>Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions.</p>
+        
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: connected home, home automation, smart home, energy efficiency,
+    - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
+      Hint: Subtitle
+      Value: Connected Home
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: |
+        Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions.
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: How to Design Your Connected Home
+    - ID: "87241a2b-d20a-4624-a439-07f4d9afea6e"
+      Hint: Additional Content
+      Value: |
         <p><strong>Start with the basics</strong></p>
         <p>If you're designing a connected home from scratch, you'll need a few foundational items first. A home automation hub allows you to connect and use multiple devices. Even better, you can control them all from one app.</p>
         <p>You'll also want to download IFTTT ("if this, then that"). The mobile app and website lets you write simple commands without programming. For example, "if the alarm clock goes off at 5:45 a.m., turn on the coffeepot."</p>
@@ -163,20 +184,6 @@ Languages:
         <p><strong>Appliances</strong></p>
         <p>If you want to fully dive into the connected home philosophy, replace your "dumb" appliances with connected versions. Habitat's Viva appliance line includes refrigerators that check inventory and let you control settings from your smartphone. Tell your Habitat Dwell smart vacuum to clean the living room floor, and command your Habitat Gleam smart washer to start a new cycle, all while watching your favorite show.</p>
         <p>From light bulbs to refrigerators, smart devices work together to make life easier. Let Habitat help you design your connected home to suit your budget and your lifestyle.</p>
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
-      Hint: MetaKeywords
-      Value: connected home, home automation, smart home, energy efficiency,
-    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
-      Hint: OpenGraphDescription
-      Value: |
-        Connected homes aim to make our lives more comfortable and our homes more energy efficient. With such a wide range of products available, from smart appliances and mattress covers to switches and light bulbs, where do you start? Habitat has a few "smart" suggestions.
-    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
-      Hint: OpenGraphTitle
-      Value: How to Design Your Connected Home
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
@@ -248,6 +255,13 @@ Languages:
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: Learn how to design the ideal connected home from a Habitat Home expert.
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -284,6 +298,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: connected home, home automation, smart home, energy efficiency,
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
@@ -316,9 +333,17 @@ Languages:
       Hint: Introduction
       Value: |
         <p>Les maisons connect&eacute;es visent &agrave; rendre nos vies plus confortables et nos maisons plus &eacute;conomes en &eacute;nergie. Avec une telle gamme de produits intelligents disponibles tels les &eacute;lectrom&eacute;nagers, les commutateurs et ampoules, par o&ugrave; commencer? Habitat Home a quelques suggestions "intelligentes".</p>
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{03DA35E8-4E53-4311-AB1E-4118519CF0FE}" alt="design your connected home" height="" width="" hspace="" vspace="" />
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: 
+    - ID: "de457091-0989-414e-addf-59db0ddb6690"
+      Hint: TwitterImage
+      Value: |
+        <image mediaid="{03DA35E8-4E53-4311-AB1E-4118519CF0FE}" alt="connected home" height="" width="" hspace="" vspace="" />
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Concevez votre maison intelligente

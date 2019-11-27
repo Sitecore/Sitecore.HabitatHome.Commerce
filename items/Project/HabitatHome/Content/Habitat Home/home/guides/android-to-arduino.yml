@@ -16,7 +16,7 @@ SharedFields:
   Value: "{B3079C34-42F0-447A-AB31-749425882F89}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{21030EC7-CFC8-4EF5-BB77-E97BE9A073F7}|{D8A8517B-592C-4105-BD6F-3D86274DCC0E}|{2987E1C3-C461-4A43-9607-A8EBC366CD13}|{E7F77FA1-4AE7-4D95-AD4B-A4047630F997}|{B0A62EA1-F33E-42EE-B5F7-D04E153D0FD6}|{778E101F-3D57-476F-96B0-F705F74301A7}|{DE300F00-5309-4941-8407-AEF7D9A0CC11}|{85257E07-8971-4060-9D9A-896B36C82719}|{C297866D-517C-4C56-8544-C4205E5DD18F}|{1BBA0D6A-620D-4947-8C0B-8E042A83436E}|{74427101-A842-45B6-A924-87105F72BE47}|{5389C05A-9E9B-467E-94FE-6AAF01A86086}|{F43F89FC-D251-4D2B-B66E-AEB2ED36B783}|{9457C76D-7AD6-404B-9070-0710CE2C9065}|{00A90052-856D-409F-BB5E-5F366EC171D2}|{9A16720D-11FE-4987-A6CC-6DA8EC8F9297}|{DF18F445-FB8F-4AF2-8265-FAD18290FF23}|{9D102D7F-1891-451D-9019-9B0C491FD5DF}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -123,6 +123,9 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: Learn the basics behind a  home automation set up with our Android to Arduino guide.
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: Learn the basics behind a  home automation set up with our Android to Arduino guide.
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Android to Arduino
@@ -193,7 +196,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" />
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191007T153006Z
@@ -203,6 +206,9 @@ Languages:
     - ID: "45ce257a-6060-4c4a-9a0f-ae77bf705b25"
       Hint: TwitterSite
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: Learn the basics behind a  home automation set up with our Android to Arduino guide.
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: 
@@ -215,6 +221,9 @@ Languages:
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Automatisation avec Android et Arduino
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: "Have you always dreamed of automating your home? Do you want to control the lights, fans, and appliances from your smartphone? Perhaps you just want a tutorial about connected devices and getting started with them? Our DIY home automation project outlined in this article will show you how to automate your home using an Android smartphone and Arduino. "
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
@@ -223,9 +232,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: android to arduino, home automation, diy automation, beginner arduino, smart home, bluetooth, connected devices
     - ID: "700f4aad-ad3b-4058-8673-a0cee765a1f7"
       Hint: __Content Test
       Value: 
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: "Have you always dreamed of automating your home? Do you want to control the lights, fans, and appliances from your smartphone? Perhaps you just want a tutorial about connected devices and getting started with them? Our DIY home automation project outlined in this article will show you how to automate your home using an Android smartphone and Arduino. "
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: Home Automation with Android and Arduino
     - ID: "82f4bd76-0837-4e55-a1f6-15231096b2b9"
       Hint: Attributes
       Value: 
@@ -246,9 +264,17 @@ Languages:
     - ID: "ca65aca5-4323-418a-aa72-a5037f606d2a"
       Hint: Introduction
       Value: "Avez-vous toujours r&ecirc;v&eacute; d'automatiser votre maison? Voulez-vous contr&ocirc;ler les lumi&egrave;res, les ventilateurs et les appareils de votre t&eacute;l&eacute;phone intelligent? Peut-&ecirc;tre que vous voulez simplement un didacticiel au sujet des appareils branch&eacute;s et commencer avec eux? Notre projet domotique d&eacute;crit dans cet article vous montrera comment automatiser votre maison en utilisant un t&eacute;l&eacute;phone intelligent Android et un module Arduino."
+    - ID: "d8b38dd7-e9a0-4410-9f17-d436b0c8635a"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: 
+    - ID: "de457091-0989-414e-addf-59db0ddb6690"
+      Hint: TwitterImage
+      Value: |
+        <image mediaid="{59B6594A-9859-4BC7-897D-A76A756B7893}" alt="android to arduino" height="" width="" hspace="" vspace="" />
     - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
       Hint: Title
       Value: Automatisation avec Android et Arduino

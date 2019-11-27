@@ -16,7 +16,7 @@ SharedFields:
   Value: "{9DFF331C-3B0A-477F-8FED-B27E9664C13C}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{21030EC7-CFC8-4EF5-BB77-E97BE9A073F7}|{1D25962E-0D94-4013-9BB3-8AA1DF7B653B}|{56EF61C0-E9CF-4670-8287-5A5BCFCB4A3A}|{EB33C872-CC0F-4FE3-9C92-AEC14F421D16}|{B0A62EA1-F33E-42EE-B5F7-D04E153D0FD6}|{F63F8599-EF5B-4EF0-ABE5-2430F482CAC0}|{E7F77FA1-4AE7-4D95-AD4B-A4047630F997}|{DC58A66B-9272-42B4-B9E4-4A7A66178D31}|{0FD6BEFE-47B5-4AF9-B2FC-EA58D3B6A4D4}|{B6D838F9-7A54-4306-A17F-51842CE87F55}|{CCAB13F7-FC6B-4F93-9653-B3B3524D4A06}|{8D398EF1-41F0-4BEE-851F-0E9578D9F692}|{00A90052-856D-409F-BB5E-5F366EC171D2}|{D61A4287-1CF9-4DE8-A157-F907DC630A92}|{0188BC8B-2B65-45BF-AF5B-44BCBED5E65B}|{49D3D982-714C-4715-A1F5-D864FF40C82B}|{FA370AB6-4559-4536-B7F0-69319A8CA0C9}|{E1B8A7E2-572E-4E6E-8318-0A2B49B25D0E}|{CCD95371-A2DB-40F2-BEAA-5F917074A00A}|{0C5D38FC-DB88-4919-8948-B6B187E37FF4}|{13530578-0581-4C9F-B8FF-20967950F3E3}|{2F58D02C-5A80-40A6-89F0-8760FEBB28AE}|{3CCA5AC8-59A7-427A-9A50-5AE0C9521EFA}|{526C5ED9-DB6B-43E4-B274-0F42AB4D1D05}|{24D2AABE-AD97-4A84-823B-010698F3EAC7}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -115,13 +115,22 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: "Are Laptops Becoming Obsolete?"
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
         {"items":[]}
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: Not all that many years ago, just about everyone wanted a desktop or laptop computer to access the Internet. Now, our smartphones act as miniature computers, giving us the ability to email, talk, text, share, and browse the Internet. Meanwhile, tablets bridge the gap between the two, offering larger screens and the option of an attachable keyboard.
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Laptops Obsolete
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: Not all that many years ago, just about everyone wanted a desktop or laptop computer to access the Internet. Now, our smartphones act as miniature computers, giving us the ability to email, talk, text, share, and browse the Internet. Meanwhile, tablets bridge the gap between the two, offering larger screens and the option of an attachable keyboard.
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
@@ -144,6 +153,15 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: mobile devices, mobile, tablets, technology
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: Not all that many years ago, just about everyone wanted a desktop or laptop computer to access the Internet. Now, our smartphones act as miniature computers, giving us the ability to email, talk, text, share, and browse the Internet. Meanwhile, tablets bridge the gap between the two, offering larger screens and the option of an attachable keyboard.
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: "Are Laptops Becoming Obsolete?"
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
@@ -175,6 +193,10 @@ Languages:
       Hint: __Final Renderings
       Type: Layout
       Value: 
+    - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
+      Hint: Image
+      Value: |
+        <image mediaid="{7DF3868E-4ABA-4E60-9173-C649505FE671}" alt="laptops hero" height="" width="" hspace="" vspace="" />
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
@@ -184,6 +206,10 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -233,6 +259,10 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{2B51B501-B5A4-435D-95C8-8B74140AEEDC}" alt="laptops obsolete thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox

@@ -16,7 +16,7 @@ SharedFields:
   Value: "{FA4C3BAC-9788-4439-88F3-96E2F820B95B}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{DB725896-4BE4-4869-9608-7DE25CA545A8}|{CBADFAAC-B1DA-4344-8177-4292AF503B31}|{7B354993-572B-447B-B2A4-6920465C9DBF}|{C6B0FCFD-7DBC-46F5-A3A2-D05F8FD84E41}|{8C771A43-3AAF-4A59-A1E3-6187C2141C0B}|{09B873C8-2C6D-47F9-A9F2-FAFF804564E4}|{0F45192D-F1BB-4302-B7F4-7E28CA030660}|{3C7CABEB-CC21-4AFC-AE6D-F885EDD79EA2}|{85A4A58D-01BF-4042-BE2F-7476F087D180}|{81F565D3-6573-4E11-AA84-A5055C99A46A}|{800AE0FB-BC82-44FF-9C36-D6E36757A4DB}|{B03AA463-FEB8-498A-B8F6-6B9204EFACAD}|{98D4798D-A931-40DB-A385-EFE267308C39}|{E0C2F436-5A28-4DE4-BF50-D3CA839DE652}|{1E3E82D8-FC29-45F2-BB97-27821F933A47}|{00A90052-856D-409F-BB5E-5F366EC171D2}|{46DFBDE2-60E5-4096-9222-DADB89853EB8}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -26,49 +26,35 @@ SharedFields:
   Value: |
     <tracking>
       <profile
-        id="538a727f-87c6-4249-810d-0a90ee6ae6db"
-        name="Target Room Category"
-        presets="kitchen|100||">
-        <key
-          name="Bedroom"
-          value="0" />
-        <key
-          name="Kitchen"
-          value="10" />
-        <key
-          name="Laundry"
-          value="0" />
-        <key
-          name="Living Space"
-          value="0" />
-        <key
-          name="Office"
-          value="0" />
-        <key
-          name="Theater"
-          value="0" />
-        <key
-          name="Gym"
-          value="0" />
-      </profile>
-      <profile
         id="552dd90f-a527-438e-ac33-32d236244123"
         name="Topic Interest Category"
-        presets="cooking|90||smart and connected|10||">
+        presets="newest and coolest|100||">
         <key
           name="Newest and Coolest"
-          value="0" />
+          value="10" />
         <key
           name="Reliability"
           value="0" />
         <key
           name="Smart and Connected"
-          value="1" />
+          value="0" />
         <key
           name="Fitness"
           value="0" />
         <key
+          name="Children"
+          value="0" />
+        <key
+          name="Cleaning"
+          value="0" />
+        <key
           name="Cooking"
+          value="0" />
+        <key
+          name="Entertainment"
+          value="0" />
+        <key
+          name="Safety"
           value="0" />
       </profile>
       <profile
@@ -101,6 +87,32 @@ SharedFields:
           value="0" />
         <key
           name="TVs"
+          value="0" />
+      </profile>
+      <profile
+        id="538a727f-87c6-4249-810d-0a90ee6ae6db"
+        name="Target Room Category"
+        presets="kitchen|100||">
+        <key
+          name="Bedroom"
+          value="0" />
+        <key
+          name="Kitchen"
+          value="10" />
+        <key
+          name="Laundry"
+          value="0" />
+        <key
+          name="Living Space"
+          value="0" />
+        <key
+          name="Office"
+          value="0" />
+        <key
+          name="Theater"
+          value="0" />
+        <key
+          name="Gym"
           value="0" />
       </profile>
     </tracking>
@@ -138,13 +150,22 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: 7 Kitchen Appliance Trends You Need to Follow
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
         {"items":[]}
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: Creating an inviting space with a contemporary look and feel, plus modern appliances that conserve energy and save you time.
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Kitchen Appliances
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: Creating an inviting space with a contemporary look and feel, plus modern appliances that conserve energy and save you time.
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
@@ -173,6 +194,15 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: smart home, appliances, kitchen appliances
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: Creating an inviting space with a contemporary look and feel, plus modern appliances that conserve energy and save you time.
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: 7 Kitchen Appliance Trends You Need to Follow
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
@@ -216,7 +246,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{5F6109A3-88C1-411D-8705-61DFB9C19605}" />
+        <image mediaid="{5F6109A3-88C1-411D-8705-61DFB9C19605}" alt="kitchen appliances hero" height="" width="" hspace="" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190424T194230Z
@@ -229,6 +259,10 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -304,6 +338,10 @@ Languages:
       Hint: __Semantics
       Type: Multilist with Search
       Value: 
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{2595EB80-663F-4DA6-8D0C-A7F3A337174D}" alt="kitchen appliances nav thumbnail" height="" width="" hspace="" vspace="" />
     - ID: "b8f42732-9cb8-478d-ae95-07e25345fb0f"
       Hint: __Hide version
       Type: checkbox
