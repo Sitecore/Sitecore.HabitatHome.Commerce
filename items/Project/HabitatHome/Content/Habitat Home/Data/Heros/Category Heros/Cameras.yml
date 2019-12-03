@@ -51,7 +51,7 @@ Languages:
       Value: 20190301T182637Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: "Protect Your Most Valuable Asset - You"
+      Value: あなたを守ります
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,4 +62,4 @@ Languages:
         <image mediaid="{51831BF4-8AFE-4F51-B8AF-B8DAECA92A1C}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: <p>Habitat Sentinel Security Cameras offer motion detection and selectable zoom to grab important footage. Multiple programs let you engage and monitor your security system from anywhere.</p>
+      Value: <p>Habitat Sentinel Security Cameraは、モーション検出機能と選択可能なズーム機能を搭載し、重要な映像を取得します。複数のプログラムにより、どこからでもあなたのセキュリティシステムに関わり、監視することができます。</p>

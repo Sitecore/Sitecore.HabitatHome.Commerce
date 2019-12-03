@@ -17,7 +17,7 @@ SharedFields:
             id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
             uid="46B3FB5FE49E4C5D8DF93C8D791FD69A"
             operatorid="{2E67477C-440C-4BCA-A358-3D29AED89F47}"
-            value="/sitecore/content/Habitat Sites/Habitat Home" />
+            value="/sitecore/content/Habitat SXA Sites/Habitat Home" />
         </conditions>
       </rule>
     </ruleset>

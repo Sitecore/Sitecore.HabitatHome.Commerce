@@ -38,4 +38,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Guides" anchor="" linktype="internal" class="" title=""  querystring="" id="{64F922B1-D57D-4AFA-AE26-9D59502F69A6}" />
+        <link text="ガイド" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{64F922B1-D57D-4AFA-AE26-9D59502F69A6}" />

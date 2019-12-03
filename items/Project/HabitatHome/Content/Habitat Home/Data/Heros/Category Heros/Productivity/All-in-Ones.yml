@@ -47,7 +47,7 @@ Languages:
       Value: 20190301T182630Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Strength and Style Aren't Mutually Exclusive
+      Value: 強さとスタイルは相互に排他的ではない
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -58,4 +58,4 @@ Languages:
         <image mediaid="{CEC0FA21-6176-49F2-A4EC-FF6D72137192}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: "Who says you can't have the best of both worlds. Habitat Spark all-in-ones offer the power, speed, and stunning clarity of a desktop with a slim profile that fits any office."
+      Value: <p>誰が、あなたは両方の世界のベストを持つことはできないと言います。ハビタットスパークオールインワンは、あらゆるオフィスにフィットするスリムなプロファイルで、デスクトップのパワー、スピード、そして見事な明快さを提供します。</p>

@@ -48,7 +48,7 @@ Languages:
       Value: 20190301T182636Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Ease Your Mind, and Your Back
+      Value: あなたの心とあなたの背中を楽にしなさい
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{73398813-9AB9-46A4-B305-EC7BB7E97A14}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">Let us do the installation. Extend the life of an existing HelixPro Service Warranty for one year up to three years, granting you the full range of protection services from your original contract plan.</span>
+      Value: <p>インストールをしましょう。既存のHelixProサービス保証期間を1年間最大3年間延長することで、元の契約プランからあらゆる種類の保護サービスを受けることができます。</p>

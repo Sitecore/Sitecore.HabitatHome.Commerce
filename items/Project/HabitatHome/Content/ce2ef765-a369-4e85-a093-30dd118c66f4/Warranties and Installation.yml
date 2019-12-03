@@ -38,7 +38,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Warranties and Installation" linktype="rel" url="/shop/Warranties-and-Installations" anchor="" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A736352A-F944-EE4D-37C7-1C18D995BB4F}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -53,4 +53,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Warranties and Installation" linktype="rel" url="/shop/Warranties-and-Installations" anchor="" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A736352A-F944-EE4D-37C7-1C18D995BB4F}" />

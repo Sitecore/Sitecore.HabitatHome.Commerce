@@ -47,7 +47,7 @@ Languages:
       Value: 20190301T182627Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Helping Every Woman Thrive
+      Value: すべての女性をサポート
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -58,4 +58,6 @@ Languages:
         <image mediaid="{084FAEAF-0356-45DA-96B3-EA8C1C1535A3}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: The next generation of healthy beauty products are here.
+      Value: |
+        
+        次世代の健康美容製品がここにあります。

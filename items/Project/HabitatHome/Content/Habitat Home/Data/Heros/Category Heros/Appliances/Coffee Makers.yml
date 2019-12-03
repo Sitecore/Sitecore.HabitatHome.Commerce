@@ -55,5 +55,4 @@ Languages:
         <image mediaid="{1FB17F4F-2CEA-4DED-9571-552C87328666}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">A warm, fresh-brewed cup of coffee waits for you. Habitat Dwell multicup coffee makers let you control brew strength and timing. Single-serve models provide grab-and-go convenience and easy cleanup.</span>
+      Value: "A warm, fresh-brewed cup of coffee waits for you. Habitat Dwell multicup coffee makers let you control brew strength and timing. Single-serve models provide grab-and-go convenience and easy cleanup."

@@ -176,17 +176,29 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: On the Go
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
         {"items":[]}
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: Stay connected no matter where you are. Surf the web, take photos, and conduct business from one small device. 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: On the Go
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: Stay connected no matter where you are. Surf the web, take photos, and conduct business from one small device. 
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: laptop, mobile, audio, smart phone
     - ID: "74687d7c-2ef8-47ef-a779-9a8040bb2d1a"
       Hint: Navigation Secondary Promotions
       Type: Treelist
@@ -199,6 +211,9 @@ Languages:
     - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
       Hint: OpenGraphDescription
       Value: Stay connected no matter where you are. Surf the web, take photos, and conduct business from one small device. Habitat's powerful processors and intuitive interfaces let you do it all quickly and easily.
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: On the Go
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: 
@@ -242,6 +257,10 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 
@@ -292,6 +311,12 @@ Languages:
       Hint: __Hide version
       Type: checkbox
       Value: 0
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {7BB96694-8DE4-449E-B6B3-9CCEA79A2DF3}
+        {5E451BD9-CEA5-47B9-8BB7-8BD964819788}
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 
@@ -304,6 +329,9 @@ Languages:
     - ID: "de457091-0989-414e-addf-59db0ddb6690"
       Hint: TwitterImage
       Value: 
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: On the Go Devices
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

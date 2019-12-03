@@ -25,6 +25,21 @@ Languages:
       Hint: Link
       Value: |
         <link text="Women's Beauty" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B52C9C73-FD59-42AE-CCEE-9CBEB8DE56FE}" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180816T165117Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B52C9C73-FD59-42AE-CCEE-9CBEB8DE56FE}" />
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -36,3 +51,7 @@ Languages:
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B52C9C73-FD59-42AE-CCEE-9CBEB8DE56FE}" />

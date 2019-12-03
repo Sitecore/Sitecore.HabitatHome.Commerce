@@ -52,7 +52,7 @@ Languages:
       Value: 20190301T182636Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Digital Subscriptions
+      Value: デジタルサブスクリプション
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -63,5 +63,4 @@ Languages:
         <image mediaid="{D3D2377F-3B87-4A7B-948C-A609B9D8A339}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">Check out Habitat's Digital Subscriptions.</span>
+      Value: <p>ハビタットのデジタル購読をチェックしてください。</p>

@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{78E09D52-9BD3-4896-980A-95BD1C05786C}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">Habitat Sentinel thermostats learn your habits, optimizing temperature where and when it's most needed. We'll keep you cozy and help you save energy at the same time.&nbsp;</span>
+      Value: Habitat Sentinel thermostats learn your habits, optimizing temperature where and when it's most needed. We'll keep you cozy and help you save energy at the same time.

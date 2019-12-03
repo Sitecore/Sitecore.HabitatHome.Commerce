@@ -16,7 +16,7 @@ SharedFields:
   Value: "{94358B5D-48E1-4324-AE29-33102095EF83}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{669B2466-6113-4CB4-B809-C2117A0A8DF4}|{21030EC7-CFC8-4EF5-BB77-E97BE9A073F7}|{70C6E56F-137C-4133-86E5-E77967C93EC9}|{B329BFB2-1A96-41FB-938F-832BC040958C}|{2EC4B804-7FAA-4432-9592-B95E04122452}|{1A7509B8-4BB1-495D-9D4B-852F33AF3BD4}|{D68E7B7A-AF85-4813-B6BB-21B65F77BBEB}|{B081FC08-F915-4123-B83B-CB14D54DE26E}|{F7CC2D1F-585F-45FD-BE49-7EEE202B7392}|{72A28166-826A-4EA2-AE07-843BDC789FE6}|{2C79A65E-C731-4732-A80B-4D449CC1FA82}|{F8C8DC6C-960D-4CE2-8F01-0F052883A201}|{F524E432-C234-4E7E-AAA6-1CA828ED24AA}|{B3CA4908-77C1-4A32-9B14-952C4BEA7F71}|{C4CA3BF9-12D1-4F22-8DFC-6F94BF4ABDBE}|{150F4790-EBD8-424D-A833-91FBBBE42BE3}|{75588863-EE39-481C-97CB-C05D74C70078}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -138,37 +138,55 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: Setting Up the Perfect Home Theater
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
         {"items":[]}
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: Design the home entertainment system of your dreams. 
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Setting Up the Perfect Home Theater
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: Design the home entertainment system of your dreams. 
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
         <p>Once considered a luxury, home theaters have soared in popularity over the past five years.</p>
         <p>Habitat's research experts predict the home theater market will grow by eight percent annually, with sales exceeding $28 billion by 2020. The growing number of smart devices, as well as the wide range of high-quality components, makes home theaters a more viable, and popular, option.</p>
         <p>Setting up a home theater requires extensive planning and the help of a contractor and other professionals. Here are a few things to consider to make your dream home theater a reality.</p>
-        <p style="color: #141919; background-color: #fefefe;"><strong style="margin-bottom: 0px;">Choose the right room</strong></p>
-        <p style="color: #141919; background-color: #fefefe; margin-bottom: 15px;">The ideal room will have enough space for seating and few windows, closets and doors. You'll also need to make sure its sound doesn't disturb the rest of the house or your neighbors. If possible, the chosen room will be located in or over the basement (it's easier to run cables and wires this way) and will have a high ceiling for mounting a projector.</p>
-        <p style="color: #141919; background-color: #fefefe; margin-bottom: 15px;"><img alt="" src="-/media/36E2F65B319C45A792CDE8DE70459CCF.ashx?h=520&amp;w=860" style="height: 520px; width: 860px;" /></p>
+        <p><strong>Choose the right room</strong></p>
+        <p>The ideal room will have enough space for seating and few windows, closets and doors. You'll also need to make sure its sound doesn't disturb the rest of the house or your neighbors. If possible, the chosen room will be located in or over the basement (it's easier to run cables and wires this way) and will have a high ceiling for mounting a projector.</p>
+        <p style="text-align: center;"><img alt="" src="-/media/36E2F65B319C45A792CDE8DE70459CCF.ashx" /></p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: smart home, entertainment, television, audio
     - ID: "6f76ce61-3806-4512-8e49-207f96308d8b"
       Hint: Subtitle
       Value: Stay Flexible
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: Design the home entertainment system of your dreams. 
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: Setting Up the Perfect Home Theater
     - ID: "87241a2b-d20a-4624-a439-07f4d9afea6e"
       Hint: Additional Content
       Value: |
         <p><strong>Configure your surround sound system</strong></p>
-        <p>Without stunning sound quality, a home theater is just a dark room with a big TV. Choose components wisely.</p><p><br /></p>
-        <p>The heart of the audio system, an A/V receiver, routes the video source to the TV or projection screen and the audio to the speakers. Position the receiver in an easy-to-reach location so you can easily mix and change cables. The Habitat Aura 200-Watt 7.2-Channel, Network-Ready 4K UHD Receiver offers 100 watts per channel—more than enough power for your movies, music, games, and more.</p><p><br /></p>
-        <p>When choosing speakers, listen to several models to find a package that suits your taste. You can configure the speakers for 5.1 surround sound—the standard—or 7.1, which gives you even more presence. Look for certified DTS or Dolby Digital surround, multiple audio and A/V connections, and at least 100 watts of sound per channel.</p><p><br /></p>
-        <p>Habitat Aura high-performance speakers provide stunning audio for an amazing home theater experience. As a space-saving alternative, consider a sound bar, which delivers surround-sound quality in a diminutive package.</p><p><br /></p>
+        <p>Without stunning sound quality, a home theater is just a dark room with a big TV. Choose components wisely.</p>
+        <p>The heart of the audio system, an A/V receiver, routes the video source to the TV or projection screen and the audio to the speakers. Position the receiver in an easy-to-reach location so you can easily mix and change cables. The Habitat Aura 200-Watt 7.2-Channel, Network-Ready 4K UHD Receiver offers 100 watts per channel—more than enough power for your movies, music, games, and more.</p>
+        <p>When choosing speakers, listen to several models to find a package that suits your taste. You can configure the speakers for 5.1 surround sound—the standard—or 7.1, which gives you even more presence. Look for certified DTS or Dolby Digital surround, multiple audio and A/V connections, and at least 100 watts of sound per channel.</p>
+        <p>Habitat Aura high-performance speakers provide stunning audio for an amazing home theater experience. As a space-saving alternative, consider a sound bar, which delivers surround-sound quality in a diminutive package.</p>
         <p style="margin-bottom: 15px;">Unwind with friends and family by watching a new release in your expertly designed home theater. Let Habitat's A/V experts help you design the ultimate movie night.</p>
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
@@ -214,6 +232,10 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 

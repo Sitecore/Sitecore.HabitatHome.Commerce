@@ -75,7 +75,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Cinéma-maison" anchor="" linktype="internal" class="" title=""  querystring="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
+        <link text="Cinéma-maison" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{57585CF7-7AF6-F5E3-EB7E-A57736343091}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -94,4 +94,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="ホームシアター" querystring="" target="" id="{B27DE97B-A3B8-481D-893F-D231B8567C03}" />
+        <link text="ホームシアター" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{57585CF7-7AF6-F5E3-EB7E-A57736343091}" />

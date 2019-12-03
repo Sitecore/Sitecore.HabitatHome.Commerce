@@ -51,7 +51,7 @@ Languages:
       Value: 20190301T182629Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Night to New Heights
+      Value: 新しい解像度へ
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,4 +62,4 @@ Languages:
         <image mediaid="{F8454421-62A2-4BEF-8A49-A28C8405DC86}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: "<p>Habitat's UHD and HDTVs offer explosive colors and razor-sharp images for a blockbuster experience.</p>"
+      Value: <p>ハビタットのUHDとHDTVは爆発的な色と鮮明な画像を提供し、大ヒットを飾っています。</p>

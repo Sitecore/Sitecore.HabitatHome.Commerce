@@ -19,7 +19,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" querystring="" text="Home Installation" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/services/home-installation" linktype="internal" />
+        <link text="Home Installation" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -34,7 +34,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" querystring="" text="Home Installation" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/services/home-installation" linktype="internal" />
+        <link text="Home Installation" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -53,4 +53,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" querystring="" text="Home Installation" anchor="" title="" class="" url="/Habitat Sites/Habitat Home/home/services/home-installation" linktype="internal" />
+        <link text="Home Installation" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{24FD6EA9-D99A-47E9-B95E-1553F761923A}" />

@@ -16,7 +16,7 @@ SharedFields:
   Value: "{5F8A3189-6A02-4FEE-BC52-6B851872332D}"
 - ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
   Hint: SxaTags
-  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}"
+  Value: "{7411018E-699A-4E78-B919-73349ECC6D0D}|{21030EC7-CFC8-4EF5-BB77-E97BE9A073F7}|{56EF61C0-E9CF-4670-8287-5A5BCFCB4A3A}|{300EB667-DBC8-4EBB-A99B-B700B24C2CDA}|{8676AE25-F09B-45B2-9F7B-791D8DB8BC7F}|{A688D616-5D59-4440-A4C3-866E8F2915A9}|{F63F8599-EF5B-4EF0-ABE5-2430F482CAC0}|{DD26A1FB-8A6E-4004-9BCE-077F14A41358}|{199E1595-7A20-46CE-B985-6CB4B55F79E8}|{80EF0EED-CAB4-41D6-B721-54B425B8CFEB}|{215A14EB-1094-4179-BD5C-8E2AF9F43A98}|{CB4D27A8-CC8C-42B3-A727-2518960E64EA}|{59F8AD39-D492-4371-8D09-D318A1589BCC}|{915F84A4-9B0F-4DF1-BE80-90F7D6CB9B18}|{F3425CC1-C0D9-48EF-B777-F73E87C0468D}|{DF9CB67B-68B9-4F9B-8E8B-07E4638DC4B1}|{1C5FCB16-1D10-4CC7-8EA1-D7225D195803}|{F4EC0A6D-1A02-4F61-BAFC-9E496D9BAE3D}|{BDA906E9-B8EC-4E0F-9BB1-C87D8610C517}|{22786849-0897-406A-AB86-14738D577713}|{F13E0E37-24BC-417D-B1CC-1E312F6536A4}|{58C00679-2A2D-4CD0-A0D7-0286497560F6}|{E7FC5DBB-5AFB-4534-8F13-D1872C6B017A}|{16BFEFC2-44CE-4186-BAA0-4B7F54E8B4AF}|{1AD1CD64-A84D-465D-98F3-C8A9CDE9309C}|{BB60ABED-DE65-4683-84A0-8CF0EE02AB4C}|{457CE1C5-53AC-4282-A825-558DDE49C223}"
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{C6EBE5E6-BCE3-4BAB-A5F9-16382F8369FE}"
@@ -115,13 +115,22 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
+    - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
+      Hint: TwitterTitle
+      Value: 6 Steps for Modern Day Gaming
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
         {"items":[]}
+    - ID: "4d263b95-322f-4003-adbd-70920facf823"
+      Hint: TwitterDescription
+      Value: "Dedicated PC gamers need a dedicated gaming room. The ideal gaming environment combines comfort, convenience, and technology, with room for a few mood-setting accessories."
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: 6 Steps for Gaming in 2017
+    - ID: "528986cc-6ff9-4383-8bee-514f0e8172cf"
+      Hint: MetaDescription
+      Value: "Dedicated PC gamers need a dedicated gaming room. The ideal gaming environment combines comfort, convenience, and technology, with room for a few mood-setting accessories."
     - ID: "5a0b08e5-7f6c-48dc-929a-5d6cfda45e1d"
       Hint: Content
       Value: |
@@ -155,6 +164,15 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "5e650555-c7f0-456a-8185-f69388169cbc"
+      Hint: MetaKeywords
+      Value: entertainment, gaming, computers
+    - ID: "7bddc8b8-1f77-46d8-9d7f-46e20e041f74"
+      Hint: OpenGraphDescription
+      Value: "Dedicated PC gamers need a dedicated gaming room. The ideal gaming environment combines comfort, convenience, and technology, with room for a few mood-setting accessories."
+    - ID: "7d988161-3991-465a-a88c-280bc65542a0"
+      Hint: OpenGraphTitle
+      Value: 6 Steps for Modern Day Gaming
     - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
       Hint: Navigation Image
       Value: |
@@ -189,7 +207,7 @@ Languages:
     - ID: "23aa5741-fa6a-4add-9e79-7a752af6deb1"
       Hint: Image
       Value: |
-        <image mediaid="{EE675D1C-5190-4B35-B9C6-EAAF8BCFA404}" />
+        <image mediaid="{EE675D1C-5190-4B35-B9C6-EAAF8BCFA404}" alt="gaming hero" height="" width="" hspace="" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191007T153026Z
@@ -202,6 +220,10 @@ Languages:
     - ID: "48a66e40-d164-4c8e-bc06-172ecc6769ec"
       Hint: TwitterTitle
       Value: 
+    - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
+      Hint: StickyNotes
+      Value: |
+        {"items":[]}
     - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
       Hint: __Valid to
       Value: 

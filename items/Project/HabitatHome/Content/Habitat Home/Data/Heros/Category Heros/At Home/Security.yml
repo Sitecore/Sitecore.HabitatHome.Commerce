@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{43B28A99-9CD7-4D47-8BCC-7B5D213ACEEF}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #141919;">First-class safety meets luxe design. Habitat Sentinel offers both keyed and keyless entry for smart security. Lock and unlock your door using your smartphone for easy, on-the-go access.&nbsp;</span>
+      Value: "First-class safety meets luxe design. Habitat Sentinel offers both keyed and keyless entry for smart security. Lock and unlock your door using your smartphone for easy, on-the-go access."

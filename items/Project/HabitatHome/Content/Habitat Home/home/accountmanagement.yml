@@ -94,7 +94,7 @@ Languages:
       Value: 20171117T180040Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: 
+      Value: "{E93E190F-3398-489D-B3A3-A3B0D9BB33C5}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: My Account
@@ -186,6 +186,13 @@ Languages:
       Hint: __Hide version
       Type: checkbox
       Value: 0
+    - ID: "c78d6b36-329e-4dc9-873a-39f4b0ea9a28"
+      Hint: Navigation Promotions
+      Type: Treelist
+      Value: |
+        {59CC6969-0627-4BF8-9016-A8403FBB8F9F}
+        {87D70FED-3FB3-4662-BA2E-C5397C88CAD0}
+        {C4BDA9B1-5FBB-4364-BDBD-39657F5B89C2}
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 

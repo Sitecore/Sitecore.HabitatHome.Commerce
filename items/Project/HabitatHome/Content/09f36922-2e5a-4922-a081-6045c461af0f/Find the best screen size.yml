@@ -71,7 +71,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link text="Trouvez la taille d'écran idéale pour votre espace" anchor="" linktype="internal" class="" title=""  querystring="" id="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}" />
+        <link text="Trouvez la taille d'écran idéale pour votre espace" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9FDEAA6E-709B-4082-ABCF-B740DC80EEFE}" />
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -90,4 +90,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="あなたのスペースに最適な画面サイズを見つける" querystring="" target="" id="{07A119CD-9B00-4BA9-A7D1-93D63A2CA26B}" />
+        <link text="あなたのスペースに最適な画面サイズを見つける" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{9FDEAA6E-709B-4082-ABCF-B740DC80EEFE}" />

@@ -45,13 +45,13 @@ Languages:
     - ID: "0d089052-245b-4b23-8042-b63d06c8fe64"
       Hint: HeroOverlayImage
       Value: |
-        <image mediaid="{04E4A3D4-7CAE-411C-A7EC-918936B73C8B}" />
+        <image mediaid="{04E4A3D4-7CAE-411C-A7EC-918936B73C8B}" alt="ヘッドホン製品" height="" width="" hspace="" vspace="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190301T182628Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Groove to Your Own Beat
+      Value:  あなた自身のビートにグルーヴ
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,4 +62,4 @@ Languages:
         <image mediaid="{E7E63D9E-C6BC-4166-8163-EBFB566C190B}" />
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: <p>Listen to your music on the go, at the gym, or in the air. Habitat earbuds and headphones deliver superior sound with a diminutive profile.</p>
+      Value: <p>外出先、ジム、または空中で音楽を聴く。ハビタットのイヤホンとヘッドホンは、小型のプロファイルで優れた音を出します。</p>

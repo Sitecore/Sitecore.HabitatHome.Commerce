@@ -48,7 +48,7 @@ Languages:
       Value: 20190301T182626Z
     - ID: "440b5413-5322-4166-9fbe-580f70973751"
       Hint: HeroTitle
-      Value: Fashion and Function
+      Value: ファッションと機能
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -59,5 +59,4 @@ Languages:
         <image mediaid="{580ED437-7A14-463D-A81A-0F94FCAA7A92}" ></image>
     - ID: "e50b8dc2-0ec1-47af-b1da-0a6622368986"
       Hint: HeroText
-      Value: |
-        <span style="color: #545454;"><span style="color: #545454;">Wearable </span><span style="color: #6a6a6a;">fitness trackers</span><span style="color: #545454;"> are smarter and cheaper than ever, start waging your war on those calories.</span></span>
+      Value: ウェアラブルフィットネストラッカーは、これまで以上にスマートで安価で、それらのカロリーに対する戦争を開始します。

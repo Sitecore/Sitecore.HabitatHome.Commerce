@@ -21,44 +21,44 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{0301406E-DD77-424D-9DB6-86E142533C4C}"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           p:before="*"
           s:ds=""
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
           s:ph="main" />
         <r
           uid="{10FF14AF-65D8-43F8-9A6E-8E3FC7B2BA53}"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           p:after="r[@uid='{0301406E-DD77-424D-9DB6-86E142533C4C}']"
           s:ds=""
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7BFAD080DD-BF2E-423A-BE8F-9A99F0EFE18A%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
           s:ph="main" />
         <r
           uid="{69999CBF-8641-43C0-B4B2-DB4630DD933C}"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           p:after="r[@uid='{10FF14AF-65D8-43F8-9A6E-8E3FC7B2BA53}']"
           s:ds=""
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters={F2FCE948-4F77-44AF-A188-B2030061F793}&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
           s:ph="main" />
         <r
           uid="{8438CE79-ACC9-4A4F-8933-BD753FED5F94}"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           p:after="r[@uid='{69999CBF-8641-43C0-B4B2-DB4630DD933C}']"
           s:ds=""
-          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
           s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B3D26DFDA-4EA6-4F08-B9FC-33D4C5475DFD%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
           s:ph="/main/container-2" />
         <r
           uid="{66E35911-B159-4A47-971B-499955E1BA82}"
+          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
           p:after="r[@uid='{8438CE79-ACC9-4A4F-8933-BD753FED5F94}']"
           s:ds=""
-          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
           s:par="SplitterSize=1&amp;EnabledPlaceholders=1,2,3&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={4D4B771B-9954-430E-AEE1-E76C54BD50C3}&amp;ColumnWidth2={4D4B771B-9954-430E-AEE1-E76C54BD50C3}&amp;ColumnWidth3={4D4B771B-9954-430E-AEE1-E76C54BD50C3}&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
           s:ph="/main/container-2" />
         <r
           uid="{90E82BC6-01EB-435F-AF44-FEE83E5EC738}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
           p:after="r[@uid='{66E35911-B159-4A47-971B-499955E1BA82}']"
           s:ds="local:/Data/Start Over Link"
-          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7BFC96A8E0-CED2-4B3D-9653-E7E3F0D9144E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-2/container-4">
           <rls>
@@ -77,10 +77,10 @@ SharedFields:
                       uid="3038ECE9A56B41049ABD8C8380396AAC"
                       s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
                       s:GoalId="{596FDFA9-9E21-4B9D-9B54-EB97F724E1DA}"
-                      s:NumberOfElapsedDaysOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
                       s:NumberOfElapsedDays="365"
-                      s:NumberOfPastInteractionsOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
-                      s:NumberOfPastInteractions="7" />
+                      s:NumberOfElapsedDaysOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
+                      s:NumberOfPastInteractions="7"
+                      s:NumberOfPastInteractionsOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}" />
                   </or>
                 </conditions>
               </rule>
@@ -103,9 +103,9 @@ SharedFields:
         </r>
         <r
           uid="{E63F8546-7B0A-454A-BFBC-10299EDA9053}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
           p:after="r[@uid='{90E82BC6-01EB-435F-AF44-FEE83E5EC738}']"
           s:ds="local:/Data/Take Test Link"
-          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
           s:par="GridParameters&amp;FieldNames=%7BFC96A8E0-CED2-4B3D-9653-E7E3F0D9144E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-2/container-4">
           <rls>
@@ -124,10 +124,10 @@ SharedFields:
                       uid="D774EE10A67C449899D327F570D49556"
                       s:id="{C1DA0D65-C9C7-4526-91BB-E0390A7D3833}"
                       s:GoalId="{596FDFA9-9E21-4B9D-9B54-EB97F724E1DA}"
-                      s:NumberOfElapsedDaysOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
                       s:NumberOfElapsedDays="365"
-                      s:NumberOfPastInteractionsOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
-                      s:NumberOfPastInteractions="7" />
+                      s:NumberOfElapsedDaysOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}"
+                      s:NumberOfPastInteractions="7"
+                      s:NumberOfPastInteractionsOperatorId="{E362A3A4-E230-4A40-A7C4-FC42767E908F}" />
                   </or>
                 </conditions>
                 <actions>
@@ -151,9 +151,9 @@ SharedFields:
         </r>
         <r
           uid="{95839D4D-AD8B-4FDD-B948-67AE4648B95E}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="r[@uid='{E63F8546-7B0A-454A-BFBC-10299EDA9053}']"
           s:ds="{4F86DE71-4167-4D59-9A06-43C0323AE3E0}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
           s:ph="/main/container-2/column-3-2">
           <rls>
@@ -165,8 +165,8 @@ SharedFields:
                   <condition
                     uid="366ECDCF3FB941D1AE56D4E3A0937948"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
                 <actions>
                   <action
@@ -189,9 +189,9 @@ SharedFields:
         </r>
         <r
           uid="{EE7399F5-09FD-4F8F-95A4-9C2B33F1BCC6}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="r[@uid='{95839D4D-AD8B-4FDD-B948-67AE4648B95E}']"
           s:ds="{C0FF4B1A-5B3F-4264-9D58-1F43460D4AB8}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
           s:ph="/main/container-2/column-2-2">
           <rls>
@@ -203,8 +203,8 @@ SharedFields:
                   <condition
                     uid="03157CDDEB0B45119A5CC5BDA6988E95"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
                 <actions>
                   <action
@@ -227,9 +227,9 @@ SharedFields:
         </r>
         <r
           uid="{E46E5BC9-33D5-4577-A56B-B46A6D810556}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="r[@uid='{EE7399F5-09FD-4F8F-95A4-9C2B33F1BCC6}']"
           s:ds="{16A36D6D-6EE2-4765-8E53-20ED289B9C73}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
           s:ph="/main/container-2/column-1-2">
           <rls>
@@ -241,8 +241,8 @@ SharedFields:
                   <condition
                     uid="FA3745BC202548C3A8E2AECDC465CF75"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
                 <actions>
                   <action
@@ -265,9 +265,9 @@ SharedFields:
         </r>
         <r
           uid="{D2DEB7D5-E516-459E-8240-670B7CC1AACB}"
+          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
           p:after="r[@uid='{E46E5BC9-33D5-4577-A56B-B46A6D810556}']"
           s:ds="local:/Data/Sam Smarts/Sam Smarts Text"
-          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
           s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-2/container-4">
           <rls>
@@ -281,8 +281,8 @@ SharedFields:
                     <condition
                       uid="96D01B2351574AD0A6519BC1B6762C32"
                       s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Smart and Connected" />
+                      s:PatternName="Smart and Connected"
+                      s:ProfileName="Topic Interest Category" />
                     <condition
                       uid="B553230958C547FAA974CCEF7D8E0BD5"
                       s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
@@ -309,9 +309,9 @@ SharedFields:
         </r>
         <r
           uid="{8EDA6022-0B6D-4A74-99B3-E6EC77BB5054}"
+          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
           p:after="r[@uid='{D2DEB7D5-E516-459E-8240-670B7CC1AACB}']"
           s:ds="local:/Data/Default/Title"
-          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
           s:par="GridParameters&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-2/container-4">
           <rls>
@@ -325,8 +325,8 @@ SharedFields:
                     <condition
                       uid="AB4F562703C546FFB64C5382ED9073E8"
                       s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                      s:ProfileName="Topic Interest Category"
-                      s:PatternName="Smart and Connected" />
+                      s:PatternName="Smart and Connected"
+                      s:ProfileName="Topic Interest Category" />
                     <condition
                       uid="821105AAE7054ED79426645469E39611"
                       s:id="{08A70C4F-93B5-409E-9967-3892AAEB3BC2}"
@@ -354,9 +354,9 @@ SharedFields:
         </r>
         <r
           uid="{73F5361A-1FD2-4DA3-8FB4-3A7F777DB01C}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="r[@uid='{8EDA6022-0B6D-4A74-99B3-E6EC77BB5054}']"
           s:ds="{48E47F2D-5751-4C9D-BCF5-E175149D661D}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=8"
           s:ph="/main/container-2/column-3-2">
           <rls>
@@ -368,8 +368,8 @@ SharedFields:
                   <condition
                     uid="404856774AFB4C3BB94783DF689581A3"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
               </rule>
               <rule
@@ -391,9 +391,9 @@ SharedFields:
         </r>
         <r
           uid="{706385E5-0DE3-4042-9FB4-F283FFF5560E}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="r[@uid='{73F5361A-1FD2-4DA3-8FB4-3A7F777DB01C}']"
           s:ds="{7B123FAE-9EAB-4F54-BE90-7686BD9EE2D5}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=9"
           s:ph="/main/container-2/column-2-2">
           <rls>
@@ -405,8 +405,8 @@ SharedFields:
                   <condition
                     uid="EBCA440FB3FC4397AECDBBC3411474D9"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
               </rule>
               <rule
@@ -428,9 +428,9 @@ SharedFields:
         </r>
         <r
           uid="{D9D55AC9-2942-4874-A3EB-A42F8857A1E5}"
+          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           p:after="*[1=2]"
           s:ds="{31DF3F7F-B6D0-4A68-8B14-6DDE904A793C}"
-          s:id="{51C13F03-8364-4F61-B860-2EC6CA7439B3}"
           s:par="GridParameters=%7BF2FCE948-4F77-44AF-A188-B2030061F793%7D&amp;FieldNames=%7B6954A545-951B-4D61-B964-7BEADC83656E%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=10"
           s:ph="/main/container-2/column-1-2">
           <rls>
@@ -442,8 +442,8 @@ SharedFields:
                   <condition
                     uid="49B7519D3A43485196A7A4A883EC430C"
                     s:id="{E00DB4F0-B206-4544-AD90-25D201CFB62C}"
-                    s:ProfileName="Topic Interest Category"
-                    s:PatternName="Smart and Connected" />
+                    s:PatternName="Smart and Connected"
+                    s:ProfileName="Topic Interest Category" />
                 </conditions>
               </rule>
               <rule
