@@ -1,0 +1,24 @@
+﻿---
+ID: "90e167df-1979-4ac1-881f-766193ff317c"
+Parent: "d6a2fb7a-f09e-4dbc-bda4-233534cc1eb4"
+Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/guides/Nine things to know before you buy a TV/Data/Text 2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T232042Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b3635965-6786-457c-9dee-28de73c0a331"
+      Hint: Text
+      Value: |
+        <p><strong><a href="~/link.aspx?_id=3A3977F3BA7D85C1E4D81223768BE4FA&amp;_z=z">4K TVs</a></strong></p>
+        <p>You might be seeing a lot start to pop up about 4K TVs and the&nbsp;<a href="~/link.aspx?_id=2DA7FF2C8A97CBCC7E4E50724C5B6677&amp;_z=z">Spectra Ultra HD</a>&nbsp;is an excellent example. Just as 1080 was the buzz number when HD TVs were coming into fashion, 4K is simply the next step. A 1080p screen has 1,080 pixels in each vertical column and 1,920 pixels in each horizontal row. The 4K defies the convention by counting the horizontal pixels instead. Of course, if a 4K TV and 1080p TV are the same size, the 4K TV will have notably higher image clarity for everything above&nbsp;1080p resolution. Just keep in mind that a TV being 4K doesn’t mean you should ignore all the other aspects of the TV.</p>
+        <p>&nbsp;</p>

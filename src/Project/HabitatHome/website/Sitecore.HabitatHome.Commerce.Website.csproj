@@ -56,8 +56,8 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="13.0.*" />
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -67,6 +67,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Sitecore.Demo.Foundation.DependencyInjection" Version="9.2.0.64" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -90,6 +91,8 @@
     </Content>
     <Content Include="App_Config\Include\Project\HabitatHome.Website.config" />
     <Content Include="App_Config\Include\Project\z.HabitatHome.Commerce.Website.DevSettings.config" />
+    <Content Include="App_Config\Include\Project\HabitatHome.Commerce.Website.config" />
+    <Content Include="App_Config\Include\z.Project.Overrides\HabitatHome.Commerce.Orders.config" />
     <None Include="web.config.xdt">
       <SubType>Designer</SubType>
     </None>
@@ -106,6 +109,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\MvcControllerServicesConfigurator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -6,18 +6,19 @@ using System.Text.RegularExpressions;
 
 public class Configuration
 {
-    private MSBuildToolVersion _msBuildToolVersion;    
+    private MSBuildToolVersion _msBuildToolVersion;
 
     public string WebsiteRoot {get;set;}
     public string InstanceUrl {get;set;}
     public string SolutionName {get;set;}
     public string ProjectFolder {get;set;}
+    public string UnicornSerializationFolder {get;set;}
     public string BuildConfiguration {get;set;}
     public bool RunCleanBuilds {get;set;}
     public string MessageStatisticsApiKey {get;set;}
-    public string BuildToolVersions 
+    public string BuildToolVersions
     {
-        set 
+        set
         {
             if(!Enum.TryParse(value, out this._msBuildToolVersion))
             {
@@ -78,7 +79,7 @@ public void Transform(string rootFolder) {
                             , file.FullPath			                // Tranforms file (*.xdt)
                             , sourceTransform);		                // Target File
         }
-        
+
     }
 }
 

@@ -1,0 +1,26 @@
+﻿---
+ID: "2631fa70-6952-4528-b3b6-371f34e57e27"
+Parent: "016d89ca-1e5f-4626-a291-6e63e29a1c67"
+Template: "bd74a392-dacd-4c23-853a-d520762b33a1"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/home-entertainment/Data/Category Subnavigation/Car Audio"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180218T095612Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a3555ef5-6619-441d-b4db-da3fd5f9c770"
+      Hint: Navigation Image
+      Value: |
+        <image mediaid="{6DF76C6D-0D28-4A80-8ADC-F7C82EA7BD4D}" ></image>
+    - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Car Audio" querystring="" target="" id="{B0DA0513-B3CC-31EC-F6D3-C7C665387472}" />

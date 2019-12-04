@@ -1,0 +1,37 @@
+﻿---
+Username: |
+  sitecore\CommercePricerManager
+Email: cpm@demo.com
+Comment: Demo Commerce Pricer Manager
+Created: "2019-08-07T18:03:47.0000000Z"
+IsApproved: True
+Properties:
+- Key: FullName
+  Value: Commerce Pricer Manager
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{E90D79A4-D827-4BB1-B4F8-0A8B1F4B9D68}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: digestcredentialhash
+  Value: d4fa4397f7832c2de0c5cbfe99b84940
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: 076ffbaf504e5b39c48d595d23a49872
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: |
+    sitecore\Commerce Business User
+  MemberOf: |
+    sitecore\Pricer Manager

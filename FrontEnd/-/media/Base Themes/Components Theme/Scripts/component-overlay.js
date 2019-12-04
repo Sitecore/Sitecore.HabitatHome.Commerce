@@ -1,4 +1,4 @@
-﻿/* global XAContext:false, mejs:false */
+﻿/* global mejs:false */
 XA.component.overlay = function ($) {
 
     var api = {},
@@ -195,16 +195,6 @@ XA.component.overlay = function ($) {
 
         // Focus first
         firstTabStop.focus();
-
-        XAContext.Tracking.track(
-            XAContext.Domain.TrackingTypes().event, {
-                category: "Overlay",
-                event: "open",
-                label: label,
-                data: 0
-            },
-            "sync"
-        );
         return overlay;
     }
 
@@ -228,16 +218,7 @@ XA.component.overlay = function ($) {
                 }
             }
         );
-
-        XAContext.Tracking.track(
-            XAContext.Domain.TrackingTypes().event, {
-                category: "Overlay",
-                event: "close",
-                label: label,
-                data: 0
-            },
-            "sync"
-        );
+       
         return overlay;
     }
 

@@ -20,6 +20,16 @@
   color: #383c41;
 }
 
+.product-details-page main .ActivePromotion {
+  margin: 0 auto 2em auto;
+  display: table;
+}
+
+.product-details-page main .ActivePromotion .component-content {
+  display: inline-block;
+  background-color: transparent;
+}
+
 @media (min-width: 768px) {
   .product-details-page main .component.column-splitter {
     width: 750px;

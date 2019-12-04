@@ -77,19 +77,19 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="12.0.*" />
-        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="3.0.*" />
-        <PackageReference Include="Sitecore.Kernel" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.Mvc" Version="9.1.1-*" />
-        <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="4.8.1.*" />
-        <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="4.8.1.*" />
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.Connect.Core" Version="13.0.*" />
+        <PackageReference Include="Sitecore.Commerce.Engine.Connect" Version="4.0.*" />
+        <PackageReference Include="Sitecore.Kernel" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.Mvc" Version="9.2.0-*" />
+        <PackageReference Include="Sitecore.XA.Foundation.Mvc" Version="5.9.0.*" />
+        <PackageReference Include="Sitecore.XA.Foundation.SitecoreExtensions" Version="5.9.0.*" />
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Connect" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
-        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Foundation.Common" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
-        <PackageReference Include="Sitecore.Commerce.XA.Feature.Cart" Version="2.0.*">
+        <PackageReference Include="Sitecore.Commerce.XA.Feature.Cart" Version="3.0.*">
           <ExcludeAssets>contentFiles</ExcludeAssets>
         </PackageReference>
       </ItemGroup>
@@ -137,11 +137,11 @@
     <Content Include="Views\Cart\ShoppingCartLines.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
-    <Content Include="Views\Commerce\Checkout\Billing.cshtml" />
     <Content Include="Views\Commerce\Checkout\Delivery.cshtml" />
     <Content Include="Views\Commerce\Checkout\_ByItem_PickUpFromStore.cshtml" />
     <Content Include="Views\Commerce\Checkout\_PickDeliveryByItem.cshtml" />
     <Content Include="Views\Commerce\Checkout\_PickUpFromStore.cshtml" />
+    <Content Include="App_Config\Include\Y.Commerce.Engine\z.HabitatHome.Commerce.Connect.Carts.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -164,6 +164,7 @@
     <Compile Include="Models\JsonResults\ShoppingCartJsonResult.cs" />
     <Compile Include="Models\JsonResults\ShoppingCartLineJsonResult.cs" />
     <Compile Include="Pipelines\GetAllShipmentOptions.cs" />
+    <Compile Include="Pipelines\TranslateCartLineToEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IShoppingCartLinesRepository.cs" />
     <Compile Include="Repositories\ShoppingCartLinesRepository.cs" />

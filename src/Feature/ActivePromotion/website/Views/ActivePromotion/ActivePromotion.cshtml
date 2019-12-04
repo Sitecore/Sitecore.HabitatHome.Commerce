@@ -11,9 +11,9 @@
 {
     foreach (var promo in Model.ActivePromotions)
     {
-        <div class="ActivePromotion component promo container theme-container col-xs-12" @Html.Sxa().Component("cxa-activepromotion-component", Model.ProductItemRenderingModel.Attributes)>
+        <div class="ActivePromotion component promo container theme-container col-xs-12 alert alert-info" @Html.Sxa().Component("cxa-activepromotion-component", Model.ProductItemRenderingModel.Attributes)>
             <div class="component-content">
-               @promo.DisplayCartText
+               @promo.DisplayText
             </div>
         </div>
     }

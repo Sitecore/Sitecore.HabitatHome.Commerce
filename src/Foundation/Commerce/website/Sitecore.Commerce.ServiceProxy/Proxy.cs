@@ -1,43 +1,25 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Proxy.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
+﻿// © 2015 Sitecore Corporation A/S. All rights reserved. Sitecore® is a registered trademark of Sitecore Corporation A/S.
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading;
+using Microsoft.OData.Client;
+using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Core.Commands;
+using Sitecore.Commerce.Engine;
+using Sitecore.Commerce.EntityViews;
+using Sitecore.Commerce.ServiceProxy.Exceptions;
+using Sitecore.Diagnostics;
 
 namespace Sitecore.Commerce.ServiceProxy
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using System.Threading;
-
-    using Core.Commands;
-
-    using Microsoft.OData.Client;
-
-    using Sitecore.Commerce.Core;
-    using Sitecore.Commerce.Engine;
-    using Sitecore.Commerce.ServiceProxy.Exceptions;
-
     /// <summary>
-    /// Defines the proxy.
+    /// Defines the commerce odata proxy.
     /// </summary>
     public class Proxy
     {
-        /// <summary>
-        /// Writes the colored line.
-        /// </summary>
-        /// <param name="color">The color.</param>
-        /// <param name="text">The text.</param>
-        public static void WriteColoredLine(ConsoleColor color, string text)
-        {
-            ConsoleColor originalColor = Console.ForegroundColor;
-            Console.ForegroundColor = color;
-            Console.WriteLine(text);
-            Console.ForegroundColor = originalColor;
-        }
-
         /// <summary>
         /// Gets the value.
         /// </summary>
@@ -57,40 +39,44 @@ namespace Sitecore.Commerce.ServiceProxy
                 try
                 {
                     var result = query.GetValueAsync().Result;
-
                     watch.Stop();
-                    Console.WriteLine($"     <.><.> GetValue<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
+                    LogInfo($"     <.><.> GetValue<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
 
                     return result;
                 }
                 catch (DataServiceQueryException ex)
                 {
-                    WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{ex.Response.Query}");
+                    LogError($"Exception {ex.InnerException.Message} on GetValue:{ex.Response.Query}", typeof(Proxy));
+                    return default(T);
                 }
                 catch (AggregateException ex)
                 {
-                    WriteColoredLine(ConsoleColor.Red, $"Aggregate Exception {ex.InnerException.Message}");
-                    var exception = ex.InnerException as DataServiceQueryException;
-                    if (exception != null)
+                    foreach (var e in ex.InnerExceptions)
                     {
-                        var dataserviceQueryException = exception;
-
-                        switch (dataserviceQueryException.Response.StatusCode)
+                        if (e is DataServiceQueryException dataserviceQueryException)
                         {
-                            case 404:
-                                // If the item is not found, we return a null.
-                                // That is easier to code for than throwing an exception
-                                WriteColoredLine(ConsoleColor.Red, $"Entity Not Found Exception (404) - Query: {dataserviceQueryException.Response.Query}");
-                                return default(T);
-                            default:
-                                WriteColoredLine(ConsoleColor.Red, $"Query Exception - Query:{dataserviceQueryException.Response.Query} - Message:{dataserviceQueryException.Message}");
-                                throw dataserviceQueryException;
+                            switch (dataserviceQueryException.Response.StatusCode)
+                            {
+                                case 404:
+
+                                    // If the item is not found, we return a null.
+                                    // That is easier to code for than throwing an exception
+                                    LogError($"Entity Not Found Exception (404) - Query: {dataserviceQueryException.Response.Query} - Message:{dataserviceQueryException.Message}", typeof(Proxy));
+                                    return default(T);
+                                default:
+                                    LogError($"Query Exception - Query:{dataserviceQueryException.Response.Query} - Message:{dataserviceQueryException.Message}", typeof(Proxy));
+                                    throw dataserviceQueryException;
+                            }
                         }
+
+                        LogError($"Exception {e.GetType()}: {e.Message} on GetValue:{query.RequestUri}", typeof(Proxy));
+                        throw e;
                     }
                 }
                 catch (Exception ex)
                 {
-                    WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message} GetValue:{query.RequestUri}");
+                    LogError($"Exception {ex.GetType()}: {ex.Message} GetValue:{query.RequestUri}", typeof(Proxy));
+                    throw;
                 }
 
                 tries++;
@@ -114,34 +100,35 @@ namespace Sitecore.Commerce.ServiceProxy
             try
             {
                 var result = query.GetValueAsync().Result;
-
                 watch.Stop();
-                Console.WriteLine($"     <.><.> GetActionValue<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
+                LogInfo($"     <.><.> GetActionValue<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
 
                 return result;
             }
             catch (DataServiceQueryException ex)
             {
-                WriteColoredLine(ConsoleColor.Red ,$"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
             catch (AggregateException ex)
             {
-                if (ex.InnerException is DataServiceQueryException)
+                foreach (var e in ex.InnerExceptions)
                 {
-                    var queryException = ex.InnerException as DataServiceQueryException;
-                    var realException = queryException.InnerException as DataServiceClientException;
-                    WriteColoredLine(ConsoleColor.Red, $"Client Exception {realException.StatusCode} - {realException.Message} on GetValue:{query.RequestUri}");
-                    throw realException;
-
+                    if (e is DataServiceClientException dataserviceClientException)
+                    {
+                        LogError($"Client Exception {dataserviceClientException.StatusCode} - {dataserviceClientException.Message} on GetValue:{query.RequestUri}", typeof(Proxy));
+                    }
+                    else
+                    {
+                        LogError($"Exception {e.GetType()}: {e.Message} on GetValue:{query.RequestUri}", typeof(Proxy));
+                    }
                 }
 
-                WriteColoredLine(ConsoleColor.Red, $"Aggregate Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
                 throw;
             }
             catch (Exception ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message} GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.GetType()}: {ex.Message} GetValue:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
         }
@@ -156,29 +143,31 @@ namespace Sitecore.Commerce.ServiceProxy
         {
             var watch = new Stopwatch();
             watch.Start();
-
             try
             {
                 var result = query.ExecuteAsync().Result;
-
                 watch.Stop();
-                Console.WriteLine($"     <.><.> ExecuteAction<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
+                LogInfo($"     <.><.> ExecuteAction<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
 
                 return result;
             }
             catch (DataServiceQueryException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}");
+                LogError($"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
             catch (AggregateException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}");
+                foreach (var e in ex.InnerExceptions)
+                {
+                    LogError($"Exception {e.GetType()}: {e.Message} on Execute:{query.RequestUri}", typeof(Proxy));
+                }
+
                 throw;
             }
             catch (Exception ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message} Execute:{query.RequestUri}");
+                LogError($"Exception {ex.GetType()}: {ex.Message} Execute:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
         }
@@ -197,25 +186,28 @@ namespace Sitecore.Commerce.ServiceProxy
             try
             {
                 var result = query.ExecuteAsync().Result;
-
                 watch.Stop();
-                Console.WriteLine($"     <.><.> Execute<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
+                LogInfo($"     <.><.> Execute<T>: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
 
                 return result;
             }
             catch (DataServiceQueryException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}");
+                LogError($"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
             catch (AggregateException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on Execute:{query.RequestUri}");
+                foreach (var e in ex.InnerExceptions)
+                {
+                    LogError($"Exception {e.GetType()}: {e.Message} on Execute:{query.RequestUri}", typeof(Proxy));
+                }
+
                 throw;
             }
             catch (Exception ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message} Execute:{query.RequestUri}");
+                LogError($"Exception {ex.GetType()}: {ex.Message} Execute:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
         }
@@ -228,38 +220,47 @@ namespace Sitecore.Commerce.ServiceProxy
         /// <returns>A value</returns>
         public static CommerceCommand DoCommand<T>(DataServiceActionQuerySingle<T> query)
         {
-            Console.WriteLine($"     ================ COMMAND =================");
-            Console.WriteLine($"     {query.RequestUri}");
-
             try
             {
                 var response = query.GetValueAsync().Result;
                 var commandResponse = response as CommerceCommand;
-                if (commandResponse != null)
+                if (commandResponse == null)
                 {
-                    WritePerf(commandResponse.Models.ToList());
+                    return null;
+                }
 
-                    if (commandResponse.ResponseCode != "Ok")
-                    {
-                        WriteColoredLine(ConsoleColor.Red, $"DoCommand Failed:{commandResponse.Messages.FirstOrDefault(m => m.Code.Equals("Error") || m.Code.Equals("Warning"))?.Text}");
-                    }
+                LogInfo($"     <.><.> DoCommand<T>: {query.RequestUri}");
+                WritePerf(commandResponse.Models.ToList());
+
+                if (commandResponse.ResponseCode.Equals("Ok", StringComparison.OrdinalIgnoreCase))
+                {
+                    return commandResponse;
+                }
+
+                foreach (var message in commandResponse.Messages.Where(m => !m.Code.Equals("Information", StringComparison.OrdinalIgnoreCase)))
+                {
+                    LogError($"DoCommand Failed:{message.Text}", typeof(Proxy));
                 }
 
                 return commandResponse;
             }
             catch (DataServiceQueryException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.InnerException.Message} on DoCommand:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
             catch (AggregateException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
+                foreach (var e in ex.InnerExceptions)
+                {
+                    LogError($"Exception {e.GetType()}: {e.Message} on DoCommand:{query.RequestUri}", typeof(Proxy));
+                }
+
                 throw;
             }
             catch (Exception ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message}  GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.GetType()}: {ex.Message} on DoCommand:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
         }
@@ -272,38 +273,46 @@ namespace Sitecore.Commerce.ServiceProxy
         /// <returns>A value</returns>
         public static CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand DoOpsCommand<T>(DataServiceActionQuerySingle<T> query)
         {
-            Console.WriteLine($"     ================ COMMAND =================");
-            Console.WriteLine($"     {query.RequestUri}");
-
             try
             {
                 var response = query.GetValueAsync().Result;
                 var commandResponse = response as CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand;
-                if (commandResponse != null)
+                if (commandResponse == null)
                 {
-                    //WritePerf(commandResponse.Models.ToList());
+                    return null;
+                }
 
-                    if (commandResponse.ResponseCode != "Ok")
-                    {
-                        WriteColoredLine(ConsoleColor.Red, $"DoCommand Failed:{commandResponse.Messages.FirstOrDefault(m => m.Code.Equals("Error") || m.Code.Equals("Warning"))?.Text}");
-                    }
+                LogInfo($"     <.><.> DoOpsCommand<T>: {query.RequestUri}");
+
+                if (commandResponse.ResponseCode.Equals("Ok", StringComparison.OrdinalIgnoreCase))
+                {
+                    return commandResponse;
+                }
+
+                foreach (var message in commandResponse.Messages.Where(m => !m.Code.Equals("Information", StringComparison.OrdinalIgnoreCase)))
+                {
+                    LogError($"DoOpsCommand Failed:{message.Text}", typeof(Proxy));
                 }
 
                 return commandResponse;
             }
             catch (DataServiceQueryException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.InnerException.Message} on DoOpsCommand:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
             catch (AggregateException ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{query.RequestUri}");
+                foreach (var e in ex.InnerExceptions)
+                {
+                    LogError($"Exception {e.GetType()}: {e.Message} on DoOpsCommand:{query.RequestUri}", typeof(Proxy));
+                }
+
                 throw;
             }
             catch (Exception ex)
             {
-                WriteColoredLine(ConsoleColor.Red, $"Unknown Exception {ex.Message}  GetValue:{query.RequestUri}");
+                LogError($"Exception {ex.GetType()}: {ex.Message} on DoOpsCommand:{query.RequestUri}", typeof(Proxy));
                 throw;
             }
         }
@@ -318,7 +327,7 @@ namespace Sitecore.Commerce.ServiceProxy
         /// <param name="itemId">The item identifier.</param>
         /// <returns>A <see cref="Sitecore.Commerce.EntityViews.EntityView"/></returns>
         /// <exception cref="CommerceServiceQuerySingleException"></exception>
-        public static Sitecore.Commerce.EntityViews.EntityView GetEntityView(Container container, string entityId, string viewName, string forAction, string itemId)
+        public static EntityView GetEntityView(Container container, string entityId, string viewName, string forAction, string itemId)
         {
             var watch = new Stopwatch();
             watch.Start();
@@ -332,33 +341,34 @@ namespace Sitecore.Commerce.ServiceProxy
                     var query = container.GetEntityView(entityId, viewName, forAction, itemId);
                     var entityView = query.GetValueAsync().Result;
                     watch.Stop();
+                    LogInfo($"     <.><.> GetEntityView: {query.RequestUri}: {watch.ElapsedMilliseconds}ms");
 
-                    Console.WriteLine($"     <.><.> EntityView: {entityId} ({viewName}): {watch.ElapsedMilliseconds}");
                     return entityView;
                 }
                 catch (DataServiceQueryException ex)
                 {
-                    WriteColoredLine(ConsoleColor.Red, $"Exception {ex.InnerException.Message} on GetValue:{ex.Response.Query}");
+                    LogError($"Exception {ex.InnerException.Message} on GetEntityView:{ex.Response.Query}", typeof(Proxy));
                 }
                 catch (AggregateException ex)
                 {
-                    WriteColoredLine(ConsoleColor.Red, $"Aggregate Exception {ex.InnerException.Message}");
-                    var exception = ex.InnerException as DataServiceQueryException;
-                    if (exception != null)
+                    foreach (var e in ex.InnerExceptions)
                     {
-                        var dataserviceQueryException = exception;
-
-                        switch (dataserviceQueryException.Response.StatusCode)
+                        if (e is DataServiceQueryException dataserviceQueryException)
                         {
-                            default:
-                                WriteColoredLine(ConsoleColor.Red, $"Query Exception - Query:{dataserviceQueryException.Response.Query} - Message:{dataserviceQueryException.Message}");
-                                throw dataserviceQueryException;
+                            LogError($"Query Exception - Query:{dataserviceQueryException.Response.Query} - Message:{dataserviceQueryException.Message}", typeof(Proxy));
+                        }
+                        else
+                        {
+                            LogError($"Exception {e.GetType()}: {e.Message} on GetEntityView: entityId = {entityId}, viewName = {viewName}, forAction = {forAction}, itemId = {itemId}", typeof(Proxy));
                         }
                     }
+
+                    throw;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    // Console.WriteLine($"Unknown Exception {ex.Message} GetValue:{query.RequestUri}");
+                    LogError($"Exception {ex.GetType()}: {ex.Message}  GetEntityView: entityId = {entityId}, viewName = {viewName}, forAction = {forAction}, itemId = {itemId}", typeof(Proxy));
+                    throw;
                 }
 
                 tries++;
@@ -368,50 +378,86 @@ namespace Sitecore.Commerce.ServiceProxy
             throw new CommerceServiceQuerySingleException(string.Empty);
         }
 
-        /// <summary>
-        /// Writes the performance.
-        /// </summary>
-        /// <param name="models">The models.</param>
-        public static void WritePerf(List<Model> models)
+        private static void LogError(string message, Type owner)
         {
-            if (models.OfType<ActivityPerf>().Any())
+            if (Log.Enabled)
             {
-                Console.WriteLine("     >>-------- Performance --------");
-                foreach (var activityPerf in models.OfType<ActivityPerf>())
-                {
-                    if (activityPerf.ElapsedMs > 0)
-                    {
-                        switch (activityPerf.Name)
-                        {
-                            case "GetEnvironmentCommand":
-                                // Do Nothing
-                                break;
-                            case "ValidateContextCommand":
-                                // Do Nothing
-                                break;
-                            default:
-                                if (activityPerf.ElapsedMs < 200)
-                                {
-                                    System.Console.ForegroundColor = ConsoleColor.Cyan;
-                                }
-                                else if (activityPerf.ElapsedMs < 500)
-                                {
-                                    System.Console.ForegroundColor = ConsoleColor.Yellow;
-                                }
-                                else
-                                {
-                                    System.Console.ForegroundColor = ConsoleColor.Red;
-                                }
+                Log.Error(message, owner);
+                return;
+            }
 
-                                Console.WriteLine($"     ~Perf: {activityPerf.Name}: {activityPerf.ElapsedMs}ms");
-                                System.Console.ForegroundColor = ConsoleColor.Cyan;
-                                break;
-                        }
-                    }
+            WriteColoredLine(ConsoleColor.Red, message);
+        }
+
+        private static void LogInfo(string message)
+        {
+            if (Log.Enabled)
+            {
+                return;
+            }
+
+            Console.WriteLine(message);
+        }
+
+        private static void WriteColoredLine(ConsoleColor color, string text)
+        {
+            ConsoleColor originalColor = Console.ForegroundColor;
+            Console.ForegroundColor = color;
+            Console.WriteLine(text);
+            Console.ForegroundColor = originalColor;
+        }
+
+        private static void WritePerf(IReadOnlyCollection<Model> models)
+        {
+            if (Log.Enabled)
+            {
+                return;
+            }
+
+            if (!models.OfType<ActivityPerf>().Any())
+            {
+                return;
+            }
+
+            Console.WriteLine("     >>-------- Performance --------");
+            foreach (var activityPerf in models.OfType<ActivityPerf>())
+            {
+                if (activityPerf.ElapsedMs <= 0)
+                {
+                    continue;
                 }
 
-                Console.WriteLine("     <<-------- Performance --------");
+                switch (activityPerf.Name)
+                {
+                    case "GetEnvironmentCommand":
+
+                        // Do Nothing
+                        break;
+                    case "ValidateContextCommand":
+
+                        // Do Nothing
+                        break;
+                    default:
+                        if (activityPerf.ElapsedMs < 200)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Cyan;
+                        }
+                        else if (activityPerf.ElapsedMs < 500)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                        }
+
+                        Console.WriteLine($"     ~Perf: {activityPerf.Name}: {activityPerf.ElapsedMs}ms");
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        break;
+                }
             }
+
+            Console.WriteLine("     <<-------- Performance --------");
         }
     }
 }

@@ -1,0 +1,57 @@
+﻿---
+ID: "41862527-d6af-4ac5-a34b-5a200522b1b2"
+Parent: "a5beea20-dc20-45b4-b894-e0ca5c2e4726"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/styles/pages/checkout-review-page"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/41862527D6AF4AC5A34B5A200522B1B2.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "c6ac060c-f142-4b40-8e84-185c72f2ac52"
+  Value: LyogYnJlYWtwb2ludHMgKi8NCi5jaGVja291dC1yZXZpZXctcGFnZSAuY3hhLXNob3BwaW5nY2FydGxpbmVzLWNvbXBvbmVudCAuc2hvcHBpbmdjYXJ0LXF1YW50aXR5IGJ1dHRvbi5kZWNyZWFzZSwgLmNoZWNrb3V0LXJldmlldy1wYWdlIC5jeGEtc2hvcHBpbmdjYXJ0bGluZXMtY29tcG9uZW50IC5zaG9wcGluZ2NhcnQtcXVhbnRpdHkgYnV0dG9uLmluY3JlYXNlIHsNCiAgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50Ow0KfQ0KDQouY2hlY2tvdXQtcmV2aWV3LXBhZ2UgLmN4YS1zaG9wcGluZ2NhcnRsaW5lcy1jb21wb25lbnQgLnNob3BwaW5nY2FydC1xdWFudGl0eSBpbnB1dC5xdWFudGl0eSB7DQogIHBvaW50ZXItZXZlbnRzOiBub25lOw0KICBib3JkZXI6IDBweDsNCn0NCg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 385
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: text/css
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: css
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190412T180324Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190412T180325Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190412T180325Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

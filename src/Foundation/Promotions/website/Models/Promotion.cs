@@ -8,6 +8,7 @@ namespace Sitecore.HabitatHome.Foundation.Promotions.Models
     public class Promotion
     {
         public string Id { get; set; }
+        public string DisplayText { get; set; }
         public string DisplayCartText { get; set; }
         public List<dynamic> Qualifications { get; set; }
         public List<dynamic> Benefits { get; set; }

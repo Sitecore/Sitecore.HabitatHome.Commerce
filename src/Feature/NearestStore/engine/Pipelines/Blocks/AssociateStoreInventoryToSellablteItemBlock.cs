@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Catalog;
@@ -102,16 +103,15 @@ namespace Sitecore.HabitatHome.Feature.NearestStore.Engine.Pipelines.Blocks
                 FindEntitiesInListArgument entitiesInListArgument2 = await entitiesInListPipeline.Run(entitiesInListArgument1, context1).ConfigureAwait(false);
                 if (inventoryInformation != null && entitiesInListArgument2 != null)
                 {
-                    List<string> idList = entitiesInListArgument2.IdList;
+                    List<ListEntityReference> entityReferences = entitiesInListArgument2.EntityReferences.ToList();
                     string id = inventoryInformation.Id;
                    
-                    if (idList != null && idList.Contains(id))
+                    if (entityReferences != null && entityReferences.Any(er => er.EntityId == id))
                     {
                         inventoryInformation.Quantity = rnd.Next(50);
                         isUpdate = true;                        
                     }
                 }
-
 
                 if(!isUpdate)
                 {                

@@ -5,8 +5,10 @@
 @model Sitecore.Commerce.XA.Feature.Account.Models.RegistrationUserRenderingModel
 
 @{
+    <!-- HabitatHome customization -->
     if (Model != null)
     {
+    <!-- end HabitatHome customization -->
         var registering = @Html.Sitecore().CurrentItem["Create Account Button In-progress Label"];
 
 <div @Html.Sxa().Component("cxa-register-component", Model.Attributes)>
@@ -19,12 +21,16 @@
     else
     {
         <div class="registeration-form" data-cxa-component-class="RegistrationForm" data-cxa-component-initialized="false" data-cxa-component-type="form">
+            <!-- HabitatHome customization -->
             @using (Ajax.BeginRouteForm("RootApiRoutes", new { action = "ExtendedRegistration", controller = "Customers" }, new AjaxOptions { OnBegin = "RegistrationForm.OnBegin", OnSuccess = "RegistrationForm.OnSuccess", OnComplete = "RegistrationForm.OnComplete", HttpMethod = "Post" }, new { @id = "RegisterForm" }))
             {
-
+            <!-- end HabitatHome customization -->
+                @*<h1>@System.Web.Mvc.UrlHelper.GenerateUrl("RootsApiRoutes", null, null,
+                        new System.Web.Routing.RouteValueDictionary(new {action = "Registration", controller = "Account", }), Ajax.RouteCollection, Ajax.ViewContext.RequestContext, false);</h1>*@
                 @Html.AntiForgeryToken()
                 @Html.ValidationSummary(true)
 
+                <!-- HabitatHome customization -->
                 <div class="register-firstname">
                     <label for="FirstName">@Html.Sitecore().Field("First Name Label", Html.Sitecore().CurrentItem)</label>
                     @Html.TextBoxFor(m => m.FirstName,
@@ -51,52 +57,53 @@
                                   })
                     @Html.ValidationMessageFor(m => m.LastName)
                 </div>
+                <!-- end HabitatHome customization -->
 
                 <div class="register-username">
                     <label for="UserName">@Html.Sitecore().Field("Email Address Label", Html.Sitecore().CurrentItem)</label>
                     @Html.TextBoxFor(m => m.UserName,
-                              new
-                              {
-                                  placeholder = Html.Sitecore().CurrentItem["Email Address Hint Text"],
-                                  data_val_required = Html.Sitecore().CurrentItem["Email Address Missing Message"],
-                                  data_val_regex = Html.Sitecore().CurrentItem["Email Address Invalid Message"],
-                                  data_val_regex_pattern = Model.EmailAddressValidationRegex,
-                                  data_val_length_max = "256",
-                                  data_val_length = string.Format(Html.Sitecore().CurrentItem["Email Address Max Length Message"].ToString(), 256),
-                                  disabled = "disabled"
-                              })
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Email Address Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Email Address Missing Message"],
+                        data_val_regex = Html.Sitecore().CurrentItem["Email Address Invalid Message"],
+                        data_val_regex_pattern = Model.EmailAddressValidationRegex,
+                        data_val_length_max = "256",
+                        data_val_length = string.Format(Html.Sitecore().CurrentItem["Email Address Max Length Message"].ToString(), 256),
+                        disabled = "disabled"
+                    })
                     @Html.ValidationMessageFor(m => m.UserName)
                 </div>
 
                 <div class="register-password">
                     <label for="Password">@Html.Sitecore().Field("Password Label", Html.Sitecore().CurrentItem)</label>
                     @Html.PasswordFor(m => m.Password,
-                              new
-                              {
-                                  placeholder = Html.Sitecore().CurrentItem["Password Hint Text"],
-                                  data_val_required = Html.Sitecore().CurrentItem["Password Missing Message"],
-                                  data_val_length_min = "6",
-                                  data_val_length_max = "100",
-                                  data_val_length = string.Format(Html.Sitecore().CurrentItem["Password Length Message"].ToString(), 6),
-                                  @maxlength = "100",
-                                  disabled = "disabled",
-                                  autocomplete = "off"
-                              })
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Password Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Password Missing Message"],
+                        data_val_length_min = "6",
+                        data_val_length_max = "100",
+                        data_val_length = string.Format(Html.Sitecore().CurrentItem["Password Length Message"].ToString(), 6),
+                        @maxlength = "100",
+                        disabled = "disabled",
+                        autocomplete = "off"
+                    })
                     @Html.ValidationMessageFor(m => m.Password)
                 </div>
 
                 <div class="register-confirm-password">
                     <label for="ConfirmPassword">@Html.Sitecore().Field("Repeat Password Label", Html.Sitecore().CurrentItem)</label>
                     @Html.PasswordFor(m => m.ConfirmPassword,
-                              new
-                              {
-                                  placeholder = Html.Sitecore().CurrentItem["Password Hint Text"],
-                                  data_val_required = Html.Sitecore().CurrentItem["Repeat Password Missing Message"],
-                                  data_val_equalto_other = "*.Password",
-                                  data_val_equalto = Html.Sitecore().CurrentItem["Passwords Do Not Match Message"],
-                                  autocomplete = "off",
-                                  disabled = "disabled"
-                              })
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Password Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Repeat Password Missing Message"],
+                        data_val_equalto_other = "*.Password",
+                        data_val_equalto = Html.Sitecore().CurrentItem["Passwords Do Not Match Message"],
+                        autocomplete = "off",
+                        disabled = "disabled"
+                    })
                     @Html.ValidationMessageFor(m => m.ConfirmPassword)
                 </div>
 
@@ -109,5 +116,7 @@
         </div>
     }
 </div>
-        }
+<!-- HabitatHome customization -->
     }
+}
+<!-- end HabitatHome customization -->

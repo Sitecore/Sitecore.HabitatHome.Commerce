@@ -1,0 +1,107 @@
+﻿---
+ID: "aef8f5b9-c3ca-4ad3-9450-531bd97642cc"
+Parent: "0baec103-b372-44e9-9199-f30d4a40a3ed"
+Template: "c461aea7-ff65-4e5e-9661-c292b0846494"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/checkout/orderconfirmation
+DB: master
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{78387702-166A-4B38-B21D-5AC1FEC3F59E}"
+        name="Purchase Complete" />
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "db51d4e9-c24d-4670-af0e-62c8aa08e2b6"
+  Hint: LocalData
+  Value: "{535A44B6-ED45-4517-B4B8-9C3A06D34F28}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{81A9AC36-AC4F-4DB3-BAE2-EEB58E244A0B}"
+          p:before="*"
+          s:ds="local:/Data/Thank you Order"
+          s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
+          s:par="FieldNames=%7b7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7d"
+          s:ph="/main/container-1" />
+        <r
+          uid="{7A80968F-05F3-4C28-A87D-6BB794F3F9B6}"
+          p:after="r[@uid='{81A9AC36-AC4F-4DB3-BAE2-EEB58E244A0B}']"
+          s:ds="{D1295EC1-D072-4D65-AC3A-F5CBAC66F066}"
+          s:id="{E4D1D252-5689-4F23-8655-B9AC90D36F15}"
+          s:par=""
+          s:ph="/main/container-1" />
+        <r
+          uid="{8FFD6D85-B4AC-41E1-A00A-3ADC4127637C}"
+          p:after="r[@uid='{7A80968F-05F3-4C28-A87D-6BB794F3F9B6}']"
+          s:ds="local:/Data/Order Confirmation - Note Message"
+          s:id="{DCEE78E1-1843-4456-A13A-F10A12191630}"
+          s:par="FieldNames=%7B7EEB8FEA-78CB-4571-8F1C-BC86415BF502%7D&amp;GridParameters&amp;Styles=%7B28C65397-7759-49B0-B39F-AFBC6F5D508A%7D"
+          s:ph="/main/container-1" />
+        <r
+          uid="{DF95A546-2F2C-45DB-B1E2-43F3668E3458}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="Styles=%7bD07A2386-28ED-4B2E-A4E6-F85E0ABE980F%7d&amp;DynamicPlaceholderId=1"
+          s:ph="main" />
+      </d>
+      <d
+        id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}">
+        <p:d />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: 
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Order Confirmation
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180204T191321Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: OrderConfirmation
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "e2a634fd-5177-46de-b629-5393caed77d7"
+      Hint: Title
+      Value: Order Confirmation
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Order Confirmation
+  Versions:
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Order Confirmation
+  Versions:

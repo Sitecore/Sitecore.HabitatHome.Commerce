@@ -8,7 +8,9 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Plugin.Carts;
@@ -106,6 +108,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                     context).ConfigureAwait(false);
 
             await this.CreateCartFreeShippingPromotion(book, context).ConfigureAwait(false);
+            await this.CreateCart5PctOffCouponPromotion(book, context).ConfigureAwait(false);
             await this.CreateCartExclusive5PctOffCouponPromotion(book, context).ConfigureAwait(false);
             await this.CreateCartExclusive5OffCouponPromotion(book, context).ConfigureAwait(false);
             await this.CreateCartExclusiveOptixCameraPromotion(book, context).ConfigureAwait(false);
@@ -124,7 +127,8 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
             await this.CreateLineExclusive20OffCouponPromotion(book, context).ConfigureAwait(false);
             await this.CreateLine5PctOffCouponPromotion(book, context).ConfigureAwait(false);
             await this.CreateLine5OffCouponPromotion(book, context).ConfigureAwait(false);
-            await this.CreateLineLaptopPricePromotion(book, context).ConfigureAwait(false);           
+            await this.CreateLineOneFreeStrivaPromotion(book, context).ConfigureAwait(false);
+            await this.CreateLineLaptopPricePromotion(book, context).ConfigureAwait(false);
             await this.CreateBundleFitnessPromotion(book, context).ConfigureAwait(false);
             await this.CreateFreeShippingFoodieCouponPromotion(book, context).ConfigureAwait(false);
             await this.AssociateCatalogToBook(book.Name, "Habitat_Master", context).ConfigureAwait(false);
@@ -194,6 +198,63 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                     }),
                 context).ConfigureAwait(false);
 
+            promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
+            await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Creates cart exclusive 5 percent off coupon promotion.
+        /// </summary>
+        /// <param name="book">The book.</param>
+        /// <param name="context">The context.</param>
+        /// <returns>A <see cref="Task"/></returns>
+        private async Task CreateCart5PctOffCouponPromotion(PromotionBook book, CommercePipelineExecutionContext context)
+        {
+            var promotion =
+                await this._addPromotionPipeline.Run(
+                    new AddPromotionArgument(book, "Cart5PctOffCouponPromotion", DateTimeOffset.UtcNow.AddDays(-2), DateTimeOffset.UtcNow.AddYears(1), "5% Off Cart (Coupon)", "5% Off Cart (Coupon)")
+                    {
+                        IsExclusive = false,
+                        DisplayName = "5% Off Cart (Coupon)",
+                        Description = "5% off Cart with subtotal of $300 or more (Coupon)"
+                    },
+                    context).ConfigureAwait(false);
+
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.CartAnyItemSubtotalCondition,
+                            Name = CartsConstants.CartAnyItemSubtotalCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Subtotal", Value = "300", IsOperator = false, DisplayType = "System.Decimal" }
+                                                 }
+                        }),
+                    context).ConfigureAwait(false);
+
+            promotion =
+                await this._addBenefitPipeline.Run(
+                    new PromotionActionModelArgument(
+                        promotion,
+                        new ActionModel
+                        {
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.CartSubtotalPercentOffAction,
+                            Name = CartsConstants.CartSubtotalPercentOffAction,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { Name = "PercentOff", Value = "5", DisplayType = "System.Decimal" }
+                                                 }
+                        }),
+                    context).ConfigureAwait(false);
+
+            promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "habitat"), context).ConfigureAwait(false);
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
             await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context).ConfigureAwait(false);
         }
@@ -583,8 +644,19 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
 
         private async Task AssociateCatalogToBook(string bookName, string catalogName, CommercePipelineExecutionContext context)
         {
+            // To persist entities conventionally and to prevent any race conditions, create a separate CommercePipelineExecutionContext object and CommerceContext object.
+            var pipelineExecutionContext = new CommercePipelineExecutionContext(new CommerceContext(context.CommerceContext.Logger, context.CommerceContext.TelemetryClient)
+            {
+                GlobalEnvironment = context.CommerceContext.GlobalEnvironment,
+                Environment = context.CommerceContext.Environment,
+                Headers = new HeaderDictionary(context.CommerceContext.Headers.ToDictionary(x => x.Key, y => y.Value)) // Clone current context headers by shallow copy.
+            }.PipelineContextOptions, context.CommerceContext.Logger);
+
+            // To persist entities conventionally, remove policy keys in the newly created CommerceContext object.
+            pipelineExecutionContext.CommerceContext.RemoveHeader(CoreConstants.PolicyKeys);
+
             var arg = new CatalogAndBookArgument(bookName, catalogName);
-            await _associateCatalogToBookPipeline.Run(arg, context).ConfigureAwait(false);
+            await _associateCatalogToBookPipeline.Run(arg, pipelineExecutionContext).ConfigureAwait(false);
         }
 
         #endregion
@@ -673,6 +745,65 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                 context).ConfigureAwait(false);
 
             promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "HABSELLPRICE"), context).ConfigureAwait(false);
+            promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
+            await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Creates the Buy 5 get 1 free promotion.
+        /// </summary>
+        /// <param name="book">The book.</param>
+        /// <param name="context">The context.</param>
+        /// <returns>A <see cref="Task"/></returns>
+        private async Task CreateLineOneFreeStrivaPromotion(PromotionBook book, CommercePipelineExecutionContext context)
+        {
+            var promotion =
+                await this._addPromotionPipeline.Run(
+                    new AddPromotionArgument(book, "Line9042109_OneFree_CouponPromotion", DateTimeOffset.UtcNow.AddDays(-2), DateTimeOffset.UtcNow.AddYears(1), "Buy 5 get 1 free with coupon STRIVA", "Buy 5 get 1 free")
+                    {
+                        DisplayName = "Buy 5 get 1 free with coupon STRIVA",
+                        Description = "$149.99 off Habitat Striva 5 when ordering 6 or more (coupon)"
+                    },
+                    context).ConfigureAwait(false);
+
+            //Qualifications
+            promotion =
+                await this._addQualificationPipeline.Run(
+                    new PromotionConditionModelArgument(
+                        promotion,
+                        new ConditionModel
+                        {
+                            ConditionOperator = "And",
+                            Id = Guid.NewGuid().ToString(),
+                            LibraryId = CartsConstants.CartItemQuantityCondition,
+                            Name = CartsConstants.CartItemQuantityCondition,
+                            Properties = new List<PropertyModel>
+                                                 {
+                                                     new PropertyModel { IsOperator = true, Name = "Operator", Value = "Sitecore.Framework.Rules.DecimalGreaterThanEqualToOperator", DisplayType = "Sitecore.Framework.Rules.IBinaryOperator`2[[System.Decimal],[System.Decimal]], Sitecore.Framework.Rules.Abstractions" },
+                                                     new PropertyModel { Name = "Quantity", Value = "6", IsOperator = false, DisplayType = "System.String" },
+                                                     new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|9042109|", IsOperator = false, DisplayType = "System.String" }
+                                               }
+                        }),
+                    context).ConfigureAwait(false);
+
+            await this._addBenefitPipeline.Run(
+                new PromotionActionModelArgument(
+                    promotion,
+                    new ActionModel
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        LibraryId = CartsConstants.CartItemSubtotalAmountOffAction,
+                        Name = CartsConstants.CartItemSubtotalAmountOffAction,
+                        Properties = new List<PropertyModel>
+                                             {
+                                                 new PropertyModel { Name = "AmountOff", Value = "149.99", IsOperator = false, DisplayType = "System.Decimal" },
+                                                 new PropertyModel { Name = "TargetItemId", Value = "Habitat_Master|9042109|", IsOperator = false, DisplayType = "System.String" }
+                                             }
+                    }),
+                context).ConfigureAwait(false);
+
+            promotion = await this._addPublicCouponPipeline.Run(new AddPublicCouponArgument(promotion, "striva"), context).ConfigureAwait(false);
+
             promotion.SetComponent(new ApprovalComponent(context.GetPolicy<ApprovalStatusPolicy>().Approved));
             await this._persistEntityPipeline.Run(new PersistEntityArgument(promotion), context).ConfigureAwait(false);
         }
@@ -1127,7 +1258,7 @@ namespace Sitecore.HabitatHome.Feature.Catalog.Engine.Pipelines.Blocks
                         }),
                     context).ConfigureAwait(false);
 
-            //Benefits             
+            //Benefits
             await this._addBenefitPipeline.Run(
                new PromotionActionModelArgument(
                    promotion,

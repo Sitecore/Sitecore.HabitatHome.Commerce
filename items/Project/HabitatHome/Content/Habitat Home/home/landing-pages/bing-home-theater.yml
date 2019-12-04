@@ -1,0 +1,3154 @@
+﻿---
+ID: "d14dfbb9-6587-48d4-849a-21e3fe581176"
+Parent: "602e4f4d-11e2-44e9-a8ac-12ae5e05a1a4"
+Template: "568d0b5c-eccb-4a2f-a301-79c7761cda36"
+Path: "/sitecore/content/Habitat SXA Sites/Habitat Home/home/landing-pages/bing-home-theater"
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking
+      ignore="1" />
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bing Home Theater
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171110T151210Z
+    - ID: "621cfa47-d63b-4b8e-81e7-0ca5c2619909"
+      Hint: HTML Content
+      Value: |
+        <!DOCTYPE html>
+        <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:web="http://schemas.live.com/Web/">
+        
+        <head>
+            <!--pc-->
+            <title>Home Theater - Bing</title>
+            <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+            <link href="/search?format=rss&amp;q=Home%20Theater&amp;qs=n&amp;form=QBRE&amp;sp=-1&amp;ghc=1&amp;pq=home%20theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A" rel="alternate" title="XML" type="text/xml" />
+            <link href="/search?format=rss&amp;q=Home%20Theater&amp;qs=n&amp;form=QBRE&amp;sp=-1&amp;ghc=1&amp;pq=home%20theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A" rel="alternate" title="RSS" type="application/rss+xml" />
+            <link href="/sa/simg/bing_p_rr_teal_min.ico" rel="shortcut icon" />
+            
+            <style type="text/css">
+                .sw_ddbk:after, .sw_ddw:after, .sw_ddgn:after, .sw_poi:after, .sw_poia:after, .sw_play:after, .sw_playa:after, .sw_playd:after, .sw_playp:after, .sw_st:after, .sw_sth:after, .sw_ste:after, .sw_st2:after, .sw_plus:after, .sw_tpcg:after, .sw_tpcw:after, .sw_tpcbk:after, .sw_arwh:after, .sb_pagN:after, .sb_pagP:after, .sw_up:after, .sw_down:after, .b_expandToggle:after, .sw_calc:after, .sw_fbi:after, .sw_twi:after, .b_fLogo:after, .b_cm:after, .sw_rmore:after, .sw_tpo:after, .sw_tpoa:after, .sw_lpoi:after, .sw_skp:after {
+                    position: relative;);
+                }
+        
+                .sw_ddbk, .sw_ddw, .sw_ddgn, .sw_poi, .sw_poia, .sw_play, .sw_playa, .sw_playd, .sw_playp, .sw_st, .sw_sth, .sw_ste, .sw_st2, .sw_plus, .sw_tpcg, .sw_tpcw, .sw_tpcbk, .sw_arwh, .sb_pagN, .sb_pagP, .sw_up, .sw_down, .b_expandToggle, .sw_calc, .sw_fbi, .sw_twi, .b_fLogo, .b_cm, .sw_rmore, .sw_tpo, .sw_tpoa, .sw_lpoi, .sw_skp {
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    direction: ltr;
+                }
+        
+                .sw_tpcbk, .sw_tpcg, .b_expandToggle, .b_fLogo {
+                    display: block;
+                }
+        
+                .sw_play, .sw_playa, .sw_playd, .sw_playp, .sw_skp, .sw_fbi, .sw_twi {
+                    height: 16px;
+                    width: 16px;
+                }
+        
+                    .sw_play:after {
+                        top: -22px;
+                        left: -315px;
+                    }
+        
+                    .sw_playa:after {
+                        top: -22px;
+                        left: -333px;
+                    }
+        
+                    .sw_playd:after {
+                        top: -22px;
+                        left: -351px;
+                    }
+        
+                    .sw_playp:after {
+                        top: -22px;
+                        left: -369px;
+                    }
+        
+                    .sw_skp:after {
+                        left: -645px;
+                        top: -18px;
+                    }
+        
+                    .sw_fbi:after {
+                        left: -297px;
+                        top: -22px;
+                    }
+        
+                    .sw_twi:after {
+                        left: -645px;
+                    }
+        
+                .sw_st, .sw_sth, .sw_ste, .sw_st2 {
+                    height: 12px;
+                    width: 12px;
+                }
+        
+                    .sw_st:after {
+                        left: -535px;
+                        top: -31px;
+                    }
+        
+                    .sw_st2:after {
+                        left: -563px;
+                        top: -31px;
+                    }
+        
+                    .sw_sth:after {
+                        left: -577px;
+                        top: -31px;
+                    }
+        
+                    .sw_ste:after {
+                        left: -549px;
+                        top: -31px;
+                    }
+        
+                .sw_arwh {
+                    height: 11px;
+                    width: 14px;
+                }
+        
+                a:hover .sw_arwh.b_invert:after {
+                    left: -463px;
+                    top: -32px;
+                }
+        
+                .sw_arwh:after {
+                    left: -447px;
+                    top: -32px;
+                }
+        
+                .sw_ddbk, .sw_ddw, .sw_ddgn {
+                    height: 4px;
+                    width: 7px;
+                }
+        
+                    .sw_ddbk:after, .sw_ddw:after {
+                        left: -266px;
+                        top: -32px;
+                    }
+        
+                    .sw_ddgn:after {
+                        left: -256px;
+                        top: -32px;
+                    }
+        
+                .sw_tpcg, .sw_tpcw, .sw_tpcbk {
+                    height: 10px;
+                    width: 10px;
+                }
+        
+                    .sw_tpcg:after, .sw_tpcw:after, .sw_tpcbk:after {
+                        left: -176px;
+                        top: -32px;
+                    }
+        
+                    .sw_tpcg:hover:after, .sw_tpcg:active:after, .sw_tpcg:focus:after {
+                        left: -188px;
+                        top: -32px;
+                    }
+        
+                .sw_plus {
+                    height: 8px;
+                    width: 8px;
+                }
+        
+                    .sw_plus:after {
+                        left: -276px;
+                        top: -32px;
+                    }
+        
+                    .sw_plus:hover:after, .sw_plus:active:after, .sw_plus:focus:after {
+                        left: -286px;
+                        top: -32px;
+                    }
+        
+                .sb_pagP, .sb_pagN {
+                    height: 30px;
+                    width: 30px;
+                }
+        
+                    .sb_pagP:after {
+                        left: -233px;
+                    }
+        
+                    .sb_pagP:hover:after, .sb_pagP:active:after, .sb_pagP:focus:after {
+                        left: -265px;
+                    }
+        
+                    .sb_pagN:after {
+                        left: -169px;
+                    }
+        
+                    .sb_pagN:hover:after, .sb_pagN:active:after, .sb_pagN:focus:after {
+                        left: -201px;
+                    }
+        
+                .b_expandToggle, .sw_up, .sw_down {
+                    height: 8px;
+                    width: 12px;
+                }
+        
+                    .b_expandToggle:after, .sw_up:after, .sw_down:after {
+                        left: -228px;
+                        top: -32px;
+                    }
+        
+                    .sw_up:after {
+                        left: -200px;
+                    }
+        
+                *:hover > .sw_up:after, *:active > .sw_up:after, *:focus > .sw_up:after {
+                    left: -214px;
+                }
+        
+                *:hover > .sw_down:after, *:active > .sw_down:after, *:focus > .sw_down:after {
+                    left: -242px;
+                }
+        
+                .b_icon, .sw_poi, .sw_poia {
+                    width: 20px;
+                    height: 20px;
+                    z-index: 0;
+                }
+        
+                    .sw_poi:after, .sw_poia:after {
+                        left: -297px;
+                        position: absolute;
+                        z-index: -1;
+                    }
+        
+                    .sw_poia:after {
+                        left: -319px;
+                    }
+        
+                .b_fLogo {
+                    height: 16px;
+                    width: 81px;
+                }
+        
+                    .b_fLogo:after {
+                        left: -402px;
+                    }
+        
+                .b_cm {
+                    height: 10px;
+                    width: 12px;
+                }
+        
+                    .b_cm:after {
+                        left: -433px;
+                        top: -32px;
+                    }
+        
+                .sw_calc {
+                    height: 19px;
+                    width: 19px;
+                }
+        
+                    .sw_calc:after {
+                        left: -363px;
+                    }
+        
+                .sw_tpo, .sw_tpoa, .sw_rmore {
+                    height: 12px;
+                    width: 8px;
+                    display: block;
+                }
+        
+                    .sw_tpo:after, .sw_tpoa:after {
+                        left: -131px;
+                        top: -25px;
+                    }
+        
+                    .sw_rmore:after {
+                        left: -121px;
+                        top: -25px;
+                    }
+        
+                .sw_lpoi {
+                    height: 16px;
+                    width: 10px;
+                }
+        
+                    .sw_lpoi:after {
+                        left: -633px;
+                        top: -18px;
+                    }
+        
+                html, body #b_results .b_no {
+                    background-color: #fff;
+                }
+        
+                .b_footer {
+                    background-color: #ececec;
+                }
+        
+                #b_results > li a {
+                    color: #001ba0;
+                }
+        
+                    #b_results > li a:visited {
+                        color: #600090;
+                    }
+        
+                #b_results > li {
+                    background-color: #fff;
+                }
+        
+                #b_results > .b_ad {
+                    color: #666;
+                    background-color: #f9fcf7;
+                }
+        
+                    #b_results > .b_ad a {
+                        color: #001ba0;
+                    }
+        
+                        #b_results > .b_ad a:visited {
+                            color: #600090;
+                        }
+        
+                #b_results > .b_pag {
+                    background-color: transparent;
+                }
+        
+                    #b_results > .b_pag a:hover {
+                        background-color: #f4f4f4;
+                    }
+        
+                    #b_results > .b_pag a.sb_pagP:hover, #b_results > .b_pag a.sb_pagN:hover {
+                        background-color: inherit;
+                    }
+        
+                #b_context .b_ans, #b_context #wpc_ag {
+                    background-color: #fff;
+                }
+        
+                #b_context > li.b_ad {
+                    color: #666;
+                    background-color: #fff;
+                }
+        
+                    #b_context > li.b_ad a {
+                        color: #001ba0;
+                    }
+        
+                        #b_context > li.b_ad a:visited {
+                            color: #600090;
+                        }
+        
+                div.b_dropdown .b_selected {
+                    background: #e1e0df;
+                }
+        
+                #b_tween .b_toggle:hover, #b_tween .ftrH:hover {
+                    background: #f2f2f2;
+                }
+        
+                .b_scroll {
+                    background: #999;
+                    border-color: #999;
+                }
+        
+                    .b_scroll:hover {
+                        background: #4d4d4d;
+                    }
+        
+                .b_dropdown {
+                    background-color: #fff;
+                    border-color: #e5e5e5;
+                }
+        
+                #b_content .cbtn, .cbtn input {
+                    background: #fff;
+                    color: #001ba0;
+                    border-color: #ccc;
+                }
+        
+                    #b_content .cbtn:hover, .cbtn input:hover {
+                        background-color: #001ba0;
+                        color: #fff;
+                        border-color: #001ba0;
+                    }
+        
+                    #b_content .cbtn:focus, #b_content .cbtn:active, .cbtn input:focus, .cbtn input:active {
+                        background: #666;
+                        color: #fff;
+                        border-color: #666;
+                    }
+        
+                #b_results .wr_tc .cbtn {
+                    background: #f4f4f4;
+                    color: #001ba0;
+                    border: 0;
+                }
+        
+                    #b_results .wr_tc .cbtn:hover, #b_results .wr_tc .cbtn:focus, #b_results .wr_tc .cbtn:active {
+                        background: #001ba0;
+                        color: #fff;
+                    }
+        
+                #b_context .b_ans a.cbtn, #b_context .b_ans a.cbtn:visited {
+                    color: #001ba0;
+                }
+        
+                    #b_context .b_ans a.cbtn:hover {
+                        color: #fff;
+                    }
+        
+                    #b_context .b_ans a.cbtn:focus, #b_context .b_ans a.cbtn:active {
+                        color: #fff;
+                    }
+        
+                #b_content .cbtn.b_highlighted, .cbtn.b_highlighted input {
+                    background: #001ba0;
+                    color: #fff;
+                    border: 0;
+                }
+        
+                    #b_content .cbtn.b_highlighted:hover, .cbtn.b_highlighted input:hover {
+                        background-color: #0ff;
+                    }
+        
+                    #b_content .cbtn.b_highlighted:focus, #b_content .cbtn.b_highlighted:active, .cbtn.b_highlighted input:focus, .cbtn.b_highlighted input:active {
+                        background: #666;
+                    }
+        
+                .ctxt, .sic, .ccal .ccali, form.b_externalSearch {
+                    border: 1px solid #bbb;
+                }
+        
+                .ccal .ccali, form.b_externalSearch {
+                    background-color: #fff;
+                }
+        
+                .b_externalSearch input {
+                    color: #ccc;
+                }
+        
+                    .b_externalSearch input:focus, .b_externalSearch input:active {
+                        color: #000;
+                    }
+        
+                a, #b_tween a:visited, #b_results .b_no a, #sw_footL > li a#sb_feedback {
+                    color: #001ba0;
+                }
+        
+                    a:visited, #b_results > li a:visited, #sb_feedback:visited {
+                        color: #600090;
+                    }
+        
+                #b_context a, .b_expando a {
+                    color: #001ba0;
+                }
+        
+                #b_context .b_ans a:visited {
+                    color: #600090;
+                }
+        
+                cite, #b_results cite.sb_crmb a, #b_results cite a.sb_metalink, #bk_wr_container cite a {
+                    color: #006d21;
+                }
+        
+                .b_posText {
+                    color: #006d21;
+                }
+        
+                .b_negText {
+                    color: #c80000;
+                }
+        
+                #b_context cite, #b_context cite a {
+                    color: #006d21;
+                }
+        
+                #b_context .b_posText {
+                    color: #006d21;
+                }
+        
+                #b_context .b_negText {
+                    color: #c80000;
+                }
+        
+                .b_ad cite {
+                    color: #006d21;
+                }
+        
+                #b_context .b_entityTitle, #b_results .b_entityTitle {
+                    color: #444;
+                }
+        
+                #b_context .b_entitySubTitle, #b_results .b_entitySubTitle {
+                    color: #767676;
+                }
+        
+                #b_context, #b_context #wpc_eif {
+                    color: #666;
+                }
+        
+                body, .b_promoteText, #b_tween a.ftrH, #b_tween a.ftrH:hover, .b_expando, .b_expando h2, .b_active a, .b_active a:visited, .b_active a:hover, #b_results > .b_pag a, #b_results .b_no, #b_content a.cbl:visited, #b_content a.cbl {
+                    color: #666;
+                }
+        
+                    #b_results, #b_results .b_defaultText, #b_results > .b_pag a:hover, #b_tween .b_toggle:hover, #b_tween .b_highlighted {
+                        color: #666;
+                    }
+        
+                .b_top, .b_top .b_promoteText {
+                    color: #444;
+                }
+        
+                .b_alert, .b_pAlt {
+                    color: #d90026;
+                }
+        
+                #b_results .b_alert, #b_results .b_pAlt {
+                    color: #d90026;
+                }
+        
+                #b_context .b_alert {
+                    color: #d90026;
+                }
+        
+                .b_demoteText, .b_secondaryText, .b_attribution, .b_factrow, .b_focusLabel, .b_footnote, .b_ad .b_adlabel, #b_tween .b_dropdown a, .b_expando .b_subModule, .b_expando .b_suppModule, .b_algo .b_vList td {
+                    color: #767676;
+                }
+        
+                .b_algo .b_factrow {
+                    color: #666;
+                }
+        
+                .b_footer {
+                    color: #666;
+                }
+        
+                    .b_footer a, .b_footer a:visited, .b_footer span {
+                        color: #666;
+                    }
+        
+                #sb_feedback {
+                    color: #666;
+                }
+        
+                #b_content .b_lowFocusLink a, #b_context .b_secondaryText, #b_context .b_attribution, #b_context .b_factrow, #b_context .b_footnote, #b_context .b_ad .b_adlabel, .b_expando .b_secondaryText, .b_expando .b_attribution, .b_expando .b_factrow, .b_expando .b_footnote {
+                    color: #767676;
+                }
+        
+                #b_context .b_pointer.b_mhdr:hover .b_secondaryText {
+                    color: #36b;
+                }
+        
+                .b_button:hover, .b_button:visited, .b_hlButton, .b_hlButton:hover, .b_hlButton:visited, .b_foregroundText, .ciot {
+                    color: #fff;
+                }
+        
+                .ciot {
+                    background-color: #000;
+                }
+        
+                .b_button:hover, .b_hlButton {
+                    background-color: #0072c5;
+                }
+        
+                    .b_button:active, .b_hlButton:active {
+                        background-color: #333;
+                    }
+        
+                    .b_hlButton:hover {
+                        background-color: #0ff;
+                    }
+        
+                .b_border, .b_button, .b_hlButton {
+                    border-color: #ccc;
+                }
+        
+                .b_pag a {
+                    border: 3px solid transparent;
+                }
+        
+                .b_pag .sb_pagS {
+                    border-color: #ededed;
+                }
+        
+                #b_context .b_subModule, #b_results .b_subModule {
+                    border-bottom: 1px solid #ebebeb;
+                }
+        
+                    #b_results .b_subModule:last-child {
+                        border-bottom: 0;
+                    }
+        
+                .c_tlbx {
+                    border-color: #999;
+                    background: #fff;
+                }
+        
+                .sw_poi {
+                    color: #fff;
+                }
+        
+                .sw_poia {
+                    color: #fff;
+                }
+        
+                html, body, h1, h2, h3, h4, h5, h6, p, img, ol, ul, li, form, table, tr, th, td {
+                    border: 0;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                html {
+                    overflow-y: scroll;
+                }
+        
+                #b_content {
+                    clear: both;
+                    min-height: 344px;
+                    padding: 13px 0 20px 100px;
+                }
+        
+                #b_pole {
+                    margin: 3px 0 15px -100px;
+                    padding-left: 120px;
+                }
+        
+                #b_context {
+                    margin: 0 0 0 40px;
+                    padding: 0 20px;
+                }
+        
+                    #b_context .b_ans, #b_context .b_ad {
+                        margin: 0 -20px;
+                    }
+        
+                    #b_context .b_ans {
+                        padding: 10px 20px 0;
+                    }
+        
+                    #b_context .b_ad {
+                        padding: 10px 20px;
+                    }
+        
+                #b_results, #b_context {
+                    margin-top: 28px;
+                }
+        
+                    #b_tween ~ #b_results, #b_tween ~ #b_context, #b_tween ~ .b_twoColOnly #b_context, #b_pole ~ #b_results, #b_pole ~ #b_context, #b_results:only-child {
+                        margin-top: 0;
+                    }
+        
+                #b_results, #b_context, #b_tween > span, .b_hList > li, .c_tlbxTrg, .b_hPanel > span, .ccal .ccali, .b_footerRight, .b_hPanel .b_xlText, .b_hPanel .cico, .b_moreLink, .b_label + .b_hList, .cbtn, .lc_bks, .lc_bkl, .fiw, .csrc, .b_algo .b_title H2, .b_algo .b_title div, h3 {
+                    display: inline-block;
+                }
+        
+                .b_pointer {
+                    cursor: pointer;
+                }
+        
+                label, .b_ad .b_adlabel, .c_tlbxTrgIcn {
+                    display: block;
+                }
+        
+                #b_tween {
+                    margin-top: 0;
+                }
+        
+                .b_underSearchbox ~ #b_tween {
+                    margin-top: -2px;
+                }
+        
+                #b_tween, #b_tween .ftrH {
+                    height: 30px;
+                }
+        
+                    #b_tween > span {
+                        padding-right: 25px;
+                    }
+        
+                #b_results > li {
+                    padding: 10px 20px;
+                    margin: 0 0 2px;
+                }
+        
+                #b_results > .b_ans {
+                    padding: 17px 20px 0;
+                }
+        
+                #b_results > .b_algo {
+                    padding: 12px 20px 0;
+                }
+        
+                #b_results > li .b_fullb {
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+        
+                #b_results > .b_ad {
+                    padding-right: 18px;
+                    border-right: 2px solid #e5e5e5;
+                }
+        
+                #b_results > li:first-child {
+                    padding-top: 10px;
+                }
+        
+                #b_results > .b_pag {
+                    padding: 18px 0 40px 20px;
+                }
+        
+                .sb_hbop, .b_hide, .ttl, #sw_tfbb, .sw_next, .sw_prev, #id_d, .b_hidden img {
+                    display: none;
+                }
+        
+                .b_hidden {
+                    visibility: hidden;
+                }
+        
+                #b_context .b_ans {
+                    margin-bottom: 5px;
+                }
+        
+                #b_context .b_ad {
+                    margin-bottom: 5px;
+                }
+        
+                .b_inlineList li, .b_factrow li {
+                    display: inline;
+                }
+        
+                .b_footerRight, td, th, #b_context, .b_hList > li {
+                    vertical-align: top;
+                }
+        
+                .b_footer {
+                    width: 100%;
+                    padding: 12px 0;
+                }
+        
+                .c_tlbxTrg {
+                    width: 15px;
+                    height: 14px;
+                    margin: -1px 6px -3px 2px;
+                }
+        
+                .c_tlbxTrgIcn {
+                    margin: 4px 0 2px 3px;
+                }
+        
+                .c_tlbx {
+                    position: absolute;
+                    z-index: 6;
+                    border: 1px solid;
+                    padding: 10px;
+                }
+        
+                .b_deep ul {
+                    width: 230px;
+                }
+        
+                #b_results .b_gridList ul {
+                    width: 250px;
+                }
+        
+                .b_gridList ul:first-child, .b_vlist2col ul:first-child {
+                    margin: 0 20px 0 0;
+                }
+        
+                .b_gridList li, .b_vlist2col li {
+                    padding: 0 0 10px;
+                }
+        
+                .b_vlist2col.b_deep li {
+                    padding: 0 0 10px;
+                }
+        
+                .b_overhangR .b_vlist2col ul:first-child {
+                    margin: 0 15px 0 0;
+                }
+        
+                .b_overhangR .b_vlist2col ul {
+                    width: 180px;
+                }
+        
+                .b_deep p {
+                    height: 33px;
+                }
+        
+                #b_context .b_ad .b_adlabel, .sc_rf form, form.sc_rf {
+                    margin-bottom: 10px;
+                }
+        
+                .b_ad li, #b_results .b_ad .b_adlabel {
+                    margin-bottom: 8px;
+                }
+        
+                    .b_ad li:last-child {
+                        margin-bottom: 0;
+                    }
+        
+                    .b_ad li li, .b_ad li li:last-child {
+                        margin: 0;
+                    }
+        
+                #b_results .b_ad .b_vlist2col, #b_results .b_ad .b_factrow {
+                    margin-top: -6px;
+                }
+        
+                #b_results .b_ad .sb_adRA .b_vlist2col {
+                    padding-left: 0;
+                }
+        
+                .sx_ci {
+                    border: 1px solid #e5e5e5;
+                    margin-top: 3px;
+                    width: 80px;
+                    height: 60px;
+                }
+        
+                .b_favicon {
+                    margin: 0 .5em 0 0;
+                }
+        
+                .b_imagePair:after, .b_vlist2col:after, .b_gridList:after {
+                    clear: left;
+                }
+        
+                .b_imagePair.reverse:after, .b_overhangR:after {
+                    clear: right;
+                }
+        
+                .b_clear, #b_results > li:after, .b_clearfix:after {
+                    clear: both;
+                }
+        
+                #b_results > li:after, .b_clearfix:after, .b_imagePair:after, .b_vlist2col:after, .b_gridList:after, .b_overhangR:after {
+                    content: '.';
+                    display: block;
+                    height: 0;
+                    visibility: hidden;
+                }
+        
+                .b_vlist2col ul, .b_gridList ul, .b_float, .b_footer, .b_float_img, .b_pag li, .b_mhdr h2 {
+                    float: left;
+                }
+        
+                .b_floatR_img, .b_floatR, .wr_tc {
+                    float: right;
+                }
+        
+                .b_overflow, .b_hList li, .b_1linetrunc, .b_deep p {
+                    overflow: hidden;
+                }
+        
+                .b_creditedImg img, .b_creditedImg .cico {
+                    padding-bottom: 1px;
+                }
+        
+                h4, .sa_uc > .b_vList > li > table td, .b_smBottom, #b_context .b_ad h2, .b_attribution, .b_secondaryFocus, .b_focusTextLarge, .b_focusTextMedium, .b_focusTextSmall, .b_focusTextExtraSmall, .b_snippet {
+                    padding-bottom: 2px;
+                }
+        
+                .b_factrow {
+                    padding-bottom: 2px;
+                }
+        
+                h2, .b_focusLabel, label {
+                    padding-bottom: 3px;
+                }
+        
+                .b_vPanel .b_vPanel > div, .b_vList .b_vPanel > div {
+                    padding-bottom: 5px;
+                }
+        
+                .b_dataList li, .b_mBottom {
+                    padding-bottom: 5px;
+                }
+        
+                .b_lBottom, #b_results #sp_recourse.b_lBottom, .b_caption, .b_moreLink, .b_footnote, .b_hList > li, #b_context h2, #b_results .b_subModule h2, #b_results .b_ad .b_factrow, .b_expando h2, .b_no h1, .b_no h4, .b_no li, .b_prominentFocusLabel, .b_locStr, .b_entitySubTitle {
+                    padding-bottom: 10px;
+                }
+        
+                .b_vPanel > div, .b_vList > li {
+                    padding-bottom: 10px;
+                }
+        
+                    .b_vList .b_hList > li, .b_vPanel .b_hList > li, .b_vList .b_float_img, .b_creditedImg .b_footnote, .b_creditedImg .cico img, #b_results > .b_ad, .b_suppModule .b_mhdr, .b_vList > li > .tab-container, .b_vPanel > div > .tab-container, .b_ad .b_deep h3, #b_content .b_float_img_nbp {
+                        padding-bottom: 0;
+                    }
+        
+                    .b_caption .b_factrow:last-child, #b_results .b_caption .b_factrow:last-child, .b_caption > .b_dataList:last-child li:last-child, .b_caption .b_moreLink:last-child, .b_vList .b_moreLink:last-child, .b_vList .b_factrow:last-child, .b_vPanel .b_factrow:last-child, .b_caption .b_attribution:last-child, .b_vList .b_attribution:last-child, .b_hList .b_attribution:last-child, .b_vPanel .b_attribution:last-child, .b_vList > li > table:last-child tr:last-child td, .b_vPanel > div > table:last-child tr:last-child td, .b_vList .b_focusLabel:last-child, .b_vPanel .b_focusLabel:last-child, .b_vList .b_secondaryFocus:last-child, .b_vPanel .b_secondaryFocus:last-child, .b_vList .b_focusTextExtraSmall:last-child, .b_vPanel .b_focusTextExtraSmall:last-child, .b_vList .b_focusTextSmall:last-child, .b_vPanel .b_focusTextSmall:last-child, .b_vList .b_focusTextMedium:last-child, .b_vPanel .b_focusTextMedium:last-child, .b_vList .b_focusTextLarge:last-child, .b_vPanel .b_focusTextLarge:last-child, .b_vList h4:last-child, .b_vPanel h4:last-child, .b_vPanel .b_caption:last-child, .b_vPanel .b_vList:last-child > li:last-child, .b_vPanel .b_footnote:last-child {
+                        padding-bottom: 0;
+                    }
+        
+                .b_vList .b_vPanel, .b_vPanel .b_vPanel {
+                    margin-bottom: -5px;
+                }
+        
+                .b_hList .b_vPanel {
+                    margin-bottom: -10px;
+                }
+        
+                .b_mBMargin {
+                    margin-bottom: 5px;
+                }
+        
+                #b_results .b_no {
+                    margin: 0 0 80px;
+                }
+        
+                .b_rich {
+                    padding-top: 3px;
+                }
+        
+                h2 + .b_rich {
+                    padding-top: 2px;
+                }
+        
+                .b_algo .b_attribution img {
+                    vertical-align: text-bottom;
+                }
+        
+                .b_lLeft, .b_floatR_img, .b_suffix {
+                    padding-left: 10px;
+                }
+        
+                .wr_tc, .b_xlLeft, .b_deep, #b_results .b_ad .b_vlist2col, #b_tween {
+                    padding-left: 20px;
+                }
+        
+                h2 .b_secondaryText {
+                    margin-left: 5px;
+                }
+        
+                .b_hList.b_imgStrip > li {
+                    padding-right: 1px;
+                }
+        
+                .fiw, .lc_bkl, .b_mRight, .b_label, .csrc {
+                    padding-right: 5px;
+                }
+        
+                .b_lRight, .b_imgStrip .imgData, .b_underSearchbox .b_label {
+                    padding-right: 10px;
+                }
+        
+                .b_hPanel > span, .b_hList > li {
+                    padding-right: 10px;
+                }
+        
+                .b_xlRight {
+                    padding-right: 20px;
+                }
+        
+                .b_hList.b_imgStrip > li:last-child, .b_hList > li:last-child, .b_hPanel > span:last-child, td:last-child, th:last-child, #b_tween > span:last-child {
+                    padding-right: 0;
+                }
+        
+                .b_overhangR {
+                    margin-right: -30px;
+                    padding-right: 150px;
+                }
+        
+                .wr_tc {
+                    margin-right: -150px;
+                }
+        
+                .b_tbl {
+                    margin-right: -10px;
+                }
+        
+                .b_border, .b_button, .b_hlButton, .cbtn, .b_scroll, .b_dropdown {
+                    border-width: 1px;
+                    border-style: solid;
+                }
+        
+                    .b_button, .b_hlButton, a.cbtn, .cbtn input {
+                        line-height: 30px;
+                        text-decoration: none;
+                        text-align: center;
+                        cursor: pointer;
+                        padding: 0 15px;
+                        min-width: 50px;
+                    }
+        
+                .wr_tc a.cbtn {
+                    line-height: 36px;
+                }
+        
+                .cbtn input {
+                    border: 0;
+                    height: 30px;
+                    -webkit-appearance: none;
+                    border-radius: 0;
+                }
+        
+                .cbtn.b_highlighted input {
+                    height: 32px;
+                }
+        
+                .lc_bks .cbtn {
+                    margin-top: 15px;
+                }
+        
+                #b_context .b_subModule, #b_results .b_subModule, .b_expando .b_subModule {
+                    padding-bottom: 0;
+                    margin-bottom: 10px;
+                }
+        
+                    #b_results .b_subModule:last-child {
+                        margin-bottom: 0;
+                    }
+        
+                .b_dropdown {
+                    position: absolute;
+                    z-index: 6;
+                }
+        
+                .b_scroll {
+                    position: relative;
+                    top: 0;
+                    width: 5px;
+                    height: 20px;
+                }
+        
+                .b_pag a {
+                    display: block;
+                    min-width: 34px;
+                    margin-right: 10px;
+                    text-align: center;
+                    height: 34px;
+                    line-height: 34px;
+                }
+        
+                    .b_pag a.sb_pagN, .b_pag a.sb_pagP {
+                        min-width: 0;
+                        height: 30px;
+                        border: 0;
+                        margin-top: 5px;
+                    }
+        
+                .b_pag .sw_prev, .b_pag .sw_next {
+                    margin: 2px;
+                }
+        
+                .b_mhdr {
+                    margin: -15px 0 -5px;
+                    padding: 15px 0 5px;
+                }
+        
+                    .b_mhdr .sw_up, .b_mhdr .sw_down {
+                        margin-top: 10px;
+                    }
+        
+                    .b_mhdr .b_moreLink, .b_mhdr .b_secondaryText {
+                        margin-top: 5px;
+                    }
+        
+                .b_vPanel .sc_rf form, .b_suppModule .b_mhdr {
+                    margin-bottom: 0;
+                }
+        
+                .b_rTxt {
+                    text-align: right;
+                }
+        
+                .b_cTxt {
+                    text-align: center;
+                }
+        
+                table {
+                    width: 100%;
+                    word-wrap: break-word;
+                }
+        
+                td, th, .b_float_img {
+                    padding: 0 10px 10px 0;
+                }
+        
+                th {
+                    text-align: left;
+                }
+        
+                .sw_poi, .sw_poia {
+                    float: left;
+                    margin: -3px 5px 0 0;
+                    line-height: 20px;
+                    text-align: center;
+                }
+        
+                .ctxt {
+                    padding: 5px 15px;
+                    height: 20px;
+                }
+        
+                    .ctxt.b_focusTextMedium {
+                        height: 58px;
+                    }
+        
+                input.ctxt, .ccal input, .ccal .ccali, .cbtn input, .b_favicon {
+                    vertical-align: middle;
+                }
+        
+                .ccal .ccali {
+                    height: 30px;
+                    border-left: 0;
+                }
+        
+                .ccal .ccalp {
+                    padding: 5px 5px 0 5px;
+                }
+        
+                form.b_externalSearch {
+                    margin: 0 20px 10px;
+                }
+        
+                .b_externalSearch input {
+                    border: 0;
+                    height: 40px;
+                    margin-left: 10px;
+                    outline: none;
+                    padding: 0;
+                }
+        
+                .b_externalSearch .ctxt, .ccal .ctxt {
+                    border-right: 0;
+                }
+        
+                .b_underSearchbox {
+                    margin: -7px 20px 14px;
+                }
+        
+                    .b_underSearchbox .b_hList > li {
+                        padding: 0 8px 0 0;
+                    }
+        
+                .b_compactSearch label {
+                    float: left;
+                    margin: 7px 10px 0 0;
+                }
+        
+                .b_compactSearch input {
+                    margin-right: 0;
+                    float: left;
+                }
+        
+                .b_compactSearch .cbtn {
+                    border-left: 0;
+                }
+        
+                .b_footer table {
+                    width: 520px;
+                    margin: 15px 20px 0 120px;
+                }
+        
+                #b_footerItems ul {
+                    display: block;
+                }
+        
+                #b_footerItems li {
+                    display: inline;
+                    float: left;
+                }
+        
+                #b_footerItems span {
+                    margin-right: 24px;
+                    margin-left: 48px;
+                    float: right;
+                }
+        
+                #b_footerItems a {
+                    margin-right: 24px;
+                }
+        
+                #b_footerItems {
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 20px;
+                }
+        
+                .b_footerRight {
+                    margin: 13px 0 0 50px;
+                }
+        
+                .b_1linetrunc {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+        
+                div.cico.b_capImg {
+                    padding-bottom: 4px;
+                }
+        
+                select {
+                    padding: 5px 10px 5px 5px;
+                    margin: 0;
+                    height: 32px;
+                }
+        
+                #b_context .b_entitySubTitle, #b_results .b_entityTP .b_entitySubTitle {
+                    margin-top: -9px;
+                }
+        
+                .b_entityTP .b_infocardTopR .b_floatR_img, .b_tinyInfocard .b_floatR_img, .b_smallInfoFacts .sml {
+                    padding-bottom: 10px;
+                }
+        
+                .b_vmparent {
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flexbox;
+                    display: -webkit-box;
+                    display: flex;
+                    align-items: center;
+                }
+        
+                input, textarea, h4, h5 {
+                    font: inherit;
+                    font-size: 100%;
+                }
+        
+                body, .b_no h4, h2 .b_secondaryText, h2 .b_alert {
+                    font: 13px/normal Arial,Helvetica,Sans-Serif;
+                }
+        
+                h1, h2, h3 {
+                    font: 13px/1.2em 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                h2, h3, .b_no h1 {
+                    font-size: 18px;
+                }
+        
+                cite {
+                    font-style: normal;
+                }
+        
+                th {
+                    font-weight: normal;
+                }
+        
+                #sp_requery {
+                    font-size: 16px;
+                    line-height: 1.2em;
+                }
+        
+                #b_content, #b_context, .b_expando {
+                    line-height: 1.2em;
+                }
+        
+                cite, #b_context, .b_expando, #vidans2 {
+                    word-wrap: break-word;
+                }
+        
+                #sa_ul li, .nowrap {
+                    white-space: nowrap;
+                }
+        
+                .b_footer {
+                    line-height: 18px;
+                }
+        
+                .b_smText, .b_footnote, .ciot {
+                    font-family: Arial,Helvetica,Sans-Serif;
+                    font-size: 11px;
+                    line-height: normal;
+                }
+        
+                .b_mText {
+                    font: 16px/20px Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_ad .b_adlabel, .b_ad .b_adlabel strong {
+                    font: 12px/normal Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_focusLabel, .b_secondaryFocus, .b_focusTextExtraSmall {
+                    font: 18px/1.2em 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_focusTextExtraSmall {
+                    line-height: 1.3em;
+                }
+        
+                .b_entityTitle, .b_prominentFocusLabel, .b_xlText {
+                    font: 24px/1.2em 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_entityTitle {
+                    line-height: normal;
+                }
+        
+                .b_entitySubTitle {
+                    font: 14px/1.2em 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_focusTextSmall, .b_focusTextMedium, .b_focusTextLarge {
+                    font: 200 32px/1.2em 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_focusTextMedium {
+                    font-size: 40px;
+                }
+        
+                .b_focusTextLarge {
+                    font-size: 60px;
+                }
+        
+                strong, .b_active a, .b_no h4, .b_strong, .cbtn, .b_ad .b_adlabel strong, .cbl {
+                    font-weight: 700;
+                }
+        
+                h1 strong, h2 strong, h3 strong, .b_xlText strong, .b_focusTextSmall strong {
+                    font-weight: 700;
+                }
+        
+                #b_tween {
+                    font-size: 12px;
+                }
+        
+                    #b_tween > span, #b_tween .ftrH {
+                        line-height: 30px;
+                    }
+        
+                .sb_count {
+                    text-transform: uppercase;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                a, .b_topbar a:hover, .b_pag a:hover, .cbtn:hover, .b_hlButton:hover, .ftrB a:hover, .b_algo:hover .b_vList h2 a, #b_results > .b_ans:hover .ent_cnt h2 > a, #b_results > .b_ans:hover #sp_requery h2 > a {
+                    text-decoration: none;
+                }
+        
+                    a:hover, .b_algo:hover h2 a, .sb_add:hover h2 a, .b_deep li:hover a, .b_algo .b_vList h2 a:hover, div.mcd:hover h4 > a, #b_results > .b_ans .b_rich > .b_vList > li:hover h5 > a, #b_results > .b_ans:hover h2 > a, #b_results > .b_ans .ent_cnt h2:hover > a, #b_results > .b_ans #sp_requery h2 > a:hover {
+                        text-decoration: underline;
+                    }
+        
+                #b_results > li.b_ans.b_topborder {
+                    border: 1px solid #cdcdcd;
+                    padding: 15px 19px 10px 19px;
+                    margin-bottom: 12px;
+                }
+        
+                #b_results > .b_ad + .b_top {
+                    margin-top: 20px;
+                }
+        
+                .b_top .b_attribution + .b_rich, .b_top .b_factrow + .b_rich {
+                    padding-top: 8px;
+                }
+        
+                .b_top .b_topTitle + .b_rich {
+                    padding-top: 12px;
+                }
+        
+                .b_tHeader, .b_demoteText, .b_secondaryText, .b_attribution, .b_factrow, .b_focusLabel, .b_footnote, .b_ad .b_adlabel, #b_tween .b_dropdown a, .b_expando .b_subModule, .b_expando .b_suppModule, .b_algo .b_vList td, #b_content .b_lowFocusLink a, #b_context .b_secondaryText, #b_context .b_attribution, #b_context .b_factrow, #b_context .b_footnote, #b_context .b_ad .b_adlabel, .b_expando .b_secondaryText, .b_expando .b_attribution, .b_expando .b_factrow, .b_expando .b_footnote {
+                    color: #767676;
+                }
+        
+                #b_context .b_mhdr:hover .b_secondaryText, .b_expando .b_mhdr:hover .b_secondaryText {
+                    color: #001ba0;
+                }
+        
+                h2.b_topTitle {
+                    font-size: 24px;
+                    line-height: 1.2em;
+                }
+        
+                #b_results > .b_top .b_prominentFocusLabel, #b_results > .b_top .b_topTitle, #b_results > .b_top .b_focusTextExtraSmall, #b_results > .b_top .b_focusTextExtraSmall a, #b_results > .b_top .b_focusTextSmall, #b_results > .b_top .b_focusTextSmall a, #b_results > .b_top .b_focusTextMedium, #b_results > .b_top .b_focusTextMedium a, #b_results > .b_top .b_focusTextLarge, #b_results > .b_top .b_focusTextLarge a, .ctxt {
+                    color: #111;
+                }
+        
+                span.b_negText.b_focusTextExtraSmall {
+                    color: #c80000 !important;
+                }
+        
+                span.b_posText.b_focusTextExtraSmall {
+                    color: #006d21 !important;
+                }
+        
+                .b_top .b_focusTextExtraSmall a, .b_top .b_focusTextSmall a, .b_top .b_focusTextMedium a, .b_top .b_focusTextLarge a {
+                    text-decoration: none;
+                }
+        
+                #b_results > .b_top:hover .b_focusTextExtraSmall a, #b_results > .b_top:hover .b_focusTextSmall a, #b_results > .b_top:hover .b_focusTextMedium a, #b_results > .b_top:hover .b_focusTextLarge a {
+                    color: #001ba0;
+                }
+        
+                #b_results > .b_top .b_focusTextExtraSmall a:hover, #b_results > .b_top .b_focusTextSmall a:hover, #b_results > .b_top .b_focusTextMedium a:hover, #b_results > .b_top .b_focusTextLarge a:hover {
+                    text-decoration: underline;
+                }
+        
+                select, .ctxt {
+                    outline: none;
+                }
+        
+                select, .sic {
+                    border: 1px solid #bfdcf0;
+                    padding: 0 0 0 5px;
+                }
+        
+                    select:hover, .sic:hover {
+                        border-color: #0072c5;
+                    }
+        
+                .ctxt {
+                    background-color: #f2f8fc;
+                }
+        
+                .ctxt, .ccal {
+                    border: 1px solid #bfdcf0;
+                }
+        
+                    .ctxt.b_focusTextMedium {
+                        padding: 3px 15px 8px 15px;
+                        height: 57px;
+                    }
+        
+                    .ctxt.b_outTextBox {
+                        border-top: 4px solid #0072c5;
+                        padding: 0 15px 8px 15px;
+                    }
+        
+                        .ctxt.b_outTextBox:focus {
+                            border-top: 1px solid #0072c5;
+                            padding-top: 3px;
+                        }
+        
+                    .ctxt:hover, .ccal:hover {
+                        border-color: #0072c5;
+                    }
+        
+                    .ctxt:focus {
+                        border-color: #0072c5;
+                        background-color: #fff;
+                    }
+        
+                    .ccal .ctxt, .ccal .ctxt:hover, .ccal .ctxt:focus, .ccal .ccali {
+                        background: none;
+                        border: none;
+                    }
+        
+                #b_results > .b_ans :-ms-input-placeholder {
+                    color: #767676;
+                }
+        
+                #b_results > .b_ans::-webkit-input-placeholder {
+                    color: #767676;
+                }
+        
+                #b_content .cbtn, .cbtn input {
+                    background: #eee;
+                    color: #666;
+                    border-color: #ddd;
+                    font-weight: normal;
+                }
+        
+                    #b_content .cbtn:hover, .cbtn input:hover {
+                        background-color: #ddd;
+                        color: #666;
+                        border-color: #ddd;
+                    }
+        
+                    #b_content .cbtn:focus, #b_content .cbtn:active, .cbtn input:focus, .cbtn input:active {
+                        background: #ccc;
+                        color: #666;
+                        border-color: #ccc;
+                    }
+        
+                #b_context .b_ans a.cbtn, #b_context .b_ans a.cbtn:visited {
+                    background: #e7e7e7;
+                    color: #666;
+                    border-color: #d1d1d1;
+                }
+        
+                    #b_context .b_ans a.cbtn:hover {
+                        background: #d1d1d1;
+                        color: #666;
+                        border-color: #d1d1d1;
+                    }
+        
+                    #b_context .b_ans a.cbtn:focus, #b_context .b_ans a.cbtn:active {
+                        background: #bbb;
+                        color: #666;
+                        border-color: #bbb;
+                    }
+        
+                #b_content .cbtn.b_highlighted, .cbtn.b_highlighted input {
+                    background: #0072c5;
+                    color: #fff;
+                    border: #0072c5;
+                }
+        
+                    #b_content .cbtn.b_highlighted:hover, .cbtn.b_highlighted input:hover {
+                        background: #005b9e;
+                        color: #fff;
+                        border: #005b9e;
+                    }
+        
+                    #b_content .cbtn.b_highlighted:focus, #b_content .cbtn.b_highlighted:active, .cbtn.b_highlighted input:focus, .cbtn.b_highlighted input:active {
+                        background: #004476;
+                        color: #fff;
+                        border: #004476;
+                    }
+        
+                .fc_cal_holder table {
+                    font-size: 11px;
+                }
+        
+                body .fc_cal_holder {
+                    border: 1px solid #0072c5;
+                }
+        
+                    body .fc_cal_holder .fc_cal_disabled {
+                        color: #767676;
+                    }
+        
+                    body .fc_cal_holder a:link, body .fc_cal_holder a:visited {
+                        color: #666;
+                    }
+        
+                    body .fc_cal_holder td, body .fc_cal_holder .fc_cal_disabled, body .fc_cal_holder .fc_cal_days td {
+                        width: 20px;
+                        line-height: 20px;
+                        padding: 0 10px 10px 0;
+                    }
+        
+                .fc_cal_holder tr td:first-child {
+                    padding-left: 10px;
+                }
+        
+                .fc_cal_holder tr:last-child td {
+                    padding-bottom: 15px;
+                }
+        
+                body .fc_cal_holder .fc_cal_days td {
+                    line-height: 15px;
+                    color: #767676;
+                    background-color: #fff;
+                }
+        
+                body .fc_cal_holder a {
+                    padding: 0;
+                }
+        
+                body .fc_cal_holder td a:hover, body .fc_cal_holder td a:active, body .fc_cal_holder td.fc_cal_current a:hover, body .fc_cal_holder td.fc_cal_current a:active {
+                    background-color: #eee;
+                    color: #666;
+                }
+        
+                body .fc_cal_holder .fc_cal_monthHolder + .fc_cal_monthHolder {
+                    border-left: 1px solid #bfdcf0;
+                }
+        
+                body .fc_cal_holder .fc_cal_monthHolder {
+                    background-color: #fff;
+                    border: 0;
+                    padding: 15px 15px 10em 15px;
+                }
+        
+                body .fc_cal_holder th div {
+                    background-color: #fff;
+                    border: 0;
+                    padding: 0 0 15px;
+                    color: #666;
+                    text-align: center;
+                    font-size: 13px;
+                }
+        
+                body .fc_cal_holder .fc_cal_current a {
+                    background-color: #001ba0;
+                }
+        
+                body .fc_cal_monthDec.fc_cal_monthChange, body .fc_cal_monthInc.fc_cal_monthChange {
+                    background: url(/sa/simg/navchevrons_topRefresh.png) no-repeat;
+                    width: 8px;
+                    height: 12px;
+                    background-position: 0 -110px;
+                    font-size: 0;
+                }
+        
+                body .fc_cal_monthDec.fc_cal_monthChange {
+                    background-position: 0 -44px;
+                }
+        
+                body .fc_cal_holder .fc_cal_month_first .fc_cal_monthDec {
+                    margin: 1px 0 0 15px;
+                }
+        
+                body .fc_cal_holder .fc_cal_month_last .fc_cal_monthInc {
+                    margin: 1px 15px 0 0;
+                }
+        
+                .b_deep, #b_results .b_caption, #b_results .b_snippet, #b_results .b_attribution, #b_results .b_factrow, #b_context .b_caption, #b_context .b_snippet, #b_context .b_attribution, #b_context .b_factrow, #b_context p, #snct {
+                    line-height: 17px;
+                }
+        
+                    .b_deep p {
+                        height: 34px;
+                    }
+        
+                #b_results #lgb_info .b_factrow {
+                    padding-bottom: 4px;
+                }
+        
+                #snct .imgbig .b_overflow > h4 {
+                    line-height: normal;
+                }
+        
+                #b_results .b_attribution, .b_ad h2, .b_deep h3, #snct h4 {
+                    padding-bottom: 0;
+                }
+        
+                #b_results .b_factrow {
+                    padding-bottom: 2px;
+                }
+        
+                .b_ans h2.b_topTitle.b_headerTitle {
+                    padding-bottom: 3px;
+                }
+        
+                .b_ans h2.b_lBottom {
+                    padding-bottom: 10px;
+                }
+        
+                .b_expando h2 {
+                    padding-bottom: 10px;
+                }
+        
+                .b_ans h2, .b_algo h2 {
+                    padding-bottom: 0;
+                }
+        
+                .b_ad li, #b_context > .b_ad > ul > li {
+                    margin-bottom: 20px;
+                }
+        
+                #b_context .b_ad .b_caption {
+                    padding-bottom: 4px;
+                }
+        
+                #b_content ol#b_results li.b_ad {
+                    padding-bottom: 8px;
+                    margin-bottom: 0;
+                }
+        
+                #b_results li.b_ad.b_adBottom {
+                    padding-top: 11px;
+                }
+        
+                #b_context .b_entityTP {
+                    border: 1px solid #ebebeb;
+                    padding: 9px 19px 4px 19px;
+                    margin: -10px -20px -6px -20px;
+                    width: 100%;
+                }
+        
+                #b_context .b_ans:not(:first-child) > .b_entityTP {
+                    margin-top: -16px;
+                }
+        
+                #b_context .b_ad:not(:last-child) {
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #ebebeb;
+                }
+        
+                #b_context .b_ans:not(:last-child) {
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ebebeb;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                .sw_meIc:after, .sw_spd:after, .sw_pref:after, .idp_ham:after, .idp_wlid:after, .idp_tw:after {
+                    position: relative;
+                    content: url(~/media/C2A2ED135AF84A9D9652D6E146A1E4E6.aspx);
+                }
+        
+                .sw_meIc, .sw_spd, .idp_ham, .idp_wlid, .idp_tw {
+                    position: relative;
+                    overflow: hidden;
+                    direction: ltr;
+                }
+        
+                .idp_ham {
+                    height: 14px;
+                    width: 20px;
+                }
+        
+                    .idp_ham:after {
+                        left: -60px;
+                        top: 0;
+                    }
+        
+                    .idp_ham:hover:after, .idp_ham:active:after, .idp_ham:focus:after {
+                        top: -16px;
+                    }
+        
+                .idp_wlid, .idp_tw, .sw_meIc {
+                    height: 16px;
+                    width: 16px;
+                }
+        
+                    .idp_wlid:after {
+                        left: -384px;
+                    }
+        
+                    .idp_tw:after {
+                        left: -645px;
+                    }
+        
+                .sw_meIc {
+                    height: 16px;
+                    width: 16px;
+                }
+        
+                    .sw_meIc:after {
+                        left: -657px;
+                        top: -36px;
+                    }
+        
+                .sw_spd {
+                    height: 20px;
+                    width: 20px;
+                }
+        
+                    .sw_spd:after {
+                        left: -663px;
+                    }
+        
+                ::-webkit-search-decoration, ::-webkit-search-cancel-button, .b_searchbox {
+                    -webkit-appearance: none;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                .b_searchboxForm, .sa_as {
+                    background-color: #fff;
+                }
+        
+                .b_searchboxForm {
+                    border-color: #ccc;
+                }
+        
+                    .b_searchboxForm:hover {
+                        border-color: #a9a9a9;
+                    }
+        
+                .b_focus .b_searchboxForm, .sa_as {
+                    border-color: #999;
+                }
+        
+                .b_searchboxForm .b_searchboxSubmit {
+                    background-color: #007daa;
+                    border-color: #007daa;
+                }
+        
+                .b_scopebar, .b_scopebar a, .b_scopebar a:visited, .id_button, .id_button:visited {
+                    color: #666;
+                }
+        
+                    .b_scopebar .b_active a, .b_scopebar a:hover, .id_button:hover {
+                        color: #111;
+                    }
+        
+                .id_avatar {
+                    border-color: #fff;
+                }
+        
+                .b_idOpen a#id_l, a#id_rh.openfo {
+                    color: #333;
+                    background-color: #fff;
+                }
+        
+                a#bep.openfo, #bepfo, #id_d, #id_scfo {
+                    color: #333;
+                    background-color: #fff;
+                }
+        
+                .wpc_bub a {
+                    color: #001ba0;
+                }
+        
+                #sw_as {
+                    color: #666;
+                }
+        
+                .sa_tm strong {
+                    color: #111;
+                }
+        
+                .sa_as {
+                    border-color: #999;
+                }
+        
+                .sa_hv {
+                    background: #f5f5f5;
+                }
+        
+                .sa_hd {
+                    color: #111;
+                }
+        
+                #b_header {
+                    padding: 14px 0 0 0;
+                    margin: 0 0 0 0;
+                    background-color: #fff;
+                }
+        
+                    #b_header #sb_form, .b_logoArea, .b_logo, .b_searchboxForm, .id_button, .id_avatar, .rwds_bep_head, .sw_pref, .idp_ham, .b_scopebar li, .b_scopebar a {
+                        display: inline-block;
+                    }
+        
+                    #b_header #sb_form {
+                        margin-right: 10px;
+                    }
+        
+                .b_logoArea {
+                    text-align: right;
+                    width: 86px;
+                    height: 40px;
+                    margin: 0 14px 0 0;
+                    vertical-align: top;
+                }
+        
+                .b_logo {
+                    text-indent: -999px;
+                    text-align: left;
+                    margin-top: 2px;
+                    vertical-align: top;
+                }
+        
+                .b_searchbox {
+                    width: 490px;
+                    margin: 4px 4px 0 16px;
+                    padding: 0 10px 0 0;
+                    border: 0;
+                    max-height: 30px;
+                    outline: none;
+                    box-sizing: content-box;
+                    height: 35px;
+                    vertical-align: top;
+                }
+        
+                    .b_searchbox.b_softkey {
+                        width: 435px;
+                    }
+        
+                .b_searchboxSubmit {
+                    height: 40px;
+                    width: 40px;
+                    text-indent: -99em;
+                    border-width: 10px;
+                    border-style: solid;
+                    margin: -1px;
+                    background-position: -675px -34px;
+                }
+        
+                #sw_as {
+                    width: auto;
+                    position: relative;
+                    z-index: 6;
+                }
+        
+                .sa_as {
+                    position: absolute;
+                    width: 100%;
+                }
+        
+                #sa_ul div.sa_tm, #sa_ul .sa_hd {
+                    margin-left: 17px;
+                }
+        
+                .sa_hd {
+                    margin-top: 5px;
+                }
+        
+                .b_searchboxSubmit, .sa_sg {
+                    cursor: pointer;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                .b_searchboxForm {
+                    border-width: 1px;
+                    border-style: solid;
+                }
+        
+                .sa_as {
+                    border-width: 1px;
+                    border-style: solid;
+                }
+        
+                #bepfo, #id_d, #HBContent {
+                    border: 1px solid #ddd;
+                }
+        
+                #id_h {
+                    position: relative;
+                    float: right;
+                    text-align: right;
+                    margin: -4px 20px 0 0;
+                    line-height: 50px;
+                }
+        
+                .id_button {
+                    padding: 0 8px 0 16px;
+                    margin: 0 8px;
+                }
+        
+                #id_l {
+                    padding: 0;
+                    vertical-align: top;
+                }
+        
+                .id_avatar {
+                    border-style: solid;
+                    border-width: 16px 0;
+                    margin-left: 8px;
+                    vertical-align: top;
+                }
+        
+                #id_h .idp_ham {
+                    top: 1px;
+                    margin: 0 20px 0 16px;
+                }
+        
+                .sw_spd {
+                    height: 32px;
+                    width: 32px;
+                    border: none;
+                    border-radius: 16px;
+                    top: 9px;
+                }
+        
+                    .sw_spd.id_avatar {
+                        margin-left: 8px;
+                    }
+        
+                .sw_meIc {
+                    margin-top: 17px;
+                    border-style: none;
+                }
+        
+                #bepfo, #bepfm, #bepfl {
+                    width: 372px;
+                }
+        
+                #bepfm {
+                    display: block;
+                }
+        
+                #bepfl {
+                    text-align: center;
+                    margin: 50px 0;
+                }
+        
+                #id_d, #bepfo {
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    top: 50px;
+                    z-index: 6;
+                    text-align: left;
+                }
+        
+                .b_idOpen #id_d {
+                    display: block;
+                    padding: 11px 0 5px;
+                }
+        
+                #sw_tfbb, #id_d, #id_f, #id_h, #sw_as, .sa_as {
+                    display: none;
+                }
+        
+                .b_scopebar {
+                    padding: 0;
+                    margin: 25px 0 0 100px;
+                    border-bottom: 1px solid #eee;
+                }
+        
+                #b_header {
+                    border-bottom: none;
+                }
+        
+                .blue2#miniheader .b_scopebar ul {
+                    height: 33px;
+                    overflow-y: hidden;
+                }
+        
+                .b_scopebar ul {
+                    height: 39px;
+                    overflow-y: hidden;
+                }
+        
+                .b_scopebar li {
+                    padding: 3px 0;
+                    margin: 0 13px;
+                    line-height: 25px;
+                }
+        
+                .b_scopebar a {
+                    padding: 0 8px;
+                }
+        
+                .b_scopebar .b_active {
+                    border-bottom: 3px solid #de3700;
+                }
+        
+                #b_header .b_topbar, #b_header .b_scopebar {
+                    background: none;
+                    margin-bottom: 0;
+                    overflow-y: inherit;
+                }
+        
+                .b_logo {
+                    font-family: Arial,Helvetica,Sans-Serif;
+                }
+        
+                a, #b_header a, #b_header a:hover, .b_toggle, .b_toggle:hover {
+                    text-decoration: none;
+                }
+        
+                .sa_hv {
+                    text-decoration: underline;
+                }
+        
+                input {
+                    font: inherit;
+                    font-size: 100%;
+                }
+        
+                .b_searchboxForm {
+                    font: 18px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .b_searchbox {
+                    font-size: 16px;
+                }
+        
+                .id_button {
+                    line-height: 50px;
+                }
+        
+                .b_scopebar .b_active a {
+                    font-weight: 600;
+                }
+        
+                .b_scopebar, .b_scopebar li, .sa_tm {
+                    line-height: 30px;
+                }
+        
+                #sa_ul, .pp_title {
+                    font: 16px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                    #sa_ul .sa_hd {
+                        font: 14px/20px 'Segoe UI Semibold','Arial','Helvetica','Sans-Serif';
+                        cursor: default;
+                    }
+        
+                #sw_as strong {
+                    font-family: 'Segoe UI Semibold','Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                .b_logo {
+                    display: inline-block;
+                    width: 28px;
+                    height: 36px;
+                    text-indent: 0;
+                    overflow: hidden;
+                    direction: ltr;
+                }
+        
+                    .b_logo div {
+                        text-indent: -999px;
+                    }
+        
+                .b_logo {
+                    background: none;
+                }
+        
+                    .b_logo:after {
+                        content: none;
+                    }
+        
+                .b_searchboxSubmit {
+                    background-image: url(~/media/C2A2ED135AF84A9D9652D6E146A1E4E6.aspx);
+                    background-repeat: no-repeat;
+                }
+        
+                .blue2#miniheader #sb_form_go {
+                    height: 32px;
+                    width: 32px;
+                    background-position: -96px 0;
+                    border-width: 5px 6px 4px 5px;
+                    margin: 3px 4px 4px;
+                }
+        
+                .blue2#miniheader .b_searchboxForm .b_searchboxSubmit {
+                    background-color: #fff;
+                    border-color: #fff;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                #b_header .b_scopebar .scopebar_pipe {
+                    color: #ddd;
+                    margin: 0 2px;
+                }
+        
+                #b_context, .b_contextWidth {
+                    width: 432px;
+                }
+        
+                .b_poleContent {
+                    width: 1140px;
+                }
+        
+                #b_header {
+                    width: 1260px;
+                }
+        
+                #id_h {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+        
+                body {
+                    min-width: 1265px;
+                }
+        
+                #b_results {
+                    width: 648px;
+                }
+        
+                .b_searchbox {
+                    width: 578px;
+                }
+            </style>
+            
+        </head>
+        <body>
+            <header id="b_header">
+                <form action="/search" id="sb_form">
+                    <a class="b_logoArea" href="/?FORM=Z9FD1" h="ID=SERP,5023.1">
+                        <h1 class="b_logo">
+                            <img src="~/media/C2A2ED135AF84A9D9652D6E146A1E4E6.aspx" alt="Go to Bing homepage" title="Back to Bing search" />
+                            <div>Go to Bing homepage</div>
+                        </h1>
+                    </a><div class="b_searchboxForm" role="search"><input class="b_searchbox" id="sb_form_q" name="q" title="Enter your search term" type="search" value="Home Theater" maxlength="1000" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" />
+                    <input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="QBRE" name="form" /></div>
+                </form><div id="id_h" role="complementary" aria-label="Account Rewards and Preferences" data-priority="2"><a id="id_l" class="id_button" role="button" aria-haspopup="true" h="ID=SERP,5024.1"><span id="id_s" aria-hidden="false">Sign in</span><span id="id_f" aria-hidden="true">Hi {0}</span><span class="sw_spd id_avatar" id="id_a" aria-hidden="false" aria-label="Default Profile Picture"></span><span id="id_n" style="display:none" aria-hidden="true"></span><img id="id_p" class="id_avatar sw_spd" style="display:none" aria-hidden="true" aria-label="Profile Picture" /></a><span id="id_d" _iid="SERP.5039"></span><a class="id_button" id="id_rh" aria-label="Microsoft Rewards" role="dialog" href="/rewards/dashboard" h="ID=SERP,5031.1"><span id="id_rc">2015</span><span class="id_avatar sw_meIc"></span></a><a class="b_hide" id="id_rwl" href="/rewards/dashboard" h="ID=SERP,5030.1"></a><a id="id_sc" class="idp_ham nohphbtop" aria-label="Preferences" role="button" tabindex="0" h="ID=SERP,5037.1"></a><span id="id_hbfo" _iid="SERP.5038" class="slide_up nohpfo" aria-hidden="true" aria-haspopup="true"></span></div><div id="sw_tfbb"></div><nav class="b_scopebar" role="navigation"><ul><li class="b_active" data-menuurl=""><a href="/?scope=web&amp;FORM=HDRSC1" h="ID=SERP,5016.1">Web</a></li><li data-menuurl=""><a href="/images/search?q=Home+Theater&amp;FORM=HDRSC2" h="ID=SERP,5017.1">Images</a></li><li data-menuurl=""><a href="/videos/search?q=Home+Theater&amp;FORM=HDRSC3" h="ID=SERP,5018.1">Videos</a></li><li data-menuurl=""><a href="/maps?q=Home+Theater&amp;mkt=en&amp;FORM=HDRSC4" h="ID=SERP,5019.1">Maps</a></li><li data-menuurl=""><a href="/news/search?q=Home+Theater&amp;FORM=HDRSC6" h="ID=SERP,5020.1">News</a></li><li class="scopebar_pipe">|</li><li data-menuurl=""><a href="/saves?FORM=HDRSAV" h="ID=SERP,5021.1">My saves</a></li></ul></nav>
+            </header>
+            
+            
+            
+            <style type="text/css">
+                .ftrH, .ftrHd, .ftrD > a, .ftrD > div {
+                    white-space: nowrap;
+                    height: 36px;
+                    line-height: 36px;
+                    padding: 0 16px;
+                }
+        
+                .ftrD {
+                    max-height: 216px;
+                    overflow: hidden;
+                    min-width: 125px;
+                }
+        
+                .amazonBackground {
+                    background: #f2f2f2 !important;
+                }
+        
+                .ftrD > a, .ftrD > div {
+                    display: block;
+                }
+        
+                .ftrS .ftrD {
+                    margin-right: 10px;
+                }
+        
+                .ftrSbR {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    margin: 5px 0;
+                    padding-right: 3px;
+                }
+        
+                .ftrB .sw_ddbk {
+                    margin: 2px 0 2px 7px;
+                }
+        
+                .ftrB .sw_tpcg, .ftrB .sw_tpcbl {
+                    margin: 0 0 0 14px;
+                }
+        
+                .ftrH, .ftrHd, .ftrB .sw_ddbk, .ftrB .sw_tpcg, .ftrB .sw_tpcbl {
+                    display: inline-block;
+                    *display: inline;
+                    zoom: 1;
+                }
+        
+                #b_tween a.ftrH {
+                    background: none !important;
+                    margin: 1px;
+                    height: 28px;
+                    line-height: 28px;
+                }
+        
+                    #b_tween a.ftrH.b_selected {
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #e5e5e5;
+                        border-bottom-color: #fff;
+                        margin: 0;
+                    }
+        
+                        div.b_dropdown .b_selected, #b_tween a.ftrH.b_selected:hover {
+                            background: #f2f2f2 !important;
+                            border-bottom-color: #f2f2f2;
+                        }
+        
+                ol#b_results li.b_ad {
+                    background-color: transparent;
+                    border-right: none;
+                    border-bottom: 1px solid #ebebeb;
+                    margin-bottom: 1px;
+                    padding-right: 20px;
+                    padding-bottom: 5px;
+                }
+        
+                ol#b_results li.b_adBottom {
+                    border-top: 1px solid #ebebeb;
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                }
+        
+                .sb_add cite {
+                    font-weight: 700;
+                }
+        
+                div.sb_adNC cite {
+                    font-weight: normal;
+                }
+        
+                #b_results .b_ad .sb_adTA .b_caption, #b_results .b_ad .sb_adTA .b_vlist2col li, #b_results .b_ad .sb_adTA .b_factrow {
+                    padding-bottom: 4px;
+                }
+        
+                #b_results .b_ad .sb_adTA .b_vlist2col, #b_results .b_ad .sb_adTA .b_factrow, #b_results .b_ad .sb_adig {
+                    margin-top: 0;
+                }
+        
+                #b_results .b_ad h3.b_adlabel {
+                    margin-bottom: 4px;
+                }
+        
+                .b_ad .pa_mlo ~ .sb_adt {
+                    margin-bottom: -6px;
+                }
+        
+                .b_ad li.b_adLastChild {
+                    margin-bottom: 0;
+                }
+        
+                #b_results > li.b_ad {
+                    background-color: #fcfaf9;
+                }
+        
+                #b_content li.b_ad .b_adlabel a {
+                    color: #767676;
+                }
+        
+                .b_adChoice {
+                    float: right;
+                }
+        
+                .b_adSlugRow .b_adChoice {
+                    float: none;
+                    vertical-align: -1px;
+                }
+        
+                .pa_sbo + a .b_adChoice {
+                    margin-top: 8px;
+                }
+        
+                .b_adSlug {
+                    color: #767676;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+        
+                .b_adSlugRow .b_adSlug {
+                    padding-right: 5px;
+                }
+        
+                .pa_ml .b_adSlug, .pa_sb .b_adSlug {
+                    padding-right: 5px;
+                }
+        
+                .b_adSlugRow {
+                    margin-bottom: 10px;
+                }
+        
+                #b_results .b_ad .b_vlist2col.b_deep > ul:nth-child(2) {
+                    float: right;
+                }
+        
+                #b_results .b_ad .b_vlist2col.b_deep ul {
+                    width: 274px;
+                }
+        
+                z {
+                    a: 1;
+                }
+        
+                p > .news_dt {
+                    color: #767676;
+                }
+        
+                .b_vList > li.b_annooverride {
+                    padding-bottom: 0;
+                }
+        
+                .b_annooverride .b_factrow {
+                    padding-top: 2px;
+                }
+        
+                .irhc {
+                    padding: 10px;
+                    background: #fff;
+                    border: 1px solid #000;
+                    position: absolute;
+                    text-decoration: none;
+                    color: #000;
+                    z-index: 4;
+                }
+        
+                    .irhc span {
+                        display: block;
+                        position: relative;
+                        margin-bottom: 10px;
+                    }
+        
+                    .irhc img {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                    }
+        
+                .irhld {
+                    width: 30px;
+                    height: 30px;
+                    z-index: -1;
+                }
+        
+                .irhcs span {
+                    display: block;
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+        
+                .irhcs1 {
+                    font-weight: bold;
+                }
+        
+                .irhcs2 {
+                    color: #898994;
+                }
+        
+                .irhcs3 {
+                    color: #568e1a;
+                }
+        
+                #irpserp {
+                    margin-left: -1px;
+                }
+        
+                    #irpserp.irpadt, #irpserp #irp {
+                        position: relative;
+                    }
+        
+                        #irpserp #irp a {
+                            position: absolute;
+                        }
+        
+                            #irpserp #irp a img.sgt {
+                                position: absolute;
+                                top: 50%;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+        
+                .b_top .irphead {
+                    padding-bottom: 8px;
+                }
+        
+                .b_FBleedModule .b_rich {
+                    padding-bottom: 0;
+                }
+        
+                #irpserp .badge, #irpserp .mssf, #irpserp .msgf, #irpserp .badge_count.wrapper {
+                    position: absolute;
+                    padding: 0;
+                    color: #fff;
+                    font-size: 11px;
+                    line-height: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    left: 0;
+                    bottom: 0;
+                    background: #000;
+                    background: rgba(0,0,0,.7);
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+        
+                #irpserp .badge_count {
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+        
+                #irpserp img.shop, #irpserp img.shop.badge_count {
+                    padding: 0;
+                    height: 20px;
+                }
+        
+                #irpserp img.recipe, #irpserp img.recipe.badge_count {
+                    padding: 3px 4px 4px;
+                    height: 13px;
+                }
+        
+                #irpserp .badge_count .icon_text {
+                    padding-right: 6px;
+                    font-size: 11px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+        
+                #irpserp .badge_count, #irpserp .badge_count.wrapper {
+                    line-height: normal;
+                }
+        
+                #irpserp .pl {
+                    position: absolute;
+                    background: url('/sa/simg/mm.png') -88px 0;
+                    height: 8px;
+                    width: 7px;
+                    left: 8px;
+                    bottom: 7px;
+                    z-index: 1;
+                }
+        
+                #irpserp .txtol, #irpserp .mssf {
+                    padding: 0 4px;
+                }
+        
+                #irpserp .msgf {
+                    padding: 0 8px 0 18px;
+                }
+        
+                #irpserp .adtrst {
+                    border-right: 1px solid #fff;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                a {
+                    a: 1;
+                }
+        
+                #b_context .b_rs .b_vList > li {
+                    padding-bottom: 4px;
+                }
+        
+                #b_context .b_rs > .b_vList {
+                    padding-bottom: 6px;
+                }
+        
+                #b_results .b_ans .b_rs h2 {
+                    padding-bottom: 6px;
+                }
+        
+                #b_context .sb_add .b_attribution {
+                    white-space: nowrap;
+                }
+        
+                .b_ad .b_adPATitle {
+                    color: #111;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    padding-right: 15px;
+                }
+        
+                .b_ad .b_adPATitleBlock {
+                    padding-bottom: 10px;
+                }
+        
+                .b_ad .b_floatR {
+                    margin-left: 20px;
+                }
+        
+                .pa_wide_ml .pa_ml .b_hList .pa_item, .pa_2 .pa_item {
+                    padding: 0 17px;
+                }
+        
+                .pa_wide_ml .pa_ml .b_hList .pa_first.pa_item {
+                    padding-left: 0;
+                }
+        
+                .pa_sbo {
+                    margin: 0 -20px;
+                    padding-bottom: 5px;
+                }
+        
+                .pa_mlo {
+                    margin: 0 -20px;
+                    padding-bottom: 10px;
+                }
+        
+                .pa_sbo + .b_adSlugRow, .pa_sbo + .b_adlabel {
+                    margin-top: 15px;
+                }
+        
+                .pa_ml {
+                    border: solid #e5e5e5 1px;
+                    padding: 9px 19px 0;
+                }
+        
+                .pa_sb {
+                    padding: 0 20px;
+                }
+        
+                .pa_sbo:not(:last-child) {
+                    border-bottom: solid #ebebeb 1px;
+                }
+        
+                .pa_sb .b_attribution, .pa_ml .b_attribution {
+                    font-size: 13px;
+                }
+        
+                .pa_sb .b_hList, .pa_ml .b_hList {
+                    padding-bottom: 10px;
+                }
+        
+                    .pa_sb .b_hList li, .pa_ml .b_hList li {
+                        padding: 0;
+                        width: auto;
+                    }
+        
+                    .pa_sb .b_hList .pa_item, .pa_ml .b_hList .pa_item {
+                        border-left: solid #e5e5e5 1px;
+                        width: 90px;
+                    }
+        
+                .pa_ml .b_adSlugRow {
+                    margin-bottom: 5px;
+                }
+        
+                .pa_sb.pa_2 .pa_item {
+                    width: 100px;
+                }
+        
+                .pa_5 .pa_item, .pa_4 .pa_item {
+                    padding: 0 7px;
+                }
+        
+                .pa_3 .pa_item {
+                    padding: 0 11px;
+                }
+        
+                .b_hList .pa_item.pa_first {
+                    border-left: none;
+                    padding-left: 0;
+                }
+        
+                .b_hList .pa_item img {
+                    margin: 0 0 10px;
+                }
+        
+                .pa_deal {
+                    text-decoration: line-through;
+                }
+        
+                .pa_item .b_footnote {
+                    padding-bottom: 0;
+                }
+        
+                .pa_sb .pa_item p strong {
+                    color: #444;
+                }
+        
+                .b_imagePair .inner img, .b_hList img {
+                    display: block;
+                }
+        
+                .b_imagePair > .inner, .b_hList .cico {
+                    padding-bottom: 10px;
+                }
+        
+                    .b_title .b_imagePair > .inner, .b_vList > li > .b_imagePair > .inner, .b_hList .b_imagePair > .inner, .b_vPanel > div > .b_imagePair > .inner, .b_gridList .b_imagePair > .inner, .b_caption .b_imagePair > .inner, .b_imagePair > .inner > .b_footnote, .b_poleContent .b_imagePair > .inner {
+                        padding-bottom: 0;
+                    }
+        
+                .b_imagePair > .inner {
+                    float: left;
+                }
+        
+                .b_imagePair.reverse > .inner {
+                    float: right;
+                }
+        
+                .b_imagePair .b_imagePair:last-child:after {
+                    clear: none;
+                }
+        
+                .b_algo .b_title .b_imagePair {
+                    display: block;
+                }
+        
+                .b_imagePair.square_b > .inner, li.square_b {
+                    width: 100px;
+                }
+        
+                li.square_b {
+                    word-wrap: break-word;
+                }
+        
+                .b_imagePair.square_b {
+                    padding-left: 110px;
+                }
+        
+                    .b_imagePair.square_b > .inner {
+                        margin: 2px 0 0 -110px;
+                    }
+        
+                    .b_imagePair.square_b.reverse {
+                        padding-left: 0;
+                        padding-right: 110px;
+                    }
+        
+                        .b_imagePair.square_b.reverse > .inner {
+                            margin: 2px -110px 0 0;
+                        }
+        
+                .b_ads1line {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+        
+                .pa_hover {
+                    border: solid 1px #e5e5e5;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    box-shadow: 0 2px 4px #e5e5e5;
+                    position: absolute;
+                    display: none;
+                    padding: 10px;
+                    width: 123px;
+                    word-wrap: break-word;
+                }
+        
+                .pa_ha {
+                    position: absolute;
+                    top: -9px;
+                    left: 63px;
+                }
+        
+                .pa_item .b_imagePair > .inner {
+                    padding-bottom: 0;
+                }
+        
+                .pa_hover p strong {
+                    color: #444;
+                }
+        
+                .pa_rating {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+        
+                .b_ad .pa_item .csrc {
+                    vertical-align: text-bottom;
+                }
+        
+                .b_ad .csrc {
+                    padding-right: 0;
+                }
+        
+                .csrc .sw_rtcolor {
+                    color: #f94f2a;
+                    font-weight: bold;
+                    font-family: 'Segoe UI',Arial,Helvetica,Sans-Serif;
+                }
+        
+                .csrc .sw_rtright {
+                    padding-left: 5px;
+                }
+        
+                .csrc .sw_rtleft {
+                    padding-right: 5px;
+                }
+        
+                .csrc .nobg {
+                    background-image: none;
+                }
+        
+                .csrc .rms_st {
+                    padding-right: 1px;
+                    vertical-align: inherit;
+                }
+        
+                .pa_ml .b_vList img.pa_mr, .pa_sb .b_vList img.pa_mr, .pa_ml .b_hList img.pa_mr, .pa_sb .b_hList img.pa_mr, .pa_ml .pa_carousel img.pa_mr, .pa_sb .pa_carousel img.pa_mr, .pa_hover img.pa_mr {
+                    margin: 0 3px 0 0;
+                    display: inline;
+                }
+        
+                .pa_promo {
+                    color: #737373;
+                }
+        
+                .pa_promo_btn {
+                    color: #666;
+                    background: #eee;
+                    width: 100px;
+                    white-space: nowrap;
+                    border-color: #ddd;
+                    font-weight: normal;
+                }
+        
+                .pa_ml .pa_promo img.pa_promo_icon, .pa_sb .pa_promo img.pa_promo_icon {
+                    float: right;
+                    margin: 6px 2px 0 4px;
+                }
+        
+                .pa_promo .infobubble_item {
+                    cursor: pointer;
+                }
+        
+                .pa_promo .infobubble_close {
+                    top: 12px;
+                    right: 12px;
+                }
+        
+                .pa_promo .infobubble_lite.infobubble_item {
+                    display: inline-block;
+                }
+        
+                .pa_promo_details {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                }
+        
+                    .pa_promo_details .b_footnote {
+                        margin-top: 6px;
+                        padding-bottom: 0;
+                    }
+        
+                .infobubble_item {
+                    display: inline-block;
+                }
+        
+                .infobubble.b_hide {
+                    display: none;
+                }
+        
+                .infobubble {
+                    border: 1px solid #444;
+                    padding: 20px;
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 1015;
+                    background-color: #fff;
+                    opacity: 0;
+                    transition: opacity .3s cubic-bezier(.15,.85,.35,1);
+                }
+        
+                    .infobubble.infobubble_noanim {
+                        opacity: 1;
+                        transition: initial;
+                    }
+        
+                    .infobubble.infobubble_fullbleed {
+                        padding: 20px 0 20px;
+                    }
+        
+                    .infobubble.infobubble_fadeIn {
+                        opacity: 1;
+                    }
+        
+                    .infobubble.fullwidth {
+                        margin: 0 20px;
+                    }
+        
+                .infobubble_overlay {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #000;
+                    z-index: 1010;
+                    opacity: .6;
+                }
+        
+                .infobubble_close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 16px;
+                    padding: 4px 6px 0 0;
+                }
+        
+                .infobubble_content {
+                    word-wrap: break-word;
+                    overflow: hidden;
+                    position: relative;
+                }
+        
+                .infobubble .before, .infobubble .after {
+                    position: absolute;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                }
+        
+                .infobubble.infobubble_top .before {
+                    border-bottom: 10px solid #444;
+                    top: -10px;
+                }
+        
+                .infobubble.infobubble_top .after {
+                    border-bottom-width: 10px;
+                    border-bottom-style: solid;
+                    top: -9px;
+                    border-bottom-color: #fff;
+                }
+        
+                .infobubble.infobubble_bottom .before {
+                    border-top: 10px solid #444;
+                    bottom: -10px;
+                }
+        
+                .infobubble.infobubble_bottom .after {
+                    border-top-width: 10px;
+                    border-top-style: solid;
+                    bottom: -9px;
+                    border-top-color: #fff;
+                }
+        
+                .infobubble.infobubble_center .before, .infobubble.infobubble_center .after {
+                    left: 50%;
+                    margin-left: -10px;
+                }
+        
+                .infobubble.infobubble_left .before, .infobubble.infobubble_left .after {
+                    left: 14px;
+                }
+        
+                .infobubble.infobubble_right .before, .infobubble.infobubble_right .after {
+                    right: 14px;
+                }
+        
+                .infobubble_locator {
+                    position: relative;
+                }
+        
+                    .infobubble_locator .infobubble {
+                        left: 0;
+                        right: 0;
+                    }
+        
+                .infobubble.infobubble_lightborder {
+                    border-color: #ccc;
+                    border-bottom-color: #ccc;
+                }
+        
+                    .infobubble.infobubble_lightborder .before {
+                        border-top-color: #ccc;
+                        border-bottom-color: #ccc;
+                    }
+        
+                #b_content .b_ad .b_secondaryText .b_colorBlend {
+                    color: #767676;
+                }
+        
+                #b_results > .b_ad .b_colorBlend {
+                    color: #666;
+                }
+        
+                #b_results > .b_ad .b_accentColor, #b_context > .b_ad .b_accentColor {
+                    color: #767676;
+                }
+        
+                #b_context > .b_ad .b_colorBlend {
+                    color: #666;
+                }
+        
+                .b_slyGridItem .b_secondaryFocus {
+                    margin-bottom: 5px;
+                }
+        
+                .b_slyGridItem a {
+                    display: block;
+                }
+        
+                    .b_slyGridItem a:hover, .b_slyGridItem a.sel {
+                        text-decoration: none;
+                        background-color: #eee;
+                        margin: -5px;
+                        padding: 5px;
+                        *margin: 0;
+                        *padding: 0;
+                    }
+        
+                        .b_slyGridItem a:hover .b_secondaryFocus {
+                            text-decoration: underline;
+                        }
+        
+                #b_content .b_slyGridItem .eg_meta ul {
+                    color: #666;
+                    width: auto;
+                    float: none;
+                    margin: 0;
+                }
+        
+                #b_results h2 #kn_p, #b_results h3 #kn_p, #b_results h4 #kn_p {
+                    position: relative;
+                    display: inline;
+                }
+        
+                #b_pole #kn_p, .b_ans #kn_p {
+                    display: none;
+                }
+        
+                #kn_a {
+                    color: #001ba0;
+                    font: 14px arial;
+                    left: -20px;
+                    position: absolute;
+                    top: 25%;
+                }
+        
+                .b_title #kn_a, .b_overflow #kn_a {
+                    left: -3px;
+                    position: relative;
+                }
+            </style>
+            <div id="b_content">
+                <div class="b_underSearchbox">
+                    <span class="b_label">Also try:</span><ul class="b_hList">
+                        <li>
+                            <a href="/search?q=home+theater+systems&amp;FORM=SBRS01" h="ID=SERP,5355.1">home theater systems</a><b>&nbsp;&nbsp;&middot;&#32;</b>
+                        </li>
+                        <li><a href="/search?q=home+theater+seating&amp;FORM=SBRS02" h="ID=SERP,5356.1">home theater seating</a><b>&nbsp;&nbsp;&middot;&#32;</b></li>
+                        <li><a href="/search?q=home+theater+projectors&amp;FORM=SBRS03" h="ID=SERP,5357.1">home theater projectors</a></li>
+                    </ul>
+                </div><div id="b_tween"><span class="sb_count">18,200,000 results</span><span class="ftrB"><a class="ftrH" id="h5093" role="menu" aria-owns="d5093" aria-haspopup="true" h="ID=SERP,5294.1"><span class="fs_label">Any time</span><span class="sw_ddbk"></span> </a></span></div><ol id="b_results" role="main" aria-label="Search Results">
+                <li class="b_ad"><div class="sb_adt"><a href="http://choice.microsoft.com" h="ID=SERP,5378.1,Ads"><img class="b_adChoice rms_img" title="About our ads" alt="About our ads" /></a></div><ul><li>
+                    
+                    <div class="sb_add sb_adTA">
+                        <h2><a href="/Guides/Setting-Up-the-Perfect-Home-Theater/?sc_camp=C23D8C90FCE7400F8CBD072FB537854C" h="ID=SERP,5480.1,Ads">
+                                Build A <strong>Home Theater</strong> Fit For 2017 - HabitatElectronics.com
+                            </a>
+                        </h2>
+                        <div class="b_caption">
+                            <div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>habitatelectronics.com</cite>
+                            </div>
+                            <p>Habitat Electronics offers the best range of quality Home Theater products. Read our guide to setting up a home theater in 2017.</p>
+                            <p class="b_secondaryText" data-partnertag="Ads.Callout">Competitive Prices&nbsp;&#0183;&#32;Unique Designs</p>
+                            <div class="b_secondaryText">Free Installation and Multi-Year Warranties</div>
+                        </div>
+                        <div class="b_vlist2col b_deep"><ul><li><a href="/Televisions-and-Audio/?sc_camp=C23D8C90FCE7400F8CBD072FB537854C">TV and Audio</a></li><li><a href="/shop/Home-Theater_home%20theater/?sc_camp=C23D8C90FCE7400F8CBD072FB537854C"><strong>Home Theater</strong></a></li></ul><ul><li><a href="/Connected-Home/?sc_camp=C23D8C90FCE7400F8CBD072FB537854C">Connected <strong>Home</strong></a></li><li><a href="/Appliances/?sc_camp=C23D8C90FCE7400F8CBD072FB537854C">Appliances</a></li></ul>
+                        </div>
+                    </div>
+                </li><li><div class="sb_add sb_adTA"><h2><a href="https://54063304.r.bat.bing.com/?ld=d3I2vZ6mQleGTrtoArmqje4jVUCUzYL0fFf2uvBefK9wc9huRrfJIVu7r-tflSSqoenyTmxGSXyUB3S-A2ryVS-fXMhhpZTXLu4SrAM0ebhZGKUK5v2TYTGOHNDKvWkstZhsOWOPLRQK1u1P1g-ajTH5v9k51tiPRIOstz2bGmdZrgWmsM&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2fhome-theater%2f%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dnetsertive%26utm_term%3dhome%2520theater%26nsxk%3d8467a831b093b1863f48e0db7a8dc23a" h="ID=SERP,5490.1,Ads"><strong>Home Theaters</strong> - Best Enhancement You Can Make | audioadvice.com</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.audioadvice.com/<strong>Home/Theater</strong></cite></div><p>Trust 36+ Years Experience Of Installing Audio &amp; Video! Call Our Experts Today.</p><p>Audio Advice has near four decades of experience bringing our customers home theater ...</p><p class="b_secondaryText" data-partnertag="Ads.Callout">Expert consultations&nbsp;&#0183;&#32;Award-winning brands&nbsp;&#0183;&#32;Complete home automation</p><div class="b_secondaryText">Home Theater Design &amp; Installation - Raleigh &amp; Charlotte, NC | Audio Advice</div></div><div class="b_vlist2col b_deep"><ul><li><a href="https://54063304.r.bat.bing.com/?ld=d3mysnHHwlkl77lHME3SoIXTVUCUytU_9rkOMM392qE16KjXooyBw6BFtgqVEHgFy-bjgchOyHqOT-dx0F3VAEyNmnhGpk_rnv1o3eAGVpIZOM1GkbC2K6YW3ege7DseVoMiHLTkgeyCr7cWFE5O0WsM6_u38NkCxJzDaKWNCB4c_UVfdH&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2faudio%2faudio-components%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5494.1,Ads">Hi-Fi Audio &amp; Components</a></li><li><a href="https://54063304.r.bat.bing.com/?ld=d3XzOizM4ewEtXTFxBr1rBuTVUCUxGuPX5x5UJpzXbAE_26d0vyV-WbQLkjYEG-IztX4DBm6iEU-FU9QsBhpcvR6bqHx1SSdYaunn4g-CuV8lwWoqYICnHxtxaKdJVEWM2fQJLY1QsWKhbJgXelWe_fQgfFB7zZkGLDbV0cZu6DNSWFqfc&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontact%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5496.1,Ads">Contact Us &amp; Directions</a></li></ul><ul><li><a href="https://54063304.r.bat.bing.com/?ld=d3UO7-nn6VRN-i6P11nouglzVUCUybxRXl1WuRJ3dv1Swoq3qjlgaD3DUN7j_TXgz1zvFE0NOlwGVgFRiV1sISz_ZWzwn1nM5SAxgeWBSbboVefRrpa1-eNVYEvYzyJwzg1MJbvxUy4G8dVA9sTfdBp8ZIZQUgJZOD9EgDgVDX1GNotdwu&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2fsmart-home%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5495.1,Ads"><strong>Home</strong> Control &amp; Automation</a></li><li><a href="https://54063304.r.bat.bing.com/?ld=d3sLGKPfwrkiLcpgR2ii-2hTVUCUyMfngpV8kTlUjdI_rUl-XychqWllxowfXE3Hpt0n3KmMXln6zkPhMAheO2xGEhuw6d8mOL4kuNaPMD_kwL2rSrY2v_ch7uThUA8lqR_ZAODhiFQIOQumtbtA0SzxUIlURGxuJvQboOEHI2Kukxu8bU&amp;u=https%3a%2f%2fwww.audioadvice.com%2fadviceGallery%2fgallery%2fview%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5497.1,Ads">Read - Audio Advice Blog</a></li></ul></div></div></li><li class="b_adLastChild"><div class="sb_add sb_adTA"><h2><a href="https://2173217.r.bat.bing.com/?ld=d3BnSHjHfhqWRmFv3mNdfu1jVUCUyqkORgtqGqFhmg7sIfjUD_1Me98JKWUGCAHN3oFCy24pR_chTVJQgWTesaBy2WSHCy6w1h79AGtBbFoPaZRkNC5R0Ya4EmpgXETeCnLpTjpAWCz33p50u7eT2nd1xTI5hlrY26F8CFdH5awSlQmRHj&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5500.1,Ads">Top <strong>Home Theater</strong> Subwoofers - Outstanding Sound &amp; Bass | svsound.com</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.svsound.com/subwoofers</cite> &#183; <span class="b_secondaryText">3,000+ followers on Twitter</span></div><p>Shop Now for Free Shipping &amp; 45 Day <strong>Home</strong> Trial! Expert Support for Life.</p><p>Complete your audio system with a powered home theater subwoofer from SVS.</p></div><ul class="b_factrow"><li><a href="https://2173217.r.bat.bing.com/?ld=d3-kZ9fKmE4D8dSZr1KrYwyjVUCUxAKJiFSdy7NrMaJovSCoQqbd1_MnF-q3yBXODRvxBkjkhFkc-DwOYM7-SBpdwfRZEYJaKKh_nK3GO3ck8z2mpntB7LiescDw_Y_hmZF7tIohmB2_Q04CgPUFJHA2KrzBrXof04_9o7C-D-SoJTNk83&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5503.1,Ads"><strong>Home</strong> Audio Speakers</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3cO_3tbKbgQFI-6_LamshGzVUCUxR66GIV40EQiD8l85-yg9pMKh9ASqnIg_nv80jq6wg1icMqh7FuIYRgEo866IW7VBTLHc-5hBEkBbVT3GEoqBSBrrbMbMvE0rU6lxeFVqaV-Bmbmo-HdY6-kebcBOsGUHfMjN2Com2aHISKZ6WQEUy&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5504.1,Ads">High End Subwoofers</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3-IppDKOmcZ0eFUaTRdKgjDVUCUzZBTzSumbCKm3QFKND_NpYgjcVhuHUWux7hfZCs60xJO52RqfhbNp5VCtlFCHVhLWu_PebtVRWfxjAVc_dshW5f30PN0jHJqdiTy7QWP35CkxKm5iD00B08Hd0LeMwjmtQwLq1zr5n6JWE-j22bsVx&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5505.1,Ads">Outlet Specials</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3i9y1OVi4uznj-ETXq-07DTVUCUxvxOHh3INx4VwjPr8Bg2pIZhkmeewnx6_bBdwfaiB7ZSxuqvN-5Geil-gV7j8yiqikiCtzPvXx59pK2nyk2RgZl_wLwqSf9gZw9PgjkqyskMF96K0EcGCGngKN7tcNVyQ4E-14EVTrWQDBIkJsiPBm&amp;u=www.svsound.com%2fpages%2fcustomer-service%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5506.1,Ads">Support</a></li></ul></div></li></ul></li>
+                    <li class="b_algo">
+                        <h2>
+                            <a href="/Guides/Setting-Up-the-Perfect-Home-Theater/" h="ID=SERP,5130.1"><strong>Setting Up the Perfect Home Theater</strong> - HabitatElectronics.com</a>
+                        </h2><div class="b_caption"><div class="b_attribution" u="0|5052|4530363261321849|tk_UfdQtFl8MK5VoZi6dQ7_PRiuSKPae"><cite>http://habitatelectronics.com/en/Guides/Setting-Up-the-Perfect-Home-Theater</cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5131.1"></span></span></div><p>Let <strong>Habitat Electronics'</strong> team of experts teach you how to set up the perfect <strong>Home Theater</strong> for your budget and tastes...</p></div>
+                    </li>
+                    <li class="b_algo"><h2><a href="http://soundadvicenc.com/" h="ID=SERP,5144.1"><strong>Home Theater</strong> and Audio Video installers in <strong>Charlotte NC</strong></a></h2><div class="b_caption"><div class="b_snippet"><div class="b_attribution" u="1|5053|4659959593830146|THVNM2UqlzxHGtNlPLjFuNZrp2YaNLSu"><cite>soundadvice<strong>nc</strong>.com</cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5145.1"></span></span></div><p>Sound Advice Audio Video is <strong>Charlotte</strong>'s Premier Installer of Audio and Video,Security Cameras,<strong>Home</strong> Entertainment systems. Get a quote today! 704-301-1170</p></div><div class="sa_uc"><ul class="b_vList"><li class="b_annooverride"><div class="b_factrow"><a href="http://soundadvicenc.com/lighting-controls/" h="ID=SERP,5306.1">Lighting Controls</a> &#183; <a href="http://soundadvicenc.com/apple/" h="ID=SERP,5307.1">Apple</a> &#183; <a href="http://soundadvicenc.com/smarthomeautomation/" h="ID=SERP,5308.1">Smart Home Automation</a> &#183; <a href="http://soundadvicenc.com/services/" h="ID=SERP,5309.1">Services</a> &#183; <a href="http://soundadvicenc.com/speakers/" h="ID=SERP,5310.1">Speakers</a> &#183; <a href="http://soundadvicenc.com/faq/" h="ID=SERP,5311.1">FAQ</a></div></li></ul></div></div></li>
+                    <li class="b_ans"><div class="irphead"><h2 class=""><a href="/images/search?q=home+theater&amp;qpvt=Home+Theater&amp;qpvt=Home+Theater&amp;qpvt=Home+Theater&amp;FORM=IGRE" h="ID=SERP,5063.1">Images of <strong>home theater</strong></a></h2> <div class="b_attribution"><cite>bing.com/images</cite></div></div><div class="b_rich"><div id="iaplanner"><div id="irpserp" class="irpdg b_mBMargin"><div id="irp" style="width: 608px; height: 105px"><a style="width:160px;height:105px;left:0px;top:0px" ihk="/th?id=OIP.m68hv3_8oqqTIDOsgx3DCQEsC_&amp;pid=3.1&amp;cb=" t3="audiodimensions.net" title="Search images of home theater" m="{ns:&quot;SERP&quot;,k:&quot;5314&quot;}" href="/images/search?q=home+theater&amp;id=A567AFA677BE5F13E86E5279A63189DCFAD9D088&amp;FORM=IQFRBA" h="ID=SERP,5314.1"><img class="sgt rms_img" data-src-hq="http://tse1.mm.bing.net/th?id=OIP.m68hv3_8oqqTIDOsgx3DCQEsC_&amp;w=160&amp;h=105&amp;c=8&amp;rs=1&amp;qlt=90&amp;pid=3.1&amp;rm=2" data-priority="2" width="160" height="105" alt="Image result for home theater" id="emb6BAED883" /></a><a style="width:154px;height:105px;left:161px;top:0px" ihk="/th?id=OIP.tTfziCkuvvUnHBFSK_fEiQEsDH&amp;pid=3.1&amp;cb=" t3="www.itsjustwire.com" title="Search images of home theater" m="{ns:&quot;SERP&quot;,k:&quot;5315&quot;}" href="/images/search?q=home+theater&amp;id=8040442738B93822A772CB25055F225D38EDD2EC&amp;FORM=IQFRBA" h="ID=SERP,5315.1"><img class="sgt rms_img" data-src-hq="http://tse1.mm.bing.net/th?id=OIP.tTfziCkuvvUnHBFSK_fEiQEsDH&amp;w=154&amp;h=105&amp;c=8&amp;rs=1&amp;qlt=90&amp;pid=3.1&amp;rm=2" data-priority="2" width="154" height="105" alt="Image result for home theater" id="emb1661148B1" /></a><a style="width:153px;height:105px;left:316px;top:0px" ihk="/th?id=OIP.0-y0ST8bSk89FrhxF5qodQEsDI&amp;pid=3.1&amp;cb=" t3="wallpapers7x.blogspot.com" title="Search images of home theater" m="{ns:&quot;SERP&quot;,k:&quot;5316&quot;}" href="/images/search?q=home+theater&amp;id=37CFEE29965A6AF32FCD4D9E7502677639CDBB6E&amp;FORM=IQFRBA" h="ID=SERP,5316.1"><img class="sgt rms_img" data-src-hq="http://tse1.mm.bing.net/th?id=OIP.0-y0ST8bSk89FrhxF5qodQEsDI&amp;w=153&amp;h=105&amp;c=8&amp;rs=1&amp;qlt=90&amp;pid=3.1&amp;rm=2" data-priority="2" width="153" height="105" alt="Image result for home theater" id="emb2193C00CE" /></a><a style="width:138px;height:105px;left:470px;top:0px" ihk="/th?id=OIP.3ZajIneTMH49LSlMluGEIQEsDg&amp;pid=3.1&amp;cb=" t3="www.hgtv.com" title="Search images of home theater" m="{ns:&quot;SERP&quot;,k:&quot;5317&quot;}" href="/images/search?q=home+theater&amp;id=33B63145A49F141DC8CFAFC9F4D46D6083C2E76F&amp;FORM=IQFRBA" h="ID=SERP,5317.1"><img class="sgt rms_img" data-src-hq="http://tse1.mm.bing.net/th?id=OIP.3ZajIneTMH49LSlMluGEIQEsDg&amp;w=138&amp;h=105&amp;c=8&amp;rs=1&amp;qlt=90&amp;pid=3.1&amp;rm=2" data-priority="2" width="138" height="105" alt="Image result for home theater" id="emb3305F945C" /></a></div></div><a title="" class="b_moreLink" href="/images/search?q=home+theater&amp;qpvt=Home+Theater&amp;qpvt=Home+Theater&amp;qpvt=Home+Theater&amp;FORM=IQFRML" h="ID=SERP,5336.1">See more images of <strong>home theater</strong></a></div></div></li>
+                    <li class="b_algo"><h2><a href="https://www.amazon.com/Home-Theater-Systems-Audio-Video/b?ie=UTF8&amp;node=281056" h="ID=SERP,5157.1"><strong>Home Theater Systems</strong> - amazon.com</a></h2><div class="b_caption"><div class="b_attribution" u="2|5054|4900705388201062|-Ug-XH5Kfoi0lTUr8b0PBp72Kd_amf5w"><cite>https://www.amazon.com/<strong>Home-Theater-Systems</strong>-Audio-Video/b?ie=UTF8&amp;...</cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5158.1"></span></span></div><p>Online shopping for <strong>home theater systems</strong> including surround sound speakers, stereo receivers, and Blu-ray players at Amazon.com.</p></div></li>
+                    <li class="b_algo"><h2><a href="http://hometheaterreview.com/" h="ID=SERP,5170.1"><strong>Home Theater</strong> Review - Your Resource For Reviews on UltraHD ...</a></h2><div class="b_caption"><div class="b_attribution" u="3|5055|4701045285585286|cj4HYXJHhQ1ZyZHQHYsA8aedH1nlAepg"><cite><strong>hometheater</strong>review.com</cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5171.1"></span></span></div><p><strong>Home theater</strong> equipment review publication that features av preamp, receiver, speaker, blu-ray player and more reviews.</p></div></li>
+                    <li class="b_algo"><h2><a href="https://www.yellowpages.com/charlotte-nc/home-theatre" h="ID=SERP,5183.1"><strong>Charlotte, NC Home Theatre</strong> - Yellowpages.com</a></h2><div class="b_caption"><div class="b_attribution" u="4|5056|4772126945650421|DF1fG0bssQR6HN2BrGwpnXU8bEviwpEX"><cite>https://www.yellowpages.com/<strong>charlotte-nc/home-theatre</strong></cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5184.1"></span></span></div><p>Find 81 listings related to <strong>Home Theatre</strong> in <strong>Charlotte</strong> on YP.com. See reviews, photos, directions, phone numbers and more for the best <strong>Home Theater Systems</strong> in ...</p></div></li>
+                    <li class="b_algo"><h2><a href="https://www.overstock.com/Electronics/Home-Theater/2167/cat.html" h="ID=SERP,5197.1"><strong>Home Theater</strong> - Overstock.com</a></h2><div class="b_caption"><div class="b_attribution" u="5|5057|4830061799998405|q6HaVNfq8y-UdS4uxMSB6n9d2QUPrbS3"><cite>https://www.overstock.com/Electronics/<strong>Home-Theater</strong>/2167/cat.html</cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5198.1"></span></span></div><p><strong>Home Theater</strong> : Free Shipping on orders over $45 at Overstock.com - Your Online <strong>Home Theater</strong> Store! Get 5% in rewards with Club O!</p></div></li>
+                    <li class="b_algo"><h2><a href="http://www.bestbuy.com/site/home-audio-systems/home-theater-systems/abcat0203000.c?id=abcat0203000" h="ID=SERP,5214.1"><strong>Home Theater Systems</strong>: Wireless Surround Sound Speakers ...</a></h2><div class="b_caption"><div class="b_attribution" u="6|5058|4756269953778094|ZPj7TZMgi19y5pSqnNgPVzDqOZFB26g9"><cite class="sb_crmb"><span>www.bestbuy.com&nbsp;&#8250;&#32;</span><span><a href="http://www.bestbuy.com/site/electronics/audio/abcat0200000.c?id=abcat0200000" h="ID=SERP,5209.1">Audio</a>&nbsp;&#8250;&#32;</span><span><a href="http://www.bestbuy.com/site/audio/home-audio-systems/pcmcat241600050001.c?id=pcmcat241600050001" h="ID=SERP,5210.1"><strong>Home</strong> Audio</a></span></cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5215.1"></span></span></div><p>Shop <strong>home theater systems</strong> at Best Buy and create the ultimate <strong>home theater</strong> experience with wireless surround sound speakers.</p></div></li>
+                    <li class="b_algo"><h2><a href="https://www.amazon.com/home-theater/s?ie=UTF8&amp;page=1&amp;rh=i%3Aaps%2Ck%3Ahome%20theater" h="ID=SERP,5231.1">Amazon.com: <strong>home theater</strong></a></h2><div class="b_caption"><div class="b_attribution" u="7|5059|4680888985715607|d3HdCtjTKgJQnxfRK8RzxTrehSnK9rAP"><cite class="sb_crmb"><span>www.amazon.com&nbsp;&#8250;&#32;</span><span><a href="http://www.amazon.com" h="ID=SERP,5226.1">Search</a>&nbsp;&#8250;&#32;</span><span><a href="https://www.amazon.com/home-theater/s?ie=UTF8&amp;page=1&amp;rh=i%3Aaps%2Ck%3Ahome%20theater" h="ID=SERP,5227.1"><strong>home theater</strong></a></span></cite><span class="c_tlbxTrg"><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5232.1"></span></span></div><p>Product Description... Complete your <strong>home theater</strong> experience with stunning sound from this 5. ...</p></div></li>
+                    <li class="b_ad b_adBottom"><div class="sb_adt"><a href="http://choice.microsoft.com" h="ID=SERP,5378.2,Ads"><img class="b_adChoice rms_img" title="About our ads" alt="About our ads" /></a></div><ul><li><div class="sb_add sb_adTA"><h2><a href="https://139022874.r.bat.bing.com/?ld=d3Lygz6g0Gkj4Jfungu6-juDVUCUwVksP4acK_-8d5N9yHsi4a5jX3ca1o98JWSBj4-lJUPqd8da1epRvJvlZvYC-Abgd8ERMblEKq6FlALfGcy-evThu-AJlv8wCHlyfn9jvijTkck3PyiqQGmn6AWbFK7U746xqmIfu9Z0DQqtjwMquM&amp;u=http%3a%2f%2fd1068.ash.rd43.com%2fadserver%2frclick%3fc7p%3d%252Bhome%2b%252Btheater%26lp%3d%26v%3d1%26cl%3d1068%26l7t%3d1%26ml%3d1478821%26sl%3d%26cat%3d3658270%26mt%3d0%26radid%3d3716763%26inv%3d%26adId%3d71193379908700%26src%3ds%26e%3d4%26u%3dhttp%253A%252F%252Fwww.svav-nc.com%252F" h="ID=SERP,5509.1,Ads"><strong>Home Theater</strong> - With A <strong>Home Theater</strong> System - svav-nc.com</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>svav-nc.com</cite></div><p>With A <strong>Home Theater</strong> System. Unique &amp; Affordable Designs. Call Today!</p><p>Is your home in need of a little boost? Call SoundVision today for expert Home AV, ...</p><p class="b_secondaryText" data-partnertag="Ads.Callout">Competitive Prices&nbsp;&#0183;&#32;Unique Designs</p><div class="b_secondaryText">Sound Vision Multi-Room Audio Lake Norman &amp; Davidson, NC</div></div><ul class="b_factrow"><li><a href="https://139022874.r.bat.bing.com/?ld=d3H-Wnh_wkqvidccTyRwcnjDVUCUyqJkRd2-ZCdzzVXJptl0u_ZsVzxf0h8_dUfuEtj0YYasDjKovT6ppH3ENPg9kcDJh3VydOsRS52i5mvC2RWMzec0IVyMsaf7CImK33htONe00TzzEYUyNmg3LPXgdncXPuhV_jn1T8bKYHoKGdXGRk&amp;u=http%3a%2f%2fd1068.ash.rd43.com%2fadserver%2frclick%3fc7p%3d%252Bhome%2b%252Btheater%26lp%3d%26v%3d1%26cl%3d1068%26l7t%3d1%26ml%3d1478821%26sl%3d479079%26cat%3d3658270%26mt%3d0%26radid%3d3716763%26inv%3d%26adId%3d71193379908700%26src%3ds%26e%3d4%26u%3dhttp%253A%252F%252Fwww.svav-nc.com%252Fsv%252Fhome-theaters%252F" h="ID=SERP,5513.1,Ads"><strong>Home Theaters</strong></a> &#183; </li><li><a href="https://139022874.r.bat.bing.com/?ld=d3t9LNB7EyYZstkZvef1JiOTVUCUxb6-ESQFGD4y0-ywDoQNfvI_wEh55wRfFkiOBB335ua6YEuij1oJSdpbPfEFcvD1PXTcKKggsh0PJh_P_OgOg4BSjSUDJ8DHqVYT26-Iph45nTbAGRik3ZlXPAlB_ATuDm7y0phrI9m_2h65H2SwOz&amp;u=http%3a%2f%2fd1068.ash.rd43.com%2fadserver%2frclick%3fc7p%3d%252Bhome%2b%252Btheater%26lp%3d%26v%3d1%26cl%3d1068%26l7t%3d1%26ml%3d1478821%26sl%3d479081%26cat%3d3658270%26mt%3d0%26radid%3d3716763%26inv%3d%26adId%3d71193379908700%26src%3ds%26e%3d4%26u%3dhttp%253A%252F%252Fwww.svav-nc.com%252Fsv%252Fshade-control%252F" h="ID=SERP,5514.1,Ads">Shade Control</a> &#183; </li><li><a href="https://139022874.r.bat.bing.com/?ld=d3bsHkXiTjB5skm9Z3O4f8KTVUCUwmZxmH8U_4kf9QSBLowWIsTgS1P9PWIlphokKrxqdJHhh2CRUdReF2YHG82TcclzIdBKemC-8c-znWWQqBu6CO-HTCk8_VUZ4ALDfVvS_J69yqbPezHJuGCrtEo2m-FiT5ncWXqpefZLZCREZfGouT&amp;u=http%3a%2f%2fd1068.ash.rd43.com%2fadserver%2frclick%3fc7p%3d%252Bhome%2b%252Btheater%26lp%3d%26v%3d1%26cl%3d1068%26l7t%3d1%26ml%3d1478821%26sl%3d479082%26cat%3d3658270%26mt%3d0%26radid%3d3716763%26inv%3d%26adId%3d71193379908700%26src%3ds%26e%3d4%26u%3dhttp%253A%252F%252Fwww.svav-nc.com%252Fsv%252Fsecurity-camera-systems%252F" h="ID=SERP,5515.1,Ads">Security Systems</a> &#183; </li><li><a href="https://139022874.r.bat.bing.com/?ld=d38uQcKZYYNIE2d1b4kemSHDVUCUzQ7MD9bzH9PLL1OPqehHbA02pBTVT-pULx_rz-2cOUt3-e9-k7R3haiug3o1fr7oNwR6o5Rlji2FFEydMLIWhb2lJB5aVN-_elxxFCsJ_MW38uMd_jDi-I7GQNpJjBXQeE8rqpGmneLmCP0ICM-SHZ&amp;u=http%3a%2f%2fd1068.ash.rd43.com%2fadserver%2frclick%3fc7p%3d%252Bhome%2b%252Btheater%26lp%3d%26v%3d1%26cl%3d1068%26l7t%3d1%26ml%3d1478821%26sl%3d479080%26cat%3d3658270%26mt%3d0%26radid%3d3716763%26inv%3d%26adId%3d71193379908700%26src%3ds%26e%3d4%26u%3dhttp%253A%252F%252Fwww.svav-nc.com%252Fsv%252Fhome-automation%252F" h="ID=SERP,5516.1,Ads"><strong>Home</strong> Automation</a></li></ul></div></li><li><div class="sb_add sb_adTA"><h2><a href="https://54063304.r.bat.bing.com/?ld=d3I2vZ6mQleGTrtoArmqje4jVUCUzYL0fFf2uvBefK9wc9huRrfJIVu7r-tflSSqoenyTmxGSXyUB3S-A2ryVS-fXMhhpZTXLu4SrAM0ebhZGKUK5v2TYTGOHNDKvWkstZhsOWOPLRQK1u1P1g-ajTH5v9k51tiPRIOstz2bGmdZrgWmsM&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2fhome-theater%2f%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dnetsertive%26utm_term%3dhome%2520theater%26nsxk%3d8467a831b093b1863f48e0db7a8dc23a" h="ID=SERP,5519.1,Ads"><strong>Home Theaters</strong> - Best Enhancement You Can Make | audioadvice.com</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.audioadvice.com/<strong>Home/Theater</strong></cite></div><p>Trust 36+ Years Experience Of Installing Audio &amp; Video! Call Our Experts Today.</p><p>Audio Advice has near four decades of experience bringing our customers home theater ...</p><p class="b_secondaryText" data-partnertag="Ads.Callout">Expert consultations&nbsp;&#0183;&#32;Award-winning brands&nbsp;&#0183;&#32;Complete home automation</p><div class="b_secondaryText">Home Theater Design &amp; Installation - Raleigh &amp; Charlotte, NC | Audio Advice</div></div><ul class="b_factrow"><li><a href="https://54063304.r.bat.bing.com/?ld=d3mysnHHwlkl77lHME3SoIXTVUCUytU_9rkOMM392qE16KjXooyBw6BFtgqVEHgFy-bjgchOyHqOT-dx0F3VAEyNmnhGpk_rnv1o3eAGVpIZOM1GkbC2K6YW3ege7DseVoMiHLTkgeyCr7cWFE5O0WsM6_u38NkCxJzDaKWNCB4c_UVfdH&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2faudio%2faudio-components%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5523.1,Ads">Hi-Fi Audio &amp; Components</a> &#183; </li><li><a href="https://54063304.r.bat.bing.com/?ld=d3UO7-nn6VRN-i6P11nouglzVUCUybxRXl1WuRJ3dv1Swoq3qjlgaD3DUN7j_TXgz1zvFE0NOlwGVgFRiV1sISz_ZWzwn1nM5SAxgeWBSbboVefRrpa1-eNVYEvYzyJwzg1MJbvxUy4G8dVA9sTfdBp8ZIZQUgJZOD9EgDgVDX1GNotdwu&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontent%2fsmart-home%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5524.1,Ads"><strong>Home</strong> Control &amp; Automation</a> &#183; </li><li><a href="https://54063304.r.bat.bing.com/?ld=d3XzOizM4ewEtXTFxBr1rBuTVUCUxGuPX5x5UJpzXbAE_26d0vyV-WbQLkjYEG-IztX4DBm6iEU-FU9QsBhpcvR6bqHx1SSdYaunn4g-CuV8lwWoqYICnHxtxaKdJVEWM2fQJLY1QsWKhbJgXelWe_fQgfFB7zZkGLDbV0cZu6DNSWFqfc&amp;u=https%3a%2f%2fwww.audioadvice.com%2fcontact%2f%3futm_source%3dbing%26utm_campaign%3dnetsertive%26utm_medium%3dcpc%26utm_term%3dsitelink" h="ID=SERP,5525.1,Ads">Contact Us &amp; Directions</a></li></ul></div></li><li class="b_adLastChild"><div class="sb_add sb_adTA"><h2><a href="https://2173217.r.bat.bing.com/?ld=d3BnSHjHfhqWRmFv3mNdfu1jVUCUyqkORgtqGqFhmg7sIfjUD_1Me98JKWUGCAHN3oFCy24pR_chTVJQgWTesaBy2WSHCy6w1h79AGtBbFoPaZRkNC5R0Ya4EmpgXETeCnLpTjpAWCz33p50u7eT2nd1xTI5hlrY26F8CFdH5awSlQmRHj&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5529.1,Ads">Top <strong>Home Theater</strong> Subwoofers - Outstanding Sound &amp; Bass | svsound.com</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.svsound.com/subwoofers</cite></div><p class="b_secondaryText">3,000+ followers on Twitter</p><p>Shop Now for Free Shipping &amp; 45 Day <strong>Home</strong> Trial! Expert Support for Life.</p><p>Complete your audio system with a powered home theater subwoofer from SVS.</p></div><ul class="b_factrow"><li><a href="https://2173217.r.bat.bing.com/?ld=d3-kZ9fKmE4D8dSZr1KrYwyjVUCUxAKJiFSdy7NrMaJovSCoQqbd1_MnF-q3yBXODRvxBkjkhFkc-DwOYM7-SBpdwfRZEYJaKKh_nK3GO3ck8z2mpntB7LiescDw_Y_hmZF7tIohmB2_Q04CgPUFJHA2KrzBrXof04_9o7C-D-SoJTNk83&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5532.1,Ads"><strong>Home</strong> Audio Speakers</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3cO_3tbKbgQFI-6_LamshGzVUCUxR66GIV40EQiD8l85-yg9pMKh9ASqnIg_nv80jq6wg1icMqh7FuIYRgEo866IW7VBTLHc-5hBEkBbVT3GEoqBSBrrbMbMvE0rU6lxeFVqaV-Bmbmo-HdY6-kebcBOsGUHfMjN2Com2aHISKZ6WQEUy&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5533.1,Ads">High End Subwoofers</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3-IppDKOmcZ0eFUaTRdKgjDVUCUzZBTzSumbCKm3QFKND_NpYgjcVhuHUWux7hfZCs60xJO52RqfhbNp5VCtlFCHVhLWu_PebtVRWfxjAVc_dshW5f30PN0jHJqdiTy7QWP35CkxKm5iD00B08Hd0LeMwjmtQwLq1zr5n6JWE-j22bsVx&amp;u=https%3a%2f%2fwww.svsound.com%2fpages%2fsubwoofers%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5534.1,Ads">Outlet Specials</a> &#183; </li><li><a href="https://2173217.r.bat.bing.com/?ld=d3i9y1OVi4uznj-ETXq-07DTVUCUxvxOHh3INx4VwjPr8Bg2pIZhkmeewnx6_bBdwfaiB7ZSxuqvN-5Geil-gV7j8yiqikiCtzPvXx59pK2nyk2RgZl_wLwqSf9gZw9PgjkqyskMF96K0EcGCGngKN7tcNVyQ4E-14EVTrWQDBIkJsiPBm&amp;u=www.svsound.com%2fpages%2fcustomer-service%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dSubwoofers%26utm_term%3d1000%2520watt%2520home%2520theater%2520subwoofer%26utm_content%3dSubwoofer%2520%255BHome%2520Theater%2520Subwoofer%255D" h="ID=SERP,5535.1,Ads">Support</a></li></ul></div></li></ul></li>
+                    <li class="b_ans"><div class="b_rs"><h2 class="">Related searches for <strong>Home Theater</strong></h2><div class="b_rich"><div class="b_vlist2col"><ul><li><a href="/search?q=home+theater+room+design&amp;FORM=QSRE1" h="ID=SERP,5359.1">home theater <strong>room design</strong></a></li><li><a href="/search?q=home+audio+system&amp;FORM=QSRE2" h="ID=SERP,5360.1">home <strong>audio system</strong></a></li><li><a href="/search?q=home+theater+systems&amp;FORM=QSRE3" h="ID=SERP,5361.1">home theater <strong>systems</strong></a></li><li><a href="/search?q=home+theater+shack&amp;FORM=QSRE4" h="ID=SERP,5362.1">home theater <strong>shack</strong></a></li></ul><ul><li><a href="/search?q=home+theater+projectors&amp;FORM=QSRE5" h="ID=SERP,5363.1">home theater <strong>projectors</strong></a></li><li><a href="/search?q=home+theater+seating&amp;FORM=QSRE6" h="ID=SERP,5364.1">home theater <strong>seating</strong></a></li><li><a href="/search?q=best+home+theater+systems&amp;FORM=QSRE7" h="ID=SERP,5365.1"><strong>best</strong> home theater <strong>systems</strong></a></li><li><a href="/search?q=home+theater+design&amp;FORM=QSRE8" h="ID=SERP,5366.1">home theater <strong>design</strong></a></li></ul></div></div></div></li>
+                    <li class="b_msg"><div class="rc_msg">Your results are personalized. <a aria-label="Learn more about personalized results" href="http://go.microsoft.com/fwlink/?LinkID=618196" h="ID=SERP,5602.1">Learn more</a></div></li>
+                    <li class="b_pag"><nav role="navigation"><h4 class="b_hide">Pagination</h4><ul class="sb_pagF" aria-label="More pages with results"><li><a class="sb_pagS">1</a></li><li><a aria-label="Page 2" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;first=9&amp;FORM=PERE" h="ID=SERP,5592.1">2</a></li><li><a aria-label="Page 3" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;first=19&amp;FORM=PERE1" h="ID=SERP,5593.1">3</a></li><li><a aria-label="Page 4" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;first=29&amp;FORM=PERE2" h="ID=SERP,5594.1">4</a></li><li><a aria-label="Page 5" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;first=39&amp;FORM=PERE3" h="ID=SERP,5595.1">5</a></li><li><a class="sb_pagN" title="Next page" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;first=9&amp;FORM=PORE" h="ID=SERP,5596.1"><div class="sw_next">Next</div></a></li></ul></nav></li>
+                </ol><ol id="b_context" role="complementary" aria-label="Results">
+                    <li class="b_ad">
+                        <ul>
+                            <li>
+                                <div class="pa_sbo">
+                                    <div class="pa_sb pa_4">
+                                        <div class="b_adPATitleBlock"><span class="b_floatR"><span class="b_adSlug">Ads</span><a href="http://choice.microsoft.com" h="ID=SERP,5378.3,Ads"><img class="b_adChoice rms_img" title="About our ads" alt="About our ads" /></a></span><h2 class=" b_adPATitle">Shop for Home Theater</h2></div><ul class="b_hList"><li class="square_b"><div class="pa_item pa_first" data-kvalue="5539"><a href="https://6068.r.bat.bing.com/?ld=d33LHZIgIGvkTV7Zke9xJhDjVUCUxCErrutrOhfMvp1HA0JEuDzpBzSBvC9QDmaAmw8M2aOXYgg8zgbZq-XGPZgZs77Z_NQ7Z0KMOQQvavQbytkg_sHBkoO2hIHvPOwOh3OVXF2v-HRpJp6JPFH1zfXOtgoo8BXH2oITOnb2mZZUP8Rwuc&amp;u=http%3a%2f%2fwww.focusedtechnology.com%2fhome-theater-deluxe-1.html%3futm_source%3dbing%26utm_medium%3dppc" h="ID=SERP,5539.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="Deluxe Series HD1 …" id="emb445349AB6" class="rms_img" /><p class="pa_title" style="min-height:34px">Deluxe Series HD1 …</p></div></a><p><strong>$1,699.00</strong></p><div class="b_attribution b_ads1line"><cite>Focused Technology</cite></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://6068.r.bat.bing.com/?ld=d33LHZIgIGvkTV7Zke9xJhDjVUCUxCErrutrOhfMvp1HA0JEuDzpBzSBvC9QDmaAmw8M2aOXYgg8zgbZq-XGPZgZs77Z_NQ7Z0KMOQQvavQbytkg_sHBkoO2hIHvPOwOh3OVXF2v-HRpJp6JPFH1zfXOtgoo8BXH2oITOnb2mZZUP8Rwuc&amp;u=http%3a%2f%2fwww.focusedtechnology.com%2fhome-theater-deluxe-1.html%3futm_source%3dbing%26utm_medium%3dppc" h="ID=SERP,5539.2,Ads"><p>Deluxe Series HD1 Complete Home Theater Package</p></a><p><strong>$1,699.00</strong></p><div class="b_attribution"><cite>Focused Technology</cite></div><p /></div></div></li><li class="square_b"><div class="pa_item" data-kvalue="5542"><a href="https://1631593.r.bat.bing.com/?ld=d3ELUAE3SxgPQFJtkW3B6vvDVUCUzsA67oGhHhpV-7XIujP-hDk6UJsCmynMaK9pBxmm0B2WrlCEhjm7NMZTRPAfE_996giGh2arMz78FyBb3rs1yo4-noVjOjCFkApXhpWNBYK2TLMRpgicRl0DQp8jcHHxhcLEa9elbiv09lUGpFEse7&amp;u=http%3a%2f%2fwww.memory4less.com%2flg-electronics-optical-media-player-bh9430pw%3frid%3d26%26utm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dShopping%25209%2520Product%2520List%2520Ad%2520CD%2520%252F%2520DVD%2520BURNERS%2520%2526%2520MEDIA%2520-%2520(Bing)%26utm_term%3d4586818916047394%26utm_content%3dAd%2520Group%2520Main%2520CD%2520%252F%2520DVD%2520BURNERS%2520%2526%2520MEDIA%2520Products%2520%25240.05" h="ID=SERP,5542.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="BH9430PW LG Blu-ray …" id="emb5760BCB5A" class="rms_img" /><p class="pa_title" style="min-height:34px">BH9430PW LG Blu-ray …</p></div></a><p><strong>$1,081.53</strong></p><div class="b_attribution b_ads1line"><cite>Memory4Less.com</cite></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://1631593.r.bat.bing.com/?ld=d3ELUAE3SxgPQFJtkW3B6vvDVUCUzsA67oGhHhpV-7XIujP-hDk6UJsCmynMaK9pBxmm0B2WrlCEhjm7NMZTRPAfE_996giGh2arMz78FyBb3rs1yo4-noVjOjCFkApXhpWNBYK2TLMRpgicRl0DQp8jcHHxhcLEa9elbiv09lUGpFEse7&amp;u=http%3a%2f%2fwww.memory4less.com%2flg-electronics-optical-media-player-bh9430pw%3frid%3d26%26utm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dShopping%25209%2520Product%2520List%2520Ad%2520CD%2520%252F%2520DVD%2520BURNERS%2520%2526%2520MEDIA%2520-%2520(Bing)%26utm_term%3d4586818916047394%26utm_content%3dAd%2520Group%2520Main%2520CD%2520%252F%2520DVD%2520BURNERS%2520%2526%2520MEDIA%2520Products%2520%25240.05" h="ID=SERP,5542.2,Ads"><p>BH9430PW LG Blu-ray Home Theater System 1080p 9.1 Channel 1000w Blueto</p></a><p><strong>$1,081.53</strong></p><div class="b_attribution"><cite>Memory4Less.com</cite></div><p /></div></div></li><li class="square_b"><div class="pa_item" data-kvalue="5545"><a href="https://0.r.bat.bing.com/?ld=d3VnDa_QvP0aDerRBR23xv_TVUCUztxK80xVpRAJz6Gcn8r52YJ9uyBGpjEJxbcJsCg9JH6Koa7WynFmJSg-xTqorLrtLC5z7MQa_5yJljlKcugPr52i6-KtiXrljTY7SbaCqaQT5QPRwY17nD9to8E_yqp9mOolud5yJV69k5npLK3ROp&amp;u=http%3a%2f%2f1207.xg4ken.com%2ftrk%2fv1%3fprof%3d16%26camp%3d8367%26affcode%3dpg129498%26kct%3dmsn%26kchid%3d37040%26cid%3d11474593349%26kdv%3dc%26kpid%3d8417061%26criteriaid%3dkwd-4577541784546175%26queryStr%3dHome%2520Theater%26adgroupid%3d4200407066%26campaignid%3d53654117%26url%3dhttp%3a%2f%2fwww.bestbuy.com%2fsite%2fsony-5-1-ch-3d-smart-blu-ray-home-theater-system-black%2f8417061.p%3fskuId%3d8417061%26ref%3d06%26loc%3d01%26ksid%3d_kenshoo_clickid_%26ksprof_id%3d16%26ksaffcode%3dpg129498%26ksdevice%3dc" h="ID=SERP,5545.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="Sony - 5.1-Ch. 3D / Smart …" id="emb6366BFC3F" class="rms_img" /><p class="pa_title" style="min-height:34px">Sony - 5.1-Ch. 3D / Smart …</p></div></a><p><strong>$249.99</strong></p><div class="b_attribution b_ads1line"><cite>Best Buy</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4.5 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_sth"></span></span> <a href="/product/reviews?upid=MXwwMDAyNzI0Mjg1NzY0Mw==&amp;FORM=MRANNO" h="ID=SERP,5547.1,Ads">876</a></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://0.r.bat.bing.com/?ld=d3VnDa_QvP0aDerRBR23xv_TVUCUztxK80xVpRAJz6Gcn8r52YJ9uyBGpjEJxbcJsCg9JH6Koa7WynFmJSg-xTqorLrtLC5z7MQa_5yJljlKcugPr52i6-KtiXrljTY7SbaCqaQT5QPRwY17nD9to8E_yqp9mOolud5yJV69k5npLK3ROp&amp;u=http%3a%2f%2f1207.xg4ken.com%2ftrk%2fv1%3fprof%3d16%26camp%3d8367%26affcode%3dpg129498%26kct%3dmsn%26kchid%3d37040%26cid%3d11474593349%26kdv%3dc%26kpid%3d8417061%26criteriaid%3dkwd-4577541784546175%26queryStr%3dHome%2520Theater%26adgroupid%3d4200407066%26campaignid%3d53654117%26url%3dhttp%3a%2f%2fwww.bestbuy.com%2fsite%2fsony-5-1-ch-3d-smart-blu-ray-home-theater-system-black%2f8417061.p%3fskuId%3d8417061%26ref%3d06%26loc%3d01%26ksid%3d_kenshoo_clickid_%26ksprof_id%3d16%26ksaffcode%3dpg129498%26ksdevice%3dc" h="ID=SERP,5545.2,Ads"><p>Sony - 5.1-Ch. 3D / Smart Blu-ray Home Theater System - Black</p></a><p><strong>$249.99</strong></p><div class="b_attribution"><cite>Best Buy</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4.5 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_sth"></span></span> <a href="/product/reviews?upid=MXwwMDAyNzI0Mjg1NzY0Mw==&amp;FORM=MRANNO" h="ID=SERP,5547.2,Ads">876</a></div><p /></div></div></li><li class="square_b"><div class="pa_item" data-kvalue="5550"><a href="https://0.r.bat.bing.com/?ld=d3KcF1-a0ljP4FjYHcgDhjbTVUCUz5ONv7OuQzIwngdz8Ays2sWdqczFX7OM42P1zZwMR_Uqwdi3bdasmc-Ki6Zb6zUy_nB8h7vvEybE_CGJ4ppxBGA_pVdN1tztifuVki_O1xHnVOBxYLpWHvm79ThgU5NN9up-K8PVISvtzM2-XjinyW&amp;u=http%3a%2f%2f1207.xg4ken.com%2ftrk%2fv1%3fprof%3d16%26camp%3d8367%26affcode%3dpg129498%26kct%3dmsn%26kchid%3d37040%26cid%3d11474593349%26kdv%3dc%26kpid%3d5464013%26criteriaid%3dkwd-4577541784546175%26queryStr%3dHome%2520Theater%26adgroupid%3d4200407066%26campaignid%3d53654117%26url%3dhttp%3a%2f%2fwww.bestbuy.com%2fsite%2fsony-1000w-5-1-ch-3d-smart-blu-ray-home-theater-system-black%2f5464013.p%3fskuId%3d5464013%26ref%3d06%26loc%3d01%26ksid%3d_kenshoo_clickid_%26ksprof_id%3d16%26ksaffcode%3dpg129498%26ksdevice%3dc" h="ID=SERP,5550.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="Sony - 1000W 5.1-Ch. 3D …" id="emb72A55F502" class="rms_img" /><p class="pa_title" style="min-height:34px">Sony - 1000W 5.1-Ch. 3D …</p></div></a><p><strong>$499.99</strong></p><div class="b_attribution b_ads1line"><cite>Best Buy</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_ste"></span></span> <a href="/product/reviews?upid=MXwwMDAyNzI0Mjg3MjY1Mw==&amp;FORM=MRANNO" h="ID=SERP,5552.1,Ads">319</a></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://0.r.bat.bing.com/?ld=d3KcF1-a0ljP4FjYHcgDhjbTVUCUz5ONv7OuQzIwngdz8Ays2sWdqczFX7OM42P1zZwMR_Uqwdi3bdasmc-Ki6Zb6zUy_nB8h7vvEybE_CGJ4ppxBGA_pVdN1tztifuVki_O1xHnVOBxYLpWHvm79ThgU5NN9up-K8PVISvtzM2-XjinyW&amp;u=http%3a%2f%2f1207.xg4ken.com%2ftrk%2fv1%3fprof%3d16%26camp%3d8367%26affcode%3dpg129498%26kct%3dmsn%26kchid%3d37040%26cid%3d11474593349%26kdv%3dc%26kpid%3d5464013%26criteriaid%3dkwd-4577541784546175%26queryStr%3dHome%2520Theater%26adgroupid%3d4200407066%26campaignid%3d53654117%26url%3dhttp%3a%2f%2fwww.bestbuy.com%2fsite%2fsony-1000w-5-1-ch-3d-smart-blu-ray-home-theater-system-black%2f5464013.p%3fskuId%3d5464013%26ref%3d06%26loc%3d01%26ksid%3d_kenshoo_clickid_%26ksprof_id%3d16%26ksaffcode%3dpg129498%26ksdevice%3dc" h="ID=SERP,5550.2,Ads"><p>Sony - 1000W 5.1-Ch. 3D / Smart Blu-ray Home Theater System - Black</p></a><p><strong>$499.99</strong></p><div class="b_attribution"><cite>Best Buy</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_ste"></span></span> <a href="/product/reviews?upid=MXwwMDAyNzI0Mjg3MjY1Mw==&amp;FORM=MRANNO" h="ID=SERP,5552.2,Ads">319</a></div><p /></div></div></li></ul><ul class="b_hList">
+                                            <li class="square_b"><div class="pa_item pa_first" data-kvalue="5555"><a href="https://33003230.r.bat.bing.com/?ld=d3S1PHwmeWKdePbHdLmjHt-zVUCUyXdTa9PNYkL3GNOI5P7JNYcerohmvCd7Rek2pUJorq1lUjd4NVYMESulzKOvj3kjKdBGgFE54G5CPMxcsLdGu-gaTLDiMV_7gtrfBq20WNwRuzxZHbWqnRUaREXzJnsNgR8H06nDD6KF1-CsMLbLDW&amp;u=https%3a%2f%2fwww.crutchfield.com%2fI-rbshcXIM%2fProduct%2fItem%2fDefault.aspx%3fI%3d700PCIN1KB%26awcr%3d14179775627%26awdv%3dc%26awkw%3dunknown%26awmt%3de%26awnw%3do%26awat%3d" h="ID=SERP,5555.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="Definitive ProCinema …" id="emb812DAE520" class="rms_img" /><p class="pa_title" style="min-height:34px">Definitive ProCinema …</p></div></a><p><strong>$1,595.99</strong></p><div class="b_attribution b_ads1line"><a href="/merchant/reviews?mid=crutchfield.com&amp;FORM=MRANNO" h="ID=SERP,5557.1,Ads"><img class="pa_mr rms_img" width="12" height="12" title="Top Rated Merchant" /></a><cite>Crutchfield</cite></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://33003230.r.bat.bing.com/?ld=d3S1PHwmeWKdePbHdLmjHt-zVUCUyXdTa9PNYkL3GNOI5P7JNYcerohmvCd7Rek2pUJorq1lUjd4NVYMESulzKOvj3kjKdBGgFE54G5CPMxcsLdGu-gaTLDiMV_7gtrfBq20WNwRuzxZHbWqnRUaREXzJnsNgR8H06nDD6KF1-CsMLbLDW&amp;u=https%3a%2f%2fwww.crutchfield.com%2fI-rbshcXIM%2fProduct%2fItem%2fDefault.aspx%3fI%3d700PCIN1KB%26awcr%3d14179775627%26awdv%3dc%26awkw%3dunknown%26awmt%3de%26awnw%3do%26awat%3d" h="ID=SERP,5555.2,Ads"><p>Definitive ProCinema 1000 - Home Theater Speaker System</p></a><p><strong>$1,595.99</strong></p><div class="b_attribution"><a href="/merchant/reviews?mid=crutchfield.com&amp;FORM=MRANNO" h="ID=SERP,5557.2,Ads"><img class="pa_mr rms_img" width="12" height="12" title="Top Rated Merchant" /></a><cite>Crutchfield</cite></div><p /></div></div></li>
+                                            <li class="square_b">
+                                                <div class="pa_item" data-kvalue="5560">
+                                                    <a href="https://40062625.r.bat.bing.com/?ld=d3PpDZZ4ObD9koPRwNbChIMjVUCUyIhEJUZatMdYVX2yR4AdbJ8VxP4Io7GKmfjEfkA9oQq1Q3laif_4NVdUaqCd6NvHUaABDZ8FSXjh-KjPVk8iSayGfTQ8BVTXtQg6dghr4uvjWiVvZeQQwnzHAEeXmx2_GrHEhtHxqdLtDrdIu_dpdc&amp;u=http%3a%2f%2f6005.xg4ken.com%2ftrk%2fv1%3fprof%3d419%26camp%3d423000%26affcode%3dpg6704892%26kct%3dmsn%26kchid%3d40062625%26cid%3d75522706647876%26kdv%3dc%26kpid%3d016f48b4d8da4dc3979ec2612f26d21d%26criteriaid%3dkwd-4579122332320020%26queryStr%3dHome%2520Theater%26adgroupid%3d1208363286037345%26campaignid%3d276066400%26url%3dhttps%3a%2f%2fjet.com%2fproduct%2fdetail%2f016f48b4d8da4dc3979ec2612f26d21d%3fjcmp%3dpla%3abng%3ajd_electronics%3aelectronics_home_audio%3ana%3aPLA_276066400_1208363286037345_kwd-4579122332320020%3ana%3ana%3ana%3a2%26code%3dPLA15%26pid%3dkenshoo_int%26c%3d276066400%26is_retargeting%3dtrue%26clickid%3d_kenshoo_clickid_" h="ID=SERP,5560.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="RCA Bluetooth Home …" id="emb967F15EE8" class="rms_img" /><p class="pa_title" style="min-height:34px">RCA Bluetooth Home …</p></div></a><p><strong>$158.00</strong></p><div class="b_attribution b_ads1line"><cite>Jet.com</cite></div><div class="pa_promo">
+                                                        <div id="infobubble_item_6_D51F9B" class="infobubble_item" data-bubbleid="infobubble_6_D51F9B"><a class="pa_promo_link">Special Offer<img class="pa_promo_icon rms_img" width="7" height="4" title="Special Offer" /></a></div><div id="infobubble_6_D51F9B" class="infobubble b_hide" data-appns="SERP" data-k="5563.2"><div class="before"><span></span></div><span class="infobubble_close">✕</span><div class="infobubble_content"><cite>Jet.com</cite><div class="pa_promo_details"><p>Free shipping on all orders over $35</p><div class="b_footnote">Expires in 34 days</div></div><a class="cbtn pa_promo_btn" href="https://40062625.r.bat.bing.com/?ld=d3q0euSYdOScJrEuelotQqMTVUCUxSP-ouWq131Cf9Q3YEFfvCKxeOq6z6smc5cq5QL06j0FzYVFHoZ1V94Av6BymIa9C1txU0_LHTeXl3TJCIJfGDG3Q4fMOii02nAUW2dLnceSaQD5MTKHKbs5C-TG5FE9SFpcz9t-cmL-KKsQHEZyHQ-ebMtGtpqmdHTh2yRTymqQ&amp;u=http%3a%2f%2f6005.xg4ken.com%2ftrk%2fv1%3fprof%3d419%26camp%3d423000%26affcode%3dpg6704892%26kct%3dmsn%26kchid%3d40062625%26cid%3d75522706647876%26kdv%3dc%26kpid%3d016f48b4d8da4dc3979ec2612f26d21d%26criteriaid%3dkwd-4579122332320020%26queryStr%3dHome%2520Theater%26adgroupid%3d1208363286037345%26campaignid%3d276066400%26url%3dhttps%3a%2f%2fjet.com%2fproduct%2fdetail%2f016f48b4d8da4dc3979ec2612f26d21d%3fjcmp%3dpla%3abng%3ajd_electronics%3aelectronics_home_audio%3ana%3aPLA_276066400_1208363286037345_kwd-4579122332320020%3ana%3ana%3ana%3a2%26code%3dPLA15%26pid%3dkenshoo_int%26c%3d276066400%26is_retargeting%3dtrue%26clickid%3d_kenshoo_clickid_" h="ID=SERP,5562.1,Ads"><div><p>Shop</p></div></a></div><div class="after"><span></span></div></div>
+                                                    </div>
+                                                </div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://40062625.r.bat.bing.com/?ld=d3PpDZZ4ObD9koPRwNbChIMjVUCUyIhEJUZatMdYVX2yR4AdbJ8VxP4Io7GKmfjEfkA9oQq1Q3laif_4NVdUaqCd6NvHUaABDZ8FSXjh-KjPVk8iSayGfTQ8BVTXtQg6dghr4uvjWiVvZeQQwnzHAEeXmx2_GrHEhtHxqdLtDrdIu_dpdc&amp;u=http%3a%2f%2f6005.xg4ken.com%2ftrk%2fv1%3fprof%3d419%26camp%3d423000%26affcode%3dpg6704892%26kct%3dmsn%26kchid%3d40062625%26cid%3d75522706647876%26kdv%3dc%26kpid%3d016f48b4d8da4dc3979ec2612f26d21d%26criteriaid%3dkwd-4579122332320020%26queryStr%3dHome%2520Theater%26adgroupid%3d1208363286037345%26campaignid%3d276066400%26url%3dhttps%3a%2f%2fjet.com%2fproduct%2fdetail%2f016f48b4d8da4dc3979ec2612f26d21d%3fjcmp%3dpla%3abng%3ajd_electronics%3aelectronics_home_audio%3ana%3aPLA_276066400_1208363286037345_kwd-4579122332320020%3ana%3ana%3ana%3a2%26code%3dPLA15%26pid%3dkenshoo_int%26c%3d276066400%26is_retargeting%3dtrue%26clickid%3d_kenshoo_clickid_" h="ID=SERP,5560.2,Ads"><p>RCA Bluetooth Home Theater System</p></a><p><strong>$158.00</strong></p><div class="b_attribution"><cite>Jet.com</cite></div><p /></div></div>
+                                            </li>
+                                            <li class="square_b"><div class="pa_item" data-kvalue="5566"><a href="https://61000019.r.bat.bing.com/?ld=d3XgRa1tuh9E06VgN92Yv84zVUCUyqTmCRketLhCbsYmDoNdTvVlqRBZ8P9iynVg9aHYiXPtQMn1tfKeL46nJCp_vxu_uth8iMmvh_8K89MoXHCm0q17b_QnFbeQTIcF43pQQ7UM9yHwdAmxsd2Wg67MzCW5xxCdsCTXhF6AitvRCPUXd2&amp;u=http%3a%2f%2fwww.walmart.com%2fip%2f105223402%3fwmlspartner%3dwmtlabs%26adid%3d22222222222040083346%26wmlspartner%3dwmtlabs%26wl0%3de%26wl1%3do%26wl2%3dc%26wl3%3d10359896549%26wl4%3dkwd-1103084423657%26wl12%3d105223402_0%26wl14%3dHome%2520Theater%26veh%3dsem" h="ID=SERP,5566.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="RCA Bluetooth Home …" id="embA7D7B7E48" class="rms_img" /><p class="pa_title" style="min-height:34px">RCA Bluetooth Home …</p></div></a><p><strong>$158.00</strong></p><div class="b_attribution b_ads1line"><cite>Walmart</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_ste"></span></span> <a href="/product/reviews?upid=MXwwMDA2MjExODYyNzgxNA==&amp;FORM=MRANNO" h="ID=SERP,5568.1,Ads">51</a></div></div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://61000019.r.bat.bing.com/?ld=d3XgRa1tuh9E06VgN92Yv84zVUCUyqTmCRketLhCbsYmDoNdTvVlqRBZ8P9iynVg9aHYiXPtQMn1tfKeL46nJCp_vxu_uth8iMmvh_8K89MoXHCm0q17b_QnFbeQTIcF43pQQ7UM9yHwdAmxsd2Wg67MzCW5xxCdsCTXhF6AitvRCPUXd2&amp;u=http%3a%2f%2fwww.walmart.com%2fip%2f105223402%3fwmlspartner%3dwmtlabs%26adid%3d22222222222040083346%26wmlspartner%3dwmtlabs%26wl0%3de%26wl1%3do%26wl2%3dc%26wl3%3d10359896549%26wl4%3dkwd-1103084423657%26wl12%3d105223402_0%26wl14%3dHome%2520Theater%26veh%3dsem" h="ID=SERP,5566.2,Ads"><p>RCA Bluetooth Home Theater System, Black</p></a><p><strong>$158.00</strong></p><div class="b_attribution"><cite>Walmart</cite></div><div class="pa_rating"><span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_ste"></span></span> <a href="/product/reviews?upid=MXwwMDA2MjExODYyNzgxNA==&amp;FORM=MRANNO" h="ID=SERP,5568.2,Ads">51</a></div><p /></div></div></li>
+                                            <li class="square_b">
+                                                <div class="pa_item" data-kvalue="5571">
+                                                    <a href="https://61000019.r.bat.bing.com/?ld=d3iYFHVi8DetGUEt3vCMxJUDVUCUzH64c5esrbvLtm3dWdttO6kRnvTistxAtekeJvAj3fwU2A0LslOzBokrhjip4vXHlDN-oSUjj_xVY5Uk9eIddbt0Z9oGPL5bcz7X1m2PC9Pf8j86YkQzRU1mZepG9v4r6-ylba0xrZ9dXp-Z0eDtQL&amp;u=http%3a%2f%2fwww.walmart.com%2fip%2f44362900%3fwmlspartner%3dwmtlabs%26adid%3d22222222222032045047%26wmlspartner%3dwmtlabs%26wl0%3de%26wl1%3do%26wl2%3dc%26wl3%3d10359996704%26wl4%3dkwd-1103088919889%26wl12%3d44362900_0%26wl14%3dHome%2520Theater%26veh%3dsem" h="ID=SERP,5571.1,Ads"><div class="pa_hover_target"><img width="86" height="86" alt="Samsung Home …" id="embB26F7DC15" class="rms_img" /><p class="pa_title" style="min-height:34px">Samsung Home …</p></div></a><p><strong>$197.99</strong></p><div class="b_attribution b_ads1line"><cite>Walmart</cite></div><div class="pa_promo">
+                                                        <div id="infobubble_item_9_D51F9B" class="infobubble_item" data-bubbleid="infobubble_9_D51F9B"><a class="pa_promo_link">Special Offer<img class="pa_promo_icon rms_img" width="7" height="4" title="Special Offer" /></a></div><div id="infobubble_9_D51F9B" class="infobubble b_hide" data-appns="SERP" data-k="5574.2"><div class="before"><span></span></div><span class="infobubble_close">✕</span><div class="infobubble_content"><cite>Walmart</cite><div class="pa_promo_details"><p>Pickup Discount</p><div class="b_footnote">Expires in 161 days</div></div><a class="cbtn pa_promo_btn" href="https://61000019.r.bat.bing.com/?ld=d3kWuUYlkQ9KtZjGgPZiV0dDVUCUwqFdurYmJlt5UZYPcPtuzKDvqHTgfLdw3FjUtZ58xFxkNyYVK52O0lFA6tDZaRsQJZF5Ggo5XtFrcVI69x3hrPpMuyVMJ2P4UrMupisZgfAdPS16AwGxCqXBugFypePo0MpUgS27JkS1Ptsjlq3kZUKo84_Nk1eQJ0uUPpHtHt6Q&amp;u=http%3a%2f%2fwww.walmart.com%2fip%2f44362900%3fwmlspartner%3dwmtlabs%26adid%3d22222222222032045047%26wmlspartner%3dwmtlabs%26wl0%3de%26wl1%3do%26wl2%3dc%26wl3%3d10359996704%26wl4%3dkwd-1103088919889%26wl12%3d44362900_0%26wl14%3dHome%2520Theater%26veh%3dsem" h="ID=SERP,5573.1,Ads"><div><p>Shop</p></div></a></div><div class="after"><span></span></div></div>
+                                                    </div>
+                                                </div><div class="pa_hover"><div><img class="pa_ha rms_img" width="16" height="9" /><a href="https://61000019.r.bat.bing.com/?ld=d3iYFHVi8DetGUEt3vCMxJUDVUCUzH64c5esrbvLtm3dWdttO6kRnvTistxAtekeJvAj3fwU2A0LslOzBokrhjip4vXHlDN-oSUjj_xVY5Uk9eIddbt0Z9oGPL5bcz7X1m2PC9Pf8j86YkQzRU1mZepG9v4r6-ylba0xrZ9dXp-Z0eDtQL&amp;u=http%3a%2f%2fwww.walmart.com%2fip%2f44362900%3fwmlspartner%3dwmtlabs%26adid%3d22222222222032045047%26wmlspartner%3dwmtlabs%26wl0%3de%26wl1%3do%26wl2%3dc%26wl3%3d10359996704%26wl4%3dkwd-1103088919889%26wl12%3d44362900_0%26wl14%3dHome%2520Theater%26veh%3dsem" h="ID=SERP,5571.2,Ads"><p>Samsung Home Theater System 5.1ch 500W (HT-J4500/ZA), Black</p></a><p><strong>$197.99</strong></p><div class="b_attribution"><cite>Walmart</cite></div><p /></div></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><a href="http://choice.microsoft.com" h="ID=SERP,5378.4,Ads"><img class="b_adChoice rms_img" title="About our ads" alt="About our ads" /></a>
+                            </li>
+                            <li><div class="sb_add sb_adTA"><h2><a href="https://0.r.bat.bing.com/?ld=d3baX-IybksJK2s5tzA3hJBzVUCUz_gdbtLkZ26N9vWH1H_YB5yWIFa1OXSNQIUBFDjXGaKtqhZubl1TdW7y2pxgwSM_cpGdue2TlW6Q2JwBIwu11V22LhCOCU5mJYXLMNo-pIfZOJ36czPprKuhMpM_72e7VWJ5MqAgCF4ELZnKHsfUFw&amp;u=https%3a%2f%2fwww.crutchfield.com%2fi-rMI4c3RW%2fbrands%2flandingpages%2fhometheater.aspx%3fXVINQ%3dMI4%26XVVER%3d3RW%26awcr%3d76965832534027%26awdv%3dc%26awkw%3dhome%2520theater%26awmt%3de%26awnw%3do%26awat%3d" h="ID=SERP,5576.1,Ads"><strong>Home Theater</strong> Products - Free Shipping on Most Orders</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.crutchfield.com</cite></div><p class="b_secondaryText">36,800+ followers on Twitter</p><p>Hot Deals, Cool Gear, and Helpful Tips. Discover the Crutchfield Difference!</p><div>2016 Platinum Circle of Excellence. The only 17-time winner. – <a class="b_accentColor" href="http://www.bizrate.com/boutique/2016circleofexcellence.html" h="ID=SERP,5579.1,Ads">Bizrate</a></div></div></div></li>
+                            <li><div class="sb_add sb_adTA"><h2><a href="https://45055761.r.bat.bing.com/?ld=d3YCmwZFYk4MOEeGqqubuKQDVUCUwNAmBtZa14hurEFfCS8tS4B0pK8X05LU_a-a42R1V_HNcIg_j9eYez3wky74u2olqfccIgEzn_GXmIUqmDyCtly7noe8RyPcWyrql00GHa8Zmd--KyVQJijp-aAfEcpdt4ImhxcD_FhR5sezWWaDfe&amp;u=http%3a%2f%2fpixel.everesttech.net%2f4483%2fcq%3fev_sid%3d10%26ev_ltx%3d%26ev_lx%3dkwd-74904251240584%26ev_crx%3d74904250778779%26ev_mt%3db%26ev_dvc%3dc%26ev_phy%3d%26ev_loc%3d%26ev_cx%3d160812649%26ev_ax%3d3706603688%26ev_ex%3d%26url%3dhttp%253A%252F%252Fwww.furniturerow.com%252Ffr%252Fbrowse%252FLiving%252FTables-Entertainment%252FHome-Theater%252F_%252FN-12514" h="ID=SERP,5581.1,Ads">Sectionals, <strong>Home Theater</strong> Walls - &amp; Console Loveseats. Shop Now.</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.furniturerow.com/LivingRoom/<strong>HomeTheater</strong></cite></div><p>Shop Long Lasting Support &amp; Comfort in Well-Built <strong>Theater</strong> Sectionals.</p><div class="b_secondaryText">Home Theater Pieces -TV Consoles &amp; Cabinets|Furniture Row</div></div></div></li>
+                            <li><div class="sb_add sb_adTA"><h2><a href="https://79111521.r.bat.bing.com/?ld=d3aIbe5bjywezK9psMVjtnADVUCUyAqo89UMgEIdlVaEF8khEAxy4qrX5B4Mq_EFHcw5dT6Z0NW2zW4ZG0RFV62axvDEoVLKaykiHZETpUI-B4EzUB64IdjqxAtf6Y2-96IjJEbHYssOkvD5V3GqRYSQffcg7RJRv9GjgUikHGGsrncrLZ&amp;u=http%3a%2f%2fwww.logicav.net%2f%3futm_source%3dbing%26utm_medium%3dcpc%26utm_campaign%3dLogic%2520Integration%26utm_term%3dhome%2520theater%2520system%26utm_content%3dLogic%2520Integration%23" h="ID=SERP,5584.1,Ads">Logic Integration - Best AV Company Colorado</a></h2><div class="b_caption"><div class="b_attribution"><span class="b_adSlug">Ad</span> &#183; <cite>www.logicav.net</cite></div><p>Leaders in Smart <strong>Home</strong> Residential and Commercial Building automation</p></div></div></li>
+                        </ul><div><a class="sb_meta" href="http://advertise.bingads.microsoft.com/en-us/search" h="ID=SERP,5379.1,Ads">See your ad here &#187;</a></div>
+                    </li>
+                    <li class="b_ans"><h2 class="">See results for</h2><ul class="b_vList"><li><span class="b_slyGridItem"><a class="" href="/search?q=sound+%26+vision+magazine&amp;filters=ufn%3a%22sound++vision+magazine%22+sid%3a%22cbc47f41-2ec8-53f0-62b0-0d5ac013f2d0%22&amp;FORM=SNAPST" h="ID=SERP,5589.1"><div class="b_secondaryFocus">Sound &amp; Vision (Magazine)</div><div class="eg_meta"><ul id="wpc_eif" class="wpc_rifacts"><li><span title="Sound &amp; Vision is an American magazine, published by Source Interlink Media, covering home theater, audio, video and multimedia consumer products. The magazine is headquartered in New York City. Stereo Review was an American magazine first published in 1958 by Ziff-Davis with the title HiFi and Music Review. During the initial phase the magazine was headquartered in Chicago, Illinois. It was one of a handful of magazines then available for the individual interested in high fidelity. Throughout its life it published a blend of record and equipment reviews, articles on music and musicians, and articles on technical issues and advice. The name changed to HiFi Review in 1959. It became HiFi/Stereo Review in 1961 to reflect the growing use of stereophonic technology in recordings and broadcasts. In 1968 it became, simply, Stereo Review, reflecting the broad shift to stereophonic reproduction and simplifying the title. In the late 1980s, the magazine was acquired by CBS Magazines, and in 1989 it absorbed High Fidelity magazine. During the 1990s, consumer trends began to branch out into home theater matters and the magazine contents followed in kind. In 1999 Stereo Review merged with Video, a magazine Hachette Filipacchi had acquired from Reese Communications, to become Stereo Review's Sound &amp; Vision before settling on its current name in 2000, reflecting how dominant home theater had become in consumer purchases.">Sound &amp; Vision is an American magazine, published by Source Interlink Media, covering home theater, audio, video and multimedia consumer products. The magazine is headquartered in New York City. Stereo Review was an American magazine first published in 1958 by Ziff-Davis …</span></li></ul></div></a></span></li></ul></li>
+                </ol>
+            </div><footer id="b_footer" class="b_footer" role="contentinfo"><div id="b_footerItems"><span>&#169; 2017 Microsoft</span><ul><li><a id="sb_privacy" href="http://go.microsoft.com/fwlink/?LinkId=521839&amp;CLCID=0409" h="ID=SERP,5042.1">Privacy and Cookies</a></li><li><a id="sb_legal" href="http://go.microsoft.com/fwlink/?LinkID=246338&amp;CLCID=0409" h="ID=SERP,5043.1">Legal</a></li><li><a id="sb_advertise" href="http://go.microsoft.com/?linkid=9844325" h="ID=SERP,5044.1">Advertise</a></li><li><a id="sb_adinfo" target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=286759&amp;CLCID=409" h="ID=SERP,5045.1">About our ads</a></li><li><a id="sb_help" target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=617297" h="ID=SERP,5046.1">Help</a></li><li><a id="sb_feedback" href="#" h="ID=SERP,5047.1">Feedback</a></li></ul></div><!--foo--></footer><div class="sb_hbop"><div id="d5093" class="b_hide b_dropdown"><div class="ftrD" id="ftrD_Any_time"><a class="b_toggle" role="menuitem" href="/search?q=Home+Theater&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;qpvt=Home+Theater" h="ID=SERP,5278.1">All</a><a class="b_toggle" role="menuitem" href="/search?q=Home+Theater&amp;filters=ex1%3a%22ez1%22&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;qpvt=Home+Theater" h="ID=SERP,5279.1">Past 24 hours</a><a class="b_toggle" role="menuitem" href="/search?q=Home+Theater&amp;filters=ex1%3a%22ez2%22&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;qpvt=Home+Theater" h="ID=SERP,5280.1">Past week</a><a class="b_toggle" role="menuitem" href="/search?q=Home+Theater&amp;filters=ex1%3a%22ez3%22&amp;qs=n&amp;sp=-1&amp;ghc=1&amp;pq=home+theater&amp;sc=8-11&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;qpvt=Home+Theater" h="ID=SERP,5281.1">Past month</a><span id="drvph" data-url="/control/tfcalendar?q=Home%20Theater&amp;qs=n&amp;form=QBRE&amp;sp=-1&amp;ghc=1&amp;pq=home%20theater&amp;sc=8-11&amp;sk=&amp;cvid=679A7872D64E4B01A3D289EDF26FE25A&amp;IG=234BDC968C834B06910AB60ACC92AA3A&amp;StartDate=06%2f17%2f2017+13%3a03%3a46&amp;EndDate=06%2f27%2f2017+13%3a03%3a46&amp;IsApplied=False&amp;DisplayText=Custom+range&amp;DateOffset=0&amp;FormCode=&amp;ApplyLinkUrl=%2fsearch%3fq%3dHome%2bTheater%26filters%3dex1%253a%2522ez5_0_0%2522%26qs%3dn%26sp%3d-1%26ghc%3d1%26pq%3dhome%2btheater%26sc%3d8-11%26cvid%3d679A7872D64E4B01A3D289EDF26FE25A%26qpvt%3dHome%2bTheater&amp;ApplyLinkText=ez5&amp;IID=SERP.5283"></span></div></div><span id="nc_iid" _ig="234BDC968C834B06910AB60ACC92AA3A" _iid="SERP.5369" _cid="3AA2F723C53B6C7B3CCFFE0DC13B6FF5"></span></div>
+            <div id="aRmsDefer">
+                <div style="display:none">
+                    <!--//<![CDATA[
+                    var ErrFuncs;(function(n){function i(n,i,r){t("Error",n,i,r)}function r(n,i,r){t("Warning",n,i,r)}function t(n,t,i,r){var u,f;if(r?(u=r,u.message+=" "+t):u=new Error(t),u.extra="manualError",i&&(u.extra+=" "+i),u.severity=n,f=_w.jsErrorHandler,f)f(u);else throw u;}n.LogError=i;n.LogWarning=r})(ErrFuncs||(ErrFuncs={}));JS={LogError:ErrFuncs.LogError,LogWarning:ErrFuncs.LogWarning};SharedLogHelper={LogError:ErrFuncs.LogError,LogWarning:ErrFuncs.LogWarning,LogFatalError:function(){return null},RegisterErrorFilter:function(){return null}};0;var Identity = Identity || {}; (function(i) { i.wlImgSm ="https://cid-{0}.users.storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1\u0026ex=720\u0026fofoff=1\u0026sid=37824EBD989C6B313518441399706AE7"; i.wlImgLg ="https://cid-{0}.users.storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileMedium/p?ck=1\u0026ex=720\u0026fofoff=1\u0026sid=37824EBD989C6B313518441399706AE7";i.popupLoginUrls = {"WindowsLiveId":"https://login.live.com/login.srf?wa=wsignin1.0\u0026rpsnv=11\u0026ct=1498586626\u0026rver=6.0.5286.0\u0026wp=MBI\u0026wreply=https:%2F%2fwww.bing.com%2Fsecure%2FPassport.aspx%3Fpopup%3D1\u0026lc=1033\u0026id=264960"}; })(Identity);;var sch=sch||{};(function(){var t=_ge("id_h"),n=_ge("id_sc"),i="click";sj_evt.bind("onP1",function(){setTimeout(function(){t&&n&&(sj_jb("Blue/HamburgerServicesHeaderFlyout_c",0,t,"mouseover",n,i,n,"focus"),sj_be(n,i,function(n){sch.clk=n}))},50)},1)})();var SearchBox;(function(n){function u(){t=_ge("b_header");sj_be(_d.body,"click",i)}function i(n){var i=sj_et(n);i.id!="sb_form_q"&&(t.className=t.className.replace(r,""))}var r=/(^|\s)b_focus(?!\S)/gi,t;n.removeFocusClass=i;sj_evt.bind("onP1",u)})(SearchBox||(SearchBox={}));0;(function(){function t(){var t,r,u;i(window.location.href)||(t=sj_cook.get(n,"CW"),(!t||window.sj_b&&t!=sj_b.clientWidth)&&sj_cook.set(n,"CW",(sb_de.clientWidth||sj_b.clientWidth).toString(),!0,"/",null),r=sj_cook.get(n,"CH"),u=sb_de.clientHeight.toString(),r&&r===u||sj_cook.set(n,"CH",u,!0,"/",null))}function i(n){return n.match(/\/images\/search.*[?&]view=detailv2.*nocookie=1\b/i)!=null}function r(){var u=sj_cook.get(n,"DPR"),t=_w.devicePixelRatio,i,r;t&&(!u||parseInt(u)!==t)&&sj_cook.set(n,"DPR",t.toString(),!0,"/",null);i=sj_cook.get(n,"UTC");r=((new Date).getTimezoneOffset()*-1).toString();(i==null||i!==r)&&sj_cook.set(n,"UTC",r,!0,"/",null)}function u(){t();r()}var n="SRCHHPGUSR";sj_be(_w,"load",u);sj_be(_w,"resize",t)})();_G.SPSA = 1;;var Lib;(function(n){var t;(function(n){function r(n,t){var r,i;if(t==null||n==null)throw new TypeError("Null element passed to Lib.CssClass");if(n.indexOf)return n.indexOf(t);for(r=n.length,i=0;i<r;i++)if(n[i]===t)return i;return-1}function u(n,r){if(n==null)throw new TypeError("Null element passed to Lib.CssClass");i(n,r)||(t&&n.classList?n.classList.add(r):n.className+=" "+r)}function f(n,u){if(n==null)throw new TypeError("Null element passed to Lib.CssClass");if(i(n,u))if(t&&n.classList)n.classList.remove(u);else{var f=n.className.split(" "),e=r(f,u);e>=0&&f.splice(e,1);n.className=f.join(" ")}}function e(n,r){if(n==null)throw new TypeError("Null element passed to Lib.CssClass");t&&n.classList?n.classList.toggle(r):i(n,r)?f(n,r):u(n,r)}function i(n,i){if(n==null)throw new TypeError("Null element passed to Lib.CssClass");if(t&&n.classList)return n.classList.contains(i);var u=n.className.split(" ");return r(u,i)>=0}var t=typeof document.body.classList!="undefined";n.add=u;n.remove=f;n.toggle=e;n.contains=i})(t=n.CssClass||(n.CssClass={}))})(Lib||(Lib={}));sa_CTBConfig={"TRGT":"Actions for this site","CU":"http://cc.bingj.com/cache.aspx?q=Home+Theater\u0026d={0}\u0026mkt=en-US\u0026setlang=en-US\u0026w={1}","CT":"Cached page","NW":"0"};sj_evt.bind("onP1",function(){for(var t,i,r=_d.getElementsByTagName("img"),n=0;n<r.length;n++)t=r[n],i=t.getAttribute("data-src-hq"),i&&(t.src=i)});(function(n,t,i){function f(){!u.end&&o===h&&o>0&&i(b,0)}function s(n){if(n&&n.length)return r[n]||(r[n]={start:0,end:0,actual:0,done:0},o++),r[n]}function y(){var n=[];for(var t in r)r.hasOwnProperty(t)&&(n.push(t),u.actual+=r[t].actual);return n.sort(function(n,t){return r[t].actual-r[n].actual}),n}function p(){var f=[],e=0,t=y(),i,n,u;if(t.length>0)do if(i=t.shift(),n=r[i],!(n.start<_G.ST)){if(u='"'+i+'":{"S":'+(n.start-_G.ST)+',"E":'+(n.end-_G.ST)+',"T":'+n.actual+"}",e+=u.length+1,e>=v)break;f.push(u)}while(t.length>0);return f.join(",")}function w(){function r(n){return n=n.toString().replace(/\"/g,"'"),'"'+n+'"'}var i=[],t,n;for(t in e)e.hasOwnProperty(t)&&(n=e[t],typeof n!="number"&&(n=r(n)),i.push(r(t)+":"+n));return i.join(",")}function b(){u.end||(u.end=new Date,(new Image).src=_G.lsUrl+'&Type=Event.PPT&DATA={"S":'+(u.start-_G.ST)+',"E":'+(u.end-_G.ST)+',"T":'+u.actual+',"I":'+u.numInvalid+',"N":{'+p()+'},"M":{'+w()+"}}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:""))}function k(n){var t=r[n];t&&!t.done&&(t.done=1,h++,f())}function c(n){var r=n.task;if(r){var u=r,t=n.ns,f=n.delay||0;if(t&&t.length>0){a(t);function e(){var i=new Date,n;r();n=new Date;l(t,i,n)}u=e}f>0?i(u,f):u()}}function l(n,t,i){var r,e;(f(),r=s(n),r)&&(e=i-t,(e<0||i<r.end||r.start&&t<r.start)&&++u.numInvalid,r.actual+=e,r.start||(r.start=t),r.end=i)}function a(n){f();s(n)}function d(n,t){f();e[n]=t}var u={start:new Date,end:0,actual:0,numInvalid:0},r={},o=0,h=0,e=t._cm||{},v=600;n("onP1",function(){var i,r,n;for(t.register=a,t.schedule=c,t.complete=k,t.recordTimings=l,t.reportCustomMetric=d,r=t._ns||[];i=r.shift();)s(i);for(n=t._reg||[];n.length>0;)c(n.shift());f()},1)})(sj_evt.bind,sched,sb_st);function wpc_Inst(n,t,i){var r=sj_evt.bind,u=0,f=0;r&&n&&t&&i&&(r("RMS.ImgAOLInit",function(){n.register(i)},1),r("RMS.ImgAOLCompleted",function(){n.schedule({task:function(){n.recordTimings(i,u,f);n.complete(i)}})},1),r("RMS.ImgAOLLoaded",function(n){var i,e,r;n.length<2||(i=n[1],i&&i.state==="success")&&(e=i.image,e&&sj_we(e,t))&&(r=i.timeStamp,u===0&&(u=r),r>f&&(f=r))},1))};new wpc_Inst(_w.sched,_ge("b_context"),"TP");sj_evt.bind("ajax.feedback.initialized", function(args) { args[1].debugCollector.setContextValue("FederationDebugInfo", "QueryID : 4bf600bca90440139343e5b1e94a8282"); });;var fbpkgiid = fbpkgiid || {}; fbpkgiid.page = 'SERP.5610';;var Feedback;(function(n){var t;(function(){"use strict";function u(t,i){var u=t.getAttribute("id"),f;u||(u="genId"+n.length,t.setAttribute("id",u));f=new r(u,i,t.getAttribute(i));n.push(f)}function i(n,t,i){i===null?n.removeAttribute(t):n.setAttribute(t,i)}function t(n,t,r,f){for(var e,s=_d.querySelectorAll(r),o=0;o<s.length;o++)(e=s[o],f&&e.id&&f[e.id])||(u(e,n),i(e,n,t))}function f(n){for(var u=_d.querySelectorAll(n),e=1,f={},t,i,r=0;r<u.length;++r){if(t=u[r],!t.id){for(;;)if(i="fbpgdgelem"+e++,!_ge(i))break;t.id=i}f[t.id]=t}return f}function e(){var i="tabindex",r="-1",n=f("#fbpgdg, #fbpgdg *");t(i,r,"div",n);t(i,r,"svg",n);t(i,r,"a",n);t(i,r,"li",n);t(i,r,"input",n);t(i,r,"select",n);t("aria-hidden","true","body :not(script):not(style)",n)}function o(){for(var r,t=0;t<n.length;t++)r=_d.getElementById(n[t].id),r&&i(r,n[t].attributeName,n[t].originalAttributeValue);n.length=0}function s(){typeof sj_evt!="undefined"&&(sj_evt.bind("onFeedbackStarting",function(){e()}),sj_evt.bind("onFeedbackClosing",function(){o()}))}var n=[],r=function(){function n(n,t,i){this.id=n;this.attributeName=t;this.originalAttributeValue=i}return n}();s()})(t=n.Accessibility||(n.Accessibility={}))})(Feedback||(Feedback={}));var Feedback;(function(n){var t;(function(){function r(i,r,u,f,e,o){sj_evt.fire("onFeedbackStarting");i=typeof i===t?!1:i;i&&scrollTo(0,0);u=typeof u===t?!0:u;n.PackageLoad.Load(r,u,f,e,o)}function s(n,t){for(var r=0,i=null;n&&n.getAttribute&&(!(t>=1)||r<t);){if(i=n.getAttribute("data-fbhlsel"),i!=null)break;r++;n=n.parentNode}return i}var u="feedbackformrequested",i,f="",e="feedback-binded",o="clicked",t="undefined";n.Bootstrap.InitializeFeedback=function(n,h,c,l,a,v,y,p){var w=_ge(h),b;w&&w.classList&&w.classList.contains(e)||(a=typeof a===t?!1:a,b=s(w,3),f!=="sb_feedback"&&(f=h,typeof sj_evt!==t&&(i&&sj_evt.unbind(u,i),i=function(t){var f=null,u=null,e=null,o,i;t&&t.length>1&&(i=t[1],i.tagName!==undefined&&i.nodeType!==undefined?f=i:u=i,o=u&&u.elementToHighlight||f,e=s(o));r(l,n,c,h,e,u)},sj_evt.bind(u,i,1)),typeof SearchAppWrapper!==t&&SearchAppWrapper.CortanaApp&&SearchAppWrapper.CortanaApp.addEventListener&&SearchAppWrapper.CortanaApp.addEventListener(u,function(i){(typeof i!==t&&i!==null&&(i.isHandled=!0),h===f)&&r(l,n,c,h)})),w!==null?(sj_be(w,"click",function(t){if(a&&w.classList){if(w.classList.contains(o))return!1;w.classList.add(o)}sj_pd(t);sj_sp(t);r(l,n,c,h,b,p)}),w.classList&&w.classList.add(e)):(y=typeof y===t?!1:y,y&&r(l,n,c,h,b)))}})(t=n.Bootstrap||(n.Bootstrap={}))})(Feedback||(Feedback={})),function(n){var t;(function(){"use strict";function r(r,u,f,e){var y=_G.IG,p=typeof _G.V=="undefined"?_G.P:_G.V,o,c,l="?ig="+y+"&p="+p,v=n.RouteProvider.Provide(r),s,a,h;if(e&&e.formConfig&&(v=r==="page"?"sdk/form":r,l+="&formconfig="+e.formConfig),e&&e.context)for(s in e.context)e.context.hasOwnProperty(s)&&(l+="&"+encodeURIComponent(s)+"="+encodeURIComponent(e.context[s]));for(o="/feedback/"+v+l,typeof fbsrc!="undefined"&&(o+="&src="+encodeURIComponent(fbsrc)),typeof fbpkgiid!="undefined"&&typeof fbpkgiid[r]!="undefined"&&(o+="&iid="+fbpkgiid[r]),a=[/[?&]testhooks=[^?&#]*/i,/[?&]uncrunched=[^?&#]*/i,/[?&]logjserror=[^?&#]*/i,/[?&]addloginsource=[^?&#]*/i,/[?&]hoseassistant=[^?&#]*/i,/[?&]hose=[^?&#]*/i,/[?&]theme=[^?&#]*/i,/[?&]client=[^?&#]*/i],h=0;h<a.length;h++)(c=location.href.match(a[h]))&&c[0]&&(o+="&"+c[0].substring(1));typeof u!="undefined"&&u!==""&&(o+="&fid="+encodeURIComponent(u));sj_ajax(o,{callback:function(i,r){if(i&&r){t&&t.removeAttribute("clicked");var u=e&&e.feedbackContainerId&&_ge(e.feedbackContainerId);r.appendTo(u||_d.body);sj_evt.fire("onFeedbackShow");n.Highlight&&n.Highlight.HighlightElements&&n.Highlight.HighlightElements(f)}}});i[r]=!0}var i={},t;n.PackageLoad.GetHTML=function(){return _d.documentElement.outerHTML};n.PackageLoad.originalHTML=n.PackageLoad.GetHTML();n.PackageLoad.Load=function(n,u,f,e,o){var s,h;u=typeof u=="undefined"?!0:u;f=typeof f=="undefined"?"":f;h=typeof o!="undefined"&&o&&o.feedbackContainerId;t=_ge(f);for(s in n)n.hasOwnProperty(s)&&(!u||h||typeof i[s]=="undefined")&&r(s,f,e,o)}})(t=n.PackageLoad||(n.PackageLoad={}))}(Feedback||(Feedback={})),function(n){var t;(function(){"use strict";n.RouteProvider.Provide=function(n){return n==="page"?"sdk/form":n}})(t=n.RouteProvider||(n.RouteProvider={}))}(Feedback||(Feedback={}));sa_config={"f":"sb_form","i":"sb_form_q","c":"sw_as","u":"%2fAS%2fSuggestions%3fpt%3dpage.serp%26bq%3dHome%2bTheater%26mkt%3den-us%26qry%3d","enabledDataSources":["Web"],"eHC":1,"ePN":1,"fetchOnEmpty":1,"fetchOnDownArrowKey":1,"t":1,"suppnores":1,"d":100};sa_loc= {"Suggestions":"Suggestions"};;var sa_eL=!1;(function(){function e(n,t,i){n&&sj_ue(n,t,e);sa_eL=sa_eL||i;r||(r=!0,sa_loader())}function u(n,t,i){sj_be(n,t,function(r){e(n,t,i,sj_ev(r))})}var f=_ge("sa_qs"),n,i,t,r;f.value="bs";n=sa_config;i=_ge(n.i);i.setAttribute("autocomplete","off");t=_ge(n.c);t||(t=sj_ce("div"),t.id=n.c,f.parentNode.appendChild(t));r=!1;_w.sa_loader&&(u(i,"click",!0),u(i,"keydown",!0),n.ol&&u(_w,"load",!1))})();var bepcfg = bepcfg || {};;bepcfg.v =1;;bepcfg.wb =true? '1' : '0';;sj_evt.bind("onP1", function(){c=sj_cook.set;var t=_ge('id_rc'); if(o=_ge('id_r')) {o.style.display='block'; }if(t) { t.innerHTML='2015'; } var t2=_ge('fly_id_rc'); if(t2) t2.innerHTML='2015'; c('_SS','R','2015',0,'/');f=_w.top!==_w.self;f&& c('_SS','F',f,0,'/');sj_evt.bind("bepready",function(args){args[1]('10');},1);}, 1, 0);;
+                    //]]>-->
+                </div><div style="display:none">
+                    <!--//<![CDATA[
+                    var wlc=function(n,t,i){var u,f,r;n&&Identity&&(u=Identity.popupLoginUrls)&&(f=u.WindowsLiveId)&&Identity.wlProfile&&(r=_d.createElement("iframe"),r.style.display="none",r.src=f+"&checkda=1",_d.body.appendChild(r),i&&t&&t("WLS","TS",i,0,"/"))};
+                    //]]>-->
+                </div><div style="display:none">
+                    <!--//<![CDATA[
+                    (function(){function r(n,t){sj_log("CI.StyleExp",n,t)}function i(n,i,u){n.removeProperty(i);n.setProperty(i,u,t.I);e||(r("Reset",i),e=!0)}function u(n,i,r){return n.getPropertyValue(i)===r&&n.getPropertyPriority(i)===t.I}function c(r){r.style&&(u(r.style,n.D,t.DT)&&i(r.style,n.D,t.D),u(r.style,n.V,t.VT)&&i(r.style,n.V,t.V),u(r.style,n.O,t.OT)&&i(r.style,n.O,t.O))}function l(i){var u=i.src,o="pid=Ads",s,h,e;u&&u.indexOf(o)>0&&(u=u.replace(o,""),(i.getAttribute(n.W)==="0"||i.getAttribute(n.H)==="0")&&(s=i.style&&i.style.backgroundPositionY?i.style.backgroundPositionY:t.H,h=i.style&&i.style.backgroundPositionX?i.style.backgroundPositionX:t.W,i.setAttribute(n.H,s),i.setAttribute(n.W,h)),e=i.parentNode,e&&e.nodeType===1&&(e.removeChild(i),i.src=u,e.appendChild(i)),f||(r("Image",u.substr(0,100)),f=!0))}function o(n){return n.offsetHeight<1||n.offsetWidth<1}function s(n){var r=n&&n.length,i,t;if(r>0)for(i=0;i<r;i++)t=n[i],t&&(s(t.children),t.nodeType===1&&c(t),t.tagName==="IMG"&&o(t)&&l(t))}function a(){var l=_ge("b_content"),f,e,c,u;if(l&&(f=l.querySelectorAll(h)),e=f&&f.length,!(e<=0))for(c=!1;e--;)u=f[e]&&f[e],o(u)&&(u.style&&(c||(r("D",u.className),c=!0),i(u.style,n.V,t.V),i(u.style,n.D,t.D)),s(u.children))}var h=".b_ad,.partnerLinks,#zune_upsell",n={D:"display",V:"visibility",O:"opacity",W:"width",H:"height"},t={D:"block",V:"visible",O:"1",W:"86",H:"86",I:"important",DT:"none",OT:"0",VT:"hidden"},f=!1,e=!1;a()})();sb_ie&&function(){function h(){if(t){var u=n.replace(/www\./i,"");return f&&i(t,r,n+"?PC="+f)||i(t,r,n)||i(t,r,u)||i(t,r,n+"?Form=HPPDH1")||i(t,r,n+"?PC=BNHP")||i(t,r,n+"?PC=BNSR")}return 0}function c(){return i(_w.external,s,n)!=0}function l(){if(u){var n=2*e+o;if(u==n)return!0}return!1}function a(){var n=_ge("hps");return n||(n=sj_ce("span","hps"),n.style.behavior="url(#default#homepage)",sj_b.appendChild(n)),n}function i(n,t,i){try{return n[t](i)}catch(r){return 0}}var s="IsSearchProviderInstalled",r="isHomepage",n="http://"+_d.domain+"/",u=sj_cook.get("_UR","D"),f=sj_cook.get("SRCHS","PC"),t=a(),e=h(),o=c();l()||(u=2*e+o,sj_cook.set("_UR","D",u,1,"/"))}();
+                    //]]>-->
+                </div><div style="display:none">
+                    <!--//<![CDATA[
+                    var sj_appHTML=function(n,t){var f,e,o,i,r,s,h;if(t&&n){var c="innerHTML",l="script",a="appendChild",v="length",y="src",p=sj_ce,u=p("div");if(u[c]="<br>"+t,f=u.childNodes,u.removeChild(f[0]),e=u.getElementsByTagName(l),e)for(o=0;o<e[v];o++)i=p(l),r=e[o],r&&(i.type="text/javascript",s=r.getAttribute(y),s?i.setAttribute(y,s):(i.text=r[c],i.setAttribute("data-bing-script","1")),r.parentNode.replaceChild(i,r));for(h=_d.createDocumentFragment();f[v];)h[a](f[0]);n[a](h)}};var sj_ajax=function(n,t){function h(){i[u]=s;i.abort&&i.abort()}function o(n,t){typeof n=="function"&&n(t,{request:i,appendTo:function(n){i&&sj_appHTML(n,i.responseText)}})}var r,i=sj_gx(),u="onreadystatechange",f,e=null,c=sb_st,l=sb_ct,s=function(){};if(!n||!i){o(r,!1);return}t&&(r=t.callback,f=t.timeout);i.open("get",n,!0);i[u]=function(){if(i.readyState===4){var n=!1;e!==null&&l(e);i.status===200&&(n=!0,i[u]=s);o(r,n)}};sj_evt.bind("ajax.unload",h);i.send();f>0&&(e=c(function(){h();o(r,!1)},f))};
+                    //]]>-->
+                </div><div style="display:none">
+                    <!--//<![CDATA[
+                    (function(){function d(n,t){for(var u,r=[],i=0;i<t.length;i++)for(i=0;i<t.length;i++)u=t[i],r.push({MonitorID:t[i].name,RequestID:t[i].guid,Result:Math.round(n[i])});return JSON.stringify(r)}function u(){function n(){return Math.floor((1+Math.random())*65536).toString(16).substring(1)}return n()+n()+n()+n()+n()+n()+n()+n()}function h(){return window.performance&&window.performance.getEntriesByName?!0:!1}function c(n,t,i,r,u,f){function l(i){var w,b,p,k,y,g,nt;if(e!=null&&sb_ct(e),s[i]=c!=null?(new Date).getTime()-c:-1,i=(a+v)%n.length,o=new Image,a++<n.length)c=(new Date).getTime(),o.onload=function(){l(i)},w=function(){o.onload=null;o.onerror=null;c=null;l(i)},e=sb_st(function(){w()},t),o.onerror=function(){e!=null&&sb_ct(e);e=null;w()},o.src=n[i];else{if(r!=null&&r.length!==0){if(h())for(y=0;y<n.length;y++)b=n[y],p=window.performance.getEntriesByName(b),s[y]!=-1&&p&&p[0]&&(s[y]=p[0].duration);for(k=d(s,u),y=0;y<r.length;y++)g=r[y],nt=new Image,nt.src=g+k}f!=null&&f()}}var c,e,s=[],v=Math.floor(Math.random()*n.length),a=0,o;sb_st(function(){l(0)},i)}var t=window.location.protocol+"//";if(this.JSON&&t!=="https://"){var n=[u(),u(),u()],f=t+n[0]+".clo.footprintdns.com/apc/",e=t+n[1]+".clo.footprintdns.com/apc/",o=t+n[2]+".clo.footprintdns.com/apc/",i="trans.gif",r="17k.gif",s=2e3,l=h(),a=_G.IG,v="&MonitorID=AZR&rid="+a+"&w3c="+l+"&prot="+window.location.protocol+"&v=4&DATA=",y=[t+"fp.msedge.net/r.gif?"+v],p=[f+i,e+i,o+i],w=[f+r+"?"+n[0],e+r+"?"+n[1],o+r+"?"+n[2]],b=[{name:"CLO",guid:n[0]},{name:"CLO",guid:n[1]},{name:"CLO",guid:n[2]}],k=function(){c(w,s,0,y,b,null)};c(p,s,1e3,null,null,k)}})();
+                    //]]>-->
+                </div><div style="display:none">
+                    <!--//<![CDATA[
+                    sj_evt.bind("infobubble_initItem", function() { InfoBubble.initItem("infobubble_item_6_D51F9B","infobubble_6_D51F9B","infobubble_anchor_6_D51F9B",true,false,false,true); }, 1);;sj_evt.bind("infobubble_initBubble", function() { InfoBubble.initBubble("infobubble_6_D51F9B","infobubble_item_6_D51F9B","infobubble_locator_6_D51F9B",200,20,0,false,false,false,false,false,false,true); }, 1);;sj_evt.bind("infobubble_initItem", function() { InfoBubble.initItem("infobubble_item_9_D51F9B","infobubble_9_D51F9B","infobubble_anchor_9_D51F9B",true,false,false,true); }, 1);;sj_evt.bind("infobubble_initBubble", function() { InfoBubble.initBubble("infobubble_9_D51F9B","infobubble_item_9_D51F9B","infobubble_locator_9_D51F9B",200,20,0,false,false,false,false,false,false,true); }, 1);;Feedback.Bootstrap.InitializeFeedback({page:true},"sb_feedback",1,0,0);;
+                    //]]>-->
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </body>
+        </html>
+    - ID: "b39a3f51-b73b-49ff-ab72-10fe43d486db"
+      Hint: City
+      Value: 
+    - ID: "eb60b94d-1ea5-4ebc-94d4-534c82e80f1a"
+      Hint: Country
+      Value: 
+- Language: "fr-CA"
+  Fields:
+  - ID: "41c6cc0e-389f-4d51-9990-fe35417b6666"
+    Hint: __Preview
+    Value: 
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: 
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: 
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bing Home Theater
+  Versions:
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bing Home Theater
+  Versions:

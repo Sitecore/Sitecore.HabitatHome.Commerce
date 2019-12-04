@@ -1047,7 +1047,11 @@ XA.component.carousels = (function($) {
     };
     
     Carousel.prototype.maxSlideInfoHeight = function(){
-        var maxHeight = this.$slides[0].querySelector('.slide-info').offsetHeight;
+        var maxHeight = 0,
+            slideInfo = this.$slides[0].querySelector('.slide-info')
+        if (slideInfo){
+            maxHeight = slideInfo.offsetHeight;
+        };
         for (var i = 1; i < this.$slides.length; i++){
             var currSlideInfoHeight = this.$slides[i].querySelector('.slide-info').offsetHeight
             if (maxHeight <currSlideInfoHeight ){

@@ -1,0 +1,76 @@
+﻿---
+ID: "d40bdebe-4328-4f48-970a-0e97ade4b25d"
+Parent: "a6970ed5-7ea2-4956-a701-f506cfa28a91"
+Template: "2ad23d55-aecd-43dd-ae0d-72d2ebcba60f"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Presentation/Partial Designs/Recommended Content And Product/Data/HTML Code 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "24cce27c-05db-4473-a1ed-e69b1725ff1c"
+      Hint: HtmlCode
+      Value: |
+        <style>
+        
+        #RecommendedContentAndProduct .cxa-productinformation-component {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+        
+        #RecommendedContentAndProduct .cxa-productinformation-component .component-content .product-name h1 {
+        color: #3d3d3d;
+        font-size: 1.25em;
+        font-family: "ProximaNova-Semibold",arial,helvetica,sans-serif;
+        }
+        
+        #RecommendedContentAndProduct .product-info{
+        border-bottom: 1px solid #b1b3ac;
+        }
+        
+        #RecommendedContentAndProduct .product-description {
+        padding: 0;
+        border: 0;
+        margin-bottom: 0 !important;
+        }
+        
+        #RecommendedContentAndProduct .product-description p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        font-family: "ProximaNova",arial,helvetica,sans-serif;
+        }
+        
+        #RecommendedContentAndProduct .stock-info{
+        padding-left: 15px;
+        }
+        
+        #RecommendedContentAndProduct  .price-info h3 span{
+        padding-left: 15px;
+        color: #3d3d3d;
+        }
+        
+        #RecommendedContentAndProduct .add-to-cart-btn {
+        background: transparent !important;
+        color: #495553 !important;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        border: 1px solid #495553;
+        }
+        
+        #RecommendedContentAndProduct .cxa-productvariant-component{
+        padding-left: 30px;
+        }
+        
+        #RecommendedContentAndProduct .cxa-addtocart-component{
+        padding-left: 15px;
+        }
+        </style>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T072240Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

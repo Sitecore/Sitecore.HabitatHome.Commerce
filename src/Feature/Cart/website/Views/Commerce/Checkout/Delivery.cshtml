@@ -12,12 +12,17 @@
 @using Sitecore.XA.Foundation.MarkupDecorator.Extensions
 @using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Commerce.XA.Feature.Cart.Models
+
 @model DeliveryRenderingModel
 
+@{
+    // @Html.Sitecore().Field("Delivery Option Hint Text", Html.Sitecore().CurrentItem);
+    var deliveryOptionHintText = Html.Sitecore().CurrentItem["Delivery Option Hint Text"];
+}
 <div @Html.Sxa().Component("cxa-checkoutdelivery-component", Model.Attributes)>
     @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
     {
-        @Model.ErrorMessage
+    @Model.ErrorMessage
     }
     else
     {
@@ -32,11 +37,11 @@
                 <p>@Html.Sitecore().Field("Delivery Preferences Header", Html.Sitecore().CurrentItem)</p>
             </div>
             <div class="delivery-form-option">
-                <select id="orderShippingPreference" data-bind="foreach: orderShippingOptions, value: selectedShippingOption">
-                    <!-- ko if: $index() == 0 -->
-                    <option value="0">@Html.Sitecore().Field("Delivery Option Hint Text", Html.Sitecore().CurrentItem)</option>
-                    <!-- /ko -->
+                <select id="orderShippingPreference" data-bind="value:selectedShippingOption">
+                    <option value="0">@deliveryOptionHintText</option>
+                    <!-- ko  foreach: orderShippingOptions -->
                     <option data-bind="text: Name, value: ShippingOptionType.Value"></option>
+                    <!-- /ko -->
                 </select>
             </div>
         </div>
@@ -49,22 +54,24 @@
         <div class="delivery-options" data-bind="visible: $root.isShipItems" style="display:none;">
             @Html.Partial("~/Views/Commerce/Checkout/_PickDeliveryByItem.cshtml")
         </div>
+        <!-- HabitatHome customization -->
         <div class="shipall-section" data-bind="visible: $root.isPickUp" style="display:none;">
             @Html.Partial("~/Views/Commerce/Checkout/_PickUpFromStore.cshtml")
         </div>
+        <!-- end HabitatHome customization -->
         <div class="buttons-row">
             <a class="btn-delivery-prev" href="@Model.PreviousPageLink">@continueShoppingLabel</a>
             <button class="btn-delivery-next" id="ToBillingButton" data-loading-text="@processing" data-bind="enable: enableToBilling, click: goToNextPageClick">@toBillingLabel</button>
         </div>
     </div>
 
-        <input type="hidden" id="deliveryMethodSet" />
+    <input type="hidden" id="deliveryMethodSet" />
 
-        <div class="delivery-data">
-            <div class="message-data">
-                <input type="hidden" id="SelectDeliveryFirstMessage" value="@selectDeliveryFirstMessage" />
-                <input type="hidden" id="DeliveryItemPath" value="@Model.DeliveryItemPath" />
-            </div>
+    <div class="delivery-data">
+        <div class="message-data">
+            <input type="hidden" id="SelectDeliveryFirstMessage" value="@selectDeliveryFirstMessage" />
+            <input type="hidden" id="DeliveryItemPath" value="@Model.DeliveryItemPath" />
         </div>
+    </div>
     }
 </div>

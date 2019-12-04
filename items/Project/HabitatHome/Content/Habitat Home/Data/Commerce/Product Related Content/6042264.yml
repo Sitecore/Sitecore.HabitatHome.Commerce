@@ -1,0 +1,25 @@
+﻿---
+ID: "7fd6a700-1a57-46b6-942f-5b75270852c7"
+Parent: "0b0b79e2-238b-4250-adaa-0f655e8ec470"
+Template: "74c56d93-c404-4b0e-8560-214f62e41e72"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/Data/Commerce/Product Related Content/6042264
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180605T173117Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190301T182619Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

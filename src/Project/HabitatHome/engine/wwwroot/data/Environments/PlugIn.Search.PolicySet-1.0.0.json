@@ -94,6 +94,15 @@
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
         "SearchScopeName": "habitathomeCatalogItemsScope",
         "Properties": {
+          "EntityUniqueId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
           "EntityId": {
             "TypeName": "System.String",
             "IsKey": false,
@@ -199,6 +208,15 @@
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
         "SearchScopeName": "habitathomeCustomersScope",
         "Properties": {
+          "EntityUniqueId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
           "EntityId": {
             "TypeName": "System.String",
             "IsKey": true,
@@ -286,6 +304,15 @@
         "$type": "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
         "SearchScopeName": "habitathomeOrdersScope",
         "Properties": {
+          "EntityUniqueId": {
+            "TypeName": "System.String",
+            "IsKey": false,
+            "IsSearchable": true,
+            "IsFilterable": false,
+            "IsSortable": false,
+            "IsFacetable": false,
+            "IsRetrievable": true
+          },
           "EntityId": {
             "TypeName": "System.String",
             "IsKey": true,

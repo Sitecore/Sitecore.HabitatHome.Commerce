@@ -39,43 +39,46 @@
 <div class="shipall-addresses-title">
     <h3>@shippingAddressLabel:</h3>
 </div>
-<div  data-bind="with: shippingAddress">
-
+<div data-bind="with: shippingAddress">
     <div class="shipall-addresses" data-bind="visible: $parent.isAuthenticated">
         <label for="ShippingAddressSelect">@chooseAddressLabel</label>
-        <select id="ShippingAddressSelect" data-bind="foreach: $parent.userAddresses, value:$parent.selectedShippingAddress" title="@addressLabel" title2="@otherAddressLabel">
-            <!-- ko if: externalId() != 'UseShipping' -->
-            <option data-bind="attr:{ value: externalId }, text: fullAddress"></option>
-            <!-- /ko -->
-        </select>
+        <select id="ShippingAddressSelect" data-bind="template: { name: 'shipall-addresses-template', foreach: $parent.userAddresses, as:'address'}, value: $parent.selectedShippingAddress" title="@addressLabel" title2="@otherAddressLabel"></select>
     </div>
+    <script type="text/html" id="shipall-addresses-template">
+        @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        <!-- ko if: address.externalId() != 'UseShipping' -->
+        <option data-bind="attr:{ value: address.externalId }, text: address.fullAddress"></option>
+ <!-- /ko -->
+    }
+    </script>
     <input type="hidden" id="ShipAllItemsInput-ExternalId" data-bind="value: externalId" />
     <div class="addrss-form">
-    <div class="shipall-name">
-        <label for="ShipAllItemsInput-Name">@shippingNameLabel<span class="required">*</span></label>
-        <input type="text" placeholder="@shippingNameLabelPlaceholder" data-bind="value: name, event: {change: $root.shippingAddressFieldChanged}">
-    </div>
-    <div class="shipall-city">
-        <label for="ShipAllItemsInput-City">@cityLabel<span class="required">*</span> </label>
-        <input type="text" placeholder="@cityLabelPlaceholder" data-bind="value: city, event: {change: $root.shippingAddressFieldChanged}">
-    </div>
-    <div class="shipall-country">
-        <label for="ShipAllItemsInput-Country">@countryLabel<span class="required">*</span></label>
-        <select data-bind="options: $parent.countries, optionsText:'country', optionsValue:'code', value: country, event: {change: $root.shippingAddressFieldChanged}"></select>
-    </div>
-    <div class="shipall-state">
-        <label for="ShipAllItemsInput-State">@stateLabel</label>
-        <!-- ko if: states == 'undefined' -->
-        <select data-bind="options: $parent.states, optionsText:'name', optionsValue:'code', value: state, event: {change: $root.shippingAddressFieldChanged}"></select>
-        <!-- /ko -->
-        <!-- ko if: states != 'undefined' -->
-        <input type="text" placeholder="@stateLabelPlaceholder" data-bind="value: state, event: {change: $root.shippingAddressFieldChanged}">
-        <!-- /ko -->
-    </div>
-    <div class="shipall-address">
-        <label for="ShipAllItemsInput-Address">@address1Label</label>
-        <input type="text" placeholder="@address1LabelPlaceholder" data-bind="value:address1, event: {change: $root.shippingAddressFieldChanged}">
-    </div>
+        <div class="shipall-name">
+            <label for="ShipAllItemsInput-Name">@shippingNameLabel<span class="required">*</span></label>
+            <input type="text" placeholder="@shippingNameLabelPlaceholder" data-bind="value: name, event: {change: $root.shippingAddressFieldChanged}">
+        </div>
+        <div class="shipall-city">
+            <label for="ShipAllItemsInput-City">@cityLabel<span class="required">*</span> </label>
+            <input type="text" placeholder="@cityLabelPlaceholder" data-bind="value: city, event: {change: $root.shippingAddressFieldChanged}">
+        </div>
+        <div class="shipall-country">
+            <label for="ShipAllItemsInput-Country">@countryLabel<span class="required">*</span></label>
+            <select data-bind="options: $parent.countries, optionsText:'country', optionsValue:'code', value: country, event: {change: $root.shippingAddressFieldChanged}"></select>
+        </div>
+        <div class="shipall-state">
+            <label for="ShipAllItemsInput-State">@stateLabel</label>
+            <!-- ko if: states == 'undefined' -->
+            <select data-bind="options: $parent.states, optionsText:'name', optionsValue:'code', value: state, event: {change: $root.shippingAddressFieldChanged}"></select>
+            <!-- /ko -->
+            <!-- ko if: states != 'undefined' -->
+            <input type="text" placeholder="@stateLabelPlaceholder" data-bind="value: state, event: {change: $root.shippingAddressFieldChanged}">
+            <!-- /ko -->
+        </div>
+        <div class="shipall-address">
+            <label for="ShipAllItemsInput-Address">@address1Label</label>
+            <input type="text" placeholder="@address1LabelPlaceholder" data-bind="value:address1, event: {change: $root.shippingAddressFieldChanged}">
+        </div>
         <div class="shipall-zipcode">
             <label for="ShipAllItemsInput-Zipcode">@zipcodeLabel</label>
             <input type="text" placeholder="@zipcodeLabelPlaceholder" data-bind="value: zipPostalCode, event: {change: $root.shippingAddressFieldChanged}">
@@ -92,10 +95,11 @@
     <div class="shipall-options-items">
         <div class="shipall-options-item" data-bind="foreach: shippingMethods">
             <div class="shipping-option">
+                <!-- HabitatHome customization -->
                 <input type="radio" data-bind="attr: {'name': 'shippingMethodId', pvalue: id, id: id}, checkMe: $root.shippingMethod">
                 <label data-bind="text: description, attr: {'for': id}"></label>
+                <!-- end HabitatHome customization -->
             </div>
-
         </div>
     </div>
 </div>

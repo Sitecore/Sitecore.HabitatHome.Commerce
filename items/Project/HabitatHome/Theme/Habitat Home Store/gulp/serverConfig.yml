@@ -1,0 +1,31 @@
+﻿---
+ID: "08844ea9-e595-4a01-b216-b73afee62c2b"
+Parent: "da255b83-d35e-403e-82da-58bdcc30f123"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/Habitat SXA Sites/Habitat Home Store/gulp/serverConfig
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/08844EA9E5954A01B216B73AFEE62C2B.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "acd15735-0621-4341-b6c7-d82db4c899a7"
+  Value: eyJzZXJ2ZXJPcHRpb25zIjp7InByb2plY3RQYXRoIjoiXFxUaGVtZXNcXEhhYml0YXQgU1hBIFNpdGVzIiwidGhlbWVQYXRoIjoiXFxIYWJpdGF0IEhvbWUgU3RvcmUifX0=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 98
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: json
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171108T075254Z

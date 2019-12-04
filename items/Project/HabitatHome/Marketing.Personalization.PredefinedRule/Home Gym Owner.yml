@@ -1,0 +1,35 @@
+﻿---
+ID: "872b302c-5de8-40bc-b170-fd1fb8736b8a"
+Parent: "055634ef-74f9-4b13-a282-f1d1bbb4c0cf"
+Template: "550b5cef-242c-463f-8ed5-983922a39863"
+Path: /sitecore/system/Marketing Control Panel/Personalization/Predefined Rules/Home Gym Owner
+DB: master
+SharedFields:
+- ID: "5c29555e-6565-4984-a692-115b49c047a0"
+  Hint: Rule
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{FCA408B4-697D-4854-A190-E6A5147E3575}">
+        <conditions>
+          <condition
+            id="{A612EF3B-BC95-4D9D-BDED-A29706FE756B}"
+            uid="A7D487B4984F4D1C8476732D7B4AEA06"
+            FieldName="user_type"
+            operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}"
+            Value="home gym owner" />
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "062041c0-682e-4bd3-a778-85451ea11956"
+      Hint: Name
+      Value: Home Gym Owner
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190823T191616Z

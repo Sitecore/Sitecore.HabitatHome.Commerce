@@ -193,14 +193,14 @@ XA.component.search.box = (function ($, document) {
             var resultPage = this.model.get("dataProperties").resultPage,
                 targetSignature = this.model.get("dataProperties").targetSignature,
                 searchResultsSignature = this.model.get("dataProperties").searchResultsSignature,
-                query = this.$el.find(".search-box-input.tt-input").val(),
+                query = encodeURIComponent(this.$el.find(".search-box-input.tt-input").val()),
                 sig = this.model.get("sig"),
                 queryWithSignature = {};
 
             if (targetSignature !== "") {
-                queryWithSignature = this.updateSignaturesHash([targetSignature + "_q"], query, this.createOffsetObject())
+                queryWithSignature = this.updateSignaturesHash([targetSignature + "_q"], query, this.createOffsetObject());
             } else {
-                queryWithSignature = this.updateSignaturesHash(sig, query, this.createOffsetObject())
+                queryWithSignature = this.updateSignaturesHash(sig, query, this.createOffsetObject());
             }
             
             window.location.href = urlHelperModel.createRedirectSearchUrl(resultPage, queryWithSignature, searchResultsSignature, targetSignature);
@@ -244,6 +244,7 @@ XA.component.search.box = (function ($, document) {
                 this.updateQueryModel(query);
                 this.$el.find(".search-box-input.tt-input").blur().val(query);
             } else {
+                query = encodeURIComponent(query);
                 if (targetSignature !== "") {
                     queryWithSignature = this.updateSignaturesHash([targetSignature + "_q"], query, this.createOffsetObject())
                 } else {
@@ -274,7 +275,7 @@ XA.component.search.box = (function ($, document) {
 
             for (i = 0; i < sig.length; i++) {
                 if (hashObj.hasOwnProperty(sig[i])) {
-                    el.val(hashObj[sig[i]]);
+                    el.val(decodeURIComponent(hashObj[sig[i]]));
                 } else {
                     el.val("");
                 }

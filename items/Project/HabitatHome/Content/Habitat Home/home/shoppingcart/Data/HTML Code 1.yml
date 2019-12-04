@@ -1,0 +1,40 @@
+﻿---
+ID: "274a79e5-db05-4d9e-bec1-de87b6993b04"
+Parent: "e0490d57-b6e1-471e-ac3a-76d585b88562"
+Template: "2ad23d55-aecd-43dd-ae0d-72d2ebcba60f"
+Path: /sitecore/content/Habitat SXA Sites/Habitat Home/home/shoppingcart/Data/HTML Code 1
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "24cce27c-05db-4473-a1ed-e69b1725ff1c"
+      Hint: HtmlCode
+      Value: |
+        <style>
+        #Shoppingcart-Promo-Slim .promo{
+        margin-top:2em;
+        margin-bottom:2em;
+        }
+        #Shoppingcart-Promo-Slim .component-content{
+        padding: 0;
+        }
+        #Shoppingcart-Promo-Slim .promo .component-content div{
+        width:75%;
+        }
+        #Shoppingcart-Promo-Slim .field-promoicon{
+        width:   25% !important;
+        padding: 0 20px 0 20px;
+        }
+        #Shoppingcart-Promo-Slim .field-promoicon img{
+        width:initial;
+        }
+        </style>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190824T202857Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

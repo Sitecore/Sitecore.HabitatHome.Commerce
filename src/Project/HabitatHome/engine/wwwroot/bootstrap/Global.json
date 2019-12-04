@@ -1,30 +1,23 @@
-﻿{
+{
   "$type": "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
-  "Components": {
-    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-    "$values": []
-  },
-  "DateCreated": "2015-04-20T23:14:12.4908676Z",
-  "DateDeleted": "0001-01-01T00:00:00",
-  "DateUpdated": "2015-04-20T23:14:12.4908676Z",
-  "EntityProviderName": "EntityProvider_SQL",
   "Id": "GlobalEnvironment",
   "ArtifactStoreId": "{6be385f1-93dc-4299-9dd4-934f6ba42eaa}",
-  "IndexProviderName": "IndexProvider_SQL",
-  "IsDeleted": false,
   "IsPersisted": false,
-  "ListMemberships": {
-    "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Environments",
-      "AllEntities"
-    ]
-  },
   "Name": "GlobalEnvironment",
-  "NameSpace": "Sitecore.Commerce",
   "Policies": {
     "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Management.ManagementCachePolicy, Sitecore.Commerce.Plugin.Management",
+        "CurrencySetsCacheName": "CurrencySets",
+        "FulfillmentCacheName": "Fulfillment",
+        "PaymentsCacheName": "Payments",
+        "CountriesCacheName": "Countries",
+        "ItemsCollectionCacheName": "ItemsCollection",
+        "ItemsCacheName": "Items",
+        "Expiration": 86400000,
+        "AllowCaching": true
+      },
       {
         "$type": "Sitecore.Commerce.Plugin.BusinessUsers.EnvironmentBusinessToolsPolicy,Sitecore.Commerce.Plugin.BusinessUsers",
         "EnvironmentList": {
@@ -47,7 +40,7 @@
         "TrustedConnection": true,
         "UserName": "",
         "View": "EntityStoreSqlPolicy",
-        "Version": "9.1.0"
+        "Version": "9.2.0"
       },
       {
         "$type": "Sitecore.Commerce.Core.DeploymentPolicy, Sitecore.Commerce.Core",
@@ -77,10 +70,8 @@
         "Domain": "sitecore",
         "Password": "b",
         "ConnectionLeaseTimeout": 60000,
-        "AuthRequestUrl": "sitecore/api/ssc/auth/login",
-        "Protocol": "https"
+        "AuthRequestUrl": "sitecore/api/ssc/auth/login"
       }
     ]
-  },
-  "SortOrder": 0
+  }
 }
